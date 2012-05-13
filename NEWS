@@ -1,3 +1,33 @@
+Anjuta 3.4.4 "There is no swedisch conspiracy" -- Johannes Schmid (July 28 2012)
+
+This is a bug-fix release, all users are encourage to update!
+
+Johannes Schmid (10):
+      Post release version bump
+      libanjuta: Fix memory corruption in AnjutaPkgConfig (bgo#679827)
+      document-manager: bgo#680554 - entry of find in files doesn't get focused
+      document-manager: Only use in project files
+      document-manager: bgo#680559 - Find in Files does not scroll to top of res
+      document-manager: bgo#680555 - Escape key does not dismiss Find in Files p
+      build: Only check for passwords when installing as root (bgo#680136)
+      symbol-db: Don't crash if project was moved to another location
+      symbol-db: Ingore files with unknown language (see bgo#678695)
+      symbol-db: Avoid warning when NULL is passed to sdb_engine_add_language()
+
+Marco Diego Aurélio Mesquita (1):
+      glade: bgo#676811 - Fix check order of editor on member add
+
+Massimo Corà (3):
+      cxxparser: avoid infinite loop. Fixed bgo#679772
+      cxxparser: improved code checks to avoid leaks.
+      cxxparser: fixed warning on query field retrieving.
+
+Rūdolfs Mazurs (1):
+      Updated Latvian translation
+
+Sasi Bhushan Boddepalli (1):
+      Updated Telugu Translation
+
 Anjuta 3.4.3 "Better late(r) than never" -- Johannes Schmid
 
 This release fixes a broken tarball that was distributed for 3.4.2 - it
