@@ -1633,7 +1633,7 @@ amp_project_duplicate_node (AnjutaProjectNode *old_node)
 		amp_group_node_add_token (AMP_GROUP_NODE (new_node), amp_group_node_get_first_token (AMP_GROUP_NODE (old_node), AM_GROUP_TOKEN_DIST_SUBDIRS), AM_GROUP_TOKEN_DIST_SUBDIRS);
 
 	}
-	if (anjuta_project_node_parent (old_node) == NULL)
+	if (AMP_IS_PROJECT (old_node))
 	{
 		// FIXME: It would be better to write a duplicate function to avoid this code
 		((AmpProject *)new_node)->lang_manager = (((AmpProject *)old_node)->lang_manager != NULL) ? g_object_ref (((AmpProject *)old_node)->lang_manager) : NULL;
