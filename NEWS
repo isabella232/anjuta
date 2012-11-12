@@ -1,3 +1,19 @@
+Anjuta 3.6.2 (November 12, 2012) -- James Liggett
+
+Carl-Anton Ingmarsson (4):
+      indentation-c-style: be more picky when completing braces.
+      indentation-c-style: remove java_indentation() method
+      indentation-c-style: When removing opening bracket also remove the closing one.
+      sourceview: don't emit change events after doing an undo
+
+Christian Kirbach (1):
+      Updated German manual translation
+
+Sébastien Granjoux (3):
+      build-basic-autotools: Configuration name combo box should be editable
+      build-basic-autotools: Fix alignment of some text broken by the previous patch
+      anjuta: Do not use GDL members deprecated in version 3.6
+
 Anjuta 3.6.1 (October 18, 2012) -- James Liggett
 
 Gabor Kelemen (3):
