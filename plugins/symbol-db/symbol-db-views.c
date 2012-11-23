@@ -236,7 +236,7 @@ symbol_db_view_new (SymbolViewType view_type,
 	
 	if (view_type == SYMBOL_DB_VIEW_SEARCH)
 	{
-		entry = gtk_entry_new ();
+		entry = gtk_search_entry_new ();
 		g_signal_connect (entry, "changed",
 		                  G_CALLBACK (on_search_entry_changed), model);
 		gtk_widget_show (entry);
