@@ -24,6 +24,7 @@
 #include "sourceview-io.h"
 
 #include <libanjuta/anjuta-plugin.h>
+#include <libgd/gd-revealer.h>
 #include <glib.h>
 
 struct SourceviewPrivate {
