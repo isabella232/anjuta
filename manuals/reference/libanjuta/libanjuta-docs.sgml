@@ -70,17 +70,40 @@
     <xi:include href="xml/anjuta-command.xml"/>
     <xi:include href="xml/anjuta-sync-command.xml"/>
     <xi:include href="xml/anjuta-async-command.xml"/>
+    <xi:include href="xml/anjuta-async-notify.xml"/>
     <xi:include href="xml/anjuta-vcs-status-tree-view.xml"/>
     <xi:include href="xml/anjuta-convert.xml"/>
-    <xi:include href="xml/anjuta-version.xml"/>
     <xi:include href="xml/anjuta-autogen.xml"/>
+    <xi:include href="xml/anjuta-close-button.xml"/>
+    <xi:include href="xml/anjuta-column-text-view.xml"/>
+    <xi:include href="xml/anjuta-command-bar.xml"/>
+    <xi:include href="xml/anjuta-command-queue.xml"/>
+    <xi:include href="xml/anjuta-completion.xml"/>
+    <xi:include href="xml/anjuta-dock.xml"/>
+    <xi:include href="xml/anjuta-dock-pane.xml"/>
+    <xi:include href="xml/anjuta-drop-entry.xml"/>
+    <xi:include href="xml/anjuta-entry.xml"/>
+    <xi:include href="xml/anjuta-environment-editor.xml"/>
+    <xi:include href="xml/anjuta-file-drop-entry.xml"/>
+    <xi:include href="xml/anjuta-file-list.xml"/>
+    <xi:include href="xml/anjuta-language-provider.xml"/>
+    <xi:include href="xml/anjuta-pkg-config-chooser.xml"/>
+    <xi:include href="xml/anjuta-pkg-config.xml"/>
+    <xi:include href="xml/anjuta-pkg-scanner.xml"/>
+    <xi:include href="xml/anjuta-project.xml"/>
+    <xi:include href="xml/anjuta-tabber.xml"/>
+    <xi:include href="xml/anjuta-token.xml"/>
+    <xi:include href="xml/anjuta-token-file.xml"/>
+    <xi:include href="xml/anjuta-token-list.xml"/>
+    <xi:include href="xml/anjuta-token-stream.xml"/>
+    <xi:include href="xml/anjuta-tree-combo.xml"/>
+    <xi:include href="xml/anjuta-vcs-status.xml"/>
   </chapter>
   
   <chapter id="libanjuta-internal-api">
     <title>libanjuta internal API</title>
     <xi:include href="xml/anjuta-c-plugin-factory.xml"/>
     <xi:include href="xml/anjuta-c-module.xml"/>
-    <xi:include href="xml/anjuta-utils-priv.xml"/>
     <xi:include href="xml/e-splash.xml"/>
     <xi:include href="xml/anjuta-cell-renderer-captioned-image.xml"/>
   </chapter>
@@ -106,12 +129,14 @@
 	<xi:include href="xml/ianjuta-editor-convert.xml"/>
 	<xi:include href="xml/ianjuta-editor-factory.xml"/>
 	<xi:include href="xml/ianjuta-editor-folds.xml"/>
+	<xi:include href="xml/ianjuta-editor-glade-signal.xml"/>
 	<xi:include href="xml/ianjuta-editor-goto.xml"/>
 	<xi:include href="xml/ianjuta-editor-hover.xml"/>
 	<xi:include href="xml/ianjuta-editor-language.xml"/>
 	<xi:include href="xml/ianjuta-editor-line-mode.xml"/>
 	<xi:include href="xml/ianjuta-editor-search.xml"/>
 	<xi:include href="xml/ianjuta-editor-selection.xml"/>
+	<xi:include href="xml/ianjuta-editor-tip.xml"/>
 	<xi:include href="xml/ianjuta-editor-view.xml"/>
 	<xi:include href="xml/ianjuta-editor-zoom.xml"/>
 	<xi:include href="xml/ianjuta-environment.xml"/>
@@ -120,10 +145,12 @@
 	<xi:include href="xml/ianjuta-file-manager.xml"/>
 	<xi:include href="xml/ianjuta-file-savable.xml"/>
 	<xi:include href="xml/ianjuta-help.xml"/>
+	<xi:include href="xml/ianjuta-indenter.xml"/>
 	<xi:include href="xml/ianjuta-indicable.xml"/>
 	<xi:include href="xml/ianjuta-iterable.xml"/>
 	<xi:include href="xml/ianjuta-iterable-tree.xml"/>
 	<xi:include href="xml/ianjuta-language.xml"/>
+	<xi:include href="xml/ianjuta-language-provider.xml"/>
 	<xi:include href="xml/ianjuta-loader.xml"/>
 	<xi:include href="xml/ianjuta-markable.xml"/>
 	<xi:include href="xml/ianjuta-message-manager.xml"/>
@@ -131,9 +158,12 @@
 	<xi:include href="xml/ianjuta-plugin-factory.xml"/>
 	<xi:include href="xml/ianjuta-preferences.xml"/>
 	<xi:include href="xml/ianjuta-print.xml"/>
+	<xi:include href="xml/ianjuta-project.xml"/>
 	<xi:include href="xml/ianjuta-project-manager.xml"/>
 	<xi:include href="xml/ianjuta-project-chooser.xml"/>
 	<xi:include href="xml/ianjuta-project-backend.xml"/>
+	<xi:include href="xml/ianjuta-provider.xml"/>
+	<xi:include href="xml/ianjuta-snippets-manager.xml"/>
 	<xi:include href="xml/ianjuta-stream.xml"/>
 	<xi:include href="xml/ianjuta-stream-loader.xml"/>
 	<xi:include href="xml/ianjuta-stream-savable.xml"/>
