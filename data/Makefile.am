@@ -11,6 +11,7 @@ anjuta_profiledir = $(anjuta_data_dir)/profiles
 
 dist_anjuta_data_DATA = welcome.txt
 
-dist_anjuta_profile_DATA = default.profile
+dist_anjuta_profile_DATA = default.profile \
+                           editor.profile
 
 -include $(top_srcdir)/git.mk
