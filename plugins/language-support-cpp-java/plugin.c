@@ -445,8 +445,8 @@ language_support_get_header_editor_and_mark (CppJavaPlugin* lang_plugin,
 
 static void
 language_support_add_c_callback (CppJavaPlugin* lang_plugin,
-                                    IAnjutaEditor* editor,
-                                    IAnjutaIterable* position,
+                                 IAnjutaEditor* editor,
+                                 IAnjutaIterable* position,
                                  GStrv split_signal_data,
                                  CppFileType filetype)
 {
@@ -478,7 +478,7 @@ language_support_add_c_callback (CppJavaPlugin* lang_plugin,
 
     g_string_append (str, body);
 
-ianjuta_document_begin_undo_action (IANJUTA_DOCUMENT(editor), NULL);
+    ianjuta_document_begin_undo_action (IANJUTA_DOCUMENT(editor), NULL);
     ianjuta_editor_insert (editor, position,
                            str->str, -1, NULL);
 	ianjuta_document_end_undo_action (IANJUTA_DOCUMENT(editor), NULL);
@@ -505,7 +505,7 @@ ianjuta_document_begin_undo_action (IANJUTA_DOCUMENT(editor), NULL);
                 /* Add prototype to the header */
                 language_support_add_c_callback (lang_plugin, header_editor, mark_position,
                                                  split_signal_data, LS_FILE_CHDR);
-
+                g_signal_emit_by_name (G_OBJECT (header_editor), "code-changed", NULL, NULL);
             }
 
             g_object_unref (mark_position);
@@ -513,8 +513,9 @@ ianjuta_document_begin_undo_action (IANJUTA_DOCUMENT(editor), NULL);
     }
 
     gchar *string = g_string_free (str, FALSE);
+
     /* Emit code-added signal, so symbols will be updated */
-    g_signal_emit_by_name (G_OBJECT (editor), "code-added", position, string);
+    g_signal_emit_by_name (G_OBJECT (editor), "code-changed", position, string);
 
     if (string) g_free (string);
 
@@ -582,8 +583,9 @@ static gboolean insert_after_mark (IAnjutaEditor* editor, gchar* mark,
 
        ianjuta_editor_insert (editor, mark_position, code_to_add, -1, NULL);
 
-       /* Emit code-added signal, so symbols will be updated */
-       g_signal_emit_by_name (G_OBJECT (editor), "code-added", mark_position, code_to_add);
+       /* Emit code-added signal, so symbols will be updated *
+       g_signal_emit_by_name (G_OBJECT (editor), "code-changed", mark_position, code_to_add);*/
+
        g_object_unref (mark_position);
 
        return TRUE;
@@ -696,6 +698,7 @@ static void insert_member_decl_and_init (IAnjutaEditor* editor, gchar* widget_na
               if (insert_after_mark (editor, member_decl_marker, member_decl, lang_plugin))
               {
                      insert_after_mark (editor, member_init_marker, member_init, lang_plugin);
+                     g_signal_emit_by_name (G_OBJECT (editor), "code-changed", NULL, NULL);
                      anjuta_status_set (status, _("Code added for widget."));
               }
               ianjuta_document_end_undo_action (IANJUTA_DOCUMENT(editor), NULL);

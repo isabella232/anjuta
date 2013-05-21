@@ -1357,15 +1357,15 @@ interface IAnjutaEditor
 	void   ::glade_callback_add (gchar *widget_typename, gchar *signal_name, gchar *handler_name, gchar *object, gboolean swap, gboolean after, gchar *filename);
 
 	/**
-	 * IAnjutaEditor::code-added:
-	 * @position: The iter position where @ch is added.
-	 * @code: The code that has been added.
+	 * IAnjutaEditor::code-changed:
+	 * @position: The iter position where code has been changed or NULL.
+	 * @code: The code that has been added or NULL.
 	 * @obj: Self
 	 *
-	 * This signal is emitted when code is added inside the editor.
-	 * The newly added code is @code which has been inserted at @position.
+	 * This signal is emitted when code is changed inside the editor.
+	 * When such information is availabe, @position stores the position where @code was added.
 	 */
-	void   ::code_added (IAnjutaIterable *position, gchar *code);
+	void   ::code_changed (IAnjutaIterable *position, gchar *code);
 
 	/**
 	 * IAnjutaEditor::char-added:
@@ -6465,6 +6465,7 @@ interface IAnjutaSymbolManager
 	#include "ianjuta-iterable.h"
 	#include "ianjuta-symbol.h"
 	#include "ianjuta-symbol-query.h"
+	#include <libanjuta/interfaces/ianjuta-editor.h>
 
 	/**
 	 * IAnjutaSymbolManager::prj_scan_end:

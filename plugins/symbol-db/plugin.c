@@ -367,8 +367,9 @@ editor_buffer_symbols_update (IAnjutaEditor *editor, SymbolDBPlugin *sdb_plugin)
 	
 	/* we won't proceed with the updating of the symbols if we didn't type in 
 	   anything */
+
 	if (sdb_plugin->need_symbols_update == FALSE)
-		return TRUE;
+		return FALSE;
 
 	if (editor) 
 	{
@@ -441,9 +442,10 @@ editor_buffer_symbols_update (IAnjutaEditor *editor, SymbolDBPlugin *sdb_plugin)
 	/* no need to free local_path, it'll be automatically freed later by the buffer_update
 	 * function */
 
-	sdb_plugin->need_symbols_update = FALSE;
+	if(sdb_plugin->buffer_update_files->len > 0)
+		sdb_plugin->need_symbols_update = TRUE;
 
-	return proc_id > 0 ? TRUE : FALSE;
+	return !sdb_plugin->need_symbols_update;
 }
 static gboolean
 on_editor_buffer_symbols_update_timeout (gpointer user_data)
@@ -741,7 +743,7 @@ value_added_current_editor (AnjutaPlugin *plugin, const char *name,
 		g_signal_connect (G_OBJECT (editor), "char-added",
 						  G_CALLBACK (on_char_added),
 						  sdb_plugin);
-		g_signal_connect (G_OBJECT (editor), "code-added",
+		g_signal_connect (G_OBJECT (editor), "code-changed",
 						  G_CALLBACK (on_code_added),
 						  sdb_plugin);
 		g_signal_connect (G_OBJECT(editor), "update_ui",

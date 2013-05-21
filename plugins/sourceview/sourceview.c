@@ -46,6 +46,7 @@
 #include <libanjuta/interfaces/ianjuta-editor-glade-signal.h>
 #include <libanjuta/interfaces/ianjuta-language-provider.h>
 #include <libanjuta/interfaces/ianjuta-provider.h>
+#include <libanjuta/interfaces/ianjuta-symbol-manager.h>
 
 #include <gtksourceview/gtksource.h>
 
@@ -1549,6 +1550,11 @@ static void idocument_end_undo_action (IAnjutaDocument *editor, GError **e)
 	gtk_text_buffer_end_user_action (GTK_TEXT_BUFFER(sv->priv->document));
 }
 
+static void
+update_symbols(IAnjutaDocument* edit)
+{
+	g_signal_emit_by_name (G_OBJECT (IANJUTA_EDITOR(edit)), "code-changed", NULL, NULL);
+}
 
 static void
 idocument_undo(IAnjutaDocument* edit, GError** ee)
@@ -1564,6 +1570,7 @@ idocument_undo(IAnjutaDocument* edit, GError** ee)
 	
 	anjuta_view_scroll_to_cursor(sv->priv->view);
 	g_signal_emit_by_name(G_OBJECT(sv), "update_ui", sv);
+	update_symbols(edit);
 }
 
 static void
@@ -1574,6 +1581,7 @@ idocument_redo(IAnjutaDocument* edit, GError** ee)
 		gtk_source_buffer_redo(GTK_SOURCE_BUFFER(sv->priv->document));
 	anjuta_view_scroll_to_cursor(sv->priv->view);
 	g_signal_emit_by_name(G_OBJECT(sv), "update_ui", sv);
+	update_symbols(edit);
 }
 
 /* Grab focus */
@@ -1597,6 +1605,7 @@ idocument_cut(IAnjutaDocument* edit, GError** ee)
 	g_signal_handlers_block_by_func (sv->priv->document, on_insert_text, sv);
 	anjuta_view_cut_clipboard(sv->priv->view);
 	g_signal_handlers_unblock_by_func (sv->priv->document, on_insert_text, sv);
+	update_symbols(edit);
 }
 
 static void
@@ -1615,6 +1624,7 @@ idocument_paste(IAnjutaDocument* edit, GError** ee)
 	g_signal_handlers_block_by_func (sv->priv->document, on_insert_text, sv);
 	anjuta_view_paste_clipboard(sv->priv->view);
 	g_signal_handlers_unblock_by_func (sv->priv->document, on_insert_text, sv);
+	update_symbols(edit);
 }
 
 static void
