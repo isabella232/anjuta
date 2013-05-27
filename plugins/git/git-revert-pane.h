@@ -25,6 +25,7 @@
 #include "git-pane.h"
 #include "plugin.h"
 #include "git-revert-command.h"
+#include "git-log-pane.h"
 
 G_BEGIN_DECLS
 
@@ -54,6 +55,7 @@ struct _GitRevertPane
 GType git_revert_pane_get_type (void) G_GNUC_CONST;
 AnjutaDockPane *git_revert_pane_new (Git *plugin);
 void on_revert_button_clicked (GtkAction *action, Git *plugin);
+void on_git_log_revert_activated (GtkAction *action, Git *plugin);
 
 G_END_DECLS
 

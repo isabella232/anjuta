@@ -163,3 +163,33 @@ on_revert_button_clicked (GtkAction *action, Git *plugin)
 	                                  _("Revert"), NULL, pane, GDL_DOCK_BOTTOM, NULL, 0,
 	                                  NULL);
 }
+
+void
+on_git_log_revert_activated (GtkAction *action, Git *plugin)
+{
+	GitRevision *revision;
+	gchar *sha;
+	GitRevertCommand *revert_command;
+
+	revision = git_log_pane_get_selected_revision (GIT_LOG_PANE (plugin->log_pane));
+
+	if (revision)
+	{
+		sha = git_revision_get_sha (revision);
+		revert_command = git_revert_command_new (plugin->project_root_directory,
+		                                         sha, FALSE);
+
+		g_signal_connect (G_OBJECT (revert_command), "command-finished",
+		                  G_CALLBACK (git_pane_report_errors),
+		                  plugin);
+
+		g_signal_connect (G_OBJECT (revert_command), "command-finished",
+		                  G_CALLBACK (g_object_unref),
+		                  NULL);
+
+		anjuta_command_start (ANJUTA_COMMAND (revert_command));
+
+		g_free (sha);
+		g_object_unref (revision);
+	}
+}

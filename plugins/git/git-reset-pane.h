@@ -25,6 +25,7 @@
 #include "git-pane.h"
 #include "plugin.h"
 #include "git-reset-tree-command.h"
+#include "git-log-pane.h"
 
 G_BEGIN_DECLS
 
@@ -53,7 +54,9 @@ struct _GitResetPane
 
 GType git_reset_pane_get_type (void) G_GNUC_CONST;
 AnjutaDockPane *git_reset_pane_new (Git *plugin);
+AnjutaDockPane *git_reset_pane_new_with_sha (Git *plugin, const gchar *sha);
 void on_reset_button_clicked (GtkAction *action, Git *plugin);
+void on_git_log_reset_activated (GtkAction *action, Git *plugin);
 
 G_END_DECLS
 

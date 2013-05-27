@@ -80,6 +80,7 @@ struct _Git
 	/* Popup menu action groups */
 	gint uiid;
 	GtkActionGroup *status_menu_group;
+	GtkActionGroup *log_menu_group;
 
 	/* List commands for various panes. 
 	 * Keep them in the plugin so that the commands have the most direct

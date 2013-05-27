@@ -154,6 +154,29 @@ git_reset_pane_new (Git *plugin)
 	return g_object_new (GIT_TYPE_RESET_PANE, "plugin", plugin, NULL);
 }
 
+AnjutaDockPane *
+git_reset_pane_new_with_sha (Git *plugin, const gchar *sha)
+{
+	GitResetPane *self;
+	AnjutaEntry *reset_revision_entry;
+
+	self = g_object_new (GIT_TYPE_RESET_PANE, "plugin", plugin, NULL);
+	reset_revision_entry = ANJUTA_ENTRY (gtk_builder_get_object (self->priv->builder,
+	                                                             "reset_revision_entry"));
+
+	anjuta_entry_set_text (reset_revision_entry, sha);
+
+	return ANJUTA_DOCK_PANE (self);
+}
+
+static void
+add_pane (AnjutaDockPane *pane, Git *plugin)
+{
+	anjuta_dock_replace_command_pane (ANJUTA_DOCK (plugin->dock), "Reset", 
+	                                  _("Reset"), NULL, pane, GDL_DOCK_BOTTOM, 
+	                                  NULL, 0, NULL);
+}
+
 void
 on_reset_button_clicked (GtkAction *action, Git *plugin)
 {
@@ -161,7 +184,28 @@ on_reset_button_clicked (GtkAction *action, Git *plugin)
 
 	pane = git_reset_pane_new (plugin);
 
-	anjuta_dock_replace_command_pane (ANJUTA_DOCK (plugin->dock), "Reset", 
-	                                  _("Reset"), NULL, pane, GDL_DOCK_BOTTOM, NULL, 0,
-	                                  NULL);
+	add_pane (pane, plugin);
+
+	
+}
+
+void
+on_git_log_reset_activated (GtkAction *action, Git *plugin)
+{
+	GitRevision *revision;
+	gchar *sha;
+	AnjutaDockPane *pane;
+
+	revision = git_log_pane_get_selected_revision (GIT_LOG_PANE (plugin->log_pane));
+
+	if (revision)
+	{
+		sha = git_revision_get_sha (revision);
+		pane = git_reset_pane_new_with_sha (plugin, sha);
+
+		add_pane (pane, plugin);
+
+		g_free (sha);
+		g_object_unref (revision);
+	}
 }

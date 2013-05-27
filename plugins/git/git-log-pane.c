@@ -801,6 +801,35 @@ on_path_entry_icon_release (GtkEntry *entry,
 	}
 }
 
+static gboolean
+on_log_view_button_press_event (GtkWidget *log_view, GdkEventButton *event,
+                                GitLogPane *self)
+{
+	GtkMenu *menu;
+	GtkTreeSelection *selection;
+	AnjutaPlugin *plugin;
+	AnjutaUI *ui;
+
+	if (event->type == GDK_BUTTON_PRESS && event->button == 3)
+	{
+		selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (log_view));
+
+		if (gtk_tree_selection_count_selected_rows (selection) > 0)
+		{
+			plugin = anjuta_dock_pane_get_plugin (ANJUTA_DOCK_PANE (self));
+			ui = anjuta_shell_get_ui (plugin->shell, NULL);
+
+			menu = GTK_MENU (gtk_ui_manager_get_widget (GTK_UI_MANAGER (ui),
+			                                            "/GitLogPopup"));
+
+			gtk_menu_popup (menu, NULL, NULL, NULL, NULL, event->button, 
+			                event->time);
+		}
+	}
+
+	return FALSE;
+}
+
 static void
 git_log_pane_init (GitLogPane *self)
 {
@@ -964,6 +993,11 @@ git_log_pane_init (GitLogPane *self)
 
 	g_signal_connect (G_OBJECT (log_pane), "drag-drop",
 	                  G_CALLBACK (on_log_pane_drag_drop),
+	                  self);
+
+	/* Pop up menu */
+	g_signal_connect (G_OBJECT (log_view), "button-press-event",
+	                  G_CALLBACK (on_log_view_button_press_event),
 	                  self);
 
 	/* The loading view always has one row. Cache a copy of its iter for easy

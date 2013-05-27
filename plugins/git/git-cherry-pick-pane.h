@@ -25,6 +25,7 @@
 #include "git-pane.h"
 #include "plugin.h"
 #include "git-cherry-pick-command.h"
+#include "git-log-pane.h"
 
 G_BEGIN_DECLS
 
@@ -54,6 +55,7 @@ struct _GitCherryPickPane
 GType git_cherry_pick_pane_get_type (void) G_GNUC_CONST;
 AnjutaDockPane *git_cherry_pick_pane_new (Git *plugin);
 void on_cherry_pick_button_clicked (GtkAction *action, Git *plugin);
+void on_git_log_cherry_pick_activated (GtkAction *action, Git *plugin);
 
 G_END_DECLS
 

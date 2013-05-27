@@ -505,6 +505,42 @@ static GtkActionEntry status_menu_entries[] =
 	}
 };
 
+static GtkActionEntry log_menu_entries[] =
+{
+	{
+		"GitLogShowDiff",
+		NULL,
+		N_("Show commit diff"),
+		NULL,
+		NULL,
+		G_CALLBACK (on_commit_diff_button_clicked)
+	},
+	{
+		"GitLogCherryPick",
+		NULL,
+		N_("Cherry pick"),
+		NULL,
+		NULL,
+		G_CALLBACK (on_git_log_cherry_pick_activated)
+	},
+	{
+		"GitLogRevert",
+		NULL,
+		N_("Revert"),
+		NULL,
+		NULL,
+		G_CALLBACK (on_git_log_revert_activated)
+	},
+	{
+		"GitLogReset",
+		NULL,
+		N_("Reset..."),
+		NULL,
+		NULL,
+		G_CALLBACK (on_git_log_reset_activated)
+	}
+};
+
 static gpointer parent_class;
 
 static void
@@ -750,6 +786,12 @@ git_activate_plugin (AnjutaPlugin *plugin)
 	                                                                    status_menu_entries, 
 	                                                                    G_N_ELEMENTS (status_menu_entries), 
 	                                                                    GETTEXT_PACKAGE, FALSE, plugin);
+	git_plugin->log_menu_group = anjuta_ui_add_action_group_entries (ui, "GitLogPopup",
+	                                                                 _("Log popup menu"),
+	                                                                 log_menu_entries,
+	                                                                 G_N_ELEMENTS (log_menu_entries),
+	                                                                 GETTEXT_PACKAGE,
+	                                                                 FALSE, plugin);
 
 	
 	/* Create the branch list commands. There are two commands because some 
@@ -889,6 +931,7 @@ git_deactivate_plugin (AnjutaPlugin *plugin)
 
 	ui = anjuta_shell_get_ui (plugin->shell, NULL);
 	anjuta_ui_remove_action_group (ui, git_plugin->status_menu_group);
+	anjuta_ui_remove_action_group (ui, git_plugin->log_menu_group);
 	anjuta_ui_unmerge (ui, git_plugin->uiid);
 
 	g_object_unref (git_plugin->local_branch_list_command);
