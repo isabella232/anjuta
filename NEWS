@@ -1,3 +1,75 @@
+Anjuta 3.9.2 (May 27, 2013) -- James Liggett
+
+Arnel A. Borja (9):
+      libanjuta: bgo #699323 - Use GSettings to get user terminal
+      file-loader: bgo #699329 - Convert mime types to content types before comparing
+      libanjuta: bgo #699327 - Use G_GSIZE_FORMAT for gsize
+      libanjuta: bgo #699330 - Implement anjuta_util_get_real_path in Windows
+      libanjuta: bgo #699326 - Replace fork and execlp with g_spawn_async in anjuta-utils.c
+      libanjuta: bgo #699326 - Replace fork and execlp with g_spawn_async in resources.c
+      glade: bgo #698705 - Add application/x-gtk-builder to supported mime types
+      terminal: bgo #699316 - Add option to disable terminal plugin
+      file-loader: bgo #700615 - Remove markup from title of Open With dialog
+
+Carl-Anton Ingmarsson (21):
+      subversion: convert builder file to gtk+-3.0
+      starter: guard for NULL document manager or project manager
+      anjuta-column-text-view: don't derive from deprecated GtkVBox
+      anjuta-file-list: fix deprecation warnings
+      anjuta-preferences-dialog: don't use deprecated GtkVBox
+      anjuta-status: don't derive from deprecated GtkHBox
+      anjuta-tree-combo: remove usage of gtk_widget_[push|pop]_composite_child()
+      anjuta-ui: don't use deprecated gtk_widget_render_icon()
+      class-gen: don't derive from deprecated GtkHBox
+      run-program: let IAnjutaEnvironment override command lines
+      anjuta-entry: remove usage of deprecated GtkStyle
+      python: only pass python source files to anjuta-python-autocomplete
+      cvs-plugin: remove unused variables
+      am-project: don't use deprecated g_thread_create()
+      devhelp: remove unused variable
+      debug-manager: fix compile warnings
+      debug-manager: show the disassemble and memory widgets
+      debug-manager: don't use deprecated functions in DmaDataView
+      debug-manager: make DmaDataView's buffer a property
+      debug-manager: don't use deprecated functions in DmaSparseView
+      build-basic-autotools: guard against NULL project_uri when build is configured
+
+Daniel Mustieles (2):
+      Updated Spanish translation
+      Updated Spanish translation
+
+Fran Diéguez (1):
+      Updated Galician translations
+
+James Liggett (5):
+      Post release version bump
+      git: Widget name fixes
+      git: Add context menus to the Status pane
+      git: Fix signal names in diff code
+      git: More signal name fixes in diff code
+
+Kalev Lember (1):
+      dir-project: Fix compiler warning
+
+Kjartan Maraas (1):
+      Updated Norwegian bokmål translation
+
+Matej Urbančič (1):
+      Updated Slovenian translation
+
+Sébastien Granjoux (5):
+      bgo #696991 - Anjuta widgets do not load up properly in standalone glade
+      bgo #698158: anjuta-3.8.1 fails to build with vala-0.20
+      project-wizard: bgo #700318 - Can't build a project whose name starts by a digit
+      debug-manager: show registers pane
+      bgo #694644 - Position of Locals and Stack panes not saved
+
+Techlive Zheng (1):
+      anjuta-tags: fix scope information parsing in the Vala parser
+
+Varad Gautam (1):
+      document-manager: bgo#698036 - Close Other Tabs enhancement
+
 Anjuta 3.9.1 (April 30, 2013) -- James Liggett
 
 Arnel A. Borja (27):
