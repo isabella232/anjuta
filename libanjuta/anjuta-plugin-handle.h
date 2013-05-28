@@ -64,10 +64,13 @@ GHashTable* anjuta_plugin_handle_get_dependencies (AnjutaPluginHandle *plugin_ha
 GHashTable* anjuta_plugin_handle_get_dependents (AnjutaPluginHandle *plugin_handle);
 GList* anjuta_plugin_handle_get_interfaces (AnjutaPluginHandle *plugin_handle);
 gboolean anjuta_plugin_handle_get_can_load (AnjutaPluginHandle *plugin_handle);
+gboolean anjuta_plugin_handle_get_can_unload (AnjutaPluginHandle *plugin_handle);
 gboolean anjuta_plugin_handle_get_checked (AnjutaPluginHandle *plugin_handle);
 gint anjuta_plugin_handle_get_resolve_pass (AnjutaPluginHandle *plugin_handle);
 void anjuta_plugin_handle_set_can_load (AnjutaPluginHandle *plugin_handle,
 										gboolean can_load);
+void anjuta_plugin_handle_set_can_unload (AnjutaPluginHandle *plugin_handle,
+                                          gboolean can_unload);
 void anjuta_plugin_handle_set_checked (AnjutaPluginHandle *plugin_handle,
 									   gboolean checked);
 void anjuta_plugin_handle_set_resolve_pass (AnjutaPluginHandle *plugin_handle,

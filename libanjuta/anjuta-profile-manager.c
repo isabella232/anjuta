@@ -25,10 +25,11 @@
  * @stability: Unstable
  * @include: libanjuta/anjuta-profile-manager.h
  * 
- * Anjuta uses up to two profiles. A "no project" profile is used when no
- * project is loaded a project profile when one is loaded.
+ * Anjuta uses up to three profiles. A system profile which contains mandatory
+ * plugins which are never unloaded. A user profile is used when no project is
+ * loaded and a project profile when one is loaded.
  * If a second project is loaded, it is loaded in another instance of Anjuta.
- * When a project is closed, Anjuta goes back to the "no project" profile.
+ * When a project is closed, Anjuta goes back to the user profile.
  *
  * The profile manager can be in a frozen state where you can push or 
  * pop a profile from the stack without triggering a change of the profile.
@@ -240,15 +241,35 @@ anjuta_profile_manager_new (AnjutaPluginManager *plugin_manager)
 }
 
 static gboolean
-anjuta_profile_manager_load_profile (AnjutaProfileManager *profile_manager,
-									 AnjutaProfile *profile,
-									 AnjutaProfile *previous_profile,
-									 GError **error)
+anjuta_profile_manager_load_profiles (AnjutaProfileManager *profile_manager)
 {
-	if (previous_profile != NULL) anjuta_profile_unload (previous_profile);
-	anjuta_profile_load (profile);
+	AnjutaProfileManagerPriv *priv;
+	gboolean loaded = FALSE;
 
-	return TRUE;
+	priv = profile_manager->priv;
+
+	/* If there is no freeze load profile now */
+	while ((priv->freeze_count <= 0) && (priv->profiles_queue != NULL))
+	{
+		AnjutaProfile *previous_profile = NULL;
+		GList *node;
+
+		/* We need to load each profile one by one because a "system" profile
+		 * contains plugins which are never unloaded. */
+		if (priv->profiles)
+			previous_profile = priv->profiles->data;
+		node = g_list_last (priv->profiles_queue);
+		priv->profiles_queue = g_list_remove_link (priv->profiles_queue, node);
+		priv->profiles = g_list_concat (node, priv->profiles);
+
+		/* Load profile. Note that loading a profile can trigger the load of
+		 * additional profile. Typically loading the default profile will
+		 * trigger the load of the last project profile. */
+		if (previous_profile != NULL) anjuta_profile_unload (previous_profile);
+		loaded = anjuta_profile_load (ANJUTA_PROFILE (node->data));
+	}
+
+	return loaded;
 }
 
 static gboolean
@@ -259,29 +280,11 @@ anjuta_profile_manager_queue_profile (AnjutaProfileManager *profile_manager,
 	AnjutaProfileManagerPriv *priv;
 	
 	priv = profile_manager->priv;
-	priv->profiles_queue = g_list_prepend (priv->profiles_queue,
-											profile);
+
+	priv->profiles_queue = g_list_prepend (priv->profiles_queue, profile);
+
 	/* If there is no freeze load profile now */
-	if (priv->freeze_count <= 0)
-	{
-		AnjutaProfile *previous_profile = NULL;
-		
-		if (priv->profiles)
-			previous_profile = priv->profiles->data;
-		
-		/* Push queued profiles in stack */
-		priv->profiles = g_list_concat (priv->profiles_queue, priv->profiles);
-		priv->profiles_queue = NULL;
-		
-		return anjuta_profile_manager_load_profile (profile_manager,
-										ANJUTA_PROFILE (priv->profiles->data),
-													previous_profile,
-													error);
-	}
-	else
-	{
-		return FALSE;
-	}
+	return anjuta_profile_manager_load_profiles (profile_manager);
 }
 
 /**
@@ -356,20 +359,13 @@ anjuta_profile_manager_pop (AnjutaProfileManager *profile_manager,
 							   profile);
 		
 		/* Restore the next profile in the stack */
+		anjuta_profile_unload (profile);
+		g_object_unref (profile);
 		if (priv->profiles)
 		{
-			return anjuta_profile_manager_load_profile (profile_manager,
-									ANJUTA_PROFILE (priv->profiles->data),
-														profile,
-														error);
+			return anjuta_profile_load (ANJUTA_PROFILE (priv->profiles->data));
 		}
-		else
-		{
-			return anjuta_profile_manager_load_profile (profile_manager,
-														NULL, profile,
-														error);
-		}
-		g_object_unref (profile);
+		return TRUE;
 	}
 
 	return FALSE;
@@ -416,28 +412,8 @@ anjuta_profile_manager_thaw (AnjutaProfileManager *profile_manager,
 
 	if (priv->freeze_count > 0)
 		priv->freeze_count--;
-	
-	if (priv->freeze_count <= 0 && priv->profiles_queue)
-	{
-		AnjutaProfile *previous_profile = NULL;
-		
-		if (priv->profiles)
-			previous_profile = priv->profiles->data;
-		
-		/* Push queued profiles in stack */
-		priv->profiles = g_list_concat (priv->profiles_queue, priv->profiles);
-		priv->profiles_queue = NULL;
-		
-		/* Load the profile */
-		return anjuta_profile_manager_load_profile (profile_manager,
-										ANJUTA_PROFILE (priv->profiles->data),
-													previous_profile,
-													error);
-	}
-	else
-	{
-		return FALSE;
-	}
+
+	return anjuta_profile_manager_load_profiles (profile_manager);
 }
 
 /**

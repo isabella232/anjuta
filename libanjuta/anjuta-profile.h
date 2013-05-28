@@ -45,6 +45,14 @@ G_BEGIN_DECLS
 #define ANJUTA_PROFILE_ERROR            (anjuta_profile_error_quark())
 
 /**
+ * ANJUTA_SYSTEM_PROFILE_ERROR:
+ *
+ * Special name for a system profile. The content of such profile is never
+ * unloaded.
+ */
+#define ANJUTA_SYSTEM_PROFILE_NAME       "system"
+
+/**
  * AnjutaProfileError:
  * @ANJUTA_PROFILE_ERROR_URI_READ_FAILED: Fail to read xml plugins list file.
  * @ANJUTA_PROFILE_ERROR_URI_WRITE_FAILED: Fail to write xml plugins list file.

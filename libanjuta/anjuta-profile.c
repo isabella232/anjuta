@@ -1039,7 +1039,8 @@ anjuta_profile_load (AnjutaProfile *profile)
 	while (node)
 	{
 		AnjutaPluginHandle *handle = (AnjutaPluginHandle *)node->data;
-		if (!g_hash_table_lookup (plugins_to_activate_hash, handle))
+		if (!g_hash_table_lookup (plugins_to_activate_hash, handle) &&
+		    anjuta_plugin_handle_get_can_unload (handle))
 		{
 			plugins_to_deactivate = g_list_prepend (plugins_to_deactivate,
 													handle);
@@ -1083,6 +1084,15 @@ anjuta_profile_load (AnjutaProfile *profile)
 												plugins_to_activate);
 	}
 
+	/* For system profile, marks its plugin to keep them activated */
+	if (strcmp (priv->name, ANJUTA_SYSTEM_PROFILE_NAME) == 0)
+	{
+		for (node = g_list_first (plugins_to_activate); node != NULL; node = g_list_next (node))
+		{
+			AnjutaPluginHandle *handle = (AnjutaPluginHandle *)node->data;
+			anjuta_plugin_handle_set_can_unload (handle, FALSE);
+		}
+	}
 	g_list_free (plugins_to_activate);
 	g_list_free (active_plugins);
 

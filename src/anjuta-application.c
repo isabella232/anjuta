@@ -588,8 +588,8 @@ anjuta_application_create_window (AnjutaApplication *app)
 													  remembered_plugins);
 	g_free (remembered_plugins);
 
-	/* Prepare profile */
-	profile = anjuta_profile_new (USER_PROFILE_NAME, plugin_manager);
+	/* Prepare system profile */
+	profile = anjuta_profile_new (ANJUTA_SYSTEM_PROFILE_NAME, plugin_manager);
 	session_profile = g_file_new_for_uri (DEFAULT_PROFILE);
 	anjuta_profile_add_plugins_from_xml (profile, session_profile,
 										 TRUE, &error);
@@ -600,8 +600,17 @@ anjuta_application_create_window (AnjutaApplication *app)
 		error = NULL;
 	}
 	g_object_unref (session_profile);
+	anjuta_profile_manager_freeze (profile_manager);
+	anjuta_profile_manager_push (profile_manager, profile, &error);
+	if (error)
+	{
+		anjuta_util_dialog_error (GTK_WINDOW (win), "%s", error->message);
+		g_error_free (error);
+		error = NULL;
+	}
 
-	/* Load user session profile */
+	/* Prepare user profile */
+	profile = anjuta_profile_new (USER_PROFILE_NAME, plugin_manager);
 	profile_name = g_path_get_basename (DEFAULT_PROFILE);
 	session_profile = anjuta_util_get_user_cache_file (profile_name, NULL);
 	if (g_file_query_exists (session_profile, NULL))
@@ -620,7 +629,6 @@ anjuta_application_create_window (AnjutaApplication *app)
 	g_free (profile_name);
 
 	/* Load profile */
-	anjuta_profile_manager_freeze (profile_manager);
 	anjuta_profile_manager_push (profile_manager, profile, &error);
 	if (error)
 	{

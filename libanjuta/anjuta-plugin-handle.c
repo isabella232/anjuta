@@ -53,6 +53,7 @@ enum
 	PROP_DEPENDENTS,
 	PROP_INTERFACES,
 	PROP_CAN_LOAD,
+	PROP_CAN_UNLOAD,
 	PROP_CHECKED,
 	PROP_RESOLVE_PASS,
 	PROP_PATH
@@ -86,6 +87,7 @@ struct _AnjutaPluginHandlePriv
 	GHashTable *dependents;
 	
 	gboolean can_load;
+	gboolean can_unload;
 	gboolean checked;
 
 	/* The pass on which the module was resolved, or -1 if
@@ -101,6 +103,7 @@ anjuta_plugin_handle_init (AnjutaPluginHandle *object)
 	object->priv = g_new0 (AnjutaPluginHandlePriv, 1);
 
 	object->priv->resolve_pass = -1;
+	object->priv->can_unload = TRUE;
 
 	object->priv->dependencies = g_hash_table_new (g_direct_hash, 
 												   g_direct_equal);
@@ -195,6 +198,9 @@ anjuta_plugin_handle_set_property (GObject *object, guint prop_id,
 	case PROP_CAN_LOAD:
 		/* TODO: Add setter for "can-load" property here */
 		break;
+	case PROP_CAN_UNLOAD:
+		/* TODO: Add setter for "can-unload" property here */
+		break;
 	case PROP_CHECKED:
 		/* TODO: Add setter for "checked" property here */
 		break;
@@ -259,6 +265,9 @@ anjuta_plugin_handle_get_property (GObject *object, guint prop_id,
 		break;
 	case PROP_CAN_LOAD:
 		g_value_set_boolean (value, priv->can_load);
+		break;
+	case PROP_CAN_UNLOAD:
+		g_value_set_boolean (value, priv->can_unload);
 		break;
 	case PROP_CHECKED:
 		g_value_set_boolean (value, priv->checked);
@@ -387,6 +396,14 @@ anjuta_plugin_handle_class_init (AnjutaPluginHandleClass *klass)
 	                                                       "Can Load",
 	                                                       "If the plugin can be loaded",
 	                                                       FALSE,
+	                                                       G_PARAM_READABLE));
+
+	g_object_class_install_property (object_class,
+	                                 PROP_CAN_UNLOAD,
+	                                 g_param_spec_boolean ("can-unload",
+	                                                       "Can UnLoad",
+	                                                       "If the plugin can be unloaded",
+	                                                       TRUE,
 	                                                       G_PARAM_READABLE));
 
 	g_object_class_install_property (object_class,
@@ -674,6 +691,13 @@ anjuta_plugin_handle_get_can_load (AnjutaPluginHandle *plugin_handle)
 }
 
 gboolean
+anjuta_plugin_handle_get_can_unload (AnjutaPluginHandle *plugin_handle)
+{
+	g_return_val_if_fail (ANJUTA_IS_PLUGIN_HANDLE (plugin_handle), FALSE);
+	return plugin_handle->priv->can_unload;
+}
+
+gboolean
 anjuta_plugin_handle_get_checked (AnjutaPluginHandle *plugin_handle)
 {
 	g_return_val_if_fail (ANJUTA_IS_PLUGIN_HANDLE (plugin_handle), FALSE);
@@ -693,6 +717,14 @@ anjuta_plugin_handle_set_can_load (AnjutaPluginHandle *plugin_handle,
 {
 	g_return_if_fail (ANJUTA_IS_PLUGIN_HANDLE (plugin_handle));
 	plugin_handle->priv->can_load = can_load;
+}
+
+void
+anjuta_plugin_handle_set_can_unload (AnjutaPluginHandle *plugin_handle,
+								   gboolean can_unload)
+{
+	g_return_if_fail (ANJUTA_IS_PLUGIN_HANDLE (plugin_handle));
+	plugin_handle->priv->can_unload = can_unload;
 }
 
 void
