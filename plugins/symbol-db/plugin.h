@@ -129,7 +129,8 @@ struct _SymbolDBPlugin {
 	
 	/* current editor */
 	GObject *current_editor;
-	GHashTable *editor_connected;	
+	GHashTable *editor_connected;
+	GHashTable *editors;
 	
 	/* In session loading? */
 	gboolean session_loading;

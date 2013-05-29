@@ -432,7 +432,11 @@ editor_buffer_symbols_update (IAnjutaEditor *editor, SymbolDBPlugin *sdb_plugin)
 
 		/* add a task so that scan_end_manager can manage this */
 		g_tree_insert (sdb_plugin->proc_id_tree, GINT_TO_POINTER (proc_id),
-					   GINT_TO_POINTER (TASK_BUFFER_UPDATE));		
+					   GINT_TO_POINTER (TASK_BUFFER_UPDATE));
+
+		if(sdb_plugin->editors){
+			g_hash_table_insert(sdb_plugin->editors, GINT_TO_POINTER (proc_id), editor);
+		}
 	}
 
 	g_ptr_array_unref (real_files_list);
@@ -456,7 +460,6 @@ on_editor_buffer_symbols_update_timeout (gpointer user_data)
 	g_return_val_if_fail (user_data != NULL, FALSE);
 	
 	sdb_plugin = ANJUTA_PLUGIN_SYMBOL_DB (user_data);
-		
 	if (sdb_plugin->current_editor == NULL)
 		return FALSE;
 	
@@ -483,7 +486,7 @@ on_editor_buffer_symbol_update_scan_end (SymbolDBEngine *dbe, gint process_id,
 	gint i;
 	
 	sdb_plugin = ANJUTA_PLUGIN_SYMBOL_DB (data);	
-	
+
 	/* search for the proc id */
 	for (i = 0; i < sdb_plugin->buffer_update_ids->len; i++)
 	{
@@ -501,6 +504,12 @@ on_editor_buffer_symbol_update_scan_end (SymbolDBEngine *dbe, gint process_id,
 		}
 	}
 
+	IAnjutaEditor *editor = g_hash_table_lookup(sdb_plugin->editors, GINT_TO_POINTER (process_id));
+	g_hash_table_remove(sdb_plugin->editors, GINT_TO_POINTER (process_id));
+
+	if (!editor)
+		return;
+
 	/* was the updating of view-locals symbols blocked while we were scanning?
 	 * e.g. was the editor switched? */
 	if (sdb_plugin->buffer_update_semaphore == TRUE)
@@ -508,10 +517,10 @@ on_editor_buffer_symbol_update_scan_end (SymbolDBEngine *dbe, gint process_id,
 		GFile *file;
 		gchar *local_path;
 		gboolean tags_update;
-		if (!IANJUTA_IS_EDITOR (sdb_plugin->current_editor))
+		if (!IANJUTA_IS_EDITOR (editor))
 			return;
 	
-		file = ianjuta_file_get_file (IANJUTA_FILE (sdb_plugin->current_editor), 
+		file = ianjuta_file_get_file (IANJUTA_FILE (editor), 
 		    NULL);
 	
 		if (file == NULL)
@@ -570,8 +579,11 @@ static void
 on_code_added (IAnjutaEditor *editor, IAnjutaIterable *position, gchar *code,
 			   SymbolDBPlugin *sdb_plugin)
 {
+	IAnjutaEditor *old_editor = sdb_plugin->current_editor;
+	sdb_plugin->current_editor = editor;
 	sdb_plugin->need_symbols_update = TRUE;
 	editor_buffer_symbols_update (editor, sdb_plugin);
+	sdb_plugin->current_editor = old_editor;
 }
 
 static void
@@ -677,6 +689,11 @@ value_added_current_editor (AnjutaPlugin *plugin, const char *name,
 															 NULL, g_free);
 	}
 	sdb_plugin->current_editor = editor;
+
+	if (!sdb_plugin->editors)
+	{
+		sdb_plugin->editors = g_hash_table_new (NULL, NULL);
+	}
 	
 	if (!IANJUTA_IS_EDITOR (editor))
 		return;
@@ -776,6 +793,12 @@ on_editor_foreach_disconnect (gpointer key, gpointer value, gpointer user_data)
 						 user_data);
 }
 
+static gboolean
+same_editor (gpointer key, gpointer value, gpointer user_data)
+{
+	return value == user_data;
+}
+
 static void
 value_removed_current_editor (AnjutaPlugin *plugin,
 							  const char *name, gpointer data)
@@ -792,6 +815,12 @@ value_removed_current_editor (AnjutaPlugin *plugin,
 	sdb_plugin->need_symbols_update = FALSE;
 	
 	sdb_plugin = ANJUTA_PLUGIN_SYMBOL_DB (plugin);
+
+	
+	/* Remove editor from list of editors */
+	if(sdb_plugin->editors)
+		g_hash_table_foreach_remove (sdb_plugin->editors, same_editor, sdb_plugin->current_editor);
+
 	sdb_plugin->current_editor = NULL;
 }
 
@@ -2391,6 +2420,8 @@ symbol_db_deactivate (AnjutaPlugin *plugin)
 							  on_editor_foreach_disconnect, plugin);
 		g_hash_table_destroy (sdb_plugin->editor_connected);
 		sdb_plugin->editor_connected = NULL;
+		g_hash_table_destroy (sdb_plugin->editors);
+		sdb_plugin->editors = NULL;
 	}
 	
 	// FIXME
