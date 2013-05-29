@@ -656,6 +656,10 @@ activate_plugin (AnjutaPlugin *plugin)
 
 	priv->paned = gtk_paned_new (GTK_ORIENTATION_VERTICAL);
 
+
+	g_signal_connect(priv->app, "signal-editor-created",
+	                 G_CALLBACK(on_signal_editor_created), plugin);
+
 	priv->editor = GTK_WIDGET(glade_editor_new());
 
 	priv->palette = glade_palette_new();
@@ -711,9 +715,6 @@ activate_plugin (AnjutaPlugin *plugin)
 
 	g_signal_connect(priv->app, "doc-search",
 	                 G_CALLBACK(on_api_help), plugin);
-
-	g_signal_connect(priv->app, "signal-editor-created",
-	                 G_CALLBACK(on_signal_editor_created), plugin);
 
 	gtk_widget_show (priv->palette);
 	gtk_widget_show (priv->editor);
