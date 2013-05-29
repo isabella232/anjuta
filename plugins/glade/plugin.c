@@ -25,6 +25,7 @@
 #include <libanjuta/interfaces/ianjuta-wizard.h>
 #include <libanjuta/interfaces/ianjuta-help.h>
 #include <libanjuta/interfaces/ianjuta-document-manager.h>
+#include <libanjuta/interfaces/ianjuta-glade.h>
 
 #include "plugin.h"
 #include "anjuta-design-document.h"
@@ -64,6 +65,9 @@ struct _GladePluginPriv
 
 	/* for status */
 	gboolean add_ticks;
+
+	/* Association between ui and source files */
+	GHashTable *associations;
 };
 
 enum {
@@ -113,6 +117,81 @@ value_removed_current_editor (AnjutaPlugin *plugin,
 }
 
 static void
+glade_plugin_remove_associations (GladePlugin *plugin, gchar *master, GError **err)
+{
+	g_hash_table_remove (plugin->priv->associations, master);
+}
+
+static void
+_get_associated_with (gpointer key,
+                           gpointer value,
+                           gpointer user_data)
+{
+	struct struct_item {GList *list; gchar *search;} *item = user_data;
+
+	if (g_str_equal (value, item->search))
+		item->list = g_list_prepend (item->list, key);
+}
+
+static GList*
+glade_plugin_get_associated_with (GladePlugin *plugin, gchar *slave, GError **err)
+{
+	struct struct_item {GList *list; gchar *search;} item;
+	item.list = NULL;
+	item.search = slave;
+	g_hash_table_foreach (plugin->priv->associations, _get_associated_with, &item);
+	return item.list;
+}
+
+static void
+glade_plugin_remove_associated_with (GladePlugin *plugin, gchar *slave, GError **err)
+{
+	GList *associated = glade_plugin_get_associated_with (plugin, slave, err);
+
+	if (!associated)
+		return;
+
+	for (;associated; associated = associated->next)
+	{
+		glade_plugin_remove_associations (plugin, associated->data, err);
+	}
+
+	g_list_free (associated);
+}
+
+static void
+glade_plugin_add_association (GladePlugin *plugin, gchar *master, gchar *slave)
+{
+	g_hash_table_replace (plugin->priv->associations, master, slave);
+}
+
+static gchar*
+glade_plugin_get_association (GladePlugin *plugin, gchar *master)
+{
+	return g_hash_table_lookup (plugin->priv->associations, master);
+}
+
+static IAnjutaEditor*
+get_doc_with_associated_file (GladePlugin *plugin, IAnjutaDocument *doc)
+{
+	gchar *filename = ianjuta_document_get_filename (doc, NULL);
+	gchar *associated = glade_plugin_get_association (plugin, filename);
+
+	if (!associated)
+		return NULL;
+
+	IAnjutaDocumentManager *docman;
+
+    docman = anjuta_shell_get_interface (ANJUTA_PLUGIN (plugin)->shell,
+                                         IAnjutaDocumentManager, NULL);
+	GFile *target_file = ianjuta_document_manager_get_file (docman, associated, NULL);
+	IAnjutaDocument *doc_with_file =
+	ianjuta_document_manager_find_document_with_file (docman, target_file, NULL);
+	ianjuta_document_manager_set_current_document (docman, doc_with_file, NULL);
+	return IANJUTA_EDITOR (doc_with_file);
+}
+
+static void
 signal_editor_signal_activated_cb (GladeSignalEditor* seditor, 
                                    GladeSignal *signal,
                                    GladePlugin *plugin)
@@ -134,22 +213,21 @@ signal_editor_signal_activated_cb (GladeSignalEditor* seditor,
 	if(!doc)
 		return;
 
-    if (!IANJUTA_IS_EDITOR (doc))
-        return;
+	current_editor = IANJUTA_IS_EDITOR (doc) ? IANJUTA_EDITOR (doc)
+											 : get_doc_with_associated_file (plugin, doc);
 
-	current_editor = IANJUTA_EDITOR (doc);
+	if(!current_editor)
+	    return;
 
-    if(!current_editor)
-        return;
+	g_signal_emit_by_name (G_OBJECT (current_editor), "glade-callback-add",
+	                                                  G_OBJECT_TYPE_NAME (glade_widget_get_object (gwidget)),
+	                                                  glade_signal_get_name (signal),
+	                                                  glade_signal_get_handler (signal),
+	                                                  glade_signal_get_userdata (signal),
+	                                                  glade_signal_get_swapped (signal)?"1":"0",
+	                                                  glade_signal_get_after (signal)?"1":"0",
+	                                                  path);
 
-    g_signal_emit_by_name (G_OBJECT (current_editor), "glade-callback-add",
-                                                      G_OBJECT_TYPE_NAME (glade_widget_get_object (gwidget)),
-                                                      glade_signal_get_name (signal),
-                                                      glade_signal_get_handler (signal),
-                                                      glade_signal_get_userdata (signal),
-                                                      glade_signal_get_swapped (signal)?"1":"0",
-                                                      glade_signal_get_after (signal)?"1":"0",
-                                                      path);
 }
 
 static void
@@ -408,10 +486,8 @@ add_glade_member (GladeWidget		 *widget,
 	if(!doc)
 		return;
 
-	if (!IANJUTA_IS_EDITOR (doc))
-		return;
-
-	current_editor = IANJUTA_EDITOR (doc);
+	current_editor = IANJUTA_IS_EDITOR (doc) ? IANJUTA_EDITOR (doc)
+											 : get_doc_with_associated_file (plugin, doc);
 
 	if (!current_editor)
 		return;
@@ -616,6 +692,21 @@ static GtkActionEntry actions_glade[] =
 	}
 };
 
+static void
+on_document_removed(IAnjutaDocumentManager* docman, IAnjutaDocument* doc, AnjutaPlugin *plugin)
+{
+	GladePlugin *glade_plugin;
+	glade_plugin = ANJUTA_PLUGIN_GLADE (plugin);
+
+	gchar *filename = ianjuta_document_get_filename(doc, NULL);
+
+	if (filename)
+	{
+		glade_plugin_remove_associations (ANJUTA_PLUGIN_GLADE (plugin), filename, NULL);
+		glade_plugin_remove_associated_with (ANJUTA_PLUGIN_GLADE (plugin), filename, NULL);
+	}
+}
+
 static gboolean
 activate_plugin (AnjutaPlugin *plugin)
 {
@@ -744,6 +835,13 @@ activate_plugin (AnjutaPlugin *plugin)
 	g_signal_connect (G_OBJECT (plugin->shell), "save_session",
 	                  G_CALLBACK (on_session_save), plugin);
 
+	/* Connecto to handle document close */
+	IAnjutaDocumentManager* docman = anjuta_shell_get_interface(ANJUTA_PLUGIN(plugin)->shell,
+																IAnjutaDocumentManager,
+							                                    NULL);
+	g_signal_connect (G_OBJECT (docman), "document_removed",
+	                  G_CALLBACK (on_document_removed), plugin);
+
 	/* Watch documents */
 	glade_plugin->priv->editor_watch_id =
 		anjuta_plugin_add_watch (plugin, IANJUTA_DOCUMENT_MANAGER_CURRENT_DOCUMENT,
@@ -829,6 +927,8 @@ glade_plugin_instance_init (GObject *obj)
 	priv->destroying = FALSE;
 	priv->file_count = 0;
 	priv->add_ticks = FALSE;
+
+	priv->associations = g_hash_table_new_full (g_str_hash, g_str_equal, NULL, g_free);
 
 	DEBUG_PRINT ("%s", "Intializing Glade plugin");
 }
@@ -968,9 +1068,22 @@ iwizard_iface_init(IAnjutaWizardIface *iface)
 	iface->activate = iwizard_activate;
 }
 
+static void
+iglade_add_association (IAnjutaGlade *obj, gchar *master, gchar *slave, GError **err)
+{
+	glade_plugin_add_association (ANJUTA_PLUGIN_GLADE(obj), master, slave);
+}
+
+static void
+iglade_iface_init(IAnjutaGladeIface *iface)
+{
+	iface->add_association = iglade_add_association;
+}
+
 ANJUTA_PLUGIN_BEGIN (GladePlugin, glade_plugin);
 ANJUTA_PLUGIN_ADD_INTERFACE (ifile, IANJUTA_TYPE_FILE);
 ANJUTA_PLUGIN_ADD_INTERFACE (iwizard, IANJUTA_TYPE_WIZARD);
+ANJUTA_PLUGIN_ADD_INTERFACE (iglade, IANJUTA_TYPE_GLADE);
 ANJUTA_PLUGIN_END;
 
 ANJUTA_SIMPLE_PLUGIN (GladePlugin, glade_plugin);

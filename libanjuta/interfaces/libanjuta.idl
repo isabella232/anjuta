@@ -1249,6 +1249,22 @@ interface IAnjutaDocument
 		void clear ();
 }
 
+
+interface IAnjutaGlade
+{
+	/**
+	 * ianjuta_add_association:
+	 * @obj: Self
+	 * @master: ui file name.
+	 * @slave: source code file name.
+	 * @err: Error propagation and reporting.
+	 *
+	 * Adds an association of master ui file and slave source code file
+	 *
+	 */
+	void add_association (gchar *master, gchar *slave);
+}
+
 /**
  * SECTION:ianjuta-editor
  * @title: IAnjutaEditor
@@ -1945,7 +1961,6 @@ interface IAnjutaEditor
 
 		 gboolean backward (const gchar* search, gboolean case_sensitive, IAnjutaEditorCell* start, IAnjutaEditorCell* end, IAnjutaEditorCell** result_start, IAnjutaEditorCell** result_end);
 	}
-
 
 	/**
 	 * SECTION:ianjuta-editor-convert

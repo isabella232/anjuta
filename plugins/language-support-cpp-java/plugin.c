@@ -40,6 +40,7 @@
 #include <libanjuta/interfaces/ianjuta-symbol.h>
 #include <libanjuta/interfaces/ianjuta-symbol-manager.h>
 #include <libanjuta/interfaces/ianjuta-language.h>
+#include <libanjuta/interfaces/ianjuta-glade.h>
 
 #include "plugin.h"
 #include "cpp-packages.h"
@@ -70,6 +71,10 @@
 #define CHDR_SEPARATOR " "
 #define CHDR_BODY ";\n"
 #define CHDR_OFFSET 1
+
+/* Widgets marker */
+#define WIDGETS_DECLARATION_MARKER_PREFIX "/* ANJUTA: Widgets declaration for "
+#define WIDGETS_DECLARATION_MARKER_SUFFIX " - DO NOT REMOVE */"
 
 static gpointer parent_class;
 
@@ -473,8 +478,10 @@ language_support_add_c_callback (CppJavaPlugin* lang_plugin,
 
     g_string_append (str, body);
 
+ianjuta_document_begin_undo_action (IANJUTA_DOCUMENT(editor), NULL);
     ianjuta_editor_insert (editor, position,
                            str->str, -1, NULL);
+	ianjuta_document_end_undo_action (IANJUTA_DOCUMENT(editor), NULL);
 
     /* Code was inserted, we'll now check if we should add a prototype to the header */
     if (filetype == LS_FILE_C)
@@ -585,7 +592,8 @@ static gboolean insert_after_mark (IAnjutaEditor* editor, gchar* mark,
 static gchar*
 generate_widget_member_decl_marker (gchar* ui_filename)
 {
-    return g_strdup_printf ("/* ANJUTA: Widgets declaration for %s - DO NOT REMOVE */", ui_filename);
+    return g_strdup_printf (WIDGETS_DECLARATION_MARKER_PREFIX "%s" WIDGETS_DECLARATION_MARKER_SUFFIX,
+						ui_filename);
 }
 
 static gchar*
@@ -599,7 +607,7 @@ glade_widget_member_of_scope (gchar *widget_name, IAnjutaIterable *members)
 {
        do {
               IAnjutaSymbol *symbol = IANJUTA_SYMBOL (members);
-              const gchar *member_name = ianjuta_symbol_get_string (symbol, IANJUTA_SYMBOL_FIELD_NAME, NULL);
+              gchar *member_name = ianjuta_symbol_get_string (symbol, IANJUTA_SYMBOL_FIELD_NAME, NULL);
               /* Checks if member already exists... */
               if (g_strcmp0 (member_name, widget_name) == 0) {
                      return TRUE;
@@ -682,10 +690,15 @@ static void insert_member_decl_and_init (IAnjutaEditor* editor, gchar* widget_na
        status = anjuta_shell_get_status (ANJUTA_PLUGIN (lang_plugin)->shell, NULL);
 
        if (!glade_widget_already_in_scope (editor, widget_name, member_decl_marker, lang_plugin))
-       if (insert_after_mark (editor, member_decl_marker, member_decl, lang_plugin))
        {
-              insert_after_mark (editor, member_init_marker, member_init, lang_plugin);
-              anjuta_status_set (status, _("Code added for widget."));
+
+              ianjuta_document_begin_undo_action (IANJUTA_DOCUMENT(editor), NULL);
+              if (insert_after_mark (editor, member_decl_marker, member_decl, lang_plugin))
+              {
+                     insert_after_mark (editor, member_init_marker, member_init, lang_plugin);
+                     anjuta_status_set (status, _("Code added for widget."));
+              }
+              ianjuta_document_end_undo_action (IANJUTA_DOCUMENT(editor), NULL);
        }
 
        g_free (member_decl);
@@ -743,10 +756,67 @@ on_glade_callback_add (IAnjutaEditor* editor,
     g_free(mark);
 }
 
+static gchar*
+get_text_between (IAnjutaEditor *editor, gchar *prefix, gchar *suffix)
+{
+	IAnjutaEditorCell *search_start = IANJUTA_EDITOR_CELL (
+										ianjuta_editor_get_start_position (editor, NULL));
+	IAnjutaEditorCell *search_end = IANJUTA_EDITOR_CELL (
+										ianjuta_editor_get_end_position (editor, NULL));
+
+	IAnjutaEditorCell *result_start;
+	IAnjutaEditorCell *result_end = NULL;
+
+	IAnjutaEditorCell *prefix_end;
+	IAnjutaEditorCell *suffix_start;
+
+	ianjuta_editor_search_forward (IANJUTA_EDITOR_SEARCH (editor),
+								   prefix, FALSE,
+								   search_start, search_end,
+								   &result_start,
+								   &result_end, NULL);
+
+	if (!result_end)
+		return NULL;
+
+	prefix_end = result_end;
+
+	ianjuta_editor_search_forward (IANJUTA_EDITOR_SEARCH (editor),
+								   suffix, FALSE,
+								   result_end, search_end,
+								   &result_start,
+								   &result_end, NULL);
+
+	suffix_start = result_start;
+
+	if (!result_end)
+		return NULL;
+
+	return ianjuta_editor_get_text (editor, prefix_end, suffix_start, NULL);
+}
+
 /* Enable/Disable language-support */
 static void
 install_support (CppJavaPlugin *lang_plugin)
 {
+	/* Searching for association */
+	gchar *ui_filename = get_text_between (lang_plugin->current_editor,
+										   WIDGETS_DECLARATION_MARKER_PREFIX,
+										   WIDGETS_DECLARATION_MARKER_SUFFIX);
+
+	if (ui_filename)
+	{
+		GFile *file = ianjuta_file_get_file (IANJUTA_FILE (lang_plugin->current_editor), NULL);
+		gchar *filename = g_file_get_basename (file);
+
+		IAnjutaGlade *glade = anjuta_shell_get_interface (
+										  ANJUTA_PLUGIN (lang_plugin)->shell,
+										  IAnjutaGlade,
+										  NULL);
+
+		ianjuta_glade_add_association (glade, ui_filename, filename, NULL);
+	}
+
     IAnjutaLanguage* lang_manager =
         anjuta_shell_get_interface (ANJUTA_PLUGIN (lang_plugin)->shell,
                                     IAnjutaLanguage, NULL);
