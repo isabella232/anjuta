@@ -1,5 +1,5 @@
 # German translation of the Anjuta manual.
-#
+# 
 # line number margin = Rand für Zeilennummern
 # marker margin    =  Markierungsrand
 # code fold margin = Textfaltungsrand
@@ -16,27 +16,25 @@
 # build		= erstellen
 # compile	= kompilieren
 # tag		= Tag
-#
-#
+# 
+# 
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2009-2013.
 # Jonas Rebmann <jonas.rebmann@googlemail.com>, 2010.
 # Christian Kirbach <christian.kirbach@gmail.com>, 2010-2012, 2013.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta doc\n"
-"POT-Creation-Date: 2013-03-07 16:16+0000\n"
-"PO-Revision-Date: 2013-04-05 14:22+0200\n"
+"POT-Creation-Date: 2013-05-24 22:02+0000\n"
+"PO-Revision-Date: 2013-05-24 12:50+0100\n"
 "Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
-"Language: \n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -184,6 +182,10 @@ msgid ""
 "tooltip whenever you type '(' after a function name and show you the "
 "signature."
 msgstr ""
+"Es ist normalerweise schwierig, die Signatur jeder Methode oder Funktion "
+"eines Projekts auswendig zu wissen. Der Editor zeigt automaitsch ein kleine "
+"Mini-Hilfe mit der Signatur an, wenn Sie »(« nach einem Funktionsnamen "
+"eingeben."
 
 #: C/anjuta-code-help.page:9(info/desc)
 msgid "Quickly find the information you need in the API documentation"
@@ -386,6 +388,8 @@ msgid ""
 "In the <gui>Goto</gui> popup-menu of the editor there two items that help "
 "you to quickly navigate through the source code:"
 msgstr ""
+"Im Einblend-Menü <gui>Gehe zu</gui> des Editors gibt es zwei Menüpunkte, die "
+"Ihnen dabei helfen, schnell den Quellcode zu durchsuchen:"
 
 #: C/anjuta-code-symbols.page:43(item/p)
 msgid "<gui>Symbol definition</gui>"
@@ -396,11 +400,16 @@ msgid "<gui>Symbol declaration</gui>"
 msgstr "<gui>Symboldeklaration</gui>"
 
 #: C/anjuta-code-symbols.page:47(section/p)
+#, fuzzy
 msgid ""
 "If you want to go back to the position in the editor where you used the "
 "shown items in the <gui>Goto</gui> menu you can use the <gui>Previous "
 "history</gui> (and <gui>Next history</gui>) items in the same menu."
 msgstr ""
+"Wen Sie zu der Position im Editor zurückspringen wollen, an der Sie die "
+"gezeigten Einträge im Menü <gui>Gehe zu</gui> verwendet haben, nutzen Sie "
+"die Einträge <gui>Previous history</gui> (und <gui>Next history</gui>) im "
+"gleichen Menü."
 
 #: C/anjuta-glade-signals.page:15(page/title)
 msgid "Autoconnecting signals"
@@ -475,6 +484,13 @@ msgid ""
 "generated so that these widgets can be accessed at runtime. With the glade "
 "plug-in, <app>Anjuta</app> is able to automatically generate such code."
 msgstr ""
+"In einer grafischen Oberfläche eines Programms sind manchmal einige Widgets "
+"nur zum Erzeugen von Ereignissen wichtig (z.B: statische Knöpfe), während "
+"andere notwendig sind, um Daten vom Benutzer zu erfragen oder diesem "
+"darzustellen (z.B: ein Texteingabefeld). In letzterem Fall muss einiger Code "
+"erstellt werden, so dass auf diese Widgets zur Laufzeit zugegriffen werden "
+"kann. Mit dem glade-Plugin ist <app>Anjuta</app> in der Lage, automatisch "
+"sochen Code zu erzeugen."
 
 #: C/anjuta-glade-start.page:62(section/title)
 msgid "Automatic generation"
@@ -491,6 +507,15 @@ msgid ""
 "Both files can easily be found in the project file list and are "
 "automatically created by the project template."
 msgstr ""
+"Zum automatischen Erstellen von Code für ein Widget müssen einige "
+"Bedingungen erfüllt sein: das glade-Plugin muss laufen und die Quelldatei "
+"muss geöffnet sein, die den Code aufnehmen soll. Um sicher zu stellen, dass "
+"das glade-Plugin läuft ist es ausreichend die <file>.ui</file>-Datei zu "
+"öffnen, welche die grafische Oberfläche für das aktuelle Projekt beschreibt. "
+"Per Voreinstellung ist die Datei, die den Code für die Widgets enthält, die "
+"gleiche, wo die Callbacks erstellt werden (z.B. <file>Anwendung.c</file>). "
+"Beide Dateien können leicht in der Liste der Projektdateien gefunden werden "
+"und sie werden automatisch durch die Projektvorlage erstellt."
 
 #: C/anjuta-glade-start.page:73(section/p)
 msgid ""
@@ -604,6 +629,11 @@ msgid ""
 "have ever installed a program using <cmd>configure</cmd>, <cmd>make</cmd> "
 "and <cmd>make install</cmd>, you probably have already used it as a user."
 msgstr ""
+"Es ist das am weitesten verbreitete Projektformat unter Linux. Es wurde "
+"entworfen, um Quellcodepakete auf einer Vielzahl von Unix-ähnlichen Systemen "
+"zu verteilen. Wenn Sie jemals ein Programm mit Hilfe von <cmd>configure</"
+"cmd>, <cmd>make</cmd> und <cmd>make install</cmd> installiert haben, so "
+"haben Sie es wahrscheinlich schon als Benutzer verwendet."
 
 #: C/autotools-project-backend.page:31(page/p)
 msgid ""
@@ -614,8 +644,16 @@ msgid ""
 "writing a line in <file>configure.ac</file> or any <file>Makefile.am</file> "
 "files."
 msgstr ""
+"Es ist typischerweise ein wenig schwieriger als Entwickler zu verwenden. "
+"Jedoch ist es das voreingestellte Backend für <app>Anjuta</app> und hat "
+"Funktionen, die die Verwendung einfacher werden lassen. Alle Funktionen des "
+"Projektverwalters sind bei Verwendung aktiviert. Sie sollten in der Lage "
+"sein, ein Projekt mit dem Autotools-Backend zu verwalten, ohne eine Zeile in "
+"<file>configure.ac</file> oder einer <file>Makefile.am</file> Datei zu "
+"schreiben."
 
 #: C/autotools-project-backend.page:41(note/p)
+#, fuzzy
 msgid ""
 "Autotools files give more information than a makefile, but the backend does "
 "not support all the possible tricks. If you find a project that cannot be "
@@ -623,7 +661,7 @@ msgid ""
 "product=anjuta\">bug report</link> will be appreciated. In the meantime, as "
 "a workaround, you can use the directory project backend instead. It is much "
 "more limited but should find all source files."
-msgstr ""
+msgstr "Autotools-Dateien liefern mehr Informationen als ein makefile, aber "
 
 #: C/autotools-project-folder-edit.page:9(info/desc)
 msgid "Edit autotools folder properties."
@@ -645,11 +683,10 @@ msgid "<gui>C compiler flags</gui>"
 msgstr "<gui>C Compiler-Flags</gui>"
 
 #: C/autotools-project-folder-edit.page:26(item/p)
-#, fuzzy
 msgid ""
 "The flags to pass to the C compiler if a per target value is not defined."
 msgstr ""
-"Die Flags, die dem C-Compiler übergeben werden, wenn ein Wert je Ziel?? "
+"Flags, die dem C-Compiler übergeben werden sollen, wenn ein Wert pro Ziel "
 "nicht definiert ist."
 
 #: C/autotools-project-folder-edit.page:30(item/title)
@@ -662,6 +699,9 @@ msgid ""
 "These flags are passed to every compilation that invokes the C preprocessor. "
 "This value is ignored if these flags are defined for the target."
 msgstr ""
+"Diese Flags werden jedem Übersetzungsvorgang übergeben, der den C-"
+"Präprozessor aufruft. Dieser Wert wird ignoriert, wenn diese Flags für das "
+"Ziel definiert sind."
 
 #: C/autotools-project-folder-edit.page:36(item/title)
 #: C/autotools-project-target-edit.page:41(item/title)
@@ -669,12 +709,11 @@ msgid "<gui>C++ compiler flags</gui>"
 msgstr "<gui>C++ Compiler-Flags</gui>"
 
 #: C/autotools-project-folder-edit.page:37(item/p)
-#, fuzzy
 msgid ""
 "The flags to pass to the C++ compiler flags if a per target value is not "
 "defined."
 msgstr ""
-"Die Flags, die dem C++-Compiler übergeben werden, wenn ein Wert je Ziel?? "
+"Flags, die dem C++-Compiler übergeben werden sollen, wenn ein Wert pro Ziel "
 "nicht definiert ist."
 
 #: C/autotools-project-folder-edit.page:41(item/title)
@@ -687,6 +726,8 @@ msgid ""
 "The flags to pass to the Fortran 9x compiler if a per target value is not "
 "defined."
 msgstr ""
+"Flags, die dem Fortran 9x-Compiler übergeben werden sollen, wenn ein Wert "
+"pro Ziel nicht definiert ist."
 
 #: C/autotools-project-folder-edit.page:46(item/title)
 msgid "<gui>Installation directories</gui>"
@@ -707,6 +748,8 @@ msgstr "<gui>Java Compiler-Flags</gui>"
 msgid ""
 "The flags to pass to the Java compiler if a per target value is not defined."
 msgstr ""
+"Flags, die dem Java-Compiler übergeben werden sollen, wenn ein Wert pro Ziel "
+"nicht definiert ist."
 
 #: C/autotools-project-folder-edit.page:56(item/title)
 #: C/autotools-project-target-edit.page:87(item/title)
@@ -718,6 +761,8 @@ msgid ""
 "The flags to pass to the scanner generator Lex or Flex if a per target value "
 "is not defined."
 msgstr ""
+"Flags, die dem Scanner-Generator Lex oder Flex übergeben werden sollen, wenn "
+"ein Wert pro Ziel nicht definiert ist."
 
 #: C/autotools-project-folder-edit.page:61(item/title)
 #: C/autotools-project-target-edit.page:100(item/title)
@@ -727,6 +772,8 @@ msgstr "<gui>Flags für Linker</gui>"
 #: C/autotools-project-folder-edit.page:62(item/p)
 msgid "The flags to pass to the linker if a per target value is not defined."
 msgstr ""
+"Flags, die dem Linker übergeben werden sollen, wenn ein Wert pro Ziel nicht "
+"definiert ist."
 
 #: C/autotools-project-folder-edit.page:65(item/title)
 #: C/autotools-project-target-edit.page:111(item/title)
@@ -738,6 +785,8 @@ msgid ""
 "The flags to pass to the Objective C compiler if a per target value is not "
 "defined."
 msgstr ""
+"Flags, die dem Objective C-Compiler übergeben werden sollen, wenn ein Wert "
+"pro Ziel nicht definiert ist."
 
 #: C/autotools-project-folder-edit.page:70(item/title)
 #: C/autotools-project-target-edit.page:117(item/title)
@@ -748,6 +797,8 @@ msgstr "<gui>Vala Compiler-Flags</gui>"
 msgid ""
 "The flags to pass to the Vala compiler if a per target value is not defined."
 msgstr ""
+"Flags, die dem Vala-Compiler übergeben werden sollen, wenn ein Wert pro Ziel "
+"nicht definiert ist."
 
 #: C/autotools-project-folder-edit.page:75(item/title)
 #: C/autotools-project-target-edit.page:123(item/title)
@@ -759,6 +810,8 @@ msgid ""
 "The flags to pass to the parser generator Bison or Yacc if a per target "
 "value is not defined."
 msgstr ""
+"Flags, die dem Parser-Generator Bison oder Yacc übergeben werden sollen, "
+"wenn ein Wert pro Ziel nicht definiert ist."
 
 #: C/autotools-project-root-edit.page:10(info/desc)
 msgid "Edit autotools project properties."
@@ -769,9 +822,8 @@ msgid "Edit Autotools Project Properties"
 msgstr "Autotools Projekt-Eigenschaften bearbeiten."
 
 #: C/autotools-project-root-edit.page:21(page/p)
-#, fuzzy
 msgid "These are the properties of the root item."
-msgstr "Einige dieser Eigenschaften sind gesperrt"
+msgstr "Dies sind die Eigenschaften des Hauptobjekts."
 
 #: C/autotools-project-root-edit.page:25(item/title)
 msgid "<gui>Backend</gui>"
@@ -990,6 +1042,9 @@ msgid ""
 "Specify the section of the manual where to add man page. Valid section name "
 "are the digits ‘0’ through ‘9’, and the letters ‘l’ and ‘n’."
 msgstr ""
+"Geben Sie den Abschnitt des Handbuchs an, wo die Hilfeseite hinzugefügt "
+"werden soll. Gültige Abschnittsnamen enthalten die Ziffern 0 bis 9 sowie die "
+"Buchstaben »l« und »n«."
 
 #: C/autotools-project-target-edit.page:112(item/p)
 msgid ""
@@ -1134,6 +1189,8 @@ msgid ""
 "This target allows you to group header files and define where they have to "
 "be installed."
 msgstr ""
+"Dieses Ziel ermöglicht es, Kopfdateien zu gruppieren und zu definieren, wo "
+"diese installiert werden müssen."
 
 #: C/autotools-project-target-type.page:69(item/title)
 msgid "Man documentation"
@@ -2633,17 +2690,12 @@ msgid "Listing local variables"
 msgstr "Auflisten lokaler Variablen"
 
 #: C/debug-local.page:36(item/p)
-#, fuzzy
-#| msgid ""
-#| "From the <gui>main menu</gui>, select <guiseq><gui>View</gui><gui>Locals</"
-#| "gui></guiseq> to open the <gui>Locals</gui> window."
 msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> <gui>Locals</"
 "gui></guiseq> to open the <gui>Locals</gui> window."
 msgstr ""
-"Wählen Sie <guiseq><gui>Ansicht</gui><gui>Überwachte Ausdrücke</gui></"
-"guiseq> im <gui>Hauptmenü</gui>, um das Fenster <gui>Überwachte Ausdrücke</"
-"gui> zu öffnen."
+"Wählen Sie <guiseq><gui>Ansicht</gui><gui>Lokale Variablen</gui></guiseq> im "
+"<gui>Hauptmenü</gui>, um das Fenster <gui>Lokale Variablen</gui> zu öffnen."
 
 #: C/debug-local.page:42(section/p)
 msgid ""
@@ -4271,30 +4323,23 @@ msgstr ""
 "gui><gui>Bibliothek hinzufügen …</gui></guiseq>."
 
 #: C/project-manager-module-add.page:41(item/p)
-#, fuzzy
-#| msgid ""
-#| "You can select another target in the top <gui>target chooser button</gui>."
 msgid ""
 "You need to select the target where you want to add the library in the "
 "<gui>target button</gui> above."
-msgstr "Sie können im oberen <gui>Zielwahlknopf</gui> ein anderes Ziel wählen."
+msgstr ""
+"Sie müssen mit dem <gui>Zielwahlknopf</gui> oben ein Ziel wählen, wo Sie die "
+"Bibliothek hinzufügen wollen."
 
 #: C/project-manager-module-add.page:45(item/p)
-#, fuzzy
-#| msgid ""
-#| "You need to select the target where you want to add the module in the "
-#| "<gui>target button</gui> above, and select the module that you want to "
-#| "add in the <gui>module view</gui> below. If you select a library inside a "
-#| "module, the parent module will be added."
 msgid ""
 "A library cannot be added directly to a target. You can add only a module "
 "displayed in the <gui>module view</gui> below. If you select a library "
 "inside a module, the parent module will be added."
 msgstr ""
-"Sie müssen oben im <gui>Zielknopf</gui> das Ziel wählen, dem Sie das Modul "
-"hinzufügen möchten. Wählen Sie dann das entsprechende Modul in der "
-"<gui>Modulansicht</gui> unten. Wenn Sie eine Bibliothek innerhalb eines "
-"Moduls wählen, so wird das übergeordnete Modul hinzugefügt."
+"Eine Bibliothek kann nicht direkt einem Ziel hinzugefügt werden. Sie könne "
+"nur ein Modul hinzufügen, das in der <gui>Modulansicht</gui> unten angezeigt "
+"wird. Wenn Sie eine Bibliothek innerhalb eines Moduls wählen, so wird das "
+"übergeordnete Modul hinzugefügt."
 
 #: C/project-manager-module-add.page:50(item/p)
 msgid ""
@@ -4372,12 +4417,6 @@ msgid "If the library you want does not appear here:"
 msgstr "Falls die gewünschte Bibliothek hier nicht erscheint:"
 
 #: C/project-manager-module-new.page:49(item/p)
-#| msgid ""
-#| "If the library you want does not appear here, perhaps it is because it is "
-#| "not installed on your system. Launch the application you use to install "
-#| "new programs and search for the library name. The package you need often "
-#| "has a \"dev\" or \"devel\" suffix and should include header files and a "
-#| "<app>pkg-config</app> file with a <file>.pc</file> extension."
 msgid ""
 "Perhaps it is not installed on your system. Launch the application you use "
 "to install new programs and search for the library name. The package you "
