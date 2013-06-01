@@ -241,7 +241,7 @@ anjuta_profile_manager_new (AnjutaPluginManager *plugin_manager)
 }
 
 static gboolean
-anjuta_profile_manager_load_profiles (AnjutaProfileManager *profile_manager)
+anjuta_profile_manager_load_profiles (AnjutaProfileManager *profile_manager, GError **error)
 {
 	AnjutaProfileManagerPriv *priv;
 	gboolean loaded = FALSE;
@@ -265,8 +265,8 @@ anjuta_profile_manager_load_profiles (AnjutaProfileManager *profile_manager)
 		/* Load profile. Note that loading a profile can trigger the load of
 		 * additional profile. Typically loading the default profile will
 		 * trigger the load of the last project profile. */
-		if (previous_profile != NULL) anjuta_profile_unload (previous_profile);
-		loaded = anjuta_profile_load (ANJUTA_PROFILE (node->data));
+		if (previous_profile != NULL) anjuta_profile_unload (previous_profile, NULL);
+		loaded = anjuta_profile_load (ANJUTA_PROFILE (node->data), error);
 	}
 
 	return loaded;
@@ -284,7 +284,7 @@ anjuta_profile_manager_queue_profile (AnjutaProfileManager *profile_manager,
 	priv->profiles_queue = g_list_prepend (priv->profiles_queue, profile);
 
 	/* If there is no freeze load profile now */
-	return anjuta_profile_manager_load_profiles (profile_manager);
+	return anjuta_profile_manager_load_profiles (profile_manager, error);
 }
 
 /**
@@ -359,11 +359,11 @@ anjuta_profile_manager_pop (AnjutaProfileManager *profile_manager,
 							   profile);
 		
 		/* Restore the next profile in the stack */
-		anjuta_profile_unload (profile);
+		anjuta_profile_unload (profile, NULL);
 		g_object_unref (profile);
 		if (priv->profiles)
 		{
-			return anjuta_profile_load (ANJUTA_PROFILE (priv->profiles->data));
+			return anjuta_profile_load (ANJUTA_PROFILE (priv->profiles->data), error);
 		}
 		return TRUE;
 	}
@@ -413,7 +413,7 @@ anjuta_profile_manager_thaw (AnjutaProfileManager *profile_manager,
 	if (priv->freeze_count > 0)
 		priv->freeze_count--;
 
-	return anjuta_profile_manager_load_profiles (profile_manager);
+	return anjuta_profile_manager_load_profiles (profile_manager, error);
 }
 
 /**
@@ -461,7 +461,7 @@ anjuta_profile_manager_close (AnjutaProfileManager *profile_manager)
 
 		/* Emit "descoped" so that other parts of anjuta can store
 		 * information about the currently loaded profile. */
-		anjuta_profile_unload (profile);
+		anjuta_profile_unload (profile, NULL);
 
 		g_list_free_full (priv->profiles, g_object_unref);
 		priv->profiles = NULL;
