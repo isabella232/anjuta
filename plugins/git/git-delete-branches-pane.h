@@ -53,8 +53,9 @@ struct _GitDeleteBranchesPane
 
 GType git_delete_branches_pane_get_type (void) G_GNUC_CONST;
 AnjutaDockPane * git_delete_branches_pane_new (Git *plugin);
-void on_delete_branches_button_clicked (GtkAction *action, 
-                                        Git *plugin);
+
+void on_delete_branches_button_clicked (GtkAction *action, Git *plugin);
+void on_git_branch_delete_activated (GtkAction *action, Git *plugin);
 
 G_END_DECLS
 

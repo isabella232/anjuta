@@ -295,6 +295,35 @@ on_branches_view_row_activated (GtkTreeView *branches_view, GtkTreePath *path,
 	anjuta_command_start (ANJUTA_COMMAND (checkout_command));
 }
 
+static gboolean
+on_branches_view_button_press_event (GtkWidget *branches_view, 
+                                     GdkEventButton *event,
+                                     GitBranchesPane *self)
+{
+	GtkTreeSelection *selection;
+	AnjutaPlugin *plugin;
+	AnjutaUI *ui;
+	GtkWidget *menu;
+
+	if (event->type == GDK_BUTTON_PRESS && event->button == 3)
+	{
+		selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (branches_view));
+
+		if (gtk_tree_selection_count_selected_rows (selection) > 0)
+		{
+			plugin = anjuta_dock_pane_get_plugin (ANJUTA_DOCK_PANE (self));
+			ui = anjuta_shell_get_ui (plugin->shell, NULL);
+			menu = GTK_MENU (gtk_ui_manager_get_widget (GTK_UI_MANAGER (ui),
+			                                            "/GitBranchPopup"));
+
+			gtk_menu_popup (menu, NULL, NULL, NULL, NULL, event->button, 
+			                event->time);
+		}
+	}
+
+	return FALSE;
+}
+
 static void
 git_branches_pane_init (GitBranchesPane *self)
 {
@@ -369,6 +398,11 @@ git_branches_pane_init (GitBranchesPane *self)
 	/* Switch branches on double-click */
 	g_signal_connect (G_OBJECT (branches_view), "row-activated",
 	                  G_CALLBACK (on_branches_view_row_activated),
+	                  self);
+
+	/* Pop-up menu */
+	g_signal_connect (G_OBJECT (branches_view), "button-press-event",
+	                  G_CALLBACK (on_branches_view_button_press_event),
 	                  self);
 }
 
@@ -505,6 +539,32 @@ git_branches_pane_get_selected_branch (GitBranchesPane *self)
 	}
 
 	return selected_branch;
+}
+
+gboolean
+git_branches_pane_is_selected_branch_remote (GitBranchesPane *self)
+{
+	gboolean is_remote;
+	GtkTreeView *branches_view;
+	GtkTreeSelection *selection;
+	GtkTreeModel *branches_list_model;
+	GtkTreeIter iter;
+
+	is_remote = FALSE;
+	branches_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
+	                                                       "branches_view"));
+	selection = gtk_tree_view_get_selection (branches_view);
+
+	if (gtk_tree_selection_count_selected_rows (selection) > 0)
+	{
+		gtk_tree_selection_get_selected (selection, &branches_list_model,
+		                                 &iter);
+
+		gtk_tree_model_get (branches_list_model, &iter, COL_REMOTE, 
+		                    &is_remote, -1);
+	}
+
+	return is_remote;
 }
 
 static gboolean

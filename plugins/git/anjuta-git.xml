@@ -15,4 +15,10 @@
 		<menuitem name="Revert" action="GitLogRevert" />
 		<menuitem name="Reset..." action="GitLogReset" />
 	</popup>
+
+	<popup name="GitBranchPopup">
+		<menuitem name="Switch" action="GitBranchSwitch" />
+		<menuitem name="Delete..." action="GitBranchDelete" />
+		<menuitem name="Merge..." action="GitBranchMerge" />
+	</popup>
 </ui>

@@ -24,6 +24,7 @@
 #include <libanjuta/anjuta-column-text-view.h>
 #include "git-pane.h"
 #include "git-merge-command.h"
+#include "git-branches-pane.h"
 
 G_BEGIN_DECLS
 
@@ -52,8 +53,11 @@ struct _GitMergePane
 
 GType git_merge_pane_get_type (void) G_GNUC_CONST;
 AnjutaDockPane *git_merge_pane_new (Git *plugin);
+AnjutaDockPane *git_merge_pane_new_with_revision (Git *plugin, 
+                                                  const gchar *revision);
 
 void on_merge_button_clicked (GtkAction *action, Git *plugin);
+void on_git_branch_merge_activated (GtkAction *action, Git *plugin);
 
 G_END_DECLS
 

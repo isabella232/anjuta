@@ -541,6 +541,34 @@ static GtkActionEntry log_menu_entries[] =
 	}
 };
 
+static GtkActionEntry branch_menu_entries[] =
+{
+	{
+		"GitBranchSwitch",
+		NULL,
+		N_("Switch"),
+		NULL,
+		NULL,
+		G_CALLBACK (on_switch_branch_button_clicked)
+	},
+	{
+		"GitBranchDelete",
+		NULL,
+		N_("Delete..."),
+		NULL,
+		NULL,
+		G_CALLBACK (on_git_branch_delete_activated)
+	},
+	{
+		"GitBranchMerge",
+		NULL,
+		N_("Merge..."),
+		NULL,
+		NULL,
+		G_CALLBACK (on_git_branch_merge_activated)
+	}
+};
+
 static gpointer parent_class;
 
 static void
@@ -792,6 +820,12 @@ git_activate_plugin (AnjutaPlugin *plugin)
 	                                                                 G_N_ELEMENTS (log_menu_entries),
 	                                                                 GETTEXT_PACKAGE,
 	                                                                 FALSE, plugin);
+	git_plugin->branch_menu_group = anjuta_ui_add_action_group_entries (ui, "GitBrancPopup",
+	                                                                    _("Branch popup menu"),
+	                                                                    branch_menu_entries,
+	                                                                    G_N_ELEMENTS (branch_menu_entries),
+	                                                                    GETTEXT_PACKAGE,
+	                                                                    FALSE, plugin);
 
 	
 	/* Create the branch list commands. There are two commands because some 
@@ -932,6 +966,7 @@ git_deactivate_plugin (AnjutaPlugin *plugin)
 	ui = anjuta_shell_get_ui (plugin->shell, NULL);
 	anjuta_ui_remove_action_group (ui, git_plugin->status_menu_group);
 	anjuta_ui_remove_action_group (ui, git_plugin->log_menu_group);
+	anjuta_ui_remove_action_group (ui, git_plugin->branch_menu_group);
 	anjuta_ui_unmerge (ui, git_plugin->uiid);
 
 	g_object_unref (git_plugin->local_branch_list_command);

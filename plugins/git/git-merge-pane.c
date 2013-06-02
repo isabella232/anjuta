@@ -203,6 +203,29 @@ git_merge_pane_new (Git *plugin)
 	return g_object_new (GIT_TYPE_MERGE_PANE, "plugin", plugin, NULL);
 }
 
+AnjutaDockPane *
+git_merge_pane_new_with_revision (Git *plugin, const gchar *revision)
+{
+	GitMergePane *self;
+	AnjutaEntry *merge_revision_entry;
+
+	self = g_object_new (GIT_TYPE_MERGE_PANE, "plugin", plugin, NULL);;
+	merge_revision_entry = ANJUTA_ENTRY (gtk_builder_get_object (self->priv->builder,
+	                                           					 "merge_revision_entry"));
+
+	anjuta_entry_set_text (merge_revision_entry, revision);
+
+	return ANJUTA_DOCK_PANE (self);
+}
+
+static void
+add_pane (AnjutaDockPane *pane, Git *plugin)
+{
+	anjuta_dock_replace_command_pane (ANJUTA_DOCK (plugin->dock), "Merge", 
+	                                  _("Merge"), NULL, pane, GDL_DOCK_BOTTOM, NULL, 0,
+	                                  NULL);
+}
+
 void
 on_merge_button_clicked (GtkAction *action, Git *plugin)
 {
@@ -210,7 +233,18 @@ on_merge_button_clicked (GtkAction *action, Git *plugin)
 
 	pane = git_merge_pane_new (plugin);
 
-	anjuta_dock_replace_command_pane (ANJUTA_DOCK (plugin->dock), "Merge", 
-	                                  _("Merge"), NULL, pane, GDL_DOCK_BOTTOM, NULL, 0,
-	                                  NULL);
+	add_pane (pane, plugin);
+}
+
+void
+on_git_branch_merge_activated (GtkAction *action, Git *plugin)
+{
+	gchar *selected_branch;
+	AnjutaDockPane *pane;
+
+	selected_branch = git_branches_pane_get_selected_branch (GIT_BRANCHES_PANE (plugin->branches_pane));
+	pane = git_merge_pane_new_with_revision (plugin, selected_branch);
+
+	g_free (selected_branch);
+	add_pane (pane, plugin);
 }

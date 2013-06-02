@@ -224,3 +224,38 @@ on_delete_branches_button_clicked (GtkAction *action, Git *plugin)
 	                                  "Delete Branches", NULL, delete_branches_pane,
 	                                  GDL_DOCK_BOTTOM, NULL, 0, NULL);
 }
+
+void
+on_git_branch_delete_activated (GtkAction *action, Git *plugin)
+{
+	gchar *selected_branch;
+	GList *branches;
+	GitBranchDeleteCommand *delete_command;
+
+	selected_branch = git_branches_pane_get_selected_branch (GIT_BRANCHES_PANE (plugin->branches_pane));
+
+	if (anjuta_util_dialog_boolean_question (NULL, FALSE, 
+	                                         _("Are you sure you want to delete branch %s?"),
+	                                         selected_branch))
+	{
+		branches = g_list_append (NULL, selected_branch);
+		delete_command = git_branch_delete_command_new (plugin->project_root_directory,
+		                                                branches, 
+		                                                git_branches_pane_is_selected_branch_remote (GIT_BRANCHES_PANE (plugin->branches_pane)),
+		                                                FALSE);
+
+		g_list_free (branches);
+
+		g_signal_connect (G_OBJECT (delete_command), "command-finished",
+		                  G_CALLBACK (git_pane_report_errors),
+		                  plugin);
+
+		g_signal_connect (G_OBJECT (delete_command), "command-finished",
+		                  G_CALLBACK (g_object_unref),
+		                  NULL);
+
+		anjuta_command_start (ANJUTA_COMMAND (delete_command));
+	}
+
+	g_free (selected_branch);
+}
