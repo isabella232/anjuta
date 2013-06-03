@@ -366,7 +366,7 @@ ipreferences_merge(IAnjutaPreferences* ipref, AnjutaPreferences* prefs, GError**
 	plugin->check_font = GTK_WIDGET (gtk_builder_get_object (builder,
 	                                                         FONT_USE_THEME_BUTTON));
 	g_signal_connect(G_OBJECT(plugin->check_font), "toggled",
-	                 G_CALLBACK(on_font_check_toggled), builder);
+	                 G_CALLBACK(on_font_check_toggled), plugin);
 	on_font_check_toggled (GTK_TOGGLE_BUTTON (plugin->check_font), plugin);
 
 	/* Init styles combo */

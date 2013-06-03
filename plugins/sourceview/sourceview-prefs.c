@@ -46,7 +46,8 @@
 
 #define FONT_THEME "font-use-theme"
 #define FONT "font"
-#define DESKTOP_FIXED_FONT "/desktop/gnome/interface/monospace_font_name"
+#define FONT_SCHEMA "org.gnome.desktop.interface"
+#define GNOME_DOCUMENT_FONT "document-font-name"
 
 static void
 on_notify_view_spaces (GSettings* settings,
@@ -173,18 +174,16 @@ on_notify_font_theme (GSettings* settings,
 
 	if (g_settings_get_boolean (settings, key))
 	{
-		/* FIXME: GSettings */
-#if 0
-		GConfClient *gclient = gconf_client_get_default ();
-		gchar *desktop_fixed_font;
-		desktop_fixed_font =
-			gconf_client_get_string (gclient, DESKTOP_FIXED_FONT, NULL);
-		if (desktop_fixed_font)
-			anjuta_view_set_font(sv->priv->view, FALSE, desktop_fixed_font);
+		GSettings* font_settings = g_settings_new (FONT_SCHEMA);
+		gchar* desktop_font = g_settings_get_string (font_settings,
+		                                             GNOME_DOCUMENT_FONT);
+
+		if (desktop_font)
+			anjuta_view_set_font(sv->priv->view, FALSE, desktop_font);		
 		else
 			anjuta_view_set_font(sv->priv->view, TRUE, NULL);
-		g_free (desktop_fixed_font);
-#endif
+		g_free (desktop_font);
+		g_object_unref (font_settings);
 	}
 	else
 	{
@@ -223,34 +222,7 @@ on_notify_indic_colors (GSettings* settings,
 static void
 init_fonts(Sourceview* sv)
 {
-	gboolean font_theme;
-
-	font_theme = FALSE; //g_settings_get_boolean (sv->priv->settings, FONT_THEME);
-
-	if (!font_theme)
-	{
-		gchar* font = g_settings_get_string (sv->priv->settings, FONT);
-		anjuta_view_set_font(sv->priv->view, FALSE, font);
-		g_free (font);
-	}
-#if 0
-	else
-	{
-		/* FIXME: Get font from GSettings */
-		GConfClient *gclient;
-		gchar *desktop_fixed_font;
-
-		gclient = gconf_client_get_default ();
-		desktop_fixed_font =
-			gconf_client_get_string (gclient, DESKTOP_FIXED_FONT, NULL);
-		if (desktop_fixed_font)
-			anjuta_view_set_font(sv->priv->view, FALSE, desktop_fixed_font);
-		else
-			anjuta_view_set_font(sv->priv->view, TRUE, NULL);
-		g_free (desktop_fixed_font);
-		g_object_unref (gclient);
-	}
-#endif
+	on_notify_font_theme (sv->priv->settings, FONT_THEME, sv);
 }
 
 void
