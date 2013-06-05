@@ -782,6 +782,8 @@ get_text_between (IAnjutaEditor *editor, gchar *prefix, gchar *suffix)
 	if (!result_end)
 		return NULL;
 
+    g_object_unref (result_start);
+
 	prefix_end = result_end;
 
 	ianjuta_editor_search_forward (IANJUTA_EDITOR_SEARCH (editor),
@@ -794,6 +796,8 @@ get_text_between (IAnjutaEditor *editor, gchar *prefix, gchar *suffix)
 
 	if (!result_end)
 		return NULL;
+
+    g_object_unref (result_end);
 
 	return ianjuta_editor_get_text (editor, prefix_end, suffix_start, NULL);
 }
