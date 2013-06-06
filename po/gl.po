@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta-master-po-gl-1952\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-01 23:20+0200\n"
-"PO-Revision-Date: 2013-06-01 23:28+0200\n"
+"POT-Creation-Date: 2013-06-06 11:24+0200\n"
+"PO-Revision-Date: 2013-06-06 11:35+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -4004,7 +4004,7 @@ msgstr "Buscar usando expresións regulares"
 #: ../plugins/document-manager/plugin.c:295
 #: ../plugins/indentation-c-style/plugin.c:217
 #: ../plugins/indentation-python-style/plugin.c:200
-#: ../plugins/language-support-cpp-java/plugin.c:1149
+#: ../plugins/language-support-cpp-java/plugin.c:1153
 #: ../plugins/language-support-python/plugin.c:377 ../src/anjuta-actions.h:30
 msgid "_Edit"
 msgstr "_Editar"
@@ -5008,7 +5008,7 @@ msgstr "Obter as ramificacións remotas despois de crealas"
 msgid "Mailbox files to apply:"
 msgstr "Ficheiros de caixa de correo que aplicar:"
 
-#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:864
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:898
 msgid "Branches"
 msgstr "_Ramificacións"
 
@@ -5080,7 +5080,7 @@ msgstr "As ramificacións deben combinarse completamente"
 
 #: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:77
 #: ../plugins/git/git-pane.c:82 ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:766
+#: ../plugins/git/plugin.c:794
 msgid "Git"
 msgstr "Git"
 
@@ -5308,6 +5308,11 @@ msgstr "Introduza un nome de etiqueta."
 msgid "Create Tag"
 msgstr "Crear a etiqueta"
 
+#: ../plugins/git/git-delete-branches-pane.c:238
+#, c-format
+msgid "Are you sure you want to delete branch %s?"
+msgstr "Desexa realmente eliminar a rama «%s»?"
+
 #: ../plugins/git/git-delete-remote-pane.c:49
 msgid "No remote selected."
 msgstr "Non se seleccionou ningún remoto."
@@ -5351,7 +5356,7 @@ msgstr "<b>Etiqueta:</b> %s"
 msgid "<b>Remote:</b> %s"
 msgstr "<b>Remoto:</b> %s"
 
-#: ../plugins/git/git-merge-pane.c:214 ../plugins/git/plugin.c:100
+#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:100
 msgid "Merge"
 msgstr "Combinar"
 
@@ -5529,7 +5534,7 @@ msgstr "Resolver conflitos"
 msgid "Mark selected conflicted files as resolved"
 msgstr "Marcar os ficheiros conflitivos seleccionados como resoltos"
 
-#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:882
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:916
 msgid "Stash"
 msgstr "Reservar"
 
@@ -5735,31 +5740,47 @@ msgstr ""
 msgid "Reset..."
 msgstr "Restabelecer…"
 
-#: ../plugins/git/plugin.c:629 ../plugins/git/plugin.c:702
+#: ../plugins/git/plugin.c:549
+msgid "Switch"
+msgstr "Cambiar"
+
+#: ../plugins/git/plugin.c:557
+msgid "Delete..."
+msgstr "Eliminar…"
+
+#: ../plugins/git/plugin.c:565
+msgid "Merge..."
+msgstr "Combinar…"
+
+#: ../plugins/git/plugin.c:657 ../plugins/git/plugin.c:730
 msgid "Branch"
 msgstr "Ramificación"
 
-#: ../plugins/git/plugin.c:785
+#: ../plugins/git/plugin.c:813
 msgid "Status popup menu"
 msgstr "Menú emerxente de estado"
 
-#: ../plugins/git/plugin.c:790
+#: ../plugins/git/plugin.c:818
 msgid "Log popup menu"
 msgstr "Menú emerxente do rexistro"
 
-#: ../plugins/git/plugin.c:852
+#: ../plugins/git/plugin.c:824
+msgid "Branch popup menu"
+msgstr "Menú emerxente da rama"
+
+#: ../plugins/git/plugin.c:886
 msgid "Status"
 msgstr "Estado"
 
-#: ../plugins/git/plugin.c:858
+#: ../plugins/git/plugin.c:892
 msgid "Log"
 msgstr "Rexistro"
 
-#: ../plugins/git/plugin.c:869
+#: ../plugins/git/plugin.c:903
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: ../plugins/git/plugin.c:876
+#: ../plugins/git/plugin.c:910
 msgid "Remotes"
 msgstr "Servidores remotos"
 
@@ -6008,28 +6029,28 @@ msgstr "Cargar etiquetas API para a biblioteca de plantillas de C++"
 msgid "Code added for widget."
 msgstr "Código engadido para o widget."
 
-#: ../plugins/language-support-cpp-java/plugin.c:1155
+#: ../plugins/language-support-cpp-java/plugin.c:1159
 msgid "Comment/Uncomment"
 msgstr "Comentar/Descomentar"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1156
+#: ../plugins/language-support-cpp-java/plugin.c:1160
 msgid "Comment or uncomment current selection"
 msgstr "Comentar ou descomentar a selección actual"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1161
+#: ../plugins/language-support-cpp-java/plugin.c:1165
 msgid "Swap .h/.c"
 msgstr "Intercambiar .h/.c"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1162
+#: ../plugins/language-support-cpp-java/plugin.c:1166
 msgid "Swap C header and source files"
 msgstr "Intercambiar os ficheiros C da cabeceira e da fonte"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1202
+#: ../plugins/language-support-cpp-java/plugin.c:1206
 msgid "C++/Java Assistance"
 msgstr "Asistencia C++/Java"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1421
-#: ../plugins/language-support-cpp-java/plugin.c:1450
+#: ../plugins/language-support-cpp-java/plugin.c:1425
+#: ../plugins/language-support-cpp-java/plugin.c:1454
 msgid "API Tags (C/C++)"
 msgstr "Etiquetas do API (C/C++)"
 
@@ -11329,9 +11350,6 @@ msgstr "Só texto"
 #~ msgid "When you delete the category \"%s\", all containing items are lost"
 #~ msgstr ""
 #~ "Ao eliminar a categoría \"%s\" perderanse todos os elementos que conteña"
-
-#~ msgid "Delete"
-#~ msgstr "Eliminar"
 
 #~ msgid "<New category (%d)>"
 #~ msgstr "<Categoría nova (%d)>"
