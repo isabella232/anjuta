@@ -124,6 +124,7 @@ git_pull_pane_init (GitPullPane *self)
 						"cancel_action",
 						"force_action",
 						"squash_action",
+						"no_commit_action",
 						NULL};
 	GError *error = NULL;
 	GtkAction *ok_action;

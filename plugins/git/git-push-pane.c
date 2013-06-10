@@ -243,6 +243,7 @@ git_push_pane_init (GitPushPane *self)
 						"ok_action",
 						"cancel_action",
 						"force_action",
+						"no_commit_action",
 						NULL};
 	GError *error = NULL;
 	GtkAction *ok_action;
