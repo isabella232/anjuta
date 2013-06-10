@@ -192,11 +192,7 @@ anjuta_msgman_finalize (GObject *obj)
 {
 	AnjutaMsgman *msgman = ANJUTA_MSGMAN (obj);
 	gtk_widget_destroy(msgman->priv->tab_popup);
-	if (msgman->priv)
-	{
-		g_free (msgman->priv);
-		msgman->priv = NULL;
-	}
+
 	G_OBJECT_CLASS (parent_class)->finalize (obj);
 }
 
