@@ -59,6 +59,25 @@ git_pane_remove_from_dock (GitPane *self)
 	                         ANJUTA_DOCK_PANE (self));
 }
 
+void
+git_pane_popup_menu (GitPane *self, const gchar *menu_name, guint button, 
+                     guint32 time)
+{
+	gchar *path;
+	AnjutaPlugin *plugin;
+	AnjutaUI *ui;
+	GtkMenu *menu;
+
+	path = g_strconcat ("/", menu_name, NULL);
+	plugin = anjuta_dock_pane_get_plugin (ANJUTA_DOCK_PANE (self));
+	ui = anjuta_shell_get_ui (plugin->shell, NULL);
+	menu = GTK_MENU (gtk_ui_manager_get_widget (GTK_UI_MANAGER (ui),
+	                                            path));
+
+	g_free (path);
+	gtk_menu_popup (menu, NULL, NULL, NULL, NULL, button, time);
+}
+
 static void
 on_message_view_destroyed (Git* plugin, gpointer destroyed_view)
 {

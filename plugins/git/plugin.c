@@ -597,6 +597,42 @@ static GtkActionEntry remote_menu_entries[] =
 	}
 };
 
+static GtkActionEntry stash_menu_entries[] =
+{
+	{
+		"GitStashApply",
+		NULL,
+		N_("Apply"),
+		NULL,
+		NULL,
+		G_CALLBACK (on_apply_stash_button_clicked)
+	},
+	{
+		"GitStashApplyIndex",
+		NULL,
+		N_("Apply and restore index"),
+		NULL,
+		NULL,
+		G_CALLBACK (on_apply_stash_index_button_clicked)
+	},
+	{
+		"GitStashDiff",
+		NULL,
+		N_("Diff"),
+		NULL,
+		NULL,
+		G_CALLBACK (on_diff_stash_button_clicked)
+	},
+	{
+		"GitStashDrop",
+		NULL,
+		N_("Drop"),
+		NULL,
+		NULL,
+		G_CALLBACK (on_drop_stash_button_clicked)
+	}
+};
+
 static gpointer parent_class;
 
 static void
@@ -859,6 +895,12 @@ git_activate_plugin (AnjutaPlugin *plugin)
 	                                                                    remote_menu_entries,
 	                                                                    G_N_ELEMENTS (remote_menu_entries),
 	                                                                    GETTEXT_PACKAGE, FALSE, plugin);
+	git_plugin->stash_menu_group = anjuta_ui_add_action_group_entries (ui, "GitStashPopup",
+	                                                                   _("Popup menu entries"),
+	                                                                   stash_menu_entries,
+	                                                                   G_N_ELEMENTS (stash_menu_entries),
+	                                                                   GETTEXT_PACKAGE,
+	                                                                   FALSE, plugin);
 
 	
 	/* Create the branch list commands. There are two commands because some 
@@ -1001,6 +1043,7 @@ git_deactivate_plugin (AnjutaPlugin *plugin)
 	anjuta_ui_remove_action_group (ui, git_plugin->log_menu_group);
 	anjuta_ui_remove_action_group (ui, git_plugin->branch_menu_group);
 	anjuta_ui_remove_action_group (ui, git_plugin->remote_menu_group);
+	anjuta_ui_remove_action_group (ui, git_plugin->stash_menu_group);
 	anjuta_ui_unmerge (ui, git_plugin->uiid);
 
 	g_object_unref (git_plugin->local_branch_list_command);

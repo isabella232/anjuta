@@ -51,6 +51,9 @@ struct _GitPane
 GType git_pane_get_type (void) G_GNUC_CONST;
 void git_pane_remove_from_dock (GitPane *self);
 
+void git_pane_popup_menu (GitPane *self, const gchar *menu_name, guint button, 
+                          guint32 time);
+
 /* Static helper methods */
 void git_pane_create_message_view (Git *plugin);
 void git_pane_on_command_info_arrived (AnjutaCommand *command, Git *plugin);

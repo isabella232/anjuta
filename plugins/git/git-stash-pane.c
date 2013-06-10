@@ -97,6 +97,26 @@ on_stash_list_command_data_arrived (AnjutaCommand *command,
 	}
 }
 
+static gboolean
+on_stash_view_button_press_event (GtkWidget *stash_view, GdkEventButton *event,
+                                  GitStashPane *self)
+{
+	GtkTreeSelection *selection;
+
+	if (event->type == GDK_BUTTON_PRESS && event->button == 3)
+	{
+		selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (stash_view));
+
+		if (gtk_tree_selection_count_selected_rows (selection) > 0)
+		{
+			git_pane_popup_menu (GIT_PANE (self), "GitStashPopup", event->button,
+			                     event->time);
+		}
+	}
+
+	return FALSE;
+}
+
 static void
 git_stash_pane_init (GitStashPane *self)
 {
@@ -104,10 +124,10 @@ git_stash_pane_init (GitStashPane *self)
 						"stash_list_model",
 						NULL};
 	GError *error = NULL;
+	GtkWidget *stash_view;
 	
 	self->priv = g_new0 (GitStashPanePriv, 1);
 	self->priv->builder = gtk_builder_new ();
-	
 
 	if (!gtk_builder_add_objects_from_file (self->priv->builder, BUILDER_FILE, 
 	                                        objects, 
@@ -116,6 +136,13 @@ git_stash_pane_init (GitStashPane *self)
 		g_warning ("Couldn't load builder file: %s", error->message);
 		g_error_free (error);
 	}
+
+	stash_view = GTK_WIDGET (gtk_builder_get_object (self->priv->builder,
+	                                                 "stash_view"));
+
+	g_signal_connect (G_OBJECT (stash_view), "button-press-event",
+	                  G_CALLBACK (on_stash_view_button_press_event),
+	                  self);
 }
 
 static void
