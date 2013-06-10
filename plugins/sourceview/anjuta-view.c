@@ -1,3 +1,4 @@
+/* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
  * anjuta-view.c
  *
@@ -556,22 +557,13 @@ anjuta_view_set_font (AnjutaView   *view,
 		font_desc = pango_font_description_from_string (font_name);
 		g_return_if_fail (font_desc != NULL);
 
-		gtk_widget_modify_font (GTK_WIDGET (view), font_desc);
-		
-		pango_font_description_free (font_desc);		
+		gtk_widget_override_font (GTK_WIDGET (view), font_desc);
+
+		pango_font_description_free (font_desc);
 	}
 	else
 	{
-		GtkRcStyle *rc_style;
-
-		rc_style = gtk_widget_get_modifier_style (GTK_WIDGET (view));
-
-		if (rc_style->font_desc)
-			pango_font_description_free (rc_style->font_desc);
-
-		rc_style->font_desc = NULL;
-		
-		gtk_widget_modify_style (GTK_WIDGET (view), rc_style);
+		gtk_widget_override_font (GTK_WIDGET (view), NULL);
 	}
 }
 

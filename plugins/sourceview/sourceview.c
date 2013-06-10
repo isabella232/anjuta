@@ -957,6 +957,10 @@ sourceview_instance_init(Sourceview* sv)
 	sv->priv = G_TYPE_INSTANCE_GET_PRIVATE (sv,
 	                                        ANJUTA_TYPE_SOURCEVIEW,
 	                                        SourceviewPrivate);
+
+	/* set properties */
+	g_object_set (G_OBJECT (sv), "orientation", GTK_ORIENTATION_VERTICAL,
+	              NULL);
 }
 
 static void
@@ -1209,7 +1213,7 @@ static void ieditor_goto_position(IAnjutaEditor *editor, IAnjutaIterable* icell,
 	sourceview_cell_get_iter (cell, &iter);
 	gtk_text_buffer_place_cursor (GTK_TEXT_BUFFER (sv->priv->document), &iter);
 	gtk_text_view_scroll_mark_onscreen (GTK_TEXT_VIEW (sv->priv->view),
-	                                    gtk_text_buffer_get_insert (sv->priv->document));
+	                                    gtk_text_buffer_get_insert (GTK_TEXT_BUFFER (sv->priv->document)));
 }
 
 /* Return a newly allocated pointer containing the whole text */
@@ -2639,7 +2643,7 @@ iglade_iface_init(IAnjutaEditorGladeSignalIface* iface)
 	/* only signals */
 }
 
-ANJUTA_TYPE_BEGIN(Sourceview, sourceview, GTK_TYPE_VBOX);
+ANJUTA_TYPE_BEGIN(Sourceview, sourceview, GTK_TYPE_BOX);
 ANJUTA_TYPE_ADD_INTERFACE(idocument, IANJUTA_TYPE_DOCUMENT);
 ANJUTA_TYPE_ADD_INTERFACE(ifile, IANJUTA_TYPE_FILE);
 ANJUTA_TYPE_ADD_INTERFACE(isavable, IANJUTA_TYPE_FILE_SAVABLE);
