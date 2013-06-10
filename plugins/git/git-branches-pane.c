@@ -303,7 +303,7 @@ on_branches_view_button_press_event (GtkWidget *branches_view,
 	GtkTreeSelection *selection;
 	AnjutaPlugin *plugin;
 	AnjutaUI *ui;
-	GtkWidget *menu;
+	GtkMenu *menu;
 
 	if (event->type == GDK_BUTTON_PRESS && event->button == 3)
 	{
