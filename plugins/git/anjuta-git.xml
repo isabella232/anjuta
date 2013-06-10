@@ -21,4 +21,10 @@
 		<menuitem name="Delete..." action="GitBranchDelete" />
 		<menuitem name="Merge..." action="GitBranchMerge" />
 	</popup>
+
+	<popup name="GitRemotePopup">
+		<menuitem name="Push..." action="GitRemotePush" />
+		<menuitem name="Pull..." action="GitRemotePull" />
+		<menuitem name="Fetch" action="GitRemoteFetch" />
+	</popup>
 </ui>

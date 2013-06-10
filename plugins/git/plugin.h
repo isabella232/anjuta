@@ -82,6 +82,7 @@ struct _Git
 	GtkActionGroup *status_menu_group;
 	GtkActionGroup *log_menu_group;
 	GtkActionGroup *branch_menu_group;
+	GtkActionGroup *remote_menu_group;
 
 	/* List commands for various panes. 
 	 * Keep them in the plugin so that the commands have the most direct

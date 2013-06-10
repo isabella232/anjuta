@@ -569,6 +569,34 @@ static GtkActionEntry branch_menu_entries[] =
 	}
 };
 
+static GtkActionEntry remote_menu_entries[] =
+{
+	{
+		"GitRemotePush",
+		NULL,
+		N_("Push..."),
+		NULL,
+		NULL,
+		G_CALLBACK (on_push_button_clicked)
+	},
+	{
+		"GitRemotePull",
+		NULL,
+		N_("Pull..."),
+		NULL,
+		NULL,
+		G_CALLBACK (on_pull_button_clicked)
+	},
+	{
+		"GitRemoteFetch",
+		NULL,
+		N_("Fetch"),
+		NULL,
+		NULL,
+		G_CALLBACK (on_fetch_button_clicked)
+	}
+};
+
 static gpointer parent_class;
 
 static void
@@ -826,6 +854,11 @@ git_activate_plugin (AnjutaPlugin *plugin)
 	                                                                    G_N_ELEMENTS (branch_menu_entries),
 	                                                                    GETTEXT_PACKAGE,
 	                                                                    FALSE, plugin);
+	git_plugin->remote_menu_group = anjuta_ui_add_action_group_entries (ui, "GitRemotePopup",
+	                                                                    _("Remote popup menu"),
+	                                                                    remote_menu_entries,
+	                                                                    G_N_ELEMENTS (remote_menu_entries),
+	                                                                    GETTEXT_PACKAGE, FALSE, plugin);
 
 	
 	/* Create the branch list commands. There are two commands because some 
@@ -967,6 +1000,7 @@ git_deactivate_plugin (AnjutaPlugin *plugin)
 	anjuta_ui_remove_action_group (ui, git_plugin->status_menu_group);
 	anjuta_ui_remove_action_group (ui, git_plugin->log_menu_group);
 	anjuta_ui_remove_action_group (ui, git_plugin->branch_menu_group);
+	anjuta_ui_remove_action_group (ui, git_plugin->remote_menu_group);
 	anjuta_ui_unmerge (ui, git_plugin->uiid);
 
 	g_object_unref (git_plugin->local_branch_list_command);

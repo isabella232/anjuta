@@ -47,6 +47,35 @@ on_remote_selected (GtkTreeSelection *selection, GtkTreeModel *model,
 	return TRUE;
 }
 
+static gboolean
+on_remotes_view_button_press_event (GtkWidget *remotes_view, 
+                                    GdkEventButton *event,
+                                    GitRemotesPane *self)
+{
+	GtkTreeSelection *selection;
+	AnjutaPlugin *plugin;
+	AnjutaUI *ui;
+	GtkMenu *menu;
+
+	if (event->type == GDK_BUTTON_PRESS && event->button == 3)
+	{
+		selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (remotes_view));
+
+		if (gtk_tree_selection_count_selected_rows (selection) > 0)
+		{
+			plugin = anjuta_dock_pane_get_plugin (ANJUTA_DOCK_PANE (self));
+			ui = anjuta_shell_get_ui (plugin->shell, NULL);
+			menu = GTK_MENU (gtk_ui_manager_get_widget (GTK_UI_MANAGER (ui),
+			                                            "/GitRemotePopup"));
+
+			gtk_menu_popup (menu, NULL, NULL, NULL, NULL, event->button,
+			                event->time);
+		}
+	}
+
+	return FALSE;
+}
+
 static void
 git_remotes_pane_init (GitRemotesPane *self)
 {
@@ -76,6 +105,11 @@ git_remotes_pane_init (GitRemotesPane *self)
 	gtk_tree_selection_set_select_function (selection,
 	                                        (GtkTreeSelectionFunc) on_remote_selected,
 	                                        self, NULL);
+
+	/* Pop-up menu */
+	g_signal_connect (G_OBJECT (remotes_view), "button-press-event",
+	                  G_CALLBACK (on_remotes_view_button_press_event),
+	                  self);
 }
 
 static void
