@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta-master-po-gl-1952\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-06 11:24+0200\n"
-"PO-Revision-Date: 2013-06-06 11:35+0200\n"
+"POT-Creation-Date: 2013-06-10 10:22+0200\n"
+"PO-Revision-Date: 2013-06-10 10:23+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -88,7 +88,7 @@ msgstr ""
 msgid "Unknown error in module %s"
 msgstr "Produciuse un erro descoñecido no módulo %s"
 
-#: ../libanjuta/anjuta-column-text-view.c:40 ../plugins/git/git-pane.c:123
+#: ../libanjuta/anjuta-column-text-view.c:40 ../plugins/git/git-pane.c:142
 #, c-format
 msgid "Column %i"
 msgstr "Columna %i"
@@ -5008,7 +5008,7 @@ msgstr "Obter as ramificacións remotas despois de crealas"
 msgid "Mailbox files to apply:"
 msgstr "Ficheiros de caixa de correo que aplicar:"
 
-#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:898
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:973
 msgid "Branches"
 msgstr "_Ramificacións"
 
@@ -5078,9 +5078,9 @@ msgstr "Anotar esta etiqueta:"
 msgid "Branches must be fully merged"
 msgstr "As ramificacións deben combinarse completamente"
 
-#: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:77
-#: ../plugins/git/git-pane.c:82 ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:794
+#: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:96
+#: ../plugins/git/git-pane.c:101 ../plugins/git/git.plugin.in.h:1
+#: ../plugins/git/plugin.c:858
 msgid "Git"
 msgstr "Git"
 
@@ -5360,11 +5360,11 @@ msgstr "<b>Remoto:</b> %s"
 msgid "Merge"
 msgstr "Combinar"
 
-#: ../plugins/git/git-pane.c:204
+#: ../plugins/git/git-pane.c:223
 msgid "Git Error"
 msgstr "Erro de Git"
 
-#: ../plugins/git/git-pane.c:210
+#: ../plugins/git/git-pane.c:229
 msgid "Git Warning"
 msgstr "Aviso de Git"
 
@@ -5380,11 +5380,11 @@ msgstr "Control de versións Git"
 msgid "Please enter a URL."
 msgstr "Introduza un URL."
 
-#: ../plugins/git/git-pull-pane.c:242 ../plugins/git/plugin.c:265
+#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:265
 msgid "Pull"
 msgstr "Recibir (pull)"
 
-#: ../plugins/git/git-push-pane.c:438 ../plugins/git/plugin.c:257
+#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:257
 msgid "Push"
 msgstr "Mandar"
 
@@ -5534,7 +5534,7 @@ msgstr "Resolver conflitos"
 msgid "Mark selected conflicted files as resolved"
 msgstr "Marcar os ficheiros conflitivos seleccionados como resoltos"
 
-#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:916
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:991
 msgid "Stash"
 msgstr "Reservar"
 
@@ -5574,7 +5574,7 @@ msgstr "Mandar os cambios ao repositorio remoto"
 msgid "Pull changes from a remote repository"
 msgstr "Tirar os cambios desde o repositorio remoto"
 
-#: ../plugins/git/plugin.c:273
+#: ../plugins/git/plugin.c:273 ../plugins/git/plugin.c:593
 msgid "Fetch"
 msgstr "Obter"
 
@@ -5752,35 +5752,68 @@ msgstr "Eliminar…"
 msgid "Merge..."
 msgstr "Combinar…"
 
-#: ../plugins/git/plugin.c:657 ../plugins/git/plugin.c:730
+#: ../plugins/git/plugin.c:577
+msgid "Push..."
+msgstr "Mandar…"
+
+#: ../plugins/git/plugin.c:585
+msgid "Pull..."
+msgstr "Descargar (pull)..."
+
+#: ../plugins/git/plugin.c:605
+msgid "Apply"
+msgstr "Aplicar"
+
+#: ../plugins/git/plugin.c:613
+msgid "Apply and restore index"
+msgstr "Aplicar e restaurar o índice"
+
+#: ../plugins/git/plugin.c:621
+#: ../plugins/subversion/subversion-log-dialog.c:119
+msgid "Diff"
+msgstr "Diferenciar"
+
+#: ../plugins/git/plugin.c:629
+msgid "Drop"
+msgstr ""
+
+#: ../plugins/git/plugin.c:721 ../plugins/git/plugin.c:794
 msgid "Branch"
 msgstr "Ramificación"
 
-#: ../plugins/git/plugin.c:813
+#: ../plugins/git/plugin.c:877
 msgid "Status popup menu"
 msgstr "Menú emerxente de estado"
 
-#: ../plugins/git/plugin.c:818
+#: ../plugins/git/plugin.c:882
 msgid "Log popup menu"
 msgstr "Menú emerxente do rexistro"
 
-#: ../plugins/git/plugin.c:824
+#: ../plugins/git/plugin.c:888
 msgid "Branch popup menu"
 msgstr "Menú emerxente da rama"
 
-#: ../plugins/git/plugin.c:886
+#: ../plugins/git/plugin.c:894
+msgid "Remote popup menu"
+msgstr "Menú emerxente de remotos"
+
+#: ../plugins/git/plugin.c:899
+msgid "Popup menu entries"
+msgstr "Entradas do menú emerxente"
+
+#: ../plugins/git/plugin.c:961
 msgid "Status"
 msgstr "Estado"
 
-#: ../plugins/git/plugin.c:892
+#: ../plugins/git/plugin.c:967
 msgid "Log"
 msgstr "Rexistro"
 
-#: ../plugins/git/plugin.c:903
+#: ../plugins/git/plugin.c:978
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: ../plugins/git/plugin.c:910
+#: ../plugins/git/plugin.c:985
 msgid "Remotes"
 msgstr "Servidores remotos"
 
@@ -9156,10 +9189,6 @@ msgstr "[Head/Copia de traballo]"
 msgid "Subversion: Retrieving diff…"
 msgstr "Subversion: Recuperando o diferencial…"
 
-#: ../plugins/subversion/subversion-log-dialog.c:119
-msgid "Diff"
-msgstr "Diferenciar"
-
 #: ../plugins/subversion/subversion-log-dialog.c:257
 msgid "Subversion: Retrieving log…"
 msgstr "Subversion: Recuperando o rexistro…"
@@ -11069,9 +11098,6 @@ msgstr "Só texto"
 
 #~ msgid "Generate patch files for submission upstream"
 #~ msgstr "Xerar ficheiros de parche para a remisión en upstream"
-
-#~ msgid "_Apply…"
-#~ msgstr "_Aplicar…"
 
 #~ msgid "Start applying a patch series"
 #~ msgstr "Comezar a aplicar series de parches"
