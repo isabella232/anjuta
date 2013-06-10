@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-06-02 16:39+0000\n"
-"PO-Revision-Date: 2013-06-03 18:21+0200\n"
+"POT-Creation-Date: 2013-06-10 05:04+0000\n"
+"PO-Revision-Date: 2013-06-10 21:52+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -87,7 +87,7 @@ msgstr "Nelze nalézt registrační funkci %s zásuvného modulu pro %s"
 msgid "Unknown error in module %s"
 msgstr "Neznámá chyba v modulu %s"
 
-#: ../libanjuta/anjuta-column-text-view.c:40 ../plugins/git/git-pane.c:123
+#: ../libanjuta/anjuta-column-text-view.c:40 ../plugins/git/git-pane.c:142
 #, c-format
 msgid "Column %i"
 msgstr "Sloupec %i"
@@ -3981,7 +3981,7 @@ msgstr "Hledat pomocí regulárního výrazu"
 #: ../plugins/document-manager/plugin.c:295
 #: ../plugins/indentation-c-style/plugin.c:217
 #: ../plugins/indentation-python-style/plugin.c:200
-#: ../plugins/language-support-cpp-java/plugin.c:1149
+#: ../plugins/language-support-cpp-java/plugin.c:1153
 #: ../plugins/language-support-python/plugin.c:377 ../src/anjuta-actions.h:30
 msgid "_Edit"
 msgstr "_Upravit"
@@ -4983,7 +4983,7 @@ msgstr "Získat vzdálené větve po vytvoření"
 msgid "Mailbox files to apply:"
 msgstr "Soubory typu mailbox, které použít:"
 
-#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:898
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:973
 msgid "Branches"
 msgstr "Větve"
 
@@ -5053,9 +5053,9 @@ msgstr "Okomentovat tuto značku:"
 msgid "Branches must be fully merged"
 msgstr "Větev musí být zcela sloučena"
 
-#: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:77
-#: ../plugins/git/git-pane.c:82 ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:794
+#: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:96
+#: ../plugins/git/git-pane.c:101 ../plugins/git/git.plugin.in.h:1
+#: ../plugins/git/plugin.c:858
 msgid "Git"
 msgstr "Git"
 
@@ -5334,11 +5334,11 @@ msgstr "<b>Vzdálený:</b> %s"
 msgid "Merge"
 msgstr "Sloučit"
 
-#: ../plugins/git/git-pane.c:204
+#: ../plugins/git/git-pane.c:223
 msgid "Git Error"
 msgstr "Chyba Git"
 
-#: ../plugins/git/git-pane.c:210
+#: ../plugins/git/git-pane.c:229
 msgid "Git Warning"
 msgstr "Varování Git"
 
@@ -5354,11 +5354,11 @@ msgstr "Správa verzí Git"
 msgid "Please enter a URL."
 msgstr "Zadejte prosím adresu URL."
 
-#: ../plugins/git/git-pull-pane.c:242 ../plugins/git/plugin.c:265
+#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:265
 msgid "Pull"
 msgstr "Stáhnout"
 
-#: ../plugins/git/git-push-pane.c:438 ../plugins/git/plugin.c:257
+#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:257
 msgid "Push"
 msgstr "Odeslat"
 
@@ -5507,7 +5507,7 @@ msgstr "Vyřešit konflikty"
 msgid "Mark selected conflicted files as resolved"
 msgstr "Označit vybrané konfliktní soubory jako vyřešené"
 
-#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:916
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:991
 msgid "Stash"
 msgstr "Skrýš"
 
@@ -5547,7 +5547,7 @@ msgstr "Odeslat změny do vzdáleného repozitáře"
 msgid "Pull changes from a remote repository"
 msgstr "Stáhnout změny ze vzdáleného repozitáře"
 
-#: ../plugins/git/plugin.c:273
+#: ../plugins/git/plugin.c:273 ../plugins/git/plugin.c:593
 msgid "Fetch"
 msgstr "Získat"
 
@@ -5720,35 +5720,69 @@ msgstr "Smazat…"
 msgid "Merge..."
 msgstr "Sloučit…"
 
-#: ../plugins/git/plugin.c:657 ../plugins/git/plugin.c:730
+#: ../plugins/git/plugin.c:577
+msgid "Push..."
+msgstr "Odeslat…"
+
+#: ../plugins/git/plugin.c:585
+msgid "Pull..."
+msgstr "Stáhnout…"
+
+#: ../plugins/git/plugin.c:605
+msgid "Apply"
+msgstr "Použít"
+
+#: ../plugins/git/plugin.c:613
+#| msgid "Apply stash and restore index"
+msgid "Apply and restore index"
+msgstr "Použít a obnovit index"
+
+#: ../plugins/git/plugin.c:621
+#: ../plugins/subversion/subversion-log-dialog.c:119
+msgid "Diff"
+msgstr "Diff"
+
+#: ../plugins/git/plugin.c:629
+msgid "Drop"
+msgstr "Zahodit"
+
+#: ../plugins/git/plugin.c:721 ../plugins/git/plugin.c:794
 msgid "Branch"
 msgstr "Větev"
 
-#: ../plugins/git/plugin.c:813
+#: ../plugins/git/plugin.c:877
 msgid "Status popup menu"
 msgstr "Vyskakovací nabídka stavu"
 
-#: ../plugins/git/plugin.c:818
+#: ../plugins/git/plugin.c:882
 msgid "Log popup menu"
 msgstr "Vyskakovací nabídka záznamu"
 
-#: ../plugins/git/plugin.c:824
+#: ../plugins/git/plugin.c:888
 msgid "Branch popup menu"
 msgstr "Vyskakovací nabídka větve"
 
-#: ../plugins/git/plugin.c:886
+#: ../plugins/git/plugin.c:894
+msgid "Remote popup menu"
+msgstr "Vzdálená vyskakovací nabídka"
+
+#: ../plugins/git/plugin.c:899
+msgid "Popup menu entries"
+msgstr "Položky vyskakovací nabídky"
+
+#: ../plugins/git/plugin.c:961
 msgid "Status"
 msgstr "Stav"
 
-#: ../plugins/git/plugin.c:892
+#: ../plugins/git/plugin.c:967
 msgid "Log"
 msgstr "Záznam"
 
-#: ../plugins/git/plugin.c:903
+#: ../plugins/git/plugin.c:978
 msgid "Tags"
 msgstr "Značky"
 
-#: ../plugins/git/plugin.c:910
+#: ../plugins/git/plugin.c:985
 msgid "Remotes"
 msgstr "Vzdálené"
 
@@ -5996,28 +6030,28 @@ msgstr "Nahrát značky API pro standardní knihovnu šablon C++"
 msgid "Code added for widget."
 msgstr "Kód přidaný widgetu."
 
-#: ../plugins/language-support-cpp-java/plugin.c:1155
+#: ../plugins/language-support-cpp-java/plugin.c:1159
 msgid "Comment/Uncomment"
 msgstr "Zakomentovat/odkomentovat"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1156
+#: ../plugins/language-support-cpp-java/plugin.c:1160
 msgid "Comment or uncomment current selection"
 msgstr "Zakomentovat nebo odkomentovat aktuální výběr"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1161
+#: ../plugins/language-support-cpp-java/plugin.c:1165
 msgid "Swap .h/.c"
 msgstr "Přepnout .h/.c"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1162
+#: ../plugins/language-support-cpp-java/plugin.c:1166
 msgid "Swap C header and source files"
 msgstr "Prohodit hlavičkový a zdrojový soubory v C"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1202
+#: ../plugins/language-support-cpp-java/plugin.c:1206
 msgid "C++/Java Assistance"
 msgstr "Průvodce projektem v jazyce C++/Java"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1421
-#: ../plugins/language-support-cpp-java/plugin.c:1450
+#: ../plugins/language-support-cpp-java/plugin.c:1425
+#: ../plugins/language-support-cpp-java/plugin.c:1454
 msgid "API Tags (C/C++)"
 msgstr "Značky API (C/C++)"
 
@@ -9111,10 +9145,6 @@ msgstr "[Head/Pracovní kopie]"
 #: ../plugins/subversion/subversion-log-dialog.c:493
 msgid "Subversion: Retrieving diff…"
 msgstr "Subversion: Získává se rozdíl…"
-
-#: ../plugins/subversion/subversion-log-dialog.c:119
-msgid "Diff"
-msgstr "Diff"
 
 #: ../plugins/subversion/subversion-log-dialog.c:257
 msgid "Subversion: Retrieving log…"
