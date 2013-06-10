@@ -173,7 +173,7 @@ static void  on_name_entry_text_changed          (GObject *entry_obj,
                                                   GParamSpec *param_spec,
                                                   gpointer user_data);
 
-G_DEFINE_TYPE (SnippetsEditor, snippets_editor, GTK_TYPE_HBOX);
+G_DEFINE_TYPE (SnippetsEditor, snippets_editor, GTK_TYPE_BOX);
 
 
 static void
@@ -1758,11 +1758,8 @@ on_variables_view_row_activated (GtkTreeView *tree_view,
                                  GtkTreeViewColumn *col,
                                  gpointer user_data)
 {
-	SnippetsEditorPrivate *priv = NULL;
-	
 	/* Assertions */
 	g_return_if_fail (ANJUTA_IS_SNIPPETS_EDITOR (user_data));
-	priv = ANJUTA_SNIPPETS_EDITOR_GET_PRIVATE (user_data);
 
 	/* TODO -- still to be decided :) */
 	

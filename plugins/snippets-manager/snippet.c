@@ -1201,12 +1201,10 @@ snippet_is_equal (AnjutaSnippet *snippet,
 {
 	const gchar *trigger = NULL, *trigger2 = NULL, *cur_lang = NULL;
 	GList *iter = NULL, *languages = NULL;
-	AnjutaSnippetPrivate *priv = NULL;
-	
+
 	/* Assertions */
 	g_return_val_if_fail (ANJUTA_IS_SNIPPET (snippet), FALSE);
 	g_return_val_if_fail (ANJUTA_IS_SNIPPET (snippet), FALSE);
-	priv = ANJUTA_SNIPPET_GET_PRIVATE (snippet);
 
 	trigger  = snippet_get_trigger_key (snippet);
 	trigger2 = snippet_get_trigger_key (snippet2);

@@ -351,14 +351,12 @@ get_iter_at_variable (SnippetVarsStore *vars_store,
                       SnippetVariableType type,
                       gboolean in_snippet_only)
 {
-	SnippetVarsStorePrivate *priv = NULL;
 	gchar *cur_var_name = NULL;
 	gboolean cur_var_in_snippet = FALSE;
 	SnippetVariableType cur_type = SNIPPET_VAR_TYPE_ANY;
 	
 	/* Assertions */
 	g_return_val_if_fail (ANJUTA_IS_SNIPPET_VARS_STORE (vars_store), FALSE);
-	priv = ANJUTA_SNIPPET_VARS_STORE_GET_PRIVATE (vars_store);
 
 	if (!gtk_tree_model_get_iter_first (GTK_TREE_MODEL (vars_store), iter))
 		return FALSE;

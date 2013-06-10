@@ -69,7 +69,7 @@ enum
 };
 
 
-G_DEFINE_TYPE (SnippetsBrowser, snippets_browser, GTK_TYPE_HBOX);
+G_DEFINE_TYPE (SnippetsBrowser, snippets_browser, GTK_TYPE_BOX);
 
 static void
 snippets_browser_class_init (SnippetsBrowserClass* klass)
@@ -206,7 +206,7 @@ init_browser_layout (SnippetsBrowser *snippets_browser)
 	gtk_container_add (GTK_CONTAINER (priv->insert_button),
 	                   gtk_image_new_from_stock (GTK_STOCK_PASTE,
 	                                             GTK_ICON_SIZE_MENU));
-	priv->grip = gtk_hbox_new (FALSE, 5);
+	priv->grip = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 5);
 	priv->edit_button     = GTK_TOGGLE_BUTTON (gtk_builder_get_object (bxml, "edit_button"));
 	priv->snippets_view_cont = GTK_SCROLLED_WINDOW (gtk_builder_get_object (bxml, "snippets_view_cont"));
 	priv->snippets_view_vbox = GTK_BOX (gtk_builder_get_object (bxml, "snippets_view_vbox"));
@@ -221,7 +221,7 @@ init_browser_layout (SnippetsBrowser *snippets_browser)
 	/* Assert the objects */
 	g_return_if_fail (GTK_IS_TOGGLE_BUTTON (priv->edit_button));
 	g_return_if_fail (GTK_IS_SCROLLED_WINDOW (priv->snippets_view_cont));
-	g_return_if_fail (GTK_IS_VBOX (priv->snippets_view_vbox));
+	g_return_if_fail (GTK_IS_BOX (priv->snippets_view_vbox));
 
 	/* Add the Snippets View to the scrolled window */
 	gtk_container_add (GTK_CONTAINER (priv->snippets_view_cont),
@@ -798,12 +798,10 @@ on_add_button_clicked (GtkButton *add_button,
 	GtkWidget *menu = NULL, *add_snippet_menu_item = NULL, 
 	          *add_snippets_group_menu_item = NULL;
 	SnippetsBrowser *snippets_browser = NULL;
-	SnippetsBrowserPrivate *priv = NULL;
-	
+
 	/* Assertions */
 	g_return_if_fail (ANJUTA_IS_SNIPPETS_BROWSER (user_data));
 	snippets_browser = ANJUTA_SNIPPETS_BROWSER (user_data);
-	priv = ANJUTA_SNIPPETS_BROWSER_GET_PRIVATE (snippets_browser);
 
 	menu = gtk_menu_new ();
 
@@ -988,15 +986,13 @@ on_snippets_view_query_tooltip (GtkWidget *snippets_view,
                                 GtkTooltip *tooltip,
                                 gpointer user_data)
 {
-	SnippetsBrowser *snippets_browser = NULL;
 	SnippetsBrowserPrivate *priv = NULL;
 	GtkTreeIter iter;
 	GObject *cur_object = NULL;
-		
+
 	/* Assertions */
 	g_return_val_if_fail (GTK_IS_TREE_VIEW (snippets_view), FALSE);
 	g_return_val_if_fail (ANJUTA_IS_SNIPPETS_BROWSER (user_data), FALSE);
-	snippets_browser = ANJUTA_SNIPPETS_BROWSER (user_data);
 	priv = ANJUTA_SNIPPETS_BROWSER_GET_PRIVATE (user_data);
 	g_return_val_if_fail (ANJUTA_IS_SNIPPETS_DB (priv->snippets_db), FALSE);
 	g_return_val_if_fail (GTK_IS_TREE_MODEL (priv->filter), FALSE);

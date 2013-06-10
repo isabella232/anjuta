@@ -1802,14 +1802,12 @@ snippets_db_get_path (GtkTreeModel *tree_model,
 {
 	GtkTreePath *path = NULL;
 	GtkTreeIter *iter_copy = NULL;
-	SnippetsDB *snippets_db = NULL;
 	gint count = 0;
 	GList *l_iter = NULL;
 
 	/* Assertions */
 	g_return_val_if_fail (ANJUTA_IS_SNIPPETS_DB (tree_model), NULL);
 	g_return_val_if_fail (iter != NULL, NULL);
-	snippets_db = ANJUTA_SNIPPETS_DB (tree_model);
 
 	/* Make a new GtkTreePath object */
 	path = gtk_tree_path_new ();
@@ -1848,7 +1846,6 @@ snippets_db_get_value (GtkTreeModel *tree_model,
                        gint column,
                        GValue *value)
 {
-	SnippetsDB *snippets_db = NULL;
 	GObject *cur_object = NULL;
 	gchar *cur_string = NULL;
 
@@ -1856,7 +1853,6 @@ snippets_db_get_value (GtkTreeModel *tree_model,
 	g_return_if_fail (ANJUTA_IS_SNIPPETS_DB (tree_model));
 	g_return_if_fail (iter != NULL);
 	g_return_if_fail (column >= 0 && column < SNIPPETS_DB_MODEL_COL_N);
-	snippets_db = ANJUTA_SNIPPETS_DB (tree_model);
 
 	/* Initializations */
 	g_value_init (value, snippets_db_get_column_type (tree_model, column));
@@ -2020,12 +2016,9 @@ snippets_db_iter_parent (GtkTreeModel *tree_model,
                          GtkTreeIter *iter,
                          GtkTreeIter *child)
 {
-	SnippetsDB *snippets_db = NULL;
-
 	/* Assertions */
 	g_return_val_if_fail (ANJUTA_IS_SNIPPETS_DB (tree_model), FALSE);
 	g_return_val_if_fail (child != NULL, FALSE);
-	snippets_db = ANJUTA_SNIPPETS_DB (tree_model);
 
 	/* If it's a snippets group node, it doesn't have a parent */
 	if (iter_is_snippets_group_node (child))
