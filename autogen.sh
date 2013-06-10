@@ -9,7 +9,7 @@ sh -c "cd $srcdir/libanjuta/interfaces && \
 perl anjuta-idl-compiler.pl libanjuta && \
 touch iface-built.stamp"
 
-git submodule update --init --recursive
+(cd "$srcdir" && exec git submodule update --init --recursive)
 
 ACLOCAL_FLAGS="-I libgd $ACLOCAL_FLAGS"
 
