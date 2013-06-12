@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: anjuta.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-06-02 16:39+0000\n"
-"PO-Revision-Date: 2013-06-03 11:15+0200\n"
+"POT-Creation-Date: 2013-06-10 05:04+0000\n"
+"PO-Revision-Date: 2013-06-12 13:15+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -90,7 +90,7 @@ msgstr ""
 msgid "Unknown error in module %s"
 msgstr "Error desconocido en el módulo %s"
 
-#: ../libanjuta/anjuta-column-text-view.c:40 ../plugins/git/git-pane.c:123
+#: ../libanjuta/anjuta-column-text-view.c:40 ../plugins/git/git-pane.c:142
 #, c-format
 msgid "Column %i"
 msgstr "Columna %i"
@@ -514,9 +514,6 @@ msgstr "%s: Instálelo de «%s»\n"
 
 #: ../libanjuta/anjuta-profile.c:964
 #, c-format
-#| msgid ""
-#| "Failed to read '%s': Following mandatory plugins are missing:\n"
-#| "%s"
 msgid "Failed to read '%s': Following mandatory plugins are missing"
 msgstr "Falló al leer «%s»: faltan los siguientes complementos obligatorios"
 
@@ -4006,7 +4003,7 @@ msgstr "Buscar usando expresiones regulares"
 #: ../plugins/document-manager/plugin.c:295
 #: ../plugins/indentation-c-style/plugin.c:217
 #: ../plugins/indentation-python-style/plugin.c:200
-#: ../plugins/language-support-cpp-java/plugin.c:1149
+#: ../plugins/language-support-cpp-java/plugin.c:1153
 #: ../plugins/language-support-python/plugin.c:377 ../src/anjuta-actions.h:30
 msgid "_Edit"
 msgstr "_Editar"
@@ -5011,7 +5008,7 @@ msgstr "Obtener ramas remotas después de crearlas"
 msgid "Mailbox files to apply:"
 msgstr "Archivos de buzón de correo que aplicar:"
 
-#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:898
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:973
 msgid "Branches"
 msgstr "Ramas"
 
@@ -5081,9 +5078,9 @@ msgstr "Anotar esta etiqueta:"
 msgid "Branches must be fully merged"
 msgstr "Las ramas se deben mezclar completamente"
 
-#: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:77
-#: ../plugins/git/git-pane.c:82 ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:794
+#: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:96
+#: ../plugins/git/git-pane.c:101 ../plugins/git/git.plugin.in.h:1
+#: ../plugins/git/plugin.c:858
 msgid "Git"
 msgstr "Git"
 
@@ -5313,7 +5310,6 @@ msgstr "Crear etiqueta"
 
 #: ../plugins/git/git-delete-branches-pane.c:238
 #, c-format
-#| msgid "Are you sure you want to delete the '%s' tool?"
 msgid "Are you sure you want to delete branch %s?"
 msgstr "¿Está seguro de querer eliminar la rama %s?"
 
@@ -5364,11 +5360,11 @@ msgstr "<b>Remoto:</b> %s"
 msgid "Merge"
 msgstr "Mezclar"
 
-#: ../plugins/git/git-pane.c:204
+#: ../plugins/git/git-pane.c:223
 msgid "Git Error"
 msgstr "Error de git"
 
-#: ../plugins/git/git-pane.c:210
+#: ../plugins/git/git-pane.c:229
 msgid "Git Warning"
 msgstr "Advertencia de git"
 
@@ -5384,11 +5380,11 @@ msgstr "Control de versiones Git"
 msgid "Please enter a URL."
 msgstr "Introduzca un URL."
 
-#: ../plugins/git/git-pull-pane.c:242 ../plugins/git/plugin.c:265
+#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:265
 msgid "Pull"
 msgstr "Descargar (pull)"
 
-#: ../plugins/git/git-push-pane.c:438 ../plugins/git/plugin.c:257
+#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:257
 msgid "Push"
 msgstr "Empujar"
 
@@ -5538,7 +5534,7 @@ msgstr "Resolver conflictos"
 msgid "Mark selected conflicted files as resolved"
 msgstr "Marcar como resuelto el conflicto entre archivos"
 
-#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:916
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:991
 msgid "Stash"
 msgstr "Guardar («stash»)"
 
@@ -5578,7 +5574,7 @@ msgstr "Empujar los cambios contra un repositorio remoto"
 msgid "Pull changes from a remote repository"
 msgstr "Actualizar los cambios desde un repositorio remoto"
 
-#: ../plugins/git/plugin.c:273
+#: ../plugins/git/plugin.c:273 ../plugins/git/plugin.c:593
 msgid "Fetch"
 msgstr "Obtener"
 
@@ -5748,7 +5744,6 @@ msgid "Switch"
 msgstr "Cambiar"
 
 #: ../plugins/git/plugin.c:557
-#| msgid "_Delete..."
 msgid "Delete..."
 msgstr "Eliminar…"
 
@@ -5756,36 +5751,73 @@ msgstr "Eliminar…"
 msgid "Merge..."
 msgstr "Mezclar…"
 
-#: ../plugins/git/plugin.c:657 ../plugins/git/plugin.c:730
+#: ../plugins/git/plugin.c:577
+#| msgid "_Push..."
+msgid "Push..."
+msgstr "Empujar…"
+
+#: ../plugins/git/plugin.c:585
+#| msgid "_Pull..."
+msgid "Pull..."
+msgstr "Cargar…"
+
+#: ../plugins/git/plugin.c:605
+#| msgid "_Apply…"
+msgid "Apply"
+msgstr "Aplicar"
+
+#: ../plugins/git/plugin.c:613
+#| msgid "Apply stash and restore index"
+msgid "Apply and restore index"
+msgstr "Aplicar y restablecer el índice"
+
+#: ../plugins/git/plugin.c:621
+#: ../plugins/subversion/subversion-log-dialog.c:119
+msgid "Diff"
+msgstr "Diff"
+
+#: ../plugins/git/plugin.c:629
+msgid "Drop"
+msgstr "Soltar"
+
+#: ../plugins/git/plugin.c:721 ../plugins/git/plugin.c:794
 msgid "Branch"
 msgstr "Rama"
 
-#: ../plugins/git/plugin.c:813
+#: ../plugins/git/plugin.c:877
 msgid "Status popup menu"
 msgstr "Menú emergente de estado"
 
-#: ../plugins/git/plugin.c:818
+#: ../plugins/git/plugin.c:882
 msgid "Log popup menu"
 msgstr "Menú emergente de registro"
 
-#: ../plugins/git/plugin.c:824
-#| msgid "Log popup menu"
+#: ../plugins/git/plugin.c:888
 msgid "Branch popup menu"
 msgstr "Menú emergente de rama"
 
-#: ../plugins/git/plugin.c:886
+#: ../plugins/git/plugin.c:894
+#| msgid "Log popup menu"
+msgid "Remote popup menu"
+msgstr "Menú emergente remoto"
+
+#: ../plugins/git/plugin.c:899
+msgid "Popup menu entries"
+msgstr "Entradas del menú emergente"
+
+#: ../plugins/git/plugin.c:961
 msgid "Status"
 msgstr "Estado"
 
-#: ../plugins/git/plugin.c:892
+#: ../plugins/git/plugin.c:967
 msgid "Log"
 msgstr "Registro"
 
-#: ../plugins/git/plugin.c:903
+#: ../plugins/git/plugin.c:978
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: ../plugins/git/plugin.c:910
+#: ../plugins/git/plugin.c:985
 msgid "Remotes"
 msgstr "Remotas"
 
@@ -6035,28 +6067,28 @@ msgstr "Cargar etiquetas API para la biblioteca de plantillas de C++"
 msgid "Code added for widget."
 msgstr "Código añadido para el widget."
 
-#: ../plugins/language-support-cpp-java/plugin.c:1155
+#: ../plugins/language-support-cpp-java/plugin.c:1159
 msgid "Comment/Uncomment"
 msgstr "Comentar/Descomentar"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1156
+#: ../plugins/language-support-cpp-java/plugin.c:1160
 msgid "Comment or uncomment current selection"
 msgstr "Comentar o descomentar la selección actual"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1161
+#: ../plugins/language-support-cpp-java/plugin.c:1165
 msgid "Swap .h/.c"
 msgstr "Intercambiar .h/.c"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1162
+#: ../plugins/language-support-cpp-java/plugin.c:1166
 msgid "Swap C header and source files"
 msgstr "Intercambia la cabecera C y el archivo fuente"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1202
+#: ../plugins/language-support-cpp-java/plugin.c:1206
 msgid "C++/Java Assistance"
 msgstr "Asistencia para C++/Java"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1421
-#: ../plugins/language-support-cpp-java/plugin.c:1450
+#: ../plugins/language-support-cpp-java/plugin.c:1425
+#: ../plugins/language-support-cpp-java/plugin.c:1454
 msgid "API Tags (C/C++)"
 msgstr "Etiquetas del API (C/C++)"
 
@@ -9161,10 +9193,6 @@ msgstr "[Head/Copia de trabajo]"
 msgid "Subversion: Retrieving diff…"
 msgstr "Subversion: Obteniendo diff…"
 
-#: ../plugins/subversion/subversion-log-dialog.c:119
-msgid "Diff"
-msgstr "Diff"
-
 #: ../plugins/subversion/subversion-log-dialog.c:257
 msgid "Subversion: Retrieving log…"
 msgstr "Subversion: Obteniendo el registro…"
@@ -9984,7 +10012,6 @@ msgid "Specify another profile"
 msgstr "Especificar otro perfil"
 
 #: ../src/anjuta-application.c:345
-#| msgid "Compile file"
 msgid "profile file"
 msgstr "archivo del perfil"
 
@@ -9994,7 +10021,6 @@ msgstr "- Entorno Integrado de Desarrollo"
 
 #: ../src/anjuta-application.c:639
 #, c-format
-#| msgid "Installation failed: %s"
 msgid "Invalid profile %s: %s"
 msgstr "Perfil %s no válido: %s"
 
@@ -11089,9 +11115,6 @@ msgstr "Sólo texto"
 
 #~ msgid "Generate patch files for submission upstream"
 #~ msgstr "Generar archivos de parches para enviar a «upstream»"
-
-#~ msgid "_Apply…"
-#~ msgstr "_Aplicar…"
 
 #~ msgid "Start applying a patch series"
 #~ msgstr "Comenzar a aplicar una serie de parches"
@@ -12262,12 +12285,6 @@ msgstr "Sólo texto"
 
 #~ msgid "_View log..."
 #~ msgstr "_Ver el registro…"
-
-#~ msgid "_Push..."
-#~ msgstr "E_mpujar…"
-
-#~ msgid "_Pull..."
-#~ msgstr "Ca_rgar (pull)…"
 
 #~ msgid "_Add..."
 #~ msgstr "_Añadir…"
