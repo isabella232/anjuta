@@ -23,15 +23,12 @@
 
 G_DEFINE_TYPE ([+NameCClass+], [+NameCLower+], GTK_TYPE_APPLICATION);
 
-[+IF (=(get "HaveBuilderUI") "1")+]
-/* Define the private structure in the .c file */
-#define [+NameCUpper+]_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE((obj), [+NameCUpper+]_TYPE_APPLICATION, [+NameCClass+]Private))
-
+[+IF (=(get "HaveBuilderUI") "1") \+]
 struct _[+NameCClass+]Private
 {
 	/* ANJUTA: Widgets declaration for [+NameHLower+].ui - DO NOT REMOVE */
 };
-[+ENDIF+]
+[+ENDIF \+]
 
 /* Create a new window loading a file */
 static void
@@ -43,7 +40,7 @@ static void
 	GtkBuilder *builder;
 	GError* error = NULL;
 
-	[+NameCClass+]Private *priv = [+NameCUpper+]_GET_PRIVATE(app);
+	[+NameCClass+]Private *priv = [+NameCUpper+]_APPLICATION(app)->priv;
 
 	/* Load UI from file */
 	builder = gtk_builder_new ();
@@ -79,6 +76,7 @@ static void
 	{
 		/* TODO: Add code here to open the file in the new window */
 	}
+
 	gtk_widget_show_all (GTK_WIDGET (window));
 }
 
@@ -105,7 +103,9 @@ static void
 static void
 [+NameCLower+]_init ([+NameCClass+] *object)
 {
-
+[+IF (=(get "HaveBuilderUI") "1") \+]
+	object->priv = G_TYPE_INSTANCE_GET_PRIVATE (object, [+NameCUpper+]_TYPE_APPLICATION, [+NameCClass+]Private);
+[+ENDIF \+]	
 }
 
 static void

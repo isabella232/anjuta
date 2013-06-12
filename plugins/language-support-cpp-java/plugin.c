@@ -390,10 +390,91 @@ language_support_find_symbol (CppJavaPlugin* lang_plugin,
     return iter;
 }
 
+static gchar*
+get_text_between (IAnjutaEditor *editor, gchar *prefix, gchar *suffix)
+{
+	IAnjutaEditorCell *search_start = IANJUTA_EDITOR_CELL (
+										ianjuta_editor_get_start_position (editor, NULL));
+	IAnjutaEditorCell *search_end = IANJUTA_EDITOR_CELL (
+										ianjuta_editor_get_end_position (editor, NULL));
+
+	IAnjutaEditorCell *result_start;
+	IAnjutaEditorCell *result_end = NULL;
+
+	IAnjutaEditorCell *prefix_end;
+	IAnjutaEditorCell *suffix_start;
+
+	ianjuta_editor_search_forward (IANJUTA_EDITOR_SEARCH (editor),
+								   prefix, FALSE,
+								   search_start, search_end,
+								   &result_start,
+								   &result_end, NULL);
+
+	if (!result_end)
+		return NULL;
+
+	g_object_unref (result_start);
+
+	prefix_end = result_end;
+
+	ianjuta_editor_search_forward (IANJUTA_EDITOR_SEARCH (editor),
+								   suffix, FALSE,
+								   result_end, search_end,
+								   &result_start,
+								   &result_end, NULL);
+
+	suffix_start = result_start;
+
+	if (!result_end)
+		return NULL;
+
+	g_object_unref (result_end);
+
+	return ianjuta_editor_get_text (editor, prefix_end, suffix_start, NULL);
+}
+
+static gchar*
+prepare_callback_body (gchar* user_data, IAnjutaEditor* editor, gint *offset)
+{
+    if (g_strcmp0 (user_data, "(null)")) {
+        *offset = C_OFFSET + 1;
+        return g_strdup_printf("\n{\n\tGObject *%s = G_OBJECT (user_data);\n\n}\n", user_data);
+    }
+
+    gchar *macro_string = get_text_between (editor, "/* Define the private structure; ", " gets ");
+
+    if (!macro_string) {
+        *offset = C_OFFSET;
+        return g_strdup_printf ("%s", C_BODY);
+    }
+
+    gchar *prefix = g_strdup_printf ("/* Define the private structure; %s gets ", macro_string);
+    gchar *struct_string = get_text_between(editor, prefix, " */");
+    g_free (prefix);
+
+    if (!struct_string) {
+        g_free (macro_string);
+        *offset = C_OFFSET;
+        return g_strdup_printf ("%s", C_BODY);
+    }
+
+    gchar *new_body;
+    new_body = g_strdup_printf("\n{\n\t%s *self = %s(user_data);\n\t%sPrivate *priv = self->priv;\n}\n",
+                               struct_string, macro_string, struct_string);
+    *offset = C_OFFSET + 2;
+
+    g_free (macro_string);
+    g_free (struct_string);
+
+    return new_body;
+}
+
 static gboolean
 language_support_get_callback_strings (gchar** separator,
                                        gchar** body,
                                        gint* offset,
+                                       gchar* user_data,
+                                       IAnjutaEditor* editor,
                                        CppFileType filetype)
 {
     switch (filetype)
@@ -401,14 +482,13 @@ language_support_get_callback_strings (gchar** separator,
         case LS_FILE_C:
         {
             *separator = C_SEPARATOR;
-            *body = C_BODY;
-            *offset = C_OFFSET;
+            *body = prepare_callback_body (user_data, editor, offset);
             break;
         }
         case LS_FILE_CHDR:
         {
             *separator = CHDR_SEPARATOR;
-            *body = CHDR_BODY;
+            *body = g_strdup_printf ("%s", CHDR_BODY);
             *offset = CHDR_OFFSET;
             break;
         }
@@ -459,7 +539,8 @@ language_support_add_c_callback (CppJavaPlugin* lang_plugin,
     const gchar* widget = split_signal_data[0];
     const gchar* signal = split_signal_data[1];
     const gchar* handler = split_signal_data[2];
-    //const gchar* user_data = split_signal_data[3]; // Currently unused
+    const gchar* user_data = split_signal_data[3];
+
     gboolean swapped = g_str_equal (split_signal_data[4], "1");
 
     GType type = g_type_from_name (widget);
@@ -468,10 +549,8 @@ language_support_add_c_callback (CppJavaPlugin* lang_plugin,
     g_signal_query (id, &query);
 
 
-    if (!language_support_get_callback_strings (&separator, &body, &offset, filetype))
+    if (!language_support_get_callback_strings (&separator, &body, &offset, user_data, editor, filetype))
         return;
-
-
 
     GString* str = language_support_generate_c_signature (separator, widget,
                                                           query, swapped, handler);
@@ -518,6 +597,9 @@ language_support_add_c_callback (CppJavaPlugin* lang_plugin,
     g_signal_emit_by_name (G_OBJECT (editor), "code-changed", position, string);
 
     if (string) g_free (string);
+
+    /* Body is a bit different form other strings and must be freed */
+    if (body) g_free (body);
 
     /* Will now set the caret position offset */
     ianjuta_editor_goto_line (editor,
@@ -757,49 +839,6 @@ on_glade_callback_add (IAnjutaEditor* editor,
         g_free(signal_data);
     }
     g_free(mark);
-}
-
-static gchar*
-get_text_between (IAnjutaEditor *editor, gchar *prefix, gchar *suffix)
-{
-	IAnjutaEditorCell *search_start = IANJUTA_EDITOR_CELL (
-										ianjuta_editor_get_start_position (editor, NULL));
-	IAnjutaEditorCell *search_end = IANJUTA_EDITOR_CELL (
-										ianjuta_editor_get_end_position (editor, NULL));
-
-	IAnjutaEditorCell *result_start;
-	IAnjutaEditorCell *result_end = NULL;
-
-	IAnjutaEditorCell *prefix_end;
-	IAnjutaEditorCell *suffix_start;
-
-	ianjuta_editor_search_forward (IANJUTA_EDITOR_SEARCH (editor),
-								   prefix, FALSE,
-								   search_start, search_end,
-								   &result_start,
-								   &result_end, NULL);
-
-	if (!result_end)
-		return NULL;
-
-    g_object_unref (result_start);
-
-	prefix_end = result_end;
-
-	ianjuta_editor_search_forward (IANJUTA_EDITOR_SEARCH (editor),
-								   suffix, FALSE,
-								   result_end, search_end,
-								   &result_start,
-								   &result_end, NULL);
-
-	suffix_start = result_start;
-
-	if (!result_end)
-		return NULL;
-
-    g_object_unref (result_end);
-
-	return ianjuta_editor_get_text (editor, prefix_end, suffix_start, NULL);
 }
 
 /* Enable/Disable language-support */
