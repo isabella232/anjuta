@@ -1,12 +1,12 @@
 ## Process this file with automake to produce Makefile.in
 
-ACLOCAL_AMFLAGS = -I m4 -I libgd ${ACLOCAL_FLAGS}
+ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
 @INTLTOOL_DESKTOP_RULE@
 
 SUBDIRS = \
 	pixmaps scripts data \
-	doc libanjuta libgd plugins src manuals mime launcher po
+	doc libanjuta plugins src manuals mime launcher po
 
 dist_doc_DATA = \
 	MAINTAINERS\

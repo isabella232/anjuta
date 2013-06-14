@@ -32,7 +32,7 @@ AC_SUBST(BUGZILLA_VERSION)
 
 dnl Anjuta core
 GLIB_REQUIRED=2.32.0
-GTK_REQUIRED=3.7.10
+GTK_REQUIRED=3.4.0
 GTHREAD_REQUIRED=2.22.0
 GDK_PIXBUF_REQUIRED=2.0.0
 GDA4_REQUIRED=4.2.0
@@ -171,14 +171,6 @@ if test x$AUTOGEN_PATH = xno; then
    AC_MSG_WARN([Couldn't find autogen. You will be able to build anjuta without autogen \
                 but several things won't work. You can get it from http://autogen.sourceforge.net/])
 fi
-
-dnl Check for libgd
-dnl ---------------------
-
-LIBGD_INIT([
-  revealer
-  static
-])
 
 dnl Check for Terminal
 dnl ---------------------
@@ -779,7 +771,6 @@ libanjuta/tests/Makefile
 libanjuta/interfaces/Makefile
 libanjuta/libanjuta-3.0.pc
 libanjuta/anjuta-version.h
-libgd/Makefile
 src/Makefile
 pixmaps/Makefile
 pixmaps/16x16/Makefile
