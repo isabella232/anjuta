@@ -4,12 +4,9 @@ ACLOCAL_AMFLAGS = -I m4 -I libgd ${ACLOCAL_FLAGS}
 
 @INTLTOOL_DESKTOP_RULE@
 
-if HAVE_LIBGD
-LIBGD_DIR = libgd
-endif
 SUBDIRS = \
 	pixmaps scripts data \
-	doc libanjuta $(LIBGD_DIR) plugins src manuals mime launcher po
+	doc libanjuta libgd plugins src manuals mime launcher po
 
 dist_doc_DATA = \
 	MAINTAINERS\

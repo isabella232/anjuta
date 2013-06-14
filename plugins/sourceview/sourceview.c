@@ -274,21 +274,19 @@ on_destroy_message_area (Sourceview* sv, GObject *finalized_object)
 static void
 message_area_destroy (GtkWidget* message_area)
 {
-#ifdef HAVE_LIBGD
 	GtkWidget* revealer;
 
 	revealer = gtk_widget_get_parent (message_area);
 	g_signal_connect (revealer, "notify::child-revealed",
 	                  G_CALLBACK(gtk_widget_destroy), NULL);
 	gd_revealer_set_reveal_child (GD_REVEALER (revealer), FALSE);
-#else
-	gtk_widget_destroy (message_area);
-#endif
 }
 
 static void
 sourceview_set_message_area (Sourceview* sv, GtkWidget *message_area)
 {
+	GtkWidget* revealer;
+
 	if (sv->priv->message_area != NULL)
 		message_area_destroy (sv->priv->message_area);
 
@@ -299,22 +297,13 @@ sourceview_set_message_area (Sourceview* sv, GtkWidget *message_area)
 
 	gtk_widget_show (message_area);
 
-#ifdef HAVE_LIBGD
-	GtkWidget* revealer;
-
 	revealer = gd_revealer_new ();
 	gtk_widget_show (revealer);
 	gtk_container_add (GTK_CONTAINER (revealer), message_area);
 	gtk_box_pack_start (GTK_BOX (sv), revealer, FALSE, FALSE, 0);
 
 	gd_revealer_set_reveal_child (GD_REVEALER (revealer), TRUE);
-#else
-	gtk_box_pack_start (GTK_BOX (sv),
-					message_area,
-					FALSE,
-					FALSE,
-					0);
-#endif
+
 	g_object_weak_ref (G_OBJECT (message_area),
 	                   (GWeakNotify)on_destroy_message_area, sv);
 

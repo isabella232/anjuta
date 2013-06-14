@@ -32,8 +32,7 @@ AC_SUBST(BUGZILLA_VERSION)
 
 dnl Anjuta core
 GLIB_REQUIRED=2.32.0
-GTK_REQUIRED=3.4.0
-LIBGD_GTK_REQUIRED=3.7.10
+GTK_REQUIRED=3.7.10
 GTHREAD_REQUIRED=2.22.0
 GDK_PIXBUF_REQUIRED=2.0.0
 GDA4_REQUIRED=4.2.0
@@ -173,45 +172,13 @@ if test x$AUTOGEN_PATH = xno; then
                 but several things won't work. You can get it from http://autogen.sourceforge.net/])
 fi
 
-
 dnl Check for libgd
-dnl ---------------
+dnl ---------------------
 
-AC_ARG_ENABLE(libgd,
-  AS_HELP_STRING([--disable-libgd], [Do not use libgd which needs a more recent version of Gtk+]),,
-  [enable_libgd=yes])
-
-if test "x$enable_libgd" = "xyes"; then
-	AC_MSG_CHECKING(if libgd is used)
-	PKG_CHECK_EXISTS([gtk+-3.0 >= $LIBGD_GTK_REQUIRED],
-	    [ libgd_enabled=yes ],
-	    [ libgd_enabled=no ])
-	AC_MSG_RESULT($libgd_enabled)
-else
-	libgd_enabled=no
-fi
-
-if test "x$libgd_enabled" = "xyes"; then
-	LIBGD_INIT([
-	  revealer
-	  static
-	])
-
-	LOCAL_LIBGD_CFLAGS='-I$(top_srcdir)/libgd'
-	LOCAL_LIBGD_LIBS='$(top_builddir)/libgd/libgd.la'
-	AC_SUBST(LOCAL_LIBGD_CFLAGS)
-	AC_SUBST(LOCAL_LIBGD_LIBS)
-	AC_DEFINE([HAVE_LIBGD], [1], [Define to 1 if libgd is available])
-else
-	dnl LIBGD_INIT contains AM_CONDITIONAL so it has to be run but remove
-	dnl the check of Gtk+ version because we will not use libgd.
-	pushdef([PKG_CHECK_MODULES], [])
-	LIBGD_INIT([])
-	popdef([PKG_CHECK_MODULES])
-fi
-
-AM_CONDITIONAL(HAVE_LIBGD, [test x$libgd_enabled = xyes])
-
+LIBGD_INIT([
+  revealer
+  static
+])
 
 dnl Check for Terminal
 dnl ---------------------
@@ -988,13 +955,6 @@ if [ test x$terminal_enabled = xyes ]; then
 else
        echo "Building terminal plugin: ..............................NO"
        echo "        Requires vte-2.90 (>= $VTE_REQUIRED)"
-fi
-
-if [ test x$libgd_enabled = xyes ]; then
-        echo "Building using libgd: ..................................YES"
-else
-        echo "Building using libgd: ..................................NO"
-        echo "        Requires gtk+ (>= $LIBGD_GTK_REQUIRED)"
 fi
 
 if [ test x$enable_vala = xyes ]; then
