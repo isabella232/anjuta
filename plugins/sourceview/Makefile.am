@@ -30,7 +30,6 @@ AM_CPPFLAGS = \
 	$(GIO_CFLAGS) \
 	$(SOURCEVIEW_CFLAGS) \
 	$(LIBANJUTA_CFLAGS) \
-	-I$(top_srcdir)/libgd \
 	-DG_LOG_DOMAIN=\"sourceview\"
 
 # Where to install the plugin
@@ -80,8 +79,7 @@ libanjuta_sourceview_la_LDFLAGS = $(ANJUTA_PLUGIN_LDFLAGS)
 libanjuta_sourceview_la_LIBADD = \
 	$(GIO_LIBS) \
 	$(SOURCEVIEW_LIBS) \
-	$(LIBANJUTA_LIBS) \
-	$(top_builddir)/libgd/libgd.la
+	$(LIBANJUTA_LIBS)
 
 gsettings_in_file = org.gnome.anjuta.plugins.sourceview.gschema.xml.in
 gsettings_SCHEMAS = $(gsettings_in_file:.xml.in=.xml)

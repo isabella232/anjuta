@@ -265,47 +265,28 @@ goto_line (Sourceview* sv, gint line)
 static void
 on_destroy_message_area (Sourceview* sv, GObject *finalized_object)
 {
-	if ((void*)finalized_object == (void*)sv->priv->message_area)
-		sv->priv->message_area = NULL;
-
+	sv->priv->message_area = NULL;
 	g_signal_emit_by_name (G_OBJECT (sv), "update-save-ui");
 }
 
 static void
-message_area_destroy (GtkWidget* message_area)
+sourceview_set_message_area (Sourceview* sv,  GtkWidget *message_area)
 {
-	GtkWidget* revealer;
-
-	revealer = gtk_widget_get_parent (message_area);
-	g_signal_connect (revealer, "notify::child-revealed",
-	                  G_CALLBACK(gtk_widget_destroy), NULL);
-	gd_revealer_set_reveal_child (GD_REVEALER (revealer), FALSE);
-}
-
-static void
-sourceview_set_message_area (Sourceview* sv, GtkWidget *message_area)
-{
-	GtkWidget* revealer;
-
 	if (sv->priv->message_area != NULL)
-		message_area_destroy (sv->priv->message_area);
-
+		gtk_widget_destroy (sv->priv->message_area);
 	sv->priv->message_area = message_area;
 
 	if (sv->priv->message_area == NULL)
 		return;
 
 	gtk_widget_show (message_area);
-
-	revealer = gd_revealer_new ();
-	gtk_widget_show (revealer);
-	gtk_container_add (GTK_CONTAINER (revealer), message_area);
-	gtk_box_pack_start (GTK_BOX (sv), revealer, FALSE, FALSE, 0);
-
-	gd_revealer_set_reveal_child (GD_REVEALER (revealer), TRUE);
-
-	g_object_weak_ref (G_OBJECT (message_area),
-	                   (GWeakNotify)on_destroy_message_area, sv);
+	gtk_box_pack_start (GTK_BOX (sv),
+						message_area,
+						FALSE,
+						FALSE,
+						0);
+	g_object_weak_ref (G_OBJECT (sv->priv->message_area),
+					   (GWeakNotify)on_destroy_message_area, sv);
 
 	g_signal_emit_by_name (G_OBJECT (sv), "update-save-ui");
 }
@@ -585,7 +566,7 @@ on_reload_dialog_response (GtkWidget *message_area, gint res, Sourceview *sv)
 		/* Set dirty */
 		gtk_text_buffer_set_modified(GTK_TEXT_BUFFER(sv->priv->document), TRUE);
 	}
-	message_area_destroy (message_area);
+	gtk_widget_destroy (message_area);
 }
 
 static void
@@ -605,7 +586,7 @@ on_close_dialog_response (GtkWidget *message_area, gint res, Sourceview *sv)
 		/* Set dirty */
 		gtk_text_buffer_set_modified(GTK_TEXT_BUFFER(sv->priv->document), TRUE);
 	}
-	message_area_destroy (message_area);
+	gtk_widget_destroy (message_area);
 }
 
 static gboolean
@@ -693,7 +674,7 @@ on_open_failed (SourceviewIO* io, GError* err, Sourceview* sv)
 		gtk_info_bar_add_button (GTK_INFO_BAR (message_area),
 										GTK_STOCK_OK,
 										GTK_RESPONSE_OK);
-		g_signal_connect (message_area, "response", G_CALLBACK(message_area_destroy), NULL);
+		g_signal_connect (message_area, "response", G_CALLBACK(gtk_widget_destroy), NULL);
 
 		sourceview_set_message_area (sv, message_area);
 	}
@@ -720,7 +701,7 @@ on_read_only_dialog_response (GtkWidget *message_area, gint res, Sourceview *sv)
 									TRUE);
 		sv->priv->read_only = FALSE;
 	}
-	message_area_destroy (message_area);
+	gtk_widget_destroy (message_area);
 }
 
 /* Called when document is loaded completly */
@@ -803,7 +784,7 @@ static void on_save_failed (SourceviewIO* sio, GError* err, Sourceview* sv)
 		gtk_info_bar_add_button (GTK_INFO_BAR (message_area),
 										GTK_STOCK_OK,
 										GTK_RESPONSE_OK);
-		g_signal_connect (message_area, "response", G_CALLBACK(message_area_destroy), NULL);
+		g_signal_connect (message_area, "response", G_CALLBACK(gtk_widget_destroy), NULL);
 
 		sourceview_set_message_area (sv, message_area);
 	}
