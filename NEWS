@@ -1,3 +1,82 @@
+Anjuta 3.9.3 (June 17, 2013) -- James Liggett
+
+Akom Chotiphantawanon (1):
+      Updated Thai translation.
+
+Carl-Anton Ingmarsson (5):
+      Add libgd submodule
+      sourceview: use GdRevealer for sliding in the message area
+      message-view: don't manually free private structure
+      snippets-manager: fix compile warnings
+      sourceview: fix compile warnings
+
+Cheng-Chia Tseng (1):
+      Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+Christian Kirbach (1):
+      Updated German help translation
+
+Daniel Mustieles (4):
+      Updated Spanish translation
+      Updated Spanish translation
+      Updated Spanish translation
+      Updated Spanish translation
+
+Fran Diéguez (4):
+      Updated Galician translations
+      Updated Galician translations
+      Updated Galician translations
+      Updated Galician translations
+
+James Liggett (11):
+      Post-release version bump
+      git: Add a context menu to the log pane
+      git: Add a context menu to the Branches pane
+      git: Add a popup menu to the Remotes pane
+      git: Check box action fixes in Push and Pull panes
+      git: Add a popup menu to the Stash pane
+      git: Fix a warning
+      Revert "Allow to build without libgd"
+      Revert "sourceview: use GdRevealer for sliding in the message area"
+      Revert "Add libgd submodule"
+      Update MAINTAINERS
+
+Jiro Matsuzawa (1):
+      l10n: Update Japanese translation
+
+Johannes Schmid (1):
+      sourceview: Fix bgo#701443 - When trying to change font of GtkSourceView Anjuta crashes
+
+Marco Diego Aurélio Mesquita (6):
+      glade: bgo #701207 - Glade signal drop no longer works
+      glade: bgo #700383 - Anjuta should automatically associate .ui and source files
+      libanjuta: Improve symbol-db behavior on cut, paste, undo, redo and when multiple files are modified.
+      symbol-db: Update symbol database on editor changes without saving
+      language-support-cpp-jave: Fix memory leak
+      doc: Update documentation after the last improvements in glade support
+
+Marek Černocký (2):
+      Updated Czech translation
+      Updated Czech translation
+
+Piotr Drąg (1):
+      Updated POTFILES.in
+
+Sébastien Granjoux (12):
+      Fix a crash with some version of Gtk due to my last commit
+      libanjuta: Move scoped and descoped signal on AnjutaProfile object
+      libanjuta: Replace AnjutaPluginDescription by AnjutaPluginHandle in API
+      libanjuta: Move anjuta_profile_manager_load_profile function in anjuta_profile
+      libanjuta: Always keep plugins in the system profile
+      Allow to select different profile on the command line
+      libanjuta: Allow to enable only a set of plugins defined in the profile file
+      Add a sample custom profile keeping only the editor
+      document-manager: Automatically open an empty file if starter plugin is not used
+      libanjuta: Keep dynamic allocation data in AnjutaPluginDescription
+      libanjuta: Allow to change plugin description key from profile
+      Allow to build without libgd
+
+
 Anjuta 3.9.2 (May 27, 2013) -- James Liggett
 
 Arnel A. Borja (9):
