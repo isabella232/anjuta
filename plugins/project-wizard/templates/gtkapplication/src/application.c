@@ -23,6 +23,7 @@
 
 G_DEFINE_TYPE ([+NameCClass+], [+NameCLower+], GTK_TYPE_APPLICATION);
 
+/* ANJUTA: Macro [+NameCUpper+]_APPLICATION gets [+NameCClass+] - DO NOT REMOVE */
 [+IF (=(get "HaveBuilderUI") "1") \+]
 struct _[+NameCClass+]Private
 {

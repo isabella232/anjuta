@@ -441,15 +441,15 @@ prepare_callback_body (gchar* user_data, IAnjutaEditor* editor, gint *offset)
         return g_strdup_printf("\n{\n\tGObject *%s = G_OBJECT (user_data);\n\n}\n", user_data);
     }
 
-    gchar *macro_string = get_text_between (editor, "/* Define the private structure; ", " gets ");
+    gchar *macro_string = get_text_between (editor, "/* ANJUTA: Macro ", " gets ");
 
     if (!macro_string) {
         *offset = C_OFFSET;
         return g_strdup_printf ("%s", C_BODY);
     }
 
-    gchar *prefix = g_strdup_printf ("/* Define the private structure; %s gets ", macro_string);
-    gchar *struct_string = get_text_between(editor, prefix, " */");
+    gchar *prefix = g_strdup_printf ("/* ANJUTA: Macro %s gets ", macro_string);
+    gchar *struct_string = get_text_between(editor, prefix, " - DO NOT REMOVE */");
     g_free (prefix);
 
     if (!struct_string) {
@@ -459,7 +459,7 @@ prepare_callback_body (gchar* user_data, IAnjutaEditor* editor, gint *offset)
     }
 
     gchar *new_body;
-    new_body = g_strdup_printf("\n{\n\t%s *self = %s(user_data);\n\t%sPrivate *priv = self->priv;\n}\n",
+    new_body = g_strdup_printf("\n{\n\t%s *self = %s(user_data);\n\t%sPrivate *priv = self->priv;\n\n}\n",
                                struct_string, macro_string, struct_string);
     *offset = C_OFFSET + 2;
 
