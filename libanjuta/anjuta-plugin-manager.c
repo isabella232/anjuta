@@ -1485,7 +1485,9 @@ anjuta_plugin_manager_get_plugin (AnjutaPluginManager *plugin_manager,
 	{
 		GList *next = g_list_next (node);
 
-		if (g_hash_table_lookup (priv->disable_plugins, node->data) != NULL)
+		if ((g_hash_table_lookup (priv->disable_plugins, node->data) != NULL) &&
+		    (g_hash_table_lookup (priv->activated_plugins, node->data) == NULL))
+		    
 		{
 			valid_plugins = g_list_delete_link (valid_plugins, node);
 		}
@@ -1701,7 +1703,8 @@ anjuta_plugin_manager_list_query (AnjutaPluginManager *plugin_manager,
 		while (available)
 		{
 			AnjutaPluginHandle *plugin = available->data;
-			if (g_hash_table_lookup (plugin_manager->priv->disable_plugins, plugin) == NULL)
+			if ((g_hash_table_lookup (plugin_manager->priv->disable_plugins, plugin) == NULL) ||
+			    (g_hash_table_lookup (plugin_manager->priv->activated_plugins, plugin) != NULL))
 				selected_plugins = g_list_prepend (selected_plugins, plugin);
 			available = g_list_next (available);
 		}
@@ -1724,7 +1727,8 @@ anjuta_plugin_manager_list_query (AnjutaPluginManager *plugin_manager,
 		AnjutaPluginDescription *desc =
 			anjuta_plugin_handle_get_description (plugin);
 		
-		if (g_hash_table_lookup (plugin_manager->priv->disable_plugins, plugin) != NULL)
+		if ((g_hash_table_lookup (plugin_manager->priv->disable_plugins, plugin) != NULL) &&
+		    (g_hash_table_lookup (plugin_manager->priv->activated_plugins, plugin) == NULL))
 			continue;
 
 		while (s_node)
