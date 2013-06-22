@@ -393,7 +393,11 @@ anjuta_application_local_command_line (GApplication *application,
 	/* Set application prefix */
 	if (profile != NULL)
 	{
+		gchar *application_id = g_strconcat (g_application_get_application_id (application), "-", profile, NULL);
+		
+		g_application_set_application_id (application, application_id);
 		anjuta_util_set_anjuta_prefix (profile);
+		g_free (application_id);
 	}
 
 	/* Register application */
