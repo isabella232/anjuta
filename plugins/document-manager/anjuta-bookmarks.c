@@ -429,18 +429,22 @@ anjuta_bookmarks_create_query (AnjutaBookmarks* bookmarks)
 {
 	AnjutaBookmarksPrivate* priv = BOOKMARKS_GET_PRIVATE(bookmarks);
 	IAnjutaSymbolManager* sym_manager;
-	static IAnjutaSymbolField fields[] = {IANJUTA_SYMBOL_FIELD_NAME};
+	IAnjutaSymbolQuery * query_scope = NULL;
 	
 	sym_manager = anjuta_shell_get_interface (ANJUTA_PLUGIN(priv->docman)->shell,
 											  IAnjutaSymbolManager, NULL);
-	
-	IAnjutaSymbolQuery * query_scope =
-		ianjuta_symbol_manager_create_query (sym_manager,
-											 IANJUTA_SYMBOL_QUERY_SEARCH_SCOPE,
-											  IANJUTA_SYMBOL_QUERY_DB_PROJECT,
-											  NULL);
-	ianjuta_symbol_query_set_fields (query_scope, 1, fields, NULL);
-	
+	if (sym_manager != NULL)
+	{
+		static IAnjutaSymbolField fields[] = {IANJUTA_SYMBOL_FIELD_NAME};
+
+		query_scope =
+			ianjuta_symbol_manager_create_query (sym_manager,
+			                                     IANJUTA_SYMBOL_QUERY_SEARCH_SCOPE,
+			                                     IANJUTA_SYMBOL_QUERY_DB_PROJECT,
+			                                     NULL);
+		ianjuta_symbol_query_set_fields (query_scope, 1, fields, NULL);
+	}
+
 	return query_scope;
 }
 
