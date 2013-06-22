@@ -641,9 +641,9 @@ python_assist_populate_completions (IAnjutaLanguageProvider* self,
 	DEBUG_PRINT ("Preword: %s", pre_word);
 	
 	/* Check if completion was in progress */
-	if (assist->priv->completion_cache)
+	if (assist->priv->completion_cache != NULL) 
 	{
-		if (pre_word && g_str_has_prefix (pre_word, assist->priv->pre_word))
+		if (pre_word && assist->priv->pre_word && g_str_has_prefix (pre_word, assist->priv->pre_word))
 		{
 			DEBUG_PRINT ("Continue autocomplete for %s", pre_word);
 			
