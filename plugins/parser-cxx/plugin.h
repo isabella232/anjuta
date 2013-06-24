@@ -39,7 +39,6 @@ struct _ParserCxxPlugin {
 	AnjutaPlugin parent;
 	
 	GSettings* settings;
-	GSettings* editor_settings;
 	gint editor_watch_id;
 	gboolean support_installed;
 	GObject *current_editor;

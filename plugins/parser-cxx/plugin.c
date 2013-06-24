@@ -199,8 +199,7 @@ parser_cxx_plugin_dispose (GObject *obj)
     
     /* Disposition codes */
     g_object_unref (plugin->settings);
-    g_object_unref (plugin->editor_settings);
-	
+
     G_OBJECT_CLASS (parent_class)->dispose (obj);
 }
 
@@ -213,7 +212,6 @@ parser_cxx_plugin_instance_init (GObject *obj)
     plugin->editor_watch_id = 0;
     plugin->assist = NULL;
     plugin->settings = g_settings_new (PREF_SCHEMA);
-    plugin->editor_settings = g_settings_new (ANJUTA_PREF_SCHEMA_PREFIX IANJUTA_EDITOR_PREF_SCHEMA);
 }
 
 static void
