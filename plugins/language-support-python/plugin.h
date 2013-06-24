@@ -67,7 +67,6 @@ struct _PythonPlugin{
 	/* Preferences */
 	GtkBuilder* bxml;
 	GSettings* settings;
-	GSettings* editor_settings;
 };
 
 struct _PythonPluginClass{
