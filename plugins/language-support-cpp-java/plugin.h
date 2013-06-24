@@ -53,7 +53,6 @@ struct _CppJavaPlugin {
 	gint uiid;
 
 	GSettings* settings;
-	GSettings* editor_settings;
 	gint editor_watch_id;
 	GObject *current_editor;
 	gboolean support_installed;
