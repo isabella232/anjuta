@@ -80,6 +80,7 @@ git_revert_pane_init (GitRevertPane *self)
 	gchar *objects[] = {"revert_pane",
 						"ok_action",
 						"cancel_action",
+						"no_commit_action",
 						NULL};
 	GError *error = NULL;
 	GtkAction *ok_action;
