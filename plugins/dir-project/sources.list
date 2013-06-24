@@ -4,18 +4,82 @@
 *.cpp: *.o
 *.hpp
 *.cxx: *.o
+*.hxx
 *.c++: *.o
 *.cc: *.o
+*.cs
+*.cob: *.o
+*.hh
+*.f: *.o
+*.for: *.o
+*.f90: *.o
+*.f95: *.o
+*.f2k: *.o
 *.java
-*.py
-*.pl
-*.rb
-*.y: *.o
+*.js
+*.pas: *.o
 *.l: *.o
+*.y: *.o
+
+*.awk
+*.bsh
+*.ksh
+*.lua
+*.py
+*.pyw
+*.pl
+*.pm
+*.pod
+*.rb
+*.rbw
+*.scm
+*.sh
+*.smd
+*.ss
+*.st
+*.sv
+*.svh
+*.tcl
+*.tk
+*.v
+*.vh
 *.vala
+*.vb
+*.vhd
+*.vhdl
+
+*.am
+*.cfg
+*.diff
+*.dtd
 *.gs
+*.html
+*.htm
+*.idx
 *.in
 *.in.in
-*.am
+*.ini
+*.inf
+*.log
+*.lst
+makefile
+Makefile
+*.mak
+*.mako
+*.nfo
+*.out
+*.patch
+*.shtml
+*.sty
+*.svg
+*.tab
+*.tex
+*.toc
+*.txt
+*.xsl
+*.xslt
+*.xul
+*.xml
+
 !CVS/
 !.*/
