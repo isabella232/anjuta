@@ -275,9 +275,6 @@ indent_python_plugin_dispose (GObject *obj)
 	if (plugin->settings)
 		g_object_unref (plugin->settings);
 	plugin->settings = NULL;
-	if (plugin->editor_settings)
-		g_object_unref (plugin->editor_settings);
-	plugin->editor_settings = NULL;
 
 	G_OBJECT_CLASS (parent_class)->dispose (obj);
 }
@@ -292,7 +289,6 @@ indent_python_plugin_instance_init (GObject *obj)
 	plugin->editor_watch_id = 0;
 	plugin->uiid = 0;
 	plugin->settings = g_settings_new (PREF_SCHEMA);
-	plugin->editor_settings = g_settings_new (ANJUTA_PREF_SCHEMA_PREFIX IANJUTA_EDITOR_PREF_SCHEMA);
 }
 
 static void

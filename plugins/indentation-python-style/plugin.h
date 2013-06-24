@@ -66,7 +66,6 @@ struct _IndentPythonPlugin{
 	/* Preferences */
 	GtkBuilder* bxml;
 	GSettings* settings;
-	GSettings* editor_settings;
 };
 
 struct _IndentPythonPluginClass{
