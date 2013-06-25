@@ -1,7 +1,7 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
  * anjuta
- * Copyright (C) Carl-Anton Ingmarsson 2009 <ca.ingmarsson@gmail.com>
+ * Copyright (C) Carl-Anton Ingmarsson 2009 <carlantoni@gnome.org>
  * 
  * anjuta is free software.
  * 
