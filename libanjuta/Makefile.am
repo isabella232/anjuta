@@ -138,7 +138,9 @@ libanjuta_3_la_SOURCES= \
 	anjuta-close-button.c \
 	anjuta-close-button.h \
 	anjuta-modeline.c \
-	anjuta-modeline.h
+	anjuta-modeline.h \
+	anjuta-task.c \
+	anjuta-task.h
 
 # Glade module
 if ENABLE_GLADE_CATALOG
