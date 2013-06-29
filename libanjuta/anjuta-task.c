@@ -51,11 +51,6 @@
  * For an example of how to use #AnjutaTask, see the Git plugin.
  */
 
-struct _AnjutaTaskPriv
-{
-	gboolean running;
-};
-
 enum
 {
 	DATA_ARRIVED,
@@ -74,18 +69,11 @@ G_DEFINE_TYPE (AnjutaTask, anjuta_task, G_TYPE_OBJECT);
 static void
 anjuta_task_init (AnjutaTask *self)
 {
-	self->priv = g_new0 (AnjutaTaskPriv, 1);
 }
 
 static void
 anjuta_task_finalize (GObject *object)
 {
-	AnjutaTask *self;
-	
-	self = ANJUTA_TASK (object);
-	
-	g_free (self->priv);
-
 	G_OBJECT_CLASS (anjuta_task_parent_class)->finalize (object);
 }
 
@@ -108,13 +96,11 @@ data_arrived (AnjutaTask *task)
 static void
 started (AnjutaTask *task)
 {
-	task->priv->running = TRUE;
 }
 
 static void
 finished (AnjutaTask *task)
 {
-	task->priv->running = FALSE;
 }
 
 static void
@@ -135,6 +121,7 @@ anjuta_task_class_init (AnjutaTaskClass *klass)
 	klass->notify_data_arrived = NULL;
 	klass->notify_finished = NULL;
 	klass->notify_progress = NULL;
+	klass->is_running = NULL;
 	klass->start_automatic_monitor = start_automatic_monitor;
 	klass->stop_automatic_monitor = stop_automatic_monitor;
 	klass->data_arrived = data_arrived;
@@ -165,14 +152,6 @@ anjuta_task_class_init (AnjutaTaskClass *klass)
 	 *
 	 * Indicates that a task has begun executing. This signal is intended to 
 	 * be used for tasks that start themselves automatically.
-	 *
-	 * <note>
-	 *  <para>
-	 *	  Sublasses that override the method for this signal should chain up to
-	 *	  the parent implementation to ensure proper handling of running/not 
-	 *	  running states. 
-	 *	</para>
-	 * </note>
 	 */
 	anjuta_task_signals[STARTED] =
 		g_signal_new ("started",
@@ -191,14 +170,6 @@ anjuta_task_class_init (AnjutaTaskClass *klass)
 	 *
 	 * Indicates that the task has completed. Clients should at least handle
 	 * this signal to unref the task object.
-	 *
-	 * <note>
-	 *  <para>
-	 *	  Sublasses that override the method for this signal should chain up to
-	 *	  the parent implementation to ensure proper handling of running/not 
-	 *	  running states. 
-	 *	</para>
-	 * </note>
 	 */
 	anjuta_task_signals[FINISHED] =
 		g_signal_new ("finished",
@@ -243,12 +214,7 @@ anjuta_task_class_init (AnjutaTaskClass *klass)
 void
 anjuta_task_start (AnjutaTask *self)
 {
-	if (!self->priv->running)
-	{
-		g_signal_emit_by_name (self, "task-started");
-
-		ANJUTA_TASK_GET_CLASS (self)->start (self);
-	}
+	ANJUTA_TASK_GET_CLASS (self)->start (self);
 }
 
 /**
@@ -314,7 +280,7 @@ anjuta_task_notify_progress (AnjutaTask *self, gfloat progress)
 gboolean
 anjuta_task_is_running (AnjutaTask *self)
 {
-	return self->priv->running;
+	return ANJUTA_TASK_GET_CLASS (self)->is_running (self);
 }
 
 /**

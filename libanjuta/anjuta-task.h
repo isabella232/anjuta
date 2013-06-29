@@ -51,6 +51,7 @@ struct _AnjutaTaskClass
 	void (*notify_data_arrived) (AnjutaTask *self);
 	void (*notify_finished) (AnjutaTask *self);
 	void (*notify_progress) (AnjutaTask *self, gfloat progress);
+	gboolean (*is_running) (AnjutaTask *self);
 	gboolean (*start_automatic_monitor) (AnjutaTask *self);
 	void (*stop_automatic_monitor) (AnjutaTask *self);
 	
