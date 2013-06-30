@@ -140,7 +140,9 @@ libanjuta_3_la_SOURCES= \
 	anjuta-modeline.c \
 	anjuta-modeline.h \
 	anjuta-task.c \
-	anjuta-task.h
+	anjuta-task.h \
+	anjuta-async-task.c \
+	anjuta-async-task.h
 
 # Glade module
 if ENABLE_GLADE_CATALOG
