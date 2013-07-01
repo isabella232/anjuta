@@ -144,7 +144,9 @@ libanjuta_3_la_SOURCES= \
 	anjuta-async-task.c \
 	anjuta-async-task.h \
 	anjuta-thread-pool-task.c \
-	anjuta-thread-pool-task.h
+	anjuta-thread-pool-task.h \
+	anjuta-thread-pool.c \
+	anjuta-thread-pool.h
 
 # Glade module
 if ENABLE_GLADE_CATALOG
