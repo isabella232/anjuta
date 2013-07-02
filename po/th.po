@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-06-02 16:39+0000\n"
-"PO-Revision-Date: 2013-06-04 11:25+0700\n"
+"POT-Creation-Date: 2013-06-25 18:16+0000\n"
+"PO-Revision-Date: 2013-07-02 16:50+0700\n"
 "Last-Translator: Akom Chotiphantawanon <knight2000@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
@@ -81,7 +81,7 @@ msgstr "ไม่สามารถหาฟังก์ชันลงทะเ
 msgid "Unknown error in module %s"
 msgstr "เกิดข้อผิดพลาดไม่ทราบสาเหตุในมอดูล %s"
 
-#: ../libanjuta/anjuta-column-text-view.c:40 ../plugins/git/git-pane.c:123
+#: ../libanjuta/anjuta-column-text-view.c:40 ../plugins/git/git-pane.c:142
 #, c-format
 msgid "Column %i"
 msgstr "คอลัมน์ %i"
@@ -239,11 +239,11 @@ msgstr "ไทย"
 msgid "Unknown"
 msgstr "ไม่ทราบ"
 
-#: ../libanjuta/anjuta-entry.c:258
+#: ../libanjuta/anjuta-entry.c:247
 msgid "Help text"
 msgstr "ข้อความวิธีใช้"
 
-#: ../libanjuta/anjuta-entry.c:259
+#: ../libanjuta/anjuta-entry.c:248
 msgid "Text to show the user what to enter into the entry"
 msgstr "ข้อความที่จะแสดงบอกผู้ใช้ว่าจะให้กรอกอะไรลงในช่องข้อความ"
 
@@ -318,7 +318,7 @@ msgstr "ไม่สามารถเรียกคำสั่ง: \"%s\""
 msgid "execvp failed"
 msgstr "execvp ล้มเหลว"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2392
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2396
 msgid "Anjuta Shell"
 msgstr "เชลล์แอนจูตา"
 
@@ -348,7 +348,7 @@ msgid "Load"
 msgstr "โหลด"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2008
+#: ../libanjuta/anjuta-plugin-manager.c:2012
 msgid "Available Plugins"
 msgstr "ปลั๊กอินที่มีอยู่"
 
@@ -374,7 +374,7 @@ msgid "Forget selected plugin"
 msgstr "ล้างการเลือกปลั๊กอิน"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1515 ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "เลือกปลั๊กอิน"
@@ -389,51 +389,51 @@ msgstr "กรุณาเลือกปลั๊กอินที่จะเ
 msgid "No plugin is able to load other plugins in %s"
 msgstr "ไม่มีปลั๊กอินที่สามารถโหลดปลั๊กอินอื่นใน %s"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1516
+#: ../libanjuta/anjuta-plugin-manager.c:1518
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>กรุณาเลือกปลั๊กอินที่จะเปิดใช้งาน</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2035
+#: ../libanjuta/anjuta-plugin-manager.c:2039
 msgid "Remember this selection"
 msgstr "จำการเลือกนี้"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2373
+#: ../libanjuta/anjuta-plugin-manager.c:2377
 msgid "Profiles"
 msgstr "โพรไฟล์"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2374
+#: ../libanjuta/anjuta-plugin-manager.c:2378
 msgid "Current stack of profiles"
 msgstr "สแต็กเก็บชุดโพรไฟล์ปัจจุบัน"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2379
+#: ../libanjuta/anjuta-plugin-manager.c:2383
 msgid "Available plugins"
 msgstr "ปลั๊กอินที่มีอยู่"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2380
+#: ../libanjuta/anjuta-plugin-manager.c:2384
 msgid "Currently available plugins found in plugin paths"
 msgstr "ปลั๊กอินที่มีอยู่ในแหล่งปลั๊กอิน"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2386
+#: ../libanjuta/anjuta-plugin-manager.c:2390
 msgid "Activated plugins"
 msgstr "ปลั๊กอินที่ทำงานอยู่"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2387
+#: ../libanjuta/anjuta-plugin-manager.c:2391
 msgid "Currently activated plugins"
 msgstr "ปลั๊กอินปัจจุบันที่ทำงานอยู่"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2393
+#: ../libanjuta/anjuta-plugin-manager.c:2397
 msgid "Anjuta shell for which the plugins are made"
 msgstr "เชลล์แอนจูตาที่ปลั๊กอินนี้ทำงานด้วย"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2401
+#: ../libanjuta/anjuta-plugin-manager.c:2405
 msgid "Anjuta Status"
 msgstr "สถานะแอนจูตา"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2402
+#: ../libanjuta/anjuta-plugin-manager.c:2406
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "สถานะแอนจูตาที่จะใช้ในการโหลดและถอนปลั๊กอินออก"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2555
+#: ../libanjuta/anjuta-plugin-manager.c:2559
 msgid "Loading:"
 msgstr "กำลังโหลด:"
 
@@ -3923,7 +3923,7 @@ msgstr "ค้นหาโดยใช้นิพจน์เรกิวลา
 #: ../plugins/document-manager/plugin.c:295
 #: ../plugins/indentation-c-style/plugin.c:217
 #: ../plugins/indentation-python-style/plugin.c:200
-#: ../plugins/language-support-cpp-java/plugin.c:1149
+#: ../plugins/language-support-cpp-java/plugin.c:1192
 #: ../plugins/language-support-python/plugin.c:377 ../src/anjuta-actions.h:30
 msgid "_Edit"
 msgstr "แ_ก้ไข"
@@ -4917,7 +4917,7 @@ msgstr "Fetch แขนงจากแม่ข่ายหลังจากส
 msgid "Mailbox files to apply:"
 msgstr "แฟ้มกล่องจดหมายที่จะใช้:"
 
-#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:898
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:973
 msgid "Branches"
 msgstr "แขนง"
 
@@ -4987,9 +4987,9 @@ msgstr "ทำหมายเหตุประกอบแท็กนี้:"
 msgid "Branches must be fully merged"
 msgstr "แขนงต่างๆ จะต้องผสานครบทั้งหมด"
 
-#: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:77
-#: ../plugins/git/git-pane.c:82 ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:794
+#: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:96
+#: ../plugins/git/git-pane.c:101 ../plugins/git/git.plugin.in.h:1
+#: ../plugins/git/plugin.c:858
 msgid "Git"
 msgstr "Git"
 
@@ -5267,11 +5267,11 @@ msgstr "<b>ที่แม่ข่าย:</b> %s"
 msgid "Merge"
 msgstr "ผสาน"
 
-#: ../plugins/git/git-pane.c:204
+#: ../plugins/git/git-pane.c:223
 msgid "Git Error"
 msgstr "ข้อผิดพลาดของ Git"
 
-#: ../plugins/git/git-pane.c:210
+#: ../plugins/git/git-pane.c:229
 msgid "Git Warning"
 msgstr "คำเตือนของ Git"
 
@@ -5287,11 +5287,11 @@ msgstr "ควบคุมรุ่นด้วย Git"
 msgid "Please enter a URL."
 msgstr "กรุณาป้อน URL"
 
-#: ../plugins/git/git-pull-pane.c:242 ../plugins/git/plugin.c:265
+#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:265
 msgid "Pull"
 msgstr "Pull"
 
-#: ../plugins/git/git-push-pane.c:438 ../plugins/git/plugin.c:257
+#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:257
 msgid "Push"
 msgstr "Push"
 
@@ -5335,7 +5335,7 @@ msgstr "ไม่ได้เลือกแฟ้มขัดแย้งไว
 msgid "Please enter a commit."
 msgstr "กรุณาป้อนรายการ commit"
 
-#: ../plugins/git/git-revert-pane.c:163 ../plugins/git/plugin.c:529
+#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:529
 msgid "Revert"
 msgstr "ย้อนคืน"
 
@@ -5440,7 +5440,7 @@ msgstr "แก้ข้อขัดแย้ง"
 msgid "Mark selected conflicted files as resolved"
 msgstr "ทำเครื่องหมายแฟ้มที่ขัดแย้งที่เลือก ว่าแก้ข้อขัดแย้งแล้ว"
 
-#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:916
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:991
 msgid "Stash"
 msgstr "Stash"
 
@@ -5480,7 +5480,7 @@ msgstr "Push การเปลี่ยนแปลงไปที่คลั�
 msgid "Pull changes from a remote repository"
 msgstr "Pull การเปลี่ยนแปลงจากคลังแม่ข่าย"
 
-#: ../plugins/git/plugin.c:273
+#: ../plugins/git/plugin.c:273 ../plugins/git/plugin.c:593
 msgid "Fetch"
 msgstr "Fetch"
 
@@ -5654,35 +5654,68 @@ msgstr "ลบ..."
 msgid "Merge..."
 msgstr "ผสาน..."
 
-#: ../plugins/git/plugin.c:657 ../plugins/git/plugin.c:730
+#: ../plugins/git/plugin.c:577
+msgid "Push..."
+msgstr "Push..."
+
+#: ../plugins/git/plugin.c:585
+msgid "Pull..."
+msgstr "Pull..."
+
+#: ../plugins/git/plugin.c:605
+msgid "Apply"
+msgstr "เริ่มใช้"
+
+#: ../plugins/git/plugin.c:613
+msgid "Apply and restore index"
+msgstr "ดำเนินการและคืนสภาพดัชนี"
+
+#: ../plugins/git/plugin.c:621
+#: ../plugins/subversion/subversion-log-dialog.c:119
+msgid "Diff"
+msgstr "Diff"
+
+#: ../plugins/git/plugin.c:629
+msgid "Drop"
+msgstr "ทิ้ง"
+
+#: ../plugins/git/plugin.c:721 ../plugins/git/plugin.c:794
 msgid "Branch"
 msgstr "แขนง"
 
-#: ../plugins/git/plugin.c:813
+#: ../plugins/git/plugin.c:877
 msgid "Status popup menu"
 msgstr "เมนูสถานะแบบผุดขึ้น"
 
-#: ../plugins/git/plugin.c:818
+#: ../plugins/git/plugin.c:882
 msgid "Log popup menu"
 msgstr "เมนูปูมแบบผุดขึ้น"
 
-#: ../plugins/git/plugin.c:824
+#: ../plugins/git/plugin.c:888
 msgid "Branch popup menu"
 msgstr "เมนูแขนงแบบผุดขึ้น"
 
-#: ../plugins/git/plugin.c:886
+#: ../plugins/git/plugin.c:894
+msgid "Remote popup menu"
+msgstr "เมนูแม่ข่ายแบบผุดขึ้น"
+
+#: ../plugins/git/plugin.c:899
+msgid "Popup menu entries"
+msgstr "รายการเมนูแบบผุดขึ้น"
+
+#: ../plugins/git/plugin.c:961
 msgid "Status"
 msgstr "สถานะ"
 
-#: ../plugins/git/plugin.c:892
+#: ../plugins/git/plugin.c:967
 msgid "Log"
 msgstr "ปูม"
 
-#: ../plugins/git/plugin.c:903
+#: ../plugins/git/plugin.c:978
 msgid "Tags"
 msgstr "แท็ก"
 
-#: ../plugins/git/plugin.c:910
+#: ../plugins/git/plugin.c:985
 msgid "Remotes"
 msgstr "แม่ข่าย"
 
@@ -5830,8 +5863,8 @@ msgstr "การร่นย่อหน้าของ C"
 
 #: ../plugins/indentation-c-style/plugin.c:362
 #: ../plugins/indentation-c-style/plugin.c:371
-#: ../plugins/indentation-python-style/plugin.c:328
-#: ../plugins/indentation-python-style/plugin.c:337
+#: ../plugins/indentation-python-style/plugin.c:324
+#: ../plugins/indentation-python-style/plugin.c:333
 msgid "Indentation"
 msgstr "การร่นย่อหน้า"
 
@@ -5922,32 +5955,32 @@ msgstr "โหลดแท็ก API สำหรับไลบรารีม�
 msgid "Load API tags for C++ standard template library"
 msgstr "โหลดแท็ก API สำหรับไลบรารีเทมเพลตมาตรฐานภาษาซีพลัสพลัส"
 
-#: ../plugins/language-support-cpp-java/plugin.c:702
+#: ../plugins/language-support-cpp-java/plugin.c:784
 msgid "Code added for widget."
 msgstr "เพิ่มโค้ดสำหรับวิดเจ็ตแล้ว"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1155
+#: ../plugins/language-support-cpp-java/plugin.c:1198
 msgid "Comment/Uncomment"
 msgstr "ทำ/เลิกทำ หมายเหตุ"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1156
+#: ../plugins/language-support-cpp-java/plugin.c:1199
 msgid "Comment or uncomment current selection"
 msgstr "ทำหรือเลิกทำสิ่งที่เลือกอยู่ให้เป็นหมายเหตุ"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1161
+#: ../plugins/language-support-cpp-java/plugin.c:1204
 msgid "Swap .h/.c"
 msgstr "สลับ .h/.c"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1162
+#: ../plugins/language-support-cpp-java/plugin.c:1205
 msgid "Swap C header and source files"
 msgstr "สลับแฟ้มส่วนหัวกับซอร์สภาษา C"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1202
+#: ../plugins/language-support-cpp-java/plugin.c:1245
 msgid "C++/Java Assistance"
 msgstr "เครื่องมือช่วย C++/Java"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1421
-#: ../plugins/language-support-cpp-java/plugin.c:1450
+#: ../plugins/language-support-cpp-java/plugin.c:1462
+#: ../plugins/language-support-cpp-java/plugin.c:1491
 msgid "API Tags (C/C++)"
 msgstr "แท็ก API (C/C++)"
 
@@ -6077,8 +6110,8 @@ msgstr "ไม่ต้องแสดงคำเตือนนั้นอี
 msgid "Python Assistance"
 msgstr "เครื่องมือช่วยสร้างโครงการไพธอน"
 
-#: ../plugins/language-support-python/plugin.c:561
-#: ../plugins/language-support-python/plugin.c:574
+#: ../plugins/language-support-python/plugin.c:557
+#: ../plugins/language-support-python/plugin.c:570
 #: ../plugins/language-support-python/python-assist.c:807
 msgid "Python"
 msgstr "ไพธอน"
@@ -6093,7 +6126,7 @@ msgstr "ปลั๊กอินรองรับ Vala เพิ่มการ
 
 #: ../plugins/language-support-vala/plugin.vala:655
 #: ../plugins/language-support-vala/plugin.vala:663
-#: ../plugins/parser-cxx/plugin.c:269 ../plugins/parser-cxx/plugin.c:282
+#: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "เติมเต็มคำอัตโนมัติ"
 
@@ -8228,12 +8261,12 @@ msgid "Languages"
 msgstr "ภาษา"
 
 #. Insert the Add Snippet menu item
-#: ../plugins/snippets-manager/snippets-browser.c:811
+#: ../plugins/snippets-manager/snippets-browser.c:809
 msgid "Add Snippet …"
 msgstr "เพิ่มข้อความสั้น…"
 
 #. Insert the Add Snippets Group menu item
-#: ../plugins/snippets-manager/snippets-browser.c:821
+#: ../plugins/snippets-manager/snippets-browser.c:819
 msgid "Add Snippets Group …"
 msgstr "เพิ่มกลุ่มข้อความสั้น…"
 
@@ -8492,7 +8525,7 @@ msgstr "ค่าตั้งมุมมองของเครื่องม
 msgid "GtkSourceView Editor"
 msgstr "เครื่องมือแก้ไข GtkSourceView"
 
-#: ../plugins/sourceview/sourceview.c:602
+#: ../plugins/sourceview/sourceview.c:629
 #, c-format
 msgid ""
 "The file \"%s\" on the disk is more recent than the current buffer.\n"
@@ -8501,7 +8534,7 @@ msgstr ""
 "แฟ้ม \"%s\" ในดิสก์ใหม่กว่าบัฟเฟอร์ปัจจุบัน\n"
 "คุณต้องการเรียกอ่านใหม่หรือไม่?"
 
-#: ../plugins/sourceview/sourceview.c:634
+#: ../plugins/sourceview/sourceview.c:661
 #, c-format
 msgid ""
 "The file \"%s\" has been deleted on the disk.\n"
@@ -8511,18 +8544,18 @@ msgstr ""
 "คุณต้องการปิดแฟ้มหรือไม่?"
 
 #. Could not open <filename>: <error message>
-#: ../plugins/sourceview/sourceview.c:667
+#: ../plugins/sourceview/sourceview.c:694
 #, c-format
 msgid "Could not open %s: %s"
 msgstr "ไม่สามารถเปิด %s: %s"
 
-#: ../plugins/sourceview/sourceview.c:718
+#: ../plugins/sourceview/sourceview.c:745
 #, c-format
 msgid "The file \"%s\" is read-only! Edit anyway?"
 msgstr "แฟ้ม \"%s\" อ่านอย่างได้เดียว! ยืนยันที่จะแก้ไขหรือไม่?"
 
 #. Could not open <filename>: <error message>
-#: ../plugins/sourceview/sourceview.c:777
+#: ../plugins/sourceview/sourceview.c:804
 #, c-format
 msgid "Could not save %s: %s"
 msgstr "ไม่สามารถบันทึก %s: %s"
@@ -9009,10 +9042,6 @@ msgstr "[Head/ชุดสำเนาที่ทำงาน]"
 #: ../plugins/subversion/subversion-log-dialog.c:493
 msgid "Subversion: Retrieving diff…"
 msgstr "Subversion: กำลังดึง diff…"
-
-#: ../plugins/subversion/subversion-log-dialog.c:119
-msgid "Diff"
-msgstr "Diff"
 
 #: ../plugins/subversion/subversion-log-dialog.c:257
 msgid "Subversion: Retrieving log…"
@@ -9812,12 +9841,12 @@ msgstr "แฟ้มโพร์ไฟล์"
 msgid "- Integrated Development Environment"
 msgstr "- ชุดเครื่องมือพัฒนาเบ็ดเสร็จ"
 
-#: ../src/anjuta-application.c:639
+#: ../src/anjuta-application.c:643
 #, c-format
 msgid "Invalid profile %s: %s"
 msgstr "โพรไฟล์ %s ไม่ถูกต้อง: %s"
 
-#: ../src/anjuta-application.c:693
+#: ../src/anjuta-application.c:697
 msgid "Loaded Session…"
 msgstr "โหลดวาระแล้ว…"
 
