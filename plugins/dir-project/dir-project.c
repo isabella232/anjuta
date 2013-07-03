@@ -744,7 +744,7 @@ dir_project_load_directory_callback (GObject      *source_object,
 	}
 	g_list_free (infos);
 
-	g_file_enumerator_next_files_async (enumerator, NUM_FILES, G_PRIORITY_DEFAULT, NULL,
+	g_file_enumerator_next_files_async (enumerator, NUM_FILES, G_PRIORITY_DEFAULT_IDLE, NULL,
 	                                    dir_project_load_directory_callback, data);
 }
 
@@ -778,7 +778,7 @@ dir_project_load_directory (DirProject *project, AnjutaProjectNode *parent, GErr
 	data->proj = project;
 	data->parent = g_object_ref (parent);
 
-	g_file_enumerator_next_files_async (enumerator, NUM_FILES, G_PRIORITY_DEFAULT, NULL,
+	g_file_enumerator_next_files_async (enumerator, NUM_FILES, G_PRIORITY_DEFAULT_IDLE, NULL,
 	                                    dir_project_load_directory_callback, data);
 
 	anjuta_project_node_set_state (parent, ANJUTA_PROJECT_LOADING);
