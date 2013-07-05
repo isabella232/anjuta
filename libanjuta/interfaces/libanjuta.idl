@@ -3883,6 +3883,20 @@ interface IAnjutaProjectManager
 	GFile* add_group (const gchar *name, GFile *default_group);
 
 	/**
+	 * ianjuta_project_manager_remove_file:
+	 * @obj: Self.
+	 * @file: A #GFile that will be removed from the project
+	 * @err: Error propagation and reporting.
+	 *
+	 * Remove a source file from the project. If the file is used in several
+	 * targets, it is removed from all targets. The file could be removed from
+	 * the disk.
+	 *
+	 * Returns: %TRUE if the file has been removed from the project else %FALSE
+	 */
+	gboolean remove_file (GFile *file);
+
+	/**
 	* ianjuta_project_manager_is_open:
 	* @obj: Self
 	* @err: Error propagation and reporting.
