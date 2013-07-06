@@ -53,6 +53,7 @@ GType anjuta_thread_pool_get_type (void) G_GNUC_CONST;
 
 void anjuta_thread_pool_push (AnjutaThreadPool *self, 
                               AnjutaThreadPoolTask *task);
+AnjutaThreadPool *anjuta_thread_pool_new (void);
 
 G_END_DECLS
 

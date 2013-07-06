@@ -70,3 +70,10 @@ anjuta_thread_pool_push (AnjutaThreadPool *self, AnjutaThreadPoolTask *task)
 	anjuta_thread_pool_task_notify_waiting (task);
 	g_thread_pool_push (self->priv->thread_pool, task, NULL);
 }
+
+AnjutaThreadPool *
+anjuta_thread_pool_new (void)
+{
+	return g_object_new (ANJUTA_TYPE_THREAD_POOL, NULL);
+}
+
