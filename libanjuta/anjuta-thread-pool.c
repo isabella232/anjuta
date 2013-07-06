@@ -1,7 +1,7 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*-  */
 /*
  * anjuta-thread-pool.c
- * Copyright (C) 2013 James Liggett <jim@jim-dekstop>
+ * Copyright (C) 2013 James Liggett <jrliggett@cox.net>
  *
  * anjuta is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
