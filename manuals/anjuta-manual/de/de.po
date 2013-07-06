@@ -1,5 +1,5 @@
 # German translation of the Anjuta manual.
-# 
+#
 # line number margin = Rand für Zeilennummern
 # marker margin    =  Markierungsrand
 # code fold margin = Textfaltungsrand
@@ -16,17 +16,17 @@
 # build		= erstellen
 # compile	= kompilieren
 # tag		= Tag
-# 
-# 
+#
+#
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2009-2013.
 # Jonas Rebmann <jonas.rebmann@googlemail.com>, 2010.
 # Christian Kirbach <christian.kirbach@gmail.com>, 2010-2012, 2013.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta doc\n"
-"POT-Creation-Date: 2013-05-24 22:02+0000\n"
-"PO-Revision-Date: 2013-05-24 12:50+0100\n"
+"POT-Creation-Date: 2013-06-04 12:21+0000\n"
+"PO-Revision-Date: 2013-06-24 21:05+0200\n"
 "Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de_DE\n"
@@ -34,7 +34,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -527,6 +527,14 @@ msgid ""
 "code will be added right after such comments. So, for this feature to work "
 "correctly, it is important not to modify such marker comments."
 msgstr ""
+"Sobald das glade Plug-in läuft und die Datei, die den Code enthalten wird, "
+"durchgesehen wird klicken Sie einfach zweimal auf ein Widget im glade-"
+"Inspektor. Die Datei in Durchsicht wird dann nach bestimmten Kommentaren "
+"durchsucht (/* ANJUTA: Widget-Deklaration für application.ui - DO NOT REMOVE "
+"*/ und /* ANJUTA: Widgets-Initialisierung für application.ui - DO NOT REMOVE "
+"*/) und sofern gefunden, wird Code unmittelbar nach solchen Kommentaren "
+"hinzugefügt. Damit diese Funktion richtig funktioniert ist es wichtig, dass "
+"solche Kommentare nicht verändert werden."
 
 #: C/autotools-project-backend.page:8(info/desc)
 msgid "Autotools project backend."
@@ -633,7 +641,7 @@ msgstr ""
 "entworfen, um Quellcodepakete auf einer Vielzahl von Unix-ähnlichen Systemen "
 "zu verteilen. Wenn Sie jemals ein Programm mit Hilfe von <cmd>configure</"
 "cmd>, <cmd>make</cmd> und <cmd>make install</cmd> installiert haben, so "
-"haben Sie es wahrscheinlich schon als Benutzer verwendet."
+"haben sie es wahrscheinlich schon als Benutzer verwendet."
 
 #: C/autotools-project-backend.page:31(page/p)
 msgid ""
@@ -653,7 +661,6 @@ msgstr ""
 "schreiben."
 
 #: C/autotools-project-backend.page:41(note/p)
-#, fuzzy
 msgid ""
 "Autotools files give more information than a makefile, but the backend does "
 "not support all the possible tricks. If you find a project that cannot be "
@@ -661,7 +668,14 @@ msgid ""
 "product=anjuta\">bug report</link> will be appreciated. In the meantime, as "
 "a workaround, you can use the directory project backend instead. It is much "
 "more limited but should find all source files."
-msgstr "Autotools-Dateien liefern mehr Informationen als ein makefile, aber "
+msgstr ""
+"Autotools-Dateien liefern mehr Informationen als ein makefile, aber das "
+"Backend unterstützt nicht alle möglichen Tricks. Wenn Sie auf ein Projekt "
+"treffen, das nicht ordnungsgemäß gelesen werden kann, so erstellen Sie bitte "
+"einen <link href=\"https://bugzilla.gnome.org/browse.cgi?product=anjuta"
+"\">Fehlerbericht</link>. Als Abhilfe können Sie das Ordnerprojekt-Backend "
+"stattdessen verwenden. Es ist deutlich eingeschränkter, solle aber alle "
+"Quelldateien finden."
 
 #: C/autotools-project-folder-edit.page:9(info/desc)
 msgid "Edit autotools folder properties."
@@ -676,6 +690,8 @@ msgid ""
 "These properties allows you to define common properties for all targets "
 "belonging to this folder."
 msgstr ""
+"Diese Eigenschaft ermöglicht Ihnen gemeinsame Eigenschaften für alle Ziele "
+"festzulegen, die zu diesem Ordner gehören."
 
 #: C/autotools-project-folder-edit.page:25(item/title)
 #: C/autotools-project-target-edit.page:30(item/title)
@@ -738,6 +754,8 @@ msgid ""
 "This defines installation directories. It is needed if you want to install "
 "files in custom directories."
 msgstr ""
+"Hier werden Installationsordner festgelegt. Es wird gebraucht, wenn Sie "
+"Dateien in eigene Ordner installieren wollen."
 
 #: C/autotools-project-folder-edit.page:51(item/title)
 #: C/autotools-project-target-edit.page:76(item/title)
@@ -835,6 +853,10 @@ msgid ""
 "be selected by clicking on this button. It can be useful if the current "
 "backend has some troubles to parse your project files."
 msgstr ""
+"Dies ist das Backend, das vom Projekt verwendet wird: Autotools. Ein anderes "
+"Backend kann mit Klick auf diesen Knopf gewählt werden. Es kann nützlich "
+"sein, falls das aktuelle Backend Schwierigkeiten hat Ihre Projektdateien zu "
+"verarbeiten."
 
 #: C/autotools-project-root-edit.page:32(item/title)
 msgid "<gui>Name</gui>"
@@ -861,6 +883,9 @@ msgid ""
 "This is an URL allowing to send bug report, by example an email address or a "
 "link to a bug tracker. It is optional."
 msgstr ""
+"Dies ist eine Adresse, die es ermöglicht, Fehlerberichte zu senden, zum "
+"Beispiel eine E-Mail-Adresse oder ein Verweis auf eine Fehlerdatenbank. Es "
+"ist optional."
 
 #: C/autotools-project-root-edit.page:45(item/title)
 msgid "<gui>Package name</gui>"
@@ -871,6 +896,8 @@ msgid ""
 "This is the name of distribution package, it shouldn't contain spaces. It is "
 "optional."
 msgstr ""
+"Dies ist der Name des Distributionspakets. Es sollte keine Leerzeichen "
+"enthalten. Er ist optional."
 
 #: C/autotools-project-root-edit.page:50(item/title)
 msgid "<gui>URL</gui>"
@@ -885,6 +912,9 @@ msgid ""
 "In addition, the root item works as a folder and has all its properties. See "
 "<link xref=\"autotools-project-folder-edit\"/> to see the list."
 msgstr ""
+"Zusätzlich arbeitet das Wurzelelement als Ordner und besitzt alle dessen "
+"Eigenschaften. Lesen Sie auch <link xref=\"autotools-project-folder-edit\"/"
+">, um die Liste zu sehen."
 
 #: C/autotools-project-target-edit.page:9(info/desc)
 msgid "Edit autotools target properties."
@@ -899,6 +929,8 @@ msgid ""
 "Here is a list of all target properties used in autotools project. Some of "
 "them are not available on all targets."
 msgstr ""
+"Hier ist eine Liste aller Zieleigenschaften, die in Autotools-Projekten "
+"verwendet werden. Einige sind nicht für alle Ziele verfügbar."
 
 #: C/autotools-project-target-edit.page:25(item/title)
 msgid "<gui>Build for check only</gui>"
@@ -909,6 +941,8 @@ msgid ""
 "If checked, this target is not installed and has to be built only when "
 "running checks."
 msgstr ""
+"Wenn ausgewählt wird dieses Ziel nicht installiert und muss nur beim "
+"Ausführen von Tests erstellt werden."
 
 #: C/autotools-project-target-edit.page:31(item/p)
 msgid ""
@@ -946,16 +980,22 @@ msgid ""
 "If checked, this target is not installed. It can be used for utilities used "
 "to build other target or programs used only by developers."
 msgstr ""
+"Wenn ausgewählt wird dieses Ziel nicht installiert. Es kann für Werkzeuge "
+"verwendet werden, um andere Ziele oder Programme zu erstellen, welche nur "
+"von Entwicklern verwendet werden."
 
 #: C/autotools-project-target-edit.page:53(item/title)
 msgid "<gui>Do not use prefix</gui>"
 msgstr "<gui>Präfix nicht verwenden</gui>"
 
 #: C/autotools-project-target-edit.page:54(item/p)
+#, fuzzy
 msgid ""
 "If checked, do not add prefix to manual page and executable. Such prefix are "
 "used to provide alternative of system tools."
 msgstr ""
+"Wenn ausgewählt wird kein Präfix zu Handbuchseiten und ausführbare Datei "
+"hinzugefügt."
 
 #: C/autotools-project-target-edit.page:59(item/p)
 msgid ""
@@ -987,6 +1027,11 @@ msgid ""
 "pkglibexecdir, includedir, mandir, infodir, docdir) or a custom variable "
 "defined in the folder properties."
 msgstr ""
+"Legt fest, wo das Ziel installiert wird. Es ist nicht direkt der Ordner, in "
+"dem die Dateien installiert sind, sondern der Name eine der Standardvariable "
+"des Ordners (bindir, sbindir, libdir, libexecdir, datadir, pkgdatadir, "
+"pkglibexecdir, includedir, mandir, infodir, docdir) oder eine eigens "
+"definierte Variable in den Ordnereigenschaften."
 
 #: C/autotools-project-target-edit.page:77(item/p)
 msgid ""
@@ -1006,6 +1051,8 @@ msgid ""
 "If checked, keep the hierarchy of the project directory when installing "
 "files."
 msgstr ""
+"Wenn ausgewählt wird die Hierarchie des Projektordners bei Dateiinstallation "
+"beibehalten."
 
 #: C/autotools-project-target-edit.page:88(item/p)
 msgid ""
@@ -1013,6 +1060,9 @@ msgid ""
 "target source files. This value overrides the one eventually defined in the "
 "parent folder."
 msgstr ""
+"Die Flags zur Weitergabe an die Scanner-Generatoren Lex oder Flex beim "
+"Erstellen von Ziel-Quelldateien. Dieser Wert überschreibt den wahrscheinlich "
+"im Elternordner definierten."
 
 #: C/autotools-project-target-edit.page:93(item/title)
 msgid "<gui>Libraries</gui>"
@@ -1024,6 +1074,10 @@ msgid ""
 "package libraries. See <link xref=\"project-manager-library\">Add non-"
 "packaged libraries</link> page for more details."
 msgstr ""
+"Geben Sie zusätzliche Bibliotheken an, die von dem Projekt verwendet werden. "
+"Nützlich zum Hinzufügen nicht paketierter Bibliotheken. Lesen Sie auch die "
+"Seite <link xref=\"project-manager-library\">Nicht-paketierte Bibliotheken "
+"hinzufügen</link> für weitere Informationen."
 
 #: C/autotools-project-target-edit.page:101(item/p)
 msgid ""
@@ -1098,7 +1152,7 @@ msgid ""
 msgstr ""
 "Es repräsentiert eine von mehreren Programmen gemeinsam verwendete "
 "Bibliothek, die zur Laufzeit gebunden wird. Dies ist die üblichste Variante "
-"einer Bibliothek under Linux. Sie wird unter Windows »dynamic link "
+"einer Bibliothek unter Linux. Sie wird unter Windows »dynamic link "
 "library« (DLL) genannt."
 
 #: C/autotools-project-target-type.page:27(item/p)
@@ -1119,6 +1173,9 @@ msgid ""
 "explicitely by the program itself. It is used to only load the code "
 "corresponding to the used features."
 msgstr ""
+"Repräsentiert eine Bibliothek, oft auch Plugin genannt, die zur Laufzeit "
+"explizit vom Programm selbst gebunden wird. Wird verwendet, um nur den Code "
+"zu laden, der zu den verwendeten Funktionen gehört."
 
 #: C/autotools-project-target-type.page:35(item/p)
 msgid ""
@@ -1137,6 +1194,9 @@ msgid ""
 "It represents a library linked with the program at compile time. Only the "
 "function used are kept inside the generated executable."
 msgstr ""
+"Repräsentiert eine Bibliothek, die zur Übersetzungszeit mit dem Programm "
+"gebunden wird. Nur die verwendeten Funktionen sind in der erstellten "
+"ausführbaren Datei enthalten."
 
 #: C/autotools-project-target-type.page:42(item/p)
 msgid ""
@@ -1155,6 +1215,9 @@ msgid ""
 "It represents compiled program by example from C souces files. All children "
 "represent the source files compiled to generate the program."
 msgstr ""
+"Repräsentiert ein übersetztes Programm, z.B. aus C-Quelldateien. Alle "
+"Unterelemente stellen die Quelldateien dar, die zu dem Programm übersetzt "
+"wurden."
 
 #: C/autotools-project-target-type.page:52(item/title)
 msgid "Python module"
@@ -1198,7 +1261,7 @@ msgstr "Man-Dokumentation"
 
 #: C/autotools-project-target-type.page:70(item/p)
 msgid "It groups man pages needed by the project."
-msgstr ""
+msgstr "Gruppiert Hilfeseiten, die vom Projekt gebraucht werden."
 
 #: C/autotools-project-target-type.page:73(item/title)
 msgid "Info documentation"
@@ -1206,7 +1269,7 @@ msgstr "Info-Dokumentation"
 
 #: C/autotools-project-target-type.page:74(item/p)
 msgid "It groups info page needed by the project."
-msgstr ""
+msgstr "Gruppiert Infoseiten, die vom Projekt gebraucht werden."
 
 #: C/autotools-project-target-type.page:77(item/title)
 msgid "Miscellaneous Data"
@@ -1217,6 +1280,8 @@ msgid ""
 "It groups data files which needed by the project like pictures, ui "
 "description, settings files..."
 msgstr ""
+"Gruppiert Datendateien, die vom Projekt gebraucht werden, wie z.B. Bilder, "
+"Oberflächenbeschreibungen, Einstellungsdateien usw."
 
 #: C/autotools-project-target-type.page:82(item/title)
 msgid "Script"
@@ -1228,6 +1293,9 @@ msgid ""
 "the specified directory. If scripts are generated additional rules are "
 "needed."
 msgstr ""
+"Repräsentiert Programme, die Skripte sind. Skripte werden nur in den "
+"angegebenen Ordner installiert. Wenn Skripte erstellt werden, so sind "
+"zusätzliche Regeln notwendig."
 
 #: C/autotools-build-build.page:11(info/desc)
 msgid "Build targets or project."
@@ -1533,7 +1601,7 @@ msgid ""
 "directory if you already have one configuration using the project directory. "
 "You need to remove it first."
 msgstr ""
-"Mit autotools ist es nicht möglich, eine Konfiguration für einen anderen "
+"Mit Autotools ist es nicht möglich, eine Konfiguration für einen anderen "
 "Ordner zu verwenden, wenn bereits eine Konfiguration den Projektordner "
 "verwendet. Diese muss zuvor entfernt werden."
 
@@ -1544,7 +1612,7 @@ msgid ""
 "directory and everything will be recompiled on each change of the "
 "configuration."
 msgstr ""
-"Einige autotools-Projekte können nicht außerhalb der Projektordners erstellt "
+"Einige Autotools-Projekte können nicht außerhalb der Projektordners erstellt "
 "werden. Es können zwar dennoch verschiedene Konfigurationen eingesetzt "
 "werden, aber alle müssen den Projektordner verwenden und alles muss bei "
 "Konfigurationswechsel neu kompiliert werden."
@@ -1573,7 +1641,7 @@ msgid ""
 "<cmd>configure --help</cmd> on the command line. You need to have configured "
 "your project at least one time to have the <cmd>configure</cmd> script."
 msgstr ""
-"Jedes autotools-Projekt unterstützt bestimmte Argumente, kann aber auch über "
+"Jedes Autotools-Projekt unterstützt bestimmte Argumente, kann aber auch über "
 "spezifische Argumente verfügen. Der Befehl <cmd>configure --help</cmd> gibt "
 "eine Liste aller möglichen Argumente auf der Befehlszeile aus. Das Projekt "
 "muss mindestens einmal konfiguriert worden sein, damit das <cmd>configure</"
@@ -1581,7 +1649,7 @@ msgstr ""
 
 #: C/autotools-build-configure.page:11(info/desc)
 msgid "Configure an autotools project and manage configurations."
-msgstr "Ein autotools-Projekt konfigurieren und Konfigurationen verwalten."
+msgstr "Ein Autotools-Projekt konfigurieren und Konfigurationen verwalten."
 
 #: C/autotools-build-configure.page:20(page/title)
 msgid "Configure a project"
@@ -1594,7 +1662,7 @@ msgid ""
 "required libraries and programs are installed on your system and to generate "
 "appropriate build scripts."
 msgstr ""
-"Vor dem Compilieren und Erstellen von Dateien muss ein autotools-Projekt "
+"Vor dem Compilieren und Erstellen von Dateien muss ein Autotools-Projekt "
 "konfiguriert werden. Dieser Schritt ist zum Einstellen globaler Optionen "
 "erforderlich, um zu prüfen, ob alle benötigten Bibliotheken und Programme "
 "auf dem System installiert sind, und um die passenden Erstellungsskripte zu "
@@ -1692,7 +1760,7 @@ msgid ""
 "then compile and install it on his system using the command sequence "
 "<cmd>configure</cmd>, <cmd>make</cmd> and <cmd>make install</cmd>."
 msgstr ""
-"Der übliche Weg, ein autotools-Projekt zu verbreiten, ist der Einsatz eines "
+"Der übliche Weg, ein Autotools-Projekt zu verbreiten, ist der Einsatz eines "
 "komprimierten tar-Archivs mit allen Quelldateien. Der Benutzer muss es "
 "dekomprimieren, kompilieren und anschließend auf dem System installieren mit "
 "folgenden Befehlen in genau dieser Reihenfolge: <cmd>configure</cmd>, "
@@ -1797,7 +1865,7 @@ msgid ""
 "This plugin is targeted at autotools projects but as they use make it is "
 "useful for other kind of projects using make."
 msgstr ""
-"Dieses Plugin ist für autotools-Projekte ausgelegt, aber weil diese unter "
+"Dieses Plugin ist für Autotools-Projekte ausgelegt, aber weil diese unter "
 "anderem auch »make« einbinden, ist es auch für andere Arten von Projekten "
 "geeignet, die auf »make« basieren."
 
@@ -1812,7 +1880,7 @@ msgid ""
 "makefile."
 msgstr ""
 "Nachfolgend finden Sie eine Liste der vom Plugin verwendeten Ziele. Sie sind "
-"in allen autotools-Projekten implementiert, aber Sie müssen diese selbst "
+"in allen Autotools-Projekten implementiert, aber Sie müssen diese selbst "
 "implementieren, wenn Sie ein eigenes »makefile« einsetzen."
 
 #: C/autotools-build-plugin.page:31(item/title)
@@ -3086,6 +3154,11 @@ msgid ""
 "change both the stack frame and the thread. The register values will be "
 "different and the debugger will restart in the selected thread."
 msgstr ""
+"Ein Klick auf einen Stack-Rahmen im selben Thread wechselt nur den Stack-"
+"Rahmen, so dass andere lokale Variablen untersucht werden können. Wird dies "
+"in einem anderen Thread getan, so ändern sich sowohl der Stack-Rahmen als "
+"auch der Thread. Die Registerwerte werden andere sein und die Fehlerdiagnose "
+"wird im gewählten Thread neu gestartet."
 
 #: C/debug-stack.page:112(section/title)
 msgid "View the current function"
@@ -3962,7 +4035,7 @@ msgid ""
 "modify any project files."
 msgstr ""
 "<app>Anjuta</app> besitzt kein eigenes Projektformat. Es lädt Projekte mit "
-"bereits vorhandenen Formaten wie z.B. Makefile oder autotools und zwingt "
+"bereits vorhandenen Formaten wie z.B. Makefile oder Autotools und zwingt "
 "andere Entwickler nicht, diese zu verwenden. Die Einstellungen von Anjuta "
 "werden in einer Datei mit der Endung <file>.anjuta</file> gespeichert und "
 "ein versteckter Ordner im Projektordner erstellt. Sie müssen das Projekt "
@@ -4435,6 +4508,10 @@ msgid ""
 "libraries not developped on Linux. See the chapter <link xref=\"project-"
 "manager-library-add\"/> explaining how to use them."
 msgstr ""
+"Möglicherweise ist die Bibliothek nicht als Paket verfügbar. Dies ist oft "
+"der Fall für Bibliotheken, die nicht auf Linux entwickelt wurden. Lesen Sie "
+"das Kapitel <link xref=\"project-manager-library-add\"/> welches erklärt, "
+"wie man sie verwendet."
 
 #: C/project-manager-module-new.page:66(item/p)
 msgid ""
@@ -4529,6 +4606,9 @@ msgid ""
 "project in <app>Anjuta</app>. It is displayed in the properties of the "
 "project root node and can be changed at any time."
 msgstr ""
+"Das zu verwendende Projekt-Backend wird bei Erstellen oder Importieren eines "
+"neuen Projekts in <app>Anjuta</app> gewählt. Es wird in den Eigenschaften "
+"des Projektwurzelknotens angezeigt und darf jederzeit geändert werden."
 
 #: C/project-manager.page:35(page/p)
 msgid ""
@@ -4590,6 +4670,11 @@ msgid ""
 "several files at the same time keeping <key>Ctrl</key> key pressed or using "
 "the <key>Shift</key> to select a range of files."
 msgstr ""
+"Wählen Sie im Dateiwähler unten die gewünschten Dateien zum Hinzufügen. "
+"Klicken Sie anschließend auf den Knopf <gui>Hinzufügen</gui>, um diese "
+"Dateien Ihrem Projekt hinzuzufügen. Sie können mehrere Dateien auf einmal "
+"wählen, indem Sie die <key>Strg</key>-Taste gedrückt halten oder mit der "
+"<key>Umschalttaste</key> einen ganzen Block Dateien auswählen."
 
 #: C/project-manager-source-add.page:48(note/p)
 msgid ""
@@ -4642,6 +4727,9 @@ msgid ""
 "You can select several files at the same time by keeping the <key>Ctrl</key> "
 "key pressed or select a range using the <key>Shift</key> key."
 msgstr ""
+"Sie können mehrere Dateien gleichzeitig wählen, indem Sie die <key>Strg</"
+"key>-Taste gedrückt halten, oder Sie wählen einen Block mit der "
+"<key>Umschalttaste</key> aus."
 
 #: C/project-manager-target-add.page:9(info/desc)
 msgid "Add a target to a project."
@@ -4657,6 +4745,10 @@ msgid ""
 "represent a program, with all its source files as its children or only group "
 "data files those should be installed at the same place."
 msgstr ""
+"Ein Ziel gruppiert Dateien und legt deren Verwendung fest. Es wird "
+"verwendet, um ein Programm mit all seinen Quelldateien und deren "
+"Unterelementen darzustellen, oder nur um Datendateien zu gruppieren, die im "
+"selben Ordner installiert werden sollen."
 
 #: C/project-manager-target-add.page:30(item/p)
 msgid ""
@@ -4763,6 +4855,12 @@ msgid ""
 "version, compiler flags or installation directories. These item are divided "
 "in several categories, depending on the backend not all are available:"
 msgstr ""
+"Ein Projekt wird als Baum dargestellt. Die Wurzel entspricht dem Projekt und "
+"die Unterelemente repräsentieren Programme, Bibliotheken, Ordner und "
+"Quelldateien. Jeder Knoten kann Eigenschaften besitzen, mit denen genauere "
+"Informationen wie Projektversion, Compiler-Flags und Installationsordner "
+"festgelegt werden. Diese Knoten sind in verschiedene Kategorien eingeteilt. "
+"Abhängig vom Backend sind nicht alle verfügbar:"
 
 #: C/project-manager-treeview.page:28(item/title)
 msgid "Root"
@@ -4789,6 +4887,11 @@ msgid ""
 "target using them. For more details, see <link xref=\"project-manager-module-"
 "new\"/>."
 msgstr ""
+"Dies ist eine Menge von Paketen, die in Autotools-Projekten verwendet "
+"werden. Sie erscheinen als Unterelemente des Wurzelknotens, um alle Module "
+"zu repräsentieren, und als Unterelemente eines jeden Ziels, das sie "
+"verwendet. Lesen Sie für weitere Informationen <link xref=\"project-manager-"
+"module-new\"/>."
 
 #: C/project-manager-treeview.page:41(item/title)
 msgid "Package"
@@ -4800,6 +4903,9 @@ msgid ""
 "children of each module. For more details, see <link xref=\"project-manager-"
 "library\"/>."
 msgstr ""
+"Dies ist eine paketierte Bibliothek, die in Autotools-Projekten verwendet "
+"wird. Sie erscheinen als Unterelemente eines jeden Moduls. Lesen Sie für "
+"weitere Informationen <link xref=\"project-manager-library\"/>."
 
 #: C/project-manager-treeview.page:47(item/title)
 msgid "Folder"
@@ -4811,6 +4917,10 @@ msgid ""
 "often implemented by sub directories. For more details, see <link xref="
 "\"project-manager-folder\"/>."
 msgstr ""
+"Dies wird verwendet, um Ziele zu gruppieren, so dass allgemeine "
+"Eigenschaften festgelegt werden können. Sie sind oft durch Unterordner "
+"implementiert. Lesen Sie für weitere Informationen <link xref=\"project-"
+"manager-folder\"/>."
 
 #: C/project-manager-treeview.page:53(item/title)
 msgid "Target"
@@ -4824,6 +4934,12 @@ msgid ""
 "compiled programs or libraries. For more details see <link xref=\"project-"
 "manager-target\"/>."
 msgstr ""
+"Es gruppiert Dateien und legt fest, wie diese verwendet werden. Es gibt "
+"verschiedene Arten von Zielen, zum Beispiel ein Programm, eine Bibliothek "
+"oder Daten, entsprechend des unterschiedlichen Verwendungszwecks der "
+"Unterelementdateien. Sie stellen oft erstellte Projektdateien dar wie "
+"übersetzte Programme oder Bibliotheken. Lesen Sie für weitere "
+"Informationen<link xref=\"project-manager-target\"/>."
 
 #: C/project-manager-treeview.page:61(note/p)
 msgid ""
@@ -4831,6 +4947,10 @@ msgid ""
 "create a shortcut allowing to access them more easily. By default all "
 "program targets are already put here."
 msgstr ""
+"Sie können Ziele mittels Ziehen-und-Ablegen an den Anfang der "
+"Projektbaumansicht ablegen, um eine Verknüpfung zu erstellen, mit der Sie "
+"auf diese einfacher zugreifen können. Die Voreinstellung ist, dass alle "
+"Programmziele dort bereits abgelegt werden."
 
 #: C/project-manager-treeview.page:68(item/title)
 msgid "Source"
@@ -4844,6 +4964,12 @@ msgid ""
 "a directory when the project is installed. For more details see <link xref="
 "\"project-manager-source\"/>."
 msgstr ""
+"Jede Quelldatei wird durch ein Objekt in der Projektansicht dargestellt. Der "
+"Einsatzzweck einer jeden Datei hängt von dem übergeordneten Ziel ab. Alle "
+"Unterelemente eines Programmziels werden zum Erstellen übersetzt. Dabei "
+"werden Unterelemente eines Datenziels bei Projektinstallation nur in einen "
+"Ordner kopiert. Lesen Sie für weitere Informationen <link xref=\"project-"
+"manager-source\"/>."
 
 #: C/project-wizard-create.page:10(info/desc)
 msgid "Create a new project from scratch."
