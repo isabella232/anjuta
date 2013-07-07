@@ -23,7 +23,7 @@ static GtkActionEntry menu_entries_file[] = {
   { "ActionMenuFile", NULL, N_("_File")},
   { "ActionExit", GTK_STOCK_QUIT, N_("_Quit"), "<control>q",
 	N_("Quit Anjuta IDE"),
-    G_CALLBACK (on_exit1_activate)}
+    G_CALLBACK (on_exit_activate)}
 };
 
 static GtkActionEntry menu_entries_edit[] = {
@@ -31,7 +31,7 @@ static GtkActionEntry menu_entries_edit[] = {
   { "ActionEditPreferences", GTK_STOCK_PROPERTIES,
 	N_("_Preferences"), NULL,
 	N_("Do you prefer coffee to tea? Check it out."),
-    G_CALLBACK (on_set_preferences1_activate)},
+    G_CALLBACK (on_preferences_activate)},
 };
 
 static GtkActionEntry menu_entries_view[] = {

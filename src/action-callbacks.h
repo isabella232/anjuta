@@ -22,12 +22,12 @@
 
 #include <gtk/gtk.h>
 
-void on_exit1_activate (GtkAction * action, AnjutaWindow *win);
+void on_exit_activate (GtkAction * action, AnjutaWindow *win);
 void on_fullscreen_toggle (GtkAction *action, AnjutaWindow *win);
 void on_layout_lock_toggle (GtkAction *action, AnjutaWindow *win);
 void on_reset_layout_activate (GtkAction *action, AnjutaWindow *win);
 void on_toolbar_view_toggled (GtkAction *action,  AnjutaWindow *win);
-void on_set_preferences1_activate (GtkAction * action, AnjutaWindow *win);
+void on_preferences_activate (GtkAction * action, AnjutaWindow *win);
 
 /* Help actions */
 void on_help_manual_activate (GtkAction *action, gpointer data);

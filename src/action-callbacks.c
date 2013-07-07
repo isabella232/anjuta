@@ -41,7 +41,7 @@
 #define TOOLBAR_VISIBLE "toolbar-visible"
 
 void
-on_exit1_activate (GtkAction * action, AnjutaWindow *win)
+on_exit_activate (GtkAction * action, AnjutaWindow *win)
 {
 	GdkEvent *event = gdk_event_new (GDK_DELETE);
 
@@ -94,7 +94,7 @@ on_toolbar_view_toggled (GtkAction *action, AnjutaWindow *win)
 }
 
 void
-on_set_preferences1_activate (GtkAction * action, AnjutaWindow *win)
+on_preferences_activate (GtkAction * action, AnjutaWindow *win)
 {
 
 	GtkWidget *preferences_dialog;

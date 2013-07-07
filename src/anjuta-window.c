@@ -833,13 +833,14 @@ anjuta_window_class_init (AnjutaWindowClass *class)
 }
 
 GtkWidget *
-anjuta_window_new (void)
+anjuta_window_new (GtkApplication* app)
 {
 	AnjutaWindow *win;
 
 	win = ANJUTA_WINDOW (g_object_new (ANJUTA_TYPE_WINDOW,
-									"title", "Anjuta",
-									NULL));
+	                                   "title", "Anjuta",
+	                                   "application", app,
+	                                   NULL));
 	return GTK_WIDGET (win);
 }
 
@@ -1449,6 +1450,6 @@ anjuta_shell_iface_init (AnjutaShellIface *iface)
 	iface->saving_pop = anjuta_window_saving_pop;
 }
 
-ANJUTA_TYPE_BEGIN(AnjutaWindow, anjuta_window, GTK_TYPE_WINDOW);
+ANJUTA_TYPE_BEGIN(AnjutaWindow, anjuta_window, GTK_TYPE_APPLICATION_WINDOW);
 ANJUTA_TYPE_ADD_INTERFACE(anjuta_shell, ANJUTA_TYPE_SHELL);
 ANJUTA_TYPE_END;

@@ -18,16 +18,7 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifdef HAVE_CONFIG_H
-#  include <config.h>
-#endif
-
-#ifdef ENABLE_NLS
-#  include <locale.h>
-#endif
-
-#include <sys/stat.h>
-#include <stdlib.h>
+#include <config.h>
 #include <gtk/gtk.h>
 #include <libxml/parser.h>
 #include <libanjuta/anjuta-debug.h>
@@ -39,13 +30,6 @@ main (int argc, char *argv[])
 {
 	AnjutaApplication* anjuta;
 	gint status;
-
-#ifdef ENABLE_NLS
-	setlocale (LC_ALL, "");
-	bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
-	bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");
-	textdomain (GETTEXT_PACKAGE);
-#endif
 
 	g_set_application_name (_("Anjuta"));
 
