@@ -1,3 +1,49 @@
+Anjuta 3.9.4 (July 8, 2013) -- James Liggett
+
+Akom Chotiphantawanon (1):
+      Updated Thai translation
+
+Arnel A. Borja (2):
+      manuals: Update entries in Anjuta Reference Manual
+      sourceview: bgo #703637 - Set monospace font as default font
+
+Aurimas Černius (1):
+      Updated Lithuanian translation
+
+Carl-Anton Ingmarsson (5):
+      indentation-python-style: remove unused editor_settings
+      language-support-python: remove unused editor_settings
+      language-support-cpp-java: remove unused editor_settings
+      parser-cxx: remove unused editor_settings
+      Update my email
+
+Christian Kirbach (1):
+      Updated German help translation
+
+James Liggett (3):
+      Post-release version bump
+      git: Fix the Do Not Commit option in the Revert pane
+      libanjuta/anjuta-entry: Don't use CSS for help text styles
+
+Johannes Schmid (1):
+      anjuta: Add application menu
+
+Marco Diego Aurélio Mesquita (1):
+      bgo #702576 - Use a marker comment to get macro and class name
+
+Sébastien Granjoux (10):
+      Keep using loaded plugin even if they are marked as disabled
+      Register GApplication with a different name if a profile is used
+      document-manager: Make use of symbol-db plugin optional
+      language-support-python: Remove critical warnings
+      language-manager: Support symbols in more programming languages
+      Need at least glib 2.34 for g_spawn_check_exit_status
+      dir-project: Load big project faster
+      dir-project: Decrease project load priority to avoid blocking GUI
+      am-project: data target are not distributed by default in automake
+      project-manager: Add a function in the interface to remove a file from a project
+
+
 Anjuta 3.9.3 (June 17, 2013) -- James Liggett
 
 Akom Chotiphantawanon (1):
