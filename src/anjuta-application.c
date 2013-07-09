@@ -19,6 +19,9 @@
  */
 
 #include <config.h>
+#ifdef ENABLE_NLS
+#  include <locale.h>
+#endif
 
 #include <string.h>
 #include <stdlib.h>
@@ -32,6 +35,7 @@
 #include <libanjuta/interfaces/ianjuta-file.h>
 
 #include "anjuta-application.h"
+#include "action-callbacks.h"
 
 #define ANJUTA_REMEMBERED_PLUGINS "remembered-plugins"
 #define USER_SESSION_PATH_NEW (anjuta_util_get_user_cache_file_path ("session/", NULL))
@@ -52,6 +56,8 @@
 
 static gchar DEFAULT_PROFILE[] = "default.profile";
 
+#define ANJUTA_MENU_UI_FILE PACKAGE_DATA_DIR"/glade/anjuta-menu.ui"
+
 G_DEFINE_TYPE (AnjutaApplication, anjuta_application, GTK_TYPE_APPLICATION)
 
 struct _AnjutaApplicationPrivate {
@@ -62,6 +68,63 @@ struct _AnjutaApplicationPrivate {
 	gchar *geometry;
 	gchar *profile;
 };
+
+static void
+on_app_preferences (GSimpleAction  *action,
+                    GVariant       *parameter,
+                    gpointer        user_data)
+{
+	GtkApplication *app;
+	AnjutaWindow* window;
+
+	app = GTK_APPLICATION (user_data);
+	window = ANJUTA_WINDOW (gtk_application_get_active_window (app));
+
+	on_preferences_activate (NULL, window);
+}
+
+static void
+on_app_manual (GSimpleAction  *action,
+               GVariant       *parameter,
+               gpointer        user_data)
+{
+	GtkApplication *app;
+	AnjutaWindow* window;
+
+	app = GTK_APPLICATION (user_data);
+	window = ANJUTA_WINDOW (gtk_application_get_active_window (app));
+
+	on_help_manual_activate (NULL, window);
+}
+
+static void
+on_app_about (GSimpleAction  *action,
+              GVariant       *parameter,
+              gpointer        user_data)
+{
+	GtkApplication *app;
+	AnjutaWindow* window;
+
+	app = GTK_APPLICATION (user_data);
+	window = ANJUTA_WINDOW (gtk_application_get_active_window (app));
+
+	on_about_activate (NULL, window);
+}
+
+static void
+on_app_quit (GSimpleAction  *action,
+             GVariant       *parameter,
+             gpointer        user_data)
+{
+	GtkApplication *app;
+	AnjutaWindow* window;
+
+	app = GTK_APPLICATION (user_data);
+	window = ANJUTA_WINDOW (gtk_application_get_active_window (app));
+
+	on_exit_activate (NULL, window);
+}
+
 
 static gboolean
 on_anjuta_delete_event (AnjutaWindow *win, GdkEvent *event, gpointer user_data)
@@ -488,7 +551,53 @@ anjuta_application_open (GApplication *application,
 	anjuta_application_reset_hint (ANJUTA_APPLICATION (application));
 }
 
+static GActionEntry app_entries[] = {
+	{ "preferences", on_app_preferences, NULL, NULL, NULL },
+	{ "help", on_app_manual, NULL, NULL, NULL },
+	{ "about", on_app_about, NULL, NULL, NULL },
+	{ "quit", on_app_quit, NULL, NULL, NULL }
+};
 
+static void
+anjuta_application_startup (GApplication* application)
+{
+	AnjutaApplication *app = ANJUTA_APPLICATION (application);
+	GtkBuilder *builder;
+	GError *error = NULL;
+
+#ifdef ENABLE_NLS
+	setlocale (LC_ALL, "");
+	bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
+	bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");
+	textdomain (GETTEXT_PACKAGE);
+#endif
+
+	G_APPLICATION_CLASS (anjuta_application_parent_class)->startup (application);
+	
+	g_action_map_add_action_entries (G_ACTION_MAP (app),
+	                                 app_entries,
+	                                 G_N_ELEMENTS (app_entries),
+	                                 app);
+
+	builder = gtk_builder_new ();
+	if (!gtk_builder_add_from_file (builder,
+	                                ANJUTA_MENU_UI_FILE,
+	                                &error))
+	{
+		g_warning ("loading menu builder file: %s", error->message);
+		g_error_free (error);
+	}
+	else
+	{
+		GMenuModel *app_menu;
+
+		app_menu = G_MENU_MODEL (gtk_builder_get_object (builder, "appmenu"));
+		gtk_application_set_app_menu (GTK_APPLICATION (application),
+		                              app_menu);
+	}
+
+	g_object_unref (builder);
+}
 
 /* GObject implementation
  *---------------------------------------------------------------------------*/
@@ -529,6 +638,7 @@ anjuta_application_class_init (AnjutaApplicationClass *klass)
 
 	app_class->open = anjuta_application_open;
 	app_class->local_command_line = anjuta_application_local_command_line;
+	app_class->startup = anjuta_application_startup;
 
 	g_type_class_add_private (klass, sizeof (AnjutaApplicationPrivate));
 }
@@ -588,7 +698,9 @@ anjuta_application_create_window (AnjutaApplication *app)
 	GError *error = NULL;
 
 	/* Initialize application */
-	win = ANJUTA_WINDOW (anjuta_window_new ());
+	win = ANJUTA_WINDOW (anjuta_window_new (GTK_APPLICATION(app)));
+	gtk_application_window_set_show_menubar (GTK_APPLICATION_WINDOW(win),
+	                                         FALSE);
 	gtk_application_add_window (GTK_APPLICATION (app), GTK_WINDOW (win));
 	status = anjuta_shell_get_status (ANJUTA_SHELL (win), NULL);
 	anjuta_status_progress_add_ticks (status, 1);

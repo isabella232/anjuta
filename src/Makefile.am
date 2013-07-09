@@ -1,7 +1,8 @@
 ## Process this file with automake to produce Makefile.in
 
 anjuta_gladedir = $(anjuta_glade_dir)
-dist_anjuta_glade_DATA = preferences.ui
+dist_anjuta_glade_DATA = preferences.ui \
+	anjuta-menu.ui
 
 anjuta_uidir = $(anjuta_ui_dir)
 dist_anjuta_ui_DATA = anjuta.xml

@@ -47,7 +47,7 @@
 #define FONT_THEME "font-use-theme"
 #define FONT "font"
 #define FONT_SCHEMA "org.gnome.desktop.interface"
-#define GNOME_DOCUMENT_FONT "document-font-name"
+#define GNOME_MONOSPACE_FONT "monospace-font-name"
 
 static void
 on_notify_view_spaces (GSettings* settings,
@@ -176,7 +176,7 @@ on_notify_font_theme (GSettings* settings,
 	{
 		GSettings* font_settings = g_settings_new (FONT_SCHEMA);
 		gchar* desktop_font = g_settings_get_string (font_settings,
-		                                             GNOME_DOCUMENT_FONT);
+		                                             GNOME_MONOSPACE_FONT);
 
 		if (desktop_font)
 			anjuta_view_set_font(sv->priv->view, FALSE, desktop_font);		

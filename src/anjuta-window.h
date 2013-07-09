@@ -42,7 +42,7 @@ typedef struct _AnjutaWindowClass AnjutaWindowClass;
 
 struct _AnjutaWindow
 {
-	GtkWindow parent;
+	GtkApplicationWindow parent;
 	GtkWidget *toolbar;
 	GtkWidget *view_menu;
 	GtkWidget *dock;
@@ -66,11 +66,11 @@ struct _AnjutaWindow
 
 struct _AnjutaWindowClass
 {
-	GtkWindowClass klass;
+	GtkApplicationWindowClass klass;
 };
 
 GType      anjuta_window_get_type (void);
-GtkWidget* anjuta_window_new (void);
+GtkWidget* anjuta_window_new (GtkApplication* app);
 
 void       anjuta_window_set_geometry (AnjutaWindow *win, const gchar *geometry);
 gchar*     anjuta_window_get_geometry (AnjutaWindow *win);

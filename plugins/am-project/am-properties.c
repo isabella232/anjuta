@@ -1091,9 +1091,9 @@ static AmpPropertyInfo AmpDataTargetProperties[] = {
 			ANJUTA_PROJECT_PROPERTY_BOOLEAN,
 			ANJUTA_PROJECT_PROPERTY_READ_WRITE | ANJUTA_PROJECT_PROPERTY_STATIC,
 			N_("Include this target in the distributed package.")},
-		AM_TOKEN__PROGRAMS, 	2, "nodist_",
+		AM_TOKEN__PROGRAMS, 	2, "dist_",
 		AM_PROPERTY_IN_MAKEFILE,
-		"1"
+		"0"
 	},
 	{
 		{"CHECK",

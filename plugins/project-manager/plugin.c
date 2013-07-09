@@ -1856,6 +1856,29 @@ get_node_from_file (const AnjutaProjectNode *root, GFile *file)
 	return node;
 }
 
+static void
+project_node_compare_and_append (AnjutaProjectNode *node, gpointer data)
+{
+	GList **list = (GList **)data;
+	GFile *file = (GFile *)(*list)->data;
+
+	if (project_node_compare (node, file))
+	{
+		*list = g_list_insert_before (*list, (*list)->next, node);
+	}
+}
+
+static GList*
+get_all_node_from_file (const AnjutaProjectNode *root, GFile *file)
+{
+	GList *list = g_list_append (NULL, file);
+
+	anjuta_project_node_foreach ((AnjutaProjectNode *)root, G_PRE_ORDER, project_node_compare_and_append, &list);
+	list = g_list_delete_link (list, list);
+
+	return list;
+}
+
 static GList*
 iproject_manager_get_children (IAnjutaProjectManager *project_manager,
 							   GFile *parent,
@@ -2236,6 +2259,50 @@ iproject_manager_add_group (IAnjutaProjectManager *project_manager,
 }
 
 static gboolean
+iproject_manager_remove_file (IAnjutaProjectManager *project_manager,
+                              GFile *file,
+                              GError **error)
+{
+	ProjectManagerPlugin *plugin;
+
+	g_return_val_if_fail (ANJUTA_IS_PLUGIN (project_manager), FALSE);
+
+	plugin = ANJUTA_PLUGIN_PROJECT_MANAGER (G_OBJECT (project_manager));
+	if (plugin->project !=  NULL)
+	{
+		AnjutaProjectNode *root;
+
+		root = anjuta_pm_project_get_root  (plugin->project);
+		if (root != NULL)
+		{
+			GList *list = NULL;
+			
+			list = get_all_node_from_file (root, file);
+			if (list == NULL) return FALSE;
+
+			update_operation_begin (plugin);
+			for (; list != NULL; list = g_list_delete_link(list, list))
+			{
+				GError *err = NULL;
+
+				anjuta_pm_project_remove (plugin->project, (AnjutaProjectNode *)list->data, &err);
+				if (err)
+				{
+					g_propagate_error (error, err);
+					update_operation_end (plugin, TRUE);
+					return FALSE;
+				}
+			}
+			update_operation_end (plugin, TRUE);
+			
+			return TRUE;
+		}
+	}
+
+	return FALSE;
+}
+
+static gboolean
 iproject_manager_is_open (IAnjutaProjectManager *project_manager, GError **err)
 {
 	ProjectManagerPlugin *plugin;
@@ -2280,6 +2347,7 @@ iproject_manager_iface_init(IAnjutaProjectManagerIface *iface)
 	iface->add_sources = iproject_manager_add_source_multi;
 	iface->add_target = iproject_manager_add_target;
 	iface->add_group = iproject_manager_add_group;
+	iface->remove_file = iproject_manager_remove_file;
 	iface->is_open = iproject_manager_is_open;
 	iface->get_packages = iproject_manager_get_packages;
 	iface->get_current_project = iproject_manager_get_current_project;

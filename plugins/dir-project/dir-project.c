@@ -83,8 +83,8 @@ struct _DirPattern
 {
 	gboolean match;
 	gboolean directory;
-	GRegex *source;
 	gchar *object;
+	GRegex *regex;
 };
 
 /* A list of pattern found in one file */
@@ -92,8 +92,10 @@ typedef struct _DirPatternList DirPatternList;
 
 struct _DirPatternList
 {
-	GList *pattern;
+	GList *sources;
+	GList *objects;
 	GFile *directory;
+	GHashTable *extensions;
 };
 
 /* ----- Standard GObject types and variables ----- */
@@ -203,10 +205,10 @@ project_node_new (DirProject *project, AnjutaProjectNode *parent, AnjutaProjectN
 static void
 dir_pattern_free (DirPattern *pat)
 {
-	if (pat->source != NULL) g_regex_unref (pat->source);
 	g_free (pat->object);
+	if (pat->regex != NULL) g_regex_unref (pat->regex);
 
-    g_slice_free (DirPattern, pat);
+	g_slice_free (DirPattern, pat);
 }
 
 /* Create a new pattern matching a directory of a file name in a path */
@@ -214,7 +216,7 @@ dir_pattern_free (DirPattern *pat)
 static DirPattern*
 dir_pattern_new (const gchar *pattern, gboolean reverse)
 {
-    DirPattern *pat = NULL;
+	DirPattern *pat = NULL;
 	GString *regex = g_string_new (NULL);
 	const char *ptr = pattern;
 
@@ -298,8 +300,8 @@ dir_pattern_new (const gchar *pattern, gboolean reverse)
 		g_string_truncate (regex, regex->len - 1);
 	}
 	g_string_append_c (regex, '$');
-	pat->source = g_regex_new (regex->str, 0, 0, NULL);
-	if (pat->source == NULL)
+	pat->regex = g_regex_new (regex->str, G_REGEX_OPTIMIZE, 0, NULL);
+	if (pat->regex == NULL)
 	{
 		dir_pattern_free (pat);
 		pat = NULL;
@@ -352,6 +354,38 @@ dir_pattern_new (const gchar *pattern, gboolean reverse)
 	return pat;
 }
 
+/* Replace regular expression by a lookup in a hash table if we look only for
+ * a file with a particular extension as it's much faster.
+ * Return TRUE if it is possible */
+
+static gboolean
+dir_pattern_optimize (DirPattern *pat, DirPattern *last, GHashTable *extensions)
+{
+	const gchar *pattern = g_regex_get_pattern (pat->regex);
+	const gchar *ext;
+	
+	ext = strrchr (pattern, '.');
+	if ((ext != NULL) &&
+	    (strncmp (pattern, "(?:^|\\/)(.+)\\", ext - pattern) == 0))
+	{
+		const gchar *ptr;
+
+		for (ptr = ext + 1; isalnum(*ptr) || (*ptr == '_') || ((ptr[0] == '\\') && (ptr[1] == '+')); *ptr == '\\' ? ptr += 2 : ptr++);
+		if ((ptr[0] == '$') && (ptr[1] == '\0'))
+		{
+			gchar *key = g_strndup (ext + 1, strlen(ext) - 2);
+			if (g_hash_table_lookup (extensions, key) == NULL)
+			{
+				g_hash_table_insert (extensions, key, last == NULL ? pat : last);
+
+				return TRUE;
+			}
+		}
+	}
+
+	return FALSE;
+}
+
 /* Read a file containing pattern, the syntax is similar to .gitignore file.
  *
  * It is not a regular expression, only * and ? are used as joker.
@@ -376,6 +410,7 @@ dir_push_pattern_list (GList *stack, GFile *dir, GFile *file, gboolean ignore, G
 	char *ptr;
 	DirPatternList *list = NULL;
 	guint line;
+	DirPattern *last = NULL;
 
 	if (!g_file_load_contents (file, NULL, &content, NULL, NULL, error))
 	{
@@ -383,8 +418,10 @@ dir_push_pattern_list (GList *stack, GFile *dir, GFile *file, gboolean ignore, G
 	}
 
 	list = g_slice_new0(DirPatternList);
-	list->pattern = NULL;
+	list->sources = NULL;
+	list->objects = NULL;
 	list->directory = dir;
+	list->extensions = g_hash_table_new_full (g_str_hash, g_str_equal, (GDestroyNotify)g_free, NULL);
 
 	line = 1;
 	for (ptr = content; *ptr != '\0';)
@@ -402,12 +439,40 @@ dir_push_pattern_list (GList *stack, GFile *dir, GFile *file, gboolean ignore, G
 		{
 			/* Create pattern */
 			DirPattern *pat = NULL;
+			gboolean used = FALSE;
 
 			if (next != NULL) *next = '\0';
 			pat = dir_pattern_new (ptr, ignore);
 			if (pat != NULL)
 			{
-				list->pattern = g_list_prepend (list->pattern, pat);
+				if ((last != NULL) && (last->match != pat->match)) last = NULL;
+				if (dir_pattern_optimize (pat, last, list->extensions))
+				{
+					if (last == NULL)
+					{
+						last = pat;
+						g_regex_unref (pat->regex);
+						pat->regex = NULL;
+						list->sources = g_list_prepend (list->sources, pat);
+						used = TRUE;
+					}
+				}
+				else
+				{
+					list->sources = g_list_prepend (list->sources, pat);
+					last = NULL;
+					used = TRUE;
+				}
+
+				if (pat->object != NULL)
+				{
+					if (used) pat = dir_pattern_new (ptr, ignore);
+					list->objects = g_list_prepend (list->objects, pat);
+				}
+				else if (!used)
+				{
+					dir_pattern_free (pat);
+				}
 			}
 			else
 			{
@@ -422,7 +487,8 @@ dir_push_pattern_list (GList *stack, GFile *dir, GFile *file, gboolean ignore, G
 	}
 	g_free (content);
 
-	list->pattern = g_list_reverse (list->pattern);
+	list->sources = g_list_reverse (list->sources);
+	list->objects = g_list_reverse (list->objects);
 
 	return g_list_prepend (stack, list);
 }
@@ -434,9 +500,12 @@ dir_pop_pattern_list (GList *stack)
 
 	stack = g_list_remove_link (stack, stack);
 
-	g_list_foreach (top->pattern, (GFunc)dir_pattern_free, NULL);
-	g_list_free (top->pattern);
+	g_list_foreach (top->sources, (GFunc)dir_pattern_free, NULL);
+	g_list_free (top->sources);
+	g_list_foreach (top->objects, (GFunc)dir_pattern_free, NULL);
+	g_list_free (top->objects);
 	g_object_unref (top->directory);
+	g_hash_table_destroy (top->extensions);
     g_slice_free (DirPatternList, top);
 
 	return stack;
@@ -462,15 +531,24 @@ dir_pattern_stack_is_match (GFile *root, GList *stack, GFile *file)
 	{
 		DirPatternList *pat_list = (DirPatternList *)list->data;
 		GList *node;
+		DirPattern *pat_ext = NULL;
+		const gchar *ext;
 
-		for (node = g_list_first (pat_list->pattern); node != NULL; node = g_list_next (node))
+		/* Check only the extension to be faster on the common case */
+		ext = strrchr (filename, '.');
+		if (ext != NULL)
+		{
+			pat_ext = g_hash_table_lookup (pat_list->extensions, ext + 1);
+		}
+
+		for (node = g_list_first (pat_list->sources); node != NULL; node = g_list_next (node))
 		{
 			DirPattern *pat = (DirPattern *)node->data;
 
-			if (pat->directory && !directory)
+			if ((pat->directory && !directory) || (!pat->directory && directory))
 				continue;
 
-			if (g_regex_match (pat->source, filename,  0, NULL))
+			if ((pat == pat_ext) || ((pat->regex != NULL) && g_regex_match (pat->regex, filename,  0, NULL)))
 			{
 				match = pat->match;
 			}
@@ -500,18 +578,18 @@ dir_pattern_find_file_object (GFile *root, GList *stack, GFile *file)
 			DirPatternList *pat_list = (DirPatternList *)list->data;
 			GList *node;
 
-			for (node = g_list_first (pat_list->pattern); node != NULL; node = g_list_next (node))
+			for (node = g_list_first (pat_list->objects); node != NULL; node = g_list_next (node))
 			{
 				DirPattern *pat = (DirPattern *)node->data;
 
 				if (pat->directory  || !pat->match || (pat->object == NULL) )
 					continue;
 
-				if (g_regex_match (pat->source, filename,  0, NULL))
+				if (g_regex_match (pat->regex, filename,  0, NULL))
 				{
 					gchar *objname;
 
-					objname = g_regex_replace (pat->source, filename, -1, 0, pat->object, 0, NULL);
+					objname = g_regex_replace (pat->regex, filename, -1, 0, pat->object, 0, NULL);
 					object = g_file_get_child (root, objname);
 					g_free (objname);
 				}
@@ -666,7 +744,7 @@ dir_project_load_directory_callback (GObject      *source_object,
 	}
 	g_list_free (infos);
 
-	g_file_enumerator_next_files_async (enumerator, NUM_FILES, G_PRIORITY_DEFAULT, NULL,
+	g_file_enumerator_next_files_async (enumerator, NUM_FILES, G_PRIORITY_DEFAULT_IDLE, NULL,
 	                                    dir_project_load_directory_callback, data);
 }
 
@@ -700,7 +778,7 @@ dir_project_load_directory (DirProject *project, AnjutaProjectNode *parent, GErr
 	data->proj = project;
 	data->parent = g_object_ref (parent);
 
-	g_file_enumerator_next_files_async (enumerator, NUM_FILES, G_PRIORITY_DEFAULT, NULL,
+	g_file_enumerator_next_files_async (enumerator, NUM_FILES, G_PRIORITY_DEFAULT_IDLE, NULL,
 	                                    dir_project_load_directory_callback, data);
 
 	anjuta_project_node_set_state (parent, ANJUTA_PROJECT_LOADING);
