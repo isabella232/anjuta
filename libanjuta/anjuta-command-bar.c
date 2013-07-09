@@ -19,6 +19,9 @@
 
 #include "anjuta-command-bar.h"
 
+/* Reasonable default */
+#define DEFAULT_MAX_TEXT_WIDTH 25
+
 /**
  * SECTION: anjuta-command-bar
  * @short_description: Widget that lays out commands in a vertical row of 
@@ -37,6 +40,15 @@ struct _AnjutaCommandBarPriv
 {
 	GHashTable *action_groups;
 	GHashTable *widgets;
+
+	gint max_text_width;
+};
+
+enum
+{
+	PROP_0,
+	PROP_MAX_TEXT_WIDTH,
+	PROP_LAST
 };
 
 static void
@@ -69,11 +81,58 @@ anjuta_command_bar_finalize (GObject *object)
 }
 
 static void
+anjuta_command_bar_get_property (GObject* object, guint prop_id, GValue* value,
+                                 GParamSpec* pspec)
+{
+    AnjutaCommandBar* self = ANJUTA_COMMAND_BAR (object);
+
+    switch (prop_id)
+    {
+        case PROP_MAX_TEXT_WIDTH:
+            g_value_set_int (value,
+                             self->priv->max_text_width);
+            break;
+
+        default:
+            G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+    }
+}
+
+static void
+anjuta_command_bar_set_property (GObject* object, guint prop_id,
+                                const GValue* value, GParamSpec* pspec)
+{
+    AnjutaCommandBar* self = ANJUTA_COMMAND_BAR (object);
+
+    switch (prop_id)
+    {
+        case PROP_MAX_TEXT_WIDTH:
+            self->priv->max_text_width = g_value_get_int (value);
+            break;
+
+        default:
+            G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+    }
+}
+
+static void
 anjuta_command_bar_class_init (AnjutaCommandBarClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
 
 	object_class->finalize = anjuta_command_bar_finalize;
+	object_class->set_property = anjuta_command_bar_set_property;
+	object_class->get_property = anjuta_command_bar_get_property;
+	
+	g_object_class_install_property (object_class,
+	                                 PROP_MAX_TEXT_WIDTH,
+	                                 g_param_spec_int ("max-text-width",
+	                                                   "",
+	                                                   "",
+	                                                   10,
+	                                                   1000,
+	                                                   DEFAULT_MAX_TEXT_WIDTH,
+	                                                   G_PARAM_WRITABLE|G_PARAM_READABLE|G_PARAM_CONSTRUCT_ONLY));
 }
 
 /**
@@ -105,21 +164,20 @@ anjuta_command_bar_add_action_group (AnjutaCommandBar *self,
                                      int num_entries, gpointer user_data)
 {
 	GtkWidget *vbox;
+	GtkWidget *scrolled_window;
 	GtkWidget *current_vbox;
 	GtkActionGroup *action_group;
 	int i;
-	GtkAction *action;
-	GtkWidget *button;
-	GtkWidget *button_image;
-	gchar *frame_label_text;
-	GtkWidget *frame_label;
-	GtkWidget *frame;
-	GtkWidget *frame_vbox;
-
+	
 	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 2);
+	scrolled_window = gtk_scrolled_window_new (NULL, NULL);
+	gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolled_window),
+	                                GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
+	gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (scrolled_window),
+	                                     GTK_SHADOW_IN);
 
 	g_hash_table_insert (self->priv->widgets, (gchar *) group_name, 
-	                     vbox);
+	                     scrolled_window);
 
 	action_group = gtk_action_group_new (group_name);
 
@@ -136,9 +194,17 @@ anjuta_command_bar_add_action_group (AnjutaCommandBar *self,
 	{
 		if (entries[i].type == ANJUTA_COMMAND_BAR_ENTRY_BUTTON)
 		{
+			GtkAction *action;
+			GtkWidget *button;
+			GtkWidget *button_box;
+			GtkWidget *button_label;
+			
+
 			action = gtk_action_new (entries[i].action_name, _(entries[i].label), 
 			                         _(entries[i].tooltip), entries[i].stock_icon);
 			button = gtk_button_new();
+			button_box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 5);
+			gtk_container_add (GTK_CONTAINER (button), button_box);
 
 			gtk_action_group_add_action (action_group, action);
 			
@@ -146,15 +212,22 @@ anjuta_command_bar_add_action_group (AnjutaCommandBar *self,
 
 			if (entries[i].stock_icon)
 			{
-				button_image = gtk_action_create_icon (action, 
-				                                       GTK_ICON_SIZE_BUTTON);
-				gtk_button_set_image (GTK_BUTTON (button), button_image);
+				GtkWidget* image;
+				image = gtk_action_create_icon (action, 
+				                                GTK_ICON_SIZE_BUTTON);
+				gtk_box_pack_start (GTK_BOX (button_box), image, FALSE, FALSE, 5);
 			}
 
 			gtk_activatable_set_related_action (GTK_ACTIVATABLE (button), 
 			                                    action);
-			gtk_activatable_set_use_action_appearance (GTK_ACTIVATABLE (button),
-			                                           TRUE);
+			button_label = gtk_label_new (gettext(entries[i].label));
+			gtk_label_set_width_chars (GTK_LABEL (button_label), self->priv->max_text_width);
+			gtk_label_set_line_wrap (GTK_LABEL (button_label), TRUE);
+			gtk_misc_set_alignment (GTK_MISC (button_label), 0, 0.5);
+			gtk_box_pack_start (GTK_BOX (button_box), button_label,
+			                    FALSE, FALSE, 5);
+			gtk_widget_show_all (button);
+			
 
 			g_signal_connect (G_OBJECT (action), "activate",
 			                  entries[i].callback,
@@ -168,6 +241,11 @@ anjuta_command_bar_add_action_group (AnjutaCommandBar *self,
 		}
 		else
 		{
+			gchar *frame_label_text;
+			GtkWidget *frame_label;
+			GtkWidget *frame;
+			GtkWidget *frame_vbox;
+			
 			frame_label_text = g_strdup_printf ("<b>%s</b>", _(entries[i].label));
 			frame_label = gtk_label_new (NULL);
 			frame = gtk_frame_new (NULL);
@@ -189,8 +267,10 @@ anjuta_command_bar_add_action_group (AnjutaCommandBar *self,
 		}
 	}
 
-	gtk_widget_show_all (vbox);
-	gtk_notebook_append_page (GTK_NOTEBOOK (self), vbox, NULL);
+	gtk_scrolled_window_add_with_viewport (GTK_SCROLLED_WINDOW (scrolled_window),
+	                                       vbox);
+	gtk_widget_show_all (scrolled_window);
+	gtk_notebook_append_page (GTK_NOTEBOOK (self), scrolled_window, NULL);
 }
 
 /**
