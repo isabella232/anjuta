@@ -90,7 +90,7 @@ on_ok_action_activated (GtkAction *action, GitMergePane *self)
 	                  plugin);
 
 	g_signal_connect (G_OBJECT (merge_command), "command-finished",
-	                  G_CALLBACK (git_pane_report_errors),
+	                  G_CALLBACK (git_pane_report_process_errors),
 	                  plugin);
 
 	g_signal_connect (G_OBJECT (merge_command), "command-finished",

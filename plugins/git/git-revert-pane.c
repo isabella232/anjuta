@@ -57,7 +57,7 @@ on_ok_action_activated (GtkAction *action, GitRevertPane *self)
 	                                         gtk_toggle_action_get_active (no_commit_action));
 
 	g_signal_connect (G_OBJECT (revert_command), "command-finished",
-	                  G_CALLBACK (git_pane_report_errors),
+	                  G_CALLBACK (git_pane_report_process_errors),
 	                  plugin);
 
 
@@ -181,7 +181,7 @@ on_git_log_revert_activated (GtkAction *action, Git *plugin)
 		                                         sha, FALSE);
 
 		g_signal_connect (G_OBJECT (revert_command), "command-finished",
-		                  G_CALLBACK (git_pane_report_errors),
+		                  G_CALLBACK (git_pane_report_process_errors),
 		                  plugin);
 
 		g_signal_connect (G_OBJECT (revert_command), "command-finished",

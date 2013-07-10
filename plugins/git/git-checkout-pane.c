@@ -47,7 +47,7 @@ on_ok_action_activated (GtkAction *action, GitCheckoutPane *self)
 	anjuta_util_glist_strings_free (paths);
 
 	g_signal_connect (G_OBJECT (checkout_command), "command-finished",
-	                  G_CALLBACK (git_pane_report_errors),
+	                  G_CALLBACK (git_pane_report_process_errors),
 	                  plugin);
 
 	g_signal_connect (G_OBJECT (checkout_command), "command-finished",
@@ -168,7 +168,7 @@ on_git_status_checkout_activated (GtkAction *action, Git *plugin)
 		                                                   paths, FALSE);
 
 		g_signal_connect (G_OBJECT (checkout_command), "command-finished",
-		                  G_CALLBACK (git_pane_report_errors),
+		                  G_CALLBACK (git_pane_report_process_errors),
 		                  plugin);
 
 		g_signal_connect (G_OBJECT (checkout_command), "command-finished",

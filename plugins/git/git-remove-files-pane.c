@@ -48,7 +48,7 @@ on_ok_action_activated (GtkAction *action, GitRemoveFilesPane *self)
 	anjuta_util_glist_strings_free (paths);
 
 	g_signal_connect (G_OBJECT (remove_command), "command-finished",
-	                  G_CALLBACK (git_pane_report_errors),
+	                  G_CALLBACK (git_pane_report_process_errors),
 	                  plugin);
 
 

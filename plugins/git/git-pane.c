@@ -275,7 +275,7 @@ message_dialog (GtkMessageType message_type, const gchar *message, Git *plugin)
 }
 
 void
-git_pane_report_errors (AnjutaCommand *command, guint return_code, Git *plugin)
+git_pane_report_process_errors (AnjutaCommand *command, guint return_code, Git *plugin)
 {
 	gchar *message;
 	

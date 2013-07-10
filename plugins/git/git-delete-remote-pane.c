@@ -35,7 +35,7 @@ on_delete_remote_button_clicked (GtkAction *action, Git *plugin)
 		g_free (remote);
 
 		g_signal_connect (G_OBJECT (delete_remote_command), "command-finished",
-		                  G_CALLBACK (git_pane_report_errors),
+		                  G_CALLBACK (git_pane_report_process_errors),
 		                  plugin);
 
 

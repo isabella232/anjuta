@@ -293,7 +293,7 @@ on_log_command_finished (AnjutaCommand *command, guint return_code,
 		 * empty log.
 		 */
 #if 0
-		git_pane_report_errors (command, return_code,
+		git_pane_report_process_errors (command, return_code,
 		                        ANJUTA_PLUGIN_GIT (anjuta_dock_pane_get_plugin (ANJUTA_DOCK_PANE (self))));
 #endif
 		goto out;

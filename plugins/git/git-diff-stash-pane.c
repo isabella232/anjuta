@@ -49,7 +49,7 @@ on_diff_stash_button_clicked (GtkAction *action, Git *plugin)
 		g_free (stash);
 
 		g_signal_connect (G_OBJECT (diff_command), "command-finished",
-		                  G_CALLBACK (git_pane_report_errors),
+		                  G_CALLBACK (git_pane_report_process_errors),
 		                  plugin);
 
 

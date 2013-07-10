@@ -59,7 +59,7 @@ on_ok_action_activated (GtkAction *action, GitDeleteBranchesPane *self)
 
 			g_signal_connect (G_OBJECT (local_delete_command), 
 			                  "command-finished",
-			                  G_CALLBACK (git_pane_report_errors),
+			                  G_CALLBACK (git_pane_report_process_errors),
 			                  plugin);
 			
 
@@ -83,7 +83,7 @@ on_ok_action_activated (GtkAction *action, GitDeleteBranchesPane *self)
 
 			g_signal_connect (G_OBJECT (remote_delete_command), 
 			                  "command-finished",
-			                  G_CALLBACK (git_pane_report_errors),
+			                  G_CALLBACK (git_pane_report_process_errors),
 			                  plugin);
 
 
@@ -247,7 +247,7 @@ on_git_branch_delete_activated (GtkAction *action, Git *plugin)
 		g_list_free (branches);
 
 		g_signal_connect (G_OBJECT (delete_command), "command-finished",
-		                  G_CALLBACK (git_pane_report_errors),
+		                  G_CALLBACK (git_pane_report_process_errors),
 		                  plugin);
 
 		g_signal_connect (G_OBJECT (delete_command), "command-finished",

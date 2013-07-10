@@ -40,7 +40,7 @@ on_diff_button_clicked (GtkAction *action, Git *plugin)
 					  editor);
 
 	g_signal_connect (G_OBJECT (diff_command), "command-finished",
-					  G_CALLBACK (git_pane_report_errors),
+					  G_CALLBACK (git_pane_report_process_errors),
 					  plugin);
 
 	g_signal_connect (G_OBJECT (diff_command), "command-finished",
@@ -85,7 +85,7 @@ on_commit_diff_button_clicked (GtkAction *action, Git *plugin)
 						  editor);
 		
 		g_signal_connect (G_OBJECT (diff_command), "command-finished",
-						  G_CALLBACK (git_pane_report_errors),
+						  G_CALLBACK (git_pane_report_process_errors),
 						  plugin);
 
 		g_signal_connect (G_OBJECT (diff_command), "command-finished",

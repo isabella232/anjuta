@@ -56,7 +56,7 @@ on_ok_action_activated (GtkAction *action, GitStashChangesPane *self)
 	g_free (message);
 
 	g_signal_connect (G_OBJECT (save_command), "command-finished",
-	                  G_CALLBACK (git_pane_report_errors),
+	                  G_CALLBACK (git_pane_report_process_errors),
 	                  plugin);
 
 

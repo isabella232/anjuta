@@ -93,7 +93,7 @@ on_ok_action_activated (GtkAction *action, GitCreateTagPane *self)
 	                                             gtk_toggle_action_get_active (force_action));
 
 	g_signal_connect (G_OBJECT (create_command), "command-finished",
-	                  G_CALLBACK (git_pane_report_errors),
+	                  G_CALLBACK (git_pane_report_process_errors),
 	                  plugin);
 
 

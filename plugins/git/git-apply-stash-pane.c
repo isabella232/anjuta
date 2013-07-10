@@ -36,7 +36,7 @@ apply_stash (Git *plugin, gboolean restore_index)
 		git_pane_create_message_view (plugin);
 
 		g_signal_connect (G_OBJECT (apply_command), "command-finished",
-		                  G_CALLBACK (git_pane_report_errors),
+		                  G_CALLBACK (git_pane_report_process_errors),
 		                  plugin);
 
 

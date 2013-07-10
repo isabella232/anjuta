@@ -37,7 +37,7 @@ on_unstage_button_clicked (GtkAction *action, Git *plugin)
 		anjuta_util_glist_strings_free (paths);
 
 		g_signal_connect (G_OBJECT (reset_command), "command-finished",
-		                  G_CALLBACK (git_pane_report_errors),
+		                  G_CALLBACK (git_pane_report_process_errors),
 		                  plugin);
 
 
@@ -69,7 +69,7 @@ on_git_status_unstage_activated (GtkAction *action, Git *plugin)
 		                                             paths);
 
 		g_signal_connect (G_OBJECT (reset_command), "command-finished",
-		                  G_CALLBACK (git_pane_report_errors),
+		                  G_CALLBACK (git_pane_report_process_errors),
 		                  plugin);
 
 		g_signal_connect (G_OBJECT (reset_command), "command-finished",
