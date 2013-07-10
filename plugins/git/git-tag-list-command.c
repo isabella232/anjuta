@@ -54,7 +54,7 @@ git_tag_list_command_finalize (GObject *object)
 static guint
 git_tag_list_command_run (AnjutaCommand *command)
 {	
-	git_command_add_arg (GIT_COMMAND (command), "tag");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "tag");
 	
 	return 0;
 }

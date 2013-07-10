@@ -22,7 +22,7 @@
  * 	Boston, MA  02110-1301, USA.
  */
 
-#include "git-command.h"
+#include "git-process-command.h"
 
 #define ERROR_REGEX "^(?:warning|fatal|error): (.*)"
 #define PROGRESS_REGEX "(\\d{1,3}(?=%))"
@@ -37,7 +37,7 @@ enum
 	PROP_STRIP_NEWLINES
 };
 
-struct _GitCommandPriv
+struct _GitProcessCommandPriv
 {
 	AnjutaLauncher *launcher;
 	GList *args;
@@ -52,17 +52,17 @@ struct _GitCommandPriv
 	gboolean strip_newlines;
 };
 
-G_DEFINE_TYPE (GitCommand, git_command, ANJUTA_TYPE_SYNC_COMMAND);
+G_DEFINE_TYPE (GitProcessCommand, git_process_command, ANJUTA_TYPE_SYNC_COMMAND);
 
 static void
-git_command_multi_line_output_arrived (AnjutaLauncher *launcher, 
+git_process_command_multi_line_output_arrived (AnjutaLauncher *launcher, 
 									   AnjutaLauncherOutputType output_type,
-									   const gchar *chars, GitCommand *self)
+									   const gchar *chars, GitProcessCommand *self)
 {	
-	GitCommandClass *klass;
+	GitProcessCommandClass *klass;
 	gchar *utf8_output;
 	
-	klass = GIT_COMMAND_GET_CLASS (self);
+	klass = GIT_PROCESS_COMMAND_GET_CLASS (self);
 	utf8_output = g_locale_to_utf8 (chars, -1, NULL, NULL, NULL);
 
 	if (utf8_output)
@@ -72,12 +72,12 @@ git_command_multi_line_output_arrived (AnjutaLauncher *launcher,
 			case ANJUTA_LAUNCHER_OUTPUT_STDOUT:
 				if (klass->output_handler)
 				{
-					GIT_COMMAND_GET_CLASS (self)->output_handler (self, 
+					GIT_PROCESS_COMMAND_GET_CLASS (self)->output_handler (self, 
 										   utf8_output);
 				}
 				break;
 			case ANJUTA_LAUNCHER_OUTPUT_STDERR:
-				GIT_COMMAND_GET_CLASS (self)->error_handler (self, utf8_output);
+				GIT_PROCESS_COMMAND_GET_CLASS (self)->error_handler (self, utf8_output);
 				break;
 			default:
 				break;
@@ -149,11 +149,11 @@ split_lines (const gchar *string, gboolean strip_newlines)
 }
 
 static void
-git_command_single_line_output_arrived (AnjutaLauncher *launcher, 
+git_process_command_single_line_output_arrived (AnjutaLauncher *launcher, 
 										AnjutaLauncherOutputType output_type,
-										const gchar *chars, GitCommand *self)
+										const gchar *chars, GitProcessCommand *self)
 {
-	void (*output_handler) (GitCommand *git_command, const gchar *output);
+	void (*output_handler) (GitProcessCommand *git_process_command, const gchar *output);
 	gchar **lines;
 	gchar **current_line;
 	gchar *utf8_output;
@@ -162,10 +162,10 @@ git_command_single_line_output_arrived (AnjutaLauncher *launcher,
 	switch (output_type)
 	{
 		case ANJUTA_LAUNCHER_OUTPUT_STDOUT:
-			output_handler = GIT_COMMAND_GET_CLASS (self)->output_handler;
+			output_handler = GIT_PROCESS_COMMAND_GET_CLASS (self)->output_handler;
 			break;
 		case ANJUTA_LAUNCHER_OUTPUT_STDERR:
-			output_handler = GIT_COMMAND_GET_CLASS (self)->error_handler;
+			output_handler = GIT_PROCESS_COMMAND_GET_CLASS (self)->error_handler;
 			break;
 		default:
 			output_handler = NULL;
@@ -195,7 +195,7 @@ git_command_single_line_output_arrived (AnjutaLauncher *launcher,
 }
 
 static void
-git_command_launch (GitCommand *self)
+git_process_command_launch (GitProcessCommand *self)
 {
 	gchar **args;
 	GList *current_arg;
@@ -216,9 +216,9 @@ git_command_launch (GitCommand *self)
 	}
 	
 	if (self->priv->single_line_output)
-		callback = (AnjutaLauncherOutputCallback) git_command_single_line_output_arrived;
+		callback = (AnjutaLauncherOutputCallback) git_process_command_single_line_output_arrived;
 	else
-		callback = (AnjutaLauncherOutputCallback) git_command_multi_line_output_arrived;
+		callback = (AnjutaLauncherOutputCallback) git_process_command_multi_line_output_arrived;
 
 	if (!anjuta_launcher_execute_v (self->priv->launcher,
 	    							self->priv->working_directory,
@@ -227,7 +227,7 @@ git_command_launch (GitCommand *self)
 									callback,
 									self))
 	{
-		git_command_append_error (self, "Command execution failed.");
+		git_process_command_append_error (self, "Command execution failed.");
 		anjuta_command_notify_complete (ANJUTA_COMMAND (self), 1);
 	}
 	
@@ -236,17 +236,17 @@ git_command_launch (GitCommand *self)
 }
 
 static void
-git_command_start (AnjutaCommand *command)
+git_process_command_start (AnjutaCommand *command)
 {
 	/* We consider the command to be complete when the launcher notifies us of
 	 * the child git process's completion, instead of when ::run returns. In 
 	 * this case, execute the command if ::run retruns 0. */ 
 	if (ANJUTA_COMMAND_GET_CLASS (command)->run (command) == 0)
-		git_command_launch (GIT_COMMAND (command));
+		git_process_command_launch (GIT_PROCESS_COMMAND (command));
 }
 
 static void
-git_command_error_handler (GitCommand *self, const gchar *output)
+git_process_command_error_handler (GitProcessCommand *self, const gchar *output)
 {
 	GMatchInfo *match_info;
 	gchar *error;
@@ -292,7 +292,7 @@ git_command_error_handler (GitCommand *self, const gchar *output)
 		if (g_regex_match (self->priv->status_regex, output, 0, &match_info))
 		{	
 			status = g_match_info_fetch (match_info, 1);
-			git_command_push_info (self, status);
+			git_process_command_push_info (self, status);
 			
 			g_free (status);
 			g_match_info_free (match_info);
@@ -308,16 +308,16 @@ git_command_error_handler (GitCommand *self, const gchar *output)
 		if (delimiter)
 		{
 			clean_output = g_strndup (output, (delimiter - output));
-			git_command_send_output_to_info (self, clean_output);
+			git_process_command_send_output_to_info (self, clean_output);
 			g_free (clean_output);
 		}
 		else
-			git_command_send_output_to_info (self, output);
+			git_process_command_send_output_to_info (self, output);
 	}
 }
 
 static void
-git_command_clear_args_list (GitCommand *self)
+git_process_command_clear_args_list (GitProcessCommand *self)
 {
 	g_list_foreach (self->priv->args, (GFunc) g_free, NULL);
 	g_list_free (self->priv->args);
@@ -325,8 +325,8 @@ git_command_clear_args_list (GitCommand *self)
 }
 
 static void
-git_command_child_exited (AnjutaLauncher *launcher, gint child_pid, gint status, 
-						  gulong time, GitCommand *self)
+git_process_command_child_exited (AnjutaLauncher *launcher, gint child_pid, gint status, 
+						  gulong time, GitProcessCommand *self)
 {	
 	if (strlen (self->priv->error_string->str) > 0)
 	{
@@ -335,22 +335,22 @@ git_command_child_exited (AnjutaLauncher *launcher, gint child_pid, gint status,
 	}
 
 	/* Clear the argument list to make the command reusable */
-	git_command_clear_args_list (self);
+	git_process_command_clear_args_list (self);
 	
 	anjuta_command_notify_complete (ANJUTA_COMMAND (self), 
 									(guint) WEXITSTATUS (status));
 }
 
 static void
-git_command_init (GitCommand *self)
+git_process_command_init (GitProcessCommand *self)
 {
-	self->priv = g_new0 (GitCommandPriv, 1);
+	self->priv = g_new0 (GitProcessCommandPriv, 1);
 	self->priv->launcher = anjuta_launcher_new ();
 	anjuta_launcher_set_encoding (self->priv->launcher, NULL);
 	anjuta_launcher_set_check_passwd_prompt (self->priv->launcher, FALSE);
 	
 	g_signal_connect (G_OBJECT (self->priv->launcher), "child-exited",
-					  G_CALLBACK (git_command_child_exited),
+					  G_CALLBACK (git_process_command_child_exited),
 					  self);
 	
 	self->priv->error_regex = g_regex_new (ERROR_REGEX, 0, 0, NULL);
@@ -361,14 +361,14 @@ git_command_init (GitCommand *self)
 }
 
 static void
-git_command_finalize (GObject *object)
+git_process_command_finalize (GObject *object)
 {
-	GitCommand *self;
+	GitProcessCommand *self;
 	GList *current_info;
 	
-	self = GIT_COMMAND (object);
+	self = GIT_PROCESS_COMMAND (object);
 	
-	git_command_clear_args_list (self);
+	git_process_command_clear_args_list (self);
 	
 	current_info = self->priv->info_queue->head;
 	
@@ -387,16 +387,16 @@ git_command_finalize (GObject *object)
 	g_free (self->priv->working_directory);
 	g_free (self->priv);
 	
-	G_OBJECT_CLASS (git_command_parent_class)->finalize (object);
+	G_OBJECT_CLASS (git_process_command_parent_class)->finalize (object);
 }
 
 static void
-git_command_set_property (GObject *object, guint prop_id, const GValue *value,
+git_process_command_set_property (GObject *object, guint prop_id, const GValue *value,
 						  GParamSpec *pspec)
 {
-	GitCommand *self;
+	GitProcessCommand *self;
 	
-	self = GIT_COMMAND (object);
+	self = GIT_PROCESS_COMMAND (object);
 	
 	switch (prop_id)
 	{
@@ -417,12 +417,12 @@ git_command_set_property (GObject *object, guint prop_id, const GValue *value,
 }
 
 static void
-git_command_get_property (GObject *object, guint prop_id, GValue *value,
+git_process_command_get_property (GObject *object, guint prop_id, GValue *value,
 						  GParamSpec *pspec)
 {
-	GitCommand *self;
+	GitProcessCommand *self;
 	
-	self = GIT_COMMAND (object);
+	self = GIT_PROCESS_COMMAND (object);
 	
 	switch (prop_id)
 	{
@@ -436,17 +436,17 @@ git_command_get_property (GObject *object, guint prop_id, GValue *value,
 }
 
 static void
-git_command_class_init (GitCommandClass *klass)
+git_process_command_class_init (GitProcessCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 	
-	object_class->finalize = git_command_finalize;
-	object_class->set_property = git_command_set_property;
-	object_class->get_property = git_command_get_property;
-	command_class->start = git_command_start;
+	object_class->finalize = git_process_command_finalize;
+	object_class->set_property = git_process_command_set_property;
+	object_class->get_property = git_process_command_get_property;
+	command_class->start = git_process_command_start;
 	klass->output_handler = NULL;
-	klass->error_handler = git_command_error_handler;
+	klass->error_handler = git_process_command_error_handler;
 	
 	g_object_class_install_property (object_class, PROP_WORKING_DIRECTORY,
 									 g_param_spec_string ("working-directory",
@@ -479,14 +479,14 @@ git_command_class_init (GitCommandClass *klass)
 
 
 void
-git_command_add_arg (GitCommand *self, const gchar *arg)
+git_process_command_add_arg (GitProcessCommand *self, const gchar *arg)
 {
 	self->priv->args = g_list_append (self->priv->args, g_strdup (arg));
 	self->priv->num_args++;
 }
 
 void 
-git_command_add_list_to_args (GitCommand *self, GList *list)
+git_process_command_add_list_to_args (GitProcessCommand *self, GList *list)
 {
 	GList *current_arg;
 	
@@ -503,7 +503,7 @@ git_command_add_list_to_args (GitCommand *self, GList *list)
 }
 
 void
-git_command_append_error (GitCommand *self, const gchar *error_line)
+git_process_command_append_error (GitProcessCommand *self, const gchar *error_line)
 {
 	if (strlen (self->priv->error_string->str) > 0)
 		g_string_append_printf (self->priv->error_string, "\n%s", error_line);
@@ -512,20 +512,20 @@ git_command_append_error (GitCommand *self, const gchar *error_line)
 }
 
 void
-git_command_push_info (GitCommand *self, const gchar *info)
+git_process_command_push_info (GitProcessCommand *self, const gchar *info)
 {
 	g_queue_push_tail (self->priv->info_queue, g_strdup (info));
 	anjuta_command_notify_data_arrived (ANJUTA_COMMAND (self));
 }
 
 GQueue *
-git_command_get_info_queue (GitCommand *self)
+git_process_command_get_info_queue (GitProcessCommand *self)
 {
 	return self->priv->info_queue;
 }
 
 void
-git_command_send_output_to_info (GitCommand *git_command, const gchar *output)
+git_process_command_send_output_to_info (GitProcessCommand *git_command, const gchar *output)
 {
 	gchar *newline;
 	gchar *info_string;
@@ -538,11 +538,11 @@ git_command_send_output_to_info (GitCommand *git_command, const gchar *output)
 	else
 		info_string = g_strdup (output);
 	
-	git_command_push_info (git_command, info_string);
+	git_process_command_push_info (git_command, info_string);
 }
 
 GList *
-git_command_copy_string_list (GList *list)
+git_process_command_copy_string_list (GList *list)
 {
 	GList *current_path;
 	GList *new_list;
@@ -560,9 +560,8 @@ git_command_copy_string_list (GList *list)
 }
 
 void 
-git_command_set_check_passwd_prompt (GitCommand *git_command,
-                                     gboolean check)
+git_process_command_set_check_passwd_prompt (GitProcessCommand *self, gboolean check)
 {
-	anjuta_launcher_set_check_passwd_prompt (git_command->priv->launcher, check);
+	anjuta_launcher_set_check_passwd_prompt (self->priv->launcher, check);
 }
 

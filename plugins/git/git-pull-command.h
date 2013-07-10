@@ -26,7 +26,7 @@
 #define _GIT_PULL_COMMAND_H_
 
 #include <glib-object.h>
-#include "git-command.h"
+#include "git-process-command.h"
 
 G_BEGIN_DECLS
 
@@ -43,12 +43,12 @@ typedef struct _GitPullCommandPriv GitPullCommandPriv;
 
 struct _GitPullCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitPullCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitPullCommandPriv *priv;
 };

@@ -26,7 +26,7 @@
 #define _GIT_STATUS_COMMAND_H_
 
 #include <glib-object.h>
-#include "git-command.h"
+#include "git-process-command.h"
 #include "git-status.h"
 
 G_BEGIN_DECLS
@@ -53,12 +53,12 @@ typedef enum
 
 struct _GitStatusCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitStatusCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitStatusCommandPriv *priv;
 };

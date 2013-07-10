@@ -62,16 +62,16 @@ git_branch_create_command_run (AnjutaCommand *command)
 	
 	if (self->priv->checkout)
 	{
-		git_command_add_arg (GIT_COMMAND (command), "checkout");
-		git_command_add_arg (GIT_COMMAND (command), "-b");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "checkout");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "-b");
 	}
 	else
-		git_command_add_arg (GIT_COMMAND (command), "branch");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "branch");
 	
-	git_command_add_arg (GIT_COMMAND (command), self->priv->name);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->name);
 	
 	if (self->priv->revision)
-		git_command_add_arg (GIT_COMMAND (command), self->priv->revision);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->revision);
 	
 	return 0;
 }
@@ -80,11 +80,11 @@ static void
 git_branch_create_command_class_init (GitBranchCreateCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_branch_create_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_branch_create_command_run;
 }
 

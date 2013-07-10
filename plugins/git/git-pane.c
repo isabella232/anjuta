@@ -117,7 +117,7 @@ git_pane_on_command_info_arrived (AnjutaCommand *command, Git *plugin)
 	GQueue *info;
 	gchar *message;
 	
-	info = git_command_get_info_queue (GIT_COMMAND (command));
+	info = git_process_command_get_info_queue (GIT_PROCESS_COMMAND (command));
 	
 	while (g_queue_peek_head (info))
 	{

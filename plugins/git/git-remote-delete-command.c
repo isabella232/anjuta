@@ -57,9 +57,9 @@ git_remote_delete_command_run (AnjutaCommand *command)
 	
 	self = GIT_REMOTE_DELETE_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "remote");
-	git_command_add_arg (GIT_COMMAND (command), "rm");
-	git_command_add_arg (GIT_COMMAND (command), self->priv->name);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "remote");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "rm");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->name);
 	
 	return 0;
 }
@@ -68,11 +68,11 @@ static void
 git_remote_delete_command_class_init (GitRemoteDeleteCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_remote_delete_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_remote_delete_command_run;
 }
 

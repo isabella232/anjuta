@@ -53,14 +53,14 @@ git_stash_save_command_run (AnjutaCommand *command)
 
 	self = GIT_STASH_SAVE_COMMAND (command);
 
-	git_command_add_arg (GIT_COMMAND (command), "stash");
-	git_command_add_arg (GIT_COMMAND (command), "save");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "stash");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "save");
 
 	if (self->priv->keep_index)
-		git_command_add_arg (GIT_COMMAND (command), "--keep-index");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--keep-index");
 
 	if (self->priv->message)
-		git_command_add_arg (GIT_COMMAND (command), self->priv->message);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->message);
 
 	return 0;
 }
@@ -69,11 +69,11 @@ static void
 git_stash_save_command_class_init (GitStashSaveCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass *command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_stash_save_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_stash_save_command_run;
 }
 

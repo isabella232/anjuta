@@ -26,7 +26,7 @@
 #define _GIT_RESET_FILES_COMMAND_H_
 
 #include <glib-object.h>
-#include "git-command.h"
+#include "git-process-command.h"
 
 G_BEGIN_DECLS
 
@@ -45,12 +45,12 @@ typedef struct _GitResetFilesCommandPriv GitResetFilesCommandPriv;
 
 struct _GitResetFilesCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitResetFilesCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitResetFilesCommandPriv *priv;
 };

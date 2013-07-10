@@ -39,24 +39,24 @@ git_reset_tree_command_run (AnjutaCommand *command)
 	
 	self = GIT_RESET_TREE_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "reset");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "reset");
 	
 	switch (self->priv->mode)
 	{
 		case GIT_RESET_TREE_MODE_MIXED:
-			git_command_add_arg (GIT_COMMAND (command), "--mixed");
+			git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--mixed");
 			break;
 		case GIT_RESET_TREE_MODE_SOFT:
-			git_command_add_arg (GIT_COMMAND (command), "--soft");
+			git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--soft");
 			break;
 		case GIT_RESET_TREE_MODE_HARD:
-			git_command_add_arg (GIT_COMMAND (command), "--hard");
+			git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--hard");
 			break;
 		default:
 			break;
 	}
 	
-	git_command_add_arg (GIT_COMMAND (command), self->priv->revision);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->revision);
 	
 	return 0;
 }
@@ -84,11 +84,11 @@ static void
 git_reset_tree_command_class_init (GitResetTreeCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_reset_tree_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_reset_tree_command_run;
 }
 

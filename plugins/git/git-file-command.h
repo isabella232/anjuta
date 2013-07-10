@@ -27,7 +27,7 @@
 
 #include <glib-object.h>
 #include <libanjuta/anjuta-sync-command.h>
-#include <git-command.h> /* For path list functions */
+#include <git-process-command.h> /* For path list functions */
 
 G_BEGIN_DECLS
 

@@ -58,12 +58,12 @@ git_add_command_run (AnjutaCommand *command)
 	
 	self = GIT_ADD_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "add");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "add");
 	
 	if (self->priv->force)
-		git_command_add_arg (GIT_COMMAND (command), "-f");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "-f");
 	
-	git_command_add_list_to_args (GIT_COMMAND (command), self->priv->paths);
+	git_process_command_add_list_to_args (GIT_PROCESS_COMMAND (command), self->priv->paths);
 	
 	return 0;
 }
@@ -106,7 +106,7 @@ git_add_command_new_list (const gchar *working_directory, GList *path_list,
 						 "working-directory", working_directory,
 						 NULL);
 	
-	self->priv->paths = git_command_copy_string_list (path_list);
+	self->priv->paths = git_process_command_copy_string_list (path_list);
 	self->priv->force = force;
 	
 	return self;

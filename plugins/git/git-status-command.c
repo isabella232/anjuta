@@ -42,14 +42,14 @@ G_DEFINE_TYPE (GitStatusCommand, git_status_command, GIT_TYPE_COMMAND);
 static guint
 git_status_command_run (AnjutaCommand *command)
 {
-	git_command_add_arg (GIT_COMMAND (command), "status");
-	git_command_add_arg (GIT_COMMAND (command), "--porcelain");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "status");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--porcelain");
 	
 	return 0;
 }
 
 static void
-git_status_command_handle_output (GitCommand *git_command, const gchar *output)
+git_status_command_handle_output (GitProcessCommand *git_process_command, const gchar *output)
 {
 	GitStatusCommand *self;
 	GMatchInfo *match_info;
@@ -57,7 +57,7 @@ git_status_command_handle_output (GitCommand *git_command, const gchar *output)
 	gchar *status;
 	gchar *path;
 	
-	self = GIT_STATUS_COMMAND (git_command);
+	self = GIT_STATUS_COMMAND (git_process_command);
 	status_object = NULL;
 
 	if (g_regex_match (self->priv->status_regex, output, 0, &match_info))
@@ -299,7 +299,7 @@ static void
 git_status_command_class_init (GitStatusCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_status_command_finalize;

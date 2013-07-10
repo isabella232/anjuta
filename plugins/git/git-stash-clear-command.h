@@ -26,7 +26,7 @@
 #define _GIT_STASH_CLEAR_COMMAND_H_
 
 #include <glib-object.h>
-#include "git-command.h"
+#include "git-process-command.h"
 
 G_BEGIN_DECLS
 
@@ -42,12 +42,12 @@ typedef struct _GitStashClearCommand GitStashClearCommand;
 
 struct _GitStashClearCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitStashClearCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 };
 
 GType git_stash_clear_command_get_type (void) G_GNUC_CONST;

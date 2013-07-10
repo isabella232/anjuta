@@ -39,7 +39,7 @@ static void
 git_push_command_init (GitPushCommand *self)
 {
 	self->priv = g_new0 (GitPushCommandPriv, 1);
-	git_command_set_check_passwd_prompt (GIT_COMMAND (self), TRUE);
+	git_process_command_set_check_passwd_prompt (GIT_PROCESS_COMMAND (self), TRUE);
 }
 
 static void
@@ -63,21 +63,21 @@ git_push_command_run (AnjutaCommand *command)
 	
 	self = GIT_PUSH_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "push");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "push");
 	
 	if (self->priv->push_all)
-		git_command_add_arg (GIT_COMMAND (command), "--all");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--all");
 	
 	if (self->priv->push_tags)
-		git_command_add_arg (GIT_COMMAND (command), "--tags");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--tags");
 
 	if (self->priv->force)
-		git_command_add_arg (GIT_COMMAND (command), "--force");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--force");
 	
-	git_command_add_arg (GIT_COMMAND (command), self->priv->url);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->url);
 
 	if (self->priv->refs)
-		git_command_add_list_to_args (GIT_COMMAND (command), self->priv->refs);
+		git_process_command_add_list_to_args (GIT_PROCESS_COMMAND (command), self->priv->refs);
 	
 	return 0;
 }
@@ -86,11 +86,11 @@ static void
 git_push_command_class_init (GitPushCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_push_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_push_command_run;
 }
 
@@ -111,7 +111,7 @@ git_push_command_new (const gchar *working_directory,
 						  NULL);
 	
 	self->priv->url = g_strdup (url);
-	self->priv->refs = git_command_copy_string_list (refs);
+	self->priv->refs = git_process_command_copy_string_list (refs);
 	self->priv->push_all = push_all;
 	self->priv->push_tags = push_tags;
 	self->priv->force = force;

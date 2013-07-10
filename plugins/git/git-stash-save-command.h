@@ -21,7 +21,7 @@
 #define _GIT_STASH_SAVE_COMMAND_H_
 
 #include <glib-object.h>
-#include "git-command.h"
+#include "git-process-command.h"
 
 G_BEGIN_DECLS
 
@@ -38,12 +38,12 @@ typedef struct _GitStashSaveCommandPriv GitStashSaveCommandPriv;
 
 struct _GitStashSaveCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitStashSaveCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 
 	GitStashSaveCommandPriv *priv;
 };

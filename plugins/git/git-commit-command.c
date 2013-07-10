@@ -44,27 +44,27 @@ git_commit_command_run (AnjutaCommand *command)
 	
 	self = GIT_COMMIT_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (self), "commit");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (self), "commit");
 
 	if (self->priv->amend)
-		git_command_add_arg (GIT_COMMAND (self), "--amend");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (self), "--amend");
 
 	if (self->priv->author_name && self->priv->author_email)
 	{
 		author = g_strdup_printf ("--author=%s <%s>", self->priv->author_name,
 		                          self->priv->author_email);
-		git_command_add_arg (GIT_COMMAND (self), author);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (self), author);
 
 		g_free (author);
 	}
 
-	git_command_add_arg (GIT_COMMAND (self), "-m");
-	git_command_add_arg (GIT_COMMAND (self), self->priv->log);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (self), "-m");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (self), self->priv->log);
 	
 	if (self->priv->resolve_merge)
-		git_command_add_arg (GIT_COMMAND (self), "-i");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (self), "-i");
 	
-	git_command_add_list_to_args (GIT_COMMAND (self), self->priv->paths);
+	git_process_command_add_list_to_args (GIT_PROCESS_COMMAND (self), self->priv->paths);
 	
 	return 0;
 }
@@ -95,11 +95,11 @@ static void
 git_commit_command_class_init (GitCommitCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_commit_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_commit_command_run;
 }
 
@@ -118,7 +118,7 @@ git_commit_command_new (const gchar *working_directory, gboolean amend,
 						 "single-line-output", TRUE,
 						 NULL);
 	
-	self->priv->paths = git_command_copy_string_list (paths);
+	self->priv->paths = git_process_command_copy_string_list (paths);
 	self->priv->amend = amend;
 	self->priv->resolve_merge = resolve_merge;
 	self->priv->log = g_strdup (log);

@@ -26,7 +26,7 @@
 #define _GIT_APPLY_MAILBOX_COMMAND_H_
 
 #include <glib-object.h>
-#include "git-command.h"
+#include "git-process-command.h"
 
 G_BEGIN_DECLS
 
@@ -43,12 +43,12 @@ typedef struct _GitApplyMailboxCommandPriv GitApplyMailboxCommandPriv;
 
 struct _GitApplyMailboxCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitApplyMailboxCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitApplyMailboxCommandPriv *priv;
 };

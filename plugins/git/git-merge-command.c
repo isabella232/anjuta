@@ -61,21 +61,21 @@ git_merge_command_run (AnjutaCommand *command)
 	
 	self = GIT_MERGE_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "merge");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "merge");
 	
 	if (self->priv->no_commit)
-		git_command_add_arg (GIT_COMMAND (command), "--no-commit");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--no-commit");
 	
 	if (self->priv->squash)
-		git_command_add_arg (GIT_COMMAND (command), "--squash");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--squash");
 	
 	if (self->priv->log)
 	{
-		git_command_add_arg (GIT_COMMAND (command), "-m");
-		git_command_add_arg (GIT_COMMAND (command), self->priv->log);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "-m");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->log);
 	}
 	
-	git_command_add_arg (GIT_COMMAND (command), self->priv->branch);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->branch);
 	
 	return 0;
 }
@@ -84,11 +84,11 @@ static void
 git_merge_command_class_init (GitMergeCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_merge_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_merge_command_run;
 }
 

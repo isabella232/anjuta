@@ -101,9 +101,9 @@ git_log_command_run (AnjutaCommand *command)
 	
 	self = GIT_LOG_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "rev-list");
-	git_command_add_arg (GIT_COMMAND (command), "--topo-order");
-	git_command_add_arg (GIT_COMMAND (command), "--pretty=format:parents %P%n"
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "rev-list");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--topo-order");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--pretty=format:parents %P%n"
 												"author %an%n"
 												"time %at%n"
 												"short log %s%n"
@@ -112,28 +112,28 @@ git_log_command_run (AnjutaCommand *command)
 	if (self->priv->author)
 	{
 		filter_arg = g_strdup_printf ("--author=%s", self->priv->author);
-		git_command_add_arg (GIT_COMMAND (command), filter_arg);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), filter_arg);
 		g_free (filter_arg);
 	}
 	
 	if (self->priv->grep)
 	{
 		filter_arg = g_strdup_printf ("--grep=%s", self->priv->grep);
-		git_command_add_arg (GIT_COMMAND (command), filter_arg);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), filter_arg);
 		g_free (filter_arg);
 	}
 	
 	if (self->priv->since_date)
 	{
 		filter_arg = g_strdup_printf ("--since=%s", self->priv->since_date);
-		git_command_add_arg (GIT_COMMAND (command), filter_arg);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), filter_arg);
 		g_free (filter_arg);
 	}
 	
 	if (self->priv->until_date)
 	{
 		filter_arg = g_strdup_printf ("--until=%s", self->priv->until_date);
-		git_command_add_arg (GIT_COMMAND (command), filter_arg);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), filter_arg);
 		g_free (filter_arg);
 	}
 	
@@ -150,20 +150,20 @@ git_log_command_run (AnjutaCommand *command)
 		if (self->priv->until_commit)
 			g_string_append (commit_range, self->priv->until_commit);
 		
-		git_command_add_arg (GIT_COMMAND (command), commit_range->str);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), commit_range->str);
 		
 		g_string_free (commit_range, TRUE);
 	}
 
 	if (self->priv->branch)
-		git_command_add_arg (GIT_COMMAND (command), self->priv->branch);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->branch);
 	else
-		git_command_add_arg (GIT_COMMAND (command), "HEAD");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "HEAD");
 	
 	if (self->priv->path)
 	{
-		git_command_add_arg (GIT_COMMAND (command), "--");
-		git_command_add_arg (GIT_COMMAND (command), self->priv->path);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->path);
 	}
 
 	/* Start the data processing task */
@@ -189,11 +189,11 @@ git_log_command_notify_complete (AnjutaCommand *command, guint return_code)
 }
 
 static void
-git_log_command_handle_output (GitCommand *git_command, const gchar *output)
+git_log_command_handle_output (GitProcessCommand *git_process_command, const gchar *output)
 {
 	GitLogCommand *self;
 	
-	self = GIT_LOG_COMMAND (git_command);
+	self = GIT_LOG_COMMAND (git_process_command);
 
 	git_log_data_command_push_line (self->priv->data_command, output);
 }
@@ -202,7 +202,7 @@ static void
 git_log_command_class_init (GitLogCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass *command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_log_command_finalize;

@@ -54,7 +54,7 @@ git_remote_list_command_finalize (GObject *object)
 static guint
 git_remote_list_command_run (AnjutaCommand *command)
 {	
-	git_command_add_arg (GIT_COMMAND (command), "remote");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "remote");
 	
 	return 0;
 }

@@ -57,10 +57,10 @@ git_tag_delete_command_run (AnjutaCommand *command)
 	
 	self = GIT_TAG_DELETE_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "tag");
-	git_command_add_arg (GIT_COMMAND (command), "-d");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "tag");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "-d");
 	
-	git_command_add_list_to_args (GIT_COMMAND (command), self->priv->tags);
+	git_process_command_add_list_to_args (GIT_PROCESS_COMMAND (command), self->priv->tags);
 	
 	return 0;
 }
@@ -69,11 +69,11 @@ static void
 git_tag_delete_command_class_init (GitTagDeleteCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_tag_delete_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_tag_delete_command_run;
 }
 
@@ -89,7 +89,7 @@ git_tag_delete_command_new (const gchar *working_directory,
 						 "single-line-output", TRUE,
 						 NULL);
 	
-	self->priv->tags = git_command_copy_string_list (tags);
+	self->priv->tags = git_process_command_copy_string_list (tags);
 	
 	return self;
 }

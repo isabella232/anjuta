@@ -27,7 +27,7 @@
 
 #include <glib-object.h>
 #include <stdlib.h>
-#include "git-command.h"
+#include "git-process-command.h"
 #include "git-revision.h"
 
 G_BEGIN_DECLS
@@ -45,12 +45,12 @@ typedef struct _GitLogMessageCommandPriv GitLogMessageCommandPriv;
 
 struct _GitLogMessageCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitLogMessageCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitLogMessageCommandPriv *priv;
 };

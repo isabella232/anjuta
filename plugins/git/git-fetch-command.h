@@ -26,7 +26,7 @@
 #define _GIT_FETCH_COMMAND_H_
 
 #include <glib-object.h>
-#include "git-command.h"
+#include "git-process-command.h"
 
 G_BEGIN_DECLS
 
@@ -42,12 +42,12 @@ typedef struct _GitFetchCommand GitFetchCommand;
 
 struct _GitFetchCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitFetchCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 };
 
 GType git_fetch_command_get_type (void) G_GNUC_CONST;

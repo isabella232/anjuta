@@ -39,14 +39,14 @@ git_checkout_files_command_run (AnjutaCommand *command)
 	
 	self = GIT_CHECKOUT_FILES_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (self), "checkout");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (self), "checkout");
 
 	if (self->priv->checkout_all)
-		git_command_add_arg (GIT_COMMAND (self), "-f");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (self), "-f");
 	else
 	{
-		git_command_add_arg (GIT_COMMAND (self), "--");
-		git_command_add_list_to_args (GIT_COMMAND (self), self->priv->paths);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (self), "--");
+		git_process_command_add_list_to_args (GIT_PROCESS_COMMAND (self), self->priv->paths);
 	}
 	
 	return 0;
@@ -75,11 +75,11 @@ static void
 git_checkout_files_command_class_init (GitCheckoutFilesCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_checkout_files_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_checkout_files_command_run;
 }
 
@@ -94,7 +94,7 @@ git_checkout_files_command_new (const gchar *working_directory, GList *paths,
 						 "working-directory", working_directory,
 						 NULL);
 	
-	self->priv->paths = git_command_copy_string_list (paths);
+	self->priv->paths = git_process_command_copy_string_list (paths);
 	self->priv->checkout_all = checkout_all;
 	
 	return self;

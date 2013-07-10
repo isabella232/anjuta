@@ -27,7 +27,7 @@
 
 #include <glib-object.h>
 #include <gio/gio.h>
-#include "git-command.h"
+#include "git-process-command.h"
 #include "git-stash.h"
 
 G_BEGIN_DECLS
@@ -45,12 +45,12 @@ typedef struct _GitStashListCommandPriv GitStashListCommandPriv;
 
 struct _GitStashListCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitStashListCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitStashListCommandPriv *priv;
 };

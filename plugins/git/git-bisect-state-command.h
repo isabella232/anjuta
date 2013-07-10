@@ -26,7 +26,7 @@
 #define _GIT_BISECT_STATE_COMMAND_H_
 
 #include <glib-object.h>
-#include "git-command.h"
+#include "git-process-command.h"
 
 G_BEGIN_DECLS
 
@@ -49,12 +49,12 @@ typedef enum
 
 struct _GitBisectStateCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitBisectStateCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitBisectStateCommandPriv *priv;
 };

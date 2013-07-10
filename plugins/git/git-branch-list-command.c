@@ -175,15 +175,15 @@ git_branch_list_command_run (AnjutaCommand *command)
 	
 	self = GIT_BRANCH_LIST_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "branch");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "branch");
 						 
 	switch (self->priv->type)
 	{
 		case GIT_BRANCH_TYPE_REMOTE:
-			git_command_add_arg (GIT_COMMAND (command), "-r");
+			git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "-r");
 			break;
 		case GIT_BRANCH_TYPE_ALL:
-			git_command_add_arg (GIT_COMMAND (command), "-a");
+			git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "-a");
 			break;
 		default:
 			break;
@@ -199,7 +199,7 @@ git_branch_list_command_data_arrived (AnjutaCommand *command)
 }
 
 static void
-git_branch_list_command_handle_output (GitCommand *git_command, 
+git_branch_list_command_handle_output (GitProcessCommand *git_process_command, 
 									   const gchar *output)
 {
 	GitBranchListCommand *self;
@@ -209,7 +209,7 @@ git_branch_list_command_handle_output (GitCommand *git_command,
 	GitBranch *branch;
 	gboolean active;
 
-	self = GIT_BRANCH_LIST_COMMAND (git_command);
+	self = GIT_BRANCH_LIST_COMMAND (git_process_command);
 	
 	active_match_info = NULL;
 	regular_match_info = NULL;
@@ -242,7 +242,7 @@ git_branch_list_command_handle_output (GitCommand *git_command,
 		g_match_info_free (regular_match_info);
 	
 	self->priv->output = g_list_append (self->priv->output, branch);
-	anjuta_command_notify_data_arrived (ANJUTA_COMMAND (git_command));
+	anjuta_command_notify_data_arrived (ANJUTA_COMMAND (git_process_command));
 	
 }
 
@@ -250,7 +250,7 @@ static void
 git_branch_list_command_class_init (GitBranchListCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass *command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_branch_list_command_finalize;

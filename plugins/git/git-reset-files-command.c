@@ -39,9 +39,9 @@ git_reset_files_command_run (AnjutaCommand *command)
 	
 	self = GIT_RESET_FILES_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (self), "reset");
-	git_command_add_arg (GIT_COMMAND (self), self->priv->revision);
-	git_command_add_list_to_args (GIT_COMMAND (self), self->priv->paths);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (self), "reset");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (self), self->priv->revision);
+	git_process_command_add_list_to_args (GIT_PROCESS_COMMAND (self), self->priv->paths);
 	
 	return 0;
 }
@@ -70,11 +70,11 @@ static void
 git_reset_files_command_class_init (GitResetFilesCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_reset_files_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_reset_files_command_run;
 }
 
@@ -90,7 +90,7 @@ git_reset_files_command_new (const gchar *working_directory,
 						 "single-line-output", TRUE,
 						 NULL);
 	
-	self->priv->paths = git_command_copy_string_list (paths);
+	self->priv->paths = git_process_command_copy_string_list (paths);
 	self->priv->revision = g_strdup (revision);
 	
 	return self;

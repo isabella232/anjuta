@@ -88,8 +88,8 @@ git_ref_command_finalize (GObject *object)
 static guint
 git_ref_command_run (AnjutaCommand *command)
 {
-	git_command_add_arg (GIT_COMMAND (command), "show-ref");
-	git_command_add_arg (GIT_COMMAND (command), "--dereference");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "show-ref");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--dereference");
 	
 	return 0;
 }
@@ -122,7 +122,7 @@ git_ref_command_insert_ref (GitRefCommand *self, const gchar *sha, GitRef *ref)
 }
 
 static void
-git_ref_command_handle_output (GitCommand *git_command, const gchar *output)
+git_ref_command_handle_output (GitProcessCommand *git_process_command, const gchar *output)
 {
 	GitRefCommand *self;
 	GMatchInfo *branch_match_info;
@@ -132,7 +132,7 @@ git_ref_command_handle_output (GitCommand *git_command, const gchar *output)
 	gchar *name;
 	GitRef *ref;
 	
-	self = GIT_REF_COMMAND (git_command);
+	self = GIT_REF_COMMAND (git_process_command);
 
 	branch_match_info = NULL;
 	tag_match_info = NULL;
@@ -405,7 +405,7 @@ static void
 git_ref_command_class_init (GitRefCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass *command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_ref_command_finalize;

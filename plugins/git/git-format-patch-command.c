@@ -61,19 +61,19 @@ git_format_patch_command_run (AnjutaCommand *command)
 	
 	self = GIT_FORMAT_PATCH_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "format-patch");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "format-patch");
 	
 	if (self->priv->output_directory)
 	{
-		git_command_add_arg (GIT_COMMAND (command), "-o");
-		git_command_add_arg (GIT_COMMAND (command), 
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "-o");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), 
 							 self->priv->output_directory);
 	}
 	
 	if (self->priv->add_signoff)
-		git_command_add_arg (GIT_COMMAND (command), "-s");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "-s");
 	
-	git_command_add_arg (GIT_COMMAND (command), self->priv->branch);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->branch);
 	
 	return 0;
 }
@@ -82,11 +82,11 @@ static void
 git_format_patch_command_class_init (GitFormatPatchCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_format_patch_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_format_patch_command_run;
 }
 

@@ -61,22 +61,22 @@ git_raw_output_command_finalize (GObject *object)
 }
 
 static void
-git_raw_output_command_handle_output (GitCommand *git_command, 
+git_raw_output_command_handle_output (GitProcessCommand *git_process_command, 
 									 const gchar *output)
 {
 	GitRawOutputCommand *self;
 	
-	self = GIT_RAW_OUTPUT_COMMAND (git_command);
+	self = GIT_RAW_OUTPUT_COMMAND (git_process_command);
 	
 	g_queue_push_tail (self->priv->output_queue, g_strdup (output));
-	anjuta_command_notify_data_arrived (ANJUTA_COMMAND (git_command));
+	anjuta_command_notify_data_arrived (ANJUTA_COMMAND (git_process_command));
 }
 
 static void
 git_raw_output_command_class_init (GitRawOutputCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_raw_output_command_finalize;
 	parent_class->output_handler = git_raw_output_command_handle_output;

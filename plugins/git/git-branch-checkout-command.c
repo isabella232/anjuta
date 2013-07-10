@@ -57,8 +57,8 @@ git_branch_checkout_command_run (AnjutaCommand *command)
 	
 	self = GIT_BRANCH_CHECKOUT_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "checkout");
-	git_command_add_arg (GIT_COMMAND (command), self->priv->branch_name);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "checkout");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->branch_name);
 	
 	return 0;
 }
@@ -67,11 +67,11 @@ static void
 git_branch_checkout_command_class_init (GitBranchCheckoutCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_branch_checkout_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_branch_checkout_command_run;
 }
 

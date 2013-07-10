@@ -58,9 +58,9 @@ git_diff_tree_command_run (AnjutaCommand *command)
 	
 	self = GIT_DIFF_TREE_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "diff-tree");
-	git_command_add_arg (GIT_COMMAND (command), "-p");
-	git_command_add_arg (GIT_COMMAND (command), self->priv->sha);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "diff-tree");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "-p");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->sha);
 	
 	return 0;
 }

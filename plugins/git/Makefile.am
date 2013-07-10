@@ -39,8 +39,8 @@ plugin_LTLIBRARIES = libanjuta-git.la
 libanjuta_git_la_SOURCES = \
 	plugin.c \
 	plugin.h \
-	git-command.c \
-	git-command.h \
+	git-process-command.c \
+	git-process-command.h \
 	git-diff-command.c \
 	git-diff-command.h \
 	git-status.c \

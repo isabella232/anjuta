@@ -60,11 +60,11 @@ git_bisect_start_command_run (AnjutaCommand *command)
 	
 	self = GIT_BISECT_START_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "bisect");
-	git_command_add_arg (GIT_COMMAND (command), "start");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "bisect");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "start");
 	
 	if (self->priv->bad_revision)
-		git_command_add_arg (GIT_COMMAND (command), self->priv->bad_revision);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->bad_revision);
 	
 	/* If a good revision was given with no bad revision, put head in for the 
 	 * bad revision, because git expects both revisions in this case, so don't
@@ -72,9 +72,9 @@ git_bisect_start_command_run (AnjutaCommand *command)
 	if (self->priv->good_revision)
 	{
 		if (!self->priv->bad_revision)
-			git_command_add_arg (GIT_COMMAND (command), "HEAD");
+			git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "HEAD");
 		
-		git_command_add_arg (GIT_COMMAND (command), self->priv->good_revision);
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->good_revision);
 	}
 	
 	return 0;
@@ -84,11 +84,11 @@ static void
 git_bisect_start_command_class_init (GitBisectStartCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_bisect_start_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_bisect_start_command_run;
 }
 

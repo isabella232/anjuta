@@ -26,7 +26,7 @@
 #define _GIT_CHECKOUT_FILES_COMMAND_H_
 
 #include <glib-object.h>
-#include "git-command.h"
+#include "git-process-command.h"
 
 G_BEGIN_DECLS
 
@@ -43,12 +43,12 @@ typedef struct _GitCheckoutFilesCommandPriv GitCheckoutFilesCommandPriv;
 
 struct _GitCheckoutFilesCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitCheckoutFilesCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitCheckoutFilesCommandPriv *priv;
 };

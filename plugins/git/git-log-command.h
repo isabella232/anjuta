@@ -27,7 +27,7 @@
 
 #include <glib-object.h>
 #include <stdlib.h>
-#include "git-command.h"
+#include "git-process-command.h"
 #include "git-log-data-command.h"
 #include "git-revision.h"
 
@@ -46,12 +46,12 @@ typedef struct _GitLogCommandPriv GitLogCommandPriv;
 
 struct _GitLogCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitLogCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitLogCommandPriv *priv;
 };

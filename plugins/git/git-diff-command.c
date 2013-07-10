@@ -41,7 +41,7 @@ git_diff_command_finalize (GObject *object)
 static guint
 git_diff_command_run (AnjutaCommand *command)
 {	
-	git_command_add_arg (GIT_COMMAND (command), "diff");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "diff");
 	
 	return 0;
 }

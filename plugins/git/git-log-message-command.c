@@ -73,9 +73,9 @@ git_log_message_command_run (AnjutaCommand *command)
 	
 	revision = g_strdup_printf ("%s^..%s", self->priv->sha, self->priv->sha);
 	
-	git_command_add_arg (GIT_COMMAND (command), "rev-list");
-	git_command_add_arg (GIT_COMMAND (command), "--pretty=raw");
-	git_command_add_arg (GIT_COMMAND (command), revision);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "rev-list");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--pretty=raw");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), revision);
 	
 	g_free (revision);
 	
@@ -83,12 +83,12 @@ git_log_message_command_run (AnjutaCommand *command)
 }
 
 static void
-git_log_message_command_handle_output (GitCommand *git_command, 
+git_log_message_command_handle_output (GitProcessCommand *git_process_command, 
 									   const gchar *output)
 {
 	GitLogMessageCommand *self;
 	
-	self = GIT_LOG_MESSAGE_COMMAND (git_command);
+	self = GIT_LOG_MESSAGE_COMMAND (git_process_command);
 	
 	/* It is possible that we could encounter multiple objects, usually with
 	 * merges. */
@@ -111,7 +111,7 @@ static void
 git_log_message_command_class_init (GitLogMessageCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass *command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_log_message_command_finalize;

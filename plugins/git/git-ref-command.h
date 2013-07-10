@@ -27,7 +27,7 @@
 
 #include <glib-object.h>
 #include <gio/gio.h>
-#include "git-command.h"
+#include "git-process-command.h"
 #include "git-ref.h"
 
 G_BEGIN_DECLS
@@ -45,12 +45,12 @@ typedef struct _GitRefCommandPriv GitRefCommandPriv;
 
 struct _GitRefCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitRefCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitRefCommandPriv *priv;
 };

@@ -68,14 +68,14 @@ git_list_tree_command_run (AnjutaCommand *command)
 	
 	self = GIT_LIST_TREE_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "ls-tree");
-	git_command_add_arg (GIT_COMMAND (command), self->priv->commit_sha);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "ls-tree");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->commit_sha);
 	
 	return 0;
 }
 
 static void
-git_list_tree_command_handle_output (GitCommand *git_command, 
+git_list_tree_command_handle_output (GitProcessCommand *git_process_command, 
 									 const gchar *output)
 {
 	GitListTreeCommand *self;
@@ -83,7 +83,7 @@ git_list_tree_command_handle_output (GitCommand *git_command,
 	gchar *blob_sha;
 	gchar *filename;
 	
-	self = GIT_LIST_TREE_COMMAND (git_command);
+	self = GIT_LIST_TREE_COMMAND (git_process_command);
 	match_info = NULL;
 	
 	if (g_regex_match (self->priv->blob_regex, output, 0, &match_info))
@@ -106,7 +106,7 @@ static void
 git_list_tree_command_class_init (GitListTreeCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass *command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_list_tree_command_finalize;

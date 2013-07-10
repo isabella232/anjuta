@@ -26,7 +26,7 @@
 #define _GIT_STASH_DROP_COMMAND_H_
 
 #include <glib-object.h>
-#include "git-command.h"
+#include "git-process-command.h"
 
 G_BEGIN_DECLS
 
@@ -43,12 +43,12 @@ typedef struct _GitStashDropCommandPriv GitStashDropCommandPriv;
 
 struct _GitStashDropCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitStashDropCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitStashDropCommandPriv *priv;
 };

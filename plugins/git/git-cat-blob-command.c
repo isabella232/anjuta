@@ -58,9 +58,9 @@ git_cat_blob_command_run (AnjutaCommand *command)
 	
 	self = GIT_CAT_BLOB_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "cat-file");
-	git_command_add_arg (GIT_COMMAND (command), "blob");
-	git_command_add_arg (GIT_COMMAND (command), self->priv->blob_sha);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "cat-file");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "blob");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->blob_sha);
 	
 	return 0;
 }

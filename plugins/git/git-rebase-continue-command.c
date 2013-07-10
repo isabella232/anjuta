@@ -57,18 +57,18 @@ git_rebase_continue_command_run (AnjutaCommand *command)
 	
 	self = GIT_REBASE_CONTINUE_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "rebase");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "rebase");
 	
 	switch (self->priv->action)
 	{
 		case GIT_REBASE_CONTINUE_ACTION_CONTINUE:
-			git_command_add_arg (GIT_COMMAND (command), "--continue");
+			git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--continue");
 			break;
 		case GIT_REBASE_CONTINUE_ACTION_SKIP:
-			git_command_add_arg (GIT_COMMAND (command), "--skip");
+			git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--skip");
 			break;
 		case GIT_REBASE_CONTINUE_ACTION_ABORT:
-			git_command_add_arg (GIT_COMMAND (command), "--abort");
+			git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--abort");
 			break;
 		default:
 			break;
@@ -81,11 +81,11 @@ static void
 git_rebase_continue_command_class_init (GitRebaseContinueCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_rebase_continue_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_rebase_continue_command_run;
 }
 

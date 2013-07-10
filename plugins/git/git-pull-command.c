@@ -42,7 +42,7 @@ static void
 git_pull_command_init (GitPullCommand *self)
 {
 	self->priv = g_new0 (GitPullCommandPriv, 1);
-	git_command_set_check_passwd_prompt (GIT_COMMAND (self), TRUE);
+	git_process_command_set_check_passwd_prompt (GIT_PROCESS_COMMAND (self), TRUE);
 }
 
 static void
@@ -65,30 +65,30 @@ git_pull_command_run (AnjutaCommand *command)
 	
 	self = GIT_PULL_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "pull");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "pull");
 
 	if (self->priv->rebase)
-		git_command_add_arg (GIT_COMMAND (command), "--rebase");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--rebase");
 	
 	if (self->priv->no_commit)
-		git_command_add_arg (GIT_COMMAND (command), "--no-commit");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--no-commit");
 	
 	if (self->priv->squash)
-		git_command_add_arg (GIT_COMMAND (command), "--squash");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--squash");
 	
 	if (self->priv->commit_fast_forward)
-		git_command_add_arg (GIT_COMMAND (command), "--no-ff");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--no-ff");
 	
 	if (self->priv->append_fetch_data)
-		git_command_add_arg (GIT_COMMAND (command), "-a");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "-a");
 	
 	if (self->priv->force)
-		git_command_add_arg (GIT_COMMAND (command), "-f");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "-f");
 	
 	if (self->priv->no_follow_tags)
-		git_command_add_arg (GIT_COMMAND (command), "--no-tags");
+		git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "--no-tags");
 	
-	git_command_add_arg (GIT_COMMAND (command), self->priv->url);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->url);
 	
 	return 0;
 }
@@ -97,11 +97,11 @@ static void
 git_pull_command_class_init (GitPullCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass* command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_pull_command_finalize;
-	parent_class->output_handler = git_command_send_output_to_info;
+	parent_class->output_handler = git_process_command_send_output_to_info;
 	command_class->run = git_pull_command_run;
 }
 

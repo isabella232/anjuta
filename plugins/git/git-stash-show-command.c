@@ -58,10 +58,10 @@ git_stash_show_command_run (AnjutaCommand *command)
 	
 	self = GIT_STASH_SHOW_COMMAND (command);
 	
-	git_command_add_arg (GIT_COMMAND (command), "stash");
-	git_command_add_arg (GIT_COMMAND (command), "show");
-	git_command_add_arg (GIT_COMMAND (command), "-p");
-	git_command_add_arg (GIT_COMMAND (command), self->priv->stash);
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "stash");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "show");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "-p");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), self->priv->stash);
 	
 	return 0;
 }

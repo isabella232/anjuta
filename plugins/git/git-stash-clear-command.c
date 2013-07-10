@@ -42,8 +42,8 @@ git_stash_clear_command_finalize (GObject *object)
 static guint
 git_stash_clear_command_run (AnjutaCommand *command)
 {
-	git_command_add_arg (GIT_COMMAND (command), "stash");
-	git_command_add_arg (GIT_COMMAND (command), "clear");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "stash");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "clear");
 	
 	return 0;
 }

@@ -27,7 +27,7 @@
 
 #include <glib-object.h>
 #include <gio/gio.h>
-#include "git-command.h"
+#include "git-process-command.h"
 #include "git-branch.h"
 
 G_BEGIN_DECLS
@@ -52,12 +52,12 @@ typedef enum
 
 struct _GitBranchListCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitBranchListCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitBranchListCommandPriv *priv;
 };

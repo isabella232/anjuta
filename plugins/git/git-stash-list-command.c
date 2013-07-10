@@ -72,13 +72,13 @@ git_stash_list_command_finalize (GObject *object)
 static guint
 git_stash_list_command_run (AnjutaCommand *command)
 {
-	git_command_add_arg (GIT_COMMAND (command), "stash");
-	git_command_add_arg (GIT_COMMAND (command), "list");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "stash");
+	git_process_command_add_arg (GIT_PROCESS_COMMAND (command), "list");
 	return 0;
 }
 
 static void
-git_stash_list_command_handle_output (GitCommand *git_command, 
+git_stash_list_command_handle_output (GitProcessCommand *git_process_command, 
 									  const gchar *output)
 {
 	GitStashListCommand *self;
@@ -88,7 +88,7 @@ git_stash_list_command_handle_output (GitCommand *git_command,
 	gchar *stash_message;
 	GitStash *stash;
 
-	self = GIT_STASH_LIST_COMMAND (git_command);
+	self = GIT_STASH_LIST_COMMAND (git_process_command);
 	
 	match_info = NULL;
 	stash_id = NULL;
@@ -108,7 +108,7 @@ git_stash_list_command_handle_output (GitCommand *git_command,
 		g_free (stash_message);
 
 		g_queue_push_head (self->priv->output, stash);
-		anjuta_command_notify_data_arrived (ANJUTA_COMMAND (git_command));
+		anjuta_command_notify_data_arrived (ANJUTA_COMMAND (git_process_command));
 	}
 
 	if (match_info)
@@ -182,7 +182,7 @@ static void
 git_stash_list_command_class_init (GitStashListCommandClass *klass)
 {
 	GObjectClass* object_class = G_OBJECT_CLASS (klass);
-	GitCommandClass* parent_class = GIT_COMMAND_CLASS (klass);
+	GitProcessCommandClass* parent_class = GIT_PROCESS_COMMAND_CLASS (klass);
 	AnjutaCommandClass *command_class = ANJUTA_COMMAND_CLASS (klass);
 
 	object_class->finalize = git_stash_list_command_finalize;

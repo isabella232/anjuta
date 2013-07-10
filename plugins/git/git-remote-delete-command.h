@@ -26,7 +26,7 @@
 #define _GIT_REMOTE_DELETE_COMMAND_H_
 
 #include <glib-object.h>
-#include "git-command.h"
+#include "git-process-command.h"
 
 G_BEGIN_DECLS
 
@@ -43,12 +43,12 @@ typedef struct _GitRemoteDeleteCommandPriv GitRemoteDeleteCommandPriv;
 
 struct _GitRemoteDeleteCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitRemoteDeleteCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitRemoteDeleteCommandPriv *priv;
 };

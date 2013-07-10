@@ -26,7 +26,7 @@
 #define _GIT_MERGE_COMMAND_H_
 
 #include <glib-object.h>
-#include "git-command.h"
+#include "git-process-command.h"
 
 G_BEGIN_DECLS
 
@@ -43,12 +43,12 @@ typedef struct _GitMergeCommandPriv GitMergeCommandPriv;
 
 struct _GitMergeCommandClass
 {
-	GitCommandClass parent_class;
+	GitProcessCommandClass parent_class;
 };
 
 struct _GitMergeCommand
 {
-	GitCommand parent_instance;
+	GitProcessCommand parent_instance;
 	
 	GitMergeCommandPriv *priv;
 };
