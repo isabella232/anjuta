@@ -63,6 +63,9 @@ SVN_MINOR=5
 SVN_PATCH=0
 SUBVERSION_REQUIRED=$SVN_MAJOR.$SVN_MINOR.$SVN_PATCH
 
+dnl Git plugin 
+GIT2_GLIB_REQUIRED=0.0.6
+
 AM_INIT_AUTOMAKE([1.10 dist-xz no-dist-gzip])
 AM_MAINTAINER_MODE([enable])
 
@@ -738,6 +741,35 @@ AC_SUBST(SVN_LIB)
 AC_SUBST(SVN_CFLAGS)
 
 dnl ------------------------------------------
+dnl libgit2-glib checks for the git plugin
+dnl ------------------------------------------
+user_disabled_git=0
+have_git2_glib=no
+
+AC_ARG_ENABLE(plugin-git,
+	AS_HELP_STRING([--disable-plugin-git], [Disable the git plugin]),
+	[ if test "$enableval" = "no"; then 
+		user_disabled_git=1
+	  fi ],
+	  [ user_disabled_git=0 ])
+
+AC_MSG_CHECKING(if git plugin is disabled)
+
+if test "$user_disabled_git" = 1; then
+	AC_MSG_RESULT(yes)
+else
+	AC_MSG_RESULT(no)
+
+	PKG_CHECK_MODULES(GIT2_GLIB, libgit2-glib-1.0 >= GIT2_GLIB_REQUIRED,
+					  have_git2_glib=yes, have_git2_glib=no)
+fi
+
+AM_CONDITIONAL(BUILD_GIT, [test "$have_git2_glib" = "yes"])
+AC_SUBST(GIT2_GLIB_CFLAGS)
+AC_SUBST(GIT2_GLIB_LIBS)
+	
+
+dnl ------------------------------------------
 dnl Symbol-db shared memory checks
 dnl ------------------------------------------
 
@@ -917,6 +949,13 @@ echo " "
 echo "-------------------------------------------------------------------"
 echo "Conditionally built plugins:"
 echo "-------------------------------------------------------------------"
+if [ test x$have_git2_glib = xyes ]; then
+        echo "Building git plugin ....................................YES"
+else
+        echo "Building git plugin ....................................NO"
+        echo "        Requires libgit2-glib (>= $GIT2_GLIB_REQUIRED)"
+fi
+
 if [ test -n "$SVN_INCLUDE" ]; then
         echo "Building subversion plugin: ............................YES"
 else
