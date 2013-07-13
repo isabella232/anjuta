@@ -30,7 +30,7 @@ struct _GitAddCommandPriv
 	gboolean force;
 };
 
-G_DEFINE_TYPE (GitAddCommand, git_add_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitAddCommand, git_add_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_add_command_init (GitAddCommand *self)

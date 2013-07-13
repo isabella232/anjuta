@@ -41,7 +41,7 @@ struct _GitLogCommandPriv
 	gchar *until_commit;
 };
 
-G_DEFINE_TYPE (GitLogCommand, git_log_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitLogCommand, git_log_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 on_data_command_data_arrived (AnjutaCommand *command, GitLogCommand *self)

@@ -31,7 +31,7 @@ struct _GitBisectStateCommandPriv
 };
 
 G_DEFINE_TYPE (GitBisectStateCommand, git_bisect_state_command, 
-			   GIT_TYPE_COMMAND);
+			   GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_bisect_state_command_init (GitBisectStateCommand *self)

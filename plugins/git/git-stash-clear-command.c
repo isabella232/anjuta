@@ -25,7 +25,7 @@
 #include "git-stash-clear-command.h"
 
 G_DEFINE_TYPE (GitStashClearCommand, git_stash_clear_command, 
-			   GIT_TYPE_COMMAND);
+			   GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_stash_clear_command_init (GitStashClearCommand *self)

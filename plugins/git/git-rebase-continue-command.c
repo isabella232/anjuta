@@ -30,7 +30,7 @@ struct _GitRebaseContinueCommandPriv
 };
 
 G_DEFINE_TYPE (GitRebaseContinueCommand, git_rebase_continue_command, 
-			   GIT_TYPE_COMMAND);
+			   GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_rebase_continue_command_init (GitRebaseContinueCommand *self)

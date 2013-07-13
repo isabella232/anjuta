@@ -29,7 +29,7 @@ struct _GitRemoteDeleteCommandPriv
 	gchar *name;
 };
 
-G_DEFINE_TYPE (GitRemoteDeleteCommand, git_remote_delete_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitRemoteDeleteCommand, git_remote_delete_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_remote_delete_command_init (GitRemoteDeleteCommand *self)

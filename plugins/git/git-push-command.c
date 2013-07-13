@@ -33,7 +33,7 @@ struct _GitPushCommandPriv
 	gboolean force;
 };
 
-G_DEFINE_TYPE (GitPushCommand, git_push_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitPushCommand, git_push_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_push_command_init (GitPushCommand *self)

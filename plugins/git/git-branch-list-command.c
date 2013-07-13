@@ -40,7 +40,7 @@ struct _GitBranchListCommandPriv
 	GFileMonitor *head_monitor;
 };
 
-G_DEFINE_TYPE (GitBranchListCommand, git_branch_list_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitBranchListCommand, git_branch_list_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_branch_list_command_init (GitBranchListCommand *self)

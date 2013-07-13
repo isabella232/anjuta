@@ -29,7 +29,7 @@ struct _GitBranchCheckoutCommandPriv
 	gchar *branch_name;
 };
 
-G_DEFINE_TYPE (GitBranchCheckoutCommand, git_branch_checkout_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitBranchCheckoutCommand, git_branch_checkout_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_branch_checkout_command_init (GitBranchCheckoutCommand *self)

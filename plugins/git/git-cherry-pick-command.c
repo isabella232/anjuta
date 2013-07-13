@@ -32,7 +32,7 @@ struct _GitCherryPickCommandPriv
 	gboolean add_signoff;
 };
 
-G_DEFINE_TYPE (GitCherryPickCommand, git_cherry_pick_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitCherryPickCommand, git_cherry_pick_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_cherry_pick_command_init (GitCherryPickCommand *self)

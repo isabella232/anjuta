@@ -30,7 +30,7 @@ struct _GitStashDropCommandPriv
 };
 
 G_DEFINE_TYPE (GitStashDropCommand, git_stash_drop_command, 
-			   GIT_TYPE_COMMAND);
+			   GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_stash_drop_command_init (GitStashDropCommand *self)

@@ -34,7 +34,7 @@ struct _GitStashListCommandPriv
 	GFileMonitor *file_monitor;
 };
 
-G_DEFINE_TYPE (GitStashListCommand, git_stash_list_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitStashListCommand, git_stash_list_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_stash_list_command_init (GitStashListCommand *self)

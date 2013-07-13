@@ -31,7 +31,7 @@ struct _GitBranchCreateCommandPriv
 	gboolean checkout;
 };
 
-G_DEFINE_TYPE (GitBranchCreateCommand, git_branch_create_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitBranchCreateCommand, git_branch_create_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_branch_create_command_init (GitBranchCreateCommand *self)

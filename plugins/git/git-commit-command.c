@@ -34,7 +34,7 @@ struct _GitCommitCommandPriv
 	gchar *author_email;
 };
 
-G_DEFINE_TYPE (GitCommitCommand, git_commit_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitCommitCommand, git_commit_command, GIT_TYPE_PROCESS_COMMAND);
 
 static guint
 git_commit_command_run (AnjutaCommand *command)

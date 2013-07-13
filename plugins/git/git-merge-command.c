@@ -32,7 +32,7 @@ struct _GitMergeCommandPriv
 	gboolean squash;
 };
 
-G_DEFINE_TYPE (GitMergeCommand, git_merge_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitMergeCommand, git_merge_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_merge_command_init (GitMergeCommand *self)

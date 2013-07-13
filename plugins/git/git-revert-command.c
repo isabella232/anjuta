@@ -30,7 +30,7 @@ struct _GitRevertCommandPriv
 	gboolean no_commit;
 };
 
-G_DEFINE_TYPE (GitRevertCommand, git_revert_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitRevertCommand, git_revert_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_revert_command_init (GitRevertCommand *self)

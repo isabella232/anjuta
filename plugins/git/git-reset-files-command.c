@@ -30,7 +30,7 @@ struct _GitResetFilesCommandPriv
 	gchar *revision;
 };
 
-G_DEFINE_TYPE (GitResetFilesCommand, git_reset_files_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitResetFilesCommand, git_reset_files_command, GIT_TYPE_PROCESS_COMMAND);
 
 static guint
 git_reset_files_command_run (AnjutaCommand *command)

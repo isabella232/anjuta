@@ -30,7 +30,7 @@ struct _GitResetTreeCommandPriv
 	GitResetTreeMode mode;
 };
 
-G_DEFINE_TYPE (GitResetTreeCommand, git_reset_tree_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitResetTreeCommand, git_reset_tree_command, GIT_TYPE_PROCESS_COMMAND);
 
 static guint
 git_reset_tree_command_run (AnjutaCommand *command)

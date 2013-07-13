@@ -33,7 +33,7 @@ struct _GitListTreeCommandPriv
 	GHashTable *blobs;
 };
 
-G_DEFINE_TYPE (GitListTreeCommand, git_list_tree_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitListTreeCommand, git_list_tree_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_list_tree_command_init (GitListTreeCommand *self)

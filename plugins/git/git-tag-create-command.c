@@ -33,7 +33,7 @@ struct _GitTagCreateCommandPriv
 	gboolean force;
 };
 
-G_DEFINE_TYPE (GitTagCreateCommand, git_tag_create_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitTagCreateCommand, git_tag_create_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_tag_create_command_init (GitTagCreateCommand *self)

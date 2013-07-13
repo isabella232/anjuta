@@ -36,7 +36,7 @@ struct _GitPullCommandPriv
 	gboolean no_follow_tags;
 };
 
-G_DEFINE_TYPE (GitPullCommand, git_pull_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitPullCommand, git_pull_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_pull_command_init (GitPullCommand *self)

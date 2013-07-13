@@ -24,7 +24,7 @@
 
 #include "git-fetch-command.h"
 
-G_DEFINE_TYPE (GitFetchCommand, git_fetch_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitFetchCommand, git_fetch_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_fetch_command_init (GitFetchCommand *self)

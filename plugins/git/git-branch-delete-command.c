@@ -31,7 +31,7 @@ struct _GitBranchDeleteCommandPriv
 	gboolean require_merged;
 };
 
-G_DEFINE_TYPE (GitBranchDeleteCommand, git_branch_delete_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitBranchDeleteCommand, git_branch_delete_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_branch_delete_command_init (GitBranchDeleteCommand *self)

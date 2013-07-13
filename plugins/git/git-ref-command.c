@@ -37,7 +37,7 @@ struct _GitRefCommandPriv
 	GHashTable *file_monitors;
 };
 
-G_DEFINE_TYPE (GitRefCommand, git_ref_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitRefCommand, git_ref_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 free_refs_list (GList *refs)

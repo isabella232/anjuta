@@ -30,7 +30,7 @@ struct _GitCloneCommandPriv
 	gchar *repository_name;
 };
 
-G_DEFINE_TYPE (GitCloneCommand, git_clone_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitCloneCommand, git_clone_command, GIT_TYPE_PROCESS_COMMAND);
 
 static guint
 git_clone_command_run (AnjutaCommand *command)

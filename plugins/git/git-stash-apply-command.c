@@ -25,7 +25,7 @@ struct _GitStashApplyCommandPriv
 	gchar *stash;
 };
 
-G_DEFINE_TYPE (GitStashApplyCommand, git_stash_apply_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitStashApplyCommand, git_stash_apply_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_stash_apply_command_init (GitStashApplyCommand *self)

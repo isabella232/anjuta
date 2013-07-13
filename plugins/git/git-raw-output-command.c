@@ -29,7 +29,7 @@ struct _GitRawOutputCommandPriv
 	GQueue *output_queue;
 };
 
-G_DEFINE_TYPE (GitRawOutputCommand, git_raw_output_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitRawOutputCommand, git_raw_output_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_raw_output_command_init (GitRawOutputCommand *self)

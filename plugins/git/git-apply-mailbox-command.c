@@ -31,7 +31,7 @@ struct _GitApplyMailboxCommandPriv
 };
 
 G_DEFINE_TYPE (GitApplyMailboxCommand, git_apply_mailbox_command, 
-			   GIT_TYPE_COMMAND);
+			   GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_apply_mailbox_command_init (GitApplyMailboxCommand *self)

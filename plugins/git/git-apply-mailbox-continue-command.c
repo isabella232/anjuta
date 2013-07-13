@@ -30,7 +30,7 @@ struct _GitApplyMailboxContinueCommandPriv
 };
 
 G_DEFINE_TYPE (GitApplyMailboxContinueCommand, git_apply_mailbox_continue_command, 
-			   GIT_TYPE_COMMAND);
+			   GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_apply_mailbox_continue_command_init (GitApplyMailboxContinueCommand *self)

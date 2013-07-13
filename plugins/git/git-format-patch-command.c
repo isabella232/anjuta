@@ -32,7 +32,7 @@ struct _GitFormatPatchCommandPriv
 };
 
 G_DEFINE_TYPE (GitFormatPatchCommand, git_format_patch_command, 
-			   GIT_TYPE_COMMAND);
+			   GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_format_patch_command_init (GitFormatPatchCommand *self)

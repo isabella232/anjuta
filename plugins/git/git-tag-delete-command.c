@@ -29,7 +29,7 @@ struct _GitTagDeleteCommandPriv
 	GList *tags;
 };
 
-G_DEFINE_TYPE (GitTagDeleteCommand, git_tag_delete_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitTagDeleteCommand, git_tag_delete_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_tag_delete_command_init (GitTagDeleteCommand *self)

@@ -37,7 +37,7 @@ struct _GitLogMessageCommandPriv
 	gboolean found_message;
 };
 
-G_DEFINE_TYPE (GitLogMessageCommand, git_log_message_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitLogMessageCommand, git_log_message_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_log_message_command_init (GitLogMessageCommand *self)

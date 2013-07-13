@@ -36,12 +36,12 @@
 
 G_BEGIN_DECLS
 
-#define GIT_TYPE_COMMAND             (git_process_command_get_type ())
-#define GIT_PROCESS_COMMAND(obj)             (G_TYPE_CHECK_INSTANCE_CAST ((obj), GIT_TYPE_COMMAND, GitProcessCommand))
-#define GIT_PROCESS_COMMAND_CLASS(klass)     (G_TYPE_CHECK_CLASS_CAST ((klass), GIT_TYPE_COMMAND, GitProcessCommandClass))
-#define GIT_IS_COMMAND(obj)          (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GIT_TYPE_COMMAND))
-#define GIT_IS_COMMAND_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE ((klass), GIT_TYPE_COMMAND))
-#define GIT_PROCESS_COMMAND_GET_CLASS(obj)   (G_TYPE_INSTANCE_GET_CLASS ((obj), GIT_TYPE_COMMAND, GitProcessCommandClass))
+#define GIT_TYPE_PROCESS_COMMAND             (git_process_command_get_type ())
+#define GIT_PROCESS_COMMAND(obj)             (G_TYPE_CHECK_INSTANCE_CAST ((obj), GIT_TYPE_PROCESS_COMMAND, GitProcessCommand))
+#define GIT_PROCESS_COMMAND_CLASS(klass)     (G_TYPE_CHECK_CLASS_CAST ((klass), GIT_TYPE_PROCESS_COMMAND, GitProcessCommandClass))
+#define GIT_IS_PROCESS_COMMAND(obj)          (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GIT_TYPE_PROCESS_COMMAND))
+#define GIT_IS_PROCESS_COMMAND_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE ((klass), GIT_TYPE_PROCESS_COMMAND))
+#define GIT_PROCESS_COMMAND_GET_CLASS(obj)   (G_TYPE_INSTANCE_GET_CLASS ((obj), GIT_TYPE_PROCESS_COMMAND, GitProcessCommandClass))
 
 typedef struct _GitProcessCommandClass GitProcessCommandClass;
 typedef struct _GitProcessCommand GitProcessCommand;

@@ -30,7 +30,7 @@ struct _GitCheckoutFilesCommandPriv
 	gboolean checkout_all;
 };
 
-G_DEFINE_TYPE (GitCheckoutFilesCommand, git_checkout_files_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitCheckoutFilesCommand, git_checkout_files_command, GIT_TYPE_PROCESS_COMMAND);
 
 static guint
 git_checkout_files_command_run (AnjutaCommand *command)

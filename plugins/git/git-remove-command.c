@@ -30,7 +30,7 @@ struct _GitRemoveCommandPriv
 	gboolean force;
 };
 
-G_DEFINE_TYPE (GitRemoveCommand, git_remove_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitRemoveCommand, git_remove_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_remove_command_init (GitRemoveCommand *self)

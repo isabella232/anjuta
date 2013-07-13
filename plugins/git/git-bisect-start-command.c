@@ -31,7 +31,7 @@ struct _GitBisectStartCommandPriv
 };
 
 G_DEFINE_TYPE (GitBisectStartCommand, git_bisect_start_command, 
-			   GIT_TYPE_COMMAND);
+			   GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_bisect_start_command_init (GitBisectStartCommand *self)

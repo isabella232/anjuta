@@ -25,7 +25,7 @@
 #include "git-init-command.h"
 
 G_DEFINE_TYPE (GitInitCommand, git_init_command, 
-			   GIT_TYPE_COMMAND);
+			   GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_init_command_init (GitInitCommand *self)

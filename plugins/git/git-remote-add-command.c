@@ -31,7 +31,7 @@ struct _GitRemoteAddCommandPriv
 	gboolean fetch;
 };
 
-G_DEFINE_TYPE (GitRemoteAddCommand, git_remote_add_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitRemoteAddCommand, git_remote_add_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_remote_add_command_init (GitRemoteAddCommand *self)

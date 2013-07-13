@@ -25,7 +25,7 @@
 #include "git-bisect-reset-command.h"
 
 G_DEFINE_TYPE (GitBisectResetCommand, git_bisect_reset_command, 
-			   GIT_TYPE_COMMAND);
+			   GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_bisect_reset_command_init (GitBisectResetCommand *self)

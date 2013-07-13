@@ -25,7 +25,7 @@ struct _GitStashSaveCommandPriv
 	gchar *message;
 };
 
-G_DEFINE_TYPE (GitStashSaveCommand, git_stash_save_command, GIT_TYPE_COMMAND);
+G_DEFINE_TYPE (GitStashSaveCommand, git_stash_save_command, GIT_TYPE_PROCESS_COMMAND);
 
 static void
 git_stash_save_command_init (GitStashSaveCommand *self)
