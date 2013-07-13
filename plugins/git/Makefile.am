@@ -233,7 +233,9 @@ libanjuta_git_la_SOURCES = \
 	git-apply-mailbox-pane.c \
 	git-apply-mailbox-pane.h \
 	git-command.c \
-	git-command.h
+	git-command.h \
+	git-thread-pool.c \
+	git_thread-pool.h
 	
 
 libanjuta_git_la_LDFLAGS = $(ANJUTA_PLUGIN_LDFLAGS)
