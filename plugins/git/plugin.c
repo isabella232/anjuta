@@ -642,14 +642,27 @@ on_project_root_added (AnjutaPlugin *plugin, const gchar *name,
 	Git *git_plugin;
 	gchar *project_root_uri;
 	GFile *file;
+	GFile *repository_file;
 	
 	git_plugin = ANJUTA_PLUGIN_GIT (plugin);
 	
 	g_free (git_plugin->project_root_directory);
 	project_root_uri = g_value_dup_string (value);
 	file = g_file_new_for_uri (project_root_uri);
+	repository_file = g_file_get_child (file, ".git");
+	
 	git_plugin->project_root_directory = g_file_get_path (file);
+	git_plugin->repository = ggit_repository_open (repository_file, NULL);
+
+	if (git_plugin->repository)
+	{
+		git_plugin->thread_pool = git_thread_pool_new (git_plugin->repository);
+		gtk_widget_set_sensitive (git_plugin->dock, TRUE);
+		gtk_widget_set_sensitive (git_plugin->command_bar, TRUE);
+	}
+	
 	g_object_unref (file);
+	g_object_unref (repository_file);
 	
 	g_free (project_root_uri);
 
@@ -704,6 +717,18 @@ on_project_root_removed (AnjutaPlugin *plugin, const gchar *name,
 	
 	git_plugin = ANJUTA_PLUGIN_GIT (plugin);
 	status = anjuta_shell_get_status (plugin->shell, NULL);
+
+	gtk_widget_set_sensitive (git_plugin->dock, FALSE);
+	gtk_widget_set_sensitive (git_plugin->command_bar, FALSE);
+
+	if (git_plugin->repository)
+	{
+		g_object_unref (git_plugin->thread_pool);
+		g_object_unref (git_plugin->repository);
+
+		git_plugin->thread_pool = NULL;
+		git_plugin->repository = NULL;
+	}
 	
 	anjuta_command_stop_automatic_monitor (ANJUTA_COMMAND (git_plugin->local_branch_list_command));
 	anjuta_command_stop_automatic_monitor (ANJUTA_COMMAND (git_plugin->commit_status_command));
@@ -1036,7 +1061,11 @@ git_deactivate_plugin (AnjutaPlugin *plugin)
 	anjuta_plugin_remove_watch (plugin, git_plugin->editor_watch_id,
 								TRUE);
 
+
 	anjuta_shell_remove_widget (plugin->shell, git_plugin->box, NULL);
+
+	g_clear_object (&git_plugin->thread_pool);
+	g_clear_object (&git_plugin->repository);
 
 	ui = anjuta_shell_get_ui (plugin->shell, NULL);
 	anjuta_ui_remove_action_group (ui, git_plugin->status_menu_group);

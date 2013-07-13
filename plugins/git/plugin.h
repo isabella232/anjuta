@@ -35,6 +35,7 @@
 #include <libanjuta/anjuta-dock.h>
 #include <libanjuta/anjuta-debug.h>
 #include <libanjuta/anjuta-command-queue.h>
+#include "git-thread-pool.h"
 #include "git-branch-list-command.h"
 #include "git-status-command.h"
 #include "git-remote-list-command.h"
@@ -84,6 +85,10 @@ struct _Git
 	GtkActionGroup *branch_menu_group;
 	GtkActionGroup *remote_menu_group;
 	GtkActionGroup *stash_menu_group;
+
+	/* Current git repository */
+	GgitRepository *repository;
+	GitThreadPool *thread_pool;
 
 	/* List commands for various panes. 
 	 * Keep them in the plugin so that the commands have the most direct
