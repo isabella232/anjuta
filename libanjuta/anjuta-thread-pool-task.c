@@ -54,15 +54,16 @@ start (AnjutaTask *task)
 	AnjutaThreadPoolTask *self;
 
 	self = ANJUTA_THREAD_POOL_TASK (task);
-
-	if (anjuta_thread_pool_task_is_ready (self))
+	
+	if (!anjuta_task_is_running (task))
 	{
 		g_mutex_lock (&self->priv->waiting_mutex);
 		self->priv->waiting = FALSE;
 		g_mutex_unlock (&self->priv->waiting_mutex);
 
 		ANJUTA_TASK_CLASS (anjuta_thread_pool_task_parent_class)->start (task);
-		ANJUTA_TASK_GET_CLASS (self)->run (task);
+		ANJUTA_TASK_GET_CLASS (task)->run (task);
+		anjuta_task_notify_finished (task);
 	}
 }
 
