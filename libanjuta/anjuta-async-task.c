@@ -148,12 +148,12 @@ anjuta_async_task_notification_poll (AnjutaAsyncTask *self)
 	 * didn't acquire the data lock */
 	if (flags & FINISHED && (flags & DATA_ARRIVED) == 0)
 	{
-		g_signal_emit_by_name (self, "finished");
-
 		/* Indicate that the idle is no longer running and we won't send any more
 		 * notifications. */
+		anjuta_async_task_clear_flag (self, RUNNING);		
 
-		anjuta_async_task_clear_flag (self, RUNNING);
+		g_signal_emit_by_name (self, "finished");
+
 		return FALSE;
 	}
 	else
