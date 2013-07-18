@@ -95,7 +95,7 @@ anjuta_async_task_set_flag (AnjutaAsyncTask *self, gint flag)
 
 	self->priv->flags |= flag;
 
-	g_mutex_lock (&self->priv->flags_mutex);
+	g_mutex_unlock (&self->priv->flags_mutex);
 }
 
 static void
