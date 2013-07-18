@@ -45,7 +45,7 @@ struct _AnjutaTaskClass
 	GObjectClass parent_class;
 	
 	/* Virtual Methods */
-	guint (*run) (AnjutaTask *self);
+	void (*run) (AnjutaTask *self);
 	void (*start) (AnjutaTask *self);
 	void (*cancel) (AnjutaTask *self);
 	void (*notify_data_arrived) (AnjutaTask *self);

@@ -178,8 +178,8 @@ anjuta_task_class_init (AnjutaTaskClass *klass)
 		              G_STRUCT_OFFSET (AnjutaTaskClass, finished),
 		              NULL, NULL,
 		              g_cclosure_marshal_VOID__VOID ,
-		              G_TYPE_NONE, 1,
-		              G_TYPE_UINT);
+		              G_TYPE_NONE,
+		              0);
 	
 	
 	/**
