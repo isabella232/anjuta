@@ -21,7 +21,7 @@
 #define _GIT_COMMAND_H_
 
 #include <glib-object.h>
-#include <libanjuta/anjuta-async-task.h>
+#include <libanjuta/anjuta-thread-pool-task.h>
 #include <libgit2-glib/ggit-repository.h>
 
 G_BEGIN_DECLS
@@ -40,12 +40,12 @@ typedef struct _GitCommandPrivate GitCommandPrivate;
 
 struct _GitCommandClass
 {
-	AnjutaAsyncTaskClass parent_class;
+	AnjutaThreadPoolTaskClass parent_class;
 };
 
 struct _GitCommand
 {
-	AnjutaAsyncTask parent_instance;
+	AnjutaThreadPoolTask parent_instance;
 
 	GitCommandPrivate *priv;
 };

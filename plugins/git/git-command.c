@@ -21,6 +21,7 @@
 
 struct _GitCommandPrivate
 {
+	GgitRepository *repository;
 };
 
 
@@ -33,7 +34,7 @@ enum
 
 
 
-G_DEFINE_TYPE (GitCommand, git_command, ANJUTA_TYPE_ASYNC_TASK);
+G_DEFINE_TYPE (GitCommand, git_command, ANJUTA_TYPE_THREAD_POOL_TASK);
 
 static void
 git_command_init (GitCommand *git_command)
@@ -54,12 +55,20 @@ git_command_finalize (GObject *object)
 static void
 git_command_set_property (GObject *object, guint prop_id, const GValue *value, GParamSpec *pspec)
 {
+	GitCommand *self;	
+
 	g_return_if_fail (GIT_IS_COMMAND (object));
+
+	self = GIT_COMMAND (object);
 
 	switch (prop_id)
 	{
 	case PROP_REPOSITORY:
-		/* TODO: Add setter for "repository" property here */
+		if (self->priv->repository)
+			g_object_unref (self->priv->repository);
+
+		self->priv->repository = GGIT_REPOSITORY (g_value_get_object (value));
+
 		break;
 	default:
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -70,12 +79,16 @@ git_command_set_property (GObject *object, guint prop_id, const GValue *value, G
 static void
 git_command_get_property (GObject *object, guint prop_id, GValue *value, GParamSpec *pspec)
 {
+	GitCommand *self;	
+
 	g_return_if_fail (GIT_IS_COMMAND (object));
+
+	self = GIT_COMMAND (object);
 
 	switch (prop_id)
 	{
 	case PROP_REPOSITORY:
-		/* TODO: Add getter for "repository" property here */
+		g_value_set_object (value, self->priv->repository);
 		break;
 	default:
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -100,7 +113,8 @@ git_command_class_init (GitCommandClass *klass)
 	                                                      "repository",
 	                                                      "Git repository that this command operates on",
 	                                                      GGIT_TYPE_REPOSITORY,
-	                                                      G_PARAM_CONSTRUCT_ONLY));
+														  G_PARAM_READABLE |
+														  G_PARAM_WRITABLE));
 }
 
 
