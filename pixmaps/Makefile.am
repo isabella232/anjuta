@@ -1,16 +1,21 @@
-SUBDIRS = 16x16 22x22 24x24 32x32 48x48 scalable
+SUBDIRS = hicolor HighContrast
 
-gtk_update_icon_cache = gtk-update-icon-cache -f -t $(datadir)/icons/hicolor
+themes = hicolor HighContrast
+themedir = ${datadir}/icons
+gtk_update_icon_cache = gtk-update-icon-cache -f -t
 
 install-data-hook: update-icon-cache
 uninstall-hook: update-icon-cache
+
 update-icon-cache:
 	@-if test -z "$(DESTDIR)"; then \
-	echo "Updating Gtk icon cache."; \
-		$(gtk_update_icon_cache); \
+	        echo "Updating Gtk icon cache."; \
+	        for theme in $(themes); do \
+	                $(gtk_update_icon_cache) $(themedir)/$$theme; \
+	        done; \
 	else \
-		echo "*** Icon cache not updated.  After (un)install, run this:"; \
-		echo "***   $(gtk_update_icon_cache)"; \
+	        echo "*** Icon cache not updated.  After install, run this:"; \
+	        echo "***   $(gtk_update_icon_cache)"; \
 	fi
 
 anjuta_pixmapsdir = $(anjuta_image_dir)
