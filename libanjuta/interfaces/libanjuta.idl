@@ -6839,3 +6839,46 @@ interface IAnjutaIndenter
 	 */
 	 void indent (IAnjutaIterable* start, IAnjutaIterable* end);
 }
+
+/**
+ * SECTION: ianjuta-automatic-refreshable
+ * @title: IAnjutaAutomaticRefreshable
+ * @short_description: Interface for objects that update information 
+ *					   automatically in response to an outside event, such as 
+ *					   file changes.
+ * @include: libanjuta/interfaces/ianjuta-automatic-refreshable
+ * 
+ */
+
+interface IAnjutaRefreshable
+{
+	/**
+	 * ianjuta_refreshable_refresh:
+	 * @obj: Self
+	 * @err: Error propagation
+	 *
+	 * Manually update refreshable data
+	 */
+	void refresh ();
+
+	/**
+	 * ianjuta_refreshable_start_monitor:
+	 * @obj: Self
+	 * @err: Error propagation
+	 * 
+	 * Start monitoring for changes to external sources, such as files, that 
+	 * would cause the data contained by this object to become outdated. The 
+	 * object will refresh itself once these changes are detected.
+	 */
+	void start_monitor();
+
+	/**
+	 * ianjuta_refreshable_stop_monitor:
+	 * @obj: Self
+	 * @err: Error propagation
+	 * 
+	 * Stop monitoring for changes. This method cleans up any resources created
+	 * by ianjuta_refreshable_start_monitor.
+	 */
+	void stop_monitor();
+}
