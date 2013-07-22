@@ -302,62 +302,58 @@ on_selected_renderer_toggled (GtkCellRendererToggle *renderer, gchar *tree_path,
 }
 
 static void
-add_status_items (GQueue *output, GtkTreeStore *status_model, 
-                  GtkTreeIter *parent_iter, StatusType type)
+add_status_item (GtkTreeStore *status_model, GtkTreeIter *parent_iter, 
+                 StatusType type, const gchar *path, AnjutaVcsStatus status)
 {
-	GitStatus *status_object;
-	AnjutaVcsStatus status;
-	gchar *path;
 	GtkTreeIter iter;
 
-	while (g_queue_peek_head (output))
-	{
-		status_object = g_queue_pop_head (output);
-		status = git_status_get_vcs_status (status_object);
-		path = git_status_get_path (status_object);
 
-		gtk_tree_store_append (status_model, &iter, parent_iter);
-		gtk_tree_store_set (status_model, &iter,
-		                    COL_SELECTED, FALSE,
-		                    COL_STATUS, status,
-		                    COL_PATH, path,
-		                    COL_TYPE, type,
-		                    -1);
+	gtk_tree_store_append (status_model, &iter, parent_iter);
+	gtk_tree_store_set (status_model, &iter,
+	                    COL_SELECTED, FALSE,
+	                    COL_STATUS, status,
+	                    COL_PATH, path,
+	                    COL_TYPE, type,
+	                    -1);
+}
+
+static void
+on_status_command_data_arrived (AnjutaTask *task, GitStatusPane *self)
+{
+	GtkTreeStore *status_model;
+	GAsyncQueue *status_queue;
+	GitStatus *status;
+	gchar *path;
+	AnjutaVcsStatus index_status;
+	AnjutaVcsStatus working_tree_status;
+
+	g_print ("Data arrived.\n");
+
+	status_model = GTK_TREE_STORE (gtk_builder_get_object (self->priv->builder,	
+	                                                       "status_model"));
+	status_queue = git_status_command_get_status_queue (GIT_STATUS_COMMAND (task));
+
+	while ((status = g_async_queue_try_pop (status_queue)))
+	{
+		path = git_status_get_path (status);
+		index_status = git_status_get_index_status (status);
+		working_tree_status = git_status_get_working_tree_status (status);
+
+		if (index_status)
+		{
+			add_status_item (status_model, &(self->priv->commit_iter), 
+			                 STATUS_TYPE_COMMIT, path, index_status);
+		}
+
+		if (working_tree_status)
+		{
+			add_status_item (status_model, &(self->priv->not_updated_iter), 
+			                 STATUS_TYPE_NOT_UPDATED, path, working_tree_status);
+		}
 
 		g_free (path);
-		g_object_unref (status_object);
+		g_object_unref (status);
 	}
-}
-
-static void
-on_commit_status_data_arrived (AnjutaCommand *command, 
-                               GitStatusPane *self)
-{
-	GtkTreeStore *status_model;
-	GQueue *output;
-
-	status_model = GTK_TREE_STORE (gtk_builder_get_object (self->priv->builder,
-	                                                       "status_model"));
-	output = git_status_command_get_status_queue (GIT_STATUS_COMMAND (command));
-
-	add_status_items (output, status_model, &(self->priv->commit_iter),
-	                  STATUS_TYPE_COMMIT);
-
-}
-
-static void
-on_not_updated_status_data_arrived (AnjutaCommand *command,
-                                    GitStatusPane *self)
-{
-	GtkTreeStore *status_model;
-	GQueue *output;
-
-	status_model = GTK_TREE_STORE (gtk_builder_get_object (self->priv->builder,
-	                                                       "status_model"));
-	output = git_status_command_get_status_queue (GIT_STATUS_COMMAND (command));
-
-	add_status_items (output, status_model, &(self->priv->not_updated_iter),
-	                  STATUS_TYPE_NOT_UPDATED);
 }
 
 static void
@@ -714,11 +710,35 @@ git_status_pane_finalize (GObject *object)
 static void
 git_status_pane_refresh (AnjutaDockPane *pane)
 {
+	GitStatusPane *self;
 	Git *plugin;
+	GitCommand *status_command;
+	GtkTreeView *status_view;
 
+	self = GIT_STATUS_PANE (pane);
 	plugin = ANJUTA_PLUGIN_GIT (anjuta_dock_pane_get_plugin (pane));
+	status_command = git_status_command_new (0, NULL);
+	status_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
+	                                                     "status_view"));
 
-	anjuta_command_start (ANJUTA_COMMAND (plugin->commit_status_command));
+	git_status_pane_clear (self);
+
+	g_signal_connect (G_OBJECT (status_command), "data-arrived",
+	                  G_CALLBACK (on_status_command_data_arrived),
+	                  pane);
+
+	/* Expand the placeholders so something is visible to the user after 
+	 * refreshing */
+	g_signal_connect_swapped (G_OBJECT (status_command),
+	                          "finished",
+	                          G_CALLBACK (gtk_tree_view_expand_all),
+	                          status_view);
+
+	g_signal_connect (G_OBJECT (status_command), "finished",
+	                  G_CALLBACK (g_object_unref),
+	                  NULL);
+
+	git_thread_pool_push (plugin->thread_pool, status_command);
 	
 }
 
@@ -747,36 +767,7 @@ git_status_pane_class_init (GitStatusPaneClass *klass)
 AnjutaDockPane *
 git_status_pane_new (Git *plugin)
 {
-	GitStatusPane *self;
-	GtkTreeView *status_view;
-
-	self = g_object_new (GIT_TYPE_STATUS_PANE, "plugin", plugin, NULL);
-	status_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
-														 "status_view"));
-
-	g_signal_connect_swapped (G_OBJECT (plugin->commit_status_command), 
-	                          "command-started",
-	                          G_CALLBACK (git_status_pane_clear),
-	                          self);
-
-	/* Expand the placeholders so something is visible to the user after 
-	 * refreshing */
-	g_signal_connect_swapped (G_OBJECT (plugin->not_updated_status_command),
-	                          "command-finished",
-	                          G_CALLBACK (gtk_tree_view_expand_all),
-	                          status_view);
-
-	g_signal_connect (G_OBJECT (plugin->commit_status_command),
-	                  "data-arrived",
-	                  G_CALLBACK (on_commit_status_data_arrived),
-	                  self);
-
-	g_signal_connect (G_OBJECT (plugin->not_updated_status_command),
-	                  "data-arrived",
-	                  G_CALLBACK (on_not_updated_status_data_arrived),
-	                  self);
-
-	return ANJUTA_DOCK_PANE (self);
+	return g_object_new (GIT_TYPE_STATUS_PANE, "plugin", plugin, NULL);;
 }
 
 static void

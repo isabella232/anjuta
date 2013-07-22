@@ -190,7 +190,7 @@ static void
 on_status_command_data_arrived (AnjutaCommand *command, 
 								IAnjutaVcsStatusCallback callback)
 {
-	GQueue *status_queue;
+	GAsyncQueue *status_queue;
 	GitStatus *status;
 	const gchar *working_directory;
 	gchar *path;
@@ -199,9 +199,8 @@ on_status_command_data_arrived (AnjutaCommand *command,
 	
 	status_queue = git_status_command_get_status_queue (GIT_STATUS_COMMAND (command));
 	
-	while (g_queue_peek_head (status_queue))
+	while ((status = g_async_queue_try_pop (status_queue)))
 	{
-		status = g_queue_pop_head (status_queue);
 		working_directory = g_object_get_data (G_OBJECT (command), 
 		                                       "working-directory");
 		path = git_status_get_path (status);
@@ -234,23 +233,39 @@ git_ivcs_query_status (IAnjutaVcs *obj, GFile *file,
 					   gpointer user_data, GCancellable *cancel,
 					   AnjutaAsyncNotify *notify, GError **err)
 {
+	Git *plugin;
 	gchar *path;
-	GitStatusCommand *status_command;
+	const gchar *project_root_directory;
+	GitCommand *status_command;
 
-	path = g_file_get_path (file);
-	status_command = git_status_command_new (path, ~0);
+	plugin = ANJUTA_PLUGIN_GIT (obj);
+	
+	g_return_if_fail (plugin->thread_pool);
+	
+	path = g_file_get_relative_path (plugin->project_root_file, file);
+	project_root_directory = ANJUTA_PLUGIN_GIT (obj)->project_root_directory;
+	status_command = git_status_command_new (GIT_STATUS_SECTION_UNTRACKED,
+	                                         path);
+
+	g_object_set_data (G_OBJECT (status_command), "user-data", user_data);
+	g_object_set_data_full (G_OBJECT (status_command), "working-directory",
+	                        g_strdup (project_root_directory), g_free);
 
 	g_free (path);
 
-	g_object_set_data (G_OBJECT (status_command), "user-data", user_data);
-	g_object_set_data (G_OBJECT (status_command), "working-directory",
-	                   ANJUTA_PLUGIN_GIT (obj)->project_root_directory);
 
 	g_signal_connect (G_OBJECT (status_command), "data-arrived",
 	                  G_CALLBACK (on_status_command_data_arrived),
 	                  callback);
 
-	g_signal_connect (G_OBJECT (status_command), "command-finished",
+	if (notify)
+	{
+		g_signal_connect_swapped (G_OBJECT (status_command), "finished",
+		                          G_CALLBACK (anjuta_async_notify_notify_finished),
+		                          notify);
+	}
+
+	g_signal_connect (G_OBJECT (status_command), "finished",
 	                  G_CALLBACK (g_object_unref),
 	                  NULL);
 
@@ -263,15 +278,7 @@ git_ivcs_query_status (IAnjutaVcs *obj, GFile *file,
 	}
 #endif
 
-	if (notify)
-	{
-		g_signal_connect_swapped (G_OBJECT (status_command), "command-finished",
-		                          G_CALLBACK (anjuta_async_notify_notify_finished),
-		                          notify);
-	}
-
-	anjuta_command_queue_push (ANJUTA_PLUGIN_GIT (obj)->command_queue,
-	                           ANJUTA_COMMAND (status_command));
+	git_thread_pool_push (plugin->thread_pool, status_command);
 }
 
 void 

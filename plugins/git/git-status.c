@@ -27,7 +27,8 @@
 struct _GitStatusPriv
 {
 	gchar *path;
-	AnjutaVcsStatus status;
+	AnjutaVcsStatus index_status;
+	AnjutaVcsStatus working_tree_status;
 };
 
 G_DEFINE_TYPE (GitStatus, git_status, G_TYPE_OBJECT);
@@ -60,14 +61,27 @@ git_status_class_init (GitStatusClass *klass)
 }
 
 GitStatus *
-git_status_new (const gchar *path, AnjutaVcsStatus status)
+git_status_new (const gchar *path, GgitStatusFlags status)
 {
 	GitStatus *self;
 	
 	self = g_object_new (GIT_TYPE_STATUS, NULL);
 	
 	self->priv->path = g_strdup (path);
-	self->priv->status = status;
+
+	/* Map GgitStatusFlags to AnjutaVcsStatus:
+	 *   1. Swap bits 1 and 2 to map modified and added in the index
+	 *   2. Swap bits 8 and 9 to map modified and added in the working tree
+	 *   3. Make sure that bits 3 (removed in index) and 10 (removed in 
+	 *      working tree) are preserved because they map to AnjutaVcsStatus 
+	 *	    without changes.
+	 */
+	status = (status & 0x0102) >> 1 | (status & 0x0081) << 1 | (status & 0x0204);
+
+	/* The index values are in the lower three bytes; the working tree values
+	 * are in bits 8-10. */
+	self->priv->index_status = (status & 0x0007);
+	self->priv->working_tree_status = (status & 0x0380) >> 7;
 	
 	return self;
 }
@@ -79,8 +93,28 @@ git_status_get_path (GitStatus *self)
 }
 
 AnjutaVcsStatus
+git_status_get_index_status (GitStatus *self)
+{
+	return self->priv->index_status;
+}
+
+AnjutaVcsStatus
+git_status_get_working_tree_status (GitStatus *self)
+{
+	return self->priv->working_tree_status;
+}
+
+AnjutaVcsStatus
 git_status_get_vcs_status (GitStatus *self)
 {
-	return self->priv->status;
+	/* A "new" status in the working tree section means the file is untracked */
+	if (self->priv->working_tree_status & ANJUTA_VCS_STATUS_ADDED)
+		return ANJUTA_VCS_STATUS_UNVERSIONED;
+	else 
+	{
+		/* Otherwise, favor the index value over the working tree value */
+		return self->priv->index_status == 0 ? self->priv->working_tree_status :
+			   self->priv->index_status;
+	}
 }
 

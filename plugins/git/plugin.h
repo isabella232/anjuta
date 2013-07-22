@@ -61,6 +61,7 @@ struct _Git
 {
 	AnjutaPlugin parent;
 	
+	GFile *project_root_file;
 	gchar *project_root_directory;
 	gchar *current_editor_filename;
 
@@ -95,8 +96,6 @@ struct _Git
 	 * way of handling project (working directory) changes */
 	GitBranchListCommand *local_branch_list_command;
 	GitBranchListCommand *remote_branch_list_command;
-	GitStatusCommand *commit_status_command;
-	GitStatusCommand *not_updated_status_command;
 	GitRemoteListCommand *remote_list_command;
 	GitTagListCommand *tag_list_command;
 	GitStashListCommand *stash_list_command;

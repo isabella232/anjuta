@@ -641,17 +641,16 @@ on_project_root_added (AnjutaPlugin *plugin, const gchar *name,
 {
 	Git *git_plugin;
 	gchar *project_root_uri;
-	GFile *file;
 	GFile *repository_file;
 	
 	git_plugin = ANJUTA_PLUGIN_GIT (plugin);
 	
 	g_free (git_plugin->project_root_directory);
 	project_root_uri = g_value_dup_string (value);
-	file = g_file_new_for_uri (project_root_uri);
-	repository_file = g_file_get_child (file, ".git");
+	git_plugin->project_root_file = g_file_new_for_uri (project_root_uri);
+	repository_file = g_file_get_child (git_plugin->project_root_file, ".git");
 	
-	git_plugin->project_root_directory = g_file_get_path (file);
+	git_plugin->project_root_directory = g_file_get_path (git_plugin->project_root_file);
 	git_plugin->repository = ggit_repository_open (repository_file, NULL);
 
 	if (git_plugin->repository)
@@ -661,7 +660,6 @@ on_project_root_added (AnjutaPlugin *plugin, const gchar *name,
 		gtk_widget_set_sensitive (git_plugin->command_bar, TRUE);
 	}
 	
-	g_object_unref (file);
 	g_object_unref (repository_file);
 	
 	g_free (project_root_uri);
@@ -671,12 +669,6 @@ on_project_root_added (AnjutaPlugin *plugin, const gchar *name,
 	              NULL);
 	g_object_set (G_OBJECT (git_plugin->remote_branch_list_command),
 	              "working-directory", git_plugin->project_root_directory, 
-	              NULL);
-	g_object_set (G_OBJECT (git_plugin->commit_status_command),
-	              "working-directory", git_plugin->project_root_directory,
-	              NULL);
-	g_object_set (G_OBJECT (git_plugin->not_updated_status_command),
-	              "working-directory", git_plugin->project_root_directory,
 	              NULL);
 	g_object_set (G_OBJECT (git_plugin->remote_list_command),
 	              "working-directory", git_plugin->project_root_directory,
@@ -692,13 +684,11 @@ on_project_root_added (AnjutaPlugin *plugin, const gchar *name,
 	              NULL);
 
 	anjuta_command_start_automatic_monitor (ANJUTA_COMMAND (git_plugin->local_branch_list_command));
-	anjuta_command_start_automatic_monitor (ANJUTA_COMMAND (git_plugin->commit_status_command));
 	anjuta_command_start_automatic_monitor (ANJUTA_COMMAND (git_plugin->remote_list_command));
 	anjuta_command_start_automatic_monitor (ANJUTA_COMMAND (git_plugin->tag_list_command));
 	anjuta_command_start_automatic_monitor (ANJUTA_COMMAND (git_plugin->stash_list_command));
 	anjuta_command_start_automatic_monitor (ANJUTA_COMMAND (git_plugin->ref_command));
 	anjuta_command_start (ANJUTA_COMMAND (git_plugin->local_branch_list_command));
-	anjuta_command_start (ANJUTA_COMMAND (git_plugin->commit_status_command));
 	anjuta_command_start (ANJUTA_COMMAND (git_plugin->remote_list_command));
 	anjuta_command_start (ANJUTA_COMMAND (git_plugin->tag_list_command));
 	anjuta_command_start (ANJUTA_COMMAND (git_plugin->stash_list_command));
@@ -731,12 +721,12 @@ on_project_root_removed (AnjutaPlugin *plugin, const gchar *name,
 	}
 	
 	anjuta_command_stop_automatic_monitor (ANJUTA_COMMAND (git_plugin->local_branch_list_command));
-	anjuta_command_stop_automatic_monitor (ANJUTA_COMMAND (git_plugin->commit_status_command));
 	anjuta_command_stop_automatic_monitor (ANJUTA_COMMAND (git_plugin->remote_list_command));
 	anjuta_command_stop_automatic_monitor (ANJUTA_COMMAND (git_plugin->tag_list_command));
 	anjuta_command_stop_automatic_monitor (ANJUTA_COMMAND (git_plugin->stash_list_command));
 	anjuta_command_stop_automatic_monitor (ANJUTA_COMMAND (git_plugin->ref_command));
 	
+	g_clear_object (&git_plugin->project_root_file);
 	g_free (git_plugin->project_root_directory);
 	git_plugin->project_root_directory = NULL;
 
@@ -954,25 +944,12 @@ git_activate_plugin (AnjutaPlugin *plugin)
 	                  G_CALLBACK (on_branch_list_command_data_arrived),
 	                  plugin);
 
-	/* Create the status list commands. The different commands correspond to 
-	 * the two different sections in status output: Changes to be committed 
-	 * (staged) and Changed but not updated (unstaged.) */
-	git_plugin->commit_status_command = git_status_command_new (NULL,
-	                                                            GIT_STATUS_SECTION_COMMIT);
-	git_plugin->not_updated_status_command = git_status_command_new (NULL,
-	                                                                 GIT_STATUS_SECTION_NOT_UPDATED);
 
 	/* Remote list command */
 	git_plugin->remote_list_command = git_remote_list_command_new (NULL);
 
 	/* Ref list command. used to keep the log up to date */
 	git_plugin->ref_command = git_ref_command_new (NULL);
-
-	/* Always run the not updated commmand after the commmit command. */
-	g_signal_connect (G_OBJECT (git_plugin->commit_status_command), 
-	                  "command-finished",
-	                  G_CALLBACK (run_next_command),
-	                  git_plugin->not_updated_status_command);
 
 	/* Tag list command */
 	git_plugin->tag_list_command = git_tag_list_command_new (NULL);
@@ -1077,13 +1054,12 @@ git_deactivate_plugin (AnjutaPlugin *plugin)
 
 	g_object_unref (git_plugin->local_branch_list_command);
 	g_object_unref (git_plugin->remote_branch_list_command);
-	g_object_unref (git_plugin->commit_status_command);
-	g_object_unref (git_plugin->not_updated_status_command);
 	g_object_unref (git_plugin->remote_list_command);
 	g_object_unref (git_plugin->tag_list_command);
 	g_object_unref (git_plugin->stash_list_command);
 	g_object_unref (git_plugin->ref_command);
 	
+	g_clear_object (&git_plugin->project_root_file);
 	g_free (git_plugin->project_root_directory);
 	g_free (git_plugin->current_editor_filename);
 	
@@ -1098,6 +1074,8 @@ git_finalize (GObject *obj)
 	git_plugin = ANJUTA_PLUGIN_GIT (obj);
 
 	g_object_unref (git_plugin->command_queue);
+
+	git_threads_shutdown ();
 	
 	G_OBJECT_CLASS (parent_class)->finalize (obj);
 }
@@ -1122,6 +1100,8 @@ static void
 git_instance_init (GObject *obj)
 {
 	Git *plugin = ANJUTA_PLUGIN_GIT (obj);
+
+	git_threads_init ();
 
 	plugin->command_queue = anjuta_command_queue_new (ANJUTA_COMMAND_QUEUE_EXECUTE_AUTOMATIC);
 	plugin->settings = g_settings_new (SETTINGS_SCHEMA);

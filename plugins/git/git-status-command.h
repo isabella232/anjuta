@@ -26,7 +26,8 @@
 #define _GIT_STATUS_COMMAND_H_
 
 #include <glib-object.h>
-#include "git-process-command.h"
+#include <libgit2-glib/ggit-status-options.h>
+#include "git-command.h"
 #include "git-status.h"
 
 G_BEGIN_DECLS
@@ -44,29 +45,25 @@ typedef struct _GitStatusCommandPriv GitStatusCommandPriv;
 
 typedef enum
 {
-	GIT_STATUS_SECTION_COMMIT = 1 << 0,
-	GIT_STATUS_SECTION_NOT_UPDATED = 1 << 1,
-	GIT_STATUS_SECTION_UNTRACKED = 1 << 2,
-	GIT_STATUS_SECTION_MODIFIED = (GIT_STATUS_SECTION_COMMIT | 
-								   GIT_STATUS_SECTION_NOT_UPDATED)
+	GIT_STATUS_SECTION_UNTRACKED = 1 << 0,
 } GitStatusSections;
 
 struct _GitStatusCommandClass
 {
-	GitProcessCommandClass parent_class;
+	GitCommandClass parent_class;
 };
 
 struct _GitStatusCommand
 {
-	GitProcessCommand parent_instance;
+	GitCommand parent_instance;
 	
 	GitStatusCommandPriv *priv;
 };
 
 GType git_status_command_get_type (void) G_GNUC_CONST;
-GitStatusCommand *git_status_command_new (const gchar *working_directory,
-										  GitStatusSections sections);
-GQueue *git_status_command_get_status_queue (GitStatusCommand *self);
+GitCommand *git_status_command_new (GitStatusSections sections, 
+                                    const gchar *path);
+GAsyncQueue *git_status_command_get_status_queue (GitStatusCommand *self);
 
 G_END_DECLS
 
