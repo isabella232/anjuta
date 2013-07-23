@@ -117,4 +117,8 @@ git_command_class_init (GitCommandClass *klass)
 														  G_PARAM_WRITABLE));
 }
 
-
+GgitRepository *
+git_command_get_repository (GitCommand *self)
+{
+	return self->priv->repository;
+}

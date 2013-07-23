@@ -78,28 +78,26 @@ git_status_command_run (AnjutaTask *task)
 	GgitStatusOption option_flags;
 	const gchar *paths[2];
 
-	self = GIT_STATUS_COMMAND (task);;
+	self = GIT_STATUS_COMMAND (task);
+	repository = git_command_get_repository (GIT_COMMAND (task));
 
-	g_object_get (self, "repository", &repository, NULL);
+	g_return_if_fail (repository);
 
-	if (repository)
-	{
-		option_flags = 0;
+	option_flags = 0;
 
-		if (self->priv->sections & GIT_STATUS_SECTION_UNTRACKED)
-			option_flags |= GGIT_STATUS_OPTION_INCLUDE_UNTRACKED;
+	if (self->priv->sections & GIT_STATUS_SECTION_UNTRACKED)
+		option_flags |= GGIT_STATUS_OPTION_INCLUDE_UNTRACKED;
 
-		paths[0] = self->priv->path;
-		paths[1] = NULL;
+	paths[0] = self->priv->path;
+	paths[1] = NULL;
 
-		options = ggit_status_options_new (option_flags, 0, paths);
+	options = ggit_status_options_new (option_flags, 0, paths);
 
-		ggit_repository_file_status_foreach (repository, options, 
-		                                     (GgitStatusCallback) git_status_command_status_callback,
-		                                     self, NULL);
+	ggit_repository_file_status_foreach (repository, options, 
+	                                     (GgitStatusCallback) git_status_command_status_callback,
+	                                     self, NULL);
 
-		ggit_status_options_free (options);
-	}
+	ggit_status_options_free (options);
 }
 
 static void
@@ -122,8 +120,6 @@ git_status_command_new (GitStatusSections sections, const gchar *path)
 	
 	self->priv->sections = sections;
 	self->priv->path = g_strdup (path);
-
-	g_print ("Given path: %s\n", path);
 	
 	return GIT_COMMAND (self);
 }

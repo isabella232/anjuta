@@ -52,6 +52,8 @@ struct _GitCommand
 
 GType git_command_get_type (void) G_GNUC_CONST;
 
+GgitRepository *git_command_get_repository (GitCommand *self);
+
 G_END_DECLS
 
 #endif /* _GIT_COMMAND_H_ */
