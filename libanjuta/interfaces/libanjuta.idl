@@ -6841,12 +6841,12 @@ interface IAnjutaIndenter
 }
 
 /**
- * SECTION: ianjuta-automatic-refreshable
- * @title: IAnjutaAutomaticRefreshable
+ * SECTION: ianjuta-refreshable
+ * @title: IAnjutaRefreshable
  * @short_description: Interface for objects that update information 
  *					   automatically in response to an outside event, such as 
  *					   file changes.
- * @include: libanjuta/interfaces/ianjuta-automatic-refreshable
+ * @include: libanjuta/interfaces/ianjuta-refreshable.h
  * 
  */
 
