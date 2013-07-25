@@ -683,6 +683,9 @@ on_project_root_added (AnjutaPlugin *plugin, const gchar *name,
 	              "working-directory", git_plugin->project_root_directory,
 	              NULL);
 
+	ianjuta_refreshable_start_monitor (IANJUTA_REFRESHABLE (git_plugin->status_pane), NULL);
+	anjuta_dock_pane_refresh (git_plugin->status_pane);
+
 	anjuta_command_start_automatic_monitor (ANJUTA_COMMAND (git_plugin->local_branch_list_command));
 	anjuta_command_start_automatic_monitor (ANJUTA_COMMAND (git_plugin->remote_list_command));
 	anjuta_command_start_automatic_monitor (ANJUTA_COMMAND (git_plugin->tag_list_command));
@@ -719,6 +722,8 @@ on_project_root_removed (AnjutaPlugin *plugin, const gchar *name,
 		git_plugin->thread_pool = NULL;
 		git_plugin->repository = NULL;
 	}
+
+	ianjuta_refreshable_stop_monitor (IANJUTA_REFRESHABLE (git_plugin->status_pane), NULL);
 	
 	anjuta_command_stop_automatic_monitor (ANJUTA_COMMAND (git_plugin->local_branch_list_command));
 	anjuta_command_stop_automatic_monitor (ANJUTA_COMMAND (git_plugin->remote_list_command));

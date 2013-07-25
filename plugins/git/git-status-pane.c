@@ -58,6 +58,11 @@ struct _GitStatusPanePriv
 {
 	GtkBuilder *builder;
 
+	/* Status command. We generate a new one for each refresh, but we don't want
+	 * to have more the one refresh happen at once. This value will be NULL when
+	 * no status command is running. */
+	GitCommand *status_command;
+
 	/* Iters for the two sections: Changes to be committed and Changed but not
 	 * updated. Status items will be children of these two iters. */
 	GtkTreeIter commit_iter;
@@ -66,9 +71,119 @@ struct _GitStatusPanePriv
 	/* Hash tables that show which items are selected in each section */
 	GHashTable *selected_commit_items;
 	GHashTable *selected_not_updated_items;
+
+	/* File monitors */
+	GFileMonitor *head_monitor;
+	GFileMonitor *index_monitor;
 };
 
-G_DEFINE_TYPE (GitStatusPane, git_status_pane, GIT_TYPE_PANE);
+static void
+on_file_monitor_changed (GFileMonitor *monitor, GFile *file, GFile *other_file,
+                         GFileMonitorEvent event, AnjutaDockPane *pane)
+{
+	/* Handle created and modified events just to cover all possible cases. 
+	 * Sometimes git does some odd things... */
+	if (event == G_FILE_MONITOR_EVENT_CHANGED ||
+	    event == G_FILE_MONITOR_EVENT_CREATED)
+	{
+		anjuta_dock_pane_refresh (pane);
+	}
+}
+
+static void
+git_status_pane_start_monitor (IAnjutaRefreshable *obj, GError **error)
+{
+	GitStatusPane *self;
+	Git *plugin;
+	const gchar *working_directory;
+	gchar *git_head_path;
+	gchar *git_index_path;
+	GFile *git_head_file;
+	GFile *git_index_file;
+	GError *file_error;
+
+	self = GIT_STATUS_PANE (obj);
+	plugin = ANJUTA_PLUGIN_GIT (anjuta_dock_pane_get_plugin (ANJUTA_DOCK_PANE (obj)));
+	working_directory = plugin->project_root_directory;
+
+	/* Watch for changes to the HEAD file and the index file, so that we can
+	 * at least detect commits and index changes. */
+	git_head_path = g_strjoin (G_DIR_SEPARATOR_S,
+	                           working_directory,
+	                           ".git",
+	                           "HEAD",
+	                           NULL);
+	git_index_path = g_strjoin (G_DIR_SEPARATOR_S,
+	                            working_directory,
+	                            ".git",
+	                            "index",
+	                            NULL);
+	git_head_file = g_file_new_for_path (git_head_path);
+	git_index_file = g_file_new_for_path (git_index_path);
+	
+	self->priv->head_monitor = g_file_monitor_file (git_head_file, 0, NULL, 
+	                                                &file_error);
+
+	if (self->priv->head_monitor)
+	{
+		self->priv->index_monitor = g_file_monitor_file (git_index_file, 0, NULL,
+		                                                 &file_error);
+
+		if (self->priv->index_monitor)
+		{
+			g_signal_connect (G_OBJECT (self->priv->head_monitor), "changed",
+			                  G_CALLBACK (on_file_monitor_changed),
+			                  ANJUTA_DOCK_PANE (obj));
+
+			g_signal_connect (G_OBJECT (self->priv->index_monitor), "changed",
+			                  G_CALLBACK (on_file_monitor_changed),
+			                  ANJUTA_DOCK_PANE (obj));
+		}
+	}
+
+	
+
+	if (error)	
+		*error = g_error_copy (file_error);
+
+	g_error_free (file_error);
+
+	g_free (git_head_path);
+	g_free (git_index_path);
+	g_object_unref (git_head_file);
+	g_object_unref (git_index_file);
+}
+
+static void
+git_status_pane_stop_monitor (IAnjutaRefreshable *obj, GError **error)
+{
+	GitStatusPane *self;
+
+	self = GIT_STATUS_PANE (obj);
+
+	if (self->priv->head_monitor)
+	{
+		g_file_monitor_cancel (self->priv->head_monitor);
+		g_clear_object (&self->priv->head_monitor);
+	}
+
+	if (self->priv->index_monitor)
+	{
+		g_file_monitor_cancel (self->priv->index_monitor);
+		g_clear_object (&self->priv->head_monitor);
+	}
+}
+
+static void 
+ianjuta_refreshable_init (IAnjutaRefreshableIface *iface)
+{
+	iface->start_monitor = git_status_pane_start_monitor;
+	iface->stop_monitor = git_status_pane_stop_monitor;
+}
+
+G_DEFINE_TYPE_WITH_CODE (GitStatusPane, git_status_pane, GIT_TYPE_PANE,
+                         G_IMPLEMENT_INTERFACE (IANJUTA_TYPE_REFRESHABLE, 
+                                                ianjuta_refreshable_init));
 
 static void
 selected_renderer_data_func (GtkTreeViewColumn *tree_column,
@@ -326,8 +441,6 @@ on_status_command_data_arrived (AnjutaTask *task, GitStatusPane *self)
 	gchar *path;
 	AnjutaVcsStatus index_status;
 	AnjutaVcsStatus working_tree_status;
-
-	g_print ("Data arrived.\n");
 
 	status_model = GTK_TREE_STORE (gtk_builder_get_object (self->priv->builder,	
 	                                                       "status_model"));
@@ -702,6 +815,9 @@ git_status_pane_finalize (GObject *object)
 	g_object_unref (self->priv->builder);
 	g_hash_table_destroy (self->priv->selected_commit_items);
 	g_hash_table_destroy (self->priv->selected_not_updated_items);
+
+	g_clear_object (&self->priv->index_monitor);
+	g_clear_object (&self->priv->head_monitor);
 	g_free (self->priv);
 
 	G_OBJECT_CLASS (git_status_pane_parent_class)->finalize (object);
@@ -712,33 +828,37 @@ git_status_pane_refresh (AnjutaDockPane *pane)
 {
 	GitStatusPane *self;
 	Git *plugin;
-	GitCommand *status_command;
 	GtkTreeView *status_view;
 
 	self = GIT_STATUS_PANE (pane);
-	plugin = ANJUTA_PLUGIN_GIT (anjuta_dock_pane_get_plugin (pane));
-	status_command = git_status_command_new (0, NULL);
-	status_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
-	                                                     "status_view"));
+	
+	if (!self->priv->status_command)
+	{
+		plugin = ANJUTA_PLUGIN_GIT (anjuta_dock_pane_get_plugin (pane));
+		self->priv->status_command = git_status_command_new (0, NULL);
+		status_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
+		                                                     "status_view"));
 
-	git_status_pane_clear (self);
+		git_status_pane_clear (self);
 
-	g_signal_connect (G_OBJECT (status_command), "data-arrived",
-	                  G_CALLBACK (on_status_command_data_arrived),
-	                  pane);
+		g_signal_connect (G_OBJECT (self->priv->status_command), "data-arrived",
+		                  G_CALLBACK (on_status_command_data_arrived),
+		                  pane);
 
-	/* Expand the placeholders so something is visible to the user after 
-	 * refreshing */
-	g_signal_connect_swapped (G_OBJECT (status_command),
-	                          "finished",
-	                          G_CALLBACK (gtk_tree_view_expand_all),
-	                          status_view);
+		/* Expand the placeholders so something is visible to the user after 
+		 * refreshing */
+		g_signal_connect_swapped (G_OBJECT (self->priv->status_command),
+		                          "finished",
+		                          G_CALLBACK (gtk_tree_view_expand_all),
+		                          status_view);
 
-	g_signal_connect (G_OBJECT (status_command), "finished",
-	                  G_CALLBACK (g_object_unref),
-	                  NULL);
+		g_signal_connect_swapped (G_OBJECT (self->priv->status_command), 
+		                          "finished",
+		              			  G_CALLBACK (g_clear_object),
+		              			  &self->priv->status_command);
 
-	git_thread_pool_push (plugin->thread_pool, status_command);
+		git_thread_pool_push (plugin->thread_pool, self->priv->status_command);
+	}
 	
 }
 

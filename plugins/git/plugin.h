@@ -31,6 +31,7 @@
 #include <libanjuta/interfaces/ianjuta-file.h>
 #include <libanjuta/interfaces/ianjuta-project-manager.h>
 #include <libanjuta/interfaces/ianjuta-file-manager.h>
+#include <libanjuta/interfaces/ianjuta-refreshable.h>
 #include <libanjuta/anjuta-shell.h>
 #include <libanjuta/anjuta-dock.h>
 #include <libanjuta/anjuta-debug.h>
