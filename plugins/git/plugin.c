@@ -829,6 +829,7 @@ git_activate_plugin (AnjutaPlugin *plugin)
 	gchar *objects[] = {"grip_box",
 						NULL};
 	GtkWidget *git_tasks_button;
+	GtkWidget *scrolled_window, *viewport;
 	AnjutaUI *ui;
 	
 	DEBUG_PRINT ("%s", "Git: Activating Git plugin …");
@@ -843,17 +844,21 @@ git_activate_plugin (AnjutaPlugin *plugin)
 	/* Command bar and dock */
 	git_plugin->command_bar = anjuta_command_bar_new ();
 	git_plugin->dock = anjuta_dock_new ();
+	viewport = gtk_viewport_new (NULL, NULL);
+	scrolled_window = gtk_scrolled_window_new (NULL, NULL);
+
+	gtk_container_add (GTK_CONTAINER (viewport), git_plugin->dock);
+	gtk_container_add (GTK_CONTAINER (scrolled_window), viewport);
 
 	git_plugin->box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
-	gtk_box_pack_start (GTK_BOX (git_plugin->box), git_plugin->dock, TRUE, TRUE, 0);
+	gtk_box_pack_start (GTK_BOX (git_plugin->box), scrolled_window, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (git_plugin->box), git_plugin->command_bar, FALSE, FALSE, 0);
 	
 
 	anjuta_dock_set_command_bar (ANJUTA_DOCK (git_plugin->dock), 
 	                             ANJUTA_COMMAND_BAR (git_plugin->command_bar));
 
-	gtk_widget_show (git_plugin->box);
-	gtk_widget_show (git_plugin->dock);
+	gtk_widget_show_all (git_plugin->box);
 	anjuta_shell_add_widget_custom (plugin->shell, git_plugin->box, "GitDock", 
 	                     			_("Git"), "git-plugin", 
 	                                GTK_WIDGET (gtk_builder_get_object (builder, "grip_box")), 
