@@ -84,7 +84,8 @@ libanjuta_symbol_db_la_LDFLAGS = $(ANJUTA_PLUGIN_LDFLAGS)
 # Plugin dependencies
 libanjuta_symbol_db_la_LIBADD = \
 	$(GDA_LIBS) \
-	$(LIBANJUTA_LIBS)
+	$(LIBANJUTA_LIBS) \
+	$(SHM_LIBS)
 
 BUILT_SOURCES=symbol-db-marshal.c symbol-db-marshal.h
 

@@ -758,6 +758,12 @@ fi
 
 AC_SUBST(SYMBOL_DB_SHM)
 
+dnl On Linux, need librt for shm_open/shm_unlink
+bck_LIBS="$LIBS"
+AC_SEARCH_LIBS(shm_open, rt, [SHM_LIBS="$LIBS"], [AC_MSG_ERROR([Failed to find library with shm_open()])])
+AC_SUBST(SHM_LIBS)
+LIBS="$bck_LIBS"
+
 dnl Test using autotest
 dnl -----------------------------
 AC_CONFIG_TESTDIR(plugins/am-project/tests)
