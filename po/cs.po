@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-06-10 05:04+0000\n"
-"PO-Revision-Date: 2013-06-10 21:52+0200\n"
+"POT-Creation-Date: 2013-07-09 00:24+0000\n"
+"PO-Revision-Date: 2013-07-09 21:09+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:50
+#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
 msgstr "Anjuta"
 
@@ -246,11 +246,11 @@ msgstr "Thajské"
 msgid "Unknown"
 msgstr "Neznámé"
 
-#: ../libanjuta/anjuta-entry.c:258
+#: ../libanjuta/anjuta-entry.c:247
 msgid "Help text"
 msgstr "Text nápovědy"
 
-#: ../libanjuta/anjuta-entry.c:259
+#: ../libanjuta/anjuta-entry.c:248
 msgid "Text to show the user what to enter into the entry"
 msgstr "Text ukazující uživateli, co zadat do pole"
 
@@ -325,7 +325,7 @@ msgstr "Nelze spustit příkaz: „%s“"
 msgid "execvp failed"
 msgstr "execvp selhalo"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2392
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2396
 msgid "Anjuta Shell"
 msgstr "Shell Anjuty"
 
@@ -356,11 +356,11 @@ msgid "Load"
 msgstr "Načíst"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2008
+#: ../libanjuta/anjuta-plugin-manager.c:2012
 msgid "Available Plugins"
 msgstr "Dostupné zásuvné moduly"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:994
+#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:995
 msgid "Preferred plugins"
 msgstr "Upřednostňované zásuvné moduly"
 
@@ -384,7 +384,7 @@ msgid "Forget selected plugin"
 msgstr "Zapomenout zvolený zásuvný modul"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1515 ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "Volba zásuvného modulu"
@@ -399,52 +399,52 @@ msgstr "Vyberte zásuvný modul, který chcete aktivovat"
 msgid "No plugin is able to load other plugins in %s"
 msgstr "Žádný zásuvný modul schopný nahrávat jiné moduly v %s"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1516
+#: ../libanjuta/anjuta-plugin-manager.c:1518
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Vyberte zásuvný modul, který chcete aktivovat</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2035
+#: ../libanjuta/anjuta-plugin-manager.c:2039
 msgid "Remember this selection"
 msgstr "Pamatovat si výběr"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2373
+#: ../libanjuta/anjuta-plugin-manager.c:2377
 msgid "Profiles"
 msgstr "Profily"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2374
+#: ../libanjuta/anjuta-plugin-manager.c:2378
 msgid "Current stack of profiles"
 msgstr "Současný zásobník profilů"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2379
+#: ../libanjuta/anjuta-plugin-manager.c:2383
 msgid "Available plugins"
 msgstr "Dostupné zásuvné moduly"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2380
+#: ../libanjuta/anjuta-plugin-manager.c:2384
 msgid "Currently available plugins found in plugin paths"
 msgstr "Aktuálně dostupné zásuvné moduly nalezené v cestách zásuvných modulů"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2386
+#: ../libanjuta/anjuta-plugin-manager.c:2390
 msgid "Activated plugins"
 msgstr "Aktivní zásuvné moduly"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2387
+#: ../libanjuta/anjuta-plugin-manager.c:2391
 msgid "Currently activated plugins"
 msgstr "Aktuálně aktivované zásuvné moduly"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2393
+#: ../libanjuta/anjuta-plugin-manager.c:2397
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Prostor Anjuty určený pro zásuvné moduly"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2401
+#: ../libanjuta/anjuta-plugin-manager.c:2405
 msgid "Anjuta Status"
 msgstr "Status Anjuty"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2402
+#: ../libanjuta/anjuta-plugin-manager.c:2406
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr ""
 "Stav nástroje Anjuta, který použít při nahrávání a vypínání zásuvných modulů"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2555
+#: ../libanjuta/anjuta-plugin-manager.c:2559
 msgid "Loading:"
 msgstr "Načítá se:"
 
@@ -455,7 +455,7 @@ msgstr "Kategorie"
 #. FIXME: Make the general page first
 #: ../libanjuta/anjuta-preferences-dialog.c:139
 #: ../libanjuta/anjuta-preferences-dialog.c:142
-#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:981
+#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:982
 #: ../src/preferences.ui.h:9
 msgid "General"
 msgstr "Obecné"
@@ -710,8 +710,8 @@ msgstr ""
 #: ../plugins/am-project/amp-group.c:665
 #: ../plugins/am-project/am-project.c:1679
 #: ../plugins/am-project/am-project.c:1772
-#: ../plugins/dir-project/dir-project.c:723
-#: ../plugins/dir-project/dir-project.c:856
+#: ../plugins/dir-project/dir-project.c:801
+#: ../plugins/dir-project/dir-project.c:934
 #: ../plugins/mk-project/mk-project.c:725
 #: ../plugins/mk-project/mk-project.c:802
 #: ../plugins/mk-project/mk-project.c:876
@@ -724,13 +724,13 @@ msgid "Root"
 msgstr "Kořen"
 
 #: ../plugins/am-project/am-project.c:98
-#: ../plugins/dir-project/dir-project.c:867
+#: ../plugins/dir-project/dir-project.c:945
 #: ../plugins/mk-project/mk-project.c:66
 msgid "Group"
 msgstr "Skupina"
 
 #: ../plugins/am-project/am-project.c:106
-#: ../plugins/dir-project/dir-project.c:871
+#: ../plugins/dir-project/dir-project.c:949
 #: ../plugins/mk-project/mk-project.c:71
 msgid "Source"
 msgstr "Zdroj"
@@ -3474,15 +3474,15 @@ msgstr "Procházení API"
 msgid "API"
 msgstr "API"
 
-#: ../plugins/dir-project/dir-project.c:124
-#: ../plugins/dir-project/dir-project.c:147
-#: ../plugins/dir-project/dir-project.c:170
+#: ../plugins/dir-project/dir-project.c:126
+#: ../plugins/dir-project/dir-project.c:149
+#: ../plugins/dir-project/dir-project.c:172
 #, c-format
 msgid "Missing name"
 msgstr "Chybí název"
 
-#: ../plugins/dir-project/dir-project.c:992
-#: ../plugins/dir-project/dir-project.c:1002
+#: ../plugins/dir-project/dir-project.c:1070
+#: ../plugins/dir-project/dir-project.c:1080
 #: ../plugins/mk-project/mk-project.c:1024
 #: ../plugins/mk-project/mk-project.c:1034
 #, c-format
@@ -3981,7 +3981,7 @@ msgstr "Hledat pomocí regulárního výrazu"
 #: ../plugins/document-manager/plugin.c:295
 #: ../plugins/indentation-c-style/plugin.c:217
 #: ../plugins/indentation-python-style/plugin.c:200
-#: ../plugins/language-support-cpp-java/plugin.c:1153
+#: ../plugins/language-support-cpp-java/plugin.c:1192
 #: ../plugins/language-support-python/plugin.c:377 ../src/anjuta-actions.h:30
 msgid "_Edit"
 msgstr "_Upravit"
@@ -5402,7 +5402,7 @@ msgstr "Nejsou vybrány žádné konfliktní soubory."
 msgid "Please enter a commit."
 msgstr "Zadejte prosím zařazení."
 
-#: ../plugins/git/git-revert-pane.c:163 ../plugins/git/plugin.c:529
+#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:529
 msgid "Revert"
 msgstr "Vrátit"
 
@@ -5733,7 +5733,6 @@ msgid "Apply"
 msgstr "Použít"
 
 #: ../plugins/git/plugin.c:613
-#| msgid "Apply stash and restore index"
 msgid "Apply and restore index"
 msgstr "Použít a obnovit index"
 
@@ -5931,8 +5930,8 @@ msgstr "Odsazování jazyka C"
 
 #: ../plugins/indentation-c-style/plugin.c:362
 #: ../plugins/indentation-c-style/plugin.c:371
-#: ../plugins/indentation-python-style/plugin.c:328
-#: ../plugins/indentation-python-style/plugin.c:337
+#: ../plugins/indentation-python-style/plugin.c:324
+#: ../plugins/indentation-python-style/plugin.c:333
 msgid "Indentation"
 msgstr "Odsazování"
 
@@ -6026,32 +6025,32 @@ msgstr "Nahrát značky API ze standardní knihovny C"
 msgid "Load API tags for C++ standard template library"
 msgstr "Nahrát značky API pro standardní knihovnu šablon C++"
 
-#: ../plugins/language-support-cpp-java/plugin.c:702
+#: ../plugins/language-support-cpp-java/plugin.c:784
 msgid "Code added for widget."
 msgstr "Kód přidaný widgetu."
 
-#: ../plugins/language-support-cpp-java/plugin.c:1159
+#: ../plugins/language-support-cpp-java/plugin.c:1198
 msgid "Comment/Uncomment"
 msgstr "Zakomentovat/odkomentovat"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1160
+#: ../plugins/language-support-cpp-java/plugin.c:1199
 msgid "Comment or uncomment current selection"
 msgstr "Zakomentovat nebo odkomentovat aktuální výběr"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1165
+#: ../plugins/language-support-cpp-java/plugin.c:1204
 msgid "Swap .h/.c"
 msgstr "Přepnout .h/.c"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1166
+#: ../plugins/language-support-cpp-java/plugin.c:1205
 msgid "Swap C header and source files"
 msgstr "Prohodit hlavičkový a zdrojový soubory v C"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1206
+#: ../plugins/language-support-cpp-java/plugin.c:1245
 msgid "C++/Java Assistance"
 msgstr "Průvodce projektem v jazyce C++/Java"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1425
-#: ../plugins/language-support-cpp-java/plugin.c:1454
+#: ../plugins/language-support-cpp-java/plugin.c:1462
+#: ../plugins/language-support-cpp-java/plugin.c:1491
 msgid "API Tags (C/C++)"
 msgstr "Značky API (C/C++)"
 
@@ -6184,8 +6183,8 @@ msgstr "Příště toto varování nezobrazovat"
 msgid "Python Assistance"
 msgstr "Průvodce projektem v jazyce Python"
 
-#: ../plugins/language-support-python/plugin.c:561
-#: ../plugins/language-support-python/plugin.c:574
+#: ../plugins/language-support-python/plugin.c:557
+#: ../plugins/language-support-python/plugin.c:570
 #: ../plugins/language-support-python/python-assist.c:807
 msgid "Python"
 msgstr "Python"
@@ -6200,7 +6199,7 @@ msgstr "Zásuvný modul s podporou jazyka Vala umožňující dokončování kó
 
 #: ../plugins/language-support-vala/plugin.vala:655
 #: ../plugins/language-support-vala/plugin.vala:663
-#: ../plugins/parser-cxx/plugin.c:269 ../plugins/parser-cxx/plugin.c:282
+#: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Automatické dokončování"
 
@@ -6951,11 +6950,11 @@ msgstr "Akce správce projektu"
 msgid "Project manager popup actions"
 msgstr "Kontextové akce správce projektu"
 
-#: ../plugins/project-manager/plugin.c:2389
+#: ../plugins/project-manager/plugin.c:2457
 msgid "Initializing Project…"
 msgstr "Nahrávání projektu…"
 
-#: ../plugins/project-manager/plugin.c:2392
+#: ../plugins/project-manager/plugin.c:2460
 msgid "Project Loaded"
 msgstr "Projekt byl nahrán"
 
@@ -8363,12 +8362,12 @@ msgid "Languages"
 msgstr "Jazyky"
 
 #. Insert the Add Snippet menu item
-#: ../plugins/snippets-manager/snippets-browser.c:811
+#: ../plugins/snippets-manager/snippets-browser.c:809
 msgid "Add Snippet …"
 msgstr "Přidat úryvek…"
 
 #. Insert the Add Snippets Group menu item
-#: ../plugins/snippets-manager/snippets-browser.c:821
+#: ../plugins/snippets-manager/snippets-browser.c:819
 msgid "Add Snippets Group …"
 msgstr "Přidat skupinu úryvků…"
 
@@ -8628,7 +8627,7 @@ msgstr "Nastavení zobrazení v editoru"
 msgid "GtkSourceView Editor"
 msgstr "Editor GtkSourceView"
 
-#: ../plugins/sourceview/sourceview.c:602
+#: ../plugins/sourceview/sourceview.c:629
 #, c-format
 msgid ""
 "The file \"%s\" on the disk is more recent than the current buffer.\n"
@@ -8637,7 +8636,7 @@ msgstr ""
 "Soubor „%s“ na disku je novější než aktuálně načtený.\n"
 "Chcete jej znovu načíst?"
 
-#: ../plugins/sourceview/sourceview.c:634
+#: ../plugins/sourceview/sourceview.c:661
 #, c-format
 msgid ""
 "The file \"%s\" has been deleted on the disk.\n"
@@ -8647,18 +8646,18 @@ msgstr ""
 "Chcete jej uzavřít?"
 
 #. Could not open <filename>: <error message>
-#: ../plugins/sourceview/sourceview.c:667
+#: ../plugins/sourceview/sourceview.c:694
 #, c-format
 msgid "Could not open %s: %s"
 msgstr "Nelze otevřít %s: %s"
 
-#: ../plugins/sourceview/sourceview.c:718
+#: ../plugins/sourceview/sourceview.c:745
 #, c-format
 msgid "The file \"%s\" is read-only! Edit anyway?"
 msgstr "Soubor „%s“ je jen pro čtení! Přesto upravit?"
 
 #. Could not open <filename>: <error message>
-#: ../plugins/sourceview/sourceview.c:777
+#: ../plugins/sourceview/sourceview.c:804
 #, c-format
 msgid "Could not save %s: %s"
 msgstr "Nelze uložit %s: %s"
@@ -9796,7 +9795,7 @@ msgstr "Copyright © Naba Kumar"
 msgid "_File"
 msgstr "_Soubor"
 
-#: ../src/anjuta-actions.h:24
+#: ../src/anjuta-actions.h:24 ../src/anjuta-menu.ui.h:5
 msgid "_Quit"
 msgstr "U_končit"
 
@@ -9804,7 +9803,7 @@ msgstr "U_končit"
 msgid "Quit Anjuta IDE"
 msgstr "Ukončit IDE Anjuta"
 
-#: ../src/anjuta-actions.h:32
+#: ../src/anjuta-actions.h:32 ../src/anjuta-menu.ui.h:2
 msgid "_Preferences"
 msgstr "_Předvolby"
 
@@ -9848,7 +9847,7 @@ msgstr "_Lišta nástrojů"
 msgid "Show or hide the toolbar"
 msgstr "Zobrazit nebo skrýt nástrojovou lištu"
 
-#: ../src/anjuta-actions.h:61
+#: ../src/anjuta-actions.h:61 ../src/anjuta-menu.ui.h:3
 msgid "_Help"
 msgstr "_Nápověda"
 
@@ -9892,7 +9891,7 @@ msgstr "_Zeptat se na otázku"
 msgid "Submit a question for FAQs"
 msgstr "Poslat otázku pro FAQ"
 
-#: ../src/anjuta-actions.h:83
+#: ../src/anjuta-actions.h:83 ../src/anjuta-menu.ui.h:4
 msgid "_About"
 msgstr "O _aplikaci"
 
@@ -9908,60 +9907,64 @@ msgstr "O externích _zásuvných modulech"
 msgid "About third-party Anjuta plugins"
 msgstr "O zásuvných modulech Anjuty od třetích stran"
 
-#: ../src/anjuta-application.c:300
+#: ../src/anjuta-application.c:363
 msgid "Specify the size and location of the main window"
 msgstr "Určení velikosti a umístění hlavního okna"
 
 #. This is the format you can specify the size andposition
 #. * of the window on command line
-#: ../src/anjuta-application.c:303
+#: ../src/anjuta-application.c:366
 msgid "WIDTHxHEIGHT+XOFF+YOFF"
 msgstr "ŠÍŘKAxVÝŠKA+XPOS+YPOS"
 
-#: ../src/anjuta-application.c:308
+#: ../src/anjuta-application.c:371
 msgid "Do not show the splash screen"
 msgstr "Nezobrazovat úvodní obrazovku"
 
-#: ../src/anjuta-application.c:314
+#: ../src/anjuta-application.c:377
 msgid "Start a new instance and do not open the file in an existing instance"
 msgstr "Spustit novou instanci a neotevírat soubor v existující instanci"
 
-#: ../src/anjuta-application.c:320
+#: ../src/anjuta-application.c:383
 msgid "Do not open last session on startup"
 msgstr "Při startu neotevírat poslední sezení"
 
-#: ../src/anjuta-application.c:326
+#: ../src/anjuta-application.c:389
 msgid "Do not open last project and files on startup"
 msgstr "Při startu neotevírat poslední projekt a soubory"
 
-#: ../src/anjuta-application.c:332
+#: ../src/anjuta-application.c:395
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
 msgstr "Ukončit anjutu správně a uvolnit všechny zdroje (pro ladění)"
 
-#: ../src/anjuta-application.c:338
+#: ../src/anjuta-application.c:401
 msgid "Display program version"
 msgstr "Zobrazit verzi programu"
 
-#: ../src/anjuta-application.c:344
+#: ../src/anjuta-application.c:407
 msgid "Specify another profile"
 msgstr "Určit jiný profil"
 
-#: ../src/anjuta-application.c:345
+#: ../src/anjuta-application.c:408
 msgid "profile file"
 msgstr "soubor s profilem"
 
-#: ../src/anjuta-application.c:362
+#: ../src/anjuta-application.c:425
 msgid "- Integrated Development Environment"
 msgstr "– integrované vývojové prostředí"
 
-#: ../src/anjuta-application.c:639
+#: ../src/anjuta-application.c:755
 #, c-format
 msgid "Invalid profile %s: %s"
 msgstr "Neplatný profil %s: %s"
 
-#: ../src/anjuta-application.c:693
+#: ../src/anjuta-application.c:809
 msgid "Loaded Session…"
 msgstr "Načtené sezení…"
+
+#: ../src/anjuta-menu.ui.h:1
+msgid "_New Window"
+msgstr "_Nové okno"
 
 #: ../src/anjuta-window.c:683
 msgid "Edit"
@@ -9971,15 +9974,15 @@ msgstr "Úpravy"
 msgid "Help"
 msgstr "Nápověda"
 
-#: ../src/anjuta-window.c:992
+#: ../src/anjuta-window.c:993
 msgid "Installed plugins"
 msgstr "Instalované zásuvné moduly"
 
-#: ../src/anjuta-window.c:996
+#: ../src/anjuta-window.c:997
 msgid "Shortcuts"
 msgstr "Zkratky"
 
-#: ../src/anjuta-window.c:1068
+#: ../src/anjuta-window.c:1069
 #, c-format
 msgid "Value doesn't exist"
 msgstr "Hodnota neexistuje"
