@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta-master-po-gl-1952\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-10 10:22+0200\n"
-"PO-Revision-Date: 2013-06-10 10:23+0200\n"
+"POT-Creation-Date: 2013-08-02 12:13+0200\n"
+"PO-Revision-Date: 2013-08-02 12:14+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.7.1\n"
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:50
+#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
 msgstr "Anjuta"
 
@@ -249,11 +249,11 @@ msgstr "Tailandés"
 msgid "Unknown"
 msgstr "Descoñecido"
 
-#: ../libanjuta/anjuta-entry.c:258
+#: ../libanjuta/anjuta-entry.c:247
 msgid "Help text"
 msgstr "Texto de axuda"
 
-#: ../libanjuta/anjuta-entry.c:259
+#: ../libanjuta/anjuta-entry.c:248
 msgid "Text to show the user what to enter into the entry"
 msgstr "Texto que lle mostra ao usuario que ten que escribir nun campo"
 
@@ -328,7 +328,7 @@ msgstr "Non é posíbel executar a orde: \"%s\""
 msgid "execvp failed"
 msgstr "fallou o execvp"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2392
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2396
 msgid "Anjuta Shell"
 msgstr "Intérprete de ordes de Anjuta"
 
@@ -359,11 +359,11 @@ msgid "Load"
 msgstr "Cargar"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2008
+#: ../libanjuta/anjuta-plugin-manager.c:2012
 msgid "Available Plugins"
 msgstr "Engadidos dispoñíbeis"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:994
+#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:995
 msgid "Preferred plugins"
 msgstr "Engadidos preferidos"
 
@@ -386,7 +386,7 @@ msgid "Forget selected plugin"
 msgstr "Esquecer o engadido seleccionado"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1515 ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "Seleccione un engadido"
@@ -401,52 +401,52 @@ msgstr "Seleccione un engadido para activalo"
 msgid "No plugin is able to load other plugins in %s"
 msgstr "Non hai ningún engadido capaz de cargar outros engadidos en %s"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1516
+#: ../libanjuta/anjuta-plugin-manager.c:1518
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Seleccione un engadido para activalo</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2035
+#: ../libanjuta/anjuta-plugin-manager.c:2039
 msgid "Remember this selection"
 msgstr "Lembrar esta selección"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2373
+#: ../libanjuta/anjuta-plugin-manager.c:2377
 msgid "Profiles"
 msgstr "Perfís"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2374
+#: ../libanjuta/anjuta-plugin-manager.c:2378
 msgid "Current stack of profiles"
 msgstr "Pila actual de perfís"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2379
+#: ../libanjuta/anjuta-plugin-manager.c:2383
 msgid "Available plugins"
 msgstr "Engadidos dispoñíbeis"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2380
+#: ../libanjuta/anjuta-plugin-manager.c:2384
 msgid "Currently available plugins found in plugin paths"
 msgstr ""
 "Engadidos dispoñíbeis actualmente que se atoparon nas rutas de engadidos"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2386
+#: ../libanjuta/anjuta-plugin-manager.c:2390
 msgid "Activated plugins"
 msgstr "Engadidos activados"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2387
+#: ../libanjuta/anjuta-plugin-manager.c:2391
 msgid "Currently activated plugins"
 msgstr "Engadidos activados neste momento"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2393
+#: ../libanjuta/anjuta-plugin-manager.c:2397
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Intérprete de ordes de Anjuta para os que se fan os engadidos"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2401
+#: ../libanjuta/anjuta-plugin-manager.c:2405
 msgid "Anjuta Status"
 msgstr "Estado do Anjuta"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2402
+#: ../libanjuta/anjuta-plugin-manager.c:2406
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "O estado do Anjuta que se vai usar ao cargar e descargar engadidos"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2555
+#: ../libanjuta/anjuta-plugin-manager.c:2559
 msgid "Loading:"
 msgstr "Cargando:"
 
@@ -457,7 +457,7 @@ msgstr "Categoría"
 #. FIXME: Make the general page first
 #: ../libanjuta/anjuta-preferences-dialog.c:139
 #: ../libanjuta/anjuta-preferences-dialog.c:142
-#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:981
+#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:982
 #: ../src/preferences.ui.h:9
 msgid "General"
 msgstr "Xeral"
@@ -716,8 +716,8 @@ msgstr ""
 #: ../plugins/am-project/amp-group.c:665
 #: ../plugins/am-project/am-project.c:1679
 #: ../plugins/am-project/am-project.c:1772
-#: ../plugins/dir-project/dir-project.c:723
-#: ../plugins/dir-project/dir-project.c:856
+#: ../plugins/dir-project/dir-project.c:801
+#: ../plugins/dir-project/dir-project.c:934
 #: ../plugins/mk-project/mk-project.c:725
 #: ../plugins/mk-project/mk-project.c:802
 #: ../plugins/mk-project/mk-project.c:876
@@ -730,13 +730,13 @@ msgid "Root"
 msgstr "Raíz"
 
 #: ../plugins/am-project/am-project.c:98
-#: ../plugins/dir-project/dir-project.c:867
+#: ../plugins/dir-project/dir-project.c:945
 #: ../plugins/mk-project/mk-project.c:66
 msgid "Group"
 msgstr "Grupo"
 
 #: ../plugins/am-project/am-project.c:106
-#: ../plugins/dir-project/dir-project.c:871
+#: ../plugins/dir-project/dir-project.c:949
 #: ../plugins/mk-project/mk-project.c:71
 msgid "Source"
 msgstr "Orixe"
@@ -3495,15 +3495,15 @@ msgstr "Explorador da API"
 msgid "API"
 msgstr "API"
 
-#: ../plugins/dir-project/dir-project.c:124
-#: ../plugins/dir-project/dir-project.c:147
-#: ../plugins/dir-project/dir-project.c:170
+#: ../plugins/dir-project/dir-project.c:126
+#: ../plugins/dir-project/dir-project.c:149
+#: ../plugins/dir-project/dir-project.c:172
 #, c-format
 msgid "Missing name"
 msgstr "Falta o nome"
 
-#: ../plugins/dir-project/dir-project.c:992
-#: ../plugins/dir-project/dir-project.c:1002
+#: ../plugins/dir-project/dir-project.c:1070
+#: ../plugins/dir-project/dir-project.c:1080
 #: ../plugins/mk-project/mk-project.c:1024
 #: ../plugins/mk-project/mk-project.c:1034
 #, c-format
@@ -4004,7 +4004,7 @@ msgstr "Buscar usando expresións regulares"
 #: ../plugins/document-manager/plugin.c:295
 #: ../plugins/indentation-c-style/plugin.c:217
 #: ../plugins/indentation-python-style/plugin.c:200
-#: ../plugins/language-support-cpp-java/plugin.c:1153
+#: ../plugins/language-support-cpp-java/plugin.c:1192
 #: ../plugins/language-support-python/plugin.c:377 ../src/anjuta-actions.h:30
 msgid "_Edit"
 msgstr "_Editar"
@@ -5008,7 +5008,7 @@ msgstr "Obter as ramificacións remotas despois de crealas"
 msgid "Mailbox files to apply:"
 msgstr "Ficheiros de caixa de correo que aplicar:"
 
-#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:973
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:978
 msgid "Branches"
 msgstr "_Ramificacións"
 
@@ -5080,7 +5080,7 @@ msgstr "As ramificacións deben combinarse completamente"
 
 #: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:96
 #: ../plugins/git/git-pane.c:101 ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:858
+#: ../plugins/git/plugin.c:863
 msgid "Git"
 msgstr "Git"
 
@@ -5429,7 +5429,7 @@ msgstr "Non se seleccionou ningún ficheiro conflitivo."
 msgid "Please enter a commit."
 msgstr "Escriba unha remisión."
 
-#: ../plugins/git/git-revert-pane.c:163 ../plugins/git/plugin.c:529
+#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:529
 msgid "Revert"
 msgstr "Reverter"
 
@@ -5534,7 +5534,7 @@ msgstr "Resolver conflitos"
 msgid "Mark selected conflicted files as resolved"
 msgstr "Marcar os ficheiros conflitivos seleccionados como resoltos"
 
-#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:991
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:996
 msgid "Stash"
 msgstr "Reservar"
 
@@ -5775,45 +5775,45 @@ msgstr "Diferenciar"
 
 #: ../plugins/git/plugin.c:629
 msgid "Drop"
-msgstr ""
+msgstr "Eliminar"
 
 #: ../plugins/git/plugin.c:721 ../plugins/git/plugin.c:794
 msgid "Branch"
 msgstr "Ramificación"
 
-#: ../plugins/git/plugin.c:877
+#: ../plugins/git/plugin.c:882
 msgid "Status popup menu"
 msgstr "Menú emerxente de estado"
 
-#: ../plugins/git/plugin.c:882
+#: ../plugins/git/plugin.c:887
 msgid "Log popup menu"
 msgstr "Menú emerxente do rexistro"
 
-#: ../plugins/git/plugin.c:888
+#: ../plugins/git/plugin.c:893
 msgid "Branch popup menu"
 msgstr "Menú emerxente da rama"
 
-#: ../plugins/git/plugin.c:894
+#: ../plugins/git/plugin.c:899
 msgid "Remote popup menu"
 msgstr "Menú emerxente de remotos"
 
-#: ../plugins/git/plugin.c:899
+#: ../plugins/git/plugin.c:904
 msgid "Popup menu entries"
 msgstr "Entradas do menú emerxente"
 
-#: ../plugins/git/plugin.c:961
+#: ../plugins/git/plugin.c:966
 msgid "Status"
 msgstr "Estado"
 
-#: ../plugins/git/plugin.c:967
+#: ../plugins/git/plugin.c:972
 msgid "Log"
 msgstr "Rexistro"
 
-#: ../plugins/git/plugin.c:978
+#: ../plugins/git/plugin.c:983
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: ../plugins/git/plugin.c:985
+#: ../plugins/git/plugin.c:990
 msgid "Remotes"
 msgstr "Servidores remotos"
 
@@ -5963,8 +5963,8 @@ msgstr "Sangrado C"
 
 #: ../plugins/indentation-c-style/plugin.c:362
 #: ../plugins/indentation-c-style/plugin.c:371
-#: ../plugins/indentation-python-style/plugin.c:328
-#: ../plugins/indentation-python-style/plugin.c:337
+#: ../plugins/indentation-python-style/plugin.c:324
+#: ../plugins/indentation-python-style/plugin.c:333
 msgid "Indentation"
 msgstr "Sangrado"
 
@@ -6058,32 +6058,32 @@ msgstr "Cargar etiquetas API para a biblioteca estándar de C"
 msgid "Load API tags for C++ standard template library"
 msgstr "Cargar etiquetas API para a biblioteca de plantillas de C++"
 
-#: ../plugins/language-support-cpp-java/plugin.c:702
+#: ../plugins/language-support-cpp-java/plugin.c:784
 msgid "Code added for widget."
 msgstr "Código engadido para o widget."
 
-#: ../plugins/language-support-cpp-java/plugin.c:1159
+#: ../plugins/language-support-cpp-java/plugin.c:1198
 msgid "Comment/Uncomment"
 msgstr "Comentar/Descomentar"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1160
+#: ../plugins/language-support-cpp-java/plugin.c:1199
 msgid "Comment or uncomment current selection"
 msgstr "Comentar ou descomentar a selección actual"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1165
+#: ../plugins/language-support-cpp-java/plugin.c:1204
 msgid "Swap .h/.c"
 msgstr "Intercambiar .h/.c"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1166
+#: ../plugins/language-support-cpp-java/plugin.c:1205
 msgid "Swap C header and source files"
 msgstr "Intercambiar os ficheiros C da cabeceira e da fonte"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1206
+#: ../plugins/language-support-cpp-java/plugin.c:1245
 msgid "C++/Java Assistance"
 msgstr "Asistencia C++/Java"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1425
-#: ../plugins/language-support-cpp-java/plugin.c:1454
+#: ../plugins/language-support-cpp-java/plugin.c:1462
+#: ../plugins/language-support-cpp-java/plugin.c:1491
 msgid "API Tags (C/C++)"
 msgstr "Etiquetas do API (C/C++)"
 
@@ -6214,8 +6214,8 @@ msgstr "Non mostrar o aviso de novo"
 msgid "Python Assistance"
 msgstr "Asistente de Python"
 
-#: ../plugins/language-support-python/plugin.c:561
-#: ../plugins/language-support-python/plugin.c:574
+#: ../plugins/language-support-python/plugin.c:557
+#: ../plugins/language-support-python/plugin.c:570
 #: ../plugins/language-support-python/python-assist.c:807
 msgid "Python"
 msgstr "Python"
@@ -6230,7 +6230,7 @@ msgstr "Engadido de compatibilidade de Vala, engade completado de código."
 
 #: ../plugins/language-support-vala/plugin.vala:655
 #: ../plugins/language-support-vala/plugin.vala:663
-#: ../plugins/parser-cxx/plugin.c:269 ../plugins/parser-cxx/plugin.c:282
+#: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Autocompletar"
 
@@ -6979,11 +6979,11 @@ msgstr "Accións do xestor de proxectos"
 msgid "Project manager popup actions"
 msgstr "Accións en xanelas emerxentes do xestor de proxectos"
 
-#: ../plugins/project-manager/plugin.c:2389
+#: ../plugins/project-manager/plugin.c:2457
 msgid "Initializing Project…"
 msgstr "Inicializando o proxecto…"
 
-#: ../plugins/project-manager/plugin.c:2392
+#: ../plugins/project-manager/plugin.c:2460
 msgid "Project Loaded"
 msgstr "Proxecto cargado"
 
@@ -8400,12 +8400,12 @@ msgid "Languages"
 msgstr "Xestor de linguaxes"
 
 #. Insert the Add Snippet menu item
-#: ../plugins/snippets-manager/snippets-browser.c:811
+#: ../plugins/snippets-manager/snippets-browser.c:809
 msgid "Add Snippet …"
 msgstr "Engadir o des_tino"
 
 #. Insert the Add Snippets Group menu item
-#: ../plugins/snippets-manager/snippets-browser.c:821
+#: ../plugins/snippets-manager/snippets-browser.c:819
 msgid "Add Snippets Group …"
 msgstr "Engadir o _grupo"
 
@@ -8668,7 +8668,7 @@ msgstr "Configuración de visualización do editor"
 msgid "GtkSourceView Editor"
 msgstr "Editor GtkSourceView"
 
-#: ../plugins/sourceview/sourceview.c:602
+#: ../plugins/sourceview/sourceview.c:629
 #, c-format
 msgid ""
 "The file \"%s\" on the disk is more recent than the current buffer.\n"
@@ -8677,7 +8677,7 @@ msgstr ""
 "O ficheiro «%s» no disco é máis recente que o que está no búfer actual.\n"
 "Quere recargalo?"
 
-#: ../plugins/sourceview/sourceview.c:634
+#: ../plugins/sourceview/sourceview.c:661
 #, c-format
 msgid ""
 "The file \"%s\" has been deleted on the disk.\n"
@@ -8687,18 +8687,18 @@ msgstr ""
 "Quere pechalo?"
 
 #. Could not open <filename>: <error message>
-#: ../plugins/sourceview/sourceview.c:667
+#: ../plugins/sourceview/sourceview.c:694
 #, c-format
 msgid "Could not open %s: %s"
 msgstr "Non foi posíbel abrir %s: %s"
 
-#: ../plugins/sourceview/sourceview.c:718
+#: ../plugins/sourceview/sourceview.c:745
 #, c-format
 msgid "The file \"%s\" is read-only! Edit anyway?"
 msgstr "O ficheiro «%s» é de só lectura! Quere editalo de todas as formas?"
 
 #. Could not open <filename>: <error message>
-#: ../plugins/sourceview/sourceview.c:777
+#: ../plugins/sourceview/sourceview.c:804
 #, c-format
 msgid "Could not save %s: %s"
 msgstr "Non foi posíbel gardar %s: %s"
@@ -9844,7 +9844,7 @@ msgstr "Dereitos de autor (c) Naba Kumar"
 msgid "_File"
 msgstr "_Ficheiro"
 
-#: ../src/anjuta-actions.h:24
+#: ../src/anjuta-actions.h:24 ../src/anjuta-menu.ui.h:5
 msgid "_Quit"
 msgstr "_Saír"
 
@@ -9852,7 +9852,7 @@ msgstr "_Saír"
 msgid "Quit Anjuta IDE"
 msgstr "Saír do IDE do Anjuta"
 
-#: ../src/anjuta-actions.h:32
+#: ../src/anjuta-actions.h:32 ../src/anjuta-menu.ui.h:2
 msgid "_Preferences"
 msgstr "_Preferencias"
 
@@ -9897,7 +9897,7 @@ msgstr "Barra de _ferramentas"
 msgid "Show or hide the toolbar"
 msgstr "Mostrar ou ocultar a barra de ferramentas"
 
-#: ../src/anjuta-actions.h:61
+#: ../src/anjuta-actions.h:61 ../src/anjuta-menu.ui.h:3
 msgid "_Help"
 msgstr "_Axuda"
 
@@ -9942,7 +9942,7 @@ msgstr "Facer unha p_regunta"
 msgid "Submit a question for FAQs"
 msgstr "Enviar unha pregunta para as FAQ"
 
-#: ../src/anjuta-actions.h:83
+#: ../src/anjuta-actions.h:83 ../src/anjuta-menu.ui.h:4
 msgid "_About"
 msgstr "_Sobre"
 
@@ -9958,63 +9958,67 @@ msgstr "Sobre os en_gadidos externos"
 msgid "About third-party Anjuta plugins"
 msgstr "Sobre os engadidos de terceiros para o Anjuta"
 
-#: ../src/anjuta-application.c:300
+#: ../src/anjuta-application.c:363
 msgid "Specify the size and location of the main window"
 msgstr "Especificar o tamaño e a localización da xanela principal"
 
 #. This is the format you can specify the size andposition
 #. * of the window on command line
-#: ../src/anjuta-application.c:303
+#: ../src/anjuta-application.c:366
 msgid "WIDTHxHEIGHT+XOFF+YOFF"
 msgstr "LARGURAxALTURA+X+Y"
 
-#: ../src/anjuta-application.c:308
+#: ../src/anjuta-application.c:371
 msgid "Do not show the splash screen"
 msgstr "Non mostrar a pantalla de inicio"
 
-#: ../src/anjuta-application.c:314
+#: ../src/anjuta-application.c:377
 msgid "Start a new instance and do not open the file in an existing instance"
 msgstr ""
 "Iniciar unha instancia nova en vez de abrir o ficheiro nunha que xa existe"
 
-#: ../src/anjuta-application.c:320
+#: ../src/anjuta-application.c:383
 msgid "Do not open last session on startup"
 msgstr "Non abrir a última sesión no inicio"
 
-#: ../src/anjuta-application.c:326
+#: ../src/anjuta-application.c:389
 msgid "Do not open last project and files on startup"
 msgstr "Non abrir os últimos ficheiros e proxecto no inicio"
 
-#: ../src/anjuta-application.c:332
+#: ../src/anjuta-application.c:395
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
 msgstr ""
 "Pechar o Anjuta de forma adecuada liberando todos os recursos (para "
 "depuración)"
 
-#: ../src/anjuta-application.c:338
+#: ../src/anjuta-application.c:401
 msgid "Display program version"
 msgstr "Mostrar a versión do programa"
 
-#: ../src/anjuta-application.c:344
+#: ../src/anjuta-application.c:407
 msgid "Specify another profile"
 msgstr "Especifique outro perfíl"
 
-#: ../src/anjuta-application.c:345
+#: ../src/anjuta-application.c:408
 msgid "profile file"
 msgstr "ficheiro de perfíl"
 
-#: ../src/anjuta-application.c:362
+#: ../src/anjuta-application.c:425
 msgid "- Integrated Development Environment"
 msgstr "- Ambiente de desenvolvemento integrado"
 
-#: ../src/anjuta-application.c:639
+#: ../src/anjuta-application.c:764
 #, c-format
 msgid "Invalid profile %s: %s"
 msgstr "Perfil non válido %s: %s"
 
-#: ../src/anjuta-application.c:693
+#: ../src/anjuta-application.c:818
 msgid "Loaded Session…"
 msgstr "Sesión cargada…"
+
+#: ../src/anjuta-menu.ui.h:1
+msgid "_New Window"
+msgstr "_Nova xanela"
 
 #: ../src/anjuta-window.c:683
 msgid "Edit"
@@ -10024,15 +10028,15 @@ msgstr "Editar"
 msgid "Help"
 msgstr "Axuda"
 
-#: ../src/anjuta-window.c:992
+#: ../src/anjuta-window.c:993
 msgid "Installed plugins"
 msgstr "Engadidos instalados"
 
-#: ../src/anjuta-window.c:996
+#: ../src/anjuta-window.c:997
 msgid "Shortcuts"
 msgstr "Atallos"
 
-#: ../src/anjuta-window.c:1068
+#: ../src/anjuta-window.c:1069
 #, c-format
 msgid "Value doesn't exist"
 msgstr "O valor non existe"
