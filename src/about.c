@@ -173,7 +173,6 @@ GtkWidget *
 about_box_new (GtkWindow *parent)
 {
 	GtkWidget *dialog;
-	GdkPixbuf *pix;
 	gchar* license = NULL;
 	GError* error = NULL;
 
@@ -192,9 +191,6 @@ about_box_new (GtkWindow *parent)
 		g_error_free (error);
 	}
 
-	pix = gdk_pixbuf_new_from_file (PACKAGE_PIXMAPS_DIR"/"ANJUTA_PIXMAP_LOGO,
-									NULL);
-
 	dialog = gtk_about_dialog_new();
 	gtk_window_set_transient_for(GTK_WINDOW(dialog), parent);
 	gtk_window_set_modal(GTK_WINDOW(dialog), TRUE);
@@ -208,7 +204,7 @@ about_box_new (GtkWindow *parent)
 	gtk_about_dialog_set_license(GTK_ABOUT_DIALOG(dialog),
 		license);
 	gtk_about_dialog_set_website(GTK_ABOUT_DIALOG(dialog), "http://www.anjuta.org");
-	gtk_about_dialog_set_logo(GTK_ABOUT_DIALOG(dialog), pix);
+	gtk_about_dialog_set_logo_icon_name(GTK_ABOUT_DIALOG(dialog), "anjuta");
 
 	gtk_about_dialog_set_authors(GTK_ABOUT_DIALOG(dialog), authors);
 	gtk_about_dialog_set_documenters(GTK_ABOUT_DIALOG(dialog), documenters);
@@ -217,7 +213,6 @@ about_box_new (GtkWindow *parent)
 	gtk_about_dialog_set_artists(GTK_ABOUT_DIALOG(dialog), ???);*/
 	/* Free authors, documenters, translators */
 	about_free_credit();
-	g_object_unref (pix);
 	g_free (license);
 	return dialog;
 }
