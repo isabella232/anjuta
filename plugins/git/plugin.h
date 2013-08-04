@@ -115,6 +115,4 @@ struct _GitClass
 	AnjutaPluginClass parent_class;
 };
 
-void git_plugin_status_changed_emit(AnjutaCommand *command, guint return_code, Git *plugin);
-
 #endif
