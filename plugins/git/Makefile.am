@@ -235,7 +235,11 @@ libanjuta_git_la_SOURCES = \
 	git-command.c \
 	git-command.h \
 	git-thread-pool.c \
-	git_thread-pool.h
+	git_thread-pool.h \
+	git-index-refreshable.c \
+	git-index-refreshable.h \
+	git-refresh-index-command.c \
+	git-refresh-index-command.h
 	
 
 libanjuta_git_la_LDFLAGS = $(ANJUTA_PLUGIN_LDFLAGS)

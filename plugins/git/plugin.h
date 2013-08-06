@@ -91,6 +91,7 @@ struct _Git
 	/* Current git repository */
 	GgitRepository *repository;
 	GitThreadPool *thread_pool;
+	IAnjutaRefreshable *index_refreshable;
 
 	/* List commands for various panes. 
 	 * Keep them in the plugin so that the commands have the most direct

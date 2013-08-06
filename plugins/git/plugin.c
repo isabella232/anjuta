@@ -56,6 +56,7 @@
 #include "git-cherry-pick-pane.h"
 #include "git-patch-series-pane.h"
 #include "git-apply-mailbox-pane.h"
+#include "git-index-refreshable.h"
 
 #define SETTINGS_SCHEMA "org.gnome.anjuta.plugins.git"
 #define UI_FILE PACKAGE_DATA_DIR"/ui/anjuta-git.xml"
@@ -683,7 +684,7 @@ on_project_root_added (AnjutaPlugin *plugin, const gchar *name,
 	              "working-directory", git_plugin->project_root_directory,
 	              NULL);
 
-	ianjuta_refreshable_start_monitor (IANJUTA_REFRESHABLE (git_plugin->status_pane), NULL);
+	ianjuta_refreshable_start_monitor (IANJUTA_REFRESHABLE (git_plugin->index_refreshable), NULL);
 	anjuta_dock_pane_refresh (git_plugin->status_pane);
 
 	anjuta_command_start_automatic_monitor (ANJUTA_COMMAND (git_plugin->local_branch_list_command));
@@ -723,7 +724,7 @@ on_project_root_removed (AnjutaPlugin *plugin, const gchar *name,
 		git_plugin->repository = NULL;
 	}
 
-	ianjuta_refreshable_stop_monitor (IANJUTA_REFRESHABLE (git_plugin->status_pane), NULL);
+	ianjuta_refreshable_stop_monitor (git_plugin->index_refreshable, NULL);
 	
 	anjuta_command_stop_automatic_monitor (ANJUTA_COMMAND (git_plugin->local_branch_list_command));
 	anjuta_command_stop_automatic_monitor (ANJUTA_COMMAND (git_plugin->remote_list_command));
@@ -817,6 +818,13 @@ on_branch_list_command_data_arrived (AnjutaCommand *command, Git *plugin)
 
 		current_branch = g_list_next (current_branch);
 	}
+}
+
+static void
+on_index_refreshable_refreshed (IAnjutaRefreshable *obj, Git *plugin)
+{
+	anjuta_dock_pane_refresh (plugin->status_pane);
+	g_signal_emit_by_name (plugin, "status-changed", NULL);
 }
 
 static void
@@ -954,6 +962,13 @@ git_activate_plugin (AnjutaPlugin *plugin)
 	                  G_CALLBACK (on_branch_list_command_data_arrived),
 	                  plugin);
 
+	/* Index refreshable object that watches for changes to the git index and
+	 * keeps it up to date */
+	git_plugin->index_refreshable = git_index_refreshable_new (git_plugin);
+
+	g_signal_connect (G_OBJECT (git_plugin->index_refreshable), "refreshed",
+	                  G_CALLBACK (on_index_refreshable_refreshed),
+	                  git_plugin);
 
 	/* Remote list command */
 	git_plugin->remote_list_command = git_remote_list_command_new (NULL);
@@ -1053,6 +1068,7 @@ git_deactivate_plugin (AnjutaPlugin *plugin)
 
 	g_clear_object (&git_plugin->thread_pool);
 	g_clear_object (&git_plugin->repository);
+	g_clear_object (&git_plugin->index_refreshable);
 
 	ui = anjuta_shell_get_ui (plugin->shell, NULL);
 	anjuta_ui_remove_action_group (ui, git_plugin->status_menu_group);

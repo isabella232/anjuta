@@ -6870,7 +6870,7 @@ interface IAnjutaRefreshable
 	 * would cause the data contained by this object to become outdated. The 
 	 * object will refresh itself once these changes are detected.
 	 */
-	void start_monitor();
+	void start_monitor ();
 
 	/**
 	 * ianjuta_refreshable_stop_monitor:
@@ -6880,5 +6880,13 @@ interface IAnjutaRefreshable
 	 * Stop monitoring for changes. This method cleans up any resources created
 	 * by ianjuta_refreshable_start_monitor.
 	 */
-	void stop_monitor();
+	void stop_monitor ();
+
+	/**
+	 * IAnjutaRefreshable::refreshed
+	 * @obj: self
+	 * 
+	 * Emitted when a refreshable refreshes its data
+	 */
+	void ::refreshed ();
 }
