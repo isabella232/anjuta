@@ -25,18 +25,26 @@ struct _GitIndexRefreshablePrivate
 	GFileMonitor *index_monitor;
 	GFileMonitor *head_monitor;
 	GitCommand *refresh_command;
+	gboolean index_refreshed;
 };
+
+static void
+git_index_refreshable_notify_refreshed (GitIndexRefreshable *self)
+{
+	g_signal_emit_by_name (self, "refreshed", NULL);
+}
 
 static void
 on_refresh_command_finished (AnjutaTask *task, GitIndexRefreshable *self)
 {
 	g_clear_object (&self->priv->refresh_command);
-	g_signal_emit_by_name (self, "refreshed", NULL);
+	git_index_refreshable_notify_refreshed (self);
+	self->priv->index_refreshed = TRUE;
 }
 
 static void
-on_file_monitor_changed (GFileMonitor *monitor, GFile *file, GFile *other_file,
-                         GFileMonitorEvent event, GitIndexRefreshable *self)
+on_index_monitor_changed (GFileMonitor *monitor, GFile *file, GFile *other_file,
+                          GFileMonitorEvent event, GitIndexRefreshable *self)
 {
 	/* Handle created and modified events just to cover all possible cases. 
 	 * Sometimes git does some odd things... */
@@ -54,6 +62,22 @@ on_file_monitor_changed (GFileMonitor *monitor, GFile *file, GFile *other_file,
 			git_thread_pool_push (self->priv->plugin->thread_pool, 
 			                      self->priv->refresh_command);
 		}
+	}
+}
+
+static void
+on_head_monitor_changed (GFileMonitor *monitor, GFile *file, GFile *other_file,
+                         GFileMonitorEvent event, GitIndexRefreshable *self)
+{
+	if (event == G_FILE_MONITOR_EVENT_CHANGED ||
+	    event == G_FILE_MONITOR_EVENT_CREATED)
+	{
+		/* Don't refresh the status again if we've already refreshed due to inedex
+		 * changes. */
+		if (!self->priv->index_refreshed)
+			git_index_refreshable_notify_refreshed (self);
+
+		self->priv->index_refreshed = FALSE;
 	}
 }
 
@@ -96,11 +120,11 @@ git_index_refreshable_start_monitor (IAnjutaRefreshable *obj, GError **err)
 		if (self->priv->head_monitor)
 		{
 			g_signal_connect (G_OBJECT (self->priv->index_monitor), "changed",
-			                  G_CALLBACK (on_file_monitor_changed),
+			                  G_CALLBACK (on_index_monitor_changed),
 			                  obj);
 
 			g_signal_connect (G_OBJECT (self->priv->head_monitor), "changed",
-			                  G_CALLBACK (on_file_monitor_changed),
+			                  G_CALLBACK (on_head_monitor_changed),
 			                  obj);
 
 		}
