@@ -1394,10 +1394,33 @@ static gint ieditor_get_column(IAnjutaEditor *editor, GError **e)
 	Sourceview* sv = ANJUTA_SOURCEVIEW(editor);
 	GtkTextBuffer* buffer = GTK_TEXT_BUFFER(sv->priv->document);
 	GtkTextIter iter;
+	GtkTextIter end_iter;
+	guint column;
+	guint end_column;
+	guint tab_size;
 
-	gtk_text_buffer_get_iter_at_mark(buffer, &iter,
+	gtk_text_buffer_get_iter_at_mark(buffer, &end_iter,
 									 gtk_text_buffer_get_insert(buffer));
-	return gtk_text_iter_get_line_offset(&iter);
+	gtk_text_buffer_get_iter_at_line(buffer, &iter,
+									 gtk_text_iter_get_line(&end_iter));
+
+	column = 0;
+	end_column = gtk_text_iter_get_line_offset(&end_iter);
+
+	tab_size = ieditor_get_tab_size(editor, e);
+
+	for ( ;
+	     gtk_text_iter_get_line_offset(&iter) != end_column;
+	     gtk_text_iter_forward_char(&iter), column++)
+	{
+		/* Tab is U+0009 */
+		if (gtk_text_iter_get_char(&iter) == 9)
+		{
+			column += tab_size - (column % tab_size) - 1;
+		}
+	}
+
+	return column;
 }
 
 /* Return TRUE if editor is in overwrite mode */
