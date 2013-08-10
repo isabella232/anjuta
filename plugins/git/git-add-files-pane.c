@@ -141,7 +141,7 @@ git_add_files_pane_new (Git *plugin)
 
 	self = g_object_new (GIT_TYPE_ADD_FILES_PANE, "plugin", plugin, NULL);
 	file_list = ANJUTA_FILE_LIST (gtk_builder_get_object (self->priv->builder,
-	                                                      "file_list"));
+	                                                      "add_file_list"));
 
 	anjuta_file_list_set_relative_path (file_list, 
 	                                    plugin->project_root_directory);
