@@ -196,36 +196,35 @@ anjuta_command_bar_add_action_group (AnjutaCommandBar *self,
 		{
 			GtkAction *action;
 			GtkWidget *button;
-			GtkWidget *button_box;
 			GtkWidget *button_label;
 			
-
 			action = gtk_action_new (entries[i].action_name, _(entries[i].label), 
 			                         _(entries[i].tooltip), entries[i].stock_icon);
-			button = gtk_button_new();
-			button_box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 5);
-			gtk_container_add (GTK_CONTAINER (button), button_box);
+			button = gtk_button_new_with_label (_(entries[i].label));
+			
 
 			gtk_action_group_add_action (action_group, action);
 			
 			gtk_button_set_relief (GTK_BUTTON (button), GTK_RELIEF_NONE);
+			button_label = gtk_bin_get_child (GTK_BIN (button));
+			gtk_label_set_width_chars (GTK_LABEL (button_label), self->priv->max_text_width);
+			gtk_label_set_line_wrap (GTK_LABEL (button_label), TRUE);
+
+			/* Left-align button contents */
+			gtk_misc_set_alignment (GTK_MISC (button_label), 0.0, 0.5);
+			g_object_set (G_OBJECT (button), "xalign", 0.0, NULL);
 
 			if (entries[i].stock_icon)
 			{
-				GtkWidget* image;
-				image = gtk_action_create_icon (action, 
-				                                GTK_ICON_SIZE_BUTTON);
-				gtk_box_pack_start (GTK_BOX (button_box), image, FALSE, FALSE, 5);
+				GtkWidget *button_image;
+
+				button_image = gtk_action_create_icon (action, 
+				                                       GTK_ICON_SIZE_BUTTON);
+				gtk_button_set_image (GTK_BUTTON (button), button_image);
 			}
 
 			gtk_activatable_set_related_action (GTK_ACTIVATABLE (button), 
 			                                    action);
-			button_label = gtk_label_new (gettext(entries[i].label));
-			gtk_label_set_width_chars (GTK_LABEL (button_label), self->priv->max_text_width);
-			gtk_label_set_line_wrap (GTK_LABEL (button_label), TRUE);
-			gtk_misc_set_alignment (GTK_MISC (button_label), 0, 0.5);
-			gtk_box_pack_start (GTK_BOX (button_box), button_label,
-			                    FALSE, FALSE, 5);
 			gtk_widget_show_all (button);
 			
 
@@ -233,8 +232,6 @@ anjuta_command_bar_add_action_group (AnjutaCommandBar *self,
 			                  entries[i].callback,
 			                  user_data);
 
-			/* Left-align button contents */
-			g_object_set (G_OBJECT (button), "xalign", 0.0, NULL);
 
 			gtk_box_pack_start (GTK_BOX (current_vbox), button, FALSE, FALSE, 
 			                    2);
