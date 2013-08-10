@@ -80,6 +80,7 @@ path_cell_data_func (GtkTreeViewColumn *column, GtkCellRenderer *renderer,
 {
 	gchar *path;
 	GtkStyleContext *context;
+	GdkRGBA fg_color;
 
 	gtk_tree_model_get (model, iter, COL_PATH, &path, -1);
 	context = gtk_widget_get_style_context (GTK_WIDGET (list_view));
@@ -87,9 +88,7 @@ path_cell_data_func (GtkTreeViewColumn *column, GtkCellRenderer *renderer,
 	/* NULL path means this is the placeholder */
 	if (path)
 	{
-		GdkRGBA fg_color;
-
-		gtk_style_context_get_color (context, GTK_STATE_NORMAL, &fg_color);
+		gtk_style_context_get_color (context, GTK_STATE_FLAG_NORMAL, &fg_color);
 		g_object_set (G_OBJECT (renderer), 
 		              "foreground-rgba", &fg_color,
 		              "style", PANGO_STYLE_NORMAL,
@@ -98,9 +97,7 @@ path_cell_data_func (GtkTreeViewColumn *column, GtkCellRenderer *renderer,
 	}
 	else
 	{
-		GdkRGBA fg_color;
-
-		gtk_style_context_get_color (context, GTK_STATE_INSENSITIVE, &fg_color);
+		gtk_style_context_get_color (context, GTK_STATE_FLAG_INSENSITIVE, &fg_color);
 		g_object_set (G_OBJECT (renderer), 
 		              "foreground-rgba", &fg_color,
 		              "style", PANGO_STYLE_ITALIC,
