@@ -71,8 +71,8 @@ HELP_FILES = \
 	run-run.page \
 	widget-index.page
 	
-HELP_FIGURES = figures/anjuta_logo.png \
-	      figures/anjuta-in-action.png
+HELP_MEDIA = figures/anjuta_logo.png \
+	     figures/anjuta-in-action.png
 
 HELP_LINGUAS = ca cs da de el es eu fr gl hu ja oc pt_BR ro sl sv th uk zh_CN
 
