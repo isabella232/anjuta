@@ -293,6 +293,13 @@ dnl -------------------------------------------------------------
 PKG_CHECK_MODULES(SOURCEVIEW,
 		[gtksourceview-3.0 >= $GTKSOURCEVIEW_REQUIRED])
 
+
+dnl Check for libsqlite3 used in symbol-db benchmarks
+dnl -------------------------------------------------------------
+PKG_CHECK_MODULES(SQLITE, sqlite3, sqlite3_found=yes, sqlite3_found=no)
+AM_CONDITIONAL(HAVE_SQLITE, [test x$sqlite3_found = xyes])
+
+
 dnl Check for vala
 dnl -------------------------------------------------------------
 
