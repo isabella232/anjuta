@@ -678,10 +678,7 @@ static GdkPixbuf*
 anjuta_docman_get_pixbuf_for_file (GFile* file)
 {
 	/* add a nice mime-type icon if we can */
-	const gchar** icon_names;
-	GtkIconInfo* icon_info;
-	GIcon* icon;
-	GdkPixbuf* pixbuf;
+	GdkPixbuf* pixbuf = NULL;
 	GFileInfo* file_info;
 	GError* err = NULL;
 
@@ -697,22 +694,28 @@ anjuta_docman_get_pixbuf_for_file (GFile* file)
 
 	if (file_info != NULL)
 	{
+		GIcon* icon;
+		const gchar** icon_names;
+		gint width, height;
+		gint size = 0;
+		GtkIconInfo* icon_info;
+
 		icon = g_file_info_get_icon (file_info);
 		g_object_get (icon, "names", &icon_names, NULL);
+		if (gtk_icon_size_lookup (GTK_ICON_SIZE_MENU, &width, &height)) size = MIN(width, height);
 		icon_info = gtk_icon_theme_choose_icon (gtk_icon_theme_get_default(),
 												icon_names,
-												GTK_ICON_SIZE_MENU,
+												size,
 												GTK_ICON_LOOKUP_GENERIC_FALLBACK);
-		pixbuf = gtk_icon_info_load_icon (icon_info, NULL);
-		gtk_icon_info_free(icon_info);
-		g_object_unref (icon);
-
-		if (pixbuf != NULL)
+		if (icon_info != NULL)
 		{
-			return pixbuf;
+			pixbuf = gtk_icon_info_load_icon (icon_info, NULL);
+			gtk_icon_info_free(icon_info);
 		}
+		g_object_unref (file_info);
 	}
-	return NULL;
+
+	return pixbuf;
 }
 
 static void
