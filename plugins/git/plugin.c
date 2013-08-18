@@ -833,7 +833,8 @@ git_activate_plugin (AnjutaPlugin *plugin)
 	anjuta_dock_set_command_bar (ANJUTA_DOCK (git_plugin->dock), 
 	                             ANJUTA_COMMAND_BAR (git_plugin->command_bar));
 
-	gtk_widget_show_all (git_plugin->box);
+	gtk_widget_show (git_plugin->box);
+	gtk_widget_show_all (scrolled_window);
 	anjuta_shell_add_widget_custom (plugin->shell, git_plugin->box, "GitDock", 
 	                     			_("Git"), "git-plugin", 
 	                                GTK_WIDGET (gtk_builder_get_object (builder, "grip_box")), 
