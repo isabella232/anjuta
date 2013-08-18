@@ -68,6 +68,8 @@ void git_pane_report_errors (AnjutaCommand *command, guint return_code,
                              Git *plugin);
 void git_pane_send_raw_output_to_editor (AnjutaCommand *command, 
                                          IAnjutaEditor *editor);
+void git_pane_send_raw_output_to_string (AnjutaCommand *command, 
+                                         GString *string);
 
 G_END_DECLS
 

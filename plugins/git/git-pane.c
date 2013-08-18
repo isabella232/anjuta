@@ -312,3 +312,19 @@ git_pane_send_raw_output_to_editor (AnjutaCommand *command,
 	}
 }
 
+void
+git_pane_send_raw_output_to_string (AnjutaCommand *command, GString *string)
+{
+	GQueue *output;
+	gchar *line;
+
+	output = git_raw_output_command_get_output (GIT_RAW_OUTPUT_COMMAND (command));
+
+	while (g_queue_peek_head (output))
+	{
+		line = g_queue_pop_head (output);
+		g_string_append (string, line);
+		g_free (line);
+	}
+}
+

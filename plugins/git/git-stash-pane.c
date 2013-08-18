@@ -23,7 +23,8 @@ enum
 {
 	COL_NUMBER,
 	COL_MESSAGE,
-	COL_ID
+	COL_ID,
+	COL_DIFF
 };
 
 struct _GitStashPanePriv
@@ -37,15 +38,15 @@ static void
 on_stash_list_command_started (AnjutaCommand *command, GitStashPane *self)
 {
 	GtkTreeView *stash_view;
-	GtkListStore *stash_list_model;
+	GtkTreeStore *stash_model;
 
 	stash_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
 	                                                    "stash_view"));
-	stash_list_model = GTK_LIST_STORE (gtk_builder_get_object (self->priv->builder,
-	                                                           "stash_list_model"));
+	stash_model = GTK_TREE_STORE (gtk_builder_get_object (self->priv->builder,
+	                                                      "stash_model"));
 
 	gtk_tree_view_set_model (stash_view, NULL);
-	gtk_list_store_clear (stash_list_model);
+	gtk_tree_store_clear (stash_model);
 }
 
 static void
@@ -53,19 +54,46 @@ on_stash_list_command_finished (AnjutaCommand *command, guint return_code,
                                 GitStashPane *self)
 {
 	GtkTreeView *stash_view;
-	GtkTreeModel *stash_list_model;
+	GtkTreeModel *stash_model;
 
 	stash_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
 	                                                    "stash_view"));
-	stash_list_model = GTK_TREE_MODEL (gtk_builder_get_object (self->priv->builder,
-	                                                           "stash_list_model"));
+	stash_model = GTK_TREE_MODEL (gtk_builder_get_object (self->priv->builder,
+	                                                      "stash_model"));
 
-	gtk_tree_view_set_model (stash_view, stash_list_model);
+	gtk_tree_view_set_model (stash_view, stash_model);
+}
+
+static void
+on_stash_diff_command_finished (AnjutaCommand *command, guint return_code,
+                                GtkTreeStore *stash_model)
+{
+	GtkTreePath *parent_path;
+	GString *string;
+	GtkTreeIter parent_iter;
+	GtkTreeIter iter;
+
+	if (return_code == 0)
+	{
+		string = g_string_new ("");
+		git_pane_send_raw_output_to_string (command, string);
+
+		parent_path = g_object_get_data (G_OBJECT (command), "parent-path");
+		gtk_tree_model_get_iter (GTK_TREE_MODEL (stash_model), &parent_iter,
+		                         parent_path);
+
+		gtk_tree_store_append (stash_model, &iter, &parent_iter);
+		gtk_tree_store_set (stash_model, &iter,
+		                    COL_DIFF, string->str,
+		                    -1);
+
+		g_string_free (string, TRUE);
+	}
 }
 
 static void
 on_stash_list_command_data_arrived (AnjutaCommand *command, 
-                                    GtkListStore *stash_list_model)
+                                    GtkTreeStore *stash_model)
 {
 	GQueue *output;
 	GtkTreeIter iter;
@@ -73,23 +101,46 @@ on_stash_list_command_data_arrived (AnjutaCommand *command,
 	guint number;
 	gchar *message;
 	gchar *id;
+	gchar *working_directory;
+	GitStashShowCommand *show_command;
 	
 	output = git_stash_list_command_get_output (GIT_STASH_LIST_COMMAND (command));
 
 	while (g_queue_peek_head (output))
 	{
-		gtk_list_store_append (stash_list_model, &iter);
-
 		stash = g_queue_pop_head (output);
 		number = git_stash_get_number (stash);
 		message = git_stash_get_message (stash);
 		id = git_stash_get_id (stash);
 
-		gtk_list_store_set (stash_list_model, &iter, 
+
+		gtk_tree_store_append (stash_model, &iter, NULL);
+		gtk_tree_store_set (stash_model, &iter, 
 		                    COL_NUMBER, number,
 		                    COL_MESSAGE, message,
 		                    COL_ID, id,
 		                    -1);
+
+		g_object_get (G_OBJECT (command), "working-directory", 
+		              &working_directory, NULL);
+		show_command = git_stash_show_command_new (working_directory, id);
+
+		g_free (working_directory);
+
+		g_object_set_data_full (G_OBJECT (show_command), "parent-path", 
+		               			gtk_tree_model_get_path (GTK_TREE_MODEL (stash_model),
+		                                        		 &iter),
+		               			(GDestroyNotify) gtk_tree_path_free);
+
+		g_signal_connect (G_OBJECT (show_command), "command-finished",
+		                  G_CALLBACK (on_stash_diff_command_finished),
+		                  stash_model);
+
+		g_signal_connect (G_OBJECT (show_command), "command-finished",
+		                  G_CALLBACK (g_object_unref),
+		                  NULL);
+
+		anjuta_command_start (ANJUTA_COMMAND (show_command));
 
 		g_object_unref (stash);
 		g_free (message);
@@ -101,30 +152,80 @@ static gboolean
 on_stash_view_button_press_event (GtkWidget *stash_view, GdkEventButton *event,
                                   GitStashPane *self)
 {
-	GtkTreeSelection *selection;
+	gboolean path_valid;
+	GtkTreePath *path;
+	gboolean ret = FALSE;
+
+	path_valid = gtk_tree_view_get_path_at_pos (GTK_TREE_VIEW (stash_view), 
+	                                            event->x, event->y, &path, NULL, 
+	                                            NULL, NULL);
 
 	if (event->type == GDK_BUTTON_PRESS && event->button == 3)
 	{
-		selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (stash_view));
-
-		if (gtk_tree_selection_count_selected_rows (selection) > 0)
+		if (path_valid && gtk_tree_path_get_depth (path) == 1)
 		{
 			git_pane_popup_menu (GIT_PANE (self), "GitStashPopup", event->button,
 			                     event->time);
 		}
 	}
 
-	return FALSE;
+	/* Don't forward button presses to diff renderers */
+	if (path_valid)
+	{
+		ret = gtk_tree_path_get_depth (path) == 2;
+		gtk_tree_path_free (path);
+	}
+
+	return ret;
+}
+
+static void
+stash_message_renderer_data_func (GtkTreeViewColumn *tree_column,
+                                  GtkCellRenderer *renderer,
+                                  GtkTreeModel *model,
+                                  GtkTreeIter *iter,
+                                  gpointer user_data)
+{
+	gboolean visible;
+	gchar *message;
+
+	/* Don't show this column on diffs */
+	visible = gtk_tree_store_iter_depth (GTK_TREE_STORE (model), iter) == 0;
+	gtk_cell_renderer_set_visible (renderer, visible);
+
+	if (visible)
+	{
+		gtk_tree_model_get (model, iter, COL_MESSAGE, &message, -1);
+		g_object_set (renderer, "text", message, NULL);
+
+		g_free (message);
+	}
+	else
+		g_object_set (renderer, "text", "", NULL);
+}
+
+static gboolean
+on_stash_view_row_selected (GtkTreeSelection *selection,
+                            GtkTreeModel *model,
+                            GtkTreePath *path,
+                            gboolean path_currently_selected,
+                            gpointer user_data)
+{
+	return gtk_tree_path_get_depth (path) == 1;
 }
 
 static void
 git_stash_pane_init (GitStashPane *self)
 {
 	gchar *objects[] = {"stash_pane",
-						"stash_list_model",
+						"stash_model",
 						NULL};
 	GError *error = NULL;
-	GtkWidget *stash_view;
+	GtkTreeView *stash_view;
+	GtkTreeViewColumn *stash_message_column;
+	GtkCellRenderer *stash_message_renderer;
+	GtkCellRenderer *diff_renderer;
+	GtkTreeSelection *selection;
 	
 	self->priv = g_new0 (GitStashPanePriv, 1);
 	self->priv->builder = gtk_builder_new ();
@@ -137,8 +238,26 @@ git_stash_pane_init (GitStashPane *self)
 		g_error_free (error);
 	}
 
-	stash_view = GTK_WIDGET (gtk_builder_get_object (self->priv->builder,
-	                                                 "stash_view"));
+	stash_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
+	                                             	    "stash_view"));
+	stash_message_column = GTK_TREE_VIEW_COLUMN (gtk_builder_get_object (self->priv->builder,
+	                                                                     "stash_message_column"));
+	stash_message_renderer = GTK_CELL_RENDERER (gtk_builder_get_object (self->priv->builder,
+	                                                                    "stash_message_renderer"));
+	diff_renderer = anjuta_cell_renderer_diff_new ();
+	selection = gtk_tree_view_get_selection (stash_view);
+
+	gtk_tree_view_column_set_cell_data_func (stash_message_column, stash_message_renderer,
+	                                         stash_message_renderer_data_func,
+	                                         NULL, NULL);
+
+	gtk_tree_view_column_pack_start (stash_message_column, diff_renderer, TRUE);
+	gtk_tree_view_column_add_attribute (stash_message_column, diff_renderer,
+	                                    "diff", COL_DIFF);
+
+	/* Don't allow diffs to be selected */
+	gtk_tree_selection_set_select_function (selection, on_stash_view_row_selected,
+	                                        NULL, NULL);
 
 	g_signal_connect (G_OBJECT (stash_view), "button-press-event",
 	                  G_CALLBACK (on_stash_view_button_press_event),
@@ -185,11 +304,11 @@ AnjutaDockPane *
 git_stash_pane_new (Git *plugin)
 {
 	GitStashPane *self;
-	GtkListStore *stash_list_model;
+	GtkTreeStore *stash_model;
 
 	self = g_object_new (GIT_TYPE_STASH_PANE, "plugin", plugin, NULL);
-	stash_list_model = GTK_LIST_STORE (gtk_builder_get_object (self->priv->builder,
-	                                                           "stash_list_model"));
+	stash_model = GTK_TREE_STORE (gtk_builder_get_object (self->priv->builder,
+	                                                      "stash_model"));
 
 	g_signal_connect (G_OBJECT (plugin->stash_list_command), "command-started",
 	                  G_CALLBACK (on_stash_list_command_started),
@@ -201,7 +320,7 @@ git_stash_pane_new (Git *plugin)
 
 	g_signal_connect (G_OBJECT (plugin->stash_list_command), "data-arrived",
 	                  G_CALLBACK (on_stash_list_command_data_arrived),
-	                  stash_list_model);
+	                  stash_model);
 
 	return ANJUTA_DOCK_PANE (self);
 }
@@ -212,7 +331,7 @@ git_stash_pane_get_selected_stash_id (GitStashPane *self)
 	GtkTreeView *stash_view;
 	GtkTreeSelection *selection;
 	gchar *id;
-	GtkTreeModel *stash_list_model;
+	GtkTreeModel *stash_model;
 	GtkTreeIter iter;
 	                                   
 	stash_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
@@ -220,8 +339,8 @@ git_stash_pane_get_selected_stash_id (GitStashPane *self)
 	selection = gtk_tree_view_get_selection (stash_view);
 	id = NULL;
 
-	if (gtk_tree_selection_get_selected (selection, &stash_list_model, &iter))
-		gtk_tree_model_get (stash_list_model, &iter, COL_ID, &id, -1);
+	if (gtk_tree_selection_get_selected (selection, &stash_model, &iter))
+		gtk_tree_model_get (stash_model, &iter, COL_ID, &id, -1);
 
 	return id;
 }
@@ -232,7 +351,7 @@ git_stash_pane_get_selected_stash_number (GitStashPane *self)
 	GtkTreeView *stash_view;
 	GtkTreeSelection *selection;
 	guint number;
-	GtkTreeModel *stash_list_model;
+	GtkTreeModel *stash_model;
 	GtkTreeIter iter;
 
 	stash_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
@@ -240,8 +359,8 @@ git_stash_pane_get_selected_stash_number (GitStashPane *self)
 	selection = gtk_tree_view_get_selection (stash_view);
 	number = -1;
 
-	if (gtk_tree_selection_get_selected (selection, &stash_list_model, &iter))
-		gtk_tree_model_get (stash_list_model, &iter, COL_NUMBER, &number, -1);
+	if (gtk_tree_selection_get_selected (selection, &stash_model, &iter))
+		gtk_tree_model_get (stash_model, &iter, COL_NUMBER, &number, -1);
 
 	return number;
 }

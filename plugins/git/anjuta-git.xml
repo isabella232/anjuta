@@ -31,7 +31,6 @@
 	<popup name="GitStashPopup">
 		<menuitem name="Apply" action="GitStashApply" />
 		<menuitem name="Apply and restore index" action="GitStashApplyIndex" />
-		<menuitem name="Diff" action="GitStashDiff" />
 		<menuitem name="Drop" action="GitStashDrop" />
 	</popup>
 </ui>

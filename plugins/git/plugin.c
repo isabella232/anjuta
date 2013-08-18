@@ -46,7 +46,6 @@
 #include "git-stash-pane.h"
 #include "git-stash-changes-pane.h"
 #include "git-apply-stash-pane.h"
-#include "git-diff-stash-pane.h"
 #include "git-drop-stash-pane.h"
 #include "git-clear-stash-pane.h"
 #include "git-rebase-pane.h"
@@ -345,14 +344,6 @@ AnjutaCommandBarEntry stash_entries[] =
 	},
 	{
 		ANJUTA_COMMAND_BAR_ENTRY_BUTTON,
-		"DiffStash",
-		N_("Diff selected stash"),
-		N_("Show a diff of the selected stash"),
-		GTK_STOCK_ZOOM_100,
-		G_CALLBACK (on_diff_stash_button_clicked)
-	},
-	{
-		ANJUTA_COMMAND_BAR_ENTRY_BUTTON,
 		"DropStash",
 		N_("Drop selected stash"),
 		N_("Delete the selected stash"),
@@ -606,14 +597,6 @@ static GtkActionEntry stash_menu_entries[] =
 		NULL,
 		NULL,
 		G_CALLBACK (on_apply_stash_index_button_clicked)
-	},
-	{
-		"GitStashDiff",
-		NULL,
-		N_("Diff"),
-		NULL,
-		NULL,
-		G_CALLBACK (on_diff_stash_button_clicked)
 	},
 	{
 		"GitStashDrop",

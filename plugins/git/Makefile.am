@@ -207,8 +207,6 @@ libanjuta_git_la_SOURCES = \
 	git-stash-changes-pane.h \
 	git-apply-stash-pane.c \
 	git-apply-stash-pane.h \
-	git-diff-stash-pane.c \
-	git-diff-stash-pane.h \
 	git-drop-stash-pane.c \
 	git-drop-stash-pane.h \
 	git-clear-stash-pane.c \

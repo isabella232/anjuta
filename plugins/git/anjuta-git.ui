@@ -3560,13 +3560,15 @@
       </packing>
     </child>
   </object>
-  <object class="GtkListStore" id="stash_list_model">
+  <object class="GtkTreeStore" id="stash_model">
     <columns>
       <!-- column-name number -->
       <column type="guint"/>
       <!-- column-name message -->
       <column type="gchararray"/>
       <!-- column-name id -->
+      <column type="gchararray"/>
+      <!-- column-name diff -->
       <column type="gchararray"/>
     </columns>
   </object>
@@ -3593,14 +3595,16 @@
                   <object class="GtkTreeView" id="stash_view">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="model">stash_list_model</property>
+                    <property name="events">GDK_BUTTON_PRESS_MASK | GDK_STRUCTURE_MASK</property>
+                    <property name="model">stash_model</property>
                     <property name="headers_visible">False</property>
                     <property name="headers_clickable">False</property>
+                    <property name="expander_column">stash_number_column</property>
                     <child internal-child="selection">
                       <object class="GtkTreeSelection" id="treeview-selection7"/>
                     </child>
                     <child>
-                      <object class="GtkTreeViewColumn" id="treeviewcolumn8">
+                      <object class="GtkTreeViewColumn" id="stash_number_column">
                         <property name="title">column</property>
                         <child>
                           <object class="GtkCellRendererText" id="number_renderer"/>
@@ -3611,13 +3615,10 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkTreeViewColumn" id="treeviewcolumn9">
+                      <object class="GtkTreeViewColumn" id="stash_message_column">
                         <property name="title">column</property>
                         <child>
-                          <object class="GtkCellRendererText" id="message_renderer"/>
-                          <attributes>
-                            <attribute name="text">1</attribute>
-                          </attributes>
+                          <object class="GtkCellRendererText" id="stash_message_renderer"/>
                         </child>
                       </object>
                     </child>

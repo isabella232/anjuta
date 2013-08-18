@@ -21,7 +21,9 @@
 #define _GIT_STASH_PANE_H_
 
 #include <glib-object.h>
+#include <libanjuta/anjuta-cell-renderer-diff.h>
 #include "git-pane.h"
+#include "git-stash-show-command.h"
 
 G_BEGIN_DECLS
 
