@@ -3653,6 +3653,8 @@
       <column type="gint"/>
       <!-- column-name path -->
       <column type="gchararray"/>
+      <!-- column-name diff -->
+      <column type="gchararray"/>
       <!-- column-name type -->
       <column type="gint"/>
     </columns>
@@ -3735,6 +3737,19 @@
         <property name="spacing">5</property>
         <property name="layout_style">end</property>
         <child>
+          <object class="GtkToggleButton" id="status_diff_button">
+            <property name="label" translatable="yes">Show Diff</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
           <object class="GtkButton" id="select_all_button">
             <property name="label">gtk-select-all</property>
             <property name="visible">True</property>
@@ -3745,7 +3760,7 @@
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">0</property>
+            <property name="position">1</property>
           </packing>
         </child>
         <child>
@@ -3759,7 +3774,7 @@
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">1</property>
+            <property name="position">2</property>
           </packing>
         </child>
         <child>
@@ -3773,7 +3788,7 @@
           <packing>
             <property name="expand">False</property>
             <property name="fill">False</property>
-            <property name="position">2</property>
+            <property name="position">3</property>
           </packing>
         </child>
       </object>

@@ -2,6 +2,9 @@
     <schema id="org.gnome.anjuta.plugins.git" path="/org/gnome/anjuta/plugins/git/">
         <key name="show-command-bar" type="b">
             <default>true</default>        
-        </key>    
+        </key>
+		<key name = "show-status-diff" type="b">
+			<default>false</default>
+		</key>    
     </schema>
 </schemalist>

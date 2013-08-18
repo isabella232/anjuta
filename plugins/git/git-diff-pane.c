@@ -20,37 +20,6 @@
 #include "git-diff-pane.h"
 
 void
-on_diff_button_clicked (GtkAction *action, Git *plugin)
-{
-	IAnjutaDocumentManager *document_manager;
-	IAnjutaEditor *editor;
-	GitDiffCommand *diff_command;
-
-	document_manager = anjuta_shell_get_interface (ANJUTA_PLUGIN (plugin)->shell,
-												   IAnjutaDocumentManager,
-												   NULL);
-	editor = ianjuta_document_manager_add_buffer (document_manager,/* Translators: default file name for git diff's output */
-												  _("Uncommitted Changes.diff"),
-												  "", NULL);
-
-	diff_command = git_diff_command_new (plugin->project_root_directory);
-
-	g_signal_connect (G_OBJECT (diff_command), "data-arrived",
-					  G_CALLBACK (git_pane_send_raw_output_to_editor),
-					  editor);
-
-	g_signal_connect (G_OBJECT (diff_command), "command-finished",
-					  G_CALLBACK (git_pane_report_errors),
-					  plugin);
-
-	g_signal_connect (G_OBJECT (diff_command), "command-finished",
-					  G_CALLBACK (g_object_unref),
-					  NULL);
-
-	anjuta_command_start (ANJUTA_COMMAND (diff_command));
-}
-
-void
 on_commit_diff_button_clicked (GtkAction *action, Git *plugin)
 {
 	GitRevision *revision;

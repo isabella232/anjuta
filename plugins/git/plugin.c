@@ -152,14 +152,6 @@ AnjutaCommandBarEntry status_entries[] =
 		G_CALLBACK (on_commit_button_clicked)
 	},
 	{
-		ANJUTA_COMMAND_BAR_ENTRY_BUTTON,
-		"Diff",
-		N_("Diff uncommitted changes"),
-		N_("Show a diff of uncommitted changes in an editor"),
-		GTK_STOCK_ZOOM_100,
-		G_CALLBACK (on_diff_button_clicked)
-	},
-	{
 		ANJUTA_COMMAND_BAR_ENTRY_FRAME,
 		"NULL",
 		N_("Files"),

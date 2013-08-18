@@ -150,7 +150,7 @@ git_ivcs_diff (IAnjutaVcs *obj, GFile* file,
 	
 	if (project_root_directory)
 	{
-		diff_command = git_diff_command_new (project_root_directory);
+		diff_command = git_diff_command_new (project_root_directory, NULL, GIT_DIFF_WORKING_TREE);
 		
 		g_object_set_data_full (G_OBJECT (diff_command), "file", 
 		                        g_object_ref (file),

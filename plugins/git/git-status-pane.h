@@ -21,9 +21,11 @@
 #define _GIT_STATUS_PANE_H_
 
 #include <glib-object.h>
+#include <libanjuta/anjuta-cell-renderer-diff.h>
 #include "git-pane.h"
 #include "git-status-command.h"
 #include "git-add-command.h"
+#include "git-diff-command.h"
 
 G_BEGIN_DECLS
 

@@ -26,22 +26,45 @@
 
 G_DEFINE_TYPE (GitDiffCommand, git_diff_command, GIT_TYPE_RAW_OUTPUT_COMMAND);
 
+struct _GitDiffCommandPriv
+{
+	gchar *path;
+	GitDiffType type;
+};
+
 static void
 git_diff_command_init (GitDiffCommand *self)
 {
-
+	self->priv = g_new0 (GitDiffCommandPriv, 1);
 }
 
 static void
 git_diff_command_finalize (GObject *object)
 {
+	GitDiffCommand *self;
+
+	self = GIT_DIFF_COMMAND (object);
+
+	g_free (self->priv->path);
+	g_free (self->priv);
+
 	G_OBJECT_CLASS (git_diff_command_parent_class)->finalize (object);
 }
 
 static guint
 git_diff_command_run (AnjutaCommand *command)
 {	
+	GitDiffCommand *self;
+
+	self = GIT_DIFF_COMMAND (command);
+
 	git_command_add_arg (GIT_COMMAND (command), "diff");
+
+	if (self->priv->type == GIT_DIFF_INDEX)
+		git_command_add_arg (GIT_COMMAND (command), "--cached");
+
+	if (self->priv->path)
+		git_command_add_arg (GIT_COMMAND (command), self->priv->path);
 	
 	return 0;
 }
@@ -58,9 +81,17 @@ git_diff_command_class_init (GitDiffCommandClass *klass)
 
 
 GitDiffCommand *
-git_diff_command_new (const gchar *working_directory)
+git_diff_command_new (const gchar *working_directory, const gchar *path, 
+                      GitDiffType type)
 {
-	return g_object_new (GIT_TYPE_DIFF_COMMAND, 
+	GitDiffCommand *self;
+
+	self = g_object_new (GIT_TYPE_DIFF_COMMAND, 
 						 "working-directory", working_directory,
 						 NULL);
+
+	self->priv->path = g_strdup (path);
+	self->priv->type = type;
+
+	return self;
 }

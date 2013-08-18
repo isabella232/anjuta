@@ -39,6 +39,7 @@ G_BEGIN_DECLS
 
 typedef struct _GitDiffCommandClass GitDiffCommandClass;
 typedef struct _GitDiffCommand GitDiffCommand;
+typedef struct _GitDiffCommandPriv GitDiffCommandPriv;
 
 struct _GitDiffCommandClass
 {
@@ -48,10 +49,19 @@ struct _GitDiffCommandClass
 struct _GitDiffCommand
 {
 	GitRawOutputCommand parent_instance;
+
+	GitDiffCommandPriv *priv;
 };
 
+typedef enum
+{
+	GIT_DIFF_WORKING_TREE,
+	GIT_DIFF_INDEX
+} GitDiffType;
+
 GType git_diff_command_get_type (void) G_GNUC_CONST;
-GitDiffCommand *git_diff_command_new (const gchar *working_directory);
+GitDiffCommand *git_diff_command_new (const gchar *working_directory, 
+                                      const gchar *path, GitDiffType type);
 
 G_END_DECLS
 
