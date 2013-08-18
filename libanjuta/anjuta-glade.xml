@@ -79,6 +79,9 @@
 		 generic-name="view" parent="GtkTreeView">
 		</glade-widget-class>
 
+		<glade-widget-class name="AnjutaCellRendererDiff" title="Diff cell renderer"
+		 generic-name="cellrendererdiff" />
+
 	</glade-widget-classes>
 
 	<glade-widget-group name="Anjuta" title="Anjuta">
