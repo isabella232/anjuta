@@ -1,3 +1,60 @@
+Anjuta 3.9.90 (August 19, 2013) -- James Liggett
+
+Akom Chotiphantawanon (1):
+      Updated Thai translation.
+
+Alexandre Rostovtsev (1):
+      symbol-db: bgo #704985 - link with librt on Linux
+
+Carl-Anton Ingmarsson (1):
+      symbol-db: Use a GtkSearchEntry for the search entry in the search view.
+
+Daniel Mustieles (1):
+      Updated Spanish translation
+
+Dominique Leuenberger (1):
+      build: add support for libvala-0.22
+
+Fran Diéguez (1):
+      Updated Galician translations
+
+Gabor Kelemen (1):
+      Updated Hungarian translation
+
+James Liggett (12):
+      Post-release version bump
+      libanjuta/anjuta-command-bar: Resect GTK button image settings
+      libanjuta/anjuta-command-bar: Don't use a shadow for the scrolled window
+      libanjuta/anjuta-file-list: Fix the help text color
+      git: Widget name fixes
+      libanjuta: Add AnjutaCellRendererDiff
+      libanjuta: Update the glade catalog
+      git: Show diffs of uncommitted changes in the status view
+      git: Show stash diffs in the stash pane
+      git: Don't show the command bar if the Tasks button isn't active
+      libanjuta/anjuta-cell-renderer-diff: Detect diff headers
+      git: Don't show stash numbers on diff rows
+
+Marek Černocký (1):
+      Updated Czech translation
+
+Michael Catanzaro (3):
+      Use program icon on about dialog
+      Fix column number on lines with tabs
+      help: fix broken images
+
+Piotr Drąg (1):
+      Updated POTFILES.in
+
+Rafael Ferreira (1):
+      Updated Brazilian Portuguese translation
+
+Sébastien Granjoux (3):
+      bgo #689384 - should install a highcontrast app icon
+      bgo #701419 - sqlite not in depencies
+      document-manager: Fix icon size in document manager tabs
+
+
 Anjuta 3.9.5 (July 29, 2013) -- James Liggett
 
 Chao-Hsiung Liao (1):
