@@ -204,6 +204,33 @@ stash_message_renderer_data_func (GtkTreeViewColumn *tree_column,
 		g_object_set (renderer, "text", "", NULL);
 }
 
+static void
+stash_number_renderer_data_func (GtkTreeViewColumn *tree_column,
+                                 GtkCellRenderer *renderer,
+                                 GtkTreeModel *model,
+                                 GtkTreeIter *iter,
+                                 gpointer user_data)
+{
+	gboolean visible;
+	guint number;
+	gchar *number_string;
+
+	/* Don't show this column on diffs */
+	visible = gtk_tree_store_iter_depth (GTK_TREE_STORE (model), iter) == 0;
+	gtk_cell_renderer_set_visible (renderer, visible);
+
+	if (visible)
+	{
+		gtk_tree_model_get (model, iter, COL_NUMBER, &number, -1);
+		number_string = g_strdup_printf ("%i", number);
+
+		g_object_set (renderer, "text", number_string, NULL);
+		g_free (number_string);
+	}
+	else
+		g_object_set (renderer, "text", "", NULL);
+}
+
 static gboolean
 on_stash_view_row_selected (GtkTreeSelection *selection,
                             GtkTreeModel *model,
@@ -222,6 +249,8 @@ git_stash_pane_init (GitStashPane *self)
 						NULL};
 	GError *error = NULL;
 	GtkTreeView *stash_view;
+	GtkTreeViewColumn *stash_number_column;
+	GtkCellRenderer *stash_number_renderer;
 	GtkTreeViewColumn *stash_message_column;
 	GtkCellRenderer *stash_message_renderer;
 	GtkCellRenderer *diff_renderer;
@@ -240,6 +269,10 @@ git_stash_pane_init (GitStashPane *self)
 
 	stash_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
 	                                             	    "stash_view"));
+	stash_number_column = GTK_TREE_VIEW_COLUMN (gtk_builder_get_object (self->priv->builder,
+	                                                                    "stash_number_column"));
+	stash_number_renderer = GTK_CELL_RENDERER (gtk_builder_get_object (self->priv->builder,
+	                                                                   "stash_number_renderer"));
 	stash_message_column = GTK_TREE_VIEW_COLUMN (gtk_builder_get_object (self->priv->builder,
 	                                                                     "stash_message_column"));
 	stash_message_renderer = GTK_CELL_RENDERER (gtk_builder_get_object (self->priv->builder,
@@ -247,6 +280,9 @@ git_stash_pane_init (GitStashPane *self)
 	diff_renderer = anjuta_cell_renderer_diff_new ();
 	selection = gtk_tree_view_get_selection (stash_view);
 
+	gtk_tree_view_column_set_cell_data_func (stash_number_column, stash_number_renderer,
+	                                         stash_number_renderer_data_func, 
+	                                         NULL, NULL);
 	gtk_tree_view_column_set_cell_data_func (stash_message_column, stash_message_renderer,
 	                                         stash_message_renderer_data_func,
 	                                         NULL, NULL);

@@ -3607,10 +3607,7 @@
                       <object class="GtkTreeViewColumn" id="stash_number_column">
                         <property name="title">column</property>
                         <child>
-                          <object class="GtkCellRendererText" id="number_renderer"/>
-                          <attributes>
-                            <attribute name="text">0</attribute>
-                          </attributes>
+                          <object class="GtkCellRendererText" id="stash_number_renderer"/>
                         </child>
                       </object>
                     </child>
