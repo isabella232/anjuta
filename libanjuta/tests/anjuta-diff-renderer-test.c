@@ -58,6 +58,34 @@ main (int argc, char **argv)
 		"\n"
 		"# Glade module\n"
 		"if ENABLE_GLADE_CATALOG\n";
+	
+	const gchar multi_file_diff[] =
+		"diff --git a/AUTHORS b/AUTHORS\n"
+		"index 9f20595..7f6ead6 100644\n"
+		"--- a/AUTHORS\n"
+		"+++ b/AUTHORS\n"
+		"@@ -11,7 +11,7 @@ Maintainers and Lead Developers:\n"
+		" Developers:\n"
+		"-------------------------------------------------------------------------------\n"
+		" 	Massimo Cora'  <maxcvs@email.it> (Italy)\n"
+		"-	Carl-Anton Ingmarsson <ca.ingmarsson@gmail.com>\n"	
+		"+	Carl-Anton Ingmarsson <carlantoni@gnome.org> (Sweden)\n"
+ 		"\n"
+		" Past Developers:\n"
+		"-------------------------------------------------------------------------------\n"
+		"diff --git a/plugins/git/git-clone-command.c b/plugins/git/git-clone-command.c\n"
+		"index 8fbb96a..f1665e2 100644\n"
+		"--- a/plugins/git/git-clone-command.c\n"
+		"+++ b/plugins/git/git-clone-command.c\n"
+		"@@ -1,7 +1,7 @@\n"
+		" /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */\n"
+		" /*\n"
+		"  * anjuta\n"
+		"- * Copyright (C) Carl-Anton Ingmarsson 2009 <ca.ingmarsson@gmail.com>\n"
+		"+ * Copyright (C) Carl-Anton Ingmarsson 2009 <carlantoni@gnome.org>\n"
+		"  *\n" 
+		"  * anjuta is free software.\n"
+		"  *\n";
 
 	const gchar non_diff[] = "non-diff text";
 	const gchar hunk_line[] = "@@";
@@ -89,6 +117,10 @@ main (int argc, char **argv)
 	/* Test general diffs */
 	gtk_list_store_append (list_store, &iter);
 	gtk_list_store_set (list_store, &iter, COL_DIFF, diff, -1);
+
+	/* Test multi-file diffs */
+	gtk_list_store_append (list_store, &iter);
+	gtk_list_store_set (list_store, &iter, COL_DIFF, multi_file_diff, -1);
 
 	/* Test non-diff text */
 	gtk_list_store_append (list_store, &iter);

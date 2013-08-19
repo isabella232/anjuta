@@ -148,6 +148,7 @@ create_attribute_list (const gchar *diff)
 	PangoAttrList *list;
 	const gchar *line_begin, *line_end;
 	guint begin_index, end_index;
+	gboolean found_diff = FALSE;
 	gboolean found_hunk = FALSE;
 	PangoAttribute *attribute;
 
@@ -168,6 +169,15 @@ create_attribute_list (const gchar *diff)
 		begin_index = line_begin - diff;
 		end_index = line_end - diff;
 		attribute = NULL;
+
+		/* Handle multiple files. Context lines should start with a 
+		 * whitespace, so just searching the first few characters 
+		 * of the line for "diff" should detect the next file */
+		if (g_str_has_prefix (line_begin, "diff"))
+		{
+			found_diff = TRUE;
+			found_hunk = FALSE;
+		}
 
 		if (line_begin[0] == '@' && line_begin[1] == '@')
 		{
@@ -190,6 +200,11 @@ create_attribute_list (const gchar *diff)
 				attribute = pango_attr_foreground_new (0xffff, 0, 0);	
 			}
 		}
+		else if (found_diff)
+		{
+			/* Make file headers easier to see by making them bold */
+			attribute = pango_attr_weight_new (PANGO_WEIGHT_BOLD);
+		}
 			
 		if (attribute)
 		{
@@ -203,7 +218,6 @@ create_attribute_list (const gchar *diff)
 			line_begin = line_end + 1;
 		else
 			line_begin = NULL;
-
 	}
 
 	return list;
