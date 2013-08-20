@@ -157,7 +157,7 @@ git_status_command_init (GitStatusCommand *self)
 
 	g_hash_table_insert (self->priv->status_codes, 
 	                     GINT_TO_POINTER ('D'),
-	                     GINT_TO_POINTER (ANJUTA_VCS_STATUS_MODIFIED));
+	                     GINT_TO_POINTER (ANJUTA_VCS_STATUS_DELETED));
 
 	/* TODO: Handle each conflict case individually so that we can eventually
 	 * give the user more information about the conflict */
