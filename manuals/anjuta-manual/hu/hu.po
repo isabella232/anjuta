@@ -1,16 +1,20 @@
+# Hungarian translation of anjuta help
+# Copyright (C) 2012, 2013. Free Software Foundation, Inc.
+# This file is distributed under the same license as the anjuta help.
+
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2012, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: 2013-03-25 19:37+0000\n"
-"PO-Revision-Date: 2013-04-14 14:54+0200\n"
+"Project-Id-Version: anjuta_help master\n"
+"POT-Creation-Date: 2013-08-12 13:30+0000\n"
+"PO-Revision-Date: 2013-08-22 00:53+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
-"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
+"Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -114,11 +118,10 @@ msgstr ""
 "Az automatikus kiegészítés automatikusan javaslatokat tesz függvényekre és "
 "más kódszimbólumokra a gépelés elkezdése után, megpróbálva illeszkedést "
 "találni a meglévő szimbólumokra az elsőként begépelt karakterek alapján. "
-"Ezután megjelenít egy legördülő menüt, amelyből a le és fel nyilak és az <key>"
-"Enter</key> "
-"billentyűvel választhatja ki a kívánt találatot. Normális esetben ez "
-"automatikusan bekövetkezik a harmadik (nem üres hely) karakter begépelése "
-"után, de ki is kényszerítheti a <guiseq><gui>Szerkesztés</"
+"Ezután megjelenít egy legördülő menüt, amelyből a le és fel nyilak és az "
+"<key>Enter</key> billentyűvel választhatja ki a kívánt találatot. Normális "
+"esetben ez automatikusan bekövetkezik a harmadik (nem üres hely) karakter "
+"begépelése után, de ki is kényszerítheti a <guiseq><gui>Szerkesztés</"
 "gui><gui>Automatikus kiegészítés</gui></guiseq> menüpont kiválasztásával."
 
 #: C/anjuta-code-assist.page:31(note/p)
@@ -488,18 +491,27 @@ msgstr ""
 "projekt fájllistájában, és ezeket a projektsablon automatikusan létrehozza."
 
 #: C/anjuta-glade-start.page:73(section/p)
+#| msgid ""
+#| "Once the glade plug-in is running and the file that will hold the code is "
+#| "being viewed, simply double click a widget in the glade inspector. The "
+#| "file being viewed will then be scanned for some marker comments (/* "
+#| "ANJUTA: Widgets declaration for application.ui - DO NOT REMOVE */ and /* "
+#| "ANJUTA: Widgets initialization for application.ui - DO NOT REMOVE */) "
+#| "and, if found, code will be added right after such comments. So, for this "
+#| "feature to work correctly, it is important not to modify such marker "
+#| "comments."
 msgid ""
 "Once the glade plug-in is running and the file that will hold the code is "
-"being viewed, simply double click a widget in the glade inspector. The file "
-"being viewed will then be scanned for some marker comments (/* ANJUTA: "
-"Widgets declaration for application.ui - DO NOT REMOVE */ and /* ANJUTA: "
-"Widgets initialization for application.ui - DO NOT REMOVE */) and, if found, "
-"code will be added right after such comments. So, for this feature to work "
+"open, simply double click a widget in the glade inspector. The associated "
+"file will then be scanned for some marker comments (/* ANJUTA: Widgets "
+"declaration for application.ui - DO NOT REMOVE */ and /* ANJUTA: Widgets "
+"initialization for application.ui - DO NOT REMOVE */) and, if found, code "
+"will be added right after such comments. So, for this feature to work "
 "correctly, it is important not to modify such marker comments."
 msgstr ""
 "Miután a Glade bővítmény fut, és a kódot majdan tartalmazó fájl meg van "
 "nyitva, kattintson duplán a felületi elemre a Glade vizsgálóban. A "
-"megjelenített kód átvizsgálásra kerül, és a megfelelő jelölő megjegyzések (/"
+"társított fájl átvizsgálásra kerül, és a megfelelő jelölő megjegyzések (/"
 "* ANJUTA: Widgets declaration for application.ui - DO NOT REMOVE */ és /* "
 "ANJUTA: Widgets initialization for application.ui - DO NOT REMOVE */) "
 "megtalálása után a kód hozzáadásra kerül. Így ezen szolgáltatás megfelelő "
@@ -1490,8 +1502,7 @@ msgid ""
 "box when needed so you can leave it in its current state."
 msgstr ""
 "Ha be van jelölve, akkor a projekt lefordításához szükséges fájlok teljesen "
-"újra "
-"lesznek generálva, ellenkező esetben csak a konfigurálás lépés kerül "
+"újra lesznek generálva, ellenkező esetben csak a konfigurálás lépés kerül "
 "végrehajtásra. Az <app>Anjuta</app> automatikusan bejelöli ezt a négyzetet, "
 "ha szükség van rá, így nem kell módosítania az aktuális állapotán."
 
@@ -3346,9 +3357,8 @@ msgid ""
 "When the debugger stops your program, look at the <link xref=\"debug-stack\"/"
 "> to check where this error comes from."
 msgstr ""
-"Amikor a hibakereső megállítja a programot, a hiba eredetét a <link "
-"xref=\"debug-"
-"stack\"/> megnézésével keresheti meg."
+"Amikor a hibakereső megállítja a programot, a hiba eredetét a <link xref="
+"\"debug-stack\"/> megnézésével keresheti meg."
 
 #: C/debug-tips.page:66(section/p)
 msgid ""
@@ -3487,8 +3497,8 @@ msgid ""
 "the expression to be evaluated each time the program is stopped."
 msgstr ""
 "Írja be a figyelendő kifejezést. Jelölje be az <gui>Automatikus frissítés</"
-"gui> négyzetet, ha azt szeretné, hogy a kifejezés frissüljön a program minden "
-"megállításakor."
+"gui> négyzetet, ha azt szeretné, hogy a kifejezés frissüljön a program "
+"minden megállításakor."
 
 #: C/debug-watch.page:114(section/p)
 msgid "An expression can be evaluated and then added as a watch like this:"
@@ -3707,20 +3717,26 @@ msgid "Emacs modelines"
 msgstr "Emacs módsorok"
 
 #: C/language-support-cpp-modelines-emacs.page:20(page/p)
+#| msgid ""
+#| "Such modeline is a comment in the first line of the file, composed by a "
+#| "list of variable names followed by <code>:</code> and a value, separated "
+#| "by <code>;</code> and surrounded by <code>-*-</code>."
 msgid ""
-"Such modeline is a comment in the first line of the file, composed by a list "
-"of variable names followed by <code>:</code> and a value, separated by "
-"<code>;</code> and surrounded by <code>-*-</code>."
+"Such modeline is a comment in the first line of the file or the second one "
+"if the first contains a shebang (#!). It is composed by a list of variable "
+"names followed by <code>:</code> and a value, separated by <code>;</code> "
+"and surrounded by <code>-*-</code>."
 msgstr ""
-"Az ilyen módsor egy megjegyzés a fájl első sorában, amely változónevek "
+"Az ilyen módsor egy megjegyzés a fájl első sorában (vagy a másodikban, ha az "
+"első egy shebang-et („#!”) tartalmaz). Ez változónevek "
 "listájából áll, melyeket <code>:</code> és egy érték követ. A változóneveket "
 "<code>;</code> választja el, és az egészet <code>-*-</code> veszi körül."
 
-#: C/language-support-cpp-modelines-emacs.page:24(page/p)
+#: C/language-support-cpp-modelines-emacs.page:25(page/p)
 msgid "A typical <app>Emacs</app> modeline looks like this:"
 msgstr "Egy tipikus <app>Emacs</app> módsor a következőképpen néz ki:"
 
-#: C/language-support-cpp-modelines-emacs.page:26(page/code)
+#: C/language-support-cpp-modelines-emacs.page:27(page/code)
 #, no-wrap
 msgid ""
 "\n"
@@ -3731,16 +3747,16 @@ msgstr ""
 "/* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */\n"
 "  "
 
-#: C/language-support-cpp-modelines-emacs.page:30(page/p)
-#: C/language-support-cpp-modelines-vim.page:30(page/p)
-msgid "Anjuta support only the following variables."
+#: C/language-support-cpp-modelines-emacs.page:31(page/p)
+#| msgid "Anjuta support only the following variables."
+msgid "Anjuta supports only the following variables."
 msgstr "Az Anjuta csak a következő változókat támogatja."
 
-#: C/language-support-cpp-modelines-emacs.page:34(item/title)
+#: C/language-support-cpp-modelines-emacs.page:35(item/title)
 msgid "<code>indent-tabs-mode</code>"
 msgstr "<code>indent-tabs-mode</code>"
 
-#: C/language-support-cpp-modelines-emacs.page:35(item/p)
+#: C/language-support-cpp-modelines-emacs.page:36(item/p)
 msgid ""
 "Set to <code>t</code> to use tabulation for indentation or <code>nil</code> "
 "to use spaces."
@@ -3748,20 +3764,20 @@ msgstr ""
 "Állítsa <code>t</code>-re tabok használatához behúzásra, vagy <code>nil</"
 "code>-re szóközök használatához."
 
-#: C/language-support-cpp-modelines-emacs.page:39(item/title)
+#: C/language-support-cpp-modelines-emacs.page:40(item/title)
 msgid "<code>tab-width</code>"
 msgstr "<code>tab-width</code>"
 
-#: C/language-support-cpp-modelines-emacs.page:40(item/p)
+#: C/language-support-cpp-modelines-emacs.page:41(item/p)
 #: C/language-support-cpp-modelines-vim.page:48(item/p)
 msgid "Number of space characters corresponding to one tabulation character."
 msgstr "Egy tab karakternek megfelelő szóköz karakterek száma."
 
-#: C/language-support-cpp-modelines-emacs.page:43(item/title)
+#: C/language-support-cpp-modelines-emacs.page:44(item/title)
 msgid "<code>c-basic-offset</code>"
 msgstr "<code>c-basic-offset</code>"
 
-#: C/language-support-cpp-modelines-emacs.page:44(item/p)
+#: C/language-support-cpp-modelines-emacs.page:45(item/p)
 #: C/language-support-cpp-modelines-vim.page:53(item/p)
 msgid "Number of space characters used to indent C code."
 msgstr "C kód behúzásához használt szóköz karakterek száma."
@@ -3775,16 +3791,22 @@ msgid "Vim modelines"
 msgstr "Vim módsorok"
 
 #: C/language-support-cpp-modelines-vim.page:20(page/p)
+#| msgid ""
+#| "This modeline is a comment in the first line of the file which has to "
+#| "start with <code>vim:</code> followed by at least one space and a list of "
+#| "variable names with an optional value after <code>=</code> separated by "
+#| "space or <code>:</code>."
 msgid ""
-"This modeline is a comment in the first line of the file which has to start "
-"with <code>vim:</code> followed by at least one space and a list of variable "
+"This modeline is a line in the 5 first of the 5 last of the file containing "
+"<code>vim:</code> followed by at least one space and a list of variable "
 "names with an optional value after <code>=</code> separated by space or "
 "<code>:</code>."
 msgstr ""
-"Ez a módsor egy megjegyzés a fájl első sorában, amelynek a <code>vim:</code> "
-"karakterekkel kell kezdődnie, és legalább egy szóközzel, és változónevek "
-"szóközzel vagy <code>:</code>-tal elválasztott listájával kell folytatódnia. "
-"A változóneveket egy elhagyható érték követheti egy <code>=</code> után."
+"Ez a módsor egy sor a fájl első 5 vagy utolsó 5 sorában, amelynek a <code>"
+"vim:</code> karaktereket kell tartalmaznia, és legalább egy szóközzel, és "
+"változónevek szóközzel vagy <code>:</code>-tal elválasztott listájával kell "
+"folytatódnia. A változóneveket egy elhagyható érték követheti egy <code>=<"
+"/code> után."
 
 #: C/language-support-cpp-modelines-vim.page:25(page/p)
 msgid "A typical <app>Vim</app> modeline looks like this:"
@@ -3798,6 +3820,10 @@ msgid ""
 msgstr ""
 "\n"
 "/* vim: set noet ts=4 sw=4: */"
+
+#: C/language-support-cpp-modelines-vim.page:30(page/p)
+msgid "Anjuta support only the following variables."
+msgstr "Az Anjuta csak a következő változókat támogatja."
 
 #: C/language-support-cpp-modelines-vim.page:34(item/title)
 msgid "<code>expandtab</code>"
