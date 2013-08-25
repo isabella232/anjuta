@@ -1505,13 +1505,15 @@ static void
 project_manager_plugin_close (ProjectManagerPlugin *plugin)
 {
 	AnjutaProfileManager *profile_manager;
+	AnjutaProfile *profile;
 	GError *error = NULL;
 
 	/* Remove project profile */
 	profile_manager =
 		anjuta_shell_get_profile_manager (ANJUTA_PLUGIN (plugin)->shell, NULL);
-	anjuta_profile_manager_pop (profile_manager, plugin->profile, &error);
+	profile = plugin->profile;
 	plugin->profile = NULL;
+	anjuta_profile_manager_pop (profile_manager, profile, &error);
 	if (error)
 	{
 		anjuta_util_dialog_error (get_plugin_parent_window (plugin),
