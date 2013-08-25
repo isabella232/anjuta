@@ -990,10 +990,10 @@ ifile_open (IAnjutaFile *ifile, GFile* file, GError **err)
 					{
 						ianjuta_document_manager_set_current_document (docman,
 						                                               IANJUTA_DOCUMENT (node->data), NULL);
-						g_object_unref (file);
+						g_object_unref (cur_file);
 						return;
 					}
-					g_object_unref (file);
+					g_object_unref (cur_file);
 				}
 			}
 		}
