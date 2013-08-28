@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-06-10 05:04+0000\n"
-"PO-Revision-Date: 2013-07-02 23:45+0300\n"
+"POT-Creation-Date: 2013-08-18 20:01+0000\n"
+"PO-Revision-Date: 2013-08-28 22:35+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -22,11 +22,11 @@ msgstr ""
 "%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:50
+#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
 msgstr "Anjuta"
 
-#: ../anjuta.desktop.in.in.h:2 ../src/about.c:207
+#: ../anjuta.desktop.in.in.h:2 ../src/about.c:203
 msgid "Integrated Development Environment"
 msgstr "Integruota programavimo aplinka"
 
@@ -242,11 +242,11 @@ msgstr "Thai"
 msgid "Unknown"
 msgstr "Nežinoma"
 
-#: ../libanjuta/anjuta-entry.c:258
+#: ../libanjuta/anjuta-entry.c:247
 msgid "Help text"
 msgstr "Pagalbos tekstas"
 
-#: ../libanjuta/anjuta-entry.c:259
+#: ../libanjuta/anjuta-entry.c:248
 msgid "Text to show the user what to enter into the entry"
 msgstr "Tekstas, sakantis naudotojui, ką įvesti į lauką"
 
@@ -281,23 +281,23 @@ msgstr "Vertė"
 msgid "Path that dropped files should be relative to"
 msgstr "Kelias, kuriam santykiniai turi būti įmetami failai"
 
-#: ../libanjuta/anjuta-file-list.c:107
+#: ../libanjuta/anjuta-file-list.c:104
 msgid "Drop a file or enter a path here"
 msgstr "Įmeskite failą arba įveskite čia kelią"
 
-#: ../libanjuta/anjuta-file-list.c:280
+#: ../libanjuta/anjuta-file-list.c:277
 msgid "Select Files"
 msgstr "Pasirinkti failus"
 
-#: ../libanjuta/anjuta-file-list.c:550
+#: ../libanjuta/anjuta-file-list.c:547
 msgid "Path that all files in the list should be relative to"
 msgstr "Kelias, kuriam santykiniai turi būti visai failai sąraše"
 
-#: ../libanjuta/anjuta-file-list.c:557
+#: ../libanjuta/anjuta-file-list.c:554
 msgid "Show Add button"
 msgstr "Rodyti pridėjimo mygtuką"
 
-#: ../libanjuta/anjuta-file-list.c:558
+#: ../libanjuta/anjuta-file-list.c:555
 msgid "Display an Add button"
 msgstr "Rodyti pridėjimo mygtuką"
 
@@ -321,7 +321,7 @@ msgstr "Nepavyko įvykdyti komandos: „%s“"
 msgid "execvp failed"
 msgstr "execvp nepavyko"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2392
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2396
 msgid "Anjuta Shell"
 msgstr "Anjuta terpė"
 
@@ -352,11 +352,11 @@ msgid "Load"
 msgstr "Įkelti"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2008
+#: ../libanjuta/anjuta-plugin-manager.c:2012
 msgid "Available Plugins"
 msgstr "Prieinami įskiepiai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:994
+#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:995
 msgid "Preferred plugins"
 msgstr "Pageidaujami įskiepiai"
 
@@ -379,7 +379,7 @@ msgid "Forget selected plugin"
 msgstr "Pamiršti pasirinktą įskiepį"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1515 ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "Pasirinkti įskiepį"
@@ -394,51 +394,51 @@ msgstr "Pasirinkite aktyvuojamą įskiepį"
 msgid "No plugin is able to load other plugins in %s"
 msgstr "Joks įskiepis negali įkelti kitų %s įskiepių"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1516
+#: ../libanjuta/anjuta-plugin-manager.c:1518
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Pasirinkite aktyvuojamą įskiepį</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2035
+#: ../libanjuta/anjuta-plugin-manager.c:2039
 msgid "Remember this selection"
 msgstr "Atsiminti šį pasirinkimą"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2373
+#: ../libanjuta/anjuta-plugin-manager.c:2377
 msgid "Profiles"
 msgstr "Profiliai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2374
+#: ../libanjuta/anjuta-plugin-manager.c:2378
 msgid "Current stack of profiles"
 msgstr "Dabartinė profilių krūva"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2379
+#: ../libanjuta/anjuta-plugin-manager.c:2383
 msgid "Available plugins"
 msgstr "Prieinami įskiepiai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2380
+#: ../libanjuta/anjuta-plugin-manager.c:2384
 msgid "Currently available plugins found in plugin paths"
 msgstr "Šiuo metų įskiepių keliuosi rasti prieinami įskiepiai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2386
+#: ../libanjuta/anjuta-plugin-manager.c:2390
 msgid "Activated plugins"
 msgstr "Aktyvuoti įskiepiai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2387
+#: ../libanjuta/anjuta-plugin-manager.c:2391
 msgid "Currently activated plugins"
 msgstr "Šiuo metu aktyvuoti įskiepiai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2393
+#: ../libanjuta/anjuta-plugin-manager.c:2397
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Anjuta apvalkalas, kuriam sukurti įskiepiai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2401
+#: ../libanjuta/anjuta-plugin-manager.c:2405
 msgid "Anjuta Status"
 msgstr "Anjuta būsena"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2402
+#: ../libanjuta/anjuta-plugin-manager.c:2406
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "Anjuta būsena, naudojama įkeliant ir iškeliant įskiepius"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2555
+#: ../libanjuta/anjuta-plugin-manager.c:2559
 msgid "Loading:"
 msgstr "Įkeliama:"
 
@@ -449,7 +449,7 @@ msgstr "Kategorija"
 #. FIXME: Make the general page first
 #: ../libanjuta/anjuta-preferences-dialog.c:139
 #: ../libanjuta/anjuta-preferences-dialog.c:142
-#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:981
+#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:982
 #: ../src/preferences.ui.h:9
 msgid "General"
 msgstr "Bendra"
@@ -503,9 +503,6 @@ msgstr "%s: įdiegti jį iš „%s“\n"
 
 #: ../libanjuta/anjuta-profile.c:964
 #, c-format
-#| msgid ""
-#| "Failed to read '%s': Following mandatory plugins are missing:\n"
-#| "%s"
 msgid "Failed to read '%s': Following mandatory plugins are missing"
 msgstr "Nepavyko perskaityti „%s“: trūksta šių būtinų įskiepių"
 
@@ -626,7 +623,6 @@ msgstr ""
 
 #: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
 #, c-format
-#| msgid "Cannot execute command: %s (using shell %s)\n"
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr "Nepavyko įvykdyti komandos: %s (naudojamas apvalkalas %s): %s\n"
 
@@ -636,47 +632,47 @@ msgid "Unable to load user interface file: %s"
 msgstr "Nepavyko įkelti naudotojo sąsajos failo: %s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
-#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:175
+#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:178
 msgid "Modified"
 msgstr "Pakeistas"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:95
-#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:178
+#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:181
 msgid "Added"
 msgstr "Pridėtas"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:98
-#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:181
+#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:184
 msgid "Deleted"
 msgstr "Ištrintas"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:101
-#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:184
+#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:187
 msgid "Conflicted"
 msgstr "Konflikte"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:105
-#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:188
+#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:191
 msgid "Up-to-date"
 msgstr "Naujausias"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:109
-#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:192
+#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:195
 msgid "Locked"
 msgstr "Užrakintas"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:112
-#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:195
+#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:198
 msgid "Missing"
 msgstr "Trūkstamas"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:115
-#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:198
+#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:201
 msgid "Unversioned"
 msgstr "Neversijuojamas"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:119
-#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:202
+#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:205
 msgid "Ignored"
 msgstr "Nepaisomas"
 
@@ -692,7 +688,6 @@ msgstr "Nepavyko rasti programos pixmap failo: %s"
 
 #: ../libanjuta/resources.c:277
 #, c-format
-#| msgid "Cannot execute command: \"%s\""
 msgid "Cannot execute command \"%s\": %s"
 msgstr "Nepavyko įvykdyti komandos „%s“: %s"
 
@@ -710,8 +705,8 @@ msgstr ""
 #: ../plugins/am-project/amp-group.c:665
 #: ../plugins/am-project/am-project.c:1679
 #: ../plugins/am-project/am-project.c:1772
-#: ../plugins/dir-project/dir-project.c:723
-#: ../plugins/dir-project/dir-project.c:856
+#: ../plugins/dir-project/dir-project.c:801
+#: ../plugins/dir-project/dir-project.c:934
 #: ../plugins/mk-project/mk-project.c:725
 #: ../plugins/mk-project/mk-project.c:802
 #: ../plugins/mk-project/mk-project.c:876
@@ -724,13 +719,13 @@ msgid "Root"
 msgstr "Šaknis"
 
 #: ../plugins/am-project/am-project.c:98
-#: ../plugins/dir-project/dir-project.c:867
+#: ../plugins/dir-project/dir-project.c:945
 #: ../plugins/mk-project/mk-project.c:66
 msgid "Group"
 msgstr "Grupė"
 
 #: ../plugins/am-project/am-project.c:106
-#: ../plugins/dir-project/dir-project.c:871
+#: ../plugins/dir-project/dir-project.c:949
 #: ../plugins/mk-project/mk-project.c:71
 msgid "Source"
 msgstr "Išeities tekstas"
@@ -3472,15 +3467,15 @@ msgstr "API naršyklė"
 msgid "API"
 msgstr "API"
 
-#: ../plugins/dir-project/dir-project.c:124
-#: ../plugins/dir-project/dir-project.c:147
-#: ../plugins/dir-project/dir-project.c:170
+#: ../plugins/dir-project/dir-project.c:126
+#: ../plugins/dir-project/dir-project.c:149
+#: ../plugins/dir-project/dir-project.c:172
 #, c-format
 msgid "Missing name"
 msgstr "Trūkstamas pavadinimas"
 
-#: ../plugins/dir-project/dir-project.c:992
-#: ../plugins/dir-project/dir-project.c:1002
+#: ../plugins/dir-project/dir-project.c:1070
+#: ../plugins/dir-project/dir-project.c:1080
 #: ../plugins/mk-project/mk-project.c:1024
 #: ../plugins/mk-project/mk-project.c:1034
 #, c-format
@@ -3531,7 +3526,7 @@ msgid "Rename"
 msgstr "Pervadinti"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:363
-#: ../plugins/git/plugin.c:181
+#: ../plugins/git/plugin.c:172
 #: ../plugins/snippets-manager/snippets-editor.ui.h:19
 msgid "Remove"
 msgstr "Pašalinti"
@@ -3545,28 +3540,28 @@ msgstr " [tik skaitymui]"
 msgid "Close Others"
 msgstr "Užverti kitus"
 
-#: ../plugins/document-manager/anjuta-docman.c:733
-#: ../plugins/document-manager/anjuta-docman.c:1153
+#: ../plugins/document-manager/anjuta-docman.c:736
+#: ../plugins/document-manager/anjuta-docman.c:1156
 msgid "Close file"
 msgstr "Užverti failą"
 
-#: ../plugins/document-manager/anjuta-docman.c:770
+#: ../plugins/document-manager/anjuta-docman.c:773
 #: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "Kelias:"
 
-#: ../plugins/document-manager/anjuta-docman.c:887
+#: ../plugins/document-manager/anjuta-docman.c:890
 #: ../plugins/file-loader/plugin.c:597 ../plugins/file-loader/plugin.c:887
 #: ../plugins/file-loader/plugin.c:897 ../plugins/file-loader/plugin.c:910
 msgid "Open file"
 msgstr "Atverti failą"
 
-#: ../plugins/document-manager/anjuta-docman.c:906
+#: ../plugins/document-manager/anjuta-docman.c:909
 #: ../plugins/message-view/message-view.c:100
 msgid "Save file as"
 msgstr "Įrašyti failą taip"
 
-#: ../plugins/document-manager/anjuta-docman.c:987
+#: ../plugins/document-manager/anjuta-docman.c:990
 #, c-format
 msgid ""
 "The file '%s' already exists.\n"
@@ -3575,11 +3570,11 @@ msgstr ""
 "Failas „%s“ jau yra.\n"
 "Ar norite jį perrašyti šiuo metu įrašomu?"
 
-#: ../plugins/document-manager/anjuta-docman.c:996
+#: ../plugins/document-manager/anjuta-docman.c:999
 msgid "_Replace"
 msgstr "Per_rašyti"
 
-#: ../plugins/document-manager/anjuta-docman.c:1740
+#: ../plugins/document-manager/anjuta-docman.c:1743
 msgid "[read-only]"
 msgstr "[tik skaitymui]"
 
@@ -3978,7 +3973,7 @@ msgstr "Ieškoti naudojant reguliarias išraiškas"
 #: ../plugins/document-manager/plugin.c:295
 #: ../plugins/indentation-c-style/plugin.c:217
 #: ../plugins/indentation-python-style/plugin.c:200
-#: ../plugins/language-support-cpp-java/plugin.c:1153
+#: ../plugins/language-support-cpp-java/plugin.c:1192
 #: ../plugins/language-support-python/plugin.c:377 ../src/anjuta-actions.h:30
 msgid "_Edit"
 msgstr "_Keisti"
@@ -4625,7 +4620,7 @@ msgstr "Rodyti failų tvarkyklėje"
 msgid "File manager popup actions"
 msgstr "Failų tvarkyklės iššokančio meniu veiksmai"
 
-#: ../plugins/file-manager/plugin.c:404 ../plugins/git/plugin.c:165
+#: ../plugins/file-manager/plugin.c:404 ../plugins/git/plugin.c:156
 msgid "Files"
 msgstr "Failai"
 
@@ -4983,7 +4978,7 @@ msgstr "Gauti nutolusias šakas po sukūrimo"
 msgid "Mailbox files to apply:"
 msgstr "Pritaikomi pašto dėžutės failai"
 
-#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:973
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:953
 msgid "Branches"
 msgstr "Šakos"
 
@@ -5055,12 +5050,11 @@ msgstr "Šakos turi būti visiškai sulietos"
 
 #: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:96
 #: ../plugins/git/git-pane.c:101 ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:858
+#: ../plugins/git/plugin.c:838
 msgid "Git"
 msgstr "Git"
 
 #: ../plugins/git/anjuta-git.ui.h:33
-#| msgid "Git Tasks"
 msgid "Tasks"
 msgstr "Užduotys"
 
@@ -5133,7 +5127,7 @@ msgstr "Aplankas, kuriame sukurti pataisas:"
 msgid "Repository to pull from:"
 msgstr "Saugykla, iš kurios traukti:"
 
-#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:281
+#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:272
 msgid "Rebase"
 msgstr "Perkelti"
 
@@ -5213,6 +5207,11 @@ msgstr "Atidėti pakeitimai:"
 msgid "Repository Status:"
 msgstr "Saugyklos būsena:"
 
+#: ../plugins/git/anjuta-git.ui.h:72
+#| msgid "Show commit diff"
+msgid "Show Diff"
+msgstr "Rodyti pakeitimus"
+
 #: ../plugins/git/git-add-files-pane.c:160
 msgid "Add Files"
 msgstr "Pridėti failus"
@@ -5234,7 +5233,6 @@ msgid "Apply Mailbox Files"
 msgstr "Pritaikyti pašto dėžutės failus"
 
 #: ../plugins/git/git-apply-stash-pane.c:54
-#: ../plugins/git/git-diff-stash-pane.c:67
 #: ../plugins/git/git-drop-stash-pane.c:48
 msgid "No stash selected."
 msgstr "Nepasirinktas atidėjimas."
@@ -5266,7 +5264,7 @@ msgstr "Įveskite patvirtinimo autoriaus vardą"
 msgid "Please enter the commit author's e-mail address."
 msgstr "Įveskite patvirtinimo autoriaus el. pašto adresą."
 
-#: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:149
+#: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:148
 msgid "Commit"
 msgstr "Patvirtinti"
 
@@ -5284,7 +5282,6 @@ msgstr "Sukurti žymą"
 
 #: ../plugins/git/git-delete-branches-pane.c:238
 #, c-format
-#| msgid "Are you sure you want to delete the '%s' tool?"
 msgid "Are you sure you want to delete branch %s?"
 msgstr "Ar tikrai norite ištrinti šaką %s?"
 
@@ -5296,25 +5293,15 @@ msgstr "Nepasirinktas nutolęs"
 msgid "No tags selected."
 msgstr "Nepasirinkta žymų"
 
-#. Translators: default file name for git diff's output
-#: ../plugins/git/git-diff-pane.c:33
-msgid "Uncommitted Changes.diff"
-msgstr "Nepatvirtintų Changes.diff"
-
 #. Translators: file name for an existing commits diff, %s is an SHASUM of a commit
-#: ../plugins/git/git-diff-pane.c:71
+#: ../plugins/git/git-diff-pane.c:40
 #, c-format
 msgid "Commit %s.diff"
 msgstr "Patvirtinti %s.diff"
 
-#: ../plugins/git/git-diff-pane.c:104
+#: ../plugins/git/git-diff-pane.c:73
 msgid "No revision selected"
 msgstr "Nepasirinkta modifikacija"
-
-#: ../plugins/git/git-diff-stash-pane.c:40
-#, c-format
-msgid "Stash %i.diff"
-msgstr "Atidėjimas %i.diff"
 
 #: ../plugins/git/git-log-pane.c:581
 #, c-format
@@ -5331,7 +5318,7 @@ msgstr "<b>Žyma:</b> %s"
 msgid "<b>Remote:</b> %s"
 msgstr "<b>Nutolęs:</b> %s"
 
-#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:100
+#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:99
 msgid "Merge"
 msgstr "Sulieti"
 
@@ -5355,11 +5342,11 @@ msgstr "Git versijų kontrolė"
 msgid "Please enter a URL."
 msgstr "Įveskite URL"
 
-#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:265
+#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:256
 msgid "Pull"
 msgstr "Traukti"
 
-#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:257
+#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:248
 msgid "Push"
 msgstr "Nusiųsti"
 
@@ -5403,7 +5390,7 @@ msgstr "Nepasirinkta konfliktuojančių failų."
 msgid "Please enter a commit."
 msgstr "Įveskite patvirtinimą."
 
-#: ../plugins/git/git-revert-pane.c:163 ../plugins/git/plugin.c:529
+#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:512
 msgid "Revert"
 msgstr "Grąžinti"
 
@@ -5411,11 +5398,11 @@ msgstr "Grąžinti"
 msgid "Stash Uncommitted Changes"
 msgstr "Atidėti nepatvirtintus pakeitimus"
 
-#: ../plugins/git/git-status-pane.c:376
+#: ../plugins/git/git-status-pane.c:475
 msgid "Changes to be committed"
 msgstr "Pakeitimai patvirtinimui"
 
-#: ../plugins/git/git-status-pane.c:385
+#: ../plugins/git/git-status-pane.c:485
 msgid "Changed but not updated"
 msgstr "Pakeisti, bet neatnaujinti"
 
@@ -5423,375 +5410,346 @@ msgstr "Pakeisti, bet neatnaujinti"
 msgid "No staged files selected."
 msgstr "Nepažymėta paruoštų failų."
 
-#: ../plugins/git/plugin.c:68
+#: ../plugins/git/plugin.c:67
 msgid "Branch tools"
 msgstr "Šakų įrankiai"
 
-#: ../plugins/git/plugin.c:76 ../plugins/git/plugin.c:77
+#: ../plugins/git/plugin.c:75 ../plugins/git/plugin.c:76
 msgid "Create a branch"
 msgstr "Sukurti šaką"
 
-#: ../plugins/git/plugin.c:84 ../plugins/git/plugin.c:85
+#: ../plugins/git/plugin.c:83 ../plugins/git/plugin.c:84
 msgid "Delete branches"
 msgstr "Ištrinti šakas"
 
-#: ../plugins/git/plugin.c:92 ../plugins/git/plugin.c:93
+#: ../plugins/git/plugin.c:91 ../plugins/git/plugin.c:92
 msgid "Switch to the selected branch"
 msgstr "Persijungti į pasirinktą šaką"
 
-#: ../plugins/git/plugin.c:101
+#: ../plugins/git/plugin.c:100
 msgid "Merge a revision into the current branch"
 msgstr "Sulieti su esama šaka"
 
-#: ../plugins/git/plugin.c:112
+#: ../plugins/git/plugin.c:111
 msgid "Tag tools"
 msgstr "Žymų įrankiai"
 
-#: ../plugins/git/plugin.c:120 ../plugins/git/plugin.c:121
+#: ../plugins/git/plugin.c:119 ../plugins/git/plugin.c:120
 msgid "Create a tag"
 msgstr "Sukurti žymą"
 
-#: ../plugins/git/plugin.c:128 ../plugins/git/plugin.c:129
+#: ../plugins/git/plugin.c:127 ../plugins/git/plugin.c:128
 msgid "Delete selected tags"
 msgstr "Ištrinti pasirinktas žymas"
 
-#: ../plugins/git/plugin.c:141
+#: ../plugins/git/plugin.c:140
 msgid "Changes"
 msgstr "Pakeitimai"
 
-#: ../plugins/git/plugin.c:150
+#: ../plugins/git/plugin.c:149
 msgid "Commit changes"
 msgstr "Patvirtinti pakeitimus"
 
-#: ../plugins/git/plugin.c:157
-msgid "Diff uncommitted changes"
-msgstr "Nepatvirtintų pakeitimų skirtumai"
-
-#: ../plugins/git/plugin.c:158
-msgid "Show a diff of uncommitted changes in an editor"
-msgstr "Rodyti nepatvirtintų pakeitimų skirtumus redaktoriuje"
-
-#: ../plugins/git/plugin.c:173
+#: ../plugins/git/plugin.c:164
 #: ../plugins/snippets-manager/snippets-editor.ui.h:18
 msgid "Add"
 msgstr "Pridėti"
 
-#: ../plugins/git/plugin.c:174
+#: ../plugins/git/plugin.c:165
 msgid "Add files to the index"
 msgstr "Pridėti failus į indeksą"
 
-#: ../plugins/git/plugin.c:182
+#: ../plugins/git/plugin.c:173
 msgid "Remove files from the repository"
 msgstr "Pašalinti failus iš indekso"
 
-#: ../plugins/git/plugin.c:189 ../plugins/git/plugin.c:493
+#: ../plugins/git/plugin.c:180 ../plugins/git/plugin.c:476
 msgid "Check out"
 msgstr "Išimti"
 
-#: ../plugins/git/plugin.c:190
+#: ../plugins/git/plugin.c:181
 msgid "Revert changes in unstaged files"
 msgstr "Grąžinti pakeitimus neparuoštuose failuose"
 
-#: ../plugins/git/plugin.c:197 ../plugins/git/plugin.c:501
+#: ../plugins/git/plugin.c:188 ../plugins/git/plugin.c:484
 msgid "Unstage"
 msgstr "Atstatyti paruošimą"
 
-#: ../plugins/git/plugin.c:198
+#: ../plugins/git/plugin.c:189
 msgid "Remove staged files from the index"
 msgstr "Pašalinti paruoštus failus iš indekso"
 
-#: ../plugins/git/plugin.c:205
+#: ../plugins/git/plugin.c:196
 msgid "Resolve conflicts"
 msgstr "Išspręsti konfliktus"
 
-#: ../plugins/git/plugin.c:206
+#: ../plugins/git/plugin.c:197
 msgid "Mark selected conflicted files as resolved"
 msgstr "Žymėti konfliktuojančius failus kaip išspręstus"
 
-#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:991
+#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:971
 msgid "Stash"
 msgstr "Atidėjimas"
 
-#: ../plugins/git/plugin.c:221 ../plugins/git/plugin.c:333
+#: ../plugins/git/plugin.c:212 ../plugins/git/plugin.c:324
 msgid "Stash uncommitted changes"
 msgstr "Atidėti nepatvirtinus pakeitimus"
 
-#: ../plugins/git/plugin.c:222 ../plugins/git/plugin.c:334
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
 msgid "Save uncommitted changes without committing them"
 msgstr "Įrašyti nepatvirtintus pakeitimus jų nepatvirtinant"
 
-#: ../plugins/git/plugin.c:233
+#: ../plugins/git/plugin.c:224
 msgid "Remote repository tools"
 msgstr "Nutolusių saugyklų įrankiai"
 
-#: ../plugins/git/plugin.c:241
+#: ../plugins/git/plugin.c:232
 msgid "Add a remote"
 msgstr "Pridėti nutolusį"
 
-#: ../plugins/git/plugin.c:242
+#: ../plugins/git/plugin.c:233
 msgid "Add a remote repository"
 msgstr "Pridėti nutolusią saugyklą"
 
-#: ../plugins/git/plugin.c:249
+#: ../plugins/git/plugin.c:240
 msgid "Delete selected remote"
 msgstr "Ištrinti pasirinktą nutolusį"
 
-#: ../plugins/git/plugin.c:250
+#: ../plugins/git/plugin.c:241
 msgid "Delete a remote"
 msgstr "Ištrinti nutolusį"
 
-#: ../plugins/git/plugin.c:258
+#: ../plugins/git/plugin.c:249
 msgid "Push changes to a remote repository"
 msgstr "Nusiųsti pakeitimus į nutolusią saugyklą"
 
-#: ../plugins/git/plugin.c:266
+#: ../plugins/git/plugin.c:257
 msgid "Pull changes from a remote repository"
 msgstr "Gauti pakeitimus iš pasirinktos nutolusios saugyklos"
 
-#: ../plugins/git/plugin.c:273 ../plugins/git/plugin.c:593
+#: ../plugins/git/plugin.c:264 ../plugins/git/plugin.c:576
 msgid "Fetch"
 msgstr "Parsiųsti"
 
-#: ../plugins/git/plugin.c:274
+#: ../plugins/git/plugin.c:265
 msgid "Fetch changes from remote repositories"
 msgstr "Parsiųsti pakeitimus iš nutolusių saugyklų"
 
-#: ../plugins/git/plugin.c:289
+#: ../plugins/git/plugin.c:280
 msgid "Rebase against selected remote"
 msgstr "Perkelti pagal pasirinktą nutolusį"
 
-#: ../plugins/git/plugin.c:290
+#: ../plugins/git/plugin.c:281
 msgid "Start a rebase operation relative to the selected remote repository"
 msgstr "Pradėti perkėlimo veiksmą pagal pasirinktą nutolusią saugyklą"
 
-#: ../plugins/git/plugin.c:297 ../plugins/git/plugin.c:465
+#: ../plugins/git/plugin.c:288 ../plugins/git/plugin.c:448
 msgid "Continue"
 msgstr "Tęsti"
 
-#: ../plugins/git/plugin.c:298
+#: ../plugins/git/plugin.c:289
 msgid "Continue a rebase with resolved conflicts"
 msgstr "Tęsti perkėlimą su išspręstais konfliktais"
 
-#: ../plugins/git/plugin.c:305 ../plugins/git/plugin.c:473
+#: ../plugins/git/plugin.c:296 ../plugins/git/plugin.c:456
 msgid "Skip"
 msgstr "Praleisti"
 
-#: ../plugins/git/plugin.c:306
+#: ../plugins/git/plugin.c:297
 msgid "Skip the current revision"
 msgstr "Praleisti dabartinę modifikaciją"
 
-#: ../plugins/git/plugin.c:313 ../plugins/git/plugin.c:481
+#: ../plugins/git/plugin.c:304 ../plugins/git/plugin.c:464
 msgid "Abort"
 msgstr "Nutraukti"
 
-#: ../plugins/git/plugin.c:314
+#: ../plugins/git/plugin.c:305
 msgid "Abort the rebase and return the repository to its previous state"
 msgstr "Nutraukti perkėlimą ir grąžinti saugyklą į jos ankstesnę būseną"
 
-#: ../plugins/git/plugin.c:325
+#: ../plugins/git/plugin.c:316
 msgid "Stash tools"
 msgstr "Atidėjimo įrankiai"
 
-#: ../plugins/git/plugin.c:341
+#: ../plugins/git/plugin.c:332
 msgid "Apply selected stash"
 msgstr "Pritaikyti pasirinktą atidėjimą"
 
-#: ../plugins/git/plugin.c:342
+#: ../plugins/git/plugin.c:333
 msgid "Apply stashed changes back into the working tree"
 msgstr "Pritaikyti atidėtus pakeitimus atgal į darbinį medį"
 
-#: ../plugins/git/plugin.c:349
+#: ../plugins/git/plugin.c:340
 msgid "Apply stash and restore index"
 msgstr "Pritaikyti atidėjimą ir atstatyti indeksą"
 
-#: ../plugins/git/plugin.c:350
+#: ../plugins/git/plugin.c:341
 msgid "Apply stashed changes back into the working tree and the index"
 msgstr "Pritaikyti atidėtus pakeitimus atgal į darbinį medį ir indeksą"
 
-#: ../plugins/git/plugin.c:357
-msgid "Diff selected stash"
-msgstr "Pasirinkto atidėjimo pakeitimai"
-
-#: ../plugins/git/plugin.c:358
-msgid "Show a diff of the selected stash"
-msgstr "Rodyti pasirinkto atidėjimo pakeitimus"
-
-#: ../plugins/git/plugin.c:365
+#: ../plugins/git/plugin.c:348
 msgid "Drop selected stash"
 msgstr "Numesti pasirinktą atidėjimą"
 
-#: ../plugins/git/plugin.c:366
+#: ../plugins/git/plugin.c:349
 msgid "Delete the selected stash"
 msgstr "Ištrinti pasirinktą atidėjimą"
 
-#: ../plugins/git/plugin.c:373
+#: ../plugins/git/plugin.c:356
 msgid "Clear all stashes"
 msgstr "Išvalyti visus atidėjimus"
 
-#: ../plugins/git/plugin.c:374
+#: ../plugins/git/plugin.c:357
 msgid "Delete all stashes in this repository"
 msgstr "Ištrinti visus atidėjimus šioje saugykloje"
 
-#: ../plugins/git/plugin.c:385
+#: ../plugins/git/plugin.c:368
 msgid "Revision tools"
 msgstr "Modifikacijų įrankiai"
 
-#: ../plugins/git/plugin.c:393 ../plugins/git/plugin.c:513
+#: ../plugins/git/plugin.c:376 ../plugins/git/plugin.c:496
 msgid "Show commit diff"
 msgstr "Rodyti patvirtinimo pakeitimus"
 
-#: ../plugins/git/plugin.c:394
+#: ../plugins/git/plugin.c:377
 msgid "Show a diff of the selected revision"
 msgstr "Rodyti pasirinktos modifikacijos pakeitimus"
 
-#: ../plugins/git/plugin.c:401 ../plugins/git/plugin.c:521
+#: ../plugins/git/plugin.c:384 ../plugins/git/plugin.c:504
 msgid "Cherry pick"
 msgstr "Ištraukti"
 
-#: ../plugins/git/plugin.c:402
+#: ../plugins/git/plugin.c:385
 msgid "Merge an individual commit from another branch"
 msgstr "Sulieti pavienį patvirtinimą iš kitos šakos"
 
-#: ../plugins/git/plugin.c:409
+#: ../plugins/git/plugin.c:392
 msgid "Reset/Revert"
 msgstr "Atstatyti/grąžinti"
 
-#: ../plugins/git/plugin.c:417
+#: ../plugins/git/plugin.c:400
 msgid "Reset tree"
 msgstr "Atstatyti medį"
 
-#: ../plugins/git/plugin.c:418
+#: ../plugins/git/plugin.c:401
 msgid "Reset tree to a previous revision"
 msgstr "Atstatyti medį į ankstesnę modifikaciją"
 
-#: ../plugins/git/plugin.c:425
+#: ../plugins/git/plugin.c:408
 msgid "Revert commit"
 msgstr "Grąžinti patvirtinimą"
 
-#: ../plugins/git/plugin.c:426
+#: ../plugins/git/plugin.c:409
 msgid "Revert a commit"
 msgstr "Grąžinti patvirtinimą"
 
-#: ../plugins/git/plugin.c:433
+#: ../plugins/git/plugin.c:416
 msgid "Patch series"
 msgstr "Pataisų serijos"
 
-#: ../plugins/git/plugin.c:441 ../plugins/git/plugin.c:442
+#: ../plugins/git/plugin.c:424 ../plugins/git/plugin.c:425
 msgid "Generate a patch series"
 msgstr "Generuoti pataisų serijas"
 
-#: ../plugins/git/plugin.c:449
+#: ../plugins/git/plugin.c:432
 msgid "Mailbox files"
 msgstr "Pašto dėžės failai"
 
-#: ../plugins/git/plugin.c:457
+#: ../plugins/git/plugin.c:440
 msgid "Apply mailbox files"
 msgstr "Pritaikyti pašto dėžės failus"
 
-#: ../plugins/git/plugin.c:458
+#: ../plugins/git/plugin.c:441
 msgid "Apply patches from mailbox files"
 msgstr "Pritaikyti pataisas iš pašto dėžės failų"
 
-#: ../plugins/git/plugin.c:466
+#: ../plugins/git/plugin.c:449
 msgid "Continue applying patches with resolved conflicts"
 msgstr "Tęsti pataisų pritaikymą su išspręstais konfliktais"
 
-#: ../plugins/git/plugin.c:474
+#: ../plugins/git/plugin.c:457
 msgid "Skip the current patch in the series"
 msgstr "Praleisti dabartinę pataisą serijose"
 
-#: ../plugins/git/plugin.c:482
+#: ../plugins/git/plugin.c:465
 msgid ""
 "Stop applying the patch series and return the tree to its previous state"
 msgstr ""
 "Stabdyti pataisų serijų pritaikymą ir grąžinti medį į jo ankstesnę būseną"
 
-#: ../plugins/git/plugin.c:537
-#| msgid "Reset"
+#: ../plugins/git/plugin.c:520
 msgid "Reset..."
 msgstr "Atstatyti..."
 
-#: ../plugins/git/plugin.c:549
+#: ../plugins/git/plugin.c:532
 msgid "Switch"
 msgstr "Persijungti į"
 
-#: ../plugins/git/plugin.c:557
-#| msgid "Deleted"
+#: ../plugins/git/plugin.c:540
 msgid "Delete..."
 msgstr "Ištrinti..."
 
-#: ../plugins/git/plugin.c:565
-#| msgid "Merge"
+#: ../plugins/git/plugin.c:548
 msgid "Merge..."
 msgstr "Sulieti..."
 
-#: ../plugins/git/plugin.c:577
-#| msgid "Push"
+#: ../plugins/git/plugin.c:560
 msgid "Push..."
 msgstr "Nusiųsti..."
 
-#: ../plugins/git/plugin.c:585
-#| msgid "Pull"
+#: ../plugins/git/plugin.c:568
 msgid "Pull..."
 msgstr "Parsiųsti..."
 
-#: ../plugins/git/plugin.c:605
+#: ../plugins/git/plugin.c:588
 msgid "Apply"
 msgstr "Pritaikyti"
 
-#: ../plugins/git/plugin.c:613
-#| msgid "Apply stash and restore index"
+#: ../plugins/git/plugin.c:596
 msgid "Apply and restore index"
 msgstr "Pritaikyti atstatyti indeksą"
 
-#: ../plugins/git/plugin.c:621
-#: ../plugins/subversion/subversion-log-dialog.c:119
-msgid "Diff"
-msgstr "Skirtumai"
-
-#: ../plugins/git/plugin.c:629
+#: ../plugins/git/plugin.c:604
 msgid "Drop"
 msgstr "Pašalinti"
 
-#: ../plugins/git/plugin.c:721 ../plugins/git/plugin.c:794
+#: ../plugins/git/plugin.c:696 ../plugins/git/plugin.c:769
 msgid "Branch"
 msgstr "Šaka"
 
-#: ../plugins/git/plugin.c:877
+#: ../plugins/git/plugin.c:857
 msgid "Status popup menu"
 msgstr "Būsenos iššokanti meniu"
 
-#: ../plugins/git/plugin.c:882
+#: ../plugins/git/plugin.c:862
 msgid "Log popup menu"
 msgstr "Žurnalo iššokanti meniu"
 
-#: ../plugins/git/plugin.c:888
-#| msgid "Branch name:"
+#: ../plugins/git/plugin.c:868
 msgid "Branch popup menu"
 msgstr "Šakos iššokantis meniu"
 
-#: ../plugins/git/plugin.c:894
-#| msgid "Remote name:"
+#: ../plugins/git/plugin.c:874
 msgid "Remote popup menu"
 msgstr "Nutolusiojo iššokantis meniu"
 
-#: ../plugins/git/plugin.c:899
+#: ../plugins/git/plugin.c:879
 msgid "Popup menu entries"
 msgstr "Iššokančio meniu elementai"
 
-#: ../plugins/git/plugin.c:961
+#: ../plugins/git/plugin.c:941
 msgid "Status"
 msgstr "Būsena"
 
-#: ../plugins/git/plugin.c:967
+#: ../plugins/git/plugin.c:947
 msgid "Log"
 msgstr "Žurnalas"
 
-#: ../plugins/git/plugin.c:978
+#: ../plugins/git/plugin.c:958
 msgid "Tags"
 msgstr "Žymos"
 
-#: ../plugins/git/plugin.c:985
+#: ../plugins/git/plugin.c:965
 msgid "Remotes"
 msgstr "Nutolę"
 
@@ -5938,8 +5896,8 @@ msgstr "C įtrauka"
 
 #: ../plugins/indentation-c-style/plugin.c:362
 #: ../plugins/indentation-c-style/plugin.c:371
-#: ../plugins/indentation-python-style/plugin.c:328
-#: ../plugins/indentation-python-style/plugin.c:337
+#: ../plugins/indentation-python-style/plugin.c:324
+#: ../plugins/indentation-python-style/plugin.c:333
 msgid "Indentation"
 msgstr "Įtrauka"
 
@@ -6031,32 +5989,32 @@ msgstr "Įkelti API žymas C standartinei bibliotekai"
 msgid "Load API tags for C++ standard template library"
 msgstr "Įkelti API žymas C++ standartinei šablonų bibliotekai"
 
-#: ../plugins/language-support-cpp-java/plugin.c:702
+#: ../plugins/language-support-cpp-java/plugin.c:784
 msgid "Code added for widget."
 msgstr "Elementui pridėtas kodas"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1159
+#: ../plugins/language-support-cpp-java/plugin.c:1198
 msgid "Comment/Uncomment"
 msgstr "Komentuoti/atkomentuoti"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1160
+#: ../plugins/language-support-cpp-java/plugin.c:1199
 msgid "Comment or uncomment current selection"
 msgstr "Komentuoti arba atkomentuoti dabartinį žymėjimą"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1165
+#: ../plugins/language-support-cpp-java/plugin.c:1204
 msgid "Swap .h/.c"
 msgstr "Persijungti tarp .h/.c"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1166
+#: ../plugins/language-support-cpp-java/plugin.c:1205
 msgid "Swap C header and source files"
 msgstr "Persijungti tarp C antraštinio ir pradinio kodo falų"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1206
+#: ../plugins/language-support-cpp-java/plugin.c:1245
 msgid "C++/Java Assistance"
 msgstr "C++/Java asistentas"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1425
-#: ../plugins/language-support-cpp-java/plugin.c:1454
+#: ../plugins/language-support-cpp-java/plugin.c:1462
+#: ../plugins/language-support-cpp-java/plugin.c:1491
 msgid "API Tags (C/C++)"
 msgstr "API žymos (C/C++)"
 
@@ -6187,8 +6145,8 @@ msgstr "Daugiau nerodyti šito įspėjimo"
 msgid "Python Assistance"
 msgstr "Python asistentas"
 
-#: ../plugins/language-support-python/plugin.c:561
-#: ../plugins/language-support-python/plugin.c:574
+#: ../plugins/language-support-python/plugin.c:557
+#: ../plugins/language-support-python/plugin.c:570
 #: ../plugins/language-support-python/python-assist.c:807
 msgid "Python"
 msgstr "Python"
@@ -6203,7 +6161,7 @@ msgstr "Vala palaikymo įskiepis, prideda kodo užbaigimą."
 
 #: ../plugins/language-support-vala/plugin.vala:655
 #: ../plugins/language-support-vala/plugin.vala:663
-#: ../plugins/parser-cxx/plugin.c:269 ../plugins/parser-cxx/plugin.c:282
+#: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Auto-užbaigimas"
 
@@ -6954,11 +6912,11 @@ msgstr "Projektų valdyklės veiksmai"
 msgid "Project manager popup actions"
 msgstr "Projektų valdyklės iššokančio meniu veiksmai"
 
-#: ../plugins/project-manager/plugin.c:2389
+#: ../plugins/project-manager/plugin.c:2457
 msgid "Initializing Project…"
 msgstr "Inicializuojamas projektas..."
 
-#: ../plugins/project-manager/plugin.c:2392
+#: ../plugins/project-manager/plugin.c:2460
 msgid "Project Loaded"
 msgstr "Projektas įkeltas"
 
@@ -7793,7 +7751,6 @@ msgstr ""
 #: ../plugins/project-wizard/templates/library.wiz.in.h:24
 #: ../plugins/project-wizard/templates/terminal.wiz.in.h:19
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:19
-#| msgid "Add C++ support:"
 msgid "Add Windows support:"
 msgstr "Pridėti Windows palaikymą:"
 
@@ -7804,7 +7761,6 @@ msgstr "Pridėti Windows palaikymą:"
 #: ../plugins/project-wizard/templates/library.wiz.in.h:25
 #: ../plugins/project-wizard/templates/terminal.wiz.in.h:20
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:20
-#| msgid "Adds support for building shared libraries in your project"
 msgid "Adds support for building on Windows platforms"
 msgstr "Prideda kūrimo palaikymą Windows platformose"
 
@@ -8367,12 +8323,12 @@ msgid "Languages"
 msgstr "Kalbos"
 
 #. Insert the Add Snippet menu item
-#: ../plugins/snippets-manager/snippets-browser.c:811
+#: ../plugins/snippets-manager/snippets-browser.c:809
 msgid "Add Snippet …"
 msgstr "Pridėti iškarpą ..."
 
 #. Insert the Add Snippets Group menu item
-#: ../plugins/snippets-manager/snippets-browser.c:821
+#: ../plugins/snippets-manager/snippets-browser.c:819
 msgid "Add Snippets Group …"
 msgstr "Pridėti iškarpų grupę ..."
 
@@ -8634,7 +8590,7 @@ msgstr "Redaktoriaus rodinio nustatymai"
 msgid "GtkSourceView Editor"
 msgstr "GtkSourceView redaktorius"
 
-#: ../plugins/sourceview/sourceview.c:602
+#: ../plugins/sourceview/sourceview.c:629
 #, c-format
 msgid ""
 "The file \"%s\" on the disk is more recent than the current buffer.\n"
@@ -8643,7 +8599,7 @@ msgstr ""
 "Failas „%s“ diske yra naujesnis nei esamame buferyje.\n"
 "Ar norite jį įkelti iš naujo?"
 
-#: ../plugins/sourceview/sourceview.c:634
+#: ../plugins/sourceview/sourceview.c:661
 #, c-format
 msgid ""
 "The file \"%s\" has been deleted on the disk.\n"
@@ -8653,18 +8609,18 @@ msgstr ""
 "Ar norite jį užverti?"
 
 #. Could not open <filename>: <error message>
-#: ../plugins/sourceview/sourceview.c:667
+#: ../plugins/sourceview/sourceview.c:694
 #, c-format
 msgid "Could not open %s: %s"
 msgstr "Nepavyko atverti %s: %s"
 
-#: ../plugins/sourceview/sourceview.c:718
+#: ../plugins/sourceview/sourceview.c:745
 #, c-format
 msgid "The file \"%s\" is read-only! Edit anyway?"
 msgstr "Failas „%s“ yra tik skaitymui! Vistiek redaguoti?"
 
 #. Could not open <filename>: <error message>
-#: ../plugins/sourceview/sourceview.c:777
+#: ../plugins/sourceview/sourceview.c:804
 #, c-format
 msgid "Could not save %s: %s"
 msgstr "Nepavyko įrašyti %s: %s"
@@ -9151,6 +9107,10 @@ msgstr "[Galva/darbinė kopija]"
 #: ../plugins/subversion/subversion-log-dialog.c:493
 msgid "Subversion: Retrieving diff…"
 msgstr "Subversion: gaunami skirtumai..."
+
+#: ../plugins/subversion/subversion-log-dialog.c:119
+msgid "Diff"
+msgstr "Skirtumai"
 
 #: ../plugins/subversion/subversion-log-dialog.c:257
 msgid "Subversion: Retrieving log…"
@@ -9793,7 +9753,7 @@ msgstr "Klausti naudotojo papildomiems parametrams gauti"
 msgid "Command line parameters"
 msgstr "Komandų eilutės parametrai"
 
-#: ../src/about.c:205
+#: ../src/about.c:201
 msgid "Copyright (c) Naba Kumar"
 msgstr "Autorinės teisės (c) Naba Kumar"
 
@@ -9801,7 +9761,7 @@ msgstr "Autorinės teisės (c) Naba Kumar"
 msgid "_File"
 msgstr "_Failas"
 
-#: ../src/anjuta-actions.h:24
+#: ../src/anjuta-actions.h:24 ../src/anjuta-menu.ui.h:5
 msgid "_Quit"
 msgstr "_Išeiti"
 
@@ -9809,7 +9769,7 @@ msgstr "_Išeiti"
 msgid "Quit Anjuta IDE"
 msgstr "Palikti Anjuta IDE"
 
-#: ../src/anjuta-actions.h:32
+#: ../src/anjuta-actions.h:32 ../src/anjuta-menu.ui.h:2
 msgid "_Preferences"
 msgstr "_Nustatymai"
 
@@ -9854,7 +9814,7 @@ msgstr "_Įrankių juosta"
 msgid "Show or hide the toolbar"
 msgstr "Rodyti arba slėpti įrankių juostą"
 
-#: ../src/anjuta-actions.h:61
+#: ../src/anjuta-actions.h:61 ../src/anjuta-menu.ui.h:3
 msgid "_Help"
 msgstr "_Žinynas"
 
@@ -9898,7 +9858,7 @@ msgstr "Užduoti _klausimą"
 msgid "Submit a question for FAQs"
 msgstr "Pasiūlyti klausimą DŪK"
 
-#: ../src/anjuta-actions.h:83
+#: ../src/anjuta-actions.h:83 ../src/anjuta-menu.ui.h:4
 msgid "_About"
 msgstr "_Apie"
 
@@ -9914,62 +9874,64 @@ msgstr "Apie išorinius _įskiepius"
 msgid "About third-party Anjuta plugins"
 msgstr "Apie trečių šalių Anjuta įskiepius"
 
-#: ../src/anjuta-application.c:300
+#: ../src/anjuta-application.c:363
 msgid "Specify the size and location of the main window"
 msgstr "Nurodykite pagrindinio lango padėtį ir dydį"
 
 #. This is the format you can specify the size andposition
 #. * of the window on command line
-#: ../src/anjuta-application.c:303
+#: ../src/anjuta-application.c:366
 msgid "WIDTHxHEIGHT+XOFF+YOFF"
 msgstr "PLOTISxAUKŠTISxXPOSLxYPOSL"
 
-#: ../src/anjuta-application.c:308
+#: ../src/anjuta-application.c:371
 msgid "Do not show the splash screen"
 msgstr "Nerodyti ekrano užsklandos"
 
-#: ../src/anjuta-application.c:314
+#: ../src/anjuta-application.c:377
 msgid "Start a new instance and do not open the file in an existing instance"
 msgstr "Paleisti naują ir neatverti failo esamame"
 
-#: ../src/anjuta-application.c:320
+#: ../src/anjuta-application.c:383
 msgid "Do not open last session on startup"
 msgstr "Neatverti paskutinio seanso paleidžiant"
 
-#: ../src/anjuta-application.c:326
+#: ../src/anjuta-application.c:389
 msgid "Do not open last project and files on startup"
 msgstr "Neatverti paskutinio projekto ir failų paleidžiant"
 
-#: ../src/anjuta-application.c:332
+#: ../src/anjuta-application.c:395
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
 msgstr "Išjungti Anjuta tvarkingai, atlaisvinant visus resursus (derinimui)"
 
-#: ../src/anjuta-application.c:338
+#: ../src/anjuta-application.c:401
 msgid "Display program version"
 msgstr "Rodyti programos versiją"
 
-#: ../src/anjuta-application.c:344
+#: ../src/anjuta-application.c:407
 msgid "Specify another profile"
 msgstr "Nurodykite kitą profilį"
 
-#: ../src/anjuta-application.c:345
-#| msgid "Compile file"
+#: ../src/anjuta-application.c:408
 msgid "profile file"
 msgstr "profilio failas"
 
-#: ../src/anjuta-application.c:362
+#: ../src/anjuta-application.c:425
 msgid "- Integrated Development Environment"
 msgstr "- Integruota programavimo aplinka"
 
-#: ../src/anjuta-application.c:639
+#: ../src/anjuta-application.c:764
 #, c-format
-#| msgid "Installation failed: %s"
 msgid "Invalid profile %s: %s"
 msgstr "Netinkamas profilis %s: %s"
 
-#: ../src/anjuta-application.c:693
+#: ../src/anjuta-application.c:818
 msgid "Loaded Session…"
 msgstr "Įkeltas seansas..."
+
+#: ../src/anjuta-menu.ui.h:1
+msgid "_New Window"
+msgstr "_Naujas langas"
 
 #: ../src/anjuta-window.c:683
 msgid "Edit"
@@ -9979,15 +9941,15 @@ msgstr "Keisti"
 msgid "Help"
 msgstr "Žinynas"
 
-#: ../src/anjuta-window.c:992
+#: ../src/anjuta-window.c:993
 msgid "Installed plugins"
 msgstr "Įdiegti įskiepiai"
 
-#: ../src/anjuta-window.c:996
+#: ../src/anjuta-window.c:997
 msgid "Shortcuts"
 msgstr "Trumpiniai"
 
-#: ../src/anjuta-window.c:1068
+#: ../src/anjuta-window.c:1069
 #, c-format
 msgid "Value doesn't exist"
 msgstr "Vertės nėra"
