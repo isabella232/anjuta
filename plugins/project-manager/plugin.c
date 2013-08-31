@@ -649,13 +649,15 @@ static gboolean
 confirm_removal (ProjectManagerPlugin *plugin, GList *selected)
 {
 	gboolean answer;
-	GString* mesg;
+	gchar * mesg; /*using gchar because we have only one append */
+	gchar * shownMesg; 
 	GList *item;
 	GbfTreeNodeType type;
 	gboolean group = FALSE;
 	gboolean remove_group_file = FALSE;
 	gboolean source = FALSE;
 	gboolean remove_source_file = FALSE;
+	guint nbItem ;
 
 	g_return_val_if_fail (selected != NULL, FALSE);
 
@@ -680,81 +682,77 @@ confirm_removal (ProjectManagerPlugin *plugin, GList *selected)
 		if (type != data->type) type = GBF_TREE_NODE_UNKNOWN;
 	}
 
-	switch (type)
-	{
-	case GBF_TREE_NODE_GROUP:
-		mesg = g_string_new (_("Are you sure you want to remove the following group from the project?\n\n"));
-		break;
-	case GBF_TREE_NODE_TARGET:
-		mesg = g_string_new (_("Are you sure you want to remove the following target from the project?\n\n"));
-		break;
-	case GBF_TREE_NODE_SOURCE:
-		mesg = g_string_new (_("Are you sure you want to remove the following source file from the project?\n\n"));
-		break;
-	case GBF_TREE_NODE_PACKAGE:
-		mesg = g_string_new (_("Are you sure you want to remove the following package from the project?\n\n"));
-		break;
-	case GBF_TREE_NODE_MODULE:
-		mesg = g_string_new (_("Are you sure you want to remove the following module from the project?\n\n"));
-		break;
-	case GBF_TREE_NODE_UNKNOWN:
-		mesg = g_string_new (_("Are you sure you want to remove the following elements from the project?\n\n"));
-		break;
-	case GBF_TREE_NODE_SHORTCUT:
-		/* Remove shortcut without confirmation */
-		return TRUE;
-	default:
-		g_warn_if_reached ();
-		return FALSE;
-	}
-
-	for (item = g_list_first (selected); item != NULL; item = g_list_next (item))
-	{
+	nbItem = g_list_length(selected);
+	if(nbItem == 1) {
+		item = g_list_first (selected) ;
 		GbfTreeData *data = (GbfTreeData *)item->data;
 
 		switch (data->type)
 		{
 		case GBF_TREE_NODE_GROUP:
-			g_string_append_printf (mesg, _("Group: %s\n"), data->name);
+			mesg = g_strdup_printf(_("Are you sure you want to remove the group \"%s\" from the project?\n\n"), data->name);
 			break;
 		case GBF_TREE_NODE_TARGET:
-			g_string_append_printf (mesg, _("Target: %s\n"), data->name);
+			mesg = g_strdup_printf(_("Are you sure you want to remove the target \"%s\" from the project?\n\n"), data->name);
 			break;
 		case GBF_TREE_NODE_SOURCE:
-			g_string_append_printf (mesg, _("Source: %s\n"), data->name);
+			mesg = g_strdup_printf(_("Are you sure you want to remove the source \"%s\" from the project?\n\n"), data->name);
 			break;
 		case GBF_TREE_NODE_SHORTCUT:
-			g_string_append_printf (mesg, _("Shortcut: %s\n"), data->name);
-			return TRUE;
+			mesg = g_strdup_printf(_("Are you sure you want to remove the shortcut \"%s\" from the project?\n\n"), data->name);
+			/*return TRUE;*/
+			break ;
 		case GBF_TREE_NODE_MODULE:
-			g_string_append_printf (mesg, _("Module: %s\n"), data->name);
+			mesg = g_strdup_printf(_("Are you sure you want to remove the module \"%s\" from the project?\n\n"), data->name);
 			break;
 		case GBF_TREE_NODE_PACKAGE:
-			g_string_append_printf (mesg, _("Package: %s\n"), data->name);
+			mesg = g_strdup_printf(_("Are you sure you want to remove the package \"%s\" from the project?\n\n"), data->name);
+			break;
+		case GBF_TREE_NODE_UNKNOWN:
+			mesg = g_strdup_printf(_("Are you sure you want to remove the element \"%s\" from the project?\n\n"), data->name);
 			break;
 		default:
-			g_warn_if_reached ();
 			return FALSE;
 		}
+		
 	}
+	else
+		mesg = g_strdup_printf(_("Are you sure you want to remove %d elements from the project?\n\n"), nbItem);
 
 	if (group || source)
 	{
-		g_string_append (mesg, "\n");
-		if (remove_group_file)
-			g_string_append (mesg, _("The group will be deleted from the file system."));
-		else if (group)
-			g_string_append (mesg, _("The group will not be deleted from the file system."));
-		if (remove_source_file)
-			g_string_append (mesg, _("The source file will be deleted from the file system."));
-		else if (source)
-			g_string_append (mesg, _("The source file will not be deleted from the file system."));
+		if (remove_group_file) {
+			shownMesg = g_strconcat (mesg, _("The group will be deleted from the file system.\n"), NULL);
+			g_free (mesg);
+			mesg = shownMesg ;
+		}			
+		else if (group) {
+			shownMesg = g_strconcat (mesg, _("The group will not be deleted from the file system.\n"), NULL);
+			g_free (mesg);
+			mesg = shownMesg ;
+		}
+		
+		if (remove_source_file) {
+			shownMesg = g_strconcat (mesg, _("The source file will be deleted from the file system.\n"), NULL);
+			g_free (mesg);
+			mesg = shownMesg ;
+		}
+		else if (source) {
+			shownMesg = g_strconcat (mesg, _("The source file will not be deleted from the file system.\n"), NULL);
+			g_free (mesg);
+			mesg = shownMesg ;
+		}
+		shownMesg = g_strconcat (mesg, "\n", NULL);
+		g_free (mesg);
 	}
+	else
+		shownMesg = mesg ;
 
 	answer =
 		anjuta_util_dialog_boolean_question (get_plugin_parent_window (plugin), FALSE,
-											 mesg->str, _("Confirm remove"));
-	g_string_free (mesg, TRUE);
+											 shownMesg, _("Confirm remove"));
+	
+	g_free (shownMesg);
 
 	return answer;
 }
