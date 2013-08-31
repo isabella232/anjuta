@@ -1409,7 +1409,7 @@ on_session_save (AnjutaShell *shell, AnjutaSessionPhase phase,
 
 	if (phase != ANJUTA_SESSION_PHASE_NORMAL)
 		return;
-
+	
 	files = anjuta_session_get_string_list (session, "File Loader", "Files"); /* probably NULL */
 	/* buffers list is ordered last-opened to first-opened */
 	docwids = anjuta_docman_get_all_doc_widgets (ANJUTA_DOCMAN (plugin->docman));
@@ -1434,6 +1434,8 @@ on_session_save (AnjutaShell *shell, AnjutaSessionPhase phase,
 					files = g_list_prepend (files, anjuta_session_get_relative_uri_from_file (session, file, line_number));
 					g_free (line_number);
 				}
+				/* Close document */
+				anjuta_docman_remove_document (ANJUTA_DOCMAN (plugin->docman), IANJUTA_DOCUMENT (node->data));
 			}
 		}
 		g_list_free (docwids);

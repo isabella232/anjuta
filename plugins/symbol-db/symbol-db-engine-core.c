@@ -140,6 +140,7 @@ enum {
  */
 typedef struct _UpdateFileSymbolsData {	
 	gchar *project;
+	gchar *project_directory;
 	gboolean update_prj_analyse_time;
 	GPtrArray * files_path;
 	
@@ -2661,7 +2662,7 @@ symbol_db_engine_close_db (SymbolDBEngine *dbe)
 	
 	g_free (priv->db_directory);
 	priv->db_directory = NULL;
-	
+
 	g_free (priv->project_directory);
 	priv->project_directory = NULL;	
 	
@@ -5207,20 +5208,20 @@ on_scan_update_files_symbols_end (SymbolDBEngine * dbe,
 	{
 		gchar *node = (gchar *) g_ptr_array_index (files_to_scan, i);
 		
-		if (strstr (node, priv->project_directory) == NULL) 
+		if (strstr (node, update_data->project_directory) == NULL) 
 		{
 			g_warning ("node %s is shorter than "
 					   "prj_directory %s",
-					   node, priv->project_directory);
+					   node, update_data->project_directory);
 			continue;
 		}
 		
 		/* clean the db from old un-updated with the last update step () */
 		if (sdb_engine_update_file (dbe, node + 
-									strlen (priv->project_directory)) == FALSE)
+									strlen (update_data->project_directory)) == FALSE)
 		{
 			g_warning ("Error processing file %s", node + 
-					   strlen (priv->project_directory));
+					   strlen (update_data->project_directory));
 			return;
 		}
 	}
@@ -5272,6 +5273,7 @@ on_scan_update_files_symbols_end (SymbolDBEngine * dbe,
 	g_ptr_array_unref (files_to_scan);
 
 	g_free (update_data->project);
+	g_free (update_data->project_directory);
 	g_free (update_data);
 }
 
@@ -5340,6 +5342,7 @@ symbol_db_engine_update_files_symbols (SymbolDBEngine * dbe, const gchar * proje
 	update_data->update_prj_analyse_time = update_prj_analyse_time;
 	update_data->files_path = ready_files;
 	update_data->project = g_strdup (project);
+	update_data->project_directory = g_strdup (priv->project_directory);
 
 	
 	/* data will be freed when callback will be called. The signal will be

@@ -1502,9 +1502,30 @@ on_profile_descoped (AnjutaProfile *profile, ProjectManagerPlugin *plugin)
 static void
 project_manager_plugin_close (ProjectManagerPlugin *plugin)
 {
+	AnjutaSavePrompt *save_prompt;
 	AnjutaProfileManager *profile_manager;
 	AnjutaProfile *profile;
 	GError *error = NULL;
+
+	/* Check for unsaved data */
+	save_prompt = anjuta_save_prompt_new (GTK_WINDOW (ANJUTA_PLUGIN (plugin)->shell));
+	anjuta_shell_save_prompt (ANJUTA_PLUGIN (plugin)->shell, save_prompt, NULL);
+	if (anjuta_save_prompt_get_items_count (save_prompt) > 0)
+	{
+		switch (gtk_dialog_run (GTK_DIALOG (save_prompt)))
+		{
+		case GTK_RESPONSE_DELETE_EVENT:
+		case ANJUTA_SAVE_PROMPT_RESPONSE_CANCEL:
+			gtk_widget_destroy (GTK_WIDGET (save_prompt));
+			/* Do not exit now */
+			return;
+		case ANJUTA_SAVE_PROMPT_RESPONSE_DISCARD:
+		case ANJUTA_SAVE_PROMPT_RESPONSE_SAVE_CLOSE:
+			/* exit now */
+			break;
+		}
+	}
+	gtk_widget_destroy (GTK_WIDGET (save_prompt));
 
 	/* Remove project profile */
 	profile_manager =

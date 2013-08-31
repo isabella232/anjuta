@@ -1,3 +1,5 @@
+
+
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 
 /* plugin.c
@@ -366,9 +368,6 @@ on_session_save (AnjutaShell *shell, AnjutaSessionPhase phase,
                  AnjutaSession *session, GladePlugin *plugin)
 {
 	GList *files, *docwids, *node;
-	/*	GtkTreeModel *model;
-	 GtkTreeIter iter;
-	 */
 	IAnjutaDocumentManager *docman;
 
 	if (phase != ANJUTA_SESSION_PHASE_NORMAL)
@@ -393,6 +392,7 @@ on_session_save (AnjutaShell *shell, AnjutaSessionPhase phase,
 					files = g_list_prepend (files, anjuta_session_get_relative_uri_from_file (session, file, NULL));
 					g_object_unref (file);
 					/* uri is not freed here */
+					ianjuta_document_manager_remove_document (docman, IANJUTA_DOCUMENT (node->data), FALSE, NULL);
 				}
 			}
 		}
