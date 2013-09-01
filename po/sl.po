@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-08-28 19:36+0000\n"
-"PO-Revision-Date: 2013-08-30 22:48+0100\n"
+"POT-Creation-Date: 2013-09-01 15:04+0000\n"
+"PO-Revision-Date: 2013-09-01 20:53+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: Slovenian\n"
@@ -4208,9 +4208,9 @@ msgstr "Enostavno iskanje"
 
 #. DocmanPlugin* plugin = ANJUTA_PLUGIN_DOCMAN (ipref);
 #: ../plugins/document-manager/plugin.c:418
-#: ../plugins/document-manager/plugin.c:1716
-#: ../plugins/document-manager/plugin.c:2136
-#: ../plugins/document-manager/plugin.c:2145
+#: ../plugins/document-manager/plugin.c:1718
+#: ../plugins/document-manager/plugin.c:2138
+#: ../plugins/document-manager/plugin.c:2147
 msgid "Documents"
 msgstr "Dokumenti"
 
@@ -4248,12 +4248,12 @@ msgid "Mode"
 msgstr "Način"
 
 #. this may fail, too
-#: ../plugins/document-manager/plugin.c:1552
+#: ../plugins/document-manager/plugin.c:1554
 #, c-format
 msgid "Autosave failed for %s"
 msgstr "Neuspešno samodejno shranjevanje %s"
 
-#: ../plugins/document-manager/plugin.c:1566
+#: ../plugins/document-manager/plugin.c:1568
 msgid "Autosave completed"
 msgstr "Samodejno shranjevanje končano"
 
@@ -6594,7 +6594,7 @@ msgstr "Izberite hrbtišče projekta za odpiranje."
 
 #: ../plugins/project-manager/dialogs.c:683
 #: ../plugins/project-manager/dialogs.c:688
-#: ../plugins/project-manager/plugin.c:928
+#: ../plugins/project-manager/plugin.c:926
 msgid "Project properties"
 msgstr "Lastnosti projekta"
 
@@ -6679,105 +6679,101 @@ msgstr "Manjka ime modula"
 msgid "Cannot add packages"
 msgstr "Ni mogoče dodati paketov"
 
-#: ../plugins/project-manager/plugin.c:686
-msgid ""
-"Are you sure you want to remove the following group from the project?\n"
-"\n"
-msgstr ""
-"Ali ste prepričani, da želite odstraniti skupino iz projekta?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:689
-msgid ""
-"Are you sure you want to remove the following target from the project?\n"
-"\n"
-msgstr ""
-"Ali ste prepričani, da želite odstraniti cilj iz projekta?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:692
-msgid ""
-"Are you sure you want to remove the following source file from the project?\n"
-"\n"
-msgstr ""
-"Ali ste prepričani, da želite odstraniti izvorno datoteko iz projekta?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:695
-msgid ""
-"Are you sure you want to remove the following package from the project?\n"
-"\n"
-msgstr ""
-"Ali ste prepričani, da želite odstraniti paket iz projekta?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:698
-msgid ""
-"Are you sure you want to remove the following module from the project?\n"
-"\n"
-msgstr ""
-"Ali ste prepričani, da želite odstraniti modul iz projekta?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:701
-msgid ""
-"Are you sure you want to remove the following elements from the project?\n"
-"\n"
-msgstr ""
-"Ali ste prepričani, da želite odstraniti naslednje predmete iz projekta?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:718
+#: ../plugins/project-manager/plugin.c:693
 #, c-format
-msgid "Group: %s\n"
-msgstr "Skupina: %s\n"
+msgid ""
+"Are you sure you want to remove the group \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Ali ste prepričani, da želite odstraniti skupino \"%s\" iz projekta?\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:721
+#: ../plugins/project-manager/plugin.c:696
 #, c-format
-msgid "Target: %s\n"
-msgstr "Cilj: %s\n"
+msgid ""
+"Are you sure you want to remove the target \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Ali ste prepričani, da želite odstraniti cilj \"%s\" iz projekta?\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:724
+#: ../plugins/project-manager/plugin.c:699
 #, c-format
-msgid "Source: %s\n"
-msgstr "Vir: %s\n"
+msgid ""
+"Are you sure you want to remove the source \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Ali ste prepričani, da želite odstraniti vir \"%s\" iz projekta?\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:727
+#: ../plugins/project-manager/plugin.c:702
 #, c-format
-msgid "Shortcut: %s\n"
-msgstr "Bližnjica: %s\n"
+msgid ""
+"Are you sure you want to remove the shortcut \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Ali ste prepričani, da želite odstraniti tipkovno bližnjico \"%s\" iz "
+"projekta?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:706
+#, c-format
+msgid ""
+"Are you sure you want to remove the module \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Ali ste prepričani, da želite odstraniti modul \"%s\" iz projekta?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:709
+#, c-format
+msgid ""
+"Are you sure you want to remove the package \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Ali ste prepričani, da želite odstraniti paket \"%s\" iz projekta?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:712
+#, c-format
+msgid ""
+"Are you sure you want to remove the element \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Ali ste prepričani, da želite odstraniti predmet \"%s\" iz projekta?\n"
+"\n"
+
+# MULTIPLE PLURAL!
+#: ../plugins/project-manager/plugin.c:720
+#, c-format
+msgid ""
+"Are you sure you want to remove %d elements from the project?\n"
+"\n"
+msgstr ""
+"Ali ste prepričani, da želite odstraniti %d predmetov iz projekta?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:725
+msgid "The group will be deleted from the file system.\n"
+msgstr "Skupina bo izbrisana iz datotečnega sistema.\n"
 
 #: ../plugins/project-manager/plugin.c:730
-#, c-format
-msgid "Module: %s\n"
-msgstr "Modul: %s\n"
+msgid "The group will not be deleted from the file system.\n"
+msgstr "Skupina ne bo izbrisana iz datotečnega sistema.\n"
 
-#: ../plugins/project-manager/plugin.c:733
-#, c-format
-msgid "Package: %s\n"
-msgstr "Paket: %s\n"
+#: ../plugins/project-manager/plugin.c:736
+msgid "The source file will be deleted from the file system.\n"
+msgstr "Izvorna datoteka bo izbrisana iz datotečnega sistema.\n"
 
-#: ../plugins/project-manager/plugin.c:745
-msgid "The group will be deleted from the file system."
-msgstr "Skupina ne bo izbrisana iz datotečnega sistema."
+#: ../plugins/project-manager/plugin.c:741
+msgid "The source file will not be deleted from the file system.\n"
+msgstr "Izvorna datoteka ne bo izbrisana iz datotečnega sistema.\n"
 
-#: ../plugins/project-manager/plugin.c:747
-msgid "The group will not be deleted from the file system."
-msgstr "Skupina ne bo izbrisana iz datotečnega sistema."
-
-#: ../plugins/project-manager/plugin.c:749
-msgid "The source file will be deleted from the file system."
-msgstr "Izvorna datoteka ne bo izbrisana iz datotečnega sistema."
-
-#: ../plugins/project-manager/plugin.c:751
-msgid "The source file will not be deleted from the file system."
-msgstr "Izvorna datoteka ne bo izbrisana iz datotečnega sistema."
-
-#: ../plugins/project-manager/plugin.c:756
+#: ../plugins/project-manager/plugin.c:753
 msgid "Confirm remove"
 msgstr "Potrditev odstranjevanja"
 
-#: ../plugins/project-manager/plugin.c:802
+#: ../plugins/project-manager/plugin.c:800
 #, c-format
 msgid ""
 "Failed to remove '%s':\n"
@@ -6786,109 +6782,109 @@ msgstr ""
 "Ni mogoče odstraniti '%s':\n"
 "%s"
 
-#: ../plugins/project-manager/plugin.c:868
+#: ../plugins/project-manager/plugin.c:866
 #, c-format
 msgid "Failed to retrieve URI info of %s: %s"
 msgstr "Napaka med pridobivanjem naslova URI podrobnosti %s: %s"
 
-#: ../plugins/project-manager/plugin.c:904
+#: ../plugins/project-manager/plugin.c:902
 msgid "_Project"
 msgstr "_Projekt"
 
-#: ../plugins/project-manager/plugin.c:908
+#: ../plugins/project-manager/plugin.c:906
 msgid "New _Folder…"
 msgstr "Nova _mapa ..."
 
-#: ../plugins/project-manager/plugin.c:908
-#: ../plugins/project-manager/plugin.c:942
+#: ../plugins/project-manager/plugin.c:906
+#: ../plugins/project-manager/plugin.c:940
 msgid "Add a new folder to the project"
 msgstr "Dodaj novo mapo v projekt."
 
-#: ../plugins/project-manager/plugin.c:913
+#: ../plugins/project-manager/plugin.c:911
 msgid "New _Target…"
 msgstr "Nov _cilj ..."
 
-#: ../plugins/project-manager/plugin.c:913
-#: ../plugins/project-manager/plugin.c:947
+#: ../plugins/project-manager/plugin.c:911
+#: ../plugins/project-manager/plugin.c:945
 msgid "Add a new target to the project"
 msgstr "Dodaj nov cilj k projektu"
 
-#: ../plugins/project-manager/plugin.c:918
+#: ../plugins/project-manager/plugin.c:916
 msgid "Add _Source File…"
 msgstr "Dodaj _izvorno datoteko ..."
 
-#: ../plugins/project-manager/plugin.c:918
-#: ../plugins/project-manager/plugin.c:952
-#: ../plugins/project-manager/plugin.c:962
+#: ../plugins/project-manager/plugin.c:916
+#: ../plugins/project-manager/plugin.c:950
+#: ../plugins/project-manager/plugin.c:960
 msgid "Add a source file to a target"
 msgstr "Dodaj izvorno datoteko k projektu"
 
-#: ../plugins/project-manager/plugin.c:923
+#: ../plugins/project-manager/plugin.c:921
 msgid "Add _Library…"
 msgstr "Dodaj _knjižnico ..."
 
-#: ../plugins/project-manager/plugin.c:923
+#: ../plugins/project-manager/plugin.c:921
 msgid "Add a module to a target"
 msgstr "Dodaj modul k cilju"
 
-#: ../plugins/project-manager/plugin.c:928
-#: ../plugins/project-manager/plugin.c:967
+#: ../plugins/project-manager/plugin.c:926
+#: ../plugins/project-manager/plugin.c:965
 msgid "_Properties"
 msgstr "_Lastnosti"
 
-#: ../plugins/project-manager/plugin.c:933
+#: ../plugins/project-manager/plugin.c:931
 msgid "Close Pro_ject"
 msgstr "Zapri pro_jekt"
 
-#: ../plugins/project-manager/plugin.c:933
+#: ../plugins/project-manager/plugin.c:931
 msgid "Close project"
 msgstr "Zapri projekt"
 
-#: ../plugins/project-manager/plugin.c:942
+#: ../plugins/project-manager/plugin.c:940
 msgid "New _Folder"
 msgstr "Nova _mapa"
 
-#: ../plugins/project-manager/plugin.c:947
+#: ../plugins/project-manager/plugin.c:945
 msgid "New _Target"
 msgstr "Nov _cilj"
 
-#: ../plugins/project-manager/plugin.c:952
+#: ../plugins/project-manager/plugin.c:950
 msgid "Add _Source File"
 msgstr "Dodaj _izvorno datoteko"
 
-#: ../plugins/project-manager/plugin.c:957
+#: ../plugins/project-manager/plugin.c:955
 msgid "Add _Library"
 msgstr "Dodaj _knjižnico"
 
-#: ../plugins/project-manager/plugin.c:957
+#: ../plugins/project-manager/plugin.c:955
 msgid "Add a library to a target"
 msgstr "Dodaj knjižnico k cilju"
 
-#: ../plugins/project-manager/plugin.c:962
+#: ../plugins/project-manager/plugin.c:960
 msgid "_Add to Project"
 msgstr "_Dodaj projektu"
 
-#: ../plugins/project-manager/plugin.c:967
+#: ../plugins/project-manager/plugin.c:965
 msgid "Properties of group/target/source"
 msgstr "Lastnosti skupine/cilja/vira"
 
-#: ../plugins/project-manager/plugin.c:972
+#: ../plugins/project-manager/plugin.c:970
 msgid "Re_move"
 msgstr "_Odstrani"
 
-#: ../plugins/project-manager/plugin.c:972
+#: ../plugins/project-manager/plugin.c:970
 msgid "Remove from project"
 msgstr "Odstrani iz projekta"
 
-#: ../plugins/project-manager/plugin.c:977
+#: ../plugins/project-manager/plugin.c:975
 msgid "_Sort"
 msgstr "_Razvrsti"
 
-#: ../plugins/project-manager/plugin.c:977
+#: ../plugins/project-manager/plugin.c:975
 msgid "Sort shortcuts"
 msgstr "Razvrsti tipkovne bližnjice"
 
-#: ../plugins/project-manager/plugin.c:1312
+#: ../plugins/project-manager/plugin.c:1310
 #, c-format
 msgid ""
 "Failed to parse project (the project is opened, but there will be no project "
@@ -6897,42 +6893,42 @@ msgstr ""
 "Napaka med razčlenjevanjem projekta (projekt je odprt, vendar ne bo pogleda "
 "projekta) %s: %s\n"
 
-#: ../plugins/project-manager/plugin.c:1322
+#: ../plugins/project-manager/plugin.c:1320
 msgid "Update project view…"
 msgstr "Posodobi pogled projekta ..."
 
-#: ../plugins/project-manager/plugin.c:1327
-#: ../plugins/project-manager/plugin.c:1449
-#: ../plugins/project-manager/plugin.c:1607
+#: ../plugins/project-manager/plugin.c:1325
+#: ../plugins/project-manager/plugin.c:1447
+#: ../plugins/project-manager/plugin.c:1626
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
 #: ../plugins/symbol-db/plugin.c:2160
 msgid "Project"
 msgstr "Projekt"
 
-#: ../plugins/project-manager/plugin.c:1365
+#: ../plugins/project-manager/plugin.c:1363
 #, c-format
 msgid "Loading project: %s"
 msgstr "Nalaganje projekta: %s"
 
-#: ../plugins/project-manager/plugin.c:1520
+#: ../plugins/project-manager/plugin.c:1539
 #, c-format
 msgid "Error closing project: %s"
 msgstr "Napaka med zapiranjem projekta: %s"
 
-#: ../plugins/project-manager/plugin.c:1586
+#: ../plugins/project-manager/plugin.c:1605
 msgid "Project manager actions"
 msgstr "Dejanja upravljalnika projektov"
 
-#: ../plugins/project-manager/plugin.c:1594
+#: ../plugins/project-manager/plugin.c:1613
 msgid "Project manager popup actions"
 msgstr "Pojavna okna upravljalnika projektov"
 
-#: ../plugins/project-manager/plugin.c:2459
+#: ../plugins/project-manager/plugin.c:2478
 msgid "Initializing Project…"
 msgstr "Zaganjanje projekta ..."
 
-#: ../plugins/project-manager/plugin.c:2462
+#: ../plugins/project-manager/plugin.c:2481
 msgid "Project Loaded"
 msgstr "Naložen projekt"
 
@@ -10037,6 +10033,24 @@ msgstr "Le ikone"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Le besedilo"
+
+#~ msgid "Group: %s\n"
+#~ msgstr "Skupina: %s\n"
+
+#~ msgid "Target: %s\n"
+#~ msgstr "Cilj: %s\n"
+
+#~ msgid "Source: %s\n"
+#~ msgstr "Vir: %s\n"
+
+#~ msgid "Shortcut: %s\n"
+#~ msgstr "Bližnjica: %s\n"
+
+#~ msgid "Module: %s\n"
+#~ msgstr "Modul: %s\n"
+
+#~ msgid "Package: %s\n"
+#~ msgstr "Paket: %s\n"
 
 #~ msgid "Profile Plugins"
 #~ msgstr "Vstavki profila"
