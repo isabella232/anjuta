@@ -68,6 +68,11 @@ struct _GitStatusPanePriv
 	GHashTable *selected_commit_items;
 	GHashTable *selected_not_updated_items;
 
+	/* Set of diff commands that are currently running. This set lets us know
+	 * when the last diff command has finished so that we can expand the placeholders
+	 * and the diffs when every command is finished. */
+	GHashTable *diff_commands;
+
 	gboolean show_diff;
 };
 
@@ -309,9 +314,33 @@ on_selected_renderer_toggled (GtkCellRendererToggle *renderer, gchar *tree_path,
 	g_free (path);
 }
 
+static void 
+git_status_pane_expand_placeholders_full (GitStatusPane *self, 
+                                          gboolean open_all)
+{
+	GtkTreeView *status_view;
+
+	if (self->priv->commit_section && self->priv->not_updated_section)
+	{
+		status_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
+		                                                     "status_view"));
+
+		gtk_tree_view_expand_row (status_view, self->priv->commit_section, 
+		                          open_all);
+		gtk_tree_view_expand_row (status_view, self->priv->not_updated_section, 
+		                          open_all);
+	}
+}
+
+static void
+git_status_pane_expand_placeholders (GitStatusPane *self)
+{
+	git_status_pane_expand_placeholders_full (self, FALSE);
+}
+
 static void
 on_diff_command_finished (AnjutaCommand *command, guint return_code, 
-                          gpointer data)
+                          GitStatusPane *self)
 {
 	GtkTreeModel *status_model;
 	GtkTreePath *parent_path;
@@ -320,7 +349,6 @@ on_diff_command_finished (AnjutaCommand *command, guint return_code,
 	GString *string;
 	GQueue *output;
 	gchar *output_line;
-	GtkTreeView *status_view;
 
 	if (return_code == 0)
 	{
@@ -341,28 +369,41 @@ on_diff_command_finished (AnjutaCommand *command, guint return_code,
 		gtk_tree_store_append (GTK_TREE_STORE (status_model), &iter, &parent_iter);
 		gtk_tree_store_set (GTK_TREE_STORE (status_model), &iter, COL_DIFF, string->str, -1);
 
-		if (GPOINTER_TO_INT (g_object_get_data (G_OBJECT (command), "show-diff")))
-		{
-			status_view = g_object_get_data (G_OBJECT (command), "status-view");
-			gtk_tree_view_expand_row (status_view, parent_path, FALSE);
-		}
+		g_hash_table_remove (self->priv->diff_commands, command);
+
+		if (g_hash_table_size (self->priv->diff_commands) == 0)
+			git_status_pane_expand_placeholders_full (self, self->priv->show_diff);
+			
 
 		g_string_free (string, TRUE);
+		
 	}
 }
 
 static void
-add_status_items (GQueue *output, GtkTreeStore *status_model, 
-                  GtkTreeView *status_view, GtkTreePath *parent, 
-                  StatusType type, const gchar *working_directory, 
-                  gboolean show_diff)
+git_status_pane_add_status_items (GitStatusPane *self, 
+              					  StatusType type, 
+                                  GitStatusCommand *status_command)
 {
+	GtkTreeStore *status_model;
+	gchar *working_directory;
+	GQueue *output;
+	GtkTreePath *parent;
 	GitStatus *status_object;
 	AnjutaVcsStatus status;
 	gchar *path;
 	GtkTreeIter parent_iter;
 	GtkTreeIter iter;
 	GitDiffCommand *diff_command;
+
+	status_model = GTK_TREE_STORE (gtk_builder_get_object (self->priv->builder,
+	                                                       "status_model"));
+
+	g_object_get (G_OBJECT (status_command), "working-directory", &working_directory, 
+	              NULL);
+
+	output = git_status_command_get_status_queue (status_command);
+	parent = type == STATUS_TYPE_NOT_UPDATED ? self->priv->not_updated_section : self->priv->commit_section;
 
 	while (g_queue_peek_head (output))
 	{
@@ -385,7 +426,7 @@ add_status_items (GQueue *output, GtkTreeStore *status_model,
 		
 		g_signal_connect (G_OBJECT (diff_command), "command-finished",
 		                  G_CALLBACK (on_diff_command_finished),
-		                  NULL);
+		                  self);
 
 		g_signal_connect (G_OBJECT (diff_command), "command-finished",
 		                  G_CALLBACK (g_object_unref),
@@ -395,64 +436,33 @@ add_status_items (GQueue *output, GtkTreeStore *status_model,
 		                        gtk_tree_model_get_path (GTK_TREE_MODEL (status_model), 
 		                                                 &iter),
 		                        (GDestroyNotify) gtk_tree_path_free);
+
 		g_object_set_data (G_OBJECT (diff_command), "model", status_model);
-		g_object_set_data (G_OBJECT (diff_command), "status-view", status_view);
-		g_object_set_data (G_OBJECT (diff_command), "show-diff", 
-		                   GINT_TO_POINTER (show_diff));
+		g_hash_table_insert (self->priv->diff_commands, diff_command, NULL);
 		
 		g_free (path);
 		g_object_unref (status_object);
 
 		anjuta_command_start (ANJUTA_COMMAND (diff_command));
 	}
+
+	g_free (working_directory);
 }
 
 static void
 on_commit_status_data_arrived (AnjutaCommand *command, 
                                GitStatusPane *self)
 {
-	GtkTreeStore *status_model;
-	GtkTreeView *status_view;
-	GQueue *output;
-	gchar *working_directory;
-
-	status_model = GTK_TREE_STORE (gtk_builder_get_object (self->priv->builder,
-	                                                       "status_model"));
-	status_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
-	                                                     "status_view"));
-	output = git_status_command_get_status_queue (GIT_STATUS_COMMAND (command));
-	g_object_get (G_OBJECT (command), "working-directory", &working_directory, 
-	              NULL);
-
-	add_status_items (output, status_model, status_view, 
-	                  self->priv->commit_section, STATUS_TYPE_COMMIT,
-	                  working_directory, self->priv->show_diff);
-
-	g_free (working_directory);
+	git_status_pane_add_status_items (self, STATUS_TYPE_COMMIT, 
+	                                  GIT_STATUS_COMMAND (command));
 }
 
 static void
 on_not_updated_status_data_arrived (AnjutaCommand *command,
                                     GitStatusPane *self)
 {
-	GtkTreeStore *status_model;
-	GtkTreeView *status_view;
-	GQueue *output;
-	gchar *working_directory;
-
-	status_model = GTK_TREE_STORE (gtk_builder_get_object (self->priv->builder,
-	                                                       "status_model"));
-	status_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
-	                                                     "status_view"));
-	output = git_status_command_get_status_queue (GIT_STATUS_COMMAND (command));
-	g_object_get (G_OBJECT (command), "working-directory", &working_directory, 
-	              NULL);
-
-	add_status_items (output, status_model, status_view, 
-	                  self->priv->not_updated_section, STATUS_TYPE_NOT_UPDATED, 
-	                  working_directory, self->priv->show_diff);
-
-	g_free (working_directory);
+	git_status_pane_add_status_items (self, STATUS_TYPE_NOT_UPDATED, 
+	                                  GIT_STATUS_COMMAND (command));
 }
 
 static void
@@ -720,30 +730,6 @@ on_status_view_row_selected (GtkTreeSelection *selection,
 	return gtk_tree_path_get_depth (path) == 2;
 }
 
-static void 
-git_status_pane_expand_placeholders_full (GitStatusPane *self, 
-                                          gboolean open_all)
-{
-	GtkTreeView *status_view;
-
-	if (self->priv->commit_section && self->priv->not_updated_section)
-	{
-		status_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
-		                                                     "status_view"));
-
-		gtk_tree_view_expand_row (status_view, self->priv->commit_section, 
-		                          open_all);
-		gtk_tree_view_expand_row (status_view, self->priv->not_updated_section, 
-		                          open_all);
-	}
-}
-
-static void
-git_status_pane_expand_placeholders (GitStatusPane *self)
-{
-	git_status_pane_expand_placeholders_full (self, FALSE);
-}
-
 static void
 on_status_diff_button_toggled (GtkToggleButton *button, GitStatusPane *self)
 {
@@ -792,6 +778,7 @@ git_status_pane_init (GitStatusPane *self)
 	                                                                g_str_equal,
 	                                                                g_free,
 	                                                                NULL);
+	self->priv->diff_commands = g_hash_table_new (g_direct_hash, g_direct_equal);
 	
 	if (!gtk_builder_add_objects_from_file (self->priv->builder, BUILDER_FILE, 
 	                                        objects, 
@@ -902,6 +889,7 @@ git_status_pane_finalize (GObject *object)
 	gtk_tree_path_free (self->priv->not_updated_section);
 	g_hash_table_destroy (self->priv->selected_commit_items);
 	g_hash_table_destroy (self->priv->selected_not_updated_items);
+	g_hash_table_destroy (self->priv->diff_commands);
 	g_free (self->priv);
 
 	G_OBJECT_CLASS (git_status_pane_parent_class)->finalize (object);
@@ -910,11 +898,15 @@ git_status_pane_finalize (GObject *object)
 static void
 git_status_pane_refresh (AnjutaDockPane *pane)
 {
+	GitStatusPane *self;
 	Git *plugin;
 
+	self = GIT_STATUS_PANE (pane);
 	plugin = ANJUTA_PLUGIN_GIT (anjuta_dock_pane_get_plugin (pane));
 
-	anjuta_command_start (ANJUTA_COMMAND (plugin->commit_status_command));
+	/* Don't refresh again if another refresh is still in progress */
+	if (g_hash_table_size (self->priv->diff_commands) == 0)
+		anjuta_command_start (ANJUTA_COMMAND (plugin->commit_status_command));
 	
 }
 
