@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-08-18 20:01+0000\n"
-"PO-Revision-Date: 2013-08-19 17:07+0200\n"
+"POT-Creation-Date: 2013-08-31 08:41+0000\n"
+"PO-Revision-Date: 2013-09-05 12:52+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -4983,7 +4983,7 @@ msgstr "Získat vzdálené větve po vytvoření"
 msgid "Mailbox files to apply:"
 msgstr "Soubory typu mailbox, které použít:"
 
-#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:953
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:954
 msgid "Branches"
 msgstr "Větve"
 
@@ -5055,7 +5055,7 @@ msgstr "Větev musí být zcela sloučena"
 
 #: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:96
 #: ../plugins/git/git-pane.c:101 ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:838
+#: ../plugins/git/plugin.c:839
 msgid "Git"
 msgstr "Git"
 
@@ -5492,7 +5492,7 @@ msgstr "Vyřešit konflikty"
 msgid "Mark selected conflicted files as resolved"
 msgstr "Označit vybrané konfliktní soubory jako vyřešené"
 
-#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:971
+#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:972
 msgid "Stash"
 msgstr "Skrýš"
 
@@ -5721,39 +5721,39 @@ msgstr "Zahodit"
 msgid "Branch"
 msgstr "Větev"
 
-#: ../plugins/git/plugin.c:857
+#: ../plugins/git/plugin.c:858
 msgid "Status popup menu"
 msgstr "Vyskakovací nabídka stavu"
 
-#: ../plugins/git/plugin.c:862
+#: ../plugins/git/plugin.c:863
 msgid "Log popup menu"
 msgstr "Vyskakovací nabídka záznamu"
 
-#: ../plugins/git/plugin.c:868
+#: ../plugins/git/plugin.c:869
 msgid "Branch popup menu"
 msgstr "Vyskakovací nabídka větve"
 
-#: ../plugins/git/plugin.c:874
+#: ../plugins/git/plugin.c:875
 msgid "Remote popup menu"
 msgstr "Vzdálená vyskakovací nabídka"
 
-#: ../plugins/git/plugin.c:879
+#: ../plugins/git/plugin.c:880
 msgid "Popup menu entries"
 msgstr "Položky vyskakovací nabídky"
 
-#: ../plugins/git/plugin.c:941
+#: ../plugins/git/plugin.c:942
 msgid "Status"
 msgstr "Stav"
 
-#: ../plugins/git/plugin.c:947
+#: ../plugins/git/plugin.c:948
 msgid "Log"
 msgstr "Záznam"
 
-#: ../plugins/git/plugin.c:958
+#: ../plugins/git/plugin.c:959
 msgid "Tags"
 msgstr "Značky"
 
-#: ../plugins/git/plugin.c:965
+#: ../plugins/git/plugin.c:966
 msgid "Remotes"
 msgstr "Vzdálené"
 
@@ -6588,7 +6588,7 @@ msgstr "Vyberte prosím výkonný modul, který se má použít."
 
 #: ../plugins/project-manager/dialogs.c:683
 #: ../plugins/project-manager/dialogs.c:688
-#: ../plugins/project-manager/plugin.c:928
+#: ../plugins/project-manager/plugin.c:926
 msgid "Project properties"
 msgstr "Vlastnosti projektu"
 
@@ -6673,105 +6673,99 @@ msgstr "Chybí název modulu"
 msgid "Cannot add packages"
 msgstr "Nelze přidat stránky"
 
-#: ../plugins/project-manager/plugin.c:686
-msgid ""
-"Are you sure you want to remove the following group from the project?\n"
-"\n"
-msgstr ""
-"Opravdu chcete odstranit následující skupinu z projektu?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:689
-msgid ""
-"Are you sure you want to remove the following target from the project?\n"
-"\n"
-msgstr ""
-"Opravdu chcete odstranit z projektu následující cíl?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:692
-msgid ""
-"Are you sure you want to remove the following source file from the project?\n"
-"\n"
-msgstr ""
-"Opravdu chcete odstranit z projektu následující zdrojový soubor?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:695
-msgid ""
-"Are you sure you want to remove the following package from the project?\n"
-"\n"
-msgstr ""
-"Opravdu chcete odstranit následující balíček z projektu?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:698
-msgid ""
-"Are you sure you want to remove the following module from the project?\n"
-"\n"
-msgstr ""
-"Opravdu chcete odstranit následující modul z projektu?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:701
-msgid ""
-"Are you sure you want to remove the following elements from the project?\n"
-"\n"
-msgstr ""
-"Opravdu chcete odstranit z projektu následující části?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:718
+#: ../plugins/project-manager/plugin.c:693
 #, c-format
-msgid "Group: %s\n"
-msgstr "Skupina: %s\n"
+msgid ""
+"Are you sure you want to remove the group \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Opravdu chcete odstranit skupinu „%s“ z projektu?\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:721
+#: ../plugins/project-manager/plugin.c:696
 #, c-format
-msgid "Target: %s\n"
-msgstr "Cíl: %s\n"
+msgid ""
+"Are you sure you want to remove the target \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Opravdu chcete odstranit cíl „%s“ z projektu?\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:724
+#: ../plugins/project-manager/plugin.c:699
 #, c-format
-msgid "Source: %s\n"
-msgstr "Zdroj: %s\n"
+msgid ""
+"Are you sure you want to remove the source \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Opravdu chcete odstranit zdrojový soubor „%s“ z projektu?\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:727
+#: ../plugins/project-manager/plugin.c:702
 #, c-format
-msgid "Shortcut: %s\n"
-msgstr "Zkratka: %s\n"
+msgid ""
+"Are you sure you want to remove the shortcut \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Opravdu chcete odstranit zkratku „%s“ z projektu?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:706
+#, c-format
+msgid ""
+"Are you sure you want to remove the module \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Opravdu chcete odstranit modul „%s“ z projektu?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:709
+#, c-format
+msgid ""
+"Are you sure you want to remove the package \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Opravdu chcete odstranit balíček „%s“ z projektu?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:712
+#, c-format
+msgid ""
+"Are you sure you want to remove the element \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Opravdu chcete odstranit z projektu část „%s“?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:720
+#, c-format
+msgid ""
+"Are you sure you want to remove %d elements from the project?\n"
+"\n"
+msgstr ""
+"Opravdu chcete odstranit z projektu následující %d části?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:725
+msgid "The group will be deleted from the file system.\n"
+msgstr "Skupina bude odstraněna ze souborového systému.\n"
 
 #: ../plugins/project-manager/plugin.c:730
-#, c-format
-msgid "Module: %s\n"
-msgstr "Modul: %s\n"
+msgid "The group will not be deleted from the file system.\n"
+msgstr "Skupina nebude odstraněna ze souborového systému.\n"
 
-#: ../plugins/project-manager/plugin.c:733
-#, c-format
-msgid "Package: %s\n"
-msgstr "Balíček: %s\n"
+#: ../plugins/project-manager/plugin.c:736
+msgid "The source file will be deleted from the file system.\n"
+msgstr "Zdrojový soubor bude odstraněn ze souborového systému.\n"
 
-#: ../plugins/project-manager/plugin.c:745
-msgid "The group will be deleted from the file system."
-msgstr "Skupina bude odstraněna ze souborového systému."
+#: ../plugins/project-manager/plugin.c:741
+msgid "The source file will not be deleted from the file system.\n"
+msgstr "Zdrojový soubor nebude odstraněn ze souborového systému.\n"
 
-#: ../plugins/project-manager/plugin.c:747
-msgid "The group will not be deleted from the file system."
-msgstr "Skupina nebude odstraněna ze souborového systému."
-
-#: ../plugins/project-manager/plugin.c:749
-msgid "The source file will be deleted from the file system."
-msgstr "Zdrojový soubor bude odstraněn ze souborového systému."
-
-#: ../plugins/project-manager/plugin.c:751
-msgid "The source file will not be deleted from the file system."
-msgstr "Zdrojový soubor nebude odstraněn ze souborového systému."
-
-#: ../plugins/project-manager/plugin.c:756
+#: ../plugins/project-manager/plugin.c:753
 msgid "Confirm remove"
 msgstr "Potvrdit odstranění"
 
-#: ../plugins/project-manager/plugin.c:802
+#: ../plugins/project-manager/plugin.c:800
 #, c-format
 msgid ""
 "Failed to remove '%s':\n"
@@ -6781,109 +6775,109 @@ msgstr ""
 "%s"
 
 # FIXME: s/retried/retrieve/
-#: ../plugins/project-manager/plugin.c:868
+#: ../plugins/project-manager/plugin.c:866
 #, c-format
 msgid "Failed to retrieve URI info of %s: %s"
 msgstr "Nelze získat informace o URI %s: %s"
 
-#: ../plugins/project-manager/plugin.c:904
+#: ../plugins/project-manager/plugin.c:902
 msgid "_Project"
 msgstr "_Projekt"
 
-#: ../plugins/project-manager/plugin.c:908
+#: ../plugins/project-manager/plugin.c:906
 msgid "New _Folder…"
 msgstr "Nová _složka…"
 
-#: ../plugins/project-manager/plugin.c:908
-#: ../plugins/project-manager/plugin.c:942
+#: ../plugins/project-manager/plugin.c:906
+#: ../plugins/project-manager/plugin.c:940
 msgid "Add a new folder to the project"
 msgstr "Přidat  do projektu novou složku"
 
-#: ../plugins/project-manager/plugin.c:913
+#: ../plugins/project-manager/plugin.c:911
 msgid "New _Target…"
 msgstr "Nový _cíl"
 
-#: ../plugins/project-manager/plugin.c:913
-#: ../plugins/project-manager/plugin.c:947
+#: ../plugins/project-manager/plugin.c:911
+#: ../plugins/project-manager/plugin.c:945
 msgid "Add a new target to the project"
 msgstr "Přidat do projektu nový cíl"
 
-#: ../plugins/project-manager/plugin.c:918
+#: ../plugins/project-manager/plugin.c:916
 msgid "Add _Source File…"
 msgstr "Přidat _zdrojový soubor…"
 
-#: ../plugins/project-manager/plugin.c:918
-#: ../plugins/project-manager/plugin.c:952
-#: ../plugins/project-manager/plugin.c:962
+#: ../plugins/project-manager/plugin.c:916
+#: ../plugins/project-manager/plugin.c:950
+#: ../plugins/project-manager/plugin.c:960
 msgid "Add a source file to a target"
 msgstr "Přidat cíli zdrojový soubor"
 
-#: ../plugins/project-manager/plugin.c:923
+#: ../plugins/project-manager/plugin.c:921
 msgid "Add _Library…"
 msgstr "Přidat _knihovnu…"
 
-#: ../plugins/project-manager/plugin.c:923
+#: ../plugins/project-manager/plugin.c:921
 msgid "Add a module to a target"
 msgstr "Přidat cíli nový modul"
 
-#: ../plugins/project-manager/plugin.c:928
-#: ../plugins/project-manager/plugin.c:967
+#: ../plugins/project-manager/plugin.c:926
+#: ../plugins/project-manager/plugin.c:965
 msgid "_Properties"
 msgstr "_Vlastnosti"
 
-#: ../plugins/project-manager/plugin.c:933
+#: ../plugins/project-manager/plugin.c:931
 msgid "Close Pro_ject"
 msgstr "Zavřít p_rojekt"
 
-#: ../plugins/project-manager/plugin.c:933
+#: ../plugins/project-manager/plugin.c:931
 msgid "Close project"
 msgstr "Zavřít projekt"
 
-#: ../plugins/project-manager/plugin.c:942
+#: ../plugins/project-manager/plugin.c:940
 msgid "New _Folder"
 msgstr "Nová _složka"
 
-#: ../plugins/project-manager/plugin.c:947
+#: ../plugins/project-manager/plugin.c:945
 msgid "New _Target"
 msgstr "Nový _cíl"
 
-#: ../plugins/project-manager/plugin.c:952
+#: ../plugins/project-manager/plugin.c:950
 msgid "Add _Source File"
 msgstr "Přidat _zdrojový soubor"
 
-#: ../plugins/project-manager/plugin.c:957
+#: ../plugins/project-manager/plugin.c:955
 msgid "Add _Library"
 msgstr "Přidat _knihovnu"
 
-#: ../plugins/project-manager/plugin.c:957
+#: ../plugins/project-manager/plugin.c:955
 msgid "Add a library to a target"
 msgstr "Přidat cíli knihovnu"
 
-#: ../plugins/project-manager/plugin.c:962
+#: ../plugins/project-manager/plugin.c:960
 msgid "_Add to Project"
 msgstr "Přid_at do projektu"
 
-#: ../plugins/project-manager/plugin.c:967
+#: ../plugins/project-manager/plugin.c:965
 msgid "Properties of group/target/source"
 msgstr "Vlastnosti skupiny/cíle/zdroje"
 
-#: ../plugins/project-manager/plugin.c:972
+#: ../plugins/project-manager/plugin.c:970
 msgid "Re_move"
 msgstr "_Odstranit"
 
-#: ../plugins/project-manager/plugin.c:972
+#: ../plugins/project-manager/plugin.c:970
 msgid "Remove from project"
 msgstr "Odstranit z projektu"
 
-#: ../plugins/project-manager/plugin.c:977
+#: ../plugins/project-manager/plugin.c:975
 msgid "_Sort"
 msgstr "_Seřadit"
 
-#: ../plugins/project-manager/plugin.c:977
+#: ../plugins/project-manager/plugin.c:975
 msgid "Sort shortcuts"
 msgstr "Seřadit zkratky"
 
-#: ../plugins/project-manager/plugin.c:1312
+#: ../plugins/project-manager/plugin.c:1310
 #, c-format
 msgid ""
 "Failed to parse project (the project is opened, but there will be no project "
@@ -6891,12 +6885,12 @@ msgid ""
 msgstr ""
 "Selhala analýza projektu (projekt je otevřen, ale nebude zobrazen) %s: %s\n"
 
-#: ../plugins/project-manager/plugin.c:1322
+#: ../plugins/project-manager/plugin.c:1320
 msgid "Update project view…"
 msgstr "Aktualizovat pohled na projekt…"
 
-#: ../plugins/project-manager/plugin.c:1327
-#: ../plugins/project-manager/plugin.c:1449
+#: ../plugins/project-manager/plugin.c:1325
+#: ../plugins/project-manager/plugin.c:1447
 #: ../plugins/project-manager/plugin.c:1605
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
@@ -6904,7 +6898,7 @@ msgstr "Aktualizovat pohled na projekt…"
 msgid "Project"
 msgstr "Projekt"
 
-#: ../plugins/project-manager/plugin.c:1365
+#: ../plugins/project-manager/plugin.c:1363
 #, c-format
 msgid "Loading project: %s"
 msgstr "Načítá se projekt: %s"
