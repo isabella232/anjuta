@@ -315,8 +315,7 @@ on_selected_renderer_toggled (GtkCellRendererToggle *renderer, gchar *tree_path,
 }
 
 static void 
-git_status_pane_expand_placeholders_full (GitStatusPane *self, 
-                                          gboolean open_all)
+git_status_pane_expand_placeholders (GitStatusPane *self)
 {
 	GtkTreeView *status_view;
 
@@ -326,16 +325,26 @@ git_status_pane_expand_placeholders_full (GitStatusPane *self,
 		                                                     "status_view"));
 
 		gtk_tree_view_expand_row (status_view, self->priv->commit_section, 
-		                          open_all);
+		                          self->priv->show_diff);
 		gtk_tree_view_expand_row (status_view, self->priv->not_updated_section, 
-		                          open_all);
+		                          self->priv->show_diff);
 	}
 }
 
 static void
-git_status_pane_expand_placeholders (GitStatusPane *self)
+git_status_pane_set_model (GitStatusPane *self)
 {
-	git_status_pane_expand_placeholders_full (self, FALSE);
+	GtkTreeView *status_view;
+	GtkTreeModel *status_model;
+
+	status_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
+	                                                     "status_view"));
+	status_model = GTK_TREE_MODEL (gtk_builder_get_object (self->priv->builder,
+	                                                       "status_model"));
+
+	gtk_tree_view_set_model (status_view, status_model);
+	git_status_pane_expand_placeholders (self);
+	
 }
 
 static void
@@ -370,11 +379,10 @@ on_diff_command_finished (AnjutaCommand *command, guint return_code,
 		gtk_tree_store_set (GTK_TREE_STORE (status_model), &iter, COL_DIFF, string->str, -1);
 
 		g_hash_table_remove (self->priv->diff_commands, command);
-
+		
 		if (g_hash_table_size (self->priv->diff_commands) == 0)
-			git_status_pane_expand_placeholders_full (self, self->priv->show_diff);
+			git_status_pane_set_model (self);
 			
-
 		g_string_free (string, TRUE);
 		
 	}
@@ -421,29 +429,30 @@ git_status_pane_add_status_items (GitStatusPane *self,
 		                    COL_TYPE, type,
 		                    -1);
 
-		diff_command = git_diff_command_new (working_directory, path,
-		                                     type == STATUS_TYPE_NOT_UPDATED ? GIT_DIFF_WORKING_TREE : GIT_DIFF_INDEX);
-		
-		g_signal_connect (G_OBJECT (diff_command), "command-finished",
-		                  G_CALLBACK (on_diff_command_finished),
-		                  self);
+		if (status != ANJUTA_VCS_STATUS_DELETED)
+		{
+			diff_command = git_diff_command_new (working_directory, path,
+			                                     type == STATUS_TYPE_NOT_UPDATED ? GIT_DIFF_WORKING_TREE : GIT_DIFF_INDEX);
 
-		g_signal_connect (G_OBJECT (diff_command), "command-finished",
-		                  G_CALLBACK (g_object_unref),
-		                  NULL);
+			g_signal_connect (G_OBJECT (diff_command), "command-finished",
+			                  G_CALLBACK (on_diff_command_finished),
+			                  self);
 
-		g_object_set_data_full (G_OBJECT (diff_command), "parent-path", 
-		                        gtk_tree_model_get_path (GTK_TREE_MODEL (status_model), 
-		                                                 &iter),
-		                        (GDestroyNotify) gtk_tree_path_free);
+			g_signal_connect (G_OBJECT (diff_command), "command-finished",
+			                  G_CALLBACK (g_object_unref),
+			                  NULL);
 
-		g_object_set_data (G_OBJECT (diff_command), "model", status_model);
-		g_hash_table_insert (self->priv->diff_commands, diff_command, NULL);
+			g_object_set_data_full (G_OBJECT (diff_command), "parent-path", 
+			                        gtk_tree_model_get_path (GTK_TREE_MODEL (status_model), 
+			                                                 &iter),
+			                        (GDestroyNotify) gtk_tree_path_free);
+
+			g_object_set_data (G_OBJECT (diff_command), "model", status_model);
+			g_hash_table_insert (self->priv->diff_commands, diff_command, NULL);
+		}
 		
 		g_free (path);
 		g_object_unref (status_object);
-
-		anjuta_command_start (ANJUTA_COMMAND (diff_command));
 	}
 
 	g_free (working_directory);
@@ -466,15 +475,32 @@ on_not_updated_status_data_arrived (AnjutaCommand *command,
 }
 
 static void
+on_not_updated_command_finished (AnjutaCommand *command, guint return_code,
+                                 GitStatusPane *self)
+{
+	if (g_hash_table_size (self->priv->diff_commands) > 0)
+	{
+		g_hash_table_foreach (self->priv->diff_commands, 
+		                      (GHFunc) anjuta_command_start, NULL);
+	}
+	else
+		git_status_pane_set_model (self);
+}
+
+static void
 git_status_pane_clear (GitStatusPane *self)
 {
+	GtkTreeView *status_view;
 	GtkTreeStore *status_model;
 	GtkTreeIter iter;
 
+	status_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
+	                                                     "status_view"));
 	status_model = GTK_TREE_STORE (gtk_builder_get_object (self->priv->builder,	
 	                                                       "status_model"));
 
 	/* Clear any existing model data and create the placeholders */
+	gtk_tree_view_set_model (status_view, NULL);
 	gtk_tree_store_clear (status_model);
 
 	gtk_tree_path_free (self->priv->commit_section);
@@ -745,7 +771,7 @@ on_status_diff_button_toggled (GtkToggleButton *button, GitStatusPane *self)
 		gtk_tree_view_collapse_all (status_view);
 	}
 
-	git_status_pane_expand_placeholders_full (self, self->priv->show_diff);
+	git_status_pane_expand_placeholders (self);
 }                                 
 
 static void
@@ -947,10 +973,10 @@ git_status_pane_new (Git *plugin)
 	                          G_CALLBACK (git_status_pane_clear),
 	                          self);
 
-	g_signal_connect_swapped (G_OBJECT (plugin->not_updated_status_command),
-	                          "command-finished",
-	                          G_CALLBACK (git_status_pane_expand_placeholders),
-	                          self);
+	g_signal_connect (G_OBJECT (plugin->not_updated_status_command),
+	                  "command-finished",
+	                  G_CALLBACK (on_not_updated_command_finished),
+	                  self);
 
 	g_signal_connect (G_OBJECT (plugin->commit_status_command),
 	                  "data-arrived",
