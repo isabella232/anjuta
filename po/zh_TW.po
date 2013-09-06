@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta 3.3.92\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-25 19:28+0800\n"
-"PO-Revision-Date: 2013-07-22 23:12+0800\n"
+"POT-Creation-Date: 2013-09-06 16:16+0800\n"
+"PO-Revision-Date: 2013-09-04 16:18+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@lists.linux.org.tw>\n"
 "Language: zh_TW\n"
@@ -19,13 +19,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
 msgstr "Anjuta"
 
-#: ../anjuta.desktop.in.in.h:2 ../src/about.c:207
+#: ../anjuta.desktop.in.in.h:2 ../src/about.c:203
 msgid "Integrated Development Environment"
 msgstr "整合式開發環境"
 
@@ -280,23 +280,23 @@ msgstr "變數值"
 msgid "Path that dropped files should be relative to"
 msgstr "拖放的檔案相對應的路徑"
 
-#: ../libanjuta/anjuta-file-list.c:107
+#: ../libanjuta/anjuta-file-list.c:104
 msgid "Drop a file or enter a path here"
 msgstr "在這裡拖放檔案或輸入路徑"
 
-#: ../libanjuta/anjuta-file-list.c:280
+#: ../libanjuta/anjuta-file-list.c:277
 msgid "Select Files"
 msgstr "選擇檔案"
 
-#: ../libanjuta/anjuta-file-list.c:550
+#: ../libanjuta/anjuta-file-list.c:547
 msgid "Path that all files in the list should be relative to"
 msgstr "清單中所有的檔案相對應的路徑"
 
-#: ../libanjuta/anjuta-file-list.c:557
+#: ../libanjuta/anjuta-file-list.c:554
 msgid "Show Add button"
 msgstr "顯示加入按鈕"
 
-#: ../libanjuta/anjuta-file-list.c:558
+#: ../libanjuta/anjuta-file-list.c:555
 msgid "Display an Add button"
 msgstr "顯示加入按鈕"
 
@@ -620,47 +620,47 @@ msgid "Unable to load user interface file: %s"
 msgstr "無法載入使用者介面檔案：%s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
-#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:175
+#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:183
 msgid "Modified"
 msgstr "已修改"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:95
-#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:178
+#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:186
 msgid "Added"
 msgstr "已加入"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:98
-#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:181
+#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:189
 msgid "Deleted"
 msgstr "已刪除"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:101
-#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:184
+#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:192
 msgid "Conflicted"
 msgstr "有衝突"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:105
-#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:188
+#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:196
 msgid "Up-to-date"
 msgstr "最新版"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:109
-#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:192
+#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:200
 msgid "Locked"
 msgstr "已鎖定"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:112
-#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:195
+#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:203
 msgid "Missing"
 msgstr "遺失"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:115
-#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:198
+#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:206
 msgid "Unversioned"
 msgstr "未訂版本"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:119
-#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:202
+#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:210
 msgid "Ignored"
 msgstr "已忽略"
 
@@ -3466,7 +3466,7 @@ msgid "Rename"
 msgstr "重新命名"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:363
-#: ../plugins/git/plugin.c:181
+#: ../plugins/git/plugin.c:172
 #: ../plugins/snippets-manager/snippets-editor.ui.h:19
 msgid "Remove"
 msgstr "移除"
@@ -3480,28 +3480,28 @@ msgstr "[唯讀]"
 msgid "Close Others"
 msgstr "關閉其他的"
 
-#: ../plugins/document-manager/anjuta-docman.c:733
-#: ../plugins/document-manager/anjuta-docman.c:1153
+#: ../plugins/document-manager/anjuta-docman.c:736
+#: ../plugins/document-manager/anjuta-docman.c:1156
 msgid "Close file"
 msgstr "關閉檔案"
 
-#: ../plugins/document-manager/anjuta-docman.c:770
+#: ../plugins/document-manager/anjuta-docman.c:773
 #: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "路徑："
 
-#: ../plugins/document-manager/anjuta-docman.c:887
+#: ../plugins/document-manager/anjuta-docman.c:890
 #: ../plugins/file-loader/plugin.c:597 ../plugins/file-loader/plugin.c:887
 #: ../plugins/file-loader/plugin.c:897 ../plugins/file-loader/plugin.c:910
 msgid "Open file"
 msgstr "開啟檔案"
 
-#: ../plugins/document-manager/anjuta-docman.c:906
+#: ../plugins/document-manager/anjuta-docman.c:909
 #: ../plugins/message-view/message-view.c:100
 msgid "Save file as"
 msgstr "另存檔案為"
 
-#: ../plugins/document-manager/anjuta-docman.c:987
+#: ../plugins/document-manager/anjuta-docman.c:990
 #, c-format
 msgid ""
 "The file '%s' already exists.\n"
@@ -3510,11 +3510,11 @@ msgstr ""
 "檔案‘%s’已經存在。\n"
 "您是否要以現在準備儲存的檔案覆寫它？"
 
-#: ../plugins/document-manager/anjuta-docman.c:996
+#: ../plugins/document-manager/anjuta-docman.c:999
 msgid "_Replace"
 msgstr "取代(_R)"
 
-#: ../plugins/document-manager/anjuta-docman.c:1740
+#: ../plugins/document-manager/anjuta-docman.c:1743
 msgid "[read-only]"
 msgstr "[唯讀]"
 
@@ -4144,9 +4144,9 @@ msgstr "簡易搜尋"
 
 #. DocmanPlugin* plugin = ANJUTA_PLUGIN_DOCMAN (ipref);
 #: ../plugins/document-manager/plugin.c:418
-#: ../plugins/document-manager/plugin.c:1716
-#: ../plugins/document-manager/plugin.c:2136
-#: ../plugins/document-manager/plugin.c:2145
+#: ../plugins/document-manager/plugin.c:1718
+#: ../plugins/document-manager/plugin.c:2138
+#: ../plugins/document-manager/plugin.c:2147
 msgid "Documents"
 msgstr "文件"
 
@@ -4184,12 +4184,12 @@ msgid "Mode"
 msgstr "模式"
 
 #. this may fail, too
-#: ../plugins/document-manager/plugin.c:1552
+#: ../plugins/document-manager/plugin.c:1554
 #, c-format
 msgid "Autosave failed for %s"
 msgstr "自動儲存 %s 失敗"
 
-#: ../plugins/document-manager/plugin.c:1566
+#: ../plugins/document-manager/plugin.c:1568
 msgid "Autosave completed"
 msgstr "自動儲存完畢"
 
@@ -4553,7 +4553,7 @@ msgstr "在檔案管理員中顯示"
 msgid "File manager popup actions"
 msgstr "檔案管理程式彈出式動作"
 
-#: ../plugins/file-manager/plugin.c:404 ../plugins/git/plugin.c:165
+#: ../plugins/file-manager/plugin.c:404 ../plugins/git/plugin.c:156
 msgid "Files"
 msgstr "檔案"
 
@@ -4907,7 +4907,7 @@ msgstr "在建立後取回遠端分支"
 msgid "Mailbox files to apply:"
 msgstr "要套用的 Mailbox 檔案："
 
-#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:973
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:954
 msgid "Branches"
 msgstr "分支"
 
@@ -4979,7 +4979,7 @@ msgstr "分支必須被完整合併"
 
 #: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:96
 #: ../plugins/git/git-pane.c:101 ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:858
+#: ../plugins/git/plugin.c:839
 msgid "Git"
 msgstr "Git"
 
@@ -5056,7 +5056,7 @@ msgstr "用來建立修補檔的目錄："
 msgid "Repository to pull from:"
 msgstr "要進行 pull 的檔案庫："
 
-#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:281
+#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:272
 msgid "Rebase"
 msgstr "重建基礎"
 
@@ -5136,6 +5136,10 @@ msgstr "套用已 stash 的變更："
 msgid "Repository Status:"
 msgstr "檔案庫狀態："
 
+#: ../plugins/git/anjuta-git.ui.h:72
+msgid "Show Diff"
+msgstr "顯示 Diff"
+
 #: ../plugins/git/git-add-files-pane.c:160
 msgid "Add Files"
 msgstr "加入檔案"
@@ -5157,7 +5161,6 @@ msgid "Apply Mailbox Files"
 msgstr "套用 Mailbox 檔案"
 
 #: ../plugins/git/git-apply-stash-pane.c:54
-#: ../plugins/git/git-diff-stash-pane.c:67
 #: ../plugins/git/git-drop-stash-pane.c:48
 msgid "No stash selected."
 msgstr "尚未選取 stash。"
@@ -5189,7 +5192,7 @@ msgstr "請輸入提交作者的名稱。"
 msgid "Please enter the commit author's e-mail address."
 msgstr "請輸入提交作者的電子郵件位址。"
 
-#: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:149
+#: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:148
 msgid "Commit"
 msgstr "Commit"
 
@@ -5218,25 +5221,15 @@ msgstr "尚未選取遠端。"
 msgid "No tags selected."
 msgstr "尚未選取標籤。"
 
-#. Translators: default file name for git diff's output
-#: ../plugins/git/git-diff-pane.c:33
-msgid "Uncommitted Changes.diff"
-msgstr "Uncommitted Changes.diff"
-
 #. Translators: file name for an existing commits diff, %s is an SHASUM of a commit
-#: ../plugins/git/git-diff-pane.c:71
+#: ../plugins/git/git-diff-pane.c:40
 #, c-format
 msgid "Commit %s.diff"
 msgstr "Commit %s.diff"
 
-#: ../plugins/git/git-diff-pane.c:104
+#: ../plugins/git/git-diff-pane.c:73
 msgid "No revision selected"
 msgstr "尚未選擇修訂版"
-
-#: ../plugins/git/git-diff-stash-pane.c:40
-#, c-format
-msgid "Stash %i.diff"
-msgstr "Stash %i.diff"
 
 #: ../plugins/git/git-log-pane.c:581
 #, c-format
@@ -5253,7 +5246,7 @@ msgstr "<b>標籤:</b> %s"
 msgid "<b>Remote:</b> %s"
 msgstr "<b>遠端:</b> %s"
 
-#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:100
+#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:99
 msgid "Merge"
 msgstr "合併"
 
@@ -5277,11 +5270,11 @@ msgstr "Git 版本控制"
 msgid "Please enter a URL."
 msgstr "請輸入 URL。"
 
-#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:265
+#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:256
 msgid "Pull"
 msgstr "Pull"
 
-#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:257
+#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:248
 msgid "Push"
 msgstr "Push"
 
@@ -5325,7 +5318,7 @@ msgstr "沒有選取衝突的檔案。"
 msgid "Please enter a commit."
 msgstr "請輸入一次提交。"
 
-#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:529
+#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:512
 msgid "Revert"
 msgstr "Revert"
 
@@ -5333,11 +5326,11 @@ msgstr "Revert"
 msgid "Stash Uncommitted Changes"
 msgstr "Stash 未提交的變更"
 
-#: ../plugins/git/git-status-pane.c:376
+#: ../plugins/git/git-status-pane.c:511
 msgid "Changes to be committed"
 msgstr "要提交的改變"
 
-#: ../plugins/git/git-status-pane.c:385
+#: ../plugins/git/git-status-pane.c:521
 msgid "Changed but not updated"
 msgstr "已改變但尚未更新"
 
@@ -5345,366 +5338,345 @@ msgstr "已改變但尚未更新"
 msgid "No staged files selected."
 msgstr "尚未選擇已 stage 檔案。"
 
-#: ../plugins/git/plugin.c:68
+#: ../plugins/git/plugin.c:67
 msgid "Branch tools"
 msgstr "分支工具"
 
-#: ../plugins/git/plugin.c:76 ../plugins/git/plugin.c:77
+#: ../plugins/git/plugin.c:75 ../plugins/git/plugin.c:76
 msgid "Create a branch"
 msgstr "建立分支"
 
-#: ../plugins/git/plugin.c:84 ../plugins/git/plugin.c:85
+#: ../plugins/git/plugin.c:83 ../plugins/git/plugin.c:84
 msgid "Delete branches"
 msgstr "刪除分支"
 
-#: ../plugins/git/plugin.c:92 ../plugins/git/plugin.c:93
+#: ../plugins/git/plugin.c:91 ../plugins/git/plugin.c:92
 msgid "Switch to the selected branch"
 msgstr "切換至選取的分支"
 
-#: ../plugins/git/plugin.c:101
+#: ../plugins/git/plugin.c:100
 msgid "Merge a revision into the current branch"
 msgstr "將修訂版合併到目前的分支"
 
-#: ../plugins/git/plugin.c:112
+#: ../plugins/git/plugin.c:111
 msgid "Tag tools"
 msgstr "標籤工具"
 
-#: ../plugins/git/plugin.c:120 ../plugins/git/plugin.c:121
+#: ../plugins/git/plugin.c:119 ../plugins/git/plugin.c:120
 msgid "Create a tag"
 msgstr "建立標籤"
 
-#: ../plugins/git/plugin.c:128 ../plugins/git/plugin.c:129
+#: ../plugins/git/plugin.c:127 ../plugins/git/plugin.c:128
 msgid "Delete selected tags"
 msgstr "要刪除的標籤"
 
-#: ../plugins/git/plugin.c:141
+#: ../plugins/git/plugin.c:140
 msgid "Changes"
 msgstr "變更"
 
-#: ../plugins/git/plugin.c:150
+#: ../plugins/git/plugin.c:149
 msgid "Commit changes"
 msgstr "提交變更"
 
-#: ../plugins/git/plugin.c:157
-msgid "Diff uncommitted changes"
-msgstr "比對未提交的變更"
-
-#: ../plugins/git/plugin.c:158
-msgid "Show a diff of uncommitted changes in an editor"
-msgstr "在編輯器顯示未提交變更的差異"
-
-#: ../plugins/git/plugin.c:173
+#: ../plugins/git/plugin.c:164
 #: ../plugins/snippets-manager/snippets-editor.ui.h:18
 msgid "Add"
 msgstr "加入"
 
-#: ../plugins/git/plugin.c:174
+#: ../plugins/git/plugin.c:165
 msgid "Add files to the index"
 msgstr "將檔案加入索引"
 
-#: ../plugins/git/plugin.c:182
+#: ../plugins/git/plugin.c:173
 msgid "Remove files from the repository"
 msgstr "從檔案庫移除檔案"
 
-#: ../plugins/git/plugin.c:189 ../plugins/git/plugin.c:493
+#: ../plugins/git/plugin.c:180 ../plugins/git/plugin.c:476
 msgid "Check out"
 msgstr "Check out"
 
-#: ../plugins/git/plugin.c:190
+#: ../plugins/git/plugin.c:181
 msgid "Revert changes in unstaged files"
 msgstr "將未 stage 檔案的變更還原"
 
-#: ../plugins/git/plugin.c:197 ../plugins/git/plugin.c:501
+#: ../plugins/git/plugin.c:188 ../plugins/git/plugin.c:484
 msgid "Unstage"
 msgstr "Unstage"
 
-#: ../plugins/git/plugin.c:198
+#: ../plugins/git/plugin.c:189
 msgid "Remove staged files from the index"
 msgstr "從索引中移除已 stage 的檔案"
 
-#: ../plugins/git/plugin.c:205
+#: ../plugins/git/plugin.c:196
 msgid "Resolve conflicts"
 msgstr "Resolve conflicts"
 
-#: ../plugins/git/plugin.c:206
+#: ../plugins/git/plugin.c:197
 msgid "Mark selected conflicted files as resolved"
 msgstr "將選取的衝突檔案標記為已解決"
 
-#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:991
+#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:972
 msgid "Stash"
 msgstr "Stash"
 
-#: ../plugins/git/plugin.c:221 ../plugins/git/plugin.c:333
+#: ../plugins/git/plugin.c:212 ../plugins/git/plugin.c:324
 msgid "Stash uncommitted changes"
 msgstr "Stash uncommitted changes"
 
-#: ../plugins/git/plugin.c:222 ../plugins/git/plugin.c:334
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
 msgid "Save uncommitted changes without committing them"
 msgstr "將未提交的變更儲存而不提交它們"
 
-#: ../plugins/git/plugin.c:233
+#: ../plugins/git/plugin.c:224
 msgid "Remote repository tools"
 msgstr "遠端檔案庫工具"
 
-#: ../plugins/git/plugin.c:241
+#: ../plugins/git/plugin.c:232
 msgid "Add a remote"
 msgstr "加入遠端"
 
-#: ../plugins/git/plugin.c:242
+#: ../plugins/git/plugin.c:233
 msgid "Add a remote repository"
 msgstr "加入遠端檔案庫"
 
-#: ../plugins/git/plugin.c:249
+#: ../plugins/git/plugin.c:240
 msgid "Delete selected remote"
 msgstr "刪除選取的遠端"
 
-#: ../plugins/git/plugin.c:250
+#: ../plugins/git/plugin.c:241
 msgid "Delete a remote"
 msgstr "刪除遠端"
 
-#: ../plugins/git/plugin.c:258
+#: ../plugins/git/plugin.c:249
 msgid "Push changes to a remote repository"
 msgstr "將變更 push 至遠端檔案庫"
 
-#: ../plugins/git/plugin.c:266
+#: ../plugins/git/plugin.c:257
 msgid "Pull changes from a remote repository"
 msgstr "從遠端檔案庫 pull 變更"
 
-#: ../plugins/git/plugin.c:273 ../plugins/git/plugin.c:593
+#: ../plugins/git/plugin.c:264 ../plugins/git/plugin.c:576
 msgid "Fetch"
 msgstr "Fetch"
 
-#: ../plugins/git/plugin.c:274
+#: ../plugins/git/plugin.c:265
 msgid "Fetch changes from remote repositories"
 msgstr "從遠端檔案庫 fetch 變更"
 
-#: ../plugins/git/plugin.c:289
+#: ../plugins/git/plugin.c:280
 msgid "Rebase against selected remote"
 msgstr "將選取的的遠端分支 rebase"
 
-#: ../plugins/git/plugin.c:290
+#: ../plugins/git/plugin.c:281
 msgid "Start a rebase operation relative to the selected remote repository"
 msgstr "對選取的遠端檔案庫啟動相對的 rebase 操作"
 
-#: ../plugins/git/plugin.c:297 ../plugins/git/plugin.c:465
+#: ../plugins/git/plugin.c:288 ../plugins/git/plugin.c:448
 msgid "Continue"
 msgstr "Continue"
 
-#: ../plugins/git/plugin.c:298
+#: ../plugins/git/plugin.c:289
 msgid "Continue a rebase with resolved conflicts"
 msgstr "以解決後的衝突繼續 rebase"
 
-#: ../plugins/git/plugin.c:305 ../plugins/git/plugin.c:473
+#: ../plugins/git/plugin.c:296 ../plugins/git/plugin.c:456
 msgid "Skip"
 msgstr "Skip"
 
-#: ../plugins/git/plugin.c:306
+#: ../plugins/git/plugin.c:297
 msgid "Skip the current revision"
 msgstr "忽略目前的修訂版"
 
-#: ../plugins/git/plugin.c:313 ../plugins/git/plugin.c:481
+#: ../plugins/git/plugin.c:304 ../plugins/git/plugin.c:464
 msgid "Abort"
 msgstr "Abort"
 
-#: ../plugins/git/plugin.c:314
+#: ../plugins/git/plugin.c:305
 msgid "Abort the rebase and return the repository to its previous state"
 msgstr "中止 rebase 並將檔案庫設回前一個狀態"
 
-#: ../plugins/git/plugin.c:325
+#: ../plugins/git/plugin.c:316
 msgid "Stash tools"
 msgstr "Stash 工具"
 
-#: ../plugins/git/plugin.c:341
+#: ../plugins/git/plugin.c:332
 msgid "Apply selected stash"
 msgstr "套用選取的 stash"
 
-#: ../plugins/git/plugin.c:342
+#: ../plugins/git/plugin.c:333
 msgid "Apply stashed changes back into the working tree"
 msgstr "套用已 stash 的變更到 working tree"
 
-#: ../plugins/git/plugin.c:349
+#: ../plugins/git/plugin.c:340
 msgid "Apply stash and restore index"
 msgstr "套用 stash 並還原索引"
 
-#: ../plugins/git/plugin.c:350
+#: ../plugins/git/plugin.c:341
 msgid "Apply stashed changes back into the working tree and the index"
 msgstr "套用已 stash 的變更到 working tree 與索引"
 
-#: ../plugins/git/plugin.c:357
-msgid "Diff selected stash"
-msgstr "比對選取的 stash"
-
-#: ../plugins/git/plugin.c:358
-msgid "Show a diff of the selected stash"
-msgstr "顯示選取的 stash"
-
-#: ../plugins/git/plugin.c:365
+#: ../plugins/git/plugin.c:348
 msgid "Drop selected stash"
 msgstr "放棄選取的 stash"
 
-#: ../plugins/git/plugin.c:366
+#: ../plugins/git/plugin.c:349
 msgid "Delete the selected stash"
 msgstr "刪除選取的 stash"
 
-#: ../plugins/git/plugin.c:373
+#: ../plugins/git/plugin.c:356
 msgid "Clear all stashes"
 msgstr "清除所有 stash"
 
-#: ../plugins/git/plugin.c:374
+#: ../plugins/git/plugin.c:357
 msgid "Delete all stashes in this repository"
 msgstr "刪除這個檔案庫中所有的 stash"
 
-#: ../plugins/git/plugin.c:385
+#: ../plugins/git/plugin.c:368
 msgid "Revision tools"
 msgstr "修訂版工具"
 
-#: ../plugins/git/plugin.c:393 ../plugins/git/plugin.c:513
+#: ../plugins/git/plugin.c:376 ../plugins/git/plugin.c:496
 msgid "Show commit diff"
 msgstr "Show commit diff"
 
-#: ../plugins/git/plugin.c:394
+#: ../plugins/git/plugin.c:377
 msgid "Show a diff of the selected revision"
 msgstr "顯示選取的修訂版的差異"
 
-#: ../plugins/git/plugin.c:401 ../plugins/git/plugin.c:521
+#: ../plugins/git/plugin.c:384 ../plugins/git/plugin.c:504
 msgid "Cherry pick"
 msgstr "Cherry pick"
 
-#: ../plugins/git/plugin.c:402
+#: ../plugins/git/plugin.c:385
 msgid "Merge an individual commit from another branch"
 msgstr "從另一個分支合併個別的提交"
 
-#: ../plugins/git/plugin.c:409
+#: ../plugins/git/plugin.c:392
 msgid "Reset/Revert"
 msgstr "Reset/Revert"
 
-#: ../plugins/git/plugin.c:417
+#: ../plugins/git/plugin.c:400
 msgid "Reset tree"
 msgstr "重設檔案樹"
 
-#: ../plugins/git/plugin.c:418
+#: ../plugins/git/plugin.c:401
 msgid "Reset tree to a previous revision"
 msgstr "重設檔案樹到前一個修訂版"
 
-#: ../plugins/git/plugin.c:425
+#: ../plugins/git/plugin.c:408
 msgid "Revert commit"
 msgstr "回復提交"
 
-#: ../plugins/git/plugin.c:426
+#: ../plugins/git/plugin.c:409
 msgid "Revert a commit"
 msgstr "復原提交"
 
-#: ../plugins/git/plugin.c:433
+#: ../plugins/git/plugin.c:416
 msgid "Patch series"
 msgstr "修補檔系列"
 
-#: ../plugins/git/plugin.c:441 ../plugins/git/plugin.c:442
+#: ../plugins/git/plugin.c:424 ../plugins/git/plugin.c:425
 msgid "Generate a patch series"
 msgstr "建立修補檔系列"
 
-#: ../plugins/git/plugin.c:449
+#: ../plugins/git/plugin.c:432
 msgid "Mailbox files"
 msgstr "Mailbox 檔案"
 
-#: ../plugins/git/plugin.c:457
+#: ../plugins/git/plugin.c:440
 msgid "Apply mailbox files"
 msgstr "套用信箱檔案"
 
-#: ../plugins/git/plugin.c:458
+#: ../plugins/git/plugin.c:441
 msgid "Apply patches from mailbox files"
 msgstr "套用 mailbox 檔案的修補檔"
 
-#: ../plugins/git/plugin.c:466
+#: ../plugins/git/plugin.c:449
 msgid "Continue applying patches with resolved conflicts"
 msgstr "在解決衝突後繼續套用修補檔"
 
-#: ../plugins/git/plugin.c:474
+#: ../plugins/git/plugin.c:457
 msgid "Skip the current patch in the series"
 msgstr "略過目前系列中的修補檔"
 
-#: ../plugins/git/plugin.c:482
+#: ../plugins/git/plugin.c:465
 msgid ""
 "Stop applying the patch series and return the tree to its previous state"
 msgstr "停止套用這個系列並將檔案樹回復到原來的狀態"
 
-#: ../plugins/git/plugin.c:537
+#: ../plugins/git/plugin.c:520
 msgid "Reset..."
 msgstr "重設…"
 
-#: ../plugins/git/plugin.c:549
+#: ../plugins/git/plugin.c:532
 msgid "Switch"
 msgstr "切換"
 
-#: ../plugins/git/plugin.c:557
+#: ../plugins/git/plugin.c:540
 msgid "Delete..."
 msgstr "刪除…"
 
-#: ../plugins/git/plugin.c:565
+#: ../plugins/git/plugin.c:548
 msgid "Merge..."
 msgstr "合併…"
 
-#: ../plugins/git/plugin.c:577
+#: ../plugins/git/plugin.c:560
 msgid "Push..."
 msgstr "Push…"
 
-#: ../plugins/git/plugin.c:585
+#: ../plugins/git/plugin.c:568
 msgid "Pull..."
 msgstr "Pull…"
 
-#: ../plugins/git/plugin.c:605
+#: ../plugins/git/plugin.c:588
 msgid "Apply"
 msgstr "套用"
 
-#: ../plugins/git/plugin.c:613
+#: ../plugins/git/plugin.c:596
 msgid "Apply and restore index"
 msgstr "套用並還原索引"
 
-#: ../plugins/git/plugin.c:621
-#: ../plugins/subversion/subversion-log-dialog.c:119
-msgid "Diff"
-msgstr "差異"
-
-#: ../plugins/git/plugin.c:629
+#: ../plugins/git/plugin.c:604
 msgid "Drop"
 msgstr "丟棄"
 
-#: ../plugins/git/plugin.c:721 ../plugins/git/plugin.c:794
+#: ../plugins/git/plugin.c:696 ../plugins/git/plugin.c:769
 msgid "Branch"
 msgstr "分支"
 
-#: ../plugins/git/plugin.c:877
+#: ../plugins/git/plugin.c:858
 msgid "Status popup menu"
 msgstr "狀態彈出選單"
 
-#: ../plugins/git/plugin.c:882
+#: ../plugins/git/plugin.c:863
 msgid "Log popup menu"
 msgstr "紀錄彈出選單"
 
-#: ../plugins/git/plugin.c:888
+#: ../plugins/git/plugin.c:869
 msgid "Branch popup menu"
 msgstr "分支彈出選單"
 
-#: ../plugins/git/plugin.c:894
+#: ../plugins/git/plugin.c:875
 msgid "Remote popup menu"
 msgstr "遠端彈出選單"
 
-#: ../plugins/git/plugin.c:899
+#: ../plugins/git/plugin.c:880
 msgid "Popup menu entries"
 msgstr "彈出選單項目"
 
-#: ../plugins/git/plugin.c:961
+#: ../plugins/git/plugin.c:942
 msgid "Status"
 msgstr "狀態"
 
-#: ../plugins/git/plugin.c:967
+#: ../plugins/git/plugin.c:948
 msgid "Log"
 msgstr "紀錄"
 
-#: ../plugins/git/plugin.c:978
+#: ../plugins/git/plugin.c:959
 msgid "Tags"
 msgstr "標籤"
 
-#: ../plugins/git/plugin.c:985
+#: ../plugins/git/plugin.c:966
 msgid "Remotes"
 msgstr "遠端"
 
@@ -6523,7 +6495,7 @@ msgstr "請選擇要使用的專案後端程式。"
 
 #: ../plugins/project-manager/dialogs.c:683
 #: ../plugins/project-manager/dialogs.c:688
-#: ../plugins/project-manager/plugin.c:928
+#: ../plugins/project-manager/plugin.c:926
 msgid "Project properties"
 msgstr "專案屬性"
 
@@ -6608,105 +6580,99 @@ msgstr "缺少模組名稱"
 msgid "Cannot add packages"
 msgstr "不能加入套件"
 
-#: ../plugins/project-manager/plugin.c:686
-msgid ""
-"Are you sure you want to remove the following group from the project?\n"
-"\n"
-msgstr ""
-"您是否確定將下列群組從專案中移除？\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:689
-msgid ""
-"Are you sure you want to remove the following target from the project?\n"
-"\n"
-msgstr ""
-"您是否確定將下列目標從專案中移除？\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:692
-msgid ""
-"Are you sure you want to remove the following source file from the project?\n"
-"\n"
-msgstr ""
-"是否確定將下列原始碼檔從專案中移除？\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:695
-msgid ""
-"Are you sure you want to remove the following package from the project?\n"
-"\n"
-msgstr ""
-"您是否確定將下列套件從專案中移除？\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:698
-msgid ""
-"Are you sure you want to remove the following module from the project?\n"
-"\n"
-msgstr ""
-"您是否確定將下列模組從專案中移除？\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:701
-msgid ""
-"Are you sure you want to remove the following elements from the project?\n"
-"\n"
-msgstr ""
-"您是否確定將下列元素從專案中移除？\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:718
+#: ../plugins/project-manager/plugin.c:693
 #, c-format
-msgid "Group: %s\n"
-msgstr "群組：%s\n"
+msgid ""
+"Are you sure you want to remove the group \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"您是否確定將群組「%s」從專案中移除？\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:721
+#: ../plugins/project-manager/plugin.c:696
 #, c-format
-msgid "Target: %s\n"
-msgstr "目標：%s\n"
+msgid ""
+"Are you sure you want to remove the target \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"您是否確定將目標「%s」從專案中移除？\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:724
+#: ../plugins/project-manager/plugin.c:699
 #, c-format
-msgid "Source: %s\n"
-msgstr "來源：%s\n"
+msgid ""
+"Are you sure you want to remove the source \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"是否確定將原始碼檔「%s」從專案中移除？\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:727
+#: ../plugins/project-manager/plugin.c:702
 #, c-format
-msgid "Shortcut: %s\n"
-msgstr "捷徑：%s\n"
+msgid ""
+"Are you sure you want to remove the shortcut \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"您是否確定將捷徑「%s」從專案中移除？\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:706
+#, c-format
+msgid ""
+"Are you sure you want to remove the module \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"您是否確定將模組「%s」從專案中移除？\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:709
+#, c-format
+msgid ""
+"Are you sure you want to remove the package \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"您是否確定將套件「%s」從專案中移除？\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:712
+#, c-format
+msgid ""
+"Are you sure you want to remove the element \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"您是否確定將元素「%s」從專案中移除？\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:720
+#, c-format
+msgid ""
+"Are you sure you want to remove %d elements from the project?\n"
+"\n"
+msgstr ""
+"您是否確定將元素「%d」從專案中移除？\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:725
+msgid "The group will be deleted from the file system.\n"
+msgstr "這個群組將會從檔案系統中刪除。\n"
 
 #: ../plugins/project-manager/plugin.c:730
-#, c-format
-msgid "Module: %s\n"
-msgstr "模組：%s\n"
+msgid "The group will not be deleted from the file system.\n"
+msgstr "這個群組將不會從檔案系統中刪除。\n"
 
-#: ../plugins/project-manager/plugin.c:733
-#, c-format
-msgid "Package: %s\n"
-msgstr "套件：%s\n"
+#: ../plugins/project-manager/plugin.c:736
+msgid "The source file will be deleted from the file system.\n"
+msgstr "該原始碼檔將會從檔案系統中刪除。\n"
 
-#: ../plugins/project-manager/plugin.c:745
-msgid "The group will be deleted from the file system."
-msgstr "這個群組將會從檔案系統中刪除。"
+#: ../plugins/project-manager/plugin.c:741
+msgid "The source file will not be deleted from the file system.\n"
+msgstr "該原始碼檔將不會從檔案系統中刪除。\n"
 
-#: ../plugins/project-manager/plugin.c:747
-msgid "The group will not be deleted from the file system."
-msgstr "這個群組將不會從檔案系統中刪除。"
-
-#: ../plugins/project-manager/plugin.c:749
-msgid "The source file will be deleted from the file system."
-msgstr "該來源檔將會從檔案系統中刪除。"
-
-#: ../plugins/project-manager/plugin.c:751
-msgid "The source file will not be deleted from the file system."
-msgstr "該來源檔將不會從檔案系統中刪除。"
-
-#: ../plugins/project-manager/plugin.c:756
+#: ../plugins/project-manager/plugin.c:753
 msgid "Confirm remove"
 msgstr "確認移除"
 
-#: ../plugins/project-manager/plugin.c:802
+#: ../plugins/project-manager/plugin.c:800
 #, c-format
 msgid ""
 "Failed to remove '%s':\n"
@@ -6715,151 +6681,151 @@ msgstr ""
 "移除‘%s’失敗：\n"
 "%s"
 
-#: ../plugins/project-manager/plugin.c:868
+#: ../plugins/project-manager/plugin.c:866
 #, c-format
 msgid "Failed to retrieve URI info of %s: %s"
 msgstr "取回 %s 的 URI 資訊失敗：%s"
 
-#: ../plugins/project-manager/plugin.c:904
+#: ../plugins/project-manager/plugin.c:902
 msgid "_Project"
 msgstr "專案(_P)"
 
-#: ../plugins/project-manager/plugin.c:908
+#: ../plugins/project-manager/plugin.c:906
 msgid "New _Folder…"
 msgstr "新增資料夾(_F)…"
 
-#: ../plugins/project-manager/plugin.c:908
-#: ../plugins/project-manager/plugin.c:942
+#: ../plugins/project-manager/plugin.c:906
+#: ../plugins/project-manager/plugin.c:940
 msgid "Add a new folder to the project"
 msgstr "加入新的資料夾至專案"
 
-#: ../plugins/project-manager/plugin.c:913
+#: ../plugins/project-manager/plugin.c:911
 msgid "New _Target…"
 msgstr "新增目標(_T)…"
 
-#: ../plugins/project-manager/plugin.c:913
-#: ../plugins/project-manager/plugin.c:947
+#: ../plugins/project-manager/plugin.c:911
+#: ../plugins/project-manager/plugin.c:945
 msgid "Add a new target to the project"
 msgstr "加入新的目標至專案"
 
-#: ../plugins/project-manager/plugin.c:918
+#: ../plugins/project-manager/plugin.c:916
 msgid "Add _Source File…"
 msgstr "加入來源檔案(_S)…"
 
-#: ../plugins/project-manager/plugin.c:918
-#: ../plugins/project-manager/plugin.c:952
-#: ../plugins/project-manager/plugin.c:962
+#: ../plugins/project-manager/plugin.c:916
+#: ../plugins/project-manager/plugin.c:950
+#: ../plugins/project-manager/plugin.c:960
 msgid "Add a source file to a target"
 msgstr "加入原始檔至目標"
 
-#: ../plugins/project-manager/plugin.c:923
+#: ../plugins/project-manager/plugin.c:921
 msgid "Add _Library…"
 msgstr "加入程式庫(_L)…"
 
-#: ../plugins/project-manager/plugin.c:923
+#: ../plugins/project-manager/plugin.c:921
 msgid "Add a module to a target"
 msgstr "將模組加入至目標"
 
-#: ../plugins/project-manager/plugin.c:928
-#: ../plugins/project-manager/plugin.c:967
+#: ../plugins/project-manager/plugin.c:926
+#: ../plugins/project-manager/plugin.c:965
 msgid "_Properties"
 msgstr "屬性(_P)"
 
-#: ../plugins/project-manager/plugin.c:933
+#: ../plugins/project-manager/plugin.c:931
 msgid "Close Pro_ject"
 msgstr "關閉專案(_J)"
 
-#: ../plugins/project-manager/plugin.c:933
+#: ../plugins/project-manager/plugin.c:931
 msgid "Close project"
 msgstr "關閉專案"
 
-#: ../plugins/project-manager/plugin.c:942
+#: ../plugins/project-manager/plugin.c:940
 msgid "New _Folder"
 msgstr "新增資料夾(_F)"
 
-#: ../plugins/project-manager/plugin.c:947
+#: ../plugins/project-manager/plugin.c:945
 msgid "New _Target"
 msgstr "新增目標(_T)"
 
-#: ../plugins/project-manager/plugin.c:952
+#: ../plugins/project-manager/plugin.c:950
 msgid "Add _Source File"
 msgstr "加入原始檔(_S)"
 
-#: ../plugins/project-manager/plugin.c:957
+#: ../plugins/project-manager/plugin.c:955
 msgid "Add _Library"
 msgstr "加入程式庫(_L)"
 
-#: ../plugins/project-manager/plugin.c:957
+#: ../plugins/project-manager/plugin.c:955
 msgid "Add a library to a target"
 msgstr "加入程式庫至專案"
 
-#: ../plugins/project-manager/plugin.c:962
+#: ../plugins/project-manager/plugin.c:960
 msgid "_Add to Project"
 msgstr "加入至專案(_A)"
 
-#: ../plugins/project-manager/plugin.c:967
+#: ../plugins/project-manager/plugin.c:965
 msgid "Properties of group/target/source"
 msgstr "群組/目標/來源的屬性"
 
-#: ../plugins/project-manager/plugin.c:972
+#: ../plugins/project-manager/plugin.c:970
 msgid "Re_move"
 msgstr "移除(_M)"
 
-#: ../plugins/project-manager/plugin.c:972
+#: ../plugins/project-manager/plugin.c:970
 msgid "Remove from project"
 msgstr "從專案中移除"
 
-#: ../plugins/project-manager/plugin.c:977
+#: ../plugins/project-manager/plugin.c:975
 msgid "_Sort"
 msgstr "排序(_S)"
 
-#: ../plugins/project-manager/plugin.c:977
+#: ../plugins/project-manager/plugin.c:975
 msgid "Sort shortcuts"
 msgstr "排序捷徑鍵"
 
-#: ../plugins/project-manager/plugin.c:1312
+#: ../plugins/project-manager/plugin.c:1310
 #, c-format
 msgid ""
 "Failed to parse project (the project is opened, but there will be no project "
 "view) %s: %s\n"
 msgstr "分析專案失敗（該專案已被開啟，但不會有專案檢視）%s：%s\n"
 
-#: ../plugins/project-manager/plugin.c:1322
+#: ../plugins/project-manager/plugin.c:1320
 msgid "Update project view…"
 msgstr "更新專案檢視…"
 
-#: ../plugins/project-manager/plugin.c:1327
-#: ../plugins/project-manager/plugin.c:1449
-#: ../plugins/project-manager/plugin.c:1605
+#: ../plugins/project-manager/plugin.c:1325
+#: ../plugins/project-manager/plugin.c:1447
+#: ../plugins/project-manager/plugin.c:1626
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
 #: ../plugins/symbol-db/plugin.c:2160
 msgid "Project"
 msgstr "專案"
 
-#: ../plugins/project-manager/plugin.c:1365
+#: ../plugins/project-manager/plugin.c:1363
 #, c-format
 msgid "Loading project: %s"
 msgstr "正在載入專案：%s"
 
-#: ../plugins/project-manager/plugin.c:1518
+#: ../plugins/project-manager/plugin.c:1539
 #, c-format
 msgid "Error closing project: %s"
 msgstr "關閉專案時錯誤：%s"
 
-#: ../plugins/project-manager/plugin.c:1584
+#: ../plugins/project-manager/plugin.c:1605
 msgid "Project manager actions"
 msgstr "專案管理員動作"
 
-#: ../plugins/project-manager/plugin.c:1592
+#: ../plugins/project-manager/plugin.c:1613
 msgid "Project manager popup actions"
 msgstr "專案管理員彈出式動作"
 
-#: ../plugins/project-manager/plugin.c:2457
+#: ../plugins/project-manager/plugin.c:2478
 msgid "Initializing Project…"
 msgstr "初始化專案…"
 
-#: ../plugins/project-manager/plugin.c:2460
+#: ../plugins/project-manager/plugin.c:2481
 msgid "Project Loaded"
 msgstr "專案已載入"
 
@@ -9030,6 +8996,10 @@ msgstr "[Head/工作副本]"
 msgid "Subversion: Retrieving diff…"
 msgstr "Subversion：正在取回 diff…"
 
+#: ../plugins/subversion/subversion-log-dialog.c:119
+msgid "Diff"
+msgstr "差異"
+
 #: ../plugins/subversion/subversion-log-dialog.c:257
 msgid "Subversion: Retrieving log…"
 msgstr "Subversion：正在取回紀錄檔…"
@@ -9660,7 +9630,7 @@ msgstr "詢問使用者以取得額外的參數"
 msgid "Command line parameters"
 msgstr "指令參數"
 
-#: ../src/about.c:205
+#: ../src/about.c:201
 msgid "Copyright (c) Naba Kumar"
 msgstr "版權所有 © Naba Kumar"
 
@@ -9929,6 +9899,42 @@ msgstr "只有圖示"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "只有文字"
+
+#~ msgid "Uncommitted Changes.diff"
+#~ msgstr "Uncommitted Changes.diff"
+
+#~ msgid "Stash %i.diff"
+#~ msgstr "Stash %i.diff"
+
+#~ msgid "Diff uncommitted changes"
+#~ msgstr "比對未提交的變更"
+
+#~ msgid "Show a diff of uncommitted changes in an editor"
+#~ msgstr "在編輯器顯示未提交變更的差異"
+
+#~ msgid "Diff selected stash"
+#~ msgstr "比對選取的 stash"
+
+#~ msgid "Show a diff of the selected stash"
+#~ msgstr "顯示選取的 stash"
+
+#~ msgid "Group: %s\n"
+#~ msgstr "群組：%s\n"
+
+#~ msgid "Target: %s\n"
+#~ msgstr "目標：%s\n"
+
+#~ msgid "Source: %s\n"
+#~ msgstr "來源：%s\n"
+
+#~ msgid "Shortcut: %s\n"
+#~ msgstr "捷徑：%s\n"
+
+#~ msgid "Module: %s\n"
+#~ msgstr "模組：%s\n"
+
+#~ msgid "Package: %s\n"
+#~ msgstr "套件：%s\n"
 
 #~ msgid "Profile Plugins"
 #~ msgstr "設定組合外掛程式"
