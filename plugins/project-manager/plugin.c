@@ -717,7 +717,8 @@ confirm_removal (ProjectManagerPlugin *plugin, GList *selected)
 		
 	}
 	else
-		mesg = g_strdup_printf(_("Are you sure you want to remove %d elements from the project?\n\n"), nbItem);
+		/* Translator: there is at least 2 elements to remove */
+		mesg = g_strdup_printf(ngettext ("Are you sure you want to remove %d element from the project?\n\n", "Are you sure you want to remove %d elements from the project?\n\n", nbItem), nbItem);
 
 	if (group || source)
 	{
