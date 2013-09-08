@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-07-27 21:48+0000\n"
-"PO-Revision-Date: 2013-07-19 12:58+0700\n"
+"POT-Creation-Date: 2013-09-06 04:20+0000\n"
+"PO-Revision-Date: 2013-09-08 11:11+0700\n"
 "Last-Translator: Akom Chotiphantawanon <knight2000@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Anjuta"
 msgstr "แอนจูตา"
 
-#: ../anjuta.desktop.in.in.h:2 ../src/about.c:207
+#: ../anjuta.desktop.in.in.h:2 ../src/about.c:203
 msgid "Integrated Development Environment"
 msgstr "ชุดเครื่องมือพัฒนาเบ็ดเสร็จ"
 
@@ -278,23 +278,23 @@ msgstr "ค่า"
 msgid "Path that dropped files should be relative to"
 msgstr "พาธตั้งต้นที่แฟ้มที่ลากมาวางควรจะสัมพัทธ์ด้วย"
 
-#: ../libanjuta/anjuta-file-list.c:107
+#: ../libanjuta/anjuta-file-list.c:104
 msgid "Drop a file or enter a path here"
 msgstr "วางแฟ้มหรือป้อนพาธที่นี่"
 
-#: ../libanjuta/anjuta-file-list.c:280
+#: ../libanjuta/anjuta-file-list.c:277
 msgid "Select Files"
 msgstr "เลือกแฟ้ม"
 
-#: ../libanjuta/anjuta-file-list.c:550
+#: ../libanjuta/anjuta-file-list.c:547
 msgid "Path that all files in the list should be relative to"
 msgstr "พาธตั้งต้นที่ทุกแฟ้มในรายชื่อควรจะสัมพัทธ์ด้วย"
 
-#: ../libanjuta/anjuta-file-list.c:557
+#: ../libanjuta/anjuta-file-list.c:554
 msgid "Show Add button"
 msgstr "แสดงปุ่ม \"เพิ่ม\""
 
-#: ../libanjuta/anjuta-file-list.c:558
+#: ../libanjuta/anjuta-file-list.c:555
 msgid "Display an Add button"
 msgstr "แสดงปุ่ม \"เพิ่ม\""
 
@@ -622,47 +622,47 @@ msgid "Unable to load user interface file: %s"
 msgstr "ไม่สามารถโหลดแฟ้มส่วนติดต่อผู้ใช้: %s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
-#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:175
+#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:183
 msgid "Modified"
 msgstr "มีการเปลี่ยนแปลง"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:95
-#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:178
+#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:186
 msgid "Added"
 msgstr "เพิ่ม"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:98
-#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:181
+#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:189
 msgid "Deleted"
 msgstr "ลบ"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:101
-#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:184
+#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:192
 msgid "Conflicted"
 msgstr "ขัดแย้ง"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:105
-#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:188
+#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:196
 msgid "Up-to-date"
 msgstr "เป็นข้อมูลล่าสุด"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:109
-#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:192
+#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:200
 msgid "Locked"
 msgstr "ล็อค"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:112
-#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:195
+#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:203
 msgid "Missing"
 msgstr "สูญหาย"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:115
-#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:198
+#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:206
 msgid "Unversioned"
 msgstr "ไม่มีการติดตามรุ่น"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:119
-#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:202
+#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:210
 msgid "Ignored"
 msgstr "ละเลย"
 
@@ -3476,7 +3476,7 @@ msgid "Rename"
 msgstr "เปลี่ยนชื่อ"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:363
-#: ../plugins/git/plugin.c:181
+#: ../plugins/git/plugin.c:172
 #: ../plugins/snippets-manager/snippets-editor.ui.h:19
 msgid "Remove"
 msgstr "ลบ"
@@ -3490,28 +3490,28 @@ msgstr " [อ่านอย่างเดียว]"
 msgid "Close Others"
 msgstr "ปิดแฟ้มอื่น"
 
-#: ../plugins/document-manager/anjuta-docman.c:733
-#: ../plugins/document-manager/anjuta-docman.c:1153
+#: ../plugins/document-manager/anjuta-docman.c:736
+#: ../plugins/document-manager/anjuta-docman.c:1156
 msgid "Close file"
 msgstr "ปิดแฟ้ม"
 
-#: ../plugins/document-manager/anjuta-docman.c:770
+#: ../plugins/document-manager/anjuta-docman.c:773
 #: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "พาธ:"
 
-#: ../plugins/document-manager/anjuta-docman.c:887
+#: ../plugins/document-manager/anjuta-docman.c:890
 #: ../plugins/file-loader/plugin.c:597 ../plugins/file-loader/plugin.c:887
 #: ../plugins/file-loader/plugin.c:897 ../plugins/file-loader/plugin.c:910
 msgid "Open file"
 msgstr "เปิดแฟ้ม"
 
-#: ../plugins/document-manager/anjuta-docman.c:906
+#: ../plugins/document-manager/anjuta-docman.c:909
 #: ../plugins/message-view/message-view.c:100
 msgid "Save file as"
 msgstr "บันทึกแฟ้มเป็น"
 
-#: ../plugins/document-manager/anjuta-docman.c:987
+#: ../plugins/document-manager/anjuta-docman.c:990
 #, c-format
 msgid ""
 "The file '%s' already exists.\n"
@@ -3520,11 +3520,11 @@ msgstr ""
 "มีแฟ้ม '%s' อยู่ก่อนแล้ว\n"
 "คุณต้องการบันทึกทับหรือไม่?"
 
-#: ../plugins/document-manager/anjuta-docman.c:996
+#: ../plugins/document-manager/anjuta-docman.c:999
 msgid "_Replace"
 msgstr "แ_ทนที่"
 
-#: ../plugins/document-manager/anjuta-docman.c:1740
+#: ../plugins/document-manager/anjuta-docman.c:1743
 msgid "[read-only]"
 msgstr "[อ่านอย่างเดียว]"
 
@@ -4154,9 +4154,9 @@ msgstr "การค้นหาแบบง่าย"
 
 #. DocmanPlugin* plugin = ANJUTA_PLUGIN_DOCMAN (ipref);
 #: ../plugins/document-manager/plugin.c:418
-#: ../plugins/document-manager/plugin.c:1716
-#: ../plugins/document-manager/plugin.c:2136
-#: ../plugins/document-manager/plugin.c:2145
+#: ../plugins/document-manager/plugin.c:1718
+#: ../plugins/document-manager/plugin.c:2138
+#: ../plugins/document-manager/plugin.c:2147
 msgid "Documents"
 msgstr "เอกสาร"
 
@@ -4194,12 +4194,12 @@ msgid "Mode"
 msgstr "โหมด"
 
 #. this may fail, too
-#: ../plugins/document-manager/plugin.c:1552
+#: ../plugins/document-manager/plugin.c:1554
 #, c-format
 msgid "Autosave failed for %s"
 msgstr "บันทึก %s โดยอัตโนมัติไม่สำเร็จ"
 
-#: ../plugins/document-manager/plugin.c:1566
+#: ../plugins/document-manager/plugin.c:1568
 msgid "Autosave completed"
 msgstr "บันทึกอัตโนมัติเรียบร้อย"
 
@@ -4563,7 +4563,7 @@ msgstr "แสดงในเครื่องมือจัดการแฟ
 msgid "File manager popup actions"
 msgstr "การกระทำในเมนูผุดขึ้นของเครื่องมือจัดการแฟ้ม"
 
-#: ../plugins/file-manager/plugin.c:404 ../plugins/git/plugin.c:165
+#: ../plugins/file-manager/plugin.c:404 ../plugins/git/plugin.c:156
 msgid "Files"
 msgstr "แฟ้ม"
 
@@ -4917,7 +4917,7 @@ msgstr "Fetch แขนงจากแม่ข่ายหลังจากส
 msgid "Mailbox files to apply:"
 msgstr "แฟ้มกล่องจดหมายที่จะใช้:"
 
-#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:978
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:954
 msgid "Branches"
 msgstr "แขนง"
 
@@ -4989,7 +4989,7 @@ msgstr "แขนงต่างๆ จะต้องผสานครบท�
 
 #: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:96
 #: ../plugins/git/git-pane.c:101 ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:863
+#: ../plugins/git/plugin.c:839
 msgid "Git"
 msgstr "Git"
 
@@ -5066,7 +5066,7 @@ msgstr "โฟลเดอร์ที่จะสร้างแพตช์:"
 msgid "Repository to pull from:"
 msgstr "คลังที่จะ pull:"
 
-#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:281
+#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:272
 msgid "Rebase"
 msgstr "Rebase"
 
@@ -5146,6 +5146,10 @@ msgstr "การเปลี่ยนแปลงที่ Stash ไว้:"
 msgid "Repository Status:"
 msgstr "สถานะของคลัง:"
 
+#: ../plugins/git/anjuta-git.ui.h:72
+msgid "Show Diff"
+msgstr "แสดง Diff"
+
 #: ../plugins/git/git-add-files-pane.c:160
 msgid "Add Files"
 msgstr "เพิ่มแฟ้ม"
@@ -5167,7 +5171,6 @@ msgid "Apply Mailbox Files"
 msgstr "ดำเนินการโดยใช้แฟ้มกล่องจดหมาย"
 
 #: ../plugins/git/git-apply-stash-pane.c:54
-#: ../plugins/git/git-diff-stash-pane.c:67
 #: ../plugins/git/git-drop-stash-pane.c:48
 msgid "No stash selected."
 msgstr "ไม่ได้เลือก stash ไว้"
@@ -5199,7 +5202,7 @@ msgstr "กรุณาป้อนชื่อผู้เขียนสำห
 msgid "Please enter the commit author's e-mail address."
 msgstr "กรุณาป้อนที่อยู่อีเมลผู้เขียนสำหรับรายการ commit"
 
-#: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:149
+#: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:148
 msgid "Commit"
 msgstr "Commit"
 
@@ -5228,25 +5231,15 @@ msgstr "ไม่ได้เลือกแม่ข่ายไว้"
 msgid "No tags selected."
 msgstr "ไม่ได้เลือกแท็กไว้"
 
-#. Translators: default file name for git diff's output
-#: ../plugins/git/git-diff-pane.c:33
-msgid "Uncommitted Changes.diff"
-msgstr "Uncommitted Changes.diff"
-
 #. Translators: file name for an existing commits diff, %s is an SHASUM of a commit
-#: ../plugins/git/git-diff-pane.c:71
+#: ../plugins/git/git-diff-pane.c:40
 #, c-format
 msgid "Commit %s.diff"
 msgstr "Commit %s.diff"
 
-#: ../plugins/git/git-diff-pane.c:104
+#: ../plugins/git/git-diff-pane.c:73
 msgid "No revision selected"
 msgstr "ไม่ได้เลือกฉบับแก้ไขไว้"
-
-#: ../plugins/git/git-diff-stash-pane.c:40
-#, c-format
-msgid "Stash %i.diff"
-msgstr "Stash %i.diff"
 
 #: ../plugins/git/git-log-pane.c:581
 #, c-format
@@ -5263,7 +5256,7 @@ msgstr "<b>แท็ก:</b> %s"
 msgid "<b>Remote:</b> %s"
 msgstr "<b>ที่แม่ข่าย:</b> %s"
 
-#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:100
+#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:99
 msgid "Merge"
 msgstr "ผสาน"
 
@@ -5287,11 +5280,11 @@ msgstr "ควบคุมรุ่นด้วย Git"
 msgid "Please enter a URL."
 msgstr "กรุณาป้อน URL"
 
-#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:265
+#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:256
 msgid "Pull"
 msgstr "Pull"
 
-#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:257
+#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:248
 msgid "Push"
 msgstr "Push"
 
@@ -5335,7 +5328,7 @@ msgstr "ไม่ได้เลือกแฟ้มขัดแย้งไว
 msgid "Please enter a commit."
 msgstr "กรุณาป้อนรายการ commit"
 
-#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:529
+#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:512
 msgid "Revert"
 msgstr "ย้อนคืน"
 
@@ -5343,11 +5336,11 @@ msgstr "ย้อนคืน"
 msgid "Stash Uncommitted Changes"
 msgstr "Stash การเปลี่ยนแปลงที่ยังไม่ commit"
 
-#: ../plugins/git/git-status-pane.c:376
+#: ../plugins/git/git-status-pane.c:511
 msgid "Changes to be committed"
 msgstr "การเปลี่ยนแปลงที่จะ commit"
 
-#: ../plugins/git/git-status-pane.c:385
+#: ../plugins/git/git-status-pane.c:521
 msgid "Changed but not updated"
 msgstr "เปลี่ยนแปลงแต่ยังไม่ปรับข้อมูล"
 
@@ -5355,367 +5348,346 @@ msgstr "เปลี่ยนแปลงแต่ยังไม่ปรับ
 msgid "No staged files selected."
 msgstr "ไม่ได้เลือกแฟ้มที่ stage ไว้"
 
-#: ../plugins/git/plugin.c:68
+#: ../plugins/git/plugin.c:67
 msgid "Branch tools"
 msgstr "เครื่องมือเกี่ยวกับแขนง"
 
-#: ../plugins/git/plugin.c:76 ../plugins/git/plugin.c:77
+#: ../plugins/git/plugin.c:75 ../plugins/git/plugin.c:76
 msgid "Create a branch"
 msgstr "สร้างแขนง"
 
-#: ../plugins/git/plugin.c:84 ../plugins/git/plugin.c:85
+#: ../plugins/git/plugin.c:83 ../plugins/git/plugin.c:84
 msgid "Delete branches"
 msgstr "ลบแขนง"
 
-#: ../plugins/git/plugin.c:92 ../plugins/git/plugin.c:93
+#: ../plugins/git/plugin.c:91 ../plugins/git/plugin.c:92
 msgid "Switch to the selected branch"
 msgstr "สลับไปยังแขนงที่เลือก"
 
-#: ../plugins/git/plugin.c:101
+#: ../plugins/git/plugin.c:100
 msgid "Merge a revision into the current branch"
 msgstr "ผสานฉบับแก้ไขที่กำหนดเข้าในแขนงปัจจุบัน"
 
-#: ../plugins/git/plugin.c:112
+#: ../plugins/git/plugin.c:111
 msgid "Tag tools"
 msgstr "เครื่องมือเกี่ยวกับแท็ก"
 
-#: ../plugins/git/plugin.c:120 ../plugins/git/plugin.c:121
+#: ../plugins/git/plugin.c:119 ../plugins/git/plugin.c:120
 msgid "Create a tag"
 msgstr "สร้างแท็ก"
 
-#: ../plugins/git/plugin.c:128 ../plugins/git/plugin.c:129
+#: ../plugins/git/plugin.c:127 ../plugins/git/plugin.c:128
 msgid "Delete selected tags"
 msgstr "ลบแท็กที่เลือก"
 
-#: ../plugins/git/plugin.c:141
+#: ../plugins/git/plugin.c:140
 msgid "Changes"
 msgstr "การเปลี่ยนแปลง"
 
-#: ../plugins/git/plugin.c:150
+#: ../plugins/git/plugin.c:149
 msgid "Commit changes"
 msgstr "Commit การเปลี่ยนแปลง"
 
-#: ../plugins/git/plugin.c:157
-msgid "Diff uncommitted changes"
-msgstr "Diff การเปลี่ยนแปลงที่ยังไม่ commit"
-
-#: ../plugins/git/plugin.c:158
-msgid "Show a diff of uncommitted changes in an editor"
-msgstr "แสดง diff ของการเปลี่ยนแปลงที่ยังไม่ commit ในเครื่องมือแก้ไข"
-
-#: ../plugins/git/plugin.c:173
+#: ../plugins/git/plugin.c:164
 #: ../plugins/snippets-manager/snippets-editor.ui.h:18
 msgid "Add"
 msgstr "เพิ่ม"
 
-#: ../plugins/git/plugin.c:174
+#: ../plugins/git/plugin.c:165
 msgid "Add files to the index"
 msgstr "เพิ่มแฟ้มเข้าในดัชนี"
 
-#: ../plugins/git/plugin.c:182
+#: ../plugins/git/plugin.c:173
 msgid "Remove files from the repository"
 msgstr "ลบแฟ้มออกจากคลัง"
 
-#: ../plugins/git/plugin.c:189 ../plugins/git/plugin.c:493
+#: ../plugins/git/plugin.c:180 ../plugins/git/plugin.c:476
 msgid "Check out"
 msgstr "Check out"
 
-#: ../plugins/git/plugin.c:190
+#: ../plugins/git/plugin.c:181
 msgid "Revert changes in unstaged files"
 msgstr "เรียกคืนการเปลี่ยนแปลงในแฟ้มที่ยังไม่ stage"
 
-#: ../plugins/git/plugin.c:197 ../plugins/git/plugin.c:501
+#: ../plugins/git/plugin.c:188 ../plugins/git/plugin.c:484
 msgid "Unstage"
 msgstr "Unstage"
 
-#: ../plugins/git/plugin.c:198
+#: ../plugins/git/plugin.c:189
 msgid "Remove staged files from the index"
 msgstr "ลบแฟ้มที่ stage ไว้ออกจากดัชนี"
 
-#: ../plugins/git/plugin.c:205
+#: ../plugins/git/plugin.c:196
 msgid "Resolve conflicts"
 msgstr "แก้ข้อขัดแย้ง"
 
-#: ../plugins/git/plugin.c:206
+#: ../plugins/git/plugin.c:197
 msgid "Mark selected conflicted files as resolved"
 msgstr "ทำเครื่องหมายแฟ้มที่ขัดแย้งที่เลือก ว่าแก้ข้อขัดแย้งแล้ว"
 
-#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:996
+#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:972
 msgid "Stash"
 msgstr "Stash"
 
-#: ../plugins/git/plugin.c:221 ../plugins/git/plugin.c:333
+#: ../plugins/git/plugin.c:212 ../plugins/git/plugin.c:324
 msgid "Stash uncommitted changes"
 msgstr "Stash การเปลี่ยนแปลงที่ยังไม่ commit"
 
-#: ../plugins/git/plugin.c:222 ../plugins/git/plugin.c:334
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
 msgid "Save uncommitted changes without committing them"
 msgstr "บันทึกการเปลี่ยนแปลงโดยไม่ commit"
 
-#: ../plugins/git/plugin.c:233
+#: ../plugins/git/plugin.c:224
 msgid "Remote repository tools"
 msgstr "เครื่องมือเกี่ยวกับคลังในเครือข่าย"
 
-#: ../plugins/git/plugin.c:241
+#: ../plugins/git/plugin.c:232
 msgid "Add a remote"
 msgstr "เพิ่มแม่ข่าย"
 
-#: ../plugins/git/plugin.c:242
+#: ../plugins/git/plugin.c:233
 msgid "Add a remote repository"
 msgstr "เพิ่มคลังแม่ข่าย"
 
-#: ../plugins/git/plugin.c:249
+#: ../plugins/git/plugin.c:240
 msgid "Delete selected remote"
 msgstr "ลบแม่ข่ายที่เลือก"
 
-#: ../plugins/git/plugin.c:250
+#: ../plugins/git/plugin.c:241
 msgid "Delete a remote"
 msgstr "ลบแม่ข่าย"
 
-#: ../plugins/git/plugin.c:258
+#: ../plugins/git/plugin.c:249
 msgid "Push changes to a remote repository"
 msgstr "Push การเปลี่ยนแปลงไปที่คลังแม่ข่าย"
 
-#: ../plugins/git/plugin.c:266
+#: ../plugins/git/plugin.c:257
 msgid "Pull changes from a remote repository"
 msgstr "Pull การเปลี่ยนแปลงจากคลังแม่ข่าย"
 
-#: ../plugins/git/plugin.c:273 ../plugins/git/plugin.c:593
+#: ../plugins/git/plugin.c:264 ../plugins/git/plugin.c:576
 msgid "Fetch"
 msgstr "Fetch"
 
-#: ../plugins/git/plugin.c:274
+#: ../plugins/git/plugin.c:265
 msgid "Fetch changes from remote repositories"
 msgstr "Fetch การเปลี่ยนแปลงจากคลังแม่ข่าย"
 
-#: ../plugins/git/plugin.c:289
+#: ../plugins/git/plugin.c:280
 msgid "Rebase against selected remote"
 msgstr "Rebase เทียบกับแม่ข่ายที่เลือก"
 
-#: ../plugins/git/plugin.c:290
+#: ../plugins/git/plugin.c:281
 msgid "Start a rebase operation relative to the selected remote repository"
 msgstr "เริ่ม rebase เทียบกับคลังแม่ข่ายที่เลือก"
 
-#: ../plugins/git/plugin.c:297 ../plugins/git/plugin.c:465
+#: ../plugins/git/plugin.c:288 ../plugins/git/plugin.c:448
 msgid "Continue"
 msgstr "ทำต่อ"
 
-#: ../plugins/git/plugin.c:298
+#: ../plugins/git/plugin.c:289
 msgid "Continue a rebase with resolved conflicts"
 msgstr "ดำเนินการ rebase ต่อหลังจากแก้ข้อขัดแย้งแล้ว"
 
-#: ../plugins/git/plugin.c:305 ../plugins/git/plugin.c:473
+#: ../plugins/git/plugin.c:296 ../plugins/git/plugin.c:456
 msgid "Skip"
 msgstr "ข้าม"
 
-#: ../plugins/git/plugin.c:306
+#: ../plugins/git/plugin.c:297
 msgid "Skip the current revision"
 msgstr "ข้ามฉบับแก้ไขปัจจุบัน"
 
-#: ../plugins/git/plugin.c:313 ../plugins/git/plugin.c:481
+#: ../plugins/git/plugin.c:304 ../plugins/git/plugin.c:464
 msgid "Abort"
 msgstr "เลิกทำ"
 
-#: ../plugins/git/plugin.c:314
+#: ../plugins/git/plugin.c:305
 msgid "Abort the rebase and return the repository to its previous state"
 msgstr "เลิก rebase และย้อนคลังกลับคืนสู่สภาวะก่อนหน้า"
 
-#: ../plugins/git/plugin.c:325
+#: ../plugins/git/plugin.c:316
 msgid "Stash tools"
 msgstr "เครื่องมือ Stash"
 
-#: ../plugins/git/plugin.c:341
+#: ../plugins/git/plugin.c:332
 msgid "Apply selected stash"
 msgstr "ดำเนินการปรับแก้โดยใช้ stash ที่เลือก"
 
-#: ../plugins/git/plugin.c:342
+#: ../plugins/git/plugin.c:333
 msgid "Apply stashed changes back into the working tree"
 msgstr "ดำเนินการการเปลี่ยนแปลงที่ stash ไว้ กลับเข้าใน tree ที่ทำงานอยู่"
 
-#: ../plugins/git/plugin.c:349
+#: ../plugins/git/plugin.c:340
 msgid "Apply stash and restore index"
 msgstr "ดำเนินการปรับแก้โดยใช้ stash และคืนสภาพดัชนี"
 
-#: ../plugins/git/plugin.c:350
+#: ../plugins/git/plugin.c:341
 msgid "Apply stashed changes back into the working tree and the index"
 msgstr "ดำเนินการการเปลี่ยนแปลงที่ stash ไว้ กลับเข้าใน tree ที่ทำงานอยู่และในดัชนี"
 
-#: ../plugins/git/plugin.c:357
-msgid "Diff selected stash"
-msgstr "Diff stash ที่เลือก"
-
-#: ../plugins/git/plugin.c:358
-msgid "Show a diff of the selected stash"
-msgstr "แสดง diff ของ stash ที่เลือก"
-
-#: ../plugins/git/plugin.c:365
+#: ../plugins/git/plugin.c:348
 msgid "Drop selected stash"
 msgstr "ทิ้ง stash ที่เลือก"
 
-#: ../plugins/git/plugin.c:366
+#: ../plugins/git/plugin.c:349
 msgid "Delete the selected stash"
 msgstr "ลบ stash ที่เลือก"
 
-#: ../plugins/git/plugin.c:373
+#: ../plugins/git/plugin.c:356
 msgid "Clear all stashes"
 msgstr "ล้าง stash ทั้งหมด"
 
-#: ../plugins/git/plugin.c:374
+#: ../plugins/git/plugin.c:357
 msgid "Delete all stashes in this repository"
 msgstr "ลบ stash ทั้งหมดในคลังนี้"
 
-#: ../plugins/git/plugin.c:385
+#: ../plugins/git/plugin.c:368
 msgid "Revision tools"
 msgstr "เครื่องมือเกี่ยวกับฉบับแก้ไข"
 
-#: ../plugins/git/plugin.c:393 ../plugins/git/plugin.c:513
+#: ../plugins/git/plugin.c:376 ../plugins/git/plugin.c:496
 msgid "Show commit diff"
 msgstr "แสดง diff ของรายการ commit"
 
-#: ../plugins/git/plugin.c:394
+#: ../plugins/git/plugin.c:377
 msgid "Show a diff of the selected revision"
 msgstr "แสดง diff ของฉบับแก้ไขที่เลือก"
 
-#: ../plugins/git/plugin.c:401 ../plugins/git/plugin.c:521
+#: ../plugins/git/plugin.c:384 ../plugins/git/plugin.c:504
 msgid "Cherry pick"
 msgstr "เก็บเกี่ยว"
 
-#: ../plugins/git/plugin.c:402
+#: ../plugins/git/plugin.c:385
 msgid "Merge an individual commit from another branch"
 msgstr "เลือกผสาน commit โดดๆ จากแขนงอื่น"
 
-#: ../plugins/git/plugin.c:409
+#: ../plugins/git/plugin.c:392
 msgid "Reset/Revert"
 msgstr "ล้างข้อมูล/คืนกลับ"
 
-#: ../plugins/git/plugin.c:417
+#: ../plugins/git/plugin.c:400
 msgid "Reset tree"
 msgstr "ล้างข้อมูล Tree"
 
-#: ../plugins/git/plugin.c:418
+#: ../plugins/git/plugin.c:401
 msgid "Reset tree to a previous revision"
 msgstr "ล้างข้อมูล tree กลับคืนสู่ฉบับแก้ไขก่อนหน้า"
 
-#: ../plugins/git/plugin.c:425
+#: ../plugins/git/plugin.c:408
 msgid "Revert commit"
 msgstr "เรียก commit คืน"
 
-#: ../plugins/git/plugin.c:426
+#: ../plugins/git/plugin.c:409
 msgid "Revert a commit"
 msgstr "เรียกคืน commit"
 
-#: ../plugins/git/plugin.c:433
+#: ../plugins/git/plugin.c:416
 msgid "Patch series"
 msgstr "ชุดลำดับแพตช์"
 
-#: ../plugins/git/plugin.c:441 ../plugins/git/plugin.c:442
+#: ../plugins/git/plugin.c:424 ../plugins/git/plugin.c:425
 msgid "Generate a patch series"
 msgstr "สร้างชุดลำดับแพตช์"
 
-#: ../plugins/git/plugin.c:449
+#: ../plugins/git/plugin.c:432
 msgid "Mailbox files"
 msgstr "แฟ้มกล่องจดหมาย"
 
-#: ../plugins/git/plugin.c:457
+#: ../plugins/git/plugin.c:440
 msgid "Apply mailbox files"
 msgstr "ดำเนินการโดยใช้แฟ้มกล่องจดหมาย"
 
-#: ../plugins/git/plugin.c:458
+#: ../plugins/git/plugin.c:441
 msgid "Apply patches from mailbox files"
 msgstr "ดำเนินการปรับแก้ด้วยแพตช์จากแฟ้มกล่องจดหมาย"
 
 # msgid "_Continue with resolved conflicts"
-#: ../plugins/git/plugin.c:466
+#: ../plugins/git/plugin.c:449
 msgid "Continue applying patches with resolved conflicts"
 msgstr "ดำเนินการปรับแก้ต่อด้วยแพตช์หลังจากแก้ข้อขัดแย้งแล้ว"
 
-#: ../plugins/git/plugin.c:474
+#: ../plugins/git/plugin.c:457
 msgid "Skip the current patch in the series"
 msgstr "ข้ามแพตช์ปัจจุบันในชุดลำดับ"
 
-#: ../plugins/git/plugin.c:482
+#: ../plugins/git/plugin.c:465
 msgid ""
 "Stop applying the patch series and return the tree to its previous state"
 msgstr "หยุดการปรับแก้ด้วยชุดลำดับแพตช์นี้และย้อน tree กลับสู่สภาวะก่อนหน้า"
 
-#: ../plugins/git/plugin.c:537
+#: ../plugins/git/plugin.c:520
 msgid "Reset..."
 msgstr "ล้างค่า..."
 
-#: ../plugins/git/plugin.c:549
+#: ../plugins/git/plugin.c:532
 msgid "Switch"
 msgstr "สลับ"
 
-#: ../plugins/git/plugin.c:557
+#: ../plugins/git/plugin.c:540
 msgid "Delete..."
 msgstr "ลบ..."
 
-#: ../plugins/git/plugin.c:565
+#: ../plugins/git/plugin.c:548
 msgid "Merge..."
 msgstr "ผสาน..."
 
-#: ../plugins/git/plugin.c:577
+#: ../plugins/git/plugin.c:560
 msgid "Push..."
 msgstr "Push..."
 
-#: ../plugins/git/plugin.c:585
+#: ../plugins/git/plugin.c:568
 msgid "Pull..."
 msgstr "Pull..."
 
-#: ../plugins/git/plugin.c:605
+#: ../plugins/git/plugin.c:588
 msgid "Apply"
 msgstr "เริ่มใช้"
 
-#: ../plugins/git/plugin.c:613
+#: ../plugins/git/plugin.c:596
 msgid "Apply and restore index"
 msgstr "ดำเนินการและคืนสภาพดัชนี"
 
-#: ../plugins/git/plugin.c:621
-#: ../plugins/subversion/subversion-log-dialog.c:119
-msgid "Diff"
-msgstr "Diff"
-
-#: ../plugins/git/plugin.c:629
+#: ../plugins/git/plugin.c:604
 msgid "Drop"
 msgstr "ทิ้ง"
 
-#: ../plugins/git/plugin.c:721 ../plugins/git/plugin.c:794
+#: ../plugins/git/plugin.c:696 ../plugins/git/plugin.c:769
 msgid "Branch"
 msgstr "แขนง"
 
-#: ../plugins/git/plugin.c:882
+#: ../plugins/git/plugin.c:858
 msgid "Status popup menu"
 msgstr "เมนูสถานะแบบผุดขึ้น"
 
-#: ../plugins/git/plugin.c:887
+#: ../plugins/git/plugin.c:863
 msgid "Log popup menu"
 msgstr "เมนูปูมแบบผุดขึ้น"
 
-#: ../plugins/git/plugin.c:893
+#: ../plugins/git/plugin.c:869
 msgid "Branch popup menu"
 msgstr "เมนูแขนงแบบผุดขึ้น"
 
-#: ../plugins/git/plugin.c:899
+#: ../plugins/git/plugin.c:875
 msgid "Remote popup menu"
 msgstr "เมนูแม่ข่ายแบบผุดขึ้น"
 
-#: ../plugins/git/plugin.c:904
+#: ../plugins/git/plugin.c:880
 msgid "Popup menu entries"
 msgstr "รายการเมนูแบบผุดขึ้น"
 
-#: ../plugins/git/plugin.c:966
+#: ../plugins/git/plugin.c:942
 msgid "Status"
 msgstr "สถานะ"
 
-#: ../plugins/git/plugin.c:972
+#: ../plugins/git/plugin.c:948
 msgid "Log"
 msgstr "ปูม"
 
-#: ../plugins/git/plugin.c:983
+#: ../plugins/git/plugin.c:959
 msgid "Tags"
 msgstr "แท็ก"
 
-#: ../plugins/git/plugin.c:990
+#: ../plugins/git/plugin.c:966
 msgid "Remotes"
 msgstr "แม่ข่าย"
 
@@ -6534,7 +6506,7 @@ msgstr "กรุณาเลือกแบ็กเอนด์โครงก
 
 #: ../plugins/project-manager/dialogs.c:683
 #: ../plugins/project-manager/dialogs.c:688
-#: ../plugins/project-manager/plugin.c:928
+#: ../plugins/project-manager/plugin.c:926
 msgid "Project properties"
 msgstr "คุณสมบัติโครงการ"
 
@@ -6619,105 +6591,99 @@ msgstr "ขาดชื่อของมอดูล"
 msgid "Cannot add packages"
 msgstr "ไม่สามารถเพิ่มแพกเกจ"
 
-#: ../plugins/project-manager/plugin.c:686
-msgid ""
-"Are you sure you want to remove the following group from the project?\n"
-"\n"
-msgstr ""
-"ยืนยันหรือไม่ว่าต้องการลบกลุ่มต่อไปนี้ออกจากโครงการ?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:689
-msgid ""
-"Are you sure you want to remove the following target from the project?\n"
-"\n"
-msgstr ""
-"ยืนยันหรือไม่ว่าต้องการลบเป้าหมายต่อไปนี้ออกจากโครงการ?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:692
-msgid ""
-"Are you sure you want to remove the following source file from the project?\n"
-"\n"
-msgstr ""
-"ยืนยันหรือไม่ว่าต้องการลบแฟ้มซอร์สต่อไปนี้ออกจากโครงการ?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:695
-msgid ""
-"Are you sure you want to remove the following package from the project?\n"
-"\n"
-msgstr ""
-"ยืนยันหรือไม่ว่าต้องการลบแพกเกจต่อไปนี้ออกจากโครงการ?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:698
-msgid ""
-"Are you sure you want to remove the following module from the project?\n"
-"\n"
-msgstr ""
-"ยืนยันหรือไม่ว่าต้องการลบมอดูลต่อไปนี้ออกจากโครงการ?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:701
-msgid ""
-"Are you sure you want to remove the following elements from the project?\n"
-"\n"
-msgstr ""
-"ยืนยันหรือไม่ว่าต้องการลบองค์ประกอบต่อไปนี้ออกจากโครงการ?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:718
+#: ../plugins/project-manager/plugin.c:693
 #, c-format
-msgid "Group: %s\n"
-msgstr "กลุ่ม: %s\n"
+msgid ""
+"Are you sure you want to remove the group \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"ยืนยันหรือไม่ว่าต้องการลบกลุ่ม \"%s\" ออกจากโครงการ?\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:721
+#: ../plugins/project-manager/plugin.c:696
 #, c-format
-msgid "Target: %s\n"
-msgstr "เป้าหมาย: %s\n"
+msgid ""
+"Are you sure you want to remove the target \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"ยืนยันหรือไม่ว่าต้องการลบเป้าหมาย \"%s\" ออกจากโครงการ?\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:724
+#: ../plugins/project-manager/plugin.c:699
 #, c-format
-msgid "Source: %s\n"
-msgstr "ซอร์ส: %s\n"
+msgid ""
+"Are you sure you want to remove the source \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"ยืนยันหรือไม่ว่าต้องการลบแฟ้มซอร์ส \"%s\" ออกจากโครงการ?\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:727
+#: ../plugins/project-manager/plugin.c:702
 #, c-format
-msgid "Shortcut: %s\n"
-msgstr "จุดลัด: %s\n"
+msgid ""
+"Are you sure you want to remove the shortcut \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"ยืนยันหรือไม่ว่าต้องการลบจุดลัด \"%s\" ออกจากโครงการ?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:706
+#, c-format
+msgid ""
+"Are you sure you want to remove the module \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"ยืนยันหรือไม่ว่าต้องการลบมอดูล \"%s\" ออกจากโครงการ?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:709
+#, c-format
+msgid ""
+"Are you sure you want to remove the package \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"ยืนยันหรือไม่ว่าต้องการลบแพกเกจ \"%s\" ออกจากโครงการ?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:712
+#, c-format
+msgid ""
+"Are you sure you want to remove the element \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"ยืนยันหรือไม่ว่าต้องการลบองค์ประกอบ \"%s\" ออกจากโครงการ?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:720
+#, c-format
+msgid ""
+"Are you sure you want to remove %d elements from the project?\n"
+"\n"
+msgstr ""
+"ยืนยันหรือไม่ว่าต้องการลบองค์ประกอบ %d ชิ้นออกจากโครงการ?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:725
+msgid "The group will be deleted from the file system.\n"
+msgstr "กลุ่มนี้จะถูกลบออกจากระบบแฟ้ม\n"
 
 #: ../plugins/project-manager/plugin.c:730
-#, c-format
-msgid "Module: %s\n"
-msgstr "มอดูล: %s\n"
+msgid "The group will not be deleted from the file system.\n"
+msgstr "กลุ่มนี้จะไม่ถูกลบออกจากระบบแฟ้ม\n"
 
-#: ../plugins/project-manager/plugin.c:733
-#, c-format
-msgid "Package: %s\n"
-msgstr "แพกเกจ: %s\n"
+#: ../plugins/project-manager/plugin.c:736
+msgid "The source file will be deleted from the file system.\n"
+msgstr "แฟ้มซอร์สนี้จะถูกลบออกจากระบบแฟ้ม\n"
 
-#: ../plugins/project-manager/plugin.c:745
-msgid "The group will be deleted from the file system."
-msgstr "กลุ่มนี้จะถูกลบออกจากระบบแฟ้ม"
+#: ../plugins/project-manager/plugin.c:741
+msgid "The source file will not be deleted from the file system.\n"
+msgstr "แฟ้มซอร์สนี้จะไม่ถูกลบออกจากระบบแฟ้ม\n"
 
-#: ../plugins/project-manager/plugin.c:747
-msgid "The group will not be deleted from the file system."
-msgstr "กลุ่มนี้จะไม่ถูกลบออกจากระบบแฟ้ม"
-
-#: ../plugins/project-manager/plugin.c:749
-msgid "The source file will be deleted from the file system."
-msgstr "แฟ้มซอร์สจะถูกลบออกจากระบบแฟ้ม"
-
-#: ../plugins/project-manager/plugin.c:751
-msgid "The source file will not be deleted from the file system."
-msgstr "แฟ้มซอร์สจะไม่ถูกลบออกจากระบบแฟ้ม"
-
-#: ../plugins/project-manager/plugin.c:756
+#: ../plugins/project-manager/plugin.c:753
 msgid "Confirm remove"
 msgstr "ยืนยันการลบ"
 
-#: ../plugins/project-manager/plugin.c:802
+#: ../plugins/project-manager/plugin.c:800
 #, c-format
 msgid ""
 "Failed to remove '%s':\n"
@@ -6726,151 +6692,151 @@ msgstr ""
 "ไม่สามารถลบ '%s':\n"
 "%s"
 
-#: ../plugins/project-manager/plugin.c:868
+#: ../plugins/project-manager/plugin.c:866
 #, c-format
 msgid "Failed to retrieve URI info of %s: %s"
 msgstr "ไม่สามารถดึงข้อมูล URI ของ %s: %s"
 
-#: ../plugins/project-manager/plugin.c:904
+#: ../plugins/project-manager/plugin.c:902
 msgid "_Project"
 msgstr "โ_ครงการ"
 
-#: ../plugins/project-manager/plugin.c:908
+#: ../plugins/project-manager/plugin.c:906
 msgid "New _Folder…"
 msgstr "โ_ฟลเดอร์ใหม่…"
 
-#: ../plugins/project-manager/plugin.c:908
-#: ../plugins/project-manager/plugin.c:942
+#: ../plugins/project-manager/plugin.c:906
+#: ../plugins/project-manager/plugin.c:940
 msgid "Add a new folder to the project"
 msgstr "เพิ่มโฟลเดอร์ใหม่เข้าในโครงการ"
 
-#: ../plugins/project-manager/plugin.c:913
+#: ../plugins/project-manager/plugin.c:911
 msgid "New _Target…"
 msgstr "เ_ป้าหมายใหม่…"
 
-#: ../plugins/project-manager/plugin.c:913
-#: ../plugins/project-manager/plugin.c:947
+#: ../plugins/project-manager/plugin.c:911
+#: ../plugins/project-manager/plugin.c:945
 msgid "Add a new target to the project"
 msgstr "เพิ่มเป้าหมายใหม่เข้าในโครงการ"
 
-#: ../plugins/project-manager/plugin.c:918
+#: ../plugins/project-manager/plugin.c:916
 msgid "Add _Source File…"
 msgstr "เพิ่มแฟ้มซอร์_ส…"
 
-#: ../plugins/project-manager/plugin.c:918
-#: ../plugins/project-manager/plugin.c:952
-#: ../plugins/project-manager/plugin.c:962
+#: ../plugins/project-manager/plugin.c:916
+#: ../plugins/project-manager/plugin.c:950
+#: ../plugins/project-manager/plugin.c:960
 msgid "Add a source file to a target"
 msgstr "เพิ่มแฟ้มซอร์สเข้าในเป้าหมาย"
 
-#: ../plugins/project-manager/plugin.c:923
+#: ../plugins/project-manager/plugin.c:921
 msgid "Add _Library…"
 msgstr "เพิ่มไ_ลบรารี…"
 
-#: ../plugins/project-manager/plugin.c:923
+#: ../plugins/project-manager/plugin.c:921
 msgid "Add a module to a target"
 msgstr "เพิ่มมอดูลเข้าในเป้าหมาย"
 
-#: ../plugins/project-manager/plugin.c:928
-#: ../plugins/project-manager/plugin.c:967
+#: ../plugins/project-manager/plugin.c:926
+#: ../plugins/project-manager/plugin.c:965
 msgid "_Properties"
 msgstr "คุณ_สมบัติ"
 
-#: ../plugins/project-manager/plugin.c:933
+#: ../plugins/project-manager/plugin.c:931
 msgid "Close Pro_ject"
 msgstr "ปิดโ_ครงการ"
 
-#: ../plugins/project-manager/plugin.c:933
+#: ../plugins/project-manager/plugin.c:931
 msgid "Close project"
 msgstr "ปิดโครงการ"
 
-#: ../plugins/project-manager/plugin.c:942
+#: ../plugins/project-manager/plugin.c:940
 msgid "New _Folder"
 msgstr "โ_ฟลเดอร์ใหม่"
 
-#: ../plugins/project-manager/plugin.c:947
+#: ../plugins/project-manager/plugin.c:945
 msgid "New _Target"
 msgstr "เ_ป้าหมายใหม่"
 
-#: ../plugins/project-manager/plugin.c:952
+#: ../plugins/project-manager/plugin.c:950
 msgid "Add _Source File"
 msgstr "เพิ่มแฟ้มซอร์_ส"
 
-#: ../plugins/project-manager/plugin.c:957
+#: ../plugins/project-manager/plugin.c:955
 msgid "Add _Library"
 msgstr "เพิ่มไ_ลบรารี"
 
-#: ../plugins/project-manager/plugin.c:957
+#: ../plugins/project-manager/plugin.c:955
 msgid "Add a library to a target"
 msgstr "เพิ่มไลบรารีเข้าในเป้าหมาย"
 
-#: ../plugins/project-manager/plugin.c:962
+#: ../plugins/project-manager/plugin.c:960
 msgid "_Add to Project"
 msgstr "เ_พิ่มเข้าในโครงการ"
 
-#: ../plugins/project-manager/plugin.c:967
+#: ../plugins/project-manager/plugin.c:965
 msgid "Properties of group/target/source"
 msgstr "คุณสมบัติของกลุ่ม/เป้าหมาย/ซอร์ส"
 
-#: ../plugins/project-manager/plugin.c:972
+#: ../plugins/project-manager/plugin.c:970
 msgid "Re_move"
 msgstr "เ_อาออก"
 
-#: ../plugins/project-manager/plugin.c:972
+#: ../plugins/project-manager/plugin.c:970
 msgid "Remove from project"
 msgstr "ลบออกจากโครงการ"
 
-#: ../plugins/project-manager/plugin.c:977
+#: ../plugins/project-manager/plugin.c:975
 msgid "_Sort"
 msgstr "เ_รียงลำดับ"
 
-#: ../plugins/project-manager/plugin.c:977
+#: ../plugins/project-manager/plugin.c:975
 msgid "Sort shortcuts"
-msgstr "เรียงลำดับปุ่มลัด"
+msgstr "เรียงลำดับจุดลัด"
 
-#: ../plugins/project-manager/plugin.c:1312
+#: ../plugins/project-manager/plugin.c:1310
 #, c-format
 msgid ""
 "Failed to parse project (the project is opened, but there will be no project "
 "view) %s: %s\n"
 msgstr "แจงโครงการไม่สำเร็จ (โครงการถูกเปิดอยู่ แต่จะไม่แสดงโครงการ) %s: %s\n"
 
-#: ../plugins/project-manager/plugin.c:1322
+#: ../plugins/project-manager/plugin.c:1320
 msgid "Update project view…"
 msgstr "ปรับข้อมูลมุมมองของโครงการ…"
 
-#: ../plugins/project-manager/plugin.c:1327
-#: ../plugins/project-manager/plugin.c:1449
-#: ../plugins/project-manager/plugin.c:1605
+#: ../plugins/project-manager/plugin.c:1325
+#: ../plugins/project-manager/plugin.c:1447
+#: ../plugins/project-manager/plugin.c:1626
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
 #: ../plugins/symbol-db/plugin.c:2160
 msgid "Project"
 msgstr "โครงการ"
 
-#: ../plugins/project-manager/plugin.c:1365
+#: ../plugins/project-manager/plugin.c:1363
 #, c-format
 msgid "Loading project: %s"
 msgstr "กำลังโหลดโครงการ: %s"
 
-#: ../plugins/project-manager/plugin.c:1518
+#: ../plugins/project-manager/plugin.c:1539
 #, c-format
 msgid "Error closing project: %s"
 msgstr "เกิดข้อผิดพลาดขณะปิดโครงการ: %s"
 
-#: ../plugins/project-manager/plugin.c:1584
+#: ../plugins/project-manager/plugin.c:1605
 msgid "Project manager actions"
 msgstr "การกระทำของเครื่องมือจัดการโครงการ"
 
-#: ../plugins/project-manager/plugin.c:1592
+#: ../plugins/project-manager/plugin.c:1613
 msgid "Project manager popup actions"
 msgstr "การกระทำในเมนูผุดขึ้นของเครื่องมือจัดการโครงการ"
 
-#: ../plugins/project-manager/plugin.c:2457
+#: ../plugins/project-manager/plugin.c:2478
 msgid "Initializing Project…"
 msgstr "กำลังตั้งค่าเริ่มต้นโครงการ…"
 
-#: ../plugins/project-manager/plugin.c:2460
+#: ../plugins/project-manager/plugin.c:2481
 msgid "Project Loaded"
 msgstr "โหลดโครงการแล้ว"
 
@@ -9043,6 +9009,10 @@ msgstr "[Head/ชุดสำเนาที่ทำงาน]"
 msgid "Subversion: Retrieving diff…"
 msgstr "Subversion: กำลังดึง diff…"
 
+#: ../plugins/subversion/subversion-log-dialog.c:119
+msgid "Diff"
+msgstr "Diff"
+
 #: ../plugins/subversion/subversion-log-dialog.c:257
 msgid "Subversion: Retrieving log…"
 msgstr "Subversion: กำลังดึงปูม…"
@@ -9675,7 +9645,7 @@ msgstr "ถามผู้ใช้เพื่อรับพารามิเ
 msgid "Command line parameters"
 msgstr "พารามิเตอร์บรรทัดคำสั่ง"
 
-#: ../src/about.c:205
+#: ../src/about.c:201
 msgid "Copyright (c) Naba Kumar"
 msgstr "Copyright (c) Naba Kumar"
 
@@ -9944,6 +9914,42 @@ msgstr "ไอคอนเท่านั้น"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "ข้อความเท่านั้น"
+
+#~ msgid "Uncommitted Changes.diff"
+#~ msgstr "Uncommitted Changes.diff"
+
+#~ msgid "Stash %i.diff"
+#~ msgstr "Stash %i.diff"
+
+#~ msgid "Diff uncommitted changes"
+#~ msgstr "Diff การเปลี่ยนแปลงที่ยังไม่ commit"
+
+#~ msgid "Show a diff of uncommitted changes in an editor"
+#~ msgstr "แสดง diff ของการเปลี่ยนแปลงที่ยังไม่ commit ในเครื่องมือแก้ไข"
+
+#~ msgid "Diff selected stash"
+#~ msgstr "Diff stash ที่เลือก"
+
+#~ msgid "Show a diff of the selected stash"
+#~ msgstr "แสดง diff ของ stash ที่เลือก"
+
+#~ msgid "Group: %s\n"
+#~ msgstr "กลุ่ม: %s\n"
+
+#~ msgid "Target: %s\n"
+#~ msgstr "เป้าหมาย: %s\n"
+
+#~ msgid "Source: %s\n"
+#~ msgstr "ซอร์ส: %s\n"
+
+#~ msgid "Shortcut: %s\n"
+#~ msgstr "จุดลัด: %s\n"
+
+#~ msgid "Module: %s\n"
+#~ msgstr "มอดูล: %s\n"
+
+#~ msgid "Package: %s\n"
+#~ msgstr "แพกเกจ: %s\n"
 
 #~ msgid "Profile Plugins"
 #~ msgstr "ปลั๊กอินของโพรไฟล์"
