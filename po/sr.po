@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: 23.32\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=anjuta"
 "&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-03-25 20:27+0000\n"
-"PO-Revision-Date: 2013-03-30 05:57+0200\n"
+"POT-Creation-Date: 2013-08-31 08:41+0000\n"
+"PO-Revision-Date: 2013-09-09 21:08+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -23,11 +23,11 @@ msgstr ""
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:50
+#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
 msgstr "Ањута"
 
-#: ../anjuta.desktop.in.in.h:2 ../src/about.c:207
+#: ../anjuta.desktop.in.in.h:2 ../src/about.c:203
 msgid "Integrated Development Environment"
 msgstr "Интегрисано развојно окружење"
 
@@ -85,13 +85,13 @@ msgstr "Не могу да нађем функцију %s за регистра�
 msgid "Unknown error in module %s"
 msgstr "Непозната грешка у модулу %s"
 
-#: ../libanjuta/anjuta-column-text-view.c:40 ../plugins/git/git-pane.c:123
+#: ../libanjuta/anjuta-column-text-view.c:40 ../plugins/git/git-pane.c:142
 #, c-format
 msgid "Column %i"
 msgstr "Колона %i"
 
 #. Column label
-#: ../libanjuta/anjuta-column-text-view.c:69
+#: ../libanjuta/anjuta-column-text-view.c:73
 msgid "Column 1"
 msgstr "Колона 1"
 
@@ -245,11 +245,11 @@ msgstr "тајландски"
 msgid "Unknown"
 msgstr "непознат"
 
-#: ../libanjuta/anjuta-entry.c:237
+#: ../libanjuta/anjuta-entry.c:247
 msgid "Help text"
 msgstr "Текст помоћи"
 
-#: ../libanjuta/anjuta-entry.c:238
+#: ../libanjuta/anjuta-entry.c:248
 msgid "Text to show the user what to enter into the entry"
 msgstr "Текст који ће показати кориснику шта да унесе у унос"
 
@@ -284,23 +284,23 @@ msgstr "Вредност"
 msgid "Path that dropped files should be relative to"
 msgstr "Путања на коју треба да се односе убачене датотеке"
 
-#: ../libanjuta/anjuta-file-list.c:101
+#: ../libanjuta/anjuta-file-list.c:104
 msgid "Drop a file or enter a path here"
 msgstr "Убаците датотеку или унесите путању"
 
-#: ../libanjuta/anjuta-file-list.c:274
+#: ../libanjuta/anjuta-file-list.c:277
 msgid "Select Files"
 msgstr "Изабери датотеке"
 
-#: ../libanjuta/anjuta-file-list.c:540
+#: ../libanjuta/anjuta-file-list.c:547
 msgid "Path that all files in the list should be relative to"
 msgstr "Путања на коју треба да се односе све датотеке на списку"
 
-#: ../libanjuta/anjuta-file-list.c:547
+#: ../libanjuta/anjuta-file-list.c:554
 msgid "Show Add button"
 msgstr "Прикажи дугме додавања"
 
-#: ../libanjuta/anjuta-file-list.c:548
+#: ../libanjuta/anjuta-file-list.c:555
 msgid "Display an Add button"
 msgstr "Приказује дугме за додавање"
 
@@ -315,8 +315,7 @@ msgstr "Приказује дугме за додавање"
 msgid "[Pp]assword.*:"
 msgstr "[Лл]озинка.*:"
 
-#: ../libanjuta/anjuta-launcher.c:1165 ../libanjuta/resources.c:267
-#: ../libanjuta/resources.c:276 ../plugins/gdb/utilities.c:282
+#: ../libanjuta/anjuta-launcher.c:1165 ../plugins/gdb/utilities.c:282
 #, c-format
 msgid "Cannot execute command: \"%s\""
 msgstr "Не могу да извршим наредбу: „%s“"
@@ -325,7 +324,7 @@ msgstr "Не могу да извршим наредбу: „%s“"
 msgid "execvp failed"
 msgstr "execvp није успео"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2426
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2396
 msgid "Anjuta Shell"
 msgstr "Ањутина шкољка"
 
@@ -333,12 +332,12 @@ msgstr "Ањутина шкољка"
 msgid "Anjuta shell that will contain the plugin"
 msgstr "Ањутина шкољка која ће садржати прикључак"
 
-#: ../libanjuta/anjuta-plugin-manager.c:711
+#: ../libanjuta/anjuta-plugin-manager.c:714
 #, c-format
 msgid "Plugin '%s' does not want to be deactivated"
 msgstr "Додатак „%s“ не жели да буде прекинут"
 
-#: ../libanjuta/anjuta-plugin-manager.c:744
+#: ../libanjuta/anjuta-plugin-manager.c:747
 #, c-format
 msgid ""
 "Could not load %s\n"
@@ -350,24 +349,24 @@ msgstr ""
 "Ово обично значи да је инсталација лоша. Програм је исписао следећу грешку:\n"
 "%s"
 
-#: ../libanjuta/anjuta-plugin-manager.c:882
+#: ../libanjuta/anjuta-plugin-manager.c:885
 msgid "Load"
 msgstr "Учитај"
 
-#: ../libanjuta/anjuta-plugin-manager.c:905
-#: ../libanjuta/anjuta-plugin-manager.c:2019
+#: ../libanjuta/anjuta-plugin-manager.c:908
+#: ../libanjuta/anjuta-plugin-manager.c:2012
 msgid "Available Plugins"
 msgstr "Доступни прикључци"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1021 ../src/anjuta-window.c:994
+#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:995
 msgid "Preferred plugins"
 msgstr "Пожељни прикључци"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1156
+#: ../libanjuta/anjuta-plugin-manager.c:1157
 msgid "Only show user activatable plugins"
 msgstr "Приказуј само прикључке које корисник може да покрене"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1196
+#: ../libanjuta/anjuta-plugin-manager.c:1197
 msgid ""
 "These are the plugins selected by you when you have been prompted to choose "
 "one of many suitable plugins. Removing the preferred plugin will let you "
@@ -377,73 +376,71 @@ msgstr ""
 "више могућих прикључака. Када уклоните пожељни прикључак тада ћете моћи да "
 "одаберете други прикључак."
 
-#: ../libanjuta/anjuta-plugin-manager.c:1222
+#: ../libanjuta/anjuta-plugin-manager.c:1223
 msgid "Forget selected plugin"
 msgstr "Заборави означени прикључак"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1356
-#: ../libanjuta/anjuta-plugin-manager.c:1507 ../libanjuta/anjuta-profile.c:507
-#: ../plugins/debug-manager/queue.c:529
+#: ../libanjuta/anjuta-plugin-manager.c:1357
+#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
+#: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "Одаберите прикључак"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../plugins/debug-manager/queue.c:530
+#: ../libanjuta/anjuta-plugin-manager.c:1358
+#: ../plugins/debug-manager/queue.c:528
 msgid "Please select a plugin to activate"
 msgstr "Одаберите прикључак за покретање"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1371
+#: ../libanjuta/anjuta-plugin-manager.c:1372
 #, c-format
 msgid "No plugin is able to load other plugins in %s"
 msgstr "Ниједан прикључак није у могућности да учита остале прикључке у %s"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1508
+#: ../libanjuta/anjuta-plugin-manager.c:1518
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Одаберите прикључак за покретање</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2046
+#: ../libanjuta/anjuta-plugin-manager.c:2039
 msgid "Remember this selection"
 msgstr "Запамти овај избор"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2407
+#: ../libanjuta/anjuta-plugin-manager.c:2377
 msgid "Profiles"
 msgstr "Профили"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2408
+#: ../libanjuta/anjuta-plugin-manager.c:2378
 msgid "Current stack of profiles"
 msgstr "Тренутни стек профила"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2413
+#: ../libanjuta/anjuta-plugin-manager.c:2383
 msgid "Available plugins"
 msgstr "Доступни прикључци"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2414
+#: ../libanjuta/anjuta-plugin-manager.c:2384
 msgid "Currently available plugins found in plugin paths"
 msgstr "Доступни прикључци из подешених путања"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2420
+#: ../libanjuta/anjuta-plugin-manager.c:2390
 msgid "Activated plugins"
 msgstr "Покренути прикључци"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2421
+#: ../libanjuta/anjuta-plugin-manager.c:2391
 msgid "Currently activated plugins"
 msgstr "Тренутно покренути прикључци"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2427
+#: ../libanjuta/anjuta-plugin-manager.c:2397
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Ањутина шкољка за коју су прикључци прављени"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2435
+#: ../libanjuta/anjuta-plugin-manager.c:2405
 msgid "Anjuta Status"
 msgstr "Стање Ањуте"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2436
+#: ../libanjuta/anjuta-plugin-manager.c:2406
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "Стање Ањуте које се користи за учитавање и уклањање прикључака"
 
-#. DEBUG_PRINT ("Icon: %s", icon_path);
-#. Avoid space in translated string
-#: ../libanjuta/anjuta-plugin-manager.c:2596
+#: ../libanjuta/anjuta-plugin-manager.c:2559
 msgid "Loading:"
 msgstr "Учитавам:"
 
@@ -454,7 +451,7 @@ msgstr "Категорија"
 #. FIXME: Make the general page first
 #: ../libanjuta/anjuta-preferences-dialog.c:139
 #: ../libanjuta/anjuta-preferences-dialog.c:142
-#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:981
+#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:982
 #: ../src/preferences.ui.h:9
 msgid "General"
 msgstr "Опште"
@@ -463,43 +460,35 @@ msgstr "Опште"
 msgid "Anjuta Preferences"
 msgstr "Подешавања Ањуте"
 
-#: ../libanjuta/anjuta-profile.c:254
+#: ../libanjuta/anjuta-profile.c:270
 msgid "Plugin Manager"
 msgstr "Управник прикључака"
 
-#: ../libanjuta/anjuta-profile.c:255
+#: ../libanjuta/anjuta-profile.c:271
 msgid "The plugin manager to use for resolving plugins"
 msgstr "Управник прикључцима који се користи за разрешавање прикључака"
 
-#: ../libanjuta/anjuta-profile.c:263
+#: ../libanjuta/anjuta-profile.c:279
 msgid "Profile Name"
 msgstr "Назив профила"
 
-#: ../libanjuta/anjuta-profile.c:264
+#: ../libanjuta/anjuta-profile.c:280
 msgid "Name of the plugin profile"
 msgstr "Назив профила прикључка"
 
-#: ../libanjuta/anjuta-profile.c:272
-msgid "Profile Plugins"
-msgstr "Додаци профила"
-
-#: ../libanjuta/anjuta-profile.c:273
-msgid "List of plugins for this profile"
-msgstr "Списак прикључака овог профила"
-
-#: ../libanjuta/anjuta-profile.c:280
+#: ../libanjuta/anjuta-profile.c:288
 msgid "Synchronization file"
 msgstr "Датотека усклађивања"
 
-#: ../libanjuta/anjuta-profile.c:281
+#: ../libanjuta/anjuta-profile.c:289
 msgid "File to syncronize the profile XML"
 msgstr "Датотека за усклађивање ХМЛ-а профила"
 
-#: ../libanjuta/anjuta-profile.c:508
+#: ../libanjuta/anjuta-profile.c:632
 msgid "Please select a plugin from the list"
 msgstr "Молим изаберите прикључак из списка"
 
-#: ../libanjuta/anjuta-profile.c:672
+#: ../libanjuta/anjuta-profile.c:655
 #, c-format
 msgid ""
 "Failed to read '%s': XML parse error. Invalid or corrupted Anjuta plugins "
@@ -509,19 +498,18 @@ msgstr ""
 "профил прикључака Ањуте."
 
 #. <Pluginname>: Install it from <some location on the web>
-#: ../libanjuta/anjuta-profile.c:699
+#: ../libanjuta/anjuta-profile.c:956
 #, c-format
 msgid "%s: Install it from '%s'\n"
 msgstr "%s: Инсталирајте га са „%s“\n"
 
-#: ../libanjuta/anjuta-profile.c:707
+#: ../libanjuta/anjuta-profile.c:964
 #, c-format
-msgid ""
-"Failed to read '%s': Following mandatory plugins are missing:\n"
-"%s"
-msgstr ""
-"Грешка при читању „%s“: Следећи неопходни прикључци недостају:\n"
-"%s"
+#| msgid ""
+#| "Failed to read '%s': Following mandatory plugins are missing:\n"
+#| "%s"
+msgid "Failed to read '%s': Following mandatory plugins are missing"
+msgstr "Грешка при читању „%s“: Следећи неопходни прикључци недостају"
 
 #: ../libanjuta/anjuta-save-prompt.c:157
 msgid "Select the items to save:"
@@ -564,40 +552,40 @@ msgid "There is an item with unsaved changes. Save changes before closing?"
 msgstr ""
 "Постоји ставка са несачуваним изменама. Да сачувам измене пре затварања?"
 
-#: ../libanjuta/anjuta-tree-combo.c:1092
+#: ../libanjuta/anjuta-tree-combo.c:1090
 msgid "<Invalid>"
 msgstr "<Неисправно>"
 
-#: ../libanjuta/anjuta-tree-combo.c:1209
+#: ../libanjuta/anjuta-tree-combo.c:1205
 msgid "ComboBox model"
 msgstr "Модел прозорчета за избор"
 
-#: ../libanjuta/anjuta-tree-combo.c:1210
+#: ../libanjuta/anjuta-tree-combo.c:1206
 msgid "The model for the combo box"
 msgstr "Модел прозорчета за избор"
 
-#: ../libanjuta/anjuta-ui.c:1393
+#: ../libanjuta/anjuta-ui.c:1394
 msgid "Action"
 msgstr "Радња"
 
-#: ../libanjuta/anjuta-ui.c:1414
+#: ../libanjuta/anjuta-ui.c:1415
 msgid "Visible"
 msgstr "Видљива"
 
-#: ../libanjuta/anjuta-ui.c:1427
+#: ../libanjuta/anjuta-ui.c:1428
 msgid "Sensitive"
 msgstr "Осетљив"
 
-#: ../libanjuta/anjuta-ui.c:1435
+#: ../libanjuta/anjuta-ui.c:1436
 msgid "Shortcut"
 msgstr "Пречица"
 
 #. Avoid space in translated string
-#: ../libanjuta/anjuta-utils.c:358
+#: ../libanjuta/anjuta-utils.c:363
 msgid "System:"
 msgstr "Систем:"
 
-#: ../libanjuta/anjuta-utils.c:507
+#: ../libanjuta/anjuta-utils.c:512
 msgid ""
 "You do not seem to have PackageKit installed. PackageKit is required for "
 "installing missing packages. Please install \"packagekit-gnome\" package "
@@ -608,17 +596,17 @@ msgstr ""
 "„packagekit-gnome“ из ваше дистрибуције или ручно инсталирајте пакете који "
 "недостају."
 
-#: ../libanjuta/anjuta-utils.c:516
+#: ../libanjuta/anjuta-utils.c:521
 #, c-format
 msgid "Installation failed: %s"
 msgstr "Неуспела инсталација: %s"
 
-#: ../libanjuta/anjuta-utils.c:577
+#: ../libanjuta/anjuta-utils.c:582
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
 msgstr "Нисам успео да покренем „%s“. Враћена грешка беше: „%s“."
 
-#: ../libanjuta/anjuta-utils.c:591
+#: ../libanjuta/anjuta-utils.c:596
 #, c-format
 msgid ""
 "The \"%s\" package is not installed.\n"
@@ -627,7 +615,7 @@ msgstr ""
 "Пакет „%s“ није инсталиран.\n"
 "Молим инсталирајте га."
 
-#: ../libanjuta/anjuta-utils.c:609
+#: ../libanjuta/anjuta-utils.c:614
 #, c-format
 msgid ""
 "The \"%s\" utility is not installed.\n"
@@ -637,63 +625,63 @@ msgstr ""
 "Молим инсталирајте је."
 
 #. Try xterm
-#: ../libanjuta/anjuta-utils.c:1180
+#: ../libanjuta/anjuta-utils.c:1208
 msgid "Cannot find a terminal; using xterm, even if it may not work"
 msgstr "Не могу да нађем терминал; користим xterm, чак иако можда не ради"
 
-#: ../libanjuta/anjuta-utils.c:1215 ../libanjuta/anjuta-utils.c:1219
-#: ../libanjuta/anjuta-utils.c:1246 ../libanjuta/anjuta-utils.c:1250
+#: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
 #, c-format
-msgid "Cannot execute command: %s (using shell %s)\n"
-msgstr "Не могу да извршим наредбу: %s (користим шкољку %s)\n"
+#| msgid "Cannot execute command: %s (using shell %s)\n"
+msgid "Cannot execute command: %s (using shell %s): %s\n"
+msgstr "Не могу да извршим наредбу: %s (користим шкољку %s): %s\n"
 
-#: ../libanjuta/anjuta-utils.c:2381
+#: ../libanjuta/anjuta-utils.c:2456
 #, c-format
 msgid "Unable to load user interface file: %s"
 msgstr "Не могу да учитам датотеку графичког сучеља: %s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
-#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:164
+#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:178
 msgid "Modified"
 msgstr "Измењен"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:95
-#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:167
+#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:181
 msgid "Added"
 msgstr "Додат"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:98
-#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:170
+#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:184
 msgid "Deleted"
 msgstr "Обрисан"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:101
-#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:173
+#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:187
 msgid "Conflicted"
 msgstr "Сукобљен"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:105
-#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:177
+#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:191
 msgid "Up-to-date"
 msgstr "Допуњен"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:109
-#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:181
+#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:195
 msgid "Locked"
 msgstr "Закључан"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:112
-#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:184
+#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:198
 msgid "Missing"
 msgstr "Недостаје"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:115
-#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:187
+#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:201
 msgid "Unversioned"
 msgstr "Неверзионисан"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:119
-#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:191
+#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:205
 msgid "Ignored"
 msgstr "Занемарен"
 
@@ -706,6 +694,12 @@ msgstr "Елемент није нађен: %s"
 #, c-format
 msgid "Could not find application pixmap file: %s"
 msgstr "Не могу пронаћи датотеку сличице програма: %s"
+
+#: ../libanjuta/resources.c:277
+#, c-format
+#| msgid "Cannot execute command: \"%s\""
+msgid "Cannot execute command \"%s\": %s"
+msgstr "Не могу да извршим наредбу „%s“: %s"
 
 #: ../plugins/am-project/amp-group.c:627
 msgid "Please specify group name"
@@ -720,11 +714,11 @@ msgstr ""
 #: ../plugins/am-project/amp-group.c:665
 #: ../plugins/am-project/am-project.c:1679
 #: ../plugins/am-project/am-project.c:1772
-#: ../plugins/dir-project/dir-project.c:723
-#: ../plugins/dir-project/dir-project.c:856
-#: ../plugins/mk-project/mk-project.c:723
-#: ../plugins/mk-project/mk-project.c:800
-#: ../plugins/mk-project/mk-project.c:874
+#: ../plugins/dir-project/dir-project.c:801
+#: ../plugins/dir-project/dir-project.c:934
+#: ../plugins/mk-project/mk-project.c:725
+#: ../plugins/mk-project/mk-project.c:802
+#: ../plugins/mk-project/mk-project.c:876
 #, c-format
 msgid "Project doesn't exist or invalid path"
 msgstr "Пројекат не постоји или је путања неисправна"
@@ -734,13 +728,13 @@ msgid "Root"
 msgstr "Корен"
 
 #: ../plugins/am-project/am-project.c:98
-#: ../plugins/dir-project/dir-project.c:867
+#: ../plugins/dir-project/dir-project.c:945
 #: ../plugins/mk-project/mk-project.c:66
 msgid "Group"
 msgstr "Група"
 
 #: ../plugins/am-project/am-project.c:106
-#: ../plugins/dir-project/dir-project.c:871
+#: ../plugins/dir-project/dir-project.c:949
 #: ../plugins/mk-project/mk-project.c:71
 msgid "Source"
 msgstr "Извор"
@@ -795,7 +789,7 @@ msgid "Script"
 msgstr "Скрипта"
 
 #: ../plugins/am-project/am-project.c:220 ../plugins/class-gen/window.c:794
-#: ../plugins/cvs-plugin/cvs-callbacks.c:438
+#: ../plugins/cvs-plugin/cvs-callbacks.c:436
 msgid "Module"
 msgstr "Модул"
 
@@ -822,7 +816,7 @@ msgstr "Нови позадинац самоалата за управника �
 
 #: ../plugins/am-project/am-properties.c:49
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:5
-#: ../plugins/git/anjuta-git.ui.h:21 ../plugins/project-manager/dialogs.c:762
+#: ../plugins/git/anjuta-git.ui.h:21 ../plugins/project-manager/dialogs.c:753
 #: ../plugins/snippets-manager/snippets-export-dialog.ui.h:2
 #: ../plugins/tools/anjuta-tools.ui.h:3
 msgid "Name:"
@@ -1453,7 +1447,7 @@ msgstr ""
 "Не могу да преведем „%s“: Ниједно правило превођења не постоји за ову врсту "
 "датотеке."
 
-#: ../plugins/build-basic-autotools/build.c:1050
+#: ../plugins/build-basic-autotools/build.c:1056
 #, c-format
 msgid "Cannot configure project: Missing configure script in %s."
 msgstr "Не могу да подесим пројекат: Недостаје скрипта за подешавање у %s."
@@ -1492,19 +1486,19 @@ msgstr "Нема отворених датотека или пројеката."
 
 #. Only local program are supported
 #: ../plugins/build-basic-autotools/executer.c:283
-#: ../plugins/run-program/execute.c:71
+#: ../plugins/run-program/execute.c:73
 #, c-format
 msgid "Program '%s' is not a local file"
 msgstr "Програм „%s“ није локална датотека"
 
 #: ../plugins/build-basic-autotools/executer.c:298
-#: ../plugins/run-program/execute.c:77
+#: ../plugins/run-program/execute.c:79
 #, c-format
 msgid "Program '%s' does not exist"
 msgstr "Програм „%s“ не постоји"
 
 #: ../plugins/build-basic-autotools/executer.c:306
-#: ../plugins/run-program/execute.c:81
+#: ../plugins/run-program/execute.c:83
 #, c-format
 msgid "Program '%s' does not have execution permission"
 msgstr "Програм „%s“ нема дозволу за извршење"
@@ -2109,7 +2103,7 @@ msgstr "Врста"
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
 #: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:871
+#: ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "Аргументи"
 
@@ -2172,7 +2166,7 @@ msgid "Patch-Style diff"
 msgstr "Разлике у стилу закрпе"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2166
+#: ../plugins/symbol-db/plugin.c:2197
 msgid "Local"
 msgstr "Локално"
 
@@ -2254,7 +2248,7 @@ msgid "Choose file or directory to commit:"
 msgstr "Одабери датотеку или директоријум за предавање:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:22
-#: ../plugins/subversion/anjuta-subversion.ui.h:14
+#: ../plugins/subversion/anjuta-subversion.ui.h:26
 msgid "Whole project"
 msgstr "Цео пројекат"
 
@@ -2264,12 +2258,12 @@ msgstr "Порука дневника:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:24
 #: ../plugins/git/anjuta-git.ui.h:62
-#: ../plugins/subversion/anjuta-subversion.ui.h:50
+#: ../plugins/subversion/anjuta-subversion.ui.h:24
 msgid "Revision:"
 msgstr "Ревизија:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:25
-#: ../plugins/subversion/anjuta-subversion.ui.h:15
+#: ../plugins/subversion/anjuta-subversion.ui.h:13
 msgid "Do not act recursively"
 msgstr "Не ради рекурзивно"
 
@@ -2284,7 +2278,7 @@ msgid "CVS: Update file/directory"
 msgstr "ЦВС: Ажурирај датотеку/директоријум"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:28
-#: ../plugins/subversion/anjuta-subversion.ui.h:13
+#: ../plugins/subversion/anjuta-subversion.ui.h:56
 msgid "Choose file or directory to update:"
 msgstr "Одабери датотеку или директоријум за ажурирање:"
 
@@ -2301,7 +2295,7 @@ msgid "Reset sticky tags"
 msgstr "Врати лепљиве ознаке"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:32
-#: ../plugins/subversion/anjuta-subversion.ui.h:16
+#: ../plugins/subversion/anjuta-subversion.ui.h:29
 msgid "Use revision/tag:"
 msgstr "Користи ревизију/ознаку:"
 
@@ -2349,7 +2343,7 @@ msgstr "Одабери датотеку или директоријум за к�
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:7
 #: ../plugins/git/anjuta-git.ui.h:27
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:9
-#: ../plugins/subversion/anjuta-subversion.ui.h:34
+#: ../plugins/subversion/anjuta-subversion.ui.h:14
 msgid "Options"
 msgstr "Могућности"
 
@@ -2382,12 +2376,12 @@ msgid "Module Details:"
 msgstr "Детаљи модула:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:51
-#: ../plugins/subversion/anjuta-subversion.ui.h:22
+#: ../plugins/subversion/anjuta-subversion.ui.h:62
 msgid "Password:"
 msgstr "Лозинка:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:52
-#: ../plugins/subversion/anjuta-subversion.ui.h:21
+#: ../plugins/subversion/anjuta-subversion.ui.h:61
 msgid "Username:"
 msgstr "Корисничко име:"
 
@@ -2417,19 +2411,19 @@ msgstr "Не могу да обришем датотеку"
 msgid "Are you sure that you want to pass an empty log message?"
 msgstr "Да ли сте сигурни да желите да предате празну поруку дневника?"
 
-#: ../plugins/cvs-plugin/cvs-callbacks.c:435
+#: ../plugins/cvs-plugin/cvs-callbacks.c:433
 msgid "CVSROOT"
 msgstr "CVSROOT"
 
-#: ../plugins/cvs-plugin/cvs-callbacks.c:441
+#: ../plugins/cvs-plugin/cvs-callbacks.c:439
 msgid "Vendor"
 msgstr "Продавац"
 
-#: ../plugins/cvs-plugin/cvs-callbacks.c:444
+#: ../plugins/cvs-plugin/cvs-callbacks.c:442
 msgid "Release"
 msgstr "Издање"
 
-#: ../plugins/cvs-plugin/cvs-callbacks.c:460
+#: ../plugins/cvs-plugin/cvs-callbacks.c:458
 msgid "Are you sure that you do not want a log message?"
 msgstr "Да ли сте сигурни да не желите поруку дневника?"
 
@@ -2451,8 +2445,8 @@ msgid "CVS command is running — please wait until it finishes!"
 msgstr "ЦВС наредба се извршава — сачекајте док се не заврши!"
 
 #: ../plugins/cvs-plugin/cvs-execute.c:229
-#: ../plugins/cvs-plugin/cvs-execute.c:233 ../plugins/cvs-plugin/plugin.c:474
-#: ../plugins/cvs-plugin/plugin.c:481
+#: ../plugins/cvs-plugin/cvs-execute.c:233 ../plugins/cvs-plugin/plugin.c:472
+#: ../plugins/cvs-plugin/plugin.c:479
 msgid "CVS"
 msgstr "ЦВС"
 
@@ -2559,18 +2553,18 @@ msgstr "_Увези стабло"
 msgid "Import a new source tree to CVS"
 msgstr "Увози ново стабло изворног кôда у ЦВС"
 
-#: ../plugins/cvs-plugin/plugin.c:362
+#: ../plugins/cvs-plugin/plugin.c:360
 msgid "CVS operations"
 msgstr "ЦВС операције"
 
-#: ../plugins/cvs-plugin/plugin.c:368
+#: ../plugins/cvs-plugin/plugin.c:366
 msgid "CVS popup operations"
 msgstr "Искачуће ЦВС операције"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.plugin.in.h:1
-#: ../plugins/debug-manager/plugin.c:410 ../plugins/debug-manager/plugin.c:432
-#: ../plugins/debug-manager/plugin.c:457 ../plugins/debug-manager/plugin.c:484
-#: ../plugins/debug-manager/plugin.c:518 ../plugins/debug-manager/plugin.c:551
+#: ../plugins/debug-manager/plugin.c:407 ../plugins/debug-manager/plugin.c:427
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:475
+#: ../plugins/debug-manager/plugin.c:507 ../plugins/debug-manager/plugin.c:538
 msgid "Debugger"
 msgstr "Исправљач грешака"
 
@@ -2666,7 +2660,7 @@ msgid "_Location:"
 msgstr "_Место:"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:24
-#: ../plugins/debug-manager/memory.c:180
+#: ../plugins/debug-manager/memory.c:185
 msgid "Memory"
 msgstr "Меморија"
 
@@ -2688,8 +2682,8 @@ msgid "Shared libraries"
 msgstr "Дељене библиотеке"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:947
-#: ../plugins/debug-manager/plugin.c:1039
+#: ../plugins/debug-manager/plugin.c:934
+#: ../plugins/debug-manager/plugin.c:1026
 msgid "Kernel Signals"
 msgstr "Сигнали језгра"
 
@@ -2925,7 +2919,7 @@ msgid "Enabled"
 msgstr "Укључен"
 
 #: ../plugins/debug-manager/breakpoints.c:1953
-#: ../plugins/debug-manager/stack_trace.c:859
+#: ../plugins/debug-manager/stack_trace.c:857
 msgid "Address"
 msgstr "Адреса"
 
@@ -2947,8 +2941,8 @@ msgid "Breakpoint operations"
 msgstr "Операције са тачком прекида"
 
 #. create goto menu_item.
-#: ../plugins/debug-manager/data_view.c:392
-#: ../plugins/debug-manager/sparse_view.c:500
+#: ../plugins/debug-manager/data_view.c:407
+#: ../plugins/debug-manager/sparse_view.c:501
 msgid "_Go to address"
 msgstr "_Иди на адресу"
 
@@ -2956,7 +2950,7 @@ msgstr "_Иди на адресу"
 msgid "Variable"
 msgstr "Променљива"
 
-#: ../plugins/debug-manager/disassemble.c:851
+#: ../plugins/debug-manager/disassemble.c:846
 msgid "Disassembly"
 msgstr "Растављање"
 
@@ -2983,202 +2977,202 @@ msgstr ""
 msgid "Debugger Log"
 msgstr "Дневник исправљача грешака"
 
-#: ../plugins/debug-manager/plugin.c:410
+#: ../plugins/debug-manager/plugin.c:407
 msgid "Started"
 msgstr "Покренут"
 
-#: ../plugins/debug-manager/plugin.c:432
+#: ../plugins/debug-manager/plugin.c:427
 msgid "Loaded"
 msgstr "Учитан"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:453
-#: ../plugins/debug-manager/plugin.c:1051
+#: ../plugins/debug-manager/plugin.c:446
+#: ../plugins/debug-manager/plugin.c:1038
 msgid "Pa_use Program"
 msgstr "Па_узирај програм"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:454
-#: ../plugins/debug-manager/plugin.c:1053
+#: ../plugins/debug-manager/plugin.c:447
+#: ../plugins/debug-manager/plugin.c:1040
 msgid "Pauses the execution of the program"
 msgstr "Привремено обуставља извршавање програма"
 
-#: ../plugins/debug-manager/plugin.c:457
+#: ../plugins/debug-manager/plugin.c:450
 msgid "Running…"
 msgstr "Покренут…"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:480 ../plugins/debug-manager/plugin.c:967
+#: ../plugins/debug-manager/plugin.c:471 ../plugins/debug-manager/plugin.c:954
 msgid "Run/_Continue"
 msgstr "_Покрени/настави"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:481 ../plugins/debug-manager/plugin.c:969
+#: ../plugins/debug-manager/plugin.c:472 ../plugins/debug-manager/plugin.c:956
 msgid "Continue the execution of the program"
 msgstr "Наставља извршавање програма"
 
-#: ../plugins/debug-manager/plugin.c:484
+#: ../plugins/debug-manager/plugin.c:475
 msgid "Stopped"
 msgstr "Заустављен"
 
-#: ../plugins/debug-manager/plugin.c:518
+#: ../plugins/debug-manager/plugin.c:507
 msgid "Unloaded"
 msgstr "Уклоњен"
 
-#: ../plugins/debug-manager/plugin.c:560
+#: ../plugins/debug-manager/plugin.c:547
 #, c-format
 msgid "Debugger terminated with error %d: %s\n"
 msgstr "Исправљач грешака је изашао са грешком %d: %s\n"
 
-#: ../plugins/debug-manager/plugin.c:573
+#: ../plugins/debug-manager/plugin.c:560
 #, c-format
 msgid "Program has received signal: %s\n"
 msgstr "Програм је примио сигнал: %s\n"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:863
+#: ../plugins/debug-manager/plugin.c:850
 msgid "_Debug"
 msgstr "_Уклони грешке"
 
-#: ../plugins/debug-manager/plugin.c:871
+#: ../plugins/debug-manager/plugin.c:858
 msgid "_Start Debugger"
 msgstr "Покрени исправљача _грешака"
 
-#: ../plugins/debug-manager/plugin.c:879
+#: ../plugins/debug-manager/plugin.c:866
 msgid "_Debug Program"
 msgstr "_Исправи грешке програма"
 
-#: ../plugins/debug-manager/plugin.c:881
+#: ../plugins/debug-manager/plugin.c:868
 msgid "Start debugger and load the program"
 msgstr "Покреће исправљача грешака и учитава програм"
 
-#: ../plugins/debug-manager/plugin.c:887
+#: ../plugins/debug-manager/plugin.c:874
 msgid "_Debug Process…"
 msgstr "_Исправи грешке процеса…"
 
-#: ../plugins/debug-manager/plugin.c:889
+#: ../plugins/debug-manager/plugin.c:876
 msgid "Start debugger and attach to a running program"
 msgstr "Покреће исправљача грешака и прикачиње га за покренути програм"
 
-#: ../plugins/debug-manager/plugin.c:895
+#: ../plugins/debug-manager/plugin.c:882
 msgid "Debug _Remote Target…"
 msgstr "Исправи грешке _удаљене мете…"
 
-#: ../plugins/debug-manager/plugin.c:897
+#: ../plugins/debug-manager/plugin.c:884
 msgid "Connect to a remote debugging target"
 msgstr "Повезује се на удаљену мету за исправљање грешака"
 
-#: ../plugins/debug-manager/plugin.c:903
+#: ../plugins/debug-manager/plugin.c:890
 msgid "Stop Debugger"
 msgstr "Заустави исправљача грешака"
 
-#: ../plugins/debug-manager/plugin.c:905
+#: ../plugins/debug-manager/plugin.c:892
 msgid "Say goodbye to the debugger"
 msgstr "Реците збогом исправљачу грешака"
 
-#: ../plugins/debug-manager/plugin.c:911
+#: ../plugins/debug-manager/plugin.c:898
 msgid "Add source paths…"
 msgstr "Додај путање до изворних кодова…"
 
-#: ../plugins/debug-manager/plugin.c:913
+#: ../plugins/debug-manager/plugin.c:900
 msgid "Add additional source paths"
 msgstr "Додаје додатне путање до изворних кодова"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:923
-#: ../plugins/debug-manager/plugin.c:1015
+#: ../plugins/debug-manager/plugin.c:910
+#: ../plugins/debug-manager/plugin.c:1002
 msgid "Debugger Command…"
 msgstr "Наредба исправљача грешака…"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:925
-#: ../plugins/debug-manager/plugin.c:1017
+#: ../plugins/debug-manager/plugin.c:912
+#: ../plugins/debug-manager/plugin.c:1004
 msgid "Custom debugger command"
 msgstr "Произвољна наредба исправљача грешака"
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:918
+#: ../plugins/debug-manager/plugin.c:1010
 msgid "_Info"
 msgstr "_Инфо"
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:926
+#: ../plugins/debug-manager/plugin.c:1018
 msgid "Shared Libraries"
 msgstr "Дељене библиотеке"
 
-#: ../plugins/debug-manager/plugin.c:941
-#: ../plugins/debug-manager/plugin.c:1033
+#: ../plugins/debug-manager/plugin.c:928
+#: ../plugins/debug-manager/plugin.c:1020
 msgid "Show shared library mappings"
 msgstr "Покажи план дељених библиотека"
 
-#: ../plugins/debug-manager/plugin.c:949
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:936
+#: ../plugins/debug-manager/plugin.c:1028
 msgid "Show kernel signals"
 msgstr "Покажи сигнале језгра"
 
-#: ../plugins/debug-manager/plugin.c:955
+#: ../plugins/debug-manager/plugin.c:942
 msgid "_Continue/Suspend"
 msgstr "_Настави/обустави"
 
-#: ../plugins/debug-manager/plugin.c:957
+#: ../plugins/debug-manager/plugin.c:944
 msgid "Continue or suspend the execution of the program"
 msgstr "Наставља или обуставља извршавање програма"
 
-#: ../plugins/debug-manager/plugin.c:975
+#: ../plugins/debug-manager/plugin.c:962
 msgid "Step _In"
 msgstr "Корак _унутар"
 
-#: ../plugins/debug-manager/plugin.c:977
+#: ../plugins/debug-manager/plugin.c:964
 msgid "Single step into function"
 msgstr "Један корак унутар функције"
 
-#: ../plugins/debug-manager/plugin.c:983
+#: ../plugins/debug-manager/plugin.c:970
 msgid "Step O_ver"
 msgstr "Корак _преко"
 
-#: ../plugins/debug-manager/plugin.c:985
+#: ../plugins/debug-manager/plugin.c:972
 msgid "Single step over function"
 msgstr "Један корак преко функције"
 
-#: ../plugins/debug-manager/plugin.c:991
+#: ../plugins/debug-manager/plugin.c:978
 msgid "Step _Out"
 msgstr "Корак _ван"
 
-#: ../plugins/debug-manager/plugin.c:993
+#: ../plugins/debug-manager/plugin.c:980
 msgid "Single step out of function"
 msgstr "Један корак ван функције"
 
-#: ../plugins/debug-manager/plugin.c:999
+#: ../plugins/debug-manager/plugin.c:986
 msgid "_Run to Cursor"
 msgstr "_Изврши до курсора"
 
-#: ../plugins/debug-manager/plugin.c:1001
+#: ../plugins/debug-manager/plugin.c:988
 msgid "Run to the cursor"
 msgstr "Извршава програм до линије где се налази курсор"
 
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:994
 msgid "_Run from Cursor"
 msgstr "_Изврши од курсора"
 
-#: ../plugins/debug-manager/plugin.c:1009
+#: ../plugins/debug-manager/plugin.c:996
 msgid "Run from the cursor"
 msgstr "Извршава програм од линије где се налази курсор"
 
-#: ../plugins/debug-manager/plugin.c:1093
-#: ../plugins/debug-manager/plugin.c:1099
-#: ../plugins/debug-manager/plugin.c:1105
-#: ../plugins/debug-manager/plugin.c:1111
+#: ../plugins/debug-manager/plugin.c:1080
+#: ../plugins/debug-manager/plugin.c:1086
+#: ../plugins/debug-manager/plugin.c:1092
+#: ../plugins/debug-manager/plugin.c:1098
 msgid "Debugger operations"
 msgstr "Операције исправљача грешака"
 
-#: ../plugins/debug-manager/queue.c:516
+#: ../plugins/debug-manager/queue.c:514
 #, c-format
 msgid "Unable to find a debugger plugin supporting a target with %s MIME type"
 msgstr ""
@@ -3189,7 +3183,7 @@ msgstr ""
 msgid "Register"
 msgstr "Регистар"
 
-#: ../plugins/debug-manager/registers.c:489
+#: ../plugins/debug-manager/registers.c:490
 msgid "Registers"
 msgstr "Регистри"
 
@@ -3253,70 +3247,70 @@ msgstr "Сигнали језгра"
 msgid "Signal operations"
 msgstr "Операције са сигналима"
 
-#: ../plugins/debug-manager/sparse_view.c:1237
+#: ../plugins/debug-manager/sparse_view.c:1244
 msgid "Show Line Numbers"
 msgstr "Прикажи бројеве редова"
 
-#: ../plugins/debug-manager/sparse_view.c:1238
+#: ../plugins/debug-manager/sparse_view.c:1245
 msgid "Whether to display line numbers"
 msgstr "Да ли да приказује бројеве редова"
 
-#: ../plugins/debug-manager/sparse_view.c:1245
+#: ../plugins/debug-manager/sparse_view.c:1252
 msgid "Show Line Markers"
 msgstr "Прикажи маркере редова"
 
-#: ../plugins/debug-manager/sparse_view.c:1246
+#: ../plugins/debug-manager/sparse_view.c:1253
 msgid "Whether to display line marker pixbufs"
 msgstr "Да ли да приказује сличице са маркерима редова"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/stack_trace.c:726
+#: ../plugins/debug-manager/stack_trace.c:724
 msgid "Set current frame"
 msgstr "Постави тренутни оквир"
 
-#: ../plugins/debug-manager/stack_trace.c:734
+#: ../plugins/debug-manager/stack_trace.c:732
 msgid "View Source"
 msgstr "Прикажи код"
 
-#: ../plugins/debug-manager/stack_trace.c:742
+#: ../plugins/debug-manager/stack_trace.c:740
 msgid "Get Stack trace"
 msgstr "Добави траг стека"
 
-#: ../plugins/debug-manager/stack_trace.c:782
+#: ../plugins/debug-manager/stack_trace.c:780
 msgid "Active"
 msgstr "Активан"
 
-#: ../plugins/debug-manager/stack_trace.c:791
+#: ../plugins/debug-manager/stack_trace.c:789
 msgid "Thread"
 msgstr "Нит"
 
-#: ../plugins/debug-manager/stack_trace.c:805
+#: ../plugins/debug-manager/stack_trace.c:803
 msgid "Frame"
 msgstr "Оквир"
 
 #. Register actions
-#: ../plugins/debug-manager/stack_trace.c:823
+#: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2124
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:679
 msgid "File"
 msgstr "Датотека"
 
-#: ../plugins/debug-manager/stack_trace.c:834
+#: ../plugins/debug-manager/stack_trace.c:832
 #: ../plugins/document-manager/plugin.c:932
 msgid "Line"
 msgstr "Ред"
 
-#: ../plugins/debug-manager/stack_trace.c:845
+#: ../plugins/debug-manager/stack_trace.c:843
 msgid "Function"
 msgstr "Функција"
 
-#: ../plugins/debug-manager/stack_trace.c:896
+#: ../plugins/debug-manager/stack_trace.c:894
 msgid "Stack"
 msgstr "Стек"
 
-#: ../plugins/debug-manager/stack_trace.c:972
+#: ../plugins/debug-manager/stack_trace.c:970
 msgid "Stack frame operations"
 msgstr "Операције са оквиром стека"
 
@@ -3346,23 +3340,23 @@ msgstr "Не могу да извршим „%s“. Враћена грешка 
 msgid "Unable to open the file: %s\n"
 msgstr "Не могу да отворим датотеку: %s\n"
 
-#: ../plugins/debug-manager/start.c:970
+#: ../plugins/debug-manager/start.c:971
 #, c-format
 msgid "Unable to open %s. Debugger cannot start."
 msgstr "Не могу да отворим %s. Не могу да покренем исправљача грешака."
 
-#: ../plugins/debug-manager/start.c:980
+#: ../plugins/debug-manager/start.c:981
 #, c-format
 msgid "Unable to detect MIME type of %s. Debugger cannot start."
 msgstr ""
 "Не могу да препознам МИМЕ врсту од %s. Не могу да покренем исправљача "
 "грешака."
 
-#: ../plugins/debug-manager/start.c:1341
+#: ../plugins/debug-manager/start.c:1343
 msgid "Path"
 msgstr "Путања"
 
-#: ../plugins/debug-manager/start.c:1390
+#: ../plugins/debug-manager/start.c:1392
 msgid ""
 "The program is already running.\n"
 "Do you still want to stop the debugger?"
@@ -3473,17 +3467,17 @@ msgstr "АПИ прегледач"
 msgid "API"
 msgstr "АПИ"
 
-#: ../plugins/dir-project/dir-project.c:124
-#: ../plugins/dir-project/dir-project.c:147
-#: ../plugins/dir-project/dir-project.c:170
+#: ../plugins/dir-project/dir-project.c:126
+#: ../plugins/dir-project/dir-project.c:149
+#: ../plugins/dir-project/dir-project.c:172
 #, c-format
 msgid "Missing name"
 msgstr "Недостаје име алата"
 
-#: ../plugins/dir-project/dir-project.c:989
-#: ../plugins/dir-project/dir-project.c:999
-#: ../plugins/mk-project/mk-project.c:1022
-#: ../plugins/mk-project/mk-project.c:1032
+#: ../plugins/dir-project/dir-project.c:1070
+#: ../plugins/dir-project/dir-project.c:1080
+#: ../plugins/mk-project/mk-project.c:1024
+#: ../plugins/mk-project/mk-project.c:1034
 #, c-format
 msgid "Project doesn't allow to set properties"
 msgstr "Пројекат не дозвољава подешавање особина"
@@ -3532,37 +3526,42 @@ msgid "Rename"
 msgstr "Преименуј"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:363
-#: ../plugins/git/plugin.c:180
+#: ../plugins/git/plugin.c:172
 #: ../plugins/snippets-manager/snippets-editor.ui.h:19
 msgid "Remove"
 msgstr "Уклони"
 
-#: ../plugins/document-manager/anjuta-docman.c:165
+#: ../plugins/document-manager/anjuta-docman.c:164
 msgid " [read-only]"
 msgstr " [само-читање]"
 
-#: ../plugins/document-manager/anjuta-docman.c:661
-#: ../plugins/document-manager/anjuta-docman.c:1102
+#: ../plugins/document-manager/anjuta-docman.c:533
+#: ../plugins/document-manager/plugin.c:156
+msgid "Close Others"
+msgstr "Затвори остале"
+
+#: ../plugins/document-manager/anjuta-docman.c:736
+#: ../plugins/document-manager/anjuta-docman.c:1156
 msgid "Close file"
 msgstr "Затвори датотеку"
 
-#: ../plugins/document-manager/anjuta-docman.c:709
-#: ../plugins/project-manager/dialogs.c:757
+#: ../plugins/document-manager/anjuta-docman.c:773
+#: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "Путања:"
 
-#: ../plugins/document-manager/anjuta-docman.c:833
-#: ../plugins/file-loader/plugin.c:597 ../plugins/file-loader/plugin.c:900
-#: ../plugins/file-loader/plugin.c:910 ../plugins/file-loader/plugin.c:923
+#: ../plugins/document-manager/anjuta-docman.c:890
+#: ../plugins/file-loader/plugin.c:597 ../plugins/file-loader/plugin.c:887
+#: ../plugins/file-loader/plugin.c:897 ../plugins/file-loader/plugin.c:910
 msgid "Open file"
 msgstr "Отворите датотеку"
 
-#: ../plugins/document-manager/anjuta-docman.c:852
+#: ../plugins/document-manager/anjuta-docman.c:909
 #: ../plugins/message-view/message-view.c:100
 msgid "Save file as"
 msgstr "Сачувај датотеку као"
 
-#: ../plugins/document-manager/anjuta-docman.c:933
+#: ../plugins/document-manager/anjuta-docman.c:990
 #, c-format
 msgid ""
 "The file '%s' already exists.\n"
@@ -3571,17 +3570,17 @@ msgstr ""
 "Датотека „%s“ већ постоји.\n"
 "Да ли желите да је замените са оном коју чувате?"
 
-#: ../plugins/document-manager/anjuta-docman.c:942
+#: ../plugins/document-manager/anjuta-docman.c:999
 msgid "_Replace"
 msgstr "_Замени"
 
-#: ../plugins/document-manager/anjuta-docman.c:1730
+#: ../plugins/document-manager/anjuta-docman.c:1743
 msgid "[read-only]"
 msgstr "[само-читање]"
 
 #. Document manager plugin
 #: ../plugins/document-manager/anjuta-document-manager.plugin.in.h:1
-#: ../plugins/file-loader/plugin.c:292
+#: ../plugins/file-loader/plugin.c:299
 msgid "Document Manager"
 msgstr "Управник документа"
 
@@ -3704,10 +3703,6 @@ msgstr "Затвори све"
 #: ../plugins/document-manager/plugin.c:154
 msgid "Close all files"
 msgstr "Затвори све датотеке"
-
-#: ../plugins/document-manager/plugin.c:156
-msgid "Close Others"
-msgstr "Затвори остале"
 
 #: ../plugins/document-manager/plugin.c:157
 msgid "Close other documents"
@@ -3976,9 +3971,9 @@ msgid "Search using regular expressions"
 msgstr "Потражите користећи регуларне изразе"
 
 #: ../plugins/document-manager/plugin.c:295
-#: ../plugins/indentation-c-style/plugin.c:465
+#: ../plugins/indentation-c-style/plugin.c:217
 #: ../plugins/indentation-python-style/plugin.c:200
-#: ../plugins/language-support-cpp-java/plugin.c:1076
+#: ../plugins/language-support-cpp-java/plugin.c:1192
 #: ../plugins/language-support-python/plugin.c:377 ../src/anjuta-actions.h:30
 msgid "_Edit"
 msgstr "_Уређивање"
@@ -4211,9 +4206,9 @@ msgstr "Проста претрага"
 
 #. DocmanPlugin* plugin = ANJUTA_PLUGIN_DOCMAN (ipref);
 #: ../plugins/document-manager/plugin.c:418
-#: ../plugins/document-manager/plugin.c:1696
-#: ../plugins/document-manager/plugin.c:2116
-#: ../plugins/document-manager/plugin.c:2125
+#: ../plugins/document-manager/plugin.c:1716
+#: ../plugins/document-manager/plugin.c:2136
+#: ../plugins/document-manager/plugin.c:2145
 msgid "Documents"
 msgstr "Документи"
 
@@ -4251,12 +4246,12 @@ msgid "Mode"
 msgstr "Режим"
 
 #. this may fail, too
-#: ../plugins/document-manager/plugin.c:1532
+#: ../plugins/document-manager/plugin.c:1552
 #, c-format
 msgid "Autosave failed for %s"
 msgstr "Није успело самоснимање за %s"
 
-#: ../plugins/document-manager/plugin.c:1546
+#: ../plugins/document-manager/plugin.c:1566
 msgid "Autosave completed"
 msgstr "Самоснимање је завршено"
 
@@ -4316,7 +4311,7 @@ msgid "Find in files"
 msgstr "Пронађи у датотекама"
 
 #: ../plugins/file-loader/anjuta-loader.plugin.in.h:1
-#: ../plugins/file-loader/plugin.c:1241 ../plugins/file-loader/plugin.c:1247
+#: ../plugins/file-loader/plugin.c:1230 ../plugins/file-loader/plugin.c:1236
 msgid "File Loader"
 msgstr "Учитавач датотека"
 
@@ -4351,7 +4346,7 @@ msgid "This function is not implemented for widgets of class '%s'"
 msgstr "Ова функција није примењена за елемент класе „%s“"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:936
-#: ../plugins/starter/plugin.c:166
+#: ../plugins/starter/plugin.c:187
 #, c-format
 msgid "Open '%s'"
 msgstr "Отвори „%s“"
@@ -4380,7 +4375,7 @@ msgctxt "recent menu label"
 msgid "%d. %s"
 msgstr "%d. %s"
 
-#: ../plugins/file-loader/plugin.c:122
+#: ../plugins/file-loader/plugin.c:124
 #, c-format
 msgid ""
 "Cannot open \"%s\".\n"
@@ -4391,7 +4386,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../plugins/file-loader/plugin.c:263
+#: ../plugins/file-loader/plugin.c:270
 #, c-format
 msgid ""
 "<b>Cannot open \"%s\"</b>.\n"
@@ -4413,7 +4408,7 @@ msgstr ""
 "Можете изабрати да покушате да отворите са следећим прикључцима или "
 "програмима."
 
-#: ../plugins/file-loader/plugin.c:286
+#: ../plugins/file-loader/plugin.c:293
 msgid "Open with:"
 msgstr "Отвори са:"
 
@@ -4474,80 +4469,81 @@ msgstr "Луа датотеке"
 msgid "Diff files"
 msgstr "Датотеке разлика"
 
-#: ../plugins/file-loader/plugin.c:829
+#: ../plugins/file-loader/plugin.c:818
 #, c-format
 msgid "Failed to activate plugin: %s"
 msgstr "Не могу да активирам прикључак: %s"
 
-#: ../plugins/file-loader/plugin.c:890
+#: ../plugins/file-loader/plugin.c:877
 msgid "_New"
 msgstr "_Нова"
 
-#: ../plugins/file-loader/plugin.c:892
+#: ../plugins/file-loader/plugin.c:879
 msgid "New empty file"
 msgstr "Нова празна датотека"
 
-#: ../plugins/file-loader/plugin.c:898
+#: ../plugins/file-loader/plugin.c:885
 msgid "_Open…"
 msgstr "_Отвори…"
 
-#: ../plugins/file-loader/plugin.c:909 ../plugins/file-loader/plugin.c:922
+#: ../plugins/file-loader/plugin.c:896 ../plugins/file-loader/plugin.c:909
 msgid "_Open"
 msgstr "_Отвори"
 
-#: ../plugins/file-loader/plugin.c:916 ../plugins/file-loader/plugin.c:929
+#: ../plugins/file-loader/plugin.c:903 ../plugins/file-loader/plugin.c:916
 msgid "Open _With"
 msgstr "Отвори _програмом"
 
-#: ../plugins/file-loader/plugin.c:917 ../plugins/file-loader/plugin.c:930
+#: ../plugins/file-loader/plugin.c:904 ../plugins/file-loader/plugin.c:917
 msgid "Open with"
 msgstr "Отвори програмом"
 
-#: ../plugins/file-loader/plugin.c:1251
+#: ../plugins/file-loader/plugin.c:1240
 msgid "New"
 msgstr "Нова"
 
-#: ../plugins/file-loader/plugin.c:1252
+#: ../plugins/file-loader/plugin.c:1241
 msgid "New file, project and project components."
 msgstr "Нова датотека, пројекат и компоненте пројекта."
 
-#: ../plugins/file-loader/plugin.c:1259 ../plugins/file-loader/plugin.c:1299
+#: ../plugins/file-loader/plugin.c:1248 ../plugins/file-loader/plugin.c:1288
 msgid "Open"
 msgstr "Отвори"
 
-#: ../plugins/file-loader/plugin.c:1263
+#: ../plugins/file-loader/plugin.c:1252
 msgid "Open _Recent"
 msgstr "Отвори _скорашњи"
 
-#: ../plugins/file-loader/plugin.c:1264 ../plugins/file-loader/plugin.c:1301
+#: ../plugins/file-loader/plugin.c:1253 ../plugins/file-loader/plugin.c:1290
 msgid "Open recent file"
 msgstr "Отвори скорашњу датотеку"
 
-#: ../plugins/file-loader/plugin.c:1270
+#: ../plugins/file-loader/plugin.c:1259
 msgid "Open recent files"
 msgstr "Отвори скорашње датотеке"
 
-#: ../plugins/file-loader/plugin.c:1300
+#: ../plugins/file-loader/plugin.c:1289
 msgid "Open a file"
 msgstr "Отворите датотеку"
 
-#: ../plugins/file-loader/plugin.c:1414 ../plugins/file-loader/plugin.c:1416
+#: ../plugins/file-loader/plugin.c:1403 ../plugins/file-loader/plugin.c:1405
 #, c-format
 msgid "File not found"
 msgstr "Датотека није нађена"
 
 #. %s is name of file that will be opened
-#: ../plugins/file-loader/plugin.c:1435
+#: ../plugins/file-loader/plugin.c:1424
 #, c-format
 msgid "Please select a plugin to open <b>%s</b>."
 msgstr "Изаберите прикључак за отварање <b>%s</b>."
 
-#: ../plugins/file-loader/plugin.c:1439
-msgid "<b>Open With</b>"
-msgstr "<b>Отвори помоћу</b>"
+#: ../plugins/file-loader/plugin.c:1428 ../plugins/project-import/plugin.c:290
+#: ../plugins/project-manager/dialogs.c:647
+msgid "Open With"
+msgstr "Отвори програмом"
 
 #: ../plugins/file-manager/file-manager.plugin.in.h:1
-#: ../plugins/file-manager/plugin.c:546 ../plugins/file-manager/plugin.c:555
+#: ../plugins/file-manager/plugin.c:543 ../plugins/file-manager/plugin.c:552
 msgid "File Manager"
 msgstr "Управник датотека"
 
@@ -4569,7 +4565,7 @@ msgstr "Сам изабери текући документ"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2178
+#: ../plugins/symbol-db/plugin.c:2209
 msgid "Global"
 msgstr "Опште"
 
@@ -4623,11 +4619,11 @@ msgstr "_Прикажи у управнику датотека"
 msgid "Show in File manager"
 msgstr "Прикажите у управнику датотека"
 
-#: ../plugins/file-manager/plugin.c:374
+#: ../plugins/file-manager/plugin.c:371
 msgid "File manager popup actions"
 msgstr "Искачуће акције управника датотека"
 
-#: ../plugins/file-manager/plugin.c:407 ../plugins/git/plugin.c:164
+#: ../plugins/file-manager/plugin.c:404 ../plugins/git/plugin.c:156
 msgid "Files"
 msgstr "Датотеке"
 
@@ -4656,7 +4652,7 @@ msgstr ""
 "Наставак ће бити додат на основу врсте."
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:6
-#: ../plugins/project-manager/dialogs.c:784
+#: ../plugins/project-manager/dialogs.c:775
 msgid "Type:"
 msgstr "Врста:"
 
@@ -4983,7 +4979,7 @@ msgstr "Добави удаљене гране после стварања"
 msgid "Mailbox files to apply:"
 msgstr "Датотеке сандучета за примену:"
 
-#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:790
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:954
 msgid "Branches"
 msgstr "Гране"
 
@@ -5000,7 +4996,7 @@ msgid "Append signed-off-by line"
 msgstr "Приложи линију са потписом"
 
 #: ../plugins/git/anjuta-git.ui.h:17
-#: ../plugins/subversion/anjuta-subversion.ui.h:11
+#: ../plugins/subversion/anjuta-subversion.ui.h:12
 msgid "Log Message:"
 msgstr "Порука дневника:"
 
@@ -5053,14 +5049,13 @@ msgstr "Прибележи ову ознаку:"
 msgid "Branches must be fully merged"
 msgstr "Гране морају у потпуности бити стопљене"
 
-#: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:77
-#: ../plugins/git/git-pane.c:82 ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:708
+#: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:96
+#: ../plugins/git/git-pane.c:101 ../plugins/git/git.plugin.in.h:1
+#: ../plugins/git/plugin.c:839
 msgid "Git"
 msgstr "Гит"
 
 #: ../plugins/git/anjuta-git.ui.h:33
-#| msgid "Git Tasks"
 msgid "Tasks"
 msgstr "Задаци"
 
@@ -5071,7 +5066,7 @@ msgstr ""
 "дневника"
 
 #: ../plugins/git/anjuta-git.ui.h:36
-#: ../plugins/subversion/anjuta-subversion.ui.h:38
+#: ../plugins/subversion/anjuta-subversion.ui.h:32
 msgid "View the Log for File/Folder:"
 msgstr "Преглед дневника за датотеку/фасциклу:"
 
@@ -5107,7 +5102,7 @@ msgid "page 2"
 msgstr "страна 2"
 
 #: ../plugins/git/anjuta-git.ui.h:44
-#: ../plugins/subversion/anjuta-subversion.ui.h:39
+#: ../plugins/subversion/anjuta-subversion.ui.h:33
 msgid "Changes:"
 msgstr "Измене:"
 
@@ -5135,7 +5130,7 @@ msgstr "Фасцикла за прављење закрпа:"
 msgid "Repository to pull from:"
 msgstr "Ризница из које повући:"
 
-#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:280
+#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:272
 msgid "Rebase"
 msgstr "Прекалеми"
 
@@ -5215,6 +5210,11 @@ msgstr "Уштекане измене:"
 msgid "Repository Status:"
 msgstr "Стање ризнице:"
 
+#: ../plugins/git/anjuta-git.ui.h:72
+#| msgid "Show commit diff"
+msgid "Show Diff"
+msgstr "Прикажи разлике"
+
 #: ../plugins/git/git-add-files-pane.c:160
 msgid "Add Files"
 msgstr "Додај датотеке"
@@ -5237,7 +5237,6 @@ msgstr "Примени датотеке сандучета"
 
 # bug: plural-forms
 #: ../plugins/git/git-apply-stash-pane.c:54
-#: ../plugins/git/git-diff-stash-pane.c:67
 #: ../plugins/git/git-drop-stash-pane.c:48
 msgid "No stash selected."
 msgstr "Није изабран штек."
@@ -5285,6 +5284,12 @@ msgstr "Унесите назив ознаке."
 msgid "Create Tag"
 msgstr "Направи ознаку"
 
+#: ../plugins/git/git-delete-branches-pane.c:238
+#, c-format
+#| msgid "Are you sure you want to delete the '%s' tool?"
+msgid "Are you sure you want to delete branch %s?"
+msgstr "Да ли сте сигурни да желите да избришете грану „%s“?"
+
 # bug: plural-forms
 #: ../plugins/git/git-delete-remote-pane.c:49
 msgid "No remote selected."
@@ -5295,26 +5300,16 @@ msgstr "Није изабрано удаљено."
 msgid "No tags selected."
 msgstr "Није изабрана ознака."
 
-#. Translators: default file name for git diff's output
-#: ../plugins/git/git-diff-pane.c:33
-msgid "Uncommitted Changes.diff"
-msgstr "Непредате Измене.diff"
-
 #. Translators: file name for an existing commits diff, %s is an SHASUM of a commit
-#: ../plugins/git/git-diff-pane.c:71
+#: ../plugins/git/git-diff-pane.c:40
 #, c-format
 msgid "Commit %s.diff"
 msgstr "Предај %s.diff"
 
 # bug: plural-forms
-#: ../plugins/git/git-diff-pane.c:104
+#: ../plugins/git/git-diff-pane.c:73
 msgid "No revision selected"
 msgstr "Није изабрана ревизија"
-
-#: ../plugins/git/git-diff-stash-pane.c:40
-#, c-format
-msgid "Stash %i.diff"
-msgstr "Штек %i.diff"
 
 #: ../plugins/git/git-log-pane.c:581
 #, c-format
@@ -5331,15 +5326,15 @@ msgstr "<b>Ознака:</b> %s"
 msgid "<b>Remote:</b> %s"
 msgstr "<b>Удаљено:</b> %s"
 
-#: ../plugins/git/git-merge-pane.c:214 ../plugins/git/plugin.c:99
+#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:99
 msgid "Merge"
 msgstr "Стопи"
 
-#: ../plugins/git/git-pane.c:204
+#: ../plugins/git/git-pane.c:223
 msgid "Git Error"
 msgstr "Грешка Гита"
 
-#: ../plugins/git/git-pane.c:210
+#: ../plugins/git/git-pane.c:229
 msgid "Git Warning"
 msgstr "Упозорење Гита"
 
@@ -5355,11 +5350,11 @@ msgstr "Контрола Гит верзија"
 msgid "Please enter a URL."
 msgstr "Унесите адресу."
 
-#: ../plugins/git/git-pull-pane.c:242 ../plugins/git/plugin.c:264
+#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:256
 msgid "Pull"
 msgstr "Повуци"
 
-#: ../plugins/git/git-push-pane.c:438 ../plugins/git/plugin.c:256
+#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:248
 msgid "Push"
 msgstr "Погурај"
 
@@ -5392,7 +5387,7 @@ msgstr ""
 "Није изабрано удаљено; користим родно по основи.\n"
 "Да погурате у другачије удаљено, изаберите једно из списка Удаљених."
 
-#: ../plugins/git/git-reset-pane.c:165
+#: ../plugins/git/git-reset-pane.c:176
 msgid "Reset"
 msgstr "Врати"
 
@@ -5404,7 +5399,7 @@ msgstr "Нису изабране сукобљене датотеке."
 msgid "Please enter a commit."
 msgstr "Унесите предају."
 
-#: ../plugins/git/git-revert-pane.c:163
+#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:512
 msgid "Revert"
 msgstr "Поврати"
 
@@ -5412,11 +5407,11 @@ msgstr "Поврати"
 msgid "Stash Uncommitted Changes"
 msgstr "Уштекај непредате измене"
 
-#: ../plugins/git/git-status-pane.c:365
+#: ../plugins/git/git-status-pane.c:475
 msgid "Changes to be committed"
 msgstr "Измене које ће бити предате"
 
-#: ../plugins/git/git-status-pane.c:374
+#: ../plugins/git/git-status-pane.c:485
 msgid "Changed but not updated"
 msgstr "Измењено али није ажурирано"
 
@@ -5465,265 +5460,313 @@ msgstr "Измене"
 msgid "Commit changes"
 msgstr "Предај измене"
 
-#: ../plugins/git/plugin.c:156
-msgid "Diff uncommitted changes"
-msgstr "Упореди непредате измене"
-
-#: ../plugins/git/plugin.c:157
-msgid "Show a diff of uncommitted changes in an editor"
-msgstr "Приказује разлике непредатих измена у уређивачу"
-
-#: ../plugins/git/plugin.c:172
+#: ../plugins/git/plugin.c:164
 #: ../plugins/snippets-manager/snippets-editor.ui.h:18
 msgid "Add"
 msgstr "Додај"
 
-#: ../plugins/git/plugin.c:173
+#: ../plugins/git/plugin.c:165
 msgid "Add files to the index"
 msgstr "Додаје датотеке у индекс"
 
-#: ../plugins/git/plugin.c:181
+#: ../plugins/git/plugin.c:173
 msgid "Remove files from the repository"
 msgstr "Уклања датотеке из ризнице"
 
-#: ../plugins/git/plugin.c:188
+#: ../plugins/git/plugin.c:180 ../plugins/git/plugin.c:476
 msgid "Check out"
 msgstr "Издвој"
 
-#: ../plugins/git/plugin.c:189
+#: ../plugins/git/plugin.c:181
 msgid "Revert changes in unstaged files"
 msgstr "Врати измене у неуштеканим датотекама"
 
-#: ../plugins/git/plugin.c:196
+#: ../plugins/git/plugin.c:188 ../plugins/git/plugin.c:484
 msgid "Unstage"
 msgstr "Одштекај"
 
-#: ../plugins/git/plugin.c:197
+#: ../plugins/git/plugin.c:189
 msgid "Remove staged files from the index"
 msgstr "Уклони уштекане датотеке из индекса"
 
-#: ../plugins/git/plugin.c:204
+#: ../plugins/git/plugin.c:196
 msgid "Resolve conflicts"
 msgstr "Разреши сукобе"
 
-#: ../plugins/git/plugin.c:205
+#: ../plugins/git/plugin.c:197
 msgid "Mark selected conflicted files as resolved"
 msgstr "Означава изабране сукобљене датотеке као решене"
 
-#: ../plugins/git/plugin.c:212 ../plugins/git/plugin.c:808
+#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:972
 msgid "Stash"
 msgstr "Штек"
 
-#: ../plugins/git/plugin.c:220 ../plugins/git/plugin.c:332
+#: ../plugins/git/plugin.c:212 ../plugins/git/plugin.c:324
 msgid "Stash uncommitted changes"
 msgstr "Уштекај непредате измене"
 
-#: ../plugins/git/plugin.c:221 ../plugins/git/plugin.c:333
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
 msgid "Save uncommitted changes without committing them"
 msgstr "Чува непредате измене без њиховог предавања"
 
-#: ../plugins/git/plugin.c:232
+#: ../plugins/git/plugin.c:224
 msgid "Remote repository tools"
 msgstr "Алати удаљене ризнице"
 
-#: ../plugins/git/plugin.c:240
+#: ../plugins/git/plugin.c:232
 msgid "Add a remote"
 msgstr "Додајe удаљену грану"
 
-#: ../plugins/git/plugin.c:241
+#: ../plugins/git/plugin.c:233
 msgid "Add a remote repository"
 msgstr "Додајте удаљену ризницу"
 
-#: ../plugins/git/plugin.c:248
+#: ../plugins/git/plugin.c:240
 msgid "Delete selected remote"
 msgstr "Обриши изабране удаљене"
 
-#: ../plugins/git/plugin.c:249
+#: ../plugins/git/plugin.c:241
 msgid "Delete a remote"
 msgstr "Брише удаљену грану"
 
-#: ../plugins/git/plugin.c:257
+#: ../plugins/git/plugin.c:249
 msgid "Push changes to a remote repository"
 msgstr "Гура измене у удаљену ризницу"
 
-#: ../plugins/git/plugin.c:265
+#: ../plugins/git/plugin.c:257
 msgid "Pull changes from a remote repository"
 msgstr "Вуче измене из удаљене ризнице"
 
-#: ../plugins/git/plugin.c:272
+#: ../plugins/git/plugin.c:264 ../plugins/git/plugin.c:576
 msgid "Fetch"
 msgstr "Добави"
 
-#: ../plugins/git/plugin.c:273
+#: ../plugins/git/plugin.c:265
 msgid "Fetch changes from remote repositories"
 msgstr "Добавите измене из удаљене ризнице"
 
-#: ../plugins/git/plugin.c:288
+#: ../plugins/git/plugin.c:280
 msgid "Rebase against selected remote"
 msgstr "Прекалеми наспрам изабраног удаљеног"
 
-#: ../plugins/git/plugin.c:289
+#: ../plugins/git/plugin.c:281
 msgid "Start a rebase operation relative to the selected remote repository"
 msgstr "Започиње операцију прекалемљавања у односу на изабрану удаљену ризницу"
 
-#: ../plugins/git/plugin.c:296 ../plugins/git/plugin.c:464
+#: ../plugins/git/plugin.c:288 ../plugins/git/plugin.c:448
 msgid "Continue"
 msgstr "Настави"
 
-#: ../plugins/git/plugin.c:297
+#: ../plugins/git/plugin.c:289
 msgid "Continue a rebase with resolved conflicts"
 msgstr "Настави прекалемљавање са решеним сукобима"
 
-#: ../plugins/git/plugin.c:304 ../plugins/git/plugin.c:472
+#: ../plugins/git/plugin.c:296 ../plugins/git/plugin.c:456
 msgid "Skip"
 msgstr "Прескочи"
 
-#: ../plugins/git/plugin.c:305
+#: ../plugins/git/plugin.c:297
 msgid "Skip the current revision"
 msgstr "Прескочите тренутну ревизију"
 
-#: ../plugins/git/plugin.c:312 ../plugins/git/plugin.c:480
+#: ../plugins/git/plugin.c:304 ../plugins/git/plugin.c:464
 msgid "Abort"
 msgstr "Прекини"
 
-#: ../plugins/git/plugin.c:313
+#: ../plugins/git/plugin.c:305
 msgid "Abort the rebase and return the repository to its previous state"
 msgstr "Обуставља прекалемљавање и враћа ризницу у њено претходно стање"
 
-#: ../plugins/git/plugin.c:324
+#: ../plugins/git/plugin.c:316
 msgid "Stash tools"
 msgstr "Алати штека"
 
-#: ../plugins/git/plugin.c:340
+#: ../plugins/git/plugin.c:332
 msgid "Apply selected stash"
 msgstr "Примени означени штек"
 
-#: ../plugins/git/plugin.c:341
+#: ../plugins/git/plugin.c:333
 msgid "Apply stashed changes back into the working tree"
 msgstr "Примењује уштекане измене назад на радно стабло"
 
-#: ../plugins/git/plugin.c:348
+#: ../plugins/git/plugin.c:340
 msgid "Apply stash and restore index"
 msgstr "Примењује штек и враћа индекс"
 
-#: ../plugins/git/plugin.c:349
+#: ../plugins/git/plugin.c:341
 msgid "Apply stashed changes back into the working tree and the index"
 msgstr "Примењује уштекане измене назад на радно стабло и на индекс"
 
-#: ../plugins/git/plugin.c:356
-msgid "Diff selected stash"
-msgstr "Упореди означени штек"
-
-#: ../plugins/git/plugin.c:357
-msgid "Show a diff of the selected stash"
-msgstr "Приказује разлике означеног штека"
-
-#: ../plugins/git/plugin.c:364
+#: ../plugins/git/plugin.c:348
 msgid "Drop selected stash"
 msgstr "Одбаци означени штек"
 
-#: ../plugins/git/plugin.c:365
+#: ../plugins/git/plugin.c:349
 msgid "Delete the selected stash"
 msgstr "Обриши означени штек"
 
-#: ../plugins/git/plugin.c:372
+#: ../plugins/git/plugin.c:356
 msgid "Clear all stashes"
 msgstr "Очисти све штекове"
 
-#: ../plugins/git/plugin.c:373
+#: ../plugins/git/plugin.c:357
 msgid "Delete all stashes in this repository"
 msgstr "Брише све штекове у овој ризници"
 
-#: ../plugins/git/plugin.c:384
+#: ../plugins/git/plugin.c:368
 msgid "Revision tools"
 msgstr "Алати ревизије"
 
-#: ../plugins/git/plugin.c:392
+#: ../plugins/git/plugin.c:376 ../plugins/git/plugin.c:496
 msgid "Show commit diff"
 msgstr "Прикажи разлике предаје"
 
-#: ../plugins/git/plugin.c:393
+#: ../plugins/git/plugin.c:377
 msgid "Show a diff of the selected revision"
 msgstr "Приказује разлике изабране ревизије"
 
-#: ../plugins/git/plugin.c:400
+#: ../plugins/git/plugin.c:384 ../plugins/git/plugin.c:504
 msgid "Cherry pick"
 msgstr "Пробирање"
 
-#: ../plugins/git/plugin.c:401
+#: ../plugins/git/plugin.c:385
 msgid "Merge an individual commit from another branch"
 msgstr "Стапа засебну предају из друге гране"
 
-#: ../plugins/git/plugin.c:408
+#: ../plugins/git/plugin.c:392
 msgid "Reset/Revert"
 msgstr "Врати/поврати"
 
-#: ../plugins/git/plugin.c:416
+#: ../plugins/git/plugin.c:400
 msgid "Reset tree"
 msgstr "Врати стабло"
 
-#: ../plugins/git/plugin.c:417
+#: ../plugins/git/plugin.c:401
 msgid "Reset tree to a previous revision"
 msgstr "Врати стабло на претходну ревизију"
 
-#: ../plugins/git/plugin.c:424
+#: ../plugins/git/plugin.c:408
 msgid "Revert commit"
 msgstr "Поврати предају"
 
-#: ../plugins/git/plugin.c:425
+#: ../plugins/git/plugin.c:409
 msgid "Revert a commit"
 msgstr "Врши повраћај предаје"
 
-#: ../plugins/git/plugin.c:432
+#: ../plugins/git/plugin.c:416
 msgid "Patch series"
 msgstr "Закрпе"
 
-#: ../plugins/git/plugin.c:440 ../plugins/git/plugin.c:441
+#: ../plugins/git/plugin.c:424 ../plugins/git/plugin.c:425
 msgid "Generate a patch series"
 msgstr "Направи низ закрпа"
 
-#: ../plugins/git/plugin.c:448
+#: ../plugins/git/plugin.c:432
 msgid "Mailbox files"
 msgstr "Датотеке сандучета"
 
-#: ../plugins/git/plugin.c:456
+#: ../plugins/git/plugin.c:440
 msgid "Apply mailbox files"
 msgstr "Примени датотеке сандучета"
 
-#: ../plugins/git/plugin.c:457
+#: ../plugins/git/plugin.c:441
 msgid "Apply patches from mailbox files"
 msgstr "Примени закрпе из датотека сандучета"
 
-#: ../plugins/git/plugin.c:465
+#: ../plugins/git/plugin.c:449
 msgid "Continue applying patches with resolved conflicts"
 msgstr "Наставља са применом закрпа са решеним сукобима"
 
-#: ../plugins/git/plugin.c:473
+#: ../plugins/git/plugin.c:457
 msgid "Skip the current patch in the series"
 msgstr "Прескаче тренутну закрпу у низу"
 
-#: ../plugins/git/plugin.c:481
+#: ../plugins/git/plugin.c:465
 msgid ""
 "Stop applying the patch series and return the tree to its previous state"
 msgstr "Зауставља примену низа закрпа и враћа стабло у његово претходно стање"
 
-#: ../plugins/git/plugin.c:572 ../plugins/git/plugin.c:645
+#: ../plugins/git/plugin.c:520
+#| msgid "Reset"
+msgid "Reset..."
+msgstr "Поврати..."
+
+#: ../plugins/git/plugin.c:532
+msgid "Switch"
+msgstr "Пребаци"
+
+#: ../plugins/git/plugin.c:540
+#| msgid "Deleted"
+msgid "Delete..."
+msgstr "Обриши..."
+
+#: ../plugins/git/plugin.c:548
+#| msgid "Merge"
+msgid "Merge..."
+msgstr "Стопи..."
+
+#: ../plugins/git/plugin.c:560
+#| msgid "Push"
+msgid "Push..."
+msgstr "Погурај..."
+
+#: ../plugins/git/plugin.c:568
+#| msgid "Pull"
+msgid "Pull..."
+msgstr "Повуци..."
+
+#: ../plugins/git/plugin.c:588
+msgid "Apply"
+msgstr "Примени"
+
+#: ../plugins/git/plugin.c:596
+#| msgid "Apply stash and restore index"
+msgid "Apply and restore index"
+msgstr "Примени и врати индекс"
+
+#: ../plugins/git/plugin.c:604
+msgid "Drop"
+msgstr "Пусти"
+
+#: ../plugins/git/plugin.c:696 ../plugins/git/plugin.c:769
 msgid "Branch"
 msgstr "Грана"
 
-#: ../plugins/git/plugin.c:778
+#: ../plugins/git/plugin.c:858
+msgid "Status popup menu"
+msgstr "Искачући изборник стања"
+
+#: ../plugins/git/plugin.c:863
+msgid "Log popup menu"
+msgstr "Искачући изборник дневника"
+
+#: ../plugins/git/plugin.c:869
+#| msgid "Branch name:"
+msgid "Branch popup menu"
+msgstr "Искачући изборник гране"
+
+#: ../plugins/git/plugin.c:875
+#| msgid "Remote name:"
+msgid "Remote popup menu"
+msgstr "Искачући изборник удаљеног"
+
+#: ../plugins/git/plugin.c:880
+msgid "Popup menu entries"
+msgstr "Ставке искачућег изборника"
+
+#: ../plugins/git/plugin.c:942
 msgid "Status"
 msgstr "Стање"
 
-#: ../plugins/git/plugin.c:784
+#: ../plugins/git/plugin.c:948
 msgid "Log"
 msgstr "Дневник"
 
-#: ../plugins/git/plugin.c:795
+#: ../plugins/git/plugin.c:959
 msgid "Tags"
 msgstr "Ознаке"
 
-#: ../plugins/git/plugin.c:802
+#: ../plugins/git/plugin.c:966
 msgid "Remotes"
 msgstr "Удаљено"
 
@@ -5766,41 +5809,41 @@ msgstr "Уређује маргине елемента"
 msgid "Edit widget alignment"
 msgstr "Уређује поравнање елемента"
 
-#: ../plugins/glade/plugin.c:612
+#: ../plugins/glade/plugin.c:688
 msgid "Glade Properties…"
 msgstr "Својства Глејда…"
 
-#: ../plugins/glade/plugin.c:614
+#: ../plugins/glade/plugin.c:690
 msgid "Switch between library versions and check deprecations"
 msgstr "Пребацује се између издања библиотека и проверава застарелости"
 
-#: ../plugins/glade/plugin.c:640
+#: ../plugins/glade/plugin.c:731
 msgid "Loading Glade…"
 msgstr "Учитавам Глејд…"
 
-#: ../plugins/glade/plugin.c:726
+#: ../plugins/glade/plugin.c:818
 msgid "Glade designer operations"
 msgstr "Радње дизајнера Глејда"
 
-#: ../plugins/glade/plugin.c:734
+#: ../plugins/glade/plugin.c:826
 msgid "Widgets"
 msgstr "Елементи"
 
-#: ../plugins/glade/plugin.c:739
+#: ../plugins/glade/plugin.c:831
 msgid "Palette"
 msgstr "Палета"
 
-#: ../plugins/glade/plugin.c:867
+#: ../plugins/glade/plugin.c:968
 #, c-format
 msgid "Not local file: %s"
 msgstr "Није локална датотека: %s"
 
-#: ../plugins/glade/plugin.c:913
+#: ../plugins/glade/plugin.c:1014
 #, c-format
 msgid "Could not open %s"
 msgstr "Не могу да отворим „%s“"
 
-#: ../plugins/glade/plugin.c:956
+#: ../plugins/glade/plugin.c:1057
 msgid "Could not create a new glade project."
 msgstr "Не могу да направим нови Глејд пројекат."
 
@@ -5853,24 +5896,24 @@ msgid "Parenthesis indentation"
 msgstr "Увлачење заграде"
 
 #. ANJUTA_STOCK_AUTOINDENT,
-#: ../plugins/indentation-c-style/plugin.c:471
+#: ../plugins/indentation-c-style/plugin.c:223
 #: ../plugins/indentation-python-style/plugin.c:206
 msgid "Auto-Indent"
 msgstr "Само-увлачење"
 
-#: ../plugins/indentation-c-style/plugin.c:472
+#: ../plugins/indentation-c-style/plugin.c:224
 #: ../plugins/indentation-python-style/plugin.c:207
 msgid "Auto-indent current line or selection based on indentation settings"
 msgstr "Сам увуци текући ред или избор заснован на подешавањима увлачења"
 
-#: ../plugins/indentation-c-style/plugin.c:512
+#: ../plugins/indentation-c-style/plugin.c:264
 msgid "C Indentation"
 msgstr "Ц-ово увлачење"
 
-#: ../plugins/indentation-c-style/plugin.c:610
-#: ../plugins/indentation-c-style/plugin.c:619
-#: ../plugins/indentation-python-style/plugin.c:328
-#: ../plugins/indentation-python-style/plugin.c:337
+#: ../plugins/indentation-c-style/plugin.c:362
+#: ../plugins/indentation-c-style/plugin.c:371
+#: ../plugins/indentation-python-style/plugin.c:324
+#: ../plugins/indentation-python-style/plugin.c:333
 msgid "Indentation"
 msgstr "Увлачење"
 
@@ -5962,32 +6005,32 @@ msgstr "Учитај АПИ ознаке за стандардну Ц библи
 msgid "Load API tags for C++ standard template library"
 msgstr "Учитај АПИ ознаке за стандардну Ц++ библиотеку шаблона"
 
-#: ../plugins/language-support-cpp-java/plugin.c:688
+#: ../plugins/language-support-cpp-java/plugin.c:784
 msgid "Code added for widget."
 msgstr "Код је прикључцит за елемент."
 
-#: ../plugins/language-support-cpp-java/plugin.c:1082
+#: ../plugins/language-support-cpp-java/plugin.c:1198
 msgid "Comment/Uncomment"
 msgstr "Закоментариши/откоментариши"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1083
+#: ../plugins/language-support-cpp-java/plugin.c:1199
 msgid "Comment or uncomment current selection"
 msgstr "Додајте или уклоните примедбу текућем избору"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1088
+#: ../plugins/language-support-cpp-java/plugin.c:1204
 msgid "Swap .h/.c"
 msgstr "Замени .h/.c"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1089
+#: ../plugins/language-support-cpp-java/plugin.c:1205
 msgid "Swap C header and source files"
 msgstr "Замени Ц заглавље и изворне датотеке"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1129
+#: ../plugins/language-support-cpp-java/plugin.c:1245
 msgid "C++/Java Assistance"
 msgstr "Помоћ за Ц++/Јаву"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1348
-#: ../plugins/language-support-cpp-java/plugin.c:1377
+#: ../plugins/language-support-cpp-java/plugin.c:1462
+#: ../plugins/language-support-cpp-java/plugin.c:1491
 msgid "API Tags (C/C++)"
 msgstr "АПИ ознаке (C/C++)"
 
@@ -6117,9 +6160,9 @@ msgstr "Не приказуј више ово упозорење"
 msgid "Python Assistance"
 msgstr "Помоћ Питона"
 
-#: ../plugins/language-support-python/plugin.c:561
-#: ../plugins/language-support-python/plugin.c:574
-#: ../plugins/language-support-python/python-assist.c:797
+#: ../plugins/language-support-python/plugin.c:557
+#: ../plugins/language-support-python/plugin.c:570
+#: ../plugins/language-support-python/python-assist.c:807
 msgid "Python"
 msgstr "Питон"
 
@@ -6133,7 +6176,7 @@ msgstr "Прикључак подршке Вале за допуњавање к�
 
 #: ../plugins/language-support-vala/plugin.vala:655
 #: ../plugins/language-support-vala/plugin.vala:663
-#: ../plugins/parser-cxx/plugin.c:269 ../plugins/parser-cxx/plugin.c:282
+#: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Сам доврши"
 
@@ -6392,7 +6435,7 @@ msgid "Patching complete"
 msgstr "Закрпљавање је обављено"
 
 #: ../plugins/patch/patch-plugin.ui.h:2
-#: ../plugins/subversion/anjuta-subversion.ui.h:61
+#: ../plugins/subversion/anjuta-subversion.ui.h:45
 msgid "Dry run"
 msgstr "Суво покретање"
 
@@ -6436,13 +6479,13 @@ msgstr "Увезите постојећи пројекат самоалата у
 msgid "Project from Existing Sources"
 msgstr "Пројекат из постојећих извора"
 
-#: ../plugins/project-import/plugin.c:80
-#: ../plugins/project-import/plugin.c:187
+#: ../plugins/project-import/plugin.c:82
+#: ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "Датотека „%s“ већ постоји. Да ли желите да је замените?"
 
-#: ../plugins/project-import/plugin.c:222
+#: ../plugins/project-import/plugin.c:224
 #, c-format
 msgid ""
 "A file named \"%s\" cannot be written: %s. Check if you have write access to "
@@ -6451,17 +6494,12 @@ msgstr ""
 "Не могу да упишем у датотеку „%s“: %s. Проверите да ли имате дозволу за "
 "писање у директоријум пројекта."
 
-#: ../plugins/project-import/plugin.c:286
+#: ../plugins/project-import/plugin.c:285
 #, c-format
 msgid "Please select a project backend to open %s."
 msgstr "Молим изаберите позадинца пројекта да отворите %s."
 
-#: ../plugins/project-import/plugin.c:291
-#: ../plugins/project-manager/dialogs.c:650
-msgid "Open With"
-msgstr "Отвори програмом"
-
-#: ../plugins/project-import/plugin.c:306
+#: ../plugins/project-import/plugin.c:305
 #, c-format
 msgid ""
 "Could not find a valid project backend for the given directory (%s). Please "
@@ -6471,18 +6509,18 @@ msgstr ""
 "(%s). Молим изаберите други директоријум, или покушајте да надоградите на "
 "новије издање Ањуте."
 
-#: ../plugins/project-import/plugin.c:372
+#: ../plugins/project-import/plugin.c:371
 #: ../plugins/project-import/plugin.c:428
 #, c-format
 msgid ""
 "Couldn't check out the supplied URI \"%s\". The error returned was: \"%s\""
 msgstr "Не могу да издвојим прослеђену адресу „%s“. Враћена грешка је: „%s“"
 
-#: ../plugins/project-import/project-import-dialog.c:305
+#: ../plugins/project-import/project-import-dialog.c:310
 msgid "Import project"
 msgstr "Увези пројекат"
 
-#: ../plugins/project-import/project-import-dialog.c:309
+#: ../plugins/project-import/project-import-dialog.c:314
 msgid "Import"
 msgstr "Увези"
 
@@ -6515,7 +6553,7 @@ msgstr "Место:"
 #: ../plugins/project-wizard/templates/wxwin.wiz.in.h:12
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:12
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:12
-#: ../plugins/subversion/anjuta-subversion.ui.h:45
+#: ../plugins/subversion/anjuta-subversion.ui.h:19
 msgid "Destination:"
 msgstr "Одредиште:"
 
@@ -6555,194 +6593,217 @@ msgid " This property is not modifiable."
 msgstr " Ово својство се не може изменити."
 
 #. Several backend are possible, ask the user to select one
-#: ../plugins/project-manager/dialogs.c:647
+#: ../plugins/project-manager/dialogs.c:644
 #, c-format
 msgid "Please select a project backend to use."
 msgstr "Молим изаберите позадинца пројекта за коришћење."
 
-#: ../plugins/project-manager/dialogs.c:689
-#: ../plugins/project-manager/dialogs.c:694
+#: ../plugins/project-manager/dialogs.c:683
+#: ../plugins/project-manager/dialogs.c:688
 #: ../plugins/project-manager/plugin.c:926
 msgid "Project properties"
 msgstr "Својства пројекта"
 
-#: ../plugins/project-manager/dialogs.c:698
+#: ../plugins/project-manager/dialogs.c:692
 msgid "Folder properties"
 msgstr "Својства фасцикле"
 
-#: ../plugins/project-manager/dialogs.c:702
+#: ../plugins/project-manager/dialogs.c:696
 msgid "Target properties"
 msgstr "Својства мете"
 
-#: ../plugins/project-manager/dialogs.c:705
+#: ../plugins/project-manager/dialogs.c:699
 msgid "Source properties"
 msgstr "Својства изворног кода"
 
-#: ../plugins/project-manager/dialogs.c:708
+#: ../plugins/project-manager/dialogs.c:702
 msgid "Module properties"
 msgstr "Својства модула"
 
-#: ../plugins/project-manager/dialogs.c:711
+#: ../plugins/project-manager/dialogs.c:705
 msgid "Package properties"
 msgstr "Својства пакета"
 
-#: ../plugins/project-manager/dialogs.c:714
+#: ../plugins/project-manager/dialogs.c:708
 msgid "Unknown properties"
 msgstr "Непозната својства"
 
-#: ../plugins/project-manager/dialogs.c:745
+#: ../plugins/project-manager/dialogs.c:737
 msgid "Backend:"
 msgstr "Позадинац:"
 
-#: ../plugins/project-manager/dialogs.c:938
+#: ../plugins/project-manager/dialogs.c:929
 #, c-format
 msgid "Reloading project: %s"
 msgstr "Поново учитавам пројекат: %s"
 
-#: ../plugins/project-manager/dialogs.c:1187
-#: ../plugins/project-manager/dialogs.c:1198
+#: ../plugins/project-manager/dialogs.c:1178
+#: ../plugins/project-manager/dialogs.c:1189
 msgid "Cannot add group"
 msgstr "Не могу да додам групу"
 
-#: ../plugins/project-manager/dialogs.c:1199
+#: ../plugins/project-manager/dialogs.c:1190
 msgid "No parent group selected"
 msgstr "Није изабрана родитељска група"
 
-#: ../plugins/project-manager/dialogs.c:1359
-#: ../plugins/project-manager/dialogs.c:1371
-#: ../plugins/project-manager/dialogs.c:1556
-#: ../plugins/project-manager/dialogs.c:1566
+#: ../plugins/project-manager/dialogs.c:1350
+#: ../plugins/project-manager/dialogs.c:1362
+#: ../plugins/project-manager/dialogs.c:1547
+#: ../plugins/project-manager/dialogs.c:1557
 msgid "Cannot add source files"
 msgstr "Не могу да додам датотеке извора"
 
-#: ../plugins/project-manager/dialogs.c:1372
-#: ../plugins/project-manager/dialogs.c:1567
+#: ../plugins/project-manager/dialogs.c:1363
+#: ../plugins/project-manager/dialogs.c:1558
 msgid "The selected node cannot contain source files."
 msgstr "Изабрани чвор не може да садржи датотеке извора."
 
-#: ../plugins/project-manager/dialogs.c:1753
-#: ../plugins/project-manager/dialogs.c:1764
+#: ../plugins/project-manager/dialogs.c:1744
+#: ../plugins/project-manager/dialogs.c:1755
 msgid "Cannot add target"
 msgstr "Не могу да додам мету"
 
-#: ../plugins/project-manager/dialogs.c:1765
+#: ../plugins/project-manager/dialogs.c:1756
 msgid "No group selected"
 msgstr "Није изабрана група"
 
-#: ../plugins/project-manager/dialogs.c:1931
-#: ../plugins/project-manager/dialogs.c:1942
+#: ../plugins/project-manager/dialogs.c:1922
+#: ../plugins/project-manager/dialogs.c:1933
 msgid "Cannot add modules"
 msgstr "Не могу да додам модуле"
 
 # bug: plural-forms
-#: ../plugins/project-manager/dialogs.c:1943
+#: ../plugins/project-manager/dialogs.c:1934
 msgid "No target has been selected"
 msgstr "Није изабрана ниједна мета"
 
 #. Missing module name
-#: ../plugins/project-manager/dialogs.c:2149
+#: ../plugins/project-manager/dialogs.c:2140
 msgid "Missing module name"
 msgstr "Недостаје назив модула"
 
-#: ../plugins/project-manager/dialogs.c:2211
+#: ../plugins/project-manager/dialogs.c:2202
 msgid "Cannot add packages"
 msgstr "Не могу да додам пакете"
 
-#: ../plugins/project-manager/plugin.c:684
-msgid ""
-"Are you sure you want to remove the following group from the project?\n"
-"\n"
-msgstr ""
-"Да ли сте сигурни да желите да уклоните следећу групу из пројекта?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:687
-msgid ""
-"Are you sure you want to remove the following target from the project?\n"
-"\n"
-msgstr ""
-"Да ли сте сигурни да желите да уклоните следећу мету из пројекта?\n"
-"\n"
-
-#: ../plugins/project-manager/plugin.c:690
-msgid ""
-"Are you sure you want to remove the following source file from the project?\n"
-"\n"
-msgstr ""
-"Да ли сте сигурни да желите да уклоните следећу датотеку кода из пројекта?\n"
-"\n"
-
 #: ../plugins/project-manager/plugin.c:693
+#, c-format
+#| msgid ""
+#| "Are you sure you want to remove the following group from the project?\n"
+#| "\n"
 msgid ""
-"Are you sure you want to remove the following package from the project?\n"
+"Are you sure you want to remove the group \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Да ли сте сигурни да желите да уклоните следећи пакет из пројекта?\n"
+"Да ли сте сигурни да желите да уклоните групу „%s“ из пројекта?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:696
+#, c-format
+#| msgid ""
+#| "Are you sure you want to remove the following target from the project?\n"
+#| "\n"
 msgid ""
-"Are you sure you want to remove the following module from the project?\n"
+"Are you sure you want to remove the target \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Да ли сте сигурни да желите да уклоните следећи модул из пројекта?\n"
+"Да ли сте сигурни да желите да уклоните мету „%s“ из пројекта?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:699
+#, c-format
+#| msgid ""
+#| "Are you sure you want to remove the following source file from the "
+#| "project?\n"
+#| "\n"
 msgid ""
-"Are you sure you want to remove the following elements from the project?\n"
+"Are you sure you want to remove the source \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Да ли сигурно желите да уклоните следеће елементе из пројекта?\n"
+"Да ли сте сигурни да желите да уклоните извор „%s“ из пројекта?\n"
 "\n"
 
-#: ../plugins/project-manager/plugin.c:716
+#: ../plugins/project-manager/plugin.c:702
 #, c-format
-msgid "Group: %s\n"
-msgstr "Група: %s\n"
+#| msgid ""
+#| "Are you sure you want to remove the following group from the project?\n"
+#| "\n"
+msgid ""
+"Are you sure you want to remove the shortcut \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Да ли сте сигурни да желите да уклоните пречицу „%s“ из пројекта?\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:719
+#: ../plugins/project-manager/plugin.c:706
 #, c-format
-msgid "Target: %s\n"
-msgstr "Мета: %s\n"
+#| msgid ""
+#| "Are you sure you want to remove the following module from the project?\n"
+#| "\n"
+msgid ""
+"Are you sure you want to remove the module \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Да ли сте сигурни да желите да уклоните модул „%s“ из пројекта?\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:722
+#: ../plugins/project-manager/plugin.c:709
 #, c-format
-msgid "Source: %s\n"
-msgstr "Извор: %s\n"
+#| msgid ""
+#| "Are you sure you want to remove the following package from the project?\n"
+#| "\n"
+msgid ""
+"Are you sure you want to remove the package \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Да ли сте сигурни да желите да уклоните пакет „%s“ из пројекта?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:712
+#, c-format
+#| msgid ""
+#| "Are you sure you want to remove the following elements from the project?\n"
+#| "\n"
+msgid ""
+"Are you sure you want to remove the element \"%s\" from the project?\n"
+"\n"
+msgstr ""
+"Да ли сте сигурни да желите да уклоните елемент „%s“ из пројекта?\n"
+"\n"
+
+#: ../plugins/project-manager/plugin.c:720
+#, c-format
+#| msgid ""
+#| "Are you sure you want to remove the following elements from the project?\n"
+#| "\n"
+msgid ""
+"Are you sure you want to remove %d elements from the project?\n"
+"\n"
+msgstr ""
+"Да ли сте сигурни да желите да уклоните %d елемента из пројекта?\n"
+"\n"
 
 #: ../plugins/project-manager/plugin.c:725
-#, c-format
-msgid "Shortcut: %s\n"
-msgstr "Пречица: %s\n"
+#| msgid "The group will be deleted from the file system."
+msgid "The group will be deleted from the file system.\n"
+msgstr "Група ће бити избрисана из система датотека.\n"
 
-#: ../plugins/project-manager/plugin.c:728
-#, c-format
-msgid "Module: %s\n"
-msgstr "Модул: %s\n"
+#: ../plugins/project-manager/plugin.c:730
+#| msgid "The group will not be deleted from the file system."
+msgid "The group will not be deleted from the file system.\n"
+msgstr "Група неће бити избрисана из система датотека.\n"
 
-#: ../plugins/project-manager/plugin.c:731
-#, c-format
-msgid "Package: %s\n"
-msgstr "Пакет: %s\n"
+#: ../plugins/project-manager/plugin.c:736
+#| msgid "The source file will be deleted from the file system."
+msgid "The source file will be deleted from the file system.\n"
+msgstr "Датотека кода ће бити избрисана из система датотека.\n"
 
-#: ../plugins/project-manager/plugin.c:743
-msgid "The group will be deleted from the file system."
-msgstr "Група ће бити избрисана из система датотека."
+#: ../plugins/project-manager/plugin.c:741
+#| msgid "The source file will not be deleted from the file system."
+msgid "The source file will not be deleted from the file system.\n"
+msgstr "Датотека кода неће бити избрисана из система датотека.\n"
 
-#: ../plugins/project-manager/plugin.c:745
-msgid "The group will not be deleted from the file system."
-msgstr "Група неће бити избрисана из система датотека."
-
-#: ../plugins/project-manager/plugin.c:747
-msgid "The source file will be deleted from the file system."
-msgstr "Датотека кода ће бити избрисана из система датотека."
-
-#: ../plugins/project-manager/plugin.c:749
-msgid "The source file will not be deleted from the file system."
-msgstr "Датотека кода неће бити избрисана из система датотека."
-
-#: ../plugins/project-manager/plugin.c:754
+#: ../plugins/project-manager/plugin.c:753
 msgid "Confirm remove"
 msgstr "Потврди уклањање"
 
@@ -6872,10 +6933,10 @@ msgstr "Освежи преглед пројекта…"
 
 #: ../plugins/project-manager/plugin.c:1325
 #: ../plugins/project-manager/plugin.c:1447
-#: ../plugins/project-manager/plugin.c:1615
+#: ../plugins/project-manager/plugin.c:1605
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2129
+#: ../plugins/symbol-db/plugin.c:2160
 msgid "Project"
 msgstr "Пројекат"
 
@@ -6884,24 +6945,24 @@ msgstr "Пројекат"
 msgid "Loading project: %s"
 msgstr "Учитавам пројекат: %s"
 
-#: ../plugins/project-manager/plugin.c:1527
+#: ../plugins/project-manager/plugin.c:1518
 #, c-format
 msgid "Error closing project: %s"
 msgstr "Грешка у затварању пројекта: %s"
 
-#: ../plugins/project-manager/plugin.c:1594
+#: ../plugins/project-manager/plugin.c:1584
 msgid "Project manager actions"
 msgstr "Радње управника пројекта"
 
-#: ../plugins/project-manager/plugin.c:1602
+#: ../plugins/project-manager/plugin.c:1592
 msgid "Project manager popup actions"
 msgstr "Радње искачућих прозора управника пројекта"
 
-#: ../plugins/project-manager/plugin.c:2416
+#: ../plugins/project-manager/plugin.c:2457
 msgid "Initializing Project…"
 msgstr "Започињем пројекат…"
 
-#: ../plugins/project-manager/plugin.c:2419
+#: ../plugins/project-manager/plugin.c:2460
 msgid "Project Loaded"
 msgstr "Пројекат је учитан"
 
@@ -7524,18 +7585,18 @@ msgid "Use pkg-config to add library support from other packages"
 msgstr "Користите „pkg-config“ да додате подршку библиотека из других пакета"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:29
-#: ../plugins/project-wizard/templates/cpp.wiz.in.h:19
+#: ../plugins/project-wizard/templates/cpp.wiz.in.h:21
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:21
-#: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:25
-#: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:23
-#: ../plugins/project-wizard/templates/gtk.wiz.in.h:25
+#: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:27
+#: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:25
+#: ../plugins/project-wizard/templates/gtk.wiz.in.h:27
 #: ../plugins/project-wizard/templates/java.wiz.in.h:23
-#: ../plugins/project-wizard/templates/library.wiz.in.h:24
+#: ../plugins/project-wizard/templates/library.wiz.in.h:26
 #: ../plugins/project-wizard/templates/minimal.wiz.in.h:19
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:19
 #: ../plugins/project-wizard/templates/python.wiz.in.h:21
-#: ../plugins/project-wizard/templates/terminal.wiz.in.h:19
-#: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:19
+#: ../plugins/project-wizard/templates/terminal.wiz.in.h:21
+#: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:21
 #: ../plugins/project-wizard/templates/wxwin.wiz.in.h:19
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:21
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:21
@@ -7567,15 +7628,15 @@ msgstr ""
 "изгради"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:32
-#: ../plugins/project-wizard/templates/cpp.wiz.in.h:20
+#: ../plugins/project-wizard/templates/cpp.wiz.in.h:22
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:22
-#: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:24
+#: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:26
 #: ../plugins/project-wizard/templates/java.wiz.in.h:24
-#: ../plugins/project-wizard/templates/library.wiz.in.h:25
+#: ../plugins/project-wizard/templates/library.wiz.in.h:27
 #: ../plugins/project-wizard/templates/minimal.wiz.in.h:20
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:20
 #: ../plugins/project-wizard/templates/python.wiz.in.h:22
-#: ../plugins/project-wizard/templates/terminal.wiz.in.h:20
+#: ../plugins/project-wizard/templates/terminal.wiz.in.h:22
 #: ../plugins/project-wizard/templates/wxwin.wiz.in.h:20
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:22
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:22
@@ -7583,15 +7644,15 @@ msgid "Required Packages:"
 msgstr "Потребни пакети:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:33
-#: ../plugins/project-wizard/templates/cpp.wiz.in.h:21
+#: ../plugins/project-wizard/templates/cpp.wiz.in.h:23
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:23
-#: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:25
+#: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:27
 #: ../plugins/project-wizard/templates/java.wiz.in.h:25
-#: ../plugins/project-wizard/templates/library.wiz.in.h:26
+#: ../plugins/project-wizard/templates/library.wiz.in.h:28
 #: ../plugins/project-wizard/templates/minimal.wiz.in.h:21
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:21
 #: ../plugins/project-wizard/templates/python.wiz.in.h:23
-#: ../plugins/project-wizard/templates/terminal.wiz.in.h:21
+#: ../plugins/project-wizard/templates/terminal.wiz.in.h:23
 #: ../plugins/project-wizard/templates/wxwin.wiz.in.h:21
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:23
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:23
@@ -7729,6 +7790,28 @@ msgstr ""
 "Додајте подршку за интернационализацију тако да ваш пројекат може бити "
 "преведен на разне језике"
 
+#: ../plugins/project-wizard/templates/cpp.wiz.in.h:19
+#: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:25
+#: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:23
+#: ../plugins/project-wizard/templates/gtk.wiz.in.h:25
+#: ../plugins/project-wizard/templates/library.wiz.in.h:24
+#: ../plugins/project-wizard/templates/terminal.wiz.in.h:19
+#: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:19
+#| msgid "Add C++ support:"
+msgid "Add Windows support:"
+msgstr "Додај подршку Виндоуза:"
+
+#: ../plugins/project-wizard/templates/cpp.wiz.in.h:20
+#: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:26
+#: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:24
+#: ../plugins/project-wizard/templates/gtk.wiz.in.h:26
+#: ../plugins/project-wizard/templates/library.wiz.in.h:25
+#: ../plugins/project-wizard/templates/terminal.wiz.in.h:20
+#: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:20
+#| msgid "Adds support for building shared libraries in your project"
+msgid "Adds support for building on Windows platforms"
+msgstr "Додајте подршку за изградњу на Виндоузовим платформама"
+
 #: ../plugins/project-wizard/templates/django.wiz.in.h:1
 msgid "Django Project"
 msgstr "Ђанго пројекат"
@@ -7861,15 +7944,15 @@ msgstr ""
 "Користите Гтк Градњу да направите корисничко сучеље на графички начин и да "
 "га учитате из хмл датотека за време извршавања"
 
-#: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:26
-#: ../plugins/project-wizard/templates/gtk.wiz.in.h:26
-#: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:20
+#: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:28
+#: ../plugins/project-wizard/templates/gtk.wiz.in.h:28
+#: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:22
 msgid "Require Package:"
 msgstr "Захтева пакет:"
 
-#: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:27
-#: ../plugins/project-wizard/templates/gtk.wiz.in.h:27
-#: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:21
+#: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:29
+#: ../plugins/project-wizard/templates/gtk.wiz.in.h:29
+#: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:23
 msgid ""
 "Give a package name that your project require. You may also mention what is "
 "the required version of the package. For example, 'libgnomeui-2.0' or "
@@ -8143,7 +8226,7 @@ msgid "Choose a working directory"
 msgstr "Изаберите радни директоријум"
 
 #. Only local directory are supported
-#: ../plugins/run-program/execute.c:108
+#: ../plugins/run-program/execute.c:110
 #, c-format
 msgid "Program directory '%s' is not local"
 msgstr "Директоријум програма „%s“ није локални"
@@ -8289,12 +8372,12 @@ msgid "Languages"
 msgstr "Језици"
 
 #. Insert the Add Snippet menu item
-#: ../plugins/snippets-manager/snippets-browser.c:811
+#: ../plugins/snippets-manager/snippets-browser.c:809
 msgid "Add Snippet …"
 msgstr "Додај исечак …"
 
 #. Insert the Add Snippets Group menu item
-#: ../plugins/snippets-manager/snippets-browser.c:821
+#: ../plugins/snippets-manager/snippets-browser.c:819
 msgid "Add Snippets Group …"
 msgstr "Додај групу исечака …"
 
@@ -8554,7 +8637,7 @@ msgstr "Подешавања прегледа уређивача"
 msgid "GtkSourceView Editor"
 msgstr "Уређивач приказа Гтк извора"
 
-#: ../plugins/sourceview/sourceview.c:601
+#: ../plugins/sourceview/sourceview.c:629
 #, c-format
 msgid ""
 "The file \"%s\" on the disk is more recent than the current buffer.\n"
@@ -8563,7 +8646,7 @@ msgstr ""
 "Датотека „%s“ на диску је новија од тренутне у приручној меморији.\n"
 "Да ли желите да је поново учитате?"
 
-#: ../plugins/sourceview/sourceview.c:633
+#: ../plugins/sourceview/sourceview.c:661
 #, c-format
 msgid ""
 "The file \"%s\" has been deleted on the disk.\n"
@@ -8573,18 +8656,18 @@ msgstr ""
 "Да ли желите да је затворите?"
 
 #. Could not open <filename>: <error message>
-#: ../plugins/sourceview/sourceview.c:666
+#: ../plugins/sourceview/sourceview.c:694
 #, c-format
 msgid "Could not open %s: %s"
 msgstr "Не могу да отворим: %s: %s"
 
-#: ../plugins/sourceview/sourceview.c:717
+#: ../plugins/sourceview/sourceview.c:745
 #, c-format
 msgid "The file \"%s\" is read-only! Edit anyway?"
 msgstr "Датотека „%s“ је само за читање! Ипак желите да је уредите?"
 
 #. Could not open <filename>: <error message>
-#: ../plugins/sourceview/sourceview.c:776
+#: ../plugins/sourceview/sourceview.c:804
 #, c-format
 msgid "Could not save %s: %s"
 msgstr "Не могу да сачувам: %s: %s"
@@ -8639,7 +8722,7 @@ msgstr "Покретач"
 msgid "Welcome page with most common actions."
 msgstr "Страница добродошлице са најопштијим радњама."
 
-#: ../plugins/starter/plugin.c:285
+#: ../plugins/starter/plugin.c:304
 msgid "Start"
 msgstr "Покрени"
 
@@ -8698,176 +8781,176 @@ msgid "Recurse"
 msgstr "Дубински"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:9
-msgid "Remove file/directory"
-msgstr "Уклони датотеку/директоријум"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:10
-msgid "File/URL to Remove:"
-msgstr "Датотека/адреса за уклањање:"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:12
-msgid "Update file/directory"
-msgstr "Ажурирај датотеку/директоријум"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:17
-msgid "Diff file/directory"
-msgstr "Упореди датотеку/директоријум"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:18
-msgid "File or directory to diff:"
-msgstr "Датотека или директоријум за упоређивање:"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:19
-msgid "Save open files before diffing"
-msgstr "Сачувај отворене датотеке пре упоређивања"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:20
-msgid "Repository authorization"
-msgstr "Овлашћење ризнице"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:23
-msgid "Remember Password"
-msgstr "Упамти лозинку"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:24
-msgid "realm"
-msgstr "домен"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:25
-msgid "Realm:"
-msgstr "Домен:"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:26
-msgid "Trust server"
-msgstr "Веруј серверу"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:27
-msgid "Remember this decision"
-msgstr "Упамти ову одлуку"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:28
-msgid "Revert Changes"
-msgstr "Поврати измене"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:29
-msgid "Select Changes to Revert:"
-msgstr "Изабери измене за повраћај:"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:30
-msgid "Retrieving status…"
-msgstr "Довлачим стање…"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:31
 msgid "Commit Changes"
 msgstr "Предај измене"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:32
+#: ../plugins/subversion/anjuta-subversion.ui.h:10
 msgid "Previous Commit Messages:"
 msgstr "Претходна порука предаје:"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:33
+#: ../plugins/subversion/anjuta-subversion.ui.h:11
 msgid "Use previous message"
 msgstr "Користи претходну поруку"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:35
+#: ../plugins/subversion/anjuta-subversion.ui.h:15
 msgid "Select Files to Commit:"
 msgstr "Изабери датотеке за предају:"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:36
-msgid "View Log"
-msgstr "Прегледај дневник"
+#: ../plugins/subversion/anjuta-subversion.ui.h:16
+msgid "Retrieving status…"
+msgstr "Довлачим стање…"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:37
-msgid "Whole Project"
-msgstr "Читав пројекат"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:40
-msgid "Diff to Previous"
-msgstr "Упореди на претходно"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:41
-msgid "Diff Selected Revisions"
-msgstr "Упореди изабране ревизије"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:42
-msgid "View Selected Revision"
-msgstr "Прикажи изабрану ревизију"
-
-#: ../plugins/subversion/anjuta-subversion.ui.h:43
+#: ../plugins/subversion/anjuta-subversion.ui.h:17
 msgid "Copy files/folders"
 msgstr "Умножи датотеке/фасцикле"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:44
+#: ../plugins/subversion/anjuta-subversion.ui.h:18
 msgid "Source:"
 msgstr "Извор:"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:46
+#: ../plugins/subversion/anjuta-subversion.ui.h:20
 msgid "Source/Destination Paths:"
 msgstr "Путање извора/одредишта:"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:47
+#: ../plugins/subversion/anjuta-subversion.ui.h:21
 msgid "Working Copy"
 msgstr "Радни примерак"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:48
+#: ../plugins/subversion/anjuta-subversion.ui.h:22
 msgid "Repository Head"
 msgstr "Глава ризнице"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:49
+#: ../plugins/subversion/anjuta-subversion.ui.h:23
 msgid "Other Revision:"
 msgstr "Остале ревизије:"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:51
-msgid "Switch to branch/tag"
-msgstr "Пребаци на грану/ознаку"
+#: ../plugins/subversion/anjuta-subversion.ui.h:25
+msgid "Diff file/directory"
+msgstr "Упореди датотеку/директоријум"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:52
-msgid "Working Copy Path:"
-msgstr "Путања радног примерка:"
+#: ../plugins/subversion/anjuta-subversion.ui.h:27
+msgid "File or directory to diff:"
+msgstr "Датотека или директоријум за упоређивање:"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:53
-msgid "Branch/Tag URL:"
-msgstr "Адреса гране/ознаке:"
+#: ../plugins/subversion/anjuta-subversion.ui.h:28
+msgid "Save open files before diffing"
+msgstr "Сачувај отворене датотеке пре упоређивања"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:54
+#: ../plugins/subversion/anjuta-subversion.ui.h:30
+msgid "View Log"
+msgstr "Прегледај дневник"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:31
+msgid "Whole Project"
+msgstr "Читав пројекат"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:34
+msgid "Diff to Previous"
+msgstr "Упореди на претходно"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:35
+msgid "Diff Selected Revisions"
+msgstr "Упореди изабране ревизије"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:36
+msgid "View Selected Revision"
+msgstr "Прикажи изабрану ревизију"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:37
 msgid "Merge changes into working copy"
 msgstr "Стопи измене у радни примерак"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:55
+#: ../plugins/subversion/anjuta-subversion.ui.h:38
 msgid "First Path:"
 msgstr "Прва путања:"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:56
+#: ../plugins/subversion/anjuta-subversion.ui.h:39
 msgid "Use first path"
 msgstr "Користи прву путању"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:57
+#: ../plugins/subversion/anjuta-subversion.ui.h:40
 msgid "Second Path:"
 msgstr "Друга путања:"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:58
+#: ../plugins/subversion/anjuta-subversion.ui.h:41
+msgid "Working Copy Path:"
+msgstr "Путања радног примерка:"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:42
 msgid "Start Revision:"
 msgstr "Започни ревизију:"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:59
+#: ../plugins/subversion/anjuta-subversion.ui.h:43
 msgid "End Revision:"
 msgstr "Заврши ревизију:"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:60
+#: ../plugins/subversion/anjuta-subversion.ui.h:44
 msgid "Ignore ancestry"
 msgstr "Занемари порекло"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:62
+#: ../plugins/subversion/anjuta-subversion.ui.h:46
+msgid "Remove file/directory"
+msgstr "Уклони датотеку/директоријум"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:47
+msgid "File/URL to Remove:"
+msgstr "Датотека/адреса за уклањање:"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:48
 msgid "Set Conflicts as Resolved"
 msgstr "Постави сукобе као решене"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:63
+#: ../plugins/subversion/anjuta-subversion.ui.h:49
 msgid "Select Files to Mark as Resolved:"
 msgstr "Изабери датотеке за обележавање као решене:"
 
-#: ../plugins/subversion/anjuta-subversion.ui.h:64
+#: ../plugins/subversion/anjuta-subversion.ui.h:50
 msgid "Retrieving status……"
 msgstr "Довлачим стање……"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:51
+msgid "Revert Changes"
+msgstr "Поврати измене"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:52
+msgid "Select Changes to Revert:"
+msgstr "Изабери измене за повраћај:"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:53
+msgid "Switch to branch/tag"
+msgstr "Пребаци на грану/ознаку"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:54
+msgid "Branch/Tag URL:"
+msgstr "Адреса гране/ознаке:"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:55
+msgid "Update file/directory"
+msgstr "Ажурирај датотеку/директоријум"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:57
+msgid "Trust server"
+msgstr "Веруј серверу"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:58
+msgid "Realm:"
+msgstr "Домен:"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:59
+msgid "Remember this decision"
+msgstr "Упамти ову одлуку"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:60
+msgid "Repository authorization"
+msgstr "Овлашћење ризнице"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:63
+msgid "Remember Password"
+msgstr "Упамти лозинку"
+
+#: ../plugins/subversion/anjuta-subversion.ui.h:64
+msgid "realm"
+msgstr "домен"
 
 #. Action name
 #. Stock icon, if any
@@ -9271,13 +9354,13 @@ msgstr "_Нађи симбол…"
 msgid "Find Symbol"
 msgstr "Нађите симбол"
 
-#: ../plugins/symbol-db/plugin.c:1036
+#: ../plugins/symbol-db/plugin.c:1067
 #, c-format
 msgid "%s: Generating inheritances…"
 msgstr "%s: Генеришем наслеђа…"
 
 #. Translators: %s is the name of a system library
-#: ../plugins/symbol-db/plugin.c:1042
+#: ../plugins/symbol-db/plugin.c:1073
 #, c-format
 msgid "%s: %d file scanned out of %d"
 msgid_plural "%s: %d files scanned out of %d"
@@ -9286,12 +9369,12 @@ msgstr[1] "%s: %d датотеке су скениране од %d"
 msgstr[2] "%s: %d датотека је скенирано од %d"
 msgstr[3] "%s: %d датотека је скенирана од %d"
 
-#: ../plugins/symbol-db/plugin.c:1073
+#: ../plugins/symbol-db/plugin.c:1104
 #, c-format
 msgid "Generating inheritances…"
 msgstr "Генеришем наслеђа…"
 
-#: ../plugins/symbol-db/plugin.c:1075
+#: ../plugins/symbol-db/plugin.c:1106
 #, c-format
 msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
@@ -9300,27 +9383,27 @@ msgstr[1] "%d датотеке су скениране од %d"
 msgstr[2] "%d датотека је скенирано од %d"
 msgstr[3] "%d датотека је скенирана од %d"
 
-#: ../plugins/symbol-db/plugin.c:1734
+#: ../plugins/symbol-db/plugin.c:1765
 msgid "Populating symbol database…"
 msgstr "Попуњавам базу података симбола…"
 
-#: ../plugins/symbol-db/plugin.c:2114 ../plugins/symbol-db/plugin.c:2199
+#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
 msgid "Symbols"
 msgstr "Симболи"
 
-#: ../plugins/symbol-db/plugin.c:2134 ../plugins/symbol-db/plugin.c:2186
+#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
 msgid "Search"
 msgstr "Тражи"
 
-#: ../plugins/symbol-db/plugin.c:2208
+#: ../plugins/symbol-db/plugin.c:2239
 msgid "SymbolDb popup actions"
 msgstr "Радње искакања БП симбола"
 
-#: ../plugins/symbol-db/plugin.c:2216
+#: ../plugins/symbol-db/plugin.c:2247
 msgid "SymbolDb menu actions"
 msgstr "Радње изборника БП симбола"
 
-#: ../plugins/symbol-db/plugin.c:2534 ../plugins/symbol-db/plugin.c:2552
+#: ../plugins/symbol-db/plugin.c:2567 ../plugins/symbol-db/plugin.c:2585
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "База података симбола"
@@ -9720,7 +9803,7 @@ msgstr "Пита корисника да добави додатне парам�
 msgid "Command line parameters"
 msgstr "Параметри линије наредби"
 
-#: ../src/about.c:205
+#: ../src/about.c:201
 msgid "Copyright (c) Naba Kumar"
 msgstr "Ауторска права (c) Наба Кумар"
 
@@ -9728,7 +9811,7 @@ msgstr "Ауторска права (c) Наба Кумар"
 msgid "_File"
 msgstr "_Датотека"
 
-#: ../src/anjuta-actions.h:24
+#: ../src/anjuta-actions.h:24 ../src/anjuta-menu.ui.h:5
 msgid "_Quit"
 msgstr "_Изађи"
 
@@ -9736,7 +9819,7 @@ msgstr "_Изађи"
 msgid "Quit Anjuta IDE"
 msgstr "Напусти Ањуту"
 
-#: ../src/anjuta-actions.h:32
+#: ../src/anjuta-actions.h:32 ../src/anjuta-menu.ui.h:2
 msgid "_Preferences"
 msgstr "_Поставке"
 
@@ -9781,7 +9864,7 @@ msgstr "_Палета алата"
 msgid "Show or hide the toolbar"
 msgstr "Прикажите или сакријте палету алата"
 
-#: ../src/anjuta-actions.h:61
+#: ../src/anjuta-actions.h:61 ../src/anjuta-menu.ui.h:3
 msgid "_Help"
 msgstr "По_моћ"
 
@@ -9825,7 +9908,7 @@ msgstr "_Поставите питање"
 msgid "Submit a question for FAQs"
 msgstr "Пошаљите питање за често постављана питања (ЧПП)"
 
-#: ../src/anjuta-actions.h:83
+#: ../src/anjuta-actions.h:83 ../src/anjuta-menu.ui.h:4
 msgid "_About"
 msgstr "_О програму"
 
@@ -9841,48 +9924,67 @@ msgstr "О _спољним прикључцима"
 msgid "About third-party Anjuta plugins"
 msgstr "О прикључцима трећих лица за Ањуту"
 
-#: ../src/anjuta-application.c:285
+#: ../src/anjuta-application.c:363
 msgid "Specify the size and location of the main window"
 msgstr "Одређује геометрију основног прозора"
 
 #. This is the format you can specify the size andposition
 #. * of the window on command line
-#: ../src/anjuta-application.c:288
+#: ../src/anjuta-application.c:366
 msgid "WIDTHxHEIGHT+XOFF+YOFF"
 msgstr "ШИРИНАxВИСИНА+ВОДПОЗ+УСППОЗ"
 
-#: ../src/anjuta-application.c:293
+#: ../src/anjuta-application.c:371
 msgid "Do not show the splash screen"
 msgstr "Не приказује уводну слику"
 
-#: ../src/anjuta-application.c:299
+#: ../src/anjuta-application.c:377
 msgid "Start a new instance and do not open the file in an existing instance"
 msgstr "Покреће нови примерак и не отвара датотеку у постојећем примерку"
 
-#: ../src/anjuta-application.c:305
+#: ../src/anjuta-application.c:383
 msgid "Do not open last session on startup"
 msgstr "Неће отворити последњу сесију при покретању"
 
-#: ../src/anjuta-application.c:311
+#: ../src/anjuta-application.c:389
 msgid "Do not open last project and files on startup"
 msgstr "Неће отворити последњи пројекат и датотеке при покретању"
 
-#: ../src/anjuta-application.c:317
+#: ../src/anjuta-application.c:395
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
 msgstr ""
 "Искључује Ањуту прописно, ослобађајући све ресурсе (за исправљање грешака)"
 
-#: ../src/anjuta-application.c:323
+#: ../src/anjuta-application.c:401
 msgid "Display program version"
 msgstr "Приказује издање програма"
 
-#: ../src/anjuta-application.c:341
+#: ../src/anjuta-application.c:407
+msgid "Specify another profile"
+msgstr "Одређује други профил"
+
+#: ../src/anjuta-application.c:408
+#| msgid "Compile file"
+msgid "profile file"
+msgstr "датотека профила"
+
+#: ../src/anjuta-application.c:425
 msgid "- Integrated Development Environment"
 msgstr "— Интегрисано развојно окружење"
 
-#: ../src/anjuta-application.c:656
+#: ../src/anjuta-application.c:764
+#, c-format
+#| msgid "Installation failed: %s"
+msgid "Invalid profile %s: %s"
+msgstr "Неисправан профил %s: %s"
+
+#: ../src/anjuta-application.c:818
 msgid "Loaded Session…"
 msgstr "Учитана сесија…"
+
+#: ../src/anjuta-menu.ui.h:1
+msgid "_New Window"
+msgstr "_Нови прозор"
 
 #: ../src/anjuta-window.c:683
 msgid "Edit"
@@ -9892,15 +9994,15 @@ msgstr "Уреди"
 msgid "Help"
 msgstr "Помоћ"
 
-#: ../src/anjuta-window.c:992
+#: ../src/anjuta-window.c:993
 msgid "Installed plugins"
 msgstr "Инсталирани прикључци"
 
-#: ../src/anjuta-window.c:996
+#: ../src/anjuta-window.c:997
 msgid "Shortcuts"
 msgstr "Пречице"
 
-#: ../src/anjuta-window.c:1068
+#: ../src/anjuta-window.c:1069
 #, c-format
 msgid "Value doesn't exist"
 msgstr "Вредност не постоји"
