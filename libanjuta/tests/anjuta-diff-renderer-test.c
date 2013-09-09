@@ -42,53 +42,31 @@ main (int argc, char **argv)
 	GtkCellRenderer *renderer;
 	GtkListStore *list_store;
 	GtkTreeIter iter;
-	const gchar diff[] = 
-		"diff --git a/libanjuta/Makefile.am b/libanjuta/Makefile.am\n"
-		"index 4ac227e..d47c978 100644\n"
-		"--- a/libanjuta/Makefile.am\n"
-		"+++ b/libanjuta/Makefile.am\n"
-		"@@ -138,7 +138,9 @@ libanjuta_3_la_SOURCES= \\\n"
-		"        anjuta-close-button.c \\\n"
-		"        anjuta-close-button.h \\\n"
-		"        anjuta-modeline.c \\\n"
-		"-       anjuta-modeline.h\n"
-		"+       anjuta-modeline.h \\\n"
-		"+       anjuta-cell-renderer-diff.c \\\n"
-		"+       anjuta-cell-renderer-diff.h\n"
-		"\n"
-		"# Glade module\n"
-		"if ENABLE_GLADE_CATALOG\n";
-	
-	const gchar multi_file_diff[] =
-		"diff --git a/AUTHORS b/AUTHORS\n"
-		"index 9f20595..7f6ead6 100644\n"
-		"--- a/AUTHORS\n"
-		"+++ b/AUTHORS\n"
-		"@@ -11,7 +11,7 @@ Maintainers and Lead Developers:\n"
-		" Developers:\n"
-		"-------------------------------------------------------------------------------\n"
-		" 	Massimo Cora'  <maxcvs@email.it> (Italy)\n"
-		"-	Carl-Anton Ingmarsson <ca.ingmarsson@gmail.com>\n"	
-		"+	Carl-Anton Ingmarsson <carlantoni@gnome.org> (Sweden)\n"
- 		"\n"
-		" Past Developers:\n"
-		"-------------------------------------------------------------------------------\n"
-		"diff --git a/plugins/git/git-clone-command.c b/plugins/git/git-clone-command.c\n"
-		"index 8fbb96a..f1665e2 100644\n"
-		"--- a/plugins/git/git-clone-command.c\n"
-		"+++ b/plugins/git/git-clone-command.c\n"
-		"@@ -1,7 +1,7 @@\n"
-		" /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */\n"
-		" /*\n"
-		"  * anjuta\n"
-		"- * Copyright (C) Carl-Anton Ingmarsson 2009 <ca.ingmarsson@gmail.com>\n"
-		"+ * Copyright (C) Carl-Anton Ingmarsson 2009 <carlantoni@gnome.org>\n"
-		"  *\n" 
-		"  * anjuta is free software.\n"
-		"  *\n";
+	const gchar header1[] =
+		"diff --git a/libanjuta/Makefile.am b/libanjuta/Makefile.am\n";
+
+	const gchar header2[] =
+		"index 4ac227e..d47c978 100644\n";
+
+	const gchar header3[] =
+		"--- a/libanjuta/Makefile.am\n";
+
+	const gchar header4[] = 
+		"+++ b/libanjuta/Makefile.am\n";
+
+	const gchar hunk_header[] =
+		"@@ -138,7 +138,9 @@ libanjuta_3_la_SOURCES= \\\n";
+
+	const gchar context[] =
+		"        anjuta-close-button.c \\\n";
+
+	const gchar add[] =
+		"+       anjuta-modeline.h \\\n";
+
+	const gchar delete[] =
+		"-       anjuta-modeline.h\n";
 
 	const gchar non_diff[] = "non-diff text";
-	const gchar hunk_line[] = "@@";
 	const gchar broken_hunk[] = "@";
 
 	gtk_init (&argc, &argv);
@@ -114,22 +92,40 @@ main (int argc, char **argv)
 
 	list_store = gtk_list_store_new (NUM_COLS, G_TYPE_STRING);
 
-	/* Test general diffs */
+	/* Test headers*/
 	gtk_list_store_append (list_store, &iter);
-	gtk_list_store_set (list_store, &iter, COL_DIFF, diff, -1);
+	gtk_list_store_set (list_store, &iter, COL_DIFF, header1, -1);
 
-	/* Test multi-file diffs */
 	gtk_list_store_append (list_store, &iter);
-	gtk_list_store_set (list_store, &iter, COL_DIFF, multi_file_diff, -1);
+	gtk_list_store_set (list_store, &iter, COL_DIFF, header2, -1);
+
+	gtk_list_store_append (list_store, &iter);
+	gtk_list_store_set (list_store, &iter, COL_DIFF, header3, -1);
+
+	gtk_list_store_append (list_store, &iter);
+	gtk_list_store_set (list_store, &iter, COL_DIFF, header4, -1);
+
+	/* Test hunk headers */
+	gtk_list_store_append (list_store, &iter);
+	gtk_list_store_set (list_store, &iter, COL_DIFF, hunk_header, -1);
+
+	/* Context lines */
+	gtk_list_store_append (list_store, &iter);
+	gtk_list_store_set (list_store, &iter, COL_DIFF, context, -1);
+
+	/* Add */
+	gtk_list_store_append (list_store, &iter);
+	gtk_list_store_set (list_store, &iter, COL_DIFF, add, -1);
+
+	/* Delete */
+	gtk_list_store_append (list_store, &iter);
+	gtk_list_store_set (list_store, &iter, COL_DIFF, delete, -1);
 
 	/* Test non-diff text */
 	gtk_list_store_append (list_store, &iter);
 	gtk_list_store_set (list_store, &iter, COL_DIFF, non_diff, -1);
 
-	/* Test hunk line detection */
-	gtk_list_store_append (list_store, &iter);
-	gtk_list_store_set (list_store, &iter, COL_DIFF, hunk_line, -1);
-
+	/* Test broken hunks */
 	gtk_list_store_append (list_store, &iter);
 	gtk_list_store_set (list_store, &iter, COL_DIFF, broken_hunk, -1);
 

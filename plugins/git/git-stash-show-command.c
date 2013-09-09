@@ -84,6 +84,7 @@ git_stash_show_command_new (const gchar *working_directory, const gchar *stash)
 	
 	self =  g_object_new (GIT_TYPE_STASH_SHOW_COMMAND, 
 						  "working-directory", working_directory,
+	                      "single-line-output", TRUE,
 						  NULL);
 	
 	self->priv->stash = g_strdup (stash);

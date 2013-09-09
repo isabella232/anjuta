@@ -88,6 +88,7 @@ git_diff_command_new (const gchar *working_directory, const gchar *path,
 
 	self = g_object_new (GIT_TYPE_DIFF_COMMAND, 
 						 "working-directory", working_directory,
+	                     "single-line-output", TRUE,
 						 NULL);
 
 	self->priv->path = g_strdup (path);

@@ -355,7 +355,6 @@ on_diff_command_finished (AnjutaCommand *command, guint return_code,
 	GtkTreePath *parent_path;
 	GtkTreeIter parent_iter;
 	GtkTreeIter iter;
-	GString *string;
 	GQueue *output;
 	gchar *output_line;
 
@@ -364,27 +363,25 @@ on_diff_command_finished (AnjutaCommand *command, guint return_code,
 		status_model = g_object_get_data (G_OBJECT (command), "model");
 		parent_path = g_object_get_data (G_OBJECT (command), "parent-path");
 		gtk_tree_model_get_iter (status_model, &parent_iter, parent_path);
-		string = g_string_new ("");
 		output = git_raw_output_command_get_output (GIT_RAW_OUTPUT_COMMAND (command));
 
 		while (g_queue_peek_head (output))
 		{
 			output_line = g_queue_pop_head (output);
-			g_string_append (string, output_line);
+			gtk_tree_store_append (GTK_TREE_STORE (status_model), &iter, &parent_iter);
+			gtk_tree_store_set (GTK_TREE_STORE (status_model), &iter, 
+			                    COL_DIFF, output_line, 
+			                    -1);
 
 			g_free (output_line);
 		}
 
-		gtk_tree_store_append (GTK_TREE_STORE (status_model), &iter, &parent_iter);
-		gtk_tree_store_set (GTK_TREE_STORE (status_model), &iter, COL_DIFF, string->str, -1);
+		
 
 		g_hash_table_remove (self->priv->diff_commands, command);
 		
 		if (g_hash_table_size (self->priv->diff_commands) == 0)
 			git_status_pane_set_model (self);
-			
-		g_string_free (string, TRUE);
-		
 	}
 }
 

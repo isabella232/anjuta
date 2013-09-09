@@ -33,6 +33,15 @@ enum
 };
 
 
+/* Line types */
+typedef enum
+{
+	LINE_TYPE_HEADER,
+	LINE_TYPE_HUNK_HEADER,
+	LINE_TYPE_ADD,
+	LINE_TYPE_DELETE,
+	LINE_TYPE_CONTEXT
+} LineType;
 
 G_DEFINE_TYPE (AnjutaCellRendererDiff, anjuta_cell_renderer_diff, GTK_TYPE_CELL_RENDERER);
 
@@ -146,79 +155,66 @@ static PangoAttrList *
 create_attribute_list (const gchar *diff)
 {
 	PangoAttrList *list;
-	const gchar *line_begin, *line_end;
-	guint begin_index, end_index;
-	gboolean found_diff = FALSE;
-	gboolean found_hunk = FALSE;
-	PangoAttribute *attribute;
+	LineType type;
 
 	list = pango_attr_list_new ();
 
 	/* Make all of the text monospace */
 	pango_attr_list_insert (list, pango_attr_family_new ("Monospace"));
 
-	line_begin = diff;
-
-	while (line_begin && *line_begin)
+	/* Assume that diff points to one line of a unified diff */
+	type = LINE_TYPE_CONTEXT;
+	
+	if (diff && diff[0])
 	{
-		line_end = strchr (line_begin, '\n');
-
-		if (!line_end)
-			line_end = diff + strlen (line_begin);
-
-		begin_index = line_begin - diff;
-		end_index = line_end - diff;
-		attribute = NULL;
-
-		/* Handle multiple files. Context lines should start with a 
-		 * whitespace, so just searching the first few characters 
-		 * of the line for "diff" should detect the next file */
-		if (g_str_has_prefix (line_begin, "diff"))
+		if (*diff != ' ')
 		{
-			found_diff = TRUE;
-			found_hunk = FALSE;
-		}
-
-		if (line_begin[0] == '@' && line_begin[1] == '@')
-		{
-			/* Dark blue */
-			attribute = pango_attr_foreground_new (0, 0, 0x8000);
-
-			/* Don't decorate diff headers */
-			found_hunk = TRUE;
-		}
-		else if (found_hunk)
-		{
-			if (line_begin[0] == '+')
+			if (diff[0] == '@' && diff[1] == '@')
+				type = LINE_TYPE_HUNK_HEADER;
+			else if (diff[0] == '+')
 			{
-				/* Dark green */
-				attribute = pango_attr_foreground_new (0, 0x8000, 0);
+				if (g_str_has_prefix (diff, "+++ "))
+				    type = LINE_TYPE_HEADER;
+				else
+					type = LINE_TYPE_ADD;
 			}
-			else if (line_begin[0] == '-')
+			else if (diff[0] == '-')
 			{
-				/* Red */
-				attribute = pango_attr_foreground_new (0xffff, 0, 0);	
+				if (g_str_has_prefix (diff, "--- "))
+					type = LINE_TYPE_HEADER;
+				else
+					type = LINE_TYPE_DELETE;
 			}
+			else
+				type = LINE_TYPE_HEADER;
 		}
-		else if (found_diff)
-		{
-			/* Make file headers easier to see by making them bold */
-			attribute = pango_attr_weight_new (PANGO_WEIGHT_BOLD);
-		}
-			
-		if (attribute)
-		{
-			attribute->start_index = begin_index;
-			attribute->end_index = end_index;
-
-			pango_attr_list_insert (list, attribute);
-		}
-
-		if (*line_end)
-			line_begin = line_end + 1;
-		else
-			line_begin = NULL;
 	}
+
+	switch (type)
+	{
+		case LINE_TYPE_HEADER:
+			/* Make file headers easier to see by making them bold */
+			pango_attr_list_insert (list, 
+			                        pango_attr_weight_new (PANGO_WEIGHT_BOLD));
+			break;
+		case LINE_TYPE_HUNK_HEADER:
+			/* Dark blue */
+			pango_attr_list_insert (list, 
+			                        pango_attr_foreground_new (0, 0, 0x8000));
+			break;
+		case LINE_TYPE_ADD:
+			/* Dark green */
+			pango_attr_list_insert (list, 
+			                        pango_attr_foreground_new (0, 0x8000, 0));
+			break;
+		case LINE_TYPE_DELETE:
+			/* Red */
+			pango_attr_list_insert (list, 
+			                        pango_attr_foreground_new (0xffff, 0, 0));
+			break;
+		default:
+			break;
+	};
 
 	return list;
 }
@@ -228,16 +224,41 @@ anjuta_cell_renderer_diff_set_diff (AnjutaCellRendererDiff *self,
                                     const gchar *diff)
 {
 	PangoAttrList *attributes = NULL;
+	gchar *newline;
+	gchar *diff_without_newline = NULL;
 
 	if (diff)
+	{
+		newline = strchr (diff, '\n');
+
+		if (newline)
+		{
+			diff_without_newline = g_strndup (diff, newline - diff);
+			g_object_set (G_OBJECT (self->priv->text_cell),
+			                        "text", diff_without_newline,
+			                        NULL);
+			g_free (diff_without_newline);
+		}
+		else
+		{
+			g_object_set (G_OBJECT (self->priv->text_cell),
+			              "text", diff,
+			              NULL);
+		}
+
 		attributes = create_attribute_list (diff);
 
-	g_object_set (G_OBJECT (self->priv->text_cell),
-	              "attributes", attributes, 
-	              "text", diff, 
-	              NULL);
+		g_object_set (G_OBJECT (self->priv->text_cell),
+	          		  "attributes", attributes,
+		              NULL);
 
-	pango_attr_list_unref (attributes);
+		pango_attr_list_unref (attributes);
+	}
+	else
+	{
+		g_object_set (G_OBJECT (self->priv->text_cell),
+		              "text", "", NULL);
+	}
 }
 
 GtkCellRenderer *

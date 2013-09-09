@@ -69,25 +69,30 @@ on_stash_diff_command_finished (AnjutaCommand *command, guint return_code,
                                 GtkTreeStore *stash_model)
 {
 	GtkTreePath *parent_path;
-	GString *string;
 	GtkTreeIter parent_iter;
 	GtkTreeIter iter;
+	GQueue *output;
+	gchar *output_line;
 
 	if (return_code == 0)
 	{
-		string = g_string_new ("");
-		git_pane_send_raw_output_to_string (command, string);
-
 		parent_path = g_object_get_data (G_OBJECT (command), "parent-path");
 		gtk_tree_model_get_iter (GTK_TREE_MODEL (stash_model), &parent_iter,
 		                         parent_path);
 
-		gtk_tree_store_append (stash_model, &iter, &parent_iter);
-		gtk_tree_store_set (stash_model, &iter,
-		                    COL_DIFF, string->str,
-		                    -1);
+		output = git_raw_output_command_get_output (GIT_RAW_OUTPUT_COMMAND (command));
 
-		g_string_free (string, TRUE);
+		while (g_queue_peek_head (output))
+		{
+			output_line = g_queue_pop_head (output);
+
+			gtk_tree_store_append (stash_model, &iter, &parent_iter);
+			gtk_tree_store_set (stash_model, &iter,
+			                    COL_DIFF, output_line,
+			                    -1);
+
+			g_free (output_line);
+		}
 	}
 }
 
