@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-09-01 15:04+0000\n"
-"PO-Revision-Date: 2013-09-01 20:53+0100\n"
+"POT-Creation-Date: 2013-09-10 19:57+0000\n"
+"PO-Revision-Date: 2013-09-10 22:07+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: Slovenian\n"
@@ -634,47 +634,47 @@ msgid "Unable to load user interface file: %s"
 msgstr "Ni mogoče naložiti datoteke uporabniškega vmesnika: %s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
-#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:178
+#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:183
 msgid "Modified"
 msgstr "Spremenjeno"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:95
-#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:181
+#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:186
 msgid "Added"
 msgstr "Dodano"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:98
-#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:184
+#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:189
 msgid "Deleted"
 msgstr "Izbrisano"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:101
-#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:187
+#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:192
 msgid "Conflicted"
 msgstr "V sporu"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:105
-#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:191
+#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:196
 msgid "Up-to-date"
 msgstr "Posodobljeno"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:109
-#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:195
+#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:200
 msgid "Locked"
 msgstr "Zaklenjeno"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:112
-#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:198
+#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:203
 msgid "Missing"
 msgstr "Manjkajoče"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:115
-#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:201
+#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:206
 msgid "Unversioned"
 msgstr "Brez določene različice"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:119
-#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:205
+#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:210
 msgid "Ignored"
 msgstr "Prezrto"
 
@@ -5406,11 +5406,11 @@ msgstr "Povrni"
 msgid "Stash Uncommitted Changes"
 msgstr "Založi neuveljavljene spremembe"
 
-#: ../plugins/git/git-status-pane.c:475
+#: ../plugins/git/git-status-pane.c:508
 msgid "Changes to be committed"
 msgstr "Spremembe pripravljene za uveljavitev"
 
-#: ../plugins/git/git-status-pane.c:485
+#: ../plugins/git/git-status-pane.c:518
 msgid "Changed but not updated"
 msgstr "Spremenjeno, vendar ne posodobljeno"
 
@@ -6594,7 +6594,7 @@ msgstr "Izberite hrbtišče projekta za odpiranje."
 
 #: ../plugins/project-manager/dialogs.c:683
 #: ../plugins/project-manager/dialogs.c:688
-#: ../plugins/project-manager/plugin.c:926
+#: ../plugins/project-manager/plugin.c:927
 msgid "Project properties"
 msgstr "Lastnosti projekta"
 
@@ -6744,36 +6744,49 @@ msgstr ""
 "\n"
 
 # MULTIPLE PLURAL!
-#: ../plugins/project-manager/plugin.c:720
+#. Translator: there is at least 2 elements to remove
+#: ../plugins/project-manager/plugin.c:721
 #, c-format
 msgid ""
+"Are you sure you want to remove %d element from the project?\n"
+"\n"
+msgid_plural ""
 "Are you sure you want to remove %d elements from the project?\n"
 "\n"
-msgstr ""
+msgstr[0] ""
 "Ali ste prepričani, da želite odstraniti %d predmetov iz projekta?\n"
 "\n"
+msgstr[1] ""
+"Ali ste prepričani, da želite odstraniti %d predmet iz projekta?\n"
+"\n"
+msgstr[2] ""
+"Ali ste prepričani, da želite odstraniti %d predmeta iz projekta?\n"
+"\n"
+msgstr[3] ""
+"Ali ste prepričani, da želite odstraniti %d predmete iz projekta?\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:725
+#: ../plugins/project-manager/plugin.c:726
 msgid "The group will be deleted from the file system.\n"
 msgstr "Skupina bo izbrisana iz datotečnega sistema.\n"
 
-#: ../plugins/project-manager/plugin.c:730
+#: ../plugins/project-manager/plugin.c:731
 msgid "The group will not be deleted from the file system.\n"
 msgstr "Skupina ne bo izbrisana iz datotečnega sistema.\n"
 
-#: ../plugins/project-manager/plugin.c:736
+#: ../plugins/project-manager/plugin.c:737
 msgid "The source file will be deleted from the file system.\n"
 msgstr "Izvorna datoteka bo izbrisana iz datotečnega sistema.\n"
 
-#: ../plugins/project-manager/plugin.c:741
+#: ../plugins/project-manager/plugin.c:742
 msgid "The source file will not be deleted from the file system.\n"
 msgstr "Izvorna datoteka ne bo izbrisana iz datotečnega sistema.\n"
 
-#: ../plugins/project-manager/plugin.c:753
+#: ../plugins/project-manager/plugin.c:754
 msgid "Confirm remove"
 msgstr "Potrditev odstranjevanja"
 
-#: ../plugins/project-manager/plugin.c:800
+#: ../plugins/project-manager/plugin.c:801
 #, c-format
 msgid ""
 "Failed to remove '%s':\n"
@@ -6782,109 +6795,109 @@ msgstr ""
 "Ni mogoče odstraniti '%s':\n"
 "%s"
 
-#: ../plugins/project-manager/plugin.c:866
+#: ../plugins/project-manager/plugin.c:867
 #, c-format
 msgid "Failed to retrieve URI info of %s: %s"
 msgstr "Napaka med pridobivanjem naslova URI podrobnosti %s: %s"
 
-#: ../plugins/project-manager/plugin.c:902
+#: ../plugins/project-manager/plugin.c:903
 msgid "_Project"
 msgstr "_Projekt"
 
-#: ../plugins/project-manager/plugin.c:906
+#: ../plugins/project-manager/plugin.c:907
 msgid "New _Folder…"
 msgstr "Nova _mapa ..."
 
-#: ../plugins/project-manager/plugin.c:906
-#: ../plugins/project-manager/plugin.c:940
+#: ../plugins/project-manager/plugin.c:907
+#: ../plugins/project-manager/plugin.c:941
 msgid "Add a new folder to the project"
 msgstr "Dodaj novo mapo v projekt."
 
-#: ../plugins/project-manager/plugin.c:911
+#: ../plugins/project-manager/plugin.c:912
 msgid "New _Target…"
 msgstr "Nov _cilj ..."
 
-#: ../plugins/project-manager/plugin.c:911
-#: ../plugins/project-manager/plugin.c:945
+#: ../plugins/project-manager/plugin.c:912
+#: ../plugins/project-manager/plugin.c:946
 msgid "Add a new target to the project"
 msgstr "Dodaj nov cilj k projektu"
 
-#: ../plugins/project-manager/plugin.c:916
+#: ../plugins/project-manager/plugin.c:917
 msgid "Add _Source File…"
 msgstr "Dodaj _izvorno datoteko ..."
 
-#: ../plugins/project-manager/plugin.c:916
-#: ../plugins/project-manager/plugin.c:950
-#: ../plugins/project-manager/plugin.c:960
+#: ../plugins/project-manager/plugin.c:917
+#: ../plugins/project-manager/plugin.c:951
+#: ../plugins/project-manager/plugin.c:961
 msgid "Add a source file to a target"
 msgstr "Dodaj izvorno datoteko k projektu"
 
-#: ../plugins/project-manager/plugin.c:921
+#: ../plugins/project-manager/plugin.c:922
 msgid "Add _Library…"
 msgstr "Dodaj _knjižnico ..."
 
-#: ../plugins/project-manager/plugin.c:921
+#: ../plugins/project-manager/plugin.c:922
 msgid "Add a module to a target"
 msgstr "Dodaj modul k cilju"
 
-#: ../plugins/project-manager/plugin.c:926
-#: ../plugins/project-manager/plugin.c:965
+#: ../plugins/project-manager/plugin.c:927
+#: ../plugins/project-manager/plugin.c:966
 msgid "_Properties"
 msgstr "_Lastnosti"
 
-#: ../plugins/project-manager/plugin.c:931
+#: ../plugins/project-manager/plugin.c:932
 msgid "Close Pro_ject"
 msgstr "Zapri pro_jekt"
 
-#: ../plugins/project-manager/plugin.c:931
+#: ../plugins/project-manager/plugin.c:932
 msgid "Close project"
 msgstr "Zapri projekt"
 
-#: ../plugins/project-manager/plugin.c:940
+#: ../plugins/project-manager/plugin.c:941
 msgid "New _Folder"
 msgstr "Nova _mapa"
 
-#: ../plugins/project-manager/plugin.c:945
+#: ../plugins/project-manager/plugin.c:946
 msgid "New _Target"
 msgstr "Nov _cilj"
 
-#: ../plugins/project-manager/plugin.c:950
+#: ../plugins/project-manager/plugin.c:951
 msgid "Add _Source File"
 msgstr "Dodaj _izvorno datoteko"
 
-#: ../plugins/project-manager/plugin.c:955
+#: ../plugins/project-manager/plugin.c:956
 msgid "Add _Library"
 msgstr "Dodaj _knjižnico"
 
-#: ../plugins/project-manager/plugin.c:955
+#: ../plugins/project-manager/plugin.c:956
 msgid "Add a library to a target"
 msgstr "Dodaj knjižnico k cilju"
 
-#: ../plugins/project-manager/plugin.c:960
+#: ../plugins/project-manager/plugin.c:961
 msgid "_Add to Project"
 msgstr "_Dodaj projektu"
 
-#: ../plugins/project-manager/plugin.c:965
+#: ../plugins/project-manager/plugin.c:966
 msgid "Properties of group/target/source"
 msgstr "Lastnosti skupine/cilja/vira"
 
-#: ../plugins/project-manager/plugin.c:970
+#: ../plugins/project-manager/plugin.c:971
 msgid "Re_move"
 msgstr "_Odstrani"
 
-#: ../plugins/project-manager/plugin.c:970
+#: ../plugins/project-manager/plugin.c:971
 msgid "Remove from project"
 msgstr "Odstrani iz projekta"
 
-#: ../plugins/project-manager/plugin.c:975
+#: ../plugins/project-manager/plugin.c:976
 msgid "_Sort"
 msgstr "_Razvrsti"
 
-#: ../plugins/project-manager/plugin.c:975
+#: ../plugins/project-manager/plugin.c:976
 msgid "Sort shortcuts"
 msgstr "Razvrsti tipkovne bližnjice"
 
-#: ../plugins/project-manager/plugin.c:1310
+#: ../plugins/project-manager/plugin.c:1311
 #, c-format
 msgid ""
 "Failed to parse project (the project is opened, but there will be no project "
@@ -6893,42 +6906,42 @@ msgstr ""
 "Napaka med razčlenjevanjem projekta (projekt je odprt, vendar ne bo pogleda "
 "projekta) %s: %s\n"
 
-#: ../plugins/project-manager/plugin.c:1320
+#: ../plugins/project-manager/plugin.c:1321
 msgid "Update project view…"
 msgstr "Posodobi pogled projekta ..."
 
-#: ../plugins/project-manager/plugin.c:1325
-#: ../plugins/project-manager/plugin.c:1447
-#: ../plugins/project-manager/plugin.c:1626
+#: ../plugins/project-manager/plugin.c:1326
+#: ../plugins/project-manager/plugin.c:1448
+#: ../plugins/project-manager/plugin.c:1627
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
 #: ../plugins/symbol-db/plugin.c:2160
 msgid "Project"
 msgstr "Projekt"
 
-#: ../plugins/project-manager/plugin.c:1363
+#: ../plugins/project-manager/plugin.c:1364
 #, c-format
 msgid "Loading project: %s"
 msgstr "Nalaganje projekta: %s"
 
-#: ../plugins/project-manager/plugin.c:1539
+#: ../plugins/project-manager/plugin.c:1540
 #, c-format
 msgid "Error closing project: %s"
 msgstr "Napaka med zapiranjem projekta: %s"
 
-#: ../plugins/project-manager/plugin.c:1605
+#: ../plugins/project-manager/plugin.c:1606
 msgid "Project manager actions"
 msgstr "Dejanja upravljalnika projektov"
 
-#: ../plugins/project-manager/plugin.c:1613
+#: ../plugins/project-manager/plugin.c:1614
 msgid "Project manager popup actions"
 msgstr "Pojavna okna upravljalnika projektov"
 
-#: ../plugins/project-manager/plugin.c:2478
+#: ../plugins/project-manager/plugin.c:2479
 msgid "Initializing Project…"
 msgstr "Zaganjanje projekta ..."
 
-#: ../plugins/project-manager/plugin.c:2481
+#: ../plugins/project-manager/plugin.c:2482
 msgid "Project Loaded"
 msgstr "Naložen projekt"
 
