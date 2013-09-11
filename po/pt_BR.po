@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: Anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-08-31 21:29+0000\n"
-"PO-Revision-Date: 2013-08-31 18:35-0300\n"
+"POT-Creation-Date: 2013-09-10 23:24+0000\n"
+"PO-Revision-Date: 2013-09-10 22:59-0300\n"
 "Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -32,7 +32,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
@@ -647,47 +647,47 @@ msgid "Unable to load user interface file: %s"
 msgstr "Não foi possível carregar arquivo de interface com usuário: %s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
-#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:178
+#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:183
 msgid "Modified"
 msgstr "Modificado"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:95
-#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:181
+#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:186
 msgid "Added"
 msgstr "Adicionado"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:98
-#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:184
+#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:189
 msgid "Deleted"
 msgstr "Excluído"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:101
-#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:187
+#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:192
 msgid "Conflicted"
 msgstr "Em conflito"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:105
-#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:191
+#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:196
 msgid "Up-to-date"
 msgstr "Atual"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:109
-#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:195
+#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:200
 msgid "Locked"
 msgstr "Travado"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:112
-#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:198
+#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:203
 msgid "Missing"
 msgstr "Ausente"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:115
-#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:201
+#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:206
 msgid "Unversioned"
 msgstr "Sem controle de versão"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:119
-#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:205
+#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:210
 msgid "Ignored"
 msgstr "Ignorado"
 
@@ -5437,11 +5437,11 @@ msgstr "Reverter"
 msgid "Stash Uncommitted Changes"
 msgstr "Fazer stash das alterações sem commit"
 
-#: ../plugins/git/git-status-pane.c:475
+#: ../plugins/git/git-status-pane.c:508
 msgid "Changes to be committed"
 msgstr "Alterações para fazer commit"
 
-#: ../plugins/git/git-status-pane.c:485
+#: ../plugins/git/git-status-pane.c:518
 msgid "Changed but not updated"
 msgstr "Alterado mas não atualizado"
 
@@ -6622,7 +6622,7 @@ msgstr "Por favor selecione uma retaguarda (backend) a ser utilizada."
 
 #: ../plugins/project-manager/dialogs.c:683
 #: ../plugins/project-manager/dialogs.c:688
-#: ../plugins/project-manager/plugin.c:926
+#: ../plugins/project-manager/plugin.c:927
 msgid "Project properties"
 msgstr "Propriedades do projeto"
 
@@ -6770,36 +6770,43 @@ msgstr ""
 "Você tem certeza de que deseja remover o elemento \"%s\" do projeto?\n"
 "\n"
 
-#: ../plugins/project-manager/plugin.c:720
+#. Translator: there is at least 2 elements to remove
+#: ../plugins/project-manager/plugin.c:721
 #, c-format
 msgid ""
+"Are you sure you want to remove %d element from the project?\n"
+"\n"
+msgid_plural ""
 "Are you sure you want to remove %d elements from the project?\n"
 "\n"
-msgstr ""
+msgstr[0] ""
+"Você tem certeza de que deseja remover %d elemento do projeto?\n"
+"\n"
+msgstr[1] ""
 "Você tem certeza de que deseja remover %d elementos do projeto?\n"
 "\n"
 
-#: ../plugins/project-manager/plugin.c:725
+#: ../plugins/project-manager/plugin.c:726
 msgid "The group will be deleted from the file system.\n"
 msgstr "O grupo será excluído do sistema de arquivos.\n"
 
-#: ../plugins/project-manager/plugin.c:730
+#: ../plugins/project-manager/plugin.c:731
 msgid "The group will not be deleted from the file system.\n"
 msgstr "O grupo não será excluído do sistema de arquivos.\n"
 
-#: ../plugins/project-manager/plugin.c:736
+#: ../plugins/project-manager/plugin.c:737
 msgid "The source file will be deleted from the file system.\n"
 msgstr "O arquivo fonte será excluído do sistema de arquivos.\n"
 
-#: ../plugins/project-manager/plugin.c:741
+#: ../plugins/project-manager/plugin.c:742
 msgid "The source file will not be deleted from the file system.\n"
 msgstr "O arquivo fonte não será excluído do sistema de arquivos.\n"
 
-#: ../plugins/project-manager/plugin.c:753
+#: ../plugins/project-manager/plugin.c:754
 msgid "Confirm remove"
 msgstr "Confirmar exclusão"
 
-#: ../plugins/project-manager/plugin.c:800
+#: ../plugins/project-manager/plugin.c:801
 #, c-format
 msgid ""
 "Failed to remove '%s':\n"
@@ -6808,109 +6815,109 @@ msgstr ""
 "Falha ao remover \"%s\":\n"
 "%s"
 
-#: ../plugins/project-manager/plugin.c:866
+#: ../plugins/project-manager/plugin.c:867
 #, c-format
 msgid "Failed to retrieve URI info of %s: %s"
 msgstr "Falha ao obter a informação de URI de %s: %s"
 
-#: ../plugins/project-manager/plugin.c:902
+#: ../plugins/project-manager/plugin.c:903
 msgid "_Project"
 msgstr "_Projeto"
 
-#: ../plugins/project-manager/plugin.c:906
+#: ../plugins/project-manager/plugin.c:907
 msgid "New _Folder…"
 msgstr "Nova _pasta…"
 
-#: ../plugins/project-manager/plugin.c:906
-#: ../plugins/project-manager/plugin.c:940
+#: ../plugins/project-manager/plugin.c:907
+#: ../plugins/project-manager/plugin.c:941
 msgid "Add a new folder to the project"
 msgstr "Adiciona uma nova pasta ao projeto"
 
-#: ../plugins/project-manager/plugin.c:911
+#: ../plugins/project-manager/plugin.c:912
 msgid "New _Target…"
 msgstr "Novo _alvo…"
 
-#: ../plugins/project-manager/plugin.c:911
-#: ../plugins/project-manager/plugin.c:945
+#: ../plugins/project-manager/plugin.c:912
+#: ../plugins/project-manager/plugin.c:946
 msgid "Add a new target to the project"
 msgstr "Adicionar um alvo ao projeto"
 
-#: ../plugins/project-manager/plugin.c:916
+#: ../plugins/project-manager/plugin.c:917
 msgid "Add _Source File…"
 msgstr "Adicionar arquivo _fonte…"
 
-#: ../plugins/project-manager/plugin.c:916
-#: ../plugins/project-manager/plugin.c:950
-#: ../plugins/project-manager/plugin.c:960
+#: ../plugins/project-manager/plugin.c:917
+#: ../plugins/project-manager/plugin.c:951
+#: ../plugins/project-manager/plugin.c:961
 msgid "Add a source file to a target"
 msgstr "Adiciona um arquivo de código fonte ao alvo"
 
-#: ../plugins/project-manager/plugin.c:921
+#: ../plugins/project-manager/plugin.c:922
 msgid "Add _Library…"
 msgstr "Adicionar bib_lioteca…"
 
-#: ../plugins/project-manager/plugin.c:921
+#: ../plugins/project-manager/plugin.c:922
 msgid "Add a module to a target"
 msgstr "Adiciona um módulo para um alvo"
 
-#: ../plugins/project-manager/plugin.c:926
-#: ../plugins/project-manager/plugin.c:965
+#: ../plugins/project-manager/plugin.c:927
+#: ../plugins/project-manager/plugin.c:966
 msgid "_Properties"
 msgstr "_Propriedades"
 
-#: ../plugins/project-manager/plugin.c:931
+#: ../plugins/project-manager/plugin.c:932
 msgid "Close Pro_ject"
 msgstr "Fechar Pro_jeto"
 
-#: ../plugins/project-manager/plugin.c:931
+#: ../plugins/project-manager/plugin.c:932
 msgid "Close project"
 msgstr "Fecha o projeto"
 
-#: ../plugins/project-manager/plugin.c:940
+#: ../plugins/project-manager/plugin.c:941
 msgid "New _Folder"
 msgstr "Nova _pasta"
 
-#: ../plugins/project-manager/plugin.c:945
+#: ../plugins/project-manager/plugin.c:946
 msgid "New _Target"
 msgstr "Novo _alvo"
 
-#: ../plugins/project-manager/plugin.c:950
+#: ../plugins/project-manager/plugin.c:951
 msgid "Add _Source File"
 msgstr "Adicionar arquivo _fonte"
 
-#: ../plugins/project-manager/plugin.c:955
+#: ../plugins/project-manager/plugin.c:956
 msgid "Add _Library"
 msgstr "Adicionar biblioteca"
 
-#: ../plugins/project-manager/plugin.c:955
+#: ../plugins/project-manager/plugin.c:956
 msgid "Add a library to a target"
 msgstr "Adiciona uma biblioteca ao alvo"
 
-#: ../plugins/project-manager/plugin.c:960
+#: ../plugins/project-manager/plugin.c:961
 msgid "_Add to Project"
 msgstr "Adicionar ao projeto"
 
-#: ../plugins/project-manager/plugin.c:965
+#: ../plugins/project-manager/plugin.c:966
 msgid "Properties of group/target/source"
 msgstr "Propriedades do grupo/alvo/fonte"
 
-#: ../plugins/project-manager/plugin.c:970
+#: ../plugins/project-manager/plugin.c:971
 msgid "Re_move"
 msgstr "Re_mover"
 
-#: ../plugins/project-manager/plugin.c:970
+#: ../plugins/project-manager/plugin.c:971
 msgid "Remove from project"
 msgstr "Remove do projeto"
 
-#: ../plugins/project-manager/plugin.c:975
+#: ../plugins/project-manager/plugin.c:976
 msgid "_Sort"
 msgstr "Orde_nar"
 
-#: ../plugins/project-manager/plugin.c:975
+#: ../plugins/project-manager/plugin.c:976
 msgid "Sort shortcuts"
 msgstr "Ordena atalhos"
 
-#: ../plugins/project-manager/plugin.c:1310
+#: ../plugins/project-manager/plugin.c:1311
 #, c-format
 msgid ""
 "Failed to parse project (the project is opened, but there will be no project "
@@ -6919,42 +6926,42 @@ msgstr ""
 "Falha ao analisar o projeto (o projeto está aberto, mas não existe nenhum "
 "projeto visível) %s: %s\n"
 
-#: ../plugins/project-manager/plugin.c:1320
+#: ../plugins/project-manager/plugin.c:1321
 msgid "Update project view…"
 msgstr "Atualizar visão de projeto…"
 
-#: ../plugins/project-manager/plugin.c:1325
-#: ../plugins/project-manager/plugin.c:1447
-#: ../plugins/project-manager/plugin.c:1626
+#: ../plugins/project-manager/plugin.c:1326
+#: ../plugins/project-manager/plugin.c:1448
+#: ../plugins/project-manager/plugin.c:1627
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
 #: ../plugins/symbol-db/plugin.c:2160
 msgid "Project"
 msgstr "Projeto"
 
-#: ../plugins/project-manager/plugin.c:1363
+#: ../plugins/project-manager/plugin.c:1364
 #, c-format
 msgid "Loading project: %s"
 msgstr "Carregando o projeto: %s"
 
-#: ../plugins/project-manager/plugin.c:1539
+#: ../plugins/project-manager/plugin.c:1540
 #, c-format
 msgid "Error closing project: %s"
 msgstr "Erro ao fechar o projeto: %s"
 
-#: ../plugins/project-manager/plugin.c:1605
+#: ../plugins/project-manager/plugin.c:1606
 msgid "Project manager actions"
 msgstr "Ações do gerenciador de projeto"
 
-#: ../plugins/project-manager/plugin.c:1613
+#: ../plugins/project-manager/plugin.c:1614
 msgid "Project manager popup actions"
 msgstr "Ações do menu de contexto do gerenciador de projeto"
 
-#: ../plugins/project-manager/plugin.c:2478
+#: ../plugins/project-manager/plugin.c:2479
 msgid "Initializing Project…"
 msgstr "Inicializando o projeto…"
 
-#: ../plugins/project-manager/plugin.c:2481
+#: ../plugins/project-manager/plugin.c:2482
 msgid "Project Loaded"
 msgstr "Projeto carregado"
 
