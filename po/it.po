@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-03 18:58+0200\n"
+"POT-Creation-Date: 2013-09-11 09:01+0200\n"
 "PO-Revision-Date: 2013-09-03 10:01+0200\n"
 "Last-Translator: Claudio Arseni <claudio.arseni@ubuntu.com>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
@@ -5432,11 +5432,11 @@ msgstr "Inverti"
 msgid "Stash Uncommitted Changes"
 msgstr "Recesso delle modifiche senza commit"
 
-#: ../plugins/git/git-status-pane.c:485
+#: ../plugins/git/git-status-pane.c:508
 msgid "Changes to be committed"
 msgstr "Modifiche delle quali eseguire il commit"
 
-#: ../plugins/git/git-status-pane.c:495
+#: ../plugins/git/git-status-pane.c:518
 msgid "Changed but not updated"
 msgstr "Modificato ma non aggiornato"
 
@@ -6622,7 +6622,7 @@ msgstr "Selezionare un backend di progetto da usare."
 
 #: ../plugins/project-manager/dialogs.c:683
 #: ../plugins/project-manager/dialogs.c:688
-#: ../plugins/project-manager/plugin.c:926
+#: ../plugins/project-manager/plugin.c:927
 msgid "Project properties"
 msgstr "Proprietà progetto"
 
@@ -6770,36 +6770,43 @@ msgstr ""
 "Rimuovere veramente l'elemento «%s» dal progetto?\n"
 "\n"
 
-#: ../plugins/project-manager/plugin.c:720
+#. Translator: there is at least 2 elements to remove
+#: ../plugins/project-manager/plugin.c:721
 #, c-format
 msgid ""
+"Are you sure you want to remove %d element from the project?\n"
+"\n"
+msgid_plural ""
 "Are you sure you want to remove %d elements from the project?\n"
 "\n"
-msgstr ""
+msgstr[0] ""
+"Rimuovere veramente %d elemento dal progetto?\n"
+"\n"
+msgstr[1] ""
 "Rimuovere veramente %d elementi dal progetto?\n"
 "\n"
 
-#: ../plugins/project-manager/plugin.c:725
+#: ../plugins/project-manager/plugin.c:726
 msgid "The group will be deleted from the file system.\n"
 msgstr "Il gruppo sarà eliminato dal file system.\n"
 
-#: ../plugins/project-manager/plugin.c:730
+#: ../plugins/project-manager/plugin.c:731
 msgid "The group will not be deleted from the file system.\n"
 msgstr "Il gruppo non sarà eliminato dal file system.\n"
 
-#: ../plugins/project-manager/plugin.c:736
+#: ../plugins/project-manager/plugin.c:737
 msgid "The source file will be deleted from the file system.\n"
 msgstr "Il file sorgente sarà eliminato dal file system.\n"
 
-#: ../plugins/project-manager/plugin.c:741
+#: ../plugins/project-manager/plugin.c:742
 msgid "The source file will not be deleted from the file system.\n"
 msgstr "Il file sorgente non sarà eliminato dal file system.\n"
 
-#: ../plugins/project-manager/plugin.c:753
+#: ../plugins/project-manager/plugin.c:754
 msgid "Confirm remove"
 msgstr "Conferma rimozione"
 
-#: ../plugins/project-manager/plugin.c:800
+#: ../plugins/project-manager/plugin.c:801
 #, c-format
 msgid ""
 "Failed to remove '%s':\n"
@@ -6808,110 +6815,110 @@ msgstr ""
 "Rimozione di «%s» non riuscita:\n"
 "%s"
 
-#: ../plugins/project-manager/plugin.c:866
+#: ../plugins/project-manager/plugin.c:867
 #, c-format
 msgid "Failed to retrieve URI info of %s: %s"
 msgstr "Recupero delle informazioni dell'URI di «%s» non riuscito: %s"
 
-#: ../plugins/project-manager/plugin.c:902
+#: ../plugins/project-manager/plugin.c:903
 msgid "_Project"
 msgstr "_Progetto"
 
-#: ../plugins/project-manager/plugin.c:906
+#: ../plugins/project-manager/plugin.c:907
 msgid "New _Folder…"
 msgstr "Nuova _cartella…"
 
-#: ../plugins/project-manager/plugin.c:906
-#: ../plugins/project-manager/plugin.c:940
+#: ../plugins/project-manager/plugin.c:907
+#: ../plugins/project-manager/plugin.c:941
 msgid "Add a new folder to the project"
 msgstr "Aggiunge una nuova cartella al progetto"
 
-#: ../plugins/project-manager/plugin.c:911
+#: ../plugins/project-manager/plugin.c:912
 msgid "New _Target…"
 msgstr "Nuovo obie_ttivo…"
 
-#: ../plugins/project-manager/plugin.c:911
-#: ../plugins/project-manager/plugin.c:945
+#: ../plugins/project-manager/plugin.c:912
+#: ../plugins/project-manager/plugin.c:946
 msgid "Add a new target to the project"
 msgstr "Aggiunge un nuovo obiettivo al progetto"
 
-#: ../plugins/project-manager/plugin.c:916
+#: ../plugins/project-manager/plugin.c:917
 msgid "Add _Source File…"
 msgstr "Aggiungi file _sorgente…"
 
-#: ../plugins/project-manager/plugin.c:916
-#: ../plugins/project-manager/plugin.c:950
-#: ../plugins/project-manager/plugin.c:960
+#: ../plugins/project-manager/plugin.c:917
+#: ../plugins/project-manager/plugin.c:951
+#: ../plugins/project-manager/plugin.c:961
 msgid "Add a source file to a target"
 msgstr "Aggiunge un file sorgente a un obiettivo"
 
-#: ../plugins/project-manager/plugin.c:921
+#: ../plugins/project-manager/plugin.c:922
 msgid "Add _Library…"
 msgstr "Aggiungi _libreria…"
 
-#: ../plugins/project-manager/plugin.c:921
+#: ../plugins/project-manager/plugin.c:922
 msgid "Add a module to a target"
 msgstr "Aggiunge un modulo a un obiettivo"
 
-#: ../plugins/project-manager/plugin.c:926
-#: ../plugins/project-manager/plugin.c:965
+#: ../plugins/project-manager/plugin.c:927
+#: ../plugins/project-manager/plugin.c:966
 msgid "_Properties"
 msgstr "_Proprietà"
 
-#: ../plugins/project-manager/plugin.c:931
+#: ../plugins/project-manager/plugin.c:932
 msgid "Close Pro_ject"
 msgstr "Chiudi pro_getto"
 
-#: ../plugins/project-manager/plugin.c:931
+#: ../plugins/project-manager/plugin.c:932
 msgid "Close project"
 msgstr "Chiude il progetto"
 
-#: ../plugins/project-manager/plugin.c:940
+#: ../plugins/project-manager/plugin.c:941
 msgid "New _Folder"
 msgstr "Nuova _cartella"
 
-#: ../plugins/project-manager/plugin.c:945
+#: ../plugins/project-manager/plugin.c:946
 msgid "New _Target"
 msgstr "Nuovo obie_ttivo"
 
-#: ../plugins/project-manager/plugin.c:950
+#: ../plugins/project-manager/plugin.c:951
 msgid "Add _Source File"
 msgstr "Aggiungi file _sorgente"
 
 # GNOME-2-30
-#: ../plugins/project-manager/plugin.c:955
+#: ../plugins/project-manager/plugin.c:956
 msgid "Add _Library"
 msgstr "Aggiungi _libreria"
 
-#: ../plugins/project-manager/plugin.c:955
+#: ../plugins/project-manager/plugin.c:956
 msgid "Add a library to a target"
 msgstr "Aggiunge una libreria a un obiettivo"
 
-#: ../plugins/project-manager/plugin.c:960
+#: ../plugins/project-manager/plugin.c:961
 msgid "_Add to Project"
 msgstr "_Aggiungi al progetto"
 
-#: ../plugins/project-manager/plugin.c:965
+#: ../plugins/project-manager/plugin.c:966
 msgid "Properties of group/target/source"
 msgstr "Proprietà di gruppo/obiettivo/sorgente"
 
-#: ../plugins/project-manager/plugin.c:970
+#: ../plugins/project-manager/plugin.c:971
 msgid "Re_move"
 msgstr "Ri_muovi"
 
-#: ../plugins/project-manager/plugin.c:970
+#: ../plugins/project-manager/plugin.c:971
 msgid "Remove from project"
 msgstr "Rimuove dal progetto"
 
-#: ../plugins/project-manager/plugin.c:975
+#: ../plugins/project-manager/plugin.c:976
 msgid "_Sort"
 msgstr "_Ordina"
 
-#: ../plugins/project-manager/plugin.c:975
+#: ../plugins/project-manager/plugin.c:976
 msgid "Sort shortcuts"
 msgstr "Ordina scorciatoie"
 
-#: ../plugins/project-manager/plugin.c:1310
+#: ../plugins/project-manager/plugin.c:1311
 #, c-format
 msgid ""
 "Failed to parse project (the project is opened, but there will be no project "
@@ -6920,42 +6927,42 @@ msgstr ""
 "Analisi del progetto «%s» non riuscita (il progetto è aperto, ma non ci sarà "
 "la vista progetto): %s\n"
 
-#: ../plugins/project-manager/plugin.c:1320
+#: ../plugins/project-manager/plugin.c:1321
 msgid "Update project view…"
 msgstr "Aggiorna la vista progetto…"
 
-#: ../plugins/project-manager/plugin.c:1325
-#: ../plugins/project-manager/plugin.c:1447
-#: ../plugins/project-manager/plugin.c:1626
+#: ../plugins/project-manager/plugin.c:1326
+#: ../plugins/project-manager/plugin.c:1448
+#: ../plugins/project-manager/plugin.c:1627
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
 #: ../plugins/symbol-db/plugin.c:2160
 msgid "Project"
 msgstr "Progetto"
 
-#: ../plugins/project-manager/plugin.c:1363
+#: ../plugins/project-manager/plugin.c:1364
 #, c-format
 msgid "Loading project: %s"
 msgstr "Caricamento progetto: %s"
 
-#: ../plugins/project-manager/plugin.c:1539
+#: ../plugins/project-manager/plugin.c:1540
 #, c-format
 msgid "Error closing project: %s"
 msgstr "Errore durante la chiusura del progetto: %s"
 
-#: ../plugins/project-manager/plugin.c:1605
+#: ../plugins/project-manager/plugin.c:1606
 msgid "Project manager actions"
 msgstr "Azioni gestore progetto"
 
-#: ../plugins/project-manager/plugin.c:1613
+#: ../plugins/project-manager/plugin.c:1614
 msgid "Project manager popup actions"
 msgstr "Azioni a comparsa del gestore progetto"
 
-#: ../plugins/project-manager/plugin.c:2478
+#: ../plugins/project-manager/plugin.c:2479
 msgid "Initializing Project…"
 msgstr "Inizializzazione del progetto..."
 
-#: ../plugins/project-manager/plugin.c:2481
+#: ../plugins/project-manager/plugin.c:2482
 msgid "Project Loaded"
 msgstr "Progetto caricato"
 
