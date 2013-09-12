@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-08-31 08:41+0000\n"
-"PO-Revision-Date: 2013-09-01 23:13+0300\n"
+"POT-Creation-Date: 2013-09-10 19:57+0000\n"
+"PO-Revision-Date: 2013-09-12 23:13+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -632,47 +632,47 @@ msgid "Unable to load user interface file: %s"
 msgstr "Nepavyko įkelti naudotojo sąsajos failo: %s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
-#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:178
+#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:183
 msgid "Modified"
 msgstr "Pakeistas"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:95
-#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:181
+#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:186
 msgid "Added"
 msgstr "Pridėtas"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:98
-#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:184
+#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:189
 msgid "Deleted"
 msgstr "Ištrintas"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:101
-#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:187
+#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:192
 msgid "Conflicted"
 msgstr "Konflikte"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:105
-#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:191
+#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:196
 msgid "Up-to-date"
 msgstr "Naujausias"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:109
-#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:195
+#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:200
 msgid "Locked"
 msgstr "Užrakintas"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:112
-#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:198
+#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:203
 msgid "Missing"
 msgstr "Trūkstamas"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:115
-#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:201
+#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:206
 msgid "Unversioned"
 msgstr "Neversijuojamas"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:119
-#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:205
+#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:210
 msgid "Ignored"
 msgstr "Nepaisomas"
 
@@ -4204,9 +4204,9 @@ msgstr "Paprasta paieška"
 
 #. DocmanPlugin* plugin = ANJUTA_PLUGIN_DOCMAN (ipref);
 #: ../plugins/document-manager/plugin.c:418
-#: ../plugins/document-manager/plugin.c:1716
-#: ../plugins/document-manager/plugin.c:2136
-#: ../plugins/document-manager/plugin.c:2145
+#: ../plugins/document-manager/plugin.c:1718
+#: ../plugins/document-manager/plugin.c:2138
+#: ../plugins/document-manager/plugin.c:2147
 msgid "Documents"
 msgstr "Dokumentai"
 
@@ -4244,12 +4244,12 @@ msgid "Mode"
 msgstr "Veiksena"
 
 #. this may fail, too
-#: ../plugins/document-manager/plugin.c:1552
+#: ../plugins/document-manager/plugin.c:1554
 #, c-format
 msgid "Autosave failed for %s"
 msgstr "Auto-įrašymas nepavyko failui %s"
 
-#: ../plugins/document-manager/plugin.c:1566
+#: ../plugins/document-manager/plugin.c:1568
 msgid "Autosave completed"
 msgstr "Auto-įrašymas nepavyko"
 
@@ -5397,11 +5397,11 @@ msgstr "Grąžinti"
 msgid "Stash Uncommitted Changes"
 msgstr "Atidėti nepatvirtintus pakeitimus"
 
-#: ../plugins/git/git-status-pane.c:475
+#: ../plugins/git/git-status-pane.c:508
 msgid "Changes to be committed"
 msgstr "Pakeitimai patvirtinimui"
 
-#: ../plugins/git/git-status-pane.c:485
+#: ../plugins/git/git-status-pane.c:518
 msgid "Changed but not updated"
 msgstr "Pakeisti, bet neatnaujinti"
 
@@ -6577,7 +6577,7 @@ msgstr "Pasirinkite naudotiną projekto realizaciją"
 
 #: ../plugins/project-manager/dialogs.c:683
 #: ../plugins/project-manager/dialogs.c:688
-#: ../plugins/project-manager/plugin.c:926
+#: ../plugins/project-manager/plugin.c:927
 msgid "Project properties"
 msgstr "Projekto savybės"
 
@@ -6664,9 +6664,6 @@ msgstr "Nepavyko pridėti paketo"
 
 #: ../plugins/project-manager/plugin.c:693
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following group from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the group \"%s\" from the project?\n"
 "\n"
@@ -6676,9 +6673,6 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:696
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following target from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the target \"%s\" from the project?\n"
 "\n"
@@ -6688,10 +6682,6 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:699
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following source file from the "
-#| "project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the source \"%s\" from the project?\n"
 "\n"
@@ -6701,9 +6691,6 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:702
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following group from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the shortcut \"%s\" from the project?\n"
 "\n"
@@ -6713,9 +6700,6 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:706
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following module from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the module \"%s\" from the project?\n"
 "\n"
@@ -6725,9 +6709,6 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:709
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following package from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the package \"%s\" from the project?\n"
 "\n"
@@ -6737,9 +6718,6 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:712
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following elements from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the element \"%s\" from the project?\n"
 "\n"
@@ -6747,43 +6725,49 @@ msgstr ""
 "Ar tikrai norite pašalinti elementą „%s“ iš projekto?\n"
 "\n"
 
-#: ../plugins/project-manager/plugin.c:720
+#. Translator: there is at least 2 elements to remove
+#: ../plugins/project-manager/plugin.c:721
 #, c-format
 #| msgid ""
-#| "Are you sure you want to remove the following elements from the project?\n"
+#| "Are you sure you want to remove %d elements from the project?\n"
 #| "\n"
 msgid ""
+"Are you sure you want to remove %d element from the project?\n"
+"\n"
+msgid_plural ""
 "Are you sure you want to remove %d elements from the project?\n"
 "\n"
-msgstr ""
+msgstr[0] ""
+"Ar tikrai norite pašalinti %d elementą iš projekto?\n"
+"\n"
+msgstr[1] ""
 "Ar tikrai norite pašalinti %d elementus iš projekto?\n"
 "\n"
+msgstr[2] ""
+"Ar tikrai norite pašalinti %d elementų iš projekto?\n"
+"\n"
 
-#: ../plugins/project-manager/plugin.c:725
-#| msgid "The group will be deleted from the file system."
+#: ../plugins/project-manager/plugin.c:726
 msgid "The group will be deleted from the file system.\n"
 msgstr "Grupė bus ištrinta iš failų sistemos.\n"
 
-#: ../plugins/project-manager/plugin.c:730
-#| msgid "The group will not be deleted from the file system."
+#: ../plugins/project-manager/plugin.c:731
 msgid "The group will not be deleted from the file system.\n"
 msgstr "Grupė nebus ištrinta iš failų sistemos.\n"
 
-#: ../plugins/project-manager/plugin.c:736
-#| msgid "The source file will be deleted from the file system."
+#: ../plugins/project-manager/plugin.c:737
 msgid "The source file will be deleted from the file system.\n"
 msgstr "Pradinio kodo failas bus ištrintas iš failų sistemos.\n"
 
-#: ../plugins/project-manager/plugin.c:741
-#| msgid "The source file will not be deleted from the file system."
+#: ../plugins/project-manager/plugin.c:742
 msgid "The source file will not be deleted from the file system.\n"
 msgstr "Pradinio kodo failas nebus ištrintas iš failų sistemos.\n"
 
-#: ../plugins/project-manager/plugin.c:753
+#: ../plugins/project-manager/plugin.c:754
 msgid "Confirm remove"
 msgstr "Patvirtinti pašalinimą"
 
-#: ../plugins/project-manager/plugin.c:800
+#: ../plugins/project-manager/plugin.c:801
 #, c-format
 msgid ""
 "Failed to remove '%s':\n"
@@ -6792,109 +6776,109 @@ msgstr ""
 "Nepavyko pašalinti „%s“:\n"
 "%s"
 
-#: ../plugins/project-manager/plugin.c:866
+#: ../plugins/project-manager/plugin.c:867
 #, c-format
 msgid "Failed to retrieve URI info of %s: %s"
 msgstr "Nepavyko gauti %s URI informacijos: %s"
 
-#: ../plugins/project-manager/plugin.c:902
+#: ../plugins/project-manager/plugin.c:903
 msgid "_Project"
 msgstr "_Projektas"
 
-#: ../plugins/project-manager/plugin.c:906
+#: ../plugins/project-manager/plugin.c:907
 msgid "New _Folder…"
 msgstr "Naujas _aplankas"
 
-#: ../plugins/project-manager/plugin.c:906
-#: ../plugins/project-manager/plugin.c:940
+#: ../plugins/project-manager/plugin.c:907
+#: ../plugins/project-manager/plugin.c:941
 msgid "Add a new folder to the project"
 msgstr "Pridėti naują aplanką į projektą"
 
-#: ../plugins/project-manager/plugin.c:911
+#: ../plugins/project-manager/plugin.c:912
 msgid "New _Target…"
 msgstr "Nauja _tikslas..."
 
-#: ../plugins/project-manager/plugin.c:911
-#: ../plugins/project-manager/plugin.c:945
+#: ../plugins/project-manager/plugin.c:912
+#: ../plugins/project-manager/plugin.c:946
 msgid "Add a new target to the project"
 msgstr "Pridėti naują tikslą į projektą"
 
-#: ../plugins/project-manager/plugin.c:916
+#: ../plugins/project-manager/plugin.c:917
 msgid "Add _Source File…"
 msgstr "Pridėti pradinio _kodo failą..."
 
-#: ../plugins/project-manager/plugin.c:916
-#: ../plugins/project-manager/plugin.c:950
-#: ../plugins/project-manager/plugin.c:960
+#: ../plugins/project-manager/plugin.c:917
+#: ../plugins/project-manager/plugin.c:951
+#: ../plugins/project-manager/plugin.c:961
 msgid "Add a source file to a target"
 msgstr "Pridėti pradinio kodo failą į tikslą"
 
-#: ../plugins/project-manager/plugin.c:921
+#: ../plugins/project-manager/plugin.c:922
 msgid "Add _Library…"
 msgstr "Pridėti _biblioteką..."
 
-#: ../plugins/project-manager/plugin.c:921
+#: ../plugins/project-manager/plugin.c:922
 msgid "Add a module to a target"
 msgstr "Pridėti modulį į tikslą"
 
-#: ../plugins/project-manager/plugin.c:926
-#: ../plugins/project-manager/plugin.c:965
+#: ../plugins/project-manager/plugin.c:927
+#: ../plugins/project-manager/plugin.c:966
 msgid "_Properties"
 msgstr "_Savybės"
 
-#: ../plugins/project-manager/plugin.c:931
+#: ../plugins/project-manager/plugin.c:932
 msgid "Close Pro_ject"
 msgstr "Užverti pro_jektą"
 
-#: ../plugins/project-manager/plugin.c:931
+#: ../plugins/project-manager/plugin.c:932
 msgid "Close project"
 msgstr "Užverti projektą"
 
-#: ../plugins/project-manager/plugin.c:940
+#: ../plugins/project-manager/plugin.c:941
 msgid "New _Folder"
 msgstr "Naujas _aplankas"
 
-#: ../plugins/project-manager/plugin.c:945
+#: ../plugins/project-manager/plugin.c:946
 msgid "New _Target"
 msgstr "Naujas _tikslas"
 
-#: ../plugins/project-manager/plugin.c:950
+#: ../plugins/project-manager/plugin.c:951
 msgid "Add _Source File"
 msgstr "Pridėti pradinio _kodo failą"
 
-#: ../plugins/project-manager/plugin.c:955
+#: ../plugins/project-manager/plugin.c:956
 msgid "Add _Library"
 msgstr "Pridėti _biblioteką"
 
-#: ../plugins/project-manager/plugin.c:955
+#: ../plugins/project-manager/plugin.c:956
 msgid "Add a library to a target"
 msgstr "Pridėti biblioteką į tikslą"
 
-#: ../plugins/project-manager/plugin.c:960
+#: ../plugins/project-manager/plugin.c:961
 msgid "_Add to Project"
 msgstr "_Pridėti projektą"
 
-#: ../plugins/project-manager/plugin.c:965
+#: ../plugins/project-manager/plugin.c:966
 msgid "Properties of group/target/source"
 msgstr "Grupės/tikslo/pradinio kodo failo savybės"
 
-#: ../plugins/project-manager/plugin.c:970
+#: ../plugins/project-manager/plugin.c:971
 msgid "Re_move"
 msgstr "Pa_šalinti"
 
-#: ../plugins/project-manager/plugin.c:970
+#: ../plugins/project-manager/plugin.c:971
 msgid "Remove from project"
 msgstr "Pašalinti iš projekto"
 
-#: ../plugins/project-manager/plugin.c:975
+#: ../plugins/project-manager/plugin.c:976
 msgid "_Sort"
 msgstr "_Rikiuoti"
 
-#: ../plugins/project-manager/plugin.c:975
+#: ../plugins/project-manager/plugin.c:976
 msgid "Sort shortcuts"
 msgstr "Rikiuoti trumpinius"
 
-#: ../plugins/project-manager/plugin.c:1310
+#: ../plugins/project-manager/plugin.c:1311
 #, c-format
 msgid ""
 "Failed to parse project (the project is opened, but there will be no project "
@@ -6903,42 +6887,42 @@ msgstr ""
 "Nepavyko perskaityti projekto (projektas yra atvertas, bet nebus projekto "
 "rodinio) %s: %s\n"
 
-#: ../plugins/project-manager/plugin.c:1320
+#: ../plugins/project-manager/plugin.c:1321
 msgid "Update project view…"
 msgstr "Atnaujinti projekto rodinį..."
 
-#: ../plugins/project-manager/plugin.c:1325
-#: ../plugins/project-manager/plugin.c:1447
-#: ../plugins/project-manager/plugin.c:1605
+#: ../plugins/project-manager/plugin.c:1326
+#: ../plugins/project-manager/plugin.c:1448
+#: ../plugins/project-manager/plugin.c:1627
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
 #: ../plugins/symbol-db/plugin.c:2160
 msgid "Project"
 msgstr "Projektas"
 
-#: ../plugins/project-manager/plugin.c:1363
+#: ../plugins/project-manager/plugin.c:1364
 #, c-format
 msgid "Loading project: %s"
 msgstr "Įkeliamas projektas: %s"
 
-#: ../plugins/project-manager/plugin.c:1518
+#: ../plugins/project-manager/plugin.c:1540
 #, c-format
 msgid "Error closing project: %s"
 msgstr "Klaida užveriant projektą: %s"
 
-#: ../plugins/project-manager/plugin.c:1584
+#: ../plugins/project-manager/plugin.c:1606
 msgid "Project manager actions"
 msgstr "Projektų valdyklės veiksmai"
 
-#: ../plugins/project-manager/plugin.c:1592
+#: ../plugins/project-manager/plugin.c:1614
 msgid "Project manager popup actions"
 msgstr "Projektų valdyklės iššokančio meniu veiksmai"
 
-#: ../plugins/project-manager/plugin.c:2457
+#: ../plugins/project-manager/plugin.c:2479
 msgid "Initializing Project…"
 msgstr "Inicializuojamas projektas..."
 
-#: ../plugins/project-manager/plugin.c:2460
+#: ../plugins/project-manager/plugin.c:2482
 msgid "Project Loaded"
 msgstr "Projektas įkeltas"
 
@@ -10045,4 +10029,3 @@ msgstr "Tik piktogramos"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Tik tekstas"
-
