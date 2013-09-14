@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-09-11 15:43+0000\n"
+"POT-Creation-Date: 2013-09-14 09:33+0000\n"
 "PO-Revision-Date: 2013-09-12 03:03+0900\n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
@@ -328,7 +328,7 @@ msgstr "안주타 쉘"
 
 #: ../libanjuta/anjuta-plugin.c:320
 msgid "Anjuta shell that will contain the plugin"
-msgstr "플러그인을 포함할 안주타 쉘"
+msgstr "플러그인이 들어 있는 안주타 쉘"
 
 #: ../libanjuta/anjuta-plugin-manager.c:714
 #, c-format
@@ -694,8 +694,8 @@ msgstr "그룹 이름을 지정하여 주십시오"
 msgid ""
 "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~/\" characters"
 msgstr ""
-"그룹 이름에는 알파벳, 숫자 또는 \"#$:%+,-.=@^_`~/\" 문자만을 포함할 수 있습니"
-"다"
+"그룹 이름에는 알파벳, 숫자 또는 \"#$:%+,-.=@^_`~/\" 문자만이 들어 있을 수 있"
+"습니다"
 
 #: ../plugins/am-project/amp-group.c:665
 #: ../plugins/am-project/am-project.c:1679
@@ -790,7 +790,7 @@ msgstr "프로젝트 파일을 해석할 수 없습니다"
 #: ../plugins/am-project/am-project.c:1720
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
-msgstr "프로젝트가 존재하지 않거나 잘못된 경로를 포함했습니다"
+msgstr "프로젝트가 존재하지 않거나 잘못된 경로를 넣었습니다"
 
 #: ../plugins/am-project/am-project.plugin.in.h:1
 msgid "Autotools backend"
@@ -810,7 +810,7 @@ msgstr "이름:"
 
 #: ../plugins/am-project/am-properties.c:52
 msgid "Project name, it can contain spaces by example 'GNU Autoconf'"
-msgstr "'GNU Autoconf'와 같이 공백을 포함할 수 있는 프로젝트 이름입니다"
+msgstr "'GNU Autoconf'와 같이 공백이 들어 있을 수 있는 프로젝트 이름입니다"
 
 #: ../plugins/am-project/am-properties.c:58
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:9
@@ -861,8 +861,8 @@ msgid ""
 "Package name, it can contains only alphanumerics and underscore characters."
 "It is generated from the project name if not provided."
 msgstr ""
-"영문자, 숫자, 밑줄 문자만을 포함할 수 있는 패키지 이름입니다. 적어두지 않았다"
-"면 프로젝트 이름으로 자동으로 만듭니다."
+"영문자, 숫자, 밑줄 문자만이 들어 있을 수 있는 패키지 이름입니다. 적어두지 않"
+"았다면 프로젝트 이름으로 자동으로 만듭니다."
 
 #: ../plugins/am-project/am-properties.c:86 ../plugins/git/anjuta-git.ui.h:10
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:20
@@ -1205,7 +1205,7 @@ msgstr "배포본에 포함:"
 #: ../plugins/am-project/am-properties.c:1093
 #: ../plugins/am-project/am-properties.c:1168
 msgid "Include this target in the distributed package."
-msgstr "배포할 패키지에 이 타겟을 포함합니다."
+msgstr "배포할 패키지에 이 타겟을 넣어야 합니다."
 
 #: ../plugins/am-project/am-properties.c:463
 #: ../plugins/am-project/am-properties.c:638
@@ -1307,7 +1307,7 @@ msgstr "타겟 이름을 지정하여 주십시오"
 msgid ""
 "Target name can only contain alphanumeric, '_', '-', '/' or '.' characters"
 msgstr ""
-"타겟 이름은 영문자, 숫자, '_', '-', '/' 또는 '.' 문자만 포함할 수 있습니다"
+"타겟 이름은 영문자, 숫자, '_', '-', '/' 또는 '.' 문자만 넣을 수 있습니다"
 
 #: ../plugins/am-project/amp-target.c:398
 msgid "Shared library target name must be of the form 'libxxx.la'"
@@ -1511,11 +1511,11 @@ msgid ""
 "quoted command. You can use %% to get a \"%\" character. A typical value is "
 "\"sudo %s\" or \"su -c %q\"."
 msgstr ""
-"명령에 \"%s\" 또는 \"%q\"을(를) 포함했습니다. \"make install\"과 같은 파일을 "
-"설치할 때 사용할 명령으로 바뀝니다. %q은(는) 따옴표로 둘러싼 명령으로 바꾸는"
-"데 반해 %s은(는) 그 어떤 내용도 바꾸지 않은 명령으로 바꿉니다. \"%\" 문자를 "
-"얻으려 %%를 사용할 수 있습니다. 보통 값은 \"sudo %s\" 또는 \"su -c %q\"이"
-"(가) 됩니다."
+"명령에 \"%s\" 또는 \"%q\"을(를) 넣었습니다. \"make install\"과 같은 파일을 설"
+"치할 때 사용할 명령으로 바뀝니다. %q은(는) 따옴표로 둘러싼 명령으로 바꾸는데 "
+"반해 %s은(는) 그 어떤 내용도 바꾸지 않은 명령으로 바꿉니다. \"%\" 문자를 얻으"
+"려 %%를 사용할 수 있습니다. 보통 값은 \"sudo %s\" 또는 \"su -c %q\"이(가) 됩"
+"니다."
 
 #. The translations should match that of 'make' program. Both strings uses
 #. * pearl regular expression
@@ -4439,7 +4439,7 @@ msgstr "diff 파일"
 #: ../plugins/file-loader/plugin.c:818
 #, c-format
 msgid "Failed to activate plugin: %s"
-msgstr "플러그인 %s을(를) 시작할 수 없습니다"
+msgstr "%s 플러그인을 시작할 수 없습니다"
 
 #: ../plugins/file-loader/plugin.c:877
 msgid "_New"
@@ -4502,7 +4502,7 @@ msgstr "파알이 없습니다"
 #: ../plugins/file-loader/plugin.c:1424
 #, c-format
 msgid "Please select a plugin to open <b>%s</b>."
-msgstr "<b>%s</b>을(를) 열기 위한 플러그인을 선택하여 주십시오."
+msgstr "<b>%s</b>을(를) 열 플러그인을 선택하여 주십시오."
 
 #: ../plugins/file-loader/plugin.c:1428 ../plugins/project-import/plugin.c:290
 #: ../plugins/project-manager/dialogs.c:647
@@ -5725,7 +5725,7 @@ msgstr "remote"
 #: ../plugins/glade/anjuta-design-document.c:201
 #, c-format
 msgid "Glade project '%s' saved"
-msgstr "글레이드 프로젝트 '%s'을(를) 저장했습니다"
+msgstr "'%s' 글레이드 프로젝트를 저장했습니다"
 
 #: ../plugins/glade/anjuta-design-document.c:181
 #: ../plugins/glade/anjuta-design-document.c:208
@@ -6343,7 +6343,7 @@ msgstr "패치"
 #: ../plugins/patch/patch-plugin.c:200
 #, c-format
 msgid "Patching %s using %s\n"
-msgstr "%s을(를) %s을(를) 사용하여 패치\n"
+msgstr "%2$s을(를) 사용하여 %1$s을(를) 패치\n"
 
 #: ../plugins/patch/patch-plugin.c:212
 msgid "Patching…\n"
@@ -6434,7 +6434,7 @@ msgstr ""
 #: ../plugins/project-import/plugin.c:285
 #, c-format
 msgid "Please select a project backend to open %s."
-msgstr "%s을(를) 열기 위한 프로젝트 백엔드를 선택하여 주십시오."
+msgstr "%s을(를) 열 프로젝트 백엔드를 선택하여 주십시오."
 
 #: ../plugins/project-import/plugin.c:305
 #, c-format
@@ -6594,7 +6594,7 @@ msgstr "소스 파일을 추가할 수 없습니다"
 #: ../plugins/project-manager/dialogs.c:1363
 #: ../plugins/project-manager/dialogs.c:1558
 msgid "The selected node cannot contain source files."
-msgstr "선택한 노드에 소스 파일을 포함할 수 없습니다."
+msgstr "선택한 노드에 소스 파일이 들어 있을 수 없습니다."
 
 #: ../plugins/project-manager/dialogs.c:1744
 #: ../plugins/project-manager/dialogs.c:1755
@@ -7306,7 +7306,7 @@ msgid ""
 "project build target (executable, library etc.)"
 msgstr ""
 "프로젝트 이름은 프로젝트 빌드 대상(실행 파일, 라이브러리 등)의 이름으로 사용"
-"할 것이므로 공백 문자를 포함할 수도 없습니다."
+"할 것이므로 공백 문자가 들어 있을 수도 없습니다."
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:7
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:7
@@ -7455,7 +7455,7 @@ msgstr "플러그인에 메뉴/도구 모음 포함"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:26
 msgid "Whether the plugin has menus or toolbars"
-msgstr "플러그인이 메뉴/도구 모음를 포함하는지 여부"
+msgstr "플러그인이 메뉴/도구 모음의 포함 여부"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:27
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:17
@@ -7747,7 +7747,7 @@ msgstr "메인 클래스:"
 
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:8
 msgid "GCJ needs to know which class contains the main() function"
-msgstr "GCJ는 어느 클래스가 main() 함수를 포함하는지 알아야 합니다"
+msgstr "GCJ는 어느 클래스에 main() 함수가 있는지 알아야 합니다"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:1
 msgid "Gnome Shell Extension"
@@ -8299,7 +8299,7 @@ msgstr "<b>오류:</b> 실행 키를 다른 언어중 하나에서 이미 사용
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
 "_ !"
-msgstr "<b>오류:</b> 실행 키는 영문자, 숫자 그리고 _만 포함할 수 있습니다!"
+msgstr "<b>오류:</b> 실행 키는 영문자, 숫자 그리고 _만 넣을 수 있습니다!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:51
 msgid "<b>Error:</b> You haven't entered a trigger key for the snippet!"
@@ -9447,11 +9447,11 @@ msgstr "비활성"
 
 #: ../plugins/tools/editor.c:793
 msgid "You must provide a tool name!"
-msgstr "도구 이름이 주어져야합니다!"
+msgstr "도구 이름을 지정해야 합니다!"
 
 #: ../plugins/tools/editor.c:801
 msgid "You must provide a tool command!"
-msgstr "도구 명령이 주어져야합니다!"
+msgstr "도구 명령을 지정해야 합니다!"
 
 #: ../plugins/tools/editor.c:809
 msgid "A tool with the same name already exists!"
@@ -9529,12 +9529,12 @@ msgstr "\"%s\" 항목을 알 수 없습니다"
 
 #: ../plugins/tools/fileop.c:537
 msgid "Error when loading external tools"
-msgstr "외부 도구를 불러오던 중 오류"
+msgstr "외부 도구를 불러오는 중 오류"
 
 #: ../plugins/tools/fileop.c:703
 #, c-format
 msgid "Unable to open %s for writing"
-msgstr "%s을(를) 쓰려면 열 수 없습니다"
+msgstr "기록할 %s을(를) 열 수 없습니다"
 
 #: ../plugins/tools/plugin.c:187
 msgid "Tool operations"
@@ -9962,100 +9962,6 @@ msgstr "아이콘만"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "텍스트만"
-
-#~ msgid "Profile Plugins"
-#~ msgstr "프로파일 플러그인"
-
-#~ msgid "List of plugins for this profile"
-#~ msgstr "이 프로파일에 대한 플러그인 목록"
-
-#~ msgid "<b>Open With</b>"
-#~ msgstr "<b>다른 프로그램으로 열기</b>"
-
-#~ msgid "Drop or enter revision here"
-#~ msgstr "이곳에 리비전을 놓아두거나 입력하십시오"
-
-#~ msgid ""
-#~ "Whole project; Drop a file here or type a path to view a file or folder "
-#~ "log"
-#~ msgstr ""
-#~ "전체 프로젝트입니다. 파일이나 폴더 로그를 보려면 여기에 파일을 놓아두십시"
-#~ "오"
-
-#~ msgid "Previous commit; Drop or enter a different revision here"
-#~ msgstr "이전 커밋입니다. 여기에 다른 리비전을 놓아두거나 입력하십시오"
-
-#~ msgid "Drop or type a revision here"
-#~ msgstr "이곳에 리비전을 놓아두거나 입력하십시오"
-
-#~ msgid "Uncommitted Changes.diff"
-#~ msgstr "커밋하지 않은 바뀐 내용.diff"
-
-#~ msgid "Stash %i.diff"
-#~ msgstr "%I.diff 숨기기"
-
-#~ msgid "Diff uncommitted changes"
-#~ msgstr "커밋하지 않은 바뀐 내용 차이점 보기"
-
-#~ msgid "Show a diff of uncommitted changes in an editor"
-#~ msgstr "커밋하지 않은 바뀐 내용의 차이점을 편집기에 보이기"
-
-#~ msgid "Diff selected stash"
-#~ msgstr "선택한 숨김 내용 차이점 보기"
-
-#~ msgid "Show a diff of the selected stash"
-#~ msgstr "선택한 숨김 내용에 대해 차이점을 표시합니다"
-
-#~ msgid "Group: %s\n"
-#~ msgstr "그룹: %s\n"
-
-#~ msgid "Target: %s\n"
-#~ msgstr "타겟: %s\n"
-
-#~ msgid "Source: %s\n"
-#~ msgstr "소스: %s\n"
-
-#~ msgid "Shortcut: %s\n"
-#~ msgstr "바로 가기: %s\n"
-
-#~ msgid "Module: %s\n"
-#~ msgstr "모듈: %s\n"
-
-#~ msgid "Package: %s\n"
-#~ msgstr "패키지: %s\n"
-
-#~ msgid "Select a build directory"
-#~ msgstr "빌드 디렉터리 선택"
-
-#~ msgid "Unable to execute: %s."
-#~ msgstr "실행할 수 없습니다: %s."
-
-#~ msgid "Contents"
-#~ msgstr "내용"
-
-#~ msgid "Do not show tabs"
-#~ msgstr "탭 표시 안함"
-
-#~ msgid "Editor tabs"
-#~ msgstr "편집기 탭"
-
-#~ msgid "Base URI"
-#~ msgstr "기본 URI"
-
-#~ msgid "Refreshing symbol tree…"
-#~ msgstr "심볼 트리 가져오는 중…"
-
-#~ msgid "Failed to refresh project: %s"
-#~ msgstr "프로젝트를 업데이트할 수 없습니다: %s"
-
-#~ msgid "New _Library…"
-#~ msgstr "새 라이브러리(_L)…"
-
-#~ msgid "Add a new package to the project"
-#~ msgstr "프로젝트에 새 패키지를 추가합니다"
-
-#~ msgid "New _Library"
-#~ msgstr "새 라이브러리(_L)"
 
 #~ msgid "Add a new library to the project"
 #~ msgstr "프로젝트에 새 라이브러리를 추가합니다"
