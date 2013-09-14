@@ -19,12 +19,12 @@
 
 [+IF (=(get "HaveBuilderUI") "1")+]
 typedef struct _Private Private;
-static struct _Private
+struct _Private
 {
 	/* ANJUTA: Widgets declaration for [+NameHLower+].ui - DO NOT REMOVE */
 };
 
-static struct Private* priv = NULL;
+static Private* priv = NULL;
 
 /* For testing purpose, define TEST to use the local (not installed) ui file */
 #define TEST
