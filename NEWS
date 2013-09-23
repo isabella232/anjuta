@@ -1,3 +1,484 @@
+Anjuta 3.10.0 (September 23, 2013) -- James Liggett
+
+This is a new stable version of Anjuta and all users should update to this
+version as all 3.8.x versions become unsupported at this point.
+
+Summary of the major changes between 3.8.x and 3.10:
+
+- Various bug fixes across many different plugins, including git, debug-manager,
+  document-manager, symbol-db glade, project-wizard and libanjuta. See the 
+  shortlog for complete details. 
+
+- Several updates to the git plugin, including an integrated diff viewer in the
+  status pane. The command bar and dock are also packed together and most panes
+  have right-click context menus.
+
+- The beginnings of a Windows port. This work is in its very early stages and 
+  is not really usable yet.
+
+- The document manager has a Close Others option accessible by right clicking 
+  on a document tab that will close all but the selected document.
+
+Bugs fixed:
+
+symbol-db: bgo #704985 - link with librt on Linux
+libanjuta: bgo #696984 - Update documentation comments
+project-wizard: bgo #696990 - Require package libanjuta-3.0 in anjuta-plugin template
+bgo #696023 - Use dist_ prefix in Makefiles
+devhelp: bgo #696023 - Use dist_ prefix instead of EXTRA_DIST
+glade: bgo #696023 - Use dist_ prefix instead of EXTRA_DIST
+language-support-vala: bgo #696023 - Use dist_ prefix instead of EXTRA_DIST
+python-loader: bgo #696023 - Use dist_ prefix instead of EXTRA_DIST
+subversion: bgo #696023 - Use dist_ prefix instead of EXTRA_DIST
+libanjuta: bgo #697030 - Add close button widget
+document-manager: bgo #697030 - Replace close button in tabs with AnjutaCloseButton
+project-wizard: bgo #688611 - Make templates Windows portable
+libanjuta: bgo #699323 - Use GSettings to get user terminal
+file-loader: bgo #699329 - Convert mime types to content types before comparing
+libanjuta: bgo #699327 - Use G_GSIZE_FORMAT for gsize
+libanjuta: bgo #699330 - Implement anjuta_util_get_real_path in Windows
+libanjuta: bgo #699326 - Replace fork and execlp with g_spawn_async in anjuta-utils.c
+libanjuta: bgo #699326 - Replace fork and execlp with g_spawn_async in resources.c
+glade: bgo #698705 - Add application/x-gtk-builder to supported mime types
+terminal: bgo #699316 - Add option to disable terminal plugin
+file-loader: bgo #700615 - Remove markup from title of Open With dialog
+sourceview: bgo #703637 - Set monospace font as default font
+git: Fix bgo 699544 - Git pane prevents maximize of main window in small screens
+sourceview: bgo#680770 - Don't scroll undo position to center if line already visible
+sourceview: Fix bgo#701443 - When trying to change font of GtkSourceView Anjuta crashes
+glade: bgo #701207 - Glade signal drop no longer works
+glade: bgo #700383 - Anjuta should automatically associate .ui and source files
+bgo #702576 - Use a marker comment to get macro and class name
+project-manager: bgo #501230 - The 'Can not add source files' dialog is too long and his buttons and bottom side are out of the screen
+project-wizard: bgo#696672 - Creating new project using wizard fails due to license files missing
+project wizard: bgo #688611 - Add Windows configuration
+project-wizard: bgo #698011 - Cannot run anything
+bgo #696991 - Anjuta widgets do not load up properly in standalone glade
+bgo #698158: anjuta-3.8.1 fails to build with vala-0.20
+project-wizard: bgo #700318 - Can't build a project whose name starts by a digit
+bgo #694644 - Position of Locals and Stack panes not saved
+bgo #689384 - should install a highcontrast app icon
+bgo #701419 - sqlite not in depencies
+bgo #706630 - Incorrect MimeType in .desktop file
+project-manager: bgo #707562 - Plural forms for "%d elements"
+project-wizard: bgo #707943 - Auto completion code when you click in the widget tree is broken
+document-manager: bgo#698036 - Close Other Tabs enhancement
+
+Thanks to everybody who has helped this cycle and all translators.
+
+Akom Chotiphantawanon (5):
+      Updated Thai translation.
+      Updated Thai translation
+      Updated Thai translation.
+      Updated Thai translation.
+      Updated Thai translation.
+
+Alexandre Franke (2):
+      Update French translation
+      Update French translation
+
+Alexandre Rostovtsev (1):
+      symbol-db: bgo #704985 - link with librt on Linux
+
+Andika Triwidada (1):
+      Updated Indonesian translation
+
+Arnel A. Borja (38):
+      libanjuta: bgo #696984 - Include Gdl-3 when introspecting Anjuta-3.0
+      libanjuta: bgo #696984 - Documentation comment of section anjuta-debug should be inside after inclusion guard
+      libanjuta: bgo #696984 - Remove extra empty lines in documentation comments
+      libanjuta: bgo #696984 - Add missing commas in documentation comments
+      libanjuta: bgo #696984 - Fix missing double asterisk in documentation comments
+      libanjuta: bgo #696984 - Fix function name typos in documentation comments
+      libanjuta: bgo #696984 - Fix function argument name typos in documentation comments
+      libanjuta: bgo #696984 - Fix a signal name typo in documentation comments
+      libanjuta: bgo #696984 - Fix allow-none annotation typo in a documentation comments
+      libanjuta: bgo #696984 - Add some missing documentation comment
+      libanjuta: bgo #696984 - Update some annotations in documentation comments
+      libanjuta: bgo #696984 - Add missing % in constants NULL, TRUE and FALSE in documentation comments
+      libanjuta: bgo #696984 - Add anjuta-tabber section stub
+      libanjuta: bgo #696984 - Remove unused file anjuta-token-style.h
+      libanjuta: bgo #696984 - Update libanjuta.h header
+      project-wizard: bgo #696990 - Require package libanjuta-3.0 in anjuta-plugin template
+      bgo #696023 - Use dist_ prefix in Makefiles
+      devhelp: bgo #696023 - Use dist_ prefix instead of EXTRA_DIST
+      glade: bgo #696023 - Use dist_ prefix instead of EXTRA_DIST
+      language-support-vala: bgo #696023 - Use dist_ prefix instead of EXTRA_DIST
+      python-loader: bgo #696023 - Use dist_ prefix instead of EXTRA_DIST
+      subversion: bgo #696023 - Use dist_ prefix instead of EXTRA_DIST
+      libanjuta: bgo #697030 - Add close button widget
+      document-manager: bgo #697030 - Replace close button in tabs with AnjutaCloseButton
+      project-wizard: bgo #688611 - Make templates Windows portable
+      Use dist_doc_DATA for documentation text files
+      project-wizard: Use dist_doc_DATA for documentation text files
+      libanjuta: bgo #699323 - Use GSettings to get user terminal
+      file-loader: bgo #699329 - Convert mime types to content types before comparing
+      libanjuta: bgo #699327 - Use G_GSIZE_FORMAT for gsize
+      libanjuta: bgo #699330 - Implement anjuta_util_get_real_path in Windows
+      libanjuta: bgo #699326 - Replace fork and execlp with g_spawn_async in anjuta-utils.c
+      libanjuta: bgo #699326 - Replace fork and execlp with g_spawn_async in resources.c
+      glade: bgo #698705 - Add application/x-gtk-builder to supported mime types
+      terminal: bgo #699316 - Add option to disable terminal plugin
+      file-loader: bgo #700615 - Remove markup from title of Open With dialog
+      manuals: Update entries in Anjuta Reference Manual
+      sourceview: bgo #703637 - Set monospace font as default font
+
+Ask H. Larsen (1):
+      Updated Danish translation
+
+Aurimas Černius (4):
+      Updated Lithuanian translation
+      Updated Lithuanian translation
+      Updated Lithuanian translation
+      Updated Lithuanian translation
+
+Balázs Úr (2):
+      Updated Hungarian translation
+      Updated Hungarian translation
+
+Carl-Anton Ingmarsson (61):
+      dir-project: check for NULL groups in dir_project_is_loaded()
+      document-manager: pack notebook with width 1
+      document-manager: remove margin around the document combo box
+      document-manager: don't allocate AnjutaDocmanPriv ourselves
+      document-manager: fix compile warning
+      anjuta-tabber: implement gtk_container_get_path_for_child()
+      anjuta-tabber: rework size allocation
+      anjuta-tabber: remove call to gtk_widget_style_attach()
+      anjuta-tabber: don't iterate list to check if node is first/last
+      message-view: Use AnjutaCloseButton in tabs
+      anjuta-tabber: fix calculation of region flags
+      anjuta-tabber: don't iterate list to check if node is first/last
+      anjuta-tabber: take focus-padding into account when rendering focus
+      anjuta-tabber: Always use the padding of an active tab in y-direction size allocation
+      document-manager: don't free AnjutaDocmanPriv ourselves
+      anjuta-tabber: remove the total padding from total width
+      anjuta-tabber: use tab_curvature for left/right space of first/last tab
+      message-view: use a single box for the tab widget
+      parser-cxx: fix compilation warning
+      anjuta_language_provider: add proposals() function
+      sourceview: remove filtering of single proposals matching pre_word
+      parser-cxx: use anjuta_language_provider_proposals()
+      language-support-python: use anjuta_language_provider_proposals()
+      language-support-js: use anjuta_language_provider_proposals()
+      language-support-js: replace one more use of ianjuta_editor_assist_proposals()
+      language-support-python: replace one more use of ianjuta_editor_assist_proposals()
+      symbol-db-query: change order of property installation in SymbolDBQuery
+      dir-project: fix compile error
+      subversion: convert builder file to gtk+-3.0
+      starter: guard for NULL document manager or project manager
+      anjuta-column-text-view: don't derive from deprecated GtkVBox
+      anjuta-file-list: fix deprecation warnings
+      anjuta-preferences-dialog: don't use deprecated GtkVBox
+      anjuta-status: don't derive from deprecated GtkHBox
+      anjuta-tree-combo: remove usage of gtk_widget_[push|pop]_composite_child()
+      anjuta-ui: don't use deprecated gtk_widget_render_icon()
+      class-gen: don't derive from deprecated GtkHBox
+      run-program: let IAnjutaEnvironment override command lines
+      anjuta-entry: remove usage of deprecated GtkStyle
+      python: only pass python source files to anjuta-python-autocomplete
+      cvs-plugin: remove unused variables
+      am-project: don't use deprecated g_thread_create()
+      devhelp: remove unused variable
+      debug-manager: fix compile warnings
+      debug-manager: show the disassemble and memory widgets
+      debug-manager: don't use deprecated functions in DmaDataView
+      debug-manager: make DmaDataView's buffer a property
+      debug-manager: don't use deprecated functions in DmaSparseView
+      build-basic-autotools: guard against NULL project_uri when build is configured
+      Add libgd submodule
+      sourceview: use GdRevealer for sliding in the message area
+      message-view: don't manually free private structure
+      snippets-manager: fix compile warnings
+      sourceview: fix compile warnings
+      sourceview: use GtkRevealer for sliding in the message area
+      indentation-python-style: remove unused editor_settings
+      language-support-python: remove unused editor_settings
+      language-support-cpp-java: remove unused editor_settings
+      parser-cxx: remove unused editor_settings
+      Update my email
+      symbol-db: Use a GtkSearchEntry for the search entry in the search view.
+
+Chao-Hsiung Liao (3):
+      Updated Traditional Chinese translation(Hong Kong and Taiwan)
+      Updated Traditional Chinese translation(Hong Kong and Taiwan)
+      Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+Cheng-Chia Tseng (1):
+      Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+Christian Kirbach (5):
+      Updated German help translation
+      Updated German help translation
+      Updated German help translation
+      Updated German help translation
+      Updated German translation
+
+Claudio Arseni (3):
+      [l10n] Updated Italian translation.
+      [l10n] Updated Italian translation.
+      [l10n] Added Italian translation.
+
+Daniel Mustieles (12):
+      Updated Spanish translation
+      Updated Spanish translation
+      Updated Spanish translation
+      Updated Spanish translation
+      Updated Spanish translation
+      Updated Spanish translation
+      Updated Spanish translation
+      Updated Spanish translation
+      Updated Spanish translation
+      Updated Spanish translation
+      Updated Spanish translation
+      Updated Spanish translation
+
+Dimitris Spingos (2):
+      Updated Greek translation
+      Updated Greek translation
+
+Dirgita (1):
+      Updated Indonesian translation
+
+Dominique Leuenberger (1):
+      build: add support for libvala-0.22
+
+Enrico Nicoletto (2):
+      Updated Brazilian Portuguese translation
+      Updated Brazilian Portuguese translation
+
+Fran Diéguez (9):
+      Updated Galician translations
+      Updated Galician translations
+      Updated Galician translations
+      Updated Galician translations
+      Updated Galician translations
+      Updated Galician translations
+      Updated Galician translations
+      Updated Galician translations
+      Updated Galician translations
+
+Gabor Kelemen (4):
+      Fix errors in the Hungarian translation
+      Updated Hungarian translation
+      Update and relicence Hungarian help translation
+      Updated Hungarian translation
+
+James Liggett (65):
+      Post-release version bump
+      git: Use actions for recurring items in the glade file
+      git: Pack the dock and the command bar together
+      git: Fix more names in the glade file
+      git: Use a toggle button to show and hide the command bar
+      git: More glade file name fixes
+      git: Add a stash button to the Status command bar
+      git: Implement branch switching by double-click
+      Update doap file
+      git: Fix widget names
+      git: Implement adding files by dragging them onto the status view
+      git: Widget name fixes
+      git: Log path entry should be editable
+      git: Widget name fixes
+      libanjuta/manuals: Update documentation sections
+      Revert "git: Log path entry should be editable"
+      Update files for 3.9.1 release
+      Post release version bump
+      git: Widget name fixes
+      git: Add context menus to the Status pane
+      git: Fix signal names in diff code
+      git: More signal name fixes in diff code
+      Updated files for release
+      Post-release version bump
+      git: Add a context menu to the log pane
+      git: Add a context menu to the Branches pane
+      git: Add a popup menu to the Remotes pane
+      git: Check box action fixes in Push and Pull panes
+      git: Add a popup menu to the Stash pane
+      git: Fix a warning
+      Revert "Allow to build without libgd"
+      Revert "sourceview: use GdRevealer for sliding in the message area"
+      Revert "Add libgd submodule"
+      Update MAINTAINERS
+      Update files for release
+      Post-release version bump
+      git: Fix the Do Not Commit option in the Revert pane
+      libanjuta/anjuta-entry: Don't use CSS for help text styles
+      Updated POTFILES.in
+      Updated files for release
+      Post-release version bump
+      git: Fix bgo 699544 - Git pane prevents maximize of main window in small screens
+      Update files for release
+      Post-release version bump
+      libanjuta/anjuta-command-bar: Resect GTK button image settings
+      libanjuta/anjuta-command-bar: Don't use a shadow for the scrolled window
+      libanjuta/anjuta-file-list: Fix the help text color
+      git: Widget name fixes
+      libanjuta: Add AnjutaCellRendererDiff
+      libanjuta: Update the glade catalog
+      git: Show diffs of uncommitted changes in the status view
+      git: Show stash diffs in the stash pane
+      git: Don't show the command bar if the Tasks button isn't active
+      libanjuta/anjuta-cell-renderer-diff: Detect diff headers
+      git: Don't show stash numbers on diff rows
+      Updated files for release
+      Post-release version bump
+      git: Fix removed files status display
+      git: Expand the status view tree when all diff commands are finished
+      Update files for release
+      Post-release version bump
+      git: Run diff commands after the status commands finish
+      libanjuta/git: Render diffs one line at a time
+      Update files for release
+      Post-release version bump
+
+Jaume Planas (1):
+      [l10n] Add Catalan translation
+
+Jiro Matsuzawa (1):
+      l10n: Update Japanese translation
+
+Johannes Schmid (6):
+      Updated AUTHORS file
+      sourceview: bgo#680770 - Don't scroll undo position to center if line already visible
+      sourceview: Fix bgo#701443 - When trying to change font of GtkSourceView Anjuta crashes
+      anjuta: Add application menu
+      libanjuta: Make AnjutaCommandBar easier to use on small screens
+      anjuta: Only show app-menu if supported by environment
+
+Josep Sànchez (1):
+      [l10n] Update Catalan translation
+
+Juan Pablo Ugarte (1):
+      mk-project: Prevent a crash
+
+Kalev Lember (1):
+      dir-project: Fix compiler warning
+
+Kjartan Maraas (2):
+      Updated Norwegian bokmål translation
+      Updated Norwegian bokmål translation
+
+Marco Diego Aurélio Mesquita (8):
+      glade: bgo #701207 - Glade signal drop no longer works
+      glade: bgo #700383 - Anjuta should automatically associate .ui and source files
+      libanjuta: Improve symbol-db behavior on cut, paste, undo, redo and when multiple files are modified.
+      symbol-db: Update symbol database on editor changes without saving
+      language-support-cpp-jave: Fix memory leak
+      doc: Update documentation after the last improvements in glade support
+      Improve c callback body generation.
+      bgo #702576 - Use a marker comment to get macro and class name
+
+Marek Černocký (7):
+      Updated Czech translation
+      Updated Czech translation
+      Updated Czech translation
+      Updated Czech translation
+      Updated Czech translation
+      Updated Czech translation
+      Updated Czech translation
+
+Matej Urbančič (4):
+      Updated Slovenian translation
+      Updated Slovenian translation
+      Updated Slovenian translation
+      Updated Slovenian translation
+
+Michael Catanzaro (3):
+      Use program icon on about dialog
+      Fix column number on lines with tabs
+      help: fix broken images
+
+Milo Casagrande (2):
+      [l10n] Updated Italian translation.
+      [l10n] Updated Italian translation.
+
+Piotr Drąg (5):
+      Updated POTFILES.in
+      Updated POTFILES.in
+      Updated Polish translation
+      Updated Polish translation
+      Updated Polish translation
+
+Quentin Huot-Marchand (1):
+      project-manager: bgo #501230 - The 'Can not add source files' dialog is too long and his buttons and bottom side are out of the screen
+
+Rafael Ferreira (2):
+      Updated Brazilian Portuguese translation
+      Updated Brazilian Portuguese translation
+
+Richard Hughes (1):
+      Fixed Indonesian translation
+
+Rūdolfs Mazurs (2):
+      Updated Latvian translation
+      Updated Latvian translation
+
+Seong-ho Cho (2):
+      Updated Korean translation
+      Updated Korean translation
+
+Sébastien Granjoux (42):
+      project-wizard: bgo#696672 - Creating new project using wizard fails due to license files missing
+      project wizard: bgo #688611 - Add Windows configuration
+      mk-project: Ignore conditional directives in makefile
+      git: Fix setting of a custom author in the commit pane
+      libanjuta: Improve editor modeline support
+      project-wizard: bgo #698011 - Cannot run anything
+      bgo #696991 - Anjuta widgets do not load up properly in standalone glade
+      bgo #698158: anjuta-3.8.1 fails to build with vala-0.20
+      project-wizard: bgo #700318 - Can't build a project whose name starts by a digit
+      debug-manager: show registers pane
+      bgo #694644 - Position of Locals and Stack panes not saved
+      Fix a crash with some version of Gtk due to my last commit
+      libanjuta: Move scoped and descoped signal on AnjutaProfile object
+      libanjuta: Replace AnjutaPluginDescription by AnjutaPluginHandle in API
+      libanjuta: Move anjuta_profile_manager_load_profile function in anjuta_profile
+      libanjuta: Always keep plugins in the system profile
+      Allow to select different profile on the command line
+      libanjuta: Allow to enable only a set of plugins defined in the profile file
+      Add a sample custom profile keeping only the editor
+      document-manager: Automatically open an empty file if starter plugin is not used
+      libanjuta: Keep dynamic allocation data in AnjutaPluginDescription
+      libanjuta: Allow to change plugin description key from profile
+      Allow to build without libgd
+      Keep using loaded plugin even if they are marked as disabled
+      Register GApplication with a different name if a profile is used
+      document-manager: Make use of symbol-db plugin optional
+      language-support-python: Remove critical warnings
+      language-manager: Support symbols in more programming languages
+      Need at least glib 2.34 for g_spawn_check_exit_status
+      dir-project: Load big project faster
+      dir-project: Decrease project load priority to avoid blocking GUI
+      am-project: data target are not distributed by default in automake
+      project-manager: Add a function in the interface to remove a file from a project
+      bgo #689384 - should install a highcontrast app icon
+      bgo #701419 - sqlite not in depencies
+      document-manager: Fix icon size in document manager tabs
+      bgo #706630 - Incorrect MimeType in .desktop file
+      Remove a critical warning when closing a project
+      glade: Fix a critical warning when opening a project with a .ui file opened
+      document-manager: Close all documents when closing a project
+      project-manager: bgo #707562 - Plural forms for "%d elements"
+      project-wizard: bgo #707943 - Auto completion code when you click in the widget tree is broken
+
+Techlive Zheng (1):
+      anjuta-tags: fix scope information parsing in the Vala parser
+
+Varad Gautam (1):
+      document-manager: bgo#698036 - Close Other Tabs enhancement
+
+Yuri Myasoedov (2):
+      Updated Russian translation
+      Updated Russian translation
+
+victory (1):
+      l10n: Update Japanese translation
+
+Мирослав Николић (2):
+      Updated Serbian translation
+      Updated Serbian translation
+
+
 Anjuta 3.9.92 (September 15, 2013) -- James Liggett
 
 Akom Chotiphantawanon (1):
