@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta 3.3.92\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-06 16:16+0800\n"
-"PO-Revision-Date: 2013-09-06 16:16+0800\n"
+"POT-Creation-Date: 2013-09-23 21:46+0800\n"
+"PO-Revision-Date: 2013-09-23 21:46+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
 "Language: zh_TW\n"
@@ -5309,11 +5309,11 @@ msgstr "Revert"
 msgid "Stash Uncommitted Changes"
 msgstr "Stash 未提交的更改"
 
-#: ../plugins/git/git-status-pane.c:511
+#: ../plugins/git/git-status-pane.c:508
 msgid "Changes to be committed"
 msgstr "要提交的改變"
 
-#: ../plugins/git/git-status-pane.c:521
+#: ../plugins/git/git-status-pane.c:518
 msgid "Changed but not updated"
 msgstr "已改變但尚未更新"
 
@@ -6475,7 +6475,7 @@ msgstr "請選擇要使用的專案後端程式。"
 
 #: ../plugins/project-manager/dialogs.c:683
 #: ../plugins/project-manager/dialogs.c:688
-#: ../plugins/project-manager/plugin.c:926
+#: ../plugins/project-manager/plugin.c:927
 msgid "Project properties"
 msgstr "專案屬性"
 
@@ -6623,36 +6623,43 @@ msgstr ""
 "你是否確定將元素「%s」從專案中移除？\n"
 "\n"
 
-#: ../plugins/project-manager/plugin.c:720
-#, c-format
+#. Translator: there is at least 2 elements to remove
+#: ../plugins/project-manager/plugin.c:721
+#, fuzzy, c-format
+#| msgid ""
+#| "Are you sure you want to remove %d elements from the project?\n"
+#| "\n"
 msgid ""
+"Are you sure you want to remove %d element from the project?\n"
+"\n"
+msgid_plural ""
 "Are you sure you want to remove %d elements from the project?\n"
 "\n"
-msgstr ""
+msgstr[0] ""
 "你是否確定將元素「%d」從專案中移除？\n"
 "\n"
 
-#: ../plugins/project-manager/plugin.c:725
+#: ../plugins/project-manager/plugin.c:726
 msgid "The group will be deleted from the file system.\n"
 msgstr "這個羣組將會從檔案系統中刪除。\n"
 
-#: ../plugins/project-manager/plugin.c:730
+#: ../plugins/project-manager/plugin.c:731
 msgid "The group will not be deleted from the file system.\n"
 msgstr "這個羣組將不會從檔案系統中刪除。\n"
 
-#: ../plugins/project-manager/plugin.c:736
+#: ../plugins/project-manager/plugin.c:737
 msgid "The source file will be deleted from the file system.\n"
 msgstr "該原始碼檔將會從檔案系統中刪除。\n"
 
-#: ../plugins/project-manager/plugin.c:741
+#: ../plugins/project-manager/plugin.c:742
 msgid "The source file will not be deleted from the file system.\n"
 msgstr "該原始碼檔將不會從檔案系統中刪除。\n"
 
-#: ../plugins/project-manager/plugin.c:753
+#: ../plugins/project-manager/plugin.c:754
 msgid "Confirm remove"
 msgstr "確認移除"
 
-#: ../plugins/project-manager/plugin.c:800
+#: ../plugins/project-manager/plugin.c:801
 #, c-format
 msgid ""
 "Failed to remove '%s':\n"
@@ -6661,151 +6668,151 @@ msgstr ""
 "移除‘%s’失敗：\n"
 "%s"
 
-#: ../plugins/project-manager/plugin.c:866
+#: ../plugins/project-manager/plugin.c:867
 #, c-format
 msgid "Failed to retrieve URI info of %s: %s"
 msgstr "取回 %s 的 URI 資訊失敗：%s"
 
-#: ../plugins/project-manager/plugin.c:902
+#: ../plugins/project-manager/plugin.c:903
 msgid "_Project"
 msgstr "專案(_P)"
 
-#: ../plugins/project-manager/plugin.c:906
+#: ../plugins/project-manager/plugin.c:907
 msgid "New _Folder…"
 msgstr "新增資料夾(_F)…"
 
-#: ../plugins/project-manager/plugin.c:906
-#: ../plugins/project-manager/plugin.c:940
+#: ../plugins/project-manager/plugin.c:907
+#: ../plugins/project-manager/plugin.c:941
 msgid "Add a new folder to the project"
 msgstr "加入新的資料夾至專案"
 
-#: ../plugins/project-manager/plugin.c:911
+#: ../plugins/project-manager/plugin.c:912
 msgid "New _Target…"
 msgstr "新增目標(_T)…"
 
-#: ../plugins/project-manager/plugin.c:911
-#: ../plugins/project-manager/plugin.c:945
+#: ../plugins/project-manager/plugin.c:912
+#: ../plugins/project-manager/plugin.c:946
 msgid "Add a new target to the project"
 msgstr "加入新的目標至專案"
 
-#: ../plugins/project-manager/plugin.c:916
+#: ../plugins/project-manager/plugin.c:917
 msgid "Add _Source File…"
 msgstr "加入來源檔案(_S)…"
 
-#: ../plugins/project-manager/plugin.c:916
-#: ../plugins/project-manager/plugin.c:950
-#: ../plugins/project-manager/plugin.c:960
+#: ../plugins/project-manager/plugin.c:917
+#: ../plugins/project-manager/plugin.c:951
+#: ../plugins/project-manager/plugin.c:961
 msgid "Add a source file to a target"
 msgstr "加入原始檔至目標"
 
-#: ../plugins/project-manager/plugin.c:921
+#: ../plugins/project-manager/plugin.c:922
 msgid "Add _Library…"
 msgstr "加入程式庫(_L)…"
 
-#: ../plugins/project-manager/plugin.c:921
+#: ../plugins/project-manager/plugin.c:922
 msgid "Add a module to a target"
 msgstr "將模組加入至目標"
 
-#: ../plugins/project-manager/plugin.c:926
-#: ../plugins/project-manager/plugin.c:965
+#: ../plugins/project-manager/plugin.c:927
+#: ../plugins/project-manager/plugin.c:966
 msgid "_Properties"
 msgstr "屬性(_P)"
 
-#: ../plugins/project-manager/plugin.c:931
+#: ../plugins/project-manager/plugin.c:932
 msgid "Close Pro_ject"
 msgstr "關閉專案(_J)"
 
-#: ../plugins/project-manager/plugin.c:931
+#: ../plugins/project-manager/plugin.c:932
 msgid "Close project"
 msgstr "關閉專案"
 
-#: ../plugins/project-manager/plugin.c:940
+#: ../plugins/project-manager/plugin.c:941
 msgid "New _Folder"
 msgstr "新增資料夾(_F)"
 
-#: ../plugins/project-manager/plugin.c:945
+#: ../plugins/project-manager/plugin.c:946
 msgid "New _Target"
 msgstr "新增目標(_T)"
 
-#: ../plugins/project-manager/plugin.c:950
+#: ../plugins/project-manager/plugin.c:951
 msgid "Add _Source File"
 msgstr "加入原始檔(_S)"
 
-#: ../plugins/project-manager/plugin.c:955
+#: ../plugins/project-manager/plugin.c:956
 msgid "Add _Library"
 msgstr "加入程式庫(_L)"
 
-#: ../plugins/project-manager/plugin.c:955
+#: ../plugins/project-manager/plugin.c:956
 msgid "Add a library to a target"
 msgstr "加入程式庫至專案"
 
-#: ../plugins/project-manager/plugin.c:960
+#: ../plugins/project-manager/plugin.c:961
 msgid "_Add to Project"
 msgstr "加入至專案(_A)"
 
-#: ../plugins/project-manager/plugin.c:965
+#: ../plugins/project-manager/plugin.c:966
 msgid "Properties of group/target/source"
 msgstr "羣組/目標/來源的屬性"
 
-#: ../plugins/project-manager/plugin.c:970
+#: ../plugins/project-manager/plugin.c:971
 msgid "Re_move"
 msgstr "移除(_M)"
 
-#: ../plugins/project-manager/plugin.c:970
+#: ../plugins/project-manager/plugin.c:971
 msgid "Remove from project"
 msgstr "從專案中移除"
 
-#: ../plugins/project-manager/plugin.c:975
+#: ../plugins/project-manager/plugin.c:976
 msgid "_Sort"
 msgstr "排序(_S)"
 
-#: ../plugins/project-manager/plugin.c:975
+#: ../plugins/project-manager/plugin.c:976
 msgid "Sort shortcuts"
 msgstr "排序捷徑鍵"
 
-#: ../plugins/project-manager/plugin.c:1310
+#: ../plugins/project-manager/plugin.c:1311
 #, c-format
 msgid ""
 "Failed to parse project (the project is opened, but there will be no project "
 "view) %s: %s\n"
 msgstr "分析專案失敗（該專案已被開啟，但不會有專案檢視）%s：%s\n"
 
-#: ../plugins/project-manager/plugin.c:1320
+#: ../plugins/project-manager/plugin.c:1321
 msgid "Update project view…"
 msgstr "更新專案檢視…"
 
-#: ../plugins/project-manager/plugin.c:1325
-#: ../plugins/project-manager/plugin.c:1447
-#: ../plugins/project-manager/plugin.c:1626
+#: ../plugins/project-manager/plugin.c:1326
+#: ../plugins/project-manager/plugin.c:1448
+#: ../plugins/project-manager/plugin.c:1627
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
 #: ../plugins/symbol-db/plugin.c:2160
 msgid "Project"
 msgstr "專案"
 
-#: ../plugins/project-manager/plugin.c:1363
+#: ../plugins/project-manager/plugin.c:1364
 #, c-format
 msgid "Loading project: %s"
 msgstr "正在載入專案：%s"
 
-#: ../plugins/project-manager/plugin.c:1539
+#: ../plugins/project-manager/plugin.c:1540
 #, c-format
 msgid "Error closing project: %s"
 msgstr "關閉專案時錯誤：%s"
 
-#: ../plugins/project-manager/plugin.c:1605
+#: ../plugins/project-manager/plugin.c:1606
 msgid "Project manager actions"
 msgstr "專案管理員動作"
 
-#: ../plugins/project-manager/plugin.c:1613
+#: ../plugins/project-manager/plugin.c:1614
 msgid "Project manager popup actions"
 msgstr "專案管理員彈出式動作"
 
-#: ../plugins/project-manager/plugin.c:2478
+#: ../plugins/project-manager/plugin.c:2479
 msgid "Initializing Project…"
 msgstr "初始化專案…"
 
-#: ../plugins/project-manager/plugin.c:2481
+#: ../plugins/project-manager/plugin.c:2482
 msgid "Project Loaded"
 msgstr "專案已載入"
 
@@ -8742,7 +8749,7 @@ msgstr "記住此選擇"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:60
 msgid "Repository authorization"
-msgstr "檔案庫驗證"
+msgstr "檔案庫核對"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:63
 msgid "Remember Password"
