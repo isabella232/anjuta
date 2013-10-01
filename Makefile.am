@@ -27,15 +27,6 @@ dist_doc_DATA = \
 anjuta_datadir = $(datadir)/anjuta
 anjuta_data_DATA = AUTHORS
 
-EXTRA_DIST = \
-	anjuta.desktop.in.in \
-	autogen.sh \
-	anjuta.prj \
-	setup-gettext \
-	intltool-extract.in\
-	intltool-merge.in\
-	intltool-update.in
-
 gnomerelease:
 	scp *.tar.bz2 master.gnome.org:
 	
@@ -52,6 +43,17 @@ dist_appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 appdata_in_files = anjuta.appdata.xml.in
 
 DISTCHECK_CONFIGURE_FLAGS = --enable-gtk-doc
+
+EXTRA_DIST = \
+	anjuta.desktop.in.in \
+	autogen.sh \
+	anjuta.prj \
+	setup-gettext \
+	intltool-extract.in\
+	intltool-merge.in\
+	intltool-update.in\
+	$(appdata_in_files)
+
 
 CLEANFILES = \
 	anjuta.appdata.xml \
