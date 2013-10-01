@@ -61,8 +61,7 @@ struct _GitStatusPanePriv
 
 	/* Iters for the two sections: Changes to be committed and Changed but not
 	 * updated. Status items will be children of these two iters. */
-	GtkTreePath *commit_section;
-	GtkTreePath *not_updated_section;
+	GtkTreePath *parents[3];
 
 	/* Hash tables that show which items are selected in each section */
 	GHashTable *selected_commit_items;
@@ -319,14 +318,15 @@ git_status_pane_expand_placeholders (GitStatusPane *self)
 {
 	GtkTreeView *status_view;
 
-	if (self->priv->commit_section && self->priv->not_updated_section)
+	if (self->priv->parents[STATUS_TYPE_COMMIT] && 
+	    self->priv->parents[STATUS_TYPE_NOT_UPDATED])
 	{
 		status_view = GTK_TREE_VIEW (gtk_builder_get_object (self->priv->builder,
 		                                                     "status_view"));
 
-		gtk_tree_view_expand_row (status_view, self->priv->commit_section, 
+		gtk_tree_view_expand_row (status_view, self->priv->parents[STATUS_TYPE_COMMIT], 
 		                          self->priv->show_diff);
-		gtk_tree_view_expand_row (status_view, self->priv->not_updated_section, 
+		gtk_tree_view_expand_row (status_view, self->priv->parents[STATUS_TYPE_NOT_UPDATED], 
 		                          self->priv->show_diff);
 	}
 }
@@ -385,21 +385,75 @@ on_diff_command_finished (AnjutaCommand *command, guint return_code,
 	}
 }
 
+static GtkTreePath *
+add_status_item (GtkTreeStore *status_model, const gchar *path,  
+                 AnjutaVcsStatus status, GtkTreePath *parent, StatusType type)
+{
+	GtkTreeIter parent_iter;
+	GtkTreeIter iter;
+
+	g_return_val_if_fail (parent, NULL);
+	g_return_val_if_fail (status != ANJUTA_VCS_STATUS_NONE, NULL);
+
+	gtk_tree_model_get_iter (GTK_TREE_MODEL (status_model), &parent_iter, 
+	                         parent);
+	gtk_tree_store_append (status_model, &iter, &parent_iter);
+	gtk_tree_store_set (status_model, &iter,
+	                    COL_SELECTED, FALSE,
+	                    COL_STATUS, status,
+	                    COL_PATH, path,
+	                    COL_TYPE, type,
+	                    -1);
+
+	return gtk_tree_model_get_path (GTK_TREE_MODEL (status_model), &iter);
+}
+
+static void
+setup_diff_command (GitStatusPane *self, const gchar *working_directory,
+                    const gchar *path, AnjutaVcsStatus status, StatusType type,
+                    const GtkTreePath *parent_path)
+{
+	GtkTreeModel *status_model;
+	GitDiffCommand *diff_command;
+
+	g_return_if_fail (type != STATUS_TYPE_NONE);
+
+	status_model = GTK_TREE_MODEL (gtk_builder_get_object (self->priv->builder,
+	                                                       "status_model"));
+	if (status != ANJUTA_VCS_STATUS_DELETED)
+	{
+		diff_command = git_diff_command_new (working_directory, path,
+		                                     type == STATUS_TYPE_NOT_UPDATED ? GIT_DIFF_WORKING_TREE : GIT_DIFF_INDEX);
+
+		g_signal_connect (G_OBJECT (diff_command), "command-finished",
+		                  G_CALLBACK (on_diff_command_finished),
+		                  self);
+
+		g_signal_connect (G_OBJECT (diff_command), "command-finished",
+		                  G_CALLBACK (g_object_unref),
+		                  NULL);
+
+		g_object_set_data_full (G_OBJECT (diff_command), "parent-path", 
+		                        gtk_tree_path_copy (parent_path),
+		                        (GDestroyNotify) gtk_tree_path_free);
+
+		g_object_set_data (G_OBJECT (diff_command), "model", status_model);
+		g_hash_table_insert (self->priv->diff_commands, diff_command, NULL);
+	}
+}
+
 static void
 git_status_pane_add_status_items (GitStatusPane *self, 
-              					  StatusType type, 
                                   GitStatusCommand *status_command)
 {
 	GtkTreeStore *status_model;
 	gchar *working_directory;
 	GQueue *output;
-	GtkTreePath *parent;
 	GitStatus *status_object;
-	AnjutaVcsStatus status;
+	AnjutaVcsStatus index_status;
+	AnjutaVcsStatus working_tree_status;
 	gchar *path;
-	GtkTreeIter parent_iter;
-	GtkTreeIter iter;
-	GitDiffCommand *diff_command;
+	GtkTreePath *tree_path;
 
 	status_model = GTK_TREE_STORE (gtk_builder_get_object (self->priv->builder,
 	                                                       "status_model"));
@@ -408,44 +462,41 @@ git_status_pane_add_status_items (GitStatusPane *self,
 	              NULL);
 
 	output = git_status_command_get_status_queue (status_command);
-	parent = type == STATUS_TYPE_NOT_UPDATED ? self->priv->not_updated_section : self->priv->commit_section;
 
 	while (g_queue_peek_head (output))
 	{
 		status_object = g_queue_pop_head (output);
-		status = git_status_get_vcs_status (status_object);
+		index_status = git_status_get_index_status (status_object);
+		working_tree_status = git_status_get_working_tree_status (status_object);
 		path = git_status_get_path (status_object);
 
-		gtk_tree_model_get_iter (GTK_TREE_MODEL (status_model), &parent_iter, 
-		                         parent);
-		gtk_tree_store_append (status_model, &iter, &parent_iter);
-		gtk_tree_store_set (status_model, &iter,
-		                    COL_SELECTED, FALSE,
-		                    COL_STATUS, status,
-		                    COL_PATH, path,
-		                    COL_TYPE, type,
-		                    -1);
-
-		if (status != ANJUTA_VCS_STATUS_DELETED)
+		if (index_status != ANJUTA_VCS_STATUS_NONE)
 		{
-			diff_command = git_diff_command_new (working_directory, path,
-			                                     type == STATUS_TYPE_NOT_UPDATED ? GIT_DIFF_WORKING_TREE : GIT_DIFF_INDEX);
+			if (!(index_status & (ANJUTA_VCS_STATUS_CONFLICTED | ANJUTA_VCS_STATUS_UNVERSIONED)))
+			{
+				tree_path = add_status_item (status_model, path, index_status,
+				                             self->priv->parents[STATUS_TYPE_COMMIT],
+				                             STATUS_TYPE_COMMIT);
 
-			g_signal_connect (G_OBJECT (diff_command), "command-finished",
-			                  G_CALLBACK (on_diff_command_finished),
-			                  self);
+				setup_diff_command (self, working_directory, path, index_status, 
+				                    STATUS_TYPE_COMMIT, tree_path);
+				gtk_tree_path_free (tree_path);
+			}
+		}
 
-			g_signal_connect (G_OBJECT (diff_command), "command-finished",
-			                  G_CALLBACK (g_object_unref),
-			                  NULL);
 
-			g_object_set_data_full (G_OBJECT (diff_command), "parent-path", 
-			                        gtk_tree_model_get_path (GTK_TREE_MODEL (status_model), 
-			                                                 &iter),
-			                        (GDestroyNotify) gtk_tree_path_free);
+		if (working_tree_status != ANJUTA_VCS_STATUS_NONE)
+		{
+			if (!(working_tree_status & (ANJUTA_VCS_STATUS_CONFLICTED | ANJUTA_VCS_STATUS_UNVERSIONED)))
+			{
+				tree_path = add_status_item (status_model, path, working_tree_status, 
+				                             self->priv->parents[STATUS_TYPE_NOT_UPDATED],
+				                             STATUS_TYPE_NOT_UPDATED);
 
-			g_object_set_data (G_OBJECT (diff_command), "model", status_model);
-			g_hash_table_insert (self->priv->diff_commands, diff_command, NULL);
+				setup_diff_command (self, working_directory, path, index_status, 
+				                    STATUS_TYPE_NOT_UPDATED, tree_path);
+				gtk_tree_path_free (tree_path);
+			}
 		}
 		
 		g_free (path);
@@ -456,24 +507,16 @@ git_status_pane_add_status_items (GitStatusPane *self,
 }
 
 static void
-on_commit_status_data_arrived (AnjutaCommand *command, 
-                               GitStatusPane *self)
+on_status_command_data_arrived (AnjutaCommand *command, 
+                                GitStatusPane *self)
 {
-	git_status_pane_add_status_items (self, STATUS_TYPE_COMMIT, 
+	git_status_pane_add_status_items (self, 
 	                                  GIT_STATUS_COMMAND (command));
 }
 
 static void
-on_not_updated_status_data_arrived (AnjutaCommand *command,
-                                    GitStatusPane *self)
-{
-	git_status_pane_add_status_items (self, STATUS_TYPE_NOT_UPDATED, 
-	                                  GIT_STATUS_COMMAND (command));
-}
-
-static void
-on_not_updated_command_finished (AnjutaCommand *command, guint return_code,
-                                 GitStatusPane *self)
+on_status_command_finished (AnjutaCommand *command, guint return_code,
+                            GitStatusPane *self)
 {
 	if (g_hash_table_size (self->priv->diff_commands) > 0)
 	{
@@ -500,8 +543,8 @@ git_status_pane_clear (GitStatusPane *self)
 	gtk_tree_view_set_model (status_view, NULL);
 	gtk_tree_store_clear (status_model);
 
-	gtk_tree_path_free (self->priv->commit_section);
-	gtk_tree_path_free (self->priv->not_updated_section);
+	gtk_tree_path_free (self->priv->parents[STATUS_TYPE_COMMIT]);
+	gtk_tree_path_free (self->priv->parents[STATUS_TYPE_NOT_UPDATED]);
 	
 	gtk_tree_store_append (status_model, &iter, NULL);
 	gtk_tree_store_set (status_model, &iter, 
@@ -511,7 +554,7 @@ git_status_pane_clear (GitStatusPane *self)
 	                    COL_TYPE, STATUS_TYPE_NONE,
 	                    -1);
 	
-	self->priv->commit_section = gtk_tree_model_get_path (GTK_TREE_MODEL (status_model), &iter);
+	self->priv->parents[STATUS_TYPE_COMMIT] = gtk_tree_model_get_path (GTK_TREE_MODEL (status_model), &iter);
 
 	gtk_tree_store_append (status_model, &iter, NULL);
 	gtk_tree_store_set (status_model, &iter, 
@@ -521,7 +564,7 @@ git_status_pane_clear (GitStatusPane *self)
 	                    COL_TYPE, STATUS_TYPE_NONE,
 	                    -1);
 
-	self->priv->not_updated_section = gtk_tree_model_get_path (GTK_TREE_MODEL (status_model), &iter);
+	self->priv->parents[STATUS_TYPE_NOT_UPDATED] = gtk_tree_model_get_path (GTK_TREE_MODEL (status_model), &iter);
 
 	g_hash_table_remove_all (self->priv->selected_commit_items);
 	g_hash_table_remove_all (self->priv->selected_not_updated_items);
@@ -533,30 +576,19 @@ git_status_pane_set_selected_column_state (GitStatusPane *self,
                                            gboolean state)
 {
 	GtkTreeModel *status_model;
-	GtkTreePath *section;
 	GtkTreeIter parent_iter;
 	gint i;
 	GtkTreeIter iter;
 	gchar *path;
 	AnjutaVcsStatus status;
 
+	g_return_if_fail (type != STATUS_TYPE_NONE);
+
 	status_model = GTK_TREE_MODEL (gtk_builder_get_object (self->priv->builder,
 	                                                       "status_model"));
 
-	switch (type)
-	{
-		case STATUS_TYPE_COMMIT:
-			section = self->priv->commit_section;
-			break;
-		case STATUS_TYPE_NOT_UPDATED:
-			section = self->priv->not_updated_section;
-			break;
-		default:
-			return;
-			break;
-	}
-
-	gtk_tree_model_get_iter (status_model, &parent_iter, section);
+	gtk_tree_model_get_iter (status_model, &parent_iter, 
+	                         self->priv->parents[type]);
 	
 	i = 0;
 
@@ -908,8 +940,8 @@ git_status_pane_finalize (GObject *object)
 	self = GIT_STATUS_PANE (object);
 
 	g_object_unref (self->priv->builder);
-	gtk_tree_path_free (self->priv->commit_section);
-	gtk_tree_path_free (self->priv->not_updated_section);
+	gtk_tree_path_free (self->priv->parents[STATUS_TYPE_COMMIT]);
+	gtk_tree_path_free (self->priv->parents[STATUS_TYPE_NOT_UPDATED]);
 	g_hash_table_destroy (self->priv->selected_commit_items);
 	g_hash_table_destroy (self->priv->selected_not_updated_items);
 	g_hash_table_destroy (self->priv->diff_commands);
@@ -929,7 +961,7 @@ git_status_pane_refresh (AnjutaDockPane *pane)
 
 	/* Don't refresh again if another refresh is still in progress */
 	if (g_hash_table_size (self->priv->diff_commands) == 0)
-		anjuta_command_start (ANJUTA_COMMAND (plugin->commit_status_command));
+		anjuta_command_start (ANJUTA_COMMAND (plugin->status_command));
 	
 }
 
@@ -965,24 +997,19 @@ git_status_pane_new (Git *plugin)
 	status_diff_button = gtk_builder_get_object (self->priv->builder, 
 	                                             "status_diff_button");
 
-	g_signal_connect_swapped (G_OBJECT (plugin->commit_status_command), 
+	g_signal_connect_swapped (G_OBJECT (plugin->status_command), 
 	                          "command-started",
 	                          G_CALLBACK (git_status_pane_clear),
 	                          self);
 
-	g_signal_connect (G_OBJECT (plugin->not_updated_status_command),
+	g_signal_connect (G_OBJECT (plugin->status_command),
 	                  "command-finished",
-	                  G_CALLBACK (on_not_updated_command_finished),
+	                  G_CALLBACK (on_status_command_finished),
 	                  self);
 
-	g_signal_connect (G_OBJECT (plugin->commit_status_command),
+	g_signal_connect (G_OBJECT (plugin->status_command),
 	                  "data-arrived",
-	                  G_CALLBACK (on_commit_status_data_arrived),
-	                  self);
-
-	g_signal_connect (G_OBJECT (plugin->not_updated_status_command),
-	                  "data-arrived",
-	                  G_CALLBACK (on_not_updated_status_data_arrived),
+	                  G_CALLBACK (on_status_command_data_arrived),
 	                  self);
 
 	g_settings_bind (plugin->settings, "show-status-diff",

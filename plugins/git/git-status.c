@@ -27,7 +27,8 @@
 struct _GitStatusPriv
 {
 	gchar *path;
-	AnjutaVcsStatus status;
+	AnjutaVcsStatus index_status;
+	AnjutaVcsStatus working_tree_status;
 };
 
 G_DEFINE_TYPE (GitStatus, git_status, G_TYPE_OBJECT);
@@ -60,14 +61,16 @@ git_status_class_init (GitStatusClass *klass)
 }
 
 GitStatus *
-git_status_new (const gchar *path, AnjutaVcsStatus status)
+git_status_new (const gchar *path, AnjutaVcsStatus index_status,
+                AnjutaVcsStatus working_tree_status)
 {
 	GitStatus *self;
 	
 	self = g_object_new (GIT_TYPE_STATUS, NULL);
 	
 	self->priv->path = g_strdup (path);
-	self->priv->status = status;
+	self->priv->index_status = index_status;
+	self->priv->working_tree_status = working_tree_status;
 	
 	return self;
 }
@@ -79,8 +82,22 @@ git_status_get_path (GitStatus *self)
 }
 
 AnjutaVcsStatus
+git_status_get_index_status (GitStatus *self)
+{
+	return self->priv->index_status;
+}
+
+AnjutaVcsStatus
+git_status_get_working_tree_status (GitStatus *self)
+{
+	return self->priv->working_tree_status;
+}
+
+AnjutaVcsStatus
 git_status_get_vcs_status (GitStatus *self)
 {
-	return self->priv->status;
+	/* Favor the index status over the working tree */
+	return self->priv->index_status == 0 ? self->priv->working_tree_status :
+		   self->priv->index_status;
 }
 

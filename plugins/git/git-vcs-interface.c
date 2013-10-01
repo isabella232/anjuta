@@ -238,7 +238,7 @@ git_ivcs_query_status (IAnjutaVcs *obj, GFile *file,
 	GitStatusCommand *status_command;
 
 	path = g_file_get_path (file);
-	status_command = git_status_command_new (path, ~0);
+	status_command = git_status_command_new (path);
 
 	g_free (path);
 

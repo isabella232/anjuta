@@ -24,15 +24,10 @@
 
 #include "git-status-command.h"
 
-#define STATUS_REGEX "((M|A|D|U|\\?|\\s){2}) (.*)"
-
 struct _GitStatusCommandPriv
 {
 	GQueue *status_queue;
-	GitStatusSections sections;
-	GHashTable *status_codes;
-	GHashTable *conflict_codes;
-	GRegex *status_regex;
+	GitStatusFactory *factory;
 	GFileMonitor *head_monitor;
 	GFileMonitor *index_monitor;
 };
@@ -52,88 +47,16 @@ static void
 git_status_command_handle_output (GitCommand *git_command, const gchar *output)
 {
 	GitStatusCommand *self;
-	GMatchInfo *match_info;
 	GitStatus *status_object;
-	gchar *status;
-	gchar *path;
 	
 	self = GIT_STATUS_COMMAND (git_command);
-	status_object = NULL;
-
-	if (g_regex_match (self->priv->status_regex, output, 0, &match_info))
+	status_object = git_status_factory_create_status (self->priv->factory,
+	                                                  output);
+	if (status_object)
 	{
-		/* Determine which section this entry goes in */
-		status = g_match_info_fetch (match_info, 1);
-		path = g_match_info_fetch (match_info, 3);
-
-		if (status[0] == ' ')
-		{
-			/* Changed but not updated */
-			if (self->priv->sections & GIT_STATUS_SECTION_NOT_UPDATED)
-			{
-				status_object = git_status_new(path, 
-				                               GPOINTER_TO_INT (g_hash_table_lookup (self->priv->status_codes, 
-				                                                					 GINT_TO_POINTER (status[1]))));
-			}
-		}
-		else if (status[1] == ' ')
-		{
-			/* Added to commit */
-			if (self->priv->sections & GIT_STATUS_SECTION_COMMIT)
-			{
-				status_object = git_status_new(path, 
-				                               GPOINTER_TO_INT (g_hash_table_lookup (self->priv->status_codes, 
-				                                                    				 GINT_TO_POINTER (status[0]))));
-			}
-		}
-		else
-		{
-			/* File may have been added to the index and then changed again in
-			 * the working tree, or it could be a conflict */
-
-			/* Unversioned files */
-			if (status[0] == '?')
-			{
-				if (self->priv->sections & GIT_STATUS_SECTION_UNTRACKED)
-				{
-					status_object = git_status_new(path, 
-				                           		   ANJUTA_VCS_STATUS_UNVERSIONED);
-				}
-			}
-			else if (g_hash_table_lookup_extended (self->priv->conflict_codes, status,
-			                                       NULL, NULL))
-			{
-				/* Conflicts are put in the changed but not updated section */
-				if (self->priv->sections & GIT_STATUS_SECTION_NOT_UPDATED)
-				{
-					status_object = git_status_new (path, 
-					                                ANJUTA_VCS_STATUS_CONFLICTED);
-				}
-			}
-			else
-			{
-				status_object = git_status_new(path, 
-				                               GPOINTER_TO_INT(g_hash_table_lookup (self->priv->status_codes, 
-				                                                                    GINT_TO_POINTER (status[0]))));
-			}
-			    
-		}
-
-		
-
-		g_free (status);
-		g_free (path);
-
-		if (status_object)
-		{
-			g_queue_push_tail (self->priv->status_queue, status_object);
-			anjuta_command_notify_data_arrived (ANJUTA_COMMAND (self));
-		}
-		
+		g_queue_push_tail (self->priv->status_queue, status_object);
+		anjuta_command_notify_data_arrived (ANJUTA_COMMAND (self));
 	}
-
-	g_match_info_free (match_info);
-	
 }
 
 static void
@@ -141,33 +64,7 @@ git_status_command_init (GitStatusCommand *self)
 {
 	self->priv = g_new0 (GitStatusCommandPriv, 1);
 	self->priv->status_queue = g_queue_new ();
-	
-	self->priv->status_regex = g_regex_new (STATUS_REGEX, 0, 0, NULL);
-	self->priv->status_codes = g_hash_table_new (g_direct_hash, g_direct_equal);
-	self->priv->conflict_codes = g_hash_table_new (g_str_hash, g_str_equal);
-
-	/* Initialize status code hash tables */
-	g_hash_table_insert (self->priv->status_codes, 
-	                     GINT_TO_POINTER ('M'),
-	                     GINT_TO_POINTER (ANJUTA_VCS_STATUS_MODIFIED));
-
-	g_hash_table_insert (self->priv->status_codes, 
-	                     GINT_TO_POINTER ('A'),
-	                     GINT_TO_POINTER (ANJUTA_VCS_STATUS_ADDED));
-
-	g_hash_table_insert (self->priv->status_codes, 
-	                     GINT_TO_POINTER ('D'),
-	                     GINT_TO_POINTER (ANJUTA_VCS_STATUS_DELETED));
-
-	/* TODO: Handle each conflict case individually so that we can eventually
-	 * give the user more information about the conflict */
-	g_hash_table_insert (self->priv->conflict_codes, "DD", NULL);
-	g_hash_table_insert (self->priv->conflict_codes, "AU", NULL);
-	g_hash_table_insert (self->priv->conflict_codes, "UD", NULL);
-	g_hash_table_insert (self->priv->conflict_codes, "UA", NULL);
-	g_hash_table_insert (self->priv->conflict_codes, "DU", NULL);
-	g_hash_table_insert (self->priv->conflict_codes, "AA", NULL);
-	g_hash_table_insert (self->priv->conflict_codes, "UU", NULL);
+	self->priv->factory = git_status_factory_new ();
 }
 
 static void
@@ -288,7 +185,7 @@ git_status_command_finalize (GObject *object)
 	git_status_command_stop_automatic_monitor (ANJUTA_COMMAND (self));
 	
 	g_queue_free (self->priv->status_queue);
-	g_regex_unref (self->priv->status_regex);
+	g_object_unref (self->priv->factory);
 	
 	g_free (self->priv);
 
@@ -312,8 +209,7 @@ git_status_command_class_init (GitStatusCommandClass *klass)
 
 
 GitStatusCommand *
-git_status_command_new (const gchar *working_directory, 
-						GitStatusSections sections)
+git_status_command_new (const gchar *working_directory)
 {
 	GitStatusCommand *self;
 	
@@ -321,8 +217,6 @@ git_status_command_new (const gchar *working_directory,
 						 "working-directory", working_directory,
 						 "single-line-output", TRUE,
 						 NULL);
-	
-	self->priv->sections = sections;
 	
 	return self;
 }

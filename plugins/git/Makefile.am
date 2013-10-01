@@ -1,4 +1,4 @@
-SUBDIRS = images
+SUBDIRS = images tests
 
 # Plugin glade file
 git_gladedir = $(anjuta_glade_dir)
@@ -226,7 +226,9 @@ libanjuta_git_la_SOURCES = \
 	git-patch-series-pane.c \
 	git-patch-series-pane.h \
 	git-apply-mailbox-pane.c \
-	git-apply-mailbox-pane.h
+	git-apply-mailbox-pane.h \
+	git-status-factory.c \
+	git-status-factory.h
 	
 
 libanjuta_git_la_LDFLAGS = $(ANJUTA_PLUGIN_LDFLAGS)

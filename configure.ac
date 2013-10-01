@@ -840,6 +840,7 @@ plugins/cvs-plugin/Makefile
 plugins/subversion/Makefile
 plugins/git/Makefile
 plugins/git/images/Makefile
+plugins/git/tests/Makefile
 plugins/sourceview/Makefile
 plugins/terminal/Makefile
 plugins/tools/Makefile

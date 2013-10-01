@@ -54,9 +54,12 @@ struct _GitStatus
 };
 
 GType git_status_get_type (void) G_GNUC_CONST;
-GitStatus *git_status_new (const gchar *path, AnjutaVcsStatus status);
+GitStatus *git_status_new (const gchar *path, AnjutaVcsStatus index_status,
+                           AnjutaVcsStatus working_tree_status);
 gchar *git_status_get_path (GitStatus *self);
 AnjutaVcsStatus git_status_get_vcs_status (GitStatus *self);
+AnjutaVcsStatus git_status_get_index_status (GitStatus *self);
+AnjutaVcsStatus git_status_get_working_tree_status (GitStatus *self);
 
 G_END_DECLS
 
