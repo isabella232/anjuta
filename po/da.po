@@ -1,11 +1,11 @@
 # Danish translation of Anjuta.
-# Copyright (C) 2001-2012 Free Software Foundation, Inc.
+# Copyright (C) 2001-2013 Free Software Foundation, Inc.
 # Gitte Wange <gitte@babytux.dk>, 2001-2002.
 # Christian Rose <menthos@menthos.com>, 2001.
 # Göran Weinholt <weinholt@linux.nu>, 2001.
 # Keld Simonsen <keld@dkuug.dk>, 2002.
 # Joe Hansen <joedalton2@yahoo.dk>, 2011.
-# Ask Hjorth Larsen <asklarsen@gmail.com>, 2008, 09, 10, 11, 12.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2008, 09, 10, 11, 12, 13.
 #
 # Konventioner
 #   watch -> overvåger (funktion der holder øje med værdien af variable)
@@ -34,8 +34,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-13 09:06+0100\n"
-"PO-Revision-Date: 2012-03-09 11:10+0100\n"
+"POT-Creation-Date: 2013-10-07 22:42+0200\n"
+"PO-Revision-Date: 2013-10-07 22:33+0200\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
 "Language: \n"
@@ -720,10 +720,10 @@ msgstr ""
 "=@^_`~\""
 
 #: ../plugins/am-project/amp-group.c:580
-#: ../plugins/am-project/am-project.c:1688
-#: ../plugins/am-project/am-project.c:1779
-#: ../plugins/dir-project/dir-project.c:731
-#: ../plugins/dir-project/dir-project.c:868
+#: ../plugins/am-project/am-project.c:1696
+#: ../plugins/am-project/am-project.c:1787
+#: ../plugins/dir-project/dir-project.c:723
+#: ../plugins/dir-project/dir-project.c:857
 #: ../plugins/mk-project/mk-project.c:723
 #: ../plugins/mk-project/mk-project.c:800
 #: ../plugins/mk-project/mk-project.c:874
@@ -736,13 +736,13 @@ msgid "Root"
 msgstr "Rod"
 
 #: ../plugins/am-project/am-project.c:98
-#: ../plugins/dir-project/dir-project.c:879
+#: ../plugins/dir-project/dir-project.c:868
 #: ../plugins/mk-project/mk-project.c:66
 msgid "Group"
 msgstr "Gruppe"
 
 #: ../plugins/am-project/am-project.c:106
-#: ../plugins/dir-project/dir-project.c:883
+#: ../plugins/dir-project/dir-project.c:872
 #: ../plugins/mk-project/mk-project.c:71
 msgid "Source"
 msgstr "Kilde"
@@ -805,11 +805,11 @@ msgstr "Module"
 msgid "Package"
 msgstr "Pakke"
 
-#: ../plugins/am-project/am-project.c:1716
+#: ../plugins/am-project/am-project.c:1724
 msgid "Unable to parse project file"
 msgstr "Kan ikke fortolke projektfil"
 
-#: ../plugins/am-project/am-project.c:1727
+#: ../plugins/am-project/am-project.c:1735
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "Projektet findes ikke, eller har en ugyldig sti"
@@ -1318,7 +1318,7 @@ msgid ""
 "digits ‘0’ through ‘9’, and the letters ‘l’ and ‘n’. "
 msgstr ""
 "Sektion hvor man-siderne er installeret. Gyldige sektionsnavne er cifrene "
-"\"0\" til \"9\" samt bogstaverne \"l\" og \"n\"."
+"\"0\" til \"9\" samt bogstaverne \"l\" og \"n\". "
 
 #: ../plugins/am-project/amp-source.c:97
 msgid "Source file must be a regular file, not a directory"
@@ -1454,14 +1454,14 @@ msgstr ""
 msgid "Command canceled by user"
 msgstr "Kommando annulleret af bruger"
 
-#: ../plugins/build-basic-autotools/build.c:852
+#: ../plugins/build-basic-autotools/build.c:854
 #, c-format
 msgid "Cannot compile \"%s\": No compile rule defined for this file type."
 msgstr ""
 "Kan ikke kompilere \"%s\": Ingen kompileringsregel er defineret for denne "
 "filtype."
 
-#: ../plugins/build-basic-autotools/build.c:1014
+#: ../plugins/build-basic-autotools/build.c:1016
 #, c-format
 msgid "Cannot configure project: Missing configure script in %s."
 msgstr "Kan ikke konfigurere projektet: Mangler konfigurationsscript i %s."
@@ -1653,190 +1653,190 @@ msgstr "Afsluttede vellykket\n"
 msgid "Build %d: %s"
 msgstr "Bygning %d: %s"
 
-#: ../plugins/build-basic-autotools/plugin.c:1639
-#: ../plugins/build-basic-autotools/plugin.c:1713
-#: ../plugins/build-basic-autotools/plugin.c:1723
-#: ../plugins/build-basic-autotools/plugin.c:1741
-#: ../plugins/build-basic-autotools/plugin.c:1751
-#: ../plugins/build-basic-autotools/plugin.c:1827
+#: ../plugins/build-basic-autotools/plugin.c:1640
+#: ../plugins/build-basic-autotools/plugin.c:1714
+#: ../plugins/build-basic-autotools/plugin.c:1724
+#: ../plugins/build-basic-autotools/plugin.c:1742
+#: ../plugins/build-basic-autotools/plugin.c:1752
+#: ../plugins/build-basic-autotools/plugin.c:1828
 #, c-format
 msgid "_Build"
 msgstr "_Byg"
 
-#: ../plugins/build-basic-autotools/plugin.c:1643
+#: ../plugins/build-basic-autotools/plugin.c:1644
 msgid "_Build Project"
 msgstr "_Byg projekt"
 
-#: ../plugins/build-basic-autotools/plugin.c:1644
+#: ../plugins/build-basic-autotools/plugin.c:1645
 msgid "Build whole project"
 msgstr "Byg hele projektet"
 
-#: ../plugins/build-basic-autotools/plugin.c:1649
+#: ../plugins/build-basic-autotools/plugin.c:1650
 msgid "_Install Project"
 msgstr "_Installér projekt"
 
-#: ../plugins/build-basic-autotools/plugin.c:1650
+#: ../plugins/build-basic-autotools/plugin.c:1651
 msgid "Install whole project"
 msgstr "Installér hele projektet"
 
-#: ../plugins/build-basic-autotools/plugin.c:1655
+#: ../plugins/build-basic-autotools/plugin.c:1656
 msgid "_Clean Project"
 msgstr "_Rens projekt"
 
-#: ../plugins/build-basic-autotools/plugin.c:1656
+#: ../plugins/build-basic-autotools/plugin.c:1657
 msgid "Clean whole project"
 msgstr "Rens hele projektet"
 
-#: ../plugins/build-basic-autotools/plugin.c:1661
+#: ../plugins/build-basic-autotools/plugin.c:1662
 msgid "C_onfigure Project…"
 msgstr "K_onfigurér projekt…"
 
-#: ../plugins/build-basic-autotools/plugin.c:1662
+#: ../plugins/build-basic-autotools/plugin.c:1663
 msgid "Configure project"
 msgstr "Konfigurér projekt"
 
-#: ../plugins/build-basic-autotools/plugin.c:1667
+#: ../plugins/build-basic-autotools/plugin.c:1668
 msgid "Build _Tarball"
 msgstr "Byg _tarball"
 
-#: ../plugins/build-basic-autotools/plugin.c:1668
+#: ../plugins/build-basic-autotools/plugin.c:1669
 msgid "Build project tarball distribution"
 msgstr "Byg tarball-distribution til projektet"
 
-#: ../plugins/build-basic-autotools/plugin.c:1673
+#: ../plugins/build-basic-autotools/plugin.c:1674
 msgid "_Build Module"
 msgstr "_Byg modul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1674
+#: ../plugins/build-basic-autotools/plugin.c:1675
 msgid "Build module associated with current file"
 msgstr "Byg modulet tilknyttet den aktuelle fil"
 
-#: ../plugins/build-basic-autotools/plugin.c:1679
+#: ../plugins/build-basic-autotools/plugin.c:1680
 msgid "_Install Module"
 msgstr "_Installér modul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1680
+#: ../plugins/build-basic-autotools/plugin.c:1681
 msgid "Install module associated with current file"
 msgstr "Installér modulet tilknyttet den aktuelle fil"
 
-#: ../plugins/build-basic-autotools/plugin.c:1685
+#: ../plugins/build-basic-autotools/plugin.c:1686
 msgid "_Clean Module"
 msgstr "_Rens modulet"
 
-#: ../plugins/build-basic-autotools/plugin.c:1686
+#: ../plugins/build-basic-autotools/plugin.c:1687
 msgid "Clean module associated with current file"
 msgstr "Rens modulet tilknyttet den aktuelle fil"
 
-#: ../plugins/build-basic-autotools/plugin.c:1691
+#: ../plugins/build-basic-autotools/plugin.c:1692
 msgid "Co_mpile File"
 msgstr "Ko_mpilér fil"
 
 # ???
-#: ../plugins/build-basic-autotools/plugin.c:1692
+#: ../plugins/build-basic-autotools/plugin.c:1693
 msgid "Compile current editor file"
 msgstr "Kompilér nuværende redigeringsfil"
 
-#: ../plugins/build-basic-autotools/plugin.c:1697
+#: ../plugins/build-basic-autotools/plugin.c:1698
 msgid "Select Configuration"
 msgstr "Vælg konfiguration"
 
-#: ../plugins/build-basic-autotools/plugin.c:1698
+#: ../plugins/build-basic-autotools/plugin.c:1699
 msgid "Select current configuration"
 msgstr "Vælg aktuel konfiguration"
 
-#: ../plugins/build-basic-autotools/plugin.c:1703
+#: ../plugins/build-basic-autotools/plugin.c:1704
 msgid "Remove Configuration"
 msgstr "Fjern konfiguration"
 
-#: ../plugins/build-basic-autotools/plugin.c:1704
+#: ../plugins/build-basic-autotools/plugin.c:1705
 msgid ""
 "Clean project (distclean) and remove configuration directory if possible"
 msgstr "Rens projektet (distclean) og fjern konfigurationsmappen hvis muligt"
 
-#: ../plugins/build-basic-autotools/plugin.c:1717
-#: ../plugins/build-basic-autotools/plugin.c:1745
+#: ../plugins/build-basic-autotools/plugin.c:1718
+#: ../plugins/build-basic-autotools/plugin.c:1746
 msgid "_Compile"
 msgstr "_Kompilér"
 
-#: ../plugins/build-basic-autotools/plugin.c:1718
-#: ../plugins/build-basic-autotools/plugin.c:1746
+#: ../plugins/build-basic-autotools/plugin.c:1719
+#: ../plugins/build-basic-autotools/plugin.c:1747
 msgid "Compile file"
 msgstr "Kompilér fil"
 
-#: ../plugins/build-basic-autotools/plugin.c:1724
-#: ../plugins/build-basic-autotools/plugin.c:1752
+#: ../plugins/build-basic-autotools/plugin.c:1725
+#: ../plugins/build-basic-autotools/plugin.c:1753
 msgid "Build module"
 msgstr "Byg modul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1729
-#: ../plugins/build-basic-autotools/plugin.c:1757
-#: ../plugins/build-basic-autotools/plugin.c:1834
+#: ../plugins/build-basic-autotools/plugin.c:1730
+#: ../plugins/build-basic-autotools/plugin.c:1758
+#: ../plugins/build-basic-autotools/plugin.c:1835
 #, c-format
 msgid "_Install"
 msgstr "_Installér"
 
-#: ../plugins/build-basic-autotools/plugin.c:1730
-#: ../plugins/build-basic-autotools/plugin.c:1758
+#: ../plugins/build-basic-autotools/plugin.c:1731
+#: ../plugins/build-basic-autotools/plugin.c:1759
 msgid "Install module"
 msgstr "Installér modul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1735
-#: ../plugins/build-basic-autotools/plugin.c:1763
-#: ../plugins/build-basic-autotools/plugin.c:1841
+#: ../plugins/build-basic-autotools/plugin.c:1736
+#: ../plugins/build-basic-autotools/plugin.c:1764
+#: ../plugins/build-basic-autotools/plugin.c:1842
 #, c-format
 msgid "_Clean"
 msgstr "_Rens"
 
-#: ../plugins/build-basic-autotools/plugin.c:1736
-#: ../plugins/build-basic-autotools/plugin.c:1764
+#: ../plugins/build-basic-autotools/plugin.c:1737
+#: ../plugins/build-basic-autotools/plugin.c:1765
 msgid "Clean module"
 msgstr "Rens modul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1769
+#: ../plugins/build-basic-autotools/plugin.c:1770
 msgid "_Cancel command"
 msgstr "_Annullér kommando"
 
-#: ../plugins/build-basic-autotools/plugin.c:1770
+#: ../plugins/build-basic-autotools/plugin.c:1771
 msgid "Cancel build command"
 msgstr "Annullér byggekommando"
 
-#: ../plugins/build-basic-autotools/plugin.c:1827
+#: ../plugins/build-basic-autotools/plugin.c:1828
 #, c-format
 msgid "_Build (%s)"
 msgstr "_Byg (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1834
+#: ../plugins/build-basic-autotools/plugin.c:1835
 #, c-format
 msgid "_Install (%s)"
 msgstr "_Installér (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1841
+#: ../plugins/build-basic-autotools/plugin.c:1842
 #, c-format
 msgid "_Clean (%s)"
 msgstr "_Rens (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1849
+#: ../plugins/build-basic-autotools/plugin.c:1850
 #, c-format
 msgid "Co_mpile (%s)"
 msgstr "Ko_mpilér (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1849
+#: ../plugins/build-basic-autotools/plugin.c:1850
 #, c-format
 msgid "Co_mpile"
 msgstr "Ko_mpilér"
 
-#: ../plugins/build-basic-autotools/plugin.c:2445
+#: ../plugins/build-basic-autotools/plugin.c:2444
 msgid "Build commands"
 msgstr "Byg kommandoer"
 
 #. Translators: This is a group of build
 #. * commands which appears in pop up menus
-#: ../plugins/build-basic-autotools/plugin.c:2454
+#: ../plugins/build-basic-autotools/plugin.c:2453
 msgid "Build popup commands"
 msgstr "Byg pop op-kommandoer"
 
-#: ../plugins/build-basic-autotools/plugin.c:2873
-#: ../plugins/build-basic-autotools/plugin.c:2881
+#: ../plugins/build-basic-autotools/plugin.c:2872
+#: ../plugins/build-basic-autotools/plugin.c:2880
 msgid "Build Autotools"
 msgstr "Byg Autotools"
 
@@ -2170,6 +2170,14 @@ msgstr "c++-analysator:"
 msgid "CLang Paths"
 msgstr "CLang-stier"
 
+#: ../plugins/code-analyzer/code-analyzer.plugin.in.h:1
+msgid "Code Analyzer"
+msgstr "Kodeanalyse"
+
+#: ../plugins/code-analyzer/code-analyzer.plugin.in.h:2
+msgid "Analyze code with the clang-analyzer framework"
+msgstr "Analysér kode med clang-analyserammeværket"
+
 #: ../plugins/code-analyzer/plugin.c:157
 msgid ""
 "Couldn't find clang analyzer, please check if it is installed and if the "
@@ -2199,7 +2207,7 @@ msgid "Patch-Style diff"
 msgstr "Patch-agtig diff"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2174
+#: ../plugins/symbol-db/plugin.c:2172
 msgid "Local"
 msgstr "Lokal"
 
@@ -3323,7 +3331,7 @@ msgstr "Ramme"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:823
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2132
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2130
 #: ../plugins/tools/tool.c:100 ../src/anjuta-app.c:626
 msgid "File"
 msgstr "Fil"
@@ -3496,8 +3504,8 @@ msgstr "API-browser"
 msgid "Contents"
 msgstr "Indhold"
 
-#: ../plugins/devhelp/plugin.c:370 ../plugins/symbol-db/plugin.c:2142
-#: ../plugins/symbol-db/plugin.c:2194
+#: ../plugins/devhelp/plugin.c:370 ../plugins/symbol-db/plugin.c:2140
+#: ../plugins/symbol-db/plugin.c:2192
 msgid "Search"
 msgstr "Søg"
 
@@ -3505,20 +3513,33 @@ msgstr "Søg"
 msgid "API"
 msgstr "API"
 
-#: ../plugins/dir-project/dir-project.c:135
-#: ../plugins/dir-project/dir-project.c:158
-#: ../plugins/dir-project/dir-project.c:181
+#: ../plugins/dir-project/dir-project.c:124
+#: ../plugins/dir-project/dir-project.c:147
+#: ../plugins/dir-project/dir-project.c:170
 #, c-format
 msgid "Missing name"
 msgstr "Mangler navn"
 
-#: ../plugins/dir-project/dir-project.c:1001
-#: ../plugins/dir-project/dir-project.c:1011
+#: ../plugins/dir-project/dir-project.c:990
+#: ../plugins/dir-project/dir-project.c:1000
 #: ../plugins/mk-project/mk-project.c:1022
 #: ../plugins/mk-project/mk-project.c:1032
 #, c-format
 msgid "Project doesn't allow to set properties"
 msgstr "Projektet tillader ikke at egenskaber ændres"
+
+# ??
+#: ../plugins/dir-project/dir-project.plugin.in.h:1
+msgid "Directory backend"
+msgstr "Mappemotor"
+
+# ??????
+#: ../plugins/dir-project/dir-project.plugin.in.h:2
+msgid ""
+"Directory project backend, get only source files, use it when other backend "
+"fails"
+msgstr ""
+"Mappeprojektmotor, få kun fat i kildefiler, brug den når anden motor fejler"
 
 #: ../plugins/document-manager/action-callbacks.c:315
 #, c-format
@@ -3590,7 +3611,7 @@ msgstr ""
 msgid "_Replace"
 msgstr "_Erstat"
 
-#: ../plugins/document-manager/anjuta-docman.c:1448
+#: ../plugins/document-manager/anjuta-docman.c:1447
 msgid "[read-only]"
 msgstr "[skrivebeskyttet]"
 
@@ -3985,7 +4006,7 @@ msgid "Search using regular expressions"
 msgstr "Søg ved hjælp af regulære udtryk"
 
 #: ../plugins/document-manager/plugin.c:305
-#: ../plugins/language-support-cpp-java/plugin.c:1333
+#: ../plugins/language-support-cpp-java/plugin.c:1411
 #: ../plugins/language-support-python/plugin.c:451 ../src/anjuta-actions.h:30
 msgid "_Edit"
 msgstr "_Redigér"
@@ -4306,16 +4327,16 @@ msgstr "Erstat"
 msgid "Replace all"
 msgstr "Erstat alle"
 
-#: ../plugins/document-manager/search-files.c:596
+#: ../plugins/document-manager/search-files.c:616
 #: ../plugins/file-manager/file-view.c:662
 msgid "Filename"
 msgstr "Filnavn"
 
-#: ../plugins/document-manager/search-files.c:708
+#: ../plugins/document-manager/search-files.c:728
 msgid "All text files"
 msgstr "Alle tekstfiler"
 
-#: ../plugins/document-manager/search-files.c:849
+#: ../plugins/document-manager/search-files.c:871
 msgid "Find in files"
 msgstr "Søg i filer"
 
@@ -4569,7 +4590,7 @@ msgstr "Vælg mappe at vise når intet projekt er åbent"
 
 #: ../plugins/file-manager/file-manager.ui.h:3
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2186
+#: ../plugins/symbol-db/plugin.c:2184
 msgid "Global"
 msgstr "Global"
 
@@ -5924,45 +5945,45 @@ msgstr "API-mærker (C/C++)"
 msgid "C/C++"
 msgstr "C/C++"
 
-#: ../plugins/language-support-cpp-java/plugin.c:881
+#: ../plugins/language-support-cpp-java/plugin.c:958
 msgid "Code added for widget."
 msgstr "Kode tilføjet til kontrol."
 
 #. ANJUTA_STOCK_AUTOINDENT,
-#: ../plugins/language-support-cpp-java/plugin.c:1339
+#: ../plugins/language-support-cpp-java/plugin.c:1417
 #: ../plugins/language-support-python/plugin.c:457
 msgid "Auto-Indent"
 msgstr "Autoindryk"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1340
+#: ../plugins/language-support-cpp-java/plugin.c:1418
 #: ../plugins/language-support-python/plugin.c:458
 msgid "Auto-indent current line or selection based on indentation settings"
 msgstr ""
 "Autoindryk den aktuelle linje eller markering baseret på "
 "indrykningsindstillingerne"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1346
+#: ../plugins/language-support-cpp-java/plugin.c:1424
 msgid "Comment/Uncomment"
 msgstr "Kommentér/afkommentér"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1347
+#: ../plugins/language-support-cpp-java/plugin.c:1425
 msgid "Comment or uncomment current selection"
 msgstr "Sæt nuværende markering i eller uden for kommentar"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1352
+#: ../plugins/language-support-cpp-java/plugin.c:1430
 msgid "Swap .h/.c"
 msgstr "Byt .h/.c"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1353
+#: ../plugins/language-support-cpp-java/plugin.c:1431
 msgid "Swap C header and source files"
 msgstr "Udskift C-header og -kildefiler"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1393
+#: ../plugins/language-support-cpp-java/plugin.c:1471
 msgid "C++/Java Assistance"
 msgstr "C++/Java-hjælp"
 
-#: ../plugins/language-support-cpp-java/plugin.c:1630
-#: ../plugins/language-support-cpp-java/plugin.c:1664
+#: ../plugins/language-support-cpp-java/plugin.c:1708
+#: ../plugins/language-support-cpp-java/plugin.c:1742
 msgid "C/C++/Java/Vala"
 msgstr "C/C++/Java/Vala"
 
@@ -6039,6 +6060,15 @@ msgstr "Python-hjælp"
 msgid "Python"
 msgstr "Python"
 
+#: ../plugins/language-support-python/python-plugin.plugin.in.h:1
+msgid "Python support Plugin"
+msgstr "Udvidelsesmodul for Pythonunderstøttelse"
+
+#: ../plugins/language-support-python/python-plugin.plugin.in.h:2
+msgid "Python support plugin for code completion, auto indentation etc."
+msgstr ""
+"Modul til understøttelse af kodefuldførelse, autoindrykning osv. i Python."
+
 #: ../plugins/language-support-python/python-plugin-properties.ui.h:2
 msgid "Enable adaptive indentation"
 msgstr "Aktivér selvjusterende indrykning"
@@ -6058,6 +6088,14 @@ msgstr "Fortolker"
 #: ../plugins/language-support-python/python-plugin-properties.ui.h:16
 msgid "Environment"
 msgstr "Miljø"
+
+#: ../plugins/language-support-vala/anjuta-vala.plugin.in.h:1
+msgid "Vala support Plugin"
+msgstr "Modul til understøttelse af Vala"
+
+#: ../plugins/language-support-vala/anjuta-vala.plugin.in.h:2
+msgid "Vala support plugin, adds code completion."
+msgstr "Modul til understøttelse af Vala, som tilføjer kodefuldførelse."
 
 #: ../plugins/message-view/anjuta-message-manager.plugin.in.h:1
 msgid "Message Manager"
@@ -6211,6 +6249,14 @@ msgstr[1] "%d fejl"
 #: ../plugins/mk-project/mk-project.c:505
 msgid "Unable to parse make file"
 msgstr "Kan ikke fortolke makefil"
+
+#: ../plugins/mk-project/mk-project.plugin.in.h:1
+msgid "Makefile backend"
+msgstr "Makefil-motor"
+
+#: ../plugins/mk-project/mk-project.plugin.in.h:2
+msgid "Makefile project backend, allowing only to read the project"
+msgstr "Makefile-projektmotor, som kun tillader at et projekt læses"
 
 #: ../plugins/mk-project/mk-project.ui.h:1
 msgid "Select package"
@@ -6785,7 +6831,7 @@ msgstr "Opdatér projektvisning…"
 #: ../plugins/project-manager/plugin.c:1624
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2137
+#: ../plugins/symbol-db/plugin.c:2135
 msgid "Project"
 msgstr "Projekt"
 
@@ -8326,7 +8372,7 @@ msgstr "Tabulatorstørrelse i mellemrum:"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:2
 msgid "Use tabs for indentation"
-msgstr "Anvend tabulatorer for indentering"
+msgstr "Anvend tabulatorer til indrykning"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:3
 msgid "Indentation and auto-format options"
@@ -9188,23 +9234,23 @@ msgid_plural "%d files scanned out of %d"
 msgstr[0] "%d af %d fil scannet"
 msgstr[1] "%d af %d filer scannet"
 
-#: ../plugins/symbol-db/plugin.c:1742
+#: ../plugins/symbol-db/plugin.c:1740
 msgid "Populating symbol database…"
 msgstr "Opbygger symboldatabase…"
 
-#: ../plugins/symbol-db/plugin.c:2122 ../plugins/symbol-db/plugin.c:2207
+#: ../plugins/symbol-db/plugin.c:2120 ../plugins/symbol-db/plugin.c:2205
 msgid "Symbols"
 msgstr "Symboler"
 
-#: ../plugins/symbol-db/plugin.c:2216
+#: ../plugins/symbol-db/plugin.c:2214
 msgid "SymbolDb popup actions"
 msgstr "Pop op-handlinger for symboldatabase"
 
-#: ../plugins/symbol-db/plugin.c:2224
+#: ../plugins/symbol-db/plugin.c:2222
 msgid "SymbolDb menu actions"
 msgstr "Menuhandlinger for symboldatabase"
 
-#: ../plugins/symbol-db/plugin.c:2537 ../plugins/symbol-db/plugin.c:2555
+#: ../plugins/symbol-db/plugin.c:2535 ../plugins/symbol-db/plugin.c:2553
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Symboldatabase"
@@ -9839,3567 +9885,3 @@ msgstr "Kun ikoner"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Kun tekst"
-
-#~ msgid "Anjuta IDE"
-#~ msgstr "Anjuta IDE"
-
-#~ msgid "Loaded:"
-#~ msgstr "Indlæst:"
-
-#~ msgid ""
-#~ "Unable to display help. Please make sure the Anjuta documentation package "
-#~ "is installed. It can be downloaded from http://anjuta.org."
-#~ msgstr ""
-#~ "Kan ikke vise hjælp. Sikr dig venligst, at Anjuta-dokumentationspakken er "
-#~ "installeret. Den kan hentes fra http://anjuta.org."
-
-#~ msgid "Set current thread"
-#~ msgstr "Indstil aktuel tråd"
-
-#~ msgid "ID"
-#~ msgstr "Id"
-
-#~ msgid "Thread operations"
-#~ msgstr "Trådoperationer"
-
-#~ msgid "_Code Fold Margin"
-#~ msgstr "_Kodefoldemargen"
-
-#~ msgid "Show/Hide code fold margin"
-#~ msgstr "Vis/skjul kodefoldemargen"
-
-#~ msgid "_Indentation Guides"
-#~ msgstr "_Indrykningsguider"
-
-#~ msgid "Show/Hide indentation guides"
-#~ msgstr "Vis/skjul indrykningsguider"
-
-#~ msgid "Search for \"%s\" reached the end and wrapped around."
-#~ msgstr "Søgningen efter \"%s\" nåede bunden og blev fortsat fra toppen."
-
-#~ msgid ""
-#~ "Search for \"%s\" reached the end and wrapped around but no new match was "
-#~ "found."
-#~ msgstr ""
-#~ "Søgningen efter \"%s\" nåede bunden og blev fortsat fra toppen uden nye "
-#~ "resultater."
-
-#~ msgid "Delete selected branches"
-#~ msgstr "Slet valgte grene"
-
-#~ msgid "Browse other nodes"
-#~ msgstr "Gennemse andre knuder"
-
-#~ msgid "New Directory"
-#~ msgstr "Ny mappe"
-
-#~ msgid "_Directory name:"
-#~ msgstr "_Mappenavn:"
-
-#~ msgid "New _Directory"
-#~ msgstr "Ny _mappe"
-
-#~ msgid "Directory properties"
-#~ msgstr "Mappeegenskaber"
-
-#~ msgid "Command used for starting a terminal"
-#~ msgstr "Kommando til at starte en terminal"
-
-#~ msgid "Kick start _tutorial"
-#~ msgstr "Kickstart-_kursus"
-
-#~ msgid "Anjuta Kick start tutorial"
-#~ msgstr "Kickstart-kursus til Anjuta"
-
-#~ msgid "_Advanced tutorial"
-#~ msgstr "_Avanceret kursus"
-
-#~ msgid "Anjuta advanced tutorial"
-#~ msgstr "Avanceret Anjuta-kursus"
-
-#~ msgid "X"
-#~ msgstr "X"
-
-#~ msgid "Y"
-#~ msgstr "Y"
-
-#~ msgid "Markup"
-#~ msgstr "Opmærkning"
-
-#~ msgid "Marked up text to render"
-#~ msgstr "Opmærket tekst der skal vises"
-
-#~ msgid "Font description as a string"
-#~ msgstr "Skrifttypebeskrivelse som en streng"
-
-#~ msgid "Font description"
-#~ msgstr "Skrifttypebeskrivelse"
-
-#~ msgid "Font description as a PangoFontDescription struct"
-#~ msgstr "Beskrivelse af skrifttype som en PangoFontDescription-struct"
-
-#~ msgid "Font family"
-#~ msgstr "Skrifttypefamilie"
-
-#~ msgid "Name of the font family, e.g. Sans, Helvetica, Times, Monospace"
-#~ msgstr ""
-#~ "Navn på en skrifttypefamilie, f.eks. Sans, Helvetica, Times, Monospace"
-
-#~ msgid "Font style"
-#~ msgstr "Skrifttypestil"
-
-#~ msgid "Font variant"
-#~ msgstr "Skrifttypevariant"
-
-#~ msgid "Font weight"
-#~ msgstr "Skriftvægt"
-
-#~ msgid "Font stretch"
-#~ msgstr "Skriftstrækning"
-
-#~ msgid "Font size"
-#~ msgstr "Skriftstørrelse"
-
-#~ msgid "Font points"
-#~ msgstr "Skriftstørrelse"
-
-#~ msgid "Font size in points"
-#~ msgstr "Skriftstørrelse i punkter"
-
-#~ msgid "Rise"
-#~ msgstr "Hævning"
-
-#~ msgid ""
-#~ "Offset of text above the baseline (below the baseline if rise is negative)"
-#~ msgstr ""
-#~ "Afsæt for teksten over basislinjen (under basislinjen hvis tallet er "
-#~ "negativt)"
-
-#~ msgid "Strikethrough"
-#~ msgstr "Gennemstreget"
-
-#~ msgid "Whether to strike through the text"
-#~ msgstr "Om teksten skal være gennemstreget"
-
-# ?
-#~ msgid "Underline"
-#~ msgstr "Understreget"
-
-#~ msgid "Style of underline for this text"
-#~ msgstr "Stil af understreg for denne tekst"
-
-#~ msgid "Scale"
-#~ msgstr "Skalering"
-
-#~ msgid "Size of font, relative to default size"
-#~ msgstr "Størrelse af skrift relativt til standardstørrelsen"
-
-#~ msgid "Color"
-#~ msgstr "Farve"
-
-#~ msgid "Text color, as string"
-#~ msgstr "Tekstfarve som en streng"
-
-#~ msgid "Text color, as a GdkColor"
-#~ msgstr "Tekstfarve som en GdkColor"
-
-#~ msgid "Text color, as an R/G/B/A combined integer"
-#~ msgstr "Tekstfarve som en R/G/B/A-heltalskombination"
-
-#~ msgid "Text width"
-#~ msgstr "Tekstbredde"
-
-#~ msgid "Width of the rendered text"
-#~ msgstr "Bredden af teksten"
-
-#~ msgid "Text height"
-#~ msgstr "Teksthøjde"
-
-#~ msgid "Height of the rendered text"
-#~ msgstr "Højden af teksten"
-
-#~ msgid "Font family set"
-#~ msgstr "Skrifttypefamilie givet"
-
-#~ msgid "Whether this tag affects the font family"
-#~ msgstr "Om dette mærke påvirker skrifttypefamilien"
-
-#~ msgid "Font style set"
-#~ msgstr "Skrifttypestil givet"
-
-#~ msgid "Whether this tag affects the font style"
-#~ msgstr "Om dette mærke påvirker skrifttypestilen"
-
-#~ msgid "Font variant set"
-#~ msgstr "Skriftvariant givet"
-
-#~ msgid "Whether this tag affects the font variant"
-#~ msgstr "Om dette mærke påvirker skrifttypevarianten"
-
-#~ msgid "Font weight set"
-#~ msgstr "Skriftvægt givet"
-
-#~ msgid "Whether this tag affects the font weight"
-#~ msgstr "Om dette mærke påvirker skriftvægten"
-
-#~ msgid "Font stretch set"
-#~ msgstr "Skriftstrækning givet"
-
-#~ msgid "Whether this tag affects the font stretch"
-#~ msgstr "Om dette mærke påvirker skriftstrækningen"
-
-#~ msgid "Font size set"
-#~ msgstr "Skriftstørrelse givet"
-
-#~ msgid "Whether this tag affects the font size"
-#~ msgstr "Om dette mærke påvirker skriftstørrelsen"
-
-#~ msgid "Rise set"
-#~ msgstr "Hævning givet"
-
-#~ msgid "Whether this tag affects the rise"
-#~ msgstr "Om dette mærke påvirker hævningen"
-
-#~ msgid "Strikethrough set"
-#~ msgstr "Gennemstregning givet"
-
-#~ msgid "Whether this tag affects strikethrough"
-#~ msgstr "Om dette mærke påvirker gennemstregning"
-
-#~ msgid "Underline set"
-#~ msgstr "Understregning givet"
-
-#~ msgid "Whether this tag affects underlining"
-#~ msgstr "Om dette mærke påvirker understregning"
-
-#~ msgid "Scale set"
-#~ msgstr "Skalering givet"
-
-#~ msgid "Whether this tag affects font scaling"
-#~ msgstr "Om dette mærke påvirker skriftskalering"
-
-#~ msgid "Args: %s"
-#~ msgstr "Argumenter: %s"
-
-#~ msgid "Inheritance Graph"
-#~ msgstr "Nedarvningsgraf"
-
-#~ msgid "Info _Target Files"
-#~ msgstr "_Målfiler for Info"
-
-#~ msgid "Display information on the files the debugger is active with"
-#~ msgstr "Vis information om de filer fejlsøgeren er aktive med"
-
-#~ msgid "Info _Program"
-#~ msgstr "_Programinformation"
-
-#~ msgid "Display information on the execution status of the program"
-#~ msgstr "Vis information om kørselsstatus af programmet"
-
-# Citat fra docs
-#
-# 5.7.5. Information about kernel structure
-#
-# It is possible to get some information kernel data on the current process by choosing the menu item Debug->Information->Kernel user struct. A window will open displaying all informations. 
-#~ msgid "Info _Kernel User Struct"
-#~ msgstr "Information om _kernens struktur"
-
-#~ msgid "Display the contents of kernel 'struct user' for current child"
-#~ msgstr "Vis indholdet af kernens \"struct-user\" for aktuelle barn"
-
-#~ msgid "Info _Global Variables"
-#~ msgstr "Information om _globale variable"
-
-#~ msgid "Display all global and static variables of the program"
-#~ msgstr "Vis alle globale og statiske variabler for programmet"
-
-#~ msgid "Info _Current Frame"
-#~ msgstr "Information om _aktuel ramme"
-
-#~ msgid "Display information about the current frame of execution"
-#~ msgstr "Vis information om den aktuelle kørselsramme"
-
-#~ msgid "Info Function _Arguments"
-#~ msgstr "Information om funktions_argumenter"
-
-#~ msgid "Display function arguments of the current frame"
-#~ msgstr "Vis funktionsargumenter for den aktuelle ramme"
-
-#~ msgid "Unable to build user interface for New File"
-#~ msgstr "Kan ikke bygge brugergrænsefladen for Ny Fil"
-
-#~ msgid "Unable to build project assistant user interface reading %s."
-#~ msgstr ""
-#~ "Kan ikke bygge projektassistentens brugergrænseflade under læsning af %s."
-
-#~ msgid "Missing file %s"
-#~ msgstr "Mangler filen %s"
-
-#~ msgid "A graph painter for the inheritance of the classes."
-#~ msgstr "En graftegner for klassenedarvning."
-
-#~ msgid "Class Inheritance"
-#~ msgstr "Klassenedarvning"
-
-#~ msgid ""
-#~ "Are you sure you want to reset the preferences to\n"
-#~ "their default settings?"
-#~ msgstr ""
-#~ "Er du sikker på, at du vil nulstille indstillerne til\n"
-#~ "deres standard indstillinger?"
-
-#~ msgid "Help display"
-#~ msgstr "Hjælpevisning"
-
-#~ msgid "Quick _ReSearch"
-#~ msgstr "Hurtig _videresøgning"
-
-#~ msgid "Repeat quick search"
-#~ msgstr "Gentag hurtigsøgning"
-
-#~ msgid "_Add Bookmark"
-#~ msgstr "_Tilføj bogmærke"
-
-#~ msgid "Match case"
-#~ msgstr "Versalfølsom"
-
-#~ msgid "Invalid GbfAmConfigValue type"
-#~ msgstr "Ugyldig GbfAmConfigValue-type"
-
-#~ msgid "Generic rule"
-#~ msgstr "Generisk regel"
-
-#~ msgid "Extra target"
-#~ msgstr "Ekstra mål"
-
-# Configure plejer at være et 'mål' for make, så man har kommandoer såsom 'make install', 'make configure' og den slags.  Bemærk placeringen i samme kildefil som strenge der har med mål at gøre
-#~ msgid "Configure file"
-#~ msgstr "Konfigureringsfil"
-
-#~ msgid "GLib mkenums"
-#~ msgstr "GLib mkenums"
-
-#~ msgid "GLib genmarshal"
-#~ msgstr "GLib genmarshal"
-
-# i princippet kan rule måske oversættes, men vi må hellere være forsigtige
-#~ msgid "Intl rule"
-#~ msgstr "Intl rule"
-
-#~ msgid "Group doesn't exist"
-#~ msgstr "Gruppen findes ikke"
-
-#~ msgid "Target doesn't exist"
-#~ msgstr "Målet findes ikke"
-
-#~ msgid "Invalid or remote path (only local paths supported)"
-#~ msgstr "Ugyldig eller fjern sti (kun lokale stier understøttes)"
-
-#~ msgid "Malformed project"
-#~ msgstr "Misdannet projekt"
-
-#~ msgid "Parent group doesn't exist"
-#~ msgstr "Ophavsgruppen findes ikke"
-
-#~ msgid "Group already exists"
-#~ msgstr "Gruppen findes allerede"
-
-#~ msgid "Group couldn't be created"
-#~ msgstr "Gruppen kunne ikke oprettes"
-
-#~ msgid "Group couldn't be removed"
-#~ msgstr "Gruppen kunne ikke fjernes"
-
-#~ msgid "Target already exists"
-#~ msgstr "Målet findes allerede"
-
-#~ msgid "General failure in target creation"
-#~ msgstr "Generel fejl under oprettelse af mål"
-
-#~ msgid "Newly created target could not be identified"
-#~ msgstr "Det nyligt oprettede mål kunne ikke identificeres"
-
-#~ msgid "Target couldn't be removed"
-#~ msgstr "Målet kunne ikke fjernes"
-
-#~ msgid "Source doesn't exist"
-#~ msgstr "Kilden findes ikke"
-
-#~ msgid ""
-#~ "Source file name can only contain alphanumeric, '_', '-' or '.' characters"
-#~ msgstr ""
-#~ "Kildefilnavnet kan kun indeholde alfanumeriske tegn, samt \"_\", \"-\" og "
-#~ "\".\""
-
-#~ msgid "Source file is already in given target"
-#~ msgstr "Kildefilen findes allerede i det givne mål"
-
-#~ msgid "General failure in adding source file"
-#~ msgstr "Generel fejl ved tilføjelse af kildefil"
-
-#~ msgid "Newly added source file could not be identified"
-#~ msgstr "Nyligt tilføjet kildefil kunne ikke identificeres"
-
-#~ msgid "Source couldn't be removed"
-#~ msgstr "Kilden kunne ikke fjernes"
-
-#~ msgid "Project directory"
-#~ msgstr "Projektmappe"
-
-#~ msgid "Enter new module"
-#~ msgstr "Indtast nyt modul"
-
-#~ msgid ""
-#~ "Are you sure you want to remove module \"%s\" and all its associated "
-#~ "packages?"
-#~ msgstr ""
-#~ "Er du sikker på, at du vil fjerne modulet \"%s\" og alle dets tilhørende "
-#~ "pakker?"
-
-#~ msgid "Are you sure you want to remove package \"%s\"?"
-#~ msgstr "Er du sikker på, at du vil fjerne pakken \"%s\"?"
-
-#~ msgid "Enter new variable"
-#~ msgstr "Indtast ny variabel"
-
-#~ msgid "Are you sure you want to remove variable \"%s\"?"
-#~ msgstr "Er du sikker på, at du vil fjerne variablen \"%s\"?"
-
-#~ msgid "Project:"
-#~ msgstr "Projekt:"
-
-#~ msgid "Module/Packages"
-#~ msgstr "Modul/pakker"
-
-#~ msgid "Version"
-#~ msgstr "Version"
-
-#~ msgid "Use"
-#~ msgstr "Brug"
-
-#~ msgid "Group name:"
-#~ msgstr "Gruppenavn:"
-
-#~ msgid "Advanced"
-#~ msgstr "Avanceret"
-
-#~ msgid "gcj compiler flags (ahead-of-time):"
-#~ msgstr "gcj-kompilerflag (statisk):"
-
-#~ msgid "Java compiler flags (just-in-time):"
-#~ msgstr "Java-kompilerflag (dynamisk):"
-
-#~ msgid "Includes (deprecated):"
-#~ msgstr "Inklusioner (deprecieret):"
-
-#~ msgid "C preprocessor flags"
-#~ msgstr "C-præprocessorflag"
-
-#~ msgid "C++ compiler flags"
-#~ msgstr "C++-kompilerflag"
-
-#~ msgid "gcj compiler flags (ahead-of-time)"
-#~ msgstr "gcj-kompilerflag (statisk)"
-
-#~ msgid "Dependencies:"
-#~ msgstr "Afhængigheder:"
-
-#~ msgid "Advanced options"
-#~ msgstr "Avancerede indstillinger"
-
-#~ msgid "Target name:"
-#~ msgstr "Målnavn:"
-
-#~ msgid "Advanced…"
-#~ msgstr "Avanceret…"
-
-#~ msgid "Invalid GbfMkfileConfigValue type"
-#~ msgstr "Ugyldig GbfMkfileConfigValue-type"
-
-#~ msgid "Group coudn't be removed"
-#~ msgstr "Gruppen kunne ikke fjernes"
-
-#~ msgid "Target couldn't be created"
-#~ msgstr "Målet kunne ikke oprettes"
-
-#~ msgid "Target coudn't be removed"
-#~ msgstr "Målet kunne ikke fjernes"
-
-#~ msgid "Source is already in target"
-#~ msgstr "Kilden findes allerede i målet"
-
-#~ msgid "Source couldn't be added"
-#~ msgstr "Kilden kunne ikke tilføjes"
-
-#~ msgid "Includes:"
-#~ msgstr "Inklusioner:"
-
-#~ msgid "Add Remote Branch"
-#~ msgstr "Tilføj fjern gren"
-
-#~ msgid "Apply Stash"
-#~ msgstr "Anvend gemmested"
-
-#~ msgid "Author/Grep"
-#~ msgstr "Forfatter/Grep"
-
-#~ msgid "Bad revision:"
-#~ msgstr "Dårlig revision:"
-
-#~ msgid "Branch to switch to:"
-#~ msgstr "Gren at skifte til:"
-
-#~ msgid "Branches to delete:"
-#~ msgstr "Grene der skal slettes:"
-
-#~ msgid "Check out all local changes"
-#~ msgstr "Hent alle lokale ændringer"
-
-#~ msgid "Create Branch"
-#~ msgstr "Opret gren"
-
-#~ msgid "Delete Branch"
-#~ msgstr "Slet gren"
-
-#~ msgid "Delete Remote Branch"
-#~ msgstr "Slet fjern gren"
-
-#~ msgid "Delete Tags"
-#~ msgstr "Slet mærker"
-
-#~ msgid "Filters"
-#~ msgstr "Filtre"
-
-#~ msgid "From:"
-#~ msgstr "Fra:"
-
-#~ msgid "Good revision:"
-#~ msgstr "God revision:"
-
-#~ msgid "Grep:"
-#~ msgstr "Grep:"
-
-#~ msgid "Ignore Files"
-#~ msgstr "Ignorér filer"
-
-#~ msgid "Remote branch to rebase from:"
-#~ msgstr "Den fjerne gren, hvorfra der flyttes forgreningspunkt (rebase):"
-
-#~ msgid "Remote to delete:"
-#~ msgstr "Slettes fjernt:"
-
-#~ msgid "Repository origin"
-#~ msgstr "Arkivoprindelse"
-
-#~ msgid "Reset to:"
-#~ msgstr "Nulstil til:"
-
-#~ msgid "Restore index"
-#~ msgstr "Gendan indeks"
-
-#~ msgid "Revision/Tag:"
-#~ msgstr "Revision/Mærke:"
-
-#~ msgid "Select Files to Check Out:"
-#~ msgstr "Vælg filer at hente:"
-
-#~ msgid "Select Files to Ignore:"
-#~ msgstr "Vælg filer at ignorere:"
-
-#~ msgid "Select Files to Unstage:"
-#~ msgstr "Vælg filer at fjerne fra indeks (unstage):"
-
-#~ msgid "Select Mailbox File"
-#~ msgstr "Vælg postkassefil"
-
-#~ msgid "Select file to add:"
-#~ msgstr "Vælg fil at tilføje:"
-
-#~ msgid "Select file to remove:"
-#~ msgstr "Vælg fil at fjerne:"
-
-#~ msgid "Show the contents of the selected stash in an editor"
-#~ msgstr "Vis indholdet af det valgte gemmested i et redigeringsprogram"
-
-#~ msgid "Stash the working tree's uncommitted changes"
-#~ msgstr "Gem arbejdstræets uintegrerede ændringer"
-
-#~ msgid "Switch to Another Branch"
-#~ msgstr "Skift til en anden gren"
-
-#~ msgid "Tags to delete:"
-#~ msgstr "Mærker at slette:"
-
-#~ msgid "To:"
-#~ msgstr "Til:"
-
-#~ msgid "View log"
-#~ msgstr "Vis log"
-
-#~ msgid "page 3"
-#~ msgstr "side 3"
-
-#~ msgid "Git: File staged for add."
-#~ msgstr "Git: Fil indekseret (staged) til tilføjelse."
-
-#~ msgid "Please select a file."
-#~ msgstr "Vælg venligst en fil."
-
-#~ msgid "Git: Added remote branch \"%s\"."
-#~ msgstr "Git: Tilføjede den fjerne gren \"%s\"."
-
-#~ msgid "Git: Fetching…"
-#~ msgstr "Git: Henter…"
-
-#~ msgid "Please select a mailbox file."
-#~ msgstr "Vælg venligst en postkassefil."
-
-#~ msgid "Git: File retrieved."
-#~ msgstr "Git: Filen blev hentet."
-
-#~ msgid "Git: Files checked out."
-#~ msgstr "Git: Filer hentet."
-
-#~ msgid "Git: Created branch \"%s\"."
-#~ msgstr "Git: Oprettede grenen \"%s\"."
-
-#~ msgid "Git: Created tag \"%s\"."
-#~ msgstr "Git: Oprettede mærket \"%s\"."
-
-#~ msgid "Please select branches to delete"
-#~ msgstr "Vælg venligst grenene, der skal slettes"
-
-#~ msgid "Git: Fetch complete."
-#~ msgstr "Git: Henteoperation (fetch) fuldendt."
-
-#~ msgid "Short log"
-#~ msgstr "Kort log"
-
-#~ msgid "Git: Retrieving log…"
-#~ msgstr "Git: Henter log…"
-
-#~ msgid "Select a file"
-#~ msgstr "Vælg en fil"
-
-#~ msgid "Git: Merge complete."
-#~ msgstr "Git: Fletning fuldført."
-
-#~ msgid "Git: Pull complete."
-#~ msgstr "Git: Trækkeoperation fuldført."
-
-#~ msgid "Please select a remote to pull from."
-#~ msgstr "Vælg en fjern placering at trække fra."
-
-#~ msgid "Please enter the URL of the repository to pull from."
-#~ msgstr "Indtast URL til arkivet, der skal trækkes fra."
-
-#~ msgid "Git: Push complete."
-#~ msgstr "Git: Skubbeoperation fuldført."
-
-#~ msgid "Please select a remote to push to."
-#~ msgstr "Vælg en fjern placering at skubbe til."
-
-#~ msgid "Please enter the URL of the repository to push to."
-#~ msgstr "Indtast URL til arkivet, der skal skubbes til."
-
-#~ msgid "Git: Pushing…"
-#~ msgstr "Git: Skubber…"
-
-#~ msgid "Git: Rebasing"
-#~ msgstr "Git: Flytter forgreningspunkt"
-
-#~ msgid "Git: File removed."
-#~ msgstr "Git: Filen fjernet."
-
-#~ msgid "Git: Resolve complete."
-#~ msgstr "Git: Løsning fuldført."
-
-#~ msgid "Git: Stash dropped."
-#~ msgstr "Git: Gemmested fjernet."
-
-#~ msgid "Git: All stashes cleared."
-#~ msgstr "Git: Alle gemmesteder ryddet."
-
-#~ msgid "Git: Branch checkout complete."
-#~ msgstr "Git: Grenen blev hentet."
-
-#~ msgid "There are no branches available."
-#~ msgstr "Der er ingen tilgængelige grene."
-
-#~ msgid "Please select a stash"
-#~ msgstr "Vælg venligst et gemmested"
-
-#~ msgid "Git: Changes stored in a stash."
-#~ msgstr "Git: Ændringer gemt."
-
-#~ msgid "Git: Stashed changes applied."
-#~ msgstr "Git: Gemte ændringer anvendt."
-
-#~ msgid "Git: Diff complete."
-#~ msgstr "Git: Diff fuldført."
-
-#~ msgid "Git: Files unstaged."
-#~ msgstr "Git: Filer fjernet fra indeks."
-
-#~ msgid "_Git"
-#~ msgstr "_Git"
-
-#~ msgid "_Changes"
-#~ msgstr "_Ændringer"
-
-#~ msgid "_Stash"
-#~ msgstr "_Gem"
-
-#~ msgid "Save uncommitted changes and re-apply them later"
-#~ msgstr "Gem uintegrerede ændringer og genanvend dem senere"
-
-#~ msgid "_Apply stashed changes…"
-#~ msgstr "_Anvend gemte ændringer…"
-
-#~ msgid "_View log…"
-#~ msgstr "_Vis log…"
-
-#~ msgid "View change history"
-#~ msgstr "Vis ændringshistorik"
-
-#~ msgid "_Push…"
-#~ msgstr "_Skub…"
-
-#~ msgid "_Pull…"
-#~ msgstr "_Træk…"
-
-#~ msgid "Update the working copy"
-#~ msgstr "Opdatér arbejdskopien"
-
-#~ msgid "Update remote branches"
-#~ msgstr "Opdatér fjerne grene"
-
-#~ msgid "_Files"
-#~ msgstr "_Filer"
-
-#~ msgid "_Ignore…"
-#~ msgstr "_Ignorér…"
-
-#~ msgid "Ignore files"
-#~ msgstr "Ignorér filer"
-
-#~ msgid "_Check out files…"
-#~ msgstr "Hent filer (_checkout)…"
-
-#~ msgid "_Unstage files…"
-#~ msgstr "_Fjern (unstage) filer fra indeks…"
-
-#~ msgid "Create patch series…"
-#~ msgstr "Opret patch-række…"
-
-#~ msgid "Generate patch files for submission upstream"
-#~ msgstr "Generér patchfiler til indsendelse upstream"
-
-#~ msgid "_Apply…"
-#~ msgstr "_Anvend…"
-
-#~ msgid "Start applying a patch series"
-#~ msgstr "Påbegynd anvendelse af patchrække"
-
-#~ msgid "_Skip current patch"
-#~ msgstr "_Spring den aktuelle patch over"
-
-#~ msgid "_Branches"
-#~ msgstr "_Grene"
-
-#~ msgid "_Create branch…"
-#~ msgstr "_Opret gren…"
-
-#~ msgid "_Delete branch…"
-#~ msgstr "_Fjern gren…"
-
-#~ msgid "_Switch to another branch…"
-#~ msgstr "_Skift til en anden gren…"
-
-#~ msgid "_Merge…"
-#~ msgstr "_Flet…"
-
-#~ msgid "Merge changes from another branch into the current one"
-#~ msgstr "Flet ændringer fra en anden gren ind i den aktuelle"
-
-#~ msgid "_Rebase"
-#~ msgstr "_Flyt forgreningspunkt"
-
-#~ msgid "Merge your changes with an upstream remote branch"
-#~ msgstr "Flet dine ændringer med en fjern upstream-gren"
-
-#~ msgid "_Start…"
-#~ msgstr "_Start…"
-
-#~ msgid "Start a rebase"
-#~ msgstr "Start flytning af forgreningspunkt"
-
-#~ msgid "Continue a rebase that stopped because of conflicts"
-#~ msgstr ""
-#~ "Fortsæt en flytning af forgreningspunkt, der blev standset på grund af "
-#~ "konflikter"
-
-#~ msgid "_Cherry pick…"
-#~ msgstr "_Cherry-pick…"
-
-#~ msgid ""
-#~ "Selectively merge individual changes from other branches into the current "
-#~ "one"
-#~ msgstr "Flet selektivt enkelte ændringer fra andre grene til den aktuelle"
-
-#~ msgid "_Remote branches"
-#~ msgstr "_Fjerne grene"
-
-#~ msgid "_Delete…"
-#~ msgstr "_Slet…"
-
-#~ msgid "_Create tag…"
-#~ msgstr "_Opret mærke…"
-
-#~ msgid "_Delete tag…"
-#~ msgstr "_Slet mærke…"
-
-#~ msgid "Delete tags"
-#~ msgstr "Slet mærker"
-
-#~ msgid "_Reset tree…"
-#~ msgstr "_Nulstil træ…"
-
-#~ msgid "Reset repository head to any past state"
-#~ msgstr "Nulstil arkivhoved til enhver tidligere tilstand"
-
-# En kommando der bruger bisektion til at finde ud af hvilken revision der introducerede en bestemt fejl
-#~ msgid "Bisect"
-#~ msgstr "Bisektion"
-
-#~ msgid "Start a bisect operation"
-#~ msgstr "Påbegynd en bisektionsoperation"
-
-#~ msgid "Stop the bisect and bring the tree back to normal"
-#~ msgstr "Afbryd bisektion og bring træet tilbage til normaltilstanden"
-
-#~ msgid "_Good"
-#~ msgstr "_God"
-
-#~ msgid "Mark the current head revision as good"
-#~ msgstr "Markér den nuværende hovedrevision som god"
-
-#~ msgid "_Bad"
-#~ msgstr "_Dårlig"
-
-#~ msgid "Create a new git repository or reinitialize an existing one"
-#~ msgstr "Opret et nyt git-arkiv eller ominitialisér et eksisterende"
-
-#~ msgid "View a copy of this file at this revision"
-#~ msgstr "Vis en kopi af denne fil ved denne revision"
-
-#~ msgid "Create a branch with the selected revision as its head"
-#~ msgstr "Opret en gren med den valgte revision som dens hoved"
-
-#~ msgid "Create a tag at this revision"
-#~ msgstr "Opret et mærke for denne revision"
-
-# En kommando der bruger bisektion til at finde ud af hvilken revision der introducerede en bestemt fejl
-#~ msgid "_Bisect"
-#~ msgstr "_Bisektion"
-
-#~ msgid "_Set good revision"
-#~ msgstr "_Indstil god revision"
-
-#~ msgid "Mark this revision as good"
-#~ msgstr "Markér denne revision som god"
-
-#~ msgid "_Set bad revision"
-#~ msgstr "_Indstil dårlig revision"
-
-#~ msgid "Mark this revision as bad"
-#~ msgstr "Markér denne revision som dårlig"
-
-#~ msgid "View changes to this file or folder"
-#~ msgstr "Vis ændringer til denne fil eller mappe"
-
-#~ msgid "Add this file or folder to the repository"
-#~ msgstr "Føj denne fil eller mappe til arkivet"
-
-#~ msgid "Remove this file or folder from the repository"
-#~ msgstr "Fjern denne fil eller mappe fra arkivet"
-
-#~ msgid "Top level git menu item"
-#~ msgstr "Topniveau-gitmenupunkt"
-
-#~ msgid "Git operations"
-#~ msgstr "Git-operationer"
-
-#~ msgid "Git log operations"
-#~ msgstr "Git-loggeoperationer"
-
-#~ msgid "Git FM operations"
-#~ msgstr "Git-FM-operationer"
-
-#~ msgid "Git Log"
-#~ msgstr "Git-log"
-
-#~ msgid "You need to select a to do item before you can edit it"
-#~ msgstr "Du skal vælge et gøremål før du kan redigere det"
-
-#~ msgid "Add Item"
-#~ msgstr "Tilføj punkt"
-
-#~ msgid "Edit Item"
-#~ msgstr "Redigér punkt"
-
-#~ msgid "Summary:"
-#~ msgstr "Sammendrag:"
-
-#~ msgid "Category:"
-#~ msgstr "Kategori:"
-
-#~ msgid "Edit Categories"
-#~ msgstr "Redigér kategorier"
-
-#~ msgid "Due date:"
-#~ msgstr "Klardato:"
-
-#~ msgid "Notify when due"
-#~ msgstr "Påmind ved klartidspunkt"
-
-#~ msgid "Priority:"
-#~ msgstr "Prioritet:"
-
-#~ msgid "Comment:"
-#~ msgstr "Kommentar:"
-
-#~ msgid "Completed"
-#~ msgstr "Fuldført"
-
-#~ msgid "N/A"
-#~ msgstr "-"
-
-#~ msgid "stopped:"
-#~ msgstr "stoppet:"
-
-#~ msgid "You need to select a to-do item before you can remove it"
-#~ msgstr "Du skal vælge et gøremål før du kan fjerne det"
-
-#~ msgid "Are you sure you want to remove the selected to-do item?"
-#~ msgstr "Er du sikker på, at du vil fjerne det valgte gøremål?"
-
-#~ msgid "Are you sure you want to remove all the completed to-do items?"
-#~ msgstr "Er du sikker på, at du vil fjerne alle de fuldførte gøremål?"
-
-#~ msgid ""
-#~ "Are you sure you want to remove all the completed to-do items in the "
-#~ "category \"%s\"?"
-#~ msgstr ""
-#~ "Er du sikker på, at du vil fjerne alle de fuldførte gøremål i kategorien "
-#~ "\"%s\"?"
-
-#~ msgid "Export task list"
-#~ msgstr "Eksportér opgaveliste"
-
-#~ msgid "XML"
-#~ msgstr "XML"
-
-# Nok ikke klartekst, da dette har kryptografiske konnotationer
-#~ msgid "Plain Text"
-#~ msgstr "Ren tekst"
-
-#~ msgid "HTML"
-#~ msgstr "HTML"
-
-#~ msgid "Export current category only"
-#~ msgstr "Eksportér kun den aktuelle kategori"
-
-#~ msgid "HTML export options:"
-#~ msgstr "Eksportindstillinger for HTML:"
-
-#~ msgid "Embed default (CSS) style sheet"
-#~ msgstr "Indlejr forvalgt (CSS-) typografiark"
-
-#~ msgid "Custom (CSS) style sheet"
-#~ msgstr "Tilpasset (CSS-) typografiark"
-
-#~ msgid "All"
-#~ msgstr "Alle"
-
-#~ msgid "_Export"
-#~ msgstr "_Eksportér"
-
-#~ msgid "Priority"
-#~ msgstr "Prioritet"
-
-#~ msgid "Due date"
-#~ msgstr "Færdiggørelse"
-
-#~ msgid "No permission to read the file."
-#~ msgstr "Har ikke rettigheder til at læse filen."
-
-#~ msgid "Failed to read file"
-#~ msgstr "Kunne ikke læse filen"
-
-#~ msgid "Failed to parse XML structure"
-#~ msgstr "Kunne ikke fortolke XML-struktur"
-
-#~ msgid "File is not a valid gtodo file"
-#~ msgstr "Dette er ikke en gyldig gtodo-fil"
-
-#~ msgid "Personal"
-#~ msgstr "Personligt"
-
-#~ msgid "Business"
-#~ msgstr "Forretningsmæssigt"
-
-#~ msgid "Unfiled"
-#~ msgstr "Ikke anbragt"
-
-#~ msgid "No Gtodo Client to save."
-#~ msgstr "Ingen Gtodo-klient til at gemme."
-
-#~ msgid "No filename supplied."
-#~ msgstr "Intet filnavn angivet."
-
-#~ msgid "Medium"
-#~ msgstr "Mellem"
-
-#~ msgid "High"
-#~ msgstr "Høj"
-
-#~ msgid "When you delete the category \"%s\", all containing items are lost"
-#~ msgstr ""
-#~ "Når du sletter kategorien \"%s\", vil alle tilhørende punkter gå tabt"
-
-#~ msgid "Delete"
-#~ msgstr "Slet"
-
-#~ msgid "<New category (%d)>"
-#~ msgstr "<Ny kategori (%d)>"
-
-#~ msgid "The following item is due in %i minute:"
-#~ msgid_plural "The following item is due in %i minutes:"
-#~ msgstr[0] "Følgende punkt skal være klart om %i minut:"
-#~ msgstr[1] "Følgende punkt skal være klart om %i minutter:"
-
-#~ msgid "The following item is due:"
-#~ msgstr "Følgende punkt skal være klart:"
-
-#~ msgid "_Do not show again"
-#~ msgstr "Vis _ikke igen"
-
-#~ msgid "_Tasks"
-#~ msgstr "_Opgaver"
-
-#~ msgid "Hide _Completed Items"
-#~ msgstr "Skjul _fuldførte punkter"
-
-#~ msgid "Hide completed to-do items"
-#~ msgstr "Skjul færdiggjorte gøremål"
-
-#~ msgid "Hide Items Past _Due Date"
-#~ msgstr "Skjul gøremål, der har overskredet _klardato"
-
-#~ msgid "Hide items that are past due date"
-#~ msgstr "Skjul punkter efter klardato"
-
-#~ msgid "Hide Items Without _End Date"
-#~ msgstr "Skjul punkter uden _slutdato"
-
-#~ msgid "Hide items without an end date"
-#~ msgstr "Skjul gøremål, der ikke har en slutdato"
-
-#~ msgid "Task manager"
-#~ msgstr "Opgavehåndtering"
-
-#~ msgid "Task manager view"
-#~ msgstr "Visning af opgavehåndtering"
-
-#~ msgid "To-do Manager"
-#~ msgstr "Gøremålshåndtering"
-
-#~ msgid "To-do List Preferences"
-#~ msgstr "Indstillinger for gøremål"
-
-#~ msgid "Interface"
-#~ msgstr "Grænseflade"
-
-#~ msgid "Show due date column"
-#~ msgstr "Vis klardato-kolonne"
-
-#~ msgid "Show category column"
-#~ msgstr "Vis kategorikolonne"
-
-#~ msgid "Show priority column"
-#~ msgstr "Vis prioritetskolonne"
-
-#~ msgid "Tooltips in list"
-#~ msgstr "Værktøjstip i listen"
-
-#~ msgid "Show in main window"
-#~ msgstr "Vis i hovedvinduet"
-
-#~ msgid "Items that are due today"
-#~ msgstr "Punkter der skal være klar idag"
-
-#~ msgid "Items that are past due"
-#~ msgstr "Punkter der har overskredet klardato"
-
-#~ msgid "Items that are due in the next %i day"
-#~ msgid_plural "Items that are due in the next %i days"
-#~ msgstr[0] "Punkter der skal være klar indenfor den næste %i dag"
-#~ msgstr[1] "Punkter der skal være klar indenfor de næste %i dage"
-
-#~ msgid "Miscellaneous"
-#~ msgstr "Diverse"
-
-#~ msgid "Auto-purge completed items"
-#~ msgstr "Udrens automatisk fuldførte punkter"
-
-#~ msgid "Purge items after"
-#~ msgstr "Udrens punkter efter"
-
-#~ msgid "days."
-#~ msgstr "dage."
-
-#~ msgid "Auto-Purge"
-#~ msgstr "Autoudrens"
-
-#~ msgid "Notification"
-#~ msgstr "Påmindelse"
-
-#~ msgid "Allow to-do items to notify me when they are due in %i minute"
-#~ msgid_plural ""
-#~ "Allow to-do items to notify me when they are due in %i minutes"
-#~ msgstr[0] "Tillad gøremål at påminde mig når de skal være klar om %i minut"
-#~ msgstr[1] ""
-#~ "Tillad gøremål at påminde mig når de skal være klar om %i minutter"
-
-#~ msgid "Open a Task List"
-#~ msgstr "Åbn en opgaveliste"
-
-#~ msgid "Create a Task List"
-#~ msgstr "Opret en opgaveliste"
-
-#~ msgid "No Date"
-#~ msgstr "Ingen dato"
-
-#~ msgid "Messages options"
-#~ msgstr "Meddelelsesindstillinger"
-
-#~ msgid "Number of first characters to show:"
-#~ msgstr "Antal første tegn at vise:"
-
-#~ msgid "Number of last characters to show:"
-#~ msgstr "Antal sidste tegn at vise:"
-
-#~ msgid "Truncate long messages"
-#~ msgstr "Beskær lange meddelelser"
-
-#~ msgid ""
-#~ "Generation of project file failed. Cannot find an appropriate project "
-#~ "template to use. Please make sure your version of Anjuta is up-to-date."
-#~ msgstr ""
-#~ "Generering af projektfilen slog fejl. Kan ikke finde en brugbar "
-#~ "projektskabelon. Sikr dig venligst, at din udgave af Anjuta er opdateret."
-
-#~ msgid "New Group"
-#~ msgstr "Tilføj gruppe"
-
-#~ msgid "Specify _where to create the group:"
-#~ msgstr "Angiv _hvor gruppen skal oprettes:"
-
-#~ msgid "_Group name:"
-#~ msgstr "_Gruppenavn:"
-
-#~ msgid "No properties available for this group"
-#~ msgstr "Ingen tilgængelige egenskaber for denne gruppe"
-
-#~ msgid "_Refresh"
-#~ msgstr "_Genopfrisk"
-
-#~ msgid "Refresh project manager tree"
-#~ msgstr "Genopfrisk projekthåndteringstræ"
-
-#~ msgid "Add _Group…"
-#~ msgstr "Tilføj _gruppe…"
-
-#~ msgid "Add a group to project"
-#~ msgstr "Tilføj en gruppe til projektet"
-
-#~ msgid "Add _Group"
-#~ msgstr "Tilføj _gruppe"
-
-#~ msgid "Add _Target"
-#~ msgstr "Tilføj _mål"
-
-#~ msgid ""
-#~ "Field \"%s\" must start with a letter, a digit or an underscore and "
-#~ "contain only letters, digits, underscore, minus and dot. Please fix it."
-#~ msgstr ""
-#~ "Feltet \"%s\" skal begynde med et bogstav, et ciffer eller en bundstreg "
-#~ "og indeholde kun bogstaver, cifre, bundstreger, minus og punktum.  Fiks "
-#~ "det venligst."
-
-#~ msgid ""
-#~ "Field \"%s\" must start with a letter, a digit, an underscore or a "
-#~ "directory separator and contain only letters, digits, underscore, "
-#~ "directory separator, minus and dot. Please fix it."
-#~ msgstr ""
-#~ "Feltet \"%s\" skal begynde med et bogstav, et ciffer eller en bundstreg "
-#~ "og indeholde kun bogstaver, cifre, bundstreger, minus og punktum.  Fiks "
-#~ "det venligst."
-
-#~ msgid "No"
-#~ msgstr "Nej"
-
-#~ msgid "GTK+"
-#~ msgstr "GTK+"
-
-#~ msgid "A generic GTKmm (C++) project"
-#~ msgstr "Et generisk GTKmm-projekt (C++)"
-
-#~ msgid "GTKmm"
-#~ msgstr "GTKmm"
-
-#~ msgid "Actions"
-#~ msgstr "Handlinger"
-
-#~ msgid "Backward"
-#~ msgstr "Baglæns"
-
-#~ msgid "Basic Search & Replace"
-#~ msgstr "Basal søg & erstat"
-
-#~ msgid "Choose Directories:"
-#~ msgstr "Vælg mapper:"
-
-#~ msgid "Choose Files:"
-#~ msgstr "Vælg filer:"
-
-#~ msgid "Expand regex back references"
-#~ msgstr "Udvid bagudreferencer i regex"
-
-#~ msgid "File Filter"
-#~ msgstr "Filfilter"
-
-#~ msgid "Find & Replace"
-#~ msgstr "Søg & erstat"
-
-#~ msgid "Forward"
-#~ msgstr "Fremad"
-
-#~ msgid "Full Buffer"
-#~ msgstr "Fuld buffer"
-
-#~ msgid "Greedy matching"
-#~ msgstr "Grådig træfning"
-
-#~ msgid "Ignore Binary Files"
-#~ msgstr "Ignorér binære filer"
-
-#~ msgid "Ignore Directories:"
-#~ msgstr "Ignorér mapper:"
-
-#~ msgid "Ignore Files:"
-#~ msgstr "Ignorér filer:"
-
-#~ msgid "Ignore Hidden Directories"
-#~ msgstr "Ignorér skjulte mapper"
-
-#~ msgid "Ignore Hidden Files"
-#~ msgstr "Ignorér skjulte filer"
-
-#~ msgid "Match at start of word"
-#~ msgstr "Match begyndelse af ord"
-
-#~ msgid "Match complete lines"
-#~ msgstr "Match hele linjer"
-
-#~ msgid "Match complete words"
-#~ msgstr "Match hele ord"
-
-#~ msgid "Maximum Actions"
-#~ msgstr "Maksimalt antal handlinger"
-
-#~ msgid "Modify"
-#~ msgstr "Modificér"
-
-#~ msgid "New Name:"
-#~ msgstr "Nyt navn:"
-
-#~ msgid "No Limit"
-#~ msgstr "Ingen grænse"
-
-#~ msgid "Parameters"
-#~ msgstr "Paremetre"
-
-#~ msgid "Replace With:"
-#~ msgstr "Erstat med:"
-
-#~ msgid "Search Action:"
-#~ msgstr "Søgehandling:"
-
-#~ msgid "Search Direction:"
-#~ msgstr "Søgeretning:"
-
-#~ msgid "Search Expression"
-#~ msgstr "Søgeudtryk"
-
-#~ msgid "Search Expression:"
-#~ msgstr "Søgeudtryk:"
-
-#~ msgid "Search In:"
-#~ msgstr "Søg i:"
-
-#~ msgid "Search Recursively"
-#~ msgstr "Søg rekursivt"
-
-#~ msgid "Search Target"
-#~ msgstr "Søgemål"
-
-#~ msgid "Search variable"
-#~ msgstr "Søgevariabel"
-
-#~ msgid "Setting"
-#~ msgstr "Indstilling"
-
-#~ msgid "_Find…"
-#~ msgstr "_Søg…"
-
-#~ msgid ""
-#~ "Search for and replace a string or regular expression with another string"
-#~ msgstr ""
-#~ "Søg efter og erstat en streng eller et regulært udtryk med en anden streng"
-
-#~ msgid "Search for a string in multiple files or directories"
-#~ msgstr "Søg efter en streng i flere filer eller kataloger"
-
-#~ msgid "Searching…"
-#~ msgstr "Søger…"
-
-#~ msgid "Basic Search"
-#~ msgstr "Basal søgning"
-
-#~ msgid "Current Buffer"
-#~ msgstr "Aktuelle buffer"
-
-#~ msgid "Current Selection"
-#~ msgstr "Aktuelle markering"
-
-#~ msgid "Current Block"
-#~ msgstr "Aktuelle blok"
-
-#~ msgid "Current Function"
-#~ msgstr "Aktuelle funktion"
-
-#~ msgid "All Open Buffers"
-#~ msgstr "Alle åbne buffere"
-
-#~ msgid "All Project Files"
-#~ msgstr "Alle projektfiler"
-
-#~ msgid "Specify File Patterns"
-#~ msgstr "Angiv filmønstre"
-
-#~ msgid "Select next match"
-#~ msgstr "Vælg næste forekomst"
-
-#~ msgid "Bookmark all matched lines"
-#~ msgstr "Sæt bogmærke ved alle matchende linjer"
-
-#~ msgid "Mark all matches"
-#~ msgstr "Markér alle forekomster"
-
-#~ msgid "List matches in find pane"
-#~ msgstr "Anfør træfninger i søgepanel"
-
-#~ msgid "Replace next match"
-#~ msgstr "Erstat næste forekomst"
-
-#~ msgid "Replace all matches"
-#~ msgstr "Erstat alle forekomster"
-
-#~ msgid "Find:"
-#~ msgstr "Find:"
-
-#~ msgid "Search complete"
-#~ msgstr "Søgning fuldendt"
-
-#~ msgid "The match \"%s\" was not found. Wrap search around the document?"
-#~ msgstr "Intet resultat for \"%s\". Ombryd til dokumentets begyndelse?"
-
-#~ msgid "The match \"%s\" was not found."
-#~ msgstr "Intet resultat for \"%s\"."
-
-#~ msgid "The maximum number of results has been reached."
-#~ msgstr "Det maksimale antal træfninger er nået."
-
-#~ msgid "%d match has been replaced."
-#~ msgid_plural "%d matches have been replaced."
-#~ msgstr[0] "%d resultat er blevet erstattet."
-#~ msgstr[1] "%d resultater er blevet erstattet."
-
-#~ msgid "Unable to build user interface for Search and Replace"
-#~ msgstr "Kan ikke bygge brugergrænsefladen for søg og erstat"
-
-#~ msgid "Print line numbers"
-#~ msgstr "Udskriv linjenumre"
-
-#~ msgid "Print options"
-#~ msgstr "Udskriftsindstillinger"
-
-#~ msgid "Print page footer"
-#~ msgstr "Udskriv sidefod"
-
-#~ msgid "Print page header"
-#~ msgstr "Udskriv sidehoved"
-
-#~ msgid "Printing"
-#~ msgstr "Udskriver"
-
-#~ msgid "Wrap long lines to fit on paper"
-#~ msgstr "Ombryd lange linjer så de passer på papiret"
-
-#~ msgid "Links"
-#~ msgstr "Henvisninger"
-
-#~ msgid "Anjuta Home Page"
-#~ msgstr "Hjemmeside for Anjuta"
-
-#~ msgid "GNOME Online API Documentation"
-#~ msgstr "GNOMEs online API-dokumentation"
-
-#~ msgid "Package is not parseable"
-#~ msgstr "Pakken kan ikke fortolkes"
-
-#~ msgid "Automatically scan project's packages"
-#~ msgstr "Scan automatisk projektets pakker"
-
-#~ msgid "Available API tags"
-#~ msgstr "Tilgængelige API-mærker"
-
-#~ msgid "Checking if package is parseable…"
-#~ msgstr "Kontrollerer om pakken kan fortolkes…"
-
-#~ msgid ""
-#~ "This option enables the default packages required by your opened project, "
-#~ "e.g. Glib and GTK+ if you create a GTK+ project (may require more CPU "
-#~ "work)"
-#~ msgstr ""
-#~ "Denne indstilling aktiverer pakkerne, der som standard kræves af dit "
-#~ "åbnede projekt, f.eks. Glib og GTK+, hvis du opretter et GTK+-projekt "
-#~ "(kan kræve mere CPU-arbejde)"
-
-#~ msgid "Default project directory:"
-#~ msgstr "Standardprojektmappe:"
-
-#~ msgid "Developer email address:"
-#~ msgstr "Udviklers e-post-adresse:"
-
-#~ msgid "Developer name:"
-#~ msgstr "Udviklernavn:"
-
-#~ msgid "Project Defaults"
-#~ msgstr "Projektforvalg"
-
-#~ msgid "Gdb"
-#~ msgstr "Gdb"
-
-#~ msgid "Glade File"
-#~ msgstr "Glade-fil"
-
-#~ msgid "Task Manager"
-#~ msgstr "Opgavehåndgering"
-
-#~ msgid "Todo Plugin for Anjuta."
-#~ msgstr "Todo-modul til Anjuta."
-
-#~ msgid "Component for searching"
-#~ msgstr "Komponent til søgning"
-
-#~ msgid "Searching"
-#~ msgstr "Søger"
-
-#~ msgid "C++/GObject Class"
-#~ msgstr "C++/GObject-klasse"
-
-#~ msgid "Makefile backend"
-#~ msgstr "Makefil-motor"
-
-#~ msgid "Makefile backend for project manager"
-#~ msgstr "Makefilsbaseret motor for projekthåndteringen"
-
-#~ msgid "Anjuta JS Debugger Plugin"
-#~ msgstr "Anjuta-modul for JS-fejlsøger"
-
-#~ msgid ""
-#~ "<b>There is %d item with unsaved changes. Save changes before closing?</b>"
-#~ msgid_plural ""
-#~ "<b>There are %d items with unsaved changes. Save changes before closing?</"
-#~ "b>"
-#~ msgstr[0] ""
-#~ "<b>Der er %d element med ugemte ændringer. Gem ændringer før der "
-#~ "afsluttes?</b>"
-#~ msgstr[1] ""
-#~ "<b>Der er %d elementer med ugemte ændringer. Gem ændringer før der "
-#~ "afsluttes?</b>"
-
-#~ msgid "<b>Autocompletion</b>"
-#~ msgstr "<b>Autofuldførelse</b>"
-
-#~ msgid "<b>Calltips</b>"
-#~ msgstr "<b>Funktionskalds-tips</b>"
-
-#~ msgid "<b>Indentation parameters</b>"
-#~ msgstr "<b>Indrykningsparametre</b>"
-
-#~ msgid "<b>Rope Options</b>"
-#~ msgstr "<b>Indstillinger for Rope</b>"
-
-#~ msgid "<b>Smart Indentation</b>"
-#~ msgstr "<b>Smart indrykning</b>"
-
-#~ msgid "Online"
-#~ msgstr "Online"
-
-#~ msgid "<b>Handler template</b>"
-#~ msgstr "<b>Skabelon for håndteringer</b>"
-
-#~ msgid "<b>Manage associations</b>"
-#~ msgstr "<b>Håndtér associationer</b>"
-
-#~ msgid "<b>New association</b>"
-#~ msgstr "<b>Ny association</b>"
-
-#~ msgid "Associate"
-#~ msgstr "Association"
-
-#~ msgid "Designer"
-#~ msgstr "Designer"
-
-#~ msgid "Insert handler on edit"
-#~ msgstr "Indsæt håndtering ved redigering"
-
-#~ msgid "Position type"
-#~ msgstr "Positionstype"
-
-#~ msgid "Separated designer layout"
-#~ msgstr "Separeret designerlayout"
-
-#~ msgid "Special regexp"
-#~ msgstr "Speciel regexp"
-
-#~ msgid "Widget name"
-#~ msgstr "Kontrolnavn"
-
-#~ msgid "Association item has no designer"
-#~ msgstr "Associationselement har ingen designer"
-
-#~ msgid "Association item has no editor"
-#~ msgstr "Associationselement har ingen redigering"
-
-#~ msgid "Bad association item option in the node %s"
-#~ msgstr "Dårlig indstilling for associationselement i knuden %s"
-
-#~ msgid "no filename found in the node %s"
-#~ msgstr "intet filnavn fundet i knuden %s"
-
-#~ msgid "invalid %s property value"
-#~ msgstr "ugyldig %s-egenskabstype"
-
-#~ msgid "Association item filename has no path"
-#~ msgstr "Associationselementets filnavn har ingen sti"
-
-#~ msgid "No associations initialized: nothing to save"
-#~ msgstr "Ingen associationer initieret: intet at gemme"
-
-#~ msgid "Couldn't save associations because project root isn't set"
-#~ msgstr "Kunne ikke gemme associationer, da projektroden ikke er indstillet"
-
-#~ msgid "Failed to save associations"
-#~ msgstr "Kunne ikke gemme associationer"
-
-#~ msgid "Current"
-#~ msgstr "Aktuelle"
-
-#~ msgid "Before end"
-#~ msgstr "Før slutning"
-
-#~ msgid "After begin"
-#~ msgstr "Efter begyndelse"
-
-#~ msgid "End of file"
-#~ msgstr "Slutning af fil"
-
-#~ msgid "Couldn't introspect the signal"
-#~ msgstr "Kunne ikke introspicere signalet"
-
-#~ msgid "Python language isn't supported yet"
-#~ msgstr "Sproget Python understøttes endnu ikke"
-
-#~ msgid "Vala language isn't supported yet"
-#~ msgstr "Sproget Vala understøttes endnu ikke"
-
-#~ msgid "There is no associated editor for the designer"
-#~ msgstr "Der er ingen associeret redigering for designeren"
-
-#~ msgid "Unknown editor language \"%s\""
-#~ msgstr "Ukendt redigeringssprog \"%s\""
-
-#~ msgid "Error while adding a new handler stub: %s"
-#~ msgstr "Fejl under tilføjelse af ny håndteringsstub: %s"
-
-#~ msgid "Couldn't find signal information"
-#~ msgstr "Kunne ikke finde signalinformation"
-
-#~ msgid "Error while adding a new handler stub: No current editor"
-#~ msgstr ""
-#~ "Fejl under tilføjelse af ny håndteringsstub: Ingen aktuel redigering"
-
-#~ msgid ""
-#~ "To avoid this message turn off \"%s\" flag in Preferences->Glade GUI "
-#~ "Designer"
-#~ msgstr ""
-#~ "Slå flaget \"%s\" fra i Indstillinger->Glade grænsefladedesigner for at "
-#~ "undgå denne meddelelse"
-
-#~ msgid "Couldn't find an associated document"
-#~ msgstr "Kunne ikke finde et tilknyttet dokument"
-
-#~ msgid "Those documents are already associated"
-#~ msgstr "De dokumenter er allerede associeret"
-
-#~ msgid "Unable to read file: %s."
-#~ msgstr "Kan ikke læse filen: %s."
-
-#~ msgid "Top level widget"
-#~ msgstr "Topniveaukontrol"
-
-#~ msgid "Couldn't find a default signal name"
-#~ msgstr "Kunne ikke finde et standardsignalnavn"
-
-#~ msgid "Project %s has no deprecated widgets or version mismatches."
-#~ msgstr ""
-#~ "Projektet %s har ingen deprecierede kontroller eller versionskonflikter."
-
-#~ msgid "There is no Glade project"
-#~ msgstr "Der er intet Glade-projekt"
-
-#~ msgid "_Glade"
-#~ msgstr "_Glade"
-
-#~ msgid "Switch between designer/code"
-#~ msgstr "Skift mellem designer/kode"
-
-#~ msgid "Insert handler stub"
-#~ msgstr "Indsæt håndteringsstub"
-
-#~ msgid "Associate last designer and last editor"
-#~ msgstr "Associér sidste designer og sidste redigering"
-
-#~ msgid "Associate last designer and editor"
-#~ msgstr "Associér sidste designer og redigering"
-
-#~ msgid "Associations dialog…"
-#~ msgstr "Dialogen associationer…"
-
-# Det står faktisk i RO
-#~ msgid "Versioning…"
-#~ msgstr "Versionering…"
-
-#~ msgid "Switch between library versions and check deprecations"
-#~ msgstr "Skift mellem biblioteksversioner og kontrollér deprecieringer"
-
-#~ msgid "Set as default resource target"
-#~ msgstr "Sæt som standardressourcemål"
-
-#~ msgid "Current default target"
-#~ msgstr "Aktuelle standardmål"
-
-#~ msgid "Save the current file"
-#~ msgstr "Gem den aktuelle fil"
-
-#~ msgid "Redo the last action"
-#~ msgstr "Omgør den sidste handling"
-
-#~ msgid "Cut the selection"
-#~ msgstr "Klip markeringen"
-
-#~ msgid "Copy the selection"
-#~ msgstr "Kopiér markeringen"
-
-#~ msgid "Paste the clipboard"
-#~ msgstr "Indsæt fra udklipsholderen"
-
-#~ msgid "Delete the selection"
-#~ msgstr "Slet markeringen"
-
-#~ msgid "Glade designer operations"
-#~ msgstr "Glade-designeroperationer"
-
-#~ msgid "Go back in undo history"
-#~ msgstr "Gå tilbage i fortrydehistorikken"
-
-#~ msgid "Go forward in undo history"
-#~ msgstr "Gå fremad i fortrydehistorikken"
-
-#~ msgid "Glade Clipboard"
-#~ msgstr "Glade-udklipsholder"
-
-#~ msgid "Glade GUI Designer"
-#~ msgstr "Glade grænsefladedesigner"
-
-#~ msgid "Edit…"
-#~ msgstr "Redigér…"
-
-#~ msgid "Macro details:"
-#~ msgstr "Makrodetaljer:"
-
-#~ msgid "Macro text:"
-#~ msgstr "Makrotekst:"
-
-#~ msgid "Macros:"
-#~ msgstr "Makroer:"
-
-#~ msgid "Shortcut:"
-#~ msgstr "Genvej:"
-
-#~ msgid "Press macro shortcut…"
-#~ msgstr "Tryk makrogenvej…"
-
-#~ msgid "Press shortcut"
-#~ msgstr "Tryk genvej"
-
-#~ msgid "Anjuta macros"
-#~ msgstr "Anjuta-makroer"
-
-#~ msgid "My macros"
-#~ msgstr "Nye makroer"
-
-#~ msgid ""
-#~ "Name:\t %s\n"
-#~ "Category:\t %s\n"
-#~ "Shortcut:\t %c\n"
-#~ msgstr ""
-#~ "Navn:\t %s\n"
-#~ "Kategori:\t %s\n"
-#~ "Genvej:\t %c\n"
-
-#~ msgid "Insert macro"
-#~ msgstr "Indsæt makro"
-
-#~ msgid "Add/Edit macro"
-#~ msgstr "Tilføj/redigér makro"
-
-#~ msgid "%Y-%m-%d"
-#~ msgstr "%Y-%m-%d"
-
-#~ msgid "Macros"
-#~ msgstr "Makron"
-
-#~ msgid "_Insert Macro…"
-#~ msgstr "_Indsæt makro…"
-
-#~ msgid "Insert a macro using a shortcut"
-#~ msgstr "Indslæt en makro ved brug af genvej"
-
-#~ msgid "_Add Macro…"
-#~ msgstr "_Tilføj makro…"
-
-#~ msgid "Add a macro"
-#~ msgstr "Tilføj en makro"
-
-#~ msgid "Macros…"
-#~ msgstr "Makroer…"
-
-#~ msgid "Add/Edit/Remove macros"
-#~ msgstr "Tilføj/redigér/fjern makroer"
-
-#~ msgid "Macro operations"
-#~ msgstr "Makrooperationer"
-
-#~ msgid "Tab position:"
-#~ msgstr "Tabulatorposition:"
-
-#~ msgid "No Messages"
-#~ msgstr "Ingen meddelser"
-
-#~ msgid "No Infos"
-#~ msgstr "Ingen info'er"
-
-#~ msgid "No Warnings"
-#~ msgstr "Ingen advarsler"
-
-#~ msgid "No Errors"
-#~ msgstr "Ingen fejl"
-
-#~ msgid "A GNOME applet project"
-#~ msgstr "Et panelprogramprojekt til GNOME"
-
-#~ msgid "Applet Title:"
-#~ msgstr "Titel af panelprogram:"
-
-#~ msgid "Display description of the applet"
-#~ msgstr "Vis beskrivelse af panelprogrammet"
-
-#~ msgid "Display title of the applet"
-#~ msgstr "Vis titel af panelprogrammet"
-
-#~ msgid "GNOME Applet"
-#~ msgstr "GNOME-panelprogram"
-
-#~ msgid "Autocompletion (C/C++/Java only)"
-#~ msgstr "Autofuldførelse (kun C/C++/Java)"
-
-#~ msgid "Insert predefined macros into Editor"
-#~ msgstr "Indsæt prædefinerede makroer i redigering"
-
-#~ msgid "Macro Plugin"
-#~ msgstr "Makro-modul"
-
-#~ msgid "Edit&#x2026;"
-#~ msgstr "Redigér&#x2026;"
-
-#~ msgid "Autocompletion pop up choices"
-#~ msgstr "Pop op-valg for autofuldførelse"
-
-#~| msgid "Widgets"
-#~ msgid "wxWidgets"
-#~ msgstr "wxWidgets"
-
-#~ msgid "Up to date"
-#~ msgstr "Opdateret"
-
-#~ msgid "<b>Build</b>"
-#~ msgstr "<b>Byg</b>"
-
-#~ msgid "<b>Configuration:</b>"
-#~ msgstr "<b>Konfiguration:</b>"
-
-#~ msgid "<b>Install</b>"
-#~ msgstr "<b>Installér</b>"
-
-#~ msgid "Program '%s' does not exists"
-#~ msgstr "Programmet \"%s\" findes ikke"
-
-#~ msgid "C_onfigure Project..."
-#~ msgstr "K_onfigurér projekt..."
-
-#~ msgid "private"
-#~ msgstr "privat"
-
-#~ msgid "protected"
-#~ msgstr "beskyttet"
-
-#~ msgid "public"
-#~ msgstr "offentlig"
-
-#~ msgid "<b>CVS Options</b>"
-#~ msgstr "<b>CVS-indstillinger</b>"
-
-#~ msgid "<b>Options:</b>"
-#~ msgstr "<b>Indstillinger:</b>"
-
-#~ msgid "<b>Repository: </b>"
-#~ msgstr "<b>Arkiv: </b>"
-
-#~ msgid "<b>Debugger:</b>"
-#~ msgstr "<b>Fejlsøger:</b>"
-
-#~ msgid "Debugger Command..."
-#~ msgstr "Fejlsøgerkommando..."
-
-#~ msgid "Pid"
-#~ msgstr "Pid"
-
-#~ msgid "Ins_pect/Evaluate..."
-#~ msgstr "Gennem_se/Evaluér..."
-
-#~ msgid "Add Watch..."
-#~ msgstr "Tilføj overvåger..."
-
-#~ msgid "_Print..."
-#~ msgstr "_Udskriv..."
-
-#~ msgid "recent menu label|_%d. %s"
-#~ msgstr "_%d. %s"
-
-#~ msgid "recent menu label|%d. %s"
-#~ msgstr "%d. %s"
-
-#~ msgid "_Open..."
-#~ msgstr "_Åbn..."
-
-#~ msgid "Url:"
-#~ msgstr "Url:"
-
-#~ msgid "Advanced..."
-#~ msgstr "Avanceret..."
-
-#~ msgid "Source coudn't be removed"
-#~ msgstr "Kilden kunne ikke fjernes"
-
-#~ msgid "<b>Tags</b>"
-#~ msgstr "<b>Mærker</b>"
-
-#~ msgid "_View log..."
-#~ msgstr "_Vis log..."
-
-#~ msgid "_Push..."
-#~ msgstr "_Skub..."
-
-#~ msgid "_Pull..."
-#~ msgstr "_Træk..."
-
-#~ msgid "_Add..."
-#~ msgstr "_Tilføj..."
-
-#~ msgid "_Remove..."
-#~ msgstr "_Fjern..."
-
-#~ msgid "_Ignore..."
-#~ msgstr "_Ignorér..."
-
-# ???
-#~ msgid "Create patch series..."
-#~ msgstr "Opret patch-række..."
-
-#~ msgid "_Switch to another branch..."
-#~ msgstr "_Skift til en anden gren..."
-
-#~ msgid "_Delete..."
-#~ msgstr "_Slet..."
-
-#~ msgid "_Delete tag..."
-#~ msgstr "_Slet mærke..."
-
-#~ msgid "Unknown language of the editor \"%s\""
-#~ msgstr "Ukendt sprog for redigeringen \"%s\""
-
-#~ msgid "n/a"
-#~ msgstr "-"
-
-#~ msgid "Misc"
-#~ msgstr "Diverse"
-
-#~ msgid "<b>Macros:</b>"
-#~ msgstr "<b>Makroer:</b>"
-
-#~ msgid "Edit..."
-#~ msgstr "Redigér..."
-
-#~ msgid "Macros..."
-#~ msgstr "Makroer..."
-
-#~ msgid "_Patch..."
-#~ msgstr "_Patch..."
-
-#~ msgid "<b>Project name</b>"
-#~ msgstr "<b>Projektnavn</b>"
-
-#~ msgid "_Select file to add..."
-#~ msgstr "_Vælg fil at tilføje..."
-
-#~ msgid "Add _Group..."
-#~ msgstr "Tilføj _gruppe..."
-
-#~ msgid "Add _Target..."
-#~ msgstr "Tilføj _mål..."
-
-#~ msgid "Add _Source File..."
-#~ msgstr "Tilføj _kildefil..."
-
-#~ msgid "_Add To Project"
-#~ msgstr "_Føj til projekt"
-
-#~ msgid "Create a template gtk builder interface file"
-#~ msgstr "Opret en skabelon for gtk builder-grænsefladefiler"
-
-#~ msgid "Run In Terminal"
-#~ msgstr "Kør i terminal"
-
-#~ msgid "Program Parameters..."
-#~ msgstr "Programparametre..."
-
-#~ msgid "<b>Actions</b>"
-#~ msgstr "<b>Handlinger</b>"
-
-#~ msgid "_Find..."
-#~ msgstr "_Find..."
-
-#~ msgid "Searching..."
-#~ msgstr "Søger..."
-
-#~ msgid "_Update..."
-#~ msgstr "_Opdatér..."
-
-#~ msgid "_View Log..."
-#~ msgstr "_Vis log..."
-
-#~ msgid "_Diff..."
-#~ msgstr "_Diff..."
-
-#~ msgid "Copy..."
-#~ msgstr "Kopier..."
-
-#~ msgid "Diff..."
-#~ msgstr "Diff..."
-
-#~ msgid "_Find Symbol..."
-#~ msgstr "_Find symbol..."
-
-#~ msgid "<b>Global</b>"
-#~ msgstr "<b>Global</b>"
-
-#~ msgid "<b>Terminal options</b>"
-#~ msgstr "<b>Terminaltilvalg</b>"
-
-#~ msgid "<b>Tools</b>"
-#~ msgstr "<b>Værktøjer</b>"
-
-#~ msgid "_Variable..."
-#~ msgstr "_Variabel..."
-
-#~ msgid "Gdb plugin."
-#~ msgstr "Gdb-modul."
-
-#~ msgid "GtkSourceview editor"
-#~ msgstr "GtkSourcevew-redigering"
-
-# ??? fejlrapport
-#~ msgid "on_widget_signal"
-#~ msgstr "on_widget_signal"
-
-# fejlrapport
-#~ msgid "widget_signal_cb"
-#~ msgstr "widget_signal_cb"
-
-#~ msgid "<b>Filter</b>"
-#~ msgstr "<b>Filter</b>"
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "Command Line Parameters"
-#~ msgstr "Kommandolinjeparametre"
-
-#~ msgid "Enter a Hexa adress or select one in the data"
-#~ msgstr "Indtast en hexadecimal adresse eller vælg en i dataene"
-
-#~ msgid "Execute Program"
-#~ msgstr "Kør program"
-
-#~ msgid "_Pass:"
-#~ msgstr "_Gennemgang:"
-
-#~ msgid "<b>Branch:</b>"
-#~ msgstr "<b>Gren:</b>"
-
-#~ msgid "<b>Filters</b>"
-#~ msgstr "<b>Filtre</b>"
-
-#~ msgid "<b>Log Message:</b>"
-#~ msgstr "<b>Logbesked:</b>"
-
-#~ msgid "<b>Log message:</b>"
-#~ msgstr "<b>Logbesked:</b>"
-
-#~ msgid "<b>Mode:</b>"
-#~ msgstr "<b>Tilstand:</b>"
-
-#~ msgid "<b>Revision:</b>"
-#~ msgstr "<b>Revision:</b>"
-
-#~ msgid "<b>Select file to add:</b>"
-#~ msgstr "<b>Vælg fil at tilføje:</b>"
-
-#~ msgid "<b>Tag name:</b>"
-#~ msgstr "<b>Mærkenavn:</b>"
-
-#~ msgid "<b>URL:</b>"
-#~ msgstr "<b>URL:</b>"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "Icon choice"
-#~ msgstr "Ikonvalg"
-
-#~ msgid "<b>Font:</b>"
-#~ msgstr "<b>Skrifttype:</b>"
-
-#~ msgid "<b>View</b>"
-#~ msgstr "<b>Vis</b>"
-
-#~ msgid "<b>End Revision:</b>"
-#~ msgstr "<b>Slutrevision:</b>"
-
-#~ msgid "<b>Subversion Options</b>"
-#~ msgstr "<b>Subversion-indstillinger</b>"
-
-#~ msgid "Ctags executable:"
-#~ msgstr "Eksekverbar fil til ctags:"
-
-#~ msgid "Unable to build user interface for tool variable"
-#~ msgstr "Kan ikke bygge brugergrænseflade for værktøjsvariabel"
-
-#~ msgid "Unable to build user interface for tool editor"
-#~ msgstr "Kan ikke bygge brugergrænsefladen for værktøjsredigeringen"
-
-#~ msgid "<b>Session</b>"
-#~ msgstr "<b>Session</b>"
-
-#~ msgid "Pressing tab indents"
-#~ msgstr "Tabulatortasten rykker ind"
-
-#~ msgid ""
-#~ "Default\n"
-#~ "Text below icons\n"
-#~ "Text beside icons\n"
-#~ "Icons only\n"
-#~ "Text only"
-#~ msgstr ""
-#~ "Forvalgt\n"
-#~ "Tekst under ikoner\n"
-#~ "Tekst ved siden af ikoner\n"
-#~ "Kun ikoner\n"
-#~ "Kun tekst"
-
-#~ msgid ""
-#~ "Text\n"
-#~ "Icons\n"
-#~ "Text + Icons\n"
-#~ "Gnome toolbar setting\n"
-#~ "Tabs"
-#~ msgstr ""
-#~ "Tekst\n"
-#~ "Ikoner\n"
-#~ "Tekst + ikoner\n"
-#~ "Indstilling for gnome-toolbar\n"
-#~ "Faneblade"
-
-#~ msgid "Fixed data-view"
-#~ msgstr "Fastholdt datavisning"
-
-#~ msgid ""
-#~ "General Public License (GPL)\n"
-#~ "Lesser General Public License (LGPL)\n"
-#~ "No License"
-#~ msgstr ""
-#~ "General Public License (GPL)\n"
-#~ "Lesser General Public License (LGPL)\n"
-#~ "Ingen licens"
-
-#~ msgid ""
-#~ "Top\n"
-#~ "Bottom\n"
-#~ "Left\n"
-#~ "Right"
-#~ msgstr ""
-#~ "Top\n"
-#~ "Bund\n"
-#~ "Venstre\n"
-#~ "Højre"
-
-#~ msgid ""
-#~ "Underline-Plain\n"
-#~ "Underline-Squiggle\n"
-#~ "Underline-TT\n"
-#~ "Diagonal\n"
-#~ "Strike-Out"
-#~ msgstr ""
-#~ "Normal understregning\n"
-#~ "Bølgeunderstregning\n"
-#~ "TT-understregning\n"
-#~ "Diagonal\n"
-#~ "Gennemstreg"
-
-#~ msgid "No message details"
-#~ msgstr "Ingen beskeddetaljer"
-
-#~ msgid "Function Name"
-#~ msgstr "Funktionsnavn"
-
-#~ msgid "Self"
-#~ msgstr "Egen"
-
-#~ msgid "% Time"
-#~ msgstr "% tid"
-
-#~ msgid "Cumulative Seconds"
-#~ msgstr "Kumulativt sekundtal"
-
-#~ msgid "Self Seconds"
-#~ msgstr "Eget sekundtal"
-
-#~ msgid "Self ms/call"
-#~ msgstr "Eget ms/kald"
-
-#~ msgid "Total ms/call"
-#~ msgstr "Samlet ms/kald"
-
-#~ msgid ""
-#~ "Could not get profiling data.\n"
-#~ "\n"
-#~ "Please check the path to this target's profiling data file."
-#~ msgstr ""
-#~ "Kunne ikke hente profildata.\n"
-#~ "\n"
-#~ "Kontrollér venligst stien til dette måls profildata-fil."
-
-#~ msgid ""
-#~ "This target does not have any profiling data.\n"
-#~ "\n"
-#~ "Please ensure that the target is complied with profiling support and that "
-#~ "it is run at least once."
-#~ msgstr ""
-#~ "Dette mål har ingen profileringsdata.\n"
-#~ "\n"
-#~ "Sikr dig venligst, at målet er kompileret med understøttelse for "
-#~ "profilering og at det er blevet kørt mindst én gang."
-
-#~ msgid "Profiler"
-#~ msgstr "Profiler"
-
-#~ msgid "Refresh"
-#~ msgstr "Genopfrisk"
-
-#~ msgid "Application Performance Profiler"
-#~ msgstr "Programydelses-profiler"
-
-#~ msgid "Flat Profile"
-#~ msgstr "Flad profil"
-
-#~ msgid "Call Graph"
-#~ msgstr "Funktionskalds-graf"
-
-#~ msgid "Function Call Tree"
-#~ msgstr "Funktionskalds-træ"
-
-#~ msgid "Function Call Chart"
-#~ msgstr "Funktionskalds-tabel"
-
-#~ msgid "<b>Called By</b>"
-#~ msgstr "<b>Kaldt af</b>"
-
-#~ msgid "<b>Called</b>"
-#~ msgstr "<b>Kaldt</b>"
-
-#~ msgid "<b>Functions</b>"
-#~ msgstr "<b>Funktioner</b>"
-
-#~ msgid "<b>Profiling Data</b>"
-#~ msgstr "<b>Profileringsdata</b>"
-
-#~ msgid "<b>Symbols</b>"
-#~ msgstr "<b>Symboler</b>"
-
-#~ msgid "Automatically refresh profile data display"
-#~ msgstr "Genopfrisk automatisk visningen af profildata"
-
-#~ msgid "Do not propagate time for these symbols:"
-#~ msgstr "Benyt ikke viderestilling af tidsforbrug for disse symboler:"
-
-#~ msgid "Do not show static functions"
-#~ msgstr "Vis ikke statiske funktioner"
-
-#~ msgid "Do not show these symbols:"
-#~ msgstr "Vis ikke disse symboler:"
-
-#~ msgid ""
-#~ "Enter one symbol specification per line.\n"
-#~ "\n"
-#~ "For information on symbol specifications, see section \n"
-#~ "4.5 of the gprof info page."
-#~ msgstr ""
-#~ "Indtast én symbolspecifikation per linje.\n"
-#~ "\n"
-#~ "Se afsnit 4.5 af infosiden for gprof for information om "
-#~ "symbolspecifikationer."
-
-#~ msgid "Options..."
-#~ msgstr "Indstillinger..."
-
-#~ msgid "Profiling Options"
-#~ msgstr "Profileringsindstillinger"
-
-#~ msgid "Propagate time for all symbols"
-#~ msgstr "Benyt viderestilling af tidsforbrug for alle symboler"
-
-#~ msgid "Propagate time for only these symbols:"
-#~ msgstr "Benyt kun viderestilling af tidsforbrug for disse symboler:"
-
-#~ msgid "Select Other Target..."
-#~ msgstr "Vælg andet mål..."
-
-#~ msgid "Select Profiling Target"
-#~ msgstr "Vælg profileringsmål"
-
-#~ msgid "Show all symbols"
-#~ msgstr "Vis alle symboler"
-
-#~ msgid "Show functions that could have been called but never were"
-#~ msgstr "Vis funktioner som kunne være blevet kaldt, men ikke blev det"
-
-#~ msgid "Show only these symbols:"
-#~ msgstr "Vis kun disse symboler:"
-
-#~ msgid "Show uncalled functions"
-#~ msgstr "Vis ukaldte funktioner"
-
-#~ msgid "Use this profiling data file:"
-#~ msgstr "Brug denne profildata-fil:"
-
-#~ msgid "Please, fix the configuration"
-#~ msgstr "Ret venligst konfigurationen"
-
-#~ msgid ""
-#~ "Project name: %s\n"
-#~ "Project type: %s\n"
-#~ "Project path: %s\n"
-#~ msgstr ""
-#~ "Projektnavn: %s\n"
-#~ "Projekttype: %s\n"
-#~ "Projektsti: %s\n"
-
-#~ msgid "This assistant will import an existing project into Anjuta."
-#~ msgstr "Denne guide vil importere et eksisterende projekt i Anjuta."
-
-#~ msgid "<b>Enter the project name:</b>"
-#~ msgstr "<b>Indtast et projektnavn:</b>"
-
-#~ msgid "<b>Enter the base path of your project:</b>"
-#~ msgstr "<b>Indtast rodstien til dit projekt:</b>"
-
-#~ msgid "A generic GNOME project"
-#~ msgstr "Et generisk GNOME-projekt"
-
-#~ msgid "GNOME"
-#~ msgstr "GNOME"
-
-#~ msgid "Use libglade for the UI"
-#~ msgstr "Brug libglade til brugergrænseflade"
-
-#~ msgid ""
-#~ "Use the libglade-2.0 library to load the glade interface file at runtime"
-#~ msgstr ""
-#~ "Brug libglade-2.0-biblioteket til at hente glade-grænsefladefilen under "
-#~ "kørsel"
-
-#~ msgid "_Sample action"
-#~ msgstr "_Handlingseksempel"
-
-#~ msgid "Sample action"
-#~ msgstr "Handlingseksempel"
-
-#~ msgid "Sample file operations"
-#~ msgstr "Filoperationseksempel"
-
-#~ msgid "SamplePlugin"
-#~ msgstr "Moduleksempel"
-
-#~ msgid "<b>Basic Indentation</b>"
-#~ msgstr "<b>Basal indrykning</b>"
-
-#~ msgid "<b>Highlight style</b>"
-#~ msgstr "<b>Markeringsstil</b>"
-
-#~ msgid "<b>Misc options</b>"
-#~ msgstr "<b>Forsk. tilvalg</b>"
-
-#~ msgid "<b>Other colors</b>"
-#~ msgstr "<b>Andre farver</b>"
-
-#~ msgid "Add line number every:"
-#~ msgstr "Tilføj linjenummer hver:"
-
-#~ msgid "Add page header"
-#~ msgstr "Tilføj sidehoved"
-
-#~ msgid "Attributes:"
-#~ msgstr "Attributter:"
-
-#~ msgid "Autocomplete XML/HTML closing tags"
-#~ msgstr "Autofuldfør afsluttende XML/HTML-mærker"
-
-#~ msgid "Background color:"
-#~ msgstr "Baggrundsfarve:"
-
-#~ msgid "Basic Indentation"
-#~ msgstr "Basal indrykning"
-
-#~ msgid "Bold"
-#~ msgstr "Fed"
-
-#~ msgid "Calltip background:"
-#~ msgstr "Calltip-baggrund:"
-
-#~ msgid "Caret (cursor) color:"
-#~ msgstr "Tekstmarkørfarve:"
-
-#~ msgid "Caret blink period in ms"
-#~ msgstr "Blinketid i ms for tekstmarkør"
-
-#~ msgid "Choose autocomplete for single match"
-#~ msgstr "Vælg autofuldførelse for enkelt træfning"
-
-#~ msgid "Collapse all code folds on file open"
-#~ msgstr "Sammenfold alle kodefoldepunkter ved åbning af fil"
-
-#~ msgid "Colors & Fonts"
-#~ msgstr "Farver & skrifttyper"
-
-#~ msgid "Compact folding"
-#~ msgstr "Kompakt foldning"
-
-#~ msgid "Disable syntax highlighting"
-#~ msgstr "Slå syntaks markering fra"
-
-#~ msgid "Draw line below folded lines"
-#~ msgstr "Tegn linje under sammenfoldede linjer"
-
-#~ msgid "Edge column"
-#~ msgstr "Kantkolonne"
-
-#~ msgid "Editor caret (cursor) width in pixels"
-#~ msgstr "Bredde af tekstmarkør i pixler"
-
-#~ msgid "Enable HTML tags folding"
-#~ msgstr "Aktivér sammenfoldning af HTML-mærker"
-
-#~ msgid "Enable automatic indentation"
-#~ msgstr "Aktivér autoindrykning"
-
-#~ msgid "Enable braces check"
-#~ msgstr "Aktivér klammekontrol"
-
-#~ msgid "Enable code folding"
-#~ msgstr "Aktivér kodefoldning"
-
-#~ msgid "Enable comments folding"
-#~ msgstr "Aktivér kommentarfoldning"
-
-#~ msgid "Enable line wrap"
-#~ msgstr "Aktivér linjeombrydning"
-
-#~ msgid "Enable python comments folding"
-#~ msgstr "Aktivér python-kommentarfoldning"
-
-# ???
-#~ msgid "Enable python quoted strings folding"
-#~ msgstr "Aktivér foldning af python quote-strenge"
-
-#~ msgid "Filter extraneous characters in DOS mode"
-#~ msgstr "Filtrér overflødige tegn i DOS-tilstand"
-
-#~ msgid "Fonts and colors for editor"
-#~ msgstr "Skrifttyper og farver for redigering"
-
-#~ msgid "Foreground color:"
-#~ msgstr "Forgrundsfarve:"
-
-#~ msgid "Indent closing braces"
-#~ msgstr "Indryk lukkeklammer"
-
-#~ msgid "Indent opening braces"
-#~ msgstr "Indryk åbningsklammer"
-
-#~ msgid "Indentation size in spaces:"
-#~ msgstr "Indrykningsstørrelse i mellemrum:"
-
-#~ msgid "Italic"
-#~ msgstr "Kursiv"
-
-#~ msgid "Line numbers margin width in pixels"
-#~ msgstr "Bredde af linjenummermargen i pixler"
-
-#~ msgid "Maintain past Indentation"
-#~ msgstr "Behold nuværende indrykning"
-
-#~ msgid "Margin Fold visible"
-#~ msgstr "Foldning synlig i margen"
-
-#~ msgid "Margin Linenum visible"
-#~ msgstr "Linjenummerering synlig i margen"
-
-#~ msgid "Margin Marker visible"
-#~ msgstr "Margenmarkør synlig"
-
-#~ msgid "Monochrome"
-#~ msgstr "Monokrom"
-
-#~ msgid ""
-#~ "Plus/Minus\n"
-#~ "Arrows\n"
-#~ "Circular\n"
-#~ "Squares"
-#~ msgstr ""
-#~ "Plus/Minus\n"
-#~ "Pile\n"
-#~ "Cirkulær\n"
-#~ "Kvadrater"
-
-#~ msgid "Pressing backspace un-indents"
-#~ msgstr "Slettetast fjerner indrykning"
-
-#~ msgid "Pressing tab inserts indentation"
-#~ msgstr "Tabulatortast rykker ind"
-
-#~ msgid "Selection background:"
-#~ msgstr "Baggrundsfarve for markering:"
-
-#~ msgid "Selection foreground:"
-#~ msgstr "Forgrundsfarve for markering:"
-
-#~ msgid "Strip trailling spaces on file save"
-#~ msgstr "Fjern efterstillede mellemrum når der gemmes"
-
-#~ msgid "Use default"
-#~ msgstr "Anvend standard"
-
-#~ msgid "View EOL chars"
-#~ msgstr "Vis EOL-tegn"
-
-#~ msgid "View Indentation Guides"
-#~ msgstr "Vis hjælpelinjer for indrykning"
-
-#~ msgid "View Line Wrap"
-#~ msgstr "Vis linjeombrydning"
-
-#~ msgid "View Whitespaces"
-#~ msgstr "Vis blanke tegn"
-
-#~ msgid "View indentation whitespaces"
-#~ msgstr "Vis blanke tegn i indrykning"
-
-#~ msgid "Wrap bookmarks search around"
-#~ msgstr "Ombryd bogmærkesøgning"
-
-#~ msgid "File: %s"
-#~ msgstr "Fil: %s"
-
-#~ msgid "Unable to get text buffer for printing"
-#~ msgstr "Kan ikke hente tekstbuffer til udskrift"
-
-#~ msgid "No file to print!"
-#~ msgstr "Ingen fil at udskrive!"
-
-#~ msgid "Scintilla Editor"
-#~ msgstr "Scintilla-redigering"
-
-#~ msgid "Could not get file info"
-#~ msgstr "Kunne ikke hente filinformation"
-
-#~ msgid "This file is too big. Unable to allocate memory."
-#~ msgstr "Denne fil er for stor. Kan ikke allokere hukommelse."
-
-#~ msgid "Could not open file"
-#~ msgstr "Kunne ikke åbne fil"
-
-#~ msgid "Error while reading from file"
-#~ msgstr "Fejl under læsning fra fil"
-
-#~ msgid ""
-#~ "The file does not look like a text file or the file encoding is not "
-#~ "supported. Please check if the encoding of file is in the supported "
-#~ "encodings list. If not, add it from the preferences."
-#~ msgstr ""
-#~ "Filen ligner ikke en tekstfil eller kodningen understøttes ikke. "
-#~ "Kontrollér venligst om kodningen af filen optræder i listen over "
-#~ "understøttede kodninger. Hvis ikke, så tilføj den i indstillingerne."
-
-#~ msgid "Loading file..."
-#~ msgstr "Indlæser fil..."
-
-#~ msgid ""
-#~ "Could not load file: %s\n"
-#~ "\n"
-#~ "Details: %s"
-#~ msgstr ""
-#~ "Kunne ikke indlæse fil: %s\n"
-#~ "\n"
-#~ "Detaljer: %s"
-
-#~ msgid "File loaded successfully"
-#~ msgstr "Fil indlæst problemfrit"
-
-#~ msgid "Saving file..."
-#~ msgstr "Gemmer fil..."
-
-#~ msgid "Could not save intermediate file %s: %s"
-#~ msgstr "Kunne ikke gemme mellemniveaufilen %s: %s"
-
-#~ msgid "File saved successfully"
-#~ msgstr "Filen blev gemt"
-
-#~ msgid ""
-#~ "Cannot load Global defaults and configuration files:\n"
-#~ "%s.\n"
-#~ "This may result in improper behaviour or instabilities.\n"
-#~ "Anjuta will fall back to built in (limited) settings"
-#~ msgstr ""
-#~ "Kan ikke indlæse globale forvalg og konfigurationsfiler:\n"
-#~ "%s.\n"
-#~ "Dette kan resultere i ukorrekt opførsel og ustabilitet.\n"
-#~ "Anjuta vil falde tilbage på indbyggede (begrænsede) indstillinger"
-
-#~ msgid "<b>Scratchbox Options</b>\n"
-#~ msgstr "<b>Indstillinger for Scratchbox</b>\n"
-
-#~ msgid ""
-#~ "Default\n"
-#~ "\n"
-#~ msgstr ""
-#~ "Standard\n"
-#~ "\n"
-
-#~ msgid "<b>Program to test:</b>"
-#~ msgstr "<b>Program at teste:</b>"
-
-#~ msgid "<b>Valgrind</b>"
-#~ msgstr "<b>Valgrind</b>"
-
-#~ msgid ""
-#~ "Memcheck\n"
-#~ "Addrcheck\n"
-#~ "Helgrind"
-#~ msgstr ""
-#~ "Memcheck\n"
-#~ "Addrcheck\n"
-#~ "Helgrind"
-
-#~ msgid "Select Tool:"
-#~ msgstr "Vælg værktøj:"
-
-#~ msgid "Select debugging target"
-#~ msgstr "Vælg fejlsøgningsmål"
-
-#~ msgid "Valgrind"
-#~ msgstr "Valgrind"
-
-#~ msgid ""
-#~ "No executable target selected for debugging with Valgrind. Please select "
-#~ "one."
-#~ msgstr ""
-#~ "Intet eksekverbart mål er valgt til fejlsøgning med Valgrind. Vælg "
-#~ "venligst et."
-
-#~ msgid ""
-#~ "There aren't any available executable targets for this project.\n"
-#~ "Please create one first."
-#~ msgstr ""
-#~ "Der er ikke nogen tilgængelige eksekverbare mål for dette projekt.\n"
-#~ "Opret venligst et først."
-
-#~ msgid "Choose file where to save Valgrind log"
-#~ msgstr "Vælg fil hvor Valgrind-log gemmes"
-
-#~ msgid "Open Valgrind log file"
-#~ msgstr "Åbn Valgrind-logfil"
-
-#~ msgid "_Valgrind"
-#~ msgstr "_Valgrind"
-
-#~ msgid "_Select Tool and Run..."
-#~ msgstr "_Vælg værktøj og kør..."
-
-#~ msgid "_Kill Execution"
-#~ msgstr "_Dræb eksekvering"
-
-#~ msgid "_Load Log"
-#~ msgstr "_Hent log"
-
-#~ msgid "S_ave Log"
-#~ msgstr "_Gem log"
-
-#~ msgid "Edit Rules"
-#~ msgstr "Redigér regler"
-
-#~ msgid "Use Valgrind debug tool"
-#~ msgstr "Brug Valgrind-fejlfindingsværktøjet"
-
-#~ msgid "<b>Valgrind general preferences</b>"
-#~ msgstr "<b>Generelle indstillinger for Valgrind</b>"
-
-#~ msgid "Valgrind binary file path:"
-#~ msgstr "Sti til binær fil for Valgrind:"
-
-#~ msgid "Choose Valgrind Binary File Path..."
-#~ msgstr "Vælg sti til binær fil for Valgrind..."
-
-#~ msgid "lines above and below the target line."
-#~ msgstr "linjer over og under mållinjen."
-
-#~ msgid "Failed to create pipe to '%s': %s"
-#~ msgstr "Kunne ikke oprette pipe til \"%s\": %s"
-
-#~ msgid "Failed to create child process '%s': %s"
-#~ msgstr "Kunne ikke oprette underprocessen \"%s\": %s"
-
-#~ msgid ""
-#~ "Reached the end of the input file or error in parsing valgrind output."
-#~ msgstr ""
-#~ "Nåede slutningen af inputfilen eller fejl ved fortolkning af valgrind-"
-#~ "uddata."
-
-#~ msgid "Process exited."
-#~ msgstr "Proces afsluttet."
-
-#~ msgid "Could not get the right valgrind-binary gconf key:"
-#~ msgstr "Kunne ikke hente den rette gconf-nøgle for valgrind binærfil:"
-
-#~ msgid ""
-#~ "Valgrind binary [%s] does not exist. Please check the preferences or "
-#~ "install Valgrind package."
-#~ msgstr ""
-#~ "Valgrinds binærfil [%s] findes ikke. Kontrollér venligst indstillingerne "
-#~ "eller installér Valgrind-pakken."
-
-#~ msgid "Could not get the right pipe for the process."
-#~ msgstr "Kunne ikke få fat i den rette pipe til processen."
-
-#~ msgid ""
-#~ "Invalid syntax in settings '%s'.\n"
-#~ "Please enter a value of the form \"<integer>,<integer>,<integer>\"."
-#~ msgstr ""
-#~ "Ugyldig syntaks i indstillinger \"%s\".\n"
-#~ "Indtast venligst en værdi af formen \"<heltal>,<heltal>,<heltal>\"."
-
-#~ msgid "Override default settings"
-#~ msgstr "Overskriv standardindstillinger"
-
-#~ msgid "Enter <size>,<assoc>,<line_size>:"
-#~ msgstr "Indtast <størrelse>,<assoc>,<linje_størrelse>:"
-
-#~ msgid "Cachegrind"
-#~ msgstr "Cachegrind"
-
-#~ msgid "Function contains"
-#~ msgstr "Funktion indeholder"
-
-#~ msgid "Object contains"
-#~ msgstr "Objekt indeholder"
-
-#~ msgid "Source filename contains"
-#~ msgstr "Kildefilnavn indeholder"
-
-#~ msgid "Invalid regular expression: '%s': %s"
-#~ msgstr "Ugyldigt regulært udtryk \"%s\": %s"
-
-#~ msgid "Valgrind Suppression Rules"
-#~ msgstr "Valgrind-underkendelsesregler"
-
-#~ msgid "Valgrind Suppression"
-#~ msgstr "Valgrind-underkendelse"
-
-#~ msgid "Cu_t"
-#~ msgstr "Kl_ip"
-
-#~ msgid "Edit in Custom Editor"
-#~ msgstr "Redigér i tilpasset program"
-
-#~ msgid "Demangle C++ symbol names"
-#~ msgstr "Afkod C++-symbolnavne"
-
-#~ msgid "Show"
-#~ msgstr "Vis"
-
-#~ msgid "Stop showing errors if there are too many"
-#~ msgstr "Vis ikke alle fejl hvis der er for mange"
-
-#~ msgid "Round malloc sizes to next word"
-#~ msgstr "Afrund malloc-størrelser til næste word"
-
-#~ msgid "Trace any child processes forked off by the program being debugged"
-#~ msgstr ""
-#~ "Spor eventuelle underprocesser forgrenet fra programmet under fejlsøgning"
-
-#~ msgid "Track open file descriptors"
-#~ msgstr "Spor åbne fildeskriptorer"
-
-#~ msgid "Add time stamps to log messages"
-#~ msgstr "Tilføj tidsstempler til logmeddelelser"
-
-#~ msgid "Call __libc_freeres() at exit before checking for memory leaks"
-#~ msgstr ""
-#~ "Kald __libc_freeres() ved afslutning før der undersøges for hukommelseslæk"
-
-#~ msgid "Suppressions File:"
-#~ msgstr "Underkendelsesfil:"
-
-#~ msgid "Choose Valgrind Suppressions File..."
-#~ msgstr "Vælg underkendelsesfil til Valgrind..."
-
-#~ msgid "Helgrind"
-#~ msgstr "Helgrind"
-
-#~ msgid "Assume thread stacks are used privately"
-#~ msgstr "Antag at trådstakke bruges privat"
-
-#~ msgid "Show location of last word access on error:"
-#~ msgstr "Vis placering af sidste word-tilgang ved fejl:"
-
-#~ msgid "Memcheck"
-#~ msgstr "Memcheck"
-
-#~ msgid "Memory leaks"
-#~ msgstr "Hukommelseslæk"
-
-#~ msgid "Leak check:"
-#~ msgstr "Læktjek:"
-
-#~ msgid "Show reachable blocks in leak check"
-#~ msgstr "Vis blokke der kan nås ved læk-tjek"
-
-#~ msgid "Leak resolution:"
-#~ msgstr "Læk-resolution:"
-
-#~ msgid "Keep up to"
-#~ msgstr "Behold op til"
-
-#~ msgid "bytes in the queue after being free()'d"
-#~ msgstr "bytes i den samme kø efter de er blevet free()'et"
-
-#~ msgid "Work around bugs generated by gcc 2.96"
-#~ msgstr "Omgå bugs genereret af gcc 2.96"
-
-#~ msgid "Grow"
-#~ msgstr "Voks"
-
-#~ msgid "Shrink"
-#~ msgstr "Mindsk"
-
-#~ msgid "Suppress messages of type:"
-#~ msgstr "Underkend meddelelser af typen:"
-
-#~ msgid "Suppress when using:"
-#~ msgstr "Underkend ved brug af:"
-
-#~ msgid "System call:"
-#~ msgstr "Systemkald:"
-
-#~ msgid "Call chain:"
-#~ msgstr "Kald-kæde:"
-
-#~ msgid "Error saving to suppression file '%s': %s"
-#~ msgstr "Fejl ved gemning til underkendelsesfilen \"%s\": %s"
-
-#~ msgid "You have forgotten to name your suppression rule."
-#~ msgstr "Du har glemt at navngive din underkendelsesregel."
-
-#~ msgid "Cannot save suppression rules: %s"
-#~ msgstr "Kan ikke gemme underkendelsesregler: %s"
-
-#~ msgid "You have not set a suppressions file in your settings."
-#~ msgstr "Du har ikke angivet en underkendelsesfil i dine indstillinger."
-
-#~ msgid "Sample Plugin"
-#~ msgstr "Moduleksempel"
-
-#~ msgid "Sample Plugin for Anjuta."
-#~ msgstr "Moduleksempel til Anjuta."
-
-#~ msgid "An alternate editor based on Scintilla"
-#~ msgstr "En alternativ redigering baseret på Scintilla"
-
-#~ msgid "Application performance profiler"
-#~ msgstr "Programydelses-profiler"
-
-#~ msgid "Profile"
-#~ msgstr "Profiler"
-
-#~ msgid "Powerful debugging tool."
-#~ msgstr "Stærkt fejlsøgningsværktøj."
-
-#~ msgid "Valgrind Plugin"
-#~ msgstr "Valgrind-modul"
-
-#~ msgid "Cut"
-#~ msgstr "Klip"
-
-#~ msgid "Paste"
-#~ msgstr "Indsæt"
-
-#~ msgid "Modify Signal"
-#~ msgstr "Modificér signal"
-
-#~ msgid "Select to _Brace"
-#~ msgstr "Markér til _klammer"
-
-#~| msgid "Remove"
-#~ msgid "Removed"
-#~ msgstr "Fjernet"
-
-#~| msgid "Started"
-#~ msgid "Outdated"
-#~ msgstr "Forældet"
-
-#~ msgid "/_New"
-#~ msgstr "/_Ny"
-
-#~ msgid "/_Hide"
-#~ msgstr "_/Skjul"
-
-#~ msgid "/_Show"
-#~ msgstr "/_Vis"
-
-#~ msgid "/_Quit"
-#~ msgstr "/_Afslut"
-
-#~ msgid "Todo List"
-#~ msgstr "Gøremålsliste"
-
-#~ msgid "Todo List Manager"
-#~ msgstr "Gøremålshåndtering"
-
-#~ msgid "Scintilla based component for editing files"
-#~ msgstr "Scintilla-baseret komponent for filredigering"
-
-#~ msgid "Loaded: "
-#~ msgstr "Indlæst: "
-
-#~ msgid "Failed to read '%s': %s"
-#~ msgstr "Kunne ikke læse \"%s\": %s"
-
-#~ msgid "No read permission for: %s"
-#~ msgstr "Ingen læserettigheder til: %s"
-
-#~ msgid "Failed to read '%s': XML parse error"
-#~ msgstr "Kunne ikke læse \"%s\": XML-fortolkningsfejl"
-
-#~ msgid "Unable to complete file copy"
-#~ msgstr "Kan ikke fuldføre kopiering af fil"
-
-#~ msgid "Command Line Parameters:"
-#~ msgstr "Kommandolinjeparametre:"
-
-#~ msgid "Program parameters"
-#~ msgstr "Programparametre"
-
-#~ msgid "Stop at beginning"
-#~ msgstr "Stop ved begyndelse"
-
-#~ msgid " Stop: "
-#~ msgstr " Stop: "
-
-#~ msgid " Print: "
-#~ msgstr " Udskriv: "
-
-#~ msgid "Previous Help"
-#~ msgstr "Forrige hjælp"
-
-#~ msgid "Go to previous help page"
-#~ msgstr "Gå til foregående hjælpemeddelse"
-
-#~ msgid "Next Help"
-#~ msgstr "Næste hjælp"
-
-#~ msgid "Go to next help page"
-#~ msgstr "Gå til næste hjælpeside"
-
-#~ msgid "Books"
-#~ msgstr "Bøger"
-
-#~ msgid "_First Bookmark"
-#~ msgstr "_Første bogmærke"
-
-#~ msgid "Jump to the first bookmark in the file"
-#~ msgstr "Gå til første bogmærke i filen"
-
-#~ msgid "_Last Bookmark"
-#~ msgstr "_Sidste bogmærke"
-
-#~ msgid "Jump to the last bookmark in the file"
-#~ msgstr "Gå til sidste bogmærke i filen"
-
-#~ msgid "Editor bookmarks"
-#~ msgstr "Bogmærker i redigering"
-
-#~ msgid "Print Preview"
-#~ msgstr "Forhåndsvisning af udskrift"
-
-#~ msgid "Failed to write data to file."
-#~ msgstr "Kunne ikke skrive data til filen."
-
-#~ msgid "Show Notification Tray Icon"
-#~ msgstr "Vis statusikon for påmindelser"
-
-#~ msgid "The file you selected is a link and can't be added to the project"
-#~ msgstr "Filen du valgte er et link og kan ikke føjes til projektet"
-
-#~ msgid "Loaded Project... Initializing"
-#~ msgstr "Projekt indlæst... initierer"
-
-#~ msgid "Loaded Project..."
-#~ msgstr "Projekt indlæst..."
-
-#~ msgid "<b>Project description:</b>"
-#~ msgstr "<b>Projektbeskrivelse</b>"
-
-#~ msgid "<b>Select the type of application to be developed</b>"
-#~ msgstr "<b>Angiv hvilken type program du vil udvikle</b>"
-
-#~ msgid "Application Assistant"
-#~ msgstr "Programguide"
-
-#~ msgid "Application Assistent"
-#~ msgstr "Programguide"
-
-#~ msgid "Basic Information"
-#~ msgstr "Basal information"
-
-#~ msgid "Enter the basic Project information"
-#~ msgstr "Angiv projektets grundlæggende information"
-
-#~ msgid "Project Type"
-#~ msgstr "Projekttype"
-
-#~ msgid ""
-#~ "The Application Assistant will generate a basic skeleton for a project, "
-#~ "including all of the build files. It will ask for details of the initial "
-#~ "structure for the application. Please answer the questions carefully, as "
-#~ "it may not be possible to change some of the settings later."
-#~ msgstr ""
-#~ "Programguiden vil generere et simpelt skelet til dit projekt, inklusive "
-#~ "alle byggefiler. Den vil spørge dig om den grundlæggende struktur for det "
-#~ "program, du vil udvikle. Svar venligst omhyggeligt på spørgsmålene, da "
-#~ "det måske ikke er muligt at ændre visse af indstillingerne senere."
-
-#~ msgid "label"
-#~ msgstr "mærkat"
-
-#~ msgid "Ne_xt Occurrence"
-#~ msgstr "Næs_te forekomst"
-
-#~ msgid "Find the next occurrence of current word"
-#~ msgstr "Find næste forekomst af det aktuelle ord"
-
-#~ msgid "Pre_vious Occurrence"
-#~ msgstr "_Forrige forekomst"
-
-#~ msgid "Find the previous occurrence of current word"
-#~ msgstr "Find den forrige forekomst af det aktuelle ord"
-
-#~ msgid "Directories to scan"
-#~ msgstr "Mapper at skanne"
-
-#~ msgid "Please enter a name and at least one directory."
-#~ msgstr "Indtast venligst et navn og mindst én mappe."
-
-#~ msgid "Anjuta tags files"
-#~ msgstr "Anjuta mærker filer"
-
-#~ msgid "Scanning package: %s"
-#~ msgstr "Skanner pakke: %s"
-
-# ???
-#~ msgid "Completed system tags generation"
-#~ msgstr "Generering af systemmærker fuldført"
-
-#~ msgid "No file details"
-#~ msgstr "Ingen fildetaljer"
-
-#~ msgid "<b>Create API tags:</b>"
-#~ msgstr "<b>Opret API-mærker:</b>"
-
-#~ msgid "Add Directory"
-#~ msgstr "Tilføj mappe"
-
-#~ msgid "Add directories in the list to scan:"
-#~ msgstr "Tilføj mapper i listen der skal skannes:"
-
-#~ msgid "Create API tags"
-#~ msgstr "Opret API-mærker"
-
-#~ msgid "Load API tags from project configuration"
-#~ msgstr "Hent API-mærker fra projektkonfiguration"
-
-#~ msgid "Update Global Tags"
-#~ msgstr "Opdatér globale mærker"
-
-#~ msgid "Goto _Definition"
-#~ msgstr "Gå til _definition"
-
-#~ msgid "Goto De_claration"
-#~ msgstr "Gå til _erklæring"
-
-#~ msgid "_Find Usage"
-#~ msgstr "_Find brug"
-
-#~ msgid "Find usage of symbol in project"
-#~ msgstr "Find sted i projektet hvor symbolet anvendes"
-
-#~ msgid "Symbol navigations"
-#~ msgstr "Symbolnavigation"
-
-#~ msgid "Symbol Browser Plugin for Anjuta."
-#~ msgstr "Symbolviser-modul til Anjuta."
-
-#~ msgid ""
-#~ "Anjuta terminal plugin is not installed. The program will be run without "
-#~ "a terminal."
-#~ msgstr ""
-#~ "Anjuta-terminalmodulet er ikke installeret. Programmet vil blive kørt "
-#~ "uden en terminal."
-
-#~ msgid "Visible whitespaces"
-#~ msgstr "Vis blanke tegn"
-
-#~ msgid "Choose ctags executable"
-#~ msgstr "Vælg eksekverbar fil til ctags"
-
-#~ msgid "Stock Encodings"
-#~ msgstr "Standardkodninger"
-
-#~ msgid "Supported Encodings"
-#~ msgstr "Understøttede kodninger"
-
-#~ msgid "make: Entering directory '%s'"
-#~ msgstr "make: Tilgår mappen \"%s\""
-
-#~ msgid "make[%d]: Entering directory `%s'"
-#~ msgstr "make[%d]: Tilgår mappen \"%s\""
-
-#~ msgid "make: Entering directory `%s'"
-#~ msgstr "make: Tilgår mappen \"%s\""
-
-#~ msgid "make: Leaving directory '%s'"
-#~ msgstr "make: Forlader mappen \"%s\""
-
-#~ msgid "make[%d]: Leaving directory `%s'"
-#~ msgstr "make[%d]: Forlader mappen \"%s\""
-
-#~ msgid "make: Leaving directory `%s'"
-#~ msgstr "make: Forlader mappen \"%s\""
-
-#~ msgid "Configure Parameters:"
-#~ msgstr "Indstil parametre:"
-
-#~ msgid "Run C_onfigure..."
-#~ msgstr "Kør k_onfiguration..."
-
-#~ msgid "Run _Autogenerate..."
-#~ msgstr "Kør _Autogenerér..."
-
-#~ msgid "_Execute Program..."
-#~ msgstr "_Kør program..."
-
-#~ msgid "Execute program"
-#~ msgstr "Kør program"
-
-#~ msgid "Run Target..."
-#~ msgstr "Kør mål..."
-
-#~ msgid "load and start the target for debugging"
-#~ msgstr "indlæs og start målet til fejlsøgning"
-
-#~ msgid "restart the same target for debugging"
-#~ msgstr "genstart samme mål for fejlsøgning"
-
-#~ msgid "<b>Encoding to use when saving files</b>"
-#~ msgstr "<b>Kodning til at gemme filer</b>"
-
-#~ msgid "<b>Supported Encodings</b>"
-#~ msgstr "<b>Understøttede kodninger</b>"
-
-#~ msgid "Always save in UTF-8 encoding (faster)"
-#~ msgstr "Gem altid i UTF-8-kodning (hurtigere)"
-
-#~ msgid "Encodings"
-#~ msgstr "Kodninger"
-
-#~ msgid "Try to save in current locale's encoding"
-#~ msgstr "Forsøg at gemme med kodning for nuværende regionaldata"
-
-#~ msgid "Try to save in original encoding"
-#~ msgstr "Prøv at gemme i original kodning"
-
-#~ msgid "Could not set file permissions %s: %s."
-#~ msgstr "Kunne ikke indstille filrettigheder %s: %s."
-
-#~ msgid "Refresh file manager tree"
-#~ msgstr "Genopfrisk filhåndteringstræet"
-
-#~ msgid "Could not obtain backup filename"
-#~ msgstr "Kunne ikke få fat i filnavn for sikkerhedskopi"
-
-#~ msgid "Unsaved Document %d"
-#~ msgstr "Ugemt dokument %d"
-
-#~ msgid "Saving..."
-#~ msgstr "Gemmer..."
-
-#~ msgid "The file %s was modified by another application. Save it anyway?"
-#~ msgstr "Filen %s blev modificeret af et andet program. Gem den alligevel?"
-
-#~ msgid "Background:"
-#~ msgstr "Baggrund:"
-
-#~ msgid "Enable VFS file monitoring"
-#~ msgstr "Aktivér VFS-filovervågning"
-
-#~ msgid "Selected text:"
-#~ msgstr "Markeret tekst:"
-
-#~ msgid "Text:"
-#~ msgstr "Tekst:"
-
-#~ msgid "Goto symbol"
-#~ msgstr "Gå til symbol"
-
-#~ msgid "Menu Items:"
-#~ msgstr "Menuelementer:"
-
-#~ msgid "User Tools"
-#~ msgstr "Brugerværktøjer"
-
-#~ msgid "Unable to build user interface for tool list"
-#~ msgstr "Kan ikke bygge brugergrænsefladen til værktøjslisten"
-
-#~ msgid "_Configure"
-#~ msgstr "_Konfigurér"
-
-#~ msgid "Configure external tools"
-#~ msgstr "Konfigurér eksterne værktøjer"
-
-#~ msgid "Beep on job complete"
-#~ msgstr "Bib når jobbet er klart"
-
-#~ msgid "Build files"
-#~ msgstr "Bygge filer"
-
-#~ msgid "Combo Popdown:"
-#~ msgstr "Kombinationsmenu:"
-
-#~ msgid "Commands"
-#~ msgstr "Kommandoer"
-
-#~ msgid "Data module Makefile.am"
-#~ msgstr "Datamodul Makefile.am"
-
-#~ msgid "Dialog on job complete"
-#~ msgstr "Dialogvindue når jobbet er klart"
-
-#~ msgid "Enable Debugging"
-#~ msgstr "Aktivér fejlsøgning"
-
-#~ msgid "Gnome API"
-#~ msgstr "Gnome-API"
-
-#~ msgid "Help module Makefile.am"
-#~ msgstr "Hjælpemodul Makefile.am"
-
-#~ msgid "Include module Makefile.am"
-#~ msgstr "Inkludér modulet Makefile.am"
-
-#~ msgid "Library Paths"
-#~ msgstr "Biblioteksstier"
-
-#~ msgid "Makefile.am"
-#~ msgstr "Makefile.am"
-
-#~ msgid "Others"
-#~ msgstr "Andre"
-
-#~ msgid "Pixmap module Makefile.am"
-#~ msgstr "Pixmapmodul Makefile.am"
-
-#~ msgid "Po module (translation) Makefile.am"
-#~ msgstr "Po-modul (oversættelse) Makefile.am"
-
-#~ msgid "Source module Makefile.am"
-#~ msgstr "Kildekodesmodul Makefile.am"
-
-#~ msgid "Update tags image automatically"
-#~ msgstr "Opdatér tags billede automatisk"
-
-#~ msgid "Build Project"
-#~ msgstr "Byg projekt"
-
-#~ msgid "Building source directory of the Project: "
-#~ msgstr "Bygger projektets kildekatalog: "
-
-#~ msgid "Building the whole Project: "
-#~ msgstr "Bygger hele projektet: "
-
-#~ msgid "Building the distribution package of the Project: "
-#~ msgstr "Bygger distributionspakken for projektet: "
-
-#~ msgid "Compile"
-#~ msgstr "Kompilerer"
-
-#~ msgid "Compiling file: %s ...\n"
-#~ msgstr "Kompilerer fil: %s...\n"
-
-#~ msgid "Unable to execute file. Check Settings->Commands."
-#~ msgstr "Kan ikke køre filen. Kontrollér Indstillinger->Kommandoer."
-
-#~ msgid "Start the debugging session"
-#~ msgstr "Start fejlsøgningssessionen"
-
-#~ msgid "Close All Files"
-#~ msgstr "Luk alle filer"
-
-#~ msgid "For_mat"
-#~ msgstr "For_matering"
-
-#~ msgid "Auto _Format"
-#~ msgstr "Auto_formatér"
-
-#~ msgid ""
-#~ "Auto format is currently disabled. Change the setting in Preferences."
-#~ msgstr ""
-#~ "Autoformatering er slået fra. Hvis du vil, kan du slå det til i "
-#~ "Indstillinger."
-
-#~ msgid "Error in auto formatting ..."
-#~ msgstr "Fejl i autoformatering ..."
-
-#~ msgid "Back"
-#~ msgstr "Tilbage"
-
-#~ msgid "Next bookmark"
-#~ msgstr "Næste bogmærke"
-
-#~ msgid "Step in"
-#~ msgstr "Gå ind"
-
-#~ msgid "Step over"
-#~ msgstr "Gå over"
-
-#~ msgid "Step out"
-#~ msgstr "Gå ud"
-
-#~ msgid "Run to cursor"
-#~ msgstr "Kør til markør"
-
-#~ msgid "Run/Continue"
-#~ msgstr "Kør/Fortsæt"
-
-#~ msgid "Interrupt"
-#~ msgstr "Afbryd"
-
-#~ msgid "++Zoom"
-#~ msgstr "++Zoom"
-
-#~ msgid "--Zoom"
-#~ msgstr "--Zoom"
-
-#~ msgid "Auto format"
-#~ msgstr "Autoformatering"
-
-#~ msgid "_Insert text"
-#~ msgstr "_Indsæt tekst"
-
-#~ msgid "Insert GPL notice with C style comments"
-#~ msgstr "Indsæt GPL information med kommertarer i C-stil"
-
-#~ msgid "Insert GPL notice with Python style comments"
-#~ msgstr "Indsæt GPL-information med kommertarer i Phyton-stil"
-
-#~ msgid "Insert current date & time"
-#~ msgstr "Indsæt aktuel dato & tid"
-
-#~ msgid "Hex"
-#~ msgstr "Hexadecimalt"
-
-#~ msgid "Debugger is ready.\n"
-#~ msgstr "Fejlsøgeren er klar.\n"
-
-#~ msgid ""
-#~ "Program is ATTACHED.\n"
-#~ "Do you still want to stop Debugger?"
-#~ msgstr ""
-#~ "Programmet er VEDHÆFTET.\n"
-#~ "Vil du stoppe fejlsøgeren?"
-
-#~ msgid "Cannot execute gnome-terminal"
-#~ msgstr "Kan ikke køre Gnome-terminal"
-
-#~ msgid "Display the IDs of currently known threads"
-#~ msgstr "Vis ID for aktuelle kendte tråde"
-
-#~ msgid "Info _Local variables"
-#~ msgstr "Information om mi_ljø variabler"
-
-#~ msgid "Display local variables of the current frame"
-#~ msgstr "Vis miljø variabler for den nuværende ramme"
-
-#~ msgid "_Restart Program"
-#~ msgstr "_Genstart program"
-
-#~ msgid "_Detach Debugger"
-#~ msgstr "_Afhæft fejlsøger"
-
-#~ msgid "Detach from an attached program"
-#~ msgstr "Afhæft fra et vedhæftet program"
-
-#~ msgid "Si_gnal to Process"
-#~ msgstr "Si_gnalér til proces"
-
-#~ msgid "Send a kernel signal to the process being debugged"
-#~ msgstr "Send et kerne signal til processen der bliver fejlsøgt"
-
-#~ msgid "Sysm Read"
-#~ msgstr "Sysm læst"
-
-#~ msgid "Frame info"
-#~ msgstr "Rammeinformation"
-
-#~ msgid "< Not defined in current context >"
-#~ msgstr "< Inte definieret i aktuelt sammanhang >"
-
-#~ msgid "Add expression"
-#~ msgstr "Tilføj udtryk"
-
-#~ msgid "Clear"
-#~ msgstr "Tøm"
-
-#~ msgid "Add Watch Expression"
-#~ msgstr "Tilføj overvågningsudtryk"
-
-#~ msgid "Add expression to watch"
-#~ msgstr "Tilføj udtryk til overvågning"
-
-#~ msgid "Inspect/Evaluate Expression"
-#~ msgstr "Undersøg/Evaluér udtryk"
-
-#~ msgid "C"
-#~ msgstr "C"
-
-#~ msgid "Recent Projects "
-#~ msgstr "Seneste projekt "
-
-#~ msgid "Project: "
-#~ msgstr "Projekt: "
-
-#~ msgid "Error while copying the file inside the module."
-#~ msgstr "Fejl ved kopiering af filen indeni modulet."
-
-#~ msgid "Include file"
-#~ msgstr "Inkludér fil"
-
-#~ msgid "Pixmap file"
-#~ msgstr "Billed fil"
-
-#~ msgid "Doc file"
-#~ msgstr "Dokumentationsfil"
-
-#~ msgid "Project Information"
-#~ msgstr "Projektinformation"
-
-#~ msgid "Program Name:"
-#~ msgstr "Programnavn:"
-
-#~ msgid "GUI editable by Glade:"
-#~ msgstr "GUI redigérbar af Glade:"
-
-#~ msgid "Project Type:"
-#~ msgstr "Projekttype:"
-
-#~ msgid ""
-#~ "Project is not saved.\n"
-#~ "Do you want to save it before closing?"
-#~ msgstr ""
-#~ "Projektet er ikke gemt.\n"
-#~ "Vil du gemme det inden du afslutter?"
-
-#~ msgid "Breton"
-#~ msgstr "Bretonsk"
-
-#~ msgid "Catalan"
-#~ msgstr "Katalansk"
-
-#~ msgid "Czech"
-#~ msgstr "Tjekkisk"
-
-#~ msgid "Danish"
-#~ msgstr "Dansk"
-
-#~ msgid "German"
-#~ msgstr "Tysk"
-
-#~ msgid "Esperanto"
-#~ msgstr "Esperanto"
-
-#~ msgid "Finnish"
-#~ msgstr "Finsk"
-
-#~ msgid "Herbrew"
-#~ msgstr "Hebraisk"
-
-#~ msgid "Croatian"
-#~ msgstr "Kroatisk"
-
-#~ msgid "Hungarian"
-#~ msgstr "Ungarsk"
-
-#~ msgid "Islandic"
-#~ msgstr "Islandsk"
-
-#~ msgid "Italian"
-#~ msgstr "Italiensk"
-
-#~ msgid "Macedonian"
-#~ msgstr "Makedonsk"
-
-#~ msgid "Dutch"
-#~ msgstr "Hollandsk"
-
-#~ msgid "Norwegian"
-#~ msgstr "Norsk"
-
-#~ msgid "Polish"
-#~ msgstr "Polsk"
-
-#~ msgid "Portuguese"
-#~ msgstr "Portugisisk"
-
-#~ msgid "Russian"
-#~ msgstr "Russisk"
-
-#~ msgid "Slovak"
-#~ msgstr "Slovensk"
-
-#~ msgid "Simplified Chinese"
-#~ msgstr "Simpel kinesisk"
-
-#~ msgid "Estonian"
-#~ msgstr "Estisk"
-
-#~ msgid "Select regional language"
-#~ msgstr "Vælg regionalsprog"
-
-#~ msgid "Not a regular file: %s."
-#~ msgstr "Ikke en almindelig fil: %s."
-
-#~ msgid "Project Name:    "
-#~ msgstr "Projektnavn:     "
-
-#~ msgid "Project Type:    "
-#~ msgstr "Projekttype:      "
-
-#~ msgid "Source Target:   "
-#~ msgstr "Kildemål:         "
-
-#~ msgid "Version:         "
-#~ msgstr "Version:         "
-
-#~ msgid "Author:          "
-#~ msgstr "Forfatter:      "
-
-#~ msgid "Language:        "
-#~ msgstr "Sprog:           "
-
-#~ msgid "Gettext Support: "
-#~ msgstr "Gettext-understøttelse: "
-
-#~ msgid "_Settings"
-#~ msgstr "_Indstillinger"
-
-#~ msgid "_Preferences ..."
-#~ msgstr "_Indstillinger ..."
-
-#~ msgid "Set _Default Preferences"
-#~ msgstr "Sæt _standard indstillinger"
-
-#~ msgid "But I prefer tea."
-#~ msgstr "Men jeg foretrækker the."
