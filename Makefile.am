@@ -39,7 +39,7 @@ gnomemenu_DATA = $(gnomemenu_premerge_file:.desktop.in=.desktop)
 
 @INTLTOOL_XML_RULE@
 appdatadir = $(datadir)/appdata
-dist_appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 appdata_in_files = anjuta.appdata.xml.in
 
 DISTCHECK_CONFIGURE_FLAGS = --enable-gtk-doc
