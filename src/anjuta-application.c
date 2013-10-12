@@ -405,7 +405,7 @@ anjuta_application_local_command_line (GApplication *application,
 			"profile", 'P', 0, G_OPTION_ARG_STRING,
 			&profile,
 			N_("Specify another profile"),
-			N_("profile file")
+			N_("PROFILE_FILE")
 		},
 		{
 			G_OPTION_REMAINING, 0, 0, G_OPTION_ARG_FILENAME_ARRAY,

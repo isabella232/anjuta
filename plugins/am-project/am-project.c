@@ -121,7 +121,7 @@ static AmpNodeInfo AmpNodeInformations[] = {
 	NULL},
 
 	{{ANJUTA_PROJECT_TARGET | ANJUTA_PROJECT_PRIMARY |  ANJUTA_PROJECT_SHAREDLIB,
-	N_("Shared Library (libtool)"),
+	N_("Shared Library (Libtool)"),
 	"application/x-sharedlib",
 	"autotools-project-target-edit"},
 	AM_TOKEN__LTLIBRARIES,

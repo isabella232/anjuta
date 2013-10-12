@@ -806,7 +806,7 @@ on_add_button_clicked (GtkButton *add_button,
 	menu = gtk_menu_new ();
 
 	/* Insert the Add Snippet menu item */
-	add_snippet_menu_item = gtk_menu_item_new_with_label (_("Add Snippet …"));
+	add_snippet_menu_item = gtk_menu_item_new_with_label (_("Add Snippet…"));
 	g_signal_connect (add_snippet_menu_item,
 	                  "activate",
 	                  G_CALLBACK (on_add_snippet_menu_item_activated),
@@ -816,7 +816,7 @@ on_add_button_clicked (GtkButton *add_button,
 	gtk_widget_show (GTK_WIDGET (add_snippet_menu_item));
 	
 	/* Insert the Add Snippets Group menu item */
-	add_snippets_group_menu_item = gtk_menu_item_new_with_label (_("Add Snippets Group …"));
+	add_snippets_group_menu_item = gtk_menu_item_new_with_label (_("Add Snippets Group…"));
 	g_signal_connect (add_snippets_group_menu_item,
 	                  "activate",
 	                  G_CALLBACK (on_add_snippets_group_menu_item_activated),
