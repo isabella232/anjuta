@@ -480,7 +480,7 @@ anjuta_session_get_relative_uri_from_file (AnjutaSession *session,
 	gint level;
 
 	parent = g_file_new_for_path (session->priv->dir_path);
-	for (level = 0; (parent != NULL) && !g_file_has_prefix (file, parent); level++)
+	for (level = 0; (parent != NULL) && !g_file_equal (file, parent) && !g_file_has_prefix (file, parent); level++)
 	{
 		GFile *next = g_file_get_parent (parent);
 		g_object_unref (parent);
@@ -495,9 +495,16 @@ anjuta_session_get_relative_uri_from_file (AnjutaSession *session,
 	{
 		gchar *path;
 
-		path = g_file_get_relative_path (parent, file);
-		uri = g_uri_escape_string (path, G_URI_RESERVED_CHARS_ALLOWED_IN_PATH, TRUE);
-		g_free (path);
+		if (g_file_equal (file, parent))
+		{
+			uri = g_strdup(".");
+		}
+		else
+		{
+			path = g_file_get_relative_path (parent, file);
+			uri = g_uri_escape_string (path, G_URI_RESERVED_CHARS_ALLOWED_IN_PATH, TRUE);
+			g_free (path);
+		}
 		if (level != 0)
 		{
 			gsize len;
