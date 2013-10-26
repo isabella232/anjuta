@@ -153,7 +153,8 @@ prefix##_get_type (GTypeModule *module)                                  \
 		type = g_type_module_register_type (module,                                      \
 						    ANJUTA_TYPE_PLUGIN,                          \
 						    #class_name,                                 \
-						    &type_info, 0);
+						    &type_info,                                  \
+						    (GTypeFlags) 0);
 /**
  * ANJUTA_PLUGIN_END:
  * 
