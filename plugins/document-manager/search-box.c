@@ -568,6 +568,19 @@ search_box_incremental_search (SearchBox* search_box,
 		g_object_unref (result_start);
 		g_object_unref (result_end);
 	}
+	else 
+	{
+		if(ianjuta_editor_selection_get (selection, NULL)!=NULL)	
+		{  
+			IAnjutaIterable* selection_start =
+				ianjuta_editor_selection_get_start (selection, NULL);
+			ianjuta_editor_selection_set (selection,
+			                              IANJUTA_ITERABLE (selection_start),
+			                              IANJUTA_ITERABLE (selection_start), TRUE, NULL);
+			g_object_unref (selection_start);
+		}
+
+	}    
 
 	search_box_set_entry_color (search_box, found);	
 	g_object_unref (real_start);
