@@ -128,31 +128,27 @@ static void
 search_box_set_entry_color (SearchBox* search_box, gboolean found)
 {
 	if (!found)
-	{
-		GdkColor red;
-		GdkColor white;
+        {    
+                GdkRGBA red; 
+                GdkRGBA white;
+                gdk_rgba_parse (&red,"red");
+                gdk_rgba_parse (&white,"white");
 
-		/* FIXME: a11y and theme */
+                /* FIXME: a11y and theme */
 
-		gdk_color_parse ("#FF6666", &red);
-		gdk_color_parse ("white", &white);
-
-		gtk_widget_modify_base (search_box->priv->search_entry,
-				        GTK_STATE_NORMAL,
-				        &red);
-		gtk_widget_modify_text (search_box->priv->search_entry,
-				        GTK_STATE_NORMAL,
-				        &white);
-	}
-	else
-	{
-		gtk_widget_modify_base (search_box->priv->search_entry,
-				        GTK_STATE_NORMAL,
-				        NULL);
-		gtk_widget_modify_text (search_box->priv->search_entry,
-				        GTK_STATE_NORMAL,
-				        NULL);
-	}
+                gtk_widget_override_color (search_box->priv->search_entry,
+                                        GTK_STATE_NORMAL,
+                                        &red);
+        }    
+        else 
+        {    
+                gtk_widget_override_background_color (search_box->priv->search_entry,
+                                        GTK_STATE_NORMAL,
+                                        NULL);
+                gtk_widget_override_color (search_box->priv->search_entry,
+                                        GTK_STATE_NORMAL,
+                                        NULL);
+        }    
 }
 
 static gboolean
