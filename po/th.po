@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-09-13 15:33+0000\n"
-"PO-Revision-Date: 2013-09-18 23:36+0700\n"
+"POT-Creation-Date: 2013-11-09 10:31+0000\n"
+"PO-Revision-Date: 2013-11-13 20:59+0700\n"
 "Last-Translator: Akom Chotiphantawanon <knight2000@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
@@ -18,6 +18,48 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: ../anjuta.appdata.xml.in.h:1
+msgid ""
+"Anjuta DevStudio is a versatile software development studio featuring a "
+"number of advanced programming facilities including project management, "
+"application wizard, interactive debugger, source editor, version control, "
+"GUI designer, profiler and many more tools. It focuses on providing simple "
+"and usable user interface, yet powerful for efficient development."
+msgstr ""
+"DevStudio แอนจูตา เป็นสตูดิโอพัฒนาซอฟต์แวร์อเนกประสงค์ "
+"ที่มีสิ่งอำนวยความสะดวกขั้นสูงจำนวนหนึ่งสำหรับการเขียนโปรแกรม เช่น การบริหารโครงการ, "
+"เครื่องมือลัดสำหรับสร้างโปรแกรม, โปรแกรมดีบั๊กแบบโต้ตอบ, เครื่องมือแก้ไขซอร์ส, การควบคุมรุ่น, "
+"เครื่องมือออกแบบ GUI, เครื่องมือวัดประสิทธิภาพ และเครื่องมืออื่นอีกมายมาย "
+"โดยมุ่งเน้นให้การสั่งงานเรียบง่ายและใช้สะดวก แต่ยังทรงพลังสำหรับการพัฒนาที่มีประสิทธิภาพ"
+
+#: ../anjuta.appdata.xml.in.h:2
+msgid ""
+"Anjuta is very extensible with plugins. Almost all features in Anjuta are "
+"implemented using plugins which can be dynamically enabled or disabled. You "
+"can choose which plugins should be active for your project. Like the user "
+"interface layout, the set of active plugins is also persistent for each "
+"project making it easy to work on projects with various levels of "
+"complexity. Using plugins, you can extend Anjuta with your own features."
+msgstr ""
+"แอนจูตาสามารถขยายต่อเติมได้มากด้วยปลั๊กอินต่างๆ "
+"ความสามารถเกือบทั้งหมดของแอนจูตาจะทำโดยใช้ปลั๊กอินที่สามารถเปิดหรือปิดใช้งานได้ขณะทำงาน "
+"คุณสามารถเลือกปลั๊กอินที่จะให้เปิดทำงานสำหรับโครงการของคุณได้ เช่นเดียวกับรูปแบบส่วนติดต่อผู้ใช้ "
+"ชุดของปลั๊กอินที่เปิดใช้งานยังมีการเก็บบันทึกไว้แยกกันสำหรับแต่ละโครงการ "
+"ทำให้ง่ายต่อการทำงานกับโครงการที่มีระดับความซับซ้อนต่างๆ กัน นอกจากนี้ "
+"คุณยังสามารถขยายต่อเติมความสามารถของแอนจูตาได้โดยใช้ปลั๊กอินของคุณเอง"
+
+#: ../anjuta.appdata.xml.in.h:3
+msgid ""
+"The project wizard lets you create new projects from a selection of project "
+"templates. The selection includes simple generic, flat (no subdirectory), GTK"
+"+, GNOME, Java, Python projects and more. New templates can be easily "
+"downloaded and installed."
+msgstr ""
+"เครื่องมือลัดสร้างโครงการช่วยคุณสร้างโครงการใหม่จากชุดของแม่แบบโครงการ "
+"ชุดดังกล่าวรวมถึงโครงการทั่วไปอย่างง่ายๆ, แบบแบน (ไม่มีไดเรกทอรีย่อย), GTK+, GNOME, จาวา, "
+"ไพธอน และอื่นๆ และสามารถดาวน์โหลดแม่แบบใหม่มาติดตั้งได้อย่างง่ายดาย"
 
 #: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
@@ -622,47 +664,47 @@ msgid "Unable to load user interface file: %s"
 msgstr "ไม่สามารถโหลดแฟ้มส่วนติดต่อผู้ใช้: %s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
-#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:183
+#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:182
 msgid "Modified"
 msgstr "มีการเปลี่ยนแปลง"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:95
-#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:186
+#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:185
 msgid "Added"
 msgstr "เพิ่ม"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:98
-#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:189
+#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:188
 msgid "Deleted"
 msgstr "ลบ"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:101
-#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:192
+#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:191
 msgid "Conflicted"
 msgstr "ขัดแย้ง"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:105
-#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:196
+#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:195
 msgid "Up-to-date"
 msgstr "เป็นข้อมูลล่าสุด"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:109
-#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:200
+#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:199
 msgid "Locked"
 msgstr "ล็อค"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:112
-#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:203
+#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:202
 msgid "Missing"
 msgstr "สูญหาย"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:115
-#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:206
+#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:205
 msgid "Unversioned"
 msgstr "ไม่มีการติดตามรุ่น"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:119
-#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:210
+#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:209
 msgid "Ignored"
 msgstr "ละเลย"
 
@@ -719,7 +761,7 @@ msgid "Source"
 msgstr "ซอร์ส"
 
 #: ../plugins/am-project/am-project.c:124
-msgid "Shared Library (libtool)"
+msgid "Shared Library (Libtool)"
 msgstr "ไลบรารีใช้ร่วม (Libtool)"
 
 #: ../plugins/am-project/am-project.c:132
@@ -869,8 +911,8 @@ msgid "Libtool support:"
 msgstr "การรองรับ Libtool:"
 
 #: ../plugins/am-project/am-properties.c:98
-msgid "Add support to compile shared and static libraries with libtool."
-msgstr "เพิ่มการรองรับการคอมไพล์ไลบรารีใช้ร่วมและไลบรารีสแตติกด้วย libtool"
+msgid "Add support to compile shared and static libraries with Libtool."
+msgstr "เพิ่มการรองรับการคอมไพล์ไลบรารีใช้ร่วมและไลบรารีสแตติกด้วย Libtool"
 
 #: ../plugins/am-project/am-properties.c:104
 #: ../plugins/am-project/am-properties.c:211
@@ -3496,6 +3538,7 @@ msgid "Close file"
 msgstr "ปิดแฟ้ม"
 
 #: ../plugins/document-manager/anjuta-docman.c:773
+#: ../plugins/language-support-python/anjuta-language-support-python.ui.h:9
 #: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "พาธ:"
@@ -4227,15 +4270,15 @@ msgid ""
 "match was found."
 msgstr "การค้นหา \"%s\" ชนต้นแฟ้ม และเริ่มหาต่อจากท้ายแฟ้ม แต่ไม่พบข้อความที่ตรง"
 
-#: ../plugins/document-manager/search-box.c:916
+#: ../plugins/document-manager/search-box.c:929
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr "ใช้เมนูคลิกขวาของไอคอน \"หา\" หากต้องการตัวเลือกเพิ่มเติมของการค้นหา"
 
-#: ../plugins/document-manager/search-box.c:977
+#: ../plugins/document-manager/search-box.c:990
 msgid "Replace"
 msgstr "แทนที่"
 
-#: ../plugins/document-manager/search-box.c:982
+#: ../plugins/document-manager/search-box.c:995
 msgid "Replace all"
 msgstr "แทนที่ทั้งหมด"
 
@@ -4917,7 +4960,7 @@ msgstr "Fetch แขนงจากแม่ข่ายหลังจากส
 msgid "Mailbox files to apply:"
 msgstr "แฟ้มกล่องจดหมายที่จะใช้:"
 
-#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:954
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:940
 msgid "Branches"
 msgstr "แขนง"
 
@@ -4989,7 +5032,7 @@ msgstr "แขนงต่างๆ จะต้องผสานครบท�
 
 #: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:96
 #: ../plugins/git/git-pane.c:101 ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:839
+#: ../plugins/git/plugin.c:836
 msgid "Git"
 msgstr "Git"
 
@@ -5336,11 +5379,11 @@ msgstr "ย้อนคืน"
 msgid "Stash Uncommitted Changes"
 msgstr "Stash การเปลี่ยนแปลงที่ยังไม่ commit"
 
-#: ../plugins/git/git-status-pane.c:508
+#: ../plugins/git/git-status-pane.c:551
 msgid "Changes to be committed"
 msgstr "การเปลี่ยนแปลงที่จะ commit"
 
-#: ../plugins/git/git-status-pane.c:518
+#: ../plugins/git/git-status-pane.c:561
 msgid "Changed but not updated"
 msgstr "เปลี่ยนแปลงแต่ยังไม่ปรับข้อมูล"
 
@@ -5425,7 +5468,7 @@ msgstr "แก้ข้อขัดแย้ง"
 msgid "Mark selected conflicted files as resolved"
 msgstr "ทำเครื่องหมายแฟ้มที่ขัดแย้งที่เลือก ว่าแก้ข้อขัดแย้งแล้ว"
 
-#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:972
+#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:958
 msgid "Stash"
 msgstr "Stash"
 
@@ -5651,43 +5694,43 @@ msgstr "ดำเนินการและคืนสภาพดัชนี
 msgid "Drop"
 msgstr "ทิ้ง"
 
-#: ../plugins/git/plugin.c:696 ../plugins/git/plugin.c:769
+#: ../plugins/git/plugin.c:693 ../plugins/git/plugin.c:766
 msgid "Branch"
 msgstr "แขนง"
 
-#: ../plugins/git/plugin.c:858
+#: ../plugins/git/plugin.c:855
 msgid "Status popup menu"
 msgstr "เมนูสถานะแบบผุดขึ้น"
 
-#: ../plugins/git/plugin.c:863
+#: ../plugins/git/plugin.c:860
 msgid "Log popup menu"
 msgstr "เมนูปูมแบบผุดขึ้น"
 
-#: ../plugins/git/plugin.c:869
+#: ../plugins/git/plugin.c:866
 msgid "Branch popup menu"
 msgstr "เมนูแขนงแบบผุดขึ้น"
 
-#: ../plugins/git/plugin.c:875
+#: ../plugins/git/plugin.c:872
 msgid "Remote popup menu"
 msgstr "เมนูแม่ข่ายแบบผุดขึ้น"
 
-#: ../plugins/git/plugin.c:880
+#: ../plugins/git/plugin.c:877
 msgid "Popup menu entries"
 msgstr "รายการเมนูแบบผุดขึ้น"
 
-#: ../plugins/git/plugin.c:942
+#: ../plugins/git/plugin.c:928
 msgid "Status"
 msgstr "สถานะ"
 
-#: ../plugins/git/plugin.c:948
+#: ../plugins/git/plugin.c:934
 msgid "Log"
 msgstr "ปูม"
 
-#: ../plugins/git/plugin.c:959
+#: ../plugins/git/plugin.c:945
 msgid "Tags"
 msgstr "แท็ก"
 
-#: ../plugins/git/plugin.c:966
+#: ../plugins/git/plugin.c:952
 msgid "Remotes"
 msgstr "แม่ข่าย"
 
@@ -6022,16 +6065,16 @@ msgid "JS Find dirs"
 msgstr "ไดเรกทอรีค้นหาสำหรับ JS"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-msgid "Gir repository's directory: "
-msgstr "ไดเรกทอรีของคลัง Gir: "
+msgid "Gir repository's directory:"
+msgstr "ไดเรกทอรีของคลัง Gir:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-msgid "Gjs repository's directory: "
-msgstr "ไดเรกทอรีของคลัง Gjs: "
+msgid "Gjs repository's directory:"
+msgstr "ไดเรกทอรีของคลัง Gjs:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
-msgid "Min character for completion: "
-msgstr "จำนวนอักขระต่ำสุดที่จะเริ่มเติมเต็มโค้ด: "
+msgid "Min character for completion:"
+msgstr "จำนวนอักขระต่ำสุดที่จะเริ่มเติมเต็มโค้ด:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
@@ -6051,10 +6094,6 @@ msgstr "ปลั๊กอินรองรับจาวาสคริปต
 #: ../plugins/language-support-js/plugin.c:411
 msgid "JavaScript"
 msgstr "จาวาสคริปต์"
-
-#: ../plugins/language-support-python/anjuta-language-support-python.ui.h:9
-msgid "Path: "
-msgstr "พาธ: "
 
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:10
 msgid "Interpreter"
@@ -8232,12 +8271,12 @@ msgstr "ภาษา"
 
 #. Insert the Add Snippet menu item
 #: ../plugins/snippets-manager/snippets-browser.c:809
-msgid "Add Snippet …"
+msgid "Add Snippet…"
 msgstr "เพิ่มข้อความสั้น…"
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
-msgid "Add Snippets Group …"
+msgid "Add Snippets Group…"
 msgstr "เพิ่มกลุ่มข้อความสั้น…"
 
 #: ../plugins/snippets-manager/snippets-editor.c:39
@@ -9808,8 +9847,8 @@ msgid "Specify another profile"
 msgstr "ระบุโพรไฟล์อื่น"
 
 #: ../src/anjuta-application.c:408
-msgid "profile file"
-msgstr "แฟ้มโพร์ไฟล์"
+msgid "PROFILE_FILE"
+msgstr "PROFILE_FILE"
 
 #: ../src/anjuta-application.c:425
 msgid "- Integrated Development Environment"
@@ -9918,6 +9957,12 @@ msgstr "ไอคอนเท่านั้น"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "ข้อความเท่านั้น"
+
+#~ msgid "Path: "
+#~ msgstr "พาธ: "
+
+#~ msgid "profile file"
+#~ msgstr "แฟ้มโพร์ไฟล์"
 
 #~ msgid "Uncommitted Changes.diff"
 #~ msgstr "Uncommitted Changes.diff"
