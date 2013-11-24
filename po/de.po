@@ -33,22 +33,68 @@
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2010-2013.
 # Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2011.
 # Christian Kirbach <christian.kirbach@gmail.com>, 2008-2010, 2011, 2012, 2013.
+# Alexander Wilms <f.alexander.wilms+spam@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-09-18 16:38+0000\n"
-"PO-Revision-Date: 2013-09-21 12:19+0100\n"
-"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
-"Language-Team: Deutsch <gnome-de@gnome.org>\n"
+"POT-Creation-Date: 2013-11-13 14:14+0000\n"
+"PO-Revision-Date: 2013-11-22 20:34+0100\n"
+"Last-Translator: Benjamin Steinwender <b@stbe.at>\n"
+"Language-Team: German <>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: ../anjuta.appdata.xml.in.h:1
+msgid ""
+"Anjuta DevStudio is a versatile software development studio featuring a "
+"number of advanced programming facilities including project management, "
+"application wizard, interactive debugger, source editor, version control, "
+"GUI designer, profiler and many more tools. It focuses on providing simple "
+"and usable user interface, yet powerful for efficient development."
+msgstr ""
+"Anjuta DevStudio ist ein vielseitiges Softwareentwicklungsstudio mit einer "
+"ganzen Reihe fortschrittlicher Hilfsmittel für die Programmierung, "
+"einschließlich Projektmanagement, Anwendungsassistent, interaktivem "
+"Debugger, Quelleneditor, Versionskontrolle, GUI-Designer, Analysewerkzeugen "
+"und vielen weiteren Tools. Das Hauptaugenmerk liegt dabei darauf, eine "
+"einfache und benutzerfreundliche Oberfläche zu bieten, die dennoch mächtig "
+"genug ist für effizientes Entwickeln."
+
+#: ../anjuta.appdata.xml.in.h:2
+msgid ""
+"Anjuta is very extensible with plugins. Almost all features in Anjuta are "
+"implemented using plugins which can be dynamically enabled or disabled. You "
+"can choose which plugins should be active for your project. Like the user "
+"interface layout, the set of active plugins is also persistent for each "
+"project making it easy to work on projects with various levels of "
+"complexity. Using plugins, you can extend Anjuta with your own features."
+msgstr ""
+"Anjuta ist sehr gut erweiterbar mit Plugins. Fast alle Funktionen in Anjuta "
+"sind mittels Plugins realisiert, welche dynamisch aktiviert und deaktiviert "
+"werden können. Sie können auswählen, welche Plugins für Ihr Projekt aktiv "
+"sein sollen. Wie auch das Layout der Benutzeroberfläche wird die Auswahl "
+"aktiver Plugins für jedes Projekt gespeichert, was es erleichtert an "
+"Projekten unterschiedlicher Komplexität zu arbeiten. Mittels Plugins können "
+"Sie Anjuta auch um eigene Funktionen erweitern."
+
+#: ../anjuta.appdata.xml.in.h:3
+msgid ""
+"The project wizard lets you create new projects from a selection of project "
+"templates. The selection includes simple generic, flat (no subdirectory), GTK"
+"+, GNOME, Java, Python projects and more. New templates can be easily "
+"downloaded and installed."
+msgstr ""
+"Der Projekt-Assistent erlaubt Ihnen, neue Projekte aus einer Auswahl von "
+"Projekt-Vorlagen zu erstellen. Die Auswahl umfasst einfache generische, "
+"flache (ohne Unterordner), GTK+, GNOME, JAVA und Python-Projekte und mehr. "
+"Neue Vorlagen können einfach heruntergeladen und installiert werden."
 
 #: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
@@ -663,7 +709,6 @@ msgstr ""
 # -- sigh, i think shell == prompt in German --
 #: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
 #, c-format
-#| msgid "Cannot execute command: %s (using shell %s)\n"
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr ""
 "Befehl kann nicht ausgeführt werden: %s (unter Verwendung der Befehlszeile "
@@ -675,47 +720,47 @@ msgid "Unable to load user interface file: %s"
 msgstr "Benutzerschnittstellendatei konnte nicht geladen werden: %s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
-#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:183
+#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:182
 msgid "Modified"
 msgstr "Verändert"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:95
-#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:186
+#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:185
 msgid "Added"
 msgstr "Hinzugefügt"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:98
-#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:189
+#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:188
 msgid "Deleted"
 msgstr "Gelöscht"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:101
-#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:192
+#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:191
 msgid "Conflicted"
 msgstr "Im Konflikt"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:105
-#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:196
+#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:195
 msgid "Up-to-date"
 msgstr "Auf neuestem Stand"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:109
-#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:200
+#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:199
 msgid "Locked"
 msgstr "Gesperrt"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:112
-#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:203
+#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:202
 msgid "Missing"
 msgstr "Fehlend"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:115
-#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:206
+#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:205
 msgid "Unversioned"
 msgstr "Ohne Version"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:119
-#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:210
+#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:209
 msgid "Ignored"
 msgstr "Ignoriert"
 
@@ -776,7 +821,7 @@ msgid "Source"
 msgstr "Quelle"
 
 #: ../plugins/am-project/am-project.c:124
-msgid "Shared Library (libtool)"
+msgid "Shared Library (Libtool)"
 msgstr "Gemeinsam verwendete Bibliothek (libtool)"
 
 #: ../plugins/am-project/am-project.c:132
@@ -930,10 +975,10 @@ msgid "Libtool support:"
 msgstr "Libtool-Unterstützung:"
 
 #: ../plugins/am-project/am-properties.c:98
-msgid "Add support to compile shared and static libraries with libtool."
+msgid "Add support to compile shared and static libraries with Libtool."
 msgstr ""
 "Fügt Unterstützung für das Erstellen von gemeinsam verwendeten und "
-"statischen Bibliotheken mit libtool hinzu"
+"statischen Bibliotheken mit Libtool hinzu"
 
 #: ../plugins/am-project/am-properties.c:104
 #: ../plugins/am-project/am-properties.c:211
@@ -3613,6 +3658,7 @@ msgid "Close file"
 msgstr "Datei schließen"
 
 #: ../plugins/document-manager/anjuta-docman.c:773
+#: ../plugins/language-support-python/anjuta-language-support-python.ui.h:9
 #: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "Pfad:"
@@ -4356,16 +4402,16 @@ msgstr ""
 "Die Suche nach »%s« wurde abgeschlossen und wird ab Dokumentende "
 "fortgesetzt, es wurde aber keine Übereinstimmung gefunden."
 
-#: ../plugins/document-manager/search-box.c:916
+#: ../plugins/document-manager/search-box.c:929
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
 "Verwenden Sie das Kontextmenü des »Suchen«-Symbols für weitere Suchoptionen"
 
-#: ../plugins/document-manager/search-box.c:977
+#: ../plugins/document-manager/search-box.c:990
 msgid "Replace"
 msgstr "Ersetzen"
 
-#: ../plugins/document-manager/search-box.c:982
+#: ../plugins/document-manager/search-box.c:995
 msgid "Replace all"
 msgstr "Alle ersetzen"
 
@@ -5060,7 +5106,7 @@ msgstr "Entfernte Zweige nach Erstellung holen"
 msgid "Mailbox files to apply:"
 msgstr "Anzuwendende Mailbox-Dateien:"
 
-#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:954
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:940
 msgid "Branches"
 msgstr "Zweige"
 
@@ -5137,7 +5183,7 @@ msgstr "Zweige müssen vollständig zusammengeführt sein"
 
 #: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:96
 #: ../plugins/git/git-pane.c:101 ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:839
+#: ../plugins/git/plugin.c:836
 msgid "Git"
 msgstr "Git"
 
@@ -5489,11 +5535,11 @@ msgstr "Zurücknehmen"
 msgid "Stash Uncommitted Changes"
 msgstr "Nicht eingespielte Änderungen sichern"
 
-#: ../plugins/git/git-status-pane.c:508
+#: ../plugins/git/git-status-pane.c:551
 msgid "Changes to be committed"
 msgstr "Einzuspielende Änderungen"
 
-#: ../plugins/git/git-status-pane.c:518
+#: ../plugins/git/git-status-pane.c:561
 msgid "Changed but not updated"
 msgstr "Geändert, aber nicht aktualisiert"
 
@@ -5579,7 +5625,7 @@ msgstr "Konflikte auflösen"
 msgid "Mark selected conflicted files as resolved"
 msgstr "Ausgewählte Dateien im Konflikt als gelöst markieren"
 
-#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:972
+#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:958
 msgid "Stash"
 msgstr "Sichern"
 
@@ -5814,45 +5860,43 @@ msgstr "Index anwenden und wiederherstellen"
 msgid "Drop"
 msgstr "Abwerfen"
 
-#: ../plugins/git/plugin.c:696 ../plugins/git/plugin.c:769
+#: ../plugins/git/plugin.c:693 ../plugins/git/plugin.c:766
 msgid "Branch"
 msgstr "Zweig"
 
-#: ../plugins/git/plugin.c:858
+#: ../plugins/git/plugin.c:855
 msgid "Status popup menu"
 msgstr "Status-Einblendmenü"
 
-#: ../plugins/git/plugin.c:863
+#: ../plugins/git/plugin.c:860
 msgid "Log popup menu"
 msgstr "Protokoll-Einblendmenü"
 
-#: ../plugins/git/plugin.c:869
+#: ../plugins/git/plugin.c:866
 msgid "Branch popup menu"
 msgstr "Zweig-Einblendmenü"
 
-#: ../plugins/git/plugin.c:875
-#, fuzzy
-#| msgid "Remote name:"
+#: ../plugins/git/plugin.c:872
 msgid "Remote popup menu"
-msgstr "Gegenstellen-Einblendmenü"
+msgstr "Entferntes Einblendmenü"
 
-#: ../plugins/git/plugin.c:880
+#: ../plugins/git/plugin.c:877
 msgid "Popup menu entries"
 msgstr "Einblend-Menüeintrag"
 
-#: ../plugins/git/plugin.c:942
+#: ../plugins/git/plugin.c:928
 msgid "Status"
 msgstr "Status"
 
-#: ../plugins/git/plugin.c:948
+#: ../plugins/git/plugin.c:934
 msgid "Log"
 msgstr "Protokoll"
 
-#: ../plugins/git/plugin.c:959
+#: ../plugins/git/plugin.c:945
 msgid "Tags"
 msgstr "Tags"
 
-#: ../plugins/git/plugin.c:966
+#: ../plugins/git/plugin.c:952
 msgid "Remotes"
 msgstr "Entfernt"
 
@@ -6190,15 +6234,15 @@ msgid "JS Find dirs"
 msgstr "JS-Suchordner"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-msgid "Gir repository's directory: "
+msgid "Gir repository's directory:"
 msgstr "Ablageordner von Gir: "
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-msgid "Gjs repository's directory: "
+msgid "Gjs repository's directory:"
 msgstr "Ablageordner von Gjs: "
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
-msgid "Min character for completion: "
+msgid "Min character for completion:"
 msgstr "Min. Zeichen für Vervollständigung:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
@@ -6219,10 +6263,6 @@ msgstr "Komponente für JavaScript-Unterstützung"
 #: ../plugins/language-support-js/plugin.c:411
 msgid "JavaScript"
 msgstr "JavaScript"
-
-#: ../plugins/language-support-python/anjuta-language-support-python.ui.h:9
-msgid "Path: "
-msgstr "Pfad:"
 
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:10
 msgid "Interpreter"
@@ -6802,15 +6842,13 @@ msgstr ""
 "\n"
 
 #: ../plugins/project-manager/plugin.c:702
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following group from the project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the shortcut \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Sind Sie sicher, dass die Gruppe »%s« aus dem Projekt entfernt werden soll?\n"
+"Sind Sie sicher, dass die Verknüpfung »%s« aus dem Projekt entfernt werden "
+"soll?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:706
@@ -8451,13 +8489,13 @@ msgstr "Sprachen"
 
 #. Insert the Add Snippet menu item
 #: ../plugins/snippets-manager/snippets-browser.c:809
-msgid "Add Snippet …"
-msgstr "Schnipsel hinzufügen …"
+msgid "Add Snippet…"
+msgstr "Schnipsel hinzufügen…"
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
-msgid "Add Snippets Group …"
-msgstr "Schnipselgruppe hinzufügen …"
+msgid "Add Snippets Group…"
+msgstr "Schnipselgruppe hinzufügen…"
 
 #: ../plugins/snippets-manager/snippets-editor.c:39
 msgid "Default value"
@@ -10055,8 +10093,9 @@ msgid "Specify another profile"
 msgstr "Geben Sie ein anderes Profil an"
 
 #: ../src/anjuta-application.c:408
-msgid "profile file"
-msgstr "Profildatei"
+#, fuzzy
+msgid "PROFILE_FILE"
+msgstr "PROFILE_FILE"
 
 #: ../src/anjuta-application.c:425
 msgid "- Integrated Development Environment"
@@ -10166,6 +10205,12 @@ msgstr "Nur Symbole"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Nur Text"
+
+#~ msgid "Path: "
+#~ msgstr "Pfad:"
+
+#~ msgid "profile file"
+#~ msgstr "Profildatei"
 
 #~ msgid "Profile Plugins"
 #~ msgstr "Komponenten des Profils"
