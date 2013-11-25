@@ -1,8 +1,8 @@
 [+ autogen5 template +]
+#!/usr/bin/env python
+# [+INVOKE EMACS-MODELINE MODE="Python; coding: utf-8" +]
 [+INCLUDE (string-append "licenses/" (get "License") ".tpl") \+]
 [+INCLUDE (string-append "indent.tpl") \+]
-#!/usr/bin/python
-# [+INVOKE EMACS-MODELINE MODE="Python; coding: utf-8" +]
 [+INVOKE START-INDENT\+]
 #
 # main.py
