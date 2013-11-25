@@ -91,11 +91,11 @@ on_check_finished (AnjutaLauncher* launcher,
 
 		gtk_dialog_run (GTK_DIALOG(dialog));
 
-		if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check_button)))
-		{
-			g_settings_get_boolean (plugin->settings,
-			                        PREF_NO_ROPE_WARNING);
-		}
+		/* Save "Do not show again settings" */
+		g_settings_set_boolean (plugin->settings,
+		                        PREF_NO_ROPE_WARNING, 
+		                        gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check_button)));
+
 		gtk_widget_destroy (dialog);
 	}
 	g_object_unref (launcher);
