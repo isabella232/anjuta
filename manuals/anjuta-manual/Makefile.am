@@ -8,8 +8,6 @@ HELP_FILES = \
 	anjuta-code-help.page \
 	anjuta-code-indentation.page \
 	anjuta-code-symbols.page \
-	anjuta-glade-signals.page \
-	anjuta-glade-start.page \
 	autotools-project-backend.page \
 	autotools-project-folder-edit.page \
 	autotools-project-root-edit.page \
