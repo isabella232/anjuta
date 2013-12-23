@@ -129,8 +129,6 @@ static void
 [+NameCClass+] *
 [+NameCLower+]_new (void)
 {
-	g_type_init ();
-
 	return g_object_new ([+NameCLower+]_get_type (),
 	                     "application-id", "org.gnome.[+NameCLower+]",
 	                     "flags", G_APPLICATION_HANDLES_OPEN,
