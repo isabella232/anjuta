@@ -739,6 +739,7 @@ amp_project_load_properties (AmpProject *project, AnjutaToken *macro, AnjutaToke
 			new_prop = anjuta_project_node_get_property (ANJUTA_PROJECT_NODE (project), info->base.id);
 			if ((new_prop != NULL) && (new_prop->info->default_value != new_prop))
 			{
+				anjuta_project_node_remove_property (ANJUTA_PROJECT_NODE (project), new_prop);
 				amp_property_free (new_prop);
 			}
 			new_prop = amp_property_new (NULL, info->token_type, info->position, NULL, args);

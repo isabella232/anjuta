@@ -1342,7 +1342,7 @@ amp_node_property_add (AnjutaProjectNode *node, AnjutaProjectProperty *new_prop)
 				/* Replace property */
 				AnjutaProjectProperty *old_prop;
 
-				old_prop = anjuta_project_node_get_map_property (node, info->base.id, new_prop->name);
+				old_prop = anjuta_project_node_get_property (node, info->base.id);
 				if ((old_prop != NULL) && (old_prop->info->default_value != old_prop))
 				{
 					anjuta_project_node_remove_property (node, old_prop);
