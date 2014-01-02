@@ -2,7 +2,7 @@
 SUBDIRS = minimal terminal cpp gtk gtkapplication anjuta-plugin \
 	gtkmm wxwin xlib xlib-dock gcj java pygtk \
 	python mkfile sdl library directory m4 js_minimal \
-	vala-gtk gnome-shell-extension
+	vala-gtk gnome-shell-extension vala-library
 
 template_in_files = \
 	minimal.wiz.in \
@@ -26,6 +26,7 @@ template_in_files = \
 	library.wiz.in \
 	vala-gtk.wiz.in \
 	gnome-shell-extension.wiz.in \
+	vala-library.wiz.in \
 	licenses.tpl.in
 
 wizard_filesdir = $(anjuta_data_dir)/templates

@@ -931,6 +931,9 @@ plugins/project-wizard/templates/directory/Makefile
 plugins/project-wizard/templates/m4/Makefile
 plugins/project-wizard/templates/gnome-shell-extension/Makefile
 plugins/project-wizard/templates/gnome-shell-extension/src/Makefile
+plugins/project-wizard/templates/vala-library/Makefile
+plugins/project-wizard/templates/vala-library/src/Makefile
+plugins/project-wizard/templates/vala-library/po/Makefile
 plugins/am-project/Makefile
 plugins/am-project/tests/atlocal
 plugins/am-project/tests/Makefile

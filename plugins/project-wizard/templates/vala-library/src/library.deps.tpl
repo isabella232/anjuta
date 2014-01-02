@@ -1,0 +1,5 @@
+[+ autogen5 template +]
+[+IF (=(get "HavePackage") "1")+]
+[+(string-substitute (get "PackageModule1") " " "\n")+]
+[+(string-substitute (get "PackageModule2") " " "\n")+]
+[+ENDIF+]

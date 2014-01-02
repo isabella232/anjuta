@@ -1,0 +1,14 @@
+[+ autogen5 template +]
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+datarootdir=@datarootdir@
+datadir=@datadir@
+includedir=@includedir@/[+NameHLower+]-[+Version+]
+
+Name: [+NameHLower+]
+Description: Sample library created by Anjuta project wizard.
+Version: @VERSION@
+Requires: @pkg_modules@
+Libs: -L${libdir} -l[+NameHLower+]
+Cflags: -I${includedir}
