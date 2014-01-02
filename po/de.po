@@ -38,18 +38,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-11-13 14:14+0000\n"
-"PO-Revision-Date: 2013-11-22 20:34+0100\n"
-"Last-Translator: Benjamin Steinwender <b@stbe.at>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-02 17:33+0100\n"
+"PO-Revision-Date: 2014-01-02 17:33+0100\n"
+"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
 "Language-Team: German <>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -792,8 +791,8 @@ msgstr ""
 "\\« enthalten"
 
 #: ../plugins/am-project/amp-group.c:665
-#: ../plugins/am-project/am-project.c:1679
-#: ../plugins/am-project/am-project.c:1772
+#: ../plugins/am-project/am-project.c:1680
+#: ../plugins/am-project/am-project.c:1773
 #: ../plugins/dir-project/dir-project.c:801
 #: ../plugins/dir-project/dir-project.c:934
 #: ../plugins/mk-project/mk-project.c:725
@@ -878,11 +877,11 @@ msgstr "Modul"
 msgid "Package"
 msgstr "Paket"
 
-#: ../plugins/am-project/am-project.c:1709
+#: ../plugins/am-project/am-project.c:1710
 msgid "Unable to parse project file"
 msgstr "Projektdatei kann nicht verarbeitet werden"
 
-#: ../plugins/am-project/am-project.c:1720
+#: ../plugins/am-project/am-project.c:1721
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "Projekt ist nicht vorhanden oder ungültiger Pfad"
@@ -4371,20 +4370,20 @@ msgstr "Automatisches Speichern von %s ist fehlgeschlagen"
 msgid "Autosave completed"
 msgstr "Automatisches Speichern abgeschlossen"
 
-#: ../plugins/document-manager/search-box.c:533
+#: ../plugins/document-manager/search-box.c:529
 #, c-format
 msgid "Search for \"%s\" reached the end and was continued at the top."
 msgstr ""
 "Die Suche nach »%s« wurde abgeschlossen und wird am Dokumentanfang "
 "fortgesetzt."
 
-#: ../plugins/document-manager/search-box.c:538
+#: ../plugins/document-manager/search-box.c:534
 #, c-format
 msgid "Search for \"%s\" reached top and was continued at the bottom."
 msgstr ""
 "Die Suche nach »%s« wurde abgeschlossen und wird ab Dokumentende fortgesetzt."
 
-#: ../plugins/document-manager/search-box.c:548
+#: ../plugins/document-manager/search-box.c:544
 #, c-format
 msgid ""
 "Search for \"%s\" reached the end and was continued at the top but no new "
@@ -4393,7 +4392,7 @@ msgstr ""
 "Die Suche nach »%s« wurde abgeschlossen und wird am Dokumentanfang "
 "fortgesetzt, es wurde aber keine Übereinstimmung gefunden."
 
-#: ../plugins/document-manager/search-box.c:553
+#: ../plugins/document-manager/search-box.c:549
 #, c-format
 msgid ""
 "Search for \"%s\" reached top and was continued at the bottom but no new "
@@ -4402,16 +4401,16 @@ msgstr ""
 "Die Suche nach »%s« wurde abgeschlossen und wird ab Dokumentende "
 "fortgesetzt, es wurde aber keine Übereinstimmung gefunden."
 
-#: ../plugins/document-manager/search-box.c:929
+#: ../plugins/document-manager/search-box.c:925
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
 "Verwenden Sie das Kontextmenü des »Suchen«-Symbols für weitere Suchoptionen"
 
-#: ../plugins/document-manager/search-box.c:990
+#: ../plugins/document-manager/search-box.c:986
 msgid "Replace"
 msgstr "Ersetzen"
 
-#: ../plugins/document-manager/search-box.c:995
+#: ../plugins/document-manager/search-box.c:991
 msgid "Replace all"
 msgstr "Alle ersetzen"
 
@@ -10093,7 +10092,6 @@ msgid "Specify another profile"
 msgstr "Geben Sie ein anderes Profil an"
 
 #: ../src/anjuta-application.c:408
-#, fuzzy
 msgid "PROFILE_FILE"
 msgstr "PROFILE_FILE"
 
