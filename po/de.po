@@ -37,10 +37,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-09-18 16:38+0000\n"
-"PO-Revision-Date: 2013-09-21 12:19+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-02 17:31+0100\n"
+"PO-Revision-Date: 2014-01-02 17:32+0100\n"
 "Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de_DE\n"
@@ -663,7 +662,6 @@ msgstr ""
 # -- sigh, i think shell == prompt in German --
 #: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
 #, c-format
-#| msgid "Cannot execute command: %s (using shell %s)\n"
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr ""
 "Befehl kann nicht ausgeführt werden: %s (unter Verwendung der Befehlszeile "
@@ -4356,16 +4354,16 @@ msgstr ""
 "Die Suche nach »%s« wurde abgeschlossen und wird ab Dokumentende "
 "fortgesetzt, es wurde aber keine Übereinstimmung gefunden."
 
-#: ../plugins/document-manager/search-box.c:916
+#: ../plugins/document-manager/search-box.c:929
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
 "Verwenden Sie das Kontextmenü des »Suchen«-Symbols für weitere Suchoptionen"
 
-#: ../plugins/document-manager/search-box.c:977
+#: ../plugins/document-manager/search-box.c:990
 msgid "Replace"
 msgstr "Ersetzen"
 
-#: ../plugins/document-manager/search-box.c:982
+#: ../plugins/document-manager/search-box.c:995
 msgid "Replace all"
 msgstr "Alle ersetzen"
 
@@ -5831,8 +5829,6 @@ msgid "Branch popup menu"
 msgstr "Zweig-Einblendmenü"
 
 #: ../plugins/git/plugin.c:875
-#, fuzzy
-#| msgid "Remote name:"
 msgid "Remote popup menu"
 msgstr "Gegenstellen-Einblendmenü"
 
@@ -6802,15 +6798,13 @@ msgstr ""
 "\n"
 
 #: ../plugins/project-manager/plugin.c:702
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following group from the project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the shortcut \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Sind Sie sicher, dass die Gruppe »%s« aus dem Projekt entfernt werden soll?\n"
+"Sind Sie sicher, dass die Tastenkombination »%s« aus dem Projekt entfernt "
+"werden soll?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:706
