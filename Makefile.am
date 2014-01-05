@@ -14,7 +14,6 @@ dist_doc_DATA = \
 	COPYING\
 	AUTHORS\
 	ChangeLog\
-	INSTALL\
 	NEWS\
 	TODO\
 	FUTURE\
