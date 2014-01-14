@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-12-28 02:09+0000\n"
+"POT-Creation-Date: 2014-01-03 21:05+0000\n"
 "PO-Revision-Date: 2013-12-29 02:41+0800\n"
 "Last-Translator: Tong Hui <tonghuix@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -44,8 +44,8 @@ msgid ""
 "and usable user interface, yet powerful for efficient development."
 msgstr ""
 "Anjuta DevStudio 是一个多功能软件开发平台，提供大量先进的编程组件，包括项目管"
-"理、应用程序向导、交互式调试器、源代码编辑、版本控制、GUI 设计器、配置管理器等多"
-"种工具。Anjuta 关注于提供简单可用的用户界面，同时又是强大高效的开发工具。"
+"理、应用程序向导、交互式调试器、源代码编辑、版本控制、GUI 设计器、配置管理器"
+"等多种工具。Anjuta 关注于提供简单可用的用户界面，同时又是强大高效的开发工具。"
 
 #: ../anjuta.appdata.xml.in.h:2
 msgid ""
@@ -56,10 +56,10 @@ msgid ""
 "project making it easy to work on projects with various levels of "
 "complexity. Using plugins, you can extend Anjuta with your own features."
 msgstr ""
-"Anjuta 可以通过插件灵活扩展。几乎所有 Anjuta 的特性都是由插件实现"
-"的，可以动态启用和禁用。您可以选择在项目里启用哪些插件。比如用户界"
-"面布局，活动插件集也可以迁移到每个项目，使处理各种复杂的项目更加简单。使"
-"用插件，您可以向 Anjuta 添加自己的功能。"
+"Anjuta 可以通过插件灵活扩展。几乎所有 Anjuta 的特性都是由插件实现的，可以动态"
+"启用和禁用。您可以选择在项目里启用哪些插件。比如用户界面布局，活动插件集也可"
+"以迁移到每个项目，使处理各种复杂的项目更加简单。使用插件，您可以向 Anjuta 添"
+"加自己的功能。"
 
 #: ../anjuta.appdata.xml.in.h:3
 msgid ""
@@ -68,8 +68,8 @@ msgid ""
 "+, GNOME, Java, Python projects and more. New templates can be easily "
 "downloaded and installed."
 msgstr ""
-"项目向导让您从一组项目模板里选择创建新项目。这些选项包括简单通用型、平面(无子目录"
-"的)、GTK+、GNOME、Java、Python项目等。可以方便的下载和安装新模板。"
+"项目向导让您从一组项目模板里选择创建新项目。这些选项包括简单通用型、平面(无子"
+"目录的)、GTK+、GNOME、Java、Python项目等。可以方便的下载和安装新模板。"
 
 #: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
@@ -85,7 +85,7 @@ msgstr "在集成开发环境中开发软件"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
-msgstr "IDE;development;programming;集成开发环境;开发;编程"
+msgstr "IDE;development;programming;集成开发环境;开发;编程;"
 
 #: ../libanjuta/anjuta-autogen.c:239
 msgid "Autogen is busy"
@@ -418,8 +418,8 @@ msgid ""
 "one of many suitable plugins. Removing the preferred plugin will let you "
 "choose a different plugin."
 msgstr ""
-"这些是 Anjuta 提示您选择合适插件时您选择的插件。您可以删除首选插件，另"
-"选一个。"
+"这些是 Anjuta 提示您选择合适插件时您选择的插件。您可以删除首选插件，另选一"
+"个。"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1223
 msgid "Forget selected plugin"
@@ -739,8 +739,8 @@ msgid ""
 msgstr "组名只能包含字母或“#$:%+,-.=@^_`~/”这些字符"
 
 #: ../plugins/am-project/amp-group.c:665
-#: ../plugins/am-project/am-project.c:1679
-#: ../plugins/am-project/am-project.c:1772
+#: ../plugins/am-project/am-project.c:1680
+#: ../plugins/am-project/am-project.c:1773
 #: ../plugins/dir-project/dir-project.c:801
 #: ../plugins/dir-project/dir-project.c:934
 #: ../plugins/mk-project/mk-project.c:725
@@ -824,11 +824,11 @@ msgstr "模块"
 msgid "Package"
 msgstr "包"
 
-#: ../plugins/am-project/am-project.c:1709
+#: ../plugins/am-project/am-project.c:1710
 msgid "Unable to parse project file"
 msgstr "无法解析项目文件"
 
-#: ../plugins/am-project/am-project.c:1720
+#: ../plugins/am-project/am-project.c:1721
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "项目不存在或路径非法"
