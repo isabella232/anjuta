@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-12-22 15:19+0000\n"
+"POT-Creation-Date: 2014-01-03 08:46+0000\n"
 "PO-Revision-Date: 2013-12-29 02:41+0800\n"
 "Last-Translator: Tong Hui <tonghuix@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -49,7 +49,7 @@ msgstr "在集成开发环境中开发软件"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
-msgstr "IDE;development;programming;集成开发环境;开发;编程"
+msgstr "IDE;development;programming;集成开发环境;开发;编程;"
 
 #: ../libanjuta/anjuta-autogen.c:239
 msgid "Autogen is busy"
@@ -731,7 +731,6 @@ msgid "Source"
 msgstr "来源"
 
 #: ../plugins/am-project/am-project.c:124
-#| msgid "Shared Library (Libtool)"
 msgid "Shared Library (libtool)"
 msgstr "共享库(libtool)"
 
@@ -880,7 +879,6 @@ msgid "Libtool support:"
 msgstr "Libtool 支持："
 
 #: ../plugins/am-project/am-properties.c:98
-#| msgid "Add support to compile shared and static libraries with Libtool."
 msgid "Add support to compile shared and static libraries with libtool."
 msgstr "添加使用 libtool 编译共享库和静态库的支持。"
 
@@ -6024,17 +6022,14 @@ msgid "JS Find dirs"
 msgstr "JS 查找目录"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-#| msgid "Gir repository's directory:"
 msgid "Gir repository's directory: "
 msgstr "Gir 仓库的目录："
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-#| msgid "Gjs repository's directory:"
 msgid "Gjs repository's directory: "
 msgstr "Gjs 仓库的目录："
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
-#| msgid "Min character for completion:"
 msgid "Min character for completion: "
 msgstr "代码补全的最少字符："
 
@@ -8229,13 +8224,11 @@ msgstr "语言"
 
 #. Insert the Add Snippet menu item
 #: ../plugins/snippets-manager/snippets-browser.c:809
-#| msgid "Add Snippet…"
 msgid "Add Snippet …"
 msgstr "添加片段..."
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
-#| msgid "Add Snippets Group…"
 msgid "Add Snippets Group …"
 msgstr "添加片段组..."
 
@@ -9803,7 +9796,6 @@ msgid "Specify another profile"
 msgstr "指定另一个配置"
 
 #: ../src/anjuta-application.c:408
-#| msgid "Compile file"
 msgid "profile file"
 msgstr "配置文件"
 
