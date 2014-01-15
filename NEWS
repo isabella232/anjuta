@@ -1,3 +1,89 @@
+Anjuta 3.11.4 (Januar 15, 2013) -- Johannes Schmid
+
+This is an unstable release targetted for the GNOME 3.12 release.
+
+Changes:
+Akom Chotiphantawanon (1):
+      Updated Thai translation.
+
+Aurimas Černius (1):
+      Updated Lithuanian translation
+
+Benjamin Steinwender (1):
+      Updated German translation
+
+Christian Kirbach (1):
+      Updated German translation
+
+Colin Walters (2):
+      tests: Remove hardcoded -ftest-coverage
+      build: Don't explicitly dist INSTALL
+
+Daniel Mustieles (1):
+      Updated Spanish translation
+
+Dimitris Spingos (1):
+      Updated Greek translation
+
+Dušan Kazik (1):
+      Updated slovak translation
+
+Florian Pelz (1):
+      plugins: project-wizard: Fix bgo#720969 - GtkApplication project template uses deprecated g_type_init
+
+Fran Diéguez (1):
+      Updated Galician translations
+
+James Liggett (2):
+      git: Properly show changes for files in both the working tree and index, with tests
+      Make sure appdata .in files get distributed
+
+Johannes Schmid (2):
+      project-wizard: Move python shebang to the first line of the template
+      language-support-python: Don't show python warning when python warning is disabled
+
+Marek Černocký (1):
+      Updated Czech translation
+
+Michael Catanzaro (4):
+      Don't distribute generated .appdata.xml
+      help: don't build incomplete anjuta-glade pages
+      app menu: standardize Help/About/Quit
+      Fix Debug Process dialog
+
+Pavol Klačanský (1):
+      Updated slovak translation
+
+Rafael Ferreira (1):
+      Updated Brazilian Portuguese translation
+
+Richard Hughes (1):
+      bgo 708748 - Add an AppData file
+
+Stefan Sperling (1):
+      bgo #709752 - Don't require neon library for Subversion 1.8
+
+Sébastien Granjoux (6):
+      Save the project directory as a relative path
+      bgo #708248 - inconsistency in strings: libtool, whitespace use
+      Avoid warning when compiling with a C++ compiler
+      bgo #711722 - C-Makefile project template broken
+      Fix a crash when configure.ac contains LT_INIT two times
+      bgo #722005 - Project Properties dialogue Type:/Name:/Version: only shows 2 lines
+
+Tong Hui (1):
+      Update Chinese simplified translation
+
+Wylmer Wang (1):
+      Fix a mistake in Chinese simplified translation that may block compiling
+
+Yannick Inizan (1):
+      project-wizard: Add a project template for a library written in Vala
+
+kriti (2):
+      document-manager: Fix bgo#711512 - <Search Text in Editor> Added an else condition to file plugins document-manager/search-box.c which in case of unmatched text calls the ianjuta_editor_selection_set function and unselects any previously selected text.
+      document-manager: Fix-Highlight if search box text not found in editor
+
 Anjuta 3.10.0 (September 23, 2013) -- James Liggett
 
 This is a new stable version of Anjuta and all users should update to this
