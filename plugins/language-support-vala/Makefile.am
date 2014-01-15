@@ -41,7 +41,7 @@ AM_CPPFLAGS = \
 	$(VALA_CFLAGS) \
 	-DPACKAGE_SRC_DIR=\"$(srcdir)\" \
 	-DG_LOG_DOMAIN=\"language-support-vala\" \
-	--no-warn
+	-w
 
 # The plugin
 plugindir = $(anjuta_plugin_dir)
