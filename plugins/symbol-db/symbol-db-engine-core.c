@@ -179,16 +179,8 @@ static gint
 sdb_engine_add_new_symbol (SymbolDBEngine * dbe, const tagEntry * tag_entry,
 						   int file_defined_id, gboolean sym_update);
 
-GNUC_INLINE const GdaStatement *
+const GdaStatement *
 sdb_engine_get_statement_by_query_id (SymbolDBEngine * dbe, static_query_type query_id);
-
-GNUC_INLINE const GdaSet *
-sdb_engine_get_query_parameters_list (SymbolDBEngine *dbe, static_query_type query_id);
-
-GNUC_INLINE gint
-sdb_engine_get_tuple_id_by_unique_name (SymbolDBEngine * dbe, static_query_type qtype,
-										gchar * param_key,
-										GValue * param_value);
 
 /*
  * implementation starts here 
@@ -419,7 +411,7 @@ sdb_engine_execute_non_select_sql (SymbolDBEngine * dbe, const gchar *sql)
  * these queries are time-critical.
  * A GdaSet will also be populated once, avoiding so to create again later on.
  */
-GNUC_INLINE const GdaStatement *
+const GdaStatement *
 sdb_engine_get_statement_by_query_id (SymbolDBEngine * dbe, static_query_type query_id)
 {
 	static_query_node *node;
@@ -466,7 +458,7 @@ sdb_engine_get_statement_by_query_id (SymbolDBEngine * dbe, static_query_type qu
  * Return a GdaSet of parameters calculated from the statement. It does not check
  * if it's null. You *must* be sure to have called sdb_engine_get_statement_by_query_id () first.
  */
-GNUC_INLINE const GdaSet *
+static GNUC_INLINE const GdaSet *
 sdb_engine_get_query_parameters_list (SymbolDBEngine *dbe, static_query_type query_id)
 {
 	SymbolDBEnginePriv *priv;
@@ -546,7 +538,7 @@ sdb_engine_disconnect_from_db (SymbolDBEngine * dbe)
  *
  * @return -1 on error. Otherwise the id of tuple.
  */
-GNUC_INLINE gint
+static GNUC_INLINE gint
 sdb_engine_get_tuple_id_by_unique_name (SymbolDBEngine * dbe, static_query_type qtype,
 										gchar * param_key,
 										GValue * param_value)

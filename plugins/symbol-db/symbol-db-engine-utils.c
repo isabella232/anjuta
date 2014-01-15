@@ -33,11 +33,8 @@ static GHashTable *pixbufs_hash = NULL;
 /*
  * extern declarations 
  */
-extern GNUC_INLINE const GdaStatement *
+extern const GdaStatement *
 sdb_engine_get_statement_by_query_id (SymbolDBEngine * dbe, static_query_type query_id);
-
-extern GNUC_INLINE const GdaSet *
-sdb_engine_get_query_parameters_list (SymbolDBEngine *dbe, static_query_type query_id);
 
 /*
  * implementation starts here 
