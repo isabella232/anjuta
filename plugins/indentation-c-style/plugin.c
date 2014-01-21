@@ -90,7 +90,8 @@ language_is_supported (const gchar* language)
              g_str_equal (language, "Vala") ||
              g_str_equal (language, "Java") ||
              g_str_equal (language, "JavaScript") ||
-             g_str_equal (language, "IDL")));
+             g_str_equal (language, "IDL") ||
+             g_str_equal (language, "Rust")));
 }
 
 /* Enable/Disable language-support */
