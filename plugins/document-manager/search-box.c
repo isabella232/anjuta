@@ -80,6 +80,8 @@ struct _SearchBoxPrivate
 	IAnjutaEditorCell *start_highlight;
 	IAnjutaEditorCell *end_highlight;
 	guint idle_id;
+
+	GtkCssProvider *provider;
 };
 
 #ifdef GET_PRIVATE
@@ -127,28 +129,17 @@ on_goto_activated (GtkWidget* widget, SearchBox* search_box)
 static void
 search_box_set_entry_color (SearchBox* search_box, gboolean found)
 {
+	GtkStyleContext *context;
+	
+	context = gtk_widget_get_style_context (GTK_WIDGET (search_box->priv->search_entry));
 	if (!found)
-        {    
-                GdkRGBA red; 
-                GdkRGBA white;
-                gdk_rgba_parse (&red,"red");
-                gdk_rgba_parse (&white,"white");
-
-                /* FIXME: a11y and theme */
-
-                gtk_widget_override_color (search_box->priv->search_entry,
-                                        GTK_STATE_NORMAL,
-                                        &red);
-        }    
-        else 
-        {    
-                gtk_widget_override_background_color (search_box->priv->search_entry,
-                                        GTK_STATE_NORMAL,
-                                        NULL);
-                gtk_widget_override_color (search_box->priv->search_entry,
-                                        GTK_STATE_NORMAL,
-                                        NULL);
-        }    
+	{
+		gtk_style_context_add_class (context, "not-found");
+	}
+	else 
+	{
+		gtk_style_context_remove_class (context, "not-found");
+	}
 }
 
 static gboolean
@@ -914,11 +905,12 @@ search_box_init (SearchBox *search_box)
 {
 	search_box->priv = GET_PRIVATE(search_box);
 	GList* focus_chain = NULL;
+	GtkStyleContext *context;
 	
 	/* Button images */
 	GtkWidget* close = 
 		gtk_image_new_from_stock (GTK_STOCK_CLOSE, GTK_ICON_SIZE_MENU);
-	
+
 	/* Searching */
 	search_box->priv->search_entry = gtk_entry_new();
 	gtk_widget_set_tooltip_text (search_box->priv->search_entry,
@@ -948,7 +940,17 @@ search_box_init (SearchBox *search_box)
 	
 	g_signal_connect (G_OBJECT (search_box->priv->close_button), "clicked",
 					  G_CALLBACK (on_search_box_hide), search_box);
-	
+
+	/* CSS custom style */
+	search_box->priv->provider = gtk_css_provider_new ();
+	gtk_css_provider_load_from_data (search_box->priv->provider,
+	                                 ".not-found {color: @gedit_not_found_fg; background-image: none; background-color: @gedit_not_found_bg;}"
+	                                 ".not-found:selected {color: @theme_selected_fg_color; background-color: @theme_selected_bg_color;}"
+	                                 , -1, NULL);
+	context = gtk_widget_get_style_context (GTK_WIDGET (search_box->priv->search_entry));
+	gtk_style_context_add_provider (context, GTK_STYLE_PROVIDER (search_box->priv->provider), GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+
+
 	/* Previous, Next Navigation */
 	search_box->priv->next_button = gtk_button_new ();
 	gtk_container_add (GTK_CONTAINER (search_box->priv->next_button),
@@ -1073,6 +1075,7 @@ search_box_finalize (GObject *object)
 	if (search_box->priv->idle_id) g_source_remove (search_box->priv->idle_id);
 	if (search_box->priv->start_highlight) g_object_unref (search_box->priv->start_highlight);
 	if (search_box->priv->end_highlight) g_object_unref (search_box->priv->end_highlight);
+	if (search_box->priv->provider) g_object_unref (search_box->priv->provider);
 
 	G_OBJECT_CLASS (search_box_parent_class)->finalize (object);
 }
