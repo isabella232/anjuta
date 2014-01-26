@@ -940,14 +940,16 @@ anjuta_launcher_execution_done_cleanup (AnjutaLauncher *launcher,
 	{	
 		g_io_channel_shutdown (launcher->priv->stdout_channel, emit_signal, NULL);
 		g_io_channel_unref (launcher->priv->stdout_channel);
-		g_source_remove (launcher->priv->stdout_watch);
+		if (!launcher->priv->stdout_is_done)
+			g_source_remove (launcher->priv->stdout_watch);
 	}
 
 	if (launcher->priv->stderr_channel)
 	{
 		g_io_channel_shutdown (launcher->priv->stderr_channel, emit_signal, NULL);
 		g_io_channel_unref (launcher->priv->stderr_channel);
-		g_source_remove (launcher->priv->stderr_watch);
+		if (!launcher->priv->stderr_is_done)
+			g_source_remove (launcher->priv->stderr_watch);
 	}
 
 	if (launcher->priv->pty_channel)
