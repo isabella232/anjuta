@@ -55,8 +55,11 @@
  *---------------------------------------------------------------------------*/
 
 #define ANJUTA_PROJECT_DIRECTORY_PROPERTY "AnjutaProjectDirectory"
+#define DESTINATION_PROPERTY "Destination"
 #define USER_NAME_PROPERTY "UserName"
+#define AUTHOR_PROPERTY "Author"
 #define EMAIL_ADDRESS_PROPERTY "EmailAddress"
+#define EMAIL_PROPERTY "Email"
 #define INDENT_WIDTH_PROPERTY "IndentWidth"
 #define TAB_WIDTH_PROPERTY "TabWidth"
 #define USE_TABS_PROPERTY "UseTabs"
@@ -64,6 +67,11 @@
 /* Common editor preferences */
 #define ANJUTA_PREF_SCHEMA_PREFIX "org.gnome.anjuta."
 
+#define PROJECT_WIZARD_PREF_SCHEMA	"plugins.project-wizard"
+
+#define LAST_DIRECTORY	"project-directory"
+#define LAST_USER_NAME	"user"
+#define LAST_EMAIL		"email"
 
 /* Widget and signal name found in glade file
  *---------------------------------------------------------------------------*/
@@ -1127,12 +1135,83 @@ on_druid_prepare (GtkAssistant* assistant, GtkWidget *page, NPWDruid* druid)
 	g_idle_add (on_druid_delayed_prepare, druid);
 }
 
+static void
+npw_druid_save_default_property (NPWDruid* druid)
+{
+	GSettings *settings;
+	const gchar *new_value;
+	gchar *old_value;
+
+
+	settings = g_settings_new (ANJUTA_PREF_SCHEMA_PREFIX PROJECT_WIZARD_PREF_SCHEMA);
+
+	new_value = g_hash_table_lookup (druid->values, DESTINATION_PROPERTY);
+	if ((new_value != NULL) && (*new_value != '\0'))
+	{
+		/* Remove project directory */
+		gchar *parent;
+
+		parent = g_path_get_dirname (new_value);
+		if (new_value[strlen(new_value) - 1] == G_DIR_SEPARATOR)
+		{
+			gchar *dir = parent;
+			parent = g_path_get_dirname (dir);
+			g_free (dir);
+		}
+		
+		old_value = g_settings_get_string (settings, LAST_DIRECTORY);
+		if (strcmp (parent, old_value) != 0)
+		{
+			/* If the new directory is in the home directory, store a relative
+			 * path */
+			const gchar *home;
+			size_t len;
+
+			home = g_get_home_dir ();
+			len = strlen (home);
+			if ((strncmp (home, parent, len) == 0) && ((parent[len] == G_DIR_SEPARATOR) || (parent[len] == '\0')))
+			{
+				g_settings_set_string (settings, LAST_DIRECTORY, parent[len] == '\0' ? "" : parent + len + 1);
+			}
+			else
+			{
+				g_settings_set_string (settings, LAST_DIRECTORY, parent);
+			}
+		}
+		g_free (old_value);
+		g_free (parent);
+	}
+
+	new_value = g_hash_table_lookup (druid->values, AUTHOR_PROPERTY);
+	if ((new_value != NULL) && (*new_value != '\0'))
+	{
+		old_value = g_settings_get_string (settings, LAST_USER_NAME);
+		if (strcmp (new_value, old_value) != 0)
+		{
+			g_settings_set_string (settings, LAST_USER_NAME, new_value);
+		}
+		g_free (old_value);
+	}
+
+	new_value = g_hash_table_lookup (druid->values, EMAIL_PROPERTY);
+	if ((new_value != NULL) && (*new_value != '\0'))
+	{
+		old_value = g_settings_get_string (settings, LAST_EMAIL);
+		if (strcmp (new_value, old_value) != 0)
+		{
+			g_settings_set_string (settings, LAST_EMAIL, new_value);
+		}
+		g_free (old_value);
+	}
+}
 
 static void
 on_druid_finish (GtkAssistant* assistant, NPWDruid* druid)
 {
 	NPWInstall* inst;
 	GList *path;
+
+	npw_druid_save_default_property (druid);
 
 	inst = npw_install_new (druid->plugin);
 	npw_install_set_property (inst, druid->values);
@@ -1228,16 +1307,42 @@ npw_druid_add_default_property (NPWDruid* druid)
 	gboolean flag;
 	gint i;
 
+
 	/* Add default base project directory */
-	g_hash_table_insert (druid->values, g_strdup (ANJUTA_PROJECT_DIRECTORY_PROPERTY), g_strdup (g_get_home_dir()));
+	settings = g_settings_new (ANJUTA_PREF_SCHEMA_PREFIX PROJECT_WIZARD_PREF_SCHEMA);
+	s = g_settings_get_string (settings,LAST_DIRECTORY);
+	if (*s == '\0')
+	{
+		s = g_strdup (g_get_home_dir());
+	}
+	else if (!g_path_is_absolute (s))
+	{
+		gchar *path;
+
+		path = g_build_filename (g_get_home_dir(), s, NULL);
+		g_free (s);
+		s = path;
+	}
+	g_hash_table_insert (druid->values, g_strdup (ANJUTA_PROJECT_DIRECTORY_PROPERTY), s);
 
 	/* Add user name */
-	g_hash_table_insert (druid->values, g_strdup (USER_NAME_PROPERTY), g_strdup (g_get_real_name()));
+	s = g_settings_get_string (settings,LAST_USER_NAME);
+	if (*s == '\0')
+	{
+		g_free (s);
+		s = g_strdup (g_get_real_name());
+	}
+	g_hash_table_insert (druid->values, g_strdup (USER_NAME_PROPERTY), s);
 
 	/* Add Email address */
-	/* FIXME: We need a default way for the mail */
-	s = anjuta_util_get_user_mail();
+	s = g_settings_get_string (settings,LAST_EMAIL);
+	if (*s == '\0')
+	{
+		g_free (s);
+		s = anjuta_util_get_user_mail();
+	}
 	g_hash_table_insert (druid->values, g_strdup (EMAIL_ADDRESS_PROPERTY), s);
+	g_object_unref (settings);
 
 	/* Add use-tabs property */
 	settings = g_settings_new (ANJUTA_PREF_SCHEMA_PREFIX IANJUTA_EDITOR_PREF_SCHEMA);

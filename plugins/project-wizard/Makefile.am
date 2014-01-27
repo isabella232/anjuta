@@ -60,17 +60,16 @@ libanjuta_project_wizard_la_SOURCES= \
 	tar.c \
 	tar.h
 
-EXTRA_DIST = \
-	$(plugin_in_files)
+gsettings_in_file = org.gnome.anjuta.plugins.project-wizard.gschema.xml.in
+gsettings_SCHEMAS = $(gsettings_in_file:.xml.in=.xml)
+@INTLTOOL_XML_NOMERGE_RULE@
+@GSETTINGS_RULES@
 
-## templates_dir = $(datadir)/anjuta/projects
-## 
-## install-data-local:
-##	mkdir -p $(DESTDIR)$(templates_dir)
-##	$(INSTALL_DATA) $(srcdir)/templates $(DESTDIR)$(templates_dir)
-##
-## uninstall-local:
-##	@rm -fv $(*:%=$(templates_dir)/%)
-##	-if test -d $(templates_dir); then rmdir $(templates_dir); fi
+EXTRA_DIST = \
+	$(plugin_in_files) \
+	$(gsettings_in_file)
+
+CLEANFILES = \
+        $(gsettings_SCHEMAS)
 
 -include $(top_srcdir)/git.mk
