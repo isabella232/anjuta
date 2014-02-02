@@ -41,6 +41,9 @@
 #include <libanjuta/anjuta-cell-renderer-captioned-image.h>
 #include <libanjuta/anjuta-preferences-dialog.h>
 
+#define PREFERENCES_DEFAULT_WIDTH 800
+#define PREFERENCES_DEFAULT_HEIGHT 400
+
 struct _AnjutaPreferencesDialogPrivate {
 	GtkWidget *treeview;
 	GtkListStore *store;
@@ -238,8 +241,10 @@ GtkWidget *
 anjuta_preferences_dialog_new (void)
 {
 	return g_object_new (ANJUTA_TYPE_PREFERENCES_DIALOG, 
-				 "title", _("Anjuta Preferences"),
-				 NULL);
+	                     "title", _("Anjuta Preferences"),
+	                     "default-width", PREFERENCES_DEFAULT_WIDTH,
+	                     "default-height", PREFERENCES_DEFAULT_HEIGHT,
+	                     NULL);
 }
 
 /**
