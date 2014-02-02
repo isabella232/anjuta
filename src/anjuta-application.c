@@ -70,6 +70,17 @@ struct _AnjutaApplicationPrivate {
 };
 
 static void
+on_app_new_window (GSimpleAction  *action,
+                    GVariant       *parameter,
+                    gpointer        user_data)
+{
+	AnjutaApplication *app;
+
+	app = ANJUTA_APPLICATION (user_data);
+	anjuta_application_create_window (app);
+}
+
+static void
 on_app_preferences (GSimpleAction  *action,
                     GVariant       *parameter,
                     gpointer        user_data)
@@ -552,6 +563,7 @@ anjuta_application_open (GApplication *application,
 }
 
 static GActionEntry app_entries[] = {
+	{ "new_window", on_app_new_window, NULL, NULL, NULL },
 	{ "preferences", on_app_preferences, NULL, NULL, NULL },
 	{ "help", on_app_manual, NULL, NULL, NULL },
 	{ "about", on_app_about, NULL, NULL, NULL },
