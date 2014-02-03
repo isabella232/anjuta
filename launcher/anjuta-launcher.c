@@ -104,7 +104,8 @@ main (int argc, char **argv)
 	if ((pid = fork ()) == 0)
 	{
 		execvp (argv[1], arg_v);
-		g_error ("Unable to execute the command (not found)\n");
+		printf ("Unable to execute the command (not found)\n");
+		exit (-1);
 	}
 	if (pid < 0)
 	{
