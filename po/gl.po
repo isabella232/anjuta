@@ -9,13 +9,13 @@
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2009, 2010, 2012.
 # Fran Diéguez <frandieguez@gnome.org>, 2009, 2010, 2011, 2012.
-# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013.
+# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta-master-po-gl-1952\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-11 10:49+0100\n"
-"PO-Revision-Date: 2013-12-11 11:05+0200\n"
+"POT-Creation-Date: 2014-02-07 01:10+0100\n"
+"PO-Revision-Date: 2014-02-07 01:12+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -54,8 +54,8 @@ msgstr ""
 "desactivarse de forma dinámica. Pode escoller que engadidos deben activarse "
 "para o seu proxecto. Como o deseño da interface de usuario, o conxunto de "
 "engadidos activo tamén é persistente para cada proxecto o que fai máis doado "
-"o traballo en proxectos con varios niveis de complexidade. Usando "
-"engadidos, pode estender Anjuta coas súas propias características."
+"o traballo en proxectos con varios niveis de complexidade. Usando engadidos, "
+"pode estender Anjuta coas súas propias características."
 
 #: ../anjuta.appdata.xml.in.h:3
 msgid ""
@@ -363,12 +363,12 @@ msgstr "Mostrar o botón Engadir"
 msgid "[Pp]assword.*:"
 msgstr "[Cc]ontrasinal.*:"
 
-#: ../libanjuta/anjuta-launcher.c:1165 ../plugins/gdb/utilities.c:282
+#: ../libanjuta/anjuta-launcher.c:1167 ../plugins/gdb/utilities.c:282
 #, c-format
 msgid "Cannot execute command: \"%s\""
 msgstr "Non é posíbel executar a orde: \"%s\""
 
-#: ../libanjuta/anjuta-launcher.c:1166
+#: ../libanjuta/anjuta-launcher.c:1168
 msgid "execvp failed"
 msgstr "fallou o execvp"
 
@@ -494,19 +494,19 @@ msgstr "O estado do Anjuta que se vai usar ao cargar e descargar engadidos"
 msgid "Loading:"
 msgstr "Cargando:"
 
-#: ../libanjuta/anjuta-preferences-dialog.c:96
+#: ../libanjuta/anjuta-preferences-dialog.c:99
 msgid "Category"
 msgstr "Categoría"
 
 #. FIXME: Make the general page first
-#: ../libanjuta/anjuta-preferences-dialog.c:139
 #: ../libanjuta/anjuta-preferences-dialog.c:142
+#: ../libanjuta/anjuta-preferences-dialog.c:145
 #: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:982
 #: ../src/preferences.ui.h:9
 msgid "General"
 msgstr "Xeral"
 
-#: ../libanjuta/anjuta-preferences-dialog.c:241
+#: ../libanjuta/anjuta-preferences-dialog.c:244
 msgid "Anjuta Preferences"
 msgstr "Preferencias do Anjuta"
 
@@ -758,8 +758,8 @@ msgstr ""
 "\""
 
 #: ../plugins/am-project/amp-group.c:665
-#: ../plugins/am-project/am-project.c:1679
-#: ../plugins/am-project/am-project.c:1772
+#: ../plugins/am-project/am-project.c:1680
+#: ../plugins/am-project/am-project.c:1773
 #: ../plugins/dir-project/dir-project.c:801
 #: ../plugins/dir-project/dir-project.c:934
 #: ../plugins/mk-project/mk-project.c:725
@@ -843,11 +843,11 @@ msgstr "Módulo"
 msgid "Package"
 msgstr "Paquete"
 
-#: ../plugins/am-project/am-project.c:1709
+#: ../plugins/am-project/am-project.c:1710
 msgid "Unable to parse project file"
 msgstr "Non foi posíbel analizar o ficheiro do proxecto"
 
-#: ../plugins/am-project/am-project.c:1720
+#: ../plugins/am-project/am-project.c:1721
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "O proxecto non existe ou ten unha ruta non válida"
@@ -2137,7 +2137,7 @@ msgstr "Modelo de autogen usado para o ficheiro de implementación"
 msgid "File to which the processed template will be written"
 msgstr "Ficheiro no que se escribirá o modelo que se procese"
 
-#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1268
+#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1373
 msgid ""
 "Could not find autogen version 5; please install the autogen package. You "
 "can get it from http://autogen.sourceforge.net."
@@ -3027,7 +3027,7 @@ msgid "Disassembly"
 msgstr "Desensamblaxe"
 
 #: ../plugins/debug-manager/info.c:52 ../plugins/debug-manager/info.c:101
-#: ../plugins/project-wizard/druid.c:180
+#: ../plugins/project-wizard/druid.c:188
 msgid "Information"
 msgstr "Información"
 
@@ -4047,7 +4047,7 @@ msgid "Search using regular expressions"
 msgstr "Buscar usando expresións regulares"
 
 #: ../plugins/document-manager/plugin.c:295
-#: ../plugins/indentation-c-style/plugin.c:217
+#: ../plugins/indentation-c-style/plugin.c:218
 #: ../plugins/indentation-python-style/plugin.c:200
 #: ../plugins/language-support-cpp-java/plugin.c:1192
 #: ../plugins/language-support-python/plugin.c:377 ../src/anjuta-actions.h:30
@@ -4329,17 +4329,17 @@ msgstr "Produciuse un erro ao gardar automaticamente %s"
 msgid "Autosave completed"
 msgstr "Rematou de gardar automaticamente"
 
-#: ../plugins/document-manager/search-box.c:529
+#: ../plugins/document-manager/search-box.c:520
 #, c-format
 msgid "Search for \"%s\" reached the end and was continued at the top."
 msgstr "A busca de \"%s\" chegou á fin e continuou até o principio."
 
-#: ../plugins/document-manager/search-box.c:534
+#: ../plugins/document-manager/search-box.c:525
 #, c-format
 msgid "Search for \"%s\" reached top and was continued at the bottom."
 msgstr "A busca de \"%s\" chegou ao final e continuou polo final."
 
-#: ../plugins/document-manager/search-box.c:544
+#: ../plugins/document-manager/search-box.c:535
 #, c-format
 msgid ""
 "Search for \"%s\" reached the end and was continued at the top but no new "
@@ -4348,7 +4348,7 @@ msgstr ""
 "A busca de \"%s\" chegou á fin e continuou até o principio, porén non se "
 "atopou ningunha nova coincidencia."
 
-#: ../plugins/document-manager/search-box.c:549
+#: ../plugins/document-manager/search-box.c:540
 #, c-format
 msgid ""
 "Search for \"%s\" reached top and was continued at the bottom but no new "
@@ -4357,15 +4357,15 @@ msgstr ""
 "A busca de \"%s\" chegou ao final e continuou polo final, porén non se "
 "atopou ningunha aparición máis."
 
-#: ../plugins/document-manager/search-box.c:925
+#: ../plugins/document-manager/search-box.c:917
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr "Usar o menú contextual da icona «Buscar» para máis opcións de busca"
 
-#: ../plugins/document-manager/search-box.c:986
+#: ../plugins/document-manager/search-box.c:988
 msgid "Replace"
 msgstr "Substituír"
 
-#: ../plugins/document-manager/search-box.c:991
+#: ../plugins/document-manager/search-box.c:993
 msgid "Replace all"
 msgstr "Substituír todo"
 
@@ -5962,24 +5962,24 @@ msgid "Parenthesis indentation"
 msgstr "Sangría de paréntese"
 
 #. ANJUTA_STOCK_AUTOINDENT,
-#: ../plugins/indentation-c-style/plugin.c:223
+#: ../plugins/indentation-c-style/plugin.c:224
 #: ../plugins/indentation-python-style/plugin.c:206
 msgid "Auto-Indent"
 msgstr "Sangrar automaticamente"
 
-#: ../plugins/indentation-c-style/plugin.c:224
+#: ../plugins/indentation-c-style/plugin.c:225
 #: ../plugins/indentation-python-style/plugin.c:207
 msgid "Auto-indent current line or selection based on indentation settings"
 msgstr ""
 "Sangrar automaticamente a liña ou selección actual segundo os parámetros da "
 "sangría"
 
-#: ../plugins/indentation-c-style/plugin.c:264
+#: ../plugins/indentation-c-style/plugin.c:265
 msgid "C Indentation"
 msgstr "Sangrado C"
 
-#: ../plugins/indentation-c-style/plugin.c:362
-#: ../plugins/indentation-c-style/plugin.c:371
+#: ../plugins/indentation-c-style/plugin.c:363
+#: ../plugins/indentation-c-style/plugin.c:372
 #: ../plugins/indentation-python-style/plugin.c:324
 #: ../plugins/indentation-python-style/plugin.c:333
 msgid "Indentation"
@@ -7123,7 +7123,7 @@ msgid "Select a project type"
 msgstr "Seleccionar tipo de proxecto"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
-#: ../plugins/project-wizard/druid.c:192
+#: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr "Erro"
 
@@ -7135,31 +7135,31 @@ msgstr "Detalles"
 msgid "Summary"
 msgstr "Resumo"
 
-#: ../plugins/project-wizard/druid.c:184 ../plugins/project-wizard/druid.c:188
+#: ../plugins/project-wizard/druid.c:192 ../plugins/project-wizard/druid.c:196
 msgid "Warning"
 msgstr "Aviso"
 
-#: ../plugins/project-wizard/druid.c:195
+#: ../plugins/project-wizard/druid.c:203
 msgid "Message"
 msgstr "Mensaxe"
 
-#: ../plugins/project-wizard/druid.c:276
+#: ../plugins/project-wizard/druid.c:284
 msgid "Confirm the following information:"
 msgstr "Confirme a seguinte información:"
 
 #. The project type is translated too, it is something like
 #. * generic, GNOME applet, Makefile project...
-#: ../plugins/project-wizard/druid.c:280
+#: ../plugins/project-wizard/druid.c:288
 #, c-format
 msgid "Project Type: %s\n"
 msgstr "Tipo de proxecto: %s\n"
 
-#: ../plugins/project-wizard/druid.c:471
+#: ../plugins/project-wizard/druid.c:479
 #, c-format
 msgid "Unable to find any project template in %s"
 msgstr "Non é posíbel atopar ningún modelo de proxecto en %s"
 
-#: ../plugins/project-wizard/druid.c:704
+#: ../plugins/project-wizard/druid.c:712
 #, c-format
 msgid ""
 "\n"
@@ -7168,7 +7168,7 @@ msgstr ""
 "\n"
 "O campo \"%s\" é obrigatorio. Introdúzao."
 
-#: ../plugins/project-wizard/druid.c:719
+#: ../plugins/project-wizard/druid.c:727
 #, c-format
 msgid ""
 "Field \"%s\" must contains only letters, digits or the following characters "
@@ -7178,7 +7178,7 @@ msgstr ""
 "O campo «%s» debe conter só letras, díxitos, os seguintes caracteres \"#$:%%"
 "+,.=@^_`~\". Ademais non pode conter un guión inicial. Por favor arránxeo."
 
-#: ../plugins/project-wizard/druid.c:724
+#: ../plugins/project-wizard/druid.c:732
 #, c-format
 msgid ""
 "Field \"%s\" must contains only letters, digits, the following characters \"#"
@@ -7189,7 +7189,7 @@ msgstr ""
 "+,.=@^_`~\" ou separadores de cartafoles. Ademais non pode conter un guión "
 "inicial. Por favor arránxeo."
 
-#: ../plugins/project-wizard/druid.c:729
+#: ../plugins/project-wizard/druid.c:737
 #, c-format
 msgid ""
 "Field \"%s\" must contains only ASCII printable characters, no accentuated "
@@ -7198,12 +7198,12 @@ msgstr ""
 "O campo «%s» debe conter só caracteres imprimíbeis ASCII, caracteres sen "
 "acentos por exemplo. Por favor arránxeo."
 
-#: ../plugins/project-wizard/druid.c:734
+#: ../plugins/project-wizard/druid.c:742
 #, c-format
 msgid "Unknown error."
 msgstr "Erro descoñecido."
 
-#: ../plugins/project-wizard/druid.c:761
+#: ../plugins/project-wizard/druid.c:769
 #, c-format
 msgid ""
 "Directory \"%s\" is not empty. Project creation could fail if some files "
@@ -7212,20 +7212,20 @@ msgstr ""
 "O cartafol \"%s\" non está baleiro. A creación do proxecto podería fallar se "
 "non é posíbel escribir nalgúns ficheiros. Quere continuar?"
 
-#: ../plugins/project-wizard/druid.c:763
+#: ../plugins/project-wizard/druid.c:771
 #, c-format
 msgid "File \"%s\" already exists. Do you want to overwrite it?"
 msgstr "O ficheiro \"%s\" xa existe. Quere sobrescribilo?"
 
-#: ../plugins/project-wizard/druid.c:796
+#: ../plugins/project-wizard/druid.c:804
 msgid "Invalid entry"
 msgstr "Entrada non válida"
 
-#: ../plugins/project-wizard/druid.c:806
+#: ../plugins/project-wizard/druid.c:814
 msgid "Dubious entry"
 msgstr "Entrada dubidosa"
 
-#: ../plugins/project-wizard/druid.c:958
+#: ../plugins/project-wizard/druid.c:966
 #, c-format
 msgid ""
 "\n"
@@ -7234,7 +7234,7 @@ msgstr ""
 "\n"
 "Faltan os programas: %s."
 
-#: ../plugins/project-wizard/druid.c:969
+#: ../plugins/project-wizard/druid.c:977
 #, c-format
 msgid ""
 "\n"
@@ -7243,7 +7243,7 @@ msgstr ""
 "\n"
 "Faltan os paquetes: %s."
 
-#: ../plugins/project-wizard/druid.c:978
+#: ../plugins/project-wizard/druid.c:986
 msgid ""
 "Some important programs or development packages required to build this "
 "project are missing. Please make sure they are installed properly before "
@@ -7253,7 +7253,7 @@ msgstr ""
 "requiridos para construír este proxecto. Asegúrese de que están instalados "
 "apropiadamente antes de xerar o proxecto.\n"
 
-#: ../plugins/project-wizard/druid.c:987
+#: ../plugins/project-wizard/druid.c:995
 msgid "Install missing packages"
 msgstr "Instalar os paquetes que faltan"
 
@@ -7261,7 +7261,7 @@ msgstr "Instalar os paquetes que faltan"
 #. Translators: Application Manager is the program used to install
 #. * new application like apt on Ubuntu, yum on Fedora, zypper on
 #. * OpenSuSE and emerge on Gentoo
-#: ../plugins/project-wizard/druid.c:999
+#: ../plugins/project-wizard/druid.c:1007
 msgid ""
 "The missing programs are usually part of some distribution packages and can "
 "be searched for in your Application Manager. Similarly, the development "
@@ -7277,7 +7277,7 @@ msgstr ""
 "neles. Normalmente acaban co sufixo «-dev» ou «-devel» nos nomes dos "
 "paquetes e pódense atopar buscando no seu Xestor de aplicativos."
 
-#: ../plugins/project-wizard/druid.c:1007
+#: ../plugins/project-wizard/druid.c:1015
 msgid "Missing components"
 msgstr "Faltan compoñentes"
 
@@ -7315,6 +7315,34 @@ msgstr "Creando %s … %s"
 #, c-format
 msgid "Executing: %s"
 msgstr "Executando: %s"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:1
+msgid "Directory where the new projects are created by default"
+msgstr "Cartafol onde se crean os novos proxectos por omisión"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:2
+msgid ""
+"If empty, the user home directory is used. If the path is relative, it is "
+"relative to the home directory."
+msgstr ""
+"Se está baleiro usarase o cartafol persoal. Se a ruta é relativa, é relativa "
+"ao cartafol persoal."
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
+msgid "Default user name used in new project"
+msgstr "Nome de usuario por omisión usado no novo proxecto"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
+msgid "If empty, the current user name is used."
+msgstr "Se está baleiro usarase o nome de usuario actual."
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
+msgid "Default email used in new project"
+msgstr "Correo electrónico por omisión usado no novo proxecto"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
+msgid "If empty, current login and machine name is used."
+msgstr "Se está baleiro, usarase o inicio de sesión e nome da máquina."
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -9976,61 +10004,61 @@ msgstr "Sobre os en_gadidos externos"
 msgid "About third-party Anjuta plugins"
 msgstr "Sobre os engadidos de terceiros para o Anjuta"
 
-#: ../src/anjuta-application.c:363
+#: ../src/anjuta-application.c:374
 msgid "Specify the size and location of the main window"
 msgstr "Especificar o tamaño e a localización da xanela principal"
 
 #. This is the format you can specify the size andposition
 #. * of the window on command line
-#: ../src/anjuta-application.c:366
+#: ../src/anjuta-application.c:377
 msgid "WIDTHxHEIGHT+XOFF+YOFF"
 msgstr "LARGURAxALTURA+X+Y"
 
-#: ../src/anjuta-application.c:371
+#: ../src/anjuta-application.c:382
 msgid "Do not show the splash screen"
 msgstr "Non mostrar a pantalla de inicio"
 
-#: ../src/anjuta-application.c:377
+#: ../src/anjuta-application.c:388
 msgid "Start a new instance and do not open the file in an existing instance"
 msgstr ""
 "Iniciar unha instancia nova en vez de abrir o ficheiro nunha que xa existe"
 
-#: ../src/anjuta-application.c:383
+#: ../src/anjuta-application.c:394
 msgid "Do not open last session on startup"
 msgstr "Non abrir a última sesión no inicio"
 
-#: ../src/anjuta-application.c:389
+#: ../src/anjuta-application.c:400
 msgid "Do not open last project and files on startup"
 msgstr "Non abrir os últimos ficheiros e proxecto no inicio"
 
-#: ../src/anjuta-application.c:395
+#: ../src/anjuta-application.c:406
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
 msgstr ""
 "Pechar o Anjuta de forma adecuada liberando todos os recursos (para "
 "depuración)"
 
-#: ../src/anjuta-application.c:401
+#: ../src/anjuta-application.c:412
 msgid "Display program version"
 msgstr "Mostrar a versión do programa"
 
-#: ../src/anjuta-application.c:407
+#: ../src/anjuta-application.c:418
 msgid "Specify another profile"
 msgstr "Especifique outro perfíl"
 
-#: ../src/anjuta-application.c:408
+#: ../src/anjuta-application.c:419
 msgid "PROFILE_FILE"
 msgstr "FICHEIRO_PERFIL"
 
-#: ../src/anjuta-application.c:425
+#: ../src/anjuta-application.c:436
 msgid "- Integrated Development Environment"
 msgstr "- Ambiente de desenvolvemento integrado"
 
-#: ../src/anjuta-application.c:764
+#: ../src/anjuta-application.c:776
 #, c-format
 msgid "Invalid profile %s: %s"
 msgstr "Perfil non válido %s: %s"
 
-#: ../src/anjuta-application.c:818
+#: ../src/anjuta-application.c:830
 msgid "Loaded Session…"
 msgstr "Sesión cargada…"
 
