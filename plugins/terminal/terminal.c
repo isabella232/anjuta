@@ -289,10 +289,13 @@ use_default_profile_cb (GtkToggleButton *button,
 }
 
 static void
-terminal_child_exited_cb (GPid pid, gint status, gpointer user_data)
+terminal_child_exited_cb (VteTerminal *term, gpointer user_data)
 {
 	TerminalPlugin *term_plugin = ANJUTA_PLUGIN_TERMINAL (user_data);
-	if (term_plugin->child_pid == pid)
+	GPid pid = term_plugin->child_pid;
+	int status;
+	
+	if (term_plugin->child_pid)
 	{
 		gboolean focus;
 
@@ -303,12 +306,11 @@ terminal_child_exited_cb (GPid pid, gint status, gpointer user_data)
 		gtk_widget_show_all (term_plugin->shell_box);
 		if (focus)
 			gtk_widget_grab_focus (term_plugin->shell);
-
 		term_plugin->child_pid = 0;
 	}
 
+	status = vte_terminal_get_child_exit_status (term);
 	g_signal_emit_by_name(term_plugin, "child-exited", pid, status);
-	g_spawn_close_pid (pid);
 }
 
 static pid_t
@@ -355,7 +357,6 @@ terminal_execute (TerminalPlugin *term_plugin, const gchar *directory,
 		gboolean focus;
 
 		term_plugin->child_pid = pid;
-		g_child_watch_add (pid, terminal_child_exited_cb, term_plugin);
 
 		/* Display terminal widget */
 		focus = gtk_widget_is_focus (term_plugin->shell);
@@ -624,6 +625,9 @@ create_terminal (TerminalPlugin *term_plugin)
 
 	g_signal_connect (G_OBJECT (term), "button-press-event",
 					  G_CALLBACK (terminal_click_cb), term_plugin);
+
+	g_signal_connect (G_OBJECT (term), "child-exited",
+	                  G_CALLBACK (terminal_child_exited_cb), term_plugin);
 
 #if OLD_VTE == 1
 	g_signal_connect (G_OBJECT (term), "realize",
