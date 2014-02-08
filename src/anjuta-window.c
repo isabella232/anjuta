@@ -55,6 +55,11 @@
 #define TOOLBAR_VISIBLE "toolbar-visible"
 #define TOOLBAR_STYLE "toolbar-style"
 
+#define WIDTH_MARGIN 48
+#define HEIGHT_MARGIN 24
+#define DEFAULT_WIDTH (1024 - WIDTH_MARGIN)
+#define DEFAULT_HEIGHT (768 - HEIGHT_MARGIN)
+
 static void anjuta_window_layout_load (AnjutaWindow *win,
 									const gchar *layout_filename,
 									const gchar *name);
@@ -897,10 +902,10 @@ anjuta_window_set_geometry (AnjutaWindow *win, const gchar *geometry)
 	{
 		posx = 10;
 		posy = 10;
-		width = gdk_screen_width () - 10;
-		height = gdk_screen_height () - 25;
-		width = (width < 790)? width : -1;
-		height = (height < 575)? width : -1;
+		width = gdk_screen_width () - WIDTH_MARGIN;
+		height = gdk_screen_height () - HEIGHT_MARGIN;
+		width = (width < DEFAULT_WIDTH)? width : DEFAULT_WIDTH;
+		height = (height < DEFAULT_HEIGHT)? width : DEFAULT_HEIGHT;
 		if (gtk_widget_get_realized (GTK_WIDGET (win)) == FALSE)
 		{
 			gtk_window_set_default_size (GTK_WINDOW (win), width, height);
