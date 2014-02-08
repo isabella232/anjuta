@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-01-14 01:56+0000\n"
-"PO-Revision-Date: 2014-01-18 21:56+0100\n"
+"POT-Creation-Date: 2014-02-08 03:45+0000\n"
+"PO-Revision-Date: 2014-02-08 10:26+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -360,12 +360,12 @@ msgstr "Zobrazit tlačítko Přidat"
 msgid "[Pp]assword.*:"
 msgstr "[Hh]eslo.*:"
 
-#: ../libanjuta/anjuta-launcher.c:1165 ../plugins/gdb/utilities.c:282
+#: ../libanjuta/anjuta-launcher.c:1167 ../plugins/gdb/utilities.c:282
 #, c-format
 msgid "Cannot execute command: \"%s\""
 msgstr "Nelze spustit příkaz: „%s“"
 
-#: ../libanjuta/anjuta-launcher.c:1166
+#: ../libanjuta/anjuta-launcher.c:1168
 msgid "execvp failed"
 msgstr "execvp selhalo"
 
@@ -492,19 +492,19 @@ msgstr ""
 msgid "Loading:"
 msgstr "Načítá se:"
 
-#: ../libanjuta/anjuta-preferences-dialog.c:96
+#: ../libanjuta/anjuta-preferences-dialog.c:99
 msgid "Category"
 msgstr "Kategorie"
 
 #. FIXME: Make the general page first
-#: ../libanjuta/anjuta-preferences-dialog.c:139
 #: ../libanjuta/anjuta-preferences-dialog.c:142
+#: ../libanjuta/anjuta-preferences-dialog.c:145
 #: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:982
 #: ../src/preferences.ui.h:9
 msgid "General"
 msgstr "Obecné"
 
-#: ../libanjuta/anjuta-preferences-dialog.c:241
+#: ../libanjuta/anjuta-preferences-dialog.c:244
 msgid "Anjuta Preferences"
 msgstr "Předvolby Anjuty"
 
@@ -2121,7 +2121,7 @@ msgstr "Šablona autogen použitá pro implementační soubor"
 msgid "File to which the processed template will be written"
 msgstr "Soubor, do kterého bude zpracovaná šablona zapsána"
 
-#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1268
+#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1373
 msgid ""
 "Could not find autogen version 5; please install the autogen package. You "
 "can get it from http://autogen.sourceforge.net."
@@ -3011,7 +3011,7 @@ msgid "Disassembly"
 msgstr "Zpětně přeložit"
 
 #: ../plugins/debug-manager/info.c:52 ../plugins/debug-manager/info.c:101
-#: ../plugins/project-wizard/druid.c:180
+#: ../plugins/project-wizard/druid.c:188
 msgid "Information"
 msgstr "Informace"
 
@@ -4024,7 +4024,7 @@ msgid "Search using regular expressions"
 msgstr "Hledat pomocí regulárního výrazu"
 
 #: ../plugins/document-manager/plugin.c:295
-#: ../plugins/indentation-c-style/plugin.c:217
+#: ../plugins/indentation-c-style/plugin.c:218
 #: ../plugins/indentation-python-style/plugin.c:200
 #: ../plugins/language-support-cpp-java/plugin.c:1192
 #: ../plugins/language-support-python/plugin.c:377 ../src/anjuta-actions.h:30
@@ -4306,17 +4306,17 @@ msgstr "Automatické uložení %s selhalo"
 msgid "Autosave completed"
 msgstr "Automatické uložení dokončeno"
 
-#: ../plugins/document-manager/search-box.c:529
+#: ../plugins/document-manager/search-box.c:520
 #, c-format
 msgid "Search for \"%s\" reached the end and was continued at the top."
 msgstr "Hledání řetězce „%s“ došlo na konec a pokračuje od začátku."
 
-#: ../plugins/document-manager/search-box.c:534
+#: ../plugins/document-manager/search-box.c:525
 #, c-format
 msgid "Search for \"%s\" reached top and was continued at the bottom."
 msgstr "Hledání řetězce „%s“ došlo na začátek a pokračuje od konce."
 
-#: ../plugins/document-manager/search-box.c:544
+#: ../plugins/document-manager/search-box.c:535
 #, c-format
 msgid ""
 "Search for \"%s\" reached the end and was continued at the top but no new "
@@ -4325,7 +4325,7 @@ msgstr ""
 "Hledání řetězce „%s“ došlo na konec a pokračuje od začátku, avšak nebyly "
 "nalezeny žádné nové výsledky."
 
-#: ../plugins/document-manager/search-box.c:549
+#: ../plugins/document-manager/search-box.c:540
 #, c-format
 msgid ""
 "Search for \"%s\" reached top and was continued at the bottom but no new "
@@ -4334,16 +4334,16 @@ msgstr ""
 "Hledání řetězce „%s“ došlo na začátek a pokračuje od konce, avšak nebyly "
 "nalezeny žádné nové výsledky."
 
-#: ../plugins/document-manager/search-box.c:925
+#: ../plugins/document-manager/search-box.c:917
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
 "Více možností hledání je dostupných v kontextové nabídce položky „Hledat“"
 
-#: ../plugins/document-manager/search-box.c:986
+#: ../plugins/document-manager/search-box.c:988
 msgid "Replace"
 msgstr "Nahradit"
 
-#: ../plugins/document-manager/search-box.c:991
+#: ../plugins/document-manager/search-box.c:993
 msgid "Replace all"
 msgstr "Nahradit vše"
 
@@ -5930,23 +5930,23 @@ msgid "Parenthesis indentation"
 msgstr "Odsazení závorek"
 
 #. ANJUTA_STOCK_AUTOINDENT,
-#: ../plugins/indentation-c-style/plugin.c:223
+#: ../plugins/indentation-c-style/plugin.c:224
 #: ../plugins/indentation-python-style/plugin.c:206
 msgid "Auto-Indent"
 msgstr "Automatické-odsazování"
 
-#: ../plugins/indentation-c-style/plugin.c:224
+#: ../plugins/indentation-c-style/plugin.c:225
 #: ../plugins/indentation-python-style/plugin.c:207
 msgid "Auto-indent current line or selection based on indentation settings"
 msgstr ""
 "Automaticky odsadit aktuální řádek nebo výběr podle nastavení odsazování"
 
-#: ../plugins/indentation-c-style/plugin.c:264
+#: ../plugins/indentation-c-style/plugin.c:265
 msgid "C Indentation"
 msgstr "Odsazování jazyka C"
 
-#: ../plugins/indentation-c-style/plugin.c:362
-#: ../plugins/indentation-c-style/plugin.c:371
+#: ../plugins/indentation-c-style/plugin.c:363
+#: ../plugins/indentation-c-style/plugin.c:372
 #: ../plugins/indentation-python-style/plugin.c:324
 #: ../plugins/indentation-python-style/plugin.c:333
 msgid "Indentation"
@@ -7097,7 +7097,7 @@ msgid "Select a project type"
 msgstr "Vyberte typ projektu"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
-#: ../plugins/project-wizard/druid.c:192
+#: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr "Chyba"
 
@@ -7109,31 +7109,31 @@ msgstr "Podrobnosti"
 msgid "Summary"
 msgstr "Souhrn"
 
-#: ../plugins/project-wizard/druid.c:184 ../plugins/project-wizard/druid.c:188
+#: ../plugins/project-wizard/druid.c:192 ../plugins/project-wizard/druid.c:196
 msgid "Warning"
 msgstr "Varování"
 
-#: ../plugins/project-wizard/druid.c:195
+#: ../plugins/project-wizard/druid.c:203
 msgid "Message"
 msgstr "Zpráva"
 
-#: ../plugins/project-wizard/druid.c:276
+#: ../plugins/project-wizard/druid.c:284
 msgid "Confirm the following information:"
 msgstr "Potvrďte následující informace:"
 
 #. The project type is translated too, it is something like
 #. * generic, GNOME applet, Makefile project...
-#: ../plugins/project-wizard/druid.c:280
+#: ../plugins/project-wizard/druid.c:288
 #, c-format
 msgid "Project Type: %s\n"
 msgstr "Typ projektu: %s\n"
 
-#: ../plugins/project-wizard/druid.c:471
+#: ../plugins/project-wizard/druid.c:479
 #, c-format
 msgid "Unable to find any project template in %s"
 msgstr "Nelze najít žádnou šablonu projektu v %s"
 
-#: ../plugins/project-wizard/druid.c:704
+#: ../plugins/project-wizard/druid.c:712
 #, c-format
 msgid ""
 "\n"
@@ -7142,7 +7142,7 @@ msgstr ""
 "\n"
 "Pole „%s“ je povinné. Vyplňte je prosím."
 
-#: ../plugins/project-wizard/druid.c:719
+#: ../plugins/project-wizard/druid.c:727
 #, c-format
 msgid ""
 "Field \"%s\" must contains only letters, digits or the following characters "
@@ -7152,7 +7152,7 @@ msgstr ""
 "Pole „%s“ smí obsahovat jen písmena, číslice nebo znaky „#$:%%+,.=@^_`~“. "
 "Prvním znakem navíc nesmí být pomlčka. Opravte zadání prosím."
 
-#: ../plugins/project-wizard/druid.c:724
+#: ../plugins/project-wizard/druid.c:732
 #, c-format
 msgid ""
 "Field \"%s\" must contains only letters, digits, the following characters \"#"
@@ -7163,7 +7163,7 @@ msgstr ""
 "oddělovače složek. Prvním znakem navíc nesmí být pomlčka. Opravte zadání "
 "prosím."
 
-#: ../plugins/project-wizard/druid.c:729
+#: ../plugins/project-wizard/druid.c:737
 #, c-format
 msgid ""
 "Field \"%s\" must contains only ASCII printable characters, no accentuated "
@@ -7172,12 +7172,12 @@ msgstr ""
 "Pole „%s“ smí obsahovat jen tisknutelné znaky z tabulky ASCII, diakritiku "
 "nelze použít. Opravte zadání prosím."
 
-#: ../plugins/project-wizard/druid.c:734
+#: ../plugins/project-wizard/druid.c:742
 #, c-format
 msgid "Unknown error."
 msgstr "Neznámá chyba."
 
-#: ../plugins/project-wizard/druid.c:761
+#: ../plugins/project-wizard/druid.c:769
 #, c-format
 msgid ""
 "Directory \"%s\" is not empty. Project creation could fail if some files "
@@ -7186,20 +7186,20 @@ msgstr ""
 "Složka „%s“ není prázdná. Tvorba projektu by mohla selhat, pokud nepůjde "
 "zapisovat do některých souborů. Chcete pokračovat?"
 
-#: ../plugins/project-wizard/druid.c:763
+#: ../plugins/project-wizard/druid.c:771
 #, c-format
 msgid "File \"%s\" already exists. Do you want to overwrite it?"
 msgstr "Soubor „%s“ již existuje. Chcete jej přepsat?"
 
-#: ../plugins/project-wizard/druid.c:796
+#: ../plugins/project-wizard/druid.c:804
 msgid "Invalid entry"
 msgstr "Neplatný vstup"
 
-#: ../plugins/project-wizard/druid.c:806
+#: ../plugins/project-wizard/druid.c:814
 msgid "Dubious entry"
 msgstr "Nesrozumitelný vstup"
 
-#: ../plugins/project-wizard/druid.c:958
+#: ../plugins/project-wizard/druid.c:966
 #, c-format
 msgid ""
 "\n"
@@ -7208,7 +7208,7 @@ msgstr ""
 "\n"
 "Chybějící programy: %s."
 
-#: ../plugins/project-wizard/druid.c:969
+#: ../plugins/project-wizard/druid.c:977
 #, c-format
 msgid ""
 "\n"
@@ -7217,7 +7217,7 @@ msgstr ""
 "\n"
 "Chybějící balíčky: %s."
 
-#: ../plugins/project-wizard/druid.c:978
+#: ../plugins/project-wizard/druid.c:986
 msgid ""
 "Some important programs or development packages required to build this "
 "project are missing. Please make sure they are installed properly before "
@@ -7227,14 +7227,14 @@ msgstr ""
 "projektu chybí. Ujistěte se, že jsou správně nainstalovány před spuštěním "
 "sestavování projektu.\n"
 
-#: ../plugins/project-wizard/druid.c:987
+#: ../plugins/project-wizard/druid.c:995
 msgid "Install missing packages"
 msgstr "Instalovat chybějící balíčky"
 
 #. Translators: Application Manager is the program used to install
 #. * new application like apt on Ubuntu, yum on Fedora, zypper on
 #. * OpenSuSE and emerge on Gentoo
-#: ../plugins/project-wizard/druid.c:999
+#: ../plugins/project-wizard/druid.c:1007
 msgid ""
 "The missing programs are usually part of some distribution packages and can "
 "be searched for in your Application Manager. Similarly, the development "
@@ -7249,7 +7249,7 @@ msgstr ""
 "založených. Názvy takových balíčků mají obvykle obsahují příponu „-dev“ nebo "
 "„-devel“ a lze je také pomocí správce softwaru vyhledávat."
 
-#: ../plugins/project-wizard/druid.c:1007
+#: ../plugins/project-wizard/druid.c:1015
 msgid "Missing components"
 msgstr "Chybí komponenty"
 
@@ -7287,6 +7287,37 @@ msgstr "Vytváří se %s… %s"
 #, c-format
 msgid "Executing: %s"
 msgstr "Spouští se: %s"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:1
+msgid "Directory where the new projects are created by default"
+msgstr "Složka, ve které jsou vytvářeny nové projekty jako výchozí"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:2
+msgid ""
+"If empty, the user home directory is used. If the path is relative, it is "
+"relative to the home directory."
+msgstr ""
+"Pokud není zadáno, použije se domovská složka uživatele. Pokud je cesta "
+"relativní, je relativní vůči domovské složce."
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
+#| msgid "Create a new project"
+msgid "Default user name used in new project"
+msgstr "Výchozí uživatelské jméno použité v nových projektech"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
+msgid "If empty, the current user name is used."
+msgstr "Pokud není zadáno, použije se jméno aktuálního uživatele."
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
+#| msgid "Create a new project"
+msgid "Default email used in new project"
+msgstr "Výchozí e-mail použitý v nových projektech"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
+msgid "If empty, current login and machine name is used."
+msgstr ""
+"Pokud není zadáno, použije se aktuální přihlašovací jméno a název počítače."
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -9928,58 +9959,58 @@ msgstr "O externích _zásuvných modulech"
 msgid "About third-party Anjuta plugins"
 msgstr "O zásuvných modulech Anjuty od třetích stran"
 
-#: ../src/anjuta-application.c:363
+#: ../src/anjuta-application.c:374
 msgid "Specify the size and location of the main window"
 msgstr "Určení velikosti a umístění hlavního okna"
 
 #. This is the format you can specify the size andposition
 #. * of the window on command line
-#: ../src/anjuta-application.c:366
+#: ../src/anjuta-application.c:377
 msgid "WIDTHxHEIGHT+XOFF+YOFF"
 msgstr "ŠÍŘKAxVÝŠKA+XPOS+YPOS"
 
-#: ../src/anjuta-application.c:371
+#: ../src/anjuta-application.c:382
 msgid "Do not show the splash screen"
 msgstr "Nezobrazovat úvodní obrazovku"
 
-#: ../src/anjuta-application.c:377
+#: ../src/anjuta-application.c:388
 msgid "Start a new instance and do not open the file in an existing instance"
 msgstr "Spustit novou instanci a neotevírat soubor v existující instanci"
 
-#: ../src/anjuta-application.c:383
+#: ../src/anjuta-application.c:394
 msgid "Do not open last session on startup"
 msgstr "Při startu neotevírat poslední sezení"
 
-#: ../src/anjuta-application.c:389
+#: ../src/anjuta-application.c:400
 msgid "Do not open last project and files on startup"
 msgstr "Při startu neotevírat poslední projekt a soubory"
 
-#: ../src/anjuta-application.c:395
+#: ../src/anjuta-application.c:406
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
 msgstr "Ukončit anjutu správně a uvolnit všechny zdroje (pro ladění)"
 
-#: ../src/anjuta-application.c:401
+#: ../src/anjuta-application.c:412
 msgid "Display program version"
 msgstr "Zobrazit verzi programu"
 
-#: ../src/anjuta-application.c:407
+#: ../src/anjuta-application.c:418
 msgid "Specify another profile"
 msgstr "Určit jiný profil"
 
-#: ../src/anjuta-application.c:408
+#: ../src/anjuta-application.c:419
 msgid "PROFILE_FILE"
 msgstr "SOUBOR_PROFILU"
 
-#: ../src/anjuta-application.c:425
+#: ../src/anjuta-application.c:436
 msgid "- Integrated Development Environment"
 msgstr "– integrované vývojové prostředí"
 
-#: ../src/anjuta-application.c:764
+#: ../src/anjuta-application.c:776
 #, c-format
 msgid "Invalid profile %s: %s"
 msgstr "Neplatný profil %s: %s"
 
-#: ../src/anjuta-application.c:818
+#: ../src/anjuta-application.c:830
 msgid "Loaded Session…"
 msgstr "Načtené sezení…"
 
