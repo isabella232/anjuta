@@ -281,12 +281,18 @@ quick_open_plugin_deactivate(AnjutaPlugin *plugin)
 
     /* Disconnect signals. */
     if (self->project_manager)
+    {
         g_signal_handlers_disconnect_by_func(self->project_manager, on_project_loaded, self);
+        g_object_remove_weak_pointer(G_OBJECT(self->project_manager), (void**)&self->project_manager);
+        self->project_manager = NULL;
+    }
 
     if (self->docman)
     {
         g_signal_handlers_disconnect_by_func(self->docman, on_document_added, self);
         g_signal_handlers_disconnect_by_func(self->docman, on_document_removed, self);
+        g_object_remove_weak_pointer(G_OBJECT(self->docman), (void**)&self->docman);
+        self->docman = NULL;
     }
 
     gtk_widget_destroy(GTK_WIDGET(self->dialog));
