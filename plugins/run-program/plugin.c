@@ -376,6 +376,13 @@ run_plugin_dispose (GObject *obj)
 
 	/* Warning this function could be called several times */
 
+	if (plugin->terminal != NULL)
+	{
+		g_object_remove_weak_pointer (G_OBJECT (plugin->terminal),
+		                           (void **)&plugin->terminal);
+		plugin->terminal = NULL;
+	}
+
 	run_free_all_children (plugin);
 
 	G_OBJECT_CLASS (parent_class)->dispose (obj);

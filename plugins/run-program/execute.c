@@ -333,6 +333,9 @@ execute_with_terminal (RunProgramPlugin *plugin,
 
 		g_free (new_cmd);
 
+		if (plugin->terminal)
+			g_object_remove_weak_pointer (G_OBJECT (plugin->terminal),
+		     	  	                      (void **)&plugin->terminal);
 		plugin->terminal = term;
 		g_object_add_weak_pointer (G_OBJECT (plugin->terminal),
 		                           (void **)&plugin->terminal);
