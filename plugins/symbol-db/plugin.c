@@ -2460,8 +2460,18 @@ symbol_db_dispose (GObject *obj)
 	SymbolDBPlugin *plugin = (SymbolDBPlugin*)obj;
 	DEBUG_PRINT ("Symbol-DB dispose");
 	/* Disposition codes */
-	g_object_unref (plugin->settings);
+	if (plugin->settings != NULL)
+	{
+		g_object_unref (plugin->settings);
+		plugin->settings = NULL;
+	}
 
+	if (plugin->file_model != NULL)
+	{
+		g_object_remove_weak_pointer (G_OBJECT (plugin->file_model),
+	                                      (gpointer)&plugin->file_model);
+		plugin->file_model = NULL;
+	}
 	
 	G_OBJECT_CLASS (parent_class)->dispose (obj);
 }
