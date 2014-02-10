@@ -273,6 +273,9 @@ value_added_current_editor (AnjutaPlugin *plugin, const char *name,
 	editor = g_value_get_object (value);
 	DEBUG_PRINT("add value current editor %p",  editor);
 
+	if (self->current_editor)
+		g_object_remove_weak_pointer (G_OBJECT (self->current_editor), (gpointer *)(gpointer)&self->current_editor);
+
 	if (!IANJUTA_IS_EDITOR(editor))
 	{
 		self->current_editor = NULL;
