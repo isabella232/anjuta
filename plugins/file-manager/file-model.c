@@ -623,6 +623,8 @@ file_model_finalize (GObject *object)
 	FileModelPrivate* priv = FILE_MODEL_GET_PRIVATE(model);
 
 	g_clear_object (&priv->base_path);
+	if (priv->ivcs)
+		g_object_remove_weak_pointer (G_OBJECT (priv->ivcs), (void**)&priv->ivcs);
 
 	G_OBJECT_CLASS (file_model_parent_class)->finalize (object);
 }
