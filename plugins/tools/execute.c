@@ -687,7 +687,13 @@ atp_output_context_destroy (ATPOutputContext *this)
 		man = anjuta_shell_get_interface (this->execution->plugin->shell,
 										  IAnjutaMessageManager, NULL);
 		ianjuta_message_manager_remove_view (man, this->view, NULL);
+		g_object_remove_weak_pointer (G_OBJECT (this->view), (gpointer *)(gpointer)&this->view);
 		this->view = NULL;
+	}
+	if (this->editor)
+	{
+		g_object_remove_weak_pointer (G_OBJECT (this->editor), (gpointer *)(gpointer)&this->editor);
+		this->editor = NULL;
 	}
 	if (this->buffer)
 	{
