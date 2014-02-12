@@ -57,6 +57,12 @@
 #define GCONF_WORD_CHARS          "word_chars"
 #define GCONF_PTY_FLAGS           "pty_flags"
 
+/* Gnome-Terminal GSettings Schemas and Keys */
+#define TERM_PROFILE_LIST_SCHEMA		"org.gnome.Terminal.ProfilesList"
+#define TERM_LEGACY_SCHEMA				"org.gnome.Terminal.Legacy.Settings"
+#define TERM_PROFILE_DEFAULT			"default"
+
+/* Anjuta Terminal Plugin Schema and Keys */
 #define PREF_SCHEMA                           "org.gnome.anjuta.terminal"
 #define PREFS_TERMINAL_PROFILE_USE_DEFAULT    "terminal-default-profile"
 #define PREFS_TERMINAL_PROFILE                "terminal-profile"
@@ -904,12 +910,14 @@ on_pref_profile_changed (GtkComboBox* combo, TerminalPlugin* term_plugin)
 static void
 ipreferences_merge(IAnjutaPreferences* ipref, AnjutaPreferences* prefs, GError** e)
 {
+
 	GError* error = NULL;
 
 	/* Create the terminal preferences page */
 	TerminalPlugin* term_plugin = ANJUTA_PLUGIN_TERMINAL (ipref);
 	GtkBuilder *bxml = gtk_builder_new ();
 
+#if 0
 	if (!gtk_builder_add_from_file (bxml, PREFS_BUILDER, &error))
 	{
 		g_warning ("Couldn't load builder file: %s", error->message);
@@ -924,26 +932,23 @@ ipreferences_merge(IAnjutaPreferences* ipref, AnjutaPreferences* prefs, GError**
 	term_plugin->pref_profile_combo = GTK_WIDGET (gtk_builder_get_object (bxml, "profile_list_combo"));
 	term_plugin->pref_default_button = GTK_WIDGET (gtk_builder_get_object (bxml, "preferences_toggle:bool:1:0:terminal-default-profile"));
 
-#if 0
-	GSList *profiles;
-
-	/* FIXME: Update to GSettings */
 	/* Update the currently available list of terminal profiles */
-	client = gconf_client_get_default ();
-	profiles = gconf_client_get_list (client, GCONF_PROFILE_LIST,
-									  GCONF_VALUE_STRING, NULL);
-	if (profiles)
-	{
-		GtkListStore *store;
-		GString *default_value = g_string_new (NULL);
+	GSettings *terminal_settings;
+	GtkListStore *store;
+	gchar* default_value;
+	gchar** profiles;
+	int i;
 
-		store = GTK_LIST_STORE (gtk_combo_box_get_model (GTK_COMBO_BOX (term_plugin->pref_profile_combo)));
+	terminal_settings = g_settings_new(TERM_PROFILE_LIST_SCHEMA);
+	store = GTK_LIST_STORE (gtk_combo_box_get_model (GTK_COMBO_BOX (term_plugin->pref_profile_combo)));
+	default_value = g_settings_get_string(terminal_settings, "default");
 
+	if (default_value != NULL) {
+		profiles = g_settings_get_strv(terminal_settings, "list");
 		gtk_list_store_clear (store);
-		g_slist_foreach (profiles, on_add_string_in_store, store);
-		g_slist_foreach (profiles, on_concat_string, default_value);
-		g_slist_foreach (profiles, (GFunc)g_free, NULL);
-		g_slist_free (profiles);
+		for (i = 0; profiles[i] != NULL; i ++) {
+			on_add_string_in_store(profiles[i], store);
+		}
 
 		g_signal_connect (term_plugin->pref_profile_combo, "changed",
 		                  G_CALLBACK (on_pref_profile_changed), term_plugin);
@@ -952,8 +957,9 @@ ipreferences_merge(IAnjutaPreferences* ipref, AnjutaPreferences* prefs, GError**
 		g_signal_connect (G_OBJECT(term_plugin->pref_default_button), "toggled",
 						  G_CALLBACK (use_default_profile_cb), term_plugin);
 
-		g_string_free (default_value, TRUE);
+		g_object_unref(terminal_settings);
 	}
+
 	else
 #endif
 	{
