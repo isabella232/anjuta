@@ -1103,6 +1103,7 @@ debugger_start (Debugger *debugger,
 	/* Prepare for launch. */
 	launcher = debugger->priv->launcher;
 	anjuta_launcher_set_terminate_on_exit (launcher, TRUE);
+	anjuta_launcher_set_check_passwd_prompt (launcher, FALSE);
 	g_signal_connect (G_OBJECT (launcher), "child-exited",
 					  G_CALLBACK (on_gdb_terminated), debugger);
 	ret = anjuta_launcher_execute_v (launcher,
