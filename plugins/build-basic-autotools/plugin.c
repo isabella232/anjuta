@@ -2449,6 +2449,8 @@ value_added_current_editor (AnjutaPlugin *plugin, const char *name,
 	ba_plugin->current_editor_file = ianjuta_file_get_file (IANJUTA_FILE (editor), NULL);
 	update_module_ui (ba_plugin);
 
+	if (ba_plugin->update_indicators_idle)
+		g_source_remove (ba_plugin->update_indicators_idle);
 	ba_plugin->update_indicators_idle = g_idle_add (on_update_indicators_idle, plugin);
 }
 
@@ -2585,7 +2587,10 @@ deactivate_plugin (AnjutaPlugin *plugin)
 
 	/* Remove scheduled idle handler. */
 	if (ba_plugin->update_indicators_idle)
+	{
 		g_source_remove (ba_plugin->update_indicators_idle);
+		ba_plugin->update_indicators_idle = NULL;
+	}
 
 	/* Remove UI */
 	anjuta_ui_unmerge (ui, ba_plugin->build_merge_id);
@@ -2613,6 +2618,11 @@ dispose (GObject *obj)
 
 	g_object_unref (ba_plugin->settings);
 
+	if (ba_plugin->update_indicators_idle)
+	{
+		g_source_remove (ba_plugin->update_indicators_idle);
+		ba_plugin->update_indicators_idle = NULL;
+	}
 	G_OBJECT_CLASS (parent_class)->dispose (obj);
 }
 
