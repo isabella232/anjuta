@@ -403,10 +403,15 @@ cpp_packages_finalize (GObject* object)
 {
 	CppPackages *packages = CPP_PACKAGES (object);
 	AnjutaShell* shell = packages->plugin->shell;
-	IAnjutaProjectManager* pm =
-		anjuta_shell_get_interface (shell, IAnjutaProjectManager, NULL);
 	
-	g_signal_handlers_disconnect_by_func (pm, cpp_packages_load_real, packages);
+	if (shell != NULL)
+	{
+		IAnjutaProjectManager* pm =
+			anjuta_shell_get_interface (shell, IAnjutaProjectManager, NULL);
+
+		if (pm != NULL)	
+			g_signal_handlers_disconnect_by_func (pm, cpp_packages_load_real, packages);
+	}
 
 	G_OBJECT_CLASS (cpp_packages_parent_class)->finalize (object);
 }
