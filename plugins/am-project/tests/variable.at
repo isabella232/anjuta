@@ -200,4 +200,32 @@ AT_CHECK([diff -b output expect])
 
 
 
+AS_MKDIR_P([variable6])
+AT_DATA([variable6/configure.ac],
+[[API=0
+AC_SUBST(API)
+AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([variable6/Makefile.am],
+[[
+bin_PROGRAMS = target@API@
+target@API@_SOURCES = \
+	source1.c
+target@API@_LDFLAGS = -l
+]])
+AT_DATA([expect],
+[[ROOT (): variable6
+    TARGET (): target0
+        PROPERTY (Installation directory): bindir
+        PROPERTY (Linker flags): -l
+        SOURCE (): source1.c
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load variable6 \
+		 list])
+AT_CHECK([diff -b output expect])
+
+
+
 AT_CLEANUP

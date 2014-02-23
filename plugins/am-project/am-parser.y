@@ -119,7 +119,7 @@
 static gint
 amp_am_automake_variable (AnjutaToken *token)
 {
-    switch (anjuta_token_get_type (token))
+    switch (anjuta_token_get_type (anjuta_token_last (token)))
     {
     case SUBDIRS:               return AM_TOKEN_SUBDIRS;
     case DIST_SUBDIRS:          return AM_TOKEN_DIST_SUBDIRS;
@@ -185,7 +185,7 @@ statement:
 	;
 
 am_variable:
-	optional_space  automake_token  optional_space  equal_token  value_list {
+	optional_space  automake_head  optional_space  equal_token  value_list {
 		$$ = anjuta_token_new_static (amp_am_automake_variable ($2), NULL);
 		if ($1 != NULL) anjuta_token_set_type ($1, ANJUTA_TOKEN_START);
 		anjuta_token_merge ($$, $2);
@@ -194,7 +194,7 @@ am_variable:
 		anjuta_token_merge ($$, $5);
 		amp_am_scanner_set_am_variable (scanner, $$);
 	}
-	| optional_space automake_token optional_space equal_token
+	| optional_space automake_head optional_space equal_token
 	{
 		AnjutaToken *list;
 		list = anjuta_token_new_static (ANJUTA_TOKEN_LIST, NULL);
@@ -305,7 +305,7 @@ head_list_body:
 		anjuta_token_merge ($1, $2);
 		anjuta_token_merge ($1, $3);
 	}
-	| head_list_body  space  head {
+	| automake_head  space  next_head {
 		anjuta_token_merge ($1, $2);
 		anjuta_token_merge ($1, $3);
 	}
@@ -371,6 +371,23 @@ space:
 	}*/
 	;
 
+automake_head:
+	automake_token {
+		$$ = anjuta_token_new_static (ANJUTA_TOKEN_NAME, NULL);
+		anjuta_token_merge ($$, $1);
+	}
+	| target_automake_token {
+		$$ = anjuta_token_new_static (ANJUTA_TOKEN_NAME, NULL);
+		anjuta_token_merge ($$, $1);
+	}
+	| head target_automake_token {
+		anjuta_token_merge ($1, $2);
+	}
+	| automake_head target_automake_token {
+		anjuta_token_merge ($1, $2);
+	}
+	;
+
 head:
 	head_token {
 		$$ = anjuta_token_new_static (ANJUTA_TOKEN_NAME, NULL);
@@ -399,10 +416,41 @@ head:
 	| head ac_variable {
 		anjuta_token_merge ($1, $2);
 	}
+	| automake_head head_token {
+		anjuta_token_merge ($1, $2);
+	}
+	| automake_head automake_token {
+		anjuta_token_merge ($1, $2);
+	}
+	| automake_head include_token {
+		anjuta_token_merge ($1, $2);
+	}
+	| automake_head variable {
+		anjuta_token_merge ($1, $2);
+	}
+	| automake_head ac_variable {
+		anjuta_token_merge ($1, $2);
+	}
 	;
 
 next_head:
-	automake_token {
+	head_token {
+		$$ = anjuta_token_new_static (ANJUTA_TOKEN_NAME, NULL);
+		anjuta_token_merge ($$, $1);
+	}
+	| ac_variable {
+		$$ = anjuta_token_new_static (ANJUTA_TOKEN_NAME, NULL);
+		anjuta_token_merge ($$, $1);
+	}
+	| variable {
+		$$ = anjuta_token_new_static (ANJUTA_TOKEN_NAME, NULL);
+		anjuta_token_merge ($$, $1);
+	}
+	| automake_token {
+		$$ = anjuta_token_new_static (ANJUTA_TOKEN_NAME, NULL);
+		anjuta_token_merge ($$, $1);
+	}
+	| target_automake_token {
 		$$ = anjuta_token_new_static (ANJUTA_TOKEN_NAME, NULL);
 		anjuta_token_merge ($$, $1);
 	}
@@ -487,6 +535,7 @@ not_eol_token:
 prerequisite_token:
 	name_token
 	| automake_token
+	| target_automake_token
 	| equal_token
 	| rule_token
 	;
@@ -495,6 +544,7 @@ command_token:
 	name_token
 	| variable_token
 	| automake_token
+	| target_automake_token
 	| equal_token
 	| rule_token
 	| depend_token
@@ -510,6 +560,7 @@ value_token:
 	| depend_token
 	| include_token
 	| automake_token
+	| target_automake_token
 	;
 
 head_token:
@@ -564,7 +615,20 @@ variable_token:
 automake_token:
 	SUBDIRS
 	| DIST_SUBDIRS
-	| _DATA
+	| _LDFLAGS
+	| _CPPFLAGS
+	| _CFLAGS
+	| _CXXFLAGS
+	| _JAVACFLAGS
+	| _VALAFLAGS
+	| _FCFLAGS
+	| _OBJCFLAGS
+	| _LFLAGS
+	| _YFLAGS
+	;
+
+target_automake_token:
+	_DATA
 	| _HEADERS
 	| _LIBRARIES
 	| _LISP
@@ -577,16 +641,6 @@ automake_token:
 	| _SOURCES
 	| _TEXINFOS
 	| _DIR
-	| _LDFLAGS
-	| _CPPFLAGS
-	| _CFLAGS
-	| _CXXFLAGS
-	| _JAVACFLAGS
-	| _VALAFLAGS
-	| _FCFLAGS
-	| _OBJCFLAGS
-	| _LFLAGS
-	| _YFLAGS
 	| TARGET_LDFLAGS
 	| TARGET_CPPFLAGS
 	| TARGET_CFLAGS

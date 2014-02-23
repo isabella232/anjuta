@@ -1212,6 +1212,10 @@ ROOT (): gnucash
                     SOURCE (): src/gnome-utils/glade/transfer.glade
                 SOURCE (): src/gnome-utils/glade/Makefile.am
             GROUP (): schemas
+                PROPERTY (Installation directories): schemadir = @GCONF_SCHEMA_FILE_DIR@
+                TARGET (): schema
+                    PROPERTY (Installation directory): schemadir
+                    SOURCE (): src/gnome-utils/schemas/$(schemas_in_files:.schemas.in=.schemas)
                 SOURCE (): src/gnome-utils/schemas/Makefile.am
             GROUP (): test
                 TARGET (): test-link-module
@@ -1857,6 +1861,10 @@ ROOT (): gnucash
                     SOURCE (): src/gnome/glade/sched-xact.glade
                 SOURCE (): src/gnome/glade/Makefile.am
             GROUP (): schemas
+                PROPERTY (Installation directories): schemadir = @GCONF_SCHEMA_FILE_DIR@
+                TARGET (): schema
+                    PROPERTY (Installation directory): schemadir
+                    SOURCE (): src/gnome/schemas/$(schemas_in_files:.schemas.in=.schemas)
                 SOURCE (): src/gnome/schemas/Makefile.am
             GROUP (): ui
                 PROPERTY (Installation directories): uidir = $(GNC_UI_DIR)
@@ -1947,6 +1955,10 @@ ROOT (): gnucash
             PROPERTY (Installation directories): gncincludedir = ${GNC_INCLUDE_DIR} gladedir = ${GNC_GLADE_DIR}
             PROPERTY (C preprocessor flags): -I${top_srcdir}/src -I${top_srcdir}/src/core-utils -I${top_srcdir}/src/engine -I${top_srcdir}/src/gnc-module -I${top_srcdir}/src/app-utils -I${top_srcdir}/src/gnome -I${top_srcdir}/src/gnome-utils -I${top_srcdir}/src/libqof/qof ${GNOME_CFLAGS} ${GLADE_CFLAGS} ${GUILE_INCS} ${GLIB_CFLAGS}
             GROUP (): schemas
+                PROPERTY (Installation directories): schemadir = @GCONF_SCHEMA_FILE_DIR@
+                TARGET (): schema
+                    PROPERTY (Installation directory): schemadir
+                    SOURCE (): src/import-export/schemas/$(schemas_in_files:.schemas.in=.schemas)
                 SOURCE (): src/import-export/schemas/Makefile.am
             GROUP (): qif
                 PROPERTY (C preprocessor flags): -I${top_srcdir}/src -I${top_srcdir}/src/engine -I${top_srcdir}/src/gnc-module -I${top_srcdir}/src/app-utils -I${top_srcdir}/src/import-export -I${top_srcdir}/src/libqof/qof ${GLIB_CFLAGS} ${GUILE_INCS}
@@ -1985,6 +1997,10 @@ ROOT (): gnucash
                         SOURCE (): src/import-export/qif-import/test/test-link.c
                     SOURCE (): src/import-export/qif-import/test/Makefile.am
                 GROUP (): schemas
+                    PROPERTY (Installation directories): schemadir = @GCONF_SCHEMA_FILE_DIR@
+                    TARGET (): schema
+                        PROPERTY (Installation directory): schemadir
+                        SOURCE (): src/import-export/qif-import/schemas/$(schemas_in_files:.schemas.in=.schemas)
                     SOURCE (): src/import-export/qif-import/schemas/Makefile.am
                 TARGET (): libgncmod-qif-import.la
                     PROPERTY (Installation directory): pkglibdir
@@ -2133,6 +2149,10 @@ ROOT (): gnucash
                 PROPERTY (C compiler flags): -I${top_srcdir}/src -I${top_srcdir}/src/import-export -I${top_srcdir}/src/gnome -I${top_srcdir}/src/register/ledger-core -I${top_srcdir}/src/register/register-gnome -I${top_srcdir}/src/register/register-core -I${top_srcdir}/src/gnome-utils -I${top_srcdir}/src/app-utils -I${top_srcdir}/src/engine -I${top_srcdir}/src/core-utils -I${top_srcdir}/src/gnc-module -I${top_srcdir}/src/libqof/qof ${GNOME_CFLAGS} ${GLADE_CFLAGS} ${GLIB_CFLAGS} ${AQBANKING_CFLAGS}
                 PROPERTY (Installation directories): uidir = $(GNC_UI_DIR) gladedir = $(GNC_GLADE_DIR)
                 GROUP (): schemas
+                    PROPERTY (Installation directories): schemadir = @GCONF_SCHEMA_FILE_DIR@
+                    TARGET (): schema
+                        PROPERTY (Installation directory): schemadir
+                        SOURCE (): src/import-export/aqbanking/schemas/$(schemas_in_files:.schemas.in=.schemas)
                     SOURCE (): src/import-export/aqbanking/schemas/Makefile.am
                 TARGET (): libgncmod-aqbanking.la
                     PROPERTY (Installation directory): pkglibdir
@@ -2184,6 +2204,10 @@ ROOT (): gnucash
                         SOURCE (): src/import-export/hbci/glade/hbciprefs.glade
                     SOURCE (): src/import-export/hbci/glade/Makefile.am
                 GROUP (): schemas
+                    PROPERTY (Installation directories): schemadir = @GCONF_SCHEMA_FILE_DIR@
+                    TARGET (): schema
+                        PROPERTY (Installation directory): schemadir
+                        SOURCE (): src/import-export/hbci/schemas/$(schemas_in_files:.schemas.in=.schemas)
                     SOURCE (): src/import-export/hbci/schemas/Makefile.am
                 GROUP (): test
                     TARGET (): test-link-module
@@ -2391,6 +2415,10 @@ ROOT (): gnucash
                         SOURCE (): src/business/business-gnome/glade/vendor.glade
                     SOURCE (): src/business/business-gnome/glade/Makefile.am
                 GROUP (): schemas
+                    PROPERTY (Installation directories): schemadir = @GCONF_SCHEMA_FILE_DIR@
+                    TARGET (): schema
+                        PROPERTY (Installation directory): schemadir
+                        SOURCE (): src/business/business-gnome/schemas/$(schemas_in_files:.schemas.in=.schemas)
                     SOURCE (): src/business/business-gnome/schemas/Makefile.am
                 GROUP (): ui
                     PROPERTY (Installation directories): uidir = $(GNC_UI_DIR)

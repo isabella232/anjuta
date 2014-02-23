@@ -106,11 +106,11 @@ NAME          [^ \t\n\r:#=$"'`&@\\]*
 
 <INITIAL>@{NAME}@ 					{ RETURN (MACRO); }
 
-<INITIAL>\$\([^ \t\n\r:#=$)]+\) 	{ RETURN (VARIABLE); }
+<INITIAL>\$\([^)]+\)				 	{ RETURN (VARIABLE); }
 
-<INITIAL>\$\{[^ \t\n\r:#=$}]+\} 	{ RETURN (VARIABLE); }
+<INITIAL>\$\{[^}]+\} 					{ RETURN (VARIABLE); }
 
-<INITIAL>\$[^ \t\n\r\(\{] 			{ RETURN (VARIABLE); }
+<INITIAL>\$[^ \t\n\r\(\{] 				{ RETURN (VARIABLE); }
 
 <INITIAL>: 							{ RETURN (COLON); }
 
