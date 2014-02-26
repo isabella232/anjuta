@@ -1947,6 +1947,7 @@ anjuta_plugin_manager_select (AnjutaPluginManager *plugin_manager,
 							  GList *plugin_handles)
 {
 	AnjutaPluginManagerPriv *priv;
+	gint plugin_count;
 	AnjutaPluginHandle *handle;
 	GtkWidget *dlg;
 	GtkTreeModel *model;
@@ -1970,8 +1971,9 @@ anjuta_plugin_manager_select (AnjutaPluginManager *plugin_manager,
 	g_return_val_if_fail (plugin_handles != NULL, NULL);
 
 	priv = plugin_manager->priv;
-	
-	if (g_list_length (plugin_handles) <= 0)
+
+	plugin_count = g_list_length (plugin_handles);	
+	if (plugin_count <= 0)
 		return NULL;
 		
 	dlg = gtk_dialog_new_with_buttons (title, GTK_WINDOW (priv->shell),
@@ -1979,8 +1981,9 @@ anjuta_plugin_manager_select (AnjutaPluginManager *plugin_manager,
 									   GTK_STOCK_CANCEL,
 									   GTK_RESPONSE_CANCEL,
 									   GTK_STOCK_OK, GTK_RESPONSE_OK,
+									   GTK_STOCK_HELP, GTK_RESPONSE_HELP,
 									   NULL);
-	gtk_window_set_default_size (GTK_WINDOW (dlg), 400, 300);
+	gtk_window_set_default_size (GTK_WINDOW (dlg), 520, 200 + (plugin_count > 6 ? 300 : plugin_count * 60));
 
 	label = gtk_label_new (description);
 	gtk_label_set_use_markup (GTK_LABEL (label), TRUE);
@@ -2017,6 +2020,8 @@ anjuta_plugin_manager_select (AnjutaPluginManager *plugin_manager,
 										PIXBUF_COLUMN);
 
 	renderer = gtk_cell_renderer_text_new ();
+	g_object_set (G_OBJECT (renderer), "wrap-mode", PANGO_WRAP_WORD_CHAR,
+	                                   "wrap-width", 450, NULL);
 	gtk_tree_view_column_pack_start (column, renderer, TRUE);
 	gtk_tree_view_column_add_attribute (column, renderer, "markup",
 										PLUGIN_COLUMN);
