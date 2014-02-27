@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-12-29 18:21+0000\n"
-"PO-Revision-Date: 2014-01-14 22:54+0200\n"
+"POT-Creation-Date: 2014-02-27 15:43+0000\n"
+"PO-Revision-Date: 2014-02-27 23:30+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -356,16 +356,16 @@ msgstr "Rodyti pridėjimo mygtuką"
 msgid "[Pp]assword.*:"
 msgstr "[Ss]slaptažodis.*:"
 
-#: ../libanjuta/anjuta-launcher.c:1165 ../plugins/gdb/utilities.c:282
+#: ../libanjuta/anjuta-launcher.c:1167 ../plugins/gdb/utilities.c:282
 #, c-format
 msgid "Cannot execute command: \"%s\""
 msgstr "Nepavyko įvykdyti komandos: „%s“"
 
-#: ../libanjuta/anjuta-launcher.c:1166
+#: ../libanjuta/anjuta-launcher.c:1168
 msgid "execvp failed"
 msgstr "execvp nepavyko"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
 msgid "Anjuta Shell"
 msgstr "Anjuta terpė"
 
@@ -396,11 +396,11 @@ msgid "Load"
 msgstr "Įkelti"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2012
+#: ../libanjuta/anjuta-plugin-manager.c:2015
 msgid "Available Plugins"
 msgstr "Prieinami įskiepiai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:995
+#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:1000
 msgid "Preferred plugins"
 msgstr "Pageidaujami įskiepiai"
 
@@ -442,63 +442,63 @@ msgstr "Joks įskiepis negali įkelti kitų %s įskiepių"
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Pasirinkite aktyvuojamą įskiepį</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2039
+#: ../libanjuta/anjuta-plugin-manager.c:2044
 msgid "Remember this selection"
 msgstr "Atsiminti šį pasirinkimą"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2377
+#: ../libanjuta/anjuta-plugin-manager.c:2382
 msgid "Profiles"
 msgstr "Profiliai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2378
+#: ../libanjuta/anjuta-plugin-manager.c:2383
 msgid "Current stack of profiles"
 msgstr "Dabartinė profilių krūva"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2388
 msgid "Available plugins"
 msgstr "Prieinami įskiepiai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2384
+#: ../libanjuta/anjuta-plugin-manager.c:2389
 msgid "Currently available plugins found in plugin paths"
 msgstr "Šiuo metų įskiepių keliuosi rasti prieinami įskiepiai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2390
+#: ../libanjuta/anjuta-plugin-manager.c:2395
 msgid "Activated plugins"
 msgstr "Aktyvuoti įskiepiai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2391
+#: ../libanjuta/anjuta-plugin-manager.c:2396
 msgid "Currently activated plugins"
 msgstr "Šiuo metu aktyvuoti įskiepiai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2397
+#: ../libanjuta/anjuta-plugin-manager.c:2402
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Anjuta apvalkalas, kuriam sukurti įskiepiai"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2405
+#: ../libanjuta/anjuta-plugin-manager.c:2410
 msgid "Anjuta Status"
 msgstr "Anjuta būsena"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2406
+#: ../libanjuta/anjuta-plugin-manager.c:2411
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "Anjuta būsena, naudojama įkeliant ir iškeliant įskiepius"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2559
+#: ../libanjuta/anjuta-plugin-manager.c:2564
 msgid "Loading:"
 msgstr "Įkeliama:"
 
-#: ../libanjuta/anjuta-preferences-dialog.c:96
+#: ../libanjuta/anjuta-preferences-dialog.c:99
 msgid "Category"
 msgstr "Kategorija"
 
 #. FIXME: Make the general page first
-#: ../libanjuta/anjuta-preferences-dialog.c:139
 #: ../libanjuta/anjuta-preferences-dialog.c:142
-#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:982
+#: ../libanjuta/anjuta-preferences-dialog.c:145
+#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:987
 #: ../src/preferences.ui.h:9
 msgid "General"
 msgstr "Bendra"
 
-#: ../libanjuta/anjuta-preferences-dialog.c:241
+#: ../libanjuta/anjuta-preferences-dialog.c:244
 msgid "Anjuta Preferences"
 msgstr "Anjuta nustatymai"
 
@@ -775,7 +775,6 @@ msgid "Source"
 msgstr "Išeities tekstas"
 
 #: ../plugins/am-project/am-project.c:124
-#| msgid "Shared Library (libtool)"
 msgid "Shared Library (Libtool)"
 msgstr "Bendro naudojimo biblioteka (Libtool)"
 
@@ -929,7 +928,6 @@ msgid "Libtool support:"
 msgstr "Libtool palaikymas:"
 
 #: ../plugins/am-project/am-properties.c:98
-#| msgid "Add support to compile shared and static libraries with libtool."
 msgid "Add support to compile shared and static libraries with Libtool."
 msgstr "Pridėti bendro naudojimo ir statinių bibliotekų palaikymą su Libtool."
 
@@ -1888,18 +1886,18 @@ msgstr "Ko_mpiliuoti (%s)"
 msgid "Co_mpile"
 msgstr "Ko_mpiliuoti"
 
-#: ../plugins/build-basic-autotools/plugin.c:2515
+#: ../plugins/build-basic-autotools/plugin.c:2517
 msgid "Build commands"
 msgstr "Kūrimo komandos"
 
 #. Translators: This is a group of build
 #. * commands which appears in pop up menus
-#: ../plugins/build-basic-autotools/plugin.c:2524
+#: ../plugins/build-basic-autotools/plugin.c:2526
 msgid "Build popup commands"
 msgstr "Kūrimo iššokančio meniu komanods"
 
-#: ../plugins/build-basic-autotools/plugin.c:2960
-#: ../plugins/build-basic-autotools/plugin.c:2968
+#: ../plugins/build-basic-autotools/plugin.c:2970
+#: ../plugins/build-basic-autotools/plugin.c:2978
 msgid "Build Autotools"
 msgstr "Sukurti Autotools"
 
@@ -2116,7 +2114,7 @@ msgstr "Autogen šablonas, naudojamas realizacijos failui"
 msgid "File to which the processed template will be written"
 msgstr "Failas, į kurį bus rašomas apdorotas šablonas"
 
-#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1268
+#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1373
 msgid ""
 "Could not find autogen version 5; please install the autogen package. You "
 "can get it from http://autogen.sourceforge.net."
@@ -2613,9 +2611,9 @@ msgid "CVS popup operations"
 msgstr "CVS iššokančio meniu veiksmai"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.plugin.in.h:1
-#: ../plugins/debug-manager/plugin.c:407 ../plugins/debug-manager/plugin.c:427
-#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:475
-#: ../plugins/debug-manager/plugin.c:507 ../plugins/debug-manager/plugin.c:538
+#: ../plugins/debug-manager/plugin.c:410 ../plugins/debug-manager/plugin.c:430
+#: ../plugins/debug-manager/plugin.c:453 ../plugins/debug-manager/plugin.c:478
+#: ../plugins/debug-manager/plugin.c:510 ../plugins/debug-manager/plugin.c:541
 msgid "Debugger"
 msgstr "Derintuvė"
 
@@ -2733,8 +2731,8 @@ msgid "Shared libraries"
 msgstr "Bendro naudojimo bibliotekos"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:934
-#: ../plugins/debug-manager/plugin.c:1026
+#: ../plugins/debug-manager/plugin.c:937
+#: ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Branduolio signalai"
 
@@ -3006,7 +3004,7 @@ msgid "Disassembly"
 msgstr "Disasembleris"
 
 #: ../plugins/debug-manager/info.c:52 ../plugins/debug-manager/info.c:101
-#: ../plugins/project-wizard/druid.c:180
+#: ../plugins/project-wizard/druid.c:188
 msgid "Information"
 msgstr "Informacija"
 
@@ -3023,202 +3021,202 @@ msgstr "Vietiniai"
 msgid "Do not display warning if not using a Debug configuration"
 msgstr "Nerodyti įspėjimo, jei nenaudojama derinimo konfigūracija"
 
-#: ../plugins/debug-manager/plugin.c:337
+#: ../plugins/debug-manager/plugin.c:340
 msgid "Debugger Log"
 msgstr "Derintuvės žurnalas"
 
-#: ../plugins/debug-manager/plugin.c:407
+#: ../plugins/debug-manager/plugin.c:410
 msgid "Started"
 msgstr "Paleista"
 
-#: ../plugins/debug-manager/plugin.c:427
+#: ../plugins/debug-manager/plugin.c:430
 msgid "Loaded"
 msgstr "Įkelta"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:446
-#: ../plugins/debug-manager/plugin.c:1038
+#: ../plugins/debug-manager/plugin.c:449
+#: ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "S_ustabdyti programą"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:447
-#: ../plugins/debug-manager/plugin.c:1040
+#: ../plugins/debug-manager/plugin.c:450
+#: ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Sustabdo programos vykdymą"
 
-#: ../plugins/debug-manager/plugin.c:450
+#: ../plugins/debug-manager/plugin.c:453
 msgid "Running…"
 msgstr "Vykdoma..."
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:471 ../plugins/debug-manager/plugin.c:954
+#: ../plugins/debug-manager/plugin.c:474 ../plugins/debug-manager/plugin.c:957
 msgid "Run/_Continue"
 msgstr "Vykdyti/_Tęsti"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:472 ../plugins/debug-manager/plugin.c:956
+#: ../plugins/debug-manager/plugin.c:475 ../plugins/debug-manager/plugin.c:959
 msgid "Continue the execution of the program"
 msgstr "Tęsti programos vykdymą"
 
-#: ../plugins/debug-manager/plugin.c:475
+#: ../plugins/debug-manager/plugin.c:478
 msgid "Stopped"
 msgstr "Sustabdyta"
 
-#: ../plugins/debug-manager/plugin.c:507
+#: ../plugins/debug-manager/plugin.c:510
 msgid "Unloaded"
 msgstr "Iškelta"
 
-#: ../plugins/debug-manager/plugin.c:547
+#: ../plugins/debug-manager/plugin.c:550
 #, c-format
 msgid "Debugger terminated with error %d: %s\n"
 msgstr "Derintuvė baigė darbą su klaida %d: %s\n"
 
-#: ../plugins/debug-manager/plugin.c:560
+#: ../plugins/debug-manager/plugin.c:563
 #, c-format
 msgid "Program has received signal: %s\n"
 msgstr "Programa gavo signalą: %s\n"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:850
+#: ../plugins/debug-manager/plugin.c:853
 msgid "_Debug"
 msgstr "_Derinti"
 
-#: ../plugins/debug-manager/plugin.c:858
+#: ../plugins/debug-manager/plugin.c:861
 msgid "_Start Debugger"
 msgstr "_Paleisti derintuvę"
 
-#: ../plugins/debug-manager/plugin.c:866
+#: ../plugins/debug-manager/plugin.c:869
 msgid "_Debug Program"
 msgstr "_Derinti programą"
 
-#: ../plugins/debug-manager/plugin.c:868
+#: ../plugins/debug-manager/plugin.c:871
 msgid "Start debugger and load the program"
 msgstr "Paleisti derintuvę ir įkelti programą"
 
-#: ../plugins/debug-manager/plugin.c:874
+#: ../plugins/debug-manager/plugin.c:877
 msgid "_Debug Process…"
 msgstr "_Derinti procesą..."
 
-#: ../plugins/debug-manager/plugin.c:876
+#: ../plugins/debug-manager/plugin.c:879
 msgid "Start debugger and attach to a running program"
 msgstr "Paleisti derintuvę ir prisikabinti prie veikiančios programos"
 
-#: ../plugins/debug-manager/plugin.c:882
+#: ../plugins/debug-manager/plugin.c:885
 msgid "Debug _Remote Target…"
 msgstr "Derinti _nutolusį tikslą..."
 
-#: ../plugins/debug-manager/plugin.c:884
+#: ../plugins/debug-manager/plugin.c:887
 msgid "Connect to a remote debugging target"
 msgstr "Prisijungti prie nutolusio derinimo tikslo"
 
-#: ../plugins/debug-manager/plugin.c:890
+#: ../plugins/debug-manager/plugin.c:893
 msgid "Stop Debugger"
 msgstr "Stabdyti derintuvę"
 
-#: ../plugins/debug-manager/plugin.c:892
+#: ../plugins/debug-manager/plugin.c:895
 msgid "Say goodbye to the debugger"
 msgstr "Pasakyti derintuvei sudie"
 
-#: ../plugins/debug-manager/plugin.c:898
+#: ../plugins/debug-manager/plugin.c:901
 msgid "Add source paths…"
 msgstr "Pridėti pradinio kodo kelius..."
 
-#: ../plugins/debug-manager/plugin.c:900
+#: ../plugins/debug-manager/plugin.c:903
 msgid "Add additional source paths"
 msgstr "Pridėti papildomus pradinio kodo kelius"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:910
-#: ../plugins/debug-manager/plugin.c:1002
+#: ../plugins/debug-manager/plugin.c:913
+#: ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "Derintuvės komanda..."
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:912
-#: ../plugins/debug-manager/plugin.c:1004
+#: ../plugins/debug-manager/plugin.c:915
+#: ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Pasirinktinė derintuvės komanda"
 
-#: ../plugins/debug-manager/plugin.c:918
-#: ../plugins/debug-manager/plugin.c:1010
+#: ../plugins/debug-manager/plugin.c:921
+#: ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Informacija"
 
-#: ../plugins/debug-manager/plugin.c:926
-#: ../plugins/debug-manager/plugin.c:1018
+#: ../plugins/debug-manager/plugin.c:929
+#: ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Bendro naudojimo bibliotekos"
 
-#: ../plugins/debug-manager/plugin.c:928
-#: ../plugins/debug-manager/plugin.c:1020
+#: ../plugins/debug-manager/plugin.c:931
+#: ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Rodyti bendro naudojimo bibliotekų susiejimus"
 
-#: ../plugins/debug-manager/plugin.c:936
-#: ../plugins/debug-manager/plugin.c:1028
+#: ../plugins/debug-manager/plugin.c:939
+#: ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Rodyti branduolio signalus"
 
-#: ../plugins/debug-manager/plugin.c:942
+#: ../plugins/debug-manager/plugin.c:945
 msgid "_Continue/Suspend"
 msgstr "_Tęsti/stabdyti"
 
-#: ../plugins/debug-manager/plugin.c:944
+#: ../plugins/debug-manager/plugin.c:947
 msgid "Continue or suspend the execution of the program"
 msgstr "Tęsti arba stabdyti programos vykdymą"
 
-#: ../plugins/debug-manager/plugin.c:962
+#: ../plugins/debug-manager/plugin.c:965
 msgid "Step _In"
 msgstr "_Įžengti"
 
-#: ../plugins/debug-manager/plugin.c:964
+#: ../plugins/debug-manager/plugin.c:967
 msgid "Single step into function"
 msgstr "Vienas žingsnis į funkciją"
 
-#: ../plugins/debug-manager/plugin.c:970
+#: ../plugins/debug-manager/plugin.c:973
 msgid "Step O_ver"
 msgstr "Per_žengti"
 
-#: ../plugins/debug-manager/plugin.c:972
+#: ../plugins/debug-manager/plugin.c:975
 msgid "Single step over function"
 msgstr "Vienas žingsnis per funkciją"
 
-#: ../plugins/debug-manager/plugin.c:978
+#: ../plugins/debug-manager/plugin.c:981
 msgid "Step _Out"
 msgstr "_Išžengti"
 
-#: ../plugins/debug-manager/plugin.c:980
+#: ../plugins/debug-manager/plugin.c:983
 msgid "Single step out of function"
 msgstr "Vienas žingsnis iš funkcijos"
 
-#: ../plugins/debug-manager/plugin.c:986
+#: ../plugins/debug-manager/plugin.c:989
 msgid "_Run to Cursor"
 msgstr "_Vykdyti iki žymiklio"
 
-#: ../plugins/debug-manager/plugin.c:988
+#: ../plugins/debug-manager/plugin.c:991
 msgid "Run to the cursor"
 msgstr "Vykdyti iki žymiklio"
 
-#: ../plugins/debug-manager/plugin.c:994
+#: ../plugins/debug-manager/plugin.c:997
 msgid "_Run from Cursor"
 msgstr "_Vykdyti nuo žymiklio"
 
-#: ../plugins/debug-manager/plugin.c:996
+#: ../plugins/debug-manager/plugin.c:999
 msgid "Run from the cursor"
 msgstr "Vykdyti nuo žymiklio"
 
-#: ../plugins/debug-manager/plugin.c:1080
-#: ../plugins/debug-manager/plugin.c:1086
-#: ../plugins/debug-manager/plugin.c:1092
-#: ../plugins/debug-manager/plugin.c:1098
+#: ../plugins/debug-manager/plugin.c:1083
+#: ../plugins/debug-manager/plugin.c:1089
+#: ../plugins/debug-manager/plugin.c:1095
+#: ../plugins/debug-manager/plugin.c:1101
 msgid "Debugger operations"
 msgstr "Derintuvės veiksmai"
 
@@ -3341,7 +3339,7 @@ msgstr "Rėmas"
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
 #: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
-#: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:679
+#: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Failas"
 
@@ -4018,7 +4016,7 @@ msgid "Search using regular expressions"
 msgstr "Ieškoti naudojant reguliarias išraiškas"
 
 #: ../plugins/document-manager/plugin.c:295
-#: ../plugins/indentation-c-style/plugin.c:217
+#: ../plugins/indentation-c-style/plugin.c:218
 #: ../plugins/indentation-python-style/plugin.c:200
 #: ../plugins/language-support-cpp-java/plugin.c:1192
 #: ../plugins/language-support-python/plugin.c:377 ../src/anjuta-actions.h:30
@@ -4072,7 +4070,7 @@ msgstr "Iškirpti pažymėtą tekstą redaktoriuje į iškarpinę"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:547
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:548
 msgid "_Copy"
 msgstr "K_opijuoti"
 
@@ -4080,7 +4078,7 @@ msgstr "K_opijuoti"
 msgid "Copy the selected text to the clipboard"
 msgstr "Kopijuoti pažymėtą tekstą į iškarpinę"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:555
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:556
 msgid "_Paste"
 msgstr "_Įdėti"
 
@@ -4300,17 +4298,17 @@ msgstr "Auto-įrašymas nepavyko failui %s"
 msgid "Autosave completed"
 msgstr "Auto-įrašymas nepavyko"
 
-#: ../plugins/document-manager/search-box.c:529
+#: ../plugins/document-manager/search-box.c:520
 #, c-format
 msgid "Search for \"%s\" reached the end and was continued at the top."
 msgstr "„%s“ paieška pasiekė pabaigą ir buvo pratęsta nuo viršaus."
 
-#: ../plugins/document-manager/search-box.c:534
+#: ../plugins/document-manager/search-box.c:525
 #, c-format
 msgid "Search for \"%s\" reached top and was continued at the bottom."
 msgstr "„%s“ paieška pasiekė viršų ir buvo pratęsta nuo apačios."
 
-#: ../plugins/document-manager/search-box.c:544
+#: ../plugins/document-manager/search-box.c:535
 #, c-format
 msgid ""
 "Search for \"%s\" reached the end and was continued at the top but no new "
@@ -4319,7 +4317,7 @@ msgstr ""
 "„%s“ paieška pasiekė pabaigą ir buvo pratęsta nuo viršaus, bet nerasta naujo "
 "atitikmens."
 
-#: ../plugins/document-manager/search-box.c:549
+#: ../plugins/document-manager/search-box.c:540
 #, c-format
 msgid ""
 "Search for \"%s\" reached top and was continued at the bottom but no new "
@@ -4328,17 +4326,17 @@ msgstr ""
 "„%s“ paieška pasiekė viršų ir buvo pratęsta nuo apačios, bet nerasta naujo "
 "atitikmens."
 
-#: ../plugins/document-manager/search-box.c:925
+#: ../plugins/document-manager/search-box.c:917
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
 "Naudokite piktogramos „Rasti“ kontekstinį meniu, jei norite daugiau paieškos "
 "parinkčių"
 
-#: ../plugins/document-manager/search-box.c:986
+#: ../plugins/document-manager/search-box.c:988
 msgid "Replace"
 msgstr "Pakeisti"
 
-#: ../plugins/document-manager/search-box.c:991
+#: ../plugins/document-manager/search-box.c:993
 msgid "Replace all"
 msgstr "Pakeisti visus"
 
@@ -4637,12 +4635,12 @@ msgstr "Filtras"
 msgid "Loading..."
 msgstr "Įkeliama..."
 
-#: ../plugins/file-manager/file-model.c:706
+#: ../plugins/file-manager/file-model.c:708
 #: ../plugins/file-manager/file-view.c:892
 msgid "Base Path"
 msgstr "Bazinis kelias"
 
-#: ../plugins/file-manager/file-model.c:707
+#: ../plugins/file-manager/file-model.c:709
 #: ../plugins/file-manager/file-view.c:893
 msgid "GFile representing the top-most path displayed"
 msgstr "GFile, reprezentuojantis aukščiausią rodomą kelią"
@@ -4799,60 +4797,60 @@ msgstr ""
 "Nepavyksta inicializuoti derintuvės.\n"
 "Įsitikinkite, kad Anjuta yra tvarkingai įdiegta."
 
-#: ../plugins/gdb/debugger.c:1130
+#: ../plugins/gdb/debugger.c:1131
 msgid "Getting ready to start debugging session…\n"
 msgstr "Ruošiamasi pradėti derinimo seansą...\n"
 
-#: ../plugins/gdb/debugger.c:1136
+#: ../plugins/gdb/debugger.c:1137
 msgid "Loading Executable: "
 msgstr "Įkeliamas vykdomasis failas:"
 
-#: ../plugins/gdb/debugger.c:1145
+#: ../plugins/gdb/debugger.c:1146
 msgid "No executable specified.\n"
 msgstr "Nenurodytas vykdomasis failas.\n"
 
-#: ../plugins/gdb/debugger.c:1148
+#: ../plugins/gdb/debugger.c:1149
 msgid "Open an executable or attach to a process to start debugging.\n"
 msgstr ""
 "Atverkite vykdomąjį failą arba prisikabinkite prie proceso derinimui "
 "pradėti.\n"
 
-#: ../plugins/gdb/debugger.c:1157
+#: ../plugins/gdb/debugger.c:1158
 msgid "There was an error whilst launching the debugger.\n"
 msgstr "Kilo klaida paleidžiant derintuvę.\n"
 
-#: ../plugins/gdb/debugger.c:1161
+#: ../plugins/gdb/debugger.c:1162
 msgid "Make sure 'gdb' is installed on the system.\n"
 msgstr "Įsitikinkite, kad „gdb“ yra įdiegtas sistemoje.\n"
 
-#: ../plugins/gdb/debugger.c:1482
+#: ../plugins/gdb/debugger.c:1483
 msgid "Program exited normally\n"
 msgstr "Programa baigė darbą įprastai\n"
 
-#: ../plugins/gdb/debugger.c:1493
+#: ../plugins/gdb/debugger.c:1494
 #, c-format
 msgid "Program exited with error code %s\n"
 msgstr "Programa baigė darbą su klaidos kodu %s\n"
 
 #. The program has reached one breakpoint and will stop
-#: ../plugins/gdb/debugger.c:1508
+#: ../plugins/gdb/debugger.c:1509
 #, c-format
 msgid "Breakpoint number %s hit\n"
 msgstr "Stabdos taškas nr. %s pasiektas\n"
 
-#: ../plugins/gdb/debugger.c:1517
+#: ../plugins/gdb/debugger.c:1518
 msgid "Function finished\n"
 msgstr "Funkcija baigėsi\n"
 
-#: ../plugins/gdb/debugger.c:1523
+#: ../plugins/gdb/debugger.c:1524
 msgid "Stepping finished\n"
 msgstr "Žingsniavimas baigėsi\n"
 
-#: ../plugins/gdb/debugger.c:1529
+#: ../plugins/gdb/debugger.c:1530
 msgid "Location reached\n"
 msgstr "Vieta pasiekta\n"
 
-#: ../plugins/gdb/debugger.c:1926
+#: ../plugins/gdb/debugger.c:1927
 msgid ""
 "The program is attached.\n"
 "Do you still want to stop the debugger?"
@@ -4860,7 +4858,7 @@ msgstr ""
 "Programa yra prikabinta.\n"
 "Ar vis dar norite stabdyti derintuvę?"
 
-#: ../plugins/gdb/debugger.c:1929
+#: ../plugins/gdb/debugger.c:1930
 msgid ""
 "The program is running.\n"
 "Do you still want to stop the debugger?"
@@ -4870,7 +4868,7 @@ msgstr ""
 
 #. The %s argument is an error message returned by gdb.
 #. * It is something like, "No such file or directory"
-#: ../plugins/gdb/debugger.c:2087
+#: ../plugins/gdb/debugger.c:2088
 #, c-format
 msgid ""
 "Unable to connect to remote target, %s\n"
@@ -4879,20 +4877,20 @@ msgstr ""
 "Nepavyksta prisijungti prie nutolusio tikslo, %s.\n"
 "Ar norite mėginti vėl?"
 
-#: ../plugins/gdb/debugger.c:2105
+#: ../plugins/gdb/debugger.c:2106
 msgid "Debugger connected\n"
 msgstr "Derintuvė prisijungė\n"
 
-#: ../plugins/gdb/debugger.c:2179
+#: ../plugins/gdb/debugger.c:2180
 msgid "Program attached\n"
 msgstr "Programa prikabinta\n"
 
-#: ../plugins/gdb/debugger.c:2200
+#: ../plugins/gdb/debugger.c:2201
 #, c-format
 msgid "Attaching to process: %d…\n"
 msgstr "Prisikabinama prie proceso: %d...\n"
 
-#: ../plugins/gdb/debugger.c:2226
+#: ../plugins/gdb/debugger.c:2227
 msgid ""
 "A process is already running.\n"
 "Would you like to terminate it and attach the new process?"
@@ -4900,37 +4898,37 @@ msgstr ""
 "Procesas jau veikia.\n"
 "Ar norite nutraukti jį ir prisikabinti prie naujo proceso?"
 
-#: ../plugins/gdb/debugger.c:2243
+#: ../plugins/gdb/debugger.c:2244
 msgid "Anjuta is unable to attach to itself."
 msgstr "Anjuta negali prisikabinti prie savęs."
 
-#: ../plugins/gdb/debugger.c:2293
+#: ../plugins/gdb/debugger.c:2294
 msgid "Program terminated\n"
 msgstr "Programa nutraukta\n"
 
-#: ../plugins/gdb/debugger.c:2308
+#: ../plugins/gdb/debugger.c:2309
 msgid "Program detached\n"
 msgstr "Programa atkabinta\n"
 
-#: ../plugins/gdb/debugger.c:2328
+#: ../plugins/gdb/debugger.c:2329
 #, c-format
 msgid "Detaching the process…\n"
 msgstr "Atsikabinama nuo proceso...\n"
 
-#: ../plugins/gdb/debugger.c:2351
+#: ../plugins/gdb/debugger.c:2352
 msgid "Interrupting the process\n"
 msgstr "Pertraukiamas procesas\n"
 
-#: ../plugins/gdb/debugger.c:3925
+#: ../plugins/gdb/debugger.c:3926
 msgid "more children"
 msgstr "daugiau vaikų"
 
-#: ../plugins/gdb/debugger.c:4178
+#: ../plugins/gdb/debugger.c:4179
 #, c-format
 msgid "Sending signal %s to the process: %d"
 msgstr "Siunčiamas signalas %s procesui: %d"
 
-#: ../plugins/gdb/debugger.c:4204
+#: ../plugins/gdb/debugger.c:4205
 msgid "Error whilst signaling the process."
 msgstr "Klaida signalizuojant procesui."
 
@@ -5925,23 +5923,23 @@ msgid "Parenthesis indentation"
 msgstr "Skliaustų įtrauka"
 
 #. ANJUTA_STOCK_AUTOINDENT,
-#: ../plugins/indentation-c-style/plugin.c:223
+#: ../plugins/indentation-c-style/plugin.c:224
 #: ../plugins/indentation-python-style/plugin.c:206
 msgid "Auto-Indent"
 msgstr "Auto-įtrauka"
 
-#: ../plugins/indentation-c-style/plugin.c:224
+#: ../plugins/indentation-c-style/plugin.c:225
 #: ../plugins/indentation-python-style/plugin.c:207
 msgid "Auto-indent current line or selection based on indentation settings"
 msgstr ""
 "Automatiškai įtraukti dabartinę eilutę ar žymėjimą pagal įtraukos nustatymus"
 
-#: ../plugins/indentation-c-style/plugin.c:264
+#: ../plugins/indentation-c-style/plugin.c:265
 msgid "C Indentation"
 msgstr "C įtrauka"
 
-#: ../plugins/indentation-c-style/plugin.c:362
-#: ../plugins/indentation-c-style/plugin.c:371
+#: ../plugins/indentation-c-style/plugin.c:363
+#: ../plugins/indentation-c-style/plugin.c:372
 #: ../plugins/indentation-python-style/plugin.c:324
 #: ../plugins/indentation-python-style/plugin.c:333
 msgid "Indentation"
@@ -6130,17 +6128,14 @@ msgid "JS Find dirs"
 msgstr "JS rasti katalogus"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-#| msgid "Gir repository's directory: "
 msgid "Gir repository's directory:"
 msgstr "Gir saugyklos katalogas:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-#| msgid "Gjs repository's directory: "
 msgid "Gjs repository's directory:"
 msgstr "Gjs saugyklos katalogas:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
-#| msgid "Min character for completion: "
 msgid "Min character for completion:"
 msgstr "Mažiausiai simbolių užbaigimui:"
 
@@ -6936,7 +6931,7 @@ msgstr "Atnaujinti projekto rodinį..."
 
 #: ../plugins/project-manager/plugin.c:1326
 #: ../plugins/project-manager/plugin.c:1448
-#: ../plugins/project-manager/plugin.c:1627
+#: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
 #: ../plugins/symbol-db/plugin.c:2160
@@ -6948,24 +6943,24 @@ msgstr "Projektas"
 msgid "Loading project: %s"
 msgstr "Įkeliamas projektas: %s"
 
-#: ../plugins/project-manager/plugin.c:1540
+#: ../plugins/project-manager/plugin.c:1541
 #, c-format
 msgid "Error closing project: %s"
 msgstr "Klaida užveriant projektą: %s"
 
-#: ../plugins/project-manager/plugin.c:1606
+#: ../plugins/project-manager/plugin.c:1607
 msgid "Project manager actions"
 msgstr "Projektų valdyklės veiksmai"
 
-#: ../plugins/project-manager/plugin.c:1614
+#: ../plugins/project-manager/plugin.c:1615
 msgid "Project manager popup actions"
 msgstr "Projektų valdyklės iššokančio meniu veiksmai"
 
-#: ../plugins/project-manager/plugin.c:2479
+#: ../plugins/project-manager/plugin.c:2480
 msgid "Initializing Project…"
 msgstr "Inicializuojamas projektas..."
 
-#: ../plugins/project-manager/plugin.c:2482
+#: ../plugins/project-manager/plugin.c:2483
 msgid "Project Loaded"
 msgstr "Projektas įkeltas"
 
@@ -7091,7 +7086,7 @@ msgid "Select a project type"
 msgstr "Pasirinkite projekto tipą"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
-#: ../plugins/project-wizard/druid.c:192
+#: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr "Klaida"
 
@@ -7103,31 +7098,31 @@ msgstr "Detalės"
 msgid "Summary"
 msgstr "Santrauka"
 
-#: ../plugins/project-wizard/druid.c:184 ../plugins/project-wizard/druid.c:188
+#: ../plugins/project-wizard/druid.c:192 ../plugins/project-wizard/druid.c:196
 msgid "Warning"
 msgstr "Įspėjimas"
 
-#: ../plugins/project-wizard/druid.c:195
+#: ../plugins/project-wizard/druid.c:203
 msgid "Message"
 msgstr "Pranešimas"
 
-#: ../plugins/project-wizard/druid.c:276
+#: ../plugins/project-wizard/druid.c:284
 msgid "Confirm the following information:"
 msgstr "Patvirtinkite šią informaciją:"
 
 #. The project type is translated too, it is something like
 #. * generic, GNOME applet, Makefile project...
-#: ../plugins/project-wizard/druid.c:280
+#: ../plugins/project-wizard/druid.c:288
 #, c-format
 msgid "Project Type: %s\n"
 msgstr "Projekto tipas: %s\n"
 
-#: ../plugins/project-wizard/druid.c:471
+#: ../plugins/project-wizard/druid.c:479
 #, c-format
 msgid "Unable to find any project template in %s"
 msgstr "Nepavyksta rasti projekto šablono vietoje %s"
 
-#: ../plugins/project-wizard/druid.c:704
+#: ../plugins/project-wizard/druid.c:712
 #, c-format
 msgid ""
 "\n"
@@ -7136,7 +7131,7 @@ msgstr ""
 "\n"
 "Laukas „%s“ yra privalomas. Užpildykite jį."
 
-#: ../plugins/project-wizard/druid.c:719
+#: ../plugins/project-wizard/druid.c:727
 #, c-format
 msgid ""
 "Field \"%s\" must contains only letters, digits or the following characters "
@@ -7146,7 +7141,7 @@ msgstr ""
 "Laukas „%s“ turi turėti tik raides, skaitmenis arba simbolius „#$:%%+,."
 "=@^_`~“. Be to, negali būti brūkšnio priekyje. Pataisykite."
 
-#: ../plugins/project-wizard/druid.c:724
+#: ../plugins/project-wizard/druid.c:732
 #, c-format
 msgid ""
 "Field \"%s\" must contains only letters, digits, the following characters \"#"
@@ -7156,7 +7151,7 @@ msgstr ""
 "Laukas „%s“ turi turėti tik raides, skaitmenis ir simbolius „#$:%%+,.=@^_`~“ "
 "arba katalogų skirtukus. Be to, negali būti brūkšnio priekyje. Pataisykite."
 
-#: ../plugins/project-wizard/druid.c:729
+#: ../plugins/project-wizard/druid.c:737
 #, c-format
 msgid ""
 "Field \"%s\" must contains only ASCII printable characters, no accentuated "
@@ -7165,12 +7160,12 @@ msgstr ""
 "Laukas „%s“ turi turėti tik ASCII spausdinamus simbolius, jokių simbolių su "
 "diakritiniais ženklais ir pan. Pataisykite."
 
-#: ../plugins/project-wizard/druid.c:734
+#: ../plugins/project-wizard/druid.c:742
 #, c-format
 msgid "Unknown error."
 msgstr "Nežinoma klaida."
 
-#: ../plugins/project-wizard/druid.c:761
+#: ../plugins/project-wizard/druid.c:769
 #, c-format
 msgid ""
 "Directory \"%s\" is not empty. Project creation could fail if some files "
@@ -7179,20 +7174,20 @@ msgstr ""
 "Katalogas „%s“ nėra tuščias. Projekto sukūrimas gali nepavykti, jei kai "
 "kurie failai negalės būti įrašyti. Ar norite tęsti?"
 
-#: ../plugins/project-wizard/druid.c:763
+#: ../plugins/project-wizard/druid.c:771
 #, c-format
 msgid "File \"%s\" already exists. Do you want to overwrite it?"
 msgstr "Failas „%s“ jau yra. Ar norite jį perrašyti?"
 
-#: ../plugins/project-wizard/druid.c:796
+#: ../plugins/project-wizard/druid.c:804
 msgid "Invalid entry"
 msgstr "Netinkama įvestis"
 
-#: ../plugins/project-wizard/druid.c:806
+#: ../plugins/project-wizard/druid.c:814
 msgid "Dubious entry"
 msgstr "Abejotina įvestis"
 
-#: ../plugins/project-wizard/druid.c:958
+#: ../plugins/project-wizard/druid.c:966
 #, c-format
 msgid ""
 "\n"
@@ -7201,7 +7196,7 @@ msgstr ""
 "\n"
 "Trūksta programų: %s."
 
-#: ../plugins/project-wizard/druid.c:969
+#: ../plugins/project-wizard/druid.c:977
 #, c-format
 msgid ""
 "\n"
@@ -7210,7 +7205,7 @@ msgstr ""
 "\n"
 "Trūksta paketų: %s."
 
-#: ../plugins/project-wizard/druid.c:978
+#: ../plugins/project-wizard/druid.c:986
 msgid ""
 "Some important programs or development packages required to build this "
 "project are missing. Please make sure they are installed properly before "
@@ -7220,14 +7215,14 @@ msgstr ""
 "šio projekto sukūrimui. Įsitikinkite, kad jie yra tvarkingai įdiegti "
 "priešgeneruodami projektą.\n"
 
-#: ../plugins/project-wizard/druid.c:987
+#: ../plugins/project-wizard/druid.c:995
 msgid "Install missing packages"
 msgstr "Įdiegti trūkstamus paketus"
 
 #. Translators: Application Manager is the program used to install
 #. * new application like apt on Ubuntu, yum on Fedora, zypper on
 #. * OpenSuSE and emerge on Gentoo
-#: ../plugins/project-wizard/druid.c:999
+#: ../plugins/project-wizard/druid.c:1007
 msgid ""
 "The missing programs are usually part of some distribution packages and can "
 "be searched for in your Application Manager. Similarly, the development "
@@ -7242,7 +7237,7 @@ msgstr ""
 "pateikia ir leidžia jų pagrindu kurti projektus. Jų pavadinimai dažniausiai "
 "baigiasi „-dev“ arba „-devel“ ir juos galima rasti programų tvarkyklėje."
 
-#: ../plugins/project-wizard/druid.c:1007
+#: ../plugins/project-wizard/druid.c:1015
 msgid "Missing components"
 msgstr "Trūkstami komponentai"
 
@@ -7280,6 +7275,37 @@ msgstr "Kuriamas %s ... %s"
 #, c-format
 msgid "Executing: %s"
 msgstr "Vykdoma: %s"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:1
+msgid "Directory where the new projects are created by default"
+msgstr "Katalogas, kuriame numatytai bus kuriami nauji projektai"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:2
+msgid ""
+"If empty, the user home directory is used. If the path is relative, it is "
+"relative to the home directory."
+msgstr ""
+"Jei tuščia, bus naudojamas naudotojo namų katalogas. Jei kelias yra "
+"santykinis, jis yra santykinis namų katalogui."
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
+#| msgid "Create a new project"
+msgid "Default user name used in new project"
+msgstr "Numatytasis naudotojo vardas naujam projektui"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
+msgid "If empty, the current user name is used."
+msgstr "Jei tuščia, naudojamas dabartinis vardas."
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
+#| msgid "Create a new project"
+msgid "Default email used in new project"
+msgstr "Numatytasis el. paštas naujam projektui"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
+msgid "If empty, current login and machine name is used."
+msgstr ""
+"Jei tuščia, naudojamas dabartinis prisijungimo vardas ir kompiuterio vardas"
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -8373,13 +8399,11 @@ msgstr "Kalbos"
 
 #. Insert the Add Snippet menu item
 #: ../plugins/snippets-manager/snippets-browser.c:809
-#| msgid "Add Snippet …"
 msgid "Add Snippet…"
 msgstr "Pridėti iškarpą…"
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
-#| msgid "Add Snippets Group …"
 msgid "Add Snippets Group…"
 msgstr "Pridėti iškarpų grupę…"
 
@@ -8569,7 +8593,7 @@ msgid "Right margin position in characters"
 msgstr "Dešinės paraštės padėtis simboliais"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:15
-#: ../src/anjuta-window.c:687 ../src/anjuta-window.c:692
+#: ../src/anjuta-window.c:692 ../src/anjuta-window.c:697
 msgid "View"
 msgstr "Rodinys"
 
@@ -9405,7 +9429,7 @@ msgstr "SymbolDB iššokančio meniu veiksmai"
 msgid "SymbolDb menu actions"
 msgstr "SymbolDb meniu veiksmai"
 
-#: ../plugins/symbol-db/plugin.c:2567 ../plugins/symbol-db/plugin.c:2585
+#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Simbolių duomenų bazė"
@@ -9423,8 +9447,8 @@ msgid "Symbol"
 msgstr "Simbolis"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:733 ../plugins/terminal/terminal.c:918
-#: ../plugins/terminal/terminal.c:971
+#: ../plugins/terminal/terminal.c:737 ../plugins/terminal/terminal.c:922
+#: ../plugins/terminal/terminal.c:975
 msgid "Terminal"
 msgstr "Terminalas"
 
@@ -9444,23 +9468,23 @@ msgstr "Naudoti GNOME terminalo profilį:"
 msgid "Terminal options"
 msgstr "Terminalo parinktys"
 
-#: ../plugins/terminal/terminal.c:564
+#: ../plugins/terminal/terminal.c:565
 msgid "Ctrl-C"
 msgstr "Vald-C"
 
-#: ../plugins/terminal/terminal.c:572
+#: ../plugins/terminal/terminal.c:573
 msgid "Ctrl-X"
 msgstr "Vald-X"
 
-#: ../plugins/terminal/terminal.c:580
+#: ../plugins/terminal/terminal.c:581
 msgid "Ctrl-Z"
 msgstr "Vald-Z"
 
-#: ../plugins/terminal/terminal.c:715
+#: ../plugins/terminal/terminal.c:719
 msgid "terminal operations"
 msgstr "terminalo veiksmai"
 
-#: ../plugins/terminal/terminal.c:850
+#: ../plugins/terminal/terminal.c:854
 #, c-format
 msgid "Unable to execute command"
 msgstr "Nepavyksta įvykdyti komandos"
@@ -9622,7 +9646,7 @@ msgstr "Nepavyko sukurti buferio: komanda nutraukta"
 msgid "No document currently open: command aborted"
 msgstr "Šiuo metu nėra atverto dokumento: komanda atšaukta"
 
-#: ../plugins/tools/execute.c:1019
+#: ../plugins/tools/execute.c:1025
 #, c-format
 msgid "Unable to open input file %s, command aborted"
 msgstr "Nepavyko atverti įvesties failo %s, komanda nutraukta"
@@ -9925,58 +9949,58 @@ msgstr "Apie išorinius _įskiepius"
 msgid "About third-party Anjuta plugins"
 msgstr "Apie trečių šalių Anjuta įskiepius"
 
-#: ../src/anjuta-application.c:363
+#: ../src/anjuta-application.c:374
 msgid "Specify the size and location of the main window"
 msgstr "Nurodykite pagrindinio lango padėtį ir dydį"
 
 #. This is the format you can specify the size andposition
 #. * of the window on command line
-#: ../src/anjuta-application.c:366
+#: ../src/anjuta-application.c:377
 msgid "WIDTHxHEIGHT+XOFF+YOFF"
 msgstr "PLOTISxAUKŠTISxXPOSLxYPOSL"
 
-#: ../src/anjuta-application.c:371
+#: ../src/anjuta-application.c:382
 msgid "Do not show the splash screen"
 msgstr "Nerodyti ekrano užsklandos"
 
-#: ../src/anjuta-application.c:377
+#: ../src/anjuta-application.c:388
 msgid "Start a new instance and do not open the file in an existing instance"
 msgstr "Paleisti naują ir neatverti failo esamame"
 
-#: ../src/anjuta-application.c:383
+#: ../src/anjuta-application.c:394
 msgid "Do not open last session on startup"
 msgstr "Neatverti paskutinio seanso paleidžiant"
 
-#: ../src/anjuta-application.c:389
+#: ../src/anjuta-application.c:400
 msgid "Do not open last project and files on startup"
 msgstr "Neatverti paskutinio projekto ir failų paleidžiant"
 
-#: ../src/anjuta-application.c:395
+#: ../src/anjuta-application.c:406
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
 msgstr "Išjungti Anjuta tvarkingai, atlaisvinant visus resursus (derinimui)"
 
-#: ../src/anjuta-application.c:401
+#: ../src/anjuta-application.c:412
 msgid "Display program version"
 msgstr "Rodyti programos versiją"
 
-#: ../src/anjuta-application.c:407
+#: ../src/anjuta-application.c:418
 msgid "Specify another profile"
 msgstr "Nurodykite kitą profilį"
 
-#: ../src/anjuta-application.c:408
+#: ../src/anjuta-application.c:419
 msgid "PROFILE_FILE"
 msgstr "PROFILE_FILE"
 
-#: ../src/anjuta-application.c:425
+#: ../src/anjuta-application.c:436
 msgid "- Integrated Development Environment"
 msgstr "- Integruota programavimo aplinka"
 
-#: ../src/anjuta-application.c:764
+#: ../src/anjuta-application.c:776
 #, c-format
 msgid "Invalid profile %s: %s"
 msgstr "Netinkamas profilis %s: %s"
 
-#: ../src/anjuta-application.c:818
+#: ../src/anjuta-application.c:830
 msgid "Loaded Session…"
 msgstr "Įkeltas seansas..."
 
@@ -9984,23 +10008,23 @@ msgstr "Įkeltas seansas..."
 msgid "_New Window"
 msgstr "_Naujas langas"
 
-#: ../src/anjuta-window.c:683
+#: ../src/anjuta-window.c:688
 msgid "Edit"
 msgstr "Keisti"
 
-#: ../src/anjuta-window.c:696
+#: ../src/anjuta-window.c:701
 msgid "Help"
 msgstr "Žinynas"
 
-#: ../src/anjuta-window.c:993
+#: ../src/anjuta-window.c:998
 msgid "Installed plugins"
 msgstr "Įdiegti įskiepiai"
 
-#: ../src/anjuta-window.c:997
+#: ../src/anjuta-window.c:1002
 msgid "Shortcuts"
 msgstr "Trumpiniai"
 
-#: ../src/anjuta-window.c:1069
+#: ../src/anjuta-window.c:1074
 #, c-format
 msgid "Value doesn't exist"
 msgstr "Vertės nėra"
@@ -10074,4 +10098,3 @@ msgstr "Tik piktogramos"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Tik tekstas"
-
