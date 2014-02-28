@@ -62,15 +62,20 @@
 #define TERM_LEGACY_SCHEMA				"org.gnome.Terminal.Legacy.Settings"
 #define TERM_PROFILE_DEFAULT			"default"
 
+/* Gnome Desktop GSettings Schemas and Keys */
+#define GNOME_DESKTOP_INTERFACE_SCHEMA			"org.gnome.desktop.interface"
+#define GNOME_MONOSPACE_FONT					"monospace-font-name"
+
 /* Anjuta Terminal Plugin Schema and Keys */
 #define PREF_SCHEMA                           "org.gnome.anjuta.terminal"
-#define PREFS_TERMINAL_PROFILE_USE_DEFAULT    "terminal-default-profile"
+#define PREFS_TERMINAL_PROFILE_USE_DEFAULT    "use-default-profile"
 #define PREFS_TERMINAL_PROFILE                "terminal-profile"
 
 #include <vte/vte.h>
 #include <pwd.h>
 #include <gtk/gtk.h>
 #include <libanjuta/anjuta-plugin.h>
+#include "terminal-schemas.h"
 
 extern GType terminal_plugin_get_type (GTypeModule *module);
 #define ANJUTA_PLUGIN_TERMINAL_TYPE         (terminal_plugin_get_type (NULL))
@@ -124,8 +129,151 @@ get_profile_key (const gchar *profile, const gchar *key)
 }
 #endif
 
+
 static void
 terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin *term_plugin)
+{
+	gchar* uuid;
+	gchar* path;
+	GSettings* profiles_list;
+	GSettings* profile_settings;
+	GSettings* interface_settings;
+	gboolean bool_val;
+	gchar* str_val;
+	gint i_val;
+	GdkColor color[2];
+	GdkColor* foreground;
+	GdkColor* background;
+
+	g_return_if_fail (settings != NULL);
+
+	profiles_list = g_settings_new (TERMINAL_PROFILES_LIST_SCHEMA);
+
+	/* Get selected profile */
+	bool_val = g_settings_get_boolean (settings, PREFS_TERMINAL_PROFILE_USE_DEFAULT);
+	if (bool_val) {
+		// get the UUID for default from org.gnome.Terminal.ProfilesList
+		uuid = g_settings_get_string (profiles_list, TERMINAL_SETTINGS_LIST_DEFAULT_KEY);
+		g_debug ("Using default profile with UUID: %s", uuid);
+	} else {
+		// get the UUID for the selected profile from the combo box
+		uuid = g_settings_get_string (settings, PREFS_TERMINAL_PROFILE);
+		g_debug ("Using selected profile with UUID: %s", uuid);
+	}
+	path = g_strdup_printf ("%s:%s/", TERMINAL_PROFILES_PATH_PREFIX, uuid);
+	g_debug ("Selected path: %s", path);
+	profile_settings = g_settings_new_with_path (TERMINAL_PROFILE_SCHEMA, path);
+	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_VISIBLE_NAME_KEY);
+	g_debug ("The selected profile is %s", str_val);
+	g_free (str_val);
+	g_free (uuid);
+	g_free (path);
+
+	/* Always autohide mouse */
+	vte_terminal_set_mouse_autohide (term, TRUE);
+
+	/* Set terminal font */
+	bool_val = g_settings_get_boolean (profile_settings, TERMINAL_PROFILE_USE_SYSTEM_FONT_KEY);
+	if (bool_val)
+	{
+		interface_settings = g_settings_new (GNOME_DESKTOP_INTERFACE_SCHEMA);
+		str_val = g_settings_get_string (interface_settings, GNOME_MONOSPACE_FONT);
+		g_debug ("Use system font: %s", str_val);
+		g_object_unref (interface_settings);
+	} else
+	{
+		str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_FONT_KEY);
+		g_debug("Use selected font: %s", str_val);
+	}
+	if (str_val != NULL)
+		vte_terminal_set_font_from_string (term, str_val);
+
+	/* Set cursor blink */
+	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_CURSOR_BLINK_MODE_KEY);
+	if (g_strcmp0 (str_val, "system"))
+		vte_terminal_set_cursor_blink_mode (term, VTE_CURSOR_BLINK_SYSTEM);
+	else if (g_strcmp0 (str_val, "on"))
+		vte_terminal_set_cursor_blink_mode (term, VTE_CURSOR_BLINK_ON);
+	else if (g_strcmp0 (str_val, "off"))
+		vte_terminal_set_cursor_blink_mode (term, VTE_CURSOR_BLINK_OFF);
+	g_free (str_val);
+
+	/* Set audible bell */
+	bool_val = g_settings_get_boolean (profile_settings, TERMINAL_PROFILE_AUDIBLE_BELL_KEY);
+	vte_terminal_set_audible_bell (term, bool_val);
+
+	/* Set scrollback */
+	i_val = g_settings_get_uint (profile_settings, TERMINAL_PROFILE_SCROLLBACK_LINES_KEY);
+	vte_terminal_set_scrollback_lines (term, (i_val == 0) ? 500 : i_val);
+
+	/* Set scroll on keystroke */
+	bool_val = g_settings_get_boolean (profile_settings, TERMINAL_PROFILE_SCROLL_ON_KEYSTROKE_KEY);
+	vte_terminal_set_scroll_on_keystroke (term, bool_val);
+
+	/* Scroll on output */
+	bool_val = g_settings_get_boolean (profile_settings, TERMINAL_PROFILE_SCROLL_ON_OUTPUT_KEY);
+	vte_terminal_set_scroll_on_output (term, bool_val);
+
+	/* Set word characters */
+	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_WORD_CHARS_KEY);
+	if (str_val != NULL)
+		vte_terminal_set_word_chars (term, str_val);
+	g_free (str_val);
+
+	/* Set backspace key */
+	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_BACKSPACE_BINDING_KEY);
+	if (str_val != NULL)
+	{
+		if (!g_strcmp0 (str_val, "ascii-del"))
+			vte_terminal_set_backspace_binding (term, VTE_ERASE_ASCII_DELETE);
+		else if (!g_strcmp0 (str_val, "escape-sequence"))
+			vte_terminal_set_backspace_binding (term, VTE_ERASE_DELETE_SEQUENCE);
+		else if (!g_strcmp0 (str_val, "control-h"))
+			vte_terminal_set_backspace_binding (term, VTE_ERASE_ASCII_BACKSPACE);
+		else
+			vte_terminal_set_backspace_binding (term, VTE_ERASE_AUTO);
+	}
+	g_free (str_val);
+
+	/* Set delete key */
+	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_DELETE_BINDING_KEY);
+	if (str_val != NULL)
+	{
+		if (!g_strcmp0 (str_val, "ascii-del"))
+			vte_terminal_set_delete_binding (term, VTE_ERASE_ASCII_DELETE);
+		else if (!g_strcmp0 (str_val, "escape-sequence"))
+			vte_terminal_set_delete_binding (term, VTE_ERASE_DELETE_SEQUENCE);
+		else if (!g_strcmp0 (str_val, "control-h"))
+			vte_terminal_set_delete_binding (term, VTE_ERASE_ASCII_BACKSPACE);
+		else
+			vte_terminal_set_delete_binding (term, VTE_ERASE_AUTO);
+	}
+	g_free (str_val);
+
+	/* Set fore- and background colors. */
+	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_BACKGROUND_COLOR_KEY);
+	if (str_val != NULL)
+		gdk_color_parse (str_val, &color[0]);
+	background = str_val ? &color[0] : NULL;
+	g_free (str_val);
+
+	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_FOREGROUND_COLOR_KEY);
+	if (str_val != NULL)
+		gdk_color_parse (str_val, &color[1]);
+	foreground = str_val ? &color[1] : NULL;
+	g_free (str_val);
+
+	/* vte_terminal_set_colors works even if the terminal widget is not realized
+	 * which is not the case with vte_terminal_set_color_foreground and
+	 * vte_terminal_set_color_background */
+	vte_terminal_set_colors (term, foreground, background, NULL, 0);
+
+	g_object_unref (profiles_list);
+	g_object_unref (profile_settings);
+}
+
+static void
+terminal_set_preferences_old (VteTerminal *term, GSettings* settings, TerminalPlugin *term_plugin)
 {
 #if 0
 	char *text;
@@ -190,13 +338,13 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 	text = GET_PROFILE_STRING (GCONF_BACKSPACE_BINDING);
 	if (text)
 	{
-		if (!strcmp (text, "ascii-del"))
+		if (!g_strcmp0 (text, "ascii-del"))
 			vte_terminal_set_backspace_binding (term,
 								VTE_ERASE_ASCII_DELETE);
-		else if (!strcmp (text, "escape-sequence"))
+		else if (!g_strcmp0 (text, "escape-sequence"))
 			vte_terminal_set_backspace_binding (term,
 								VTE_ERASE_DELETE_SEQUENCE);
-		else if (!strcmp (text, "control-h"))
+		else if (!g_strcmp0 (text, "control-h"))
 			vte_terminal_set_backspace_binding (term,
 								VTE_ERASE_ASCII_BACKSPACE);
 		else
@@ -207,13 +355,13 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 	text = GET_PROFILE_STRING (GCONF_DELETE_BINDING);
 	if (text)
 	{
-		if (!strcmp (text, "ascii-del"))
+		if (!g_strcmp0 (text, "ascii-del"))
 			vte_terminal_set_delete_binding (term,
 							 VTE_ERASE_ASCII_DELETE);
-		else if (!strcmp (text, "escape-sequence"))
+		else if (!g_strcmp0 (text, "escape-sequence"))
 			vte_terminal_set_delete_binding (term,
 							 VTE_ERASE_DELETE_SEQUENCE);
-		else if (!strcmp (text, "control-h"))
+		else if (!g_strcmp0 (text, "control-h"))
 			vte_terminal_set_delete_binding (term,
 							 VTE_ERASE_ASCII_BACKSPACE);
 		else
@@ -869,7 +1017,6 @@ iterminal_iface_init(IAnjutaTerminalIface *iface)
 	iface->execute_command = iterminal_execute_command;
 }
 
-#if 0
 static void
 on_add_string_in_store (gpointer data, gpointer user_data)
 {
@@ -900,12 +1047,12 @@ on_pref_profile_changed (GtkComboBox* combo, TerminalPlugin* term_plugin)
 	gtk_combo_box_get_active_iter (combo,
 	                               &iter);
 	gtk_tree_model_get (model, &iter, 0, &text, -1);
+	g_debug("Selected profile is: %s", text);
 	g_settings_set_string (term_plugin->settings,
 	                       PREFS_TERMINAL_PROFILE,
 	                       text);
 	g_free (text);
 }
-#endif
 
 static void
 ipreferences_merge(IAnjutaPreferences* ipref, AnjutaPreferences* prefs, GError** e)
@@ -917,7 +1064,6 @@ ipreferences_merge(IAnjutaPreferences* ipref, AnjutaPreferences* prefs, GError**
 	TerminalPlugin* term_plugin = ANJUTA_PLUGIN_TERMINAL (ipref);
 	GtkBuilder *bxml = gtk_builder_new ();
 
-#if 0
 	if (!gtk_builder_add_from_file (bxml, PREFS_BUILDER, &error))
 	{
 		g_warning ("Couldn't load builder file: %s", error->message);
@@ -930,7 +1076,7 @@ ipreferences_merge(IAnjutaPreferences* ipref, AnjutaPreferences* prefs, GError**
 	                                     "Terminal", _("Terminal"), ICON_FILE);
 
 	term_plugin->pref_profile_combo = GTK_WIDGET (gtk_builder_get_object (bxml, "profile_list_combo"));
-	term_plugin->pref_default_button = GTK_WIDGET (gtk_builder_get_object (bxml, "preferences_toggle:bool:1:0:terminal-default-profile"));
+	term_plugin->pref_default_button = GTK_WIDGET (gtk_builder_get_object (bxml, "preferences_toggle:bool:1:0:use-default-profile"));
 
 	/* Update the currently available list of terminal profiles */
 	GSettings *terminal_settings;
@@ -939,16 +1085,15 @@ ipreferences_merge(IAnjutaPreferences* ipref, AnjutaPreferences* prefs, GError**
 	gchar** profiles;
 	int i;
 
-	terminal_settings = g_settings_new(TERM_PROFILE_LIST_SCHEMA);
+	terminal_settings = g_settings_new(TERMINAL_PROFILES_LIST_SCHEMA);
 	store = GTK_LIST_STORE (gtk_combo_box_get_model (GTK_COMBO_BOX (term_plugin->pref_profile_combo)));
 	default_value = g_settings_get_string(terminal_settings, "default");
 
 	if (default_value != NULL) {
 		profiles = g_settings_get_strv(terminal_settings, "list");
 		gtk_list_store_clear (store);
-		for (i = 0; profiles[i] != NULL; i ++) {
+		for (i = 0; profiles[i] != NULL; i ++)
 			on_add_string_in_store(profiles[i], store);
-		}
 
 		g_signal_connect (term_plugin->pref_profile_combo, "changed",
 		                  G_CALLBACK (on_pref_profile_changed), term_plugin);
@@ -959,9 +1104,7 @@ ipreferences_merge(IAnjutaPreferences* ipref, AnjutaPreferences* prefs, GError**
 
 		g_object_unref(terminal_settings);
 	}
-
 	else
-#endif
 	{
 		/* No profile, perhaps GNOME Terminal is not installed,
 		 * Remove selection */
