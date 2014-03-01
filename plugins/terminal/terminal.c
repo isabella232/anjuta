@@ -36,27 +36,6 @@
 #define PREFS_BUILDER PACKAGE_DATA_DIR"/glade/anjuta-terminal-plugin.ui"
 #define ICON_FILE "anjuta-terminal-plugin-48.png"
 
-/* Some desktop/gnome-terminal gconf keys. */
-#define GCONF_MONOSPACE_FONT      "/desktop/gnome/interface/monospace_font_name"
-#define GCONF_DEFAULT_PROFILE     "/apps/gnome-terminal/global/default_profile"
-#define GCONF_PROFILE_LIST        "/apps/gnome-terminal/global/profile_list"
-
-#define GCONF_PROFILE_PREFIX      "/apps/gnome-terminal/profiles"
-#define GCONF_BACKGROUND_COLOR    "background_color"
-#define GCONF_BACKSPACE_BINDING   "backspace_binding"
-#define GCONF_CURSOR_BLINK        "cursor_blink"
-#define GCONF_DELETE_BINDING      "delete_binding"
-#define GCONF_EXIT_ACTION         "exit_action"
-#define GCONF_VTE_TERMINAL_FONT   "font"
-#define GCONF_FOREGROUND_COLOR    "foreground_color"
-#define GCONF_SCROLLBACK_LINES    "scrollback_lines"
-#define GCONF_SCROLL_ON_KEYSTROKE "scroll_on_keystroke"
-#define GCONF_SCROLL_ON_OUTPUT    "scroll_on_output"
-#define GCONF_SILENT_BELL         "silent_bell"
-#define GCONF_USE_SYSTEM_FONT     "use_system_font"
-#define GCONF_WORD_CHARS          "word_chars"
-#define GCONF_PTY_FLAGS           "pty_flags"
-
 /* Gnome-Terminal GSettings Schemas and Keys */
 #define TERM_PROFILE_LIST_SCHEMA		"org.gnome.Terminal.ProfilesList"
 #define TERM_LEGACY_SCHEMA				"org.gnome.Terminal.Legacy.Settings"
@@ -119,7 +98,7 @@ static gpointer parent_class;
 static const gchar*
 get_profile_key (const gchar *profile, const gchar *key)
 {
-	/* A resonably safe buffer */
+	/* A reasonably safe buffer */
 	static gchar buffer[1024];
 
 	g_return_val_if_fail (profile != NULL && key != NULL, NULL);
@@ -129,21 +108,47 @@ get_profile_key (const gchar *profile, const gchar *key)
 }
 #endif
 
+static gboolean
+strv_to_rgbav (const gchar **specs, gsize *size, GdkRGBA **colors)
+{
+	GVariant *var;
+	gint i;
+	GVariantIter iter;
+	const char *str;
+
+	var = g_variant_new_strv (specs, -1);
+	g_variant_iter_init (&iter, var);
+	size = g_variant_iter_n_children (&iter);
+	*colors = g_new (GdkRGBA, size);
+	i = 0;
+	while (g_variant_iter_next (&iter, "&s", &str)) {
+		if (!gdk_rgba_parse (&(*colors)[i++], str)) {
+			g_free (*colors);
+			g_variant_unref (var);
+			return FALSE;
+		}
+	}
+	g_variant_unref (var);
+	return TRUE;
+}
 
 static void
 terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin *term_plugin)
 {
-	gchar* uuid;
-	gchar* path;
-	GSettings* profiles_list;
-	GSettings* profile_settings;
-	GSettings* interface_settings;
+	gchar *uuid;
+	gchar *path;
+	GSettings *profiles_list;
+	GSettings *profile_settings;
+	GSettings *interface_settings;
 	gboolean bool_val;
-	gchar* str_val;
-	gint i_val;
-	GdkColor color[2];
-	GdkColor* foreground;
-	GdkColor* background;
+	gchar *str_val;
+	gchar **str_vals;
+	gint int_val;
+	gsize size;
+	GdkRGBA color[2];
+	GdkRGBA *foreground;
+	GdkRGBA *background;
+	GdkRGBA *palette;
 
 	g_return_if_fail (settings != NULL);
 
@@ -151,20 +156,13 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 
 	/* Get selected profile */
 	bool_val = g_settings_get_boolean (settings, PREFS_TERMINAL_PROFILE_USE_DEFAULT);
-	if (bool_val) {
-		// get the UUID for default from org.gnome.Terminal.ProfilesList
+	if (bool_val)
 		uuid = g_settings_get_string (profiles_list, TERMINAL_SETTINGS_LIST_DEFAULT_KEY);
-		g_debug ("Using default profile with UUID: %s", uuid);
-	} else {
-		// get the UUID for the selected profile from the combo box
+	else
 		uuid = g_settings_get_string (settings, PREFS_TERMINAL_PROFILE);
-		g_debug ("Using selected profile with UUID: %s", uuid);
-	}
 	path = g_strdup_printf ("%s:%s/", TERMINAL_PROFILES_PATH_PREFIX, uuid);
-	g_debug ("Selected path: %s", path);
 	profile_settings = g_settings_new_with_path (TERMINAL_PROFILE_SCHEMA, path);
 	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_VISIBLE_NAME_KEY);
-	g_debug ("The selected profile is %s", str_val);
 	g_free (str_val);
 	g_free (uuid);
 	g_free (path);
@@ -178,12 +176,10 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 	{
 		interface_settings = g_settings_new (GNOME_DESKTOP_INTERFACE_SCHEMA);
 		str_val = g_settings_get_string (interface_settings, GNOME_MONOSPACE_FONT);
-		g_debug ("Use system font: %s", str_val);
 		g_object_unref (interface_settings);
 	} else
 	{
 		str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_FONT_KEY);
-		g_debug("Use selected font: %s", str_val);
 	}
 	if (str_val != NULL)
 		vte_terminal_set_font_from_string (term, str_val);
@@ -203,8 +199,8 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 	vte_terminal_set_audible_bell (term, bool_val);
 
 	/* Set scrollback */
-	i_val = g_settings_get_uint (profile_settings, TERMINAL_PROFILE_SCROLLBACK_LINES_KEY);
-	vte_terminal_set_scrollback_lines (term, (i_val == 0) ? 500 : i_val);
+	int_val = g_settings_get_int (profile_settings, TERMINAL_PROFILE_SCROLLBACK_LINES_KEY);
+	vte_terminal_set_scrollback_lines (term, (int_val == 0) ? 500 : int_val);
 
 	/* Set scroll on keystroke */
 	bool_val = g_settings_get_boolean (profile_settings, TERMINAL_PROFILE_SCROLL_ON_KEYSTROKE_KEY);
@@ -250,152 +246,32 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 	}
 	g_free (str_val);
 
-	/* Set fore- and background colors. */
+	/* Set colors (foreground, background, and palette) */
 	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_BACKGROUND_COLOR_KEY);
 	if (str_val != NULL)
-		gdk_color_parse (str_val, &color[0]);
-	background = str_val ? &color[0] : NULL;
+		bool_val = gdk_rgba_parse (&color[0], str_val);
+	background = bool_val ? &color[0] : NULL;
 	g_free (str_val);
 
 	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_FOREGROUND_COLOR_KEY);
 	if (str_val != NULL)
-		gdk_color_parse (str_val, &color[1]);
-	foreground = str_val ? &color[1] : NULL;
+		bool_val = gdk_rgba_parse (&color[1], str_val);
+	foreground = bool_val ? &color[1] : NULL;
 	g_free (str_val);
 
-	/* vte_terminal_set_colors works even if the terminal widget is not realized
-	 * which is not the case with vte_terminal_set_color_foreground and
-	 * vte_terminal_set_color_background */
-	vte_terminal_set_colors (term, foreground, background, NULL, 0);
+	str_vals = g_settings_get_strv(profile_settings, TERMINAL_PROFILE_PALETTE_KEY);
+	strv_to_rgbav (str_vals, &size, &palette);
+	g_free (str_vals);
 
+	/* vte_terminal_set_colors() works even if the terminal widget is not realized,
+	 * which is not the case with vte_terminal_set_color_foreground() and
+	 * vte_terminal_set_color_background()
+	 */
+	vte_terminal_set_colors_rgba (term, foreground, background, palette, size);
+
+	g_free (palette);
 	g_object_unref (profiles_list);
 	g_object_unref (profile_settings);
-}
-
-static void
-terminal_set_preferences_old (VteTerminal *term, GSettings* settings, TerminalPlugin *term_plugin)
-{
-#if 0
-	char *text;
-	int value;
-	gboolean setting;
-	GdkColor color[2];
-	GdkColor* foreground;
-	GdkColor* background;
-	gchar *profile;
-
-	g_return_if_fail (settings != NULL);
-
-	/* Update the currently available list of terminal profiles */
-	setting = g_settings_get_boolean (settings,
-	                                  PREFS_TERMINAL_PROFILE_USE_DEFAULT);
-	if (setting)
-	{
-		// TODO: Get from GSettings instead of GConf
-		/* Use the currently selected profile in gnome-terminal */
-		text = gconf_client_get_string (client, GCONF_DEFAULT_PROFILE, NULL);
-	}
-	else
-	{
-		/* Otherwise use the user selected profile */
-		text = g_settings_get_string (settings, PREFS_TERMINAL_PROFILE);
-	}
-	if (!text || (*text == '\0'))
-			text = g_strdup ("Default");
-	profile = text;
-
-	vte_terminal_set_mouse_autohide (term, TRUE);
-
-	/* Set terminal font either using the desktop wide font or g-t one. */
-	setting = g_settings_get_boolean (GCONF_USE_SYSTEM_FONT);
-	if (setting) {
-		text = gconf_client_get_string (client, GCONF_MONOSPACE_FONT, NULL);
-		if (!text)
-			text = GET_PROFILE_STRING (GCONF_VTE_TERMINAL_FONT);
-	} else {
-		text = GET_PROFILE_STRING (GCONF_VTE_TERMINAL_FONT);
-	}
-	if (text)
-		vte_terminal_set_font_from_string (term, text);
-	g_free (text);
-
-	setting = GET_PROFILE_BOOL (GCONF_CURSOR_BLINK);
-	vte_terminal_set_cursor_blink_mode ((term),
-	                                    setting ? VTE_CURSOR_BLINK_ON : VTE_CURSOR_BLINK_OFF);
-	setting = GET_PROFILE_BOOL (GCONF_SILENT_BELL);
-	vte_terminal_set_audible_bell (term, !setting);
-	value = GET_PROFILE_INT (GCONF_SCROLLBACK_LINES);
-	vte_terminal_set_scrollback_lines (term, (value == 0) ? 500 : value);
-	setting = GET_PROFILE_BOOL (GCONF_SCROLL_ON_KEYSTROKE);
-	vte_terminal_set_scroll_on_keystroke (term, setting);
-	setting = GET_PROFILE_BOOL (GCONF_SCROLL_ON_OUTPUT);
-	vte_terminal_set_scroll_on_output (term, TRUE);
-	text = GET_PROFILE_STRING (GCONF_WORD_CHARS);
-	if (text)
-		vte_terminal_set_word_chars (term, text);
-	g_free (text);
-
-	text = GET_PROFILE_STRING (GCONF_BACKSPACE_BINDING);
-	if (text)
-	{
-		if (!g_strcmp0 (text, "ascii-del"))
-			vte_terminal_set_backspace_binding (term,
-								VTE_ERASE_ASCII_DELETE);
-		else if (!g_strcmp0 (text, "escape-sequence"))
-			vte_terminal_set_backspace_binding (term,
-								VTE_ERASE_DELETE_SEQUENCE);
-		else if (!g_strcmp0 (text, "control-h"))
-			vte_terminal_set_backspace_binding (term,
-								VTE_ERASE_ASCII_BACKSPACE);
-		else
-			vte_terminal_set_backspace_binding (term,
-								VTE_ERASE_AUTO);
-		g_free (text);
-	}
-	text = GET_PROFILE_STRING (GCONF_DELETE_BINDING);
-	if (text)
-	{
-		if (!g_strcmp0 (text, "ascii-del"))
-			vte_terminal_set_delete_binding (term,
-							 VTE_ERASE_ASCII_DELETE);
-		else if (!g_strcmp0 (text, "escape-sequence"))
-			vte_terminal_set_delete_binding (term,
-							 VTE_ERASE_DELETE_SEQUENCE);
-		else if (!g_strcmp0 (text, "control-h"))
-			vte_terminal_set_delete_binding (term,
-							 VTE_ERASE_ASCII_BACKSPACE);
-		else
-			vte_terminal_set_delete_binding (term,
-							 VTE_ERASE_AUTO);
-		g_free (text);
-	}
-	/* Set fore- and background colors. */
-	text = GET_PROFILE_STRING (GCONF_BACKGROUND_COLOR);
-	if (text)
-	{
-		gdk_color_parse (text, &color[0]);
-		g_free (text);
-	}
-	background = text ? &color[0] : NULL;
-	text = GET_PROFILE_STRING (GCONF_FOREGROUND_COLOR);
-	if (text)
-	{
-		gdk_color_parse (text, &color[1]);
-		g_free (text);
-	}
-	foreground = text ? &color[1] : NULL;
-	/* vte_terminal_set_colors works even if the terminal widget is not realized
-	 * which is not the case with vte_terminal_set_color_foreground and
-	 * vte_terminal_set_color_background */
-	vte_terminal_set_colors (term, foreground, background, NULL, 0);
-
-	/* vte_terminal is not working depending on update_records setting at least
-	 * on FreeBSD */
-	term_plugin->pty_flags = GET_PROFILE_INT_DEFAULT (GCONF_PTY_FLAGS,VTE_PTY_DEFAULT);
-
-	g_free (profile);
-	g_object_unref (client);
-#endif
 }
 
 static void
