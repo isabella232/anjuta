@@ -35,7 +35,7 @@ iface-built.stamp: libanjuta.idl anjuta-idl-compiler.pl
 	touch iface-built.stamp && \
 	echo "changing to $$savedir" && \
 	cd $$savedir && \
-	make
+	$(MAKE)
 
 files_idl = libanjuta.idl
 idldir = $(libanjuta_interfaces_includedir)
