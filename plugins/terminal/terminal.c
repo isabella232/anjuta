@@ -124,8 +124,8 @@ strv_to_rgbav (const gchar **specs, gsize *size, GdkRGBA **colors)
 
 	var = g_variant_new_strv (specs, -1);
 	g_variant_iter_init (&iter, var);
-	size = g_variant_iter_n_children (&iter);
-	*colors = g_new (GdkRGBA, size);
+	*size = g_variant_iter_n_children (&iter);
+	*colors = g_new (GdkRGBA, *size);
 	i = 0;
 	while (g_variant_iter_next (&iter, "&s", &str)) {
 		if (!gdk_rgba_parse (&(*colors)[i++], str)) {
@@ -932,7 +932,6 @@ on_pref_profile_changed (GtkComboBox* combo, TerminalPlugin* term_plugin)
 	gtk_tree_model_get (model, &iter, TERM_STORE_UUID_COLUMN, &uuid, -1);
 	g_settings_set_string (term_plugin->settings, PREFS_TERMINAL_PROFILE, uuid);
 	g_free (uuid);
-	//g_object_unref (model);
 }
 
 static void
