@@ -50,6 +50,12 @@
 #define PREFS_TERMINAL_PROFILE_USE_DEFAULT    "use-default-profile"
 #define PREFS_TERMINAL_PROFILE                "terminal-profile"
 
+/* Columns in model for combo box */
+enum {
+	TERM_STORE_UUID_COLUMN,
+	TERM_STORE_NAME_COLUMN
+};
+
 #include <vte/vte.h>
 #include <pwd.h>
 #include <gtk/gtk.h>
@@ -162,8 +168,6 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 		uuid = g_settings_get_string (settings, PREFS_TERMINAL_PROFILE);
 	path = g_strdup_printf ("%s:%s/", TERMINAL_PROFILES_PATH_PREFIX, uuid);
 	profile_settings = g_settings_new_with_path (TERMINAL_PROFILE_SCHEMA, path);
-	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_VISIBLE_NAME_KEY);
-	g_free (str_val);
 	g_free (uuid);
 	g_free (path);
 
@@ -186,11 +190,11 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 
 	/* Set cursor blink */
 	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_CURSOR_BLINK_MODE_KEY);
-	if (g_strcmp0 (str_val, "system"))
+	if (g_strcmp0 (str_val, "system") == 0)
 		vte_terminal_set_cursor_blink_mode (term, VTE_CURSOR_BLINK_SYSTEM);
-	else if (g_strcmp0 (str_val, "on"))
+	else if (g_strcmp0 (str_val, "on") == 0)
 		vte_terminal_set_cursor_blink_mode (term, VTE_CURSOR_BLINK_ON);
-	else if (g_strcmp0 (str_val, "off"))
+	else if (g_strcmp0 (str_val, "off") == 0)
 		vte_terminal_set_cursor_blink_mode (term, VTE_CURSOR_BLINK_OFF);
 	g_free (str_val);
 
@@ -220,11 +224,11 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_BACKSPACE_BINDING_KEY);
 	if (str_val != NULL)
 	{
-		if (!g_strcmp0 (str_val, "ascii-del"))
+		if (g_strcmp0 (str_val, "ascii-del") == 0)
 			vte_terminal_set_backspace_binding (term, VTE_ERASE_ASCII_DELETE);
-		else if (!g_strcmp0 (str_val, "escape-sequence"))
+		else if (g_strcmp0 (str_val, "escape-sequence") == 0)
 			vte_terminal_set_backspace_binding (term, VTE_ERASE_DELETE_SEQUENCE);
-		else if (!g_strcmp0 (str_val, "control-h"))
+		else if (g_strcmp0 (str_val, "control-h") == 0)
 			vte_terminal_set_backspace_binding (term, VTE_ERASE_ASCII_BACKSPACE);
 		else
 			vte_terminal_set_backspace_binding (term, VTE_ERASE_AUTO);
@@ -235,11 +239,11 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_DELETE_BINDING_KEY);
 	if (str_val != NULL)
 	{
-		if (!g_strcmp0 (str_val, "ascii-del"))
+		if (g_strcmp0 (str_val, "ascii-del") == 0)
 			vte_terminal_set_delete_binding (term, VTE_ERASE_ASCII_DELETE);
-		else if (!g_strcmp0 (str_val, "escape-sequence"))
+		else if (g_strcmp0 (str_val, "escape-sequence") == 0)
 			vte_terminal_set_delete_binding (term, VTE_ERASE_DELETE_SEQUENCE);
-		else if (!g_strcmp0 (str_val, "control-h"))
+		else if (g_strcmp0 (str_val, "control-h") == 0)
 			vte_terminal_set_delete_binding (term, VTE_ERASE_ASCII_BACKSPACE);
 		else
 			vte_terminal_set_delete_binding (term, VTE_ERASE_AUTO);
@@ -894,50 +898,64 @@ iterminal_iface_init(IAnjutaTerminalIface *iface)
 }
 
 static void
-on_add_string_in_store (gpointer data, gpointer user_data)
+add_data_to_store (gchar *uuid, gchar *name, GtkListStore *model)
 {
-	GtkListStore* model = (GtkListStore *)user_data;
 	GtkTreeIter iter;
 
 	gtk_list_store_append (model, &iter);
-	gtk_list_store_set (model, &iter, 0, (const gchar *)data, -1);
+	gtk_list_store_set (model, &iter, TERM_STORE_UUID_COLUMN, uuid, TERM_STORE_NAME_COLUMN, name, -1);
 }
 
 static void
-on_concat_string (gpointer data, gpointer user_data)
+profile_renderer (GtkTreeViewColumn *column, GtkCellRenderer *renderer, GtkTreeModel *model, GtkTreeIter *iter, gpointer data)
 {
-	GString* str = (GString *)user_data;
+	gchar *uuid;
+	gchar *name;
+	gchar *label;
 
-	if (str->len != 0)
-		g_string_append_c (str, ',');
-	g_string_append (str, data);
+	gtk_tree_model_get (model, iter, TERM_STORE_UUID_COLUMN, &uuid, TERM_STORE_NAME_COLUMN, &name, -1);
+	label = g_strdup_printf ("%s (%s)", name, uuid);
+	g_object_set (renderer, "text", label, NULL);
+	g_free (uuid);
+	g_free (name);
+	g_free (label);
 }
 
 static void
 on_pref_profile_changed (GtkComboBox* combo, TerminalPlugin* term_plugin)
 {
-	GtkTreeModel* model = gtk_combo_box_get_model (combo);
+	GtkTreeModel *model = gtk_combo_box_get_model (combo);
 	GtkTreeIter iter;
-	gchar* text;
+	gchar *uuid;
 
-	gtk_combo_box_get_active_iter (combo,
-	                               &iter);
-	gtk_tree_model_get (model, &iter, 0, &text, -1);
-	g_debug("Selected profile is: %s", text);
-	g_settings_set_string (term_plugin->settings,
-	                       PREFS_TERMINAL_PROFILE,
-	                       text);
-	g_free (text);
+	gtk_combo_box_get_active_iter (combo, &iter);
+	gtk_tree_model_get (model, &iter, TERM_STORE_UUID_COLUMN, &uuid, -1);
+	g_settings_set_string (term_plugin->settings, PREFS_TERMINAL_PROFILE, uuid);
+	g_free (uuid);
+	//g_object_unref (model);
 }
 
 static void
 ipreferences_merge(IAnjutaPreferences* ipref, AnjutaPreferences* prefs, GError** e)
 {
-
-	GError* error = NULL;
+	GSettings *terminal_settings;
+	GSettings *profile_settings;
+	GtkListStore *store;
+	GtkTreeIter iter;
+	gchar *default_uuid;
+	gchar *saved_uuid;
+	gchar *temp;
+	gchar **profiles;
+	gchar *path;
+	gboolean iter_valid;
+	gboolean found;
+	int i;
+	GError *error = NULL;
+	GtkCellRenderer *name_renderer;
+	GtkCellRenderer *uuid_renderer;
 
 	/* Create the terminal preferences page */
-	TerminalPlugin* term_plugin = ANJUTA_PLUGIN_TERMINAL (ipref);
+	TerminalPlugin *term_plugin = ANJUTA_PLUGIN_TERMINAL (ipref);
 	GtkBuilder *bxml = gtk_builder_new ();
 
 	if (!gtk_builder_add_from_file (bxml, PREFS_BUILDER, &error))
@@ -954,26 +972,57 @@ ipreferences_merge(IAnjutaPreferences* ipref, AnjutaPreferences* prefs, GError**
 	term_plugin->pref_profile_combo = GTK_WIDGET (gtk_builder_get_object (bxml, "profile_list_combo"));
 	term_plugin->pref_default_button = GTK_WIDGET (gtk_builder_get_object (bxml, "preferences_toggle:bool:1:0:use-default-profile"));
 
-	/* Update the currently available list of terminal profiles */
-	GSettings *terminal_settings;
-	GtkListStore *store;
-	gchar* default_value;
-	gchar** profiles;
-	int i;
+	/* Add profile-name and profile-uuid renderers to combo box */
+	name_renderer = gtk_cell_renderer_text_new ();
+	uuid_renderer = gtk_cell_renderer_text_new ();
+	gtk_cell_layout_clear (GTK_CELL_LAYOUT(term_plugin->pref_profile_combo));
+	gtk_cell_layout_pack_start (GTK_CELL_LAYOUT(term_plugin->pref_profile_combo), name_renderer, TRUE);
+	gtk_cell_layout_pack_start (GTK_CELL_LAYOUT(term_plugin->pref_profile_combo), uuid_renderer, FALSE);
+	gtk_cell_layout_add_attribute (GTK_CELL_LAYOUT(term_plugin->pref_profile_combo), name_renderer, "text", TERM_STORE_NAME_COLUMN);
+	gtk_cell_layout_add_attribute (GTK_CELL_LAYOUT(term_plugin->pref_profile_combo), uuid_renderer, "text", TERM_STORE_UUID_COLUMN);
+	g_object_set (uuid_renderer, "style", PANGO_STYLE_ITALIC, NULL);
 
-	terminal_settings = g_settings_new(TERMINAL_PROFILES_LIST_SCHEMA);
+	/* If at least a default profile exists ... */
+	terminal_settings = g_settings_new (TERMINAL_PROFILES_LIST_SCHEMA);
 	store = GTK_LIST_STORE (gtk_combo_box_get_model (GTK_COMBO_BOX (term_plugin->pref_profile_combo)));
-	default_value = g_settings_get_string(terminal_settings, "default");
+	default_uuid = g_settings_get_string (terminal_settings, "default");
+	if (default_uuid != NULL) {
 
-	if (default_value != NULL) {
-		profiles = g_settings_get_strv(terminal_settings, "list");
+		/* Populate profiles store */
+		profiles = g_settings_get_strv (terminal_settings, "list");
 		gtk_list_store_clear (store);
-		for (i = 0; profiles[i] != NULL; i ++)
-			on_add_string_in_store(profiles[i], store);
+		for (i = 0; profiles[i] != NULL; i ++) {
+			path = g_strdup_printf ("%s:%s/", TERMINAL_PROFILES_PATH_PREFIX, profiles[i]);
+			profile_settings = g_settings_new_with_path (TERMINAL_PROFILE_SCHEMA, path);
+			temp = g_settings_get_string (profile_settings, TERMINAL_PROFILE_VISIBLE_NAME_KEY);
+			add_data_to_store (profiles[i], temp, store);
+		}
 
+		/* Display saved profile in combo box */
+		saved_uuid = g_settings_get_string (term_plugin->settings, PREFS_TERMINAL_PROFILE);
+		if (saved_uuid != NULL)
+		{
+			found = FALSE;
+			iter_valid = gtk_tree_model_get_iter_first (GTK_TREE_MODEL (store), &iter);
+			while (iter_valid && !found)
+			{
+				gtk_tree_model_get (GTK_TREE_MODEL (store), &iter, TERM_STORE_UUID_COLUMN, &temp, -1);
+				if (g_strcmp0 (saved_uuid, temp) == 0)
+				{
+					gtk_combo_box_set_active_iter (GTK_COMBO_BOX (term_plugin->pref_profile_combo), &iter);
+					found = TRUE;
+				}
+				iter_valid = gtk_tree_model_iter_next (GTK_TREE_MODEL (store), &iter);
+				g_free (temp);
+			}
+			g_free (saved_uuid);
+		}
+
+		/* Save profile selection if changed */
 		g_signal_connect (term_plugin->pref_profile_combo, "changed",
 		                  G_CALLBACK (on_pref_profile_changed), term_plugin);
 
+		/* Deactivate profile selection if not using default profile */
 		use_default_profile_cb (GTK_TOGGLE_BUTTON (term_plugin->pref_default_button), term_plugin);
 		g_signal_connect (G_OBJECT(term_plugin->pref_default_button), "toggled",
 						  G_CALLBACK (use_default_profile_cb), term_plugin);
