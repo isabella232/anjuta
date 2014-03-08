@@ -24,9 +24,9 @@ msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-01-03 21:05+0000\n"
+"POT-Creation-Date: 2014-03-08 07:18+0000\n"
 "PO-Revision-Date: 2013-12-29 02:41+0800\n"
-"Last-Translator: Tong Hui <tonghuix@gmail.com>\n"
+"Last-Translator: Wylmer Wang <wantinghard@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -361,16 +361,16 @@ msgstr "显示一个添加按钮"
 msgid "[Pp]assword.*:"
 msgstr "[Pp]assword.*："
 
-#: ../libanjuta/anjuta-launcher.c:1165 ../plugins/gdb/utilities.c:282
+#: ../libanjuta/anjuta-launcher.c:1167 ../plugins/gdb/utilities.c:282
 #, c-format
 msgid "Cannot execute command: \"%s\""
 msgstr "无法执行命令：“%s”"
 
-#: ../libanjuta/anjuta-launcher.c:1166
+#: ../libanjuta/anjuta-launcher.c:1168
 msgid "execvp failed"
 msgstr "执行文件(execvp)失败"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
 msgid "Anjuta Shell"
 msgstr "Anjuta Shell"
 
@@ -400,11 +400,11 @@ msgid "Load"
 msgstr "加载"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2012
+#: ../libanjuta/anjuta-plugin-manager.c:2015
 msgid "Available Plugins"
 msgstr "可用插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:995
+#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:1000
 msgid "Preferred plugins"
 msgstr "首选插件"
 
@@ -445,63 +445,63 @@ msgstr "没有插件可以在 %s 内加载其它插件"
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>请选择要激活的插件</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2039
+#: ../libanjuta/anjuta-plugin-manager.c:2044
 msgid "Remember this selection"
 msgstr "记住此选项"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2377
+#: ../libanjuta/anjuta-plugin-manager.c:2382
 msgid "Profiles"
 msgstr "配置文件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2378
+#: ../libanjuta/anjuta-plugin-manager.c:2383
 msgid "Current stack of profiles"
 msgstr "当前配置文件栈"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2388
 msgid "Available plugins"
 msgstr "可用插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2384
+#: ../libanjuta/anjuta-plugin-manager.c:2389
 msgid "Currently available plugins found in plugin paths"
 msgstr "在插件路径下发现的当前可用插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2390
+#: ../libanjuta/anjuta-plugin-manager.c:2395
 msgid "Activated plugins"
 msgstr "已激活插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2391
+#: ../libanjuta/anjuta-plugin-manager.c:2396
 msgid "Currently activated plugins"
 msgstr "当前已激活的插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2397
+#: ../libanjuta/anjuta-plugin-manager.c:2402
 msgid "Anjuta shell for which the plugins are made"
 msgstr "制作插件的 Anjuta Shell"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2405
+#: ../libanjuta/anjuta-plugin-manager.c:2410
 msgid "Anjuta Status"
 msgstr "Anjuta 状态"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2406
+#: ../libanjuta/anjuta-plugin-manager.c:2411
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "加载和卸载插件时 Anjuta 的状态"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2559
+#: ../libanjuta/anjuta-plugin-manager.c:2564
 msgid "Loading:"
 msgstr "正在加载："
 
-#: ../libanjuta/anjuta-preferences-dialog.c:96
+#: ../libanjuta/anjuta-preferences-dialog.c:99
 msgid "Category"
 msgstr "类别"
 
 #. FIXME: Make the general page first
-#: ../libanjuta/anjuta-preferences-dialog.c:139
 #: ../libanjuta/anjuta-preferences-dialog.c:142
-#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:982
+#: ../libanjuta/anjuta-preferences-dialog.c:145
+#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:987
 #: ../src/preferences.ui.h:9
 msgid "General"
 msgstr "常规"
 
-#: ../libanjuta/anjuta-preferences-dialog.c:241
+#: ../libanjuta/anjuta-preferences-dialog.c:244
 msgid "Anjuta Preferences"
 msgstr "Anjuta 首选项"
 
@@ -1837,18 +1837,18 @@ msgstr "编译(%s)(_M)"
 msgid "Co_mpile"
 msgstr "编译(_M)"
 
-#: ../plugins/build-basic-autotools/plugin.c:2515
+#: ../plugins/build-basic-autotools/plugin.c:2517
 msgid "Build commands"
 msgstr "构建命令"
 
 #. Translators: This is a group of build
 #. * commands which appears in pop up menus
-#: ../plugins/build-basic-autotools/plugin.c:2524
+#: ../plugins/build-basic-autotools/plugin.c:2526
 msgid "Build popup commands"
 msgstr "构建弹出命令"
 
-#: ../plugins/build-basic-autotools/plugin.c:2960
-#: ../plugins/build-basic-autotools/plugin.c:2968
+#: ../plugins/build-basic-autotools/plugin.c:2970
+#: ../plugins/build-basic-autotools/plugin.c:2978
 msgid "Build Autotools"
 msgstr "构建 Autotools"
 
@@ -2065,7 +2065,7 @@ msgstr "用于生成实现文件的 Autogen 模板"
 msgid "File to which the processed template will be written"
 msgstr "处理后的模板将要写入的文件"
 
-#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1268
+#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1373
 msgid ""
 "Could not find autogen version 5; please install the autogen package. You "
 "can get it from http://autogen.sourceforge.net."
@@ -2560,9 +2560,9 @@ msgid "CVS popup operations"
 msgstr "CVS 弹出操作"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.plugin.in.h:1
-#: ../plugins/debug-manager/plugin.c:407 ../plugins/debug-manager/plugin.c:427
-#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:475
-#: ../plugins/debug-manager/plugin.c:507 ../plugins/debug-manager/plugin.c:538
+#: ../plugins/debug-manager/plugin.c:410 ../plugins/debug-manager/plugin.c:430
+#: ../plugins/debug-manager/plugin.c:453 ../plugins/debug-manager/plugin.c:478
+#: ../plugins/debug-manager/plugin.c:510 ../plugins/debug-manager/plugin.c:541
 msgid "Debugger"
 msgstr "调试器"
 
@@ -2680,8 +2680,8 @@ msgid "Shared libraries"
 msgstr "共享函数库"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:934
-#: ../plugins/debug-manager/plugin.c:1026
+#: ../plugins/debug-manager/plugin.c:937
+#: ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "内核信号"
 
@@ -2952,7 +2952,7 @@ msgid "Disassembly"
 msgstr "汇编"
 
 #: ../plugins/debug-manager/info.c:52 ../plugins/debug-manager/info.c:101
-#: ../plugins/project-wizard/druid.c:180
+#: ../plugins/project-wizard/druid.c:188
 msgid "Information"
 msgstr "信息"
 
@@ -2969,202 +2969,202 @@ msgstr "局部变量"
 msgid "Do not display warning if not using a Debug configuration"
 msgstr "如果没有使用调试选项就不显示警告信息"
 
-#: ../plugins/debug-manager/plugin.c:337
+#: ../plugins/debug-manager/plugin.c:340
 msgid "Debugger Log"
 msgstr "调试器日志"
 
-#: ../plugins/debug-manager/plugin.c:407
+#: ../plugins/debug-manager/plugin.c:410
 msgid "Started"
 msgstr "已开始"
 
-#: ../plugins/debug-manager/plugin.c:427
+#: ../plugins/debug-manager/plugin.c:430
 msgid "Loaded"
 msgstr "已加载"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:446
-#: ../plugins/debug-manager/plugin.c:1038
+#: ../plugins/debug-manager/plugin.c:449
+#: ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "暂停程序(_U)"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:447
-#: ../plugins/debug-manager/plugin.c:1040
+#: ../plugins/debug-manager/plugin.c:450
+#: ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "暂停正在执行的程序"
 
-#: ../plugins/debug-manager/plugin.c:450
+#: ../plugins/debug-manager/plugin.c:453
 msgid "Running…"
 msgstr "正在运行..."
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:471 ../plugins/debug-manager/plugin.c:954
+#: ../plugins/debug-manager/plugin.c:474 ../plugins/debug-manager/plugin.c:957
 msgid "Run/_Continue"
 msgstr "运行/继续(_C)"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:472 ../plugins/debug-manager/plugin.c:956
+#: ../plugins/debug-manager/plugin.c:475 ../plugins/debug-manager/plugin.c:959
 msgid "Continue the execution of the program"
 msgstr "继续程序执行"
 
-#: ../plugins/debug-manager/plugin.c:475
+#: ../plugins/debug-manager/plugin.c:478
 msgid "Stopped"
 msgstr "已停止"
 
-#: ../plugins/debug-manager/plugin.c:507
+#: ../plugins/debug-manager/plugin.c:510
 msgid "Unloaded"
 msgstr "已卸载"
 
-#: ../plugins/debug-manager/plugin.c:547
+#: ../plugins/debug-manager/plugin.c:550
 #, c-format
 msgid "Debugger terminated with error %d: %s\n"
 msgstr "调试器终止，错误 %d: %s\n"
 
-#: ../plugins/debug-manager/plugin.c:560
+#: ../plugins/debug-manager/plugin.c:563
 #, c-format
 msgid "Program has received signal: %s\n"
 msgstr "程序接收到信号：%s\n"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:850
+#: ../plugins/debug-manager/plugin.c:853
 msgid "_Debug"
 msgstr "调试(_D)"
 
-#: ../plugins/debug-manager/plugin.c:858
+#: ../plugins/debug-manager/plugin.c:861
 msgid "_Start Debugger"
 msgstr "启动调试器(_S)"
 
-#: ../plugins/debug-manager/plugin.c:866
+#: ../plugins/debug-manager/plugin.c:869
 msgid "_Debug Program"
 msgstr "调试程序(_D)"
 
-#: ../plugins/debug-manager/plugin.c:868
+#: ../plugins/debug-manager/plugin.c:871
 msgid "Start debugger and load the program"
 msgstr "启动调试器并加载程序"
 
-#: ../plugins/debug-manager/plugin.c:874
+#: ../plugins/debug-manager/plugin.c:877
 msgid "_Debug Process…"
 msgstr "调试进程(_D)..."
 
-#: ../plugins/debug-manager/plugin.c:876
+#: ../plugins/debug-manager/plugin.c:879
 msgid "Start debugger and attach to a running program"
 msgstr "启动调试器并依附到运行中的程序"
 
-#: ../plugins/debug-manager/plugin.c:882
+#: ../plugins/debug-manager/plugin.c:885
 msgid "Debug _Remote Target…"
 msgstr "远程调试目标(_R)..."
 
-#: ../plugins/debug-manager/plugin.c:884
+#: ../plugins/debug-manager/plugin.c:887
 msgid "Connect to a remote debugging target"
 msgstr "连接到远程调试目标"
 
-#: ../plugins/debug-manager/plugin.c:890
+#: ../plugins/debug-manager/plugin.c:893
 msgid "Stop Debugger"
 msgstr "停止调试器(_O)"
 
-#: ../plugins/debug-manager/plugin.c:892
+#: ../plugins/debug-manager/plugin.c:895
 msgid "Say goodbye to the debugger"
 msgstr "和调试器说再见"
 
-#: ../plugins/debug-manager/plugin.c:898
+#: ../plugins/debug-manager/plugin.c:901
 msgid "Add source paths…"
 msgstr "添加源代码路径..."
 
-#: ../plugins/debug-manager/plugin.c:900
+#: ../plugins/debug-manager/plugin.c:903
 msgid "Add additional source paths"
 msgstr "添加其它源码路径"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:910
-#: ../plugins/debug-manager/plugin.c:1002
+#: ../plugins/debug-manager/plugin.c:913
+#: ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "调试器命令..."
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:912
-#: ../plugins/debug-manager/plugin.c:1004
+#: ../plugins/debug-manager/plugin.c:915
+#: ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "定制调试器命令"
 
-#: ../plugins/debug-manager/plugin.c:918
-#: ../plugins/debug-manager/plugin.c:1010
+#: ../plugins/debug-manager/plugin.c:921
+#: ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "信息(_I)"
 
-#: ../plugins/debug-manager/plugin.c:926
-#: ../plugins/debug-manager/plugin.c:1018
+#: ../plugins/debug-manager/plugin.c:929
+#: ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "共享函数库"
 
-#: ../plugins/debug-manager/plugin.c:928
-#: ../plugins/debug-manager/plugin.c:1020
+#: ../plugins/debug-manager/plugin.c:931
+#: ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "显示共享函数库映射"
 
-#: ../plugins/debug-manager/plugin.c:936
-#: ../plugins/debug-manager/plugin.c:1028
+#: ../plugins/debug-manager/plugin.c:939
+#: ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "显示内核信号"
 
-#: ../plugins/debug-manager/plugin.c:942
+#: ../plugins/debug-manager/plugin.c:945
 msgid "_Continue/Suspend"
 msgstr "继续/暂停(_C)"
 
-#: ../plugins/debug-manager/plugin.c:944
+#: ../plugins/debug-manager/plugin.c:947
 msgid "Continue or suspend the execution of the program"
 msgstr "继续或暂停程序执行"
 
-#: ../plugins/debug-manager/plugin.c:962
+#: ../plugins/debug-manager/plugin.c:965
 msgid "Step _In"
 msgstr "步入(_I)"
 
-#: ../plugins/debug-manager/plugin.c:964
+#: ../plugins/debug-manager/plugin.c:967
 msgid "Single step into function"
 msgstr "单步跨入函数"
 
-#: ../plugins/debug-manager/plugin.c:970
+#: ../plugins/debug-manager/plugin.c:973
 msgid "Step O_ver"
 msgstr "步过(_V)"
 
-#: ../plugins/debug-manager/plugin.c:972
+#: ../plugins/debug-manager/plugin.c:975
 msgid "Single step over function"
 msgstr "单步跨过函数"
 
-#: ../plugins/debug-manager/plugin.c:978
+#: ../plugins/debug-manager/plugin.c:981
 msgid "Step _Out"
 msgstr "步出(_O)"
 
-#: ../plugins/debug-manager/plugin.c:980
+#: ../plugins/debug-manager/plugin.c:983
 msgid "Single step out of function"
 msgstr "单步跨出函数"
 
-#: ../plugins/debug-manager/plugin.c:986
+#: ../plugins/debug-manager/plugin.c:989
 msgid "_Run to Cursor"
 msgstr "运行至光标(_R)"
 
-#: ../plugins/debug-manager/plugin.c:988
+#: ../plugins/debug-manager/plugin.c:991
 msgid "Run to the cursor"
 msgstr "运行至光标"
 
-#: ../plugins/debug-manager/plugin.c:994
+#: ../plugins/debug-manager/plugin.c:997
 msgid "_Run from Cursor"
 msgstr "从光标处开始运行(_R)"
 
-#: ../plugins/debug-manager/plugin.c:996
+#: ../plugins/debug-manager/plugin.c:999
 msgid "Run from the cursor"
 msgstr "从光标处开始运行"
 
-#: ../plugins/debug-manager/plugin.c:1080
-#: ../plugins/debug-manager/plugin.c:1086
-#: ../plugins/debug-manager/plugin.c:1092
-#: ../plugins/debug-manager/plugin.c:1098
+#: ../plugins/debug-manager/plugin.c:1083
+#: ../plugins/debug-manager/plugin.c:1089
+#: ../plugins/debug-manager/plugin.c:1095
+#: ../plugins/debug-manager/plugin.c:1101
 msgid "Debugger operations"
 msgstr "调试器操作"
 
@@ -3287,7 +3287,7 @@ msgstr "帧"
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
 #: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
-#: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:679
+#: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "文件"
 
@@ -3962,7 +3962,7 @@ msgid "Search using regular expressions"
 msgstr "使用正则搜索"
 
 #: ../plugins/document-manager/plugin.c:295
-#: ../plugins/indentation-c-style/plugin.c:217
+#: ../plugins/indentation-c-style/plugin.c:218
 #: ../plugins/indentation-python-style/plugin.c:200
 #: ../plugins/language-support-cpp-java/plugin.c:1192
 #: ../plugins/language-support-python/plugin.c:377 ../src/anjuta-actions.h:30
@@ -4016,7 +4016,7 @@ msgstr "将选中文字剪切到剪贴板"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:547
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:583
 msgid "_Copy"
 msgstr "复制(_C)"
 
@@ -4024,7 +4024,7 @@ msgstr "复制(_C)"
 msgid "Copy the selected text to the clipboard"
 msgstr "将选中文字复制到剪贴板"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:555
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:591
 msgid "_Paste"
 msgstr "粘贴(_P)"
 
@@ -4244,39 +4244,39 @@ msgstr "自动保存“%s”失败"
 msgid "Autosave completed"
 msgstr "自动保存完成"
 
-#: ../plugins/document-manager/search-box.c:529
+#: ../plugins/document-manager/search-box.c:520
 #, c-format
 msgid "Search for \"%s\" reached the end and was continued at the top."
 msgstr "搜索“%s”时达到末尾，从顶部继续搜索。"
 
-#: ../plugins/document-manager/search-box.c:534
+#: ../plugins/document-manager/search-box.c:525
 #, c-format
 msgid "Search for \"%s\" reached top and was continued at the bottom."
 msgstr "搜索“%s”时达到末尾，从底部继续搜索。"
 
-#: ../plugins/document-manager/search-box.c:544
+#: ../plugins/document-manager/search-box.c:535
 #, c-format
 msgid ""
 "Search for \"%s\" reached the end and was continued at the top but no new "
 "match was found."
 msgstr "搜索“%s”时达到末尾，从顶部继续搜索。但未找到新的匹配结果。"
 
-#: ../plugins/document-manager/search-box.c:549
+#: ../plugins/document-manager/search-box.c:540
 #, c-format
 msgid ""
 "Search for \"%s\" reached top and was continued at the bottom but no new "
 "match was found."
 msgstr "搜索“%s”时达到末尾，从底部继续搜索。但未找到新的匹配结果。"
 
-#: ../plugins/document-manager/search-box.c:925
+#: ../plugins/document-manager/search-box.c:917
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr "使用“查找”图标的上下文菜单获取更多搜索选项"
 
-#: ../plugins/document-manager/search-box.c:986
+#: ../plugins/document-manager/search-box.c:988
 msgid "Replace"
 msgstr "替换"
 
-#: ../plugins/document-manager/search-box.c:991
+#: ../plugins/document-manager/search-box.c:993
 msgid "Replace all"
 msgstr "替换所有"
 
@@ -4574,12 +4574,12 @@ msgstr "过滤器"
 msgid "Loading..."
 msgstr "正在加载..."
 
-#: ../plugins/file-manager/file-model.c:706
+#: ../plugins/file-manager/file-model.c:708
 #: ../plugins/file-manager/file-view.c:892
 msgid "Base Path"
 msgstr "基路径"
 
-#: ../plugins/file-manager/file-model.c:707
+#: ../plugins/file-manager/file-model.c:709
 #: ../plugins/file-manager/file-view.c:893
 msgid "GFile representing the top-most path displayed"
 msgstr "表示已显示的最顶层路径的 GFile"
@@ -4736,58 +4736,58 @@ msgstr ""
 "无法初始化调试器。\n"
 "请确定 Anjuta 是否安装正确。"
 
-#: ../plugins/gdb/debugger.c:1130
+#: ../plugins/gdb/debugger.c:1131
 msgid "Getting ready to start debugging session…\n"
 msgstr "正在准备启动调试会话 ...\n"
 
-#: ../plugins/gdb/debugger.c:1136
+#: ../plugins/gdb/debugger.c:1137
 msgid "Loading Executable: "
 msgstr "正在加载可执行文件："
 
-#: ../plugins/gdb/debugger.c:1145
+#: ../plugins/gdb/debugger.c:1146
 msgid "No executable specified.\n"
 msgstr "未指定可执行文件。\n"
 
-#: ../plugins/gdb/debugger.c:1148
+#: ../plugins/gdb/debugger.c:1149
 msgid "Open an executable or attach to a process to start debugging.\n"
 msgstr "打开一个可执行文件或者依附于某一进程，以便开始调试。\n"
 
-#: ../plugins/gdb/debugger.c:1157
+#: ../plugins/gdb/debugger.c:1158
 msgid "There was an error whilst launching the debugger.\n"
 msgstr "调用调试器时发生了错误。\n"
 
-#: ../plugins/gdb/debugger.c:1161
+#: ../plugins/gdb/debugger.c:1162
 msgid "Make sure 'gdb' is installed on the system.\n"
 msgstr "请确定“gdb”已经安装在系统中。\n"
 
-#: ../plugins/gdb/debugger.c:1482
+#: ../plugins/gdb/debugger.c:1483
 msgid "Program exited normally\n"
 msgstr "程序正常退出\n"
 
-#: ../plugins/gdb/debugger.c:1493
+#: ../plugins/gdb/debugger.c:1494
 #, c-format
 msgid "Program exited with error code %s\n"
 msgstr "程序以错误码 %s 退出\n"
 
 #. The program has reached one breakpoint and will stop
-#: ../plugins/gdb/debugger.c:1508
+#: ../plugins/gdb/debugger.c:1509
 #, c-format
 msgid "Breakpoint number %s hit\n"
 msgstr "命中断点 %s\n"
 
-#: ../plugins/gdb/debugger.c:1517
+#: ../plugins/gdb/debugger.c:1518
 msgid "Function finished\n"
 msgstr "函数已完成\n"
 
-#: ../plugins/gdb/debugger.c:1523
+#: ../plugins/gdb/debugger.c:1524
 msgid "Stepping finished\n"
 msgstr "步入已完成\n"
 
-#: ../plugins/gdb/debugger.c:1529
+#: ../plugins/gdb/debugger.c:1530
 msgid "Location reached\n"
 msgstr "已到达位置\n"
 
-#: ../plugins/gdb/debugger.c:1926
+#: ../plugins/gdb/debugger.c:1927
 msgid ""
 "The program is attached.\n"
 "Do you still want to stop the debugger?"
@@ -4795,7 +4795,7 @@ msgstr ""
 "程序正在运行中。\n"
 "您是否想要停止调试器？"
 
-#: ../plugins/gdb/debugger.c:1929
+#: ../plugins/gdb/debugger.c:1930
 msgid ""
 "The program is running.\n"
 "Do you still want to stop the debugger?"
@@ -4805,7 +4805,7 @@ msgstr ""
 
 #. The %s argument is an error message returned by gdb.
 #. * It is something like, "No such file or directory"
-#: ../plugins/gdb/debugger.c:2087
+#: ../plugins/gdb/debugger.c:2088
 #, c-format
 msgid ""
 "Unable to connect to remote target, %s\n"
@@ -4814,20 +4814,20 @@ msgstr ""
 "无法连接远程目标，%s\n"
 "要再试一次吗？"
 
-#: ../plugins/gdb/debugger.c:2105
+#: ../plugins/gdb/debugger.c:2106
 msgid "Debugger connected\n"
 msgstr "已连接到调试器\n"
 
-#: ../plugins/gdb/debugger.c:2179
+#: ../plugins/gdb/debugger.c:2180
 msgid "Program attached\n"
 msgstr "程序已依附\n"
 
-#: ../plugins/gdb/debugger.c:2200
+#: ../plugins/gdb/debugger.c:2201
 #, c-format
 msgid "Attaching to process: %d…\n"
 msgstr "正在依附到进程：%d...\n"
 
-#: ../plugins/gdb/debugger.c:2226
+#: ../plugins/gdb/debugger.c:2227
 msgid ""
 "A process is already running.\n"
 "Would you like to terminate it and attach the new process?"
@@ -4835,37 +4835,37 @@ msgstr ""
 "已有一个进程正在运行中。\n"
 "您是否想要先终止它，然后依附到新进程？"
 
-#: ../plugins/gdb/debugger.c:2243
+#: ../plugins/gdb/debugger.c:2244
 msgid "Anjuta is unable to attach to itself."
 msgstr "Anjuta 无法依附到自身。"
 
-#: ../plugins/gdb/debugger.c:2293
+#: ../plugins/gdb/debugger.c:2294
 msgid "Program terminated\n"
 msgstr "程序终止\n"
 
-#: ../plugins/gdb/debugger.c:2308
+#: ../plugins/gdb/debugger.c:2309
 msgid "Program detached\n"
 msgstr "程序已脱离\n"
 
-#: ../plugins/gdb/debugger.c:2328
+#: ../plugins/gdb/debugger.c:2329
 #, c-format
 msgid "Detaching the process…\n"
 msgstr "正在脱离这个进程...\n"
 
-#: ../plugins/gdb/debugger.c:2351
+#: ../plugins/gdb/debugger.c:2352
 msgid "Interrupting the process\n"
 msgstr "正在中断这个进程\n"
 
-#: ../plugins/gdb/debugger.c:3925
+#: ../plugins/gdb/debugger.c:3926
 msgid "more children"
 msgstr "更多子变量"
 
-#: ../plugins/gdb/debugger.c:4178
+#: ../plugins/gdb/debugger.c:4179
 #, c-format
 msgid "Sending signal %s to the process: %d"
 msgstr "正在将信号 %s 发送给进程：%d"
 
-#: ../plugins/gdb/debugger.c:4204
+#: ../plugins/gdb/debugger.c:4205
 msgid "Error whilst signaling the process."
 msgstr "给进程发送信号时出错。"
 
@@ -5857,22 +5857,22 @@ msgid "Parenthesis indentation"
 msgstr "小括号缩进"
 
 #. ANJUTA_STOCK_AUTOINDENT,
-#: ../plugins/indentation-c-style/plugin.c:223
+#: ../plugins/indentation-c-style/plugin.c:224
 #: ../plugins/indentation-python-style/plugin.c:206
 msgid "Auto-Indent"
 msgstr "自动缩进"
 
-#: ../plugins/indentation-c-style/plugin.c:224
+#: ../plugins/indentation-c-style/plugin.c:225
 #: ../plugins/indentation-python-style/plugin.c:207
 msgid "Auto-indent current line or selection based on indentation settings"
 msgstr "根据缩进设置自动缩进当前或选中行"
 
-#: ../plugins/indentation-c-style/plugin.c:264
+#: ../plugins/indentation-c-style/plugin.c:265
 msgid "C Indentation"
 msgstr "C 语言缩进"
 
-#: ../plugins/indentation-c-style/plugin.c:362
-#: ../plugins/indentation-c-style/plugin.c:371
+#: ../plugins/indentation-c-style/plugin.c:363
+#: ../plugins/indentation-c-style/plugin.c:372
 #: ../plugins/indentation-python-style/plugin.c:324
 #: ../plugins/indentation-python-style/plugin.c:333
 msgid "Indentation"
@@ -6842,7 +6842,7 @@ msgstr "更新项目视图..."
 
 #: ../plugins/project-manager/plugin.c:1326
 #: ../plugins/project-manager/plugin.c:1448
-#: ../plugins/project-manager/plugin.c:1627
+#: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
 #: ../plugins/symbol-db/plugin.c:2160
@@ -6854,24 +6854,24 @@ msgstr "项目"
 msgid "Loading project: %s"
 msgstr "正在加载项目：%s"
 
-#: ../plugins/project-manager/plugin.c:1540
+#: ../plugins/project-manager/plugin.c:1541
 #, c-format
 msgid "Error closing project: %s"
 msgstr "关闭项目时出错：%s"
 
-#: ../plugins/project-manager/plugin.c:1606
+#: ../plugins/project-manager/plugin.c:1607
 msgid "Project manager actions"
 msgstr "项目管理器动作"
 
-#: ../plugins/project-manager/plugin.c:1614
+#: ../plugins/project-manager/plugin.c:1615
 msgid "Project manager popup actions"
 msgstr "项目管理器弹出式动作"
 
-#: ../plugins/project-manager/plugin.c:2479
+#: ../plugins/project-manager/plugin.c:2480
 msgid "Initializing Project…"
 msgstr "初始化项目..."
 
-#: ../plugins/project-manager/plugin.c:2482
+#: ../plugins/project-manager/plugin.c:2483
 msgid "Project Loaded"
 msgstr "项目已被加载"
 
@@ -6997,7 +6997,7 @@ msgid "Select a project type"
 msgstr "选择项目类型"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
-#: ../plugins/project-wizard/druid.c:192
+#: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr "错误"
 
@@ -7009,31 +7009,31 @@ msgstr "详细信息"
 msgid "Summary"
 msgstr "概要"
 
-#: ../plugins/project-wizard/druid.c:184 ../plugins/project-wizard/druid.c:188
+#: ../plugins/project-wizard/druid.c:192 ../plugins/project-wizard/druid.c:196
 msgid "Warning"
 msgstr "警告"
 
-#: ../plugins/project-wizard/druid.c:195
+#: ../plugins/project-wizard/druid.c:203
 msgid "Message"
 msgstr "信息"
 
-#: ../plugins/project-wizard/druid.c:276
+#: ../plugins/project-wizard/druid.c:284
 msgid "Confirm the following information:"
 msgstr "确认下列信息："
 
 #. The project type is translated too, it is something like
 #. * generic, GNOME applet, Makefile project...
-#: ../plugins/project-wizard/druid.c:280
+#: ../plugins/project-wizard/druid.c:288
 #, c-format
 msgid "Project Type: %s\n"
 msgstr "项目类型：%s\n"
 
-#: ../plugins/project-wizard/druid.c:471
+#: ../plugins/project-wizard/druid.c:479
 #, c-format
 msgid "Unable to find any project template in %s"
 msgstr "在 %s 找不到项目模板"
 
-#: ../plugins/project-wizard/druid.c:704
+#: ../plugins/project-wizard/druid.c:712
 #, c-format
 msgid ""
 "\n"
@@ -7042,7 +7042,7 @@ msgstr ""
 "\n"
 "“%s”是必填的。请填上它。"
 
-#: ../plugins/project-wizard/druid.c:719
+#: ../plugins/project-wizard/druid.c:727
 #, c-format
 msgid ""
 "Field \"%s\" must contains only letters, digits or the following characters "
@@ -7052,7 +7052,7 @@ msgstr ""
 "“%s”字段只能包含字母，数字或以下字符\"#$:%%+,.=@^_`~\"。另外您不能用下划线开"
 "头。请更正。"
 
-#: ../plugins/project-wizard/druid.c:724
+#: ../plugins/project-wizard/druid.c:732
 #, c-format
 msgid ""
 "Field \"%s\" must contains only letters, digits, the following characters \"#"
@@ -7062,7 +7062,7 @@ msgstr ""
 "“%s”字段只能包含字母，数字，以下字符\"#$:%%+,.=@^_`~\" 或目录分隔符。另外您不"
 "能用下划线开头。请更正。"
 
-#: ../plugins/project-wizard/druid.c:729
+#: ../plugins/project-wizard/druid.c:737
 #, c-format
 msgid ""
 "Field \"%s\" must contains only ASCII printable characters, no accentuated "
@@ -7070,32 +7070,32 @@ msgid ""
 msgstr ""
 "“%s”字段只能包含 ASCII 可打印字符，不能有示例中带中印重音符号的字符，请更正。"
 
-#: ../plugins/project-wizard/druid.c:734
+#: ../plugins/project-wizard/druid.c:742
 #, c-format
 msgid "Unknown error."
 msgstr "未知错误。"
 
-#: ../plugins/project-wizard/druid.c:761
+#: ../plugins/project-wizard/druid.c:769
 #, c-format
 msgid ""
 "Directory \"%s\" is not empty. Project creation could fail if some files "
 "cannot be written. Do you want to continue?"
 msgstr "“%s”目录非空。如果存在不能写入的文件，项目将会创建失败。仍然要继续吗？"
 
-#: ../plugins/project-wizard/druid.c:763
+#: ../plugins/project-wizard/druid.c:771
 #, c-format
 msgid "File \"%s\" already exists. Do you want to overwrite it?"
 msgstr "文件“%s”已存在。是否要覆盖？"
 
-#: ../plugins/project-wizard/druid.c:796
+#: ../plugins/project-wizard/druid.c:804
 msgid "Invalid entry"
 msgstr "无效的条目"
 
-#: ../plugins/project-wizard/druid.c:806
+#: ../plugins/project-wizard/druid.c:814
 msgid "Dubious entry"
 msgstr "含糊的条目"
 
-#: ../plugins/project-wizard/druid.c:958
+#: ../plugins/project-wizard/druid.c:966
 #, c-format
 msgid ""
 "\n"
@@ -7104,7 +7104,7 @@ msgstr ""
 "\n"
 "缺少程序：%s。"
 
-#: ../plugins/project-wizard/druid.c:969
+#: ../plugins/project-wizard/druid.c:977
 #, c-format
 msgid ""
 "\n"
@@ -7113,7 +7113,7 @@ msgstr ""
 "\n"
 "缺失这些包： %s."
 
-#: ../plugins/project-wizard/druid.c:978
+#: ../plugins/project-wizard/druid.c:986
 msgid ""
 "Some important programs or development packages required to build this "
 "project are missing. Please make sure they are installed properly before "
@@ -7122,14 +7122,14 @@ msgstr ""
 "构建这个项目所需的一些重要程序或开发包缺失。请在生成项目之前确认它们是否被正"
 "确的安装。\n"
 
-#: ../plugins/project-wizard/druid.c:987
+#: ../plugins/project-wizard/druid.c:995
 msgid "Install missing packages"
 msgstr "安装缺失的软件包"
 
 #. Translators: Application Manager is the program used to install
 #. * new application like apt on Ubuntu, yum on Fedora, zypper on
 #. * OpenSuSE and emerge on Gentoo
-#: ../plugins/project-wizard/druid.c:999
+#: ../plugins/project-wizard/druid.c:1007
 msgid ""
 "The missing programs are usually part of some distribution packages and can "
 "be searched for in your Application Manager. Similarly, the development "
@@ -7143,7 +7143,7 @@ msgstr ""
 "包名一般会以 -dev 或 -devel 后缀结尾，并且可以在应用程序管理器中通过搜索找"
 "到。"
 
-#: ../plugins/project-wizard/druid.c:1007
+#: ../plugins/project-wizard/druid.c:1015
 msgid "Missing components"
 msgstr "缺少组件"
 
@@ -7181,6 +7181,34 @@ msgstr "正在创建 %s ... %s"
 #, c-format
 msgid "Executing: %s"
 msgstr "正在执行：%s"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:1
+msgid "Directory where the new projects are created by default"
+msgstr "创建新项目的默认目录"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:2
+msgid ""
+"If empty, the user home directory is used. If the path is relative, it is "
+"relative to the home directory."
+msgstr "如果为空，将使用用户的主目录。如果路径为相对路径，将视为相对主目录。"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
+#| msgid "Create a new project"
+msgid "Default user name used in new project"
+msgstr "新建项目的默认用户姓名"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
+msgid "If empty, the current user name is used."
+msgstr "如果为空，将使用当前用户名。"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
+#| msgid "Create a new project"
+msgid "Default email used in new project"
+msgstr "新建项目时的默认邮箱"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
+msgid "If empty, current login and machine name is used."
+msgstr "如果为空，将使用当前登录和机器名。"
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -8446,7 +8474,7 @@ msgid "Right margin position in characters"
 msgstr "右边距的宽度(字符)"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:15
-#: ../src/anjuta-window.c:687 ../src/anjuta-window.c:692
+#: ../src/anjuta-window.c:692 ../src/anjuta-window.c:697
 msgid "View"
 msgstr "查看"
 
@@ -9274,7 +9302,7 @@ msgstr "SymbolDb 弹出动作"
 msgid "SymbolDb menu actions"
 msgstr "SymbolDb 菜单动作"
 
-#: ../plugins/symbol-db/plugin.c:2567 ../plugins/symbol-db/plugin.c:2585
+#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "符号库"
@@ -9292,8 +9320,8 @@ msgid "Symbol"
 msgstr "符号"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:733 ../plugins/terminal/terminal.c:918
-#: ../plugins/terminal/terminal.c:971
+#: ../plugins/terminal/terminal.c:772 ../plugins/terminal/terminal.c:970
+#: ../plugins/terminal/terminal.c:1049
 msgid "Terminal"
 msgstr "终端"
 
@@ -9302,34 +9330,36 @@ msgid "Terminal Plugin for Anjuta."
 msgstr "Anjuta 终端插件。"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:2
-msgid "Use currently selected profile in GNOME terminal"
-msgstr "使用 GNOME 终端目前所选的配置"
+msgid "Use GNOME Terminal profile:"
+msgstr "使用 GNOME 终端配置文件："
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
-msgid "Use GNOME Terminal profile:"
+#, fuzzy
+#| msgid "Use GNOME Terminal profile:"
+msgid "Use default GNOME terminal profile"
 msgstr "使用 GNOME 终端配置文件："
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
 msgstr "终端选项"
 
-#: ../plugins/terminal/terminal.c:564
+#: ../plugins/terminal/terminal.c:600
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:572
+#: ../plugins/terminal/terminal.c:608
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:580
+#: ../plugins/terminal/terminal.c:616
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:715
+#: ../plugins/terminal/terminal.c:754
 msgid "terminal operations"
 msgstr "终端操作"
 
-#: ../plugins/terminal/terminal.c:850
+#: ../plugins/terminal/terminal.c:889
 #, c-format
 msgid "Unable to execute command"
 msgstr "无法执行命令"
@@ -9490,7 +9520,7 @@ msgstr "无法创建缓冲区：命令被中止"
 msgid "No document currently open: command aborted"
 msgstr "当前没有打开文档：命令被中止"
 
-#: ../plugins/tools/execute.c:1019
+#: ../plugins/tools/execute.c:1025
 #, c-format
 msgid "Unable to open input file %s, command aborted"
 msgstr "无法打开输入文件 %s ，命令中止"
@@ -9790,58 +9820,58 @@ msgstr "关于外部插件(_P)"
 msgid "About third-party Anjuta plugins"
 msgstr "关于 Anjuta 第三方插件"
 
-#: ../src/anjuta-application.c:363
+#: ../src/anjuta-application.c:374
 msgid "Specify the size and location of the main window"
 msgstr "指定主窗口的大小和位置"
 
 #. This is the format you can specify the size andposition
 #. * of the window on command line
-#: ../src/anjuta-application.c:366
+#: ../src/anjuta-application.c:377
 msgid "WIDTHxHEIGHT+XOFF+YOFF"
 msgstr "宽度x高度+横偏移+纵偏移"
 
-#: ../src/anjuta-application.c:371
+#: ../src/anjuta-application.c:382
 msgid "Do not show the splash screen"
 msgstr "不显示启动屏幕"
 
-#: ../src/anjuta-application.c:377
+#: ../src/anjuta-application.c:388
 msgid "Start a new instance and do not open the file in an existing instance"
 msgstr "启动一个新的实例，不打开现有实例中所打开的文件"
 
-#: ../src/anjuta-application.c:383
+#: ../src/anjuta-application.c:394
 msgid "Do not open last session on startup"
 msgstr "启动时不打开上一次会话"
 
-#: ../src/anjuta-application.c:389
+#: ../src/anjuta-application.c:400
 msgid "Do not open last project and files on startup"
 msgstr "启动时不再打开上次的项目和文件"
 
-#: ../src/anjuta-application.c:395
+#: ../src/anjuta-application.c:406
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
 msgstr "正常关闭 Anjuta 并释放所有资源(作为调试)"
 
-#: ../src/anjuta-application.c:401
+#: ../src/anjuta-application.c:412
 msgid "Display program version"
 msgstr "显示程序版本"
 
-#: ../src/anjuta-application.c:407
+#: ../src/anjuta-application.c:418
 msgid "Specify another profile"
 msgstr "指定另一个配置"
 
-#: ../src/anjuta-application.c:408
+#: ../src/anjuta-application.c:419
 msgid "PROFILE_FILE"
 msgstr "PROFILE_FILE"
 
-#: ../src/anjuta-application.c:425
+#: ../src/anjuta-application.c:436
 msgid "- Integrated Development Environment"
 msgstr "- 集成开发环境"
 
-#: ../src/anjuta-application.c:764
+#: ../src/anjuta-application.c:776
 #, c-format
 msgid "Invalid profile %s: %s"
 msgstr "无效的配置 %s：%s"
 
-#: ../src/anjuta-application.c:818
+#: ../src/anjuta-application.c:830
 msgid "Loaded Session…"
 msgstr "已加载会话..."
 
@@ -9849,23 +9879,23 @@ msgstr "已加载会话..."
 msgid "_New Window"
 msgstr "新窗口(_N)"
 
-#: ../src/anjuta-window.c:683
+#: ../src/anjuta-window.c:688
 msgid "Edit"
 msgstr "编辑"
 
-#: ../src/anjuta-window.c:696
+#: ../src/anjuta-window.c:701
 msgid "Help"
 msgstr "帮助"
 
-#: ../src/anjuta-window.c:993
+#: ../src/anjuta-window.c:998
 msgid "Installed plugins"
 msgstr "已安装的插件"
 
-#: ../src/anjuta-window.c:997
+#: ../src/anjuta-window.c:1002
 msgid "Shortcuts"
 msgstr "快捷方式"
 
-#: ../src/anjuta-window.c:1069
+#: ../src/anjuta-window.c:1074
 #, c-format
 msgid "Value doesn't exist"
 msgstr "值不存在"
@@ -9939,6 +9969,9 @@ msgstr "图标文件："
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "仅文字"
+
+#~ msgid "Use currently selected profile in GNOME terminal"
+#~ msgstr "使用 GNOME 终端目前所选的配置"
 
 #~ msgid "Profile Plugins"
 #~ msgstr "配置插件"
