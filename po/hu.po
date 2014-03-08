@@ -11,16 +11,16 @@ msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-02-23 03:43+0000\n"
-"PO-Revision-Date: 2014-02-23 16:05+0100\n"
-"Last-Translator: Balázs Úr <urbalazs at gmail dot com>\n"
+"POT-Creation-Date: 2014-03-08 07:18+0000\n"
+"PO-Revision-Date: 2014-03-08 16:45+0100\n"
+"Last-Translator: \n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.2\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -34,8 +34,8 @@ msgstr ""
 "speciális programozási eszközt tartalmaz, beleértve a projektmenedzsmentet, "
 "alkalmazás varázslót, interaktív hibakeresőt, forráskód szerkesztőt, "
 "verziókezelést, grafikus felület tervezőt, profilozót és számos további "
-"eszközöket. Egyszerű és használható felhasználói felület nyújtására fókuszál, "
-"mégis erőteljes a hatékony fejlesztéshez."
+"eszközöket. Egyszerű és használható felhasználói felület nyújtására "
+"fókuszál, mégis erőteljes a hatékony fejlesztéshez."
 
 #: ../anjuta.appdata.xml.in.h:2
 msgid ""
@@ -50,10 +50,10 @@ msgstr ""
 "használatával az Anjuta majdnem minden szolgáltatást megvalósít, amelyek "
 "dinamikusan engedélyezhetők vagy letilthatók. Kiválaszthatja, hogy mely "
 "bővítmények legyenek aktívak a projektjében. Mint a felhasználói felület "
-"elrendezése, az aktív bővítmények beállításai is állandóak minden projekthez, "
-"megkönnyítve a projekteken végzett munkát a komplexitás különféle szintjeivel."
-" A bővítmények használatával kiegészítheti az Anjuta tudását a saját "
-"szolgáltatásaival."
+"elrendezése, az aktív bővítmények beállításai is állandóak minden "
+"projekthez, megkönnyítve a projekteken végzett munkát a komplexitás "
+"különféle szintjeivel. A bővítmények használatával kiegészítheti az Anjuta "
+"tudását a saját szolgáltatásaival."
 
 #: ../anjuta.appdata.xml.in.h:3
 msgid ""
@@ -369,7 +369,7 @@ msgstr "Nem hajtható végre a parancs: „%s”"
 msgid "execvp failed"
 msgstr "az execvp meghiúsult"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
 msgid "Anjuta Shell"
 msgstr "Anjuta héj"
 
@@ -400,7 +400,7 @@ msgid "Load"
 msgstr "Betöltés"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2012
+#: ../libanjuta/anjuta-plugin-manager.c:2015
 msgid "Available Plugins"
 msgstr "Elérhető bővítmények"
 
@@ -447,48 +447,48 @@ msgstr ""
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Válasszon ki egy aktiválandó bővítményt</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2039
+#: ../libanjuta/anjuta-plugin-manager.c:2044
 msgid "Remember this selection"
 msgstr "Ezen döntés megjegyzése"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2377
+#: ../libanjuta/anjuta-plugin-manager.c:2382
 msgid "Profiles"
 msgstr "Profilok"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2378
+#: ../libanjuta/anjuta-plugin-manager.c:2383
 msgid "Current stack of profiles"
 msgstr "Aktuális profilhalmaz"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2388
 msgid "Available plugins"
 msgstr "Elérhető bővítmények"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2384
+#: ../libanjuta/anjuta-plugin-manager.c:2389
 msgid "Currently available plugins found in plugin paths"
 msgstr "A bővítményútvonalakon talált elérhető bővítmények"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2390
+#: ../libanjuta/anjuta-plugin-manager.c:2395
 msgid "Activated plugins"
 msgstr "Aktív bővítmények"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2391
+#: ../libanjuta/anjuta-plugin-manager.c:2396
 msgid "Currently activated plugins"
 msgstr "Jelenleg aktivált bővítmények"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2397
+#: ../libanjuta/anjuta-plugin-manager.c:2402
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Anjuta héj, amelyhez a bővítmények készültek"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2405
+#: ../libanjuta/anjuta-plugin-manager.c:2410
 msgid "Anjuta Status"
 msgstr "Anjuta állapot"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2406
+#: ../libanjuta/anjuta-plugin-manager.c:2411
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr ""
 "A bővítmények betöltésekor és eltávolításakor használandó Anjuta állapot"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2559
+#: ../libanjuta/anjuta-plugin-manager.c:2564
 msgid "Loading:"
 msgstr "Betöltés:"
 
@@ -782,7 +782,6 @@ msgid "Source"
 msgstr "Forrás"
 
 #: ../plugins/am-project/am-project.c:124
-#| msgid "Shared Library (libtool)"
 msgid "Shared Library (Libtool)"
 msgstr "Osztott programkönyvtár (Libtool)"
 
@@ -936,7 +935,6 @@ msgid "Libtool support:"
 msgstr "Libtool támogatás:"
 
 #: ../plugins/am-project/am-properties.c:98
-#| msgid "Add support to compile shared and static libraries with libtool."
 msgid "Add support to compile shared and static libraries with Libtool."
 msgstr ""
 "Támogatást ad osztott és statikus programkönyvtárak fordításához a Libtool "
@@ -4069,7 +4067,7 @@ msgstr "Kijelölt szöveg kivágása a szerkesztőből a vágólapra"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:548
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:583
 msgid "_Copy"
 msgstr "Má_solás"
 
@@ -4077,7 +4075,7 @@ msgstr "Má_solás"
 msgid "Copy the selected text to the clipboard"
 msgstr "A kijelölt szöveg másolása a vágólapra"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:556
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:591
 msgid "_Paste"
 msgstr "_Beillesztés"
 
@@ -6137,17 +6135,14 @@ msgid "JS Find dirs"
 msgstr "JS keresési könyvtárak"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-#| msgid "Gir repository's directory: "
 msgid "Gir repository's directory:"
 msgstr "A Gir tároló könyvtára:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-#| msgid "Gjs repository's directory: "
 msgid "Gjs repository's directory:"
 msgstr "A Gjs tároló könyvtára:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
-#| msgid "Min character for completion: "
 msgid "Min character for completion:"
 msgstr "Karakterek minimális száma kiegészítéshez:"
 
@@ -7296,7 +7291,6 @@ msgstr ""
 "akkor az a saját mappához képest relatív."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
-#| msgid "Create a new project"
 msgid "Default user name used in new project"
 msgstr "Az új projektben használt alapértelmezett felhasználónév"
 
@@ -7305,7 +7299,6 @@ msgid "If empty, the current user name is used."
 msgstr "Ha üres, a jelenlegi felhasználónév lesz használva."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-#| msgid "Create a new project"
 msgid "Default email used in new project"
 msgstr "Az új projektben használt alapértelmezett e-mail"
 
@@ -8405,13 +8398,11 @@ msgstr "Nyelvek"
 
 #. Insert the Add Snippet menu item
 #: ../plugins/snippets-manager/snippets-browser.c:809
-#| msgid "Add Snippet …"
 msgid "Add Snippet…"
 msgstr "Töredék hozzáadása…"
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
-#| msgid "Add Snippets Group …"
 msgid "Add Snippets Group…"
 msgstr "Töredékcsoport hozzáadása…"
 
@@ -9453,8 +9444,8 @@ msgid "Symbol"
 msgstr "Szimbólum"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:737 ../plugins/terminal/terminal.c:922
-#: ../plugins/terminal/terminal.c:975
+#: ../plugins/terminal/terminal.c:772 ../plugins/terminal/terminal.c:970
+#: ../plugins/terminal/terminal.c:1049
 msgid "Terminal"
 msgstr "Terminál"
 
@@ -9463,34 +9454,35 @@ msgid "Terminal Plugin for Anjuta."
 msgstr "Terminál bővítmény az Anjuta-hoz"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:2
-msgid "Use currently selected profile in GNOME terminal"
-msgstr "A jelenleg kiválasztott profil használata a GNOME terminállal"
-
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
 msgid "Use GNOME Terminal profile:"
 msgstr "GNOME Terminál profil használata:"
+
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
+#| msgid "Use GNOME Terminal profile:"
+msgid "Use default GNOME terminal profile"
+msgstr "Az alapértelmezett GNOME Terminál profil használata"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
 msgstr "Terminálbeállítások"
 
-#: ../plugins/terminal/terminal.c:565
+#: ../plugins/terminal/terminal.c:600
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:573
+#: ../plugins/terminal/terminal.c:608
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:581
+#: ../plugins/terminal/terminal.c:616
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:719
+#: ../plugins/terminal/terminal.c:754
 msgid "terminal operations"
 msgstr "terminálműveletek"
 
-#: ../plugins/terminal/terminal.c:854
+#: ../plugins/terminal/terminal.c:889
 #, c-format
 msgid "Unable to execute command"
 msgstr "A parancs nem hajtható végre"
@@ -10109,6 +10101,9 @@ msgstr "Csak ikonok"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Csak szöveg"
+
+#~ msgid "Use currently selected profile in GNOME terminal"
+#~ msgstr "A jelenleg kiválasztott profil használata a GNOME terminállal"
 
 #~ msgid "Path: "
 #~ msgstr "Útvonal: "
