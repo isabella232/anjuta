@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-03-08 07:18+0000\n"
+"POT-Creation-Date: 2014-03-08 13:04+0000\n"
 "PO-Revision-Date: 2013-12-29 02:41+0800\n"
 "Last-Translator: Wylmer Wang <wantinghard@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -7193,7 +7193,6 @@ msgid ""
 msgstr "如果为空，将使用用户的主目录。如果路径为相对路径，将视为相对主目录。"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
-#| msgid "Create a new project"
 msgid "Default user name used in new project"
 msgstr "新建项目的默认用户姓名"
 
@@ -7202,7 +7201,6 @@ msgid "If empty, the current user name is used."
 msgstr "如果为空，将使用当前用户名。"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-#| msgid "Create a new project"
 msgid "Default email used in new project"
 msgstr "新建项目时的默认邮箱"
 
@@ -9334,10 +9332,9 @@ msgid "Use GNOME Terminal profile:"
 msgstr "使用 GNOME 终端配置文件："
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
-#, fuzzy
 #| msgid "Use GNOME Terminal profile:"
 msgid "Use default GNOME terminal profile"
-msgstr "使用 GNOME 终端配置文件："
+msgstr "使用默认 GNOME 终端配置"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
