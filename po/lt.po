@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-02-27 15:43+0000\n"
-"PO-Revision-Date: 2014-02-27 23:30+0200\n"
+"POT-Creation-Date: 2014-03-08 15:43+0000\n"
+"PO-Revision-Date: 2014-03-08 22:02+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -4070,7 +4070,7 @@ msgstr "Iškirpti pažymėtą tekstą redaktoriuje į iškarpinę"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:548
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:583
 msgid "_Copy"
 msgstr "K_opijuoti"
 
@@ -4078,7 +4078,7 @@ msgstr "K_opijuoti"
 msgid "Copy the selected text to the clipboard"
 msgstr "Kopijuoti pažymėtą tekstą į iškarpinę"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:556
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:591
 msgid "_Paste"
 msgstr "_Įdėti"
 
@@ -7289,7 +7289,6 @@ msgstr ""
 "santykinis, jis yra santykinis namų katalogui."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
-#| msgid "Create a new project"
 msgid "Default user name used in new project"
 msgstr "Numatytasis naudotojo vardas naujam projektui"
 
@@ -7298,7 +7297,6 @@ msgid "If empty, the current user name is used."
 msgstr "Jei tuščia, naudojamas dabartinis vardas."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-#| msgid "Create a new project"
 msgid "Default email used in new project"
 msgstr "Numatytasis el. paštas naujam projektui"
 
@@ -9447,8 +9445,8 @@ msgid "Symbol"
 msgstr "Simbolis"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:737 ../plugins/terminal/terminal.c:922
-#: ../plugins/terminal/terminal.c:975
+#: ../plugins/terminal/terminal.c:772 ../plugins/terminal/terminal.c:970
+#: ../plugins/terminal/terminal.c:1049
 msgid "Terminal"
 msgstr "Terminalas"
 
@@ -9457,34 +9455,35 @@ msgid "Terminal Plugin for Anjuta."
 msgstr "Terminalo įskiepis Anjuta."
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:2
-msgid "Use currently selected profile in GNOME terminal"
-msgstr "Naudoti šiuo metu pasirinktą profilį GNOME terminale"
-
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
 msgid "Use GNOME Terminal profile:"
 msgstr "Naudoti GNOME terminalo profilį:"
+
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
+#| msgid "Use GNOME Terminal profile:"
+msgid "Use default GNOME terminal profile"
+msgstr "Naudoti GNOME terminalo numatytąjį profilį"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
 msgstr "Terminalo parinktys"
 
-#: ../plugins/terminal/terminal.c:565
+#: ../plugins/terminal/terminal.c:600
 msgid "Ctrl-C"
 msgstr "Vald-C"
 
-#: ../plugins/terminal/terminal.c:573
+#: ../plugins/terminal/terminal.c:608
 msgid "Ctrl-X"
 msgstr "Vald-X"
 
-#: ../plugins/terminal/terminal.c:581
+#: ../plugins/terminal/terminal.c:616
 msgid "Ctrl-Z"
 msgstr "Vald-Z"
 
-#: ../plugins/terminal/terminal.c:719
+#: ../plugins/terminal/terminal.c:754
 msgid "terminal operations"
 msgstr "terminalo veiksmai"
 
-#: ../plugins/terminal/terminal.c:854
+#: ../plugins/terminal/terminal.c:889
 #, c-format
 msgid "Unable to execute command"
 msgstr "Nepavyksta įvykdyti komandos"
@@ -10098,3 +10097,4 @@ msgstr "Tik piktogramos"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Tik tekstas"
+
