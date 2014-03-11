@@ -11,29 +11,74 @@
 # Alexander Saprykin <xelfium@gmail.com>, 2009, 2010.
 # Yuri Kozlov <yuray@komyakino.ru>, 2010, 2012.
 # Yuri Myasoedov <omerta13@yandex.ru>, 2012, 2013.
+# SourceLocalizer <mail@sourcelocalizer.ru>, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta trunk\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2013-09-12 20:13+0000\n"
-"PO-Revision-Date: 2013-09-17 21:08+0300\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=anjuta&keywords=I18N+L10N&component=core application\n"
+"POT-Creation-Date: 2014-03-08 07:18+0000\n"
+"PO-Revision-Date: 2014-03-11 10:15+0300\n"
 "Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
 "Language-Team: русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.5.4\n"
 
-#: ../anjuta.desktop.in.in.h:1
-#: ../src/main.c:34
+#: ../anjuta.appdata.xml.in.h:1
+msgid ""
+"Anjuta DevStudio is a versatile software development studio featuring a "
+"number of advanced programming facilities including project management, "
+"application wizard, interactive debugger, source editor, version control, "
+"GUI designer, profiler and many more tools. It focuses on providing simple "
+"and usable user interface, yet powerful for efficient development."
+msgstr ""
+"Anjuta DevStudio — это гибкая студия для разработки программного "
+"обеспечения, включающая в себя некоторые продвинутые возможности, например "
+"управление проектами, мастер приложений, интерактивный отладчик, редактор "
+"кода, контроль версий, дизайнер интерфейсов, профилировщик и прочие "
+"инструменты. Anjuta предоставляет простой, понятный, мощный интерфейс для "
+"эффективной разработки."
+
+#: ../anjuta.appdata.xml.in.h:2
+msgid ""
+"Anjuta is very extensible with plugins. Almost all features in Anjuta are "
+"implemented using plugins which can be dynamically enabled or disabled. You "
+"can choose which plugins should be active for your project. Like the user "
+"interface layout, the set of active plugins is also persistent for each "
+"project making it easy to work on projects with various levels of "
+"complexity. Using plugins, you can extend Anjuta with your own features."
+msgstr ""
+"Возможности Anjuta расширяются с помощью модулей. Почти все возможности "
+"Anjuta реализованы через модули, которые можно включить или выключить. Вы "
+"можете выбрать, какие модули будут включены для вашего проекта. Как и "
+"интерфейс, набор включённых модулей является постоянным для каждого проекта, "
+"что позволяет упростить работу над проектами с различными уровнями "
+"сложности. Используя модули, вы можете расширить возможности Anjuta, добавив "
+"новую функциональность."
+
+#: ../anjuta.appdata.xml.in.h:3
+msgid ""
+"The project wizard lets you create new projects from a selection of project "
+"templates. The selection includes simple generic, flat (no subdirectory), GTK"
+"+, GNOME, Java, Python projects and more. New templates can be easily "
+"downloaded and installed."
+msgstr ""
+"Мастер проектов позволяет создать новый проект на основе выбранного шаблона. "
+"Вы можете выбирать различные шаблоны проектов: простой общий проект, проект "
+"без подкаталогов, GTK+, GNOME, Java, Python и др. Вы также можете загрузить "
+"и установить новые шаблоны."
+
+#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
 msgstr "Интегрированная среда разработки Anjuta"
 
-#: ../anjuta.desktop.in.in.h:2
-#: ../src/about.c:203
+#: ../anjuta.desktop.in.in.h:2 ../src/about.c:203
 msgid "Integrated Development Environment"
 msgstr "Интегрированная среда разработки"
 
@@ -91,8 +136,7 @@ msgstr "Не удалось найти функцию регистрации м�
 msgid "Unknown error in module %s"
 msgstr "Неизвестная ошибка в модуле %s"
 
-#: ../libanjuta/anjuta-column-text-view.c:40
-#: ../plugins/git/git-pane.c:142
+#: ../libanjuta/anjuta-column-text-view.c:40 ../plugins/git/git-pane.c:142
 #, c-format
 msgid "Column %i"
 msgstr "Столбец %i"
@@ -102,16 +146,16 @@ msgstr "Столбец %i"
 msgid "Column 1"
 msgstr "Столбец 1"
 
-#: ../libanjuta/anjuta-convert.c:74
-#: ../libanjuta/anjuta-convert.c:111
+#: ../libanjuta/anjuta-convert.c:74 ../libanjuta/anjuta-convert.c:111
 #, c-format
 msgid "The file you are trying to open contains an invalid byte sequence."
 msgstr "Открываемый файл содержит недопустимую последовательность байт."
 
-#: ../libanjuta/anjuta-convert.c:168
-#: ../libanjuta/anjuta-convert.c:207
+#: ../libanjuta/anjuta-convert.c:168 ../libanjuta/anjuta-convert.c:207
 #, c-format
-msgid "Anjuta was not able to automatically determine the encoding of the file you want to open."
+msgid ""
+"Anjuta was not able to automatically determine the encoding of the file you "
+"want to open."
 msgstr "Не удалось автоматически определить кодировку открываемого файла."
 
 #: ../libanjuta/anjuta-c-plugin-factory.c:108
@@ -129,23 +173,18 @@ msgstr "Не найден тип, определённый модулем %s"
 msgid "plugin %s fails to register type %s"
 msgstr "Модулю %s не удалось зарегистрировать тип %s"
 
-#: ../libanjuta/anjuta-encodings.c:137
-#: ../libanjuta/anjuta-encodings.c:182
-#: ../libanjuta/anjuta-encodings.c:184
-#: ../libanjuta/anjuta-encodings.c:186
+#: ../libanjuta/anjuta-encodings.c:137 ../libanjuta/anjuta-encodings.c:182
+#: ../libanjuta/anjuta-encodings.c:184 ../libanjuta/anjuta-encodings.c:186
 #: ../libanjuta/anjuta-encodings.c:188
 msgid "Unicode"
 msgstr "Юникод"
 
-#: ../libanjuta/anjuta-encodings.c:151
-#: ../libanjuta/anjuta-encodings.c:177
-#: ../libanjuta/anjuta-encodings.c:223
-#: ../libanjuta/anjuta-encodings.c:266
+#: ../libanjuta/anjuta-encodings.c:151 ../libanjuta/anjuta-encodings.c:177
+#: ../libanjuta/anjuta-encodings.c:223 ../libanjuta/anjuta-encodings.c:266
 msgid "Western"
 msgstr "Западная"
 
-#: ../libanjuta/anjuta-encodings.c:153
-#: ../libanjuta/anjuta-encodings.c:225
+#: ../libanjuta/anjuta-encodings.c:153 ../libanjuta/anjuta-encodings.c:225
 #: ../libanjuta/anjuta-encodings.c:262
 msgid "Central European"
 msgstr "Центрально-европейская"
@@ -154,29 +193,23 @@ msgstr "Центрально-европейская"
 msgid "South European"
 msgstr "Южно-европейская"
 
-#: ../libanjuta/anjuta-encodings.c:157
-#: ../libanjuta/anjuta-encodings.c:173
+#: ../libanjuta/anjuta-encodings.c:157 ../libanjuta/anjuta-encodings.c:173
 #: ../libanjuta/anjuta-encodings.c:276
 msgid "Baltic"
 msgstr "Балтийская"
 
-#: ../libanjuta/anjuta-encodings.c:159
-#: ../libanjuta/anjuta-encodings.c:227
-#: ../libanjuta/anjuta-encodings.c:240
-#: ../libanjuta/anjuta-encodings.c:244
-#: ../libanjuta/anjuta-encodings.c:246
-#: ../libanjuta/anjuta-encodings.c:264
+#: ../libanjuta/anjuta-encodings.c:159 ../libanjuta/anjuta-encodings.c:227
+#: ../libanjuta/anjuta-encodings.c:240 ../libanjuta/anjuta-encodings.c:244
+#: ../libanjuta/anjuta-encodings.c:246 ../libanjuta/anjuta-encodings.c:264
 msgid "Cyrillic"
 msgstr "Кириллическая"
 
-#: ../libanjuta/anjuta-encodings.c:161
-#: ../libanjuta/anjuta-encodings.c:233
+#: ../libanjuta/anjuta-encodings.c:161 ../libanjuta/anjuta-encodings.c:233
 #: ../libanjuta/anjuta-encodings.c:274
 msgid "Arabic"
 msgstr "Арабская"
 
-#: ../libanjuta/anjuta-encodings.c:163
-#: ../libanjuta/anjuta-encodings.c:268
+#: ../libanjuta/anjuta-encodings.c:163 ../libanjuta/anjuta-encodings.c:268
 msgid "Greek"
 msgstr "Греческая"
 
@@ -184,14 +217,12 @@ msgstr "Греческая"
 msgid "Hebrew Visual"
 msgstr "Визуальный иврит"
 
-#: ../libanjuta/anjuta-encodings.c:167
-#: ../libanjuta/anjuta-encodings.c:231
+#: ../libanjuta/anjuta-encodings.c:167 ../libanjuta/anjuta-encodings.c:231
 #: ../libanjuta/anjuta-encodings.c:272
 msgid "Hebrew"
 msgstr "Иврит"
 
-#: ../libanjuta/anjuta-encodings.c:169
-#: ../libanjuta/anjuta-encodings.c:229
+#: ../libanjuta/anjuta-encodings.c:169 ../libanjuta/anjuta-encodings.c:229
 #: ../libanjuta/anjuta-encodings.c:270
 msgid "Turkish"
 msgstr "Турецкая"
@@ -212,8 +243,7 @@ msgstr "Румынская"
 msgid "Armenian"
 msgstr "Армянская"
 
-#: ../libanjuta/anjuta-encodings.c:193
-#: ../libanjuta/anjuta-encodings.c:195
+#: ../libanjuta/anjuta-encodings.c:193 ../libanjuta/anjuta-encodings.c:195
 #: ../libanjuta/anjuta-encodings.c:209
 msgid "Chinese Traditional"
 msgstr "Традиционная китайская"
@@ -222,25 +252,19 @@ msgstr "Традиционная китайская"
 msgid "Cyrillic/Russian"
 msgstr "Кириллическая (Россия)"
 
-#: ../libanjuta/anjuta-encodings.c:200
-#: ../libanjuta/anjuta-encodings.c:202
-#: ../libanjuta/anjuta-encodings.c:204
-#: ../libanjuta/anjuta-encodings.c:236
+#: ../libanjuta/anjuta-encodings.c:200 ../libanjuta/anjuta-encodings.c:202
+#: ../libanjuta/anjuta-encodings.c:204 ../libanjuta/anjuta-encodings.c:236
 #: ../libanjuta/anjuta-encodings.c:251
 msgid "Japanese"
 msgstr "Японская"
 
-#: ../libanjuta/anjuta-encodings.c:207
-#: ../libanjuta/anjuta-encodings.c:238
-#: ../libanjuta/anjuta-encodings.c:242
-#: ../libanjuta/anjuta-encodings.c:257
+#: ../libanjuta/anjuta-encodings.c:207 ../libanjuta/anjuta-encodings.c:238
+#: ../libanjuta/anjuta-encodings.c:242 ../libanjuta/anjuta-encodings.c:257
 msgid "Korean"
 msgstr "Корейская"
 
-#: ../libanjuta/anjuta-encodings.c:212
-#: ../libanjuta/anjuta-encodings.c:214
-#: ../libanjuta/anjuta-encodings.c:216
-#: ../libanjuta/anjuta-encodings.c:220
+#: ../libanjuta/anjuta-encodings.c:212 ../libanjuta/anjuta-encodings.c:214
+#: ../libanjuta/anjuta-encodings.c:216 ../libanjuta/anjuta-encodings.c:220
 msgid "Chinese Simplified"
 msgstr "Упрощённая китайская"
 
@@ -252,8 +276,7 @@ msgstr "Грузинская"
 msgid "Cyrillic/Ukrainian"
 msgstr "Кириллическая (Украина)"
 
-#: ../libanjuta/anjuta-encodings.c:253
-#: ../libanjuta/anjuta-encodings.c:259
+#: ../libanjuta/anjuta-encodings.c:253 ../libanjuta/anjuta-encodings.c:259
 #: ../libanjuta/anjuta-encodings.c:278
 msgid "Vietnamese"
 msgstr "Вьетнамская"
@@ -266,8 +289,7 @@ msgstr "Тайская"
 #. * ISO8859-1
 #. Translator: Unknown here is a target type, if not unknown it can
 #. * be a program or a shared library by example
-#: ../libanjuta/anjuta-encodings.c:443
-#: ../plugins/am-project/am-project.c:116
+#: ../libanjuta/anjuta-encodings.c:443 ../plugins/am-project/am-project.c:116
 #: ../plugins/mk-project/mk-project.c:76
 msgid "Unknown"
 msgstr "Неизвестная"
@@ -286,18 +308,12 @@ msgid "Environment Variables:"
 msgstr "Переменные окружения:"
 
 #: ../libanjuta/anjuta-environment-editor.c:586
-#: ../plugins/class-gen/window.c:719
-#: ../plugins/class-gen/window.c:729
-#: ../plugins/class-gen/window.c:737
-#: ../plugins/class-gen/window.c:751
-#: ../plugins/class-gen/window.c:761
-#: ../plugins/class-gen/window.c:769
-#: ../plugins/class-gen/window.c:777
-#: ../plugins/class-gen/window.c:785
-#: ../plugins/class-gen/window.c:793
-#: ../plugins/class-gen/window.c:803
-#: ../plugins/class-gen/window.c:813
-#: ../plugins/class-gen/window.c:825
+#: ../plugins/class-gen/window.c:719 ../plugins/class-gen/window.c:729
+#: ../plugins/class-gen/window.c:737 ../plugins/class-gen/window.c:751
+#: ../plugins/class-gen/window.c:761 ../plugins/class-gen/window.c:769
+#: ../plugins/class-gen/window.c:777 ../plugins/class-gen/window.c:785
+#: ../plugins/class-gen/window.c:793 ../plugins/class-gen/window.c:803
+#: ../plugins/class-gen/window.c:813 ../plugins/class-gen/window.c:825
 #: ../plugins/project-manager/dialogs.c:482
 #: ../plugins/snippets-manager/plugin.c:763
 #: ../plugins/snippets-manager/snippets-browser.c:533
@@ -306,13 +322,10 @@ msgid "Name"
 msgstr "Имя"
 
 #: ../libanjuta/anjuta-environment-editor.c:595
-#: ../plugins/class-gen/window.c:770
-#: ../plugins/class-gen/window.c:786
-#: ../plugins/class-gen/window.c:817
-#: ../plugins/debug-manager/debug_tree.c:128
+#: ../plugins/class-gen/window.c:770 ../plugins/class-gen/window.c:786
+#: ../plugins/class-gen/window.c:817 ../plugins/debug-manager/debug_tree.c:128
 #: ../plugins/debug-manager/registers.c:469
-#: ../plugins/project-manager/dialogs.c:490
-#: ../plugins/tools/editor.c:476
+#: ../plugins/project-manager/dialogs.c:490 ../plugins/tools/editor.c:476
 msgid "Value"
 msgstr "Значение"
 
@@ -351,18 +364,16 @@ msgstr "Показывать кнопку «Добавить»"
 msgid "[Pp]assword.*:"
 msgstr "[Пп]ароль.*:"
 
-#: ../libanjuta/anjuta-launcher.c:1165
-#: ../plugins/gdb/utilities.c:282
+#: ../libanjuta/anjuta-launcher.c:1167 ../plugins/gdb/utilities.c:282
 #, c-format
 msgid "Cannot execute command: \"%s\""
 msgstr "Не удалось выполнить команду: «%s»"
 
-#: ../libanjuta/anjuta-launcher.c:1166
+#: ../libanjuta/anjuta-launcher.c:1168
 msgid "execvp failed"
 msgstr "Вызов execvp завершился ошибкой"
 
-#: ../libanjuta/anjuta-plugin.c:319
-#: ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
 msgid "Anjuta Shell"
 msgstr "Оболочка Anjuta"
 
@@ -379,7 +390,8 @@ msgstr "Не удаётся отключить модуль «%s»"
 #, c-format
 msgid ""
 "Could not load %s\n"
-"This usually means that your installation is corrupted. The error message leading to this was:\n"
+"This usually means that your installation is corrupted. The error message "
+"leading to this was:\n"
 "%s"
 msgstr ""
 "Не удалось загрузить %s\n"
@@ -391,12 +403,11 @@ msgid "Load"
 msgstr "Загрузить"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2012
+#: ../libanjuta/anjuta-plugin-manager.c:2015
 msgid "Available Plugins"
 msgstr "Доступные модули"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1025
-#: ../src/anjuta-window.c:995
+#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:1000
 msgid "Preferred plugins"
 msgstr "Предпочитаемые модули"
 
@@ -405,16 +416,20 @@ msgid "Only show user activatable plugins"
 msgstr "Показывать только модули, которые может включать пользователь"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1197
-msgid "These are the plugins selected by you when you have been prompted to choose one of many suitable plugins. Removing the preferred plugin will let you choose a different plugin."
-msgstr "Вы выбрали эти модули, когда было предложено выбрать один из нескольких подходящих. Удаление модуля позволит выбрать другой модуль."
+msgid ""
+"These are the plugins selected by you when you have been prompted to choose "
+"one of many suitable plugins. Removing the preferred plugin will let you "
+"choose a different plugin."
+msgstr ""
+"Вы выбрали эти модули, когда было предложено выбрать один из нескольких "
+"подходящих. Удаление модуля позволит выбрать другой модуль."
 
 #: ../libanjuta/anjuta-plugin-manager.c:1223
 msgid "Forget selected plugin"
 msgstr "Не считать предпочитаемым"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1517
-#: ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "Выберите модуль"
@@ -433,64 +448,64 @@ msgstr "Нет модуля, способного загрузить други�
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Выберите модуль для включения</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2039
+#: ../libanjuta/anjuta-plugin-manager.c:2044
 msgid "Remember this selection"
 msgstr "Запомнить выбор"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2377
+#: ../libanjuta/anjuta-plugin-manager.c:2382
 msgid "Profiles"
 msgstr "Профили"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2378
+#: ../libanjuta/anjuta-plugin-manager.c:2383
 msgid "Current stack of profiles"
 msgstr "Текущий набор профилей"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2388
 msgid "Available plugins"
 msgstr "Доступные модули"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2384
+#: ../libanjuta/anjuta-plugin-manager.c:2389
 msgid "Currently available plugins found in plugin paths"
 msgstr "Доступные модули, найденные в путях для модулей"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2390
+#: ../libanjuta/anjuta-plugin-manager.c:2395
 msgid "Activated plugins"
 msgstr "Активированные модули"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2391
+#: ../libanjuta/anjuta-plugin-manager.c:2396
 msgid "Currently activated plugins"
 msgstr "Модули, активированные в данный момент"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2397
+#: ../libanjuta/anjuta-plugin-manager.c:2402
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Оболочка Anjuta, для которой есть модули"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2405
+#: ../libanjuta/anjuta-plugin-manager.c:2410
 msgid "Anjuta Status"
 msgstr "Текущее состояние Anjuta"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2406
+#: ../libanjuta/anjuta-plugin-manager.c:2411
 msgid "Anjuta status to use in loading and unloading of plugins"
-msgstr "Текущее состояние Anjuta для использования при загрузке и выгрузке модулей"
+msgstr ""
+"Текущее состояние Anjuta для использования при загрузке и выгрузке модулей"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2559
+#: ../libanjuta/anjuta-plugin-manager.c:2564
 msgid "Loading:"
 msgstr "Загрузка:"
 
-#: ../libanjuta/anjuta-preferences-dialog.c:96
+#: ../libanjuta/anjuta-preferences-dialog.c:99
 msgid "Category"
 msgstr "Категория"
 
 #. FIXME: Make the general page first
-#: ../libanjuta/anjuta-preferences-dialog.c:139
 #: ../libanjuta/anjuta-preferences-dialog.c:142
-#: ../plugins/mk-project/mk-project.ui.h:3
-#: ../src/anjuta-window.c:982
+#: ../libanjuta/anjuta-preferences-dialog.c:145
+#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:987
 #: ../src/preferences.ui.h:9
 msgid "General"
 msgstr "Общие"
 
-#: ../libanjuta/anjuta-preferences-dialog.c:241
+#: ../libanjuta/anjuta-preferences-dialog.c:244
 msgid "Anjuta Preferences"
 msgstr "Настройки Anjuta"
 
@@ -524,8 +539,12 @@ msgstr "Выберите модуль из списка"
 
 #: ../libanjuta/anjuta-profile.c:655
 #, c-format
-msgid "Failed to read '%s': XML parse error. Invalid or corrupted Anjuta plugins profile."
-msgstr "Не удалось прочитать '%s': ошибка разбора XML. Неверный или повреждённый профиль модулей Anjuta."
+msgid ""
+"Failed to read '%s': XML parse error. Invalid or corrupted Anjuta plugins "
+"profile."
+msgstr ""
+"Не удалось прочитать '%s': ошибка разбора XML. Неверный или повреждённый "
+"профиль модулей Anjuta."
 
 #. <Pluginname>: Install it from <some location on the web>
 #: ../libanjuta/anjuta-profile.c:956
@@ -563,10 +582,17 @@ msgstr "_Отклонить изменения"
 #: ../libanjuta/anjuta-save-prompt.c:296
 #, c-format
 msgid "There is %d item with unsaved changes. Save changes before closing?"
-msgid_plural "There are %d items with unsaved changes. Save changes before closing?"
-msgstr[0] "Имеется %d элемент с несохранёнными изменениями. Сохранить изменения перед закрытием?"
-msgstr[1] "Имеется %d элемента с несохранёнными изменениями. Сохранить изменения перед закрытием?"
-msgstr[2] "Имеется %d элементов с несохранёнными изменениями. Сохранить изменения перед закрытием?"
+msgid_plural ""
+"There are %d items with unsaved changes. Save changes before closing?"
+msgstr[0] ""
+"Имеется %d элемент с несохранёнными изменениями. Сохранить изменения перед "
+"закрытием?"
+msgstr[1] ""
+"Имеется %d элемента с несохранёнными изменениями. Сохранить изменения перед "
+"закрытием?"
+msgstr[2] ""
+"Имеется %d элементов с несохранёнными изменениями. Сохранить изменения перед "
+"закрытием?"
 
 #: ../libanjuta/anjuta-save-prompt.c:305
 msgid "There is an item with unsaved changes. Save changes before closing?"
@@ -606,8 +632,14 @@ msgid "System:"
 msgstr "Система:"
 
 #: ../libanjuta/anjuta-utils.c:512
-msgid "You do not seem to have PackageKit installed. PackageKit is required for installing missing packages. Please install \"packagekit-gnome\" package from your distribution, or install the missing packages manually."
-msgstr "Вероятно, PackageKit не установлен. PackageKit требуется для установки отсутствующих пакетов Установите пакет «packagekit-gnome» из дистрибутива или отсутствующие пакеты вручную."
+msgid ""
+"You do not seem to have PackageKit installed. PackageKit is required for "
+"installing missing packages. Please install \"packagekit-gnome\" package "
+"from your distribution, or install the missing packages manually."
+msgstr ""
+"Вероятно, PackageKit не установлен. PackageKit требуется для установки "
+"отсутствующих пакетов Установите пакет «packagekit-gnome» из дистрибутива "
+"или отсутствующие пакеты вручную."
 
 #: ../libanjuta/anjuta-utils.c:521
 #, c-format
@@ -640,10 +672,11 @@ msgstr ""
 #. Try xterm
 #: ../libanjuta/anjuta-utils.c:1208
 msgid "Cannot find a terminal; using xterm, even if it may not work"
-msgstr "Не удалось обнаружить терминал, будет использован xterm, даже если он может не работать"
+msgstr ""
+"Не удалось обнаружить терминал, будет использован xterm, даже если он может "
+"не работать"
 
-#: ../libanjuta/anjuta-utils.c:1255
-#: ../libanjuta/anjuta-utils.c:1306
+#: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
 #, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr "Не удалось выполнить команду: %s (используя оболочку %s): %s\n"
@@ -654,56 +687,47 @@ msgid "Unable to load user interface file: %s"
 msgstr "Не удалось загрузить файл с интерфейсом пользователя: %s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
-#: ../plugins/file-manager/file-view.c:77
-#: ../plugins/git/git-status-pane.c:183
+#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:182
 msgid "Modified"
 msgstr "Изменён"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:95
-#: ../plugins/file-manager/file-view.c:81
-#: ../plugins/git/git-status-pane.c:186
+#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:185
 msgid "Added"
 msgstr "Добавлен"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:98
-#: ../plugins/file-manager/file-view.c:79
-#: ../plugins/git/git-status-pane.c:189
+#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:188
 msgid "Deleted"
 msgstr "Удалён"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:101
-#: ../plugins/file-manager/file-view.c:83
-#: ../plugins/git/git-status-pane.c:192
+#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:191
 msgid "Conflicted"
 msgstr "Завершено Противоречие"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:105
-#: ../plugins/file-manager/file-view.c:85
-#: ../plugins/git/git-status-pane.c:196
+#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:195
 msgid "Up-to-date"
 msgstr "Не требует обновления"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:109
-#: ../plugins/file-manager/file-view.c:87
-#: ../plugins/git/git-status-pane.c:200
+#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:199
 msgid "Locked"
 msgstr "Заблокирован"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:112
-#: ../plugins/file-manager/file-view.c:89
-#: ../plugins/git/git-status-pane.c:203
+#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:202
 msgid "Missing"
 msgstr "Отсутствует"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:115
-#: ../plugins/file-manager/file-view.c:91
-#: ../plugins/git/git-status-pane.c:206
+#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:205
 msgid "Unversioned"
 msgstr "Не под контролем системы версий"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:119
-#: ../plugins/file-manager/file-view.c:93
-#: ../plugins/git/git-status-pane.c:210
+#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:209
 msgid "Ignored"
 msgstr "Игнорируется"
 
@@ -712,8 +736,7 @@ msgstr "Игнорируется"
 msgid "Widget not found: %s"
 msgstr "Виджет не найден: %s"
 
-#: ../libanjuta/resources.c:79
-#: ../libanjuta/resources.c:101
+#: ../libanjuta/resources.c:79 ../libanjuta/resources.c:101
 #, c-format
 msgid "Could not find application pixmap file: %s"
 msgstr "Не удалось найти файл изображения для приложения: %s"
@@ -728,12 +751,15 @@ msgid "Please specify group name"
 msgstr "Задайте название группы"
 
 #: ../plugins/am-project/amp-group.c:641
-msgid "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~/\" characters"
-msgstr "Название группы может содержать только буквы, цифры и символы «#$:%+,-.=@^_`~/»"
+msgid ""
+"Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~/\" characters"
+msgstr ""
+"Название группы может содержать только буквы, цифры и символы «#$:%+,-."
+"=@^_`~/»"
 
 #: ../plugins/am-project/amp-group.c:665
-#: ../plugins/am-project/am-project.c:1679
-#: ../plugins/am-project/am-project.c:1772
+#: ../plugins/am-project/am-project.c:1680
+#: ../plugins/am-project/am-project.c:1773
 #: ../plugins/dir-project/dir-project.c:801
 #: ../plugins/dir-project/dir-project.c:934
 #: ../plugins/mk-project/mk-project.c:725
@@ -760,8 +786,9 @@ msgid "Source"
 msgstr "Источник"
 
 #: ../plugins/am-project/am-project.c:124
-msgid "Shared Library (libtool)"
-msgstr "Разделяемая библиотека (libtool)"
+#| msgid "Shared Library (libtool)"
+msgid "Shared Library (Libtool)"
+msgstr "Разделяемая библиотека (Libtool)"
 
 #: ../plugins/am-project/am-project.c:132
 msgid "Module (Libtool)"
@@ -808,8 +835,7 @@ msgstr "Произвольные данные"
 msgid "Script"
 msgstr "Сценарий"
 
-#: ../plugins/am-project/am-project.c:220
-#: ../plugins/class-gen/window.c:794
+#: ../plugins/am-project/am-project.c:220 ../plugins/class-gen/window.c:794
 #: ../plugins/cvs-plugin/cvs-callbacks.c:436
 msgid "Module"
 msgstr "Модуль"
@@ -818,11 +844,11 @@ msgstr "Модуль"
 msgid "Package"
 msgstr "Пакет"
 
-#: ../plugins/am-project/am-project.c:1709
+#: ../plugins/am-project/am-project.c:1710
 msgid "Unable to parse project file"
 msgstr "Не удалось разобрать файл проекта"
 
-#: ../plugins/am-project/am-project.c:1720
+#: ../plugins/am-project/am-project.c:1721
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "Проект не существует или путь к проекту неверен"
@@ -837,8 +863,7 @@ msgstr "Новый движок Autotools для менеджера проект
 
 #: ../plugins/am-project/am-properties.c:49
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:5
-#: ../plugins/git/anjuta-git.ui.h:21
-#: ../plugins/project-manager/dialogs.c:753
+#: ../plugins/git/anjuta-git.ui.h:21 ../plugins/project-manager/dialogs.c:753
 #: ../plugins/snippets-manager/snippets-export-dialog.ui.h:2
 #: ../plugins/tools/anjuta-tools.ui.h:3
 msgid "Name:"
@@ -872,7 +897,8 @@ msgid "Version:"
 msgstr "Версия:"
 
 #: ../plugins/am-project/am-properties.c:61
-msgid "Project version, typically a few numbers separated by dot by example '1.0.0'"
+msgid ""
+"Project version, typically a few numbers separated by dot by example '1.0.0'"
 msgstr "Версия проекта. Несколько чисел, разделённых точкой (например, 1.0.0)"
 
 #: ../plugins/am-project/am-properties.c:67
@@ -880,19 +906,26 @@ msgid "Bug report URL:"
 msgstr "Адрес URL для отчёта об ошибке:"
 
 #: ../plugins/am-project/am-properties.c:70
-msgid "An email address or a link to a web page where the user can report bug. It is optional."
-msgstr "Адрес эл. почты или ссылка на веб-страницу, на которой пользователь может сообщить об ошибке. Является необязательным."
+msgid ""
+"An email address or a link to a web page where the user can report bug. It "
+"is optional."
+msgstr ""
+"Адрес эл. почты или ссылка на веб-страницу, на которой пользователь может "
+"сообщить об ошибке. Является необязательным."
 
 #: ../plugins/am-project/am-properties.c:76
 msgid "Package name:"
 msgstr "Название пакета:"
 
 #: ../plugins/am-project/am-properties.c:79
-msgid "Package name, it can contains only alphanumerics and underscore characters.It is generated from the project name if not provided."
-msgstr "Название пакета. Может содержать цифры, буквы и символы подчёркивания. Если название пакета не указано, то оно создаётся на основе названия проекта."
+msgid ""
+"Package name, it can contains only alphanumerics and underscore characters."
+"It is generated from the project name if not provided."
+msgstr ""
+"Название пакета. Может содержать цифры, буквы и символы подчёркивания. Если "
+"название пакета не указано, то оно создаётся на основе названия проекта."
 
-#: ../plugins/am-project/am-properties.c:86
-#: ../plugins/git/anjuta-git.ui.h:10
+#: ../plugins/am-project/am-properties.c:86 ../plugins/git/anjuta-git.ui.h:10
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:20
 msgid "URL:"
 msgstr "URL:"
@@ -906,8 +939,11 @@ msgid "Libtool support:"
 msgstr "Поддержка libtool:"
 
 #: ../plugins/am-project/am-properties.c:98
-msgid "Add support to compile shared and static libraries with libtool."
-msgstr "Добавить поддержку компиляции разделяемых и статических библиотек с помощью libtool."
+#| msgid "Add support to compile shared and static libraries with libtool."
+msgid "Add support to compile shared and static libraries with Libtool."
+msgstr ""
+"Добавить поддержку компиляции разделяемых и статических библиотек с помощью "
+"Libtool."
 
 #: ../plugins/am-project/am-properties.c:104
 #: ../plugins/am-project/am-properties.c:211
@@ -935,7 +971,8 @@ msgstr "Ключи препроцессора C:"
 #: ../plugins/am-project/am-properties.c:116
 #: ../plugins/am-project/am-properties.c:223
 msgid "Common additional C preprocessor flags for all targets in this group."
-msgstr "Дополнительные ключи препроцессора языка C для всех целей из этой группы."
+msgstr ""
+"Дополнительные ключи препроцессора языка C для всех целей из этой группы."
 
 #: ../plugins/am-project/am-properties.c:122
 #: ../plugins/am-project/am-properties.c:229
@@ -949,7 +986,8 @@ msgstr "Ключи компилятора C:"
 #: ../plugins/am-project/am-properties.c:125
 #: ../plugins/am-project/am-properties.c:232
 msgid "Common additional C compiler flags for all targets in this group."
-msgstr "Дополнительные ключи компилятора языка C для всех целей из этой группы."
+msgstr ""
+"Дополнительные ключи компилятора языка C для всех целей из этой группы."
 
 #: ../plugins/am-project/am-properties.c:131
 #: ../plugins/am-project/am-properties.c:238
@@ -963,7 +1001,8 @@ msgstr "Ключи компилятора C++:"
 #: ../plugins/am-project/am-properties.c:134
 #: ../plugins/am-project/am-properties.c:241
 msgid "Common additional C++ compiler flags for all targets in this group."
-msgstr "Дополнительные ключи компилятора языка C++ для всех целей из этой группы."
+msgstr ""
+"Дополнительные ключи компилятора языка C++ для всех целей из этой группы."
 
 #: ../plugins/am-project/am-properties.c:140
 #: ../plugins/am-project/am-properties.c:247
@@ -977,7 +1016,8 @@ msgstr "Ключи компилятора Java:"
 #: ../plugins/am-project/am-properties.c:143
 #: ../plugins/am-project/am-properties.c:250
 msgid "Common additional Java compiler flags for all targets in this group."
-msgstr "Дополнительные ключи компилятора языка Java для всех целей из этой группы."
+msgstr ""
+"Дополнительные ключи компилятора языка Java для всех целей из этой группы."
 
 #: ../plugins/am-project/am-properties.c:149
 #: ../plugins/am-project/am-properties.c:256
@@ -991,7 +1031,8 @@ msgstr "Ключи компилятора Vala:"
 #: ../plugins/am-project/am-properties.c:152
 #: ../plugins/am-project/am-properties.c:259
 msgid "Common additional Vala compiler flags for all targets in this group."
-msgstr "Дополнительные ключи компилятора языка Vala для всех целей из этой группы."
+msgstr ""
+"Дополнительные ключи компилятора языка Vala для всех целей из этой группы."
 
 #: ../plugins/am-project/am-properties.c:158
 #: ../plugins/am-project/am-properties.c:265
@@ -1005,7 +1046,8 @@ msgstr "Ключи компилятора Fortran:"
 #: ../plugins/am-project/am-properties.c:161
 #: ../plugins/am-project/am-properties.c:268
 msgid "Common additional Fortran compiler flags for all targets in this group."
-msgstr "Дополнительные ключи компилятора языка Fortran для всех целей из этой группы."
+msgstr ""
+"Дополнительные ключи компилятора языка Fortran для всех целей из этой группы."
 
 #: ../plugins/am-project/am-properties.c:167
 #: ../plugins/am-project/am-properties.c:274
@@ -1018,8 +1060,11 @@ msgstr "Ключи компилятора Objective C:"
 
 #: ../plugins/am-project/am-properties.c:170
 #: ../plugins/am-project/am-properties.c:277
-msgid "Common additional Objective C compiler flags for all targets in this group."
-msgstr "Дополнительные ключи компилятора языка Objective C для всех целей из этой группы."
+msgid ""
+"Common additional Objective C compiler flags for all targets in this group."
+msgstr ""
+"Дополнительные ключи компилятора языка Objective C для всех целей из этой "
+"группы."
 
 #: ../plugins/am-project/am-properties.c:176
 #: ../plugins/am-project/am-properties.c:283
@@ -1032,8 +1077,12 @@ msgstr "Ключи Lex/Flex:"
 
 #: ../plugins/am-project/am-properties.c:179
 #: ../plugins/am-project/am-properties.c:286
-msgid "Common additional Lex or Flex lexical analyser generator flags for all targets in this group."
-msgstr "Дополнительные ключи лексического анализатора Lex или Flex для всех целей из этой группы"
+msgid ""
+"Common additional Lex or Flex lexical analyser generator flags for all "
+"targets in this group."
+msgstr ""
+"Дополнительные ключи лексического анализатора Lex или Flex для всех целей из "
+"этой группы"
 
 #: ../plugins/am-project/am-properties.c:185
 #: ../plugins/am-project/am-properties.c:292
@@ -1046,7 +1095,9 @@ msgstr "Ключи Yacc/Bison:"
 
 #: ../plugins/am-project/am-properties.c:188
 #: ../plugins/am-project/am-properties.c:295
-msgid "Common additional Yacc or Bison parser generator flags for all targets in this group."
+msgid ""
+"Common additional Yacc or Bison parser generator flags for all targets in "
+"this group."
 msgstr "Дополнительные ключи Yacc или Bison для всех целей из этой группы."
 
 #: ../plugins/am-project/am-properties.c:194
@@ -1057,7 +1108,9 @@ msgstr "Каталоги установки:"
 #: ../plugins/am-project/am-properties.c:197
 #: ../plugins/am-project/am-properties.c:304
 msgid "List of custom installation directories used by targets in this group."
-msgstr "Список дополнительных установочных каталогов, используемых целями из этой группы."
+msgstr ""
+"Список дополнительных установочных каталогов, используемых целями из этой "
+"группы."
 
 #: ../plugins/am-project/am-properties.c:317
 #: ../plugins/am-project/am-properties.c:501
@@ -1092,8 +1145,12 @@ msgstr "Каталог установки:"
 #: ../plugins/am-project/am-properties.c:864
 #: ../plugins/am-project/am-properties.c:1075
 #: ../plugins/am-project/am-properties.c:1150
-msgid "It has to be a standard directory or a custom one defined in group properties."
-msgstr "Должен быть стандартным каталогом или каталогом, определённым в свойствах группы."
+msgid ""
+"It has to be a standard directory or a custom one defined in group "
+"properties."
+msgstr ""
+"Должен быть стандартным каталогом или каталогом, определённым в свойствах "
+"группы."
 
 #: ../plugins/am-project/am-properties.c:339
 #: ../plugins/am-project/am-properties.c:523
@@ -1174,8 +1231,11 @@ msgstr "Дополнительные ключи компилятора Objective
 #: ../plugins/am-project/am-properties.c:604
 #: ../plugins/am-project/am-properties.c:779
 #: ../plugins/am-project/am-properties.c:955
-msgid "Additional Lex or Flex lexical analyser generator flags for this target."
-msgstr "Дополнительные ключи генератора лексического анализатора Lex или Flex для этой цели."
+msgid ""
+"Additional Lex or Flex lexical analyser generator flags for this target."
+msgstr ""
+"Дополнительные ключи генератора лексического анализатора Lex или Flex для "
+"этой цели."
 
 #: ../plugins/am-project/am-properties.c:438
 #: ../plugins/am-project/am-properties.c:613
@@ -1257,8 +1317,12 @@ msgstr "Не использовать префикс:"
 #: ../plugins/am-project/am-properties.c:1039
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
-msgid "Do not rename the target with an optional prefix, used to avoid overwritting system program. "
-msgstr "Не переименовывать цель с необязательным префиксом; используется для предотвращения перезаписи системных программ."
+msgid ""
+"Do not rename the target with an optional prefix, used to avoid overwritting "
+"system program. "
+msgstr ""
+"Не переименовывать цель с необязательным префиксом; используется для "
+"предотвращения перезаписи системных программ."
 
 #: ../plugins/am-project/am-properties.c:483
 #: ../plugins/am-project/am-properties.c:658
@@ -1275,8 +1339,14 @@ msgstr "Целевой путь:"
 #: ../plugins/am-project/am-properties.c:1012
 #: ../plugins/am-project/am-properties.c:1123
 #: ../plugins/am-project/am-properties.c:1195
-msgid "Keep relative target path for installing it. By example if you have a program subdir/app installed in bin directory it will be installed in bin/subdir/app not in bin/app."
-msgstr "Целевой путь для установки. Например, при установке программы subdir/app в каталог bin программа будет установлена в каталог bin/subdir/app, а не в bin/app."
+msgid ""
+"Keep relative target path for installing it. By example if you have a "
+"program subdir/app installed in bin directory it will be installed in bin/"
+"subdir/app not in bin/app."
+msgstr ""
+"Целевой путь для установки. Например, при установке программы subdir/app в "
+"каталог bin программа будет установлена в каталог bin/subdir/app, а не в bin/"
+"app."
 
 #: ../plugins/am-project/am-properties.c:529
 #: ../plugins/am-project/am-properties.c:704
@@ -1289,8 +1359,12 @@ msgid "Manual section:"
 msgstr "Раздел руководств:"
 
 #: ../plugins/am-project/am-properties.c:1049
-msgid "Section where are installed the man pages. Valid section names are the digits ‘0’ through ‘9’, and the letters ‘l’ and ‘n’. "
-msgstr "Раздел для установки страниц руководства (man). Допустимые имена раздела: цифры от 0 до 9 и буквы «l» и «n»."
+msgid ""
+"Section where are installed the man pages. Valid section names are the "
+"digits ‘0’ through ‘9’, and the letters ‘l’ and ‘n’. "
+msgstr ""
+"Раздел для установки страниц руководства (man). Допустимые имена раздела: "
+"цифры от 0 до 9 и буквы «l» и «n»."
 
 #: ../plugins/am-project/amp-source.c:97
 msgid "Source file must be a regular file, not a directory"
@@ -1305,8 +1379,10 @@ msgid "Please specify target name"
 msgstr "Задайте название цели"
 
 #: ../plugins/am-project/amp-target.c:383
-msgid "Target name can only contain alphanumeric, '_', '-', '/' or '.' characters"
-msgstr "Название цели может содержать только буквы, цифры и символы «_», «-», «.»"
+msgid ""
+"Target name can only contain alphanumeric, '_', '-', '/' or '.' characters"
+msgstr ""
+"Название цели может содержать только буквы, цифры и символы «_», «-», «.»"
 
 #: ../plugins/am-project/amp-target.c:398
 msgid "Shared library target name must be of the form 'libxxx.la'"
@@ -1408,8 +1484,12 @@ msgid "Install"
 msgstr "Установить"
 
 #: ../plugins/build-basic-autotools/build.c:527
-msgid "Before using this new configuration, the default one needs to be removed. Do you want to do that ?"
-msgstr "Перед использованием новой конфигурации конфигурация по умолчанию должна быть удалена. Хотите удалить её?"
+msgid ""
+"Before using this new configuration, the default one needs to be removed. Do "
+"you want to do that ?"
+msgstr ""
+"Перед использованием новой конфигурации конфигурация по умолчанию должна "
+"быть удалена. Хотите удалить её?"
 
 #: ../plugins/build-basic-autotools/build.c:532
 #: ../plugins/build-basic-autotools/plugin.c:987
@@ -1420,12 +1500,14 @@ msgstr "Команда отменена пользователем"
 #: ../plugins/build-basic-autotools/build.c:882
 #, c-format
 msgid "Cannot compile \"%s\": No compile rule defined for this file type."
-msgstr "Не удалось скомпилировать «%s»: нет правил сборки для файлов данного типа."
+msgstr ""
+"Не удалось скомпилировать «%s»: нет правил сборки для файлов данного типа."
 
 #: ../plugins/build-basic-autotools/build.c:1056
 #, c-format
 msgid "Cannot configure project: Missing configure script in %s."
-msgstr "Не удалось выполнить настройку проекта: в %s отсутствует сценарий настройки."
+msgstr ""
+"Не удалось выполнить настройку проекта: в %s отсутствует сценарий настройки."
 
 #: ../plugins/build-basic-autotools/build-options.c:80
 msgid "Select a build directory inside the project directory"
@@ -1497,8 +1579,18 @@ msgstr "Команда, используемая для установки фа�
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:4
 #, no-c-format
-msgid "The command has to contain \"%s\" or \"%q\". This will be replaced by the command used to install the files, by example \"make install\". %s is replaced by the command without any change while %q is replaced by the quoted command. You can use %% to get a \"%\" character. A typical value is \"sudo %s\" or \"su -c %q\"."
-msgstr "Команда должна содержать «%s» или «%q». Это будет замещено командой, используемой для установки файлов, например, «make install». %s замещается командой без каких-либо изменений, %q заменяется командой в кавычках. Вы также можете использовать %% для записи символа «%». Типичные значения: «sudo %s» или «su -c %q»."
+msgid ""
+"The command has to contain \"%s\" or \"%q\". This will be replaced by the "
+"command used to install the files, by example \"make install\". %s is "
+"replaced by the command without any change while %q is replaced by the "
+"quoted command. You can use %% to get a \"%\" character. A typical value is "
+"\"sudo %s\" or \"su -c %q\"."
+msgstr ""
+"Команда должна содержать «%s» или «%q». Это будет замещено командой, "
+"используемой для установки файлов, например, «make install». %s замещается "
+"командой без каких-либо изменений, %q заменяется командой в кавычках. Вы "
+"также можете использовать %% для записи символа «%». Типичные значения: "
+"«sudo %s» или «su -c %q»."
 
 #. The translations should match that of 'make' program. Both strings uses
 #. * pearl regular expression
@@ -1715,8 +1807,11 @@ msgid "Remove Configuration"
 msgstr "Удалить конфигурацию"
 
 #: ../plugins/build-basic-autotools/plugin.c:1768
-msgid "Clean project (distclean) and remove configuration directory if possible"
-msgstr "Очистить проект (distclean) и удалить конфигурационный каталог, если это возможно"
+msgid ""
+"Clean project (distclean) and remove configuration directory if possible"
+msgstr ""
+"Очистить проект (distclean) и удалить конфигурационный каталог, если это "
+"возможно"
 
 #: ../plugins/build-basic-autotools/plugin.c:1781
 #: ../plugins/build-basic-autotools/plugin.c:1809
@@ -1798,18 +1893,18 @@ msgstr "_Компилировать (%s)"
 msgid "Co_mpile"
 msgstr "_Компилировать"
 
-#: ../plugins/build-basic-autotools/plugin.c:2515
+#: ../plugins/build-basic-autotools/plugin.c:2517
 msgid "Build commands"
 msgstr "Команды для сборки"
 
 #. Translators: This is a group of build
 #. * commands which appears in pop up menus
-#: ../plugins/build-basic-autotools/plugin.c:2524
+#: ../plugins/build-basic-autotools/plugin.c:2526
 msgid "Build popup commands"
 msgstr "Всплывающие команды для сборки"
 
-#: ../plugins/build-basic-autotools/plugin.c:2960
-#: ../plugins/build-basic-autotools/plugin.c:2968
+#: ../plugins/build-basic-autotools/plugin.c:2970
+#: ../plugins/build-basic-autotools/plugin.c:2978
 msgid "Build Autotools"
 msgstr "Сборка с Autotools"
 
@@ -2022,18 +2117,19 @@ msgstr "Шаблон autogen, используемый для заголовоч
 msgid "Autogen template used for the implementation file"
 msgstr "Шаблон autogen, используемый для файла реализации"
 
-#: ../plugins/class-gen/generator.c:313
-#: ../plugins/class-gen/generator.c:321
+#: ../plugins/class-gen/generator.c:313 ../plugins/class-gen/generator.c:321
 msgid "File to which the processed template will be written"
 msgstr "Файл для записи обрабатываемого шаблона"
 
-#: ../plugins/class-gen/plugin.c:107
-#: ../plugins/project-wizard/druid.c:1268
-msgid "Could not find autogen version 5; please install the autogen package. You can get it from http://autogen.sourceforge.net."
-msgstr "Не удалось найти autogen версии 5, установите пакет autogen. Вы можете найти его здесь: http://autogen.sourceforge.net."
+#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1373
+msgid ""
+"Could not find autogen version 5; please install the autogen package. You "
+"can get it from http://autogen.sourceforge.net."
+msgstr ""
+"Не удалось найти autogen версии 5, установите пакет autogen. Вы можете найти "
+"его здесь: http://autogen.sourceforge.net."
 
-#: ../plugins/class-gen/plugin.c:261
-#: ../plugins/class-gen/plugin.c:472
+#: ../plugins/class-gen/plugin.c:261 ../plugins/class-gen/plugin.c:472
 #, c-format
 msgid "Failed to execute autogen: %s"
 msgstr "Не удалось выполнить autogen: %s"
@@ -2042,10 +2138,8 @@ msgstr "Не удалось выполнить autogen: %s"
 msgid "Guess from type"
 msgstr "Предполагаемый тип"
 
-#: ../plugins/class-gen/window.c:716
-#: ../plugins/class-gen/window.c:727
-#: ../plugins/class-gen/window.c:801
-#: ../plugins/class-gen/window.c:811
+#: ../plugins/class-gen/window.c:716 ../plugins/class-gen/window.c:727
+#: ../plugins/class-gen/window.c:801 ../plugins/class-gen/window.c:811
 #: ../plugins/class-gen/window.c:824
 msgid "Scope"
 msgstr "Область видимости"
@@ -2054,10 +2148,8 @@ msgstr "Область видимости"
 msgid "Implementation"
 msgstr "Реализация"
 
-#: ../plugins/class-gen/window.c:718
-#: ../plugins/class-gen/window.c:728
-#: ../plugins/class-gen/window.c:750
-#: ../plugins/class-gen/window.c:802
+#: ../plugins/class-gen/window.c:718 ../plugins/class-gen/window.c:728
+#: ../plugins/class-gen/window.c:750 ../plugins/class-gen/window.c:802
 #: ../plugins/class-gen/window.c:812
 #: ../plugins/debug-manager/breakpoints.c:1953
 #: ../plugins/debug-manager/debug_tree.c:128
@@ -2065,12 +2157,9 @@ msgstr "Реализация"
 msgid "Type"
 msgstr "Тип"
 
-#: ../plugins/class-gen/window.c:720
-#: ../plugins/class-gen/window.c:730
-#: ../plugins/class-gen/window.c:752
-#: ../plugins/class-gen/window.c:762
-#: ../plugins/class-gen/window.c:778
-#: ../plugins/class-gen/window.c:804
+#: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
+#: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
+#: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
 #: ../plugins/class-gen/window.c:826
 #: ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
@@ -2093,8 +2182,7 @@ msgid "ParamSpec"
 msgstr "ParamSpec"
 
 #. Somehow redundant with marshaller, but required for default handler
-#: ../plugins/class-gen/window.c:743
-#: ../plugins/class-gen/window.c:753
+#: ../plugins/class-gen/window.c:743 ../plugins/class-gen/window.c:753
 msgid "Flags"
 msgstr "Флаги"
 
@@ -2103,8 +2191,7 @@ msgid "Marshaller"
 msgstr "Маршаллер"
 
 #. Automatic highlight menu
-#: ../plugins/class-gen/window.c:814
-#: ../plugins/document-manager/plugin.c:1014
+#: ../plugins/class-gen/window.c:814 ../plugins/document-manager/plugin.c:1014
 msgid "Automatic"
 msgstr "Автоматически"
 
@@ -2200,11 +2287,15 @@ msgstr "Выберите файл или каталог для удаления:
 msgid ""
 "<b>Please note: </b>\n"
 "\n"
-"Pressing OK will delete the file from disk and from CVS. Of course, the file won't be removed from CVS before you use CVS Commit. <b>You have been warned!</b>"
+"Pressing OK will delete the file from disk and from CVS. Of course, the file "
+"won't be removed from CVS before you use CVS Commit. <b>You have been warned!"
+"</b>"
 msgstr ""
 "<b>Внимание: </b>\n"
 "\n"
-"После нажатия OK файл будет удалён с диска и из CVS. Естественно, файл не будет удалён из CVS до вызова фиксации изменений CVS. <b>Вы предупреждены!</b>"
+"После нажатия OK файл будет удалён с диска и из CVS. Естественно, файл не "
+"будет удалён из CVS до вызова фиксации изменений CVS. <b>Вы предупреждены!</"
+"b>"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:20
 msgid "CVS: Commit file/directory"
@@ -2408,19 +2499,17 @@ msgstr[2] "Команда CVS выполнена успешно. Затраче�
 
 #: ../plugins/cvs-plugin/cvs-execute.c:221
 msgid "CVS command is running — please wait until it finishes!"
-msgstr "Команда CVS выполняется - дождитесь её окончания!"
+msgstr "Команда CVS выполняется — дождитесь её окончания!"
 
 #: ../plugins/cvs-plugin/cvs-execute.c:229
-#: ../plugins/cvs-plugin/cvs-execute.c:233
-#: ../plugins/cvs-plugin/plugin.c:472
+#: ../plugins/cvs-plugin/cvs-execute.c:233 ../plugins/cvs-plugin/plugin.c:472
 #: ../plugins/cvs-plugin/plugin.c:479
 msgid "CVS"
 msgstr "CVS"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/cvs-plugin/plugin.c:46
-#: ../plugins/cvs-plugin/plugin.c:121
+#: ../plugins/cvs-plugin/plugin.c:46 ../plugins/cvs-plugin/plugin.c:121
 msgid "_CVS"
 msgstr "C_VS"
 
@@ -2450,72 +2539,62 @@ msgstr "Удалить файл или папку из дерева CVS"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/cvs-plugin/plugin.c:70
-#: ../plugins/cvs-plugin/plugin.c:129
+#: ../plugins/cvs-plugin/plugin.c:70 ../plugins/cvs-plugin/plugin.c:129
 msgid "_Commit"
 msgstr "_Фиксировать"
 
 #. Display label
 #. short-cut
-#: ../plugins/cvs-plugin/plugin.c:72
-#: ../plugins/cvs-plugin/plugin.c:131
+#: ../plugins/cvs-plugin/plugin.c:72 ../plugins/cvs-plugin/plugin.c:131
 msgid "Commit your changes to the CVS tree"
 msgstr "Фиксировать изменения в дереве CVS"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/cvs-plugin/plugin.c:78
-#: ../plugins/cvs-plugin/plugin.c:137
+#: ../plugins/cvs-plugin/plugin.c:78 ../plugins/cvs-plugin/plugin.c:137
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:6
 msgid "_Update"
 msgstr "_Обновить"
 
 #. Display label
 #. short-cut
-#: ../plugins/cvs-plugin/plugin.c:80
-#: ../plugins/cvs-plugin/plugin.c:139
+#: ../plugins/cvs-plugin/plugin.c:80 ../plugins/cvs-plugin/plugin.c:139
 msgid "Syncronize your local copy with the CVS tree"
 msgstr "Синхронизировать локальную копию с деревом CVS"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/cvs-plugin/plugin.c:86
-#: ../plugins/cvs-plugin/plugin.c:145
+#: ../plugins/cvs-plugin/plugin.c:86 ../plugins/cvs-plugin/plugin.c:145
 msgid "_Diff"
 msgstr "_Различия"
 
 #. Display label
 #. short-cut
-#: ../plugins/cvs-plugin/plugin.c:88
-#: ../plugins/cvs-plugin/plugin.c:147
+#: ../plugins/cvs-plugin/plugin.c:88 ../plugins/cvs-plugin/plugin.c:147
 msgid "Show differences between your local copy and the tree"
 msgstr "Показать различия между локальной копией и деревом"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/cvs-plugin/plugin.c:94
-#: ../plugins/cvs-plugin/plugin.c:153
+#: ../plugins/cvs-plugin/plugin.c:94 ../plugins/cvs-plugin/plugin.c:153
 msgid "_Show Status"
 msgstr "_Показать состояние"
 
 #. Display label
 #. short-cut
-#: ../plugins/cvs-plugin/plugin.c:96
-#: ../plugins/cvs-plugin/plugin.c:155
+#: ../plugins/cvs-plugin/plugin.c:96 ../plugins/cvs-plugin/plugin.c:155
 msgid "Show the status of a file/directory"
 msgstr "Показать состояние файла или каталога"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/cvs-plugin/plugin.c:102
-#: ../plugins/cvs-plugin/plugin.c:161
+#: ../plugins/cvs-plugin/plugin.c:102 ../plugins/cvs-plugin/plugin.c:161
 msgid "_Show Log"
 msgstr "П_оказать журнал"
 
 #. Display label
 #. short-cut
-#: ../plugins/cvs-plugin/plugin.c:104
-#: ../plugins/cvs-plugin/plugin.c:163
+#: ../plugins/cvs-plugin/plugin.c:104 ../plugins/cvs-plugin/plugin.c:163
 msgid "Show the log of a file/directory"
 msgstr "Показать журнал файла или каталога"
 
@@ -2540,12 +2619,9 @@ msgid "CVS popup operations"
 msgstr "Всплывающие команды CVS"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.plugin.in.h:1
-#: ../plugins/debug-manager/plugin.c:407
-#: ../plugins/debug-manager/plugin.c:427
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:475
-#: ../plugins/debug-manager/plugin.c:507
-#: ../plugins/debug-manager/plugin.c:538
+#: ../plugins/debug-manager/plugin.c:410 ../plugins/debug-manager/plugin.c:430
+#: ../plugins/debug-manager/plugin.c:453 ../plugins/debug-manager/plugin.c:478
+#: ../plugins/debug-manager/plugin.c:510 ../plugins/debug-manager/plugin.c:541
 msgid "Debugger"
 msgstr "Отладчик"
 
@@ -2567,7 +2643,7 @@ msgstr "_Скрывать пути"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:4
 msgid "Hide process para_meters"
-msgstr "C_крывать параметры процесса"
+msgstr "С_крывать параметры процесса"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:5
 msgid "Display process _tree"
@@ -2663,8 +2739,8 @@ msgid "Shared libraries"
 msgstr "Разделяемые библиотеки"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:934
-#: ../plugins/debug-manager/plugin.c:1026
+#: ../plugins/debug-manager/plugin.c:937
+#: ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Сигналы ядра"
 
@@ -2759,13 +2835,19 @@ msgstr "Удалённая отладка"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:52
 msgid ""
-"<span weight=\"bold\" size=\"larger\">Are you sure you want to debug a program not using the Debug configuration?</span>\n"
+"<span weight=\"bold\" size=\"larger\">Are you sure you want to debug a "
+"program not using the Debug configuration?</span>\n"
 "\n"
-"When optimizations are enabled, the debugger cannot always identify the source code corresponding to the instructions, so some commands can perform in a strange way, especially steps."
+"When optimizations are enabled, the debugger cannot always identify the "
+"source code corresponding to the instructions, so some commands can perform "
+"in a strange way, especially steps."
 msgstr ""
-"<span weight=\"bold\" size=\"larger\">Запустить отладку программы без использования отладочной конфигурации?</span>\n"
+"<span weight=\"bold\" size=\"larger\">Запустить отладку программы без "
+"использования отладочной конфигурации?</span>\n"
 "\n"
-"Когда включены оптимизации, отладчик не всегда может сопоставить инструкции исходному коду, поэтому некоторые команды могут выполняться не совсем правильно, особенно пошаговые."
+"Когда включены оптимизации, отладчик не всегда может сопоставить инструкции "
+"исходному коду, поэтому некоторые команды могут выполняться не совсем "
+"правильно, особенно пошаговые."
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:55
 msgid "Do not show again"
@@ -2921,8 +3003,7 @@ msgstr "Операции с точками останова"
 msgid "_Go to address"
 msgstr "_Перейти к адресу"
 
-#: ../plugins/debug-manager/debug_tree.c:128
-#: ../plugins/tools/editor.c:470
+#: ../plugins/debug-manager/debug_tree.c:128 ../plugins/tools/editor.c:470
 msgid "Variable"
 msgstr "Переменная"
 
@@ -2930,9 +3011,8 @@ msgstr "Переменная"
 msgid "Disassembly"
 msgstr "Дизассемблер"
 
-#: ../plugins/debug-manager/info.c:52
-#: ../plugins/debug-manager/info.c:101
-#: ../plugins/project-wizard/druid.c:180
+#: ../plugins/debug-manager/info.c:52 ../plugins/debug-manager/info.c:101
+#: ../plugins/project-wizard/druid.c:188
 msgid "Information"
 msgstr "Информация"
 
@@ -2947,206 +3027,205 @@ msgstr "Локальные переменные"
 
 #: ../plugins/debug-manager/org.gnome.anjuta.plugins.debug-manager.gschema.xml.in.h:1
 msgid "Do not display warning if not using a Debug configuration"
-msgstr "Не показывать предупреждение, если не используется отладочная конфигурация"
+msgstr ""
+"Не показывать предупреждение, если не используется отладочная конфигурация"
 
-#: ../plugins/debug-manager/plugin.c:337
+#: ../plugins/debug-manager/plugin.c:340
 msgid "Debugger Log"
 msgstr "Журнал отладчика"
 
-#: ../plugins/debug-manager/plugin.c:407
+#: ../plugins/debug-manager/plugin.c:410
 msgid "Started"
 msgstr "Запущен"
 
-#: ../plugins/debug-manager/plugin.c:427
+#: ../plugins/debug-manager/plugin.c:430
 msgid "Loaded"
 msgstr "Загружен"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:446
-#: ../plugins/debug-manager/plugin.c:1038
+#: ../plugins/debug-manager/plugin.c:449
+#: ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "При_остановить выполнение программы"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:447
-#: ../plugins/debug-manager/plugin.c:1040
+#: ../plugins/debug-manager/plugin.c:450
+#: ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Приостановить выполнение программы"
 
-#: ../plugins/debug-manager/plugin.c:450
+#: ../plugins/debug-manager/plugin.c:453
 msgid "Running…"
 msgstr "Исполняется…"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:471
-#: ../plugins/debug-manager/plugin.c:954
+#: ../plugins/debug-manager/plugin.c:474 ../plugins/debug-manager/plugin.c:957
 msgid "Run/_Continue"
 msgstr "Запустить или п_родолжить"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:472
-#: ../plugins/debug-manager/plugin.c:956
+#: ../plugins/debug-manager/plugin.c:475 ../plugins/debug-manager/plugin.c:959
 msgid "Continue the execution of the program"
 msgstr "Продолжить выполнение программы"
 
-#: ../plugins/debug-manager/plugin.c:475
+#: ../plugins/debug-manager/plugin.c:478
 msgid "Stopped"
 msgstr "Остановлен"
 
-#: ../plugins/debug-manager/plugin.c:507
+#: ../plugins/debug-manager/plugin.c:510
 msgid "Unloaded"
 msgstr "Выгружен"
 
-#: ../plugins/debug-manager/plugin.c:547
+#: ../plugins/debug-manager/plugin.c:550
 #, c-format
 msgid "Debugger terminated with error %d: %s\n"
 msgstr "Программа завершилась с кодом ошибки %d: %s\n"
 
-#: ../plugins/debug-manager/plugin.c:560
+#: ../plugins/debug-manager/plugin.c:563
 #, c-format
 msgid "Program has received signal: %s\n"
 msgstr "Программа·получила·сигнал: %s\n"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:850
+#: ../plugins/debug-manager/plugin.c:853
 msgid "_Debug"
 msgstr "О_тладка"
 
-#: ../plugins/debug-manager/plugin.c:858
+#: ../plugins/debug-manager/plugin.c:861
 msgid "_Start Debugger"
 msgstr "Запустить _отладчик"
 
-#: ../plugins/debug-manager/plugin.c:866
+#: ../plugins/debug-manager/plugin.c:869
 msgid "_Debug Program"
 msgstr "О_тладить программу"
 
-#: ../plugins/debug-manager/plugin.c:868
+#: ../plugins/debug-manager/plugin.c:871
 msgid "Start debugger and load the program"
 msgstr "Запустить отладчик и загрузить программу"
 
-#: ../plugins/debug-manager/plugin.c:874
+#: ../plugins/debug-manager/plugin.c:877
 msgid "_Debug Process…"
 msgstr "_Отладить процесс…"
 
-#: ../plugins/debug-manager/plugin.c:876
+#: ../plugins/debug-manager/plugin.c:879
 msgid "Start debugger and attach to a running program"
 msgstr "Запустить отладчик и подключиться к запущенной программе"
 
-#: ../plugins/debug-manager/plugin.c:882
+#: ../plugins/debug-manager/plugin.c:885
 msgid "Debug _Remote Target…"
 msgstr "Отладить _удалённую цель…"
 
-#: ../plugins/debug-manager/plugin.c:884
+#: ../plugins/debug-manager/plugin.c:887
 msgid "Connect to a remote debugging target"
 msgstr "Подключиться к удалённо отлаживаемой цели"
 
-#: ../plugins/debug-manager/plugin.c:890
+#: ../plugins/debug-manager/plugin.c:893
 msgid "Stop Debugger"
 msgstr "Остановить отладчик"
 
-#: ../plugins/debug-manager/plugin.c:892
+#: ../plugins/debug-manager/plugin.c:895
 msgid "Say goodbye to the debugger"
 msgstr "Попрощаться с отладчиком"
 
-#: ../plugins/debug-manager/plugin.c:898
+#: ../plugins/debug-manager/plugin.c:901
 msgid "Add source paths…"
 msgstr "Добавить каталоги с исходными кодами…"
 
-#: ../plugins/debug-manager/plugin.c:900
+#: ../plugins/debug-manager/plugin.c:903
 msgid "Add additional source paths"
 msgstr "Добавить дополнительные пути к исходным кодам"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:910
-#: ../plugins/debug-manager/plugin.c:1002
+#: ../plugins/debug-manager/plugin.c:913
+#: ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "Команда отладчика…"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:912
-#: ../plugins/debug-manager/plugin.c:1004
+#: ../plugins/debug-manager/plugin.c:915
+#: ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Дополнительная команда отладки"
 
-#: ../plugins/debug-manager/plugin.c:918
-#: ../plugins/debug-manager/plugin.c:1010
+#: ../plugins/debug-manager/plugin.c:921
+#: ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Информация"
 
-#: ../plugins/debug-manager/plugin.c:926
-#: ../plugins/debug-manager/plugin.c:1018
+#: ../plugins/debug-manager/plugin.c:929
+#: ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Разделяемые библиотеки"
 
-#: ../plugins/debug-manager/plugin.c:928
-#: ../plugins/debug-manager/plugin.c:1020
+#: ../plugins/debug-manager/plugin.c:931
+#: ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Показать карты разделяемых библиотек"
 
-#: ../plugins/debug-manager/plugin.c:936
-#: ../plugins/debug-manager/plugin.c:1028
+#: ../plugins/debug-manager/plugin.c:939
+#: ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Показать сигналы ядра"
 
-#: ../plugins/debug-manager/plugin.c:942
+#: ../plugins/debug-manager/plugin.c:945
 msgid "_Continue/Suspend"
 msgstr "_Продолжить/приостановить"
 
-#: ../plugins/debug-manager/plugin.c:944
+#: ../plugins/debug-manager/plugin.c:947
 msgid "Continue or suspend the execution of the program"
 msgstr "Продолжить или приостановить выполнение программы"
 
-#: ../plugins/debug-manager/plugin.c:962
+#: ../plugins/debug-manager/plugin.c:965
 msgid "Step _In"
 msgstr "Шаг _в"
 
-#: ../plugins/debug-manager/plugin.c:964
+#: ../plugins/debug-manager/plugin.c:967
 msgid "Single step into function"
 msgstr "Один шаг в функцию"
 
-#: ../plugins/debug-manager/plugin.c:970
+#: ../plugins/debug-manager/plugin.c:973
 msgid "Step O_ver"
 msgstr "Шаг _через"
 
-#: ../plugins/debug-manager/plugin.c:972
+#: ../plugins/debug-manager/plugin.c:975
 msgid "Single step over function"
 msgstr "Один шаг через функцию"
 
-#: ../plugins/debug-manager/plugin.c:978
+#: ../plugins/debug-manager/plugin.c:981
 msgid "Step _Out"
 msgstr "Шаг _из"
 
-#: ../plugins/debug-manager/plugin.c:980
+#: ../plugins/debug-manager/plugin.c:983
 msgid "Single step out of function"
 msgstr "Один шаг из функции"
 
-#: ../plugins/debug-manager/plugin.c:986
+#: ../plugins/debug-manager/plugin.c:989
 msgid "_Run to Cursor"
 msgstr "Выполнить до _курсора"
 
-#: ../plugins/debug-manager/plugin.c:988
+#: ../plugins/debug-manager/plugin.c:991
 msgid "Run to the cursor"
 msgstr "Выполнить до курсора"
 
-#: ../plugins/debug-manager/plugin.c:994
+#: ../plugins/debug-manager/plugin.c:997
 msgid "_Run from Cursor"
 msgstr "_Запустить от курсора"
 
-#: ../plugins/debug-manager/plugin.c:996
+#: ../plugins/debug-manager/plugin.c:999
 msgid "Run from the cursor"
 msgstr "Запустить от курсора"
 
-#: ../plugins/debug-manager/plugin.c:1080
-#: ../plugins/debug-manager/plugin.c:1086
-#: ../plugins/debug-manager/plugin.c:1092
-#: ../plugins/debug-manager/plugin.c:1098
+#: ../plugins/debug-manager/plugin.c:1083
+#: ../plugins/debug-manager/plugin.c:1089
+#: ../plugins/debug-manager/plugin.c:1095
+#: ../plugins/debug-manager/plugin.c:1101
 msgid "Debugger operations"
 msgstr "Операции отладчика"
 
@@ -3251,7 +3330,7 @@ msgstr "Исходный код"
 
 #: ../plugins/debug-manager/stack_trace.c:740
 msgid "Get Stack trace"
-msgstr "Получить состояние стэка"
+msgstr "Получить состояние стека"
 
 #: ../plugins/debug-manager/stack_trace.c:780
 msgid "Active"
@@ -3268,10 +3347,8 @@ msgstr "Кадр"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363
-#: ../plugins/symbol-db/plugin.c:2155
-#: ../plugins/tools/tool.c:100
-#: ../src/anjuta-window.c:679
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Файл"
 
@@ -3316,7 +3393,7 @@ msgstr "Не удалось выполнить: «%s». Возвращена о�
 #: ../plugins/debug-manager/start.c:644
 #, c-format
 msgid "Unable to open the file: %s\n"
-msgstr "Hе удалось открыть файл: %s\n"
+msgstr "Не удалось открыть файл: %s\n"
 
 #: ../plugins/debug-manager/start.c:971
 #, c-format
@@ -3382,8 +3459,7 @@ msgstr "Удалить все"
 msgid "Automatic update"
 msgstr "Обновлять автоматически"
 
-#: ../plugins/debug-manager/watch.c:491
-#: ../plugins/debug-manager/watch.c:497
+#: ../plugins/debug-manager/watch.c:491 ../plugins/debug-manager/watch.c:497
 msgid "Watch operations"
 msgstr "Операции с объектами наблюдения"
 
@@ -3403,10 +3479,8 @@ msgstr "Справка разработчика для Anjuta."
 msgid "Search Help:"
 msgstr "Поиск справки:"
 
-#: ../plugins/devhelp/plugin.c:220
-#: ../plugins/document-manager/plugin.c:234
-#: ../plugins/message-view/plugin.c:77
-#: ../plugins/symbol-db/plugin.c:327
+#: ../plugins/devhelp/plugin.c:220 ../plugins/document-manager/plugin.c:234
+#: ../plugins/message-view/plugin.c:77 ../plugins/symbol-db/plugin.c:327
 msgid "_Go to"
 msgstr "П_ерейти"
 
@@ -3438,13 +3512,11 @@ msgstr "Поиск справки по текущему слову в редак
 msgid "Help operations"
 msgstr "Операции со справкой"
 
-#: ../plugins/devhelp/plugin.c:352
-#: ../plugins/devhelp/plugin.c:444
+#: ../plugins/devhelp/plugin.c:352 ../plugins/devhelp/plugin.c:444
 msgid "API Browser"
 msgstr "Браузер API"
 
-#: ../plugins/devhelp/plugin.c:369
-#: ../plugins/devhelp/plugin.c:439
+#: ../plugins/devhelp/plugin.c:369 ../plugins/devhelp/plugin.c:439
 msgid "API"
 msgstr "API"
 
@@ -3468,7 +3540,9 @@ msgid "Directory backend"
 msgstr "Каталоги"
 
 #: ../plugins/dir-project/dir-project.plugin.in.h:2
-msgid "Directory project backend, get only source files, use it when other backend fails"
+msgid ""
+"Directory project backend, get only source files, use it when other backend "
+"fails"
 msgstr "Проект на основе каталогов; получает только файлы исходных кодов"
 
 #: ../plugins/document-manager/action-callbacks.c:315
@@ -3523,15 +3597,14 @@ msgid "Close file"
 msgstr "Закрыть файл"
 
 #: ../plugins/document-manager/anjuta-docman.c:773
+#: ../plugins/language-support-python/anjuta-language-support-python.ui.h:9
 #: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "Путь:"
 
 #: ../plugins/document-manager/anjuta-docman.c:890
-#: ../plugins/file-loader/plugin.c:597
-#: ../plugins/file-loader/plugin.c:887
-#: ../plugins/file-loader/plugin.c:897
-#: ../plugins/file-loader/plugin.c:910
+#: ../plugins/file-loader/plugin.c:597 ../plugins/file-loader/plugin.c:887
+#: ../plugins/file-loader/plugin.c:897 ../plugins/file-loader/plugin.c:910
 msgid "Open file"
 msgstr "Открыть файл"
 
@@ -3742,7 +3815,8 @@ msgstr "Преобразовать символы EOL в CRLF"
 
 #: ../plugins/document-manager/plugin.c:188
 msgid "Convert End Of Line characters to DOS EOL (CRLF)"
-msgstr "Преобразовать символы конца строки в символы перевода строки DOS (CRLF)"
+msgstr ""
+"Преобразовать символы конца строки в символы перевода строки DOS (CRLF)"
 
 #: ../plugins/document-manager/plugin.c:190
 msgid "Convert EOL to LF"
@@ -3750,7 +3824,8 @@ msgstr "Преобразовать символы EOL в LF"
 
 #: ../plugins/document-manager/plugin.c:191
 msgid "Convert End Of Line characters to Unix EOL (LF)"
-msgstr "Преобразовать символы конца строки (EOL) в символы перевода строки UNIX (LF)"
+msgstr ""
+"Преобразовать символы конца строки (EOL) в символы перевода строки UNIX (LF)"
 
 #: ../plugins/document-manager/plugin.c:193
 msgid "Convert EOL to CR"
@@ -3758,7 +3833,9 @@ msgstr "Преобразовать символы EOL в CR"
 
 #: ../plugins/document-manager/plugin.c:194
 msgid "Convert End Of Line characters to Mac OS EOL (CR)"
-msgstr "Преобразовать символы конца строки (EOL) в символы перевода строки Mac OS (CR)"
+msgstr ""
+"Преобразовать символы конца строки (EOL) в символы перевода строки Mac OS "
+"(CR)"
 
 #: ../plugins/document-manager/plugin.c:196
 msgid "Convert EOL to Majority EOL"
@@ -3766,7 +3843,9 @@ msgstr "Преобразовать символы EOL в преобладающ�
 
 #: ../plugins/document-manager/plugin.c:197
 msgid "Convert End Of Line characters to the most common EOL found in the file"
-msgstr "Преобразовать символы конца строки (EOL) в символы перевода строки, преобладающие в этом файле"
+msgstr ""
+"Преобразовать символы конца строки (EOL) в символы перевода строки, "
+"преобладающие в этом файле"
 
 #: ../plugins/document-manager/plugin.c:202
 msgid "_Select"
@@ -3950,11 +4029,10 @@ msgid "Search using regular expressions"
 msgstr "Поиск с использованием регулярного выражения"
 
 #: ../plugins/document-manager/plugin.c:295
-#: ../plugins/indentation-c-style/plugin.c:217
+#: ../plugins/indentation-c-style/plugin.c:218
 #: ../plugins/indentation-python-style/plugin.c:200
 #: ../plugins/language-support-cpp-java/plugin.c:1192
-#: ../plugins/language-support-python/plugin.c:377
-#: ../src/anjuta-actions.h:30
+#: ../plugins/language-support-python/plugin.c:377 ../src/anjuta-actions.h:30
 msgid "_Edit"
 msgstr "_Правка"
 
@@ -4005,8 +4083,7 @@ msgstr "Вырезать выделенный текст из редактора
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318
-#: ../plugins/terminal/terminal.c:547
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:583
 msgid "_Copy"
 msgstr "_Копировать"
 
@@ -4014,8 +4091,7 @@ msgstr "_Копировать"
 msgid "Copy the selected text to the clipboard"
 msgstr "Скопировать выделенный текст в буфер обмена"
 
-#: ../plugins/document-manager/plugin.c:321
-#: ../plugins/terminal/terminal.c:555
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:591
 msgid "_Paste"
 msgstr "Вст_авить"
 
@@ -4235,35 +4311,44 @@ msgstr "Не удалось автоматически сохранить фай
 msgid "Autosave completed"
 msgstr "Автосохранение завершено"
 
-#: ../plugins/document-manager/search-box.c:533
+#: ../plugins/document-manager/search-box.c:520
 #, c-format
 msgid "Search for \"%s\" reached the end and was continued at the top."
 msgstr "Поиск «%s» достиг конца и будет продолжен с начала."
 
-#: ../plugins/document-manager/search-box.c:538
+#: ../plugins/document-manager/search-box.c:525
 #, c-format
 msgid "Search for \"%s\" reached top and was continued at the bottom."
 msgstr "Поиск «%s» достиг начала и продолжен с конца."
 
-#: ../plugins/document-manager/search-box.c:548
+#: ../plugins/document-manager/search-box.c:535
 #, c-format
-msgid "Search for \"%s\" reached the end and was continued at the top but no new match was found."
-msgstr "Поиск «%s» достиг конца и начат с начала, но новые совпадения не были найдены."
+msgid ""
+"Search for \"%s\" reached the end and was continued at the top but no new "
+"match was found."
+msgstr ""
+"Поиск «%s» достиг конца и начат с начала, но новые совпадения не были "
+"найдены."
 
-#: ../plugins/document-manager/search-box.c:553
+#: ../plugins/document-manager/search-box.c:540
 #, c-format
-msgid "Search for \"%s\" reached top and was continued at the bottom but no new match was found."
-msgstr "Поиск «%s» достиг начала и продолжен с конца, но новые совпадения не найдены."
+msgid ""
+"Search for \"%s\" reached top and was continued at the bottom but no new "
+"match was found."
+msgstr ""
+"Поиск «%s» достиг начала и продолжен с конца, но новые совпадения не найдены."
 
-#: ../plugins/document-manager/search-box.c:916
+#: ../plugins/document-manager/search-box.c:917
 msgid "Use the context menu of the \"Find\" icon for more search options"
-msgstr "Используйте контекстное меню значка «Найти» для дополнительных параметров поиска"
+msgstr ""
+"Используйте контекстное меню значка «Найти» для дополнительных параметров "
+"поиска"
 
-#: ../plugins/document-manager/search-box.c:977
+#: ../plugins/document-manager/search-box.c:988
 msgid "Replace"
 msgstr "Заменить"
 
-#: ../plugins/document-manager/search-box.c:982
+#: ../plugins/document-manager/search-box.c:993
 msgid "Replace all"
 msgstr "Заменить всё"
 
@@ -4281,8 +4366,7 @@ msgid "Find in files"
 msgstr "Найти в файлах"
 
 #: ../plugins/file-loader/anjuta-loader.plugin.in.h:1
-#: ../plugins/file-loader/plugin.c:1230
-#: ../plugins/file-loader/plugin.c:1236
+#: ../plugins/file-loader/plugin.c:1230 ../plugins/file-loader/plugin.c:1236
 msgid "File Loader"
 msgstr "Загрузчик файла"
 
@@ -4362,7 +4446,8 @@ msgstr ""
 msgid ""
 "<b>Cannot open \"%s\"</b>.\n"
 "\n"
-"There is no plugin, default action, or application configured to handle this file type.\n"
+"There is no plugin, default action, or application configured to handle this "
+"file type.\n"
 "\n"
 "MIME type: %s\n"
 "\n"
@@ -4370,7 +4455,8 @@ msgid ""
 msgstr ""
 "<b>Не удалось открыть «%s»</b>.\n"
 "\n"
-"Не найден модуль, действие по умолчанию или приложение для работы с файлом данного типа.\n"
+"Не найден модуль, действие по умолчанию или приложение для работы с файлом "
+"данного типа.\n"
 "\n"
 "Тип MIME: %s\n"
 "\n"
@@ -4380,8 +4466,7 @@ msgstr ""
 msgid "Open with:"
 msgstr "Открыть с помощью:"
 
-#: ../plugins/file-loader/plugin.c:503
-#: ../plugins/patch/patch-plugin.c:124
+#: ../plugins/file-loader/plugin.c:503 ../plugins/patch/patch-plugin.c:124
 #: ../plugins/run-program/parameters.c:188
 msgid "All files"
 msgstr "Все файлы"
@@ -4455,18 +4540,15 @@ msgstr "Создать пустой файл"
 msgid "_Open…"
 msgstr "_Открыть…"
 
-#: ../plugins/file-loader/plugin.c:896
-#: ../plugins/file-loader/plugin.c:909
+#: ../plugins/file-loader/plugin.c:896 ../plugins/file-loader/plugin.c:909
 msgid "_Open"
 msgstr "_Открыть"
 
-#: ../plugins/file-loader/plugin.c:903
-#: ../plugins/file-loader/plugin.c:916
+#: ../plugins/file-loader/plugin.c:903 ../plugins/file-loader/plugin.c:916
 msgid "Open _With"
 msgstr "Открыть с _помощью"
 
-#: ../plugins/file-loader/plugin.c:904
-#: ../plugins/file-loader/plugin.c:917
+#: ../plugins/file-loader/plugin.c:904 ../plugins/file-loader/plugin.c:917
 msgid "Open with"
 msgstr "Открыть с помощью"
 
@@ -4478,8 +4560,7 @@ msgstr "Новый"
 msgid "New file, project and project components."
 msgstr "Создать файл, проект и компоненты проекта."
 
-#: ../plugins/file-loader/plugin.c:1248
-#: ../plugins/file-loader/plugin.c:1288
+#: ../plugins/file-loader/plugin.c:1248 ../plugins/file-loader/plugin.c:1288
 msgid "Open"
 msgstr "Открыть"
 
@@ -4487,8 +4568,7 @@ msgstr "Открыть"
 msgid "Open _Recent"
 msgstr "Открыть _последние"
 
-#: ../plugins/file-loader/plugin.c:1253
-#: ../plugins/file-loader/plugin.c:1290
+#: ../plugins/file-loader/plugin.c:1253 ../plugins/file-loader/plugin.c:1290
 msgid "Open recent file"
 msgstr "Открыть последний файл"
 
@@ -4500,8 +4580,7 @@ msgstr "Открыть последние файлы"
 msgid "Open a file"
 msgstr "Открыть файл"
 
-#: ../plugins/file-loader/plugin.c:1403
-#: ../plugins/file-loader/plugin.c:1405
+#: ../plugins/file-loader/plugin.c:1403 ../plugins/file-loader/plugin.c:1405
 #, c-format
 msgid "File not found"
 msgstr "Файл не найден"
@@ -4512,15 +4591,13 @@ msgstr "Файл не найден"
 msgid "Please select a plugin to open <b>%s</b>."
 msgstr "Выберите модуль, чтобы открыть <b>%s</b>."
 
-#: ../plugins/file-loader/plugin.c:1428
-#: ../plugins/project-import/plugin.c:290
+#: ../plugins/file-loader/plugin.c:1428 ../plugins/project-import/plugin.c:290
 #: ../plugins/project-manager/dialogs.c:647
 msgid "Open With"
 msgstr "Открыть с помощью"
 
 #: ../plugins/file-manager/file-manager.plugin.in.h:1
-#: ../plugins/file-manager/plugin.c:543
-#: ../plugins/file-manager/plugin.c:552
+#: ../plugins/file-manager/plugin.c:543 ../plugins/file-manager/plugin.c:552
 msgid "File Manager"
 msgstr "Файловый менеджер"
 
@@ -4534,7 +4611,8 @@ msgstr "Корневой каталог, если нет открытых про
 
 #: ../plugins/file-manager/file-manager.ui.h:2
 msgid "Choose Directory to show if no project is open"
-msgstr "Выберите каталог, который будет отображаться, если нет открытого проекта"
+msgstr ""
+"Выберите каталог, который будет отображаться, если нет открытого проекта"
 
 #: ../plugins/file-manager/file-manager.ui.h:3
 msgid "Automatically select the current document"
@@ -4566,17 +4644,16 @@ msgstr "Не показывать файлы, не учитываемые сис
 msgid "Filter"
 msgstr "Фильтр"
 
-#: ../plugins/file-manager/file-model.c:128
-#: ../plugins/git/anjuta-git.ui.h:34
+#: ../plugins/file-manager/file-model.c:128 ../plugins/git/anjuta-git.ui.h:34
 msgid "Loading..."
 msgstr "Загрузка…"
 
-#: ../plugins/file-manager/file-model.c:706
+#: ../plugins/file-manager/file-model.c:708
 #: ../plugins/file-manager/file-view.c:892
 msgid "Base Path"
 msgstr "Основной путь"
 
-#: ../plugins/file-manager/file-model.c:707
+#: ../plugins/file-manager/file-model.c:709
 #: ../plugins/file-manager/file-view.c:893
 msgid "GFile representing the top-most path displayed"
 msgstr "GFile показывает самый верхний путь"
@@ -4601,8 +4678,7 @@ msgstr "Показать в файловом менеджере"
 msgid "File manager popup actions"
 msgstr "Всплывающие действия файлового менеджера"
 
-#: ../plugins/file-manager/plugin.c:404
-#: ../plugins/git/plugin.c:156
+#: ../plugins/file-manager/plugin.c:404 ../plugins/git/plugin.c:156
 msgid "Files"
 msgstr "Файлы"
 
@@ -4730,62 +4806,63 @@ msgid ""
 "Unable to initialize debugger.\n"
 "Make sure Anjuta is installed correctly."
 msgstr ""
-"Hевозможно найти: %s.\n"
+"Невозможно найти: %s.\n"
 "Не удалось инициализировать отладчик.\n"
 "Убедитесь, что Anjuta установлена правильно."
 
-#: ../plugins/gdb/debugger.c:1130
+#: ../plugins/gdb/debugger.c:1131
 msgid "Getting ready to start debugging session…\n"
 msgstr "Подготовка к началу сеанса отладки…\n"
 
-#: ../plugins/gdb/debugger.c:1136
+#: ../plugins/gdb/debugger.c:1137
 msgid "Loading Executable: "
 msgstr "Загрузка исполняемого файла: "
 
-#: ../plugins/gdb/debugger.c:1145
+#: ../plugins/gdb/debugger.c:1146
 msgid "No executable specified.\n"
 msgstr "Исполняемый файл не указан.\n"
 
-#: ../plugins/gdb/debugger.c:1148
+#: ../plugins/gdb/debugger.c:1149
 msgid "Open an executable or attach to a process to start debugging.\n"
-msgstr "Для начала отладки откройте исполняемый файл или подключитесь к процессу.\n"
+msgstr ""
+"Для начала отладки откройте исполняемый файл или подключитесь к процессу.\n"
 
-#: ../plugins/gdb/debugger.c:1157
+#: ../plugins/gdb/debugger.c:1158
 msgid "There was an error whilst launching the debugger.\n"
 msgstr "При запуске отладчика произошла ошибка.\n"
 
-#: ../plugins/gdb/debugger.c:1161
+#: ../plugins/gdb/debugger.c:1162
 msgid "Make sure 'gdb' is installed on the system.\n"
 msgstr "Убедитесь, что в системе установлен \"gdb\".\n"
 
-#: ../plugins/gdb/debugger.c:1482
+#: ../plugins/gdb/debugger.c:1483
 msgid "Program exited normally\n"
 msgstr "Программа завершилась корректно\n"
 
-#: ../plugins/gdb/debugger.c:1493
+#: ../plugins/gdb/debugger.c:1494
 #, c-format
 msgid "Program exited with error code %s\n"
 msgstr "Программа завершилась с кодом ошибки %s\n"
 
 #. The program has reached one breakpoint and will stop
-#: ../plugins/gdb/debugger.c:1508
+#: ../plugins/gdb/debugger.c:1509
 #, c-format
 msgid "Breakpoint number %s hit\n"
 msgstr "Точка останова %s достигнута\n"
 
-#: ../plugins/gdb/debugger.c:1517
+#: ../plugins/gdb/debugger.c:1518
 msgid "Function finished\n"
 msgstr "Выполнение функции завершено\n"
 
-#: ../plugins/gdb/debugger.c:1523
+#: ../plugins/gdb/debugger.c:1524
 msgid "Stepping finished\n"
 msgstr "Шаг завершён\n"
 
-#: ../plugins/gdb/debugger.c:1529
+#: ../plugins/gdb/debugger.c:1530
 msgid "Location reached\n"
 msgstr "Расположение достигнуто\n"
 
-#: ../plugins/gdb/debugger.c:1926
+#: ../plugins/gdb/debugger.c:1927
 msgid ""
 "The program is attached.\n"
 "Do you still want to stop the debugger?"
@@ -4793,7 +4870,7 @@ msgstr ""
 "Программа подключена.\n"
 "Хотите остановить отладчик?"
 
-#: ../plugins/gdb/debugger.c:1929
+#: ../plugins/gdb/debugger.c:1930
 msgid ""
 "The program is running.\n"
 "Do you still want to stop the debugger?"
@@ -4803,7 +4880,7 @@ msgstr ""
 
 #. The %s argument is an error message returned by gdb.
 #. * It is something like, "No such file or directory"
-#: ../plugins/gdb/debugger.c:2087
+#: ../plugins/gdb/debugger.c:2088
 #, c-format
 msgid ""
 "Unable to connect to remote target, %s\n"
@@ -4812,20 +4889,20 @@ msgstr ""
 "Не удалось подключиться к удалённой цели, %s\n"
 "Хотите попытаться снова?"
 
-#: ../plugins/gdb/debugger.c:2105
+#: ../plugins/gdb/debugger.c:2106
 msgid "Debugger connected\n"
 msgstr "Отладчик подключён\n"
 
-#: ../plugins/gdb/debugger.c:2179
+#: ../plugins/gdb/debugger.c:2180
 msgid "Program attached\n"
 msgstr "Программа подключена\n"
 
-#: ../plugins/gdb/debugger.c:2200
+#: ../plugins/gdb/debugger.c:2201
 #, c-format
 msgid "Attaching to process: %d…\n"
 msgstr "Подключение к процессу: %d…\n"
 
-#: ../plugins/gdb/debugger.c:2226
+#: ../plugins/gdb/debugger.c:2227
 msgid ""
 "A process is already running.\n"
 "Would you like to terminate it and attach the new process?"
@@ -4833,44 +4910,46 @@ msgstr ""
 "Процесс уже исполняется.\n"
 "Хотите завершить его и подключиться к другому процессу?"
 
-#: ../plugins/gdb/debugger.c:2243
+#: ../plugins/gdb/debugger.c:2244
 msgid "Anjuta is unable to attach to itself."
 msgstr "Anjuta не может быть подключена сама к себе."
 
-#: ../plugins/gdb/debugger.c:2293
+#: ../plugins/gdb/debugger.c:2294
 msgid "Program terminated\n"
 msgstr "Выполнение программы прервано\n"
 
-#: ../plugins/gdb/debugger.c:2308
+#: ../plugins/gdb/debugger.c:2309
 msgid "Program detached\n"
 msgstr "Программа отключена\n"
 
-#: ../plugins/gdb/debugger.c:2328
+#: ../plugins/gdb/debugger.c:2329
 #, c-format
 msgid "Detaching the process…\n"
 msgstr "Отключение от процесса…\n"
 
-#: ../plugins/gdb/debugger.c:2351
+#: ../plugins/gdb/debugger.c:2352
 msgid "Interrupting the process\n"
 msgstr "Прерывание процесса\n"
 
-#: ../plugins/gdb/debugger.c:3925
+#: ../plugins/gdb/debugger.c:3926
 msgid "more children"
 msgstr "ещё потомки"
 
-#: ../plugins/gdb/debugger.c:4178
+#: ../plugins/gdb/debugger.c:4179
 #, c-format
 msgid "Sending signal %s to the process: %d"
 msgstr "Отправка сигнала %s процессу: %d"
 
-#: ../plugins/gdb/debugger.c:4204
+#: ../plugins/gdb/debugger.c:4205
 msgid "Error whilst signaling the process."
 msgstr "При посылке сигнала процессу произошла ошибка."
 
 #: ../plugins/gdb/plugin.c:120
 #, c-format
-msgid "Failed to create FIFO file named %s. The program will run without a terminal."
-msgstr "Не удалось создать FIFO файл %s. Программа будет запущена без терминала."
+msgid ""
+"Failed to create FIFO file named %s. The program will run without a terminal."
+msgstr ""
+"Не удалось создать FIFO файл %s. Программа будет запущена без терминала."
 
 #: ../plugins/gdb/plugin.c:204
 msgid "Cannot start terminal for debugging."
@@ -4884,13 +4963,19 @@ msgstr "Не удалось запустить терминал для отла�
 #: ../plugins/gdb/preferences.c:128
 #, c-format
 msgid ""
-"The register function hasn't been found automatically in the following pretty printer files:\n"
+"The register function hasn't been found automatically in the following "
+"pretty printer files:\n"
 "%s\n"
-"You need to fill yourself the register function columns before enabling the rows. Most of the time the register function name contains the word \"register\"."
+"You need to fill yourself the register function columns before enabling the "
+"rows. Most of the time the register function name contains the word "
+"\"register\"."
 msgstr ""
-"В следующих файлах принтеров с оформлением не найдена регистрирующая функция:\n"
+"В следующих файлах принтеров с оформлением не найдена регистрирующая "
+"функция:\n"
 "%s\n"
-"Вы должны самостоятельно заполнить столбцы регистрирующей функции перед включением строк. Чаще всего регистрирующая функция содержит слово «register»."
+"Вы должны самостоятельно заполнить столбцы регистрирующей функции перед "
+"включением строк. Чаще всего регистрирующая функция содержит слово "
+"«register»."
 
 #: ../plugins/gdb/preferences.c:223
 msgid "Select a pretty printer file"
@@ -4906,8 +4991,7 @@ msgstr "Активировать"
 msgid "Register Function"
 msgstr "Регистрирующая функция"
 
-#: ../plugins/gdb/preferences.c:396
-#: ../plugins/gdb/preferences.c:404
+#: ../plugins/gdb/preferences.c:396 ../plugins/gdb/preferences.c:404
 msgid "Gdb Debugger"
 msgstr "Отладчик gdb"
 
@@ -4952,8 +5036,7 @@ msgstr "Забрать удалённые ветви после создания
 msgid "Mailbox files to apply:"
 msgstr "Применить для почтовых файлов:"
 
-#: ../plugins/git/anjuta-git.ui.h:13
-#: ../plugins/git/plugin.c:954
+#: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:940
 msgid "Branches"
 msgstr "Ветви"
 
@@ -4980,7 +5063,8 @@ msgstr "Изменить предыдущую фиксацию"
 
 #: ../plugins/git/anjuta-git.ui.h:19
 msgid "This commit concludes a failed merge (use -i)"
-msgstr "Эта фиксация содержит результат неудачного объединения (используйте -i)"
+msgstr ""
+"Эта фиксация содержит результат неудачного объединения (используйте -i)"
 
 #: ../plugins/git/anjuta-git.ui.h:20
 msgid "Use custom author information:"
@@ -5023,11 +5107,9 @@ msgstr "Комментировать эту метку:"
 msgid "Branches must be fully merged"
 msgstr "Ветви должны быть полностью объединены"
 
-#: ../plugins/git/anjuta-git.ui.h:32
-#: ../plugins/git/git-pane.c:96
-#: ../plugins/git/git-pane.c:101
-#: ../plugins/git/git.plugin.in.h:1
-#: ../plugins/git/plugin.c:839
+#: ../plugins/git/anjuta-git.ui.h:32 ../plugins/git/git-pane.c:96
+#: ../plugins/git/git-pane.c:101 ../plugins/git/git.plugin.in.h:1
+#: ../plugins/git/plugin.c:836
 msgid "Git"
 msgstr "Git"
 
@@ -5104,8 +5186,7 @@ msgstr "Каталог для создания в нём заплаток:"
 msgid "Repository to pull from:"
 msgstr "Забрать и объединить изменения из репозитория:"
 
-#: ../plugins/git/anjuta-git.ui.h:51
-#: ../plugins/git/plugin.c:272
+#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:272
 msgid "Rebase"
 msgstr "Перемещение"
 
@@ -5218,8 +5299,7 @@ msgstr "Скрытые изменения не выбраны."
 msgid "Check Out Files"
 msgstr "Извлечь файлы"
 
-#: ../plugins/git/git-cherry-pick-pane.c:53
-#: ../plugins/git/git-merge-pane.c:56
+#: ../plugins/git/git-cherry-pick-pane.c:53 ../plugins/git/git-merge-pane.c:56
 #: ../plugins/subversion/subversion-copy-dialog.c:207
 #: ../plugins/subversion/subversion-switch-dialog.c:122
 msgid "Please enter a revision."
@@ -5230,8 +5310,7 @@ msgid "Cherry Pick"
 msgstr "Выборочное изменение"
 
 #: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79
-#: ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "Введите сообщение для журнала:"
 
@@ -5243,8 +5322,7 @@ msgstr "Введите имя автора фиксации изменения"
 msgid "Please enter the commit author's e-mail address."
 msgstr "Введите адрес эл. почты автора фиксации изменений."
 
-#: ../plugins/git/git-commit-pane.c:299
-#: ../plugins/git/plugin.c:148
+#: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:148
 msgid "Commit"
 msgstr "Фиксировать"
 
@@ -5298,8 +5376,7 @@ msgstr "<b>Метка:</b> %s"
 msgid "<b>Remote:</b> %s"
 msgstr "<b>Удалённый:</b> %s"
 
-#: ../plugins/git/git-merge-pane.c:225
-#: ../plugins/git/plugin.c:99
+#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:99
 msgid "Merge"
 msgstr "Объединить"
 
@@ -5319,18 +5396,15 @@ msgstr "Создать серию заплаток"
 msgid "Git version control"
 msgstr "Модуль системы контроля версий Git"
 
-#: ../plugins/git/git-pull-pane.c:66
-#: ../plugins/git/git-push-pane.c:94
+#: ../plugins/git/git-pull-pane.c:66 ../plugins/git/git-push-pane.c:94
 msgid "Please enter a URL."
 msgstr "Введите URL."
 
-#: ../plugins/git/git-pull-pane.c:243
-#: ../plugins/git/plugin.c:256
+#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:256
 msgid "Pull"
 msgstr "Забрать и объединить"
 
-#: ../plugins/git/git-push-pane.c:439
-#: ../plugins/git/plugin.c:248
+#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:248
 msgid "Push"
 msgstr "Внести изменения"
 
@@ -5374,8 +5448,7 @@ msgstr "Конфликтующие файлы не выбраны."
 msgid "Please enter a commit."
 msgstr "Введите фиксацию."
 
-#: ../plugins/git/git-revert-pane.c:164
-#: ../plugins/git/plugin.c:512
+#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:512
 msgid "Revert"
 msgstr "Отменить"
 
@@ -5383,11 +5456,11 @@ msgstr "Отменить"
 msgid "Stash Uncommitted Changes"
 msgstr "Скрыть нефиксированные изменения"
 
-#: ../plugins/git/git-status-pane.c:508
+#: ../plugins/git/git-status-pane.c:551
 msgid "Changes to be committed"
 msgstr "Изменения для фиксации"
 
-#: ../plugins/git/git-status-pane.c:518
+#: ../plugins/git/git-status-pane.c:561
 msgid "Changed but not updated"
 msgstr "Изменено, но не обновлено"
 
@@ -5399,18 +5472,15 @@ msgstr "Этапированные файлы не выбраны."
 msgid "Branch tools"
 msgstr "Инструменты ветвей"
 
-#: ../plugins/git/plugin.c:75
-#: ../plugins/git/plugin.c:76
+#: ../plugins/git/plugin.c:75 ../plugins/git/plugin.c:76
 msgid "Create a branch"
 msgstr "Создать ветвь"
 
-#: ../plugins/git/plugin.c:83
-#: ../plugins/git/plugin.c:84
+#: ../plugins/git/plugin.c:83 ../plugins/git/plugin.c:84
 msgid "Delete branches"
 msgstr "Удалить ветви"
 
-#: ../plugins/git/plugin.c:91
-#: ../plugins/git/plugin.c:92
+#: ../plugins/git/plugin.c:91 ../plugins/git/plugin.c:92
 msgid "Switch to the selected branch"
 msgstr "Переключиться на выбранную ветвь"
 
@@ -5422,13 +5492,11 @@ msgstr "Объединить правку в текущей ветви"
 msgid "Tag tools"
 msgstr "Инструменты меток"
 
-#: ../plugins/git/plugin.c:119
-#: ../plugins/git/plugin.c:120
+#: ../plugins/git/plugin.c:119 ../plugins/git/plugin.c:120
 msgid "Create a tag"
 msgstr "Создать метку"
 
-#: ../plugins/git/plugin.c:127
-#: ../plugins/git/plugin.c:128
+#: ../plugins/git/plugin.c:127 ../plugins/git/plugin.c:128
 msgid "Delete selected tags"
 msgstr "Удалить выбранные метки"
 
@@ -5453,8 +5521,7 @@ msgstr "Добавить файлы в индекс"
 msgid "Remove files from the repository"
 msgstr "Удалить файлы из репозитория"
 
-#: ../plugins/git/plugin.c:180
-#: ../plugins/git/plugin.c:476
+#: ../plugins/git/plugin.c:180 ../plugins/git/plugin.c:476
 msgid "Check out"
 msgstr "Извлечь"
 
@@ -5462,8 +5529,7 @@ msgstr "Извлечь"
 msgid "Revert changes in unstaged files"
 msgstr "Отменить изменения в неэтапированных файлах"
 
-#: ../plugins/git/plugin.c:188
-#: ../plugins/git/plugin.c:484
+#: ../plugins/git/plugin.c:188 ../plugins/git/plugin.c:484
 msgid "Unstage"
 msgstr "Снять этапирование"
 
@@ -5479,18 +5545,15 @@ msgstr "Разрешить конфликты"
 msgid "Mark selected conflicted files as resolved"
 msgstr "Пометить выделенные конфликтующие файлы как разрешённые"
 
-#: ../plugins/git/plugin.c:204
-#: ../plugins/git/plugin.c:972
+#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:958
 msgid "Stash"
 msgstr "Скрыть"
 
-#: ../plugins/git/plugin.c:212
-#: ../plugins/git/plugin.c:324
+#: ../plugins/git/plugin.c:212 ../plugins/git/plugin.c:324
 msgid "Stash uncommitted changes"
 msgstr "Скрыть нефиксированные изменения"
 
-#: ../plugins/git/plugin.c:213
-#: ../plugins/git/plugin.c:325
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
 msgid "Save uncommitted changes without committing them"
 msgstr "Сохранить нефиксированные изменения без фиксации"
 
@@ -5522,8 +5585,7 @@ msgstr "Внести изменения в удалённый репозитор
 msgid "Pull changes from a remote repository"
 msgstr "Забрать и объединить изменения из удалённого репозитория"
 
-#: ../plugins/git/plugin.c:264
-#: ../plugins/git/plugin.c:576
+#: ../plugins/git/plugin.c:264 ../plugins/git/plugin.c:576
 msgid "Fetch"
 msgstr "Забрать"
 
@@ -5539,8 +5601,7 @@ msgstr "Перенести относительно выбранного реп�
 msgid "Start a rebase operation relative to the selected remote repository"
 msgstr "Начать перенос относительно выбранного удалённого репозитория"
 
-#: ../plugins/git/plugin.c:288
-#: ../plugins/git/plugin.c:448
+#: ../plugins/git/plugin.c:288 ../plugins/git/plugin.c:448
 msgid "Continue"
 msgstr "Продолжить"
 
@@ -5548,8 +5609,7 @@ msgstr "Продолжить"
 msgid "Continue a rebase with resolved conflicts"
 msgstr "Продолжить перенос с разрешёнными конфликтами"
 
-#: ../plugins/git/plugin.c:296
-#: ../plugins/git/plugin.c:456
+#: ../plugins/git/plugin.c:296 ../plugins/git/plugin.c:456
 msgid "Skip"
 msgstr "Пропустить"
 
@@ -5557,8 +5617,7 @@ msgstr "Пропустить"
 msgid "Skip the current revision"
 msgstr "Пропустить текущую правку"
 
-#: ../plugins/git/plugin.c:304
-#: ../plugins/git/plugin.c:464
+#: ../plugins/git/plugin.c:304 ../plugins/git/plugin.c:464
 msgid "Abort"
 msgstr "Прервать"
 
@@ -5606,8 +5665,7 @@ msgstr "Удалить все скрытые изменения в этом ре
 msgid "Revision tools"
 msgstr "Инструменты правок"
 
-#: ../plugins/git/plugin.c:376
-#: ../plugins/git/plugin.c:496
+#: ../plugins/git/plugin.c:376 ../plugins/git/plugin.c:496
 msgid "Show commit diff"
 msgstr "Сравнить правку"
 
@@ -5615,8 +5673,7 @@ msgstr "Сравнить правку"
 msgid "Show a diff of the selected revision"
 msgstr "Сравнить выбранную правку"
 
-#: ../plugins/git/plugin.c:384
-#: ../plugins/git/plugin.c:504
+#: ../plugins/git/plugin.c:384 ../plugins/git/plugin.c:504
 msgid "Cherry pick"
 msgstr "Выборочное изменение"
 
@@ -5648,8 +5705,7 @@ msgstr "Отменить фиксацию"
 msgid "Patch series"
 msgstr "Серия заплаток"
 
-#: ../plugins/git/plugin.c:424
-#: ../plugins/git/plugin.c:425
+#: ../plugins/git/plugin.c:424 ../plugins/git/plugin.c:425
 msgid "Generate a patch series"
 msgstr "Создать серию заплаток"
 
@@ -5674,12 +5730,15 @@ msgid "Skip the current patch in the series"
 msgstr "Пропустить текущую заплатку из серии"
 
 #: ../plugins/git/plugin.c:465
-msgid "Stop applying the patch series and return the tree to its previous state"
-msgstr "Остановить применение серии заплаток и вернуть дерево в первоначальное состояние"
+msgid ""
+"Stop applying the patch series and return the tree to its previous state"
+msgstr ""
+"Остановить применение серии заплаток и вернуть дерево в первоначальное "
+"состояние"
 
 #: ../plugins/git/plugin.c:520
 msgid "Reset..."
-msgstr "Сбросить..."
+msgstr "Сбросить…"
 
 #: ../plugins/git/plugin.c:532
 msgid "Switch"
@@ -5687,19 +5746,19 @@ msgstr "Переключить"
 
 #: ../plugins/git/plugin.c:540
 msgid "Delete..."
-msgstr "Удалить..."
+msgstr "Удалить…"
 
 #: ../plugins/git/plugin.c:548
 msgid "Merge..."
-msgstr "Объединить..."
+msgstr "Объединить…"
 
 #: ../plugins/git/plugin.c:560
 msgid "Push..."
-msgstr "Внести изменения..."
+msgstr "Внести изменения…"
 
 #: ../plugins/git/plugin.c:568
 msgid "Pull..."
-msgstr "Забрать и объединить..."
+msgstr "Забрать и объединить…"
 
 #: ../plugins/git/plugin.c:588
 msgid "Apply"
@@ -5713,44 +5772,43 @@ msgstr "Применить и восстановить индекс"
 msgid "Drop"
 msgstr "Отказаться"
 
-#: ../plugins/git/plugin.c:696
-#: ../plugins/git/plugin.c:769
+#: ../plugins/git/plugin.c:693 ../plugins/git/plugin.c:766
 msgid "Branch"
 msgstr "Ветвь"
 
-#: ../plugins/git/plugin.c:858
+#: ../plugins/git/plugin.c:855
 msgid "Status popup menu"
 msgstr "Всплывающее меню статуса"
 
-#: ../plugins/git/plugin.c:863
+#: ../plugins/git/plugin.c:860
 msgid "Log popup menu"
 msgstr "Всплывающее меню журнала"
 
-#: ../plugins/git/plugin.c:869
+#: ../plugins/git/plugin.c:866
 msgid "Branch popup menu"
 msgstr "Всплывающее меню ветки"
 
-#: ../plugins/git/plugin.c:875
+#: ../plugins/git/plugin.c:872
 msgid "Remote popup menu"
 msgstr "Всплывающее меню удалённого репозитория"
 
-#: ../plugins/git/plugin.c:880
+#: ../plugins/git/plugin.c:877
 msgid "Popup menu entries"
 msgstr "Пункты всплывающего меню"
 
-#: ../plugins/git/plugin.c:942
+#: ../plugins/git/plugin.c:928
 msgid "Status"
 msgstr "Состояние"
 
-#: ../plugins/git/plugin.c:948
+#: ../plugins/git/plugin.c:934
 msgid "Log"
 msgstr "Журнал"
 
-#: ../plugins/git/plugin.c:959
+#: ../plugins/git/plugin.c:945
 msgid "Tags"
 msgstr "Метки"
 
-#: ../plugins/git/plugin.c:966
+#: ../plugins/git/plugin.c:952
 msgid "Remotes"
 msgstr "Удалённые репозитории"
 
@@ -5880,22 +5938,24 @@ msgid "Parenthesis indentation"
 msgstr "Отступы скобок"
 
 #. ANJUTA_STOCK_AUTOINDENT,
-#: ../plugins/indentation-c-style/plugin.c:223
+#: ../plugins/indentation-c-style/plugin.c:224
 #: ../plugins/indentation-python-style/plugin.c:206
 msgid "Auto-Indent"
 msgstr "Автоматические отступы"
 
-#: ../plugins/indentation-c-style/plugin.c:224
+#: ../plugins/indentation-c-style/plugin.c:225
 #: ../plugins/indentation-python-style/plugin.c:207
 msgid "Auto-indent current line or selection based on indentation settings"
-msgstr "Автоматически выравнивать текущую строку или выделение на основе параметров выравнивания"
+msgstr ""
+"Автоматически выравнивать текущую строку или выделение на основе параметров "
+"выравнивания"
 
-#: ../plugins/indentation-c-style/plugin.c:264
+#: ../plugins/indentation-c-style/plugin.c:265
 msgid "C Indentation"
 msgstr "Отступ C"
 
-#: ../plugins/indentation-c-style/plugin.c:362
-#: ../plugins/indentation-c-style/plugin.c:371
+#: ../plugins/indentation-c-style/plugin.c:363
+#: ../plugins/indentation-c-style/plugin.c:372
 #: ../plugins/indentation-python-style/plugin.c:324
 #: ../plugins/indentation-python-style/plugin.c:333
 msgid "Indentation"
@@ -5931,8 +5991,12 @@ msgid "Could not find the JHBuild install prefix."
 msgstr "Не удалось найти префикс установки JHBuild."
 
 #: ../plugins/jhbuild/plugin.c:180
-msgid "Could not find the JHBuild library directory. You need JHBuild from 2012-11-06 or later."
-msgstr "Не удалось найти каталог с библиотеками JHBuild. Необходим JHBuild от 06.11.2012 или более поздней версии."
+msgid ""
+"Could not find the JHBuild library directory. You need JHBuild from "
+"2012-11-06 or later."
+msgstr ""
+"Не удалось найти каталог с библиотеками JHBuild. Необходим JHBuild от "
+"06.11.2012 или более поздней версии."
 
 #: ../plugins/jhbuild/plugin.c:198
 #, c-format
@@ -5971,7 +6035,9 @@ msgstr "Модуль поддержки C++ и Java"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.plugin.in.h:2
 msgid "C++ and Java support plugin for code completion, auto-indentation, etc."
-msgstr "Модуль для поддержки автодополнения, автоматических отступов и т.п. для C++ и Java."
+msgstr ""
+"Модуль для поддержки автодополнения, автоматических отступов и т.п. для C++ "
+"и Java."
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:1
 msgid "Automatically load required libraries of the project"
@@ -6080,15 +6146,18 @@ msgid "JS Find dirs"
 msgstr "Каталоги поиска JS"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-msgid "Gir repository's directory: "
+#| msgid "Gir repository's directory: "
+msgid "Gir repository's directory:"
 msgstr "Каталог репозитория Gir: "
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-msgid "Gjs repository's directory: "
+#| msgid "Gjs repository's directory: "
+msgid "Gjs repository's directory:"
 msgstr "Каталог репозитория Gjs: "
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
-msgid "Min character for completion: "
+#| msgid "Min character for completion: "
+msgid "Min character for completion:"
 msgstr "Минимальное кол-во символов для дополнения: "
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
@@ -6110,10 +6179,6 @@ msgstr "Модуль поддержки JavaScript"
 msgid "JavaScript"
 msgstr "Сценарий JavaScript"
 
-#: ../plugins/language-support-python/anjuta-language-support-python.ui.h:9
-msgid "Path: "
-msgstr "Путь:"
-
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:10
 msgid "Interpreter"
 msgstr "Интерпретатор"
@@ -6129,7 +6194,8 @@ msgid ""
 "Please install them and check the python path in the preferences."
 msgstr ""
 "Указан неправильный путь python, или не установлены библиотеки\n"
-"python-rope (http://rope.sf.net). И то, и другое требуется для автодополнения\n"
+"python-rope (http://rope.sf.net). И то, и другое требуется для "
+"автодополнения\n"
 "в файлах python. Установите библиотеки и проверьте в настройках путь python."
 
 #: ../plugins/language-support-python/plugin.c:84
@@ -6156,8 +6222,7 @@ msgstr "Модуль для поддержки Vala, добавляет допо
 
 #: ../plugins/language-support-vala/plugin.vala:655
 #: ../plugins/language-support-vala/plugin.vala:663
-#: ../plugins/parser-cxx/plugin.c:267
-#: ../plugins/parser-cxx/plugin.c:280
+#: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Автодополнение"
 
@@ -6235,10 +6300,8 @@ msgid "Icon"
 msgstr "Значок"
 
 #: ../plugins/message-view/message-view.c:511
-#: ../plugins/message-view/plugin.c:386
-#: ../plugins/message-view/plugin.c:400
-#: ../plugins/message-view/plugin.c:519
-#: ../plugins/message-view/plugin.c:530
+#: ../plugins/message-view/plugin.c:386 ../plugins/message-view/plugin.c:400
+#: ../plugins/message-view/plugin.c:519 ../plugins/message-view/plugin.c:530
 msgid "Messages"
 msgstr "Сообщения"
 
@@ -6375,8 +6438,7 @@ msgstr "Заплатки"
 msgid "Please select the directory where the patch should be applied"
 msgstr "Выберите каталог, где будет применена заплатка"
 
-#: ../plugins/patch/patch-plugin.c:183
-#: ../plugins/patch/patch-plugin.ui.h:1
+#: ../plugins/patch/patch-plugin.c:183 ../plugins/patch/patch-plugin.ui.h:1
 msgid "Patch"
 msgstr "Заплатка"
 
@@ -6430,8 +6492,7 @@ msgstr "Уровень заплатки:"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/patch/plugin.c:53
-#: ../plugins/tools/plugin.c:131
+#: ../plugins/patch/plugin.c:53 ../plugins/tools/plugin.c:131
 msgid "_Tools"
 msgstr "С_ервис"
 
@@ -6465,8 +6526,12 @@ msgstr "Файл «%s» уже существует. Хотите перепис
 
 #: ../plugins/project-import/plugin.c:224
 #, c-format
-msgid "A file named \"%s\" cannot be written: %s. Check if you have write access to the project directory."
-msgstr "Не удалось записать в файл «%s»: %s. Убедитесь, что у вас есть права на запись в каталог проекта."
+msgid ""
+"A file named \"%s\" cannot be written: %s. Check if you have write access to "
+"the project directory."
+msgstr ""
+"Не удалось записать в файл «%s»: %s. Убедитесь, что у вас есть права на "
+"запись в каталог проекта."
 
 #: ../plugins/project-import/plugin.c:285
 #, c-format
@@ -6475,13 +6540,18 @@ msgstr "Выберите модуль проекта, чтобы открыть 
 
 #: ../plugins/project-import/plugin.c:305
 #, c-format
-msgid "Could not find a valid project backend for the given directory (%s). Please select a different directory, or try upgrading to a newer version of Anjuta."
-msgstr "Не удалось найти внутренний компонент для данного проекта (%s). Выберите другой каталог или обновитесь до более новой версии Anjuta."
+msgid ""
+"Could not find a valid project backend for the given directory (%s). Please "
+"select a different directory, or try upgrading to a newer version of Anjuta."
+msgstr ""
+"Не удалось найти внутренний компонент для данного проекта (%s). Выберите "
+"другой каталог или обновитесь до более новой версии Anjuta."
 
 #: ../plugins/project-import/plugin.c:371
 #: ../plugins/project-import/plugin.c:428
 #, c-format
-msgid "Couldn't check out the supplied URI \"%s\". The error returned was: \"%s\""
+msgid ""
+"Couldn't check out the supplied URI \"%s\". The error returned was: \"%s\""
 msgstr "Не удалось извлечь предоставленный URI «%s». Возвращена ошибка: «%s»"
 
 #: ../plugins/project-import/project-import-dialog.c:310
@@ -6868,8 +6938,11 @@ msgstr "_Упорядочить комбинации клавиш"
 
 #: ../plugins/project-manager/plugin.c:1311
 #, c-format
-msgid "Failed to parse project (the project is opened, but there will be no project view) %s: %s\n"
-msgstr "Не удалось обработать проект (проект открыт, но он не будет показан) %s: %s\n"
+msgid ""
+"Failed to parse project (the project is opened, but there will be no project "
+"view) %s: %s\n"
+msgstr ""
+"Не удалось обработать проект (проект открыт, но он не будет показан) %s: %s\n"
 
 #: ../plugins/project-manager/plugin.c:1321
 msgid "Update project view…"
@@ -6877,7 +6950,7 @@ msgstr "Обновить представление проекта…"
 
 #: ../plugins/project-manager/plugin.c:1326
 #: ../plugins/project-manager/plugin.c:1448
-#: ../plugins/project-manager/plugin.c:1627
+#: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
 #: ../plugins/symbol-db/plugin.c:2160
@@ -6889,24 +6962,24 @@ msgstr "Проект"
 msgid "Loading project: %s"
 msgstr "Загрузка проекта: %s"
 
-#: ../plugins/project-manager/plugin.c:1540
+#: ../plugins/project-manager/plugin.c:1541
 #, c-format
 msgid "Error closing project: %s"
 msgstr "Ошибка при закрытии проекта: %s"
 
-#: ../plugins/project-manager/plugin.c:1606
+#: ../plugins/project-manager/plugin.c:1607
 msgid "Project manager actions"
 msgstr "Действия диспетчера проекта"
 
-#: ../plugins/project-manager/plugin.c:1614
+#: ../plugins/project-manager/plugin.c:1615
 msgid "Project manager popup actions"
 msgstr "Всплывающие команды диспетчера проекта"
 
-#: ../plugins/project-manager/plugin.c:2479
+#: ../plugins/project-manager/plugin.c:2480
 msgid "Initializing Project…"
 msgstr "Инициализация проекта…"
 
-#: ../plugins/project-manager/plugin.c:2482
+#: ../plugins/project-manager/plugin.c:2483
 msgid "Project Loaded"
 msgstr "Проект загружен"
 
@@ -7032,7 +7105,7 @@ msgid "Select a project type"
 msgstr "Выберите тип проекта"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
-#: ../plugins/project-wizard/druid.c:192
+#: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr "Ошибка"
 
@@ -7044,32 +7117,31 @@ msgstr "Подробности"
 msgid "Summary"
 msgstr "Сводка"
 
-#: ../plugins/project-wizard/druid.c:184
-#: ../plugins/project-wizard/druid.c:188
+#: ../plugins/project-wizard/druid.c:192 ../plugins/project-wizard/druid.c:196
 msgid "Warning"
 msgstr "Предупреждение"
 
-#: ../plugins/project-wizard/druid.c:195
+#: ../plugins/project-wizard/druid.c:203
 msgid "Message"
 msgstr "Сообщение"
 
-#: ../plugins/project-wizard/druid.c:276
+#: ../plugins/project-wizard/druid.c:284
 msgid "Confirm the following information:"
 msgstr "Подтвердите следующую информацию:"
 
 #. The project type is translated too, it is something like
 #. * generic, GNOME applet, Makefile project...
-#: ../plugins/project-wizard/druid.c:280
+#: ../plugins/project-wizard/druid.c:288
 #, c-format
 msgid "Project Type: %s\n"
 msgstr "Тип проекта: %s\n"
 
-#: ../plugins/project-wizard/druid.c:471
+#: ../plugins/project-wizard/druid.c:479
 #, c-format
 msgid "Unable to find any project template in %s"
-msgstr "Hе удалось найти шаблоны проектов в %s"
+msgstr "Не удалось найти шаблоны проектов в %s"
 
-#: ../plugins/project-wizard/druid.c:704
+#: ../plugins/project-wizard/druid.c:712
 #, c-format
 msgid ""
 "\n"
@@ -7078,45 +7150,62 @@ msgstr ""
 "\n"
 "Поле «%s» обязательно для заполнения."
 
-#: ../plugins/project-wizard/druid.c:719
+#: ../plugins/project-wizard/druid.c:727
 #, c-format
-msgid "Field \"%s\" must contains only letters, digits or the following characters \"#$:%%+,.=@^_`~\". In addition you cannot have a leading dash. Please fix it."
-msgstr "Поле «%s» может содержать только буквы, цифры и символы «#$:%%+,.=@^_`~». Кроме того, нельзя использовать в качестве первого символа знак тире."
+msgid ""
+"Field \"%s\" must contains only letters, digits or the following characters "
+"\"#$:%%+,.=@^_`~\". In addition you cannot have a leading dash. Please fix "
+"it."
+msgstr ""
+"Поле «%s» может содержать только буквы, цифры и символы «#$:%%+,.=@^_`~». "
+"Кроме того, нельзя использовать в качестве первого символа знак тире."
 
-#: ../plugins/project-wizard/druid.c:724
+#: ../plugins/project-wizard/druid.c:732
 #, c-format
-msgid "Field \"%s\" must contains only letters, digits, the following characters \"#$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a leading dash. Please fix it."
-msgstr "Поле «%s» может содержать только буквы, цифры, символы «#$:%%+,.=@^_`~» и символ разделителя для каталогов. Кроме того, нельзя использовать в качестве первого символа знак тире."
+msgid ""
+"Field \"%s\" must contains only letters, digits, the following characters \"#"
+"$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a "
+"leading dash. Please fix it."
+msgstr ""
+"Поле «%s» может содержать только буквы, цифры, символы «#$:%%+,.=@^_`~» и "
+"символ разделителя для каталогов. Кроме того, нельзя использовать в качестве "
+"первого символа знак тире."
 
-#: ../plugins/project-wizard/druid.c:729
+#: ../plugins/project-wizard/druid.c:737
 #, c-format
-msgid "Field \"%s\" must contains only ASCII printable characters, no accentuated characters by example. Please fix it."
+msgid ""
+"Field \"%s\" must contains only ASCII printable characters, no accentuated "
+"characters by example. Please fix it."
 msgstr "Поле «%s» должно содержать только печатные символы ASCII."
 
-#: ../plugins/project-wizard/druid.c:734
+#: ../plugins/project-wizard/druid.c:742
 #, c-format
 msgid "Unknown error."
 msgstr "Неизвестная ошибка."
 
-#: ../plugins/project-wizard/druid.c:761
+#: ../plugins/project-wizard/druid.c:769
 #, c-format
-msgid "Directory \"%s\" is not empty. Project creation could fail if some files cannot be written. Do you want to continue?"
-msgstr "Папка «%s» не пуста. Проект может не быть создан, если нельзя будет записать некоторые файлы. Продолжить?"
+msgid ""
+"Directory \"%s\" is not empty. Project creation could fail if some files "
+"cannot be written. Do you want to continue?"
+msgstr ""
+"Папка «%s» не пуста. Проект может не быть создан, если нельзя будет записать "
+"некоторые файлы. Продолжить?"
 
-#: ../plugins/project-wizard/druid.c:763
+#: ../plugins/project-wizard/druid.c:771
 #, c-format
 msgid "File \"%s\" already exists. Do you want to overwrite it?"
 msgstr "Файл «%s» уже существует. Хотите переписать его?"
 
-#: ../plugins/project-wizard/druid.c:796
+#: ../plugins/project-wizard/druid.c:804
 msgid "Invalid entry"
 msgstr "Некорректный элемент"
 
-#: ../plugins/project-wizard/druid.c:806
+#: ../plugins/project-wizard/druid.c:814
 msgid "Dubious entry"
 msgstr "Ошибочные данные"
 
-#: ../plugins/project-wizard/druid.c:958
+#: ../plugins/project-wizard/druid.c:966
 #, c-format
 msgid ""
 "\n"
@@ -7125,7 +7214,7 @@ msgstr ""
 "\n"
 "Отсутствующие программы: %s."
 
-#: ../plugins/project-wizard/druid.c:969
+#: ../plugins/project-wizard/druid.c:977
 #, c-format
 msgid ""
 "\n"
@@ -7134,22 +7223,38 @@ msgstr ""
 "\n"
 "Отсутствующие пакеты: %s."
 
-#: ../plugins/project-wizard/druid.c:978
-msgid "Some important programs or development packages required to build this project are missing. Please make sure they are installed properly before generating the project.\n"
-msgstr "Некоторые важные программы или пакеты разработчика, необходимые для сборки этого проекта, отсутствуют. Перед созданием проекта убедитесь, что они установлены корректно.\n"
+#: ../plugins/project-wizard/druid.c:986
+msgid ""
+"Some important programs or development packages required to build this "
+"project are missing. Please make sure they are installed properly before "
+"generating the project.\n"
+msgstr ""
+"Некоторые важные программы или пакеты разработчика, необходимые для сборки "
+"этого проекта, отсутствуют. Перед созданием проекта убедитесь, что они "
+"установлены корректно.\n"
 
-#: ../plugins/project-wizard/druid.c:987
+#: ../plugins/project-wizard/druid.c:995
 msgid "Install missing packages"
 msgstr "Установить отсутствующие пакеты"
 
 #. Translators: Application Manager is the program used to install
 #. * new application like apt on Ubuntu, yum on Fedora, zypper on
 #. * OpenSuSE and emerge on Gentoo
-#: ../plugins/project-wizard/druid.c:999
-msgid "The missing programs are usually part of some distribution packages and can be searched for in your Application Manager. Similarly, the development packages are contained in special packages that your distribution provides to allow development of projects based on them. They usually end with a \"-dev\" or \"-devel\" suffix in package names and can be found by searching in your Application Manager."
-msgstr "Отсутствующие программы обычно входят в состав пакетов дистрибутива и могут быть найдены в программе управления приложениями. Обычно, пакеты для разработки содержатся в особых пакетах, имена которых оканчиваются на «dev» или «devel»."
-
 #: ../plugins/project-wizard/druid.c:1007
+msgid ""
+"The missing programs are usually part of some distribution packages and can "
+"be searched for in your Application Manager. Similarly, the development "
+"packages are contained in special packages that your distribution provides "
+"to allow development of projects based on them. They usually end with a \"-"
+"dev\" or \"-devel\" suffix in package names and can be found by searching in "
+"your Application Manager."
+msgstr ""
+"Отсутствующие программы обычно входят в состав пакетов дистрибутива и могут "
+"быть найдены в программе управления приложениями. Обычно, пакеты для "
+"разработки содержатся в особых пакетах, имена которых оканчиваются на «dev» "
+"или «devel»."
+
+#: ../plugins/project-wizard/druid.c:1015
 msgid "Missing components"
 msgstr "Отсутствующие компоненты"
 
@@ -7188,10 +7293,42 @@ msgstr "Создание %s … %s"
 msgid "Executing: %s"
 msgstr "Выполнение: %s"
 
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:1
+msgid "Directory where the new projects are created by default"
+msgstr "Каталог, в котором по умолчанию создаются новые проекты"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:2
+msgid ""
+"If empty, the user home directory is used. If the path is relative, it is "
+"relative to the home directory."
+msgstr ""
+"Если пустая, используется домашний каталог пользователя. Если путь "
+"относителен, то он берётся относительно домашнего каталога."
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
+#| msgid "Create a new project"
+msgid "Default user name used in new project"
+msgstr "Имя пользователя используемое по умолчанию в новом проекте"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
+msgid "If empty, the current user name is used."
+msgstr "Если пустая, используется текущее имя пользователя."
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
+#| msgid "Create a new project"
+msgid "Default email used in new project"
+msgstr "Эл. почта используемая по умолчанию в новом проекте"
+
+#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
+msgid "If empty, current login and machine name is used."
+msgstr ""
+"Если пустая, используется текущее имя для входа в систему и текущее имя "
+"машины."
+
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
 msgid "Unable to extract project template %s: %s"
-msgstr "Hе удалось извлечь шаблон проекта %s: %s"
+msgstr "Не удалось извлечь шаблон проекта %s: %s"
 
 #: ../plugins/project-wizard/plugin.c:286
 msgid "New Project Assistant"
@@ -7205,14 +7342,12 @@ msgstr "Выберите каталог"
 msgid "Select file"
 msgstr "Выберите файл"
 
-#: ../plugins/project-wizard/property.c:432
-#: ../plugins/tools/editor.c:524
+#: ../plugins/project-wizard/property.c:432 ../plugins/tools/editor.c:524
 msgid "Select an Image File"
 msgstr "Выберите файл с изображением"
 
 #: ../plugins/project-wizard/property.c:457
-#: ../plugins/project-wizard/property.c:548
-#: ../plugins/tools/editor.c:558
+#: ../plugins/project-wizard/property.c:548 ../plugins/tools/editor.c:558
 #: ../plugins/tools/editor.c:705
 msgid "Choose Icon"
 msgstr "Выбрать значок"
@@ -7301,8 +7436,12 @@ msgid "Project Name:"
 msgstr "Название проекта:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:6
-msgid "Project name must not contain spaces, because it will be the name of the project build target (executable, library etc.)"
-msgstr "Имя проекта не должно содержать пробелов, потому что оно станет именем цели сборки проекта (исполняемый, библиотека и т. п.)"
+msgid ""
+"Project name must not contain spaces, because it will be the name of the "
+"project build target (executable, library etc.)"
+msgstr ""
+"Имя проекта не должно содержать пробелов, потому что оно станет именем цели "
+"сборки проекта (исполняемый, библиотека и т. п.)"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:7
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:7
@@ -7422,8 +7561,12 @@ msgid "Plugin Dependencies:"
 msgstr "Зависимости:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:20
-msgid "Comma separated, other plugins that this plugin depends on. It could be either primary interface name or plugin location (library:class)"
-msgstr "Разделённые запятой модули, от которых зависит данный модуль. Это может быть имя основного интерфейса или расположение модуля (библиотека:класс)"
+msgid ""
+"Comma separated, other plugins that this plugin depends on. It could be "
+"either primary interface name or plugin location (library:class)"
+msgstr ""
+"Разделённые запятой модули, от которых зависит данный модуль. Это может быть "
+"имя основного интерфейса или расположение модуля (библиотека:класс)"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:21
 msgid "Icon File:"
@@ -7526,7 +7669,9 @@ msgstr "Поддержка C++:"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:14
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:14
 msgid "Adds C++ support to the project so that C++ source files can be built"
-msgstr "Добавить поддержку C++ в проект. С ней вы можете собирать проект с файлами С++."
+msgstr ""
+"Добавить поддержку C++ в проект. С ней вы можете собирать проект с файлами С+"
+"+."
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:32
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:22
@@ -7684,8 +7829,12 @@ msgstr "Поддержка локализации:"
 #: ../plugins/project-wizard/templates/wxwin.wiz.in.h:14
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:16
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:16
-msgid "Adds support for internationalization so that your project can have translations in different languages"
-msgstr "Добавить поддержку локализации, чтобы проект мог быть переведён на различные языки"
+msgid ""
+"Adds support for internationalization so that your project can have "
+"translations in different languages"
+msgstr ""
+"Добавить поддержку локализации, чтобы проект мог быть переведён на различные "
+"языки"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:19
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:25
@@ -7724,8 +7873,10 @@ msgid "Generic gcj compiled java"
 msgstr "Обычный java, компилируемый gcj"
 
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:2
-msgid "A generic natively compiled java project using the GNU Java Compiler (gcj)"
-msgstr "Обычный компилируемый проект java, использующий компилятор GNU Java (gcj)"
+msgid ""
+"A generic natively compiled java project using the GNU Java Compiler (gcj)"
+msgstr ""
+"Обычный компилируемый проект java, использующий компилятор GNU Java (gcj)"
 
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:7
 #: ../plugins/project-wizard/templates/java.wiz.in.h:7
@@ -7763,12 +7914,15 @@ msgstr "UUID:"
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:16
 msgid ""
 "Uuid is a globally-unique identifier for your extension.\n"
-"This should be in the format of an email address (foo.bar@extensions.example.com), but\n"
-"need not be an actual email address, though it's a good idea to base the uuid on your\n"
+"This should be in the format of an email address (foo.bar@extensions.example."
+"com), but\n"
+"need not be an actual email address, though it's a good idea to base the "
+"uuid on your\n"
 "email address."
 msgstr ""
 "Uuid — это глобальный универсальный идентификатор расширения.\n"
-"Uuid может быть записан в виде адреса эл. почты (foo.bar@extensions.example.com),\n"
+"Uuid может быть записан в виде адреса эл. почты (foo.bar@extensions.example."
+"com),\n"
 "адрес почты должен быть действительным и актуальным. "
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:21
@@ -7780,8 +7934,10 @@ msgid "Gnome Shell Compatibility:"
 msgstr "Совместимость с Gnome Shell:"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:23
-msgid "Comma-separated list of gnome-shell version your plugin is compatible with"
-msgstr "Список версий gnome-shell, разделённых запятыми, с которыми совместим модуль"
+msgid ""
+"Comma-separated list of gnome-shell version your plugin is compatible with"
+msgstr ""
+"Список версий gnome-shell, разделённых запятыми, с которыми совместим модуль"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:1
 msgid "GTK+ (Application)"
@@ -7805,7 +7961,9 @@ msgstr "Поддержка gtk-doc:"
 #: ../plugins/project-wizard/templates/java.wiz.in.h:18
 #: ../plugins/project-wizard/templates/python.wiz.in.h:16
 msgid "gtk-doc is used to compile API documentations for GObject based classes"
-msgstr "gtk-doc используется для компиляции документации по API для классов, основанных на GObject"
+msgstr ""
+"gtk-doc используется для компиляции документации по API для классов, "
+"основанных на GObject"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:23
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:21
@@ -7820,8 +7978,12 @@ msgstr "Использовать GtkBuilder для пользовательск�
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:24
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:18
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:18
-msgid "Use GtkBuilder to create the user-interface in a graphical way and load it from xml files at runtime"
-msgstr "Использовать GtkBuilder для создания пользовательского интерфейса и его загрузки из файлов XML"
+msgid ""
+"Use GtkBuilder to create the user-interface in a graphical way and load it "
+"from xml files at runtime"
+msgstr ""
+"Использовать GtkBuilder для создания пользовательского интерфейса и его "
+"загрузки из файлов XML"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:28
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:28
@@ -7832,8 +7994,13 @@ msgstr "Требуемый пакет:"
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:29
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:29
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:23
-msgid "Give a package name that your project require. You may also mention what is the required version of the package. For example, 'libgnomeui-2.0' or 'libgnomeui-2.0 >= 2.2.0'"
-msgstr "Впишите имя пакета, требуемого для проекта. Вы можете также указать версию. Например: 'libgnomeui-2.0' или 'libgnomeui-2.0 >= 2.2.0'"
+msgid ""
+"Give a package name that your project require. You may also mention what is "
+"the required version of the package. For example, 'libgnomeui-2.0' or "
+"'libgnomeui-2.0 >= 2.2.0'"
+msgstr ""
+"Впишите имя пакета, требуемого для проекта. Вы можете также указать версию. "
+"Например: 'libgnomeui-2.0' или 'libgnomeui-2.0 >= 2.2.0'"
 
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:1
 msgid "GTKmm (Simple)"
@@ -8246,12 +8413,14 @@ msgstr "Языки"
 
 #. Insert the Add Snippet menu item
 #: ../plugins/snippets-manager/snippets-browser.c:809
-msgid "Add Snippet …"
+#| msgid "Add Snippet …"
+msgid "Add Snippet…"
 msgstr "Добавить фрагмент кода…"
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
-msgid "Add Snippets Group …"
+#| msgid "Add Snippets Group …"
+msgid "Add Snippets Group…"
 msgstr "Добавить группу фрагментов кода…"
 
 #: ../plugins/snippets-manager/snippets-editor.c:39
@@ -8263,12 +8432,17 @@ msgid "<b>Error:</b> You must choose at least one language for the snippet!"
 msgstr "<b>Ошибка:</b> выберите хотя бы один язык для фрагмента кода!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:49
-msgid "<b>Error:</b> The trigger key is already in use for one of the languages!"
+msgid ""
+"<b>Error:</b> The trigger key is already in use for one of the languages!"
 msgstr "<b>Ошибка:</b> ключ триггера уже используется для одного из языков!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
-msgid "<b>Error:</b> The trigger key can only contain alphanumeric characters and _ !"
-msgstr "<b>Ошибка:</b> ключ триггера может содержать только буквенно-цифровые символы и _ !"
+msgid ""
+"<b>Error:</b> The trigger key can only contain alphanumeric characters and "
+"_ !"
+msgstr ""
+"<b>Ошибка:</b> ключ триггера может содержать только буквенно-цифровые "
+"символы и _ !"
 
 #: ../plugins/snippets-manager/snippets-editor.c:51
 msgid "<b>Error:</b> You haven't entered a trigger key for the snippet!"
@@ -8296,7 +8470,8 @@ msgstr "Группа фрагментов кода:"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:6
 msgid "Select the Snippets Group to which this snippet belongs."
-msgstr "Выберите группу фрагментов кода, к которой принадлежит этот фрагмент кода."
+msgstr ""
+"Выберите группу фрагментов кода, к которой принадлежит этот фрагмент кода."
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:7
 msgid "<b>Error:</b> The snippet must belong to a group!"
@@ -8308,10 +8483,14 @@ msgstr "Ключ триггера:"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:9
 msgid ""
-"The trigger key is used for fast insertion of the snippet. Type the trigger key in the editor, followed by the \"Fast Insert\" shortcut to insert a snippet.\n"
+"The trigger key is used for fast insertion of the snippet. Type the trigger "
+"key in the editor, followed by the \"Fast Insert\" shortcut to insert a "
+"snippet.\n"
 "<b>Warning: Must be unique per language. </b>"
 msgstr ""
-"Ключ триггера используется для быстрой вставки фрагмента кода. Чтобы вставить фрагмент кода, используйте сочетание клавиш «Быстрая вставка», введите ключ триггера в редакторе.\n"
+"Ключ триггера используется для быстрой вставки фрагмента кода. Чтобы "
+"вставить фрагмент кода, используйте сочетание клавиш «Быстрая вставка», "
+"введите ключ триггера в редакторе.\n"
 "<b>Внимание: должно быть уникальным для каждого языка. </b>"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:11
@@ -8327,8 +8506,13 @@ msgid "Keywords:"
 msgstr "Ключевые слова:"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:14
-msgid "Keywords are used for better searching of the snippets. They should be relevant to the snippet content. Type them separated by a single space."
-msgstr "Ключевые слова используются для улучшенного поиска фрагментов кода. Они должны иметь отношение к содержимому фрагментов кода. Введите их, разделив одним пробелом."
+msgid ""
+"Keywords are used for better searching of the snippets. They should be "
+"relevant to the snippet content. Type them separated by a single space."
+msgstr ""
+"Ключевые слова используются для улучшенного поиска фрагментов кода. Они "
+"должны иметь отношение к содержимому фрагментов кода. Введите их, разделив "
+"одним пробелом."
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:15
 msgid "Snippet Properties"
@@ -8427,8 +8611,7 @@ msgid "Right margin position in characters"
 msgstr "Расстояние до правой границы в символах"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:15
-#: ../src/anjuta-window.c:687
-#: ../src/anjuta-window.c:692
+#: ../src/anjuta-window.c:692 ../src/anjuta-window.c:697
 msgid "View"
 msgstr "Вид"
 
@@ -8454,11 +8637,11 @@ msgstr "Шрифт"
 
 #: ../plugins/sourceview/plugin.c:110
 msgid "_Line Number Margin"
-msgstr "_Hомера строк"
+msgstr "_Номера строк"
 
 #: ../plugins/sourceview/plugin.c:111
 msgid "Show/Hide line numbers"
-msgstr "Показывать или cкрывать номера строк"
+msgstr "Показывать или скрывать номера строк"
 
 #: ../plugins/sourceview/plugin.c:113
 msgid "_Marker Margin"
@@ -8466,7 +8649,7 @@ msgstr "_Поле для маркера"
 
 #: ../plugins/sourceview/plugin.c:114
 msgid "Show/Hide marker margin"
-msgstr "Показывать или cкрывать поле для маркеров"
+msgstr "Показывать или скрывать поле для маркеров"
 
 #: ../plugins/sourceview/plugin.c:116
 msgid "_White Space"
@@ -8474,7 +8657,7 @@ msgstr "_Пробелы и символы табуляции"
 
 #: ../plugins/sourceview/plugin.c:117
 msgid "Show/Hide white spaces"
-msgstr "Показывать или cкрывать пробелы и символы табуляции"
+msgstr "Показывать или скрывать пробелы и символы табуляции"
 
 #: ../plugins/sourceview/plugin.c:119
 msgid "_Line End Characters"
@@ -8482,7 +8665,7 @@ msgstr "Символы _конца строки"
 
 #: ../plugins/sourceview/plugin.c:120
 msgid "Show/Hide line end characters"
-msgstr "Показывать или cкрывать символы конца строки"
+msgstr "Показывать или скрывать символы конца строки"
 
 #: ../plugins/sourceview/plugin.c:122
 msgid "Line _Wrapping"
@@ -8496,8 +8679,7 @@ msgstr "Включить или отключить перенос строк"
 msgid "Editor view settings"
 msgstr "Настройки вида редактора"
 
-#: ../plugins/sourceview/plugin.c:362
-#: ../plugins/sourceview/plugin.c:406
+#: ../plugins/sourceview/plugin.c:362 ../plugins/sourceview/plugin.c:406
 msgid "GtkSourceView Editor"
 msgstr "Редактор GtkSourceView"
 
@@ -8818,36 +9000,31 @@ msgstr "домен"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/subversion/plugin.c:52
-#: ../plugins/subversion/plugin.c:151
+#: ../plugins/subversion/plugin.c:52 ../plugins/subversion/plugin.c:151
 msgid "_Subversion"
 msgstr "_Subversion"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/subversion/plugin.c:60
-#: ../plugins/subversion/plugin.c:175
+#: ../plugins/subversion/plugin.c:60 ../plugins/subversion/plugin.c:175
 msgid "_Add…"
 msgstr "_Добавить…"
 
 #. Display label
 #. short-cut
-#: ../plugins/subversion/plugin.c:62
-#: ../plugins/subversion/plugin.c:177
+#: ../plugins/subversion/plugin.c:62 ../plugins/subversion/plugin.c:177
 msgid "Add a new file/directory to the Subversion tree"
 msgstr "Добавить новый файл или каталог в дерево Subversion"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/subversion/plugin.c:68
-#: ../plugins/subversion/plugin.c:183
+#: ../plugins/subversion/plugin.c:68 ../plugins/subversion/plugin.c:183
 msgid "_Remove…"
 msgstr "_Удалить…"
 
 #. Display label
 #. short-cut
-#: ../plugins/subversion/plugin.c:70
-#: ../plugins/subversion/plugin.c:185
+#: ../plugins/subversion/plugin.c:70 ../plugins/subversion/plugin.c:185
 msgid "Remove a file/directory from Subversion tree"
 msgstr "Удалить файл или каталог из дерева Subversion"
 
@@ -8865,15 +9042,13 @@ msgstr "Фиксировать изменения в дереве Subversion"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/subversion/plugin.c:84
-#: ../plugins/subversion/plugin.c:167
+#: ../plugins/subversion/plugin.c:84 ../plugins/subversion/plugin.c:167
 msgid "_Revert…"
 msgstr "О_тменить…"
 
 #. Display label
 #. short-cut
-#: ../plugins/subversion/plugin.c:86
-#: ../plugins/subversion/plugin.c:169
+#: ../plugins/subversion/plugin.c:86 ../plugins/subversion/plugin.c:169
 msgid "Revert changes to your working copy."
 msgstr "Отменить изменения в рабочей копии."
 
@@ -8891,15 +9066,13 @@ msgstr "Разрешить конфликты в рабочей копии."
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/subversion/plugin.c:100
-#: ../plugins/subversion/plugin.c:159
+#: ../plugins/subversion/plugin.c:100 ../plugins/subversion/plugin.c:159
 msgid "_Update…"
 msgstr "_Обновить…"
 
 #. Display label
 #. short-cut
-#: ../plugins/subversion/plugin.c:102
-#: ../plugins/subversion/plugin.c:161
+#: ../plugins/subversion/plugin.c:102 ../plugins/subversion/plugin.c:161
 msgid "Syncronize your local copy with the Subversion tree"
 msgstr "Синхронизировать рабочую копию с деревом Subversion"
 
@@ -8911,8 +9084,7 @@ msgstr "Копировать файлы или папки…"
 
 #. Display label
 #. short-cut
-#: ../plugins/subversion/plugin.c:110
-#: ../plugins/subversion/plugin.c:201
+#: ../plugins/subversion/plugin.c:110 ../plugins/subversion/plugin.c:201
 msgid "Copy files/folders in the repository"
 msgstr "Копировать файлы или папки в репозитории"
 
@@ -8942,15 +9114,13 @@ msgstr "Объединить изменения в рабочей копии"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/subversion/plugin.c:132
-#: ../plugins/subversion/plugin.c:191
+#: ../plugins/subversion/plugin.c:132 ../plugins/subversion/plugin.c:191
 msgid "_View Log…"
 msgstr "_Просмотреть журнал…"
 
 #. Display label
 #. short-cut
-#: ../plugins/subversion/plugin.c:134
-#: ../plugins/subversion/plugin.c:193
+#: ../plugins/subversion/plugin.c:134 ../plugins/subversion/plugin.c:193
 msgid "View file history"
 msgstr "Показать историю файла"
 
@@ -8962,8 +9132,7 @@ msgstr "_Различия…"
 
 #. Display label
 #. short-cut
-#: ../plugins/subversion/plugin.c:142
-#: ../plugins/subversion/plugin.c:209
+#: ../plugins/subversion/plugin.c:142 ../plugins/subversion/plugin.c:209
 msgid "Diff local tree with repository"
 msgstr "Найти различия локального дерева и репозитория"
 
@@ -9150,7 +9319,7 @@ msgstr "Разрешён конфликт: %s"
 #: ../plugins/subversion/svn-command.c:394
 #, c-format
 msgid "Updated: %s"
-msgstr "Обновлен: %s"
+msgstr "Обновлён: %s"
 
 #: ../plugins/subversion/svn-command.c:400
 #, c-format
@@ -9187,16 +9356,24 @@ msgid "Parallel scan of project and global symbols"
 msgstr "Параллельно сканировать проект и глобальные символы"
 
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:2
-msgid "This option means that the global system packages will be scanned simultaneously with the project's ones"
-msgstr "Этот параметр означает, что пакеты глобальной системы будут проверены одновременно с пакетами проекта"
+msgid ""
+"This option means that the global system packages will be scanned "
+"simultaneously with the project's ones"
+msgstr ""
+"Этот параметр означает, что пакеты глобальной системы будут проверены "
+"одновременно с пакетами проекта"
 
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:3
 msgid "Automatically update symbols without saving file"
 msgstr "Автоматически обновлять символы без сохранения файла"
 
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:4
-msgid "Automatically update the file's symbols without saving. The update occurs after 10 seconds without keypresses by the user."
-msgstr "Автоматически обновлять символы файлов без сохранения. Обновление происходит спустя 10 секунд после последнего нажатия клавиши на клавиатуре."
+msgid ""
+"Automatically update the file's symbols without saving. The update occurs "
+"after 10 seconds without keypresses by the user."
+msgstr ""
+"Автоматически обновлять символы файлов без сохранения. Обновление происходит "
+"спустя 10 секунд после последнего нажатия клавиши на клавиатуре."
 
 #: ../plugins/symbol-db/plugin.c:331
 msgid "Tag De_claration"
@@ -9254,13 +9431,11 @@ msgstr[2] "Обработано %d файлов из %d"
 msgid "Populating symbol database…"
 msgstr "Наполнение базы символьных данных…"
 
-#: ../plugins/symbol-db/plugin.c:2145
-#: ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
 msgid "Symbols"
 msgstr "Символы"
 
-#: ../plugins/symbol-db/plugin.c:2165
-#: ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
 msgid "Search"
 msgstr "Поиск"
 
@@ -9272,8 +9447,7 @@ msgstr "Всплывающие действия базы символьных д
 msgid "SymbolDb menu actions"
 msgstr "Действия меню базы символьных данных"
 
-#: ../plugins/symbol-db/plugin.c:2567
-#: ../plugins/symbol-db/plugin.c:2585
+#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "База символьных данных"
@@ -9291,9 +9465,8 @@ msgid "Symbol"
 msgstr "Символ"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:733
-#: ../plugins/terminal/terminal.c:918
-#: ../plugins/terminal/terminal.c:971
+#: ../plugins/terminal/terminal.c:772 ../plugins/terminal/terminal.c:970
+#: ../plugins/terminal/terminal.c:1049
 msgid "Terminal"
 msgstr "Терминал"
 
@@ -9302,41 +9475,41 @@ msgid "Terminal Plugin for Anjuta."
 msgstr "Модуль терминала для Anjuta."
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:2
-msgid "Use currently selected profile in GNOME terminal"
-msgstr "Использовать текущий профиль терминала GNOME"
-
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
 msgid "Use GNOME Terminal profile:"
 msgstr "Использовать профиль терминала GNOME:"
+
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
+#| msgid "Use GNOME Terminal profile:"
+msgid "Use default GNOME terminal profile"
+msgstr "Использовать профиль терминала GNOME по умолчанию"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
 msgstr "Параметры терминала"
 
-#: ../plugins/terminal/terminal.c:564
+#: ../plugins/terminal/terminal.c:600
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:572
+#: ../plugins/terminal/terminal.c:608
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:580
+#: ../plugins/terminal/terminal.c:616
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:715
+#: ../plugins/terminal/terminal.c:754
 msgid "terminal operations"
 msgstr "Команды терминала"
 
-#: ../plugins/terminal/terminal.c:850
+#: ../plugins/terminal/terminal.c:889
 #, c-format
 msgid "Unable to execute command"
-msgstr "Hе удалось выполнить команду"
+msgstr "Не удалось выполнить команду"
 
 #: ../plugins/tools/anjuta-tools.plugin.in.h:1
-#: ../plugins/tools/anjuta-tools.ui.h:1
-#: ../plugins/tools/plugin.c:263
+#: ../plugins/tools/anjuta-tools.ui.h:1 ../plugins/tools/plugin.c:263
 #: ../plugins/tools/plugin.c:270
 msgid "Tools"
 msgstr "Инструменты"
@@ -9438,8 +9611,12 @@ msgid "A tool with the same name already exists!"
 msgstr "Инструмент с таким именем уже существует!"
 
 #: ../plugins/tools/editor.c:827
-msgid "The shortcut is already used by another component in Anjuta. Do you want to keep it anyway?"
-msgstr "Эта комбинация клавиш уже используется другим компонентом Anjuta. Все равно назначить её?"
+msgid ""
+"The shortcut is already used by another component in Anjuta. Do you want to "
+"keep it anyway?"
+msgstr ""
+"Эта комбинация клавиш уже используется другим компонентом Anjuta. Все равно "
+"назначить её?"
 
 #: ../plugins/tools/editor.c:911
 msgid "Unable to edit script"
@@ -9489,7 +9666,7 @@ msgstr "Не удалось создать буфер: команда прерв
 msgid "No document currently open: command aborted"
 msgstr "Нет открытого документа: команда прервана"
 
-#: ../plugins/tools/execute.c:1019
+#: ../plugins/tools/execute.c:1025
 #, c-format
 msgid "Unable to open input file %s, command aborted"
 msgstr "Не удалось открыть входной файл %s, команда прервана"
@@ -9677,8 +9854,7 @@ msgstr "Copyright (С) Naba Kumar"
 msgid "_File"
 msgstr "_Файл"
 
-#: ../src/anjuta-actions.h:24
-#: ../src/anjuta-menu.ui.h:5
+#: ../src/anjuta-actions.h:24 ../src/anjuta-menu.ui.h:5
 msgid "_Quit"
 msgstr "_Выйти"
 
@@ -9686,8 +9862,7 @@ msgstr "_Выйти"
 msgid "Quit Anjuta IDE"
 msgstr "Выйти из Anjuta IDE"
 
-#: ../src/anjuta-actions.h:32
-#: ../src/anjuta-menu.ui.h:2
+#: ../src/anjuta-actions.h:32 ../src/anjuta-menu.ui.h:2
 msgid "_Preferences"
 msgstr "_Настройки"
 
@@ -9731,8 +9906,7 @@ msgstr "П_анель инструментов"
 msgid "Show or hide the toolbar"
 msgstr "Показать или скрыть панель инструментов"
 
-#: ../src/anjuta-actions.h:61
-#: ../src/anjuta-menu.ui.h:3
+#: ../src/anjuta-actions.h:61 ../src/anjuta-menu.ui.h:3
 msgid "_Help"
 msgstr "_Справка"
 
@@ -9766,7 +9940,9 @@ msgstr "Сооб_щить об ошибках, исправлениях или �
 
 #: ../src/anjuta-actions.h:76
 msgid "Submit a bug report, patch or feature request for Anjuta"
-msgstr "Отправить сообщение об ошибке, исправление или запрос реализации новой возможности в Anjuta"
+msgstr ""
+"Отправить сообщение об ошибке, исправление или запрос реализации новой "
+"возможности в Anjuta"
 
 #: ../src/anjuta-actions.h:79
 msgid "Ask a _Question"
@@ -9776,8 +9952,7 @@ msgstr "Задать _вопрос"
 msgid "Submit a question for FAQs"
 msgstr "Отправить вопрос для FAQ"
 
-#: ../src/anjuta-actions.h:83
-#: ../src/anjuta-menu.ui.h:4
+#: ../src/anjuta-actions.h:83 ../src/anjuta-menu.ui.h:4
 msgid "_About"
 msgstr "_О программе"
 
@@ -9793,58 +9968,59 @@ msgstr "О вне_шних модулях"
 msgid "About third-party Anjuta plugins"
 msgstr "О сторонних модулях Anjuta"
 
-#: ../src/anjuta-application.c:363
+#: ../src/anjuta-application.c:374
 msgid "Specify the size and location of the main window"
 msgstr "Укажите размер и положение главного окна"
 
 #. This is the format you can specify the size andposition
 #. * of the window on command line
-#: ../src/anjuta-application.c:366
+#: ../src/anjuta-application.c:377
 msgid "WIDTHxHEIGHT+XOFF+YOFF"
 msgstr "WIDTHxHEIGHT+XOFF+YOFF"
 
-#: ../src/anjuta-application.c:371
+#: ../src/anjuta-application.c:382
 msgid "Do not show the splash screen"
 msgstr "Не показывать заставку при запуске"
 
-#: ../src/anjuta-application.c:377
+#: ../src/anjuta-application.c:388
 msgid "Start a new instance and do not open the file in an existing instance"
 msgstr "Запустить новый экземпляр и не открывать файл в существующем"
 
-#: ../src/anjuta-application.c:383
+#: ../src/anjuta-application.c:394
 msgid "Do not open last session on startup"
 msgstr "Не открывать последний сеанс при запуске"
 
-#: ../src/anjuta-application.c:389
+#: ../src/anjuta-application.c:400
 msgid "Do not open last project and files on startup"
 msgstr "Не открывать последние проект и файлы при запуске"
 
-#: ../src/anjuta-application.c:395
+#: ../src/anjuta-application.c:406
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
-msgstr "Завершать работу Anjuta, последовательно освобождая все ресурсы (для отладки)"
+msgstr ""
+"Завершать работу Anjuta, последовательно освобождая все ресурсы (для отладки)"
 
-#: ../src/anjuta-application.c:401
+#: ../src/anjuta-application.c:412
 msgid "Display program version"
 msgstr "Показать версию программы"
 
-#: ../src/anjuta-application.c:407
+#: ../src/anjuta-application.c:418
 msgid "Specify another profile"
 msgstr "Указать другой профиль"
 
-#: ../src/anjuta-application.c:408
-msgid "profile file"
-msgstr "файл профиля"
+#: ../src/anjuta-application.c:419
+msgid "PROFILE_FILE"
+msgstr "ФАЙЛ_ПРОФИЛЯ"
 
-#: ../src/anjuta-application.c:425
+#: ../src/anjuta-application.c:436
 msgid "- Integrated Development Environment"
 msgstr "— Интегрированная среда разработки"
 
-#: ../src/anjuta-application.c:764
+#: ../src/anjuta-application.c:776
 #, c-format
 msgid "Invalid profile %s: %s"
 msgstr "Некорректный профиль %s: %s"
 
-#: ../src/anjuta-application.c:818
+#: ../src/anjuta-application.c:830
 msgid "Loaded Session…"
 msgstr "Сеанс загружен…"
 
@@ -9852,23 +10028,23 @@ msgstr "Сеанс загружен…"
 msgid "_New Window"
 msgstr "_Создать окно"
 
-#: ../src/anjuta-window.c:683
+#: ../src/anjuta-window.c:688
 msgid "Edit"
 msgstr "Изменить"
 
-#: ../src/anjuta-window.c:696
+#: ../src/anjuta-window.c:701
 msgid "Help"
 msgstr "Справка"
 
-#: ../src/anjuta-window.c:993
+#: ../src/anjuta-window.c:998
 msgid "Installed plugins"
 msgstr "Установленные модули"
 
-#: ../src/anjuta-window.c:997
+#: ../src/anjuta-window.c:1002
 msgid "Shortcuts"
 msgstr "Комбинации клавиш"
 
-#: ../src/anjuta-window.c:1069
+#: ../src/anjuta-window.c:1074
 #, c-format
 msgid "Value doesn't exist"
 msgstr "Значение не существует"
@@ -9942,3 +10118,12 @@ msgstr "Только значки"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Только текст"
+
+#~ msgid "Use currently selected profile in GNOME terminal"
+#~ msgstr "Использовать текущий профиль терминала GNOME"
+
+#~ msgid "Path: "
+#~ msgstr "Путь:"
+
+#~ msgid "profile file"
+#~ msgstr "файл профиля"
