@@ -13,9 +13,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta-master-po-gl-1952\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-07 01:10+0100\n"
-"PO-Revision-Date: 2014-02-07 01:12+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=anjuta"
+"&keywords=I18N+L10N&component=core application\n"
+"POT-Creation-Date: 2014-03-11 15:44+0000\n"
+"PO-Revision-Date: 2014-03-11 21:10+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -24,6 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -372,7 +374,7 @@ msgstr "Non é posíbel executar a orde: \"%s\""
 msgid "execvp failed"
 msgstr "fallou o execvp"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
 msgid "Anjuta Shell"
 msgstr "Intérprete de ordes de Anjuta"
 
@@ -403,11 +405,11 @@ msgid "Load"
 msgstr "Cargar"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2012
+#: ../libanjuta/anjuta-plugin-manager.c:2015
 msgid "Available Plugins"
 msgstr "Engadidos dispoñíbeis"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:995
+#: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:1000
 msgid "Preferred plugins"
 msgstr "Engadidos preferidos"
 
@@ -449,48 +451,48 @@ msgstr "Non hai ningún engadido capaz de cargar outros engadidos en %s"
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Seleccione un engadido para activalo</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2039
+#: ../libanjuta/anjuta-plugin-manager.c:2044
 msgid "Remember this selection"
 msgstr "Lembrar esta selección"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2377
+#: ../libanjuta/anjuta-plugin-manager.c:2382
 msgid "Profiles"
 msgstr "Perfís"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2378
+#: ../libanjuta/anjuta-plugin-manager.c:2383
 msgid "Current stack of profiles"
 msgstr "Pila actual de perfís"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2388
 msgid "Available plugins"
 msgstr "Engadidos dispoñíbeis"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2384
+#: ../libanjuta/anjuta-plugin-manager.c:2389
 msgid "Currently available plugins found in plugin paths"
 msgstr ""
 "Engadidos dispoñíbeis actualmente que se atoparon nas rutas de engadidos"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2390
+#: ../libanjuta/anjuta-plugin-manager.c:2395
 msgid "Activated plugins"
 msgstr "Engadidos activados"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2391
+#: ../libanjuta/anjuta-plugin-manager.c:2396
 msgid "Currently activated plugins"
 msgstr "Engadidos activados neste momento"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2397
+#: ../libanjuta/anjuta-plugin-manager.c:2402
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Intérprete de ordes de Anjuta para os que se fan os engadidos"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2405
+#: ../libanjuta/anjuta-plugin-manager.c:2410
 msgid "Anjuta Status"
 msgstr "Estado do Anjuta"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2406
+#: ../libanjuta/anjuta-plugin-manager.c:2411
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "O estado do Anjuta que se vai usar ao cargar e descargar engadidos"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2559
+#: ../libanjuta/anjuta-plugin-manager.c:2564
 msgid "Loading:"
 msgstr "Cargando:"
 
@@ -501,7 +503,7 @@ msgstr "Categoría"
 #. FIXME: Make the general page first
 #: ../libanjuta/anjuta-preferences-dialog.c:142
 #: ../libanjuta/anjuta-preferences-dialog.c:145
-#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:982
+#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:987
 #: ../src/preferences.ui.h:9
 msgid "General"
 msgstr "Xeral"
@@ -1909,18 +1911,18 @@ msgstr "Co_mpilar (%s)"
 msgid "Co_mpile"
 msgstr "Co_mpilar"
 
-#: ../plugins/build-basic-autotools/plugin.c:2515
+#: ../plugins/build-basic-autotools/plugin.c:2517
 msgid "Build commands"
 msgstr "Ordes de construción"
 
 #. Translators: This is a group of build
 #. * commands which appears in pop up menus
-#: ../plugins/build-basic-autotools/plugin.c:2524
+#: ../plugins/build-basic-autotools/plugin.c:2526
 msgid "Build popup commands"
 msgstr "Ordes de construción para xanelas emerxentes"
 
-#: ../plugins/build-basic-autotools/plugin.c:2960
-#: ../plugins/build-basic-autotools/plugin.c:2968
+#: ../plugins/build-basic-autotools/plugin.c:2970
+#: ../plugins/build-basic-autotools/plugin.c:2978
 msgid "Build Autotools"
 msgstr "Construír Autotools"
 
@@ -2634,9 +2636,9 @@ msgid "CVS popup operations"
 msgstr "Operacións en xanelas emerxentes do CVS"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.plugin.in.h:1
-#: ../plugins/debug-manager/plugin.c:407 ../plugins/debug-manager/plugin.c:427
-#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:475
-#: ../plugins/debug-manager/plugin.c:507 ../plugins/debug-manager/plugin.c:538
+#: ../plugins/debug-manager/plugin.c:410 ../plugins/debug-manager/plugin.c:430
+#: ../plugins/debug-manager/plugin.c:453 ../plugins/debug-manager/plugin.c:478
+#: ../plugins/debug-manager/plugin.c:510 ../plugins/debug-manager/plugin.c:541
 msgid "Debugger"
 msgstr "Depurador"
 
@@ -2754,8 +2756,8 @@ msgid "Shared libraries"
 msgstr "Bibliotecas compartidas"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:934
-#: ../plugins/debug-manager/plugin.c:1026
+#: ../plugins/debug-manager/plugin.c:937
+#: ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Sinais do núcleo"
 
@@ -3046,202 +3048,202 @@ msgstr ""
 "Non mostrar advertencias se non se está a empregar a configuración de "
 "depuración"
 
-#: ../plugins/debug-manager/plugin.c:337
+#: ../plugins/debug-manager/plugin.c:340
 msgid "Debugger Log"
 msgstr "Rexistro do depurador"
 
-#: ../plugins/debug-manager/plugin.c:407
+#: ../plugins/debug-manager/plugin.c:410
 msgid "Started"
 msgstr "Comezado"
 
-#: ../plugins/debug-manager/plugin.c:427
+#: ../plugins/debug-manager/plugin.c:430
 msgid "Loaded"
 msgstr "Cargado"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:446
-#: ../plugins/debug-manager/plugin.c:1038
+#: ../plugins/debug-manager/plugin.c:449
+#: ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "D_eter o programa"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:447
-#: ../plugins/debug-manager/plugin.c:1040
+#: ../plugins/debug-manager/plugin.c:450
+#: ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Deter a execución do programa"
 
-#: ../plugins/debug-manager/plugin.c:450
+#: ../plugins/debug-manager/plugin.c:453
 msgid "Running…"
 msgstr "Executando…"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:471 ../plugins/debug-manager/plugin.c:954
+#: ../plugins/debug-manager/plugin.c:474 ../plugins/debug-manager/plugin.c:957
 msgid "Run/_Continue"
 msgstr "Executar/_continuar"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:472 ../plugins/debug-manager/plugin.c:956
+#: ../plugins/debug-manager/plugin.c:475 ../plugins/debug-manager/plugin.c:959
 msgid "Continue the execution of the program"
 msgstr "Continuar a execución do programa"
 
-#: ../plugins/debug-manager/plugin.c:475
+#: ../plugins/debug-manager/plugin.c:478
 msgid "Stopped"
 msgstr "Detido"
 
-#: ../plugins/debug-manager/plugin.c:507
+#: ../plugins/debug-manager/plugin.c:510
 msgid "Unloaded"
 msgstr "Descargado"
 
-#: ../plugins/debug-manager/plugin.c:547
+#: ../plugins/debug-manager/plugin.c:550
 #, c-format
 msgid "Debugger terminated with error %d: %s\n"
 msgstr "O depurador terminou co erro %d: %s\n"
 
-#: ../plugins/debug-manager/plugin.c:560
+#: ../plugins/debug-manager/plugin.c:563
 #, c-format
 msgid "Program has received signal: %s\n"
 msgstr "O programa recibiu o sinal: %s\n"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:850
+#: ../plugins/debug-manager/plugin.c:853
 msgid "_Debug"
 msgstr "_Depurar"
 
-#: ../plugins/debug-manager/plugin.c:858
+#: ../plugins/debug-manager/plugin.c:861
 msgid "_Start Debugger"
 msgstr "_Iniciar a depuración"
 
-#: ../plugins/debug-manager/plugin.c:866
+#: ../plugins/debug-manager/plugin.c:869
 msgid "_Debug Program"
 msgstr "_Depurar o programa"
 
-#: ../plugins/debug-manager/plugin.c:868
+#: ../plugins/debug-manager/plugin.c:871
 msgid "Start debugger and load the program"
 msgstr "Iniciar o depurador e cargar o programa"
 
-#: ../plugins/debug-manager/plugin.c:874
+#: ../plugins/debug-manager/plugin.c:877
 msgid "_Debug Process…"
 msgstr "_Depurar o proceso…"
 
-#: ../plugins/debug-manager/plugin.c:876
+#: ../plugins/debug-manager/plugin.c:879
 msgid "Start debugger and attach to a running program"
 msgstr "Iniciar o depurador e acoplalo a un programa en execución"
 
-#: ../plugins/debug-manager/plugin.c:882
+#: ../plugins/debug-manager/plugin.c:885
 msgid "Debug _Remote Target…"
 msgstr "Depurar o destino _remoto…"
 
-#: ../plugins/debug-manager/plugin.c:884
+#: ../plugins/debug-manager/plugin.c:887
 msgid "Connect to a remote debugging target"
 msgstr "Conectarse cun destino remoto de depuración"
 
-#: ../plugins/debug-manager/plugin.c:890
+#: ../plugins/debug-manager/plugin.c:893
 msgid "Stop Debugger"
 msgstr "Deter o depurador"
 
-#: ../plugins/debug-manager/plugin.c:892
+#: ../plugins/debug-manager/plugin.c:895
 msgid "Say goodbye to the debugger"
 msgstr "Despídase do depurador"
 
-#: ../plugins/debug-manager/plugin.c:898
+#: ../plugins/debug-manager/plugin.c:901
 msgid "Add source paths…"
 msgstr "Engadir as rutas do código fonte…"
 
-#: ../plugins/debug-manager/plugin.c:900
+#: ../plugins/debug-manager/plugin.c:903
 msgid "Add additional source paths"
 msgstr "Engadir as rutas adicionais do código fonte"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:910
-#: ../plugins/debug-manager/plugin.c:1002
+#: ../plugins/debug-manager/plugin.c:913
+#: ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "Orde do depurador…"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:912
-#: ../plugins/debug-manager/plugin.c:1004
+#: ../plugins/debug-manager/plugin.c:915
+#: ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Personalizar a orde do depurador"
 
-#: ../plugins/debug-manager/plugin.c:918
-#: ../plugins/debug-manager/plugin.c:1010
+#: ../plugins/debug-manager/plugin.c:921
+#: ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Información"
 
-#: ../plugins/debug-manager/plugin.c:926
-#: ../plugins/debug-manager/plugin.c:1018
+#: ../plugins/debug-manager/plugin.c:929
+#: ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Bibliotecas compartidas"
 
-#: ../plugins/debug-manager/plugin.c:928
-#: ../plugins/debug-manager/plugin.c:1020
+#: ../plugins/debug-manager/plugin.c:931
+#: ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Mostrar os mapeamentos das bibliotecas compartidas"
 
-#: ../plugins/debug-manager/plugin.c:936
-#: ../plugins/debug-manager/plugin.c:1028
+#: ../plugins/debug-manager/plugin.c:939
+#: ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Mostrar os sinais do núcleo"
 
-#: ../plugins/debug-manager/plugin.c:942
+#: ../plugins/debug-manager/plugin.c:945
 msgid "_Continue/Suspend"
 msgstr "_Continuar/Suspender"
 
-#: ../plugins/debug-manager/plugin.c:944
+#: ../plugins/debug-manager/plugin.c:947
 msgid "Continue or suspend the execution of the program"
 msgstr "Continuar ou suspender a execución do programa"
 
-#: ../plugins/debug-manager/plugin.c:962
+#: ../plugins/debug-manager/plugin.c:965
 msgid "Step _In"
 msgstr "Paso para _entrar"
 
-#: ../plugins/debug-manager/plugin.c:964
+#: ../plugins/debug-manager/plugin.c:967
 msgid "Single step into function"
 msgstr "Dar un único paso para entrar na función"
 
-#: ../plugins/debug-manager/plugin.c:970
+#: ../plugins/debug-manager/plugin.c:973
 msgid "Step O_ver"
 msgstr "Paso por e_ncima"
 
-#: ../plugins/debug-manager/plugin.c:972
+#: ../plugins/debug-manager/plugin.c:975
 msgid "Single step over function"
 msgstr "Dar un paso único para pasar por encima da función"
 
-#: ../plugins/debug-manager/plugin.c:978
+#: ../plugins/debug-manager/plugin.c:981
 msgid "Step _Out"
 msgstr "Paso para _saír"
 
-#: ../plugins/debug-manager/plugin.c:980
+#: ../plugins/debug-manager/plugin.c:983
 msgid "Single step out of function"
 msgstr "Dar un único paso para saír da función"
 
-#: ../plugins/debug-manager/plugin.c:986
+#: ../plugins/debug-manager/plugin.c:989
 msgid "_Run to Cursor"
 msgstr "_Executar até o cursor"
 
-#: ../plugins/debug-manager/plugin.c:988
+#: ../plugins/debug-manager/plugin.c:991
 msgid "Run to the cursor"
 msgstr "Executar até o cursor"
 
-#: ../plugins/debug-manager/plugin.c:994
+#: ../plugins/debug-manager/plugin.c:997
 msgid "_Run from Cursor"
 msgstr "_Executar desde o cursor"
 
-#: ../plugins/debug-manager/plugin.c:996
+#: ../plugins/debug-manager/plugin.c:999
 msgid "Run from the cursor"
 msgstr "Executar desde o cursor"
 
-#: ../plugins/debug-manager/plugin.c:1080
-#: ../plugins/debug-manager/plugin.c:1086
-#: ../plugins/debug-manager/plugin.c:1092
-#: ../plugins/debug-manager/plugin.c:1098
+#: ../plugins/debug-manager/plugin.c:1083
+#: ../plugins/debug-manager/plugin.c:1089
+#: ../plugins/debug-manager/plugin.c:1095
+#: ../plugins/debug-manager/plugin.c:1101
 msgid "Debugger operations"
 msgstr "Operacións do depurador"
 
@@ -3366,7 +3368,7 @@ msgstr "Marco"
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
 #: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
-#: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:679
+#: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Ficheiro"
 
@@ -4101,7 +4103,7 @@ msgstr "Cortar o texto seleccionado no editor e mantelo no portapapeis"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:547
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:583
 msgid "_Copy"
 msgstr "_Copiar"
 
@@ -4109,7 +4111,7 @@ msgstr "_Copiar"
 msgid "Copy the selected text to the clipboard"
 msgstr "Copiar o texto seleccionado no portapapeis"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:555
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:591
 msgid "_Paste"
 msgstr "_Pegar"
 
@@ -4664,12 +4666,12 @@ msgstr "Filtro"
 msgid "Loading..."
 msgstr "Cargando…"
 
-#: ../plugins/file-manager/file-model.c:706
+#: ../plugins/file-manager/file-model.c:708
 #: ../plugins/file-manager/file-view.c:892
 msgid "Base Path"
 msgstr "Ruta base"
 
-#: ../plugins/file-manager/file-model.c:707
+#: ../plugins/file-manager/file-model.c:709
 #: ../plugins/file-manager/file-view.c:893
 msgid "GFile representing the top-most path displayed"
 msgstr "GFile que representa a ruta superior mostrada"
@@ -4826,59 +4828,59 @@ msgstr ""
 "Non é posíbel inicializar o depurador.\n"
 "Asegúrese de que o Anjuta está correctamente instalado."
 
-#: ../plugins/gdb/debugger.c:1130
+#: ../plugins/gdb/debugger.c:1131
 msgid "Getting ready to start debugging session…\n"
 msgstr "Preparándose para comezar a sesión de depuración…\n"
 
-#: ../plugins/gdb/debugger.c:1136
+#: ../plugins/gdb/debugger.c:1137
 msgid "Loading Executable: "
 msgstr "Cargando executábel: "
 
-#: ../plugins/gdb/debugger.c:1145
+#: ../plugins/gdb/debugger.c:1146
 msgid "No executable specified.\n"
 msgstr "Non hai ningún executábel especificado.\n"
 
-#: ../plugins/gdb/debugger.c:1148
+#: ../plugins/gdb/debugger.c:1149
 msgid "Open an executable or attach to a process to start debugging.\n"
 msgstr ""
 "Abrir un executábel ou acoplar a un proceso para comezar a depuración.\n"
 
-#: ../plugins/gdb/debugger.c:1157
+#: ../plugins/gdb/debugger.c:1158
 msgid "There was an error whilst launching the debugger.\n"
 msgstr "Produciuse un erro ao iniciar o depurador.\n"
 
-#: ../plugins/gdb/debugger.c:1161
+#: ../plugins/gdb/debugger.c:1162
 msgid "Make sure 'gdb' is installed on the system.\n"
 msgstr "Asegúrese de que 'gdb' está instalado no sistema.\n"
 
-#: ../plugins/gdb/debugger.c:1482
+#: ../plugins/gdb/debugger.c:1483
 msgid "Program exited normally\n"
 msgstr "O programa saíu con normalidade\n"
 
-#: ../plugins/gdb/debugger.c:1493
+#: ../plugins/gdb/debugger.c:1494
 #, c-format
 msgid "Program exited with error code %s\n"
 msgstr "O programa saíu co código de erro %s\n"
 
 #. The program has reached one breakpoint and will stop
-#: ../plugins/gdb/debugger.c:1508
+#: ../plugins/gdb/debugger.c:1509
 #, c-format
 msgid "Breakpoint number %s hit\n"
 msgstr "Atopouse o número do punto de interrupción %s\n"
 
-#: ../plugins/gdb/debugger.c:1517
+#: ../plugins/gdb/debugger.c:1518
 msgid "Function finished\n"
 msgstr "A función rematou\n"
 
-#: ../plugins/gdb/debugger.c:1523
+#: ../plugins/gdb/debugger.c:1524
 msgid "Stepping finished\n"
 msgstr "Non hai máis pasos\n"
 
-#: ../plugins/gdb/debugger.c:1529
+#: ../plugins/gdb/debugger.c:1530
 msgid "Location reached\n"
 msgstr "Chegouse á localización\n"
 
-#: ../plugins/gdb/debugger.c:1926
+#: ../plugins/gdb/debugger.c:1927
 msgid ""
 "The program is attached.\n"
 "Do you still want to stop the debugger?"
@@ -4886,7 +4888,7 @@ msgstr ""
 "O programa está acoplado.\n"
 "Aínda quere deter o depurador?"
 
-#: ../plugins/gdb/debugger.c:1929
+#: ../plugins/gdb/debugger.c:1930
 msgid ""
 "The program is running.\n"
 "Do you still want to stop the debugger?"
@@ -4896,7 +4898,7 @@ msgstr ""
 
 #. The %s argument is an error message returned by gdb.
 #. * It is something like, "No such file or directory"
-#: ../plugins/gdb/debugger.c:2087
+#: ../plugins/gdb/debugger.c:2088
 #, c-format
 msgid ""
 "Unable to connect to remote target, %s\n"
@@ -4905,20 +4907,20 @@ msgstr ""
 "Non foi posíbel conectar co destino remoto, %s\n"
 "Quere tentalo de novo?"
 
-#: ../plugins/gdb/debugger.c:2105
+#: ../plugins/gdb/debugger.c:2106
 msgid "Debugger connected\n"
 msgstr "O depurador está conectado\n"
 
-#: ../plugins/gdb/debugger.c:2179
+#: ../plugins/gdb/debugger.c:2180
 msgid "Program attached\n"
 msgstr "Programa acoplado\n"
 
-#: ../plugins/gdb/debugger.c:2200
+#: ../plugins/gdb/debugger.c:2201
 #, c-format
 msgid "Attaching to process: %d…\n"
 msgstr "Acoplando ao proceso: %d…\n"
 
-#: ../plugins/gdb/debugger.c:2226
+#: ../plugins/gdb/debugger.c:2227
 msgid ""
 "A process is already running.\n"
 "Would you like to terminate it and attach the new process?"
@@ -4926,37 +4928,37 @@ msgstr ""
 "Xa hai un proceso executándose.\n"
 "Quere terminalo e acoplar o proceso novo?"
 
-#: ../plugins/gdb/debugger.c:2243
+#: ../plugins/gdb/debugger.c:2244
 msgid "Anjuta is unable to attach to itself."
 msgstr "O Anjuta non é capaz de acoplarse a si mesmo."
 
-#: ../plugins/gdb/debugger.c:2293
+#: ../plugins/gdb/debugger.c:2294
 msgid "Program terminated\n"
 msgstr "O programa terminou\n"
 
-#: ../plugins/gdb/debugger.c:2308
+#: ../plugins/gdb/debugger.c:2309
 msgid "Program detached\n"
 msgstr "O programa desacoplouse\n"
 
-#: ../plugins/gdb/debugger.c:2328
+#: ../plugins/gdb/debugger.c:2329
 #, c-format
 msgid "Detaching the process…\n"
 msgstr "Separando o proceso…\n"
 
-#: ../plugins/gdb/debugger.c:2351
+#: ../plugins/gdb/debugger.c:2352
 msgid "Interrupting the process\n"
 msgstr "Interrompendo o proceso\n"
 
-#: ../plugins/gdb/debugger.c:3925
+#: ../plugins/gdb/debugger.c:3926
 msgid "more children"
 msgstr "máis fillos"
 
-#: ../plugins/gdb/debugger.c:4178
+#: ../plugins/gdb/debugger.c:4179
 #, c-format
 msgid "Sending signal %s to the process: %d"
 msgstr "Mandando o sinal %s ao proceso: %d"
 
-#: ../plugins/gdb/debugger.c:4204
+#: ../plugins/gdb/debugger.c:4205
 msgid "Error whilst signaling the process."
 msgstr "Produciuse un erro ao sinalizar o proceso."
 
@@ -6968,7 +6970,7 @@ msgstr "Actualizar a visualización de proxecto…"
 
 #: ../plugins/project-manager/plugin.c:1326
 #: ../plugins/project-manager/plugin.c:1448
-#: ../plugins/project-manager/plugin.c:1627
+#: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
 #: ../plugins/symbol-db/plugin.c:2160
@@ -6980,24 +6982,24 @@ msgstr "Proxecto"
 msgid "Loading project: %s"
 msgstr "Cargando o proxecto: %s"
 
-#: ../plugins/project-manager/plugin.c:1540
+#: ../plugins/project-manager/plugin.c:1541
 #, c-format
 msgid "Error closing project: %s"
 msgstr "Produciuse un erro ao pechar o proxecto: %s"
 
-#: ../plugins/project-manager/plugin.c:1606
+#: ../plugins/project-manager/plugin.c:1607
 msgid "Project manager actions"
 msgstr "Accións do xestor de proxectos"
 
-#: ../plugins/project-manager/plugin.c:1614
+#: ../plugins/project-manager/plugin.c:1615
 msgid "Project manager popup actions"
 msgstr "Accións en xanelas emerxentes do xestor de proxectos"
 
-#: ../plugins/project-manager/plugin.c:2479
+#: ../plugins/project-manager/plugin.c:2480
 msgid "Initializing Project…"
 msgstr "Inicializando o proxecto…"
 
-#: ../plugins/project-manager/plugin.c:2482
+#: ../plugins/project-manager/plugin.c:2483
 msgid "Project Loaded"
 msgstr "Proxecto cargado"
 
@@ -8638,7 +8640,7 @@ msgid "Right margin position in characters"
 msgstr "Posición da marxe dereita en caracteres"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:15
-#: ../src/anjuta-window.c:687 ../src/anjuta-window.c:692
+#: ../src/anjuta-window.c:692 ../src/anjuta-window.c:697
 msgid "View"
 msgstr "Ver"
 
@@ -9476,7 +9478,7 @@ msgstr "Accións en xanelas emerxentes de SymbolDb"
 msgid "SymbolDb menu actions"
 msgstr "Accións do menú de SymbolDb"
 
-#: ../plugins/symbol-db/plugin.c:2567 ../plugins/symbol-db/plugin.c:2585
+#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Base de datos de símbolos"
@@ -9494,8 +9496,8 @@ msgid "Symbol"
 msgstr "Símbolo"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:733 ../plugins/terminal/terminal.c:918
-#: ../plugins/terminal/terminal.c:971
+#: ../plugins/terminal/terminal.c:772 ../plugins/terminal/terminal.c:970
+#: ../plugins/terminal/terminal.c:1049
 msgid "Terminal"
 msgstr "Terminal"
 
@@ -9504,34 +9506,35 @@ msgid "Terminal Plugin for Anjuta."
 msgstr "Engadido de terminal para o Anjuta."
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:2
-msgid "Use currently selected profile in GNOME terminal"
-msgstr "Use o perfil seleccionado neste momento no terminal de GNOME"
-
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
 msgid "Use GNOME Terminal profile:"
 msgstr "Use o perfil de terminal de GNOME:"
+
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
+#| msgid "Use GNOME Terminal profile:"
+msgid "Use default GNOME terminal profile"
+msgstr "Use o perfil de terminal de GNOME predeterminado"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
 msgstr "operacións de terminal"
 
-#: ../plugins/terminal/terminal.c:564
+#: ../plugins/terminal/terminal.c:600
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:572
+#: ../plugins/terminal/terminal.c:608
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:580
+#: ../plugins/terminal/terminal.c:616
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:715
+#: ../plugins/terminal/terminal.c:754
 msgid "terminal operations"
 msgstr "operacións de terminal"
 
-#: ../plugins/terminal/terminal.c:850
+#: ../plugins/terminal/terminal.c:889
 #, c-format
 msgid "Unable to execute command"
 msgstr "Non é posíbel executar a orde"
@@ -9694,7 +9697,7 @@ msgstr "Non é posíbel crear un búfer; interrompeuse a orde"
 msgid "No document currently open: command aborted"
 msgstr "Non hai ningún documento aberto neste momento; interrompeuse a orde"
 
-#: ../plugins/tools/execute.c:1019
+#: ../plugins/tools/execute.c:1025
 #, c-format
 msgid "Unable to open input file %s, command aborted"
 msgstr "Non é posíbel abrir o ficheiro de entrada %s, interrompeuse a orde"
@@ -10066,23 +10069,23 @@ msgstr "Sesión cargada…"
 msgid "_New Window"
 msgstr "_Nova xanela"
 
-#: ../src/anjuta-window.c:683
+#: ../src/anjuta-window.c:688
 msgid "Edit"
 msgstr "Editar"
 
-#: ../src/anjuta-window.c:696
+#: ../src/anjuta-window.c:701
 msgid "Help"
 msgstr "Axuda"
 
-#: ../src/anjuta-window.c:993
+#: ../src/anjuta-window.c:998
 msgid "Installed plugins"
 msgstr "Engadidos instalados"
 
-#: ../src/anjuta-window.c:997
+#: ../src/anjuta-window.c:1002
 msgid "Shortcuts"
 msgstr "Atallos"
 
-#: ../src/anjuta-window.c:1069
+#: ../src/anjuta-window.c:1074
 #, c-format
 msgid "Value doesn't exist"
 msgstr "O valor non existe"
@@ -10156,6 +10159,9 @@ msgstr "Só iconas"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Só texto"
+
+#~ msgid "Use currently selected profile in GNOME terminal"
+#~ msgstr "Use o perfil seleccionado neste momento no terminal de GNOME"
 
 #~ msgid "Path: "
 #~ msgstr "Ruta:"
