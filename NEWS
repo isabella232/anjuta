@@ -1,3 +1,92 @@
+Anjuta 3.11.92 (March 20, 2014) -- Sébastien Granjoux
+
+Changes:
+Ask H. Larsen (1):
+  Updated Danish translation
+
+Claude Paroz (1):
+  Updated French translation
+
+Мирослав Николић (1):
+  Updated Serbian translation
+
+Seong-ho Cho (1):
+  Updated Korean translatio
+
+Paweł Żołnowski (1):
+  Updated Polish translation
+
+Fran Dieguez (2):
+  Updated Galician translation
+
+Yuri Myasoedov (1):
+  Updated Russian translation
+
+Rafael Ferreira (2):
+  Updated Brazilian Portuguese translation
+
+Daniel Mustieles (3):
+  Updated Spanish translation
+
+Chao-Hsiung Liao (2):
+  Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+Attila Hammer (2):
+Balázs Úr (1):
+  Updated Hungarian translation
+
+Marek Černocký (2):
+  Updated Czech translation
+
+Aurimas Černius (2):
+  Updated Lithuanian translation
+
+Rūdolfs Mazurs (2):
+  Updated Latvian translation
+
+Wylmer Wang (2):
+  Updated Chinese (China) translation
+
+Tristian Celestin (9):
+  bgo #688020 - stop using gnome-terminal's gconf profiles
+
+Kjartan Maraas (1):
+  Updated Norwegian bokmål translation
+
+Akom Chotiphantawanon (1):
+  Updated Thai translation
+
+Sébastien Granjoux (17):
+  Fix build
+  bgo #725373 - make is used in libanjuta/interfaces/Makefile.am
+  bgo #723451 - Choose project backend window is too small  
+  bgo #722989 - Project target name concatenated with variable wasn't processed 
+  bgo#723452 - Critical warnings when closing Anjuta window if multiple windows are open
+  Remove unused code
+  Remove a critical warnings
+  bgo #723449 - Should set a reasonable default window size
+  bgo #723510 - Warning after closing a program started by Run -> Execute
+  bgo #723458 - Missing image icon next to recent projects
+  bgo #723443 - New Window action is always disableda
+  bgo #711353 - Project Wizard - Set default setting for author, email, version, and project directory
+
+Johannes Schmid (3):
+  gdb: Disable password-prompt for gdb communication
+  anjuta: Don't set a minimum window size - just use the default
+  libanjuta: Set reasonable default size for preferences window (bgo#723444)
+
+Michael Catanzaro (2):
+  Fix crash when launching nonexistant program
+  User help: fix a typo
+
+Piotr Drąg (1):
+  Updated POTFILES.in
+
+Dominique Leuenberger (1):
+  Support Vala 0.24
+
+
+
 Anjuta 3.11.4 (Januar 15, 2013) -- Johannes Schmid
 
 This is an unstable release targetted for the GNOME 3.12 release.
