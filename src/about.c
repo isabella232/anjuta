@@ -28,8 +28,6 @@
 
 #include "about.h"
 
-#define LICENSE_FILE PACKAGE_DOC_DIR "/COPYING"
-
 #define ANJUTA_PIXMAP_LOGO			"anjuta_logo.png"
 #define ABOUT_AUTHORS				"AUTHORS"
 #define MAX_CAR 256
@@ -173,23 +171,10 @@ GtkWidget *
 about_box_new (GtkWindow *parent)
 {
 	GtkWidget *dialog;
-	gchar* license = NULL;
 	GError* error = NULL;
 
 	/*  Parse AUTHORS file  */
 	about_read_file();
-
-
-	if (!g_file_get_contents (LICENSE_FILE,
-	                          &license,
-	                          NULL,
-	                          &error))
-	{
-		g_warning ("Couldn't read license file %s: %s",
-		            LICENSE_FILE,
-		            error->message);
-		g_error_free (error);
-	}
 
 	dialog = gtk_about_dialog_new();
 	gtk_window_set_transient_for(GTK_WINDOW(dialog), parent);
@@ -198,11 +183,11 @@ about_box_new (GtkWindow *parent)
 	gtk_about_dialog_set_program_name(GTK_ABOUT_DIALOG(dialog), "Anjuta");
 	gtk_about_dialog_set_version(GTK_ABOUT_DIALOG(dialog), VERSION);
 	gtk_about_dialog_set_copyright(GTK_ABOUT_DIALOG(dialog),
-		_("Copyright (c) Naba Kumar"));
+		_("Copyright © Naba Kumar"));
 	gtk_about_dialog_set_comments(GTK_ABOUT_DIALOG(dialog),
 		_("Integrated Development Environment"));
-	gtk_about_dialog_set_license(GTK_ABOUT_DIALOG(dialog),
-		license);
+	gtk_about_dialog_set_license_type(GTK_ABOUT_DIALOG(dialog),
+		GTK_LICENSE_GPL_2_0);
 	gtk_about_dialog_set_website(GTK_ABOUT_DIALOG(dialog), "http://www.anjuta.org");
 	gtk_about_dialog_set_logo_icon_name(GTK_ABOUT_DIALOG(dialog), "anjuta");
 
@@ -213,7 +198,6 @@ about_box_new (GtkWindow *parent)
 	gtk_about_dialog_set_artists(GTK_ABOUT_DIALOG(dialog), ???);*/
 	/* Free authors, documenters, translators */
 	about_free_credit();
-	g_free (license);
 	return dialog;
 }
 
