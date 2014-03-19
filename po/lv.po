@@ -6,22 +6,22 @@
 # Raivis Dejus <orvils@gmail.com>, 2009.
 # Peteris Krisjanis <pecisk@gmail.com>, 2011.
 # Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013, 2014.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-03-07 03:43+0000\n"
-"PO-Revision-Date: 2014-03-08 17:05+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-19 23:06+0200\n"
+"PO-Revision-Date: 2014-03-19 23:06+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
-"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
+"Language-Team: Latviešu <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -34,9 +34,9 @@ msgstr ""
 "Anjuta DevStudio ir universāla programmatūras izstrādes studija, kurā ir "
 "daudzas programmēšanas iespējas, tai skaitā projektu pārvaldība, lietotņu "
 "vednis, interaktīvā atkļūdošana, pirmkoda rediģēšana, versiju vadība, GUI "
-"projektēšana, profilēšana un daudzi citi rīki. Tas koncentrējas uz vienkāršas "
-"un lietojamas saskarnes sniegšanu, kas tai pat laikā būtu spēcīga efektīvai "
-"izstrādei."
+"projektēšana, profilēšana un daudzi citi rīki. Tas koncentrējas uz "
+"vienkāršas un lietojamas saskarnes sniegšanu, kas tai pat laikā būtu spēcīga "
+"efektīvai izstrādei."
 
 #: ../anjuta.appdata.xml.in.h:2
 msgid ""
@@ -63,9 +63,9 @@ msgid ""
 "downloaded and installed."
 msgstr ""
 "Projektu vednis jums ļauj izveidot jaunus projektus no projekta veidņu "
-"izlases. Izlasē ir iekļauti vienkārši, plakani (bez apakšmapēm), GTK+, GNOME, "
-"Java, Python un vēl vairāk projekti. Jaunas veidnes var viegli lejupielādēt "
-"un instalēt."
+"izlases. Izlasē ir iekļauti vienkārši, plakani (bez apakšmapēm), GTK+, "
+"GNOME, Java, Python un vēl vairāk projekti. Jaunas veidnes var viegli "
+"lejupielādēt un instalēt."
 
 #: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
@@ -781,7 +781,6 @@ msgid "Source"
 msgstr "Avots"
 
 #: ../plugins/am-project/am-project.c:124
-#| msgid "Shared Library (libtool)"
 msgid "Shared Library (Libtool)"
 msgstr "Koplietota bibliotēka (Libtool)"
 
@@ -937,7 +936,6 @@ msgid "Libtool support:"
 msgstr "Libtool atbalsts:"
 
 #: ../plugins/am-project/am-properties.c:98
-#| msgid "Add support to compile shared and static libraries with libtool."
 msgid "Add support to compile shared and static libraries with Libtool."
 msgstr ""
 "Pievieno atbalstu koplietoto un statisko bibliotēku būvēšanai ar Libtool."
@@ -4070,7 +4068,7 @@ msgstr "Pārvietot izvēlēto tekstu no redaktora uz starpliktuvi"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:548
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:583
 msgid "_Copy"
 msgstr "_Kopēt"
 
@@ -4078,7 +4076,7 @@ msgstr "_Kopēt"
 msgid "Copy the selected text to the clipboard"
 msgstr "Kopēt izvēlēto tekstu uz starpliktuvi"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:556
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:591
 msgid "_Paste"
 msgstr "_Ielīmēt"
 
@@ -6135,17 +6133,14 @@ msgid "JS Find dirs"
 msgstr "JS meklēšanas direktorijas"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-#| msgid "Gir repository's directory: "
 msgid "Gir repository's directory:"
 msgstr "Gir krātuves direktorija:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-#| msgid "Gjs repository's directory: "
 msgid "Gjs repository's directory:"
 msgstr "Gjs krātuves direktorija:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
-#| msgid "Min character for completion: "
 msgid "Min character for completion:"
 msgstr "Minimālais rakstzīmju skaits pabeigšanai:"
 
@@ -7301,7 +7296,6 @@ msgstr ""
 "relatīvs pret mājas mapi."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
-#| msgid "Create a new project"
 msgid "Default user name used in new project"
 msgstr "Noklusējuma lietotāja vārds, ko izmantot jaunos projektos"
 
@@ -7310,7 +7304,6 @@ msgid "If empty, the current user name is used."
 msgstr "Ja tukšs, tiks izmantots pašreizējais lietotājvārds."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-#| msgid "Create a new project"
 msgid "Default email used in new project"
 msgstr "Noklusējuma e-pasts, ko izmantot jauniem projektiem"
 
@@ -8410,13 +8403,11 @@ msgstr "Valodas"
 
 #. Insert the Add Snippet menu item
 #: ../plugins/snippets-manager/snippets-browser.c:809
-#| msgid "Add Snippet …"
 msgid "Add Snippet…"
 msgstr "Pievienot fragmentu…"
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
-#| msgid "Add Snippets Group …"
 msgid "Add Snippets Group…"
 msgstr "Pievienot fragmentu grupu…"
 
@@ -9462,8 +9453,8 @@ msgid "Symbol"
 msgstr "Simbols"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:737 ../plugins/terminal/terminal.c:922
-#: ../plugins/terminal/terminal.c:975
+#: ../plugins/terminal/terminal.c:772 ../plugins/terminal/terminal.c:970
+#: ../plugins/terminal/terminal.c:1049
 msgid "Terminal"
 msgstr "Terminālis"
 
@@ -9472,34 +9463,34 @@ msgid "Terminal Plugin for Anjuta."
 msgstr "Anjuta termināļa spraudnis."
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:2
-msgid "Use currently selected profile in GNOME terminal"
-msgstr "Izmantot pašreiz GNOME terminālī izvēlēto profilu"
-
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
 msgid "Use GNOME Terminal profile:"
 msgstr "Izmanto GNOME termināļa profilu:"
+
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
+msgid "Use default GNOME terminal profile"
+msgstr "Izmanto noklusējuma GNOME termināļa profilu"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
 msgstr "Termināļa opcijas"
 
-#: ../plugins/terminal/terminal.c:565
+#: ../plugins/terminal/terminal.c:600
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:573
+#: ../plugins/terminal/terminal.c:608
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:581
+#: ../plugins/terminal/terminal.c:616
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:719
+#: ../plugins/terminal/terminal.c:754
 msgid "terminal operations"
 msgstr "termināļa operācijas"
 
-#: ../plugins/terminal/terminal.c:854
+#: ../plugins/terminal/terminal.c:889
 #, c-format
 msgid "Unable to execute command"
 msgstr "Neizdodas izpildīt komandu"
@@ -10116,6 +10107,9 @@ msgstr "Tikai ikonas"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Tikai teksts"
+
+#~ msgid "Use currently selected profile in GNOME terminal"
+#~ msgstr "Izmantot pašreiz GNOME terminālī izvēlēto profilu"
 
 #~ msgid "Path: "
 #~ msgstr "Ceļš: "
