@@ -64,7 +64,7 @@ SVN_MINOR=5
 SVN_PATCH=0
 SUBVERSION_REQUIRED=$SVN_MAJOR.$SVN_MINOR.$SVN_PATCH
 
-AM_INIT_AUTOMAKE([1.10 dist-xz no-dist-gzip])
+AM_INIT_AUTOMAKE([1.10 dist-xz no-dist-gzip tar-ustar])
 AM_MAINTAINER_MODE([enable])
 
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])

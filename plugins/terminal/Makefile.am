@@ -35,7 +35,8 @@ plugindir = $(anjuta_plugin_dir)
 plugin_LTLIBRARIES = libanjuta-terminal.la
 
 # Plugin sources
-libanjuta_terminal_la_SOURCES = terminal.c
+libanjuta_terminal_la_SOURCES = terminal.c \
+			terminal-schemas.h
 
 libanjuta_terminal_la_LDFLAGS = $(ANJUTA_PLUGIN_LDFLAGS)
 
