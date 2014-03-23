@@ -13,9 +13,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
 "POT-Creation-Date: 2014-03-19 03:43+0000\n"
-"PO-Revision-Date: 2014-03-20 11:42+0100\n"
+"PO-Revision-Date: 2014-03-23 16:42+0100\n"
 "Last-Translator: Claudio Arseni <claudio.arseni@ubuntu.com>\n"
-"Language-Team: Italian <tp@lists.linux.it>\n"
+"Language-Team: Italian <tp@lists.lunux.it>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,7 +49,7 @@ msgid ""
 "complexity. Using plugins, you can extend Anjuta with your own features."
 msgstr ""
 "Anjuta è molto estensibile. La maggior parte delle funzioni di Anjuta sono "
-"implementate usando i plugin che posso essere abilitati o disabilitati in "
+"implementate usando i plugin che possono essere abilitati o disabilitati in "
 "modo dinamico. Si può scegliere quali plugin attivare per il proprio "
 "progetto. Come la disposizione dell'interfaccia utente, anche l'insieme dei "
 "plugin attivi è persistente rendendo semplice lavorare su ogni progetto con "
@@ -65,7 +65,7 @@ msgid ""
 msgstr ""
 "L'assistente alla configurazione consente di creare progetti da una "
 "selezione di modelli. La selezione include progetti semplici e generici, "
-"flat (nessuna sotto-directory), GTK+, GNOME, Java, Python e altri. I nuovi "
+"flat (nessuna sotto-directory), GTK+, GNOME, Java, Python e altri. Nuovi "
 "modelli possono essere scaricati e installati in modo molto semplice."
 
 #: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
@@ -1334,7 +1334,7 @@ msgid ""
 "Do not rename the target with an optional prefix, used to avoid overwritting "
 "system program. "
 msgstr ""
-"Non rinomina l'obiettivo con un prefisso opzionale, utilizzato per impedire "
+"Non rinomina l'obiettivo con un prefisso opzionale, utilizzato per evitare "
 "la sovrascrittura di programmi di sistema. "
 
 #: ../plugins/am-project/am-properties.c:483
@@ -1418,7 +1418,7 @@ msgstr "Generazione di automake"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:2
 msgid "Basic autotools build plugin."
-msgstr "Plugin per generazione degli autotools di base."
+msgstr "Plugin di base per generazione con autotools."
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:3
 #: ../plugins/run-program/plugin.c:274
@@ -1504,7 +1504,7 @@ msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
 "you want to do that ?"
 msgstr ""
-"Prima di utilizzare questa nuova configurazione, occorre rimuovere la "
+"Prima di utilizzare questa nuova configurazione, occorre rimuovere quella "
 "predefinita. Rimuoverla?"
 
 #: ../plugins/build-basic-autotools/build.c:532
@@ -1684,7 +1684,7 @@ msgstr "Comando uscito con stato %d"
 #: ../plugins/build-basic-autotools/plugin.c:992
 #, c-format
 msgid "Command aborted by user"
-msgstr "Comando abortito dall'utente"
+msgstr "Comando terminato dall'utente"
 
 #: ../plugins/build-basic-autotools/plugin.c:997
 #, c-format
@@ -1846,7 +1846,7 @@ msgstr "Compila il file"
 #: ../plugins/build-basic-autotools/plugin.c:1788
 #: ../plugins/build-basic-autotools/plugin.c:1816
 msgid "Build module"
-msgstr "Genera modulo"
+msgstr "Genera il modulo"
 
 #: ../plugins/build-basic-autotools/plugin.c:1793
 #: ../plugins/build-basic-autotools/plugin.c:1821
@@ -1939,7 +1939,7 @@ msgstr ""
 
 #: ../plugins/build-basic-autotools/program.c:373
 msgid "Command aborted"
-msgstr "Comando abortito"
+msgstr "Comando terminato"
 
 #: ../plugins/class-gen/anjuta-class-gen.plugin.in.h:1
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:5
@@ -3939,7 +3939,7 @@ msgstr "_Parentesi corrispondente"
 
 #: ../plugins/document-manager/plugin.c:239
 msgid "Go to the matching brace in the editor"
-msgstr "Vi alla parentesi corrispondente nell'editor"
+msgstr "Va alla parentesi corrispondente nell'editor"
 
 #: ../plugins/document-manager/plugin.c:241
 msgid "_Start of Block"
@@ -3959,19 +3959,19 @@ msgstr "Va alla fine del blocco corrente"
 
 #: ../plugins/document-manager/plugin.c:247
 msgid "Previous _History"
-msgstr "S_torico precedente"
+msgstr "Cronologia preceden_te"
 
 #: ../plugins/document-manager/plugin.c:248
 msgid "Go to previous history"
-msgstr "Va allo storico precedente"
+msgstr "Va indietro nella cronologia"
 
 #: ../plugins/document-manager/plugin.c:250
 msgid "Next Histor_y"
-msgstr "Storico su_ccessivo"
+msgstr "_Cronologia successiva"
 
 #: ../plugins/document-manager/plugin.c:251
 msgid "Go to next history"
-msgstr "Va al prossimo storico"
+msgstr "Va avanti nella cronologia"
 
 #: ../plugins/document-manager/plugin.c:256
 msgid "_Search"
@@ -5345,7 +5345,7 @@ msgstr "Inserire il nome dell'autore del commit"
 
 #: ../plugins/git/git-commit-pane.c:149
 msgid "Please enter the commit author's e-mail address."
-msgstr "Inserire l'indirizzo e-mail dell'autore del commit."
+msgstr "Inserire l'indirizzo email dell'autore del commit."
 
 #: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:148
 msgid "Commit"
@@ -5868,7 +5868,7 @@ msgstr "Seleziona i widget nello spazio di lavoro"
 
 #: ../plugins/glade/anjuta-glade.ui.h:2
 msgid "Drag and resize widgets in the workspace"
-msgstr "Trascina e ridimensiona il widget nello spazio di lavoro"
+msgstr "Trascina e ridimensiona i widget nello spazio di lavoro"
 
 #: ../plugins/glade/anjuta-glade.ui.h:3
 msgid "Edit widget margins"
@@ -5880,7 +5880,7 @@ msgstr "Modificare allineamento widget"
 
 #: ../plugins/glade/plugin.c:688
 msgid "Glade Properties…"
-msgstr "Proprietà Glade..."
+msgstr "Proprietà Glade…"
 
 #: ../plugins/glade/plugin.c:690
 msgid "Switch between library versions and check deprecations"
@@ -6270,7 +6270,7 @@ msgstr "Gestisce i messaggi dalle applicazioni esterne"
 #. text style in editor
 #: ../plugins/message-view/anjuta-message-manager-plugin.ui.h:2
 msgid "Underline-Plain"
-msgstr "Sottolineato pieno"
+msgstr "Sottolineato normale"
 
 #. text style in editor
 #: ../plugins/message-view/anjuta-message-manager-plugin.ui.h:4
@@ -6465,7 +6465,7 @@ msgstr "Patch"
 
 #: ../plugins/patch/patch-plugin.c:172
 msgid "Please select the directory where the patch should be applied"
-msgstr "Selezionare la directory dove la patch dovrebbe essere applicata"
+msgstr "Selezionare la directory dove applicare la patch"
 
 #: ../plugins/patch/patch-plugin.c:183 ../plugins/patch/patch-plugin.ui.h:1
 msgid "Patch"
@@ -6656,7 +6656,7 @@ msgstr "Plugin gestore progetto per Anjuta."
 #. uri = g_strdup("");
 #: ../plugins/project-manager/dialogs.c:334
 msgid "Select sources…"
-msgstr "Seleziona sorgenti..."
+msgstr "Seleziona sorgenti…"
 
 #: ../plugins/project-manager/dialogs.c:409
 msgid " This property is not modifiable."
@@ -7008,7 +7008,7 @@ msgstr "Azioni a comparsa del gestore progetto"
 
 #: ../plugins/project-manager/plugin.c:2480
 msgid "Initializing Project…"
-msgstr "Inizializzazione del progetto..."
+msgstr "Inizializzazione del progetto…"
 
 #: ../plugins/project-manager/plugin.c:2483
 msgid "Project Loaded"
@@ -7212,7 +7212,7 @@ msgid ""
 "characters by example. Please fix it."
 msgstr ""
 "Il campo «%s» deve contenere solo caratteri ASCII stampabili: ad esempio "
-"nessun carattere accentuato. Correggere."
+"nessun carattere accentato. Correggere."
 
 #: ../plugins/project-wizard/druid.c:742
 #, c-format
@@ -7312,17 +7312,17 @@ msgstr "Saltato «%s»: il file esiste già"
 #: ../plugins/project-wizard/install.c:510
 #, c-format
 msgid "Creating %s … Failed to create directory"
-msgstr "Creazione di «%s»... Creazione della directory non riuscita"
+msgstr "Creazione di «%s»… Creazione della directory non riuscita"
 
 #: ../plugins/project-wizard/install.c:526
 #, c-format
 msgid "Creating %s (using AutoGen)… %s"
-msgstr "Creazione di %s (utilizzando AutoGen)... %s"
+msgstr "Creazione di %s (utilizzando AutoGen)… %s"
 
 #: ../plugins/project-wizard/install.c:531
 #, c-format
 msgid "Creating %s … %s"
-msgstr "Creazione di %s ... %s"
+msgstr "Creazione di %s … %s"
 
 #. The %s is a name of a unix command line, by example
 #. * cp foobar.c project
@@ -7669,8 +7669,8 @@ msgstr "Configura pacchetti esterni:"
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:20
 msgid "Use pkg-config to add library support from other packages"
 msgstr ""
-"Utilizzare pkg-config per aggiungere il supporto della libreria da altri "
-"pacchetti"
+"Utilizzare pkg-config per aggiungere il supporto di librerie contenute in "
+"altri pacchetti"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:29
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:21
@@ -7949,7 +7949,7 @@ msgstr "Nome del plugin visibile all'utente, corto ma descrittivo"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:14
 msgid "Long description of your plugin"
-msgstr "Descrizione lunga del proprio plugin"
+msgstr "Descrizione lunga di questo plugin"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:15
 msgid "UUID:"
@@ -7982,8 +7982,8 @@ msgstr "Compatibilità con Gnome Shell:"
 msgid ""
 "Comma-separated list of gnome-shell version your plugin is compatible with"
 msgstr ""
-"Elenco separato da virgola delle versioni di gnome-shell con le quali il "
-"proprio plugin è compatibile"
+"Elenco separato da virgole delle versioni di gnome-shell con le quali questo "
+"plugin è compatibile"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:1
 msgid "GTK+ (Application)"
@@ -8047,7 +8047,7 @@ msgid ""
 "'libgnomeui-2.0 >= 2.2.0'"
 msgstr ""
 "Dare un nome del pacchetto che il proprio progetto richiede. Si può anche "
-"dire che questa è la versione richiesta del pacchetto. Per esempio, "
+"dire quale è la versione richiesta del pacchetto. Per esempio, "
 "«libgnomeui-2.0» o «libgnomeui-2.0 >= 2.2.0»"
 
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:1
@@ -8088,7 +8088,7 @@ msgstr "JavaScript generico"
 #: ../plugins/project-wizard/templates/js.wiz.in.h:2
 #: ../plugins/project-wizard/templates/minimal.wiz.in.h:2
 msgid "A generic minimal and flat project"
-msgstr "Un progetto generico minimale e vuoto"
+msgstr "Un progetto generico minimale e senza sotto-directory"
 
 # GNOME-2-30
 #: ../plugins/project-wizard/templates/library.wiz.in.h:1
@@ -8151,7 +8151,7 @@ msgstr "Progetto basato su makefile"
 
 #: ../plugins/project-wizard/templates/mkfile.wiz.in.h:4
 msgid "Project directory, output file etc."
-msgstr "Directory progetto, file output ecc."
+msgstr "Directory progetto, file di output ecc."
 
 # GNOME-2-30
 #: ../plugins/project-wizard/templates/mkfile.wiz.in.h:5
@@ -8245,10 +8245,14 @@ msgid "A generic project"
 msgstr "Un progetto generico"
 
 #: ../plugins/project-wizard/templates/wxwin.wiz.in.h:1
+# NDT: nella traduzione è usato "wxWidget" per uniformità 
+# con il progetto orgiginale (https://www.wxwidgets.org/‎)
 msgid "Wx Widgets"
 msgstr "wxWidgets"
 
 #: ../plugins/project-wizard/templates/wxwin.wiz.in.h:2
+# NDT: nella traduzione è usato "wxWidget" per uniformità 
+# con il progetto orgiginale (https://www.wxwidgets.org/‎)
 msgid "A generic wx Widgets project"
 msgstr "Un progetto wxWidgets generico"
 
@@ -8258,7 +8262,7 @@ msgstr "Barra Xlib"
 
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:2
 msgid "A generic Xlib dock applet"
-msgstr "Un'applet Xlib generica per la barra generica"
+msgstr "Un'applet Xlib generica per la barra"
 
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:1
 msgid "Xlib"
@@ -8340,7 +8344,7 @@ msgid ""
 "Do you want to stop it before restarting a new instance?"
 msgstr ""
 "Il programma è in esecuzione.\n"
-"Si vuole fermarlo prima di riavviare una nuova istanza?"
+"Fermarlo prima di riavviare una nuova istanza?"
 
 #. Action name
 #. Stock icon, if any
@@ -8362,7 +8366,7 @@ msgstr "Termina programma"
 
 #: ../plugins/run-program/plugin.c:290
 msgid "Program Parameters…"
-msgstr "Parametri programma..."
+msgstr "Parametri programma…"
 
 #: ../plugins/run-program/plugin.c:292
 msgid "Set current program, arguments, etc."
@@ -8413,11 +8417,11 @@ msgstr "Completamento _automatico"
 
 #: ../plugins/snippets-manager/plugin.c:88
 msgid "Insert a snippet using auto-completion"
-msgstr "Inserisce gestore stub, posizione automatica"
+msgstr "Inserisce un pezzetto di codice usando il completamento automatico"
 
 #: ../plugins/snippets-manager/plugin.c:93
 msgid "_Import snippets …"
-msgstr "_Importa pezzetti di codice..."
+msgstr "_Importa pezzetti di codice…"
 
 #: ../plugins/snippets-manager/plugin.c:95
 msgid "Import snippets to the database"
@@ -8425,7 +8429,7 @@ msgstr "Importa pezzetti di codice nel database"
 
 #: ../plugins/snippets-manager/plugin.c:100
 msgid "_Export snippets …"
-msgstr "_Esporta pezzetti di codice..."
+msgstr "_Esporta pezzetti di codice…"
 
 #: ../plugins/snippets-manager/plugin.c:102
 msgid "Export snippets from the database"
@@ -8580,8 +8584,8 @@ msgid ""
 "relevant to the snippet content. Type them separated by a single space."
 msgstr ""
 "Le parole chiave sono utilizzare per meglio ricercare i pezzetti di codice. "
-"Devono essere pertinenti al contenuto del pezzetto di codice. Digitarli "
-"separati da un singolo spazio."
+"Devono essere pertinenti al contenuto del pezzetto di codice. Digitarle "
+"separate da un singolo spazio."
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:15
 msgid "Snippet Properties"
@@ -8914,7 +8918,7 @@ msgstr "Selezionare i file di cui fare il commit:"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:16
 msgid "Retrieving status…"
-msgstr "Recupero dello stato..."
+msgstr "Recupero dello stato…"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:17
 msgid "Copy files/folders"
@@ -8994,11 +8998,11 @@ msgstr "Percorso della copia di lavoro:"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:42
 msgid "Start Revision:"
-msgstr "Inizio revisione:"
+msgstr "Revisione iniziale:"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:43
 msgid "End Revision:"
-msgstr "Fine revisione:"
+msgstr "Revisione finale:"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:44
 msgid "Ignore ancestry"
@@ -9022,7 +9026,7 @@ msgstr "Selezionare i file da segnare come risolti:"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:50
 msgid "Retrieving status……"
-msgstr "Recupero dello stato..."
+msgstr "Recupero dello stato……"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:51
 msgid "Revert Changes"
@@ -9078,7 +9082,7 @@ msgstr "_Subversion"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:60 ../plugins/subversion/plugin.c:175
 msgid "_Add…"
-msgstr "A_ggiungi..."
+msgstr "A_ggiungi…"
 
 #. Display label
 #. short-cut
@@ -9090,7 +9094,7 @@ msgstr "Aggiunge un nuovo file/directory all'albero Subversion"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:68 ../plugins/subversion/plugin.c:183
 msgid "_Remove…"
-msgstr "_Rimuovi..."
+msgstr "_Rimuovi…"
 
 #. Display label
 #. short-cut
@@ -9102,7 +9106,7 @@ msgstr "Rimuove un file/directory dall'albero Subversion"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:76
 msgid "_Commit…"
-msgstr "_Commit..."
+msgstr "_Commit…"
 
 #. Display label
 #. short-cut
@@ -9114,7 +9118,7 @@ msgstr "Esegue il commit delle proprie modifiche all'albero Subversion"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:84 ../plugins/subversion/plugin.c:167
 msgid "_Revert…"
-msgstr "Inve_rti..."
+msgstr "Inve_rti…"
 
 #. Display label
 #. short-cut
@@ -9126,7 +9130,7 @@ msgstr "Inverte le modifiche alla propria copia di lavoro."
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:92
 msgid "_Resolve Conflicts…"
-msgstr "_Risolvi conflitti..."
+msgstr "_Risolvi conflitti…"
 
 #. Display label
 #. short-cut
@@ -9138,7 +9142,7 @@ msgstr "Risolve i conflitti nella propria copia di lavoro."
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:100 ../plugins/subversion/plugin.c:159
 msgid "_Update…"
-msgstr "_Aggiorna..."
+msgstr "_Aggiorna…"
 
 #. Display label
 #. short-cut
@@ -9150,7 +9154,7 @@ msgstr "Sincronizzare la propria copia locale con l'albero Subversion"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:108
 msgid "Copy Files/Folders…"
-msgstr "Copia file/cartelle..."
+msgstr "Copia file/cartelle…"
 
 #. Display label
 #. short-cut
@@ -9162,7 +9166,7 @@ msgstr "Copia file/cartelle nel repository"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:116
 msgid "Switch to a Branch/Tag…"
-msgstr "Cambia ramo/etichetta..."
+msgstr "Cambia ramo/etichetta…"
 
 #. Display label
 #. short-cut
@@ -9175,7 +9179,7 @@ msgstr ""
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:124
 msgid "Merge…"
-msgstr "Unione..."
+msgstr "Unione…"
 
 #. Display label
 #. short-cut
@@ -9187,7 +9191,7 @@ msgstr "Unisce le modifiche nella propria copia di lavoro"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:132 ../plugins/subversion/plugin.c:191
 msgid "_View Log…"
-msgstr "_Visualizza registro..."
+msgstr "_Visualizza registro…"
 
 #. Display label
 #. short-cut
@@ -9199,7 +9203,7 @@ msgstr "Visualizza lo storico del file"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:140
 msgid "_Diff…"
-msgstr "_Diff..."
+msgstr "_Diff…"
 
 #. Display label
 #. short-cut
@@ -9211,13 +9215,13 @@ msgstr "Esegue «diff» dell'albero locale con il repository"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:199
 msgid "Copy…"
-msgstr "Copia..."
+msgstr "Copia…"
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:207
 msgid "Diff…"
-msgstr "Diff..."
+msgstr "Diff…"
 
 #: ../plugins/subversion/plugin.c:488
 msgid "Subversion operations"
@@ -9244,11 +9248,11 @@ msgstr "Inserire un percorso."
 
 #: ../plugins/subversion/subversion-commit-dialog.c:39
 msgid "Subversion: Commit complete."
-msgstr "Subversion: esecuzione di commit completa."
+msgstr "Subversion: esecuzione del commit completa."
 
 #: ../plugins/subversion/subversion-commit-dialog.c:123
 msgid "Subversion: Committing changes to the repository…"
-msgstr "Subversion: esecuzione del commit delle modifiche al repository..."
+msgstr "Subversion: esecuzione del commit delle modifiche al repository…"
 
 #: ../plugins/subversion/subversion-copy-dialog.c:138
 msgid "Subversion: Copy complete."
@@ -9270,7 +9274,7 @@ msgstr "[Head/Copia di lavoro]"
 #: ../plugins/subversion/subversion-log-dialog.c:426
 #: ../plugins/subversion/subversion-log-dialog.c:493
 msgid "Subversion: Retrieving diff…"
-msgstr "Subversion: recupero differenze..."
+msgstr "Subversion: recupero differenze…"
 
 #: ../plugins/subversion/subversion-log-dialog.c:119
 msgid "Diff"
@@ -9278,7 +9282,7 @@ msgstr "Diff"
 
 #: ../plugins/subversion/subversion-log-dialog.c:257
 msgid "Subversion: Retrieving log…"
-msgstr "Subversion: recupero registro..."
+msgstr "Subversion: recupero registro…"
 
 #: ../plugins/subversion/subversion-log-dialog.c:309
 msgid "Subversion: File retrieved."
@@ -9286,7 +9290,7 @@ msgstr "Subversion: file recuperato."
 
 #: ../plugins/subversion/subversion-log-dialog.c:351
 msgid "Subversion: Retrieving file…"
-msgstr "Subversion: recupero file..."
+msgstr "Subversion: recupero file…"
 
 #: ../plugins/subversion/subversion-merge-dialog.c:38
 msgid "Subversion: Merge complete."
@@ -9307,7 +9311,7 @@ msgstr "Inserire il percorso di una copia di lavoro."
 
 #: ../plugins/subversion/subversion-merge-dialog.c:121
 msgid "Please enter the start revision."
-msgstr "Inserire la revisione di partenza."
+msgstr "Inserire la revisione iniziale."
 
 #: ../plugins/subversion/subversion-merge-dialog.c:136
 msgid "Please enter the end revision."
@@ -9669,7 +9673,7 @@ msgstr "Disabilitato"
 
 #: ../plugins/tools/editor.c:793
 msgid "You must provide a tool name!"
-msgstr "Occorre fornire un nome per lo strumento"
+msgstr "Occorre fornire un nome per lo strumento."
 
 #: ../plugins/tools/editor.c:801
 msgid "You must provide a tool command!"
@@ -9738,7 +9742,7 @@ msgstr "Nessun documento correntemente aperto: comando terminato"
 #: ../plugins/tools/execute.c:1025
 #, c-format
 msgid "Unable to open input file %s, command aborted"
-msgstr "Impossibile aprire il file di output «%s», comando abortito"
+msgstr "Impossibile aprire il file di output «%s», comando terminato"
 
 #: ../plugins/tools/fileop.c:248
 msgid "Missing tool name"
@@ -9970,7 +9974,7 @@ msgstr "B_locca disposizione agganci"
 #: ../src/anjuta-actions.h:52
 msgid "Lock the current dock layout so that widgets cannot be moved"
 msgstr ""
-"Blocca la disposizione degli agganci corrente così che i widget non possano "
+"Blocca la disposizione corrente degli agganci così che i widget non possano "
 "essere mossi"
 
 #: ../src/anjuta-actions.h:55
@@ -10051,7 +10055,7 @@ msgstr "Specifica la grandezza e la posizione della finestra principale"
 #. * of the window on command line
 #: ../src/anjuta-application.c:377
 msgid "WIDTHxHEIGHT+XOFF+YOFF"
-msgstr "LARGHEZZA×ALTEZZA+XOFF+YOFF"
+msgstr "LARGHEZZAxALTEZZAxXOFF+YOFF"
 
 #: ../src/anjuta-application.c:382
 msgid "Do not show the splash screen"
@@ -10063,16 +10067,15 @@ msgstr "Avvia una nuova istanza e non apre il file in un'istanza esistente"
 
 #: ../src/anjuta-application.c:394
 msgid "Do not open last session on startup"
-msgstr "Non aprire l'ultima sessione in partenza"
+msgstr "Non aprire l'ultima sessione all'avvio"
 
 #: ../src/anjuta-application.c:400
 msgid "Do not open last project and files on startup"
-msgstr "Non aprire l'ultimo progetto e i file alla partenza"
+msgstr "Non aprire l'ultimo progetto e i file all'avvio"
 
 #: ../src/anjuta-application.c:406
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
-msgstr ""
-"Arresto di Anjuta correttamente, rilasciando tutte le risorse (per debug)"
+msgstr "Arresta Anjuta correttamente, rilasciando tutte le risorse (per debug)"
 
 #: ../src/anjuta-application.c:412
 msgid "Display program version"
@@ -10142,7 +10145,7 @@ msgstr "Non caricare l'ultima sessione all'avvio"
 
 #: ../src/preferences.ui.h:2
 msgid "Do not load last project and files on startup"
-msgstr "Non caricare gli ultimi progetto e file all'avvio"
+msgstr "Non caricare l'ultimo progetto e i file all'avvio"
 
 #: ../src/preferences.ui.h:3
 msgid "Session"
