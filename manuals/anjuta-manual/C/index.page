@@ -1,5 +1,6 @@
 <page xmlns="http://projectmallard.org/1.0/"
       xmlns:e="http://projectmallard.org/experimental/"
+      xmlns:its="http://www.w3.org/2005/11/its"
       type="guide" style="2column"
       id="index">
 
@@ -20,7 +21,7 @@
   </info>  
   
   <title>
-    <media type="image" mime="image/png" src="figures/anjuta_logo.png">Anjuta logo</media>
+    <media type="image" mime="image/png" its:translate="no" src="figures/anjuta_logo.png"><span its:translate="yes">Anjuta logo</span></media>
     Anjuta DevStudio
   </title>
 
