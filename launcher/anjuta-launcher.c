@@ -125,7 +125,7 @@ main (int argc, char **argv)
 
 			printf ("Program has been terminated receiving signal %d (%s)\n", signal, g_strsignal (signal));
 		} else if (WIFEXITED (status))
-			printf ("Program exited successfully with errcode (%d)\n", WEXITSTATUS (status));
+			printf ("Program exited with errcode (%d)\n", WEXITSTATUS (status));
 	}
 	printf ("Press the Enter key to close this terminal ... \n");
 	getchar ();
