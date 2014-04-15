@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: anjuta.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-03-10 03:43+0000\n"
+"POT-Creation-Date: 2014-04-15 02:38+0000\n"
 "PO-Revision-Date: 2014-03-10 11:22+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
@@ -1334,7 +1334,7 @@ msgid ""
 "system program. "
 msgstr ""
 "No renombrar el objetivo con un prefijo adicional, usado para evitar "
-"sobreescribir el programa del sistema."
+"sobrescribir el programa del sistema."
 
 #: ../plugins/am-project/am-properties.c:483
 #: ../plugins/am-project/am-properties.c:658
@@ -3643,7 +3643,7 @@ msgid ""
 "Do you want to replace it with the one you are saving?"
 msgstr ""
 "El archivo «%s» ya existe.\n"
-"¿Quiere sobreescribirlo con el que está intentando guardar?"
+"¿Quiere sobrescribirlo con el que está intentando guardar?"
 
 #: ../plugins/document-manager/anjuta-docman.c:999
 msgid "_Replace"
@@ -7219,7 +7219,7 @@ msgstr ""
 #: ../plugins/project-wizard/druid.c:771
 #, c-format
 msgid "File \"%s\" already exists. Do you want to overwrite it?"
-msgstr "El archivo «%s» ya existe. ¿Quiere sobreescribirlo?"
+msgstr "El archivo «%s» ya existe. ¿Quiere sobrescribirlo?"
 
 #: ../plugins/project-wizard/druid.c:804
 msgid "Invalid entry"
@@ -9511,7 +9511,6 @@ msgid "Use GNOME Terminal profile:"
 msgstr "Usar el perfil del terminal de GNOME:"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
-#| msgid "Use GNOME Terminal profile:"
 msgid "Use default GNOME terminal profile"
 msgstr "Usar el perfil del terminal predeterminado de GNOME"
 
