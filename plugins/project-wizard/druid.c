@@ -1336,11 +1336,6 @@ npw_druid_add_default_property (NPWDruid* druid)
 
 	/* Add Email address */
 	s = g_settings_get_string (settings,LAST_EMAIL);
-	if (*s == '\0')
-	{
-		g_free (s);
-		s = anjuta_util_get_user_mail();
-	}
 	g_hash_table_insert (druid->values, g_strdup (EMAIL_ADDRESS_PROPERTY), s);
 	g_object_unref (settings);
 

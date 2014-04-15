@@ -5,7 +5,7 @@
 [+INVOKE START-INDENT\+]
 /*
  * wmgeneral.c
- * Copyright (C) [+(shell "date +%Y")+] [+Author+] <[+Email+]>
+ * Copyright (C) [+(shell "date +%Y")+] [+Author+][+IF (get "Email")+] <[+Email+]>[+ENDIF+]
  * 
 [+INVOKE LICENSE-DESCRIPTION PFX=" * " PROGRAM=(get "Name") OWNER=(get "Author") \+]
  */
