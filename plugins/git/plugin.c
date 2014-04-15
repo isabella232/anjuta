@@ -58,6 +58,7 @@
 
 #define SETTINGS_SCHEMA "org.gnome.anjuta.plugins.git"
 #define UI_FILE PACKAGE_DATA_DIR"/ui/anjuta-git.xml"
+#define MIN_DOCK_WIDTH 650
 
 AnjutaCommandBarEntry branch_entries[] =
 {
@@ -801,7 +802,7 @@ git_activate_plugin (AnjutaPlugin *plugin)
 	gchar *objects[] = {"grip_box",
 						NULL};
 	GtkWidget *git_tasks_button;
-	GtkWidget *scrolled_window, *viewport;
+	GtkWidget *scrolled_window;
 	AnjutaUI *ui;
 	
 	DEBUG_PRINT ("%s", "Git: Activating Git plugin …");
@@ -815,24 +816,23 @@ git_activate_plugin (AnjutaPlugin *plugin)
 	
 	/* Command bar and dock */
 	git_plugin->command_bar = anjuta_command_bar_new ();
+
 	git_plugin->dock = anjuta_dock_new ();
-	viewport = gtk_viewport_new (NULL, NULL);
 	scrolled_window = gtk_scrolled_window_new (NULL, NULL);
+	gtk_widget_set_size_request (scrolled_window, MIN_DOCK_WIDTH, -1);
 
-	gtk_container_add (GTK_CONTAINER (viewport), git_plugin->dock);
-	gtk_container_add (GTK_CONTAINER (scrolled_window), viewport);
-
-	git_plugin->box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
-	gtk_box_pack_start (GTK_BOX (git_plugin->box), scrolled_window, TRUE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (git_plugin->box), git_plugin->command_bar, FALSE, FALSE, 0);
+	gtk_container_add (GTK_CONTAINER (scrolled_window), git_plugin->dock);
+	
+	git_plugin->paned = gtk_paned_new (GTK_ORIENTATION_HORIZONTAL);
+	gtk_paned_add1 (GTK_PANED (git_plugin->paned), scrolled_window);
+	gtk_paned_add2 (GTK_PANED (git_plugin->paned), git_plugin->command_bar);
 	
 
 	anjuta_dock_set_command_bar (ANJUTA_DOCK (git_plugin->dock), 
 	                             ANJUTA_COMMAND_BAR (git_plugin->command_bar));
 
-	gtk_widget_show (git_plugin->box);
-	gtk_widget_show_all (scrolled_window);
-	anjuta_shell_add_widget_custom (plugin->shell, git_plugin->box, "GitDock", 
+	gtk_widget_show_all (git_plugin->paned);
+	anjuta_shell_add_widget_custom (plugin->shell, git_plugin->paned, "GitDock", 
 	                     			_("Git"), "git-plugin", 
 	                                GTK_WIDGET (gtk_builder_get_object (builder, "grip_box")), 
 	                                ANJUTA_SHELL_PLACEMENT_CENTER,
@@ -1003,7 +1003,7 @@ git_deactivate_plugin (AnjutaPlugin *plugin)
 	anjuta_plugin_remove_watch (plugin, git_plugin->editor_watch_id,
 								TRUE);
 
-	anjuta_shell_remove_widget (plugin->shell, git_plugin->box, NULL);
+	anjuta_shell_remove_widget (plugin->shell, git_plugin->paned, NULL);
 
 	ui = anjuta_shell_get_ui (plugin->shell, NULL);
 	anjuta_ui_remove_action_group (ui, git_plugin->status_menu_group);

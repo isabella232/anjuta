@@ -205,8 +205,8 @@ anjuta_command_bar_add_action_group (AnjutaCommandBar *self,
 			
 			gtk_button_set_relief (GTK_BUTTON (button), GTK_RELIEF_NONE);
 			button_label = gtk_bin_get_child (GTK_BIN (button));
-			gtk_label_set_width_chars (GTK_LABEL (button_label), self->priv->max_text_width);
-			gtk_label_set_line_wrap (GTK_LABEL (button_label), TRUE);
+			gtk_label_set_max_width_chars (GTK_LABEL (button_label), self->priv->max_text_width);
+			gtk_label_set_ellipsize (GTK_LABEL (button_label), PANGO_ELLIPSIZE_END);
 
 			/* Left-align button contents */
 			gtk_misc_set_alignment (GTK_MISC (button_label), 0.0, 0.5);
@@ -262,8 +262,8 @@ anjuta_command_bar_add_action_group (AnjutaCommandBar *self,
 		}
 	}
 
-	gtk_scrolled_window_add_with_viewport (GTK_SCROLLED_WINDOW (scrolled_window),
-	                                       vbox);
+	gtk_container_add (GTK_CONTAINER (scrolled_window),
+	                   vbox);
 	gtk_widget_show_all (scrolled_window);
 	gtk_notebook_append_page (GTK_NOTEBOOK (self), scrolled_window, NULL);
 }

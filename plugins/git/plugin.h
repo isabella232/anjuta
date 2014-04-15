@@ -65,7 +65,7 @@ struct _Git
 
 	GtkWidget *command_bar;
 	GtkWidget *dock;
-	GtkWidget *box;
+	GtkWidget *paned;
 
 	GSettings *settings;
 
