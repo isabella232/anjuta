@@ -35,7 +35,10 @@
 
 #define HAVE_TOOLTIP_API (GTK_MAJOR_VERSION > 2 || (GTK_MAJOR_VERSION == 2 && GTK_MINOR_VERSION >= 12))
 #include <glib/gi18n.h>
+#include <glib/gprintf.h>
+#include <glib/gstdio.h>
 
+#include <libanjuta/anjuta-utils.h>
 #include <libanjuta/anjuta-debug.h>
 #include <libanjuta/anjuta-vcs-status.h>
 
@@ -117,14 +120,90 @@ file_view_refresh (AnjutaFileView* view)
 	gtk_tree_path_free (tree_path);
 }
 
+
+static void
+file_view_rename_edit_finish (GtkCellRendererText *renderer,
+                                   gchar *path,
+                                   gchar *new_text,
+                                   gpointer user_data) {
+	AnjutaFileView* view = (AnjutaFileView*) user_data ;
+	GFile* file = file_view_get_selected (view);
+
+
+	gchar * newFilename ;
+	gchar * oldFilename ;
+	gchar * oldPath ;
+	gchar * fileBasename ;
+	GFile * parent = NULL ;
+	if(!g_file_has_parent(file, NULL)) {/* You try to rename "/" */
+		anjuta_util_dialog_error(NULL, _("You can't rename \"/\"!"), NULL);
+		return ;
+	}
+
+	fileBasename = g_file_get_basename(file) ;
+	parent = g_file_get_parent(file) ;
+	oldPath = g_file_get_path (parent) ;
+		
+	/* Creating the new filename */
+	newFilename = g_strconcat(oldPath, G_DIR_SEPARATOR_S, new_text, NULL);
+	oldFilename = g_strconcat(oldPath, G_DIR_SEPARATOR_S, fileBasename, NULL);
+	
+	if(g_rename(oldFilename, newFilename))
+		anjuta_util_dialog_error(NULL,
+								_("An error has occured!\n\
+Maybe you permissions're insuficient or the filename is wrong")
+		                         , NULL);
+	
+	g_object_unref(parent) ;
+	g_free(newFilename) ;
+	g_free(oldFilename) ;
+	g_free(oldPath) ;
+	g_free(fileBasename) ;
+}
+
+static void
+file_view_rename_edit_start (GtkCellRenderer *cell,
+                      GtkCellEditable *editable,
+                      const gchar     *path,
+                      gpointer         data)
+{
+  if (GTK_IS_ENTRY (editable)) {
+		GtkEntry *entry = GTK_ENTRY (editable);
+
+		AnjutaFileView* view = (AnjutaFileView*) data ;
+		GFile* file = file_view_get_selected (view);
+
+		gchar * fileBasename ;
+		fileBasename = g_file_get_basename(file) ;
+		gtk_entry_set_text(entry, fileBasename);
+		g_free(fileBasename) ;
+	}
+}
+
 void file_view_rename (AnjutaFileView* view)
 {
-	/* TODO */
+	
+	GtkTreeSelection * selection = gtk_tree_view_get_selection(
+	                                                     GTK_TREE_VIEW(view));
+	GtkTreeIter iter ;
+	GtkTreeModel * model = NULL ;
+	gtk_tree_selection_get_selected(selection, &model, &iter);
+		
+	GtkTreePath * path = gtk_tree_model_get_path(model, &iter);
+	GtkTreeViewColumn * column = gtk_tree_view_get_column(GTK_TREE_VIEW(view),
+	                                                      0);
+	
+	gtk_tree_view_set_cursor_on_cell(GTK_TREE_VIEW(view)
+	                                 , path, column,
+	                                 NULL, TRUE);
+	gtk_tree_path_free(path) ;
 }
 
 gboolean file_view_can_rename (AnjutaFileView* view)
 {
-	/* TODO */
+	/* TODO 
+	 * Maybe it can be use for windows (look if file is already open)
+	 */
 	return FALSE;
 }
 
@@ -800,6 +879,15 @@ file_view_init (AnjutaFileView *object)
 	
 	renderer_pixbuf = gtk_cell_renderer_pixbuf_new ();
 	renderer_display = gtk_cell_renderer_text_new ();
+	
+	g_object_set(renderer_display,
+	             "mode", GTK_CELL_RENDERER_MODE_EDITABLE,
+	             "editable", TRUE, NULL);	
+	g_object_connect(renderer_display, "signal::edited",
+	                 file_view_rename_edit_finish, object, NULL);
+	g_object_connect(renderer_display, "signal::editing-started",
+	                 file_view_rename_edit_start, object, NULL);
+	
 	column = gtk_tree_view_column_new ();
 	gtk_tree_view_column_set_title (column, _("Filename"));
 	gtk_tree_view_column_pack_start (column, renderer_pixbuf, FALSE);
