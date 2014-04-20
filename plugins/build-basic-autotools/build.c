@@ -512,7 +512,7 @@ build_save_distclean_and_execute_command (BasicAutotoolsPlugin* bplugin, BuildPr
 
 	context = build_get_context (bplugin, prog->work_dir, with_view, FALSE);
 	root_path = g_file_get_path (bplugin->project_root_dir);
-	same = strcmp (prog->work_dir, root_path) != 0;
+	same = strcmp (prog->work_dir, root_path) == 0;
 	g_free (root_path);
 
 	config = build_configuration_list_get_selected (bplugin->configurations);
