@@ -35,6 +35,9 @@ GFile * normalize_project_file (GFile *file, GFile *root);
 gboolean directory_has_makefile (GFile *dir);
 gboolean directory_has_makefile_am (BasicAutotoolsPlugin *bb_plugin,  GFile *dir);
 
+gchar * get_configuration_relative_target (BasicAutotoolsPlugin *plugin);
+void set_configuration_relative_target (BasicAutotoolsPlugin *plugin, const gchar* relative_target);
+
 /* Build function type */
 typedef BuildContext* (*BuildFunc) (BasicAutotoolsPlugin *plugin, GFile *file,
                                     IAnjutaBuilderCallback callback, gpointer user_data,

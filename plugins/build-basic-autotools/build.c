@@ -63,6 +63,8 @@ typedef struct
 #define DEFAULT_COMMAND_CHECK "make check"
 #define DEFAULT_COMMAND_AUTORECONF "autoreconf -i --force"
 
+#define RUN_PROGRAM_URI	"run_program_uri"
+
 #define CHOOSE_COMMAND(plugin,command) \
 	((plugin->commands[(IANJUTA_BUILDABLE_COMMAND_##command)]) ? \
 			(plugin->commands[(IANJUTA_BUILDABLE_COMMAND_##command)]) \
@@ -231,6 +233,55 @@ shell_quotef (const gchar *format,...)
 
 	return quoted_str;
 }
+
+/* Get target relative to current configuration if existing or NULL if the current
+ * target is not relative to the current configuration */
+gchar *
+get_configuration_relative_target (BasicAutotoolsPlugin *plugin)
+{
+	gchar *relative_target = NULL;
+	gchar *uri;
+
+	anjuta_shell_get (ANJUTA_PLUGIN (plugin)->shell, RUN_PROGRAM_URI, G_TYPE_STRING, &uri, NULL);
+	if (uri != NULL)
+	{
+		GFile *target;
+		GFile *file;
+
+		target = g_file_new_for_uri (uri);
+		file = build_configuration_list_get_build_file (plugin->configurations, build_configuration_list_get_selected (plugin->configurations));
+		relative_target = g_file_get_relative_path (file, target);
+		g_object_unref (file);
+		g_object_unref (target);
+		g_free (uri);
+	}
+
+	return relative_target;
+}
+
+/* Set target relative to current configuration if relative_target is not NULL*/
+void
+set_configuration_relative_target (BasicAutotoolsPlugin *plugin, const gchar* relative_target)
+{
+	if (relative_target != NULL)
+	{
+		GFile *file;
+		GFile *target;
+		gchar *uri;
+		GValue value = {0,};
+
+		file = build_configuration_list_get_build_file (plugin->configurations, build_configuration_list_get_selected (plugin->configurations));
+		target = g_file_get_child (file, relative_target);
+		uri = g_file_get_uri (target);
+		g_value_init (&value, G_TYPE_STRING);
+		g_value_set_static_string (&value, uri);
+		anjuta_shell_add_value (ANJUTA_PLUGIN (plugin)->shell, RUN_PROGRAM_URI, &value, NULL);
+		g_value_unset (&value);
+		g_object_unref (target);
+		g_object_unref (file);
+	}
+}
+
 
 /* Return FALSE if Makefile is missing and we have both a Makefile.am and a project
  * open, meaning that we need to configure the project to get a Makefile */
@@ -1128,6 +1179,7 @@ build_configure_dialog (BasicAutotoolsPlugin *plugin, BuildFunc func, GFile *fil
 	const gchar *project_root;
 	GValue value = {0,};
 	const gchar *old_config_name;
+	gchar *relative_target;
 	BuildContext* context = NULL;
 
 	run_autogen = !directory_has_file (plugin->project_root_dir, "configure");
@@ -1141,6 +1193,7 @@ build_configure_dialog (BasicAutotoolsPlugin *plugin, BuildFunc func, GFile *fil
 	parent = GTK_WINDOW (ANJUTA_PLUGIN(plugin)->shell);
 
 	old_config_name = build_configuration_get_name (build_configuration_list_get_selected (plugin->configurations));
+	relative_target = get_configuration_relative_target (plugin);
 	if (build_dialog_configure (parent, project_root, plugin->configurations, &run_autogen))
 	{
 		BuildConfiguration *config;
@@ -1167,7 +1220,12 @@ build_configure_dialog (BasicAutotoolsPlugin *plugin, BuildFunc func, GFile *fil
 			/* Restore previous configuration */
 			build_configuration_list_select (plugin->configurations, old_config_name);
 		}
+		else
+		{
+			set_configuration_relative_target (plugin, relative_target);
+		}
 	}
+	g_free (relative_target);
 
 	return context;
 }

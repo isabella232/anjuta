@@ -256,6 +256,30 @@ on_program_parameters_activate (GtkAction* action, RunProgramPlugin* plugin)
 	run_parameters_dialog_run (plugin);
 }
 
+static void
+on_value_run_program_added (AnjutaPlugin *plugin, const gchar *name, const GValue *value, gpointer data)
+{
+	RunProgramPlugin *self = ANJUTA_PLUGIN_RUN_PROGRAM (plugin);
+	gchar *uri;
+
+	// Update last target if RUN_PROGRAM_URI is changed by another plugin
+	anjuta_shell_get (plugin->shell,
+	                  RUN_PROGRAM_URI, G_TYPE_STRING, &uri, NULL);
+	if (self->recent_target != NULL)
+	{
+		GFile *target = g_file_new_for_uri (uri);
+
+		if (!g_file_equal ((GFile *)self->recent_target->data, target))
+		{
+			// Update target uri
+			g_object_unref ((GObject *)self->recent_target->data);
+			self->recent_target->data = g_object_ref (target);
+		}
+		g_object_unref (target);
+	}
+	g_free (uri);
+}
+
 /* Actions table
  *---------------------------------------------------------------------------*/
 
@@ -311,6 +335,13 @@ run_plugin_activate (AnjutaPlugin *plugin)
     g_signal_connect (plugin->shell, "load-session",
 					  G_CALLBACK (on_session_load), self);
 
+	/* Add watches */
+	self->program_watch = anjuta_plugin_add_watch (ANJUTA_PLUGIN (self),
+	                       RUN_PROGRAM_URI,
+	                       on_value_run_program_added,
+	                       NULL,
+	                       NULL);
+
 	/* Add actions */
 	ui = anjuta_shell_get_ui (plugin->shell, NULL);
 	self->action_group = anjuta_ui_add_action_group_entries (ui,
@@ -337,6 +368,8 @@ run_plugin_deactivate (AnjutaPlugin *plugin)
 	anjuta_ui_remove_action_group (ui, self->action_group);
 
 	anjuta_ui_unmerge (ui, self->uiid);
+
+	anjuta_plugin_remove_watch (plugin, self->program_watch, FALSE);
 
 	g_signal_handlers_disconnect_by_func (plugin->shell, G_CALLBACK (on_session_save), self);
     g_signal_handlers_disconnect_by_func (plugin->shell, G_CALLBACK (on_session_load), self);

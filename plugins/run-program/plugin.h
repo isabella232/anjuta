@@ -69,6 +69,9 @@ struct _RunProgramPlugin
 
 	/* IAnjutaTerminal object */
 	IAnjutaTerminal *terminal;
+
+	/* Watch */
+	gint program_watch;
 };
 
 void run_plugin_update_shell_value (RunProgramPlugin *plugin);

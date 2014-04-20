@@ -1542,24 +1542,30 @@ on_select_configuration (GtkRadioMenuItem *item, gpointer user_data)
 	{
 		BasicAutotoolsPlugin *plugin = ANJUTA_PLUGIN_BASIC_AUTOTOOLS (user_data);
 		gchar *name;
-		GValue *value;
+		GValue value = {0,};
 		GFile *file;
 		gchar *uri;
+		gchar *relative_target;
 
 		name = g_object_get_data (G_OBJECT (item), "untranslated_name");
 
+		// Get URI of the current target to update it automatically if another configuration is selected
+		relative_target = get_configuration_relative_target (plugin);
+
 		build_configuration_list_select (plugin->configurations, name);
+		g_free (name);
 
-		value = g_new0 (GValue, 1);
-		g_value_init (value, G_TYPE_STRING);
-
+		g_value_init (&value, G_TYPE_STRING);
 		file = build_configuration_list_get_build_file (plugin->configurations, build_configuration_list_get_selected (plugin->configurations));
 		uri = g_file_get_uri (file);
-		g_value_set_string (value, uri);
+		g_value_set_static_string (&value, uri);
+		anjuta_shell_add_value (ANJUTA_PLUGIN (plugin)->shell, IANJUTA_BUILDER_ROOT_URI, &value, NULL);
 		g_free (uri);
 		g_object_unref (file);
 
-		anjuta_shell_add_value (ANJUTA_PLUGIN (plugin)->shell, IANJUTA_BUILDER_ROOT_URI, value, NULL);
+		// Update URI of current target if it is relative to the configuration
+		set_configuration_relative_target (plugin, relative_target);
+		g_free (relative_target);
 	}
 }
 
