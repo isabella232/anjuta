@@ -3,23 +3,23 @@
 # This file is distributed under the same license as the Anjuta package.
 #
 # Andika Triwidada <andika@gmail.com>, 2007, 2012, 2013, 2014.
-# Dirgita <dirgitadevina@yahoo.co.id>, 2011, 2013.
+# Dirgita <dirgitadevina@yahoo.co.id>, 2011, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-03-21 03:43+0000\n"
-"PO-Revision-Date: 2014-03-22 21:36+0700\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
-"Language-Team: Indonesian <gnome@i15n.org>\n"
+"POT-Creation-Date: 2014-04-05 14:38+0000\n"
+"PO-Revision-Date: 2014-04-09 05:41+0700\n"
+"Last-Translator: Dirgita <dirgitadevina@yahoo.co.id>\n"
+"Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Anjuta DevStudio adalah studio pengembangan perangkat lunak yang fleksibel "
 "dengan fitur sejumlah fasilitas pemrograman tingkat lanjut termasuk "
-"manajemene projek, wisaya aplikasi, pengawakutu interaktif, penyunting "
+"manajemene proyek, wisaya aplikasi, pengawakutu interaktif, penyunting "
 "sumber, kendali versi, perancang GUI, pemrofil, dan lebih banyak perkakas "
 "lain. Ini berfokus pada penyediaan antar muka pengguna yang dapat dipakai "
 "dan sederhana, namun juga bertenaga untuk pengembangan yang efisien."
@@ -48,9 +48,9 @@ msgstr ""
 "Anjuta sangat mungkin dikembangkan dengan pengaya. Hampir semua fitur dalam "
 "Anjuta diimplementasikan memakai pengaya yang dapat difungsikan atau "
 "dimatikan secara dinamis. Anda dapat memilih pengaya mana yang mesti aktif "
-"bagi projek Anda. Seperti tata letak antar muka pengguna, set pengaya yang "
-"aktif juga persisten bagi setiap projek, membuat jadi mudah untuk bekerja "
-"pada projek dengan berbagai tingkat kompleksitas. Memakai pengaya, Anda "
+"bagi proyek Anda. Seperti tata letak antar muka pengguna, set pengaya yang "
+"aktif juga persisten bagi setiap proyek, membuat jadi mudah untuk bekerja "
+"pada proyek dengan berbagai tingkat kompleksitas. Memakai pengaya, Anda "
 "dapat mengembangkan Anjuta dengan fitur Anda sendiri."
 
 #: ../anjuta.appdata.xml.in.h:3
@@ -60,8 +60,8 @@ msgid ""
 "+, GNOME, Java, Python projects and more. New templates can be easily "
 "downloaded and installed."
 msgstr ""
-"Wisaya projek memungkinkan Anda membuat projek baru dari pilihan templat "
-"projek. Pilihan termasuk projek generik sederhana, rata (tanpa "
+"Wisaya proyek memungkinkan Anda membuat proyek baru dari pilihan templat "
+"proyek. Pilihan termasuk proyek generik sederhana, rata (tanpa "
 "subdirektori), GTK+, GNOME, Java, Python, dan banyak lagi. Templat baru "
 "dapat dengan mudah diunduh dan dipasang."
 
@@ -116,12 +116,12 @@ msgstr "Pixbuf untuk dirender"
 #: ../libanjuta/anjuta-c-module.c:212
 #, c-format
 msgid "Unable to find plugin module %s"
-msgstr "Tidak dapat menemukan modul plugin %s"
+msgstr "Tak menemukan modul pengaya %s"
 
 #: ../libanjuta/anjuta-c-module.c:222
 #, c-format
 msgid "Unable to find plugin registration function %s in module %s"
-msgstr "Tidak dapat menemukan fungsi pendaftaran plugin %s dalam modul %s"
+msgstr "Tak menemukan fungsi pendaftaran pengaya %s dalam modul %s"
 
 #: ../libanjuta/anjuta-c-module.c:228
 #, c-format
@@ -155,17 +155,17 @@ msgstr ""
 #: ../libanjuta/anjuta-c-plugin-factory.c:108
 #, c-format
 msgid "Missing location of plugin %s"
-msgstr "Kehilangan lokasi plugin %s"
+msgstr "Kehilangan lokasi pengaya %s"
 
 #: ../libanjuta/anjuta-c-plugin-factory.c:141
 #, c-format
 msgid "Missing type defined by plugin %s"
-msgstr "Kehilangan tipe yang didefinisikan oleh plugin %s"
+msgstr "Kehilangan tipe yang didefinisikan oleh pengaya %s"
 
 #: ../libanjuta/anjuta-c-plugin-factory.c:149
 #, c-format
 msgid "plugin %s fails to register type %s"
-msgstr "plugin %s gagal mendaftar tipe %s"
+msgstr "pengaya %s gagal mendaftar tipe %s"
 
 #: ../libanjuta/anjuta-encodings.c:137 ../libanjuta/anjuta-encodings.c:182
 #: ../libanjuta/anjuta-encodings.c:184 ../libanjuta/anjuta-encodings.c:186
@@ -374,12 +374,12 @@ msgstr "Shell Anjuta"
 
 #: ../libanjuta/anjuta-plugin.c:320
 msgid "Anjuta shell that will contain the plugin"
-msgstr "Shell Anjuta yang akan memuat plugin"
+msgstr "Shell Anjuta yang akan memuat pengaya"
 
 #: ../libanjuta/anjuta-plugin-manager.c:714
 #, c-format
 msgid "Plugin '%s' does not want to be deactivated"
-msgstr "Plugin '%s' tak mau dimatikan"
+msgstr "Pengaya '%s' tak mau dimatikan"
 
 #: ../libanjuta/anjuta-plugin-manager.c:747
 #, c-format
@@ -389,7 +389,7 @@ msgid ""
 "leading to this was:\n"
 "%s"
 msgstr ""
-"Tidak dapat memuat %s\n"
+"Tak dapat memuat %s\n"
 "Hal ini biasanya berarti bahwa instalasi Anda terkorupsi. Pesan kesalahan "
 "yang mendahului ini adalah:\n"
 "%s"
@@ -401,15 +401,15 @@ msgstr "Muat"
 #: ../libanjuta/anjuta-plugin-manager.c:908
 #: ../libanjuta/anjuta-plugin-manager.c:2015
 msgid "Available Plugins"
-msgstr "Plugin Tersedia"
+msgstr "Pengaya Tersedia"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1025 ../src/anjuta-window.c:1000
 msgid "Preferred plugins"
-msgstr "Plugin yang disukai"
+msgstr "Pengaya yang disukai"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1157
 msgid "Only show user activatable plugins"
-msgstr "Hanya tampilkan plugin yang dapat-diaktifkan-pemakai"
+msgstr "Hanya tampilkan pengaya yang dapat-diaktifkan-pemakai"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1197
 msgid ""
@@ -423,27 +423,27 @@ msgstr ""
 
 #: ../libanjuta/anjuta-plugin-manager.c:1223
 msgid "Forget selected plugin"
-msgstr "Lupakan plugin terpilih"
+msgstr "Lupakan pengaya terpilih"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1357
 #: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
-msgstr "Pilih sebuah plugin"
+msgstr "Pilih pengaya"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1358
 #: ../plugins/debug-manager/queue.c:528
 msgid "Please select a plugin to activate"
-msgstr "Silahkan memilih plugin untuk diaktifkan"
+msgstr "Silahkan memilih pengaya untuk diaktifkan"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1372
 #, c-format
 msgid "No plugin is able to load other plugins in %s"
-msgstr "Tak ada plugin yang dapat memuat plugin lain di %s"
+msgstr "Tak ada pengaya yang dapat memuat pengaya lain di %s"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1518
 msgid "<b>Please select a plugin to activate</b>"
-msgstr "<b>Silahkan memilih plugin untuk diaktifkan</b>"
+msgstr "<b>Silahkan memilih pengaya untuk diaktifkan</b>"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2044
 msgid "Remember this selection"
@@ -459,23 +459,23 @@ msgstr "Tumpukan profil kini"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2388
 msgid "Available plugins"
-msgstr "Plugin tersedia"
+msgstr "Pengaya tersedia"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2389
 msgid "Currently available plugins found in plugin paths"
-msgstr "Plugin yang kini tersedia yang ditemukan pada path plugin"
+msgstr "Pengaya yang kini tersedia ditemukan pada lokasi pengaya"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2395
 msgid "Activated plugins"
-msgstr "Plugin yang diaktifkan"
+msgstr "Pengaya yang diaktifkan"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2396
 msgid "Currently activated plugins"
-msgstr "Plugin yang kini diaktifkan"
+msgstr "Pengaya yang kini diaktifkan"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2402
 msgid "Anjuta shell for which the plugins are made"
-msgstr "Shell Anjuta yang dibuatkan pluginnya"
+msgstr "Shell Anjuta yang dibuatkan pengayanya"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2410
 msgid "Anjuta Status"
@@ -483,7 +483,7 @@ msgstr "Status Anjuta"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2411
 msgid "Anjuta status to use in loading and unloading of plugins"
-msgstr "Status Anjuta untuk dipakai pada pemuatan dan pembongkaran plugin"
+msgstr "Status Anjuta untuk dipakai pada pemuatan dan pembongkaran pengaya"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2564
 msgid "Loading:"
@@ -507,11 +507,11 @@ msgstr "Preferensi Anjuta"
 
 #: ../libanjuta/anjuta-profile.c:270
 msgid "Plugin Manager"
-msgstr "Manajer Plugin"
+msgstr "Manajer Pengaya"
 
 #: ../libanjuta/anjuta-profile.c:271
 msgid "The plugin manager to use for resolving plugins"
-msgstr "Manajer plugin yang dipakai untuk memilah plugin"
+msgstr "Manajer pengaya yang dipakai untuk memilah pengaya"
 
 #: ../libanjuta/anjuta-profile.c:279
 msgid "Profile Name"
@@ -519,7 +519,7 @@ msgstr "Nama Profil"
 
 #: ../libanjuta/anjuta-profile.c:280
 msgid "Name of the plugin profile"
-msgstr "Nama profil plugin"
+msgstr "Nama profil pengaya"
 
 #: ../libanjuta/anjuta-profile.c:288
 msgid "Synchronization file"
@@ -531,7 +531,7 @@ msgstr "Berkas untuk menyelaraskan XML profil"
 
 #: ../libanjuta/anjuta-profile.c:632
 msgid "Please select a plugin from the list"
-msgstr "Silakan pilih plugin dari daftar"
+msgstr "Silakan pilih pengaya dari daftar"
 
 #: ../libanjuta/anjuta-profile.c:655
 #, c-format
@@ -539,7 +539,7 @@ msgid ""
 "Failed to read '%s': XML parse error. Invalid or corrupted Anjuta plugins "
 "profile."
 msgstr ""
-"Gagal membaca '%s': Kesalahan mengurai XML. Profil plugin Anjuta yang tidak "
+"Gagal membaca '%s': Kesalahan mengurai XML. Profil pengaya Anjuta yang tidak "
 "valid atau cacat."
 
 #. <Pluginname>: Install it from <some location on the web>
@@ -551,7 +551,7 @@ msgstr "%s: Pasang dari '%s'\n"
 #: ../libanjuta/anjuta-profile.c:964
 #, c-format
 msgid "Failed to read '%s': Following mandatory plugins are missing"
-msgstr "Gagal membaca '%s': Plugin wajib berikut tidak ditemukan"
+msgstr "Gagal membaca '%s': Pengaya wajib berikut tidak ditemukan"
 
 #: ../libanjuta/anjuta-save-prompt.c:157
 msgid "Select the items to save:"
@@ -757,7 +757,7 @@ msgstr ""
 #: ../plugins/mk-project/mk-project.c:876
 #, c-format
 msgid "Project doesn't exist or invalid path"
-msgstr "Projek tak ada atau path tak valid"
+msgstr "Proyek tak ada atau path tak valid"
 
 #: ../plugins/am-project/am-project.c:90
 msgid "Root"
@@ -835,12 +835,12 @@ msgstr "Paket"
 
 #: ../plugins/am-project/am-project.c:1710
 msgid "Unable to parse project file"
-msgstr "Tak bisa mengurai berkas projek"
+msgstr "Tak bisa mengurai berkas proyek"
 
 #: ../plugins/am-project/am-project.c:1721
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
-msgstr "Projek tak ada atau memiliki path yang tak valid"
+msgstr "Proyek tak ada atau memiliki path yang tak valid"
 
 #: ../plugins/am-project/am-project.plugin.in.h:1
 msgid "Autotools backend"
@@ -848,7 +848,7 @@ msgstr "Backed autotool"
 
 #: ../plugins/am-project/am-project.plugin.in.h:2
 msgid "New Autotools backend for project manager"
-msgstr "Backend Autotool baru bagi manajer projek"
+msgstr "Backend Autotool baru bagi manajer proyek"
 
 #: ../plugins/am-project/am-properties.c:49
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:5
@@ -860,7 +860,7 @@ msgstr "Nama:"
 
 #: ../plugins/am-project/am-properties.c:52
 msgid "Project name, it can contain spaces by example 'GNU Autoconf'"
-msgstr "Nama projek, bisa memuat spasi, dengan contoh 'GNU Autoconf'"
+msgstr "Nama proyek, bisa memuat spasi, dengan contoh 'GNU Autoconf'"
 
 #: ../plugins/am-project/am-properties.c:58
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:9
@@ -889,7 +889,7 @@ msgstr "Versi:"
 msgid ""
 "Project version, typically a few numbers separated by dot by example '1.0.0'"
 msgstr ""
-"Versi projek, biasanya beberapa angka yang dipisah dengan titik, contoh "
+"Versi proyek, biasanya beberapa angka yang dipisah dengan titik, contoh "
 "'1.0.0'"
 
 #: ../plugins/am-project/am-properties.c:67
@@ -914,7 +914,7 @@ msgid ""
 "It is generated from the project name if not provided."
 msgstr ""
 "Nama pekt, ini dapat memuat hanya karakter alfanumerik dan garis bawah. Ini "
-"dijangkitkan dari nama projek bila tak diberikan."
+"dijangkitkan dari nama proyek bila tak diberikan."
 
 #: ../plugins/am-project/am-properties.c:86 ../plugins/git/anjuta-git.ui.h:10
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:20
@@ -923,7 +923,7 @@ msgstr "URL:"
 
 #: ../plugins/am-project/am-properties.c:89
 msgid "An link to the project web page if provided."
-msgstr "Taut ke halaman web projek bila diberikan."
+msgstr "Taut ke halaman web proyek bila diberikan."
 
 #: ../plugins/am-project/am-properties.c:95
 msgid "Libtool support:"
@@ -1392,7 +1392,7 @@ msgstr "Build Automake"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:2
 msgid "Basic autotools build plugin."
-msgstr "Plugin build autotool dasar."
+msgstr "Pengaya build autotool dasar."
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:3
 #: ../plugins/run-program/plugin.c:274
@@ -1401,11 +1401,11 @@ msgstr "Jalankan"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:1
 msgid "Configure Project"
-msgstr "Konfigurasikan Projek"
+msgstr "Konfigurasikan Proyek"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:2
 msgid "Regenerate project"
-msgstr "Bangun ulang projek"
+msgstr "Bangun ulang proyek"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:3
 msgid "Configuration:"
@@ -1497,7 +1497,7 @@ msgstr ""
 #: ../plugins/build-basic-autotools/build.c:1056
 #, c-format
 msgid "Cannot configure project: Missing configure script in %s."
-msgstr "Tak bisa menata projek: Skrip pengkonfigurasi hilang di %s."
+msgstr "Tak bisa menata proyek: Skrip pengkonfigurasi hilang di %s."
 
 #: ../plugins/build-basic-autotools/build-options.c:80
 msgid "Select a build directory inside the project directory"
@@ -1525,11 +1525,11 @@ msgstr "Teroptimasi"
 
 #: ../plugins/build-basic-autotools/executer.c:69
 msgid "No executables in this project!"
-msgstr "Tak ada executable di projek ini!"
+msgstr "Tak ada executable di proyek ini!"
 
 #: ../plugins/build-basic-autotools/executer.c:243
 msgid "No file or project currently opened."
-msgstr "Tak ada berkas atau projek yang sedang dibuka."
+msgstr "Tak ada berkas atau proyek yang sedang dibuka."
 
 #. Only local program are supported
 #: ../plugins/build-basic-autotools/executer.c:283
@@ -1565,7 +1565,7 @@ msgstr "True bila kita memerlukan perintah khusus untuk memasang berkas"
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:2
 msgid "Command used to be allowed to install files"
-msgstr "Perintah yang dipakai agar diijinkan untuk memasang berkas"
+msgstr "Perintah yang dipakai agar diizinkan untuk memasang berkas"
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:4
 #, no-c-format
@@ -1698,43 +1698,43 @@ msgstr "_Build"
 
 #: ../plugins/build-basic-autotools/plugin.c:1695
 msgid "_Build Project"
-msgstr "_Build Projek"
+msgstr "_Build Proyek"
 
 #: ../plugins/build-basic-autotools/plugin.c:1696
 msgid "Build whole project"
-msgstr "Bangun seluruh projek"
+msgstr "Bangun seluruh proyek"
 
 #: ../plugins/build-basic-autotools/plugin.c:1701
 msgid "_Install Project"
-msgstr "_Pasang Projek"
+msgstr "_Pasang Proyek"
 
 #: ../plugins/build-basic-autotools/plugin.c:1702
 msgid "Install whole project"
-msgstr "Pasang seluruh projek"
+msgstr "Pasang seluruh proyek"
 
 #: ../plugins/build-basic-autotools/plugin.c:1707
 msgid "_Check Project"
-msgstr "Peri_ksa Projek"
+msgstr "Peri_ksa Proyek"
 
 #: ../plugins/build-basic-autotools/plugin.c:1708
 msgid "Check whole project"
-msgstr "Periksa seluruh projek"
+msgstr "Periksa seluruh proyek"
 
 #: ../plugins/build-basic-autotools/plugin.c:1713
 msgid "_Clean Project"
-msgstr "Bersi_hkan Projek"
+msgstr "Bersi_hkan Proyek"
 
 #: ../plugins/build-basic-autotools/plugin.c:1714
 msgid "Clean whole project"
-msgstr "Bersihkan seluruh projek"
+msgstr "Bersihkan seluruh proyek"
 
 #: ../plugins/build-basic-autotools/plugin.c:1719
 msgid "C_onfigure Project…"
-msgstr "K_onfigurasikan Projek..."
+msgstr "K_onfigurasikan Proyek..."
 
 #: ../plugins/build-basic-autotools/plugin.c:1720
 msgid "Configure project"
-msgstr "Konfigurasikan projek"
+msgstr "Konfigurasikan proyek"
 
 #: ../plugins/build-basic-autotools/plugin.c:1725
 msgid "Build _Tarball"
@@ -1742,7 +1742,7 @@ msgstr "Build _Tarball"
 
 #: ../plugins/build-basic-autotools/plugin.c:1726
 msgid "Build project tarball distribution"
-msgstr "Buat distribusi tarball projek"
+msgstr "Buat distribusi tarball proyek"
 
 #: ../plugins/build-basic-autotools/plugin.c:1731
 msgid "_Build Module"
@@ -1800,7 +1800,7 @@ msgstr "Hapus Konfigurasi"
 msgid ""
 "Clean project (distclean) and remove configuration directory if possible"
 msgstr ""
-"Bersihkan projek (distclean) dan hapus direktori konfigurasi bila mungkin"
+"Bersihkan proyek (distclean) dan hapus direktori konfigurasi bila mungkin"
 
 #: ../plugins/build-basic-autotools/plugin.c:1781
 #: ../plugins/build-basic-autotools/plugin.c:1809
@@ -1917,7 +1917,7 @@ msgstr "Penjangkit Kelas"
 
 #: ../plugins/class-gen/anjuta-class-gen.plugin.in.h:2
 msgid "Anjuta Class Generator Plugin"
-msgstr "Plugin Penjangkit Kelas Anjuta"
+msgstr "Pengaya Penjangkit Kelas Anjuta"
 
 #: ../plugins/class-gen/anjuta-class-gen.plugin.in.h:3
 msgid "Class"
@@ -2087,7 +2087,7 @@ msgstr "Berkas Sumber:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:41
 msgid "Add to Project Target:"
-msgstr "Tambahkan ke Target Projek:"
+msgstr "Tambahkan ke Target Proyek:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:42
 msgid "Add to Repository"
@@ -2198,11 +2198,11 @@ msgstr "Deskripsi XML dari antar muka pengguna"
 
 #: ../plugins/cvs-plugin/anjuta-cvs.plugin.in.h:1
 msgid "CVS Plugin"
-msgstr "Plugin CVS"
+msgstr "Pengaya CVS"
 
 #: ../plugins/cvs-plugin/anjuta-cvs.plugin.in.h:2
 msgid "A version control system plugin"
-msgstr "Suatu plugin sistem kendali versi"
+msgstr "Pengaya untuk sistem kendali versi"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:1
 msgid "Standard diff"
@@ -2297,7 +2297,7 @@ msgstr "Pilih berkas atau direktori untuk di-commit:"
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:22
 #: ../plugins/subversion/anjuta-subversion.ui.h:26
 msgid "Whole project"
-msgstr "Seluruh projek"
+msgstr "Seluruh proyek"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:23
 msgid "Log message:"
@@ -2400,7 +2400,7 @@ msgstr "CVS: Impor"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:45
 msgid "Project root directory:"
-msgstr "Direktori root projek:"
+msgstr "Direktori root proyek:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:46
 msgid "Module name:"
@@ -2614,7 +2614,7 @@ msgstr "Debugger"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.plugin.in.h:2
 msgid "Debug Manager plugin."
-msgstr "Plugin Manajer Debug."
+msgstr "Pengaya Manajer Debug."
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:1
 msgid "Attach to process"
@@ -3220,7 +3220,7 @@ msgstr "Operasi debugger"
 #, c-format
 msgid "Unable to find a debugger plugin supporting a target with %s MIME type"
 msgstr ""
-"Tak bisa temukan plugin debugger yang mendukung target dengan tipe MIME %s"
+"Tak bisa temukan pengaya debugger yang mendukung target dengan tipe MIME %s"
 
 #: ../plugins/debug-manager/registers.c:462
 msgid "Register"
@@ -3461,7 +3461,7 @@ msgstr "Bantuan API"
 
 #: ../plugins/devhelp/anjuta-devhelp.plugin.in.h:2
 msgid "Devhelp Plugin for Anjuta."
-msgstr "Plugin Devhelp bagi Anjuta."
+msgstr "Pengaya Devhelp bagi Anjuta."
 
 #: ../plugins/devhelp/plugin.c:199
 msgid "Search Help:"
@@ -3521,7 +3521,7 @@ msgstr "Nama tak ada"
 #: ../plugins/mk-project/mk-project.c:1034
 #, c-format
 msgid "Project doesn't allow to set properties"
-msgstr "Projek tak mengijinkan penataan properti"
+msgstr "Proyek tak mengizinkan penataan properti"
 
 #: ../plugins/dir-project/dir-project.plugin.in.h:1
 msgid "Directory backend"
@@ -3532,7 +3532,7 @@ msgid ""
 "Directory project backend, get only source files, use it when other backend "
 "fails"
 msgstr ""
-"Backend projek direktori, mengambil hanya berkas sumber, pakai ini ketika "
+"Backend proyek direktori, mengambil hanya berkas sumber, pakai ini ketika "
 "backend lain gagal"
 
 #: ../plugins/document-manager/action-callbacks.c:315
@@ -3550,11 +3550,11 @@ msgstr "_Muat Ulang"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:334
 msgid "Add bookmark"
-msgstr "Tambah bookmark"
+msgstr "Tambah penanda"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:340
 msgid "Remove bookmark"
-msgstr "Hapus bookmark"
+msgstr "Hapus penanda"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:354
 #: ../plugins/document-manager/anjuta-bookmarks.c:414
@@ -3564,7 +3564,7 @@ msgstr "Bookmark"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:362
 msgid "Rename"
-msgstr "Ganti Nama"
+msgstr "Ubah Nama"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:363
 #: ../plugins/git/plugin.c:172
@@ -3986,7 +3986,7 @@ msgstr "Cari dalam Berkas"
 
 #: ../plugins/document-manager/plugin.c:274
 msgid "Search in project files"
-msgstr "Cari dalam berkas projek"
+msgstr "Cari dalam berkas proyek"
 
 #: ../plugins/document-manager/plugin.c:280
 msgid "Case Sensitive"
@@ -4181,7 +4181,7 @@ msgstr "Bookmark Se_belumnya"
 
 #: ../plugins/document-manager/plugin.c:381
 msgid "Jump to the previous bookmark in the file"
-msgstr "Lompat ke bookmark sebelumnya di berkas"
+msgstr "Lompat ke penanda sebelumnya di berkas"
 
 #: ../plugins/document-manager/plugin.c:383
 msgid "_Next Bookmark"
@@ -4189,7 +4189,7 @@ msgstr "Bookmark Sela_njutnya"
 
 #: ../plugins/document-manager/plugin.c:384
 msgid "Jump to the next bookmark in the file"
-msgstr "Lompat ke bookmark selanjutnya di berkas"
+msgstr "Lompat ke penanda selanjutnya di berkas"
 
 #: ../plugins/document-manager/plugin.c:386
 msgid "_Clear All Bookmarks"
@@ -4197,7 +4197,7 @@ msgstr "_Hapus Semua Bookmark"
 
 #: ../plugins/document-manager/plugin.c:387
 msgid "Clear bookmarks"
-msgstr "Hapus bookmark"
+msgstr "Hapus penanda"
 
 #: ../plugins/document-manager/plugin.c:406
 msgid "Editor file operations"
@@ -4376,7 +4376,7 @@ msgstr "Butir tak ditemukan"
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:725
 #, c-format
 msgid "No recently used resource found with URI \"%s\""
-msgstr "Tidak ada sumber yang baru digunakan dengan URI \"%s\""
+msgstr "Tak ada sumber yang baru digunakan dengan URI \"%s\""
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:749
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:757
@@ -4439,12 +4439,12 @@ msgid ""
 msgstr ""
 "<b>Tak bisa membuka \"%s\"</b>.\n"
 "\n"
-"Tak ada plugin, aksi default, atau aplikasi yang ditata untuk menangani tipe "
+"Tak ada pengaya, aksi baku, atau aplikasi yang ditata untuk menangani tipe "
 "berkas ini.\n"
 "\n"
 "Tipe MIME: %s\n"
 "\n"
-"Anda boleh memilih untuk mencoba membukanya dengan plugin atau aplikasi "
+"Anda boleh memilih untuk mencoba membukanya dengan pengaya atau aplikasi "
 "berikut."
 
 #: ../plugins/file-loader/plugin.c:293
@@ -4458,7 +4458,7 @@ msgstr "Semua berkas"
 
 #: ../plugins/file-loader/plugin.c:508
 msgid "Anjuta Projects"
-msgstr "Projek Anjuta"
+msgstr "Proyek Anjuta"
 
 #: ../plugins/file-loader/plugin.c:514
 msgid "C/C++ source files"
@@ -4511,7 +4511,7 @@ msgstr "Berkas diff"
 #: ../plugins/file-loader/plugin.c:818
 #, c-format
 msgid "Failed to activate plugin: %s"
-msgstr "Gagal mengaktifkan plugin: %s"
+msgstr "Gagal mengaktifkan pengaya: %s"
 
 #: ../plugins/file-loader/plugin.c:877
 msgid "_New"
@@ -4543,7 +4543,7 @@ msgstr "Baru"
 
 #: ../plugins/file-loader/plugin.c:1241
 msgid "New file, project and project components."
-msgstr "Berkas, projek, dan komponen projek baru."
+msgstr "Berkas, proyek, dan komponen proyek baru."
 
 #: ../plugins/file-loader/plugin.c:1248 ../plugins/file-loader/plugin.c:1288
 msgid "Open"
@@ -4574,7 +4574,7 @@ msgstr "Berkas tak ditemukan"
 #: ../plugins/file-loader/plugin.c:1424
 #, c-format
 msgid "Please select a plugin to open <b>%s</b>."
-msgstr "Silakan memilih plugin untuk dibuka <b>%s</b>."
+msgstr "Silakan memilih pengaya untuk dibuka <b>%s</b>."
 
 #: ../plugins/file-loader/plugin.c:1428 ../plugins/project-import/plugin.c:290
 #: ../plugins/project-manager/dialogs.c:647
@@ -4588,15 +4588,15 @@ msgstr "Manajer Berkas"
 
 #: ../plugins/file-manager/file-manager.plugin.in.h:2
 msgid "File manager for project and single files"
-msgstr "Manajer berkas bagi projek dan berkas tunggal"
+msgstr "Manajer berkas bagi proyek dan berkas tunggal"
 
 #: ../plugins/file-manager/file-manager.ui.h:1
 msgid "Root directory if no project is open:"
-msgstr "Direktori root bila tak ada projek dibuka:"
+msgstr "Direktori root bila tak ada proyek dibuka:"
 
 #: ../plugins/file-manager/file-manager.ui.h:2
 msgid "Choose Directory to show if no project is open"
-msgstr "Pilih direktori untuk ditampilkan bila tak ada projek terbuka"
+msgstr "Pilih direktori untuk ditampilkan bila tak ada proyek terbuka"
 
 #: ../plugins/file-manager/file-manager.ui.h:3
 msgid "Automatically select the current document"
@@ -4644,7 +4644,7 @@ msgstr "GFile menampilkan lokasi yang paling sering digunakan"
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
-msgstr "_Ganti Nama"
+msgstr "_Ubah Nama"
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "Rename file or directory"
@@ -4672,7 +4672,7 @@ msgstr "Asisten Berkas"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:2
 msgid "Anjuta File Assistant Plugin"
-msgstr "Plugin Asisten Berkas Anjuta"
+msgstr "Pengaya Asisten Berkas Anjuta"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:1
 msgid "New File"
@@ -4709,7 +4709,7 @@ msgstr "Pakai Templat bagi berkas Header"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:11
 msgid "Add to project target:"
-msgstr "Tambahkan ke target projek:"
+msgstr "Tambahkan ke target proyek:"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:12
 msgid "Add to repository"
@@ -4765,7 +4765,7 @@ msgstr "Debugger GNU"
 
 #: ../plugins/gdb/anjuta-gdb.plugin.in.h:2
 msgid "GNU Debugger Plugin"
-msgstr "Plugin Debugger GNU"
+msgstr "Pengaya Debugger GNU"
 
 #: ../plugins/gdb/anjuta-gdb.ui.h:1
 msgid "Available pretty printers"
@@ -5103,7 +5103,7 @@ msgstr "Tugas"
 #: ../plugins/git/anjuta-git.ui.h:35
 msgid "Whole project; Drop a file here to view a file or folder log"
 msgstr ""
-"Seluruh projek; Jatuhkan sebuah berkas di sini untuk menilik berkas atau log "
+"Seluruh proyek; Jatuhkan sebuah berkas di sini untuk menilik berkas atau log "
 "folder"
 
 #: ../plugins/git/anjuta-git.ui.h:36
@@ -5334,7 +5334,7 @@ msgstr "Tak ada remote yang dipilih."
 
 #: ../plugins/git/git-delete-tags-pane.c:49
 msgid "No tags selected."
-msgstr "Tidak ada tag yang dipilih."
+msgstr "Tak ada tag yang dipilih."
 
 #. Translators: file name for an existing commits diff, %s is an SHASUM of a commit
 #: ../plugins/git/git-diff-pane.c:40
@@ -5344,7 +5344,7 @@ msgstr "Komit %s.diff"
 
 #: ../plugins/git/git-diff-pane.c:73
 msgid "No revision selected"
-msgstr "Tidak ada revisi yang dipilih"
+msgstr "Tak ada revisi yang dipilih"
 
 #: ../plugins/git/git-log-pane.c:581
 #, c-format
@@ -5427,7 +5427,7 @@ msgstr "Reset"
 
 #: ../plugins/git/git-resolve-conflicts-pane.c:50
 msgid "No conflicted files selected."
-msgstr "Tidak ada berkas konflik yang dipilih."
+msgstr "Tak ada berkas konflik yang dipilih."
 
 #: ../plugins/git/git-revert-pane.c:48
 msgid "Please enter a commit."
@@ -5801,7 +5801,7 @@ msgstr "Remote"
 #: ../plugins/glade/anjuta-design-document.c:201
 #, c-format
 msgid "Glade project '%s' saved"
-msgstr "Projek glade '%s' disimpan"
+msgstr "Proyek glade '%s' disimpan"
 
 #: ../plugins/glade/anjuta-design-document.c:181
 #: ../plugins/glade/anjuta-design-document.c:208
@@ -5814,7 +5814,7 @@ msgstr "Perancang antar muka glade"
 
 #: ../plugins/glade/anjuta-glade.plugin.in.h:2
 msgid "Glade Plugin for Anjuta."
-msgstr "Plugin Glade bagi Anjuta."
+msgstr "Pengaya Glade bagi Anjuta."
 
 #: ../plugins/glade/anjuta-glade.plugin.in.h:3
 msgid "User interface file"
@@ -5872,7 +5872,7 @@ msgstr "Tak bisa membuka %s"
 
 #: ../plugins/glade/plugin.c:1057
 msgid "Could not create a new glade project."
-msgstr "Tidak bisa membuat suatu projek glade baru."
+msgstr "Tak dapat membuat suatu proyek glade baru."
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:1
 #: ../plugins/indentation-python-style/anjuta-indentation-python-style.ui.h:1
@@ -5972,14 +5972,14 @@ msgstr "Gagal menjalankan \"jhbuild run\" (%s)"
 
 #: ../plugins/jhbuild/plugin.c:172
 msgid "Could not find the JHBuild install prefix."
-msgstr "Tidak menemukan prefiks instalasi JHBuild."
+msgstr "Tak menemukan prefiks instalasi JHBuild."
 
 #: ../plugins/jhbuild/plugin.c:180
 msgid ""
 "Could not find the JHBuild library directory. You need JHBuild from "
 "2012-11-06 or later."
 msgstr ""
-"Tidak menemukan direktori pustaka JHBuild. Anda memerlukan JHBuild mulai "
+"Tak menemukan direktori pustaka JHBuild. Anda memerlukan JHBuild mulai "
 "dari 2012-11-06 atau yang terbaru."
 
 #: ../plugins/jhbuild/plugin.c:198
@@ -5998,7 +5998,7 @@ msgstr "Debugger Javascript"
 
 #: ../plugins/js-debugger/js_debugger.plugin.in.h:2
 msgid "Javascript Debugger Plugin"
-msgstr "Plugin Debugger Javascript"
+msgstr "Pengaya Debugger Javascript"
 
 #: ../plugins/js-debugger/plugin.c:122
 #, c-format
@@ -6011,16 +6011,16 @@ msgstr "Manajer Bahasa"
 
 #: ../plugins/language-manager/language-manager.plugin.in.h:2
 msgid "Plugin to keep track of multiple programming languages"
-msgstr "Plugin untuk mencatat berbagai bahasa pemrograman"
+msgstr "Pengaya untuk mencatat berbagai bahasa pemrograman"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.plugin.in.h:1
 msgid "C++ and Java support Plugin"
-msgstr "Plugin dukungan C++ dan Java"
+msgstr "Pengaya dukungan C++ dan Java"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.plugin.in.h:2
 msgid "C++ and Java support plugin for code completion, auto-indentation, etc."
 msgstr ""
-"Plugin dukungan C++ dan Java untuk pelengkapan kode, indentasi otomatis, dsb."
+"Pengaya dukungan C++ dan Java untuk pelengkapan kode, indentasi otomatis, dsb."
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:1
 msgid "Automatically load required libraries of the project"
@@ -6147,11 +6147,11 @@ msgstr "Lingkungan"
 
 #: ../plugins/language-support-js/js-support-plugin.plugin.in.h:1
 msgid "JS Support Plugin"
-msgstr "Plugin Dukungan JS"
+msgstr "Pengaya Dukungan JS"
 
 #: ../plugins/language-support-js/js-support-plugin.plugin.in.h:2
 msgid "JavaScript Support Plugin"
-msgstr "Plugin Dukungan JavaScript"
+msgstr "Pengaya Dukungan JavaScript"
 
 #: ../plugins/language-support-js/plugin.c:364
 #: ../plugins/language-support-js/plugin.c:377
@@ -6193,11 +6193,11 @@ msgstr "Python"
 
 #: ../plugins/language-support-vala/anjuta-vala.plugin.in.h:1
 msgid "Vala support Plugin"
-msgstr "Plugin dukungan Vala"
+msgstr "Pengaya dukungan Vala"
 
 #: ../plugins/language-support-vala/anjuta-vala.plugin.in.h:2
 msgid "Vala support plugin, adds code completion."
-msgstr "Plugin dukungan Vala, menambah pelengkapan kode."
+msgstr "Pengaya dukungan Vala, menambah pelengkapan kode."
 
 #: ../plugins/language-support-vala/plugin.vala:655
 #: ../plugins/language-support-vala/plugin.vala:663
@@ -6359,7 +6359,7 @@ msgstr "Backend Makefile"
 
 #: ../plugins/mk-project/mk-project.plugin.in.h:2
 msgid "Makefile project backend, allowing only to read the project"
-msgstr "Backed projek makefile, mengijinkan hanya untuk membaca projek"
+msgstr "Backed proyek makefile, mengizinkan hanya untuk membaca proyek"
 
 #: ../plugins/mk-project/mk-project.ui.h:1
 msgid "Select package"
@@ -6387,7 +6387,7 @@ msgstr "C/C++"
 
 #: ../plugins/patch/anjuta-patch.plugin.in.h:1
 msgid "Patch Plugin"
-msgstr "Plugin Patch"
+msgstr "Pengaya Patch"
 
 #: ../plugins/patch/anjuta-patch.plugin.in.h:2
 msgid "Patches files and directories."
@@ -6480,15 +6480,15 @@ msgstr "Patch berkas/direktori"
 
 #: ../plugins/project-import/anjuta-project-import.plugin.in.h:1
 msgid "Project Import Assistant"
-msgstr "Asisten Impor Projek"
+msgstr "Asisten Impor Proyek"
 
 #: ../plugins/project-import/anjuta-project-import.plugin.in.h:2
 msgid "Import an existing autotools project to Anjuta"
-msgstr "Impor projek autotool yang telah ada ke Anjuta"
+msgstr "Impor proyek autotool yang telah ada ke Anjuta"
 
 #: ../plugins/project-import/anjuta-project-import.plugin.in.h:3
 msgid "Project from Existing Sources"
-msgstr "Projek dari Sumber Yang Telah Ada"
+msgstr "Proyek dari Sumber Yang Telah Ada"
 
 #: ../plugins/project-import/plugin.c:82
 #: ../plugins/project-import/plugin.c:189
@@ -6503,12 +6503,12 @@ msgid ""
 "the project directory."
 msgstr ""
 "Berkas bernama \"%s\" tak dapat ditulisi: %s. Periksa apakah Anda punya "
-"akses tulis ke direktori projek."
+"akses tulis ke direktori proyek."
 
 #: ../plugins/project-import/plugin.c:285
 #, c-format
 msgid "Please select a project backend to open %s."
-msgstr "Silahkan memilih suatu backend projek untuk membuka %s."
+msgstr "Silahkan memilih suatu backend proyek untuk membuka %s."
 
 #: ../plugins/project-import/plugin.c:305
 #, c-format
@@ -6516,7 +6516,7 @@ msgid ""
 "Could not find a valid project backend for the given directory (%s). Please "
 "select a different directory, or try upgrading to a newer version of Anjuta."
 msgstr ""
-"Tak bisa temukan backend projek yang valid untuk direktori yang diberikan "
+"Tak bisa temukan backend proyek yang valid untuk direktori yang diberikan "
 "(%s). Silakan pilih direktori lain, atau coba tingkatkan ke versi Anjuta "
 "yang lebih baru."
 
@@ -6531,7 +6531,7 @@ msgstr ""
 
 #: ../plugins/project-import/project-import-dialog.c:310
 msgid "Import project"
-msgstr "Impor projek"
+msgstr "Impor proyek"
 
 #: ../plugins/project-import/project-import-dialog.c:314
 msgid "Import"
@@ -6580,15 +6580,15 @@ msgstr "Opsi impor"
 
 #: ../plugins/project-import/project-import.ui.h:6
 msgid "Project name"
-msgstr "Nama projek"
+msgstr "Nama proyek"
 
 #: ../plugins/project-manager/anjuta-project-manager.plugin.in.h:1
 msgid "Project Manager"
-msgstr "Manajer Projek"
+msgstr "Manajer Proyek"
 
 #: ../plugins/project-manager/anjuta-project-manager.plugin.in.h:2
 msgid "Project Manager Plugin for Anjuta."
-msgstr "Plugin Manajer Projek bagi Anjuta."
+msgstr "Pengaya Manajer Proyek bagi Anjuta."
 
 #. if (gtk_tree_model_get_iter_first(model, &iter))
 #. {
@@ -6615,7 +6615,7 @@ msgstr "Silakan pilih satu backend proyek untuk digunakan."
 #: ../plugins/project-manager/dialogs.c:688
 #: ../plugins/project-manager/plugin.c:927
 msgid "Project properties"
-msgstr "Properti projek"
+msgstr "Properti proyek"
 
 #: ../plugins/project-manager/dialogs.c:692
 msgid "Folder properties"
@@ -6704,7 +6704,7 @@ msgid ""
 "Are you sure you want to remove the group \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Anda yakin hendak menghapus grup \"%s\" dari projek?\n"
+"Anda yakin hendak menghapus grup \"%s\" dari proyek?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:696
@@ -6713,7 +6713,7 @@ msgid ""
 "Are you sure you want to remove the target \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Anda yakin hendak menghapus target \"%s\" dari projek?\n"
+"Anda yakin hendak menghapus target \"%s\" dari proyek?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:699
@@ -6722,7 +6722,7 @@ msgid ""
 "Are you sure you want to remove the source \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Anda yakin hendak menghapus sumber \"%s\" dari projek?\n"
+"Anda yakin hendak menghapus sumber \"%s\" dari proyek?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:702
@@ -6731,7 +6731,7 @@ msgid ""
 "Are you sure you want to remove the shortcut \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Anda yakin hendak menghapus pintasan \"%s\" dari projek?\n"
+"Anda yakin hendak menghapus pintasan \"%s\" dari proyek?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:706
@@ -6740,7 +6740,7 @@ msgid ""
 "Are you sure you want to remove the module \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Anda yakin hendak menghapus modul \"%s\" dari projek?\n"
+"Anda yakin hendak menghapus modul \"%s\" dari proyek?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:709
@@ -6749,7 +6749,7 @@ msgid ""
 "Are you sure you want to remove the package \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Anda yakin hendak menghapus paket \"%s\" dari projek?\n"
+"Anda yakin hendak menghapus paket \"%s\" dari proyek?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:712
@@ -6758,7 +6758,7 @@ msgid ""
 "Are you sure you want to remove the element \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Anda yakin hendak menghapus elemen \"%s\" dari projek?\n"
+"Anda yakin hendak menghapus elemen \"%s\" dari proyek?\n"
 "\n"
 
 #. Translator: there is at least 2 elements to remove
@@ -6771,7 +6771,7 @@ msgid_plural ""
 "Are you sure you want to remove %d elements from the project?\n"
 "\n"
 msgstr[0] ""
-"Anda yakin hendak menghapus %d elemen dari projek?\n"
+"Anda yakin hendak menghapus %d elemen dari proyek?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:726
@@ -6810,7 +6810,7 @@ msgstr "Gagal mengambil info URI dari %s: %s"
 
 #: ../plugins/project-manager/plugin.c:903
 msgid "_Project"
-msgstr "_Projek"
+msgstr "_Proyek"
 
 #: ../plugins/project-manager/plugin.c:907
 msgid "New _Folder…"
@@ -6819,7 +6819,7 @@ msgstr "_Folder Baru..."
 #: ../plugins/project-manager/plugin.c:907
 #: ../plugins/project-manager/plugin.c:941
 msgid "Add a new folder to the project"
-msgstr "Tmbahkan direktori baru ke projek"
+msgstr "Tmbahkan direktori baru ke proyek"
 
 #: ../plugins/project-manager/plugin.c:912
 msgid "New _Target…"
@@ -6859,7 +6859,7 @@ msgstr "Tutup Pro_jek"
 
 #: ../plugins/project-manager/plugin.c:932
 msgid "Close project"
-msgstr "Tutup projek"
+msgstr "Tutup proyek"
 
 #: ../plugins/project-manager/plugin.c:941
 msgid "New _Folder"
@@ -6883,7 +6883,7 @@ msgstr "Menambahkan pustaka pada target"
 
 #: ../plugins/project-manager/plugin.c:961
 msgid "_Add to Project"
-msgstr "Tamb_ahkan ke Projek"
+msgstr "Tamb_ahkan ke Proyek"
 
 #: ../plugins/project-manager/plugin.c:966
 msgid "Properties of group/target/source"
@@ -6895,7 +6895,7 @@ msgstr "Bua_ng"
 
 #: ../plugins/project-manager/plugin.c:971
 msgid "Remove from project"
-msgstr "Hapus dari projek"
+msgstr "Hapus dari proyek"
 
 #: ../plugins/project-manager/plugin.c:976
 msgid "_Sort"
@@ -6911,12 +6911,12 @@ msgid ""
 "Failed to parse project (the project is opened, but there will be no project "
 "view) %s: %s\n"
 msgstr ""
-"Gagal mengurai projek (projek terbuka, tapi tak akan ada tilikan projek) %s: "
+"Gagal mengurai proyek (proyek terbuka, tapi tak akan ada tilikan proyek) %s: "
 "%s\n"
 
 #: ../plugins/project-manager/plugin.c:1321
 msgid "Update project view…"
-msgstr "Mutakhirkan tilikan projek…"
+msgstr "Mutakhirkan tilikan proyek…"
 
 #: ../plugins/project-manager/plugin.c:1326
 #: ../plugins/project-manager/plugin.c:1448
@@ -6925,33 +6925,33 @@ msgstr "Mutakhirkan tilikan projek…"
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
 #: ../plugins/symbol-db/plugin.c:2160
 msgid "Project"
-msgstr "Projek"
+msgstr "Proyek"
 
 #: ../plugins/project-manager/plugin.c:1364
 #, c-format
 msgid "Loading project: %s"
-msgstr "Memuat projek: %s"
+msgstr "Memuat proyek: %s"
 
 #: ../plugins/project-manager/plugin.c:1541
 #, c-format
 msgid "Error closing project: %s"
-msgstr "Galat saat menutup projek: %s"
+msgstr "Galat saat menutup proyek: %s"
 
 #: ../plugins/project-manager/plugin.c:1607
 msgid "Project manager actions"
-msgstr "Aksi manajer projek"
+msgstr "Aksi manajer proyek"
 
 #: ../plugins/project-manager/plugin.c:1615
 msgid "Project manager popup actions"
-msgstr "Aksi popup manajer projek"
+msgstr "Aksi popup manajer proyek"
 
 #: ../plugins/project-manager/plugin.c:2480
 msgid "Initializing Project…"
-msgstr "Menginisialisasi Projek…"
+msgstr "Menginisialisasi Proyek…"
 
 #: ../plugins/project-manager/plugin.c:2483
 msgid "Project Loaded"
-msgstr "Projek Dimuat"
+msgstr "Proyek Dimuat"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:1
 msgid "Add Library"
@@ -7039,7 +7039,7 @@ msgstr "Opsi lebih lanjut:"
 
 #: ../plugins/project-manager/project-chooser.c:296
 msgid "<Select any project node>"
-msgstr "<Pilih sebarang node projek>"
+msgstr "<Pilih sebarang node proyek>"
 
 #: ../plugins/project-manager/project-chooser.c:301
 #: ../plugins/project-manager/project-chooser.c:311
@@ -7064,15 +7064,15 @@ msgstr "Objek GbfProject"
 
 #: ../plugins/project-manager/project-model.c:747
 msgid "No project loaded"
-msgstr "Tak ada projek yang dimuat"
+msgstr "Tak ada proyek yang dimuat"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:1
 msgid "Project Assistant"
-msgstr "Asisten Projek"
+msgstr "Asisten Proyek"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:1
 msgid "Select a project type"
-msgstr "Pilih tipe projek"
+msgstr "Pilih tipe proyek"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
 #: ../plugins/project-wizard/druid.c:200
@@ -7104,12 +7104,12 @@ msgstr "Konfirmasikan informasi berikut:"
 #: ../plugins/project-wizard/druid.c:288
 #, c-format
 msgid "Project Type: %s\n"
-msgstr "Tipe Projek: %s\n"
+msgstr "Tipe Proyek: %s\n"
 
 #: ../plugins/project-wizard/druid.c:479
 #, c-format
 msgid "Unable to find any project template in %s"
-msgstr "Tak bisa temukan sebarang templat projek di %s"
+msgstr "Tak bisa temukan sebarang templat proyek di %s"
 
 #: ../plugins/project-wizard/druid.c:712
 #, c-format
@@ -7162,7 +7162,7 @@ msgid ""
 "Directory \"%s\" is not empty. Project creation could fail if some files "
 "cannot be written. Do you want to continue?"
 msgstr ""
-"Direktori \"%s\" tak kosong. Penciptaan projek mungkin gagal bila beberapa "
+"Direktori \"%s\" tak kosong. Penciptaan proyek mungkin gagal bila beberapa "
 "berkas tak dapat ditulis. Anda ingin melanjutkan?"
 
 #: ../plugins/project-wizard/druid.c:771
@@ -7203,8 +7203,8 @@ msgid ""
 "generating the project.\n"
 msgstr ""
 "Beberapa paket pengembangan atau program penting yang diperlukan untuk "
-"membangun projek ini hilang. Silakan pastikan mereka terpasang dengan benar "
-"sebelum menjangkitkan projek.\n"
+"membangun proyek ini hilang. Silakan pastikan mereka terpasang dengan benar "
+"sebelum menjangkitkan proyek.\n"
 
 #: ../plugins/project-wizard/druid.c:995
 msgid "Install missing packages"
@@ -7225,7 +7225,7 @@ msgstr ""
 "Program yang hilang biasanya merupakan bagian dari beberapa paket distribusi "
 "dan dapat dicari di Manajer Aplikasi Anda. Serupa dengan itu, paket-paket "
 "pengembangan dimuat di paket-paket khusus yang disediakan oleh distribusi "
-"Anda untuk memungkinkan pengembangan projek yang berbasis ke mereka. Nama-"
+"Anda untuk memungkinkan pengembangan proyek yang berbasis ke mereka. Nama-"
 "nama paket itu biasanya diakhiri dengan \"-dev\" atau \"-devel\" dan dapat "
 "ditemukan dengan mencari di Manajer Aplikasi Anda."
 
@@ -7235,11 +7235,11 @@ msgstr "Komponen kurang"
 
 #: ../plugins/project-wizard/install.c:413
 msgid "New project has been created successfully."
-msgstr "Projek baru telah sukses dibuat."
+msgstr "Proyek baru telah sukses dibuat."
 
 #: ../plugins/project-wizard/install.c:420
 msgid "New project creation has failed."
-msgstr "Pembuatan projek baru gagal."
+msgstr "Pembuatan proyek baru gagal."
 
 #: ../plugins/project-wizard/install.c:469
 #, c-format
@@ -7270,7 +7270,7 @@ msgstr "Menjalankan: %s "
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:1
 msgid "Directory where the new projects are created by default"
-msgstr "Direktori dimana projek baru akan dibuat secara baku"
+msgstr "Direktori dimana proyek baru akan dibuat secara baku"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:2
 msgid ""
@@ -7282,7 +7282,7 @@ msgstr ""
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
 msgid "Default user name used in new project"
-msgstr "Nama pengguna baku yang dipakai dalam projek baru"
+msgstr "Nama pengguna baku yang dipakai dalam proyek baru"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
 msgid "If empty, the current user name is used."
@@ -7290,7 +7290,7 @@ msgstr "Bila kosong, nama pengguna saat ini dipakai."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
 msgid "Default email used in new project"
-msgstr "Surel baku yang dipakai dalam projek baru"
+msgstr "Surel baku yang dipakai dalam proyek baru"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
 msgid "If empty, current login and machine name is used."
@@ -7299,11 +7299,11 @@ msgstr "Bila kosong, nama mesin dan login saat ini dipakai."
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
 msgid "Unable to extract project template %s: %s"
-msgstr "Tak bisa mengekstrak templat projek %s: %s"
+msgstr "Tak bisa mengekstrak templat proyek %s: %s"
 
 #: ../plugins/project-wizard/plugin.c:286
 msgid "New Project Assistant"
-msgstr "Asisten Projek Baru"
+msgstr "Asisten Proyek Baru"
 
 #: ../plugins/project-wizard/property.c:365
 msgid "Select directory"
@@ -7333,11 +7333,11 @@ msgstr "Pilih berkas"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:1
 msgid "Anjuta Plugin"
-msgstr "Plugin Anjuta"
+msgstr "Pengaya Anjuta"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:2
 msgid "Anjuta plugin project that uses libanjuta framework"
-msgstr "Projek plugin Anjuta yang memakai framework libanjuta"
+msgstr "Proyek pengaya Anjuta yang memakai framework libanjuta"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:3
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:3
@@ -7382,7 +7382,7 @@ msgstr "Informasi dasar"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:4
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:4
 msgid "General Project Information"
-msgstr "Informasi Umum Projek"
+msgstr "Informasi Umum Proyek"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:5
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:5
@@ -7404,15 +7404,15 @@ msgstr "Informasi Umum Projek"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:5
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:5
 msgid "Project Name:"
-msgstr "Nama Projek:"
+msgstr "Nama Proyek:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:6
 msgid ""
 "Project name must not contain spaces, because it will be the name of the "
 "project build target (executable, library etc.)"
 msgstr ""
-"Nama projek tak boleh memuat spasi, karena akan menjadi nama target build "
-"projek (executable, pustaka, dsb.)"
+"Nama proyek tak boleh memuat spasi, karena akan menjadi nama target build "
+"proyek (executable, pustaka, dsb.)"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:7
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:7
@@ -7479,7 +7479,7 @@ msgstr "Alamat surel:"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:10
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:10
 msgid "Project options"
-msgstr "Opsi projek"
+msgstr "Opsi proyek"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:11
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:11
@@ -7501,43 +7501,43 @@ msgstr "Opsi projek"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:11
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:11
 msgid "Options for project build system"
-msgstr "Opsi bagi sistem build projek"
+msgstr "Opsi bagi sistem build proyek"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:13
 msgid "Plugin Title:"
-msgstr "Judul Plugin:"
+msgstr "Judul Pengaya:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:14
 msgid "Display title of the plugin"
-msgstr "Tampilkan judul plugin"
+msgstr "Tampilkan judul pengaya"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:15
 msgid "Plugin Description:"
-msgstr "Deskripsi Plugin:"
+msgstr "Deskripsi Pengaya:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:16
 msgid "Display description of the plugin"
-msgstr "Tampilkan deskripsi plugin"
+msgstr "Tampilkan deskripsi pengaya"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:17
 msgid "Plugin Class Name:"
-msgstr "Nama Kelas Plugin:"
+msgstr "Nama Kelas Pengaya:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:18
 msgid "Plugin class name"
-msgstr "Nama kelas plugin"
+msgstr "Nama kelas pengaya"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:19
 msgid "Plugin Dependencies:"
-msgstr "Ketergantungan Plugin:"
+msgstr "Ketergantungan Pengaya:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:20
 msgid ""
 "Comma separated, other plugins that this plugin depends on. It could be "
 "either primary interface name or plugin location (library:class)"
 msgstr ""
-"Dipisah dengan koma, plugin lain yang plugin ini bergantung kepadanya. Ini "
-"mungkin nama antar muka primer atau lokasi plugin (pustaka:kelas)"
+"Dipisah dengan koma, pengaya lain yang pengaya ini bergantung kepadanya. Ini "
+"mungkin nama antar muka primer atau lokasi pengaya (pustaka:kelas)"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:21
 msgid "Icon File:"
@@ -7545,7 +7545,7 @@ msgstr "Berkas Ikon:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:22
 msgid "Icon file for the plugin"
-msgstr "Berkas ikon bagi plugin"
+msgstr "Berkas ikon bagi pengaya"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:23
 msgid "Create Gtk Builder interface file"
@@ -7557,11 +7557,11 @@ msgstr "Buat suatu templat dari berkas antar muka Gtk Builder"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:25
 msgid "Plugin has menus or/and toolbars"
-msgstr "Plugin punya menu atau/dan bilah alat"
+msgstr "Pengaya punya menu atau/dan bilah alat"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:26
 msgid "Whether the plugin has menus or toolbars"
-msgstr "Apakah plugin punya menu atau bilah alat"
+msgstr "Apakah pengaya punya menu atau bilah alat"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:27
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:17
@@ -7641,7 +7641,7 @@ msgstr "Tambah dukungan C++:"
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:14
 msgid "Adds C++ support to the project so that C++ source files can be built"
 msgstr ""
-"Tambahkan dukungan C++ ke projek sehingga berkas sumber C++ dapat dibangun"
+"Tambahkan dukungan C++ ke proyek sehingga berkas sumber C++ dapat dibangun"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:32
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:22
@@ -7673,7 +7673,7 @@ msgstr "Perlu Paket:"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:23
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:23
 msgid "Check the packages that your project requires"
-msgstr "Periksa paket yang diperlukan projek Anda"
+msgstr "Periksa paket yang diperlukan proyek Anda"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:34
 msgid "Values to watch"
@@ -7693,19 +7693,19 @@ msgstr "Nama nilai yang akan diamati"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:38
 msgid "Implement plugin interfaces"
-msgstr "Implementasi antarmuka plugin"
+msgstr "Implementasi antarmuka pengaya"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:39
 msgid "Plugin interfaces to implement"
-msgstr "Antar muka plugin yang akan diimplementasi"
+msgstr "Antarmuka pengaya yang akan diimplementasi"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:40
 msgid "Interface:"
-msgstr "Antar muka:"
+msgstr "Antarmuka:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:41
 msgid "Interface implemented by the plugin"
-msgstr "Antar muka yang diimplementasi oleh plugin"
+msgstr "Antarmuka yang diimplementasi oleh pengaya"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:1
 msgid "Generic C++"
@@ -7713,7 +7713,7 @@ msgstr "C++ Generik"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:2
 msgid "A generic C++ project"
-msgstr "Suatu projek C++ generik"
+msgstr "Suatu proyek C++ generik"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:6
 #: ../plugins/project-wizard/templates/django.wiz.in.h:6
@@ -7734,7 +7734,7 @@ msgstr "Suatu projek C++ generik"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:6
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:6
 msgid "project name"
-msgstr "nama projek"
+msgstr "nama proyek"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:13
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:15
@@ -7766,7 +7766,7 @@ msgstr "Tambahkan dukungan pustaka bersama:"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:18
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:18
 msgid "Adds support for building shared libraries in your project"
-msgstr "Tambahkan dukungan pembangunan pustaka yang dipakai bersama ke projek"
+msgstr "Tambahkan dukungan pembangunan pustaka yang dipakai bersama ke proyek"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:15
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:17
@@ -7803,7 +7803,7 @@ msgid ""
 "Adds support for internationalization so that your project can have "
 "translations in different languages"
 msgstr ""
-"Tambahkan dukungan internasionalisasi sehingga projek Anda dapat memiliki "
+"Tambahkan dukungan internasionalisasi sehingga proyek Anda dapat memiliki "
 "terjemahan dalam berbagai bahasa"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:19
@@ -7828,15 +7828,15 @@ msgstr "Tambahkan dukungan untuk membangun pada platform Windows"
 
 #: ../plugins/project-wizard/templates/django.wiz.in.h:1
 msgid "Django Project"
-msgstr "Projek Django"
+msgstr "Proyek Django"
 
 #: ../plugins/project-wizard/templates/django.wiz.in.h:2
 msgid "Python webproject using Django Web Framework"
-msgstr "Projek web python memakai Framework Web Django"
+msgstr "Proyek web python memakai Framework Web Django"
 
 #: ../plugins/project-wizard/templates/django.wiz.in.h:3
 msgid "Django Project information"
-msgstr "Informasi Projek Django"
+msgstr "Informasi Proyek Django"
 
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:1
 msgid "Generic gcj compiled java"
@@ -7846,7 +7846,7 @@ msgstr "Java terkompail gcj yang generik"
 msgid ""
 "A generic natively compiled java project using the GNU Java Compiler (gcj)"
 msgstr ""
-"Suatu projek generik java yang dikompail native memakai Kompailer Java GNU "
+"Suatu proyek generik java yang dikompail native memakai Kompailer Java GNU "
 "(gcj)"
 
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:7
@@ -7868,15 +7868,15 @@ msgstr "Ekstensi Shell Gnome yang minimal"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:5
 msgid "Plugin Name:"
-msgstr "Nama Plugin:"
+msgstr "Nama Pengaya:"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:6
 msgid "Short but descriptive user-visible plugin name"
-msgstr "Nama plugin yang pendek tapi deskriptif, yang nampak ke pengguna"
+msgstr "Nama pengaya yang pendek tapi deskriptif, yang nampak ke pengguna"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:14
 msgid "Long description of your plugin"
-msgstr "Deskripsi panjang dari plugin Anda"
+msgstr "Deskripsi panjang dari pengaya Anda"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:15
 msgid "UUID:"
@@ -7910,7 +7910,7 @@ msgid ""
 "Comma-separated list of gnome-shell version your plugin is compatible with"
 msgstr ""
 "Daftar yang dipisah koma dari versi gnome-shell yang kompatibel dengan "
-"plugin Anda"
+"pengaya Anda"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:1
 msgid "GTK+ (Application)"
@@ -7971,7 +7971,7 @@ msgid ""
 "the required version of the package. For example, 'libgnomeui-2.0' or "
 "'libgnomeui-2.0 >= 2.2.0'"
 msgstr ""
-"Berikan nama paket yang diperlukan projek Anda. Anda mungkin juga perlu "
+"Berikan nama paket yang diperlukan proyek Anda. Anda mungkin juga perlu "
 "menyebutkan versi paket yang diperlukan. Sebagai contoh, 'libgnomeui-2.0' "
 "atau 'libgnomeui-2.0 >= 2.2.0'"
 
@@ -7999,7 +7999,7 @@ msgstr "Java generik (automake)"
 
 #: ../plugins/project-wizard/templates/java.wiz.in.h:2
 msgid "A generic java project using automake project management"
-msgstr "Suatu projek java generik menggunakan manajemen projek automake"
+msgstr "Suatu proyek java generik menggunakan manajemen proyek automake"
 
 #: ../plugins/project-wizard/templates/java.wiz.in.h:8
 msgid "Main class"
@@ -8012,7 +8012,7 @@ msgstr "JavaScript Generik"
 #: ../plugins/project-wizard/templates/js.wiz.in.h:2
 #: ../plugins/project-wizard/templates/minimal.wiz.in.h:2
 msgid "A generic minimal and flat project"
-msgstr "Suatu projek minimal dan flat yang generik"
+msgstr "Suatu proyek minimal dan flat yang generik"
 
 #: ../plugins/project-wizard/templates/library.wiz.in.h:1
 msgid "Library"
@@ -8020,7 +8020,7 @@ msgstr "Pustaka"
 
 #: ../plugins/project-wizard/templates/library.wiz.in.h:2
 msgid "A shared or a static library project"
-msgstr "Suatu projek pustaka statik atau berbagi"
+msgstr "Suatu proyek pustaka statik atau berbagi"
 
 #: ../plugins/project-wizard/templates/library.wiz.in.h:13
 msgid "Build library as"
@@ -8060,23 +8060,23 @@ msgstr "Generik (Minimal)"
 
 #: ../plugins/project-wizard/templates/mkfile.wiz.in.h:1
 msgid "Makefile project"
-msgstr "Projek makefile"
+msgstr "Proyek makefile"
 
 #: ../plugins/project-wizard/templates/mkfile.wiz.in.h:2
 msgid "Makefile-based project"
-msgstr "Projek berbasis makefile"
+msgstr "Proyek berbasis makefile"
 
 #: ../plugins/project-wizard/templates/mkfile.wiz.in.h:4
 msgid "Project directory, output file etc."
-msgstr "Direktori projek, berkas keluaran, dsb."
+msgstr "Direktori proyek, berkas keluaran, dsb."
 
 #: ../plugins/project-wizard/templates/mkfile.wiz.in.h:5
 msgid "Project name:"
-msgstr "Nama projek:"
+msgstr "Nama proyek:"
 
 #: ../plugins/project-wizard/templates/mkfile.wiz.in.h:6
 msgid "Project directory:"
-msgstr "Direktori projek:"
+msgstr "Direktori proyek:"
 
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:1
 msgid "PyGTK (automake)"
@@ -8084,7 +8084,7 @@ msgstr "PyGTK (automake)"
 
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:2
 msgid "PyGTK project using automake"
-msgstr "Projek PyGTK memakai automake"
+msgstr "Proyek PyGTK memakai automake"
 
 #: ../plugins/project-wizard/templates/python.wiz.in.h:1
 msgid "Generic python (automake)"
@@ -8092,7 +8092,7 @@ msgstr "Python generik (automake)"
 
 #: ../plugins/project-wizard/templates/python.wiz.in.h:2
 msgid "A generic python project using automake project management"
-msgstr "Suatu projek python generik menggunakan manajemen projek automake"
+msgstr "Suatu proyek python generik menggunakan manajemen proyek automake"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:1
 msgid "SDL"
@@ -8100,7 +8100,7 @@ msgstr "SDL"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:2
 msgid "A sample SDL project"
-msgstr "Suatu projek SDL contoh"
+msgstr "Suatu proyek SDL contoh"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:17
 msgid "Require SDL version:"
@@ -8156,7 +8156,7 @@ msgstr "Generik"
 
 #: ../plugins/project-wizard/templates/terminal.wiz.in.h:2
 msgid "A generic project"
-msgstr "Suatu projek generik"
+msgstr "Suatu proyek generik"
 
 #: ../plugins/project-wizard/templates/wxwin.wiz.in.h:1
 msgid "Wx Widgets"
@@ -8164,7 +8164,7 @@ msgstr "Wx Widgets"
 
 #: ../plugins/project-wizard/templates/wxwin.wiz.in.h:2
 msgid "A generic wx Widgets project"
-msgstr "Suatu projek wxWidgets generik"
+msgstr "Suatu proyek wxWidgets generik"
 
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:1
 msgid "Xlib dock"
@@ -8180,7 +8180,7 @@ msgstr "Xlib"
 
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:2
 msgid "A generic Xlib project"
-msgstr "Suatu projek Xlib generik"
+msgstr "Suatu proyek Xlib generik"
 
 #: ../plugins/python-loader/anjuta-python-loader.plugin.in.h:1
 msgid "Python loader"
@@ -8188,7 +8188,7 @@ msgstr "Pemuat Python"
 
 #: ../plugins/python-loader/anjuta-python-loader.plugin.in.h:2
 msgid "Allows loading Anjuta plugins written in Python"
-msgstr "Mengijinkan memuat plugin Anjuta yang ditulis dalam Python"
+msgstr "Mengizinkan memuat pengaya Anjuta yang ditulis dalam Python"
 
 #: ../plugins/quick-open/anjuta-quick-open.ui.h:1
 msgid "Loading files..."
@@ -8295,7 +8295,7 @@ msgstr "Snippet Kode"
 
 #: ../plugins/snippets-manager/anjuta-snippets-manager.plugin.in.h:2
 msgid "Allows insertion of snippets into the editor."
-msgstr "Ijinkan penyisipan snippet ke dalam penyunting."
+msgstr "Izinkan penyisipan snippet ke dalam penyunting."
 
 #: ../plugins/snippets-manager/plugin.c:62
 #: ../plugins/snippets-manager/plugin.c:307
@@ -8744,11 +8744,11 @@ msgstr "Mulai"
 
 #: ../plugins/starter/starter.ui.h:1
 msgid "Create a new project"
-msgstr "Buat projek baru"
+msgstr "Buat proyek baru"
 
 #: ../plugins/starter/starter.ui.h:2
 msgid "Import an existing project"
-msgstr "Impor dari projek yang telah ada"
+msgstr "Impor dari proyek yang telah ada"
 
 #: ../plugins/starter/starter.ui.h:3
 msgid "Recent projects:"
@@ -8778,7 +8778,7 @@ msgstr "Subversion"
 
 #: ../plugins/subversion/anjuta-subversion.plugin.in.h:2
 msgid "A Subversion client plugin based on libsvn"
-msgstr "Plugin klien Subversion berbasis libsvn"
+msgstr "Pengaya klien Subversion berbasis libsvn"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:1
 msgid "Subversion Preferences"
@@ -8858,7 +8858,7 @@ msgstr "Tilik Log"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:31
 msgid "Whole Project"
-msgstr "Seluruh Projek"
+msgstr "Seluruh Proyek"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:34
 msgid "Diff to Previous"
@@ -9323,7 +9323,7 @@ msgstr "Terhalangi: %s"
 
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:1
 msgid "Parallel scan of project and global symbols"
-msgstr "Pemindaian paralel dari simbol global dan projek"
+msgstr "Pemindaian paralel dari simbol global dan proyek"
 
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:2
 msgid ""
@@ -9331,7 +9331,7 @@ msgid ""
 "simultaneously with the project's ones"
 msgstr ""
 "Opsi ini berarti bahwa paket sistem global akan dipindai secara simultan "
-"dengan milik projek"
+"dengan milik proyek"
 
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:3
 msgid "Automatically update symbols without saving file"
@@ -9420,7 +9420,7 @@ msgstr "Basis Data Simbol"
 
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:2
 msgid "Symbol Database Plugin for Anjuta."
-msgstr "Plugin Basis Data Simbol bagi Anjuta."
+msgstr "Pengaya Basis Data Simbol bagi Anjuta."
 
 #: ../plugins/symbol-db/symbol-db-system.c:798
 msgid "Resuming glb scan."
@@ -9438,7 +9438,7 @@ msgstr "Terminal"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:2
 msgid "Terminal Plugin for Anjuta."
-msgstr "Plugin Terminal bagi Anjuta."
+msgstr "Pengaya Terminal bagi Anjuta."
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:2
 msgid "Use GNOME Terminal profile:"
@@ -9717,69 +9717,69 @@ msgstr "String"
 
 #: ../plugins/tools/variable.c:86
 msgid "Project root URI"
-msgstr "URI root projek"
+msgstr "URI root proyek"
 
 #: ../plugins/tools/variable.c:87
 msgid "Project root path"
-msgstr "Path root projek"
+msgstr "Path root proyek"
 
 #: ../plugins/tools/variable.c:89
 msgid "Selected URI in the file manager plugin"
-msgstr "URI yang dipilih di plugin manajer berkas"
+msgstr "URI yang dipilih di pengaya manajer berkas"
 
 #: ../plugins/tools/variable.c:90
 msgid "Selected directory in the file manager plugin"
-msgstr "Direktori yang dipilih di plugin manajer berkas"
+msgstr "Direktori yang dipilih di pengaya manajer berkas"
 
 #: ../plugins/tools/variable.c:91
 msgid "Selected full file name in the file manager plugin"
-msgstr "Nama berkas lengkap yang dipilih di plugin manajer berkas"
+msgstr "Nama berkas lengkap yang dipilih di pengaya manajer berkas"
 
 #: ../plugins/tools/variable.c:92
 msgid "Selected full file name without extension in the file manager plugin"
 msgstr ""
-"Nama berkas lengkap yang dipilih tanpa ekstensi di plugin manajer berkas"
+"Nama berkas lengkap yang dipilih tanpa ekstensi di pengaya manajer berkas"
 
 #: ../plugins/tools/variable.c:93
 msgid "Selected file name in the file manager plugin"
-msgstr "Nama berkas yang dipilih di plugin manajer berkas"
+msgstr "Nama berkas yang dipilih di pengaya manajer berkas"
 
 #: ../plugins/tools/variable.c:94
 msgid "Selected file name without extension in the file manager plugin"
-msgstr "Nama berkas yang dipilih tanpa ekstensi di plugin manajer berkas"
+msgstr "Nama berkas yang dipilih tanpa ekstensi di pengaya manajer berkas"
 
 #: ../plugins/tools/variable.c:95
 msgid "Selected file's extension in the file manager plugin"
-msgstr "Ekstensi berkas yang dipilih di plugin manajer berkas"
+msgstr "Ekstensi berkas yang dipilih di pengaya manajer berkas"
 
 #: ../plugins/tools/variable.c:96
 msgid "Selected URI in the project manager plugin"
-msgstr "URI yang dipilih di plugin manajer projek"
+msgstr "URI yang dipilih di pengaya manajer proyek"
 
 #: ../plugins/tools/variable.c:97
 msgid "Selected directory in the project manager plugin"
-msgstr "Direktori yang dipilih di plugin manajer projek"
+msgstr "Direktori yang dipilih di pengaya manajer proyek"
 
 #: ../plugins/tools/variable.c:98
 msgid "Selected full file name in the project manager plugin"
-msgstr "Nama berkas lengkap yang dipilih di plugin manajer projek"
+msgstr "Nama berkas lengkap yang dipilih di pengaya manajer proyek"
 
 #: ../plugins/tools/variable.c:99
 msgid "Selected full file name without extension in the project manager plugin"
 msgstr ""
-"Nama berkas lengkap yang dipilih tanpa ekstensi di plugin manajer projek"
+"Nama berkas lengkap yang dipilih tanpa ekstensi di pengaya manajer proyek"
 
 #: ../plugins/tools/variable.c:100
 msgid "Selected file name in the project manager plugin"
-msgstr "Nama berkas yang dipilih di plugin manajer projek"
+msgstr "Nama berkas yang dipilih di pengaya manajer proyek"
 
 #: ../plugins/tools/variable.c:101
 msgid "Selected file name without extension in the project manager plugin"
-msgstr "Nama berkas yang dipilih tanpa ekstensi di plugin manajer projek"
+msgstr "Nama berkas yang dipilih tanpa ekstensi di pengaya manajer proyek"
 
 #: ../plugins/tools/variable.c:102
 msgid "Selected file extension in the project manager plugin"
-msgstr "Ekstensi berkas yang dipilih di plugin manajer projek"
+msgstr "Ekstensi berkas yang dipilih di pengaya manajer proyek"
 
 #: ../plugins/tools/variable.c:103
 msgid "Currently edited file name"
@@ -9927,11 +9927,11 @@ msgstr "Tentang Anjuta"
 
 #: ../src/anjuta-actions.h:87
 msgid "About External _Plugins"
-msgstr "Tentang _Plugin Eksternal"
+msgstr "Tentang _Pengaya Eksternal"
 
 #: ../src/anjuta-actions.h:88
 msgid "About third-party Anjuta plugins"
-msgstr "Tentang plugin Anjuta dari pihak ketika"
+msgstr "Tentang pengaya Anjuta dari pihak ketika"
 
 #: ../src/anjuta-application.c:374
 msgid "Specify the size and location of the main window"
@@ -9959,7 +9959,7 @@ msgstr "Jangan buka sesi terakhir pada startup"
 
 #: ../src/anjuta-application.c:400
 msgid "Do not open last project and files on startup"
-msgstr "Jangan buka berkas dan projek terakhir pada startup"
+msgstr "Jangan buka berkas dan proyek terakhir pada startup"
 
 #: ../src/anjuta-application.c:406
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
@@ -10004,7 +10004,7 @@ msgstr "Bantuan"
 
 #: ../src/anjuta-window.c:998
 msgid "Installed plugins"
-msgstr "Plugin terpasang"
+msgstr "Pengaya terpasang"
 
 #: ../src/anjuta-window.c:1002
 msgid "Shortcuts"
@@ -10033,7 +10033,7 @@ msgstr "Jangan muat sesi terakhir pada startup"
 
 #: ../src/preferences.ui.h:2
 msgid "Do not load last project and files on startup"
-msgstr "Jangan muat berkas dan projek terakhir pada startup"
+msgstr "Jangan muat berkas dan proyek terakhir pada startup"
 
 #: ../src/preferences.ui.h:3
 msgid "Session"
@@ -10084,3 +10084,5 @@ msgstr "Hanya icon"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Hanya teks"
+
+
