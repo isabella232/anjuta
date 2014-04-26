@@ -1,3 +1,8 @@
+# Schema file
+gsettings_in_file = org.gnome.anjuta.starter.gschema.xml.in
+@INTLTOOL_XML_NOMERGE_RULE@
+@GSETTINGS_RULES@
+
 # Plugin file
 plugin_in_files = anjuta-starter.plugin.in
 %.plugin: %.plugin.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache
@@ -34,11 +39,15 @@ libanjuta_starter_la_SOURCES= \
 nodist_libanjuta_starter_la_SOURCES= = \
 	$(BUILT_SOURCES)
 
+gsettings_SCHEMAS = $(gsettings_in_file:.xml.in=.xml)
+
 CLEANFILES = \
-	$(BUILT_SOURCES)
+	$(BUILT_SOURCES) \
+	$(gsettings_SCHEMAS)
 
 EXTRA_DIST = \
 	$(plugin_in_files) \
+	$(gsettings_in_file) \
 	starter.gresource.xml \
 	starter.ui
 
