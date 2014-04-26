@@ -39,11 +39,12 @@ struct _AnjutaMsgmanPriv
 
 struct _AnjutaMsgmanPage
 {
-	GtkWidget *widget;
+	MessageView *view;
 	GtkWidget *pixmap;
 	GtkWidget *label;
 	GtkWidget *box;
 	GtkWidget *close_button;
+	AnjutaMsgman *msgman;
 };
 
 enum
@@ -58,11 +59,21 @@ typedef struct _AnjutaMsgmanPage AnjutaMsgmanPage;
 
 static void
 on_msgman_close_page (GtkButton* button,
-									AnjutaMsgman *msgman)
+                      AnjutaMsgmanPage *page)
 {
-	MessageView *view = MESSAGE_VIEW (g_object_get_data (G_OBJECT (button),
-														 "message_view"));
-	anjuta_msgman_remove_view (msgman, view);
+	anjuta_msgman_remove_view (page->msgman, page->view);
+}
+
+static void
+on_msgman_button_release (GtkWidget *widget,
+                          GdkEventButton *event,
+                          AnjutaMsgmanPage *page)
+{
+	/* close on middle click */
+	if (event->button == 2)
+	{
+		anjuta_msgman_remove_view (page->msgman, page->view);
+	}
 }
 
 static void
@@ -113,20 +124,24 @@ on_tab_button_press_event(GtkWidget* widget, GdkEventButton* event, AnjutaMsgman
 }
 
 static AnjutaMsgmanPage *
-anjuta_msgman_page_new (GtkWidget * view, const gchar * name,
+anjuta_msgman_page_new (MessageView* view, const gchar * name,
 			const gchar * pixmap, AnjutaMsgman * msgman)
 {
 	AnjutaMsgmanPage *page;
+	GtkWidget *box;
 
 	g_return_val_if_fail (view != NULL, NULL);
 
 	page = g_new0 (AnjutaMsgmanPage, 1);
-	page->widget = GTK_WIDGET (view);
+	page->view = view;
+	page->msgman = msgman;
+	page->box = gtk_event_box_new();
+	gtk_event_box_set_visible_window (GTK_EVENT_BOX (page->box), FALSE);
 
 	page->label = gtk_label_new (name);
 	gtk_label_set_ellipsize (GTK_LABEL(page->label), PANGO_ELLIPSIZE_END);
-	page->box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	gtk_box_set_spacing (GTK_BOX (page->box), 5);
+	box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+	gtk_box_set_spacing (GTK_BOX (box), 5);
 	if (pixmap  && strlen(pixmap))
 	{
 		GtkStockItem unused;
@@ -138,18 +153,21 @@ anjuta_msgman_page_new (GtkWidget * view, const gchar * name,
 		{
 			page->pixmap = anjuta_res_get_image_sized (pixmap, 16, 16);
 		}
-		gtk_box_pack_start (GTK_BOX (page->box), page->pixmap, FALSE, FALSE, 0);
+		gtk_box_pack_start (GTK_BOX (box), page->pixmap, FALSE, FALSE, 0);
 	}
-	gtk_box_pack_start (GTK_BOX (page->box), page->label, TRUE, TRUE, 0);
+	gtk_box_pack_start (GTK_BOX (box), page->label, TRUE, TRUE, 0);
 
 	page->close_button = anjuta_close_button_new ();
 
-	g_object_set_data (G_OBJECT (page->close_button), "message_view", page->widget);
 	g_signal_connect (page->close_button, "clicked",
-						G_CALLBACK(on_msgman_close_page),
-						msgman);
+	                  G_CALLBACK(on_msgman_close_page),
+	                  page);
+	g_signal_connect (page->box, "button-release-event",
+	                  G_CALLBACK(on_msgman_button_release),
+	                  page);
 
-	gtk_box_pack_start (GTK_BOX(page->box), page->close_button, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX(box), page->close_button, FALSE, FALSE, 0);
+	gtk_container_add (GTK_CONTAINER (page->box), box);
 
 	gtk_widget_show_all (page->box);
 
@@ -172,7 +190,7 @@ anjuta_msgman_page_from_widget (AnjutaMsgman * msgman, MessageView * mv)
 		AnjutaMsgmanPage *page;
 		page = node->data;
 		g_assert (page);
-		if (page->widget == GTK_WIDGET (mv))
+		if (page->view == mv)
 			return page;
 		node = g_list_next (node);
 	}
@@ -318,7 +336,7 @@ on_message_view_destroy (MessageView *view, AnjutaMsgman *msgman)
 }
 
 static void
-anjuta_msgman_append_view (AnjutaMsgman * msgman, GtkWidget *mv,
+anjuta_msgman_append_view (AnjutaMsgman * msgman, MessageView *mv,
 						   const gchar * name, const gchar * pixmap)
 {
 	AnjutaMsgmanPage *page;
@@ -327,13 +345,13 @@ anjuta_msgman_append_view (AnjutaMsgman * msgman, GtkWidget *mv,
 	g_return_if_fail (mv != NULL);
 	g_return_if_fail (name != NULL);
 
-	gtk_widget_show_all (mv);
+	gtk_widget_show_all (GTK_WIDGET (mv));
 	page = anjuta_msgman_page_new (mv, name, pixmap, msgman);
 
 	msgman->priv->views =
 		g_list_prepend (msgman->priv->views, (gpointer) page);
 
-	gtk_notebook_append_page (GTK_NOTEBOOK (msgman), mv, NULL);
+	gtk_notebook_append_page (GTK_NOTEBOOK (msgman), GTK_WIDGET (mv), NULL);
 
 	g_signal_emit_by_name (msgman, "view-changed");
 
@@ -347,17 +365,17 @@ MessageView *
 anjuta_msgman_add_view (AnjutaMsgman * msgman,
 						const gchar * name, const gchar * pixmap)
 {
-	GtkWidget *mv;
+	MessageView *mv;
 
 	g_return_val_if_fail (msgman != NULL, NULL);
 	g_return_val_if_fail (name != NULL, NULL);
 
-	mv = message_view_new (msgman->priv->popup_menu);
+	mv = MESSAGE_VIEW (message_view_new (msgman->priv->popup_menu));
 	g_return_val_if_fail (mv != NULL, NULL);
 	g_object_set (G_OBJECT (mv), "highlite", TRUE, "label", name,
 				  "pixmap", pixmap, NULL);
 	anjuta_msgman_append_view (msgman, mv, name, pixmap);
-	return MESSAGE_VIEW (mv);
+	return mv;
 }
 
 void
@@ -383,7 +401,7 @@ anjuta_msgman_remove_all_views (AnjutaMsgman * msgman)
 	while (node)
 	{
 		page = node->data;
-		views = g_list_prepend (views, page->widget);
+		views = g_list_prepend (views, page->view);
 		node = g_list_next (node);
 	}
 	node = views;
@@ -428,7 +446,7 @@ anjuta_msgman_get_view_by_name (AnjutaMsgman * msgman, const gchar * name)
 		if (strcmp (gtk_label_get_text (GTK_LABEL (page->label)),
 			    name) == 0)
 		{
-			return MESSAGE_VIEW (page->widget);
+			return page->view;
 		}
 		node = g_list_next (node);
 	}
@@ -512,7 +530,7 @@ anjuta_msgman_serialize (AnjutaMsgman *msgman, AnjutaSerializer *serializer)
 	while (node)
 	{
 		AnjutaMsgmanPage *page = (AnjutaMsgmanPage*)node->data;
-		if (!message_view_serialize (MESSAGE_VIEW (page->widget), serializer))
+		if (!message_view_serialize (page->view, serializer))
 			return FALSE;
 		node = g_list_next (node);
 	}
@@ -530,12 +548,12 @@ anjuta_msgman_deserialize (AnjutaMsgman *msgman, AnjutaSerializer *serializer)
 	for (i = 0; i < views; i++)
 	{
 		gchar *label, *pixmap;
-		GtkWidget *view;
-		view = message_view_new (msgman->priv->popup_menu);
+		MessageView *view;
+		view = MESSAGE_VIEW (message_view_new (msgman->priv->popup_menu));
 		g_return_val_if_fail (view != NULL, FALSE);
-		if (!message_view_deserialize (MESSAGE_VIEW (view), serializer))
+		if (!message_view_deserialize (view, serializer))
 		{
-			gtk_widget_destroy (view);
+			gtk_widget_destroy (GTK_WIDGET (view));
 			return FALSE;
 		}
 		g_object_get (view, "label", &label, "pixmap", &pixmap, NULL);
