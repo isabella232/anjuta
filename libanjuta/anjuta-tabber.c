@@ -751,7 +751,7 @@ anjuta_tabber_unmap (GtkWidget* widget)
 }
 
 static void
-anjuta_tabber_add (GtkContainer* container, GtkWidget* widget)
+anjuta_tabber_append (GtkContainer* container, GtkWidget* widget)
 {
 	g_return_if_fail (ANJUTA_IS_TABBER (container));
 	g_return_if_fail (GTK_IS_WIDGET (widget));
@@ -760,6 +760,24 @@ anjuta_tabber_add (GtkContainer* container, GtkWidget* widget)
 	gboolean visible = gtk_widget_get_visible (widget);
 
 	tabber->priv->children = g_list_append (tabber->priv->children, widget);
+	gtk_widget_set_parent (widget, GTK_WIDGET (tabber));
+	if (visible)
+	{
+		gtk_container_resize_children (GTK_CONTAINER (tabber));
+		gtk_widget_queue_resize (widget);
+	}
+}
+
+static void
+anjuta_tabber_prepend (GtkContainer* container, GtkWidget* widget)
+{
+	g_return_if_fail (ANJUTA_IS_TABBER (container));
+	g_return_if_fail (GTK_IS_WIDGET (widget));
+	
+	AnjutaTabber* tabber = ANJUTA_TABBER (container);
+	gboolean visible = gtk_widget_get_visible (widget);
+
+	tabber->priv->children = g_list_prepend (tabber->priv->children, widget);
 	gtk_widget_set_parent (widget, GTK_WIDGET (tabber));
 	if (visible)
 	{
@@ -846,7 +864,7 @@ anjuta_tabber_class_init (AnjutaTabberClass *klass)
 	widget_class->map = anjuta_tabber_map;
 	widget_class->unmap = anjuta_tabber_unmap;
 
-	container_class->add = anjuta_tabber_add;
+	container_class->add = anjuta_tabber_append;
 	container_class->remove = anjuta_tabber_remove;
 	container_class->forall = anjuta_tabber_forall;
 	container_class->get_path_for_child = anjuta_tabber_get_path_for_child;
@@ -897,9 +915,21 @@ GtkWidget* anjuta_tabber_new (GtkNotebook* notebook)
  * @tabber: a AnjutaTabber widget
  * @tab_label: widget used as tab label
  *
- * Adds a tab to the AnjutaTabber widget
+ * Append a tab to the AnjutaTabber widget
  */
 void anjuta_tabber_add_tab (AnjutaTabber* tabber, GtkWidget* tab_label)
 {
-	gtk_container_add (GTK_CONTAINER (tabber), tab_label);
+	anjuta_tabber_append (GTK_CONTAINER (tabber), tab_label);
+}
+
+/**
+ * anjuta_tabber_prepend_tab:
+ * @tabber: a AnjutaTabber widget
+ * @tab_label: widget used as tab label
+ *
+ * Prepend a tab to the AnjutaTabber widget
+ */
+void anjuta_tabber_prepend_tab (AnjutaTabber* tabber, GtkWidget* tab_label)
+{
+	anjuta_tabber_prepend (GTK_CONTAINER (tabber), tab_label);
 }

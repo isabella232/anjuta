@@ -336,7 +336,7 @@ on_message_view_destroy (MessageView *view, AnjutaMsgman *msgman)
 }
 
 static void
-anjuta_msgman_append_view (AnjutaMsgman * msgman, MessageView *mv,
+anjuta_msgman_prepend_view (AnjutaMsgman * msgman, MessageView *mv,
 						   const gchar * name, const gchar * pixmap)
 {
 	AnjutaMsgmanPage *page;
@@ -351,11 +351,11 @@ anjuta_msgman_append_view (AnjutaMsgman * msgman, MessageView *mv,
 	msgman->priv->views =
 		g_list_prepend (msgman->priv->views, (gpointer) page);
 
-	gtk_notebook_append_page (GTK_NOTEBOOK (msgman), GTK_WIDGET (mv), NULL);
+	gtk_notebook_prepend_page (GTK_NOTEBOOK (msgman), GTK_WIDGET (mv), NULL);
 
 	g_signal_emit_by_name (msgman, "view-changed");
 
-	anjuta_tabber_add_tab (ANJUTA_TABBER(msgman->priv->tabber), page->box);
+	anjuta_tabber_prepend_tab (ANJUTA_TABBER(msgman->priv->tabber), page->box);
 
 	g_signal_connect (G_OBJECT (mv), "destroy",
 					  G_CALLBACK (on_message_view_destroy), msgman);
@@ -374,7 +374,7 @@ anjuta_msgman_add_view (AnjutaMsgman * msgman,
 	g_return_val_if_fail (mv != NULL, NULL);
 	g_object_set (G_OBJECT (mv), "highlite", TRUE, "label", name,
 				  "pixmap", pixmap, NULL);
-	anjuta_msgman_append_view (msgman, mv, name, pixmap);
+	anjuta_msgman_prepend_view (msgman, mv, name, pixmap);
 	return mv;
 }
 
@@ -557,7 +557,7 @@ anjuta_msgman_deserialize (AnjutaMsgman *msgman, AnjutaSerializer *serializer)
 			return FALSE;
 		}
 		g_object_get (view, "label", &label, "pixmap", &pixmap, NULL);
-		anjuta_msgman_append_view (msgman, view, label, pixmap);
+		anjuta_msgman_prepend_view (msgman, view, label, pixmap);
 		g_free (label);
 		g_free (pixmap);
 	}

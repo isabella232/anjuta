@@ -433,23 +433,6 @@ build_context_destroy (BuildContext *context)
 }
 
 static void
-build_context_reset (BuildContext *context)
-{
-	/* Reset context */
-
-	ianjuta_message_view_clear (context->message_view, NULL);
-
-	if (context->build_dir_stack)
-		g_hash_table_destroy (context->build_dir_stack);
-	context->build_dir_stack = NULL;
-
-	g_slist_foreach (context->locations,
-					 (GFunc) build_indicator_location_free, NULL);
-	g_slist_free (context->locations);
-	context->locations = NULL;
-}
-
-static void
 build_regex_load (void)
 {
 	FILE *fp;
@@ -1120,56 +1103,43 @@ build_get_context_with_message(BasicAutotoolsPlugin *plugin, const gchar *dir)
 	snprintf (mname, 128, _("Build %d: %s"), ++message_pane_count, subdir);
 	g_free (subdir);
 
-	/* If we already have MAX_BUILD_PANES build panes, find a free context */
+	/* If we already have MAX_BUILD_PANES build panes, try to find a free
+	 * context and destroy it */
 	if (g_list_length (plugin->contexts_pool) >= MAX_BUILD_PANES)
 	{
 		GList *node;
 		node = plugin->contexts_pool;
 		while (node)
 		{
-			BuildContext *c;
-			c = node->data;
-			if (c->launcher == NULL)
+			BuildContext *context;
+			context = node->data;
+			if (context->launcher == NULL)
 			{
-				context = c;
+				gtk_widget_destroy (GTK_WIDGET (context->message_view));
 				break;
 			}
 			node = g_list_next (node);
 		}
 	}
 
+	/* Create a new context */
 	mesg_manager = anjuta_shell_get_interface (ANJUTA_PLUGIN (plugin)->shell,
 											   IAnjutaMessageManager, NULL);
-	if (context)
-	{
-		build_context_reset (context);
+	context = g_new0 (BuildContext, 1);
+	context->plugin = ANJUTA_PLUGIN(plugin);
+	context->indicators_updated_editors =
+		g_hash_table_new (g_direct_hash, g_direct_equal);
 
-		/* It will be re-inserted in right order */
-		plugin->contexts_pool = g_list_remove (plugin->contexts_pool, context);
-		ianjuta_message_manager_set_view_title (mesg_manager,
-												context->message_view,
-												mname, NULL);
-	}
-	else
-	{
+	context->message_view =
+		ianjuta_message_manager_add_view (mesg_manager, mname,
+										  ICON_FILE, NULL);
 
-		/* If no free context found, create one */
-		context = g_new0 (BuildContext, 1);
-		context->plugin = ANJUTA_PLUGIN(plugin);
-		context->indicators_updated_editors =
-			g_hash_table_new (g_direct_hash, g_direct_equal);
-
-		context->message_view =
-			ianjuta_message_manager_add_view (mesg_manager, mname,
-											  ICON_FILE, NULL);
-
-		g_signal_connect (G_OBJECT (context->message_view), "buffer_flushed",
-						  G_CALLBACK (on_build_mesg_format), context);
-		g_signal_connect (G_OBJECT (context->message_view), "message_clicked",
-						  G_CALLBACK (on_build_mesg_parse), context);
-		g_object_weak_ref (G_OBJECT (context->message_view),
-						   (GWeakNotify)on_message_view_destroyed, context);
-	}
+	g_signal_connect (G_OBJECT (context->message_view), "buffer_flushed",
+					  G_CALLBACK (on_build_mesg_format), context);
+	g_signal_connect (G_OBJECT (context->message_view), "message_clicked",
+					  G_CALLBACK (on_build_mesg_parse), context);
+	g_object_weak_ref (G_OBJECT (context->message_view),
+					   (GWeakNotify)on_message_view_destroyed, context);
 	build_set_animation (mesg_manager, context);
 
 	ianjuta_message_manager_set_current_view (mesg_manager,
@@ -2595,7 +2565,7 @@ deactivate_plugin (AnjutaPlugin *plugin)
 	if (ba_plugin->update_indicators_idle)
 	{
 		g_source_remove (ba_plugin->update_indicators_idle);
-		ba_plugin->update_indicators_idle = NULL;
+		ba_plugin->update_indicators_idle = 0;
 	}
 
 	/* Remove UI */
@@ -2627,7 +2597,7 @@ dispose (GObject *obj)
 	if (ba_plugin->update_indicators_idle)
 	{
 		g_source_remove (ba_plugin->update_indicators_idle);
-		ba_plugin->update_indicators_idle = NULL;
+		ba_plugin->update_indicators_idle = 0;
 	}
 	G_OBJECT_CLASS (parent_class)->dispose (obj);
 }

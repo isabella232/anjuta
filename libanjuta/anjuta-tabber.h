@@ -51,6 +51,7 @@ GType anjuta_tabber_get_type (void) G_GNUC_CONST;
 
 GtkWidget* anjuta_tabber_new (GtkNotebook* notebook);
 void anjuta_tabber_add_tab (AnjutaTabber* tabber, GtkWidget* tab_label);
+void anjuta_tabber_prepend_tab (AnjutaTabber* tabber, GtkWidget* tab_label);
 
 G_END_DECLS
 
