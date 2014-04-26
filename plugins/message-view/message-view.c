@@ -90,31 +90,6 @@ message_view_tree_view_filter (GtkTreeModel *model,
 							   GtkTreeIter  *iter,
 							   gpointer      data);
 
-/* Ask the user for an uri name */
-static gchar *
-ask_user_for_save_uri (GtkWindow* parent)
-{
-	GtkWidget* dialog;
-	gchar* uri;
-
-       	dialog = gtk_file_chooser_dialog_new (_("Save file as"), parent,
-		GTK_FILE_CHOOSER_ACTION_SAVE, GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
-		GTK_STOCK_SAVE, GTK_RESPONSE_ACCEPT, NULL);
-
-	if(gtk_dialog_run(GTK_DIALOG(dialog)) == GTK_RESPONSE_ACCEPT)
-	{
-		uri = gtk_file_chooser_get_uri(GTK_FILE_CHOOSER(dialog));
-	}
-	else
-	{
-		uri = NULL;
-	}
-
-	gtk_widget_destroy(dialog);
-
-	return uri;
-}
-
 /* Message object creation, copy and freeing */
 static Message*
 message_new (IAnjutaMessageViewType type, const gchar *summary,
@@ -786,37 +761,18 @@ void message_view_previous(MessageView* view)
 	gtk_tree_path_free (path);
 }
 
-static gboolean message_view_save_as(MessageView* view, gchar* uri)
+void message_view_copy_all(MessageView* view)
 {
-	GFile *file;
-	GOutputStream *os;
 	GtkTreeIter iter;
 	GtkTreeModel *model;
-	gboolean ok;
+	GString *messages;
 
-	g_return_val_if_fail (view != NULL && MESSAGE_IS_VIEW (view), FALSE);
+	g_return_if_fail (view != NULL && MESSAGE_IS_VIEW (view));
 
-	if (uri == NULL)
-		return FALSE;
-
-	file = g_file_new_for_uri (uri);
-	os = G_OUTPUT_STREAM (
-			g_file_replace (file, NULL,
-				FALSE,
-				G_FILE_CREATE_NONE,
-				NULL,
-				NULL));
-	/* Create file */
-	if (os == NULL)
-	{
-		g_object_unref (file);
-		return FALSE;
-	}
-
-	/* Save all lines of message view */
+	/* Copy all lines of message view */
 	model = view->privat->model;
 
-	ok = TRUE;
+	messages = g_string_new (NULL);
 	gtk_tree_model_get_iter_first (model, &iter);
 	do
 	{
@@ -827,49 +783,27 @@ static gboolean message_view_save_as(MessageView* view, gchar* uri)
 		{
 			if (message->details && (strlen (message->details) > 0))
 			{
-				if (g_output_stream_write (os, message->details, strlen (message->details), NULL, NULL) < 0)
-				{
-					ok = FALSE;
-				}
+				g_string_append (messages, message->details);
+				g_string_append_c (messages, '\n');
 			}
 			else
 			{
-				if (g_output_stream_write (os, message->summary, strlen (message->summary), NULL, NULL) < 0)
-				{
-					ok = FALSE;
-				}
-			}
-			if (g_output_stream_write (os, "\n", 1, NULL, NULL) < 0)
-			{
-				ok = FALSE;
+				g_string_append (messages, message->summary);
+				g_string_append_c (messages, '\n');
 			}
 		}
 	} while (gtk_tree_model_iter_next (model, &iter));
-	g_output_stream_close (os, NULL, NULL);
-	g_object_unref (os);
-	g_object_unref (file);
-
-	return ok;
-}
-
-void message_view_save(MessageView* view)
-{
-	GtkWindow* parent;
-	gchar* uri;
-
-	g_return_if_fail (view != NULL && MESSAGE_IS_VIEW (view));
-
-	parent = GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (view)));
-
-	uri = ask_user_for_save_uri (parent);
-	if (uri)
+	
+	if (messages->len != 0)
 	{
-		if (message_view_save_as (view, uri) == FALSE)
-		{
-			anjuta_util_dialog_error(parent, _("Error writing %s"), uri);
-		}
-		g_free (uri);
+		GtkClipboard *clipboard;
+
+		clipboard = gtk_widget_get_clipboard (GTK_WIDGET (view), GDK_SELECTION_CLIPBOARD);
+
+		gtk_clipboard_set_text (clipboard, messages->str, messages->len);
 	}
+
+	g_string_free (messages, TRUE);
 }
 
 void message_view_copy(MessageView* view)

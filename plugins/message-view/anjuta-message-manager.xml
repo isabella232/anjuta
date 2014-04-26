@@ -18,9 +18,10 @@
 	</popup>
 	<popup name="PopupMessageView">
 		<menuitem name="CopyMessage" action="ActionMessageCopy" />
+		<menuitem name="CopyAllMessage" action="ActionMessageCopyAll" />
+		<separator name="separator1" />
 		<menuitem name="NextMessage" action="ActionMessageNext" />
 		<menuitem name="PrevMessage" action="ActionMessagePrev" />
-		<menuitem name="SaveMessage" action="ActionMessageSave" />
 		<placeholder name="PlaceholderPopupMessageView"/>
 	</popup>
 </ui>

@@ -65,12 +65,12 @@ static void on_copy_message(GtkAction* menuitem, MessageViewPlugin *plugin)
 		message_view_copy(view);
 }
 
-static void on_save_message(GtkAction* menuitem, MessageViewPlugin *plugin)
+static void on_copy_all_message(GtkAction* menuitem, MessageViewPlugin *plugin)
 {
 	AnjutaMsgman* msgman = ANJUTA_MSGMAN(plugin->msgman);
 	MessageView* view = anjuta_msgman_get_current_view(msgman);
 	if (view != NULL)
-		message_view_save(view);
+		message_view_copy_all(view);
 }
 
 static GtkActionEntry actions_goto[] = {
@@ -79,6 +79,10 @@ static GtkActionEntry actions_goto[] = {
     N_("_Copy Message"), NULL,
 	N_("Copy message"),
     G_CALLBACK (on_copy_message)},
+  { "ActionMessageCopyAll", NULL,
+    N_("_Copy All Messages"), NULL,
+	N_("Copy All Messages"),
+    G_CALLBACK (on_copy_all_message)},
   { "ActionMessageNext", ANJUTA_STOCK_NEXT_MESSAGE,
     N_("_Next Message"), "<control><alt>n",
 	N_("Next message"),
@@ -86,11 +90,7 @@ static GtkActionEntry actions_goto[] = {
   { "ActionMessagePrev", ANJUTA_STOCK_PREV_MESSAGE,
     N_("_Previous Message"), "<control><alt>p",
 	N_("Previous message"),
-    G_CALLBACK (on_prev_message)},
-  { "ActionMessageSave", NULL,
-    N_("_Save Message"), NULL,
-	N_("Save message"),
-    G_CALLBACK (on_save_message)}
+    G_CALLBACK (on_prev_message)}
 };
 
 static void on_view_changed(AnjutaMsgman* msgman, MessageViewPlugin* plugin)
