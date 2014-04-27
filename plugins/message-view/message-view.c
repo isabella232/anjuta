@@ -511,7 +511,7 @@ message_view_instance_init (MessageView * self)
 	g_signal_connect(G_OBJECT(adj), "value_changed",
 					 G_CALLBACK(on_adjustment_value_changed), self);
 
-	gtk_container_add (GTK_CONTAINER (self), scrolled_win);
+	gtk_box_pack_start (GTK_BOX (self), scrolled_win, TRUE, TRUE, 0);
 
 	/* Connect signals */
 	g_signal_connect (G_OBJECT(self->privat->tree_view), "event",
@@ -1226,6 +1226,6 @@ gint message_view_get_count (MessageView* view, MessageViewFlags flags)
 	}
 }
 
-ANJUTA_TYPE_BEGIN(MessageView, message_view, GTK_TYPE_HBOX);
+ANJUTA_TYPE_BEGIN(MessageView, message_view, GTK_TYPE_BOX);
 ANJUTA_TYPE_ADD_INTERFACE(imessage_view, IANJUTA_TYPE_MESSAGE_VIEW);
 ANJUTA_TYPE_END;
