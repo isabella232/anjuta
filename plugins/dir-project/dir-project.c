@@ -608,7 +608,15 @@ typedef struct {
 } DirData;
 
 /* the number of files to enumerate each time */
-#define NUM_FILES 10
+#define NUM_FILES 256
+
+/* The maximum number of directories read at the same time */
+#define MAX_OPEN_DIRECTORIES  8
+
+/* The number of ms to stop if we reach the open directory limit */
+#define TIMEOUT_OPEN_DIRECTORIES  64
+
+static gint open_directories = 0;
 
 static void
 dir_project_load_directory_callback (GObject      *source_object,
@@ -626,6 +634,8 @@ dir_project_load_directory_callback (GObject      *source_object,
 		GList *removed = NULL;
 
 		/* either we are finished or an error occured */
+		g_object_unref (enumerator);
+		open_directories--;
 		anjuta_project_node_clear_state (data->parent, ANJUTA_PROJECT_LOADING);
 		if (err != NULL) {
 			g_signal_emit_by_name (data->proj, "node-loaded", data->parent, err);
@@ -656,7 +666,6 @@ dir_project_load_directory_callback (GObject      *source_object,
 		g_list_free (removed);
 		g_object_unref (data->parent);
 		g_slice_free (DirData, data);
-		g_object_unref (enumerator);
 
 		return;
 	}
@@ -748,23 +757,76 @@ dir_project_load_directory_callback (GObject      *source_object,
 	                                    dir_project_load_directory_callback, data);
 }
 
+static gboolean dir_project_enumerate_directory (DirData* data);
+
+static void
+dir_project_enumerate_directory_callback (GObject      *source_object,
+                                          GAsyncResult *res,
+                                          gpointer      user_data)
+{
+	GFile *file = G_FILE(source_object);
+	GError *err = NULL;
+	DirData *data = (DirData *) user_data;
+	GFileEnumerator *enumerator;
+
+	enumerator = g_file_enumerate_children_finish (file, res, &err);
+	if (enumerator == NULL)
+	{
+		open_directories--;
+		if (err != NULL) {
+			if (g_error_matches (err, G_IO_ERROR, G_IO_ERROR_TOO_MANY_OPEN_FILES))
+			{
+				/* Retry later */
+				dir_project_enumerate_directory (data);
+			}
+			else
+			{
+				g_signal_emit_by_name (data->proj, "node-loaded", data->parent, err);
+			}
+			g_error_free (err);
+		}
+	}
+	else
+	{
+		g_file_enumerator_next_files_async (enumerator, NUM_FILES, G_PRIORITY_DEFAULT_IDLE, NULL,
+		                                    dir_project_load_directory_callback, data);
+	}
+}
+
+static gboolean
+dir_project_enumerate_directory (DirData* data)
+{
+	/* Limit the number of open directory to avoid the error
+	 * G_IO_ERROR_TOO_MANY_OPEN_FILES in other part of Anjuta.*/
+	if (open_directories < MAX_OPEN_DIRECTORIES)
+	{
+		open_directories++;
+		g_file_enumerate_children_async (data->parent->file,
+		                                 G_FILE_ATTRIBUTE_STANDARD_NAME,
+		                                 G_FILE_QUERY_INFO_NOFOLLOW_SYMLINKS,
+		                                 G_PRIORITY_DEFAULT_IDLE,
+		                                 NULL,
+		                                 dir_project_enumerate_directory_callback, data);
+	}
+	else
+	{
+		g_timeout_add_full (G_PRIORITY_DEFAULT_IDLE,
+		                    TIMEOUT_OPEN_DIRECTORIES,
+		                    (GSourceFunc)dir_project_enumerate_directory,
+		                    data,
+		                    NULL);
+	}
+
+	return FALSE;
+}
+
+
 /* Public functions
  *---------------------------------------------------------------------------*/
 
 static AnjutaProjectNode *
 dir_project_load_directory (DirProject *project, AnjutaProjectNode *parent, GError **error)
 {
-	GFileEnumerator *enumerator;
-
-	enumerator = g_file_enumerate_children (parent->file,
-	    G_FILE_ATTRIBUTE_STANDARD_NAME,
-	    G_FILE_QUERY_INFO_NOFOLLOW_SYMLINKS,
-	    NULL,
-	    error);
-
-	if (enumerator == NULL)
-		return parent;
-
 	/* mark all children as loading so we can remove them if no longer relevant */
 	AnjutaProjectNode *node;
 	for (node = anjuta_project_node_first_child (parent);
@@ -778,8 +840,7 @@ dir_project_load_directory (DirProject *project, AnjutaProjectNode *parent, GErr
 	data->proj = project;
 	data->parent = g_object_ref (parent);
 
-	g_file_enumerator_next_files_async (enumerator, NUM_FILES, G_PRIORITY_DEFAULT_IDLE, NULL,
-	                                    dir_project_load_directory_callback, data);
+	dir_project_enumerate_directory (data);
 
 	anjuta_project_node_set_state (parent, ANJUTA_PROJECT_LOADING);
 	return parent;
@@ -814,6 +875,7 @@ dir_project_load_root (DirProject *project, GError **error)
 	project->sources = dir_push_pattern_list (NULL, g_object_ref (root_file), source_file, FALSE, NULL);
 	g_object_unref (source_file);
 
+	open_directories = 0;
 	dir_group_node_set_file (ANJUTA_DIR_GROUP_NODE (project), root_file, G_OBJECT (project));
 	dir_project_load_directory (project, ANJUTA_PROJECT_NODE (project), NULL);
 
