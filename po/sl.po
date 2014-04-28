@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
 "POT-Creation-Date: 2014-04-03 14:38+0000\n"
-"PO-Revision-Date: 2014-04-03 20:59+0100\n"
+"PO-Revision-Date: 2014-04-28 21:13+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: Slovenian\n"
@@ -7288,6 +7288,8 @@ msgid ""
 "If empty, the user home directory is used. If the path is relative, it is "
 "relative to the home directory."
 msgstr ""
+"Če je polje prazno, je uporabljena domača mapa. Če je pot relativna, je "
+"relativna glede na domačo mapo."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
 msgid "Default user name used in new project"
@@ -7295,7 +7297,7 @@ msgstr "Privzeto uporabniško ime, uporabljeno v novem projektu"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
 msgid "If empty, the current user name is used."
-msgstr ""
+msgstr "Če je polje prazno, je uporabljeno trenutno uporabniško ime."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
 msgid "Default email used in new project"
@@ -7304,6 +7306,7 @@ msgstr "Privzet elektronski naslov, uporabljen v novem projektu"
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
 msgid "If empty, current login and machine name is used."
 msgstr ""
+"Če je polje prazno, je uporabljena trenutna prijava in ime računalnika."
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
