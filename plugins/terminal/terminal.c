@@ -142,6 +142,8 @@ strv_to_rgbav (const gchar **specs, gsize *size, GdkRGBA **colors)
 static void
 terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin *term_plugin)
 {
+	GSettingsSchemaSource *source;
+	GSettingsSchema *schema;
 	gchar *uuid;
 	gchar *path;
 	GSettings *profiles_list;
@@ -159,7 +161,17 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 
 	g_return_if_fail (settings != NULL);
 
-	profiles_list = g_settings_new (TERMINAL_PROFILES_LIST_SCHEMA);
+	/* Always autohide mouse */
+	vte_terminal_set_mouse_autohide (term, TRUE);
+
+	/* Check that terminal schemas really exist. They could be missing if gnome
+	 * terminal is not installed or there is an old version */
+	source = g_settings_schema_source_get_default ();
+	schema = g_settings_schema_source_lookup (source, TERMINAL_PROFILES_LIST_SCHEMA, TRUE);
+	if (schema == NULL) return;
+
+	profiles_list = g_settings_new_full (schema, NULL, NULL);
+	g_settings_schema_unref (schema);
 
 	/* Get selected profile */
 	bool_val = g_settings_get_boolean (settings, PREFS_TERMINAL_PROFILE_USE_DEFAULT);
@@ -171,9 +183,6 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 	profile_settings = g_settings_new_with_path (TERMINAL_PROFILE_SCHEMA, path);
 	g_free (uuid);
 	g_free (path);
-
-	/* Always autohide mouse */
-	vte_terminal_set_mouse_autohide (term, TRUE);
 
 	/* Set terminal font */
 	bool_val = g_settings_get_boolean (profile_settings, TERMINAL_PROFILE_USE_SYSTEM_FONT_KEY);
@@ -938,11 +947,13 @@ on_pref_profile_changed (GtkComboBox* combo, TerminalPlugin* term_plugin)
 static void
 ipreferences_merge(IAnjutaPreferences* ipref, AnjutaPreferences* prefs, GError** e)
 {
+	GSettingsSchemaSource *source;
+	GSettingsSchema *schema;
 	GSettings *terminal_settings;
 	GSettings *profile_settings;
 	GtkListStore *store;
 	GtkTreeIter iter;
-	gchar *default_uuid;
+	gchar *default_uuid = NULL;
 	gchar *saved_uuid;
 	gchar *temp;
 	gchar **profiles;
@@ -983,13 +994,20 @@ ipreferences_merge(IAnjutaPreferences* ipref, AnjutaPreferences* prefs, GError**
 	g_object_set (uuid_renderer, "style", PANGO_STYLE_ITALIC, NULL);
 
 	/* If at least a default profile exists ... */
-	terminal_settings = g_settings_new (TERMINAL_PROFILES_LIST_SCHEMA);
-	store = GTK_LIST_STORE (gtk_combo_box_get_model (GTK_COMBO_BOX (term_plugin->pref_profile_combo)));
-	default_uuid = g_settings_get_string (terminal_settings, "default");
+	source = g_settings_schema_source_get_default ();
+	schema = g_settings_schema_source_lookup (source, TERMINAL_PROFILES_LIST_SCHEMA, TRUE);
+	if (schema != NULL)
+	{
+		terminal_settings = g_settings_new_full (schema, NULL, NULL);
+		default_uuid = g_settings_get_string (terminal_settings, "default");
+		g_settings_schema_unref (schema);
+	}
+
 	if (default_uuid != NULL) {
 
 		/* Populate profiles store */
 		profiles = g_settings_get_strv (terminal_settings, "list");
+		store = GTK_LIST_STORE (gtk_combo_box_get_model (GTK_COMBO_BOX (term_plugin->pref_profile_combo)));
 		gtk_list_store_clear (store);
 		for (i = 0; profiles[i] != NULL; i ++) {
 			path = g_strdup_printf ("%s:%s/", TERMINAL_PROFILES_PATH_PREFIX, profiles[i]);
