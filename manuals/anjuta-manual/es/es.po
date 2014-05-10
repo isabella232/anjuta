@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta.help.master\n"
-"POT-Creation-Date: 2014-02-05 03:46+0000\n"
-"PO-Revision-Date: 2014-02-05 13:31+0100\n"
+"POT-Creation-Date: 2014-05-08 14:44+0000\n"
+"PO-Revision-Date: 2014-05-10 18:10+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Gtranslator 2.91.5\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -28,72 +28,65 @@ msgstr ""
 "Francisco Javier F. Serrador <fserrador@gmail.com>, 2012\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2007-2011"
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:23
-msgctxt "_"
-msgid ""
-"external ref='figures/anjuta_logo.png' md5='82636133d39ac4a688facd76954b8b29'"
-msgstr ""
-"external ref='figures/anjuta_logo.png' md5='82636133d39ac4a688facd76954b8b29'"
-
 #. (itstool) path: info/desc
-#: C/index.page:7
+#: C/index.page:8
 msgid "Help for Anjuta DevStudio."
 msgstr "Ayuda de Anjuta DevStudio."
 
 #. (itstool) path: info/title
-#: C/index.page:8
+#: C/index.page:9
 msgctxt "link"
 msgid "Anjuta"
 msgstr "Anjuta"
 
 #. (itstool) path: info/title
-#: C/index.page:9
+#: C/index.page:10
 msgctxt "text"
 msgid "Anjuta DevStudio"
 msgstr "Anjuta DevStudio"
 
 #. (itstool) path: credit/name
-#: C/index.page:13 C/anjuta-code-assist.page:13 C/anjuta-code-help.page:14
+#: C/index.page:14 C/anjuta-code-assist.page:13 C/anjuta-code-help.page:14
 #: C/anjuta-code-indentation.page:14 C/anjuta-code-symbols.page:13
 msgid "Johannes Schmid"
 msgstr "Johannes Schmid"
 
+#. (itstool) path: media/span
+#: C/index.page:24
+#| msgctxt "link"
+#| msgid "Anjuta"
+msgid "Anjuta logo"
+msgstr "Logo de Anjuta"
+
 #. (itstool) path: page/title
-#: C/index.page:22
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/anjuta_logo.png"
-"\">Anjuta logo</media> Anjuta DevStudio"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/anjuta_logo.png"
-"\">Logotipo de Anjuta</media> Anjuta DevStudio"
+#: C/index.page:23
+#| msgctxt "text"
+#| msgid "Anjuta DevStudio"
+msgid "<_:media-1/> Anjuta DevStudio"
+msgstr "<_:media-1/> Anjuta DevStudio"
 
 #. (itstool) path: section/title
-#: C/index.page:28
+#: C/index.page:29
 msgid "Project Management"
 msgstr "Gestión de proyectos"
 
 #. (itstool) path: section/title
-#: C/index.page:32
+#: C/index.page:33
 msgid "Coding and code navigation"
 msgstr "Programar y código de navegación"
 
 #. (itstool) path: section/title
-#: C/index.page:36
+#: C/index.page:37
 msgid "Building Project"
 msgstr "Construir el proyecto"
 
 #. (itstool) path: section/title
-#: C/index.page:40
+#: C/index.page:41
 msgid "Debugging Program"
 msgstr "Programa de depuración"
 
 #. (itstool) path: section/title
-#: C/index.page:50
+#: C/index.page:51
 msgid "Reference"
 msgstr "Referencias"
 
@@ -337,7 +330,6 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/anjuta-code-symbols.page:9
-#| msgid "Efficient ways to nagivate through source code"
 msgid "Efficient ways to navigate through source code"
 msgstr "Formas eficientes de navegar por el código fuente"
 
@@ -867,7 +859,7 @@ msgid ""
 "value overrides the one eventually defined in the parent folder."
 msgstr ""
 "Las opciones que pasar al compilador de C al compilar los archivos de fuente "
-"objetivos. Este valor sobreescribe los que se puedan definir eventualmente "
+"objetivos. Este valor sobrescribe los que se puedan definir eventualmente "
 "en la carpeta padre."
 
 #. (itstool) path: item/p
@@ -877,7 +869,7 @@ msgid ""
 "This value overrides the one eventually defined in the parent folder."
 msgstr ""
 "Estas opciones se pasan a cada compilación que invoque al preprocesador de "
-"C. Este valor sobreescribe los que se puedan definir eventualmente en la "
+"C. Este valor sobrescribe los que se puedan definir eventualmente en la "
 "carpeta padre."
 
 #. (itstool) path: item/p
@@ -887,7 +879,7 @@ msgid ""
 "files. This value overrides the one eventually defined in the parent folder."
 msgstr ""
 "Las opciones que pasar al compilador de C++ al compilar los archivos de "
-"fuente objetivos. Este valor sobreescribe los que se puedan definir "
+"fuente objetivos. Este valor sobrescribe los que se puedan definir "
 "eventualmente en la carpeta padre."
 
 #. (itstool) path: item/title
@@ -927,7 +919,7 @@ msgid ""
 "files. This value overrides the one eventually defined in the parent folder."
 msgstr ""
 "Las opciones que pasar al compilador de Fortran 9x al compilar los archivos "
-"de fuente objetivos. Este valor sobreescribe los que se puedan definir "
+"de fuente objetivos. Este valor sobrescribe los que se puedan definir "
 "eventualmente en la carpeta padre."
 
 #. (itstool) path: item/title
@@ -967,7 +959,7 @@ msgid ""
 "This value overrides the one eventually defined in the parent folder."
 msgstr ""
 "Las opciones que pasar al compilador de Java al compilar los archivos de "
-"fuente objetivos. Este valor sobreescribe los que se puedan definir "
+"fuente objetivos. Este valor sobrescribe los que se puedan definir "
 "eventualmente en la carpeta padre."
 
 #. (itstool) path: item/title
@@ -992,7 +984,7 @@ msgid ""
 "parent folder."
 msgstr ""
 "Las opciones que pasar al analizador Lex o Flex al generar los objetivos. "
-"Este valor sobreescribe los que se puedan definir eventualmente en la "
+"Este valor sobrescribe los que se puedan definir eventualmente en la "
 "carpeta padre."
 
 #. (itstool) path: item/title
@@ -1018,7 +1010,7 @@ msgid ""
 "overrides the one eventually defined in the parent folder."
 msgstr ""
 "Las opciones que pasar al enlazador al enlazar los objetivos. Este valor "
-"sobreescribe los que se puedan definir eventualmente en la carpeta padre."
+"sobrescribe los que se puedan definir eventualmente en la carpeta padre."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:105
@@ -1041,7 +1033,7 @@ msgid ""
 "files. This value overrides the one eventually defined in the parent folder."
 msgstr ""
 "Las opciones que pasar al compilador de Objetive C al compilar los archivos "
-"de fuente objetivos. Este valor sobreescribe los que se puedan definir "
+"de fuente objetivos. Este valor sobrescribe los que se puedan definir "
 "eventualmente en la carpeta padre."
 
 #. (itstool) path: item/p
@@ -1051,7 +1043,7 @@ msgid ""
 "This value overrides the one eventually defined in the parent folder."
 msgstr ""
 "Las opciones que pasar al compilador de Vala al compilar los archivos de "
-"fuente objetivos. Este valor sobreescribe los que se puedan definir "
+"fuente objetivos. Este valor sobrescribe los que se puedan definir "
 "eventualmente en la carpeta padre."
 
 #. (itstool) path: item/p
@@ -1062,7 +1054,7 @@ msgid ""
 "parent folder."
 msgstr ""
 "Las opciones que pasar al compilador de Bison o Yacc al compilar los "
-"archivos de fuente objetivos. Este valor sobreescribe los que se puedan "
+"archivos de fuente objetivos. Este valor sobrescribe los que se puedan "
 "definir eventualmente en la carpeta padre."
 
 #. (itstool) path: info/desc
@@ -5781,6 +5773,21 @@ msgstr "Todas las ventanas y diálogos."
 #: C/widget-index.page:16
 msgid "Windows and dialogs"
 msgstr "Ventanas y diálogos"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/anjuta_logo.png' "
+#~ "md5='82636133d39ac4a688facd76954b8b29'"
+#~ msgstr ""
+#~ "external ref='figures/anjuta_logo.png' "
+#~ "md5='82636133d39ac4a688facd76954b8b29'"
+
+#~ msgid ""
+#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/anjuta_logo.png"
+#~ "\">Anjuta logo</media> Anjuta DevStudio"
+#~ msgstr ""
+#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/anjuta_logo.png"
+#~ "\">Logotipo de Anjuta</media> Anjuta DevStudio"
 
 #~ msgid "User interface editor"
 #~ msgstr "Editor de interfaces de usuario"
