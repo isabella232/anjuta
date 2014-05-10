@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-10 21:58+0200\n"
-"PO-Revision-Date: 2014-03-21 06:56+0100\n"
+"POT-Creation-Date: 2014-05-10 22:03+0200\n"
+"PO-Revision-Date: 2014-05-10 22:02+0200\n"
 "Last-Translator: Pau Iranzo <paugnu@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca-XV\n"
@@ -6330,9 +6330,9 @@ msgid "Messages"
 msgstr "Missatges"
 
 #: ../plugins/message-view/message-view.c:869
-#, fuzzy, c-format
+#, c-format
 msgid "Error writing %s"
-msgstr "Error: %s"
+msgstr "S'ha produït un error en escriure %s"
 
 #: ../plugins/message-view/plugin.c:79
 msgid "_Copy Message"
@@ -6359,14 +6359,12 @@ msgid "Previous message"
 msgstr "Missatge anterior"
 
 #: ../plugins/message-view/plugin.c:91
-#, fuzzy
 msgid "_Save Message"
-msgstr "Missatge següe_nt"
+msgstr "Al_ça el missatge"
 
 #: ../plugins/message-view/plugin.c:92
-#, fuzzy
 msgid "Save message"
-msgstr "Missatge següent"
+msgstr "Guarda el missatge"
 
 #: ../plugins/message-view/plugin.c:168
 msgid "Next/Previous Message"
@@ -9890,7 +9888,6 @@ msgid "Command line parameters"
 msgstr "Paràmetres de la línia d'ordes"
 
 #: ../src/about.c:201
-#, fuzzy
 msgid "Copyright (c) Naba Kumar"
 msgstr "Copyright (c) Naba Kumar"
 
@@ -10166,13 +10163,3 @@ msgstr "Només icones"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Només text"
-
-#, fuzzy
-#~| msgid "_Copy Message"
-#~ msgid "_Copy All Messages"
-#~ msgstr "_Copia el missatge"
-
-#, fuzzy
-#~| msgid "_Copy Message"
-#~ msgid "Copy All Messages"
-#~ msgstr "_Copia el missatge"
