@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-05-01 09:24+0000\n"
-"PO-Revision-Date: 2014-03-21 06:56+0100\n"
+"POT-Creation-Date: 2014-05-10 19:58+0000\n"
+"PO-Revision-Date: 2014-05-10 22:02+0200\n"
 "Last-Translator: Pau Iranzo <paugnu@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -32,9 +32,9 @@ msgstr ""
 "L'Anjuta DevStudio és un estudi de desenvolupament versàtil que inclou una "
 "sèrie d'ajudes avançades a la programació incloent la gestió de projectes, "
 "l'auxiliar de creació d'aplicacions, el depurador interactiu, l'editor de "
-"codi font, el control de versions, el dissenyador d'interfícies, el perfilador "
-"i moltes altres eines. Se centra en proporcionar una interfície senzilla i "
-"usable, a la vegada que potent per a un desenvolupament eficient."
+"codi font, el control de versions, el dissenyador d'interfícies, el "
+"perfilador i moltes altres eines. Se centra en proporcionar una interfície "
+"senzilla i usable, a la vegada que potent per a un desenvolupament eficient."
 
 #: ../anjuta.appdata.xml.in.h:2
 msgid ""
@@ -47,12 +47,12 @@ msgid ""
 msgstr ""
 "L'Anjuta és molt extensible amb connectors. Gairebé totes les "
 "característiques de l'Anjuta estan implementades mitjançant connectors que "
-"es poden activar dinàmicament. Podeu triar quins connectors s'han "
-"activar per el vostre projecte. La interfície d'usuari, així com "
-"el conjunt de connectors actius són persistents per cada projecte, fent "
-"que sigui molt fàcil treballar en diferents projectes amb diferents nivells "
-"de complexitat. Podeu ampliar l'Anjuta amb les vostres pròpies "
-"funcions fent servir connectors."
+"es poden activar dinàmicament. Podeu triar quins connectors s'han activar "
+"per el vostre projecte. La interfície d'usuari, així com el conjunt de "
+"connectors actius són persistents per cada projecte, fent que sigui molt "
+"fàcil treballar en diferents projectes amb diferents nivells de complexitat. "
+"Podeu ampliar l'Anjuta amb les vostres pròpies funcions fent servir "
+"connectors."
 
 #: ../anjuta.appdata.xml.in.h:3
 msgid ""
@@ -70,7 +70,7 @@ msgstr ""
 msgid "Anjuta"
 msgstr "Anjuta"
 
-#: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
+#: ../anjuta.desktop.in.in.h:2 ../src/about.c:203
 msgid "Integrated Development Environment"
 msgstr "Entorn integrat de desenvolupament"
 
@@ -683,47 +683,47 @@ msgid "Unable to load user interface file: %s"
 msgstr "No es pot carregar el fitxer de la interfície d'usuari: %s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
-#: ../plugins/file-manager/file-view.c:80 ../plugins/git/git-status-pane.c:182
+#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:182
 msgid "Modified"
 msgstr "Modificat"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:95
-#: ../plugins/file-manager/file-view.c:84 ../plugins/git/git-status-pane.c:185
+#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:185
 msgid "Added"
 msgstr "Afegit"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:98
-#: ../plugins/file-manager/file-view.c:82 ../plugins/git/git-status-pane.c:188
+#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:188
 msgid "Deleted"
 msgstr "Suprimit"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:101
-#: ../plugins/file-manager/file-view.c:86 ../plugins/git/git-status-pane.c:191
+#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:191
 msgid "Conflicted"
 msgstr "Amb conflictes"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:105
-#: ../plugins/file-manager/file-view.c:88 ../plugins/git/git-status-pane.c:195
+#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:195
 msgid "Up-to-date"
 msgstr "Actualitzat"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:109
-#: ../plugins/file-manager/file-view.c:90 ../plugins/git/git-status-pane.c:199
+#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:199
 msgid "Locked"
 msgstr "Blocat"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:112
-#: ../plugins/file-manager/file-view.c:92 ../plugins/git/git-status-pane.c:202
+#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:202
 msgid "Missing"
 msgstr "Falta"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:115
-#: ../plugins/file-manager/file-view.c:94 ../plugins/git/git-status-pane.c:205
+#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:205
 msgid "Unversioned"
 msgstr "Sense versió"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:119
-#: ../plugins/file-manager/file-view.c:96 ../plugins/git/git-status-pane.c:209
+#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:209
 msgid "Ignored"
 msgstr "Ignorat"
 
@@ -756,8 +756,8 @@ msgstr ""
 #: ../plugins/am-project/amp-group.c:665
 #: ../plugins/am-project/am-project.c:1680
 #: ../plugins/am-project/am-project.c:1773
-#: ../plugins/dir-project/dir-project.c:862
-#: ../plugins/dir-project/dir-project.c:996
+#: ../plugins/dir-project/dir-project.c:801
+#: ../plugins/dir-project/dir-project.c:934
 #: ../plugins/mk-project/mk-project.c:725
 #: ../plugins/mk-project/mk-project.c:802
 #: ../plugins/mk-project/mk-project.c:876
@@ -770,13 +770,13 @@ msgid "Root"
 msgstr "Arrel"
 
 #: ../plugins/am-project/am-project.c:98
-#: ../plugins/dir-project/dir-project.c:1007
+#: ../plugins/dir-project/dir-project.c:945
 #: ../plugins/mk-project/mk-project.c:66
 msgid "Group"
 msgstr "Grup"
 
 #: ../plugins/am-project/am-project.c:106
-#: ../plugins/dir-project/dir-project.c:1011
+#: ../plugins/dir-project/dir-project.c:949
 #: ../plugins/mk-project/mk-project.c:71
 msgid "Source"
 msgstr "Font"
@@ -1421,7 +1421,7 @@ msgid "Basic autotools build plugin."
 msgstr "Connector bàsic de muntat de les autotools."
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:3
-#: ../plugins/run-program/plugin.c:298
+#: ../plugins/run-program/plugin.c:274
 msgid "Execute"
 msgstr "Executa"
 
@@ -1499,7 +1499,7 @@ msgstr "Instal·la com a usuari primari:"
 msgid "Install"
 msgstr "Instal·la"
 
-#: ../plugins/build-basic-autotools/build.c:578
+#: ../plugins/build-basic-autotools/build.c:527
 msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
 "you want to do that ?"
@@ -1507,20 +1507,20 @@ msgstr ""
 "Si utilitzeu aquesta configuració nova s'haurà de suprimir la per defecte. "
 "Voleu fer-ho?"
 
-#: ../plugins/build-basic-autotools/build.c:583
-#: ../plugins/build-basic-autotools/plugin.c:970
+#: ../plugins/build-basic-autotools/build.c:532
+#: ../plugins/build-basic-autotools/plugin.c:987
 #, c-format
 msgid "Command canceled by user"
 msgstr "L'usuari ha cancel·lat l'ordre"
 
-#: ../plugins/build-basic-autotools/build.c:933
+#: ../plugins/build-basic-autotools/build.c:882
 #, c-format
 msgid "Cannot compile \"%s\": No compile rule defined for this file type."
 msgstr ""
 "No es pot compilar «%s»: No s'ha definit cap regla de compilació per a "
 "aquest tipus de fitxer."
 
-#: ../plugins/build-basic-autotools/build.c:1107
+#: ../plugins/build-basic-autotools/build.c:1056
 #, c-format
 msgid "Cannot configure project: Missing configure script in %s."
 msgstr "No es pot configurar el projecte: manca l'script de configuració a %s."
@@ -1634,12 +1634,12 @@ msgstr "make(\\[\\d+\\])?:\\s+S'està\\s+sortint\\s+del\\s+directori\\s+`(.+)'"
 msgid "make(\\[\\d+\\])?:\\s+Leaving\\s+directory\\s+'(.+)'"
 msgstr "make(\\[\\d+\\])?:\\s+S'està\\s+sortint\\s+del\\s+directori\\s+'(.+)'"
 
-#: ../plugins/build-basic-autotools/plugin.c:733
+#: ../plugins/build-basic-autotools/plugin.c:750
 #, c-format
 msgid "Entering: %s"
 msgstr "S'està entrant: %s"
 
-#: ../plugins/build-basic-autotools/plugin.c:769
+#: ../plugins/build-basic-autotools/plugin.c:786
 #, c-format
 msgid "Leaving: %s"
 msgstr "S'està sortint: %s"
@@ -1649,12 +1649,12 @@ msgstr "S'està sortint: %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
+#: ../plugins/build-basic-autotools/plugin.c:824
 #: ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "avís:"
 
-#: ../plugins/build-basic-autotools/plugin.c:808
+#: ../plugins/build-basic-autotools/plugin.c:825
 msgid "warning:-old"
 msgstr "avís:-antic"
 
@@ -1663,264 +1663,264 @@ msgstr "avís:-antic"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
+#: ../plugins/build-basic-autotools/plugin.c:836
 #: ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "errors:"
 
-#: ../plugins/build-basic-autotools/plugin.c:820
+#: ../plugins/build-basic-autotools/plugin.c:837
 msgid "error:-old"
 msgstr "error:-antic"
 
-#: ../plugins/build-basic-autotools/plugin.c:960
+#: ../plugins/build-basic-autotools/plugin.c:977
 #, c-format
 msgid "Command exited with status %d"
 msgstr "L'ordre ha sortit amb l'estat %d"
 
-#: ../plugins/build-basic-autotools/plugin.c:975
+#: ../plugins/build-basic-autotools/plugin.c:992
 #, c-format
 msgid "Command aborted by user"
 msgstr "Ordre interrompuda per l'usuari"
 
-#: ../plugins/build-basic-autotools/plugin.c:980
+#: ../plugins/build-basic-autotools/plugin.c:997
 #, c-format
 msgid "Command terminated with signal %d"
 msgstr "L'ordre ha acabat amb el senyal %d"
 
-#: ../plugins/build-basic-autotools/plugin.c:988
+#: ../plugins/build-basic-autotools/plugin.c:1005
 msgid "Command terminated for an unknown reason"
 msgstr "Ordre acabada per una raó desconeguda"
 
-#: ../plugins/build-basic-autotools/plugin.c:1006
+#: ../plugins/build-basic-autotools/plugin.c:1023
 #, c-format
 msgid "Total time taken: %lu secs\n"
 msgstr "Temps total: %lu segons\n"
 
-#: ../plugins/build-basic-autotools/plugin.c:1013
+#: ../plugins/build-basic-autotools/plugin.c:1030
 msgid "Completed unsuccessfully\n"
 msgstr "No s'ha completat correctament\n"
 
-#: ../plugins/build-basic-autotools/plugin.c:1021
+#: ../plugins/build-basic-autotools/plugin.c:1038
 #: ../plugins/tools/execute.c:516
 msgid "Completed successfully\n"
 msgstr "S'ha completat correctament\n"
 
 #. Translators: the first number is the number of the build attemp,
 #. the string is the directory where the build takes place
-#: ../plugins/build-basic-autotools/plugin.c:1103
+#: ../plugins/build-basic-autotools/plugin.c:1120
 #, c-format
 msgid "Build %d: %s"
 msgstr "Munta %d: %s"
 
-#: ../plugins/build-basic-autotools/plugin.c:1667
-#: ../plugins/build-basic-autotools/plugin.c:1753
-#: ../plugins/build-basic-autotools/plugin.c:1763
-#: ../plugins/build-basic-autotools/plugin.c:1781
-#: ../plugins/build-basic-autotools/plugin.c:1791
-#: ../plugins/build-basic-autotools/plugin.c:1873
+#: ../plugins/build-basic-autotools/plugin.c:1691
+#: ../plugins/build-basic-autotools/plugin.c:1777
+#: ../plugins/build-basic-autotools/plugin.c:1787
+#: ../plugins/build-basic-autotools/plugin.c:1805
+#: ../plugins/build-basic-autotools/plugin.c:1815
+#: ../plugins/build-basic-autotools/plugin.c:1897
 #, c-format
 msgid "_Build"
 msgstr "_Munta"
 
-#: ../plugins/build-basic-autotools/plugin.c:1671
+#: ../plugins/build-basic-autotools/plugin.c:1695
 msgid "_Build Project"
 msgstr "_Munta el projecte"
 
-#: ../plugins/build-basic-autotools/plugin.c:1672
+#: ../plugins/build-basic-autotools/plugin.c:1696
 msgid "Build whole project"
 msgstr "Munta el projecte sencer"
 
-#: ../plugins/build-basic-autotools/plugin.c:1677
+#: ../plugins/build-basic-autotools/plugin.c:1701
 msgid "_Install Project"
 msgstr "_Instal·la el projecte"
 
-#: ../plugins/build-basic-autotools/plugin.c:1678
+#: ../plugins/build-basic-autotools/plugin.c:1702
 msgid "Install whole project"
 msgstr "Instal·la el projecte sencer"
 
-#: ../plugins/build-basic-autotools/plugin.c:1683
+#: ../plugins/build-basic-autotools/plugin.c:1707
 msgid "_Check Project"
 msgstr "_Comprova el projecte"
 
-#: ../plugins/build-basic-autotools/plugin.c:1684
+#: ../plugins/build-basic-autotools/plugin.c:1708
 msgid "Check whole project"
 msgstr "Comprova el projecte sencer"
 
-#: ../plugins/build-basic-autotools/plugin.c:1689
+#: ../plugins/build-basic-autotools/plugin.c:1713
 msgid "_Clean Project"
 msgstr "Neteja el proje_cte"
 
-#: ../plugins/build-basic-autotools/plugin.c:1690
+#: ../plugins/build-basic-autotools/plugin.c:1714
 msgid "Clean whole project"
 msgstr "Neteja el projecte sencer"
 
-#: ../plugins/build-basic-autotools/plugin.c:1695
+#: ../plugins/build-basic-autotools/plugin.c:1719
 msgid "C_onfigure Project…"
 msgstr "C_onfigura el projecte…"
 
-#: ../plugins/build-basic-autotools/plugin.c:1696
+#: ../plugins/build-basic-autotools/plugin.c:1720
 msgid "Configure project"
 msgstr "Configura el projecte"
 
-#: ../plugins/build-basic-autotools/plugin.c:1701
+#: ../plugins/build-basic-autotools/plugin.c:1725
 msgid "Build _Tarball"
 msgstr "Mun_ta un fitxer tar"
 
-#: ../plugins/build-basic-autotools/plugin.c:1702
+#: ../plugins/build-basic-autotools/plugin.c:1726
 msgid "Build project tarball distribution"
 msgstr "Munta el fitxer tar de distribució"
 
-#: ../plugins/build-basic-autotools/plugin.c:1707
+#: ../plugins/build-basic-autotools/plugin.c:1731
 msgid "_Build Module"
 msgstr "_Munta el mòdul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1708
+#: ../plugins/build-basic-autotools/plugin.c:1732
 msgid "Build module associated with current file"
 msgstr "Munta el mòdul associat al fitxer actual"
 
-#: ../plugins/build-basic-autotools/plugin.c:1713
+#: ../plugins/build-basic-autotools/plugin.c:1737
 msgid "_Install Module"
 msgstr "_Instal·la el mòdul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1714
+#: ../plugins/build-basic-autotools/plugin.c:1738
 msgid "Install module associated with current file"
 msgstr "Instal·la el mòdul associat al fitxer actual"
 
-#: ../plugins/build-basic-autotools/plugin.c:1719
+#: ../plugins/build-basic-autotools/plugin.c:1743
 msgid "_Check Module"
 msgstr "_Comprova el mòdul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1720
+#: ../plugins/build-basic-autotools/plugin.c:1744
 msgid "Check module associated with current file"
 msgstr "Comprova el mòdul associat al fitxer actual"
 
-#: ../plugins/build-basic-autotools/plugin.c:1725
+#: ../plugins/build-basic-autotools/plugin.c:1749
 msgid "_Clean Module"
 msgstr "_Neteja el mòdul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1726
+#: ../plugins/build-basic-autotools/plugin.c:1750
 msgid "Clean module associated with current file"
 msgstr "Neteja el mòdul associat al fitxer actual"
 
-#: ../plugins/build-basic-autotools/plugin.c:1731
+#: ../plugins/build-basic-autotools/plugin.c:1755
 msgid "Co_mpile File"
 msgstr "Co_mpila el fitxer"
 
-#: ../plugins/build-basic-autotools/plugin.c:1732
+#: ../plugins/build-basic-autotools/plugin.c:1756
 msgid "Compile current editor file"
 msgstr "Compila el fitxer actual de l'editor"
 
-#: ../plugins/build-basic-autotools/plugin.c:1737
+#: ../plugins/build-basic-autotools/plugin.c:1761
 msgid "Select Configuration"
 msgstr "Seleccioneu la configuració"
 
-#: ../plugins/build-basic-autotools/plugin.c:1738
+#: ../plugins/build-basic-autotools/plugin.c:1762
 msgid "Select current configuration"
 msgstr "Selecciona la configuració actual"
 
-#: ../plugins/build-basic-autotools/plugin.c:1743
+#: ../plugins/build-basic-autotools/plugin.c:1767
 msgid "Remove Configuration"
 msgstr "Suprimeix la configuració"
 
-#: ../plugins/build-basic-autotools/plugin.c:1744
+#: ../plugins/build-basic-autotools/plugin.c:1768
 msgid ""
 "Clean project (distclean) and remove configuration directory if possible"
 msgstr ""
 "Neteja el projecte (distclean) i suprimeix el directori de configuració si "
 "és possible"
 
-#: ../plugins/build-basic-autotools/plugin.c:1757
-#: ../plugins/build-basic-autotools/plugin.c:1785
+#: ../plugins/build-basic-autotools/plugin.c:1781
+#: ../plugins/build-basic-autotools/plugin.c:1809
 msgid "_Compile"
 msgstr "_Compila"
 
-#: ../plugins/build-basic-autotools/plugin.c:1758
-#: ../plugins/build-basic-autotools/plugin.c:1786
+#: ../plugins/build-basic-autotools/plugin.c:1782
+#: ../plugins/build-basic-autotools/plugin.c:1810
 msgid "Compile file"
 msgstr "Compila el fitxer"
 
-#: ../plugins/build-basic-autotools/plugin.c:1764
-#: ../plugins/build-basic-autotools/plugin.c:1792
+#: ../plugins/build-basic-autotools/plugin.c:1788
+#: ../plugins/build-basic-autotools/plugin.c:1816
 msgid "Build module"
 msgstr "Munta el mòdul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1769
-#: ../plugins/build-basic-autotools/plugin.c:1797
-#: ../plugins/build-basic-autotools/plugin.c:1880
+#: ../plugins/build-basic-autotools/plugin.c:1793
+#: ../plugins/build-basic-autotools/plugin.c:1821
+#: ../plugins/build-basic-autotools/plugin.c:1904
 #, c-format
 msgid "_Install"
 msgstr "_Instal·la"
 
-#: ../plugins/build-basic-autotools/plugin.c:1770
-#: ../plugins/build-basic-autotools/plugin.c:1798
+#: ../plugins/build-basic-autotools/plugin.c:1794
+#: ../plugins/build-basic-autotools/plugin.c:1822
 msgid "Install module"
 msgstr "Instal·la el mòdul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1775
-#: ../plugins/build-basic-autotools/plugin.c:1809
-#: ../plugins/build-basic-autotools/plugin.c:1887
+#: ../plugins/build-basic-autotools/plugin.c:1799
+#: ../plugins/build-basic-autotools/plugin.c:1833
+#: ../plugins/build-basic-autotools/plugin.c:1911
 #, c-format
 msgid "_Clean"
 msgstr "Nete_ja"
 
-#: ../plugins/build-basic-autotools/plugin.c:1776
-#: ../plugins/build-basic-autotools/plugin.c:1810
+#: ../plugins/build-basic-autotools/plugin.c:1800
+#: ../plugins/build-basic-autotools/plugin.c:1834
 msgid "Clean module"
 msgstr "Neteja el mòdul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1803
+#: ../plugins/build-basic-autotools/plugin.c:1827
 msgid "_Check"
 msgstr "_Obtén"
 
-#: ../plugins/build-basic-autotools/plugin.c:1804
+#: ../plugins/build-basic-autotools/plugin.c:1828
 msgid "Check module"
 msgstr "Obtén el mòdul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1815
+#: ../plugins/build-basic-autotools/plugin.c:1839
 msgid "_Cancel command"
 msgstr "_Cancel·la l'ordre"
 
-#: ../plugins/build-basic-autotools/plugin.c:1816
+#: ../plugins/build-basic-autotools/plugin.c:1840
 msgid "Cancel build command"
 msgstr "Cancel·la l'ordre de muntatge"
 
-#: ../plugins/build-basic-autotools/plugin.c:1873
+#: ../plugins/build-basic-autotools/plugin.c:1897
 #, c-format
 msgid "_Build (%s)"
 msgstr "_Munta (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1880
+#: ../plugins/build-basic-autotools/plugin.c:1904
 #, c-format
 msgid "_Install (%s)"
 msgstr "_Instal·la (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1887
+#: ../plugins/build-basic-autotools/plugin.c:1911
 #, c-format
 msgid "_Clean (%s)"
 msgstr "Nete_ja (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1895
+#: ../plugins/build-basic-autotools/plugin.c:1919
 #, c-format
 msgid "Co_mpile (%s)"
 msgstr "Co_mpila (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1895
+#: ../plugins/build-basic-autotools/plugin.c:1919
 #, c-format
 msgid "Co_mpile"
 msgstr "Co_mpila"
 
-#: ../plugins/build-basic-autotools/plugin.c:2493
+#: ../plugins/build-basic-autotools/plugin.c:2517
 msgid "Build commands"
 msgstr "Ordres per muntar"
 
 #. Translators: This is a group of build
 #. * commands which appears in pop up menus
-#: ../plugins/build-basic-autotools/plugin.c:2502
+#: ../plugins/build-basic-autotools/plugin.c:2526
 msgid "Build popup commands"
 msgstr "Ordres emergents per muntar"
 
-#: ../plugins/build-basic-autotools/plugin.c:2946
-#: ../plugins/build-basic-autotools/plugin.c:2954
+#: ../plugins/build-basic-autotools/plugin.c:2970
+#: ../plugins/build-basic-autotools/plugin.c:2978
 msgid "Build Autotools"
 msgstr "Munta les autotools"
 
@@ -2137,7 +2137,7 @@ msgstr "Plantilla de l'autogen utilitzada per al fitxer d'implementació"
 msgid "File to which the processed template will be written"
 msgstr "Fitxer on s'escriurà la plantilla processada"
 
-#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1368
+#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1373
 msgid ""
 "Could not find autogen version 5; please install the autogen package. You "
 "can get it from http://autogen.sourceforge.net."
@@ -3545,8 +3545,8 @@ msgstr "API"
 msgid "Missing name"
 msgstr "Manca el nom"
 
-#: ../plugins/dir-project/dir-project.c:1132
-#: ../plugins/dir-project/dir-project.c:1142
+#: ../plugins/dir-project/dir-project.c:1070
+#: ../plugins/dir-project/dir-project.c:1080
 #: ../plugins/mk-project/mk-project.c:1024
 #: ../plugins/mk-project/mk-project.c:1034
 #, c-format
@@ -3597,7 +3597,7 @@ msgid "Rename"
 msgstr "Canvia el nom"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:363
-#: ../plugins/git/plugin.c:173
+#: ../plugins/git/plugin.c:172
 #: ../plugins/snippets-manager/snippets-editor.ui.h:19
 msgid "Remove"
 msgstr "Suprimeix"
@@ -3629,6 +3629,7 @@ msgid "Open file"
 msgstr "Obre un fitxer"
 
 #: ../plugins/document-manager/anjuta-docman.c:909
+#: ../plugins/message-view/message-view.c:100
 msgid "Save file as"
 msgstr "Anomena i desa"
 
@@ -4098,7 +4099,7 @@ msgstr "Retalla el text seleccionat de l'editor al porta-retalls"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:592
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:583
 msgid "_Copy"
 msgstr "_Copia"
 
@@ -4106,7 +4107,7 @@ msgstr "_Copia"
 msgid "Copy the selected text to the clipboard"
 msgstr "Copia el text seleccionat al porta-retalls"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:600
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:591
 msgid "_Paste"
 msgstr "_Enganxa"
 
@@ -4368,7 +4369,7 @@ msgid "Replace all"
 msgstr "Reemplaça'ls tots"
 
 #: ../plugins/document-manager/search-files.c:616
-#: ../plugins/file-manager/file-view.c:892
+#: ../plugins/file-manager/file-view.c:804
 msgid "Filename"
 msgstr "Nom del fitxer"
 
@@ -4613,7 +4614,7 @@ msgid "Open With"
 msgstr "Obre amb"
 
 #: ../plugins/file-manager/file-manager.plugin.in.h:1
-#: ../plugins/file-manager/plugin.c:538 ../plugins/file-manager/plugin.c:547
+#: ../plugins/file-manager/plugin.c:543 ../plugins/file-manager/plugin.c:552
 msgid "File Manager"
 msgstr "Gestor de fitxers"
 
@@ -4664,25 +4665,14 @@ msgid "Loading..."
 msgstr "S'està carregant..."
 
 #: ../plugins/file-manager/file-model.c:708
-#: ../plugins/file-manager/file-view.c:980
+#: ../plugins/file-manager/file-view.c:892
 msgid "Base Path"
 msgstr "Camí base"
 
 #: ../plugins/file-manager/file-model.c:709
-#: ../plugins/file-manager/file-view.c:981
+#: ../plugins/file-manager/file-view.c:893
 msgid "GFile representing the top-most path displayed"
 msgstr "El GFile que representa el camí de nivell superior màxim que es mostra"
-
-#. You try to rename "/"
-#: ../plugins/file-manager/file-view.c:139
-msgid "You can't rename \"/\"!"
-msgstr ""
-
-#: ../plugins/file-manager/file-view.c:153
-msgid ""
-"An error has occured!\n"
-"Maybe you permissions're insuficient or the filename is wrong"
-msgstr ""
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
@@ -4700,12 +4690,12 @@ msgstr "_Mostra en el gestor de fitxers"
 msgid "Show in File manager"
 msgstr "Mostra en el gestor de fitxers"
 
-#: ../plugins/file-manager/plugin.c:366
+#: ../plugins/file-manager/plugin.c:371
 msgid "File manager popup actions"
 msgstr "Accions emergents del gestor de fitxers"
 
 # Mozilla 1.3->sidebar.files.label
-#: ../plugins/file-manager/plugin.c:399 ../plugins/git/plugin.c:157
+#: ../plugins/file-manager/plugin.c:404 ../plugins/git/plugin.c:156
 msgid "Files"
 msgstr "Fitxers"
 
@@ -5216,7 +5206,7 @@ msgstr "Carpeta on crear els pedaços:"
 msgid "Repository to pull from:"
 msgstr "Dipòsit des d'on estirar:"
 
-#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:273
+#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:272
 msgid "Rebase"
 msgstr "Ajusta a la base"
 
@@ -5354,7 +5344,7 @@ msgstr "Introduïu el nom de l'autor de la publicació"
 msgid "Please enter the commit author's e-mail address."
 msgstr "Introduïu l'adreça electrònica de l'autor de la publicació."
 
-#: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:149
+#: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:148
 msgid "Commit"
 msgstr "Publica els canvis"
 
@@ -5408,7 +5398,7 @@ msgstr "<b>Etiqueta:</b> %s"
 msgid "<b>Remote:</b> %s"
 msgstr "<b>Ubicació remota:</b> %s"
 
-#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:100
+#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:99
 msgid "Merge"
 msgstr "Combina"
 
@@ -5432,11 +5422,11 @@ msgstr "Control de versions Git"
 msgid "Please enter a URL."
 msgstr "Introduïu un URL."
 
-#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:257
+#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:256
 msgid "Pull"
 msgstr "Estira"
 
-#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:249
+#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:248
 msgid "Push"
 msgstr "Empeny"
 
@@ -5482,7 +5472,7 @@ msgstr "No s'ha seleccionat cap fitxer en conflicte."
 msgid "Please enter a commit."
 msgstr "Introduïu una publicació."
 
-#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:513
+#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:512
 msgid "Revert"
 msgstr "Desfés"
 
@@ -5502,313 +5492,313 @@ msgstr "S'ha canviat per no s'ha actualitzat"
 msgid "No staged files selected."
 msgstr "No s'ha seleccionat cap fitxer reservat."
 
-#: ../plugins/git/plugin.c:68
+#: ../plugins/git/plugin.c:67
 msgid "Branch tools"
 msgstr "Eines de branques"
 
-#: ../plugins/git/plugin.c:76 ../plugins/git/plugin.c:77
+#: ../plugins/git/plugin.c:75 ../plugins/git/plugin.c:76
 msgid "Create a branch"
 msgstr "Crea una branca"
 
-#: ../plugins/git/plugin.c:84 ../plugins/git/plugin.c:85
+#: ../plugins/git/plugin.c:83 ../plugins/git/plugin.c:84
 msgid "Delete branches"
 msgstr "Suprimeix branques"
 
-#: ../plugins/git/plugin.c:92 ../plugins/git/plugin.c:93
+#: ../plugins/git/plugin.c:91 ../plugins/git/plugin.c:92
 msgid "Switch to the selected branch"
 msgstr "Commuta a la branca seleccionada"
 
-#: ../plugins/git/plugin.c:101
+#: ../plugins/git/plugin.c:100
 msgid "Merge a revision into the current branch"
 msgstr "Combina una revisió amb la branca actual"
 
-#: ../plugins/git/plugin.c:112
+#: ../plugins/git/plugin.c:111
 msgid "Tag tools"
 msgstr "Eines d'etiquetes"
 
-#: ../plugins/git/plugin.c:120 ../plugins/git/plugin.c:121
+#: ../plugins/git/plugin.c:119 ../plugins/git/plugin.c:120
 msgid "Create a tag"
 msgstr "Crea una etiqueta"
 
-#: ../plugins/git/plugin.c:128 ../plugins/git/plugin.c:129
+#: ../plugins/git/plugin.c:127 ../plugins/git/plugin.c:128
 msgid "Delete selected tags"
 msgstr "Suprimeix les etiquetes seleccionades"
 
-#: ../plugins/git/plugin.c:141
+#: ../plugins/git/plugin.c:140
 msgid "Changes"
 msgstr "Canvis"
 
-#: ../plugins/git/plugin.c:150
+#: ../plugins/git/plugin.c:149
 msgid "Commit changes"
 msgstr "Publica els canvis"
 
-#: ../plugins/git/plugin.c:165
+#: ../plugins/git/plugin.c:164
 #: ../plugins/snippets-manager/snippets-editor.ui.h:18
 msgid "Add"
 msgstr "Afegeix"
 
-#: ../plugins/git/plugin.c:166
+#: ../plugins/git/plugin.c:165
 msgid "Add files to the index"
 msgstr "Afegeix fitxers a l'índex"
 
-#: ../plugins/git/plugin.c:174
+#: ../plugins/git/plugin.c:173
 msgid "Remove files from the repository"
 msgstr "Suprimeix els fitxers del dipòsit"
 
-#: ../plugins/git/plugin.c:181 ../plugins/git/plugin.c:477
+#: ../plugins/git/plugin.c:180 ../plugins/git/plugin.c:476
 msgid "Check out"
 msgstr "Obtén"
 
-#: ../plugins/git/plugin.c:182
+#: ../plugins/git/plugin.c:181
 msgid "Revert changes in unstaged files"
 msgstr "Desfés els canvis dels fitxers sense reserva"
 
-#: ../plugins/git/plugin.c:189 ../plugins/git/plugin.c:485
+#: ../plugins/git/plugin.c:188 ../plugins/git/plugin.c:484
 msgid "Unstage"
 msgstr "Treu la reserva"
 
-#: ../plugins/git/plugin.c:190
+#: ../plugins/git/plugin.c:189
 msgid "Remove staged files from the index"
 msgstr "Suprimeix els fitxers reservats de l'índex"
 
-#: ../plugins/git/plugin.c:197
+#: ../plugins/git/plugin.c:196
 msgid "Resolve conflicts"
 msgstr "Resol els conflictes"
 
-#: ../plugins/git/plugin.c:198
+#: ../plugins/git/plugin.c:197
 msgid "Mark selected conflicted files as resolved"
 msgstr "Marca els fitxers conflictius seleccionats com a resolts"
 
-#: ../plugins/git/plugin.c:205 ../plugins/git/plugin.c:958
+#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:958
 msgid "Stash"
 msgstr "Desa temporalment"
 
-#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
+#: ../plugins/git/plugin.c:212 ../plugins/git/plugin.c:324
 msgid "Stash uncommitted changes"
 msgstr "Desa temporalment els canvis no publicats"
 
-#: ../plugins/git/plugin.c:214 ../plugins/git/plugin.c:326
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
 msgid "Save uncommitted changes without committing them"
 msgstr "Desa els canvis no publicats sense publicar-los"
 
-#: ../plugins/git/plugin.c:225
+#: ../plugins/git/plugin.c:224
 msgid "Remote repository tools"
 msgstr "Eines de dipòsit remot"
 
-#: ../plugins/git/plugin.c:233
+#: ../plugins/git/plugin.c:232
 msgid "Add a remote"
 msgstr "Afegeix una ubicació remota"
 
-#: ../plugins/git/plugin.c:234
+#: ../plugins/git/plugin.c:233
 msgid "Add a remote repository"
 msgstr "Afegeix un dipòsit remot"
 
-#: ../plugins/git/plugin.c:241
+#: ../plugins/git/plugin.c:240
 msgid "Delete selected remote"
 msgstr "Suprimeix la ubicació remota seleccionada"
 
-#: ../plugins/git/plugin.c:242
+#: ../plugins/git/plugin.c:241
 msgid "Delete a remote"
 msgstr "Suprimeix una ubicació remota"
 
-#: ../plugins/git/plugin.c:250
+#: ../plugins/git/plugin.c:249
 msgid "Push changes to a remote repository"
 msgstr "Empeny els canvis a un dipòsit remot"
 
-#: ../plugins/git/plugin.c:258
+#: ../plugins/git/plugin.c:257
 msgid "Pull changes from a remote repository"
 msgstr "Estira els canvis d'un dipòsit remot"
 
-#: ../plugins/git/plugin.c:265 ../plugins/git/plugin.c:577
+#: ../plugins/git/plugin.c:264 ../plugins/git/plugin.c:576
 msgid "Fetch"
 msgstr "Recull"
 
-#: ../plugins/git/plugin.c:266
+#: ../plugins/git/plugin.c:265
 msgid "Fetch changes from remote repositories"
 msgstr "Recull els canvis de dipòsits remots"
 
-#: ../plugins/git/plugin.c:281
+#: ../plugins/git/plugin.c:280
 msgid "Rebase against selected remote"
 msgstr "Ajusta la base amb la ubicació remota seleccionada"
 
-#: ../plugins/git/plugin.c:282
+#: ../plugins/git/plugin.c:281
 msgid "Start a rebase operation relative to the selected remote repository"
 msgstr ""
 "Inicia l'operació d'ajustar a la base relativa al dipòsit remot seleccionat"
 
-#: ../plugins/git/plugin.c:289 ../plugins/git/plugin.c:449
+#: ../plugins/git/plugin.c:288 ../plugins/git/plugin.c:448
 msgid "Continue"
 msgstr "Continua"
 
-#: ../plugins/git/plugin.c:290
+#: ../plugins/git/plugin.c:289
 msgid "Continue a rebase with resolved conflicts"
 msgstr "Continua un ajustament de la base amb els conflictes resolts"
 
-#: ../plugins/git/plugin.c:297 ../plugins/git/plugin.c:457
+#: ../plugins/git/plugin.c:296 ../plugins/git/plugin.c:456
 msgid "Skip"
 msgstr "Omet"
 
-#: ../plugins/git/plugin.c:298
+#: ../plugins/git/plugin.c:297
 msgid "Skip the current revision"
 msgstr "Omet la revisió actual"
 
-#: ../plugins/git/plugin.c:305 ../plugins/git/plugin.c:465
+#: ../plugins/git/plugin.c:304 ../plugins/git/plugin.c:464
 msgid "Abort"
 msgstr "Interromp"
 
-#: ../plugins/git/plugin.c:306
+#: ../plugins/git/plugin.c:305
 msgid "Abort the rebase and return the repository to its previous state"
 msgstr ""
 "Interromp l'ajustament de la base i torna el dipòsit al seu estat anterior"
 
-#: ../plugins/git/plugin.c:317
+#: ../plugins/git/plugin.c:316
 msgid "Stash tools"
 msgstr "Eines de desat temporal"
 
-#: ../plugins/git/plugin.c:333
+#: ../plugins/git/plugin.c:332
 msgid "Apply selected stash"
 msgstr "Aplica el desat temporal seleccionat"
 
-#: ../plugins/git/plugin.c:334
+#: ../plugins/git/plugin.c:333
 msgid "Apply stashed changes back into the working tree"
 msgstr "Aplica els canvis desats temporalment a l'arbre de treball"
 
-#: ../plugins/git/plugin.c:341
+#: ../plugins/git/plugin.c:340
 msgid "Apply stash and restore index"
 msgstr "Aplica els canvis desats temporalment i restaura l'índex"
 
-#: ../plugins/git/plugin.c:342
+#: ../plugins/git/plugin.c:341
 msgid "Apply stashed changes back into the working tree and the index"
 msgstr "Aplica els canvis desats temporalment a l'arbre de treball i a l'índex"
 
-#: ../plugins/git/plugin.c:349
+#: ../plugins/git/plugin.c:348
 msgid "Drop selected stash"
 msgstr "Descarta el desat temporal seleccionat"
 
-#: ../plugins/git/plugin.c:350
+#: ../plugins/git/plugin.c:349
 msgid "Delete the selected stash"
 msgstr "Suprimeix el desat temporal seleccionat"
 
-#: ../plugins/git/plugin.c:357
+#: ../plugins/git/plugin.c:356
 msgid "Clear all stashes"
 msgstr "Neteja tots els desats temporals"
 
-#: ../plugins/git/plugin.c:358
+#: ../plugins/git/plugin.c:357
 msgid "Delete all stashes in this repository"
 msgstr "Suprimeix tots els desats temporals en aquest dipòsit"
 
-#: ../plugins/git/plugin.c:369
+#: ../plugins/git/plugin.c:368
 msgid "Revision tools"
 msgstr "Eines de revisió"
 
-#: ../plugins/git/plugin.c:377 ../plugins/git/plugin.c:497
+#: ../plugins/git/plugin.c:376 ../plugins/git/plugin.c:496
 msgid "Show commit diff"
 msgstr "Mostra les diferències de la publicació"
 
-#: ../plugins/git/plugin.c:378
+#: ../plugins/git/plugin.c:377
 msgid "Show a diff of the selected revision"
 msgstr "Mostra les diferències de la revisió seleccionada"
 
-#: ../plugins/git/plugin.c:385 ../plugins/git/plugin.c:505
+#: ../plugins/git/plugin.c:384 ../plugins/git/plugin.c:504
 msgid "Cherry pick"
 msgstr "Cherry Pick"
 
-#: ../plugins/git/plugin.c:386
+#: ../plugins/git/plugin.c:385
 msgid "Merge an individual commit from another branch"
 msgstr "Combina una publicació individual d'una altra branca"
 
-#: ../plugins/git/plugin.c:393
+#: ../plugins/git/plugin.c:392
 msgid "Reset/Revert"
 msgstr "Reinicia/desfés"
 
-#: ../plugins/git/plugin.c:401
+#: ../plugins/git/plugin.c:400
 msgid "Reset tree"
 msgstr "Reinicia l'arbre"
 
-#: ../plugins/git/plugin.c:402
+#: ../plugins/git/plugin.c:401
 msgid "Reset tree to a previous revision"
 msgstr "Reinicia l'arbre a una revisió anterior"
 
-#: ../plugins/git/plugin.c:409
+#: ../plugins/git/plugin.c:408
 msgid "Revert commit"
 msgstr "Desfés una publicació"
 
-#: ../plugins/git/plugin.c:410
+#: ../plugins/git/plugin.c:409
 msgid "Revert a commit"
 msgstr "Desfés una publicació"
 
-#: ../plugins/git/plugin.c:417
+#: ../plugins/git/plugin.c:416
 msgid "Patch series"
 msgstr "Sèrie de pedaços"
 
-#: ../plugins/git/plugin.c:425 ../plugins/git/plugin.c:426
+#: ../plugins/git/plugin.c:424 ../plugins/git/plugin.c:425
 msgid "Generate a patch series"
 msgstr "Genera una sèrie de pedaços"
 
-#: ../plugins/git/plugin.c:433
+#: ../plugins/git/plugin.c:432
 msgid "Mailbox files"
 msgstr "Fitxers de bústia de correu"
 
-#: ../plugins/git/plugin.c:441
+#: ../plugins/git/plugin.c:440
 msgid "Apply mailbox files"
 msgstr "Aplica els fitxers de bústia de correu"
 
-#: ../plugins/git/plugin.c:442
+#: ../plugins/git/plugin.c:441
 msgid "Apply patches from mailbox files"
 msgstr "Aplica els pedaços dels fitxers de bústia de correu"
 
-#: ../plugins/git/plugin.c:450
+#: ../plugins/git/plugin.c:449
 msgid "Continue applying patches with resolved conflicts"
 msgstr "Continua aplicant els pedaços amb els conflictes resolts"
 
-#: ../plugins/git/plugin.c:458
+#: ../plugins/git/plugin.c:457
 msgid "Skip the current patch in the series"
 msgstr "Omet el pedaç actual de la sèrie"
 
-#: ../plugins/git/plugin.c:466
+#: ../plugins/git/plugin.c:465
 msgid ""
 "Stop applying the patch series and return the tree to its previous state"
 msgstr ""
 "Atura l'aplicació de la sèrie de pedaços i retorna l'arbre al seu estat "
 "anterior"
 
-#: ../plugins/git/plugin.c:521
+#: ../plugins/git/plugin.c:520
 msgid "Reset..."
 msgstr "Reinicia..."
 
-#: ../plugins/git/plugin.c:533
+#: ../plugins/git/plugin.c:532
 msgid "Switch"
 msgstr "Commuta"
 
-#: ../plugins/git/plugin.c:541
+#: ../plugins/git/plugin.c:540
 msgid "Delete..."
 msgstr "Suprimeix..."
 
-#: ../plugins/git/plugin.c:549
+#: ../plugins/git/plugin.c:548
 msgid "Merge..."
 msgstr "Combina..."
 
-#: ../plugins/git/plugin.c:561
+#: ../plugins/git/plugin.c:560
 msgid "Push..."
 msgstr "Empeny..."
 
-#: ../plugins/git/plugin.c:569
+#: ../plugins/git/plugin.c:568
 msgid "Pull..."
 msgstr "Estira..."
 
-#: ../plugins/git/plugin.c:589
+#: ../plugins/git/plugin.c:588
 msgid "Apply"
 msgstr "Aplica"
 
-#: ../plugins/git/plugin.c:597
+#: ../plugins/git/plugin.c:596
 msgid "Apply and restore index"
 msgstr "Aplica els canvis i restaura l'índex"
 
-#: ../plugins/git/plugin.c:605
+#: ../plugins/git/plugin.c:604
 msgid "Drop"
 msgstr "Deixa anar"
 
-#: ../plugins/git/plugin.c:694 ../plugins/git/plugin.c:767
+#: ../plugins/git/plugin.c:693 ../plugins/git/plugin.c:766
 msgid "Branch"
 msgstr "Branca"
 
@@ -6327,19 +6317,24 @@ msgstr "Important:"
 msgid "Message colors"
 msgstr "Colors dels missatges"
 
-#: ../plugins/message-view/anjuta-msgman.c:94
+#: ../plugins/message-view/anjuta-msgman.c:83
 msgid "Close all message tabs"
 msgstr "Tanca totes les pestanyes de missatges"
 
-#: ../plugins/message-view/message-view.c:472
+#: ../plugins/message-view/message-view.c:497
 msgid "Icon"
 msgstr "Icona"
 
-#: ../plugins/message-view/message-view.c:486
+#: ../plugins/message-view/message-view.c:511
 #: ../plugins/message-view/plugin.c:386 ../plugins/message-view/plugin.c:400
 #: ../plugins/message-view/plugin.c:519 ../plugins/message-view/plugin.c:530
 msgid "Messages"
 msgstr "Missatges"
+
+#: ../plugins/message-view/message-view.c:869
+#, c-format
+msgid "Error writing %s"
+msgstr "S'ha produït un error en escriure %s"
 
 #: ../plugins/message-view/plugin.c:79
 msgid "_Copy Message"
@@ -6350,32 +6345,28 @@ msgid "Copy message"
 msgstr "Copia el missatge"
 
 #: ../plugins/message-view/plugin.c:83
-#, fuzzy
-#| msgid "_Copy Message"
-msgid "_Copy All Messages"
-msgstr "_Copia el missatge"
-
-#: ../plugins/message-view/plugin.c:84
-#, fuzzy
-#| msgid "_Copy Message"
-msgid "Copy All Messages"
-msgstr "_Copia el missatge"
-
-#: ../plugins/message-view/plugin.c:87
 msgid "_Next Message"
 msgstr "Missatge següe_nt"
 
-#: ../plugins/message-view/plugin.c:88
+#: ../plugins/message-view/plugin.c:84
 msgid "Next message"
 msgstr "Missatge següent"
 
-#: ../plugins/message-view/plugin.c:91
+#: ../plugins/message-view/plugin.c:87
 msgid "_Previous Message"
 msgstr "Missatge _anterior"
 
-#: ../plugins/message-view/plugin.c:92
+#: ../plugins/message-view/plugin.c:88
 msgid "Previous message"
 msgstr "Missatge anterior"
+
+#: ../plugins/message-view/plugin.c:91
+msgid "_Save Message"
+msgstr "De_sa el missatge"
+
+#: ../plugins/message-view/plugin.c:92
+msgid "Save message"
+msgstr "Desa el missatge"
 
 #: ../plugins/message-view/plugin.c:168
 msgid "Next/Previous Message"
@@ -7340,8 +7331,8 @@ msgid ""
 "If empty, the user home directory is used. If the path is relative, it is "
 "relative to the home directory."
 msgstr ""
-"Si està buit, s'utilitzarà el directori de l'usuari. Si el camí és "
-"relatiu, es considera relatiu al directori de l'usuari."
+"Si està buit, s'utilitzarà el directori de l'usuari. Si el camí és relatiu, "
+"es considera relatiu al directori de l'usuari."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
 msgid "Default user name used in new project"
@@ -7357,8 +7348,7 @@ msgstr "Correu electrònic, per defecte, que s'utilitza al projecte nou"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
 msgid "If empty, current login and machine name is used."
-msgstr ""
-"Si està buit, s'utilitzarà el nom d'entrada i de l'ordinador actuals."
+msgstr "Si està buit, s'utilitzarà el nom d'entrada i de l'ordinador actuals."
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -8335,31 +8325,31 @@ msgstr ""
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/run-program/plugin.c:290
+#: ../plugins/run-program/plugin.c:266
 msgid "_Run"
 msgstr "_Executa"
 
-#: ../plugins/run-program/plugin.c:300
+#: ../plugins/run-program/plugin.c:276
 msgid "Run program without debugger"
 msgstr "Executa el programa sense depurador"
 
-#: ../plugins/run-program/plugin.c:306
+#: ../plugins/run-program/plugin.c:282
 msgid "Stop Program"
 msgstr "Atura el programa"
 
-#: ../plugins/run-program/plugin.c:308
+#: ../plugins/run-program/plugin.c:284
 msgid "Kill program"
 msgstr "Mata el programa"
 
-#: ../plugins/run-program/plugin.c:314
+#: ../plugins/run-program/plugin.c:290
 msgid "Program Parameters…"
 msgstr "Paràmetres del programa…"
 
-#: ../plugins/run-program/plugin.c:316
+#: ../plugins/run-program/plugin.c:292
 msgid "Set current program, arguments, etc."
 msgstr "Estableix el programa actual, els arguments, etc."
 
-#: ../plugins/run-program/plugin.c:348
+#: ../plugins/run-program/plugin.c:317
 msgid "Run operations"
 msgstr "Executa les operacions"
 
@@ -9514,8 +9504,8 @@ msgid "Symbol"
 msgstr "Símbol"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:781 ../plugins/terminal/terminal.c:981
-#: ../plugins/terminal/terminal.c:1067
+#: ../plugins/terminal/terminal.c:772 ../plugins/terminal/terminal.c:970
+#: ../plugins/terminal/terminal.c:1049
 msgid "Terminal"
 msgstr "Terminal"
 
@@ -9535,23 +9525,23 @@ msgstr "Utilitza el perfil per defecte del terminal del GNOME"
 msgid "Terminal options"
 msgstr "Opcions del terminal"
 
-#: ../plugins/terminal/terminal.c:609
+#: ../plugins/terminal/terminal.c:600
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:617
+#: ../plugins/terminal/terminal.c:608
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:625
+#: ../plugins/terminal/terminal.c:616
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:763
+#: ../plugins/terminal/terminal.c:754
 msgid "terminal operations"
 msgstr "operacions del terminal"
 
-#: ../plugins/terminal/terminal.c:898
+#: ../plugins/terminal/terminal.c:889
 #, c-format
 msgid "Unable to execute command"
 msgstr "No es pot executar l'ordre"
@@ -9901,10 +9891,8 @@ msgstr "Demana a l'usuari per obtenir paràmetres addicionals"
 msgid "Command line parameters"
 msgstr "Paràmetres de la línia d'ordres"
 
-#: ../src/about.c:186
-#, fuzzy
-#| msgid "Copyright (c) Naba Kumar"
-msgid "Copyright © Naba Kumar"
+#: ../src/about.c:201
+msgid "Copyright (c) Naba Kumar"
 msgstr "Copyright (c) Naba Kumar"
 
 #: ../src/anjuta-actions.h:23
