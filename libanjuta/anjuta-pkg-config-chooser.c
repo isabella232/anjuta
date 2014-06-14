@@ -132,6 +132,8 @@ on_listall_exit (AnjutaLauncher * launcher, int child_pid,
 										  user_data);
 	chooser->priv->scanning = FALSE;
 
+	if (exit_status != 0) g_warning(PKG_CONFIG_LIST_ALL " exit with error code %d" , exit_status);
+
 	anjuta_pkg_config_chooser_set_active_packages (chooser, chooser->priv->selected_cache);
 	g_list_free_full (chooser->priv->selected_cache, g_free);
 	chooser->priv->selected_cache = NULL;
