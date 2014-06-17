@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: anjuta.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-05-20 14:44+0000\n"
-"PO-Revision-Date: 2014-05-20 18:44+0200\n"
+"POT-Creation-Date: 2014-06-17 14:44+0000\n"
+"PO-Revision-Date: 2014-06-17 18:19+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -1501,9 +1501,6 @@ msgid "Install"
 msgstr "Instalar"
 
 #: ../plugins/build-basic-autotools/build.c:578
-#| msgid ""
-#| "Before using this new configuration, the default one needs to be removed. "
-#| "Do you want to do that ?"
 msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
 "you want to do that?"
@@ -4421,7 +4418,6 @@ msgid "This function is not implemented for widgets of class '%s'"
 msgstr "Esta función no está implementada para los widgets de la clase «%s»"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:936
-#: ../plugins/starter/plugin.c:187
 #, c-format
 msgid "Open '%s'"
 msgstr "Abrir «%s»"
@@ -8480,9 +8476,6 @@ msgstr ""
 "<b>Error:</b> la tecla disparadora ya está en uso para uno de los lenguajes."
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
-#| msgid ""
-#| "<b>Error:</b> The trigger key can only contain alphanumeric characters "
-#| "and _ !"
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
 "\"_\"!"
@@ -8815,7 +8808,7 @@ msgstr "Iniciado"
 msgid "Welcome page with most common actions."
 msgstr "Página de bienvenida con las acciones más comunes."
 
-#: ../plugins/starter/plugin.c:304
+#: ../plugins/starter/plugin.c:425
 msgid "Start"
 msgstr "Iniciar"
 
@@ -8824,28 +8817,42 @@ msgid "Create a new project"
 msgstr "Crear un proyecto nuevo"
 
 #: ../plugins/starter/starter.ui.h:2
-msgid "Import an existing project"
-msgstr "Importar un proyecto existente"
+#| msgid "Import project"
+msgid "Import a project"
+msgstr "Importar un proyecto"
 
 #: ../plugins/starter/starter.ui.h:3
-msgid "Recent projects:"
-msgstr "Proyectos recientes:"
+#| msgid "Search complete"
+msgid "Search for example code"
+msgstr "Buscar código de ejemplo"
 
 #: ../plugins/starter/starter.ui.h:4
-msgid "Tutorials"
-msgstr "Tutoriales"
+#| msgid "Man Documentation"
+msgid "View local Anjuta documentation"
+msgstr "Ver la documentación local de Anjuta"
 
 #: ../plugins/starter/starter.ui.h:5
-msgid "Anjuta Manual"
-msgstr "Manual de Anjuta"
+msgid "View local Anjuta FAQ"
+msgstr "Ver las preguntas más frecuentes locales de Anjuta"
 
 #: ../plugins/starter/starter.ui.h:6
-msgid "FAQ"
-msgstr "P+F"
+#| msgid "GNOME Online API Documentation"
+msgid "View online library documentation"
+msgstr "Ver la documentación de la biblioteca en línea"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "Getting started:"
-msgstr "Para empezar:"
+msgid "label"
+msgstr "etiqueta"
+
+#: ../plugins/starter/starter.ui.h:8
+#| msgid "No recently used resource found with URI \"%s\""
+msgid "Remove recently used project from list"
+msgstr "Quitar de la lista el proyecto usado recientemente"
+
+#: ../plugins/starter/starter.ui.h:9
+#| msgid "_Install Project"
+msgid "Unlist Project"
+msgstr "Proyecto no listado"
 
 #: ../plugins/subversion/anjuta-subversion.plugin.in.h:1
 #: ../plugins/subversion/subversion-ui-utils.c:64
@@ -10182,6 +10189,24 @@ msgstr "Sólo iconos"
 msgid "Text only"
 msgstr "Sólo texto"
 
+#~ msgid "Import an existing project"
+#~ msgstr "Importar un proyecto existente"
+
+#~ msgid "Recent projects:"
+#~ msgstr "Proyectos recientes:"
+
+#~ msgid "Tutorials"
+#~ msgstr "Tutoriales"
+
+#~ msgid "Anjuta Manual"
+#~ msgstr "Manual de Anjuta"
+
+#~ msgid "FAQ"
+#~ msgstr "P+F"
+
+#~ msgid "Getting started:"
+#~ msgstr "Para empezar:"
+
 #~ msgid "Error writing %s"
 #~ msgstr "Error al escribir %s"
 
@@ -10244,9 +10269,6 @@ msgstr "Sólo texto"
 
 #~ msgid "<b>Open With</b>"
 #~ msgstr "<b>Abrir con</b>"
-
-#~ msgid "label"
-#~ msgstr "etiqueta"
 
 #~ msgid "Drop or enter revision here"
 #~ msgstr "Suelte o escriba una revisión aquí"
@@ -10880,9 +10902,6 @@ msgstr "Sólo texto"
 #~ msgid "Find:"
 #~ msgstr "Buscar:"
 
-#~ msgid "Search complete"
-#~ msgstr "Búsqueda completada"
-
 #~ msgid "The match \"%s\" was not found. Wrap search around the document?"
 #~ msgstr ""
 #~ "No se ha encontrado ninguna coincidencia con «%s». ¿Quiere continuar "
@@ -10908,9 +10927,6 @@ msgstr "Sólo texto"
 
 #~ msgid "Anjuta Home Page"
 #~ msgstr "Página web de Anjuta"
-
-#~ msgid "GNOME Online API Documentation"
-#~ msgstr "Documentación en línea de la API de GNOME"
 
 #~ msgid "Glade File"
 #~ msgstr "Archivo glade"
