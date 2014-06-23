@@ -19,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
 "POT-Creation-Date: 2014-06-23 18:21+0000\n"
-"PO-Revision-Date: 2014-06-23 22:26+0400\n"
+"PO-Revision-Date: 2014-06-23 22:48+0400\n"
 "Last-Translator: Yuri Myasoedov <ymyasoedov@yandex.ru>\n"
 "Language-Team: русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
@@ -1080,7 +1080,7 @@ msgid ""
 "targets in this group."
 msgstr ""
 "Дополнительные ключи лексического анализатора Lex или Flex для всех целей из "
-"этой группы"
+"этой группы."
 
 #: ../plugins/am-project/am-properties.c:185
 #: ../plugins/am-project/am-properties.c:292
@@ -1651,7 +1651,7 @@ msgstr "предупреждение:-old"
 #: ../plugins/build-basic-autotools/plugin.c:819
 #: ../plugins/tools/execute.c:335
 msgid "error:"
-msgstr "ошибка: "
+msgstr "ошибка:"
 
 #: ../plugins/build-basic-autotools/plugin.c:820
 msgid "error:-old"
@@ -2091,7 +2091,7 @@ msgstr "Лицензия:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:39
 msgid "Header File:"
-msgstr "Файл заголовков"
+msgstr "Файл заголовков:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:40
 msgid "Source File:"
@@ -2189,7 +2189,7 @@ msgstr "Флаги"
 
 #: ../plugins/class-gen/window.c:754
 msgid "Marshaller"
-msgstr "Маршаллер"
+msgstr "Маршалер"
 
 #. Automatic highlight menu
 #: ../plugins/class-gen/window.c:814 ../plugins/document-manager/plugin.c:1014
@@ -2681,7 +2681,7 @@ msgstr "_Автоматическое обновление"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:14
 msgid "_Name:"
-msgstr "_Имя"
+msgstr "_Имя:"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:15
 msgid "Change Watch"
@@ -2689,11 +2689,11 @@ msgstr "Изменить наблюдаемый объект"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:16
 msgid "_Value:"
-msgstr "_Значение"
+msgstr "_Значение:"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:17
 msgid "Inspect/Evaluate"
-msgstr "Просмотреть или вычислить"
+msgstr "Просмотреть/вычислить"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:18
 msgid "Breakpoint properties"
@@ -4246,7 +4246,7 @@ msgstr "Операция редактирования редактора"
 
 #: ../plugins/document-manager/plugin.c:414
 msgid "Editor zoom operations"
-msgstr "Операции масштабирования в редакторе "
+msgstr "Операции масштабирования в редакторе"
 
 #: ../plugins/document-manager/plugin.c:415
 msgid "Editor syntax highlighting styles"
@@ -4305,7 +4305,7 @@ msgstr "Режим"
 #: ../plugins/document-manager/plugin.c:1554
 #, c-format
 msgid "Autosave failed for %s"
-msgstr "Не удалось автоматически сохранить файл %s."
+msgstr "Не удалось автоматически сохранить файл %s"
 
 #: ../plugins/document-manager/plugin.c:1568
 msgid "Autosave completed"
@@ -5324,7 +5324,7 @@ msgstr "Выборочное изменение"
 #: ../plugins/git/git-commit-pane.c:124
 #: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
-msgstr "Введите сообщение для журнала:"
+msgstr "Введите сообщение для журнала."
 
 #: ../plugins/git/git-commit-pane.c:145
 msgid "Please enter the commit author's name"
@@ -5466,7 +5466,7 @@ msgstr "Отменить"
 
 #: ../plugins/git/git-stash-changes-pane.c:160
 msgid "Stash Uncommitted Changes"
-msgstr "Скрыть нефиксированные изменения"
+msgstr "Скрыть незафиксированные изменения"
 
 #: ../plugins/git/git-status-pane.c:551
 msgid "Changes to be committed"
@@ -5478,7 +5478,7 @@ msgstr "Изменено, но не обновлено"
 
 #: ../plugins/git/git-unstage-pane.c:51
 msgid "No staged files selected."
-msgstr "Этапированные файлы не выбраны."
+msgstr "Проиндексированные файлы не выбраны."
 
 #: ../plugins/git/plugin.c:68
 msgid "Branch tools"
@@ -5539,15 +5539,15 @@ msgstr "Извлечь"
 
 #: ../plugins/git/plugin.c:182
 msgid "Revert changes in unstaged files"
-msgstr "Отменить изменения в неэтапированных файлах"
+msgstr "Отменить изменения в непроиндексированных файлах"
 
 #: ../plugins/git/plugin.c:189 ../plugins/git/plugin.c:485
 msgid "Unstage"
-msgstr "Снять этапирование"
+msgstr "Отменить индексирование"
 
 #: ../plugins/git/plugin.c:190
 msgid "Remove staged files from the index"
-msgstr "Удалить этапированные файлы из индекса"
+msgstr "Удалить проиндексированные файлы из индекса"
 
 #: ../plugins/git/plugin.c:197
 msgid "Resolve conflicts"
@@ -5563,11 +5563,11 @@ msgstr "Скрыть"
 
 #: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
 msgid "Stash uncommitted changes"
-msgstr "Скрыть нефиксированные изменения"
+msgstr "Скрыть незафиксированные изменения"
 
 #: ../plugins/git/plugin.c:214 ../plugins/git/plugin.c:326
 msgid "Save uncommitted changes without committing them"
-msgstr "Сохранить нефиксированные изменения без фиксации"
+msgstr "Сохранить незафиксированные изменения без фиксации"
 
 #: ../plugins/git/plugin.c:225
 msgid "Remote repository tools"
@@ -5828,7 +5828,7 @@ msgstr "Удалённые репозитории"
 #: ../plugins/glade/anjuta-design-document.c:201
 #, c-format
 msgid "Glade project '%s' saved"
-msgstr "Проект Glade '%s' сохранён"
+msgstr "Проект Glade «%s» сохранён"
 
 #: ../plugins/glade/anjuta-design-document.c:181
 #: ../plugins/glade/anjuta-design-document.c:208
@@ -5841,7 +5841,7 @@ msgstr "Редактор интерфейса Glade"
 
 #: ../plugins/glade/anjuta-glade.plugin.in.h:2
 msgid "Glade Plugin for Anjuta."
-msgstr "Модуль Glade для Anjuta"
+msgstr "Модуль Glade для Anjuta."
 
 #: ../plugins/glade/anjuta-glade.plugin.in.h:3
 msgid "User interface file"
@@ -6159,15 +6159,15 @@ msgstr "Каталоги поиска JS"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
 msgid "Gir repository's directory:"
-msgstr "Каталог репозитория Gir: "
+msgstr "Каталог репозитория Gir:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
 msgid "Gjs repository's directory:"
-msgstr "Каталог репозитория Gjs: "
+msgstr "Каталог репозитория Gjs:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
 msgid "Min character for completion:"
-msgstr "Минимальное кол-во символов для дополнения: "
+msgstr "Минимальное кол-во символов для дополнения:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
@@ -6619,7 +6619,7 @@ msgstr "Менеджер проекта"
 
 #: ../plugins/project-manager/anjuta-project-manager.plugin.in.h:2
 msgid "Project Manager Plugin for Anjuta."
-msgstr "Модуль менеджера проекта для Anjuta"
+msgstr "Модуль менеджера проекта для Anjuta."
 
 #. if (gtk_tree_model_get_iter_first(model, &iter))
 #. {
@@ -6634,7 +6634,7 @@ msgstr "Выбрать файлы исходных текстов…"
 
 #: ../plugins/project-manager/dialogs.c:409
 msgid " This property is not modifiable."
-msgstr "Это свойство нельзя изменить."
+msgstr " Это свойство нельзя изменить."
 
 #. Several backend are possible, ask the user to select one
 #: ../plugins/project-manager/dialogs.c:644
@@ -7266,7 +7266,7 @@ msgstr "Отсутствующие компоненты"
 
 #: ../plugins/project-wizard/install.c:413
 msgid "New project has been created successfully."
-msgstr "Новый проект успешно создан"
+msgstr "Новый проект успешно создан."
 
 #: ../plugins/project-wizard/install.c:420
 msgid "New project creation has failed."
@@ -7673,9 +7673,7 @@ msgstr "Поддержка C++:"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:14
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:14
 msgid "Adds C++ support to the project so that C++ source files can be built"
-msgstr ""
-"Добавить поддержку C++ в проект. С ней вы можете собирать проект с файлами С+"
-"+."
+msgstr "Добавить поддержку C++ в проект для сборки проектов с файлами С++"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:32
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:22
@@ -7927,7 +7925,7 @@ msgstr ""
 "Uuid — это глобальный универсальный идентификатор расширения.\n"
 "Uuid может быть записан в виде адреса эл. почты (foo.bar@extensions.example."
 "com),\n"
-"адрес почты должен быть действительным и актуальным. "
+"адрес почты должен быть действительным и актуальным."
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:21
 msgid "Extension URL"
@@ -8075,7 +8073,7 @@ msgstr "Только статическая"
 
 #: ../plugins/project-wizard/templates/licenses.tpl.in.h:1
 msgid "License"
-msgstr "Лицензия:"
+msgstr "Лицензия"
 
 #: ../plugins/project-wizard/templates/licenses.tpl.in.h:2
 msgid "Select code license"
@@ -8834,11 +8832,11 @@ msgstr "Настройки Subversion"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:2
 msgid "Subversion Options"
-msgstr "Опции Subversion"
+msgstr "Параметры Subversion"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:3
 msgid "Add file/directory"
-msgstr "Добавить файл или каталог "
+msgstr "Добавить файл или каталог"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:7
 msgid "Recurse"
@@ -8878,7 +8876,7 @@ msgstr "Пути источника и назначения:"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:21
 msgid "Working Copy"
-msgstr "Рабочая копия:"
+msgstr "Рабочая копия"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:22
 msgid "Repository Head"
@@ -9617,11 +9615,11 @@ msgstr "Выключен"
 
 #: ../plugins/tools/editor.c:793
 msgid "You must provide a tool name!"
-msgstr "Необходимо ввести имя инструмента"
+msgstr "Введите имя инструмента!"
 
 #: ../plugins/tools/editor.c:801
 msgid "You must provide a tool command!"
-msgstr "Необходимо ввести команду инструмента"
+msgstr "Введите команду инструмента!"
 
 #: ../plugins/tools/editor.c:809
 msgid "A tool with the same name already exists!"
@@ -9690,7 +9688,7 @@ msgstr "Не удалось открыть входной файл %s, кома�
 
 #: ../plugins/tools/fileop.c:248
 msgid "Missing tool name"
-msgstr "Пропущено имя инструмента:"
+msgstr "Пропущено имя инструмента"
 
 #: ../plugins/tools/fileop.c:258
 #, c-format
