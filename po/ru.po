@@ -18,8 +18,8 @@ msgstr ""
 "Project-Id-Version: anjuta trunk\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-03-08 07:18+0000\n"
-"PO-Revision-Date: 2014-06-23 22:18+0400\n"
+"POT-Creation-Date: 2014-06-23 18:21+0000\n"
+"PO-Revision-Date: 2014-06-23 22:26+0400\n"
 "Last-Translator: Yuri Myasoedov <ymyasoedov@yandex.ru>\n"
 "Language-Team: русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
@@ -78,7 +78,7 @@ msgstr ""
 msgid "Anjuta"
 msgstr "Интегрированная среда разработки Anjuta"
 
-#: ../anjuta.desktop.in.in.h:2 ../src/about.c:203
+#: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
 msgstr "Интегрированная среда разработки"
 
@@ -687,47 +687,47 @@ msgid "Unable to load user interface file: %s"
 msgstr "Не удалось загрузить файл с интерфейсом пользователя: %s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
-#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:182
+#: ../plugins/file-manager/file-view.c:80 ../plugins/git/git-status-pane.c:182
 msgid "Modified"
 msgstr "Изменён"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:95
-#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:185
+#: ../plugins/file-manager/file-view.c:84 ../plugins/git/git-status-pane.c:185
 msgid "Added"
 msgstr "Добавлен"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:98
-#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:188
+#: ../plugins/file-manager/file-view.c:82 ../plugins/git/git-status-pane.c:188
 msgid "Deleted"
 msgstr "Удалён"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:101
-#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:191
+#: ../plugins/file-manager/file-view.c:86 ../plugins/git/git-status-pane.c:191
 msgid "Conflicted"
 msgstr "Завершено Противоречие"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:105
-#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:195
+#: ../plugins/file-manager/file-view.c:88 ../plugins/git/git-status-pane.c:195
 msgid "Up-to-date"
 msgstr "Не требует обновления"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:109
-#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:199
+#: ../plugins/file-manager/file-view.c:90 ../plugins/git/git-status-pane.c:199
 msgid "Locked"
 msgstr "Заблокирован"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:112
-#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:202
+#: ../plugins/file-manager/file-view.c:92 ../plugins/git/git-status-pane.c:202
 msgid "Missing"
 msgstr "Отсутствует"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:115
-#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:205
+#: ../plugins/file-manager/file-view.c:94 ../plugins/git/git-status-pane.c:205
 msgid "Unversioned"
 msgstr "Не под контролем системы версий"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:119
-#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:209
+#: ../plugins/file-manager/file-view.c:96 ../plugins/git/git-status-pane.c:209
 msgid "Ignored"
 msgstr "Игнорируется"
 
@@ -760,8 +760,8 @@ msgstr ""
 #: ../plugins/am-project/amp-group.c:665
 #: ../plugins/am-project/am-project.c:1680
 #: ../plugins/am-project/am-project.c:1773
-#: ../plugins/dir-project/dir-project.c:801
-#: ../plugins/dir-project/dir-project.c:934
+#: ../plugins/dir-project/dir-project.c:862
+#: ../plugins/dir-project/dir-project.c:996
 #: ../plugins/mk-project/mk-project.c:725
 #: ../plugins/mk-project/mk-project.c:802
 #: ../plugins/mk-project/mk-project.c:876
@@ -774,19 +774,18 @@ msgid "Root"
 msgstr "Корень"
 
 #: ../plugins/am-project/am-project.c:98
-#: ../plugins/dir-project/dir-project.c:945
+#: ../plugins/dir-project/dir-project.c:1007
 #: ../plugins/mk-project/mk-project.c:66
 msgid "Group"
 msgstr "Группа"
 
 #: ../plugins/am-project/am-project.c:106
-#: ../plugins/dir-project/dir-project.c:949
+#: ../plugins/dir-project/dir-project.c:1011
 #: ../plugins/mk-project/mk-project.c:71
 msgid "Source"
 msgstr "Источник"
 
 #: ../plugins/am-project/am-project.c:124
-#| msgid "Shared Library (libtool)"
 msgid "Shared Library (Libtool)"
 msgstr "Разделяемая библиотека (Libtool)"
 
@@ -939,7 +938,6 @@ msgid "Libtool support:"
 msgstr "Поддержка libtool:"
 
 #: ../plugins/am-project/am-properties.c:98
-#| msgid "Add support to compile shared and static libraries with libtool."
 msgid "Add support to compile shared and static libraries with Libtool."
 msgstr ""
 "Добавить поддержку компиляции разделяемых и статических библиотек с помощью "
@@ -1405,7 +1403,7 @@ msgid "Basic autotools build plugin."
 msgstr "Модуль сборки с использованием autotools."
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:3
-#: ../plugins/run-program/plugin.c:274
+#: ../plugins/run-program/plugin.c:298
 msgid "Execute"
 msgstr "Выполнить"
 
@@ -1483,27 +1481,30 @@ msgstr "Установить от имени суперпользователя:
 msgid "Install"
 msgstr "Установить"
 
-#: ../plugins/build-basic-autotools/build.c:527
+#: ../plugins/build-basic-autotools/build.c:578
+#| msgid ""
+#| "Before using this new configuration, the default one needs to be removed. "
+#| "Do you want to do that ?"
 msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
-"you want to do that ?"
+"you want to do that?"
 msgstr ""
 "Перед использованием новой конфигурации конфигурация по умолчанию должна "
-"быть удалена. Хотите удалить её?"
+"быть удалена. Удалить конфигурацию?"
 
-#: ../plugins/build-basic-autotools/build.c:532
-#: ../plugins/build-basic-autotools/plugin.c:987
+#: ../plugins/build-basic-autotools/build.c:583
+#: ../plugins/build-basic-autotools/plugin.c:970
 #, c-format
 msgid "Command canceled by user"
 msgstr "Команда отменена пользователем"
 
-#: ../plugins/build-basic-autotools/build.c:882
+#: ../plugins/build-basic-autotools/build.c:933
 #, c-format
 msgid "Cannot compile \"%s\": No compile rule defined for this file type."
 msgstr ""
 "Не удалось скомпилировать «%s»: нет правил сборки для файлов данного типа."
 
-#: ../plugins/build-basic-autotools/build.c:1056
+#: ../plugins/build-basic-autotools/build.c:1107
 #, c-format
 msgid "Cannot configure project: Missing configure script in %s."
 msgstr ""
@@ -1618,12 +1619,12 @@ msgstr "make(\\[\\d+\\])?:\\s+выход из\\s+каталога\\s+`(.+)'"
 msgid "make(\\[\\d+\\])?:\\s+Leaving\\s+directory\\s+'(.+)'"
 msgstr "make(\\[\\d+\\])?:\\s+выход из\\s+каталога\\s+'(.+)'"
 
-#: ../plugins/build-basic-autotools/plugin.c:750
+#: ../plugins/build-basic-autotools/plugin.c:733
 #, c-format
 msgid "Entering: %s"
 msgstr "Вход: %s"
 
-#: ../plugins/build-basic-autotools/plugin.c:786
+#: ../plugins/build-basic-autotools/plugin.c:769
 #, c-format
 msgid "Leaving: %s"
 msgstr "Выход: %s"
@@ -1633,12 +1634,12 @@ msgstr "Выход: %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:824
+#: ../plugins/build-basic-autotools/plugin.c:807
 #: ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "предупреждение:"
 
-#: ../plugins/build-basic-autotools/plugin.c:825
+#: ../plugins/build-basic-autotools/plugin.c:808
 msgid "warning:-old"
 msgstr "предупреждение:-old"
 
@@ -1647,264 +1648,264 @@ msgstr "предупреждение:-old"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:836
+#: ../plugins/build-basic-autotools/plugin.c:819
 #: ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "ошибка: "
 
-#: ../plugins/build-basic-autotools/plugin.c:837
+#: ../plugins/build-basic-autotools/plugin.c:820
 msgid "error:-old"
 msgstr "ошибка:-old"
 
-#: ../plugins/build-basic-autotools/plugin.c:977
+#: ../plugins/build-basic-autotools/plugin.c:960
 #, c-format
 msgid "Command exited with status %d"
 msgstr "Команда завершилась с результатом %d"
 
-#: ../plugins/build-basic-autotools/plugin.c:992
+#: ../plugins/build-basic-autotools/plugin.c:975
 #, c-format
 msgid "Command aborted by user"
 msgstr "Команда прервана пользователем"
 
-#: ../plugins/build-basic-autotools/plugin.c:997
+#: ../plugins/build-basic-autotools/plugin.c:980
 #, c-format
 msgid "Command terminated with signal %d"
 msgstr "Выполнение программы прекращено с сигналом %d"
 
-#: ../plugins/build-basic-autotools/plugin.c:1005
+#: ../plugins/build-basic-autotools/plugin.c:988
 msgid "Command terminated for an unknown reason"
 msgstr "Выполнение команды прекращено по неизвестной причине"
 
-#: ../plugins/build-basic-autotools/plugin.c:1023
+#: ../plugins/build-basic-autotools/plugin.c:1006
 #, c-format
 msgid "Total time taken: %lu secs\n"
 msgstr "Всего заняло времени: %lu секунд\n"
 
-#: ../plugins/build-basic-autotools/plugin.c:1030
+#: ../plugins/build-basic-autotools/plugin.c:1013
 msgid "Completed unsuccessfully\n"
 msgstr "Завершено с ошибкой\n"
 
-#: ../plugins/build-basic-autotools/plugin.c:1038
+#: ../plugins/build-basic-autotools/plugin.c:1021
 #: ../plugins/tools/execute.c:516
 msgid "Completed successfully\n"
 msgstr "Завершено успешно\n"
 
 #. Translators: the first number is the number of the build attemp,
 #. the string is the directory where the build takes place
-#: ../plugins/build-basic-autotools/plugin.c:1120
+#: ../plugins/build-basic-autotools/plugin.c:1103
 #, c-format
 msgid "Build %d: %s"
 msgstr "Сборка %d: %s"
 
-#: ../plugins/build-basic-autotools/plugin.c:1691
-#: ../plugins/build-basic-autotools/plugin.c:1777
-#: ../plugins/build-basic-autotools/plugin.c:1787
-#: ../plugins/build-basic-autotools/plugin.c:1805
-#: ../plugins/build-basic-autotools/plugin.c:1815
-#: ../plugins/build-basic-autotools/plugin.c:1897
+#: ../plugins/build-basic-autotools/plugin.c:1667
+#: ../plugins/build-basic-autotools/plugin.c:1753
+#: ../plugins/build-basic-autotools/plugin.c:1763
+#: ../plugins/build-basic-autotools/plugin.c:1781
+#: ../plugins/build-basic-autotools/plugin.c:1791
+#: ../plugins/build-basic-autotools/plugin.c:1873
 #, c-format
 msgid "_Build"
 msgstr "С_борка"
 
-#: ../plugins/build-basic-autotools/plugin.c:1695
+#: ../plugins/build-basic-autotools/plugin.c:1671
 msgid "_Build Project"
 msgstr "С_обрать проект"
 
-#: ../plugins/build-basic-autotools/plugin.c:1696
+#: ../plugins/build-basic-autotools/plugin.c:1672
 msgid "Build whole project"
 msgstr "Собрать весь проект"
 
-#: ../plugins/build-basic-autotools/plugin.c:1701
+#: ../plugins/build-basic-autotools/plugin.c:1677
 msgid "_Install Project"
 msgstr "Ус_тановить проект"
 
-#: ../plugins/build-basic-autotools/plugin.c:1702
+#: ../plugins/build-basic-autotools/plugin.c:1678
 msgid "Install whole project"
 msgstr "Установить весь проект"
 
-#: ../plugins/build-basic-autotools/plugin.c:1707
+#: ../plugins/build-basic-autotools/plugin.c:1683
 msgid "_Check Project"
 msgstr "Проверить _проект"
 
-#: ../plugins/build-basic-autotools/plugin.c:1708
+#: ../plugins/build-basic-autotools/plugin.c:1684
 msgid "Check whole project"
 msgstr "Проверить весь проект"
 
-#: ../plugins/build-basic-autotools/plugin.c:1713
+#: ../plugins/build-basic-autotools/plugin.c:1689
 msgid "_Clean Project"
 msgstr "О_чистить проект"
 
-#: ../plugins/build-basic-autotools/plugin.c:1714
+#: ../plugins/build-basic-autotools/plugin.c:1690
 msgid "Clean whole project"
 msgstr "Очистить весь проект"
 
-#: ../plugins/build-basic-autotools/plugin.c:1719
+#: ../plugins/build-basic-autotools/plugin.c:1695
 msgid "C_onfigure Project…"
 msgstr "Н_астроить проект…"
 
-#: ../plugins/build-basic-autotools/plugin.c:1720
+#: ../plugins/build-basic-autotools/plugin.c:1696
 msgid "Configure project"
 msgstr "Настроить проект"
 
-#: ../plugins/build-basic-autotools/plugin.c:1725
+#: ../plugins/build-basic-autotools/plugin.c:1701
 msgid "Build _Tarball"
 msgstr "Собрать _архив с проектом"
 
-#: ../plugins/build-basic-autotools/plugin.c:1726
+#: ../plugins/build-basic-autotools/plugin.c:1702
 msgid "Build project tarball distribution"
 msgstr "Собрать tar-архив проекта для распространения"
 
-#: ../plugins/build-basic-autotools/plugin.c:1731
+#: ../plugins/build-basic-autotools/plugin.c:1707
 msgid "_Build Module"
 msgstr "С_обрать модуль"
 
-#: ../plugins/build-basic-autotools/plugin.c:1732
+#: ../plugins/build-basic-autotools/plugin.c:1708
 msgid "Build module associated with current file"
 msgstr "Собрать модуль, ассоциированный с текущим файлом"
 
-#: ../plugins/build-basic-autotools/plugin.c:1737
+#: ../plugins/build-basic-autotools/plugin.c:1713
 msgid "_Install Module"
 msgstr "Установить м_одуль"
 
-#: ../plugins/build-basic-autotools/plugin.c:1738
+#: ../plugins/build-basic-autotools/plugin.c:1714
 msgid "Install module associated with current file"
 msgstr "Установить модуль, ассоциированный с текущим файлом"
 
-#: ../plugins/build-basic-autotools/plugin.c:1743
+#: ../plugins/build-basic-autotools/plugin.c:1719
 msgid "_Check Module"
 msgstr "Проверить _модуль"
 
-#: ../plugins/build-basic-autotools/plugin.c:1744
+#: ../plugins/build-basic-autotools/plugin.c:1720
 msgid "Check module associated with current file"
 msgstr "Проверить модуль, ассоциированный с текущим файлом"
 
-#: ../plugins/build-basic-autotools/plugin.c:1749
+#: ../plugins/build-basic-autotools/plugin.c:1725
 msgid "_Clean Module"
 msgstr "Очистить _модуль"
 
-#: ../plugins/build-basic-autotools/plugin.c:1750
+#: ../plugins/build-basic-autotools/plugin.c:1726
 msgid "Clean module associated with current file"
 msgstr "Очистить модуль, ассоциированный с текущим файлом"
 
-#: ../plugins/build-basic-autotools/plugin.c:1755
+#: ../plugins/build-basic-autotools/plugin.c:1731
 msgid "Co_mpile File"
 msgstr "_Компилировать файл"
 
-#: ../plugins/build-basic-autotools/plugin.c:1756
+#: ../plugins/build-basic-autotools/plugin.c:1732
 msgid "Compile current editor file"
 msgstr "Скомпилировать текущий редактируемый файл"
 
-#: ../plugins/build-basic-autotools/plugin.c:1761
+#: ../plugins/build-basic-autotools/plugin.c:1737
 msgid "Select Configuration"
 msgstr "Выбрать конфигурацию"
 
-#: ../plugins/build-basic-autotools/plugin.c:1762
+#: ../plugins/build-basic-autotools/plugin.c:1738
 msgid "Select current configuration"
 msgstr "Выбор текущей конфигурации"
 
-#: ../plugins/build-basic-autotools/plugin.c:1767
+#: ../plugins/build-basic-autotools/plugin.c:1743
 msgid "Remove Configuration"
 msgstr "Удалить конфигурацию"
 
-#: ../plugins/build-basic-autotools/plugin.c:1768
+#: ../plugins/build-basic-autotools/plugin.c:1744
 msgid ""
 "Clean project (distclean) and remove configuration directory if possible"
 msgstr ""
 "Очистить проект (distclean) и удалить конфигурационный каталог, если это "
 "возможно"
 
-#: ../plugins/build-basic-autotools/plugin.c:1781
-#: ../plugins/build-basic-autotools/plugin.c:1809
+#: ../plugins/build-basic-autotools/plugin.c:1757
+#: ../plugins/build-basic-autotools/plugin.c:1785
 msgid "_Compile"
 msgstr "С_компилировать"
 
-#: ../plugins/build-basic-autotools/plugin.c:1782
-#: ../plugins/build-basic-autotools/plugin.c:1810
+#: ../plugins/build-basic-autotools/plugin.c:1758
+#: ../plugins/build-basic-autotools/plugin.c:1786
 msgid "Compile file"
 msgstr "Скомпилировать файл"
 
-#: ../plugins/build-basic-autotools/plugin.c:1788
-#: ../plugins/build-basic-autotools/plugin.c:1816
+#: ../plugins/build-basic-autotools/plugin.c:1764
+#: ../plugins/build-basic-autotools/plugin.c:1792
 msgid "Build module"
 msgstr "Собрать модуль"
 
-#: ../plugins/build-basic-autotools/plugin.c:1793
-#: ../plugins/build-basic-autotools/plugin.c:1821
-#: ../plugins/build-basic-autotools/plugin.c:1904
+#: ../plugins/build-basic-autotools/plugin.c:1769
+#: ../plugins/build-basic-autotools/plugin.c:1797
+#: ../plugins/build-basic-autotools/plugin.c:1880
 #, c-format
 msgid "_Install"
 msgstr "_Установить"
 
-#: ../plugins/build-basic-autotools/plugin.c:1794
-#: ../plugins/build-basic-autotools/plugin.c:1822
+#: ../plugins/build-basic-autotools/plugin.c:1770
+#: ../plugins/build-basic-autotools/plugin.c:1798
 msgid "Install module"
 msgstr "Установить модуль"
 
-#: ../plugins/build-basic-autotools/plugin.c:1799
-#: ../plugins/build-basic-autotools/plugin.c:1833
-#: ../plugins/build-basic-autotools/plugin.c:1911
+#: ../plugins/build-basic-autotools/plugin.c:1775
+#: ../plugins/build-basic-autotools/plugin.c:1809
+#: ../plugins/build-basic-autotools/plugin.c:1887
 #, c-format
 msgid "_Clean"
 msgstr "_Очистить"
 
-#: ../plugins/build-basic-autotools/plugin.c:1800
-#: ../plugins/build-basic-autotools/plugin.c:1834
+#: ../plugins/build-basic-autotools/plugin.c:1776
+#: ../plugins/build-basic-autotools/plugin.c:1810
 msgid "Clean module"
 msgstr "Очистить модуль"
 
-#: ../plugins/build-basic-autotools/plugin.c:1827
+#: ../plugins/build-basic-autotools/plugin.c:1803
 msgid "_Check"
 msgstr "_Проверить"
 
-#: ../plugins/build-basic-autotools/plugin.c:1828
+#: ../plugins/build-basic-autotools/plugin.c:1804
 msgid "Check module"
 msgstr "Проверить модуль"
 
-#: ../plugins/build-basic-autotools/plugin.c:1839
+#: ../plugins/build-basic-autotools/plugin.c:1815
 msgid "_Cancel command"
 msgstr "_Остановить выполнение команды"
 
-#: ../plugins/build-basic-autotools/plugin.c:1840
+#: ../plugins/build-basic-autotools/plugin.c:1816
 msgid "Cancel build command"
 msgstr "Остановить команду сборки"
 
-#: ../plugins/build-basic-autotools/plugin.c:1897
+#: ../plugins/build-basic-autotools/plugin.c:1873
 #, c-format
 msgid "_Build (%s)"
 msgstr "_Собрать (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1904
+#: ../plugins/build-basic-autotools/plugin.c:1880
 #, c-format
 msgid "_Install (%s)"
 msgstr "_Установить (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1911
+#: ../plugins/build-basic-autotools/plugin.c:1887
 #, c-format
 msgid "_Clean (%s)"
 msgstr "_Очистить (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1919
+#: ../plugins/build-basic-autotools/plugin.c:1895
 #, c-format
 msgid "Co_mpile (%s)"
 msgstr "_Компилировать (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1919
+#: ../plugins/build-basic-autotools/plugin.c:1895
 #, c-format
 msgid "Co_mpile"
 msgstr "_Компилировать"
 
-#: ../plugins/build-basic-autotools/plugin.c:2517
+#: ../plugins/build-basic-autotools/plugin.c:2493
 msgid "Build commands"
 msgstr "Команды для сборки"
 
 #. Translators: This is a group of build
 #. * commands which appears in pop up menus
-#: ../plugins/build-basic-autotools/plugin.c:2526
+#: ../plugins/build-basic-autotools/plugin.c:2502
 msgid "Build popup commands"
 msgstr "Всплывающие команды для сборки"
 
-#: ../plugins/build-basic-autotools/plugin.c:2970
-#: ../plugins/build-basic-autotools/plugin.c:2978
+#: ../plugins/build-basic-autotools/plugin.c:2946
+#: ../plugins/build-basic-autotools/plugin.c:2954
 msgid "Build Autotools"
 msgstr "Сборка с Autotools"
 
@@ -2121,7 +2122,7 @@ msgstr "Шаблон autogen, используемый для файла реа�
 msgid "File to which the processed template will be written"
 msgstr "Файл для записи обрабатываемого шаблона"
 
-#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1373
+#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1368
 msgid ""
 "Could not find autogen version 5; please install the autogen package. You "
 "can get it from http://autogen.sourceforge.net."
@@ -3527,8 +3528,8 @@ msgstr "API"
 msgid "Missing name"
 msgstr "Пропущено имя"
 
-#: ../plugins/dir-project/dir-project.c:1070
-#: ../plugins/dir-project/dir-project.c:1080
+#: ../plugins/dir-project/dir-project.c:1132
+#: ../plugins/dir-project/dir-project.c:1142
 #: ../plugins/mk-project/mk-project.c:1024
 #: ../plugins/mk-project/mk-project.c:1034
 #, c-format
@@ -3577,7 +3578,7 @@ msgid "Rename"
 msgstr "Переименовать"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:363
-#: ../plugins/git/plugin.c:172
+#: ../plugins/git/plugin.c:173
 #: ../plugins/snippets-manager/snippets-editor.ui.h:19
 msgid "Remove"
 msgstr "Удалить"
@@ -3609,7 +3610,6 @@ msgid "Open file"
 msgstr "Открыть файл"
 
 #: ../plugins/document-manager/anjuta-docman.c:909
-#: ../plugins/message-view/message-view.c:100
 msgid "Save file as"
 msgstr "Сохранить файл как"
 
@@ -4083,7 +4083,7 @@ msgstr "Вырезать выделенный текст из редактора
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:583
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:592
 msgid "_Copy"
 msgstr "_Копировать"
 
@@ -4091,7 +4091,7 @@ msgstr "_Копировать"
 msgid "Copy the selected text to the clipboard"
 msgstr "Скопировать выделенный текст в буфер обмена"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:591
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:600
 msgid "_Paste"
 msgstr "Вст_авить"
 
@@ -4353,7 +4353,7 @@ msgid "Replace all"
 msgstr "Заменить всё"
 
 #: ../plugins/document-manager/search-files.c:616
-#: ../plugins/file-manager/file-view.c:804
+#: ../plugins/file-manager/file-view.c:892
 msgid "Filename"
 msgstr "Имя файла"
 
@@ -4401,7 +4401,6 @@ msgid "This function is not implemented for widgets of class '%s'"
 msgstr "Эта функция ещё не реализована для виджетов класса «%s»"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:936
-#: ../plugins/starter/plugin.c:187
 #, c-format
 msgid "Open '%s'"
 msgstr "Открыть '%s'"
@@ -4597,7 +4596,7 @@ msgid "Open With"
 msgstr "Открыть с помощью"
 
 #: ../plugins/file-manager/file-manager.plugin.in.h:1
-#: ../plugins/file-manager/plugin.c:543 ../plugins/file-manager/plugin.c:552
+#: ../plugins/file-manager/plugin.c:538 ../plugins/file-manager/plugin.c:547
 msgid "File Manager"
 msgstr "Файловый менеджер"
 
@@ -4649,14 +4648,27 @@ msgid "Loading..."
 msgstr "Загрузка…"
 
 #: ../plugins/file-manager/file-model.c:708
-#: ../plugins/file-manager/file-view.c:892
+#: ../plugins/file-manager/file-view.c:980
 msgid "Base Path"
 msgstr "Основной путь"
 
 #: ../plugins/file-manager/file-model.c:709
-#: ../plugins/file-manager/file-view.c:893
+#: ../plugins/file-manager/file-view.c:981
 msgid "GFile representing the top-most path displayed"
 msgstr "GFile показывает самый верхний путь"
+
+#. You try to rename "/"
+#: ../plugins/file-manager/file-view.c:139
+msgid "You can't rename \"/\"!"
+msgstr "Невозможно переименовать «/»!"
+
+#: ../plugins/file-manager/file-view.c:153
+msgid ""
+"An error has occured!\n"
+"Maybe you permissions're insuficient or the filename is wrong"
+msgstr ""
+"Произошла ошибка!\n"
+"Возможно, у вас нет хватает прав доступа или файл имеет неверное имя"
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
@@ -4674,11 +4686,11 @@ msgstr "_Показать в файловом менеджере"
 msgid "Show in File manager"
 msgstr "Показать в файловом менеджере"
 
-#: ../plugins/file-manager/plugin.c:371
+#: ../plugins/file-manager/plugin.c:366
 msgid "File manager popup actions"
 msgstr "Всплывающие действия файлового менеджера"
 
-#: ../plugins/file-manager/plugin.c:404 ../plugins/git/plugin.c:156
+#: ../plugins/file-manager/plugin.c:399 ../plugins/git/plugin.c:157
 msgid "Files"
 msgstr "Файлы"
 
@@ -5186,7 +5198,7 @@ msgstr "Каталог для создания в нём заплаток:"
 msgid "Repository to pull from:"
 msgstr "Забрать и объединить изменения из репозитория:"
 
-#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:272
+#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:273
 msgid "Rebase"
 msgstr "Перемещение"
 
@@ -5322,7 +5334,7 @@ msgstr "Введите имя автора фиксации изменения"
 msgid "Please enter the commit author's e-mail address."
 msgstr "Введите адрес эл. почты автора фиксации изменений."
 
-#: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:148
+#: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:149
 msgid "Commit"
 msgstr "Фиксировать"
 
@@ -5376,7 +5388,7 @@ msgstr "<b>Метка:</b> %s"
 msgid "<b>Remote:</b> %s"
 msgstr "<b>Удалённый:</b> %s"
 
-#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:99
+#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:100
 msgid "Merge"
 msgstr "Объединить"
 
@@ -5400,11 +5412,11 @@ msgstr "Модуль системы контроля версий Git"
 msgid "Please enter a URL."
 msgstr "Введите URL."
 
-#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:256
+#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:257
 msgid "Pull"
 msgstr "Забрать и объединить"
 
-#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:248
+#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:249
 msgid "Push"
 msgstr "Внести изменения"
 
@@ -5448,7 +5460,7 @@ msgstr "Конфликтующие файлы не выбраны."
 msgid "Please enter a commit."
 msgstr "Введите фиксацию."
 
-#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:512
+#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:513
 msgid "Revert"
 msgstr "Отменить"
 
@@ -5468,311 +5480,311 @@ msgstr "Изменено, но не обновлено"
 msgid "No staged files selected."
 msgstr "Этапированные файлы не выбраны."
 
-#: ../plugins/git/plugin.c:67
+#: ../plugins/git/plugin.c:68
 msgid "Branch tools"
 msgstr "Инструменты ветвей"
 
-#: ../plugins/git/plugin.c:75 ../plugins/git/plugin.c:76
+#: ../plugins/git/plugin.c:76 ../plugins/git/plugin.c:77
 msgid "Create a branch"
 msgstr "Создать ветвь"
 
-#: ../plugins/git/plugin.c:83 ../plugins/git/plugin.c:84
+#: ../plugins/git/plugin.c:84 ../plugins/git/plugin.c:85
 msgid "Delete branches"
 msgstr "Удалить ветви"
 
-#: ../plugins/git/plugin.c:91 ../plugins/git/plugin.c:92
+#: ../plugins/git/plugin.c:92 ../plugins/git/plugin.c:93
 msgid "Switch to the selected branch"
 msgstr "Переключиться на выбранную ветвь"
 
-#: ../plugins/git/plugin.c:100
+#: ../plugins/git/plugin.c:101
 msgid "Merge a revision into the current branch"
 msgstr "Объединить правку в текущей ветви"
 
-#: ../plugins/git/plugin.c:111
+#: ../plugins/git/plugin.c:112
 msgid "Tag tools"
 msgstr "Инструменты меток"
 
-#: ../plugins/git/plugin.c:119 ../plugins/git/plugin.c:120
+#: ../plugins/git/plugin.c:120 ../plugins/git/plugin.c:121
 msgid "Create a tag"
 msgstr "Создать метку"
 
-#: ../plugins/git/plugin.c:127 ../plugins/git/plugin.c:128
+#: ../plugins/git/plugin.c:128 ../plugins/git/plugin.c:129
 msgid "Delete selected tags"
 msgstr "Удалить выбранные метки"
 
-#: ../plugins/git/plugin.c:140
+#: ../plugins/git/plugin.c:141
 msgid "Changes"
 msgstr "Изменения"
 
-#: ../plugins/git/plugin.c:149
+#: ../plugins/git/plugin.c:150
 msgid "Commit changes"
 msgstr "Фиксировать изменения"
 
-#: ../plugins/git/plugin.c:164
+#: ../plugins/git/plugin.c:165
 #: ../plugins/snippets-manager/snippets-editor.ui.h:18
 msgid "Add"
 msgstr "Добавить"
 
-#: ../plugins/git/plugin.c:165
+#: ../plugins/git/plugin.c:166
 msgid "Add files to the index"
 msgstr "Добавить файлы в индекс"
 
-#: ../plugins/git/plugin.c:173
+#: ../plugins/git/plugin.c:174
 msgid "Remove files from the repository"
 msgstr "Удалить файлы из репозитория"
 
-#: ../plugins/git/plugin.c:180 ../plugins/git/plugin.c:476
+#: ../plugins/git/plugin.c:181 ../plugins/git/plugin.c:477
 msgid "Check out"
 msgstr "Извлечь"
 
-#: ../plugins/git/plugin.c:181
+#: ../plugins/git/plugin.c:182
 msgid "Revert changes in unstaged files"
 msgstr "Отменить изменения в неэтапированных файлах"
 
-#: ../plugins/git/plugin.c:188 ../plugins/git/plugin.c:484
+#: ../plugins/git/plugin.c:189 ../plugins/git/plugin.c:485
 msgid "Unstage"
 msgstr "Снять этапирование"
 
-#: ../plugins/git/plugin.c:189
+#: ../plugins/git/plugin.c:190
 msgid "Remove staged files from the index"
 msgstr "Удалить этапированные файлы из индекса"
 
-#: ../plugins/git/plugin.c:196
+#: ../plugins/git/plugin.c:197
 msgid "Resolve conflicts"
 msgstr "Разрешить конфликты"
 
-#: ../plugins/git/plugin.c:197
+#: ../plugins/git/plugin.c:198
 msgid "Mark selected conflicted files as resolved"
 msgstr "Пометить выделенные конфликтующие файлы как разрешённые"
 
-#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:958
+#: ../plugins/git/plugin.c:205 ../plugins/git/plugin.c:958
 msgid "Stash"
 msgstr "Скрыть"
 
-#: ../plugins/git/plugin.c:212 ../plugins/git/plugin.c:324
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
 msgid "Stash uncommitted changes"
 msgstr "Скрыть нефиксированные изменения"
 
-#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
+#: ../plugins/git/plugin.c:214 ../plugins/git/plugin.c:326
 msgid "Save uncommitted changes without committing them"
 msgstr "Сохранить нефиксированные изменения без фиксации"
 
-#: ../plugins/git/plugin.c:224
+#: ../plugins/git/plugin.c:225
 msgid "Remote repository tools"
 msgstr "Инструменты удалённых репозиториев"
 
-#: ../plugins/git/plugin.c:232
+#: ../plugins/git/plugin.c:233
 msgid "Add a remote"
 msgstr "Добавить удалённый репозиторий"
 
-#: ../plugins/git/plugin.c:233
+#: ../plugins/git/plugin.c:234
 msgid "Add a remote repository"
 msgstr "Добавить в удалённый репозиторий"
 
-#: ../plugins/git/plugin.c:240
+#: ../plugins/git/plugin.c:241
 msgid "Delete selected remote"
 msgstr "Удалить выбранный удалённый репозиторий"
 
-#: ../plugins/git/plugin.c:241
+#: ../plugins/git/plugin.c:242
 msgid "Delete a remote"
 msgstr "Удалить удалённый репозиторий"
 
-#: ../plugins/git/plugin.c:249
+#: ../plugins/git/plugin.c:250
 msgid "Push changes to a remote repository"
 msgstr "Внести изменения в удалённый репозиторий"
 
-#: ../plugins/git/plugin.c:257
+#: ../plugins/git/plugin.c:258
 msgid "Pull changes from a remote repository"
 msgstr "Забрать и объединить изменения из удалённого репозитория"
 
-#: ../plugins/git/plugin.c:264 ../plugins/git/plugin.c:576
+#: ../plugins/git/plugin.c:265 ../plugins/git/plugin.c:577
 msgid "Fetch"
 msgstr "Забрать"
 
-#: ../plugins/git/plugin.c:265
+#: ../plugins/git/plugin.c:266
 msgid "Fetch changes from remote repositories"
 msgstr "Забрать изменения из удалённых репозиториев"
 
-#: ../plugins/git/plugin.c:280
+#: ../plugins/git/plugin.c:281
 msgid "Rebase against selected remote"
 msgstr "Перенести относительно выбранного репозитория"
 
-#: ../plugins/git/plugin.c:281
+#: ../plugins/git/plugin.c:282
 msgid "Start a rebase operation relative to the selected remote repository"
 msgstr "Начать перенос относительно выбранного удалённого репозитория"
 
-#: ../plugins/git/plugin.c:288 ../plugins/git/plugin.c:448
+#: ../plugins/git/plugin.c:289 ../plugins/git/plugin.c:449
 msgid "Continue"
 msgstr "Продолжить"
 
-#: ../plugins/git/plugin.c:289
+#: ../plugins/git/plugin.c:290
 msgid "Continue a rebase with resolved conflicts"
 msgstr "Продолжить перенос с разрешёнными конфликтами"
 
-#: ../plugins/git/plugin.c:296 ../plugins/git/plugin.c:456
+#: ../plugins/git/plugin.c:297 ../plugins/git/plugin.c:457
 msgid "Skip"
 msgstr "Пропустить"
 
-#: ../plugins/git/plugin.c:297
+#: ../plugins/git/plugin.c:298
 msgid "Skip the current revision"
 msgstr "Пропустить текущую правку"
 
-#: ../plugins/git/plugin.c:304 ../plugins/git/plugin.c:464
+#: ../plugins/git/plugin.c:305 ../plugins/git/plugin.c:465
 msgid "Abort"
 msgstr "Прервать"
 
-#: ../plugins/git/plugin.c:305
+#: ../plugins/git/plugin.c:306
 msgid "Abort the rebase and return the repository to its previous state"
 msgstr "Прервать перенос и вернуть репозиторий в первоначальное состояние"
 
-#: ../plugins/git/plugin.c:316
+#: ../plugins/git/plugin.c:317
 msgid "Stash tools"
 msgstr "Инструменты скрытия изменений"
 
-#: ../plugins/git/plugin.c:332
+#: ../plugins/git/plugin.c:333
 msgid "Apply selected stash"
 msgstr "Применить выбранное скрытое изменение"
 
-#: ../plugins/git/plugin.c:333
+#: ../plugins/git/plugin.c:334
 msgid "Apply stashed changes back into the working tree"
 msgstr "Применить скрытые изменения в рабочем дереве"
 
-#: ../plugins/git/plugin.c:340
+#: ../plugins/git/plugin.c:341
 msgid "Apply stash and restore index"
 msgstr "Применить скрытые изменения и восстановить индекс"
 
-#: ../plugins/git/plugin.c:341
+#: ../plugins/git/plugin.c:342
 msgid "Apply stashed changes back into the working tree and the index"
 msgstr "Применить скрытые изменения к рабочему дереву и индексу"
 
-#: ../plugins/git/plugin.c:348
+#: ../plugins/git/plugin.c:349
 msgid "Drop selected stash"
 msgstr "Удалить выбранное скрытое изменение"
 
-#: ../plugins/git/plugin.c:349
+#: ../plugins/git/plugin.c:350
 msgid "Delete the selected stash"
 msgstr "Удалить выбранное скрытое изменение"
 
-#: ../plugins/git/plugin.c:356
+#: ../plugins/git/plugin.c:357
 msgid "Clear all stashes"
 msgstr "Очистить все скрытые изменения"
 
-#: ../plugins/git/plugin.c:357
+#: ../plugins/git/plugin.c:358
 msgid "Delete all stashes in this repository"
 msgstr "Удалить все скрытые изменения в этом репозитории"
 
-#: ../plugins/git/plugin.c:368
+#: ../plugins/git/plugin.c:369
 msgid "Revision tools"
 msgstr "Инструменты правок"
 
-#: ../plugins/git/plugin.c:376 ../plugins/git/plugin.c:496
+#: ../plugins/git/plugin.c:377 ../plugins/git/plugin.c:497
 msgid "Show commit diff"
 msgstr "Сравнить правку"
 
-#: ../plugins/git/plugin.c:377
+#: ../plugins/git/plugin.c:378
 msgid "Show a diff of the selected revision"
 msgstr "Сравнить выбранную правку"
 
-#: ../plugins/git/plugin.c:384 ../plugins/git/plugin.c:504
+#: ../plugins/git/plugin.c:385 ../plugins/git/plugin.c:505
 msgid "Cherry pick"
 msgstr "Выборочное изменение"
 
-#: ../plugins/git/plugin.c:385
+#: ../plugins/git/plugin.c:386
 msgid "Merge an individual commit from another branch"
 msgstr "Объединить данную фиксацию из другой ветви"
 
-#: ../plugins/git/plugin.c:392
+#: ../plugins/git/plugin.c:393
 msgid "Reset/Revert"
 msgstr "Сбросить или отменить"
 
-#: ../plugins/git/plugin.c:400
+#: ../plugins/git/plugin.c:401
 msgid "Reset tree"
 msgstr "Сбросить дерево"
 
-#: ../plugins/git/plugin.c:401
+#: ../plugins/git/plugin.c:402
 msgid "Reset tree to a previous revision"
 msgstr "Сбросить дерево к предыдущей правке"
 
-#: ../plugins/git/plugin.c:408
+#: ../plugins/git/plugin.c:409
 msgid "Revert commit"
 msgstr "Отменить фиксацию"
 
-#: ../plugins/git/plugin.c:409
+#: ../plugins/git/plugin.c:410
 msgid "Revert a commit"
 msgstr "Отменить фиксацию"
 
-#: ../plugins/git/plugin.c:416
+#: ../plugins/git/plugin.c:417
 msgid "Patch series"
 msgstr "Серия заплаток"
 
-#: ../plugins/git/plugin.c:424 ../plugins/git/plugin.c:425
+#: ../plugins/git/plugin.c:425 ../plugins/git/plugin.c:426
 msgid "Generate a patch series"
 msgstr "Создать серию заплаток"
 
-#: ../plugins/git/plugin.c:432
+#: ../plugins/git/plugin.c:433
 msgid "Mailbox files"
 msgstr "Почтовые файлы"
 
-#: ../plugins/git/plugin.c:440
+#: ../plugins/git/plugin.c:441
 msgid "Apply mailbox files"
 msgstr "Использовать почтовые файлы"
 
-#: ../plugins/git/plugin.c:441
+#: ../plugins/git/plugin.c:442
 msgid "Apply patches from mailbox files"
 msgstr "Применить заплатки из почтовых файлов"
 
-#: ../plugins/git/plugin.c:449
+#: ../plugins/git/plugin.c:450
 msgid "Continue applying patches with resolved conflicts"
 msgstr "Продолжить применение заплаток с разрешёнными конфликтами"
 
-#: ../plugins/git/plugin.c:457
+#: ../plugins/git/plugin.c:458
 msgid "Skip the current patch in the series"
 msgstr "Пропустить текущую заплатку из серии"
 
-#: ../plugins/git/plugin.c:465
+#: ../plugins/git/plugin.c:466
 msgid ""
 "Stop applying the patch series and return the tree to its previous state"
 msgstr ""
 "Остановить применение серии заплаток и вернуть дерево в первоначальное "
 "состояние"
 
-#: ../plugins/git/plugin.c:520
+#: ../plugins/git/plugin.c:521
 msgid "Reset..."
 msgstr "Сбросить…"
 
-#: ../plugins/git/plugin.c:532
+#: ../plugins/git/plugin.c:533
 msgid "Switch"
 msgstr "Переключить"
 
-#: ../plugins/git/plugin.c:540
+#: ../plugins/git/plugin.c:541
 msgid "Delete..."
 msgstr "Удалить…"
 
-#: ../plugins/git/plugin.c:548
+#: ../plugins/git/plugin.c:549
 msgid "Merge..."
 msgstr "Объединить…"
 
-#: ../plugins/git/plugin.c:560
+#: ../plugins/git/plugin.c:561
 msgid "Push..."
 msgstr "Внести изменения…"
 
-#: ../plugins/git/plugin.c:568
+#: ../plugins/git/plugin.c:569
 msgid "Pull..."
 msgstr "Забрать и объединить…"
 
-#: ../plugins/git/plugin.c:588
+#: ../plugins/git/plugin.c:589
 msgid "Apply"
 msgstr "Применить"
 
-#: ../plugins/git/plugin.c:596
+#: ../plugins/git/plugin.c:597
 msgid "Apply and restore index"
 msgstr "Применить и восстановить индекс"
 
-#: ../plugins/git/plugin.c:604
+#: ../plugins/git/plugin.c:605
 msgid "Drop"
 msgstr "Отказаться"
 
-#: ../plugins/git/plugin.c:693 ../plugins/git/plugin.c:766
+#: ../plugins/git/plugin.c:694 ../plugins/git/plugin.c:767
 msgid "Branch"
 msgstr "Ветвь"
 
@@ -6146,17 +6158,14 @@ msgid "JS Find dirs"
 msgstr "Каталоги поиска JS"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-#| msgid "Gir repository's directory: "
 msgid "Gir repository's directory:"
 msgstr "Каталог репозитория Gir: "
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-#| msgid "Gjs repository's directory: "
 msgid "Gjs repository's directory:"
 msgstr "Каталог репозитория Gjs: "
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
-#| msgid "Min character for completion: "
 msgid "Min character for completion:"
 msgstr "Минимальное кол-во символов для дополнения: "
 
@@ -6291,24 +6300,19 @@ msgstr "Важно:"
 msgid "Message colors"
 msgstr "Цвета сообщений"
 
-#: ../plugins/message-view/anjuta-msgman.c:83
+#: ../plugins/message-view/anjuta-msgman.c:94
 msgid "Close all message tabs"
 msgstr "Закрыть все вкладки сообщений"
 
-#: ../plugins/message-view/message-view.c:497
+#: ../plugins/message-view/message-view.c:472
 msgid "Icon"
 msgstr "Значок"
 
-#: ../plugins/message-view/message-view.c:511
+#: ../plugins/message-view/message-view.c:486
 #: ../plugins/message-view/plugin.c:386 ../plugins/message-view/plugin.c:400
 #: ../plugins/message-view/plugin.c:519 ../plugins/message-view/plugin.c:530
 msgid "Messages"
 msgstr "Сообщения"
-
-#: ../plugins/message-view/message-view.c:869
-#, c-format
-msgid "Error writing %s"
-msgstr "Ошибка записи %s"
 
 #: ../plugins/message-view/plugin.c:79
 msgid "_Copy Message"
@@ -6319,28 +6323,30 @@ msgid "Copy message"
 msgstr "Копировать сообщение"
 
 #: ../plugins/message-view/plugin.c:83
+#| msgid "_Copy Message"
+msgid "_Copy All Messages"
+msgstr "_Копировать все сообщения"
+
+#: ../plugins/message-view/plugin.c:84
+#| msgid "_Copy Message"
+msgid "Copy All Messages"
+msgstr "Копировать все сообщения"
+
+#: ../plugins/message-view/plugin.c:87
 msgid "_Next Message"
 msgstr "_Следующее сообщение"
 
-#: ../plugins/message-view/plugin.c:84
+#: ../plugins/message-view/plugin.c:88
 msgid "Next message"
 msgstr "Следующее сообщение"
 
-#: ../plugins/message-view/plugin.c:87
+#: ../plugins/message-view/plugin.c:91
 msgid "_Previous Message"
 msgstr "Пр_едыдущее сообщение"
 
-#: ../plugins/message-view/plugin.c:88
+#: ../plugins/message-view/plugin.c:92
 msgid "Previous message"
 msgstr "Предыдущее сообщение"
-
-#: ../plugins/message-view/plugin.c:91
-msgid "_Save Message"
-msgstr "_Сохранить сообщение"
-
-#: ../plugins/message-view/plugin.c:92
-msgid "Save message"
-msgstr "Сохранить сообщение"
 
 #: ../plugins/message-view/plugin.c:168
 msgid "Next/Previous Message"
@@ -7306,7 +7312,6 @@ msgstr ""
 "относителен, то он берётся относительно домашнего каталога."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
-#| msgid "Create a new project"
 msgid "Default user name used in new project"
 msgstr "Имя пользователя используемое по умолчанию в новом проекте"
 
@@ -7315,7 +7320,6 @@ msgid "If empty, the current user name is used."
 msgstr "Если пустая, используется текущее имя пользователя."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-#| msgid "Create a new project"
 msgid "Default email used in new project"
 msgstr "Эл. почта используемая по умолчанию в новом проекте"
 
@@ -8285,31 +8289,31 @@ msgstr ""
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/run-program/plugin.c:266
+#: ../plugins/run-program/plugin.c:290
 msgid "_Run"
 msgstr "_Запуск"
 
-#: ../plugins/run-program/plugin.c:276
+#: ../plugins/run-program/plugin.c:300
 msgid "Run program without debugger"
 msgstr "Запустить программу без отладчика"
 
-#: ../plugins/run-program/plugin.c:282
+#: ../plugins/run-program/plugin.c:306
 msgid "Stop Program"
 msgstr "Остановить программу"
 
-#: ../plugins/run-program/plugin.c:284
+#: ../plugins/run-program/plugin.c:308
 msgid "Kill program"
 msgstr "Завершить программу"
 
-#: ../plugins/run-program/plugin.c:290
+#: ../plugins/run-program/plugin.c:314
 msgid "Program Parameters…"
 msgstr "Аргументы программы…"
 
-#: ../plugins/run-program/plugin.c:292
+#: ../plugins/run-program/plugin.c:316
 msgid "Set current program, arguments, etc."
 msgstr "Установить текущую программу, аргументы и т.п."
 
-#: ../plugins/run-program/plugin.c:317
+#: ../plugins/run-program/plugin.c:348
 msgid "Run operations"
 msgstr "Команды запуска"
 
@@ -8413,13 +8417,11 @@ msgstr "Языки"
 
 #. Insert the Add Snippet menu item
 #: ../plugins/snippets-manager/snippets-browser.c:809
-#| msgid "Add Snippet …"
 msgid "Add Snippet…"
 msgstr "Добавить фрагмент кода…"
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
-#| msgid "Add Snippets Group …"
 msgid "Add Snippets Group…"
 msgstr "Добавить группу фрагментов кода…"
 
@@ -8437,12 +8439,15 @@ msgid ""
 msgstr "<b>Ошибка:</b> ключ триггера уже используется для одного из языков!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
+#| msgid ""
+#| "<b>Error:</b> The trigger key can only contain alphanumeric characters "
+#| "and _ !"
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
-"_ !"
+"\"_\"!"
 msgstr ""
 "<b>Ошибка:</b> ключ триггера может содержать только буквенно-цифровые "
-"символы и _ !"
+"символы и «_»!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:51
 msgid "<b>Error:</b> You haven't entered a trigger key for the snippet!"
@@ -8768,7 +8773,7 @@ msgstr "Начало"
 msgid "Welcome page with most common actions."
 msgstr "Страница приветствия с общими действиями."
 
-#: ../plugins/starter/plugin.c:304
+#: ../plugins/starter/plugin.c:425
 msgid "Start"
 msgstr "Запустить"
 
@@ -8777,28 +8782,41 @@ msgid "Create a new project"
 msgstr "Создать новый проект"
 
 #: ../plugins/starter/starter.ui.h:2
-msgid "Import an existing project"
-msgstr "Импортировать существующий проект"
+#| msgid "Import project"
+msgid "Import a project"
+msgstr "Импортировать проект"
 
 #: ../plugins/starter/starter.ui.h:3
-msgid "Recent projects:"
-msgstr "Недавние проекты:"
+#| msgid "Search for next appearance of term."
+msgid "Search for example code"
+msgstr "Найти пример с кодом"
 
 #: ../plugins/starter/starter.ui.h:4
-msgid "Tutorials"
-msgstr "Руководства"
+#| msgid "Man Documentation"
+msgid "View local Anjuta documentation"
+msgstr "Открыть локальную документацию по Anjuta"
 
 #: ../plugins/starter/starter.ui.h:5
-msgid "Anjuta Manual"
-msgstr "Руководство пользователя Anjuta"
+msgid "View local Anjuta FAQ"
+msgstr "Открыть локальный FAQ по Anjuta"
 
 #: ../plugins/starter/starter.ui.h:6
-msgid "FAQ"
-msgstr "FAQ"
+msgid "View online library documentation"
+msgstr "Открыть онлайн-документацию по библиотеке"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "Getting started:"
-msgstr "Перед началом работы:"
+msgid "label"
+msgstr "метка"
+
+#: ../plugins/starter/starter.ui.h:8
+#| msgid "No recently used resource found with URI \"%s\""
+msgid "Remove recently used project from list"
+msgstr "Удалить недавно использовавшийся проект из списка"
+
+#: ../plugins/starter/starter.ui.h:9
+#| msgid "_Install Project"
+msgid "Unlist Project"
+msgstr "Удалить из списка"
 
 #: ../plugins/subversion/anjuta-subversion.plugin.in.h:1
 #: ../plugins/subversion/subversion-ui-utils.c:64
@@ -9465,8 +9483,8 @@ msgid "Symbol"
 msgstr "Символ"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:772 ../plugins/terminal/terminal.c:970
-#: ../plugins/terminal/terminal.c:1049
+#: ../plugins/terminal/terminal.c:781 ../plugins/terminal/terminal.c:981
+#: ../plugins/terminal/terminal.c:1067
 msgid "Terminal"
 msgstr "Терминал"
 
@@ -9479,7 +9497,6 @@ msgid "Use GNOME Terminal profile:"
 msgstr "Использовать профиль терминала GNOME:"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
-#| msgid "Use GNOME Terminal profile:"
 msgid "Use default GNOME terminal profile"
 msgstr "Использовать профиль терминала GNOME по умолчанию"
 
@@ -9487,23 +9504,23 @@ msgstr "Использовать профиль терминала GNOME по у
 msgid "Terminal options"
 msgstr "Параметры терминала"
 
-#: ../plugins/terminal/terminal.c:600
+#: ../plugins/terminal/terminal.c:609
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:608
+#: ../plugins/terminal/terminal.c:617
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:616
+#: ../plugins/terminal/terminal.c:625
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:754
+#: ../plugins/terminal/terminal.c:763
 msgid "terminal operations"
 msgstr "Команды терминала"
 
-#: ../plugins/terminal/terminal.c:889
+#: ../plugins/terminal/terminal.c:898
 #, c-format
 msgid "Unable to execute command"
 msgstr "Не удалось выполнить команду"
@@ -9846,9 +9863,10 @@ msgstr "Спросить пользователя о дополнительны�
 msgid "Command line parameters"
 msgstr "Параметры командной строки"
 
-#: ../src/about.c:201
-msgid "Copyright (c) Naba Kumar"
-msgstr "Copyright (С) Naba Kumar"
+#: ../src/about.c:186
+#| msgid "Copyright (c) Naba Kumar"
+msgid "Copyright © Naba Kumar"
+msgstr "Авторские права © Наба Кумар (Naba Kumar)"
 
 #: ../src/anjuta-actions.h:23
 msgid "_File"
@@ -10118,6 +10136,33 @@ msgstr "Только значки"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Только текст"
+
+#~ msgid "Error writing %s"
+#~ msgstr "Ошибка записи %s"
+
+#~ msgid "_Save Message"
+#~ msgstr "_Сохранить сообщение"
+
+#~ msgid "Save message"
+#~ msgstr "Сохранить сообщение"
+
+#~ msgid "Import an existing project"
+#~ msgstr "Импортировать существующий проект"
+
+#~ msgid "Recent projects:"
+#~ msgstr "Недавние проекты:"
+
+#~ msgid "Tutorials"
+#~ msgstr "Руководства"
+
+#~ msgid "Anjuta Manual"
+#~ msgstr "Руководство пользователя Anjuta"
+
+#~ msgid "FAQ"
+#~ msgstr "FAQ"
+
+#~ msgid "Getting started:"
+#~ msgstr "Перед началом работы:"
 
 #~ msgid "Use currently selected profile in GNOME terminal"
 #~ msgstr "Использовать текущий профиль терминала GNOME"
