@@ -36,7 +36,7 @@ class GUI:
 
 		window.show_all()
 
-	def destroy(window, self):
+	def destroy(self, window):
 		Gtk.main_quit()
 
 def main():
