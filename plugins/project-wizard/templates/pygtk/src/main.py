@@ -31,12 +31,12 @@ class GUI:
 [+ELSE+]
 		window = Gtk.Window()
 		window.set_title ("Hello World")
-		window.connect_after('destroy', self.destroy)
+		window.connect_after('destroy', self.on_window_destroy)
 [+ENDIF+]
 
 		window.show_all()
 
-	def destroy(self, window):
+	def on_window_destroy(self, window):
 		Gtk.main_quit()
 
 def main():

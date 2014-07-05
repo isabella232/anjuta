@@ -50,7 +50,7 @@ static Private* priv = NULL;
 
 /* Called when the window is closed */
 void
-destroy (GtkWidget *widget, gpointer data)
+on_window_destroy (GtkWidget *widget, gpointer data)
 {
 	gtk_main_quit ();
 }
