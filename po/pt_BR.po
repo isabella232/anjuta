@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: Anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-05-21 14:44+0000\n"
-"PO-Revision-Date: 2014-05-21 15:11-0300\n"
+"POT-Creation-Date: 2014-07-18 02:44+0000\n"
+"PO-Revision-Date: 2014-07-18 15:09-0300\n"
 "Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -1503,9 +1503,6 @@ msgid "Install"
 msgstr "Instalação"
 
 #: ../plugins/build-basic-autotools/build.c:578
-#| msgid ""
-#| "Before using this new configuration, the default one needs to be removed. "
-#| "Do you want to do that ?"
 msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
 "you want to do that?"
@@ -4430,7 +4427,6 @@ msgstr ""
 "Esta função não está implementada para componentes (widgets) da classe \"%s\""
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:936
-#: ../plugins/starter/plugin.c:187
 #, c-format
 msgid "Open '%s'"
 msgstr "Abrir \"%s\""
@@ -6354,12 +6350,10 @@ msgid "Copy message"
 msgstr "Copiar mensagem"
 
 #: ../plugins/message-view/plugin.c:83
-#| msgid "_Copy Message"
 msgid "_Copy All Messages"
 msgstr "Copiar _todas as mensagens"
 
 #: ../plugins/message-view/plugin.c:84
-#| msgid "_Copy Message"
 msgid "Copy All Messages"
 msgstr "Copiar todas as mensagens"
 
@@ -8479,9 +8473,6 @@ msgid ""
 msgstr "<b>Erro:</b> Este disparador já está em uso em alguma linguagem!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
-#| msgid ""
-#| "<b>Error:</b> The trigger key can only contain alphanumeric characters "
-#| "and _ !"
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
 "\"_\"!"
@@ -8813,7 +8804,7 @@ msgstr "Iniciador"
 msgid "Welcome page with most common actions."
 msgstr "Página de boas vindas com as ações mais comuns"
 
-#: ../plugins/starter/plugin.c:304
+#: ../plugins/starter/plugin.c:425
 msgid "Start"
 msgstr "Começar"
 
@@ -8822,28 +8813,41 @@ msgid "Create a new project"
 msgstr "Criar um novo projeto"
 
 #: ../plugins/starter/starter.ui.h:2
-msgid "Import an existing project"
-msgstr "Importa um projeto existente"
+#| msgid "Import project"
+msgid "Import a project"
+msgstr "Importar um projeto"
 
 #: ../plugins/starter/starter.ui.h:3
-msgid "Recent projects:"
-msgstr "Projetos recentes:"
+#| msgid "Search for next appearance of term."
+msgid "Search for example code"
+msgstr "Pesquisar por código de exemplo"
 
 #: ../plugins/starter/starter.ui.h:4
-msgid "Tutorials"
-msgstr "Tutoriais"
+#| msgid "Man Documentation"
+msgid "View local Anjuta documentation"
+msgstr "Ver documentação local do Anjuta"
 
 #: ../plugins/starter/starter.ui.h:5
-msgid "Anjuta Manual"
-msgstr "Manual do Anjuta"
+msgid "View local Anjuta FAQ"
+msgstr "Ver FAQ local do Anjuta"
 
 #: ../plugins/starter/starter.ui.h:6
-msgid "FAQ"
-msgstr "FAQ"
+msgid "View online library documentation"
+msgstr "Ver documentação on-line de biblioteca"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "Getting started:"
-msgstr "Começando:"
+msgid "label"
+msgstr "rótulo"
+
+#: ../plugins/starter/starter.ui.h:8
+#| msgid "No recently used resource found with URI \"%s\""
+msgid "Remove recently used project from list"
+msgstr "Remover projeto recentemente usado da lista"
+
+#: ../plugins/starter/starter.ui.h:9
+#| msgid "_Install Project"
+msgid "Unlist Project"
+msgstr "Não listar projeto"
 
 #: ../plugins/subversion/anjuta-subversion.plugin.in.h:1
 #: ../plugins/subversion/subversion-ui-utils.c:64
@@ -9899,7 +9903,6 @@ msgid "Command line parameters"
 msgstr "Parâmetros da linha de comando"
 
 #: ../src/about.c:186
-#| msgid "Copyright (c) Naba Kumar"
 msgid "Copyright © Naba Kumar"
 msgstr "Copyright © Naba Kumar"
 
@@ -10173,6 +10176,24 @@ msgstr "Somente ícones"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Somente texto"
+
+#~ msgid "Import an existing project"
+#~ msgstr "Importa um projeto existente"
+
+#~ msgid "Recent projects:"
+#~ msgstr "Projetos recentes:"
+
+#~ msgid "Tutorials"
+#~ msgstr "Tutoriais"
+
+#~ msgid "Anjuta Manual"
+#~ msgstr "Manual do Anjuta"
+
+#~ msgid "FAQ"
+#~ msgstr "FAQ"
+
+#~ msgid "Getting started:"
+#~ msgstr "Começando:"
 
 #~ msgid "Error writing %s"
 #~ msgstr "Erro ao escrever: %s"
