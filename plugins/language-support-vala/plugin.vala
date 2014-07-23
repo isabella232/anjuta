@@ -526,7 +526,7 @@ public class ValaPlugin : Plugin, IAnjuta.Preferences {
 	}
 
 	internal List<Vala.Symbol> lookup_symbol (Vala.Expression? inner, string name, bool prefix_match,
-									 Vala.Block block) {
+	                                          Vala.Block? block) {
 		var matching_symbols = new List<Vala.Symbol> ();
 
 		if (block == null) return matching_symbols;
