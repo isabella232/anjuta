@@ -274,7 +274,7 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 	g_free (str_val);
 
 	str_vals = g_settings_get_strv(profile_settings, TERMINAL_PROFILE_PALETTE_KEY);
-	strv_to_rgbav (str_vals, &size, &palette);
+	strv_to_rgbav ((const gchar **) str_vals, &size, &palette);
 	g_free (str_vals);
 
 	/* vte_terminal_set_colors() works even if the terminal widget is not realized,
