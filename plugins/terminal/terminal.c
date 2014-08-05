@@ -196,7 +196,13 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 		str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_FONT_KEY);
 	}
 	if (str_val != NULL)
-		vte_terminal_set_font_from_string (term, str_val);
+	{
+		PangoFontDescription *font_desc;
+
+		font_desc = pango_font_description_from_string (str_val);
+		vte_terminal_set_font (term, font_desc);
+		pango_font_description_free (font_desc);
+	}
 
 	/* Set cursor blink */
 	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_CURSOR_BLINK_MODE_KEY);
@@ -223,12 +229,6 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 	/* Scroll on output */
 	bool_val = g_settings_get_boolean (profile_settings, TERMINAL_PROFILE_SCROLL_ON_OUTPUT_KEY);
 	vte_terminal_set_scroll_on_output (term, bool_val);
-
-	/* Set word characters */
-	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_WORD_CHARS_KEY);
-	if (str_val != NULL)
-		vte_terminal_set_word_chars (term, str_val);
-	g_free (str_val);
 
 	/* Set backspace key */
 	str_val = g_settings_get_string (profile_settings, TERMINAL_PROFILE_BACKSPACE_BINDING_KEY);
@@ -281,7 +281,7 @@ terminal_set_preferences (VteTerminal *term, GSettings* settings, TerminalPlugin
 	 * which is not the case with vte_terminal_set_color_foreground() and
 	 * vte_terminal_set_color_background()
 	 */
-	vte_terminal_set_colors_rgba (term, foreground, background, palette, size);
+	vte_terminal_set_colors (term, foreground, background, palette, size);
 
 	g_free (palette);
 	g_object_unref (profiles_list);
@@ -333,11 +333,10 @@ use_default_profile_cb (GtkToggleButton *button,
 }
 
 static void
-terminal_child_exited_cb (VteTerminal *term, gpointer user_data)
+terminal_child_exited_cb (VteTerminal *term, int status, gpointer user_data)
 {
 	TerminalPlugin *term_plugin = ANJUTA_PLUGIN_TERMINAL (user_data);
 	GPid pid = term_plugin->child_pid;
-	int status;
 	
 	if (term_plugin->child_pid)
 	{
@@ -353,7 +352,6 @@ terminal_child_exited_cb (VteTerminal *term, gpointer user_data)
 		term_plugin->child_pid = 0;
 	}
 
-	status = vte_terminal_get_child_exit_status (term);
 	g_signal_emit_by_name(term_plugin, "child-exited", pid, status);
 }
 
@@ -393,10 +391,10 @@ terminal_execute (TerminalPlugin *term_plugin, const gchar *directory,
 	vte_terminal_reset (term, TRUE, TRUE);
 */
 
-	if (vte_terminal_fork_command_full (term, term_plugin->pty_flags,
-	                                    dir, args, environment,
-	                                    G_SPAWN_SEARCH_PATH | G_SPAWN_DO_NOT_REAP_CHILD, NULL, NULL,
-	                                    &pid, NULL))
+	if (vte_terminal_spawn_sync (term, term_plugin->pty_flags,
+								 dir, args, environment,
+								 G_SPAWN_SEARCH_PATH | G_SPAWN_DO_NOT_REAP_CHILD, NULL, NULL,
+								 &pid, NULL, NULL))
 	{
 		gboolean focus;
 
@@ -438,10 +436,10 @@ init_shell (TerminalPlugin *term_plugin, const char *path)
 	else
 		first_time = FALSE;
 
-	vte_terminal_fork_command_full (term, term_plugin->pty_flags,
-	                                path, shell, NULL,
-	                                0, NULL, NULL,
-	                                NULL, NULL);
+	vte_terminal_spawn_sync (term, term_plugin->pty_flags,
+							 path, shell, NULL,
+							 0, NULL, NULL,
+							 NULL, NULL, NULL);
 	g_free (shell[0]);
 }
 
@@ -688,7 +686,7 @@ create_box (GtkWidget *term)
 {
 	GtkWidget *sb, *hbox;
 
-	sb = gtk_scrollbar_new (GTK_ORIENTATION_VERTICAL, GTK_ADJUSTMENT (vte_terminal_get_adjustment (VTE_TERMINAL (term))));
+	sb = gtk_scrollbar_new (GTK_ORIENTATION_VERTICAL, gtk_scrollable_get_vadjustment (GTK_SCROLLABLE (term)));
 	gtk_widget_set_can_focus (sb, FALSE);
 
 	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);

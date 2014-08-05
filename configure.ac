@@ -189,7 +189,7 @@ if test "$user_disabled_terminal" = 1; then
 	terminal_enabled="no"
 else
 	AC_MSG_RESULT(no)
-	PKG_CHECK_MODULES(PLUGIN_TERMINAL, [vte-2.90 >= $VTE_REQUIRED],
+	PKG_CHECK_MODULES(PLUGIN_TERMINAL, [vte-2.91 >= $VTE_REQUIRED],
 	    [
 		terminal_enabled=yes
 	    ], [
@@ -995,7 +995,7 @@ if [ test x$terminal_enabled = xyes ]; then
        echo "Building terminal plugin: ..............................YES"
 else
        echo "Building terminal plugin: ..............................NO"
-       echo "        Requires vte-2.90 (>= $VTE_REQUIRED)"
+       echo "        Requires vte-2.91 (>= $VTE_REQUIRED)"
 fi
 
 if [ test x$enable_vala = xyes ]; then
