@@ -917,21 +917,6 @@ add_data_to_store (gchar *uuid, gchar *name, GtkListStore *model)
 }
 
 static void
-profile_renderer (GtkTreeViewColumn *column, GtkCellRenderer *renderer, GtkTreeModel *model, GtkTreeIter *iter, gpointer data)
-{
-	gchar *uuid;
-	gchar *name;
-	gchar *label;
-
-	gtk_tree_model_get (model, iter, TERM_STORE_UUID_COLUMN, &uuid, TERM_STORE_NAME_COLUMN, &name, -1);
-	label = g_strdup_printf ("%s (%s)", name, uuid);
-	g_object_set (renderer, "text", label, NULL);
-	g_free (uuid);
-	g_free (name);
-	g_free (label);
-}
-
-static void
 on_pref_profile_changed (GtkComboBox* combo, TerminalPlugin* term_plugin)
 {
 	GtkTreeModel *model = gtk_combo_box_get_model (combo);
