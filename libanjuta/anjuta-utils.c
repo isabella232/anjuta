@@ -64,6 +64,12 @@
 
 #define FILE_BUFFER_SIZE 1024
 
+/* Common preferences */
+#define ANJUTA_PREF_SCHEMA      "org.gnome.anjuta"
+
+#define LAST_EMAIL              "email"
+
+
 static gchar *anjuta_prefix = "anjuta";
 
 static void
@@ -2556,8 +2562,36 @@ gchar*
 anjuta_util_get_user_mail()
 {
 	/* FIXME: Use libfolks or something like it to query the mail address */
-	return g_strconcat(g_get_user_name (), "@", g_get_host_name (), NULL);
+
+	gchar *id;
+	GSettings *settings;
+
+        settings = g_settings_new (ANJUTA_PREF_SCHEMA);
+	id = g_settings_get_string (settings, LAST_EMAIL);
+	g_object_unref (settings);
+
+        if (*id == '\0') {
+		g_free (id);
+		return g_strconcat(g_get_user_name (), "@", g_get_host_name (), NULL);
+	}
+	else
+		return id;
 }
+
+/*
+ * anjuta_util_get_user_mail:
+ * @id: The e-mail address to be used in future  
+ *
+ */
+void anjuta_util_set_user_mail(const gchar* id)
+{
+	GSettings *settings;
+
+        settings = g_settings_new (ANJUTA_PREF_SCHEMA);
+	g_settings_set_string (settings, LAST_EMAIL, id);
+	g_object_unref (settings);
+}
+
 
 /**
  * anjuta_utils_clone_string_gptrarray:

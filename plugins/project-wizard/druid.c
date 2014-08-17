@@ -1196,10 +1196,10 @@ npw_druid_save_default_property (NPWDruid* druid)
 	new_value = g_hash_table_lookup (druid->values, EMAIL_PROPERTY);
 	if ((new_value != NULL) && (*new_value != '\0'))
 	{
-		old_value = g_settings_get_string (settings, LAST_EMAIL);
+		old_value = anjuta_util_get_user_mail ();
 		if (strcmp (new_value, old_value) != 0)
 		{
-			g_settings_set_string (settings, LAST_EMAIL, new_value);
+			anjuta_util_set_user_mail (new_value);
 		}
 		g_free (old_value);
 	}
@@ -1335,7 +1335,7 @@ npw_druid_add_default_property (NPWDruid* druid)
 	g_hash_table_insert (druid->values, g_strdup (USER_NAME_PROPERTY), s);
 
 	/* Add Email address */
-	s = g_settings_get_string (settings,LAST_EMAIL);
+	s = anjuta_util_get_user_mail ();
 	g_hash_table_insert (druid->values, g_strdup (EMAIL_ADDRESS_PROPERTY), s);
 	g_object_unref (settings);
 

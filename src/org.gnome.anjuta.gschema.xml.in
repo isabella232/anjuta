@@ -32,6 +32,12 @@
 			</choices>
 			<default>"Default"</default>
 		</key>
+
+		<key name="email" type="s">
+			<default>""</default>
+			<_summary>Default email used in new project</_summary>
+			<_description>If empty, current login and machine name is used.</_description>
+		</key>
 	</schema>
 	<schema id="org.gnome.anjuta.editor" path="/org/gnome/anjuta/editor/">
 		<key name="use-tabs" type="b">

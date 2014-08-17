@@ -158,6 +158,7 @@ gchar*		anjuta_util_get_user_config_file_path   (const gchar* path, ...);
 
 /* Get the correct e-mail address */
 gchar*		anjuta_util_get_user_mail				(void);
+void 		anjuta_util_set_user_mail				(const gchar* id);
 
 /* Function for converting GFile objects to string paths
  * Free the returned list with anjuta_util_glist_strings_free. */
