@@ -189,12 +189,20 @@ if test "$user_disabled_terminal" = 1; then
 	terminal_enabled="no"
 else
 	AC_MSG_RESULT(no)
-	PKG_CHECK_MODULES(PLUGIN_TERMINAL, [vte-2.91 >= $VTE_REQUIRED],
-	    [
-		terminal_enabled=yes
-	    ], [
-		terminal_enabled=no
-	    ])
+	PKG_CHECK_EXISTS([vte-2.91 >= $VTE_REQUIRED],
+		 [vte_2_91_enabled=yes],
+		 [vte_2_91_enabled=no])
+	if test $vte_2_91_enabled = yes; then
+		PKG_CHECK_MODULES(PLUGIN_TERMINAL, [vte-2.91 >= $VTE_REQUIRED],
+	    		[terminal_enabled=yes],
+			[terminal_enabled=no])
+		AC_DEFINE(HAVE_VTE_2_91,1,[libvte 2.91 support])
+	else
+		PKG_CHECK_MODULES(PLUGIN_TERMINAL, [vte-2.90 >= $VTE_REQUIRED],
+	    		[terminal_enabled=yes],
+			[terminal_enabled=no])
+		AC_DEFINE(HAVE_VTE_2_90,1,[libvte 2.90 support])
+	fi
 fi
 
 AM_CONDITIONAL(HAVE_PLUGIN_TERMINAL, [test x$terminal_enabled = xyes])
