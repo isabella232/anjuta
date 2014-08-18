@@ -1,3 +1,95 @@
+Anjuta 3.13.90 (August 18, 2014) -- Sébastien Granjoux
+
+Changes:
+
+Sébastien Granjoux (9)
+    terminal: Support vte-2.90 or vte-2.91
+    project-wizard: bgo #732672 - Suggestion to use a Glade prompted handler name rather than "destroy"
+    project-wizard: bgo #732614 - parameters reversed in template main.py function def destroy(window, self)
+    project-wizard: bgo 732446 - Python template not loading
+    bgo #731844 - AppData file does not validate
+    run-program: bgo #730314 - Gnome-Terminal not support --disable-factory argument
+    Add a warning if there is an error while getting package list
+    bgo #730895 - anjuta installs icons in the gnome icon theme
+    terminal: bgo #728295 - Crash if gnome-terminal is not installed
+
+Debarshi Ray (3)
+    terminal: Port to vte-2.91
+    terminal: Fix incompatible pointer type warning
+    terminal: Silence -Wunused-function
+
+Ritesh Khadgaray (1)
+    project-wizard: bgo #734719 - unified email id setting
+
+Piotr Drąg (1)
+    doap: add <programming-language>
+    Improve punctuation in translatable strings
+
+Olav Vitters (1)
+    doap category apps
+
+Abderrahim Kitouni (3)
+    language-support-vala: bgo #722197 - use an empty list in case of the Vala block context is null
+    language-support-vala: bgo #722197 - use an empty list in case of the Vala block context is null
+    Support Vala 0.26
+    
+Tristian Celestin (1)
+    Updated starter plugin
+
+Lasse Liehu (1)
+    Finnish translation update
+
+MarMav (1)
+Tom Tryfonidis (1)
+    Updated Greek translation
+
+Kjartan Maraas (1)
+    Updated Norwegian bokmål translation.
+
+Fran Diéguez (1)
+    Updated Galician translations
+
+Balázs Úr (1)
+    Updated Hungarian translation
+
+Andika Triwidada (1)
+    Updated Indonesian translation
+
+Benjamin Steinwender (1)
+    Updated German translation
+
+Aurimas Černius (1)
+    Updated Lithuanian translation
+
+Jiro Matsuzawa (1)
+    l10n: Update Japanese translation
+
+Yuri Myasoedov (3)
+    Some fixes in Russian translation
+    Updated Russian translation
+
+Akom Chotiphantawanon (1)
+    Updated Thai translation
+
+Daniel Mustieles (4)
+    Updated Spanish translation
+
+Enrico Nicoletto (2)
+Rafael Ferreira (1)
+    Updated Brazilian Portuguese translation
+
+Marek Černocký (2)
+    Updated Czech translation
+
+Matej Urbančič (1)
+    Updated Slovenian translation
+
+Carles Ferrando (1)
+Pau Iranzo (1)
+    [l10n] Updated Catalan (Valencian) translation
+
+
+
 Anjuta 3.13.1 (April 28, 2014) -- Sébastien Granjoux
 
 Changes:
