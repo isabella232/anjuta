@@ -237,6 +237,9 @@ if test "x$devhelp_enabled" = "xyes"; then
 		*webkit2gtk-3.0*)
 			AC_DEFINE([HAVE_WEBKIT2], [1], [Defined if devhelp is built against webkitgtk2])
 			;;
+		*webkit2gtk-4.0*)
+			AC_DEFINE([HAVE_WEBKIT2], [1], [Defined if devhelp is built against webkitgtk2])
+			;;
 		esac
 fi
 AM_CONDITIONAL(HAVE_PLUGIN_DEVHELP, [test x$devhelp_enabled = xyes])
