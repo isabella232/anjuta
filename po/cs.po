@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-05-18 02:43+0000\n"
+"POT-Creation-Date: 2014-08-24 02:44+0000\n"
 "PO-Revision-Date: 2014-05-18 08:01+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -623,11 +623,11 @@ msgid "Shortcut"
 msgstr "Zkratka"
 
 #. Avoid space in translated string
-#: ../libanjuta/anjuta-utils.c:363
+#: ../libanjuta/anjuta-utils.c:369
 msgid "System:"
 msgstr "Systém:"
 
-#: ../libanjuta/anjuta-utils.c:512
+#: ../libanjuta/anjuta-utils.c:518
 msgid ""
 "You do not seem to have PackageKit installed. PackageKit is required for "
 "installing missing packages. Please install \"packagekit-gnome\" package "
@@ -637,17 +637,17 @@ msgstr ""
 "chybějících balíčků. Nainstaluje si prosím do své distribuce balíček "
 "„packagekit-gnome“, nebo nainstalujte chybějící balíčky ručně."
 
-#: ../libanjuta/anjuta-utils.c:521
+#: ../libanjuta/anjuta-utils.c:527
 #, c-format
 msgid "Installation failed: %s"
 msgstr "Instalace selhala: %s"
 
-#: ../libanjuta/anjuta-utils.c:582
+#: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
 msgstr "Selhalo spuštění „%s“. Byla vrácena chyba: „%s“"
 
-#: ../libanjuta/anjuta-utils.c:596
+#: ../libanjuta/anjuta-utils.c:602
 #, c-format
 msgid ""
 "The \"%s\" package is not installed.\n"
@@ -656,7 +656,7 @@ msgstr ""
 "Balíček „%s“ není nainstalován.\n"
 "Nainstalujte jej prosím."
 
-#: ../libanjuta/anjuta-utils.c:614
+#: ../libanjuta/anjuta-utils.c:620
 #, c-format
 msgid ""
 "The \"%s\" utility is not installed.\n"
@@ -666,16 +666,16 @@ msgstr ""
 "Nainstalujte jej prosím."
 
 #. Try xterm
-#: ../libanjuta/anjuta-utils.c:1208
+#: ../libanjuta/anjuta-utils.c:1214
 msgid "Cannot find a terminal; using xterm, even if it may not work"
 msgstr "Nelze nalézt terminál; použije se xterm i v případě, že nefunguje"
 
-#: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
+#: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
 #, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr "Nelze spustit příkaz: %s (pomocí shellu %s): %s\n"
 
-#: ../libanjuta/anjuta-utils.c:2456
+#: ../libanjuta/anjuta-utils.c:2462
 #, c-format
 msgid "Unable to load user interface file: %s"
 msgstr "Nelze nahrát soubor s uživatelským rozhraním: %s"
@@ -4077,7 +4077,7 @@ msgstr "Vyjmout vybraný text z editoru do schránky"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:592
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:627
 msgid "_Copy"
 msgstr "_Kopírovat"
 
@@ -4085,7 +4085,7 @@ msgstr "_Kopírovat"
 msgid "Copy the selected text to the clipboard"
 msgstr "Kopírovat vybraný text do schránky"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:600
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:635
 msgid "_Paste"
 msgstr "V_ložit"
 
@@ -4395,7 +4395,6 @@ msgid "This function is not implemented for widgets of class '%s'"
 msgstr "Tato funkce není implementována pro widgety třídy „%s“"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:936
-#: ../plugins/starter/plugin.c:187
 #, c-format
 msgid "Open '%s'"
 msgstr "Otevřít „%s“"
@@ -6222,8 +6221,8 @@ msgstr "Zásuvný modul podpory jazyka Vala"
 msgid "Vala support plugin, adds code completion."
 msgstr "Zásuvný modul s podporou jazyka Vala umožňující dokončování kódu."
 
-#: ../plugins/language-support-vala/plugin.vala:655
-#: ../plugins/language-support-vala/plugin.vala:663
+#: ../plugins/language-support-vala/plugin.vala:657
+#: ../plugins/language-support-vala/plugin.vala:665
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Automatické dokončování"
@@ -7314,15 +7313,6 @@ msgstr "Výchozí uživatelské jméno použité v nových projektech"
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
 msgid "If empty, the current user name is used."
 msgstr "Pokud není zadáno, použije se jméno aktuálního uživatele."
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-msgid "Default email used in new project"
-msgstr "Výchozí e-mail použitý v nových projektech"
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
-msgid "If empty, current login and machine name is used."
-msgstr ""
-"Pokud není zadáno, použije se aktuální přihlašovací jméno a název počítače."
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -8765,7 +8755,7 @@ msgstr "Starter"
 msgid "Welcome page with most common actions."
 msgstr "Uvítací stránka s většinou nejpoužívanějších akcí."
 
-#: ../plugins/starter/plugin.c:304
+#: ../plugins/starter/plugin.c:425
 msgid "Start"
 msgstr "Úvod"
 
@@ -8774,28 +8764,36 @@ msgid "Create a new project"
 msgstr "Vytvořit nový projekt"
 
 #: ../plugins/starter/starter.ui.h:2
-msgid "Import an existing project"
-msgstr "Import existujícího projektu"
+msgid "Import a project"
+msgstr "Importovat projekt"
 
 #: ../plugins/starter/starter.ui.h:3
-msgid "Recent projects:"
-msgstr "Nedávné projekty:"
+msgid "Search for example code"
+msgstr "Vyhledat ukázkový kód"
 
 #: ../plugins/starter/starter.ui.h:4
-msgid "Tutorials"
-msgstr "Průvodci"
+msgid "View local Anjuta documentation"
+msgstr "Zobrazit místní dokumentaci k Anjutě"
 
 #: ../plugins/starter/starter.ui.h:5
-msgid "Anjuta Manual"
-msgstr "Příručka uživatele Anjuty"
+msgid "View local Anjuta FAQ"
+msgstr "Zobrazit místní časté dotazy k Anjutě"
 
 #: ../plugins/starter/starter.ui.h:6
-msgid "FAQ"
-msgstr "FAQ"
+msgid "View online library documentation"
+msgstr "Zobrazit on-line dokumentaci ke knihovnám"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "Getting started:"
-msgstr "Začínáme:"
+msgid "label"
+msgstr ""
+
+#: ../plugins/starter/starter.ui.h:8
+msgid "Remove recently used project from list"
+msgstr "Odebrat nedávno použitý projekt ze seznamu"
+
+#: ../plugins/starter/starter.ui.h:9
+msgid "Unlist Project"
+msgstr "Odebrat projekt"
 
 #: ../plugins/subversion/anjuta-subversion.plugin.in.h:1
 #: ../plugins/subversion/subversion-ui-utils.c:64
@@ -9462,8 +9460,8 @@ msgid "Symbol"
 msgstr "Symbol"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:781 ../plugins/terminal/terminal.c:981
-#: ../plugins/terminal/terminal.c:1067
+#: ../plugins/terminal/terminal.c:820 ../plugins/terminal/terminal.c:1005
+#: ../plugins/terminal/terminal.c:1091
 msgid "Terminal"
 msgstr "Terminál"
 
@@ -9483,23 +9481,23 @@ msgstr "Použít výchozí profil Terminálu GNOME"
 msgid "Terminal options"
 msgstr "Volby terminálu"
 
-#: ../plugins/terminal/terminal.c:609
+#: ../plugins/terminal/terminal.c:644
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:617
+#: ../plugins/terminal/terminal.c:652
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:625
+#: ../plugins/terminal/terminal.c:660
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:763
+#: ../plugins/terminal/terminal.c:802
 msgid "terminal operations"
 msgstr "terminálové operace"
 
-#: ../plugins/terminal/terminal.c:898
+#: ../plugins/terminal/terminal.c:937
 #, c-format
 msgid "Unable to execute command"
 msgstr "Nelze spustit příkaz"
@@ -10045,14 +10043,23 @@ msgid "Value doesn't exist"
 msgstr "Hodnota neexistuje"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
+msgid "Default email used in new project"
+msgstr "Výchozí e-mail použitý v nových projektech"
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+msgid "If empty, current login and machine name is used."
+msgstr ""
+"Pokud není zadáno, použije se aktuální přihlašovací jméno a název počítače."
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
 msgid "Use tabulation for indentation"
 msgstr "Používat pro odsazování tabulátory"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:4
 msgid "Number of characters of one tabulation"
 msgstr "Počet znaků jednoho tabulátoru"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
 msgstr "Počet mezer v každém kroku odsazení"
 
@@ -10113,3 +10120,21 @@ msgstr "Jen ikony"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Jen text"
+
+#~ msgid "Import an existing project"
+#~ msgstr "Import existujícího projektu"
+
+#~ msgid "Recent projects:"
+#~ msgstr "Nedávné projekty:"
+
+#~ msgid "Tutorials"
+#~ msgstr "Průvodci"
+
+#~ msgid "Anjuta Manual"
+#~ msgstr "Příručka uživatele Anjuty"
+
+#~ msgid "FAQ"
+#~ msgstr "FAQ"
+
+#~ msgid "Getting started:"
+#~ msgstr "Začínáme:"
