@@ -21,9 +21,9 @@ msgstr ""
 "Project-Id-Version: anjuta.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-08-25 02:44+0000\n"
-"PO-Revision-Date: 2014-03-15 20:53+0100\n"
-"Last-Translator: naybnet <naybnet@gmail.com>\n"
+"POT-Creation-Date: 2014-09-03 14:44+0000\n"
+"PO-Revision-Date: 2014-09-03 22:46+0200\n"
+"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -4717,13 +4717,16 @@ msgstr "GFile représentant le chemin affiché le plus haut"
 #. You try to rename "/"
 #: ../plugins/file-manager/file-view.c:139
 msgid "You can't rename \"/\"!"
-msgstr ""
+msgstr "Il est impossible de renommer « / » !"
 
 #: ../plugins/file-manager/file-view.c:153
 msgid ""
 "An error has occured!\n"
 "Maybe you permissions're insuficient or the filename is wrong"
 msgstr ""
+"Une erreur s'est produite.\n"
+"Il se peut que vos permissions soient insuffisantes ou que le nom de fichier "
+"soit erroné"
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
@@ -8882,27 +8885,27 @@ msgstr "Importer un projet"
 
 #: ../plugins/starter/starter.ui.h:3
 msgid "Search for example code"
-msgstr ""
+msgstr "Rechercher du code d'exemple"
 
 #: ../plugins/starter/starter.ui.h:4
 msgid "View local Anjuta documentation"
-msgstr ""
+msgstr "Voir la documentation Anjuta locale"
 
 #: ../plugins/starter/starter.ui.h:5
 msgid "View local Anjuta FAQ"
-msgstr ""
+msgstr "Voir la FAQ Anjuta locale"
 
 #: ../plugins/starter/starter.ui.h:6
 msgid "View online library documentation"
-msgstr ""
+msgstr "Voir la documentation de la bibliothèque en ligne"
 
 #: ../plugins/starter/starter.ui.h:7
 msgid "Remove recently used project from list"
-msgstr ""
+msgstr "Enlever le projet récemment utilisé de la liste"
 
 #: ../plugins/starter/starter.ui.h:8
 msgid "Unlist Project"
-msgstr ""
+msgstr "Enlever le projet de la liste"
 
 #: ../plugins/subversion/anjuta-subversion.plugin.in.h:1
 #: ../plugins/subversion/subversion-ui-utils.c:64
@@ -10269,9 +10272,6 @@ msgstr "Texte seul"
 
 #~ msgid "Anjuta Manual"
 #~ msgstr "Manuel d'Anjuta"
-
-#~ msgid "FAQ"
-#~ msgstr "FAQ"
 
 #~ msgid "Getting started:"
 #~ msgstr "Comment démarrer :"
