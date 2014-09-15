@@ -5,19 +5,20 @@
 # Joan Duran <jodufi@gmail.com>, 2007-2013.
 # Jordi Serratosa <jordis@softcatala.cat>, 2012.
 # Josep Sànchez <papapep@gmx.com>, 2013.
+# Gil Forcada <gilforcada@guifi.net>, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-10 22:04+0200\n"
-"PO-Revision-Date: 2014-05-10 22:02+0200\n"
-"Last-Translator: Pau Iranzo <paugnu@gmail.com>\n"
+"POT-Creation-Date: 2014-09-15 21:01+0200\n"
+"PO-Revision-Date: 2014-09-15 20:55+0200\n"
+"Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca-XV\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bits\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../anjuta.appdata.xml.in.h:1
@@ -622,11 +623,11 @@ msgid "Shortcut"
 msgstr "Drecera"
 
 #. Avoid space in translated string
-#: ../libanjuta/anjuta-utils.c:363
+#: ../libanjuta/anjuta-utils.c:369
 msgid "System:"
 msgstr "Sistema:"
 
-#: ../libanjuta/anjuta-utils.c:512
+#: ../libanjuta/anjuta-utils.c:518
 msgid ""
 "You do not seem to have PackageKit installed. PackageKit is required for "
 "installing missing packages. Please install \"packagekit-gnome\" package "
@@ -636,17 +637,17 @@ msgstr ""
 "instal·lar els paquets que manquen. Instal·leu el paquet «packagekit-gnome» "
 "de la vostra distribució o bé instal·leu manualment els paquets que manquen."
 
-#: ../libanjuta/anjuta-utils.c:521
+#: ../libanjuta/anjuta-utils.c:527
 #, c-format
 msgid "Installation failed: %s"
 msgstr "Ha fallat la instal·lació: %s"
 
-#: ../libanjuta/anjuta-utils.c:582
+#: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
 msgstr "No s'ha pogut executar «%s». L'error rebut és: «%s»."
 
-#: ../libanjuta/anjuta-utils.c:596
+#: ../libanjuta/anjuta-utils.c:602
 #, c-format
 msgid ""
 "The \"%s\" package is not installed.\n"
@@ -655,7 +656,7 @@ msgstr ""
 "El paquet «%s» no està instal·lat.\n"
 "Hauríeu d'instal·lar-lo."
 
-#: ../libanjuta/anjuta-utils.c:614
+#: ../libanjuta/anjuta-utils.c:620
 #, c-format
 msgid ""
 "The \"%s\" utility is not installed.\n"
@@ -665,19 +666,19 @@ msgstr ""
 "Hauríeu d'instal·lar-la."
 
 #. Try xterm
-#: ../libanjuta/anjuta-utils.c:1208
+#: ../libanjuta/anjuta-utils.c:1214
 msgid "Cannot find a terminal; using xterm, even if it may not work"
 msgstr ""
 "No es pot trobar un terminal; s'utilitzarà l'xterm, encara que pot ser que "
 "no funcione"
 
-#: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
+#: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
 #, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr ""
 "No es pot executar l'orde: %s (es fa servir l'intèrpret d'ordes %s): %s\n"
 
-#: ../libanjuta/anjuta-utils.c:2456
+#: ../libanjuta/anjuta-utils.c:2462
 #, c-format
 msgid "Unable to load user interface file: %s"
 msgstr "No es pot carregar el fitxer de la interfície d'usuari: %s"
@@ -1501,9 +1502,9 @@ msgstr "Instal·la"
 #: ../plugins/build-basic-autotools/build.c:578
 msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
-"you want to do that ?"
+"you want to do that?"
 msgstr ""
-"Si utilitzeu esta configuració nova s'haurà de suprimir la per defecte. "
+"Abans d'utilitzar esta configuració nova s'ha de suprimir la per defecte. "
 "Voleu fer-ho?"
 
 #: ../plugins/build-basic-autotools/build.c:583
@@ -4097,7 +4098,7 @@ msgstr "Retalla el text seleccionat de l'editor al porta-retalls"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:592
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:627
 msgid "_Copy"
 msgstr "_Copia"
 
@@ -4105,7 +4106,7 @@ msgstr "_Copia"
 msgid "Copy the selected text to the clipboard"
 msgstr "Copia el text seleccionat al porta-retalls"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:600
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:635
 msgid "_Paste"
 msgstr "_Apega"
 
@@ -4415,7 +4416,6 @@ msgid "This function is not implemented for widgets of class '%s'"
 msgstr "Esta funció no està implementada per a ginys de la classe «%s»"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:936
-#: ../plugins/starter/plugin.c:187
 #, c-format
 msgid "Open '%s'"
 msgstr "Obri «%s»"
@@ -4675,13 +4675,15 @@ msgstr "El GFile que representa el camí de nivell superior màxim que es mostra
 #. You try to rename "/"
 #: ../plugins/file-manager/file-view.c:139
 msgid "You can't rename \"/\"!"
-msgstr ""
+msgstr "No podeu canviar el nom de «/»!"
 
 #: ../plugins/file-manager/file-view.c:153
 msgid ""
 "An error has occured!\n"
 "Maybe you permissions're insuficient or the filename is wrong"
 msgstr ""
+"S'ha produït un error.\n"
+"Potser no teniu prou permisos o el nom de fitxer és erroni"
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
@@ -6254,8 +6256,8 @@ msgstr "Connector per admetre el Vala"
 msgid "Vala support plugin, adds code completion."
 msgstr "Connector per admetre el Vala, afig la compleció de codi."
 
-#: ../plugins/language-support-vala/plugin.vala:655
-#: ../plugins/language-support-vala/plugin.vala:663
+#: ../plugins/language-support-vala/plugin.vala:657
+#: ../plugins/language-support-vala/plugin.vala:665
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Completa automàticament"
@@ -6348,14 +6350,12 @@ msgid "Copy message"
 msgstr "Copia el missatge"
 
 #: ../plugins/message-view/plugin.c:83
-#, fuzzy
 msgid "_Copy All Messages"
-msgstr "_Copia el missatge"
+msgstr "_Copia tots els missatges"
 
 #: ../plugins/message-view/plugin.c:84
-#, fuzzy
 msgid "Copy All Messages"
-msgstr "_Copia el missatge"
+msgstr "Copia tots els missatges"
 
 #: ../plugins/message-view/plugin.c:87
 msgid "_Next Message"
@@ -7345,14 +7345,6 @@ msgstr "Nom d'usuari, per defecte, que s'utilitza al projecte nou"
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
 msgid "If empty, the current user name is used."
 msgstr "Si està buit, s'utilitzarà el nom d'usuari actual."
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-msgid "Default email used in new project"
-msgstr "Correu electrònic, per defecte, que s'utilitza al projecte nou"
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
-msgid "If empty, current login and machine name is used."
-msgstr "Si està buit, s'utilitzarà el nom d'entrada i de l'ordinador actuals."
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -8480,10 +8472,10 @@ msgstr "<b>Error:</b> la tecla activadora ja s'utilitza en un dels llenguatges"
 #: ../plugins/snippets-manager/snippets-editor.c:50
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
-"_ !"
+"\"_\"!"
 msgstr ""
 "<b>Error:</b> la tecla activadora només pot contindre caràcters alfanumèrics "
-"i _"
+"i «_»"
 
 #: ../plugins/snippets-manager/snippets-editor.c:51
 msgid "<b>Error:</b> You haven't entered a trigger key for the snippet!"
@@ -8812,7 +8804,7 @@ msgstr "Iniciador"
 msgid "Welcome page with most common actions."
 msgstr "Pàgina de benvinguda amb les accions més comunes."
 
-#: ../plugins/starter/plugin.c:304
+#: ../plugins/starter/plugin.c:425
 msgid "Start"
 msgstr "Inici"
 
@@ -8821,28 +8813,32 @@ msgid "Create a new project"
 msgstr "Crea un projecte nou"
 
 #: ../plugins/starter/starter.ui.h:2
-msgid "Import an existing project"
-msgstr "Importa un projecte existent"
+msgid "Import a project"
+msgstr "Importa un projecte"
 
 #: ../plugins/starter/starter.ui.h:3
-msgid "Recent projects:"
-msgstr "Projectes recents:"
+msgid "Search for example code"
+msgstr "Cerca codi d'exemple"
 
 #: ../plugins/starter/starter.ui.h:4
-msgid "Tutorials"
-msgstr "Programes d'aprenentatge"
+msgid "View local Anjuta documentation"
+msgstr "Visualitza la documentació local de l'Anjuta"
 
 #: ../plugins/starter/starter.ui.h:5
-msgid "Anjuta Manual"
-msgstr "Manual de l'Anjuta"
+msgid "View local Anjuta FAQ"
+msgstr "Visualitza les PMF locals de l'Anjuta"
 
 #: ../plugins/starter/starter.ui.h:6
-msgid "FAQ"
-msgstr "PMF"
+msgid "View online library documentation"
+msgstr "Visualitza la documentació de la biblioteca en línia"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "Getting started:"
-msgstr "Per començar:"
+msgid "Remove recently used project from list"
+msgstr "Suprimeix el projecte utilitzat recentment de la llista"
+
+#: ../plugins/starter/starter.ui.h:8
+msgid "Unlist Project"
+msgstr "Trau de la llista"
 
 #: ../plugins/subversion/anjuta-subversion.plugin.in.h:1
 #: ../plugins/subversion/subversion-ui-utils.c:64
@@ -9507,8 +9503,8 @@ msgid "Symbol"
 msgstr "Símbol"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:781 ../plugins/terminal/terminal.c:981
-#: ../plugins/terminal/terminal.c:1067
+#: ../plugins/terminal/terminal.c:820 ../plugins/terminal/terminal.c:1005
+#: ../plugins/terminal/terminal.c:1091
 msgid "Terminal"
 msgstr "Terminal"
 
@@ -9528,23 +9524,23 @@ msgstr "Utilitza el perfil per defecte del terminal del GNOME"
 msgid "Terminal options"
 msgstr "Opcions del terminal"
 
-#: ../plugins/terminal/terminal.c:609
+#: ../plugins/terminal/terminal.c:644
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:617
+#: ../plugins/terminal/terminal.c:652
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:625
+#: ../plugins/terminal/terminal.c:660
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:763
+#: ../plugins/terminal/terminal.c:802
 msgid "terminal operations"
 msgstr "operacions del terminal"
 
-#: ../plugins/terminal/terminal.c:898
+#: ../plugins/terminal/terminal.c:937
 #, c-format
 msgid "Unable to execute command"
 msgstr "No es pot executar l'orde"
@@ -9895,9 +9891,8 @@ msgid "Command line parameters"
 msgstr "Paràmetres de la línia d'ordes"
 
 #: ../src/about.c:186
-#, fuzzy
 msgid "Copyright © Naba Kumar"
-msgstr "Copyright (c) Naba Kumar"
+msgstr "Copyright © Naba Kumar"
 
 #: ../src/anjuta-actions.h:23
 msgid "_File"
@@ -10103,14 +10098,22 @@ msgid "Value doesn't exist"
 msgstr "No existeix el valor"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
+msgid "Default email used in new project"
+msgstr "Correu electrònic, per defecte, que s'utilitza al projecte nou"
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+msgid "If empty, current login and machine name is used."
+msgstr "Si està buit, s'utilitzarà el nom d'entrada i de l'ordinador actuals."
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
 msgid "Use tabulation for indentation"
 msgstr "Utilitza tabulacions per sagnar"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:4
 msgid "Number of characters of one tabulation"
 msgstr "Quantitat de caràcters d'una tabulació"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
 msgstr "Quantitat d'espais en cada pas de tabulació"
 
@@ -10171,12 +10174,3 @@ msgstr "Només icones"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Només text"
-
-#~ msgid "Error writing %s"
-#~ msgstr "S'ha produït un error en escriure %s"
-
-#~ msgid "_Save Message"
-#~ msgstr "De_sa el missatge"
-
-#~ msgid "Save message"
-#~ msgstr "Desa el missatge"
