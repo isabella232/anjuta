@@ -40,8 +40,8 @@ msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-06-27 02:44+0000\n"
-"PO-Revision-Date: 2014-06-29 06:30+0100\n"
+"POT-Creation-Date: 2014-09-19 02:44+0000\n"
+"PO-Revision-Date: 2014-09-19 19:34+0100\n"
 "Last-Translator: Benjamin Steinwender <b@stbe.at>\n"
 "Language-Team: German <>\n"
 "Language: de_DE\n"
@@ -49,7 +49,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.6.9\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -449,9 +449,9 @@ msgid ""
 "one of many suitable plugins. Removing the preferred plugin will let you "
 "choose a different plugin."
 msgstr ""
-"Hier werden die Komponenten angezeigt, die der Benutzer als bevorzugte für "
-"eine bestimmte Aufgabe ausgewählt hat. Wird hier eine Komponente entfernt, "
-"wird Anjuta das nächste Mal wieder einen Auswahldialog anzeigen."
+"Die gezeigten Komponenten wurden von Ihnen für bestimmte Aufgaben "
+"ausgewählt. Entfernen Sie eine der Komponenten, wird Anjuta Ihnen beim "
+"nächsten Mal erneut einen Auswahldialog anzeigen."
 
 #: ../libanjuta/anjuta-plugin-manager.c:1223
 msgid "Forget selected plugin"
@@ -654,11 +654,11 @@ msgid "Shortcut"
 msgstr "Abkürzung"
 
 #. Avoid space in translated string
-#: ../libanjuta/anjuta-utils.c:363
+#: ../libanjuta/anjuta-utils.c:369
 msgid "System:"
 msgstr "System: "
 
-#: ../libanjuta/anjuta-utils.c:512
+#: ../libanjuta/anjuta-utils.c:518
 msgid ""
 "You do not seem to have PackageKit installed. PackageKit is required for "
 "installing missing packages. Please install \"packagekit-gnome\" package "
@@ -669,19 +669,19 @@ msgstr ""
 "»packagekit-gnome« Ihrer Distribution oder installieren Sie die fehlenden "
 "Pakete manuell."
 
-#: ../libanjuta/anjuta-utils.c:521
+#: ../libanjuta/anjuta-utils.c:527
 #, c-format
 msgid "Installation failed: %s"
 msgstr "Installation fehlgeschlagen: %s"
 
-#: ../libanjuta/anjuta-utils.c:582
+#: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
 msgstr ""
 "»%s« konnte nicht ausgeführt werden. Folgender Fehler wurde zurückgegeben: "
 "»%s«."
 
-#: ../libanjuta/anjuta-utils.c:596
+#: ../libanjuta/anjuta-utils.c:602
 #, c-format
 msgid ""
 "The \"%s\" package is not installed.\n"
@@ -690,7 +690,7 @@ msgstr ""
 "»%s« ist auf Ihrem Rechner nicht installiert.\n"
 "Bitte installieren Sie es."
 
-#: ../libanjuta/anjuta-utils.c:614
+#: ../libanjuta/anjuta-utils.c:620
 #, c-format
 msgid ""
 "The \"%s\" utility is not installed.\n"
@@ -700,21 +700,21 @@ msgstr ""
 "Bitte installieren Sie es."
 
 #. Try xterm
-#: ../libanjuta/anjuta-utils.c:1208
+#: ../libanjuta/anjuta-utils.c:1214
 msgid "Cannot find a terminal; using xterm, even if it may not work"
 msgstr ""
 "Es konnte kein Terminal gefunden werden. »xterm« wird verwendet, auch wenn "
 "es vielleicht nicht funktioniert"
 
 # -- sigh, i think shell == prompt in German --
-#: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
+#: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
 #, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr ""
 "Befehl kann nicht ausgeführt werden: %s (unter Verwendung der Befehlszeile "
 "%s): %s\n"
 
-#: ../libanjuta/anjuta-utils.c:2456
+#: ../libanjuta/anjuta-utils.c:2462
 #, c-format
 msgid "Unable to load user interface file: %s"
 msgstr "Benutzerschnittstellendatei konnte nicht geladen werden: %s"
@@ -4141,7 +4141,7 @@ msgstr "Den markierten Text aus dem Editor in die Zwischenablage ausschneiden"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:592
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:627
 msgid "_Copy"
 msgstr "_Kopieren"
 
@@ -4149,7 +4149,7 @@ msgstr "_Kopieren"
 msgid "Copy the selected text to the clipboard"
 msgstr "Den markierten Text in die Zwischenablage kopieren"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:600
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:635
 msgid "_Paste"
 msgstr "E_infügen"
 
@@ -6319,8 +6319,8 @@ msgid "Vala support plugin, adds code completion."
 msgstr ""
 "Komponente für die Unterstützung von Vala, fügt Code-Vervollständigung hinzu."
 
-#: ../plugins/language-support-vala/plugin.vala:655
-#: ../plugins/language-support-vala/plugin.vala:663
+#: ../plugins/language-support-vala/plugin.vala:657
+#: ../plugins/language-support-vala/plugin.vala:665
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Automatische Vervollständigung"
@@ -7417,16 +7417,6 @@ msgstr "Benutzername, der für neue Projekte verwendet wird"
 msgid "If empty, the current user name is used."
 msgstr ""
 "Wenn kein Name angegeben ist, wird der aktuelle Benutzername verwendet."
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-msgid "Default email used in new project"
-msgstr "E-Mail-Adresse, die für neue Projekte verwendet wird"
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
-msgid "If empty, current login and machine name is used."
-msgstr ""
-"Wenn nichts angegeben wird, wird der Benutzername und der Rechnername "
-"verwendet."
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -8911,21 +8901,14 @@ msgid "View local Anjuta FAQ"
 msgstr "Lokale FAQ zu Anjuta anzeigen"
 
 #: ../plugins/starter/starter.ui.h:6
-#, fuzzy
 msgid "View online library documentation"
 msgstr "Online-Dokumentation zur Bibliothek anzeigen"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "label"
-msgstr "Beschriftung"
-
-#: ../plugins/starter/starter.ui.h:8
-#| msgid "No recently used resource found with URI \"%s\""
 msgid "Remove recently used project from list"
 msgstr "Zuletzt verwendetes Projekt aus der Liste entfernen"
 
-#: ../plugins/starter/starter.ui.h:9
-#| msgid "_Install Project"
+#: ../plugins/starter/starter.ui.h:8
 msgid "Unlist Project"
 msgstr "Projekt aus der Liste entfernen"
 
@@ -9592,8 +9575,8 @@ msgid "Symbol"
 msgstr "Symbol"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:781 ../plugins/terminal/terminal.c:981
-#: ../plugins/terminal/terminal.c:1067
+#: ../plugins/terminal/terminal.c:820 ../plugins/terminal/terminal.c:1005
+#: ../plugins/terminal/terminal.c:1091
 msgid "Terminal"
 msgstr "Terminal"
 
@@ -9613,23 +9596,23 @@ msgstr "Vorgegebenes GNOME-Terminalprofil verwenden"
 msgid "Terminal options"
 msgstr "Terminal-Optionen"
 
-#: ../plugins/terminal/terminal.c:609
+#: ../plugins/terminal/terminal.c:644
 msgid "Ctrl-C"
 msgstr "Strg-C"
 
-#: ../plugins/terminal/terminal.c:617
+#: ../plugins/terminal/terminal.c:652
 msgid "Ctrl-X"
 msgstr "Strg-X"
 
-#: ../plugins/terminal/terminal.c:625
+#: ../plugins/terminal/terminal.c:660
 msgid "Ctrl-Z"
 msgstr "Strg-Z"
 
-#: ../plugins/terminal/terminal.c:763
+#: ../plugins/terminal/terminal.c:802
 msgid "terminal operations"
 msgstr "Terminal-Operationen"
 
-#: ../plugins/terminal/terminal.c:898
+#: ../plugins/terminal/terminal.c:937
 #, c-format
 msgid "Unable to execute command"
 msgstr "Befehl konnte nicht ausgeführt werden"
@@ -10184,14 +10167,24 @@ msgid "Value doesn't exist"
 msgstr "Wert existiert nicht"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
+msgid "Default email used in new project"
+msgstr "E-Mail-Adresse, die für neue Projekte verwendet wird"
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+msgid "If empty, current login and machine name is used."
+msgstr ""
+"Wenn nichts angegeben wird, wird der Benutzername und der Rechnername "
+"verwendet."
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
 msgid "Use tabulation for indentation"
 msgstr "Tabulator für Einrückungen verwenden"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:4
 msgid "Number of characters of one tabulation"
 msgstr "Anzahl der Zeichen eines Tabulators"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
 msgstr "Anzahl der Leerzeichen jedes Einrückungsschrittes"
 
@@ -10253,6 +10246,9 @@ msgstr "Nur Symbole"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Nur Text"
+
+#~ msgid "label"
+#~ msgstr "Beschriftung"
 
 #~ msgid "Error writing %s"
 #~ msgstr "Fehler beim Schreiben von %s"
