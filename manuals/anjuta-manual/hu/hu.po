@@ -1,19 +1,21 @@
 # Hungarian translation of anjuta help
 # Copyright (C) 2012, 2013. Free Software Foundation, Inc.
 # This file is distributed under the same license as the anjuta help.
+#
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2012, 2013.
+# Balázs Úr <urbalazs at gmail dot com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta_help master\n"
-"POT-Creation-Date: 2014-03-07 03:44+0000\n"
-"PO-Revision-Date: 2014-03-07 09:30+0100\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2014-09-20 14:45+0000\n"
+"PO-Revision-Date: 2014-09-21 01:07+0200\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -21,72 +23,65 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr "Kelemen Gábor <kelemeng at gnome dot hu>, 2012, 2013."
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:23
-msgctxt "_"
-msgid ""
-"external ref='figures/anjuta_logo.png' md5='82636133d39ac4a688facd76954b8b29'"
-msgstr ""
-"external ref='figures/anjuta_logo.png' md5='82636133d39ac4a688facd76954b8b29'"
-
 #. (itstool) path: info/desc
-#: C/index.page:7
+#: C/index.page:8
 msgid "Help for Anjuta DevStudio."
 msgstr "Az Anjuta DevStudio súgója."
 
 #. (itstool) path: info/title
-#: C/index.page:8
+#: C/index.page:9
 msgctxt "link"
 msgid "Anjuta"
 msgstr "Anjuta"
 
 #. (itstool) path: info/title
-#: C/index.page:9
+#: C/index.page:10
 msgctxt "text"
 msgid "Anjuta DevStudio"
 msgstr "Anjuta DevStudio"
 
 #. (itstool) path: credit/name
-#: C/index.page:13 C/anjuta-code-assist.page:13 C/anjuta-code-help.page:14
+#: C/index.page:14 C/anjuta-code-assist.page:13 C/anjuta-code-help.page:14
 #: C/anjuta-code-indentation.page:14 C/anjuta-code-symbols.page:13
 msgid "Johannes Schmid"
 msgstr "Johannes Schmid"
 
+#. (itstool) path: media/span
+#: C/index.page:24
+#| msgctxt "link"
+#| msgid "Anjuta"
+msgid "Anjuta logo"
+msgstr "Anjuta logó"
+
 #. (itstool) path: page/title
-#: C/index.page:22
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/anjuta_logo.png"
-"\">Anjuta logo</media> Anjuta DevStudio"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/anjuta_logo.png"
-"\">Anjuta logó</media> Anjuta DevStudio"
+#: C/index.page:23
+#| msgctxt "text"
+#| msgid "Anjuta DevStudio"
+msgid "<_:media-1/> Anjuta DevStudio"
+msgstr "<_:media-1/> Anjuta DevStudio"
 
 #. (itstool) path: section/title
-#: C/index.page:28
+#: C/index.page:29
 msgid "Project Management"
 msgstr "Projektmenedzsment"
 
 #. (itstool) path: section/title
-#: C/index.page:32
+#: C/index.page:33
 msgid "Coding and code navigation"
 msgstr "Kódolás és kódnavigáció"
 
 #. (itstool) path: section/title
-#: C/index.page:36
+#: C/index.page:37
 msgid "Building Project"
 msgstr "Projekt összeállítása"
 
 #. (itstool) path: section/title
-#: C/index.page:40
+#: C/index.page:41
 msgid "Debugging Program"
 msgstr "Program hibakeresése"
 
 #. (itstool) path: section/title
-#: C/index.page:50
+#: C/index.page:51
 msgid "Reference"
 msgstr "Referencia"
 
@@ -329,7 +324,6 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/anjuta-code-symbols.page:9
-#| msgid "Efficient ways to nagivate through source code"
 msgid "Efficient ways to navigate through source code"
 msgstr "Hatékony módszerek a forráskódban való navigációra"
 
@@ -5695,6 +5689,21 @@ msgstr "Minden ablak és párbeszédablak."
 #: C/widget-index.page:16
 msgid "Windows and dialogs"
 msgstr "Ablakok és párbeszédablakok"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/anjuta_logo.png' "
+#~ "md5='82636133d39ac4a688facd76954b8b29'"
+#~ msgstr ""
+#~ "external ref='figures/anjuta_logo.png' "
+#~ "md5='82636133d39ac4a688facd76954b8b29'"
+
+#~ msgid ""
+#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/anjuta_logo.png"
+#~ "\">Anjuta logo</media> Anjuta DevStudio"
+#~ msgstr ""
+#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/anjuta_logo.png"
+#~ "\">Anjuta logó</media> Anjuta DevStudio"
 
 #~ msgid "User interface editor"
 #~ msgstr "Felhasználóifelület-szerkesztő"
