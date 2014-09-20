@@ -34,8 +34,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-19 22:26+0100\n"
-"PO-Revision-Date: 2014-03-18 13:43+0100\n"
+"POT-Creation-Date: 2014-09-20 17:42+0200\n"
+"PO-Revision-Date: 2014-09-20 17:38+0200\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
 "Language: \n"
@@ -93,7 +93,7 @@ msgstr ""
 msgid "Anjuta"
 msgstr "Anjuta"
 
-#: ../anjuta.desktop.in.in.h:2 ../src/about.c:203
+#: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
 msgstr "Integreret udviklingsmiljø (IDE)"
 
@@ -641,11 +641,11 @@ msgid "Shortcut"
 msgstr "Genvej"
 
 #. Avoid space in translated string
-#: ../libanjuta/anjuta-utils.c:363
+#: ../libanjuta/anjuta-utils.c:369
 msgid "System:"
 msgstr "System:"
 
-#: ../libanjuta/anjuta-utils.c:512
+#: ../libanjuta/anjuta-utils.c:518
 msgid ""
 "You do not seem to have PackageKit installed. PackageKit is required for "
 "installing missing packages. Please install \"packagekit-gnome\" package "
@@ -655,17 +655,17 @@ msgstr ""
 "installere manglende pakker. Installér venligst pakken \"packagekit-gnome\" "
 "fra din distribution, eller installér de manglende pakker manuelt."
 
-#: ../libanjuta/anjuta-utils.c:521
+#: ../libanjuta/anjuta-utils.c:527
 #, c-format
 msgid "Installation failed: %s"
 msgstr "Installationen mislykkedes: %s"
 
-#: ../libanjuta/anjuta-utils.c:582
+#: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
 msgstr "Kunne ikke køre \"%s\". Den returnerede fejl var: \"%s\"."
 
-#: ../libanjuta/anjuta-utils.c:596
+#: ../libanjuta/anjuta-utils.c:602
 #, c-format
 msgid ""
 "The \"%s\" package is not installed.\n"
@@ -674,7 +674,7 @@ msgstr ""
 "Pakken \"%s\" er ikke installeret.\n"
 "Installér den venligst."
 
-#: ../libanjuta/anjuta-utils.c:614
+#: ../libanjuta/anjuta-utils.c:620
 #, c-format
 msgid ""
 "The \"%s\" utility is not installed.\n"
@@ -684,64 +684,64 @@ msgstr ""
 "Installér det venligst."
 
 #. Try xterm
-#: ../libanjuta/anjuta-utils.c:1208
+#: ../libanjuta/anjuta-utils.c:1214
 msgid "Cannot find a terminal; using xterm, even if it may not work"
 msgstr ""
 "Kan ikke finde en terminal - bruger xterm, selvom denne måske ikke vil "
 "fungere"
 
-#: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
+#: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
 #, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr "Kan ikke køre kommandoen: %s (med skallen %s): %s\n"
 
-#: ../libanjuta/anjuta-utils.c:2456
+#: ../libanjuta/anjuta-utils.c:2462
 #, c-format
 msgid "Unable to load user interface file: %s"
 msgstr "Kan ikke indlæse brugergrænsefladefil: %s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
-#: ../plugins/file-manager/file-view.c:77 ../plugins/git/git-status-pane.c:182
+#: ../plugins/file-manager/file-view.c:80 ../plugins/git/git-status-pane.c:182
 msgid "Modified"
 msgstr "Ændret"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:95
-#: ../plugins/file-manager/file-view.c:81 ../plugins/git/git-status-pane.c:185
+#: ../plugins/file-manager/file-view.c:84 ../plugins/git/git-status-pane.c:185
 msgid "Added"
 msgstr "Tilføjet"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:98
-#: ../plugins/file-manager/file-view.c:79 ../plugins/git/git-status-pane.c:188
+#: ../plugins/file-manager/file-view.c:82 ../plugins/git/git-status-pane.c:188
 msgid "Deleted"
 msgstr "Slettet"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:101
-#: ../plugins/file-manager/file-view.c:83 ../plugins/git/git-status-pane.c:191
+#: ../plugins/file-manager/file-view.c:86 ../plugins/git/git-status-pane.c:191
 msgid "Conflicted"
 msgstr "I konflikt"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:105
-#: ../plugins/file-manager/file-view.c:85 ../plugins/git/git-status-pane.c:195
+#: ../plugins/file-manager/file-view.c:88 ../plugins/git/git-status-pane.c:195
 msgid "Up-to-date"
 msgstr "Opdateret"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:109
-#: ../plugins/file-manager/file-view.c:87 ../plugins/git/git-status-pane.c:199
+#: ../plugins/file-manager/file-view.c:90 ../plugins/git/git-status-pane.c:199
 msgid "Locked"
 msgstr "Låst"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:112
-#: ../plugins/file-manager/file-view.c:89 ../plugins/git/git-status-pane.c:202
+#: ../plugins/file-manager/file-view.c:92 ../plugins/git/git-status-pane.c:202
 msgid "Missing"
 msgstr "Mangler"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:115
-#: ../plugins/file-manager/file-view.c:91 ../plugins/git/git-status-pane.c:205
+#: ../plugins/file-manager/file-view.c:94 ../plugins/git/git-status-pane.c:205
 msgid "Unversioned"
 msgstr "Ikke versionsstyret"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:119
-#: ../plugins/file-manager/file-view.c:93 ../plugins/git/git-status-pane.c:209
+#: ../plugins/file-manager/file-view.c:96 ../plugins/git/git-status-pane.c:209
 msgid "Ignored"
 msgstr "Ignoreret"
 
@@ -774,8 +774,8 @@ msgstr ""
 #: ../plugins/am-project/amp-group.c:665
 #: ../plugins/am-project/am-project.c:1680
 #: ../plugins/am-project/am-project.c:1773
-#: ../plugins/dir-project/dir-project.c:801
-#: ../plugins/dir-project/dir-project.c:934
+#: ../plugins/dir-project/dir-project.c:862
+#: ../plugins/dir-project/dir-project.c:996
 #: ../plugins/mk-project/mk-project.c:725
 #: ../plugins/mk-project/mk-project.c:802
 #: ../plugins/mk-project/mk-project.c:876
@@ -788,13 +788,13 @@ msgid "Root"
 msgstr "Rod"
 
 #: ../plugins/am-project/am-project.c:98
-#: ../plugins/dir-project/dir-project.c:945
+#: ../plugins/dir-project/dir-project.c:1007
 #: ../plugins/mk-project/mk-project.c:66
 msgid "Group"
 msgstr "Gruppe"
 
 #: ../plugins/am-project/am-project.c:106
-#: ../plugins/dir-project/dir-project.c:949
+#: ../plugins/dir-project/dir-project.c:1011
 #: ../plugins/mk-project/mk-project.c:71
 msgid "Source"
 msgstr "Kilde"
@@ -1412,7 +1412,7 @@ msgid "Basic autotools build plugin."
 msgstr "Basalt autotools-byggemodul."
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:3
-#: ../plugins/run-program/plugin.c:274
+#: ../plugins/run-program/plugin.c:298
 msgid "Execute"
 msgstr "Kør"
 
@@ -1491,28 +1491,28 @@ msgstr "Installér som superbruger:"
 msgid "Install"
 msgstr "Installér"
 
-#: ../plugins/build-basic-autotools/build.c:527
+#: ../plugins/build-basic-autotools/build.c:578
 msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
-"you want to do that ?"
+"you want to do that?"
 msgstr ""
 "Før du bruger denne nye konfiguration, skal standardkonfigurationen fjernes. "
 "Vil du gøre dette?"
 
-#: ../plugins/build-basic-autotools/build.c:532
-#: ../plugins/build-basic-autotools/plugin.c:987
+#: ../plugins/build-basic-autotools/build.c:583
+#: ../plugins/build-basic-autotools/plugin.c:970
 #, c-format
 msgid "Command canceled by user"
 msgstr "Kommando annulleret af bruger"
 
-#: ../plugins/build-basic-autotools/build.c:882
+#: ../plugins/build-basic-autotools/build.c:933
 #, c-format
 msgid "Cannot compile \"%s\": No compile rule defined for this file type."
 msgstr ""
 "Kan ikke kompilere \"%s\": Ingen kompileringsregel er defineret for denne "
 "filtype."
 
-#: ../plugins/build-basic-autotools/build.c:1056
+#: ../plugins/build-basic-autotools/build.c:1107
 #, c-format
 msgid "Cannot configure project: Missing configure script in %s."
 msgstr "Kan ikke konfigurere projektet: Mangler konfigurationsscript i %s."
@@ -1628,12 +1628,12 @@ msgstr "make(\\[\\d+\\])?:\\s+Forlader\\s+katalog\\s+'(.+)'"
 msgid "make(\\[\\d+\\])?:\\s+Leaving\\s+directory\\s+'(.+)'"
 msgstr "make(\\[\\d+\\])?:\\s+Forlader\\s+katalog\\s+'(.+)'"
 
-#: ../plugins/build-basic-autotools/plugin.c:750
+#: ../plugins/build-basic-autotools/plugin.c:733
 #, c-format
 msgid "Entering: %s"
 msgstr "Tilgår: %s"
 
-#: ../plugins/build-basic-autotools/plugin.c:786
+#: ../plugins/build-basic-autotools/plugin.c:769
 #, c-format
 msgid "Leaving: %s"
 msgstr "Forlader: %s"
@@ -1643,13 +1643,13 @@ msgstr "Forlader: %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:824
+#: ../plugins/build-basic-autotools/plugin.c:807
 #: ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "advarsel:"
 
 # findes ikke i gcc's po-fil
-#: ../plugins/build-basic-autotools/plugin.c:825
+#: ../plugins/build-basic-autotools/plugin.c:808
 msgid "warning:-old"
 msgstr "warning:-old"
 
@@ -1658,264 +1658,264 @@ msgstr "warning:-old"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:836
+#: ../plugins/build-basic-autotools/plugin.c:819
 #: ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "fejl:"
 
 # findes ikke i gcc's po-fil
-#: ../plugins/build-basic-autotools/plugin.c:837
+#: ../plugins/build-basic-autotools/plugin.c:820
 msgid "error:-old"
 msgstr "error:-old"
 
-#: ../plugins/build-basic-autotools/plugin.c:977
+#: ../plugins/build-basic-autotools/plugin.c:960
 #, c-format
 msgid "Command exited with status %d"
 msgstr "Kommandoen afsluttede med statuskode %d"
 
-#: ../plugins/build-basic-autotools/plugin.c:992
+#: ../plugins/build-basic-autotools/plugin.c:975
 #, c-format
 msgid "Command aborted by user"
 msgstr "Kommando afbrudt af bruger"
 
-#: ../plugins/build-basic-autotools/plugin.c:997
+#: ../plugins/build-basic-autotools/plugin.c:980
 #, c-format
 msgid "Command terminated with signal %d"
 msgstr "Kommando afsluttet med signal %d"
 
-#: ../plugins/build-basic-autotools/plugin.c:1005
+#: ../plugins/build-basic-autotools/plugin.c:988
 msgid "Command terminated for an unknown reason"
 msgstr "Kommando afsluttet af ukendt årsag"
 
-#: ../plugins/build-basic-autotools/plugin.c:1023
+#: ../plugins/build-basic-autotools/plugin.c:1006
 #, c-format
 msgid "Total time taken: %lu secs\n"
 msgstr "Total tid: %lu sekunder\n"
 
-#: ../plugins/build-basic-autotools/plugin.c:1030
+#: ../plugins/build-basic-autotools/plugin.c:1013
 msgid "Completed unsuccessfully\n"
 msgstr "Afsluttede med fejl\n"
 
-#: ../plugins/build-basic-autotools/plugin.c:1038
+#: ../plugins/build-basic-autotools/plugin.c:1021
 #: ../plugins/tools/execute.c:516
 msgid "Completed successfully\n"
 msgstr "Afsluttede vellykket\n"
 
 #. Translators: the first number is the number of the build attemp,
 #. the string is the directory where the build takes place
-#: ../plugins/build-basic-autotools/plugin.c:1120
+#: ../plugins/build-basic-autotools/plugin.c:1103
 #, c-format
 msgid "Build %d: %s"
 msgstr "Bygning %d: %s"
 
-#: ../plugins/build-basic-autotools/plugin.c:1691
-#: ../plugins/build-basic-autotools/plugin.c:1777
-#: ../plugins/build-basic-autotools/plugin.c:1787
-#: ../plugins/build-basic-autotools/plugin.c:1805
-#: ../plugins/build-basic-autotools/plugin.c:1815
-#: ../plugins/build-basic-autotools/plugin.c:1897
+#: ../plugins/build-basic-autotools/plugin.c:1667
+#: ../plugins/build-basic-autotools/plugin.c:1753
+#: ../plugins/build-basic-autotools/plugin.c:1763
+#: ../plugins/build-basic-autotools/plugin.c:1781
+#: ../plugins/build-basic-autotools/plugin.c:1791
+#: ../plugins/build-basic-autotools/plugin.c:1873
 #, c-format
 msgid "_Build"
 msgstr "_Byg"
 
-#: ../plugins/build-basic-autotools/plugin.c:1695
+#: ../plugins/build-basic-autotools/plugin.c:1671
 msgid "_Build Project"
 msgstr "_Byg projekt"
 
-#: ../plugins/build-basic-autotools/plugin.c:1696
+#: ../plugins/build-basic-autotools/plugin.c:1672
 msgid "Build whole project"
 msgstr "Byg hele projektet"
 
-#: ../plugins/build-basic-autotools/plugin.c:1701
+#: ../plugins/build-basic-autotools/plugin.c:1677
 msgid "_Install Project"
 msgstr "_Installér projekt"
 
-#: ../plugins/build-basic-autotools/plugin.c:1702
+#: ../plugins/build-basic-autotools/plugin.c:1678
 msgid "Install whole project"
 msgstr "Installér hele projektet"
 
-#: ../plugins/build-basic-autotools/plugin.c:1707
+#: ../plugins/build-basic-autotools/plugin.c:1683
 msgid "_Check Project"
 msgstr "_Tjek projekt"
 
-#: ../plugins/build-basic-autotools/plugin.c:1708
+#: ../plugins/build-basic-autotools/plugin.c:1684
 msgid "Check whole project"
 msgstr "Tjek hele projektet"
 
-#: ../plugins/build-basic-autotools/plugin.c:1713
+#: ../plugins/build-basic-autotools/plugin.c:1689
 msgid "_Clean Project"
 msgstr "_Rens projekt"
 
-#: ../plugins/build-basic-autotools/plugin.c:1714
+#: ../plugins/build-basic-autotools/plugin.c:1690
 msgid "Clean whole project"
 msgstr "Rens hele projektet"
 
-#: ../plugins/build-basic-autotools/plugin.c:1719
+#: ../plugins/build-basic-autotools/plugin.c:1695
 msgid "C_onfigure Project…"
 msgstr "K_onfigurér projekt…"
 
-#: ../plugins/build-basic-autotools/plugin.c:1720
+#: ../plugins/build-basic-autotools/plugin.c:1696
 msgid "Configure project"
 msgstr "Konfigurér projekt"
 
-#: ../plugins/build-basic-autotools/plugin.c:1725
+#: ../plugins/build-basic-autotools/plugin.c:1701
 msgid "Build _Tarball"
 msgstr "Byg _tarball"
 
-#: ../plugins/build-basic-autotools/plugin.c:1726
+#: ../plugins/build-basic-autotools/plugin.c:1702
 msgid "Build project tarball distribution"
 msgstr "Byg tarball-distribution til projektet"
 
-#: ../plugins/build-basic-autotools/plugin.c:1731
+#: ../plugins/build-basic-autotools/plugin.c:1707
 msgid "_Build Module"
 msgstr "_Byg modul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1732
+#: ../plugins/build-basic-autotools/plugin.c:1708
 msgid "Build module associated with current file"
 msgstr "Byg modulet tilknyttet den aktuelle fil"
 
-#: ../plugins/build-basic-autotools/plugin.c:1737
+#: ../plugins/build-basic-autotools/plugin.c:1713
 msgid "_Install Module"
 msgstr "_Installér modul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1738
+#: ../plugins/build-basic-autotools/plugin.c:1714
 msgid "Install module associated with current file"
 msgstr "Installér modulet tilknyttet den aktuelle fil"
 
-#: ../plugins/build-basic-autotools/plugin.c:1743
+#: ../plugins/build-basic-autotools/plugin.c:1719
 msgid "_Check Module"
 msgstr "_Tjek modul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1744
+#: ../plugins/build-basic-autotools/plugin.c:1720
 msgid "Check module associated with current file"
 msgstr "Tjek modulet tilknyttet den aktuelle fil"
 
-#: ../plugins/build-basic-autotools/plugin.c:1749
+#: ../plugins/build-basic-autotools/plugin.c:1725
 msgid "_Clean Module"
 msgstr "_Rens modulet"
 
-#: ../plugins/build-basic-autotools/plugin.c:1750
+#: ../plugins/build-basic-autotools/plugin.c:1726
 msgid "Clean module associated with current file"
 msgstr "Rens modulet tilknyttet den aktuelle fil"
 
-#: ../plugins/build-basic-autotools/plugin.c:1755
+#: ../plugins/build-basic-autotools/plugin.c:1731
 msgid "Co_mpile File"
 msgstr "Ko_mpilér fil"
 
 # ???
-#: ../plugins/build-basic-autotools/plugin.c:1756
+#: ../plugins/build-basic-autotools/plugin.c:1732
 msgid "Compile current editor file"
 msgstr "Kompilér nuværende redigeringsfil"
 
-#: ../plugins/build-basic-autotools/plugin.c:1761
+#: ../plugins/build-basic-autotools/plugin.c:1737
 msgid "Select Configuration"
 msgstr "Vælg konfiguration"
 
-#: ../plugins/build-basic-autotools/plugin.c:1762
+#: ../plugins/build-basic-autotools/plugin.c:1738
 msgid "Select current configuration"
 msgstr "Vælg aktuel konfiguration"
 
-#: ../plugins/build-basic-autotools/plugin.c:1767
+#: ../plugins/build-basic-autotools/plugin.c:1743
 msgid "Remove Configuration"
 msgstr "Fjern konfiguration"
 
-#: ../plugins/build-basic-autotools/plugin.c:1768
+#: ../plugins/build-basic-autotools/plugin.c:1744
 msgid ""
 "Clean project (distclean) and remove configuration directory if possible"
 msgstr "Rens projektet (distclean) og fjern konfigurationsmappen hvis muligt"
 
-#: ../plugins/build-basic-autotools/plugin.c:1781
-#: ../plugins/build-basic-autotools/plugin.c:1809
+#: ../plugins/build-basic-autotools/plugin.c:1757
+#: ../plugins/build-basic-autotools/plugin.c:1785
 msgid "_Compile"
 msgstr "_Kompilér"
 
-#: ../plugins/build-basic-autotools/plugin.c:1782
-#: ../plugins/build-basic-autotools/plugin.c:1810
+#: ../plugins/build-basic-autotools/plugin.c:1758
+#: ../plugins/build-basic-autotools/plugin.c:1786
 msgid "Compile file"
 msgstr "Kompilér fil"
 
-#: ../plugins/build-basic-autotools/plugin.c:1788
-#: ../plugins/build-basic-autotools/plugin.c:1816
+#: ../plugins/build-basic-autotools/plugin.c:1764
+#: ../plugins/build-basic-autotools/plugin.c:1792
 msgid "Build module"
 msgstr "Byg modul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1793
-#: ../plugins/build-basic-autotools/plugin.c:1821
-#: ../plugins/build-basic-autotools/plugin.c:1904
+#: ../plugins/build-basic-autotools/plugin.c:1769
+#: ../plugins/build-basic-autotools/plugin.c:1797
+#: ../plugins/build-basic-autotools/plugin.c:1880
 #, c-format
 msgid "_Install"
 msgstr "_Installér"
 
-#: ../plugins/build-basic-autotools/plugin.c:1794
-#: ../plugins/build-basic-autotools/plugin.c:1822
+#: ../plugins/build-basic-autotools/plugin.c:1770
+#: ../plugins/build-basic-autotools/plugin.c:1798
 msgid "Install module"
 msgstr "Installér modul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1799
-#: ../plugins/build-basic-autotools/plugin.c:1833
-#: ../plugins/build-basic-autotools/plugin.c:1911
+#: ../plugins/build-basic-autotools/plugin.c:1775
+#: ../plugins/build-basic-autotools/plugin.c:1809
+#: ../plugins/build-basic-autotools/plugin.c:1887
 #, c-format
 msgid "_Clean"
 msgstr "_Rens"
 
-#: ../plugins/build-basic-autotools/plugin.c:1800
-#: ../plugins/build-basic-autotools/plugin.c:1834
+#: ../plugins/build-basic-autotools/plugin.c:1776
+#: ../plugins/build-basic-autotools/plugin.c:1810
 msgid "Clean module"
 msgstr "Rens modul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1827
+#: ../plugins/build-basic-autotools/plugin.c:1803
 msgid "_Check"
 msgstr "_Tjek"
 
-#: ../plugins/build-basic-autotools/plugin.c:1828
+#: ../plugins/build-basic-autotools/plugin.c:1804
 msgid "Check module"
 msgstr "Tjek modul"
 
-#: ../plugins/build-basic-autotools/plugin.c:1839
+#: ../plugins/build-basic-autotools/plugin.c:1815
 msgid "_Cancel command"
 msgstr "_Annullér kommando"
 
-#: ../plugins/build-basic-autotools/plugin.c:1840
+#: ../plugins/build-basic-autotools/plugin.c:1816
 msgid "Cancel build command"
 msgstr "Annullér byggekommando"
 
-#: ../plugins/build-basic-autotools/plugin.c:1897
+#: ../plugins/build-basic-autotools/plugin.c:1873
 #, c-format
 msgid "_Build (%s)"
 msgstr "_Byg (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1904
+#: ../plugins/build-basic-autotools/plugin.c:1880
 #, c-format
 msgid "_Install (%s)"
 msgstr "_Installér (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1911
+#: ../plugins/build-basic-autotools/plugin.c:1887
 #, c-format
 msgid "_Clean (%s)"
 msgstr "_Rens (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1919
+#: ../plugins/build-basic-autotools/plugin.c:1895
 #, c-format
 msgid "Co_mpile (%s)"
 msgstr "Ko_mpilér (%s)"
 
-#: ../plugins/build-basic-autotools/plugin.c:1919
+#: ../plugins/build-basic-autotools/plugin.c:1895
 #, c-format
 msgid "Co_mpile"
 msgstr "Ko_mpilér"
 
-#: ../plugins/build-basic-autotools/plugin.c:2517
+#: ../plugins/build-basic-autotools/plugin.c:2493
 msgid "Build commands"
 msgstr "Byg kommandoer"
 
 #. Translators: This is a group of build
 #. * commands which appears in pop up menus
-#: ../plugins/build-basic-autotools/plugin.c:2526
+#: ../plugins/build-basic-autotools/plugin.c:2502
 msgid "Build popup commands"
 msgstr "Byg pop op-kommandoer"
 
-#: ../plugins/build-basic-autotools/plugin.c:2970
-#: ../plugins/build-basic-autotools/plugin.c:2978
+#: ../plugins/build-basic-autotools/plugin.c:2946
+#: ../plugins/build-basic-autotools/plugin.c:2954
 msgid "Build Autotools"
 msgstr "Byg Autotools"
 
@@ -2134,7 +2134,7 @@ msgstr "Autogen-skabelon brugt til implementationsfilen"
 msgid "File to which the processed template will be written"
 msgstr "Fil hvortil den processerede skabelon skrives"
 
-#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1373
+#: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1368
 msgid ""
 "Could not find autogen version 5; please install the autogen package. You "
 "can get it from http://autogen.sourceforge.net."
@@ -3541,8 +3541,8 @@ msgstr "API"
 msgid "Missing name"
 msgstr "Mangler navn"
 
-#: ../plugins/dir-project/dir-project.c:1070
-#: ../plugins/dir-project/dir-project.c:1080
+#: ../plugins/dir-project/dir-project.c:1132
+#: ../plugins/dir-project/dir-project.c:1142
 #: ../plugins/mk-project/mk-project.c:1024
 #: ../plugins/mk-project/mk-project.c:1034
 #, c-format
@@ -3594,7 +3594,7 @@ msgid "Rename"
 msgstr "Omdøb"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:363
-#: ../plugins/git/plugin.c:172
+#: ../plugins/git/plugin.c:173
 #: ../plugins/snippets-manager/snippets-editor.ui.h:19
 msgid "Remove"
 msgstr "Fjern"
@@ -3626,7 +3626,6 @@ msgid "Open file"
 msgstr "Åben fil"
 
 #: ../plugins/document-manager/anjuta-docman.c:909
-#: ../plugins/message-view/message-view.c:100
 msgid "Save file as"
 msgstr "Gem fil som"
 
@@ -4096,7 +4095,7 @@ msgstr "Klip den markerede tekst fra editoren til udklipsholderen"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:583
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:627
 msgid "_Copy"
 msgstr "_Kopier"
 
@@ -4104,7 +4103,7 @@ msgstr "_Kopier"
 msgid "Copy the selected text to the clipboard"
 msgstr "Kopier den markerede tekst til udklipsholderen"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:591
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:635
 msgid "_Paste"
 msgstr "Inds_æt"
 
@@ -4366,7 +4365,7 @@ msgid "Replace all"
 msgstr "Erstat alle"
 
 #: ../plugins/document-manager/search-files.c:616
-#: ../plugins/file-manager/file-view.c:804
+#: ../plugins/file-manager/file-view.c:892
 msgid "Filename"
 msgstr "Filnavn"
 
@@ -4414,7 +4413,6 @@ msgid "This function is not implemented for widgets of class '%s'"
 msgstr "Denne funktion er ikke implementeret for kontroller af klassen \"%s\""
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:936
-#: ../plugins/starter/plugin.c:187
 #, c-format
 msgid "Open '%s'"
 msgstr "Åbn \"%s\""
@@ -4611,7 +4609,7 @@ msgid "Open With"
 msgstr "Åbn med"
 
 #: ../plugins/file-manager/file-manager.plugin.in.h:1
-#: ../plugins/file-manager/plugin.c:543 ../plugins/file-manager/plugin.c:552
+#: ../plugins/file-manager/plugin.c:538 ../plugins/file-manager/plugin.c:547
 msgid "File Manager"
 msgstr "Filhåndtering"
 
@@ -4662,14 +4660,27 @@ msgid "Loading..."
 msgstr "Indlæser..."
 
 #: ../plugins/file-manager/file-model.c:708
-#: ../plugins/file-manager/file-view.c:892
+#: ../plugins/file-manager/file-view.c:980
 msgid "Base Path"
 msgstr "Grundsti"
 
 #: ../plugins/file-manager/file-model.c:709
-#: ../plugins/file-manager/file-view.c:893
+#: ../plugins/file-manager/file-view.c:981
 msgid "GFile representing the top-most path displayed"
 msgstr "GFile som repræsenterer den øverste viste sti"
+
+#. You try to rename "/"
+#: ../plugins/file-manager/file-view.c:139
+msgid "You can't rename \"/\"!"
+msgstr "Du kan ikke omdøbe \"/\"!"
+
+#: ../plugins/file-manager/file-view.c:153
+msgid ""
+"An error has occured!\n"
+"Maybe you permissions're insuficient or the filename is wrong"
+msgstr ""
+"Der opstod en fejl!\n"
+"Måske har du ikke tilstrækkelige rettigheder eller filnavnet er forkert"
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
@@ -4687,11 +4698,11 @@ msgstr "_Vis i filhåndteringen"
 msgid "Show in File manager"
 msgstr "Vis i filhåndteringen"
 
-#: ../plugins/file-manager/plugin.c:371
+#: ../plugins/file-manager/plugin.c:366
 msgid "File manager popup actions"
 msgstr "Pop op-handlinger for filhåndtering"
 
-#: ../plugins/file-manager/plugin.c:404 ../plugins/git/plugin.c:156
+#: ../plugins/file-manager/plugin.c:399 ../plugins/git/plugin.c:157
 msgid "Files"
 msgstr "Filer"
 
@@ -5202,7 +5213,7 @@ msgstr "Mappe at oprette patch-filer i:"
 msgid "Repository to pull from:"
 msgstr "Arkiv at trække (pull) fra:"
 
-#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:272
+#: ../plugins/git/anjuta-git.ui.h:51 ../plugins/git/plugin.c:273
 msgid "Rebase"
 msgstr "Flyt forgreningspunkt"
 
@@ -5339,7 +5350,7 @@ msgstr "Indtast venligst commit-forfatters navn"
 msgid "Please enter the commit author's e-mail address."
 msgstr "Indtast venligst commit-forfatters e-post-adresse."
 
-#: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:148
+#: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:149
 msgid "Commit"
 msgstr "Commit"
 
@@ -5393,7 +5404,7 @@ msgstr "<b>Mærke:</b> %s"
 msgid "<b>Remote:</b> %s"
 msgstr "<b>Fjern:</b> %s"
 
-#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:99
+#: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:100
 msgid "Merge"
 msgstr "Flet"
 
@@ -5417,11 +5428,11 @@ msgstr "Git-versionsstyring"
 msgid "Please enter a URL."
 msgstr "Indtast venligst en URL."
 
-#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:256
+#: ../plugins/git/git-pull-pane.c:243 ../plugins/git/plugin.c:257
 msgid "Pull"
 msgstr "Træk"
 
-#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:248
+#: ../plugins/git/git-push-pane.c:439 ../plugins/git/plugin.c:249
 msgid "Push"
 msgstr "Skub"
 
@@ -5466,7 +5477,7 @@ msgstr "Ingen filer i konflikttilstand valgt."
 msgid "Please enter a commit."
 msgstr "Indtast venligst en commit."
 
-#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:512
+#: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:513
 msgid "Revert"
 msgstr "Gendan"
 
@@ -5486,312 +5497,312 @@ msgstr "Ændret, men ikke opdateret"
 msgid "No staged files selected."
 msgstr "Ingen indekserede filer valgt."
 
-#: ../plugins/git/plugin.c:67
+#: ../plugins/git/plugin.c:68
 msgid "Branch tools"
 msgstr "Grenværktøjer"
 
-#: ../plugins/git/plugin.c:75 ../plugins/git/plugin.c:76
+#: ../plugins/git/plugin.c:76 ../plugins/git/plugin.c:77
 msgid "Create a branch"
 msgstr "Opret en gren"
 
-#: ../plugins/git/plugin.c:83 ../plugins/git/plugin.c:84
+#: ../plugins/git/plugin.c:84 ../plugins/git/plugin.c:85
 msgid "Delete branches"
 msgstr "Slet grene"
 
-#: ../plugins/git/plugin.c:91 ../plugins/git/plugin.c:92
+#: ../plugins/git/plugin.c:92 ../plugins/git/plugin.c:93
 msgid "Switch to the selected branch"
 msgstr "Skift til den valgte gren"
 
-#: ../plugins/git/plugin.c:100
+#: ../plugins/git/plugin.c:101
 msgid "Merge a revision into the current branch"
 msgstr "Flet denne revision ind i den aktuelle gren"
 
-#: ../plugins/git/plugin.c:111
+#: ../plugins/git/plugin.c:112
 msgid "Tag tools"
 msgstr "Mærkeværktøjer"
 
-#: ../plugins/git/plugin.c:119 ../plugins/git/plugin.c:120
+#: ../plugins/git/plugin.c:120 ../plugins/git/plugin.c:121
 msgid "Create a tag"
 msgstr "Opret et mærke"
 
-#: ../plugins/git/plugin.c:127 ../plugins/git/plugin.c:128
+#: ../plugins/git/plugin.c:128 ../plugins/git/plugin.c:129
 msgid "Delete selected tags"
 msgstr "Slet valgte mærker"
 
-#: ../plugins/git/plugin.c:140
+#: ../plugins/git/plugin.c:141
 msgid "Changes"
 msgstr "Ændringer"
 
-#: ../plugins/git/plugin.c:149
+#: ../plugins/git/plugin.c:150
 msgid "Commit changes"
 msgstr "Commit ændringer"
 
-#: ../plugins/git/plugin.c:164
+#: ../plugins/git/plugin.c:165
 #: ../plugins/snippets-manager/snippets-editor.ui.h:18
 msgid "Add"
 msgstr "Tilføj"
 
-#: ../plugins/git/plugin.c:165
+#: ../plugins/git/plugin.c:166
 msgid "Add files to the index"
 msgstr "Føj filer til indekset"
 
-#: ../plugins/git/plugin.c:173
+#: ../plugins/git/plugin.c:174
 msgid "Remove files from the repository"
 msgstr "Fjern filer fra arkivet"
 
-#: ../plugins/git/plugin.c:180 ../plugins/git/plugin.c:476
+#: ../plugins/git/plugin.c:181 ../plugins/git/plugin.c:477
 msgid "Check out"
 msgstr "Checkout"
 
-#: ../plugins/git/plugin.c:181
+#: ../plugins/git/plugin.c:182
 msgid "Revert changes in unstaged files"
 msgstr "Forkast ændringer i uindekserede filer"
 
-#: ../plugins/git/plugin.c:188 ../plugins/git/plugin.c:484
+#: ../plugins/git/plugin.c:189 ../plugins/git/plugin.c:485
 msgid "Unstage"
 msgstr "Fjern fra indeks"
 
-#: ../plugins/git/plugin.c:189
+#: ../plugins/git/plugin.c:190
 msgid "Remove staged files from the index"
 msgstr "Fjern indekserede filer fra indeks"
 
-#: ../plugins/git/plugin.c:196
+#: ../plugins/git/plugin.c:197
 msgid "Resolve conflicts"
 msgstr "Løs konflikter"
 
-#: ../plugins/git/plugin.c:197
+#: ../plugins/git/plugin.c:198
 msgid "Mark selected conflicted files as resolved"
 msgstr "Markér valgte filer i konflikttilstand som værende løst"
 
-#: ../plugins/git/plugin.c:204 ../plugins/git/plugin.c:958
+#: ../plugins/git/plugin.c:205 ../plugins/git/plugin.c:958
 msgid "Stash"
 msgstr "Gem"
 
-#: ../plugins/git/plugin.c:212 ../plugins/git/plugin.c:324
+#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
 msgid "Stash uncommitted changes"
 msgstr "Bortgem ændringer"
 
-#: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
+#: ../plugins/git/plugin.c:214 ../plugins/git/plugin.c:326
 msgid "Save uncommitted changes without committing them"
 msgstr "Bortgem (stash) ændringer uden at committe dem"
 
-#: ../plugins/git/plugin.c:224
+#: ../plugins/git/plugin.c:225
 msgid "Remote repository tools"
 msgstr "Værktøjer til fjernarkiver"
 
-#: ../plugins/git/plugin.c:232
+#: ../plugins/git/plugin.c:233
 msgid "Add a remote"
 msgstr "Tilføj fjernarkiv"
 
-#: ../plugins/git/plugin.c:233
+#: ../plugins/git/plugin.c:234
 msgid "Add a remote repository"
 msgstr "Tilføj et fjernarkiv"
 
-#: ../plugins/git/plugin.c:240
+#: ../plugins/git/plugin.c:241
 msgid "Delete selected remote"
 msgstr "Fjern valgt fjernarkiv"
 
-#: ../plugins/git/plugin.c:241
+#: ../plugins/git/plugin.c:242
 msgid "Delete a remote"
 msgstr "Slet et fjernarkiv"
 
-#: ../plugins/git/plugin.c:249
+#: ../plugins/git/plugin.c:250
 msgid "Push changes to a remote repository"
 msgstr "Skub ændringer til et fjernarkiv"
 
-#: ../plugins/git/plugin.c:257
+#: ../plugins/git/plugin.c:258
 msgid "Pull changes from a remote repository"
 msgstr "Træk ændringer fra et fjernarkiv"
 
-#: ../plugins/git/plugin.c:264 ../plugins/git/plugin.c:576
+#: ../plugins/git/plugin.c:265 ../plugins/git/plugin.c:577
 msgid "Fetch"
 msgstr "Hent"
 
-#: ../plugins/git/plugin.c:265
+#: ../plugins/git/plugin.c:266
 msgid "Fetch changes from remote repositories"
 msgstr "Hent ændringer fra fjernarkiver"
 
-#: ../plugins/git/plugin.c:280
+#: ../plugins/git/plugin.c:281
 msgid "Rebase against selected remote"
 msgstr "Flyt forgreningspunkt for valgt fjernarkiv"
 
-#: ../plugins/git/plugin.c:281
+#: ../plugins/git/plugin.c:282
 msgid "Start a rebase operation relative to the selected remote repository"
 msgstr ""
 "Start en flytning af forgreningspunkt relativt til det valgte fjernarkiv"
 
-#: ../plugins/git/plugin.c:288 ../plugins/git/plugin.c:448
+#: ../plugins/git/plugin.c:289 ../plugins/git/plugin.c:449
 msgid "Continue"
 msgstr "Fortsæt"
 
-#: ../plugins/git/plugin.c:289
+#: ../plugins/git/plugin.c:290
 msgid "Continue a rebase with resolved conflicts"
 msgstr "Fortsæt flytning af forgreningspunkt med løste konflikter"
 
-#: ../plugins/git/plugin.c:296 ../plugins/git/plugin.c:456
+#: ../plugins/git/plugin.c:297 ../plugins/git/plugin.c:457
 msgid "Skip"
 msgstr "Spring over"
 
-#: ../plugins/git/plugin.c:297
+#: ../plugins/git/plugin.c:298
 msgid "Skip the current revision"
 msgstr "Spring nuværende revision over"
 
-#: ../plugins/git/plugin.c:304 ../plugins/git/plugin.c:464
+#: ../plugins/git/plugin.c:305 ../plugins/git/plugin.c:465
 msgid "Abort"
 msgstr "Afbryd"
 
-#: ../plugins/git/plugin.c:305
+#: ../plugins/git/plugin.c:306
 msgid "Abort the rebase and return the repository to its previous state"
 msgstr ""
 "Afbryd flytning af forgreningspunkt og gendan arkivets forrige tilstand"
 
-#: ../plugins/git/plugin.c:316
+#: ../plugins/git/plugin.c:317
 msgid "Stash tools"
 msgstr "Værktøjer for gemmesteder"
 
-#: ../plugins/git/plugin.c:332
+#: ../plugins/git/plugin.c:333
 msgid "Apply selected stash"
 msgstr "Anvend valgt gemmested"
 
-#: ../plugins/git/plugin.c:333
+#: ../plugins/git/plugin.c:334
 msgid "Apply stashed changes back into the working tree"
 msgstr "Genindfør bortgemte ændringer i arbejdstræet"
 
-#: ../plugins/git/plugin.c:340
+#: ../plugins/git/plugin.c:341
 msgid "Apply stash and restore index"
 msgstr "Genindfør bortgemte ændringer og gendan indeks"
 
-#: ../plugins/git/plugin.c:341
+#: ../plugins/git/plugin.c:342
 msgid "Apply stashed changes back into the working tree and the index"
 msgstr "Genindfør bortgemte ændringer i arbejdstræet og indekset"
 
-#: ../plugins/git/plugin.c:348
+#: ../plugins/git/plugin.c:349
 msgid "Drop selected stash"
 msgstr "Drop det valgte gemmested"
 
-#: ../plugins/git/plugin.c:349
+#: ../plugins/git/plugin.c:350
 msgid "Delete the selected stash"
 msgstr "Slet det valgte gemmested"
 
-#: ../plugins/git/plugin.c:356
+#: ../plugins/git/plugin.c:357
 msgid "Clear all stashes"
 msgstr "Ryd alle gemmesteder"
 
-#: ../plugins/git/plugin.c:357
+#: ../plugins/git/plugin.c:358
 msgid "Delete all stashes in this repository"
 msgstr "Slet alle gemmesteder i dette arkiv"
 
-#: ../plugins/git/plugin.c:368
+#: ../plugins/git/plugin.c:369
 msgid "Revision tools"
 msgstr "Revisionsværktøjer"
 
-#: ../plugins/git/plugin.c:376 ../plugins/git/plugin.c:496
+#: ../plugins/git/plugin.c:377 ../plugins/git/plugin.c:497
 msgid "Show commit diff"
 msgstr "Vis commit-diff"
 
-#: ../plugins/git/plugin.c:377
+#: ../plugins/git/plugin.c:378
 msgid "Show a diff of the selected revision"
 msgstr "Vis en diff for den valgte revision"
 
-#: ../plugins/git/plugin.c:384 ../plugins/git/plugin.c:504
+#: ../plugins/git/plugin.c:385 ../plugins/git/plugin.c:505
 msgid "Cherry pick"
 msgstr "Cherry-pick"
 
-#: ../plugins/git/plugin.c:385
+#: ../plugins/git/plugin.c:386
 msgid "Merge an individual commit from another branch"
 msgstr "Flet med en enkelt commit fra en anden gren"
 
-#: ../plugins/git/plugin.c:392
+#: ../plugins/git/plugin.c:393
 msgid "Reset/Revert"
 msgstr "Nulstil/gendan"
 
-#: ../plugins/git/plugin.c:400
+#: ../plugins/git/plugin.c:401
 msgid "Reset tree"
 msgstr "Nulstil træ"
 
-#: ../plugins/git/plugin.c:401
+#: ../plugins/git/plugin.c:402
 msgid "Reset tree to a previous revision"
 msgstr "Nulstil træ til en tidligere revision"
 
-#: ../plugins/git/plugin.c:408
+#: ../plugins/git/plugin.c:409
 msgid "Revert commit"
 msgstr "Forkast commit"
 
-#: ../plugins/git/plugin.c:409
+#: ../plugins/git/plugin.c:410
 msgid "Revert a commit"
 msgstr "Forkast en commit"
 
-#: ../plugins/git/plugin.c:416
+#: ../plugins/git/plugin.c:417
 msgid "Patch series"
 msgstr "Patch-række"
 
-#: ../plugins/git/plugin.c:424 ../plugins/git/plugin.c:425
+#: ../plugins/git/plugin.c:425 ../plugins/git/plugin.c:426
 msgid "Generate a patch series"
 msgstr "Opret en patch-række"
 
-#: ../plugins/git/plugin.c:432
+#: ../plugins/git/plugin.c:433
 msgid "Mailbox files"
 msgstr "Postkassefiler"
 
-#: ../plugins/git/plugin.c:440
+#: ../plugins/git/plugin.c:441
 msgid "Apply mailbox files"
 msgstr "Anvend postkassefiler"
 
-#: ../plugins/git/plugin.c:441
+#: ../plugins/git/plugin.c:442
 msgid "Apply patches from mailbox files"
 msgstr "Anvend patches fra postkassefiler"
 
-#: ../plugins/git/plugin.c:449
+#: ../plugins/git/plugin.c:450
 msgid "Continue applying patches with resolved conflicts"
 msgstr "Fortsæt med at anvende patches med løste konflikter"
 
-#: ../plugins/git/plugin.c:457
+#: ../plugins/git/plugin.c:458
 msgid "Skip the current patch in the series"
 msgstr "Spring den aktuelle patch i rækken over"
 
-#: ../plugins/git/plugin.c:465
+#: ../plugins/git/plugin.c:466
 msgid ""
 "Stop applying the patch series and return the tree to its previous state"
 msgstr ""
 "Afbryd anvendelse af patch-rækken og genetablér træet i dets forrige tilstand"
 
-#: ../plugins/git/plugin.c:520
+#: ../plugins/git/plugin.c:521
 msgid "Reset..."
 msgstr "Nulstil..."
 
-#: ../plugins/git/plugin.c:532
+#: ../plugins/git/plugin.c:533
 msgid "Switch"
 msgstr "Skift"
 
-#: ../plugins/git/plugin.c:540
+#: ../plugins/git/plugin.c:541
 msgid "Delete..."
 msgstr "Slet..."
 
-#: ../plugins/git/plugin.c:548
+#: ../plugins/git/plugin.c:549
 msgid "Merge..."
 msgstr "Flet..."
 
-#: ../plugins/git/plugin.c:560
+#: ../plugins/git/plugin.c:561
 msgid "Push..."
 msgstr "Skub..."
 
-#: ../plugins/git/plugin.c:568
+#: ../plugins/git/plugin.c:569
 msgid "Pull..."
 msgstr "Træk..."
 
-#: ../plugins/git/plugin.c:588
+#: ../plugins/git/plugin.c:589
 msgid "Apply"
 msgstr "Anvend"
 
-#: ../plugins/git/plugin.c:596
+#: ../plugins/git/plugin.c:597
 msgid "Apply and restore index"
 msgstr "Anvend og gendan indeks"
 
-#: ../plugins/git/plugin.c:604
+#: ../plugins/git/plugin.c:605
 msgid "Drop"
 msgstr "Drop"
 
-#: ../plugins/git/plugin.c:693 ../plugins/git/plugin.c:766
+#: ../plugins/git/plugin.c:694 ../plugins/git/plugin.c:767
 msgid "Branch"
 msgstr "Gren"
 
@@ -6239,8 +6250,8 @@ msgstr "Modul til understøttelse af Vala"
 msgid "Vala support plugin, adds code completion."
 msgstr "Modul til understøttelse af Vala, som tilføjer kodefuldførelse."
 
-#: ../plugins/language-support-vala/plugin.vala:655
-#: ../plugins/language-support-vala/plugin.vala:663
+#: ../plugins/language-support-vala/plugin.vala:657
+#: ../plugins/language-support-vala/plugin.vala:665
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Autofuldfør"
@@ -6311,24 +6322,19 @@ msgstr "Vigtigt:"
 msgid "Message colors"
 msgstr "Farver for meddelelser"
 
-#: ../plugins/message-view/anjuta-msgman.c:83
+#: ../plugins/message-view/anjuta-msgman.c:94
 msgid "Close all message tabs"
 msgstr "Luk alle beskedfaneblade"
 
-#: ../plugins/message-view/message-view.c:497
+#: ../plugins/message-view/message-view.c:472
 msgid "Icon"
 msgstr "Ikon"
 
-#: ../plugins/message-view/message-view.c:511
+#: ../plugins/message-view/message-view.c:486
 #: ../plugins/message-view/plugin.c:386 ../plugins/message-view/plugin.c:400
 #: ../plugins/message-view/plugin.c:519 ../plugins/message-view/plugin.c:530
 msgid "Messages"
 msgstr "Meddelser"
-
-#: ../plugins/message-view/message-view.c:869
-#, c-format
-msgid "Error writing %s"
-msgstr "Fejl ved skrivning til %s"
 
 #: ../plugins/message-view/plugin.c:79
 msgid "_Copy Message"
@@ -6339,28 +6345,28 @@ msgid "Copy message"
 msgstr "Kopiér meddelelse"
 
 #: ../plugins/message-view/plugin.c:83
+msgid "_Copy All Messages"
+msgstr "_Kopiér alle meddelelser"
+
+#: ../plugins/message-view/plugin.c:84
+msgid "Copy All Messages"
+msgstr "Kopiér alle meddelelser"
+
+#: ../plugins/message-view/plugin.c:87
 msgid "_Next Message"
 msgstr "_Næste besked"
 
-#: ../plugins/message-view/plugin.c:84
+#: ../plugins/message-view/plugin.c:88
 msgid "Next message"
 msgstr "Næste besked"
 
-#: ../plugins/message-view/plugin.c:87
+#: ../plugins/message-view/plugin.c:91
 msgid "_Previous Message"
 msgstr "_Forrige meddelelse"
 
-#: ../plugins/message-view/plugin.c:88
+#: ../plugins/message-view/plugin.c:92
 msgid "Previous message"
 msgstr "Forrige meddelelse"
-
-#: ../plugins/message-view/plugin.c:91
-msgid "_Save Message"
-msgstr "_Gem meddelelse"
-
-#: ../plugins/message-view/plugin.c:92
-msgid "Save message"
-msgstr "Gem meddelelse"
 
 #: ../plugins/message-view/plugin.c:168
 msgid "Next/Previous Message"
@@ -7336,14 +7342,6 @@ msgstr "Standardbrugernavn til nye projekter"
 msgid "If empty, the current user name is used."
 msgstr "Hvis tom, bruges den nuværende brugers brugernavn."
 
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-msgid "Default email used in new project"
-msgstr "Standard-e-mailadresse til nye projekter"
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
-msgid "If empty, current login and machine name is used."
-msgstr "Hvis tom, bruges nuværende logind og maskinnavn."
-
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
 msgid "Unable to extract project template %s: %s"
@@ -8310,31 +8308,31 @@ msgstr ""
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/run-program/plugin.c:266
+#: ../plugins/run-program/plugin.c:290
 msgid "_Run"
 msgstr "_Kør"
 
-#: ../plugins/run-program/plugin.c:276
+#: ../plugins/run-program/plugin.c:300
 msgid "Run program without debugger"
 msgstr "Kør programmet uden fejlsøger"
 
-#: ../plugins/run-program/plugin.c:282
+#: ../plugins/run-program/plugin.c:306
 msgid "Stop Program"
 msgstr "Stop programmet"
 
-#: ../plugins/run-program/plugin.c:284
+#: ../plugins/run-program/plugin.c:308
 msgid "Kill program"
 msgstr "Dræb program"
 
-#: ../plugins/run-program/plugin.c:290
+#: ../plugins/run-program/plugin.c:314
 msgid "Program Parameters…"
 msgstr "Programparametre…"
 
-#: ../plugins/run-program/plugin.c:292
+#: ../plugins/run-program/plugin.c:316
 msgid "Set current program, arguments, etc."
 msgstr "Indstil det aktuelle program, argumenter og så videre"
 
-#: ../plugins/run-program/plugin.c:317
+#: ../plugins/run-program/plugin.c:348
 msgid "Run operations"
 msgstr "Kør operationer"
 
@@ -8464,9 +8462,9 @@ msgstr "<b>Fejl:</b> Denne udløsernøgle er allerede i brug for at af sprogene!
 #: ../plugins/snippets-manager/snippets-editor.c:50
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
-"_ !"
+"\"_\"!"
 msgstr ""
-"<b>Fejl:</b> Udløsernøglen kan kun indeholde alfanumeriske tegn, samt _ !"
+"<b>Fejl:</b> Udløsernøglen kan kun indeholde alfanumeriske tegn, samt \"_\"!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:51
 msgid "<b>Error:</b> You haven't entered a trigger key for the snippet!"
@@ -8791,7 +8789,7 @@ msgstr "Begynder"
 msgid "Welcome page with most common actions."
 msgstr "Velkomstside med de fleste almindelige handlinger."
 
-#: ../plugins/starter/plugin.c:304
+#: ../plugins/starter/plugin.c:425
 msgid "Start"
 msgstr "Start"
 
@@ -8800,29 +8798,32 @@ msgid "Create a new project"
 msgstr "Opret et nyt projekt"
 
 #: ../plugins/starter/starter.ui.h:2
-msgid "Import an existing project"
-msgstr "Importér et eksisterende projekt"
+msgid "Import a project"
+msgstr "Importér et projekt"
 
 #: ../plugins/starter/starter.ui.h:3
-msgid "Recent projects:"
-msgstr "Seneste projekter:"
+msgid "Search for example code"
+msgstr "Søgning efter kodeeksempel"
 
 #: ../plugins/starter/starter.ui.h:4
-msgid "Tutorials"
-msgstr "Vejledninger"
+msgid "View local Anjuta documentation"
+msgstr "Vis lokal Anjuta-dokumentation"
 
 #: ../plugins/starter/starter.ui.h:5
-msgid "Anjuta Manual"
-msgstr "Manual til Anjuta"
+msgid "View local Anjuta FAQ"
+msgstr "Vis lokal Anjuta-OSS (FAQ)"
 
-# Synes efterhånden OSS bruges en hel del steder på dansk
 #: ../plugins/starter/starter.ui.h:6
-msgid "FAQ"
-msgstr "OSS"
+msgid "View online library documentation"
+msgstr "Vis online biblioteksdokumentation"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "Getting started:"
-msgstr "Kom godt i gang:"
+msgid "Remove recently used project from list"
+msgstr "Fjern nyligt brugt projekt fra liste"
+
+#: ../plugins/starter/starter.ui.h:8
+msgid "Unlist Project"
+msgstr "Fjern projekt fra liste"
 
 #: ../plugins/subversion/anjuta-subversion.plugin.in.h:1
 #: ../plugins/subversion/subversion-ui-utils.c:64
@@ -9491,8 +9492,8 @@ msgid "Symbol"
 msgstr "Symbol"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:772 ../plugins/terminal/terminal.c:970
-#: ../plugins/terminal/terminal.c:1049
+#: ../plugins/terminal/terminal.c:820 ../plugins/terminal/terminal.c:1005
+#: ../plugins/terminal/terminal.c:1091
 msgid "Terminal"
 msgstr "Terminal"
 
@@ -9512,23 +9513,23 @@ msgstr "Brug standardprofilen til GNOME-terminal"
 msgid "Terminal options"
 msgstr "Terminalindstillinger"
 
-#: ../plugins/terminal/terminal.c:600
+#: ../plugins/terminal/terminal.c:644
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:608
+#: ../plugins/terminal/terminal.c:652
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:616
+#: ../plugins/terminal/terminal.c:660
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:754
+#: ../plugins/terminal/terminal.c:802
 msgid "terminal operations"
 msgstr "terminaloperationer"
 
-#: ../plugins/terminal/terminal.c:889
+#: ../plugins/terminal/terminal.c:937
 #, c-format
 msgid "Unable to execute command"
 msgstr "Kan ikke køre kommando"
@@ -9871,9 +9872,9 @@ msgstr "Spørg brugeren om yderligere parametre"
 msgid "Command line parameters"
 msgstr "Kommandolinjeparametre"
 
-#: ../src/about.c:201
-msgid "Copyright (c) Naba Kumar"
-msgstr "Copyright (c) Naba Kumar"
+#: ../src/about.c:186
+msgid "Copyright © Naba Kumar"
+msgstr "Copyright © Naba Kumar"
 
 #: ../src/anjuta-actions.h:23
 msgid "_File"
@@ -10073,14 +10074,22 @@ msgid "Value doesn't exist"
 msgstr "Værdien findes ikke"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
+msgid "Default email used in new project"
+msgstr "Standard-e-mailadresse til nye projekter"
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+msgid "If empty, current login and machine name is used."
+msgstr "Hvis tom, bruges nuværende logind og maskinnavn."
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
 msgid "Use tabulation for indentation"
 msgstr "Anvend tabulatorer til indrykning"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:4
 msgid "Number of characters of one tabulation"
 msgstr "Antal tegn i én tabulation"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
 msgstr "Antal mellemrum for hvert indrykningstrin"
 
@@ -10141,6 +10150,34 @@ msgstr "Kun ikoner"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Kun tekst"
+
+#~ msgid "Error writing %s"
+#~ msgstr "Fejl ved skrivning til %s"
+
+#~ msgid "_Save Message"
+#~ msgstr "_Gem meddelelse"
+
+#~ msgid "Save message"
+#~ msgstr "Gem meddelelse"
+
+#~ msgid "Import an existing project"
+#~ msgstr "Importér et eksisterende projekt"
+
+#~ msgid "Recent projects:"
+#~ msgstr "Seneste projekter:"
+
+#~ msgid "Tutorials"
+#~ msgstr "Vejledninger"
+
+#~ msgid "Anjuta Manual"
+#~ msgstr "Manual til Anjuta"
+
+# Synes efterhånden OSS bruges en hel del steder på dansk
+#~ msgid "FAQ"
+#~ msgstr "OSS"
+
+#~ msgid "Getting started:"
+#~ msgstr "Kom godt i gang:"
 
 #~ msgid "Path: "
 #~ msgstr "Sti: "
@@ -11658,9 +11695,6 @@ msgstr "Kun tekst"
 #~ msgid "Find:"
 #~ msgstr "Find:"
 
-#~ msgid "Search complete"
-#~ msgstr "Søgning fuldendt"
-
 #~ msgid "The match \"%s\" was not found. Wrap search around the document?"
 #~ msgstr "Intet resultat for \"%s\". Ombryd til dokumentets begyndelse?"
 
@@ -11701,9 +11735,6 @@ msgstr "Kun tekst"
 
 #~ msgid "Anjuta Home Page"
 #~ msgstr "Hjemmeside for Anjuta"
-
-#~ msgid "GNOME Online API Documentation"
-#~ msgstr "GNOMEs online API-dokumentation"
 
 #~ msgid "Package is not parseable"
 #~ msgstr "Pakken kan ikke fortolkes"
