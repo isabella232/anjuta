@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: packagename\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-12 14:38+0000\n"
-"PO-Revision-Date: 2014-05-12 23:57+0200\n"
+"POT-Creation-Date: 2014-07-17 14:45+0000\n"
+"PO-Revision-Date: 2014-10-12 01:04+0200\n"
 "Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: team@gnome.gr\n"
 "Language: el\n"
@@ -13,77 +13,68 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.6.9\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
+"Ελληνική μεταφραστική ομάδα GNOME <team@gnome.gr>, 2009-2014\n"
 "Δημήτρης Σπίγγος <dmtrs32@gmail.com>, 2012, 2013\n"
 "Σίμος Ξενιτέλλης <simos@gnome.org>, 2009\n"
-"Τζένη Πετούμενου <epetoumenou@gmail.com>, 2009"
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:23
-msgctxt "_"
-msgid ""
-"external ref='figures/anjuta_logo.png' md5='82636133d39ac4a688facd76954b8b29'"
-msgstr ""
-"external ref='figures/anjuta_logo.png' md5='82636133d39ac4a688facd76954b8b29'"
+"Τζένη Πετούμενου <epetoumenou@gmail.com>, 2009\n"
+"Μαρία Μαυρίδου <mavridou@gmail.com>, 2014"
 
 #. (itstool) path: info/desc
-#: C/index.page:7
+#: C/index.page:8
 msgid "Help for Anjuta DevStudio."
 msgstr "Βοήθεια για το DevStudio του Anjuta."
 
 #. (itstool) path: info/title
-#: C/index.page:8
+#: C/index.page:9
 msgctxt "link"
 msgid "Anjuta"
 msgstr "Anjuta"
 
 #. (itstool) path: info/title
-#: C/index.page:9
+#: C/index.page:10
 msgctxt "text"
 msgid "Anjuta DevStudio"
 msgstr "Anjuta DevStudio"
 
 #. (itstool) path: credit/name
-#: C/index.page:13 C/anjuta-code-assist.page:13 C/anjuta-code-help.page:14
+#: C/index.page:14 C/anjuta-code-assist.page:13 C/anjuta-code-help.page:14
 #: C/anjuta-code-indentation.page:14 C/anjuta-code-symbols.page:13
 msgid "Johannes Schmid"
 msgstr "Johannes Schmid"
 
+#. (itstool) path: media/span
+#: C/index.page:24
+msgid "Anjuta logo"
+msgstr "Λογότυπο Anjuta"
+
 #. (itstool) path: page/title
-#: C/index.page:22
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/anjuta_logo.png"
-"\">Anjuta logo</media> Anjuta DevStudio"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/anjuta_logo.png"
-"\">Λογότυπος Anjuta</media> Anjuta DevStudio"
+#: C/index.page:23
+msgid "<_:media-1/> Anjuta DevStudio"
+msgstr "<_:media-1/> DevStudio του Anjuta"
 
 #. (itstool) path: section/title
-#: C/index.page:28
+#: C/index.page:29
 msgid "Project Management"
 msgstr "Διαχείριση έργου"
 
 #. (itstool) path: section/title
-#: C/index.page:32
+#: C/index.page:33
 msgid "Coding and code navigation"
 msgstr "Κωδικοποίηση και κώδικας περιήγησης"
 
 #. (itstool) path: section/title
-#: C/index.page:36
+#: C/index.page:37
 msgid "Building Project"
-msgstr "Κατασκευή έργου"
+msgstr "Δόμηση έργου"
 
 #. (itstool) path: section/title
-#: C/index.page:40
+#: C/index.page:41
 msgid "Debugging Program"
 msgstr "Αποσφαλμάτωση προγράμματος"
 
@@ -92,7 +83,7 @@ msgstr "Αποσφαλμάτωση προγράμματος"
 # #-#-#-#-#  gimp-plug-ins.gimp-2-6.el.po (el)  #-#-#-#-#
 #
 #. (itstool) path: section/title
-#: C/index.page:50
+#: C/index.page:51
 msgid "Reference"
 msgstr "Αναφορά"
 
@@ -128,8 +119,8 @@ msgstr ""
 "μενού όπου μπορείτε να επιλέξετε ταύτιση χρησιμοποιώντας το πλήκτρο "
 "<key>Enter</key>. Κανονικά αυτό συμβαίνει αυτόματα μετά την πληκτρολόγηση "
 "του τρίτου (μη κενού) χαρακτήρα, αλλά μπορείτε επίσης να το εξαναγκάσετε "
-"χρησιμοποιώντας το στοιχείο μενού <guiseq><gui>επεξεργασία</"
-"gui><gui>αυτόματη συμπλήρωση</gui></guiseq>."
+"χρησιμοποιώντας το στοιχείο μενού <guiseq><gui>Επεξεργασία</"
+"gui><gui>Αυτόματη συμπλήρωση</gui></guiseq>."
 
 #. (itstool) path: note/p
 #: C/anjuta-code-assist.page:31
@@ -201,9 +192,9 @@ msgid ""
 msgstr ""
 "Για γρήγορη πρόσβαση στις αναφορές API των βιβλιοθηκών, το anjuta "
 "περιλαμβάνει έναν ενσωματωμένο περιηγητή API. Εάν δεν έχει ήδη γίνει μπορεί "
-"να ενεργοποιηθεί στις προτιμήσεις (<guiseq><gui>επεξεργασία</"
-"gui><gui>προτιμήσεις</gui></guiseq>) στο <guiseq><gui>γενικά</"
-"gui><gui>πρόσθετα</gui></guiseq> επιλέγοντας το πρόσθετο <app>DevHelp</app>."
+"να ενεργοποιηθεί στις προτιμήσεις (<guiseq><gui>Επεξεργασία</"
+"gui><gui>Προτιμήσεις</gui></guiseq>) στο <guiseq><gui>Γενικά</"
+"gui><gui>Πρόσθετα</gui></guiseq> επιλέγοντας το πρόσθετο <app>DevHelp</app>."
 
 #. (itstool) path: section/p
 #: C/anjuta-code-help.page:30
@@ -230,13 +221,13 @@ msgid ""
 msgstr ""
 "Σε περίπτωση αβεβαιότητας χρήσης μιας συγκεκριμένης συνάρτησης σε υπάρχοντα "
 "κώδικα, βάλτε απλά τον δρομέα στο όνομα της συνάρτησης και χρησιμοποιήστε "
-"<keyseq><key>Shift</key><key>F1</key></keyseq> (ή <guiseq><gui>βοήθεια</"
-"gui><gui>βοήθεια περιεχομένου</gui></guiseq>) για μετάβαση στην τεκμηρίωση."
+"<keyseq><key>Shift</key><key>F1</key></keyseq> (ή <guiseq><gui>Βοήθεια</"
+"gui><gui>Βοήθεια περιεχομένου</gui></guiseq>) για μετάβαση στην τεκμηρίωση."
 
 #. (itstool) path: info/desc
 #: C/anjuta-code-indentation.page:9
 msgid "Configure and use automatic indentation for a consistent coding style"
-msgstr "Διαμόρφωση και χρήση αυτόματης εσοχής για σταθερή τεχνοτροπία κώδικα"
+msgstr "Διαμόρφωση και χρήση αυτόματης εσοχής για σταθερό στυλ κώδικα"
 
 #. (itstool) path: page/title
 #: C/anjuta-code-indentation.page:19
@@ -251,7 +242,7 @@ msgstr "Ρύθμιση και χρήση αυτόματης εσοχής"
 #. (itstool) path: section/title
 #: C/anjuta-code-indentation.page:25
 msgid "Manual configuration"
-msgstr "Χειροκίνητη διαμόρφωση"
+msgstr "Χειροκίνητη ρύθμιση"
 
 #. (itstool) path: section/p
 #: C/anjuta-code-indentation.page:27
@@ -261,8 +252,8 @@ msgid ""
 "programming language. The indentation width for several types of statements "
 "can be set there."
 msgstr ""
-"Η αυτόματη εσοχή ρυθμίζεται στις προτιμήσεις (<guiseq><gui>επεξεργασία</"
-"gui><gui>προτιμήσεις</gui></guiseq>) στην καρτέλα που αντιστοιχεί στη "
+"Η αυτόματη εσοχή ρυθμίζεται στις προτιμήσεις (<guiseq><gui>Επεξεργασία</"
+"gui><gui>Προτιμήσεις</gui></guiseq>) στην καρτέλα που αντιστοιχεί στη "
 "χρησιμοποιούμενη προγραμματιστική γλώσσα. Το πλάτος εσοχής για πολλούς "
 "τύπους δηλώσεων μπορεί να οριστεί εκεί."
 
@@ -276,8 +267,8 @@ msgid ""
 msgstr ""
 "Το μεγάλο μειονέκτημα της χειροκίνητης ρύθμισης εσοχής είναι ότι όλοι οι "
 "προγραμματιστές που δουλεύουν σε ένα έργο πρέπει να χρησιμοποιούν τις ίδιες "
-"ρυθμίσεις ή να καταλήξει στα ίδια αρχεία εάν χρησιμοποιούνται διαφορετικές "
-"τεχνοτροπίες. Για καλύτερη λύση, δείτε την επόμενη ενότητα."
+"ρυθμίσεις ή να καταλήξει στα ίδια αρχεία εάν χρησιμοποιούνται διαφορετικά "
+"στυλ. Για καλύτερη λύση, δείτε την επόμενη ενότητα."
 
 #. (itstool) path: note/p
 #: C/anjuta-code-indentation.page:38
@@ -287,13 +278,13 @@ msgid ""
 "keep the file consistent."
 msgstr ""
 "Εκτός και ρητά αλλάξει στις προτιμήσεις οι ρυθμίσεις εσοχής που βρέθηκαν στη "
-"γραμμή κατάστασης ενός αρχείου θα χρησιμοποιηθούν αντί για τις διαμορφωμένες "
-"ρυθμίσεις για διατήρηση της συνέπειας του αρχείου."
+"γραμμή διαμόρφωσης ενός αρχείου θα χρησιμοποιηθούν αντί για τις "
+"διαμορφωμένες ρυθμίσεις για διατήρηση της συνέπειας του αρχείου."
 
 #. (itstool) path: section/title
 #: C/anjuta-code-indentation.page:45
 msgid "Modelines"
-msgstr "Γραμμές κατάστασης"
+msgstr "Γραμμές διαμόρφωσης"
 
 #. (itstool) path: section/p
 #: C/anjuta-code-indentation.page:47
@@ -302,8 +293,8 @@ msgid ""
 "mode which should be used for a particular file. They are especially useful "
 "if many developers work on the same project and use different environments."
 msgstr ""
-"Οι γραμμές κατάστασης χρησιμοποιούνται για βοήθεια των επεξεργαστών στην "
-"αυτόματη ανίχνευση της κατάστασης εσοχής που θα χρησιμοποιηθεί για ένα "
+"Οι γραμμές διαμόρφωσης χρησιμοποιούνται για βοήθεια των επεξεργαστών στην "
+"αυτόματη ανίχνευση της λειτουργίας εσοχής που θα χρησιμοποιηθεί για ένα "
 "συγκεκριμένο αρχείο. Είναι ιδιαίτερα χρήσιμο εάν πολλοί προγραμματιστές "
 "δουλεύουν στο ίδιο έργο και χρησιμοποιούν διαφορετικά περιβάλλοντα."
 
@@ -313,7 +304,7 @@ msgid ""
 "Anjuta supports modelines in the two formats used by <app>Vim</app> and "
 "<app>Emacs</app>."
 msgstr ""
-"Το Anjuta υποστηρίζει γραμμές κατάστασης σε δύο μορφές που χρησιμοποιούνται "
+"Το Anjuta υποστηρίζει γραμμές διαμόρφωσης σε δύο μορφές που χρησιμοποιούνται "
 "από το <app>Vim</app> και το <app>Emacs</app>."
 
 #. (itstool) path: section/title
@@ -330,12 +321,11 @@ msgid ""
 msgstr ""
 "Κανονικά νέες γραμμές παίρνουν κατάλληλες εσοχές αυτόματα, αλλά μπορείτε να "
 "κάνετε εσοχές σε υπάρχουσες γραμμές ή σε όλο τον επιλεγμένο κώδικα με το "
-"στοιχείο μενού <guiseq><gui>επεξεργασία</gui><gui>αυτόματη εσοχή</gui></"
+"στοιχείο μενού <guiseq><gui>Επεξεργασία</gui><gui>Αυτόματη εσοχή</gui></"
 "guiseq>."
 
 #. (itstool) path: info/desc
 #: C/anjuta-code-symbols.page:9
-#| msgid "Efficient ways to nagivate through source code"
 msgid "Efficient ways to navigate through source code"
 msgstr "Αποτελεσματικοί τρόποι περιήγησης μέσα στον πηγαίο κώδικα"
 
@@ -370,13 +360,13 @@ msgstr "Ο περιηγητής συμβόλων έχει τρεις καρτέ�
 #: C/anjuta-code-symbols.page:28
 msgid "<gui>File</gui> shows the symbols of the current file in the editor"
 msgstr ""
-"Το <gui>αρχείο</gui> εμφανίζει τα σύμβολα του τρέχοντος αρχείου στον "
+"Το <gui>Αρχείο</gui> εμφανίζει τα σύμβολα του τρέχοντος αρχείου στον "
 "επεξεργαστή"
 
 #. (itstool) path: item/p
 #: C/anjuta-code-symbols.page:29
 msgid "<gui>Project</gui> shows all symbols of the project"
-msgstr "Το <gui>έργο</gui> εμφανίζει όλα τα σύμβολα του έργου"
+msgstr "Το <gui>Έργο</gui> εμφανίζει όλα τα σύμβολα του έργου"
 
 #. (itstool) path: item/p
 #: C/anjuta-code-symbols.page:30
@@ -385,7 +375,7 @@ msgid ""
 "<keyseq><key>Ctrl</key><key>L</key></keyseq> to jump directly to the search "
 "box)"
 msgstr ""
-"Η <gui>αναζήτηση</gui> επιτρέπει την αναζήτηση των συμβόλων στο έργο "
+"Η <gui>Αναζήτηση</gui> επιτρέπει την αναζήτηση των συμβόλων στο έργο "
 "(χρησιμοποιήστε <keyseq><key>Ctrl</key><key>L</key></keyseq> για άμεση "
 "μετάβαση στο πλαίσιο αναζήτησης)"
 
@@ -405,7 +395,7 @@ msgid ""
 "In the <gui>Goto</gui> popup-menu of the editor there two items that help "
 "you to quickly navigate through the source code:"
 msgstr ""
-"Στο αναδυόμενο μενού <gui>μετάβαση σε</gui> του επεξεργαστή υπάρχουν δύο "
+"Στο αναδυόμενο μενού <gui>Μετάβαση σε</gui> του επεξεργαστή υπάρχουν δύο "
 "στοιχεία που βοηθούν στη γρήγορη περιήγηση μέσα από τον πηγαίο κώδικα:"
 
 #. (itstool) path: item/p
@@ -426,14 +416,14 @@ msgid ""
 "history</gui> (and <gui>Next history</gui>) items in the same menu."
 msgstr ""
 "Εάν θέλετε να επιστρέψετε στη θέση στον επεξεργαστή όπου χρησιμοποιούσατε τα "
-"εμφανιζόμενα στοιχεία στο μενού <gui>μετάβαση σε</gui>, μπορείτε να "
-"χρησιμοποιήσετε το <gui>προηγούμενο ιστορικό</gui> (και στοιχεία "
+"εμφανιζόμενα στοιχεία στο μενού <gui>Μετάβαση σε</gui>, μπορείτε να "
+"χρησιμοποιήσετε το <gui>Προηγούμενο ιστορικό</gui> (και στοιχεία "
 "<gui>επόμενου ιστορικού</gui>) στο ίδιο μενού."
 
 #. (itstool) path: info/desc
 #: C/autotools-project-backend.page:8
 msgid "Autotools project backend."
-msgstr "Οπισθοφυλακή έργου Autotools."
+msgstr "Σύστημα υποστήριξης έργου Autotools."
 
 #. (itstool) path: credit/name
 #: C/autotools-project-backend.page:12 C/autotools-project-folder-edit.page:13
@@ -496,7 +486,7 @@ msgstr "Philip Chimento"
 #. (itstool) path: page/title
 #: C/autotools-project-backend.page:21
 msgid "GNU Autotools project backend plugin"
-msgstr "Πρόσθετο οπισθοφυλακής έργου GNU Autotools"
+msgstr "Πρόσθετο συστήματος υποστήριξης έργου GNU Autotools"
 
 #. (itstool) path: page/p
 #: C/autotools-project-backend.page:23
@@ -522,13 +512,13 @@ msgid ""
 "writing a line in <file>configure.ac</file> or any <file>Makefile.am</file> "
 "files."
 msgstr ""
-"Είναι τυπικά λίγο πιο δύσκολη η χρήση του ως προγραμματιστής. Όμως, είναι η "
-"προεπιλεγμένη οπισθοφυλακή για το <app>Anjuta</app>, που έχει χαρακτηριστικά "
-"που το κάνουν ευκολότερο στη χρήση. Όλα τα χαρακτηριστικά του διαχειριστή "
-"έργου ενεργοποιούνται όταν το χρησιμοποιείτε. Θα πρέπει να είστε ικανός να "
-"συντηρήσετε ένα έργο χρησιμοποιώντας την οπισθοφυλακή Autotools χωρίς να "
-"γράφετε καμιά γραμμή στα αρχεία <file>configure.ac</file> ή οποιοδήποτε "
-"<file>Makefile.am</file>."
+"Είναι τυπικά λίγο πιο δύσκολη η χρήση του ως προγραμματιστής. Όμως, είναι το "
+"προεπιλεγμένο σύστημα υποστήριξης για το <app>Anjuta</app>, που έχει "
+"χαρακτηριστικά που το κάνουν ευκολότερο στη χρήση. Όλα τα χαρακτηριστικά του "
+"διαχειριστή έργου ενεργοποιούνται όταν το χρησιμοποιείτε. Θα πρέπει να είστε "
+"ικανός να συντηρήσετε ένα έργο χρησιμοποιώντας το σύστημα υποστήριξης "
+"Autotools χωρίς να γράφετε καμιά γραμμή στα αρχεία <file>configure.ac</file> "
+"ή οποιοδήποτε <file>Makefile.am</file>."
 
 #. (itstool) path: note/p
 #: C/autotools-project-backend.page:41
@@ -540,18 +530,18 @@ msgid ""
 "a workaround, you can use the directory project backend instead. It is much "
 "more limited but should find all source files."
 msgstr ""
-"Τα αρχεία Autotools δίνουν περισσότερες πληροφορίες από ένα makefile, αλλά η "
-"οπισθοφυλακή δεν υποστηρίζει όλα τα δυνατά κόλπα. Εάν βρείτε ένα έργο που "
-"δεν μπορεί να διαβαστεί σωστά, η συμπλήρωση μιας <link href=\"https://"
-"bugzilla.gnome.org/browse.cgi?product=anjuta\">αναφοράς σφάλματος</link> θα "
-"εκτιμηθεί. Στο μεταξύ, ως παράκαμψη, μπορείτε να χρησιμοποιήσετε στη θέση "
-"του την οπισθοφυλακή έργου καταλόγου. Είναι πολύ περισσότερο περιορισμένο, "
-"αλλά θα πρέπει να βρείτε όλα τα πηγαία αρχεία."
+"Τα αρχεία Autotools δίνουν περισσότερες πληροφορίες από ένα makefile, αλλά "
+"το σύστημα υποστήριξης δεν υποστηρίζει όλα τα δυνατά κόλπα. Εάν βρείτε ένα "
+"έργο που δεν μπορεί να διαβαστεί σωστά, η συμπλήρωση μιας <link href="
+"\"https://bugzilla.gnome.org/browse.cgi?product=anjuta\">αναφοράς σφάλματος</"
+"link> θα εκτιμηθεί. Στο μεταξύ, ως παράκαμψη, μπορείτε να χρησιμοποιήσετε "
+"στη θέση του το σύστημα υποστήριξης έργου καταλόγου. Είναι πολύ περισσότερο "
+"περιορισμένο, αλλά θα πρέπει να βρείτε όλα τα πηγαία αρχεία."
 
 #. (itstool) path: info/desc
 #: C/autotools-project-folder-edit.page:9
 msgid "Edit autotools folder properties."
-msgstr "Επεξεργασία ιδιοτήτων στόχου autotools."
+msgstr "Επεξεργασία ιδιοτήτων προορισμού autotools."
 
 #. (itstool) path: page/title
 #: C/autotools-project-folder-edit.page:18
@@ -565,7 +555,7 @@ msgid ""
 "belonging to this folder."
 msgstr ""
 "Αυτές οι ιδιότητες επιτρέπουν τον ορισμό κοινών ιδιοτήτων για όλους τους "
-"στόχους που ανήκουν σε αυτόν το φακέλο."
+"προορισμούς που ανήκουν σε αυτόν το φακέλο."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:25
@@ -578,7 +568,7 @@ msgstr "<gui>Σημαίες μεταγλωττιστή C</gui>"
 msgid ""
 "The flags to pass to the C compiler if a per target value is not defined."
 msgstr ""
-"Οι σημαίες για πέρασμα στον μεταγλωττιστή C, εάν η τιμή ανά στόχο δεν "
+"Οι σημαίες για πέρασμα στον μεταγλωττιστή C, εάν η τιμή ανά προορισμό δεν "
 "ορίστηκε."
 
 #. (itstool) path: item/title
@@ -594,7 +584,7 @@ msgid ""
 "This value is ignored if these flags are defined for the target."
 msgstr ""
 "Αυτές οι σημαίες περνούν σε κάθε μεταγλώττιση που καλεί τον προεπεξεργαστή "
-"C. Αυτή η τιμή αγνοείται, εάν αυτές οι σημαίες ορίζονται για τον στόχο."
+"C. Αυτή η τιμή αγνοείται, εάν αυτές οι σημαίες ορίζονται για τον προορισμό."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:36
@@ -608,7 +598,7 @@ msgid ""
 "The flags to pass to the C++ compiler flags if a per target value is not "
 "defined."
 msgstr ""
-"Οι σημαίες για πέρασμα στον μεταγλωττιστή C++, εάν η τιμή ανά στόχο δεν "
+"Οι σημαίες για πέρασμα στον μεταγλωττιστή C++, εάν η τιμή ανά προορισμό δεν "
 "ορίστηκε."
 
 #. (itstool) path: item/title
@@ -623,7 +613,8 @@ msgid ""
 "The flags to pass to the Fortran 9x compiler if a per target value is not "
 "defined."
 msgstr ""
-"Οι σημαίες για πέρασμα στον Fortran 9x, εάν η τιμή ανά στόχο δεν ορίστηκε."
+"Οι σημαίες για πέρασμα στον Fortran 9x, εάν η τιμή ανά προορισμό δεν "
+"ορίστηκε."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:46
@@ -650,7 +641,7 @@ msgstr "<gui>Σημαίες μεταγλωττιστή Java</gui>"
 msgid ""
 "The flags to pass to the Java compiler if a per target value is not defined."
 msgstr ""
-"Οι σημαίες για πέρασμα στον μεταγλωττιστή Java, εάν η τιμή ανά στόχο δεν "
+"Οι σημαίες για πέρασμα στον μεταγλωττιστή Java, εάν η τιμή ανά προορισμό δεν "
 "ορίστηκε."
 
 #. (itstool) path: item/title
@@ -665,8 +656,8 @@ msgid ""
 "The flags to pass to the scanner generator Lex or Flex if a per target value "
 "is not defined."
 msgstr ""
-"Οι σημαίες για πέρασμα στον παραγωγό σαρωτή Lex ή Flex, εάν η τιμή ανά στόχο "
-"δεν ορίστηκε."
+"Οι σημαίες για πέρασμα στον παραγωγό σαρωτή Lex ή Flex, εάν η τιμή ανά "
+"προορισμό δεν ορίστηκε."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:61
@@ -678,7 +669,7 @@ msgstr "<gui>Σημαίες συνδέσμου</gui>"
 #: C/autotools-project-folder-edit.page:62
 msgid "The flags to pass to the linker if a per target value is not defined."
 msgstr ""
-"Οι σημαίες για πέρασμα στον σύνδεσμο, εάν η τιμή ανά στόχο δεν ορίστηκε."
+"Οι σημαίες για πέρασμα στον σύνδεσμο, εάν η τιμή ανά προορισμό δεν ορίστηκε."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:65
@@ -692,8 +683,8 @@ msgid ""
 "The flags to pass to the Objective C compiler if a per target value is not "
 "defined."
 msgstr ""
-"Οι σημαίες για πέρασμα στον μεταγλωττιστή Objective C, εάν η τιμή ανά στόχο "
-"δεν ορίστηκε."
+"Οι σημαίες για πέρασμα στον μεταγλωττιστή Objective C, εάν η τιμή ανά "
+"προορισμό δεν ορίστηκε."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:70
@@ -706,7 +697,7 @@ msgstr "<gui>Σημαίες μεταγλωττιστή Vala</gui>"
 msgid ""
 "The flags to pass to the Vala compiler if a per target value is not defined."
 msgstr ""
-"Οι σημαίες για πέρασμα στον μεταγλωττιστή Vala, εάν η τιμή ανά στόχο δεν "
+"Οι σημαίες για πέρασμα στον μεταγλωττιστή Vala, εάν η τιμή ανά προορισμό δεν "
 "ορίστηκε."
 
 #. (itstool) path: item/title
@@ -722,7 +713,7 @@ msgid ""
 "value is not defined."
 msgstr ""
 "Οι σημαίες για πέρασμα στον παραγωγό αναλυτή Bison ή Yacc, εάν η τιμή ανά "
-"στόχο δεν ορίστηκε."
+"προορισμό δεν ορίστηκε."
 
 #
 #. (itstool) path: info/desc
@@ -739,12 +730,12 @@ msgstr "Επεξεργασία ιδιοτήτων έργου autotools"
 #. (itstool) path: page/p
 #: C/autotools-project-root-edit.page:21
 msgid "These are the properties of the root item."
-msgstr "Αυτές είναι οι ιδιότητες του στοιχείου υπερχρήστη."
+msgstr "Αυτές είναι οι ιδιότητες του ριζικού στοιχείου."
 
 #. (itstool) path: item/title
 #: C/autotools-project-root-edit.page:25
 msgid "<gui>Backend</gui>"
-msgstr "<gui>Yποστήριξη</gui>"
+msgstr "<gui>Σύστημα υποστήριξης</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-root-edit.page:26
@@ -753,10 +744,10 @@ msgid ""
 "be selected by clicking on this button. It can be useful if the current "
 "backend has some troubles to parse your project files."
 msgstr ""
-"Αυτό το έργο υποστηρίζεται από το έργο: Autotools. Μια άλλη υποστήριξη "
-"μπορεί να επιλεγεί πατώντας σε αυτό το κουμπί. Μπορεί να είναι χρήσιμο εάν η "
-"τρέχουσα υποστήριξη έχει κάποια προβλήματα να αναλύσει τα αρχεία του έργου "
-"σας."
+"Αυτό το έργο υποστηρίζεται από το έργο: Autotools. Ένα άλλο σύστημα "
+"υποστήριξης μπορεί να επιλεγεί πατώντας σε αυτό το κουμπί. Μπορεί να είναι "
+"χρήσιμο εάν η τρέχουσα υποστήριξη έχει κάποια προβλήματα να αναλύσει τα "
+"αρχεία του έργου σας."
 
 #. (itstool) path: item/title
 #: C/autotools-project-root-edit.page:32
@@ -810,7 +801,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-root-edit.page:50
 msgid "<gui>URL</gui>"
-msgstr "<gui>URL</gui>"
+msgstr "<gui>Διεύθυνση</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-root-edit.page:51
@@ -823,20 +814,20 @@ msgid ""
 "In addition, the root item works as a folder and has all its properties. See "
 "<link xref=\"autotools-project-folder-edit\"/> to see the list."
 msgstr ""
-"Επιπλέον, το στοιχείο υπερχρήστη δουλεύει ως φάκελος και έχει όλες τις "
-"ιδιότητές του. Δείτε <link xref=\"autotools-project-folder-edit\"/> για να "
-"δείτε τη λίστα."
+"Επιπλέον, το ριζικό στοιχείο δουλεύει ως φάκελος και έχει όλες τις ιδιότητές "
+"του. Δείτε <link xref=\"autotools-project-folder-edit\"/> για να δείτε τη "
+"λίστα."
 
 #
 #. (itstool) path: info/desc
 #: C/autotools-project-target-edit.page:9
 msgid "Edit autotools target properties."
-msgstr "Επεξεργασία ιδιοτήτων στόχου autotools."
+msgstr "Επεξεργασία ιδιοτήτων προορισμού autotools."
 
 #. (itstool) path: page/title
 #: C/autotools-project-target-edit.page:18
 msgid "Edit an Autotools Target"
-msgstr "Επεξεργασία στόχου autotools"
+msgstr "Επεξεργασία προορισμού autotools"
 
 #. (itstool) path: page/p
 #: C/autotools-project-target-edit.page:20
@@ -844,13 +835,14 @@ msgid ""
 "Here is a list of all target properties used in autotools project. Some of "
 "them are not available on all targets."
 msgstr ""
-"Εδώ είναι μια λίστα όλων των ιδιοτήτων στόχου που χρησιμοποιείται στο έργο "
-"autotools. Μερικές από αυτές δεν είναι διαθέσιμες σε όλους τους στόχους."
+"Εδώ είναι μια λίστα όλων των ιδιοτήτων προορισμού που χρησιμοποιείται στο "
+"έργο autotools. Μερικές από αυτές δεν είναι διαθέσιμες σε όλους τους "
+"προορισμούς."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:25
 msgid "<gui>Build for check only</gui>"
-msgstr "<gui>Κατασκευή μόνο για έλεγχο</gui>"
+msgstr "<gui>Δόμηση μόνο για έλεγχο</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-edit.page:26
@@ -858,7 +850,7 @@ msgid ""
 "If checked, this target is not installed and has to be built only when "
 "running checks."
 msgstr ""
-"Εάν σημειωθεί, αυτός ο στόχος δεν εγκαθίσταται και πρέπει να κατασκευαστεί "
+"Εάν σημειωθεί, αυτός ο προορισμός δεν εγκαθίσταται και πρέπει να δομηθεί "
 "μόνο όταν εκτελούνται έλεγχοι."
 
 #. (itstool) path: item/p
@@ -868,7 +860,7 @@ msgid ""
 "value overrides the one eventually defined in the parent folder."
 msgstr ""
 "Οι σημαίες που περνούν στον μεταγλωττιστή C, όταν μεταγλωττίζονται πηγαία "
-"αρχεία στόχου. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται "
+"αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται "
 "στον γονικό φακέλο."
 
 #. (itstool) path: item/p
@@ -888,8 +880,8 @@ msgid ""
 "files. This value overrides the one eventually defined in the parent folder."
 msgstr ""
 "Οι σημαίες που περνούν στις σημαίες του μεταγλωττιστή C++, όταν "
-"μεταγλωττίζονται πηγαία αρχεία στόχου. Αυτή η τιμή υπερισχύει της τιμής που "
-"ενδεχομένως ορίζεται στον γονικό φάκελο."
+"μεταγλωττίζονται πηγαία αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής "
+"που ενδεχομένως ορίζεται στον γονικό φάκελο."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:47
@@ -902,9 +894,9 @@ msgid ""
 "If checked, this target is not installed. It can be used for utilities used "
 "to build other target or programs used only by developers."
 msgstr ""
-"Εάν σημειωθεί, αυτός ο στόχος δεν εγκαθίσταται. Μπορεί να χρησιμοποιηθεί για "
-"προγράμματα κατασκευής άλλων στόχων ή χρησιμοποιούμενων προγραμμάτων μόνο "
-"από προγραμματιστές."
+"Εάν σημειωθεί, αυτός ο προορισμός δεν εγκαθίσταται. Μπορεί να χρησιμοποιηθεί "
+"για προγράμματα δόμησης άλλων προορισμών ή χρησιμοποιούμενων προγραμμάτων "
+"μόνο από προγραμματιστές."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:53
@@ -928,7 +920,7 @@ msgid ""
 "files. This value overrides the one eventually defined in the parent folder."
 msgstr ""
 "Οι σημαίες που περνούν στον μεταγλωττιστή Fortran 9x, όταν μεταγλωττίζονται "
-"πηγαία αρχεία στόχου. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως "
+"πηγαία αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως "
 "ορίζεται στον γονικό φάκελο."
 
 #. (itstool) path: item/title
@@ -939,7 +931,7 @@ msgstr "<gui>Συμπερίληψη στη διανομή</gui>"
 #. (itstool) path: item/p
 #: C/autotools-project-target-edit.page:65
 msgid "If checked, include the target in the distribution package."
-msgstr "Εάν σημειωθεί, να περιλαμβάνεται ο στόχος στο πακέτο διανομής."
+msgstr "Εάν σημειωθεί, να περιλαμβάνεται ο προορισμός στο πακέτο διανομής."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:68
@@ -955,7 +947,7 @@ msgid ""
 "pkglibexecdir, includedir, mandir, infodir, docdir) or a custom variable "
 "defined in the folder properties."
 msgstr ""
-"Καθορίζει πού εγκαθίσταται ο στόχος. Δεν είναι άμεσα ο κατάλογος όπου "
+"Καθορίζει πού εγκαθίσταται ο προορισμός. Δεν είναι άμεσα ο κατάλογος όπου "
 "εγκαθίστανται τα αρχεία, αλλά το όνομα μιας από τις τυπικές μεταβλητές "
 "καταλόγου (bindir, sbindir, libdir, libexecdir, datadir, pkgdatadir, "
 "pkglibexecdir, includedir, mandir, infodir, docdir) ή μιας προσαρμοσμένης "
@@ -968,13 +960,13 @@ msgid ""
 "This value overrides the one eventually defined in the parent folder."
 msgstr ""
 "Οι σημαίες που περνούν στον μεταγλωττιστή Java, όταν μεταγλωττίζονται πηγαία "
-"αρχεία στόχου. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται "
+"αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται "
 "στον γονικό φάκελο."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:82
 msgid "<gui>Keep target path</gui>"
-msgstr "<gui>Διατήρηση διαδρομής στόχου</gui>"
+msgstr "<gui>Διατήρηση διαδρομής προορισμού</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-edit.page:83
@@ -993,7 +985,7 @@ msgid ""
 "parent folder."
 msgstr ""
 "Οι σημαίες που περνούν στη γεννήτρια σαρωτή Lex ή Flex, όταν παράγονται "
-"πηγαία αρχεία στόχου. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως "
+"πηγαία αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως "
 "ορίζεται στον γονικό φάκελο."
 
 #. (itstool) path: item/title
@@ -1008,7 +1000,7 @@ msgid ""
 "package libraries. See <link xref=\"project-manager-library\">Add non-"
 "packaged libraries</link> page for more details."
 msgstr ""
-"Ορισμός πρόσθετων βιβλιοθηκών που χρησιμοποιεί ο στόχος. Χρήσιμο για "
+"Ορισμός πρόσθετων βιβλιοθηκών που χρησιμοποιεί ο προορισμός. Χρήσιμο για "
 "προσθήκη μη πακεταρισμένων βιβλιοθηκών. Δείτε τη σελίδα <link xref=\"project-"
 "manager-library\">προσθήκη μη πακεταρισμένων βιβλιοθηκών</link> για "
 "περισσότερες λεπτομέρειες."
@@ -1019,8 +1011,8 @@ msgid ""
 "The flags to pass to the linker when linking the target. This value "
 "overrides the one eventually defined in the parent folder."
 msgstr ""
-"Οι σημαίες που περνούν στον σύνδεσμο, όταν συνδέεται ο στόχος. Αυτή η τιμή "
-"υπερισχύει της τιμής που ενδεχομένως ορίζεται στον γονικό φάκελο."
+"Οι σημαίες που περνούν στον σύνδεσμο, όταν συνδέεται ο προορισμός. Αυτή η "
+"τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται στον γονικό φάκελο."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:105
@@ -1043,7 +1035,7 @@ msgid ""
 "files. This value overrides the one eventually defined in the parent folder."
 msgstr ""
 "Οι σημαίες που περνούν στον μεταγλωττιστή Objective C, όταν μεταγλωττίζονται "
-"πηγαία αρχεία στόχου. Αυτή η τιμή υπερισχύει της ενδεχόμενης τιμής του "
+"πηγαία αρχεία προορισμού. Αυτή η τιμή υπερισχύει της ενδεχόμενης τιμής του "
 "γονικού φακέλου."
 
 #. (itstool) path: item/p
@@ -1053,7 +1045,7 @@ msgid ""
 "This value overrides the one eventually defined in the parent folder."
 msgstr ""
 "Οι σημαίες που περνούν στον μεταγλωττιστή Vala, όταν μεταγλωττίζονται πηγαία "
-"αρχεία στόχου. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται "
+"αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται "
 "στον γονικό φάκελο."
 
 #. (itstool) path: item/p
@@ -1064,13 +1056,13 @@ msgid ""
 "parent folder."
 msgstr ""
 "Οι σημαίες που περνούν στον παραγωγό ανάλυσης Bison ή Yacc, όταν παράγονται "
-"πηγαία αρχεία στόχου. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως "
+"πηγαία αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως "
 "ορίζεται στον γονικό φάκελο."
 
 #. (itstool) path: info/desc
 #: C/autotools-project-target-type.page:8
 msgid "Autotools target type."
-msgstr "Τύπος στόχου autotools."
+msgstr "Τύπος προορισμού autotools."
 
 #. (itstool) path: page/title
 #: C/autotools-project-target-type.page:17
@@ -1080,7 +1072,7 @@ msgstr "Τύπος έργου autotools"
 #. (itstool) path: page/p
 #: C/autotools-project-target-type.page:19
 msgid "There are different types of target available."
-msgstr "Υπάρχουν διαφορετικοί διαθέσιμοι τύποι στόχου."
+msgstr "Υπάρχουν διαφορετικοί διαθέσιμοι τύποι προορισμού."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-type.page:23
@@ -1169,7 +1161,7 @@ msgid ""
 "represent the source files compiled to generate the program."
 msgstr ""
 "Αντιπροσωπεύει μεταγλωττισμένο πρόγραμμα για παράδειγμα από πηγαία αρχεία C. "
-"Όλα τα κατιόντα αντιπροσωπεύουν τα πηγαία μεταγλωττισμένα αρχεία για "
+"Όλα τα θυγατρικά αντιπροσωπεύουν τα πηγαία μεταγλωττισμένα αρχεία για "
 "δημιουργία του προγράμματος."
 
 #. (itstool) path: item/title
@@ -1213,8 +1205,8 @@ msgid ""
 "This target allows you to group header files and define where they have to "
 "be installed."
 msgstr ""
-"Αυτός ο στόχος επιτρέπει την ομαδοποίηση αρχείων κεφαλίδας και ορίζει πού "
-"πρέπει να εγκατασταθούν."
+"Αυτός ο προορισμός επιτρέπει την ομαδοποίηση αρχείων κεφαλίδας και ορίζει "
+"πού πρέπει να εγκατασταθούν."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-type.page:69
@@ -1253,7 +1245,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-target-type.page:82
 msgid "Script"
-msgstr "Σενάριο"
+msgstr "Δέσμη ενεργειών"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:83
@@ -1262,19 +1254,19 @@ msgid ""
 "the specified directory. If scripts are generated additional rules are "
 "needed."
 msgstr ""
-"Αντιπροσωπεύει προγράμματα που είναι σενάρια. Αυτά τα σενάρια εγκαθίστανται "
-"μόνο στο καθορισμένο κατάλογο. Εάν τα δημιουργούνται σενάρια απαιτούνται "
-"πρόσθετοι κανόνες."
+"Αντιπροσωπεύει προγράμματα που είναι δέσμες ενεργειών. Αυτά τα σενάρια "
+"εγκαθίστανται μόνο στο καθορισμένο κατάλογο. Εάν τα δημιουργούνται δέσμες "
+"ενεργειών απαιτούνται πρόσθετοι κανόνες."
 
 #. (itstool) path: info/desc
 #: C/autotools-build-build.page:11
 msgid "Build targets or project."
-msgstr "Κατασκευή στόχων ή έργου."
+msgstr "Δόμηση προορισμών ή έργου."
 
 #. (itstool) path: page/title
 #: C/autotools-build-build.page:24
 msgid "Build targets"
-msgstr "Κατασκευή στόχων"
+msgstr "Δόμηση προορισμών"
 
 #. (itstool) path: page/p
 #: C/autotools-build-build.page:25
@@ -1283,9 +1275,9 @@ msgid ""
 "a library, but it could also be documentation if the documentation needs "
 "processing, for example."
 msgstr ""
-"Στόχος είναι ένα αρχείο που δημιουργήθηκε από πηγαία αρχεία. Τυπικά, είναι "
-"ένα πρόγραμμα ή μια βιβλιοθήκη, αλλά μπορεί να είναι επίσης τεκμηρίωση, εάν "
-"η τεκμηρίωση χρειάζεται επεξεργασία, για παράδειγμα."
+"Προορισμός είναι ένα αρχείο που δημιουργήθηκε από πηγαία αρχεία. Τυπικά, "
+"είναι ένα πρόγραμμα ή μια βιβλιοθήκη, αλλά μπορεί να είναι επίσης "
+"τεκμηρίωση, εάν η τεκμηρίωση χρειάζεται επεξεργασία, για παράδειγμα."
 
 #. (itstool) path: page/p
 #: C/autotools-build-build.page:30
@@ -1296,11 +1288,11 @@ msgid ""
 "not be recompiled, in order to save time. There are several ways to trigger "
 "a build."
 msgstr ""
-"Η κατασκευή εντολής μεταγλωττίζει όλα τα απαιτούμενα πηγαία αρχεία και "
-"πιθανόν τα συνδέει με κάποια άλλα αρχεία, όπως βιβλιοθήκες, για τη "
-"δημιουργία του στόχου. Εάν κάποια πηγαία αρχεία είναι ήδη μεταγλωττισμένα "
-"και δεν έχουν τροποποιηθεί, δεν επαναμεταγλωττίζονται, για εξοικονόμηση "
-"χρόνου. Υπάρχουν πολλοί τρόποι για έναρξη κατασκευής."
+"Η δόμηση εντολής μεταγλωττίζει όλα τα απαιτούμενα πηγαία αρχεία και πιθανόν "
+"τα συνδέει με κάποια άλλα αρχεία, όπως βιβλιοθήκες, για τη δημιουργία του "
+"προορισμού. Εάν κάποια πηγαία αρχεία είναι ήδη μεταγλωττισμένα και δεν έχουν "
+"τροποποιηθεί, δεν επαναμεταγλωττίζονται, για εξοικονόμηση χρόνου. Υπάρχουν "
+"πολλοί τρόποι για έναρξη δόμησης."
 
 #. (itstool) path: item/p
 #: C/autotools-build-build.page:39
@@ -1309,9 +1301,9 @@ msgid ""
 "gui></guiseq> or press <key>F7</key> to build all targets in the same "
 "directory as the currently opened file."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Κατασκευή</gui> "
-"<gui>Κατασκευή</gui></guiseq> ή πατήστε <key>F7</key> για κατασκευή όλων των "
-"στόχων στον ίδιο κατάλογο όπως το τρέχον ανοιχτό αρχείο."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> "
+"<gui>Δόμηση</gui></guiseq> ή πατήστε <key>F7</key> για δόμηση όλων των "
+"προορισμών στον ίδιο κατάλογο όπως το τρέχον ανοιχτό αρχείο."
 
 #. (itstool) path: item/p
 #: C/autotools-build-build.page:48
@@ -1321,17 +1313,17 @@ msgid ""
 "keyseq> to build the complete project. All subdirectories are built "
 "recursively."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Κατασκευή</gui> "
-"<gui>Κατασκευή έργου</gui></guiseq> ή πατήστε <keyseq><key>Shift</"
-"key><key>F7</key></keyseq> για κατασκευή όλου του έργου. Όλοι οι "
-"υποκατάλογοι κατασκευάζονται αναδρομικά."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> "
+"<gui>Δόμηση έργου</gui></guiseq> ή πατήστε <keyseq><key>Shift</key><key>F7</"
+"key></keyseq> για δόμηση όλου του έργου. Όλοι οι υποκατάλογοι δομούνται "
+"αναδρομικά."
 
 #. (itstool) path: item/p
 #: C/autotools-build-build.page:57 C/autotools-build-clean.page:45
 #: C/autotools-build-install.page:50
 msgid "From the <gui>file manager pane</gui>, select a file or a directory."
 msgstr ""
-"Από το <gui>φάτνωμα διαχειριστή αρχείου</gui>, επιλέξτε ένα αρχείο ή "
+"Από το <gui>παράθυρο διαχειριστή αρχείου</gui>, επιλέξτε ένα αρχείο ή "
 "κατάλογο."
 
 #. (itstool) path: item/p
@@ -1343,8 +1335,8 @@ msgid ""
 "directory of the currently selected file."
 msgstr ""
 "Κλικ με το δεξί κουμπί για να κάνετε το <gui>μενού περιεχομένου διαχειριστή "
-"αρχείου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>κατασκευή</"
-"gui><gui>κατασκευή</gui></guiseq> για την κατασκευή όλων των στόχων στον "
+"αρχείου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>Δόμηση</"
+"gui><gui>Δόμηση</gui></guiseq> για την δόμηση όλων των προορισμών στον "
 "τρέχοντα επιλεγμένο κατάλογο ή το γονικό κατάλογο του τρέχοντος επιλεγμένου "
 "αρχείου."
 
@@ -1354,8 +1346,8 @@ msgstr ""
 msgid ""
 "From the <gui>project manager pane</gui>, select a source file or a target."
 msgstr ""
-"Από το <gui>φάτνωμα διαχειριστή αρχείου</gui>, επιλέξτε ένα πηγαίο αρχείο ή "
-"στόχο."
+"Από το <gui>παράθυρο διαχειριστή αρχείου</gui>, επιλέξτε ένα πηγαίο αρχείο ή "
+"προορισμό."
 
 #. (itstool) path: item/p
 #: C/autotools-build-build.page:77
@@ -1366,19 +1358,19 @@ msgid ""
 "selected file or target."
 msgstr ""
 "Κλικ με το δεξί κουμπί για να κάνετε το <gui>μενού περιεχομένου διαχειριστή "
-"έργου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>κατασκευή</"
-"gui><gui>κατασκευή</gui></guiseq> για τη κατασκευή όλων των στόχων στον "
-"κατάλογο που περιέχει το τρέχον επιλεγμένο αρχείο ή στόχο."
+"έργου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>Δόμηση</gui><gui>Δόμηση</"
+"gui></guiseq> για τη δόμηση όλων των προορισμών στον κατάλογο που περιέχει "
+"το τρέχον επιλεγμένο αρχείο ή προορισμό."
 
 #. (itstool) path: info/desc
 #: C/autotools-build-clean.page:11
 msgid "Remove built files."
-msgstr "Αφαίρεση κατασκευασμένων αρχείων."
+msgstr "Αφαίρεση δομημένων αρχείων."
 
 #. (itstool) path: page/title
 #: C/autotools-build-clean.page:20
 msgid "Clean targets"
-msgstr "Καθαρισμός στόχων"
+msgstr "Καθαρισμός προορισμών"
 
 #. (itstool) path: page/p
 #: C/autotools-build-clean.page:22
@@ -1388,11 +1380,11 @@ msgid ""
 "does not trigger a recompiling as it should, deleting all files will fix "
 "this. There are several ways to do this"
 msgstr ""
-"Μπορεί να είναι χρήσιμη η διαγραφή όλων των κατασκευασμένων αρχείων από τη "
-"διεργασία κατασκευής. Για παράδειγμα, εάν δεν πάρθηκαν υπόψη όλες οι "
-"εξαρτήσεις και ένα τροποποιημένο αρχείο δεν προκαλεί νέα μεταγλώττιση όπως "
-"θα έπρεπε, η διαγραφή όλων των αρχείων θα το διορθώσει. Υπάρχουν πολλοί "
-"τρόποι να το κάνετε"
+"Μπορεί να είναι χρήσιμη η διαγραφή όλων των δημιουργημένων αρχείων από τη "
+"διεργασία δόμησης. Για παράδειγμα, εάν δεν πάρθηκαν υπόψη όλες οι εξαρτήσεις "
+"και ένα τροποποιημένο αρχείο δεν προκαλεί νέα μεταγλώττιση όπως θα έπρεπε, η "
+"διαγραφή όλων των αρχείων θα το διορθώσει. Υπάρχουν πολλοί τρόποι να το "
+"κάνετε"
 
 #. (itstool) path: item/p
 #: C/autotools-build-clean.page:28
@@ -1401,9 +1393,9 @@ msgid ""
 "gui></guiseq> to delete all files built in the same directory as the current "
 "edited file."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>κατασκευή</gui> "
-"<gui>καθαρισμός</gui></guiseq> για διαγραφή όλων των αρχείων στον ίδιο "
-"κατάλογο όπως το τρέχον κατασκευασμένο αρχείο."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> "
+"<gui>Καθαρισμός</gui></guiseq> για διαγραφή όλων των αρχείων στον ίδιο "
+"κατάλογο όπως το τρέχον δομημένο αρχείο."
 
 #. (itstool) path: item/p
 #: C/autotools-build-clean.page:37
@@ -1411,9 +1403,9 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Build</gui> <gui>Clean "
 "Project</gui></guiseq> to delete all project built files,"
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>κατασκευή</gui> "
-"<gui>καθαρισμός έργου</gui></guiseq> για διαγραφή όλων των κατασκευασμένων "
-"αρχείων του έργου,"
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> "
+"<gui>Καθαρισμός έργου</gui></guiseq> για διαγραφή όλων των δομημένων αρχείων "
+"του έργου,"
 
 #. (itstool) path: item/p
 #: C/autotools-build-clean.page:50
@@ -1424,9 +1416,9 @@ msgid ""
 "directory of the currently selected file."
 msgstr ""
 "Κλικ με το δεξί κουμπί για να κάνετε το <gui>μενού περιεχομένου διαχειριστή "
-"αρχείου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>κατασκευή</"
-"gui><gui>καθαρισμός</gui></guiseq> για διαγραφή όλων των κατασκευασμένων "
-"αρχείων στον τρέχοντα επιλεγμένο κατάλογο ή το γονικό κατάλογο του τρέχοντος "
+"αρχείου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>Δόμηση</"
+"gui><gui>Καθαρισμός</gui></guiseq> για διαγραφή όλων των δομημένων αρχείων "
+"στον τρέχοντα επιλεγμένο κατάλογο ή το γονικό κατάλογο του τρέχοντος "
 "επιλεγμένου αρχείου."
 
 #. (itstool) path: item/p
@@ -1438,9 +1430,9 @@ msgid ""
 "selected file or target."
 msgstr ""
 "Κλικ με το δεξί κουμπί για να κάνετε το <gui>μενού περιεχομένου διαχειριστή "
-"έργου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>κατασκευή</"
-"gui><gui>καθαρισμός</gui></guiseq> για τη διαγραφή όλων των κατασκευασμένων "
-"αρχείων στον κατάλογο που περιέχει το τρέχον επιλεγμένο αρχείο ή στόχο."
+"έργου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>Δόμηση</"
+"gui><gui>καθαρισμός</gui></guiseq> για τη διαγραφή όλων των δομημένων "
+"αρχείων στον κατάλογο που περιέχει το τρέχον επιλεγμένο αρχείο ή προορισμό."
 
 #. (itstool) path: info/desc
 #: C/autotools-build-compile.page:11
@@ -1472,14 +1464,14 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Build</gui> <gui>Compile</"
 "gui></guiseq> or press <key>F9</key> to compile the current edited file."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>κατασκευή</gui> "
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> "
 "<gui>μεταγλώττιση</gui></guiseq> ή πατήστε <key>F9</key> για μεταγλώττιση "
 "του τρέχοντος επεξεργασμένου αρχείου."
 
 #. (itstool) path: item/p
 #: C/autotools-build-compile.page:39
 msgid "From the <gui>file manager pane</gui>, select a file."
-msgstr "Από το <gui>φάτνωμα διαχειριστή αρχείου</gui>, επιλέξτε ένα αρχείο."
+msgstr "Από το <gui>παράθυρο διαχειριστή αρχείου</gui>, επιλέξτε ένα αρχείο."
 
 #. (itstool) path: item/p
 #: C/autotools-build-compile.page:44
@@ -1489,15 +1481,15 @@ msgid ""
 "to compile the file currently selected in the <gui>file manager pane</gui>."
 msgstr ""
 "Κλικ με το δεξί κουμπί για να κάνετε το <gui>μενού περιεχομένου διαχειριστή "
-"αρχείου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>κατασκευή</"
-"gui><gui>μεταγλώττιση</gui></guiseq> για την μεταγλώττιση του τρέχοντος "
-"επιλεγμένου αρχείου στο <gui>φάτνωμα διαχειριστή αρχείου</gui>."
+"αρχείου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>Δόμηση</"
+"gui><gui>Μεταγλώττιση</gui></guiseq> για την μεταγλώττιση του τρέχοντος "
+"επιλεγμένου αρχείου στο <gui>παράθυρο διαχειριστή αρχείου</gui>."
 
 #. (itstool) path: item/p
 #: C/autotools-build-compile.page:53
 msgid "From the <gui>project manager pane</gui>, select a source file."
 msgstr ""
-"Από το <gui>φάτνωμα διαχειριστή αρχείου</gui>, επιλέξτε ένα πηγαίο αρχείο."
+"Από το <gui>παράθυρο διαχειριστή αρχείου</gui>, επιλέξτε ένα πηγαίο αρχείο."
 
 #. (itstool) path: item/p
 #: C/autotools-build-compile.page:58
@@ -1508,9 +1500,9 @@ msgid ""
 "pane</gui>."
 msgstr ""
 "Κλικ με το δεξί κουμπί για να κάνετε το <gui>μενού περιεχομένου διαχειριστή "
-"αρχείου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>κατασκευή</"
-"gui><gui>μεταγλώττιση</gui></guiseq> για την μεταγλώττιση του τρέχοντος "
-"επιλεγμένου αρχείου στο <gui>φάτνωμα διαχειριστή αρχείου</gui>."
+"αρχείου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>Δόμηση</"
+"gui><gui>Μεταγλώττιση</gui></guiseq> για την μεταγλώττιση του τρέχοντος "
+"επιλεγμένου αρχείου στο <gui>παράθυρο διαχειριστή αρχείου</gui>."
 
 #. (itstool) path: note/p
 #: C/autotools-build-compile.page:66
@@ -1537,7 +1529,7 @@ msgid ""
 "The <gui>Configure</gui> dialog allows you to set the following options and "
 "configure the project."
 msgstr ""
-"Ο διάλογος <gui>ρύθμιση</gui> επιτρέπει τον ορισμό των επόμενων επιλογών και "
+"Ο διάλογος <gui>Ρύθμιση</gui> επιτρέπει τον ορισμό των επόμενων επιλογών και "
 "ρυθμίσεων του έργου."
 
 #. (itstool) path: item/title
@@ -1559,7 +1551,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-build-configure-dialog.page:37
 msgid "<gui>Configuration</gui>"
-msgstr "<gui>Διαμόρφωση</gui>"
+msgstr "<gui>Ρυθμίσεις</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-configure-dialog.page:38
@@ -1571,18 +1563,18 @@ msgid ""
 "Optimized configuration generating faster programs but increasing build "
 "time. You can define additional custom configurations."
 msgstr ""
-"Μπορείτε να έχετε πολλές διαμορφώσεις που έχουν τις δικές τους επιλογές και "
-"κατάλογο κατασκευής, αυτό το πλαίσιο κειμένου επιτρέπει την ονομασία τους. "
-"Τυπικά έχετε ήδη ονομάσετε μια προεπιλεγμένη διαμόρφωση, μια διαμόρφωση "
+"Μπορείτε να έχετε πολλές ρυθμίσεις που έχουν τις δικές τους επιλογές και "
+"κατάλογο δόμησης, αυτό το πλαίσιο κειμένου επιτρέπει την ονομασία τους. "
+"Τυπικά έχετε ήδη καθιρίσει μια προεπιλεγμένη ρύθμιση, μια ρύθμιση "
 "αποσφαλμάτωσης κάνει ευκολότερη την αποσφαλμάτωση προγραμμάτων (διατηρώντας "
 "ενδιάμεσες μεταβλητές και σειρά κώδικα) και μια βελτιστοποιημένη ρύθμιση "
-"δημιουργίας γρηγορότερων προγραμμάτων, αλλά αυξάνοντας τον χρόνο κατασκευής. "
+"δημιουργίας γρηγορότερων προγραμμάτων, αλλά αυξάνοντας τον χρόνο δόμησης. "
 "Μπορείτε να ορίσετε πρόσθετες προσαρμοσμένες ρυθμίσεις."
 
 #. (itstool) path: item/title
 #: C/autotools-build-configure-dialog.page:49
 msgid "<gui>Build Directory</gui>"
-msgstr "<gui>Κατάλογος κατασκευής</gui>"
+msgstr "<gui>Κατάλογος δόμησης</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-configure-dialog.page:50
@@ -1591,9 +1583,9 @@ msgid ""
 "subdirectory. This is particularly useful when switching between different "
 "configurations to avoid rebuilding the whole project."
 msgstr ""
-"Επιλέξτε εδώ τον κατάλογο κατασκευής. Μπορεί να είναι ο κατάλογος έργου ή "
-"ένας υποκατάλογος. Αυτό είναι ιδιαίτερα χρήσιμο όταν εναλλάσσετε μεταξύ "
-"διαφορετικών διαμορφώσεων για την αποφυγή ανακατασκευής ολόκληρου του έργου."
+"Επιλέξτε εδώ τον κατάλογο δόμησης. Μπορεί να είναι ο κατάλογος έργου ή ένας "
+"υποκατάλογος. Αυτό είναι ιδιαίτερα χρήσιμο όταν εναλλάσσετε μεταξύ "
+"διαφορετικών ρυθμίσεων για την αποφυγή αναδόμησης ολόκληρου του έργου."
 
 #. (itstool) path: note/p
 #: C/autotools-build-configure-dialog.page:56
@@ -1603,8 +1595,8 @@ msgid ""
 "You need to remove it first."
 msgstr ""
 "Με autotools, δεν μπορείτε να έχετε μια ρύθμιση χρησιμοποιώντας έναν "
-"διαφορετικό κατάλογο, εάν έχετε ήδη μια διαμόρφωση χρησιμοποιώντας τον "
-"κατάλογο έργου. Πρέπει να το αφαιρέσετε πρώτα."
+"διαφορετικό κατάλογο, εάν έχετε ήδη μια ρύθμιση χρησιμοποιώντας τον κατάλογο "
+"έργου. Πρέπει να το αφαιρέσετε πρώτα."
 
 #. (itstool) path: note/p
 #: C/autotools-build-configure-dialog.page:63
@@ -1614,15 +1606,15 @@ msgid ""
 "directory and everything will be recompiled on each change of the "
 "configuration."
 msgstr ""
-"Μερικά έργα autotools δεν μπορούν να κατασκευαστούν έξω από τον κατάλογο "
-"έργου. Μπορείτε ακόμα να χρησιμοποιήσετε διαφορετικές διαμορφώσεις, αλλά "
-"όλες πρέπει να χρησιμοποιούν τον κατάλογο έργου και ο,τιδήποτε θα "
-"επαναμεταγλωττιστεί σε κάθε αλλαγή της διαμόρφωσης."
+"Μερικά έργα autotools δεν μπορούν να δομηθούν έξω από τον κατάλογο έργου. "
+"Μπορείτε ακόμα να χρησιμοποιήσετε διαφορετικές ρυθμίσεις, αλλά όλες πρέπει "
+"να χρησιμοποιούν τον κατάλογο έργου και ο,τιδήποτε θα επαναμεταγλωττιστεί σε "
+"κάθε αλλαγή της ρύθμισης."
 
 #. (itstool) path: item/title
 #: C/autotools-build-configure-dialog.page:72
 msgid "<gui>Configure Options</gui>"
-msgstr "<gui>Επιλογές διαμόρφωσης</gui>"
+msgstr "<gui>Επιλογές ρύθμισης</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-configure-dialog.page:73
@@ -1633,8 +1625,8 @@ msgid ""
 "can modify."
 msgstr ""
 "Αυτή το πλαίσιο κειμένου εμφανίζει όλα τα ορίσματα γραμμής εντολών που "
-"χρησιμοποιούνται από το βήμα διαμόρφωσης. Όλα τα ορίσματα χωρίζονται με κενά "
-"και πρέπει να έχουν παρενθέσεις εάν περιέχουν κενά. Κάθε διαμόρφωση γεμίζει "
+"χρησιμοποιούνται από το βήμα ρύθμισης. Όλα τα ορίσματα χωρίζονται με κενά "
+"και πρέπει να έχουν παρενθέσεις εάν περιέχουν κενά. Κάθε ρύθμιση γεμίζει "
 "αυτό το πλαίσιο κειμένου με προεπιλεγμένες τιμές που μπορείτε να "
 "τροποποιήσετε."
 
@@ -1648,9 +1640,9 @@ msgid ""
 msgstr ""
 "Κάθε έργο autotools υποστηρίζει μια κοινή λίστα ορισμάτων, αλλά μπορεί να "
 "πρέπει να ορίσει ορίσματα. Μπορείτε να έχετε μια λίστα όλων των αποδεκτών "
-"ορισμάτων τρέχοντας <cmd>configure --help</cmd> στη γραμμή εντολών. Πρέπει "
-"να διαμορφώσετε το έργο σας τουλάχιστον μια φορά για να έχετε το σενάριο "
-"<cmd>configure</cmd>."
+"ορισμάτων εκτελώντας <cmd>configure --help</cmd> στη γραμμή εντολών. Πρέπει "
+"να έχετε ρυθμίσει το έργο σας τουλάχιστον μια φορά για να έχετε το δέσμη "
+"ενεργειών <cmd>configure</cmd>."
 
 #. (itstool) path: info/desc
 #: C/autotools-build-configure.page:11
@@ -1670,10 +1662,10 @@ msgid ""
 "required libraries and programs are installed on your system and to generate "
 "appropriate build scripts."
 msgstr ""
-"Πριν τη μεταγλώττιση και κατασκευή αρχείων, ένα έργο autotools πρέπει να "
+"Πριν τη μεταγλώττιση και δόμηση αρχείων, ένα έργο autotools πρέπει να "
 "ρυθμιστεί. Αυτό το βήμα απαιτείται για τον ορισμό γενικών επιλογών, έλεγχο "
 "εγκατάστασης όλων των απαιτούμενων βιβλιοθηκών και προγραμμάτων στο σύστημά "
-"σας και δημιουργία κατάλληλων σεναρίων κατασκευής."
+"σας και δημιουργία κατάλληλων δέσμες ενεργειών δόμησης."
 
 #. (itstool) path: section/title
 #: C/autotools-build-configure.page:30
@@ -1686,8 +1678,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Build</gui> "
 "<gui>Configure Project...</gui></guiseq>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>κατασκευή</gui> "
-"<gui>ρύθμιση έργου...</gui></guiseq>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> "
+"<gui>Ρύθμιση έργου...</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/autotools-build-configure.page:40
@@ -1704,7 +1696,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/autotools-build-configure.page:47
 msgid "Click on <gui>Execute</gui> to configure the project."
-msgstr "Κλικ στο <gui>εκτέλεση</gui> για να ρυθμίσετε το έργο."
+msgstr "Κλικ στο <gui>Εκτέλεση</gui> για να ρυθμίσετε το έργο."
 
 #. (itstool) path: section/p
 #: C/autotools-build-configure.page:53
@@ -1727,8 +1719,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Build</gui> <gui>Select "
 "Configuration</gui><gui>Another configuration</gui></guiseq>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>κατασκευή</gui> "
-"<gui>επιλογή ρύθμισης</gui><gui>άλλη ρύθμιση</gui></guiseq>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> "
+"<gui>Επιλογή ρύθμισης</gui><gui>'Αλλη ρύθμιση</gui></guiseq>."
 
 #. (itstool) path: section/p
 #: C/autotools-build-configure.page:71
@@ -1736,13 +1728,13 @@ msgid ""
 "If the project has not been already configured, it will be automatically "
 "configured before building any file."
 msgstr ""
-"Εάν το έργο δεν έχει ήδη ρυθμιστεί, θα ρυθμιστεί αυτόματα πριν την κατασκευή "
+"Εάν το έργο δεν έχει ήδη ρυθμιστεί, θα ρυθμιστεί αυτόματα πριν την δόμηση "
 "οποιουδήποτε αρχείου."
 
 #. (itstool) path: section/title
 #: C/autotools-build-configure.page:79
 msgid "Remove configuration"
-msgstr "Αφαίρεση ρύμισης"
+msgstr "Αφαίρεση ρύθμισης"
 
 #. (itstool) path: section/p
 #: C/autotools-build-configure.page:81
@@ -1750,8 +1742,8 @@ msgid ""
 "It is a like cleaning the project but it removes even more files. You need "
 "to re-configure your project to build it afterward."
 msgstr ""
-"Είναι ως εκκαθάριση του έργου, αλλά αφαιρεί ακόμα περισσότερα αρχεία. "
-"Χρειάζεται η νέα ρύθμιση του έργου σας και η κατασκευή του κατόπιν."
+"Είναι σαν μια εκκαθάριση του έργου, αλλά αφαιρεί ακόμα περισσότερα αρχεία. "
+"Χρειάζεται να ρυθμίσετε εκ νέου το έργο σας για να το δομήσετε στη συνέχεια."
 
 #. (itstool) path: item/p
 #: C/autotools-build-configure.page:88
@@ -1759,8 +1751,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Build</gui> <gui>Remove "
 "Configuration</gui></guiseq>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>κατασκευή</gui> "
-"<gui>αφαίρεση ρύθμισης</gui></guiseq>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> "
+"<gui>Αφαίρεση ρύθμισης</gui></guiseq>."
 
 #. (itstool) path: info/desc
 #: C/autotools-build-distribute.page:11
@@ -1792,19 +1784,19 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Build</gui> <gui>Build "
 "Tarball</gui></guiseq> to create a source distribution package."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Κατασκευή</gui> "
-"<gui>Κατασκευή Tarball</gui></guiseq> για να δημιουργήσετε ένα πηγαίο πακέτο "
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> "
+"<gui>Δόμηση Tarball</gui></guiseq> για να δημιουργήσετε ένα πηγαίο πακέτο "
 "διανομής."
 
 #. (itstool) path: info/desc
 #: C/autotools-build-install.page:11
 msgid "Install targets or project."
-msgstr "Εγκατάσταση στόχων ή έργου."
+msgstr "Εγκατάσταση προορισμών ή έργου."
 
 #. (itstool) path: page/title
 #: C/autotools-build-install.page:20
 msgid "Install targets"
-msgstr "Εγκατάσταση στόχων"
+msgstr "Εγκατάσταση προορισμών"
 
 #. (itstool) path: page/p
 #: C/autotools-build-install.page:22
@@ -1819,14 +1811,14 @@ msgstr ""
 "Εκτός και το έργο σας είναι πολύ απλό, απαιτεί μερικά αρχεία δεδομένων όπως "
 "αρχεία περιγραφής διεπαφής χρήστη. Αυτά τα αρχεία αντιγράφονται κανονικά "
 "στους τυπικούς καταλόγους και διαβάζονται από εκεί. Αυτό σημαίνει ότι δεν "
-"μπορείτε να τρέξετε το πρόγραμμά σας από τον κατάλογο κατασκευής. Χρειάζεται "
+"μπορείτε να εκτελέσετε το πρόγραμμά σας από τον κατάλογο δόμησης. Χρειάζεται "
 "να τον εγκαταστήσετε για να αντιγράψετε όλα αυτά τα αρχεία στην τελική θέση, "
 "για παράδειγμα σε έναν υποκατάλογο του <file>/usr/local</file>."
 
 #. (itstool) path: page/p
 #: C/autotools-build-install.page:29
 msgid "There are several possibilities to install targets or a project."
-msgstr "Υπάρχουν πολλές δυνατότητες για εγκατάσταση στόχων ή έργου."
+msgstr "Υπάρχουν πολλές δυνατότητες για εγκατάσταση προορισμών ή έργου."
 
 #. (itstool) path: item/p
 #: C/autotools-build-install.page:33
@@ -1835,8 +1827,8 @@ msgid ""
 "gui></guiseq> to install all files in the same directory as the current "
 "edited file."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>κατασκευή</gui> "
-"<gui>εγκατάσταση</gui></guiseq> για να εγκαταστήσετε όλα τα αρχεία στον ίδιο "
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> "
+"<gui>Εγκατάσταση</gui></guiseq> για να εγκαταστήσετε όλα τα αρχεία στον ίδιο "
 "κατάλογο όπως το τρέχον επεξεργασμένο αρχείο."
 
 #. (itstool) path: item/p
@@ -1845,8 +1837,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Build</gui> <gui>Install "
 "Project</gui></guiseq> to install all project files,"
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>κατασκευή</gui> "
-"<gui>εγκατάσταση έργου</gui></guiseq> για εγκατάσταση όλων των αρχείων έργου,"
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> "
+"<gui>Εγκατάσταση έργου</gui></guiseq> για εγκατάσταση όλων των αρχείων έργου,"
 
 #. (itstool) path: item/p
 #: C/autotools-build-install.page:55
@@ -1857,8 +1849,8 @@ msgid ""
 "directory of the currently selected file."
 msgstr ""
 "Κλικ με το δεξί κουμπί για να κάνετε το <gui>μενού περιεχομένου διαχειριστή "
-"αρχείου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>κατασκευή</"
-"gui><gui>εγκατάσταση</gui></guiseq> για την εγκατάσταση όλων των αρχείων "
+"αρχείου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>Δόμηση</"
+"gui><gui>Εγκατάσταση</gui></guiseq> για την εγκατάσταση όλων των αρχείων "
 "στον τρέχοντα επιλεγμένο κατάλογο ή το γονικό κατάλογο του τρέχοντος "
 "επιλεγμένου αρχείου."
 
@@ -1871,9 +1863,9 @@ msgid ""
 "selected file or target."
 msgstr ""
 "Κλικ με το δεξί κουμπί για να κάνετε το <gui>μενού περιεχομένου διαχειριστή "
-"έργου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>κατασκευή</"
-"gui><gui>εγκατάσταση</gui></guiseq> για την εγκατάσταση όλων των αρχείων "
-"στον κατάλογο που περιέχει το τρέχον επιλεγμένο αρχείο ή στόχο."
+"έργου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>Δόμηση</"
+"gui><gui>Εγκατάσταση</gui></guiseq> για την εγκατάσταση όλων των αρχείων "
+"στον κατάλογο που περιέχει το τρέχον επιλεγμένο αρχείο ή προορισμό."
 
 #. (itstool) path: note/p
 #: C/autotools-build-install.page:79
@@ -1891,7 +1883,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/autotools-build-plugin.page:8 C/autotools-build-plugin.page:17
 msgid "Autotools build plugin"
-msgstr "Πρόσθετα κατασκευής autotools"
+msgstr "Πρόσθετα δόμησης autotools"
 
 #. (itstool) path: page/p
 #: C/autotools-build-plugin.page:19
@@ -1899,8 +1891,8 @@ msgid ""
 "This plugin is targeted at autotools projects but as they use make it is "
 "useful for other kind of projects using make."
 msgstr ""
-"Αυτό το πρόσθετο στοχεύει στα έργα autotools, αλλά καθώς χρησιμοποιείται το "
-"κάνει χρήσιμο για άλλα είδη έργων χρησιμοποιώντας make."
+"Αυτό το πρόσθετο είναι προοριζόμενο στα έργα autotools, αλλά καθώς "
+"χρησιμοποιείται το κάνει χρήσιμο για άλλα είδη έργων χρησιμοποιώντας make."
 
 #. (itstool) path: section/title
 #: C/autotools-build-plugin.page:25
@@ -1914,9 +1906,9 @@ msgid ""
 "all autotools projects but you need to implement them if you use a custom "
 "makefile."
 msgstr ""
-"Εδώ είναι μια λίστα στόχων που χρησιμοποιείται από πρόσθετα. Υλοποιούνται σε "
-"όλα τα έργα autotools, αλλά χρειάζεται να υλοποιηθούν εάν χρησιμοποιήσετε "
-"ένα προσαρμοσμένο makefile."
+"Εδώ είναι μια λίστα προορισμών που χρησιμοποιούνται από πρόσθετα. "
+"Υλοποιούνται σε όλα τα έργα autotools, αλλά χρειάζεται να υλοποιηθούν εάν "
+"χρησιμοποιήσετε ένα προσαρμοσμένο makefile."
 
 #. (itstool) path: item/title
 #: C/autotools-build-plugin.page:31
@@ -1941,7 +1933,7 @@ msgstr "<cmd>make</cmd>"
 #. (itstool) path: item/p
 #: C/autotools-build-plugin.page:37
 msgid "Use to build all targets in a directory."
-msgstr "Χρησιμεύει στη κατασκευή όλων των στόχων σε κατάλογο."
+msgstr "Χρησιμεύει στη δόμηση όλων των προορισμών σε κατάλογο."
 
 #. (itstool) path: item/title
 #: C/autotools-build-plugin.page:40
@@ -1951,7 +1943,7 @@ msgstr "<cmd>make install</cmd>"
 #. (itstool) path: item/p
 #: C/autotools-build-plugin.page:41
 msgid "Use to install all targets in a directory."
-msgstr "Χρησιμεύει στην εγκατάσταση όλων των στόχων σε κατάλογο."
+msgstr "Χρησιμεύει στην εγκατάσταση όλων των προορισμών σε κατάλογο."
 
 #. (itstool) path: item/title
 #: C/autotools-build-plugin.page:44
@@ -1961,7 +1953,7 @@ msgstr "<cmd>make clean</cmd>"
 #. (itstool) path: item/p
 #: C/autotools-build-plugin.page:45
 msgid "Use to delete all file built in a directory."
-msgstr "Χρησιμεύει στη διαγραφή όλων των κατασκευασμένων αρχείων σε κατάλογο."
+msgstr "Χρησιμεύει στη διαγραφή όλων των δομημένων αρχείων σε κατάλογο."
 
 #. (itstool) path: item/title
 #: C/autotools-build-plugin.page:48
@@ -1973,7 +1965,7 @@ msgstr "<cmd>make dist</cmd>"
 msgid ""
 "Use to build a distributation package, called only in the project directory."
 msgstr ""
-"Χρησιμεύει στη κατασκευή πακέτου διανομής, καλείται μόνο στον κατάλογο έργου."
+"Χρησιμεύει στη δόμηση πακέτου διανομής, καλείται μόνο στον κατάλογο έργου."
 
 #. (itstool) path: note/p
 #: C/autotools-build-plugin.page:54
@@ -1990,17 +1982,17 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/autotools-build-preferences-dialog.page:10
 msgid "Autotools build preferences dialog."
-msgstr "Ο διάλογος προτιμήσεων κατασκευής autotools."
+msgstr "Ο διάλογος προτιμήσεων δόμησης autotools."
 
 #. (itstool) path: page/title
 #: C/autotools-build-preferences-dialog.page:19
 msgid "Autotools Build Preferences Dialog"
-msgstr "Ο διάλογος προτιμήσεων κατασκευής Autotools"
+msgstr "Ο διάλογος προτιμήσεων δόμησης Autotools"
 
 #. (itstool) path: page/p
 #: C/autotools-build-preferences-dialog.page:21
 msgid "The dialog allows you to set global options for building files."
-msgstr "Ο διάλογος επιτρέπει τον ορισμό γενικών επιλογών κατασκευής αρχείων."
+msgstr "Ο διάλογος επιτρέπει τον ορισμό γενικών επιλογών δόμησης αρχείων."
 
 #. (itstool) path: item/title
 #: C/autotools-build-preferences-dialog.page:27
@@ -2014,10 +2006,10 @@ msgid ""
 "decreases build time when having a multi-core processor but could trigger "
 "some issues so this can be enabled or disabled with this check box."
 msgstr ""
-"<app>κάν</app> μπορεί να τρέξει πολλές μεταγλωττίσεις ταυτόχρονα. Μειώνει το "
-"χρόνο κατασκευής όταν έχει έναν πολυπύρηνο επεξεργαστή, αλλά θα μπορούσε να "
-"προκαλέσει μερικά θέματα έτσι αυτό μπορεί να γίνει ενεργό ή ανενεργό με αυτό "
-"το πλαίσιο ελέγχου."
+"Η εντολή <app>make</app> μπορεί να εκτελέσει πολλές μεταγλωττίσεις "
+"ταυτόχρονα. Μειώνει το χρόνο δόμησης όταν έχει έναν πολυπύρηνο επεξεργαστή, "
+"αλλά θα μπορούσε να προκαλέσει μερικά θέματα έτσι αυτό μπορεί να γίνει "
+"ενεργό ή ανενεργό με αυτό το πλαίσιο ελέγχου."
 
 #. (itstool) path: item/title
 #: C/autotools-build-preferences-dialog.page:33
@@ -2063,7 +2055,7 @@ msgstr ""
 #: C/autotools-build-preferences-dialog.page:48
 msgid "<gui>Highlight build warnings and errors in editor</gui>"
 msgstr ""
-"<gui>Επισήμανση προειδοποιήσεων και σφαλμάτων κατασκευής επεξεργαστή</gui>"
+"<gui>Επισήμανση προειδοποιήσεων και σφαλμάτων δόμησης επεξεργαστή</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-preferences-dialog.page:49
@@ -2072,14 +2064,14 @@ msgid ""
 "message window. By checking this option, they are highlighted in the editor "
 "too."
 msgstr ""
-"Σφάλματα και προειδοποιήσεις κατά την κατασκευή εμφανίζονται τονισμένα στο "
+"Σφάλματα και προειδοποιήσεις κατά την δόμηση εμφανίζονται τονισμένα στο "
 "παράθυρο μηνυμάτων. Σημειώνοντας αυτήν την επιλογή, τονίζονται επίσης στον "
 "επεξεργαστή."
 
 #. (itstool) path: item/title
 #: C/autotools-build-preferences-dialog.page:54
 msgid "<gui>Install as root</gui>"
-msgstr "<gui>Εγκατάσταση ως υπερχρήστης</gui>"
+msgstr "<gui>Εγκατάσταση ως root</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-preferences-dialog.page:55
@@ -2091,8 +2083,8 @@ msgid ""
 msgstr ""
 "Η εγκατάσταση ενός προγράμματος απαιτεί την αντιγραφή αρχείων στους "
 "καταλόγους του συστήματος που είναι συχνά μη εγγράψιμοι από τους χρήστες. "
-"Εάν σημειωθεί αυτό το πλαίσιο ελέγχου, σημειωθεί,μπορείτε να επιλέξετε τη "
-"χρήση <cmd>sudo</cmd> ή <cmd>su</cmd> πριν την εγκατάσταση των αρχείων για "
+"Εάν σημειωθεί αυτό το πλαίσιο ελέγχου, μπορείτε να επιλέξετε τη χρήση "
+"<cmd>sudo</cmd> ή <cmd>su</cmd> πριν την εγκατάσταση των αρχείων για "
 "απόκτηση επαρκών δικαιωμάτων εκτέλεσης του."
 
 #. (itstool) path: info/desc
@@ -2224,8 +2216,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> "
 "<gui>Breakpoints</gui></guiseq> to open the <gui>Breakpoint</gui> window."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>προβολή</gui> "
-"<gui>σημεία διακοπής</gui></guiseq> για το άνοιγμα του παραθύρου <gui>σημείο "
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Προβολή</gui> "
+"<gui>Σημεία διακοπής</gui></guiseq> για το άνοιγμα του παραθύρου <gui>Σημείο "
 "διακοπής</gui>."
 
 #. (itstool) path: section/p
@@ -2397,7 +2389,7 @@ msgstr "Είναι η κατάσταση του σημείου διακοπής.
 #. (itstool) path: item/title
 #: C/debug-breakpoint.page:75
 msgid "Pending:"
-msgstr "Εκκρεμές:"
+msgstr "Σε εκκρεμότητα:"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:75
@@ -2436,7 +2428,7 @@ msgstr ""
 "Όλα τα σημεία διακοπής διατηρούνται και στις επόμενες συνεδρίες του Anjuta, "
 "ακόμη και αν αντιστοιχούν σε ανύπαρκτη τοποθεσία, για παράδειγμα σε πηγαίο "
 "αρχείο μη φορτωμένης ακόμα κοινόχρηστης βιβλιοθήκης. Στην περίπτωση αυτή η "
-"κατάστασή τους ορίζεται ως εκκρεμής."
+"κατάστασή τους ορίζεται σε εκκρεμότητα."
 
 #. (itstool) path: section/title
 #: C/debug-breakpoint.page:90
@@ -2450,9 +2442,9 @@ msgid ""
 "Breakpoint...</gui></guiseq> or right click in the <gui>Breakpoint</gui> "
 "window and select <gui>Add Breakpoint...</gui>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>προσθήκη σημείου διακοπής...</gui></guiseq> ή δεξί κλικ στο παράθυρο "
-"<gui>σημείο διακοπής</gui> και επιλογή <gui>προσθήκη σημείου διακοπής...</"
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Προσθήκη σημείου διακοπής...</gui></guiseq> ή δεξί κλικ στο παράθυρο "
+"<gui>Σημείο διακοπής</gui> και επιλογή <gui>Προσθήκη σημείου διακοπής...</"
 "gui>."
 
 #. (itstool) path: item/p
@@ -2463,9 +2455,9 @@ msgid ""
 "editor, the <gui>Location</gui> defaults to the current line. See <link xref="
 "\"debug-breakpoint-dialog\"/> for more information."
 msgstr ""
-"Συμπληρώστε την <gui>τοποθεσία</gui>, που είναι η θέση του σημείου διακοπής "
+"Συμπληρώστε την <gui>Τοποθεσία</gui>, που είναι η θέση του σημείου διακοπής "
 "και τα άλλα σημεία εάν θέλετε. Εάν ένα αρχείο είναι προς το παρόν ανοιχτό "
-"στον επεξεργαστή, η <gui>τοποθεσία</gui> από προεπιλογή δείχνει την τρέχουσα "
+"στον επεξεργαστή, η <gui>Τοποθεσία</gui> από προεπιλογή δείχνει την τρέχουσα "
 "γραμμή. Δείτε <link xref=\"debug-breakpoint-dialog\"/> για περισσότερες "
 "πληροφορίες."
 
@@ -2487,9 +2479,9 @@ msgid ""
 "Breakpoint</gui></guiseq> or right click in the <gui>Editor</gui> window and "
 "select <gui>Toggle Breakpoint</gui>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>εναλλαγή σημείου διακοπής</gui></guiseq> ή δεξί κλικ στο παράθυρο "
-"<gui>επεξεργαστής</gui> και επιλογή <gui>εναλλαγή σημείου διακοπής</gui>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Εναλλαγή σημείου διακοπής</gui></guiseq> ή δεξί κλικ στο παράθυρο "
+"<gui>Επεξεργαστής</gui> και επιλογή <gui>Εναλλαγή σημείου διακοπής</gui>."
 
 #. (itstool) path: section/title
 #: C/debug-breakpoint.page:125
@@ -2511,7 +2503,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:133 C/debug-breakpoint.page:160
 msgid "Select a breakpoint in the <gui>Breakpoint</gui> window."
-msgstr "Επιλογή σημείου διακοπής στο παράθυρο <gui>σημείο διακοπής</gui>."
+msgstr "Επιλογή σημείου διακοπής στο παράθυρο <gui>Σημείο διακοπής</gui>."
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:136
@@ -2519,8 +2511,8 @@ msgid ""
 "Right click in the <gui>Breakpoint</gui> window and select <gui>Edit "
 "Breakpoint...</gui>."
 msgstr ""
-"Δεξί κλικ στο παράθυρο <gui>σημείο διακοπής</gui> και επιλογή "
-"<gui>επεξεργασία σημείου διακοπής...</gui>."
+"Δεξί κλικ στο παράθυρο <gui>Σημείο διακοπής</gui> και επιλογή "
+"<gui>Επεξεργασία σημείου διακοπής...</gui>."
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:141
@@ -2529,7 +2521,7 @@ msgid ""
 "<gui>OK</gui> when you are done. See <link xref=\"debug-breakpoint-dialog\"/"
 "> for more information."
 msgstr ""
-"Αλλαγή των πεδίων της <gui>κατάστασης</gui> ή <gui>αριθμού περάσματος</gui> "
+"Αλλαγή των πεδίων της <gui>Κατάστασης</gui> ή <gui>Αριθμού περάσματος</gui> "
 "και κλικ στο <gui>Εντάξει</gui> όταν τελειώσετε. Δείτε <link xref=\"debug-"
 "breakpoint-dialog\"/> για περισσότερες πληροφορίες."
 
@@ -2558,7 +2550,7 @@ msgid ""
 "Right click in the <gui>Breakpoint</gui> window and select <gui>Remove "
 "Breakpoint</gui>."
 msgstr ""
-"Δεξί κλικ στο παράθυρο <gui>σημείο διακοπής</gui> και επιλογή <gui>αφαίρεση "
+"Δεξί κλικ στο παράθυρο <gui>Σημείο διακοπής</gui> και επιλογή <gui>Αφαίρεση "
 "σημείου διακοπής</gui>."
 
 #. (itstool) path: section/p
@@ -2573,9 +2565,9 @@ msgid ""
 "All Breakpoints</gui></guiseq> or right-click in the <gui>Breakpoint</gui> "
 "window and select <gui>Remove All Breakpoints</gui>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>αφαίρεση όλων των σημείων διακοπής</gui></guiseq> ή δεξί κλικ στο "
-"παράθυρο <gui>σημείο διακοπής</gui> και επιλογή <gui>αφαίρεση όλων των "
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Αφαίρεση όλων των σημείων διακοπής</gui></guiseq> ή δεξί κλικ στο "
+"παράθυρο <gui>Σημείο διακοπής</gui> και επιλογή <gui>Αφαίρεση όλων των "
 "σημείων διακοπής</gui>."
 
 #. (itstool) path: section/title
@@ -2600,9 +2592,9 @@ msgid ""
 "or right click in the <gui>Breakpoint</gui> window and select <gui>Enable "
 "Breakpoint</gui> or <gui>Disable Breakpoint</gui>."
 msgstr ""
-"Κλικ στο σημείο ελέγχου <gui>ενεργό</gui> στο παράθυρο <gui>σημείο διακοπής</"
-"gui> ή δεξί κλικ στο παράθυρο <gui>σημείο διακοπής</gui> και επιλογή "
-"<gui>ενεργοποίηση σημείου διακοπής</gui> ή <gui>απενεργοποίηση σημείου "
+"Κλικ στο σημείο ελέγχου <gui>ενεργό</gui> στο παράθυρο <gui>Σημείο διακοπής</"
+"gui> ή δεξί κλικ στο παράθυρο <gui>Σημείο διακοπής</gui> και επιλογή "
+"<gui>Ενεργοποίηση σημείου διακοπής</gui> ή <gui>Απενεργοποίηση σημείου "
 "διακοπής</gui>."
 
 #. (itstool) path: section/p
@@ -2617,8 +2609,8 @@ msgid ""
 "All Breakpoints</gui></guiseq> or right-click in the <gui>Breakpoint</gui> "
 "window and select <gui>Disable All Breakpoints</gui>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>ανενεργά όλων τα σημεία διακοπής</gui></guiseq> ή δεξί κλικ στο "
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Απενεργοποίηση όλων των σημείων διακοπής</gui></guiseq> ή δεξί κλικ στο "
 "παράθυρο <gui>σημείο διακοπής</gui> και επιλογή <gui>ανενεργά όλα τα σημεία "
 "διακοπής</gui>."
 
@@ -2637,7 +2629,7 @@ msgstr "CPU"
 #. (itstool) path: section/title
 #: C/debug-cpu.page:25
 msgid "View CPU registers"
-msgstr "Προβολή καταχωριστών CPU"
+msgstr "Προβολή καταχωρητών CPU"
 
 #. (itstool) path: item/p
 #: C/debug-cpu.page:29
@@ -2645,9 +2637,9 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> "
 "<gui>Registers</gui></guiseq> to open the <gui>Register</gui> window."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>προβολή</gui> "
-"<gui>καταχωρητές</gui></guiseq> για το άνοιγμα του παραθύρου "
-"<gui>καταχωρητές</gui>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Προβολή</gui> "
+"<gui>Καταχωρητές</gui></guiseq> για το άνοιγμα του παραθύρου "
+"<gui>Καταχωρητές</gui>."
 
 #. (itstool) path: section/p
 #: C/debug-cpu.page:35
@@ -2656,8 +2648,8 @@ msgid ""
 "possible to change the value of any register by clicking in the value column "
 "and entering a new value."
 msgstr ""
-"Οι καταχωριστές των οποίων οι τιμές έχουν αλλάξει από την τελευταία διακοπή "
-"είναι κόκκινοι. Μπορείτε να αλλάξετε την τιμή οποιουδήποτε καταχωριστή, με "
+"Οι καταχωρητές των οποίων οι τιμές έχουν αλλάξει από την τελευταία διακοπή "
+"είναι κόκκινοι. Μπορείτε να αλλάξετε την τιμή οποιουδήποτε καταχωρητή, με "
 "κλικ στην στήλη τιμής και εισαγωγή νέας τιμής."
 
 #. (itstool) path: section/title
@@ -2671,8 +2663,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> <gui>Memory</"
 "gui></guiseq> to open the <gui>Memory</gui> window."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>προβολή</gui> "
-"<gui>μνήμη</gui></guiseq> για το άνοιγμα του παραθύρου <gui>μνήμη</gui>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Προβολή</gui> "
+"<gui>Μνήμη</gui></guiseq> για το άνοιγμα του παραθύρου <gui>Μνήμη</gui>."
 
 #. (itstool) path: section/p
 #: C/debug-cpu.page:52
@@ -2694,11 +2686,11 @@ msgid ""
 "address</gui> to get a small edit box where you can enter an address in "
 "hexadecimal."
 msgstr ""
-"Ο χώρος διευθυνσιοδότησης ακόμη και σε μικροεπεξεργαστές 32-δυαδικών είναι "
-"πολύ μεγάλος (4 Gb), άρα είναι πολύ δύσκολη η μετάβαση σε συγκεκριμένη "
-"διεύθυνση με τη γραμμή κύλισης. Αλλά, μπορείτε με δεξί κλικ και επιλογή "
-"<gui>Μετάβαση στη διεύθυνση</gui> να πάρετε ένα μικρό πλαίσιο επεξεργασίας "
-"όπου μπορείτε να εισάγετε μια δεκαεξαδική διεύθυνση."
+"Ο χώρος διευθυνσιοδότησης ακόμη και σε μικροεπεξεργαστές 32-bit είναι πολύ "
+"μεγάλος (4 Gb), άρα είναι πολύ δύσκολη η μετάβαση σε συγκεκριμένη διεύθυνση "
+"με τη γραμμή κύλισης. Αλλά, μπορείτε με δεξί κλικ και επιλογή <gui>Μετάβαση "
+"στη διεύθυνση</gui> να πάρετε ένα μικρό πλαίσιο επεξεργασίας όπου μπορείτε "
+"να εισάγετε μια δεκαεξαδική διεύθυνση."
 
 #. (itstool) path: section/title
 #: C/debug-cpu.page:64
@@ -2712,8 +2704,8 @@ msgid ""
 "<gui>Disassembly</gui></guiseq> to open the <gui>Disassembly</gui> window."
 msgstr ""
 "Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>προβολή</gui> "
-"<gui>αποσυμβολομετάφραση</gui></guiseq> για το άνοιγμα του παραθύρου "
-"<gui>αποσυμβολομετάφραση</gui>."
+"<gui>Αποσυμβολομετάφραση</gui></guiseq> για το άνοιγμα του παραθύρου "
+"<gui>Αποσυμβολομετάφραση</gui>."
 
 #. (itstool) path: section/p
 #: C/debug-cpu.page:75
@@ -2734,7 +2726,7 @@ msgid ""
 "counter value when the program is stopped."
 msgstr ""
 "Η θέση στο παράθυρο αποσυμβολομετάφρασης θα αλλαχθεί στην τιμή μετρητή "
-"προγράμματος όταν το πρόγραμμα σταματήσει."
+"προγράμματος όταν το πρόγραμμα διακοπεί."
 
 #. (itstool) path: info/desc
 #: C/debug-custom.page:9
@@ -2758,8 +2750,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Debug</gui> <gui>Debugger "
 "Command</gui></guiseq>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>εντολή αποσφαλμάτωσης</gui></guiseq>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Εντολή αποσφαλμάτωσης</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/debug-custom.page:32
@@ -2784,9 +2776,9 @@ msgid ""
 "unless you know exactly what you are doing."
 msgstr ""
 "Η εντολή στέλνεται απευθείας στον αποσφαλματωτή χωρίς την εκτέλεση ελέγχων. "
-"Για παράδειγμα, αν ορίσετε ένα σημείο διακοπής αυτό, δεν θα εμφανιστεί στο "
-"παράθυρο <gui>σημείων διακοπής</gui>. Καλό είναι να αποφεύγετε τη χρήση "
-"αυτής της εντολής, εκτός αν γνωρίζετε ακριβώς τι κάνετε."
+"Για παράδειγμα, αν ορίσετε ένα σημείο διακοπής, αυτό δεν θα εμφανιστεί στο "
+"παράθυρο <gui>Σημείο διακοπής</gui>. Καλό είναι να αποφεύγετε τη χρήση αυτής "
+"της εντολής, εκτός αν γνωρίζετε ακριβώς τι κάνετε."
 
 #. (itstool) path: info/desc
 #: C/debug-data.page:9
@@ -2841,9 +2833,9 @@ msgid ""
 "Evaluate...</gui></guiseq> or right click in the <gui>Editor</gui> window "
 "and select <gui>Inspect/Evaluate...</gui>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>επιθεώρηση/αξιολόγηση...</gui></guiseq> ή δεξί κλικ στο παράθυρο "
-"<gui>επεξεργαστής</gui> και επιλογή <gui>επιθεώρηση/αξιολόγηση...</gui>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Επιθεώρηση/Αξιολόγηση...</gui></guiseq> ή δεξί κλικ στο παράθυρο "
+"<gui>Επεξεργαστής</gui> και επιλογή <gui>Επιθεώρηση/Αξιολόγηση...</gui>."
 
 #. (itstool) path: item/p
 #: C/debug-expression.page:38
@@ -2852,7 +2844,7 @@ msgid ""
 "on the <gui>Value</gui> column and entering a new value."
 msgstr ""
 "Εάν η έκφραση είναι όνομα μεταβλητής, μπορείτε να αλλάξετε την τιμή της με "
-"κλικ στη στήλη <gui>τιμή</gui> και εισαγωγή νέας τιμής."
+"κλικ στη στήλη <gui>Τιμή</gui> και εισαγωγή νέας τιμής."
 
 #. (itstool) path: info/desc
 #: C/debug-information.page:9
@@ -2884,8 +2876,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Debug</gui> <gui>Info</"
 "gui><gui>Shared Libraries</gui></guiseq>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>πληροφορίες</gui><gui>κοινόχρηστες βιβλιοθήκες</gui></guiseq>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Πληροφορίες</gui><gui>Κοινόχρηστες βιβλιοθήκες</gui></guiseq>."
 
 #. (itstool) path: section/p
 #: C/debug-information.page:37
@@ -2909,8 +2901,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Debug</gui> <gui>Info</"
 "gui><gui>Kernel signals</gui></guiseq>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>πληροφορίες</gui><gui>σήματα πυρήνα</gui></guiseq>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Πληροφορίες</gui><gui>Σήματα πυρήνα</gui></guiseq>."
 
 #. (itstool) path: section/p
 #: C/debug-information.page:53
@@ -2987,7 +2979,7 @@ msgid ""
 msgstr ""
 "Οι τοπικές μεταβλητές του τρέχοντος πλαισίου (της τρέχουσας συνάρτησης όπου "
 "βρίσκεται ο έλεγχος του προγράμματος) εμφανίζονται στο παράθυρο "
-"<gui>τοπικές</gui>. Κατά την εκτέλεση του προγράμματος (π.χ. σε μεμονωμένα "
+"<gui>Τοπικές</gui>. Κατά την εκτέλεση του προγράμματος (π.χ. σε μεμονωμένα "
 "βήματα), ενημερώνονται οι τοπικές μεταβλητές. Αν η τιμή μιας μεταβλητής "
 "αλλάξει στο τελευταίο βήμα αποσφαλμάτωσης, η τιμή της επισημαίνεται με "
 "κόκκινο χρώμα. Οι μεταβλητές προβάλλονται σε μορφή δέντρου, για προβολή."
@@ -3003,8 +2995,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> <gui>Locals</"
 "gui></guiseq> to open the <gui>Locals</gui> window."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>προβολή</gui> "
-"<gui>τοπικές</gui></guiseq> για το άνοιγμα του παραθύρου <gui>τοπικές</gui>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Προβολή</gui> "
+"<gui>Τοπικές</gui></guiseq> για το άνοιγμα του παραθύρου <gui>Τοπικές</gui>."
 
 #. (itstool) path: section/p
 #: C/debug-local.page:42
@@ -3012,7 +3004,7 @@ msgid ""
 "All local variables are displayed in a tree view with children used to "
 "represent structure or array members."
 msgstr ""
-"Όλες οι τοπικές μεταβλητές εμφανίζονται σε ένα προβολή δέντρου με κατιόντα "
+"Όλες οι τοπικές μεταβλητές εμφανίζονται σε ένα προβολή δέντρου με θυγατρικά "
 "που χρησιμοποιούνται για την αναπαράσταση μελών δομής ή διανύσματος."
 
 #. (itstool) path: item/title
@@ -3051,8 +3043,8 @@ msgid ""
 "In the <gui>Locals</gui> window, select the variable you want to edit and "
 "double click in the <gui>Value</gui> column."
 msgstr ""
-"Στο παράθυρο <gui>τοπικές</gui>, επιλέξτε την επιθυμητή μεταβλητή για "
-"επεξεργασία και διπλό κλικ στη στήλη <gui>τιμή</gui>."
+"Στο παράθυρο <gui>Τοπικές</gui>, επιλέξτε την επιθυμητή μεταβλητή για "
+"επεξεργασία και διπλό κλικ στη στήλη <gui>Τιμή</gui>."
 
 #. (itstool) path: item/p
 #: C/debug-local.page:70
@@ -3062,12 +3054,12 @@ msgstr "Πληκτρολογήστε τη νέα τιμή."
 #. (itstool) path: info/desc
 #: C/debug-process-dialog.page:9
 msgid "Attach to process dialog"
-msgstr "Προσκόλληση στο διάλογο διεργασίας"
+msgstr "Διάλογος προσάρτησης στη διεργασία"
 
 #. (itstool) path: page/title
 #: C/debug-process-dialog.page:22
 msgid "Attach to Process Dialog"
-msgstr "Προσκόλληση στο διάλογο διεργασίας"
+msgstr "Διάλογος προσάρτησης στη διεργασία"
 
 #. (itstool) path: page/p
 #: C/debug-process-dialog.page:24
@@ -3075,7 +3067,7 @@ msgid ""
 "The <gui>Attach to process</gui> dialog allows you to select a currently "
 "running process."
 msgstr ""
-"Ο διάλογος <gui>προσκόλληση στη διεργασία</gui> επιτρέπει την επιλογή της "
+"Ο διάλογος <gui>Προσάρτηση στη διεργασία</gui> επιτρέπει την επιλογή μιας "
 "προς το παρόν εκτελούμενης διεργασίας."
 
 #. (itstool) path: item/title
@@ -3136,7 +3128,7 @@ msgid ""
 "See <link xref=\"run-parameters-dialog\"/> for more information. This "
 "program can be started in the debugger like this:"
 msgstr ""
-"Το τρέχον πρόγραμμα καθορίζεται στο διάλογο <gui>παράμετροι προγράμματος</"
+"Το τρέχον πρόγραμμα καθορίζεται στο διάλογο <gui>Παράμετροι προγράμματος</"
 "gui>. Δείτε <link xref=\"run-parameters-dialog\"/> για περισσότερες "
 "πληροφορίες. Αυτό το πρόγραμμα μπορεί να ξεκινήσει στον αποσφαλματωτή ως "
 "εξής:"
@@ -3148,8 +3140,8 @@ msgid ""
 "Program</gui></guiseq> or press <keyseq><key>Shift</key><key>F12</key></"
 "keyseq>"
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>εκτέλεση</gui> "
-"<gui>πρόγραμμα αποσφαλμάτωσης</gui></guiseq> ή πατήστε <keyseq><key>Shift</"
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Εκτέλεση</gui> "
+"<gui>Πρόγραμμα αποσφαλμάτωσης</gui></guiseq> ή πατήστε <keyseq><key>Shift</"
 "key><key>F12</key></keyseq>"
 
 #. (itstool) path: note/p
@@ -3189,8 +3181,8 @@ msgid ""
 "Process...</gui></guiseq> to get a dialog listing all currently running "
 "processes."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>εκτέλεση</gui> "
-"<gui>διεργασία αποσφαλμάτωσης...</gui></guiseq> για να πάρετε έναν διάλογο "
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Εκτέλεση</gui> "
+"<gui>Διεργασία αποσφαλμάτωσης...</gui></guiseq> για να πάρετε έναν διάλογο "
 "που καταχωρίζει όλες τις προς το παρόν εκτελούμενες διεργασίες."
 
 #. (itstool) path: item/p
@@ -3200,8 +3192,8 @@ msgid ""
 "<gui>Attach</gui> to start the debugger on this process. See <link xref="
 "\"debug-process-dialog\"/> for more details."
 msgstr ""
-"Επιλογή μιας διεργασίας στο διάλογο <gui>προσκόλληση στη διεργασία</gui> και "
-"κλικ στο <gui>προσκόλληση</gui> για εκκίνηση του αποσφαλματωτή σε αυτή τη "
+"Επιλογή μιας διεργασίας στο διάλογο <gui>Προσάρτηση στη διεργασία</gui> και "
+"κλικ στο <gui>Προσάρτηση</gui> για εκκίνηση του αποσφαλματωτή σε αυτή τη "
 "διεργασία. Δείτε <link xref=\"debug-process-dialog\"/> για περισσότερες "
 "λεπτομέρειες."
 
@@ -3225,8 +3217,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Run</gui> <gui>Debug "
 "Remote...</gui></guiseq>"
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>εκτέλεση</gui> "
-"<gui>απομακρυσμένη αποσφαλμάτωση...</gui></guiseq>"
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Εκτέλεση</gui> "
+"<gui>Απομακρυσμένη αποσφαλμάτωση...</gui></guiseq>"
 
 #. (itstool) path: item/p
 #: C/debug-run.page:82
@@ -3234,8 +3226,8 @@ msgid ""
 "Select the type of the connection to the remote application, <gui>Serial "
 "Line Connection</gui> or <gui>TCP/IP Connection</gui>."
 msgstr ""
-"Επιλέξτε τον τύπο της σύνδεσης στην απομακρυσμένη εφαρμογή, <gui>σύνδεση "
-"σειριακής γραμμής</gui> ή <gui>σύνδεση TCP/IP</gui>."
+"Επιλέξτε τον τύπο της σύνδεσης στην απομακρυσμένη εφαρμογή, <gui>Σύνδεση "
+"σειριακής γραμμής</gui> ή <gui>Σύνδεση TCP/IP</gui>."
 
 #. (itstool) path: item/p
 #: C/debug-run.page:86
@@ -3243,7 +3235,7 @@ msgid ""
 "For a TCP connection, fill in the <gui>Address</gui> and <gui>Port</gui> "
 "fields."
 msgstr ""
-"Για σύνδεση TCP, συμπληρώστε τα πεδία <gui>διεύθυνσης</gui> και <gui>θύρας</"
+"Για σύνδεση TCP, συμπληρώστε τα πεδία <gui>Διεύθυνση</gui> και <gui>Θύρα</"
 "gui>."
 
 #. (itstool) path: item/p
@@ -3261,8 +3253,8 @@ msgid ""
 "Click on <gui>Connect</gui> to start the debugger and connect to the remote "
 "target."
 msgstr ""
-"Κλικ στο <gui>σύνδεση</gui> για την έναρξη του αποσφαλματωτή και σύνδεση σε "
-"απομακρυσμένο στόχο."
+"Κλικ στο <gui>Σύνδεση</gui> για την έναρξη του αποσφαλματωτή και σύνδεση σε "
+"απομακρυσμένο προορισμό."
 
 #. (itstool) path: section/title
 #: C/debug-run.page:100
@@ -3282,8 +3274,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Run</gui> <gui>Stop "
 "Debugger</gui></guiseq>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>εκτέλεση</gui> "
-"<gui>διακοπή αποσφαλματωτή</gui></guiseq>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Εκτέλεση</gui> "
+"<gui>Διακοπή αποσφαλματωτή</gui></guiseq>."
 
 #. (itstool) path: info/desc
 #: C/debug-stack.page:9
@@ -3322,7 +3314,7 @@ msgid ""
 "but shares all global variables."
 msgstr ""
 "Επιπλέον, ένα πρόγραμμα μπορεί να συντίθεται από μερικά νήματα. Κάθε νήμα "
-"εκτελείται ανεξάρτητα και έχει τους δικούς του καταχωριστές, τοπικές "
+"εκτελείται ανεξάρτητα και έχει τους δικούς του καταχωρητές, τοπικές "
 "μεταβλητές και μεταβλητές στοίβας, αλλά μοιράζεται όλες τις γενικές "
 "μεταβλητές."
 
@@ -3332,8 +3324,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> <gui>Stack</"
 "gui></guiseq> to open the <gui>Stack</gui> window."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>προβολή</gui> "
-"<gui>στοίβα</gui></guiseq> για το άνοιγμα του παραθύρου <gui>στοίβας</gui>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Προβολή</gui> "
+"<gui>Στοίβα</gui></guiseq> για το άνοιγμα του παραθύρου <gui>Στοίβας</gui>."
 
 #. (itstool) path: section/p
 #: C/debug-stack.page:44
@@ -3342,7 +3334,7 @@ msgid ""
 "parent and displaying the following information:"
 msgstr ""
 "Οι στοίβες εμφανίζονται σε δενδροειδή προβολή έχοντας το αντίστοιχο τους "
-"νήμα ως ανιόν και εμφανίζουν την παρακάτω πληροφορία:"
+"νήμα ως γονικό και εμφανίζουν την παρακάτω πληροφορία:"
 
 #. (itstool) path: item/title
 #: C/debug-stack.page:49
@@ -3445,12 +3437,12 @@ msgstr "Αλλαγή του τρέχοντος πλαισίου στοίβας �
 #. (itstool) path: item/p
 #: C/debug-stack.page:96 C/debug-stack.page:116
 msgid "In the <gui>Stack</gui> window, select the frame you want."
-msgstr "Στο παράθυρο <gui>στοίβα</gui>, επιλέξτε το επιθυμητό πλαίσιο."
+msgstr "Στο παράθυρο <gui>Στοίβα</gui>, επιλέξτε το επιθυμητό πλαίσιο."
 
 #. (itstool) path: item/p
 #: C/debug-stack.page:99
 msgid "Right-click and select <gui>Set current frame</gui>."
-msgstr "Δεξί κλικ και επιλέξτε <gui>ορισμός τρέχοντος πλαισίου</gui>."
+msgstr "Δεξί κλικ και επιλέξτε <gui>Ορισμός τρέχοντος πλαισίου</gui>."
 
 #. (itstool) path: section/p
 #: C/debug-stack.page:103
@@ -3473,7 +3465,7 @@ msgstr "Προβολή της τρέχουσας συνάρτησης"
 #. (itstool) path: item/p
 #: C/debug-stack.page:119
 msgid "Double-click, or right-click and select <gui>View Source</gui>."
-msgstr "Διπλό κλικ, ή δεξιό κλικ και επιλογή <gui>προβολή πηγής</gui>."
+msgstr "Διπλό κλικ, ή δεξιό κλικ και επιλογή <gui>Προβολή πηγής</gui>."
 
 #. (itstool) path: section/title
 #: C/debug-stack.page:126
@@ -3486,13 +3478,13 @@ msgid ""
 "In the <gui>Stack</gui> window, right-click and select <gui>Get stack trace</"
 "gui>."
 msgstr ""
-"Στο παράθυρο <gui>στοίβα</gui>, δεξί κλικ και επιλογή <gui>λήψη ίχνους "
+"Στο παράθυρο <gui>Στοίβα</gui>, δεξί κλικ και επιλογή <gui>Λήψη ίχνους "
 "στοίβας</gui>."
 
 #. (itstool) path: info/desc
 #: C/debug-step.page:9
 msgid "Stopping and continuing."
-msgstr "Στάση και συνέχεια."
+msgstr "Διακοπή και συνέχεια."
 
 #. (itstool) path: page/title
 #: C/debug-step.page:22
@@ -3507,8 +3499,8 @@ msgid ""
 "for tracking program behavior. You cannot go backward yet, though."
 msgstr ""
 "Όπως στη συνεδρία επεξεργασίας βίντεο, το πρόγραμμα μπορεί να εκτελεστεί σε "
-"αργή κίνηση με δυνατότητα προώθησης, διακοπής, στάσης κλπ. Αυτό είναι βασικό "
-"για εντοπισμό της συμπεριφοράς του προγράμματος. Δεν μπορείτε να "
+"αργή κίνηση με δυνατότητα προώθησης, παύσης, διακοπής, κλπ. Αυτό είναι "
+"βασικό για εντοπισμό της συμπεριφοράς του προγράμματος. Δεν μπορείτε να "
 "οπισθοχωρήσετε ακόμα, όμως."
 
 #. (itstool) path: section/title
@@ -3523,9 +3515,9 @@ msgid ""
 "gui></guiseq> or press <key>F5</key> or click on the <gui>Step In</gui> icon "
 "in the toolbar."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>βήμα μέσα</gui></guiseq> ή πατήστε <key>F5</key> ή κλικ στο εικονίδιο "
-"<gui>βήμα μέσα</gui> στην εργαλειοθήκη."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Βήμα μέσα</gui></guiseq> ή πατήστε <key>F5</key> ή κλικ στο εικονίδιο "
+"<gui>Βήμα μέσα</gui> στην εργαλειοθήκη."
 
 #. (itstool) path: section/p
 #: C/debug-step.page:40
@@ -3537,8 +3529,8 @@ msgid ""
 "statement is executed and control is passed back, you can study your "
 "program's state."
 msgstr ""
-"Το μονό βήμα εκτελεί μόνο μία εντολή του προγράμματος (από το σημείο στάσης) "
-"και μετά επιστρέφει τον έλεγχο. Αν η εντολή εκτέλεσης περιέχει μία "
+"Το μονό βήμα εκτελεί μόνο μία εντολή του προγράμματος (από το σημείο "
+"διακοπής) και μετά επιστρέφει τον έλεγχο. Αν η εντολή εκτέλεσης περιέχει μία "
 "συνάρτηση, ο αποσφαλματωτής προσπαθεί να εισέλθει στις συναρτήσεις (με τη "
 "σειρά εκτέλεσής τους). Αφού εκτελεστεί η εντολή και επιστραφεί ο έλεγχος, "
 "μπορείτε να μελετήσετε την κατάσταση του προγράμματος."
@@ -3549,7 +3541,7 @@ msgid ""
 "If the <gui>Disassembly window</gui> has the focus when this command is "
 "selected, it executes only one assembler instruction."
 msgstr ""
-"Αν είναι εστιασμένο το <gui>παράθυρο αποσυμβολομετάφρασης</gui> όταν "
+"Αν είναι εστιασμένο το <gui>Παράθυρο αποσυμβολομετάφρασης</gui> όταν "
 "επιλέγεται αυτή η εντολή, εκτελείται μόνο μία εντολή συμβολομεταφραστή."
 
 #. (itstool) path: section/title
@@ -3564,9 +3556,9 @@ msgid ""
 "Over</gui></guiseq> or press <key>F6</key> or click on the <gui>Step Over</"
 "gui> icon in the toolbar."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>βήμα από πάνω</gui></guiseq> ή πατήστε <key>F6</key> ή κλικ στο "
-"εικονίδιο <gui>βήμα από πάνω</gui> στην εργαλειοθήκη."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Βήμα από πάνω</gui></guiseq> ή πατήστε <key>F6</key> ή κλικ στο "
+"εικονίδιο <gui>Βήμα από πάνω</gui> στην εργαλειοθήκη."
 
 #. (itstool) path: section/p
 #: C/debug-step.page:65
@@ -3585,7 +3577,7 @@ msgid ""
 "instruction is a call to a subroutine, in which case the program stops when "
 "the subroutine is completed."
 msgstr ""
-"Αν είναι εστιασμένο το <gui>παράθυρο αποσυμβολομετάφρασης</gui>, όταν "
+"Αν είναι εστιασμένο το <gui>Παράθυρο αποσυμβολομετάφρασης</gui>, όταν "
 "επιλέγεται αυτή η εντολή, εκτελείται μόνο μία εντολή συμβολομεταφραστή, "
 "εκτός εάν αυτή η εντολή είναι μια κλήση σε υπορουτίνα, οπότε το πρόγραμμα "
 "σταματά όταν η υπορουτίνα ολοκληρωθεί."
@@ -3602,9 +3594,9 @@ msgid ""
 "Out</gui></guiseq> or press <keyseq><key>Shift</key><key>F5</key></keyseq> "
 "or click on the <gui>Step Out</gui> icon in the toolbar."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>βήμα έξω</gui></guiseq> ή πατήστε <keyseq><key>shift</key><key>F5</"
-"key></keyseq> ή κλικ στο εικονίδιο <gui>βήμα έξω</gui> στην εργαλειοθήκη."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Βήμα έξω</gui></guiseq> ή πατήστε <keyseq><key>shift</key><key>F5</"
+"key></keyseq> ή κλικ στο εικονίδιο <gui>Βήμα έξω</gui> στην εργαλειοθήκη."
 
 #. (itstool) path: section/p
 #: C/debug-step.page:88
@@ -3627,9 +3619,9 @@ msgid ""
 "Continue</gui></guiseq> or press <key>F4</key> or click on the "
 "<gui>Continue</gui> icon in the toolbar."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>εκτέλεση/συνέχεια</gui></guiseq> ή πατήστε <key>F4</key> ή κλικ στο "
-"εικονίδιο <gui>συνέχεια</gui> στην εργαλειοθήκη."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Εκτέλεση/Συνέχεια</gui></guiseq> ή πατήστε <key>F4</key> ή κλικ στο "
+"εικονίδιο <gui>Συνέχεια</gui> στην εργαλειοθήκη."
 
 #. (itstool) path: section/p
 #: C/debug-step.page:104
@@ -3652,9 +3644,9 @@ msgid ""
 "Cursor</gui></guiseq> or press <key>F8</key> or click on the <gui>Run to</"
 "gui> icon in the toolbar."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>εκτέλεση στο δρομέα</gui></guiseq> ή πατήστε <key>F8</key> ή κλικ στο "
-"εικονίδιο <gui>εκτέλεση σε</gui> στην εργαλειοθήκη."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Εκτέλεση στο δρομέα</gui></guiseq> ή πατήστε <key>F8</key> ή κλικ στο "
+"εικονίδιο <gui>Εκτέλεση σε</gui> στην εργαλειοθήκη."
 
 #. (itstool) path: section/p
 #: C/debug-step.page:119
@@ -3663,7 +3655,7 @@ msgid ""
 "the <gui>Disassembly window</gui> has the focus) at the cursor is reached."
 msgstr ""
 "Αυτό ξαναρχίζει το πρόγραμμα και επιτρέπει την εκτέλεσή του μέχρι η γραμμή ή "
-"η διεύθυνση (αν είναι εστιασμένο το <gui>παράθυρο αποσυμβολομεταφραστή</"
+"η διεύθυνση (αν είναι εστιασμένο το <gui>Παράθυρο αποσυμβολομεταφραστή</"
 "gui>) φτάσει στο δρομέα."
 
 #
@@ -3678,8 +3670,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Debug</gui> <gui>Pause "
 "Program</gui></guiseq> or click on the <gui>Pause</gui> icon in the toolbar."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>παύση προγράμματος</gui></guiseq> ή κλικ στο εικονίδιο <gui>παύση</gui> "
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Παύση προγράμματος</gui></guiseq> ή κλικ στο εικονίδιο <gui>Παύση</gui> "
 "στην εργαλειοθήκη."
 
 #. (itstool) path: section/p
@@ -3728,7 +3720,7 @@ msgid ""
 "main menu."
 msgstr ""
 "Ανοίξτε το <link xref=\"run-parameters-dialog\"/> επιλέγοντας "
-"<guiseq><gui>εκτέλεση</gui><gui>παράμετροι προγράμματος...</gui></guiseq> "
+"<guiseq><gui>Εκτέλεση</gui><gui>Παράμετροι προγράμματος...</gui></guiseq> "
 "από το κύριο μενού."
 
 #. (itstool) path: item/p
@@ -3737,13 +3729,13 @@ msgid ""
 "Click the plus sign next to <gui>Environment Variables</gui> to expand the "
 "list of environment variables."
 msgstr ""
-"Κλικ στο σύμβολο συν δίπλα στο <gui>μεταβλητές περιβάλλοντος</gui> για "
+"Κλικ στο σύμβολο συν δίπλα στο <gui>Μεταβλητές περιβάλλοντος</gui> για "
 "επέκταση της λίστας των μεταβλητών περιβάλλοντος."
 
 #. (itstool) path: item/p
 #: C/debug-tips.page:44
 msgid "Click <gui>New</gui> to add a new entry to the list."
-msgstr "Κλικ <gui>νέο</gui> για προσθήκη νέας καταχώρισης στη λίστα."
+msgstr "Κλικ <gui>Νέο</gui> για προσθήκη νέας καταχώρισης στη λίστα."
 
 #. (itstool) path: item/p
 #: C/debug-tips.page:47
@@ -3751,13 +3743,13 @@ msgid ""
 "Fill in <gui>Name</gui> with <input>G_DEBUG</input> and <gui>Value</gui> "
 "with <input>fatal_criticals</input>."
 msgstr ""
-"Συμπληρώστε το <gui>όνομα</gui> με <input>G_DEBUG</input> και <gui>τιμή</"
+"Συμπληρώστε το <gui>Όνομα</gui> με <input>G_DEBUG</input> και <gui>Τιμή</"
 "gui> με <input>fatal_criticals</input>."
 
 #. (itstool) path: item/p
 #: C/debug-tips.page:51
 msgid "Click <gui>Apply</gui> to confirm the changes."
-msgstr "Κλικ στο <gui>εφαρμογή</gui> για επιβεβαίωση των αλλαγών."
+msgstr "Κλικ στο <gui>Εφαρμογή</gui> για επιβεβαίωση των αλλαγών."
 
 #. (itstool) path: item/p
 #: C/debug-tips.page:54
@@ -3765,8 +3757,8 @@ msgid ""
 "Run the program with the debugger by selecting <guiseq><gui>Run</"
 "gui><gui>Debug Program</gui></guiseq> from the main menu."
 msgstr ""
-"Τρέξιμο του προγράμματος με τον αποσφαλματωτή επιλέγοντας "
-"<guiseq><gui>εκτέλεση</gui><gui>πρόγραμμα αποσφαλμάτωσης</gui></guiseq> από "
+"Εκτέλεση του προγράμματος με τον αποσφαλματωτή επιλέγοντας "
+"<guiseq><gui>Εκτέλεση</gui><gui>Πρόγραμμα αποσφαλμάτωσης</gui></guiseq> από "
 "το κύριο μενού."
 
 #. (itstool) path: item/p
@@ -3828,8 +3820,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> <gui>Watches</"
 "gui></guiseq> to open the <gui>Watches</gui> window."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>προβολή</gui> "
-"<gui>επόπτες</gui></guiseq> για το άνοιγμα του παραθύρου <gui>επόπτες</gui>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Προβολή</gui> "
+"<gui>Επόπτες</gui></guiseq> για το άνοιγμα του παραθύρου <gui>Επόπτες</gui>."
 
 #. (itstool) path: section/p
 #: C/debug-watch.page:40
@@ -3838,7 +3830,7 @@ msgid ""
 "children used to represent structure or array members."
 msgstr ""
 "Όπως οι τοπικές μεταβλητές, όλες οι εκφράσεις εποπτείας εμφανίζονται σε ένα "
-"δέντρο με κατιόντα που χρησιμοποιούνται για την αναπαράσταση μελών δομής ή "
+"δέντρο με θυγατρικά που χρησιμοποιούνται για την αναπαράσταση μελών δομής ή "
 "διανύσματος."
 
 #. (itstool) path: item/p
@@ -3882,8 +3874,8 @@ msgid ""
 "automatically. Right-click and check that <gui>Automatic Update</gui> if "
 "checked. If not, select it."
 msgstr ""
-"Στο παράθυρο <gui>επόπτες</gui>, επιλέξτε τον επιθυμητό επόπτη για αυτόματη "
-"ενημέρωση. Δεξί κλικ και έλεγχος σημείωσης της <gui>αυτόματης ενημέρωσης</"
+"Στο παράθυρο <gui>Επόπτες</gui>, επιλέξτε τον επιθυμητό επόπτη για αυτόματη "
+"ενημέρωση. Δεξί κλικ και έλεγχος σημείωσης της <gui>Αυτόματης ενημέρωσης</"
 "gui>. Εάν όχι, επιλέξτε τον."
 
 #. (itstool) path: section/p
@@ -3897,7 +3889,7 @@ msgid ""
 "In the <gui>Watches</gui> window, right click and select <gui>Update Watch</"
 "gui> to update the selected watch."
 msgstr ""
-"Στο παράθυρο <gui>επόπτες</gui>, δεξί κλικ και επιλογή <gui>ενημέρωση "
+"Στο παράθυρο <gui>Επόπτες</gui>, δεξί κλικ και επιλογή <gui>Ενημέρωση "
 "επόπτη</gui> για ενημέρωση του επιλεγμένου επόπτη."
 
 #. (itstool) path: section/p
@@ -3911,7 +3903,7 @@ msgid ""
 "In the <gui>Watches</gui> window, right click and select <gui>Update all</"
 "gui> to update all watches at the same time."
 msgstr ""
-"Στο παράθυρο <gui>επόπτες</gui>, δεξί κλικ και επιλογή <gui>ενημέρωση όλων</"
+"Στο παράθυρο <gui>Επόπτες</gui>, δεξί κλικ και επιλογή <gui>Ενημέρωση όλων</"
 "gui> για την ταυτόχρονη ενημέρωση όλων των εποπτών."
 
 #. (itstool) path: section/title
@@ -3931,9 +3923,9 @@ msgid ""
 "Watch...</gui></guiseq> or in the <gui>Watches</gui> window, right-click and "
 "select <gui>Add Watch...</gui>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>προσθήκη επόπτη...</gui></guiseq> ή στο παράθυρο <gui>επόπτες</gui>, "
-"δεξί κλικ και επιλογή <gui>προσθήκη επόπτη...</gui>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Προσθήκη επόπτη...</gui></guiseq> ή στο παράθυρο <gui>επόπτες</gui>, "
+"δεξί κλικ και επιλογή <gui>Προσθήκη επόπτη...</gui>."
 
 #. (itstool) path: item/p
 #: C/debug-watch.page:108
@@ -3941,7 +3933,7 @@ msgid ""
 "Enter the expression to watch. Check <gui>Automatic Update</gui> if you want "
 "the expression to be evaluated each time the program is stopped."
 msgstr ""
-"Εισαγωγή της έκφρασης εποπτείας. Σημειώστε <gui>αυτόματη ενημέρωση</gui> εάν "
+"Εισαγωγή της έκφρασης εποπτείας. Σημειώστε <gui>Αυτόματη ενημέρωση</gui> εάν "
 "θέλετε η έκφραση να αξιολογηθεί κάθε φορά που το πρόγραμμα σταματά."
 
 #. (itstool) path: section/p
@@ -3958,16 +3950,16 @@ msgid ""
 "Evaluate</gui></guiseq> or right click in the <gui>Editor</gui> window and "
 "select <gui>Inspect/Evaluate</gui>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αποσφαλμάτωση</gui> "
-"<gui>έλεγχος/αξιολόγηση</gui></guiseq> ή δεξί κλικ στο παράθυρο "
-"<gui>επεξεργαστή</gui> και επιλογή <gui>έλεγχος/αξιολόγηση</gui>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> "
+"<gui>Έλεγχος/Αξιολόγηση</gui></guiseq> ή δεξί κλικ στο παράθυρο "
+"<gui>Επεξεργαστή</gui> και επιλογή <gui>Έλεγχος/Αξιολόγηση</gui>."
 
 #. (itstool) path: item/p
 #: C/debug-watch.page:123
 msgid ""
 "Click on <gui>Add</gui> button to add this expression to the watches list."
 msgstr ""
-"Κλικ στο κουμπί <gui>προσθήκη</gui> για προσθήκη αυτής της έκφρασης στη "
+"Κλικ στο κουμπί <gui>Προσθήκη</gui> για προσθήκη αυτής της έκφρασης στη "
 "λίστα εποπτών."
 
 #. (itstool) path: section/title
@@ -3986,8 +3978,8 @@ msgid ""
 "In the <gui>Watches</gui> window, select the watch you want to remove, then "
 "right-click and select <gui>Remove Watch</gui>."
 msgstr ""
-"Στο παράθυρο <gui>επόπτες</gui>, επιλέξτε τον επιθυμητό επόπτη για αφαίρεση, "
-"έπειτα δεξί κλικ και επιλογή <gui>αφαίρεση επόπτη</gui>."
+"Στο παράθυρο <gui>Επόπτες</gui>, επιλέξτε τον επιθυμητό επόπτη για αφαίρεση, "
+"έπειτα δεξί κλικ και επιλογή <gui>Αφαίρεση επόπτη</gui>."
 
 #. (itstool) path: section/p
 #: C/debug-watch.page:142
@@ -4000,7 +3992,7 @@ msgid ""
 "In the <gui>Watches</gui> window, right-click and select <gui>Remove all</"
 "gui>."
 msgstr ""
-"Στο παράθυρο <gui>επόπτες</gui>, δεξί κλικ και επιλογή <gui>αφαίρεση όλων</"
+"Στο παράθυρο <gui>Επόπτες</gui>, δεξί κλικ και επιλογή <gui>Αφαίρεση όλων</"
 "gui>."
 
 #. (itstool) path: section/p
@@ -4017,8 +4009,8 @@ msgid ""
 "In the <gui>Watches</gui> window, select the variable you want to edit and "
 "double click in the <gui>Value</gui> column."
 msgstr ""
-"Στο παράθυρο <gui>επόπτες</gui>, επιλέξτε την επιθυμητή μεταβλητή για "
-"επεξεργασία και διπλό κλικ στη στήλη <gui>τιμή</gui>."
+"Στο παράθυρο <gui>Επόπτες</gui>, επιλέξτε την επιθυμητή μεταβλητή για "
+"επεξεργασία και διπλό κλικ στη στήλη <gui>Τιμή</gui>."
 
 #. (itstool) path: item/p
 #: C/debug-watch.page:164
@@ -4028,12 +4020,12 @@ msgstr "Εισάγετε τη νέα τιμή."
 #. (itstool) path: info/desc
 #: C/directory-project-backend.page:8
 msgid "Directory project backend."
-msgstr "Κατάλογος οπισθοφυλακής έργου."
+msgstr "Κατάλογος συστήματος υποστήριξης έργου."
 
 #. (itstool) path: page/title
 #: C/directory-project-backend.page:21
 msgid "Directory project backend plugin"
-msgstr "Πρόσθετο καταλόγου οπισθοφυλακής έργου"
+msgstr "Κατάλογος προσθέτου συστήματος υποστήριξης έργου"
 
 #. (itstool) path: page/p
 #: C/directory-project-backend.page:23
@@ -4043,11 +4035,11 @@ msgid ""
 "(for example <file>.c</file>, <file>.py</file>) to be source files. "
 "Directories are kept in order to group source files but there is no target."
 msgstr ""
-"Αυτή είναι η απλούστατη οπισθοφυλακή του έργου. Δεν υπάρχει αρχείο έργου. "
-"Δουλεύει ως θεατής αρχείου, θεωρώντας ότι όλα τα αρχεία που ταιριάζουν σε "
-"τυπικές πηγαίες επεκτάσεις (για παράδειγμα <file>.c</file>, <file>.py</"
-"file>) είναι πηγαία αρχεία. Οι κατάλογοι διατηρούνται για ομαδοποίηση των "
-"πηγαίων αρχείων, αλλά δεν υπάρχει στόχος."
+"Αυτό είναι το πιο απλό σύστημα υποστήριξης του έργου. Δεν υπάρχει αρχείο "
+"έργου. Δουλεύει ως θεατής αρχείου, θεωρώντας ότι όλα τα αρχεία που "
+"ταιριάζουν σε τυπικές πηγαίες επεκτάσεις (για παράδειγμα <file>.c</file>, "
+"<file>.py</file>) είναι πηγαία αρχεία. Οι κατάλογοι διατηρούνται για "
+"ομαδοποίηση των πηγαίων αρχείων, αλλά δεν υπάρχει προορισμός."
 
 #. (itstool) path: page/p
 #: C/directory-project-backend.page:32
@@ -4056,9 +4048,9 @@ msgid ""
 "corresponding backend in <app>Anjuta</app> or if the appropriate backend "
 "does not fully support your project."
 msgstr ""
-"Αυτή η οπισθοφυλακή είναι μια χρήσιμη παράκαμψη εάν το σχέδιο σας δεν έχει "
-"μια αντίστοιχη οπισθοφυλακή στο <app>Anjuta</app> ή εάν η αντίστοιχη "
-"οπισθοφυλακή δεν υποστηρίζει πλήρως το έργο σας."
+"Αυτό το σύστημα υποστήριξης είναι μια χρήσιμη παράκαμψη εάν το έργο σας δεν "
+"έχει ένα αντίστοιχο σύστημα υποστήριξης στο <app>Anjuta</app> ή εάν το "
+"αντίστοιχο σύστημα υποστήριξης δεν υποστηρίζει πλήρως το έργο σας."
 
 #. (itstool) path: page/p
 #: C/directory-project-backend.page:38
@@ -4067,8 +4059,8 @@ msgid ""
 "backend. But if you create a source file in the project directory, with the "
 "right extension, it will be added automatically."
 msgstr ""
-"Δεν είναι δυνατή η προσθήκη ή η αλλαγή του ο,τιδήποτε με έργο που "
-"χρησιμοποιεί αυτήν την οπισθοφυλακή. Αλλά εάν δημιουργήσετε ένα πηγαίο "
+"Δεν είναι δυνατή η προσθήκη ή η αλλαγή σε οτιδήποτε με ένα έργο που "
+"χρησιμοποιεί αυτό το σύστημα υποστήριξης. Αλλά εάν δημιουργήσετε ένα πηγαίο "
 "αρχείο στον κατάλογο του έργου, με τη σωστή επέκταση, θα προστεθεί αυτόματα."
 
 #. (itstool) path: info/desc
@@ -4190,12 +4182,12 @@ msgstr "Το κύριο παράθυρο του <app>Anjuta</app>"
 #. (itstool) path: info/desc
 #: C/language-support-cpp-modelines-emacs.page:9
 msgid "Supported Emacs modelines features."
-msgstr "Υποστηριζόμενα χαρακτηριστικά γραμμών κατάστασης του Emacs."
+msgstr "Υποστηριζόμενα χαρακτηριστικά γραμμών διαμόρφωσης του Emacs."
 
 #. (itstool) path: page/title
 #: C/language-support-cpp-modelines-emacs.page:18
 msgid "Emacs modelines"
-msgstr "Γραμμές κατάστασης Emacs"
+msgstr "Γραμμές διαμόρφωσης Emacs"
 
 #. (itstool) path: page/p
 #: C/language-support-cpp-modelines-emacs.page:20
@@ -4205,15 +4197,15 @@ msgid ""
 "names followed by <code>:</code> and a value, separated by <code>;</code> "
 "and surrounded by <code>-*-</code>."
 msgstr ""
-"Τέτοια γραμμή κατάστασης είναι ένα σχόλιο στην πρώτη γραμμή του αρχείου, ή "
-"στη δεύτερη εν η πρώτη περιέχει το (#!). Αποτελείται από μια λίστα ονομάτων "
+"Τέτοια γραμμή διαμόρφωσης είναι ένα σχόλιο στην πρώτη γραμμή του αρχείου, ή "
+"στη δεύτερη αν η πρώτη περιέχει το (#!). Αποτελείται από μια λίστα ονομάτων "
 "μεταβλητών που ακολουθείται από <code>:</code> και μια τιμή που χωρίζεται "
 "από <code>;</code> και περιβάλλεται από <code>-*-</code>."
 
 #. (itstool) path: page/p
 #: C/language-support-cpp-modelines-emacs.page:25
 msgid "A typical <app>Emacs</app> modeline looks like this:"
-msgstr "Μια τυπική γραμμή κατάστασης του <app>Emacs</app> δείχνει όπως αυτό:"
+msgstr "Μια τυπική γραμμή διαμόρφωσης του <app>Emacs</app> δείχνει όπως αυτό:"
 
 #. (itstool) path: page/code
 #: C/language-support-cpp-modelines-emacs.page:27
@@ -4235,7 +4227,7 @@ msgstr "Το Anjuta υποστηρίζει μόνο τις επόμενες με
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-emacs.page:35
 msgid "<code>indent-tabs-mode</code>"
-msgstr "<code>κατάσταση στηλοθετών εσοχής</code>"
+msgstr "<code>λειτουργία στηλοθετών εσοχής</code>"
 
 #. (itstool) path: item/p
 #: C/language-support-cpp-modelines-emacs.page:36
@@ -4271,12 +4263,12 @@ msgstr "Αριθμός χαρακτήρων κενού που χρησιμοπο
 #. (itstool) path: info/desc
 #: C/language-support-cpp-modelines-vim.page:9
 msgid "Supported Vim modelines features."
-msgstr "Υποστηριζόμενα χαρακτηριστικά γραμμών κατάστασης του Vim."
+msgstr "Υποστηριζόμενα χαρακτηριστικά γραμμών διαμόρφωσης του Vim."
 
 #. (itstool) path: page/title
 #: C/language-support-cpp-modelines-vim.page:18
 msgid "Vim modelines"
-msgstr "Γραμμές κατάστασης του Vim"
+msgstr "Γραμμές διαμόρφωσης του Vim"
 
 #. (itstool) path: page/p
 #: C/language-support-cpp-modelines-vim.page:20
@@ -4286,15 +4278,15 @@ msgid ""
 "names with an optional value after <code>=</code> separated by space or "
 "<code>:</code>."
 msgstr ""
-"Αυτή η γραμμή κατάστασης είναι μια γραμμή στις 5 πρώτες των τελευταίων 5 του "
-"αρχείου που περιέχει <code>vim:</code> ακολουθούμενο από τουλάχιστον ένα "
+"Αυτή η γραμμή διαμόρφωσης είναι μια γραμμή στις 5 πρώτες των τελευταίων 5 "
+"του αρχείου που περιέχει <code>vim:</code> ακολουθούμενο από τουλάχιστον ένα "
 "κενό και μια λίστα ονομάτων μεταβλητών με μια προαιρετική τιμή μετά από "
 "<code>=</code> χωριζόμενη με κενό ή <code>:</code>."
 
 #. (itstool) path: page/p
 #: C/language-support-cpp-modelines-vim.page:25
 msgid "A typical <app>Vim</app> modeline looks like this:"
-msgstr "Μια τυπική γραμμή κατάστασης του <app>Vim</app> δείχνει όπως αυτό:"
+msgstr "Μια τυπική γραμμή διαμόρφωσης του <app>Vim</app> δείχνει όπως αυτό:"
 
 #. (itstool) path: page/code
 #: C/language-support-cpp-modelines-vim.page:27
@@ -4374,12 +4366,12 @@ msgstr "<code>sw</code>"
 #. (itstool) path: info/desc
 #: C/makefile-project-backend.page:8
 msgid "Makefile project backend."
-msgstr "Οπισθοφυλακή έργου makefile."
+msgstr "Σύστημα υποστήριξης έργου makefile."
 
 #. (itstool) path: page/title
 #: C/makefile-project-backend.page:21
 msgid "Makefile project backend plugin"
-msgstr "Πρόσθετο οπισθοφυλακής έργου makefile"
+msgstr "Πρόσθετο συστήματος υποστήριξης έργου makefile"
 
 #. (itstool) path: page/p
 #: C/makefile-project-backend.page:23
@@ -4391,13 +4383,13 @@ msgid ""
 "are the source files. The target of one rule can be a dependency of another "
 "one, allowing several rules to be chained in order to make a final target."
 msgstr ""
-"Το makefile είναι προφανώς ο πιο κοινός τρόπος κατασκευής λογισμικού σε όλα "
-"τα είδη λογισμικού. Ένα makefile περιέχει μια λίστα κανόνων που περιγράφουν "
-"ποιες εντολές πρέπει να εκτελεστούν για τη δημιουργία ενός στόχου από μια "
-"λίστα εξαρτήσεων. Όταν κατασκευάζεται ένα πρόγραμμα, ο στόχος είναι ένα "
-"αρχείο αντικειμένου και οι εξαρτήσεις είναι τα πηγαία αρχεία. Ο στόχος ενός "
-"κανόνα μπορεί να εξαρτάται από έναν άλλο, επιτρέποντας πολλούς κανόνες να "
-"συνδυαστούν για τη δημιουργία ενός τελικού στόχου."
+"Το makefile είναι προφανώς ο πιο κοινός τρόπος δόμησης λογισμικού σε όλα τα "
+"είδη λογισμικού. Ένα makefile περιέχει μια λίστα κανόνων που περιγράφουν "
+"ποιες εντολές πρέπει να εκτελεστούν για τη δημιουργία ενός προορισμού από "
+"μια λίστα εξαρτήσεων. Όταν δομείται ένα πρόγραμμα, ο προορισμός είναι ένα "
+"αρχείο αντικειμένου και οι εξαρτήσεις είναι τα πηγαία αρχεία. Ο προορισμός "
+"ενός κανόνα μπορεί να εξαρτάται από έναν άλλο, επιτρέποντας πολλούς κανόνες "
+"να συνδυαστούν για τη δημιουργία ενός τελικού προορισμού."
 
 #. (itstool) path: page/p
 #: C/makefile-project-backend.page:33
@@ -4408,9 +4400,9 @@ msgid ""
 "extracting source files and targets."
 msgstr ""
 "Είναι χαμηλού επιπέδου, γενικό εργαλείο, που κάνει δύσκολη την εύρεση όλων "
-"των πηγαίων αρχείων και στόχων ενός έργου. Έτσι το <app>Anjuta</app> έχει "
-"περιορισμένη υποστήριξη για makefiles, διαβάζοντας μόνο ένα makefile στο "
-"κορυφαίο κατάλογο του έργου και εξάγοντας πηγαία αρχεία και στόχους."
+"των πηγαίων αρχείων και προορισμών ενός έργου. Έτσι το <app>Anjuta</app> "
+"έχει περιορισμένη υποστήριξη για makefiles, διαβάζοντας μόνο ένα makefile "
+"στο κορυφαίο κατάλογο του έργου και εξάγοντας πηγαία αρχεία και προορισμούς."
 
 #. (itstool) path: note/p
 #: C/makefile-project-backend.page:42
@@ -4419,9 +4411,10 @@ msgid ""
 "to use the directory backend instead. It does not recognize any targets but "
 "should get all source files."
 msgstr ""
-"Εάν η οπισθοφυλακή του έργου δεν βρίσκει όλα τα πηγαία αρχεία, μπορείτε να "
-"προσπαθήσετε να χρησιμοποιήσετε την οπισθοφυλακή καταλόγου. Δεν αναγνωρίζει "
-"οποιοδήποτε στόχο αλλά θα πρέπει να πάρει όλα τα πηγαία αρχεία."
+"Εάν το σύστημα υποστήριξης του έργου δεν βρίσκει όλα τα πηγαία αρχεία, "
+"μπορείτε να προσπαθήσετε να χρησιμοποιήσετε το σύστημα υποστήριξης "
+"καταλόγου. Δεν αναγνωρίζει οποιοδήποτε προορισμό αλλά θα πρέπει να πάρει όλα "
+"τα πηγαία αρχεία."
 
 #. (itstool) path: page/p
 #: C/makefile-project-backend.page:49
@@ -4431,10 +4424,11 @@ msgid ""
 "implemented. It has to be changed by hand using the text editor. When the "
 "makefile is saved, it is automatically reloaded though."
 msgstr ""
-"Αλλαγή ιδιοτήτων, ή πρόσθεση ή αφαίρεση στόχων και πηγαίων αρχείων "
-"απενεργοποιείται με αυτήν την οπισθοφυλακή, καθώς η αυτόματη επεξεργασία του "
-"makefile δεν υλοποιείται. Πρέπει να αλλαχθεί χειροκίνητα χρησιμοποιώντας τον "
-"επεξεργαστή κειμένου. Όταν το makefile αποθηκεύεται, ξαναφορτώνεται αυτόματα."
+"Αλλαγή ιδιοτήτων, ή πρόσθεση ή αφαίρεση προορισμών και πηγαίων αρχείων "
+"απενεργοποιείται με αυτό το σύστημα υποστήριξης, καθώς η αυτόματη "
+"επεξεργασία του makefile δεν υλοποιείται. Πρέπει να αλλαχθεί χειροκίνητα "
+"χρησιμοποιώντας τον επεξεργαστή κειμένου. Όταν το makefile αποθηκεύεται, "
+"ξαναφορτώνεται αυτόματα."
 
 #. (itstool) path: info/desc
 #: C/project-import.page:11
@@ -4457,8 +4451,8 @@ msgid ""
 "these settings files, you will need to import the project. This will not "
 "modify any project files."
 msgstr ""
-"Το <app>Anjuta</app> δεν έχει το δικό του τύπο έργου. Φορτώνει έργα "
-"χρησιμοποιώντας ήδη υπάρχοντες τύπους, όπως makefile ή autotools και δεν "
+"Το <app>Anjuta</app> δεν έχει τη δική του μορφή έργου. Φορτώνει έργα "
+"χρησιμοποιώντας ήδη υπάρχουσες μορφές, όπως makefile ή autotools και δεν "
 "απαιτεί οι άλλοι προγραμματιστές να το χρησιμοποιήσουν. Οι ρυθμίσεις του "
 "Anjuta αποθηκεύονται σε αρχείο με την επέκταση <file>.anjuta</file> και "
 "δημιουργείται ένας κρυφός κατάλογος στον κατάλογο έργου. Για να "
@@ -4474,9 +4468,9 @@ msgid ""
 "Existing Sources</gui> from the drop-down list of the <gui>New</gui> button "
 "in the <gui>top tool bar</gui> to start the project wizard."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αρχείο</gui> <gui>νέο</"
-"gui><gui>έργο από υπάρχουσες πηγές</gui></guiseq> ή <gui>έργο από υπάρχουσες "
-"πηγές</gui> από την πτυσσόμενη λίστα του κουμπιού <gui>νέο</gui> στη "
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αρχείο</gui> <gui>Νέο</"
+"gui><gui>Έργο από υπάρχουσες πηγές</gui></guiseq> ή <gui>Έργο από υπάρχουσες "
+"πηγές</gui> από την πτυσσόμενη λίστα του κουμπιού <gui>Νέο</gui> στη "
 "<gui>κορυφαία γραμμή εργαλείου</gui> για να ξεκινήσει ο οδηγός του έργου."
 
 #. (itstool) path: item/p
@@ -4485,7 +4479,7 @@ msgid ""
 "Select <gui>Import from folder</gui> if the project is already present on "
 "your computer, then select the project directory."
 msgstr ""
-"Επιλέξτε <gui>εισαγωγή από φάκελο</gui> εάν το έργο είναι ήδη παρόν στον "
+"Επιλέξτε <gui>Εισαγωγή από φάκελο</gui> εάν το έργο είναι ήδη παρόν στον "
 "υπολογιστή σας, έπειτα επιλέξτε τον κατάλογο έργου."
 
 #. (itstool) path: item/p
@@ -4495,10 +4489,10 @@ msgid ""
 "to be checked out from a server. Then select the version control system, the "
 "server address and the destination directory on your computer."
 msgstr ""
-"Ή επιλέξτε <gui>εισαγωγή από σύστημα ελέγχου έκδοσης</gui> εάν το έργο "
-"απαιτεί έλεγχο από τον εξυπηρετητή. Έπειτα επιλέξτε το σύστημα ελέγχου "
-"έκδοσης, τη διεύθυνση εξυπηρετητή και τον κατάλογο προορισμού στον "
-"υπολογιστή σας."
+"Ή επιλέξτε <gui>Εισαγωγή από σύστημα ελέγχου έκδοσης</gui> εάν το έργο "
+"απαιτεί έλεγχο από τον διακομιστή. Έπειτα επιλέξτε το σύστημα ελέγχου "
+"έκδοσης, τη διεύθυνση διακομιστή και τον κατάλογο προορισμού στον υπολογιστή "
+"σας."
 
 #. (itstool) path: item/p
 #: C/project-import.page:59
@@ -4508,9 +4502,9 @@ msgid ""
 "change it. When it's done, click on the <gui>Import</gui> button to download "
 "the project if needed and create the files needed by <app>Anjuta</app>."
 msgstr ""
-"Μετά την επιλογή υπάρχοντος έργου, το πλαίσιο κειμένου <gui>όνομα έργου</"
+"Μετά την επιλογή υπάρχοντος έργου, το πλαίσιο κειμένου <gui>Όνομα έργου</"
 "gui> πρέπει να γεμίσει με το όνομα του καταλόγου έργου, αλλά μπορείτε να το "
-"αλλάξετε. Όταν τελειώσετε, κλικ στο κουμπί <gui>εισαγωγή</gui> για κατέβασμα "
+"αλλάξετε. Όταν τελειώσετε, κλικ στο κουμπί <gui>Εισαγωγή</gui> για κατέβασμα "
 "του έργου εάν απαιτείται και δημιουργία των απαιτούμενων αρχείων από το "
 "<app>Anjuta</app>."
 
@@ -4522,11 +4516,11 @@ msgid ""
 "asking you to choose a project backend plugin. Read the project backend "
 "description to find out which one to choose."
 msgstr ""
-"Το <app>Anjuta</app> προσπαθεί να βρει αυτόματα την χρησιμοποιούμενη "
-"οπισθοφυλακή του έργου από το έργο σας. Αλλά εάν είναι δυνατές πολλές "
-"οπισθοφυλακές, θα πάρετε ένα διάλογο που ζητά την επιλογή ενός προσθέτου "
-"οπισθοφυλακής έργου. Διαβάστε την περιγραφή οπισθοφυλακής του έργου για να "
-"βρείτε την κατάλληλη επιλογή."
+"Το <app>Anjuta</app> προσπαθεί να βρει αυτόματα το χρησιμοποιούμενο σύστημα "
+"υποστήριξης του έργου από το έργο σας. Αλλά εάν είναι δυνατά πολλά συστήματα "
+"υποστήριξης, θα πάρετε ένα διάλογο που ζητά την επιλογή ενός προσθέτου "
+"συστήματος υποστήριξης έργου. Διαβάστε την περιγραφή συστήματος υποστήριξης "
+"του έργου για να βρείτε την κατάλληλη επιλογή."
 
 #. (itstool) path: info/desc
 #: C/project-manager-folder-add.page:9
@@ -4544,7 +4538,7 @@ msgid ""
 "A folder allows you to group several target allowing to set common "
 "properties for all of them. It often corresponds to a directory."
 msgstr ""
-"Ένας φάκελος επιτρέπει την ομαδοποίηση πολλών στόχων για κοινό ορισμό "
+"Ένας φάκελος επιτρέπει την ομαδοποίηση πολλών προορισμών για κοινό ορισμό "
 "ιδιοτήτων για όλους τους. Συχνά αντιστοιχεί σε κατάλογο."
 
 #. (itstool) path: item/p
@@ -4555,7 +4549,7 @@ msgid ""
 "<gui>project context menu</gui> appear and select <gui>Add Group</gui>."
 msgstr ""
 "Επιλέξτε την επιθυμητή ομάδα ή έργο για προσθήκη της νέας ομάδας στην "
-"<gui>προβολή έργου</gui>, κλικ στο δεξί πλήκτρο του ποντικιού για την "
+"<gui>Προβολή έργου</gui>, κλικ στο δεξί πλήκτρο του ποντικιού για την "
 "εμφάνιση του <gui>μενού περιεχομένου έργου</gui> και επιλέξτε <gui>προσθήκη "
 "ομάδας</gui>."
 
@@ -4565,8 +4559,8 @@ msgid ""
 "Or from the <gui>main menu</gui>, select <guiseq><gui>Project</gui> <gui>Add "
 "Group</gui></guiseq>."
 msgstr ""
-"Ή από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>έργο</gui> "
-"<gui>προσθήκη ομάδας</gui></guiseq>."
+"Ή από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Έργο</gui> "
+"<gui>Προσθήκη ομάδας</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/project-manager-folder-add.page:33
@@ -4596,7 +4590,7 @@ msgid ""
 "gui> button to add the group to your project."
 msgstr ""
 "Όταν επιλέξετε το γονικό και εισάγετε το όνομα, κλικ στο κουμπί "
-"<gui>προσθήκη</gui> για να προσθέσετε την ομάδα στο έργο σας."
+"<gui>Προσθήκη</gui> για να προσθέσετε την ομάδα στο έργο σας."
 
 #. (itstool) path: info/desc
 #: C/project-manager-folder.page:11
@@ -4627,7 +4621,7 @@ msgid ""
 msgstr ""
 "Επιλέξτε τον επιθυμητό φάκελο για αφαίρεση στην <gui>προβολή έργου</gui>, "
 "κλικ στο δεξί πλήκτρο ποντικιού για την εμφάνιση του <gui>μενού περιεχομένου "
-"έργου</gui> και επιλέξτε <gui>αφαίρεση</gui>."
+"έργου</gui> και επιλέξτε <gui>Αφαίρεση</gui>."
 
 #. (itstool) path: item/p
 #: C/project-manager-folder-remove.page:28
@@ -4641,7 +4635,7 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/project-manager-library-add.page:10
 msgid "Add a custom library to a target."
-msgstr "Προσθήκη προσαρμοσμένης βιβλιοθήκης σε στόχο."
+msgstr "Προσθήκη προσαρμοσμένης βιβλιοθήκης σε προορισμό."
 
 #. (itstool) path: page/title
 #: C/project-manager-library-add.page:23
@@ -4684,7 +4678,7 @@ msgstr ""
 "Επιλέξτε τον κατάλογο που περιέχει το επιθυμητό πρόγραμμα για προσθήκη στη "
 "νέα βιβλιοθήκη στην <gui>προβολή έργου</gui>, κλικ στο δεξί πλήκτρο του "
 "ποντικιού για την εμφάνιση του <gui>μενού περιεχομένου έργου</gui> και "
-"επιλέξτε <gui>ιδιότητες</gui>."
+"επιλέξτε <gui>Ιδιότητες</gui>."
 
 #. (itstool) path: item/p
 #: C/project-manager-library-add.page:41 C/project-manager-library-add.page:65
@@ -4694,8 +4688,8 @@ msgid ""
 "currently selected item in the project view. You can select a different item "
 "in the drop-down list button."
 msgstr ""
-"Ή από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>έργο</gui> "
-"<gui>ιδιότητες</gui></guiseq>. Από προεπιλογή, επεξεργάζεται τις ιδιότητες "
+"Ή από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Έργο</gui> "
+"<gui>Ιδιότητες</gui></guiseq>. Από προεπιλογή, επεξεργάζεται τις ιδιότητες "
 "του τρέχοντος επιλεγμένου στοιχείου στην προβολή έργου. Μπορείτε να "
 "επιλέξετε διαφορετικό στοιχείο στο κουμπί πτυσσόμενης λίστας."
 
@@ -4714,8 +4708,8 @@ msgstr ""
 "προσθέσετε <input>-I<var>include_path</var></input> στην ιδιότητα "
 "<gui>σημαίες προεπεξεργαστή C</gui>, εάν χρησιμοποιείτε <app>gcc</app> ως "
 "μεταγλωττιστή σας. Μπορείτε να προσθέσετε πολλές διαδρομές χωρισμένες με "
-"κενά. Αυτές οι επιλογές θα χρησιμοποιηθούν για όλους τους στόχους σε αυτόν "
-"τον κατάλογο."
+"κενά. Αυτές οι επιλογές θα χρησιμοποιηθούν για όλους τους προορισμούς σε "
+"αυτόν τον κατάλογο."
 
 #. (itstool) path: item/p
 #: C/project-manager-library-add.page:55
@@ -4723,8 +4717,8 @@ msgid ""
 "You might have to expand the <gui>More options</gui> button to see this. "
 "Click on the <gui>Apply</gui> button when you are done."
 msgstr ""
-"Ίσως χρειαστεί να επεκτείνετε το κουμπί <gui>περισσότερες επιλογές</gui> για "
-"να το δείτε. Κλικ στο κουμπί <gui>εφαρμογή</gui> όταν τελειώσετε."
+"Ίσως χρειαστεί να επεκτείνετε το κουμπί <gui>Περισσότερες επιλογές</gui> για "
+"να το δείτε. Κλικ στο κουμπί <gui>Εφαρμογή</gui> όταν τελειώσετε."
 
 #. (itstool) path: item/p
 #: C/project-manager-library-add.page:59
@@ -4734,10 +4728,10 @@ msgid ""
 "mouse button to make the <gui>project context menu</gui> appear and select "
 "<gui>Properties</gui>."
 msgstr ""
-"Έπειτα, πρέπει να προσθέσετε τη βιβλιοθήκη σε στόχο. Επιλέξτε τον επιθυμητό "
-"στόχο για προσθήκη στη βιβλιοθήκη στην <gui>προβολή έργου</gui>, κλικ στο "
-"δεξί πλήκτρο του ποντικιού για την εμφάνιση του <gui>μενού περιεχομένου "
-"έργου</gui> και επιλέξτε <gui>ιδιότητες</gui>."
+"Έπειτα, πρέπει να προσθέσετε τη βιβλιοθήκη σε προορισμό. Επιλέξτε τον "
+"επιθυμητό προορισμό για προσθήκη στη βιβλιοθήκη στην <gui>προβολή έργου</"
+"gui>, κλικ στο δεξί πλήκτρο του ποντικιού για την εμφάνιση του <gui>μενού "
+"περιεχομένου έργου</gui> και επιλέξτε <gui>Ιδιότητες</gui>."
 
 #. (itstool) path: item/p
 #: C/project-manager-library-add.page:71
@@ -4748,7 +4742,7 @@ msgid ""
 "<file>lib</file> prefix and without the <file>.a</file> or <file>.so</file> "
 "extension."
 msgstr ""
-"Πρέπει να ορίσετε την ιδιότητα <gui>σημαίες συνδέσμου</gui>, προσθέτοντας "
+"Πρέπει να ορίσετε την ιδιότητα <gui>Σημαίες συνδέσμου</gui>, προσθέτοντας "
 "<input>-l<var>library_name</var></input> εάν ο μεταγλωττιστής σας είναι "
 "<app>gcc</app>. <var>library_name</var> είναι το όνομα του αρχείου "
 "βιβλιοθήκης χωρίς το πρόθεμα <file>lib</file> και χωρίς την επέκταση <file>."
@@ -4768,7 +4762,7 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/project-manager-library.page:13
 msgid "Add or remove libraries to project targets."
-msgstr "Προσθέστε ή αφαιρέστε βιβλιοθήκες σε στόχους έργου."
+msgstr "Προσθέστε ή αφαιρέστε βιβλιοθήκες σε προορισμούς έργου."
 
 #. (itstool) path: page/title
 #: C/project-manager-library.page:22
@@ -4778,7 +4772,7 @@ msgstr "Διαχείριση βιβλιοθηκών"
 #. (itstool) path: info/desc
 #: C/project-manager-library-remove.page:10
 msgid "Remove a custom library from a target."
-msgstr "Αφαίρεση μιας προσαρμοσμένης βιβλιοθήκης από στόχο."
+msgstr "Αφαίρεση μιας προσαρμοσμένης βιβλιοθήκης από προορισμό."
 
 #. (itstool) path: page/title
 #: C/project-manager-library-remove.page:23
@@ -4792,10 +4786,10 @@ msgid ""
 "<gui>project view</gui>, click on the right mouse button to make the "
 "<gui>project context menu</gui> appear and select <gui>Properties</gui>."
 msgstr ""
-"Επιλέξτε τον στόχο που έχει την επιθυμητή βιβλιοθήκη για αφαίρεση στην "
+"Επιλέξτε τον προορισμό που έχει την επιθυμητή βιβλιοθήκη για αφαίρεση στην "
 "<gui>προβολή έργου</gui>, κλικ στο δεξί πλήκτρο του ποντικιού για την "
 "εμφάνιση του <gui>μενού περιεχομένου έργου</gui> και επιλέξτε "
-"<gui>ιδιότητες</gui>."
+"<gui>Ιδιότητες</gui>."
 
 #. (itstool) path: item/p
 #: C/project-manager-library-remove.page:33
@@ -4805,13 +4799,13 @@ msgid ""
 "changes to the project files."
 msgstr ""
 "Αφαιρέστε τη βιβλιοθήκη από τις <gui>σημαίες προεπεξεργαστή C</gui> και τις "
-"ιδιότητες <gui>σημαίες συνδέσμου</gui>. Κλικ στο κουμπί <gui>εφαρμογή</gui> "
+"ιδιότητες <gui>Σημαίες συνδέσμου</gui>. Κλικ στο κουμπί <gui>Εφαρμογή</gui> "
 "για να γράψετε τις αλλαγές στα αρχεία έργου."
 
 #. (itstool) path: info/desc
 #: C/project-manager-module-add.page:10
 msgid "Add a set of libraries to a target."
-msgstr "Προσθήκη συνόλου βιβλιοθηκών σε στόχο."
+msgstr "Προσθήκη συνόλου βιβλιοθηκών σε προορισμό."
 
 #. (itstool) path: page/title
 #: C/project-manager-module-add.page:23
@@ -4842,7 +4836,7 @@ msgid ""
 msgstr ""
 "Επιλέξτε το επιθυμητό πρόγραμμα για προσθήκη της νέας βιβλιοθήκης στην "
 "<gui>προβολή έργου</gui>, κλικ στο δεξί πλήκτρο του ποντικιού για την "
-"εμφάνιση του <gui>μενού περιεχομένου έργου</gui> και επιλέξτε <gui>προσθήκη "
+"εμφάνιση του <gui>μενού περιεχομένου έργου</gui> και επιλέξτε <gui>Προσθήκη "
 "βιβλιοθήκης</gui>."
 
 #. (itstool) path: item/p
@@ -4851,8 +4845,8 @@ msgid ""
 "Or from the <gui>main menu</gui>, select <guiseq><gui>Project</gui> <gui>Add "
 "Library...</gui></guiseq>."
 msgstr ""
-"Ή από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>έργο</gui> "
-"<gui>προσθήκη βιβλιοθήκης...</gui></guiseq>."
+"Ή από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Έργο</gui> "
+"<gui>Προσθήκη βιβλιοθήκης...</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/project-manager-module-add.page:41
@@ -5012,7 +5006,7 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/project-manager-module-remove.page:10
 msgid "Remove a set of libraries from a target."
-msgstr "Αφαίρεση συνόλου βιβλιοθηκών από στόχο."
+msgstr "Αφαίρεση συνόλου βιβλιοθηκών από έναν προορισμό."
 
 #. (itstool) path: page/title
 #: C/project-manager-module-remove.page:23
@@ -5028,13 +5022,13 @@ msgid ""
 msgstr ""
 "Επιλέξτε την επιθυμητή βιβλιοθήκη για αφαίρεση στην <gui>προβολή έργου</"
 "gui>, κλικ στο δεξί πλήκτρο του ποντικιού για την εμφάνιση του <gui>μενού "
-"περιεχομένου έργου</gui> και επιλέξτε <gui>αφαίρεση</gui>."
+"περιεχομένου έργου</gui> και επιλέξτε <gui>Αφαίρεση</gui>."
 
 #. (itstool) path: item/p
 #: C/project-manager-module-remove.page:33
 msgid "Confirm the removal. This library will be removed from the target."
 msgstr ""
-"Επιβεβαιώστε την αφαίρεση. Αυτή η βιβλιοθήκη θα αφαιρεθεί από το στόχο."
+"Επιβεβαιώστε την αφαίρεση. Αυτή η βιβλιοθήκη θα αφαιρεθεί από τον προορισμό."
 
 #. (itstool) path: info/desc
 #: C/project-manager-package-remove.page:9
@@ -5055,7 +5049,7 @@ msgid ""
 msgstr ""
 "Επιλέξτε το επιθυμητό πακέτο για αφαίρεση στην <gui>προβολή έργου</gui>, "
 "κλικ στο δεξί πλήκτρο του ποντικιού για την εμφάνιση του <gui>μενού "
-"περιεχομένου έργου</gui> και επιλέξτε <gui>αφαίρεση</gui>."
+"περιεχομένου έργου</gui> και επιλέξτε <gui>Αφαίρεση</gui>."
 
 #. (itstool) path: item/p
 #: C/project-manager-package-remove.page:32
@@ -5080,9 +5074,9 @@ msgid ""
 "<app>Anjuta</app> supports several already existing project formats through "
 "plugin backends. The main one is the autotools format commonly used on Linux."
 msgstr ""
-"Το <app>Anjuta</app> υποστηρίζει πολλούς ήδη υπάρχοντες τύπους έργου μέσω "
-"οπισθοφυλακών προσθέτου. Ο κύριος τύπος είναι η μορφή autotools κοινή στο "
-"Linux."
+"Το <app>Anjuta</app> υποστηρίζει πολλές ήδη υπάρχουσες μορφές έργου μέσω "
+"συστημάτων υποστήριξης προσθέτων. Ο κύριος τύπος είναι η μορφή autotools "
+"κοινή στο Linux."
 
 #. (itstool) path: page/p
 #: C/project-manager.page:29
@@ -5091,9 +5085,10 @@ msgid ""
 "project in <app>Anjuta</app>. It is displayed in the properties of the "
 "project root node and can be changed at any time."
 msgstr ""
-"Η υποστήριξη του έργου που χρησιμοποιείται επιλέγεται κατά τη δημιουργία ή "
-"εισαγωγή ενός νέου έργου στο <app>Anjuta</app>. Εμφανίζεται στις ιδιότητες "
-"του ριζικού κόμβου του έργου και μπορεί να αλλαχθεί οποτεδήποτε."
+"Το σύστημα υποστήριξης του έργου που χρησιμοποιείται επιλέγεται κατά τη "
+"δημιουργία ή εισαγωγή ενός νέου έργου στο <app>Anjuta</app>. Εμφανίζεται "
+"στις ιδιότητες του ριζικού κόμβου του έργου και μπορεί να αλλαχθεί "
+"οποτεδήποτε."
 
 #. (itstool) path: page/p
 #: C/project-manager.page:35
@@ -5101,13 +5096,13 @@ msgid ""
 "Whatever the underlying backend, the graphical interface is the same but "
 "some functions might be disabled."
 msgstr ""
-"Με οποιαδήποτε την υποκείμενη οπισθοφυλακή, η γραφική διεπαφή είναι η ίδια "
-"αλλά μερικές λειτουργίες ίσως είναι ανενεργές."
+"Όποιο και αν είναι το υποκείμενο σύστημα υποστήριξης, η γραφική διεπαφή "
+"είναι η ίδια αλλά μερικές λειτουργίες ίσως είναι ανενεργές."
 
 #. (itstool) path: section/title
 #: C/project-manager.page:41
 msgid "Project Backend Plugin"
-msgstr "Πρόσθετο οπισθοφυλακής έργου"
+msgstr "Πρόσθετο συστήματος υποστήριξης έργου"
 
 #
 #. (itstool) path: info/desc
@@ -5137,10 +5132,10 @@ msgid ""
 "<gui>project view</gui>, click on the right mouse button to make the "
 "<gui>project context menu</gui> appear and select <gui>Add Source File</gui>."
 msgstr ""
-"Επιλέξτε τον επιθυμητό στόχο για προσθήκη των νέων αρχείων στόχου στην "
-"<gui>προβολή έργου</gui>, κλικ στο δεξί πλήκτρο ποντικιού για την εμφάνιση "
-"του <gui>μενού περιεχομένου έργου</gui> και επιλέξτε <gui>προσθήκη πηγαίου "
-"αρχείου</gui>."
+"Επιλέξτε τον επιθυμητό προορισμό για προσθήκη των νέων αρχείων προορισμού "
+"στην <gui>προβολή έργου</gui>, κλικ στο δεξί πλήκτρο ποντικιού για την "
+"εμφάνιση του <gui>μενού περιεχομένου έργου</gui> και επιλέξτε <gui>Προσθήκη "
+"πηγαίου αρχείου</gui>."
 
 #. (itstool) path: item/p
 #: C/project-manager-source-add.page:31
@@ -5149,15 +5144,15 @@ msgid ""
 "Source File...</gui></guiseq>"
 msgstr ""
 "Ή από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>έργο</gui> "
-"<gui>προσθήκη πηγαίου αρχείου...</gui></guiseq>"
+"<gui>Προσθήκη πηγαίου αρχείου...</gui></guiseq>"
 
 #. (itstool) path: item/p
 #: C/project-manager-source-add.page:35
 msgid ""
 "You can select another target in the top <gui>target chooser button</gui>."
 msgstr ""
-"Μπορείτε να επιλέξτε έναν άλλο στόχο στην κορυφή <gui>κουμπί επιλογέα "
-"στόχου</gui>."
+"Μπορείτε να επιλέξτε έναν άλλο προορισμό στην κορυφή <gui>κουμπί επιλογέα "
+"προορισμού</gui>."
 
 #. (itstool) path: item/p
 #: C/project-manager-source-add.page:39
@@ -5168,7 +5163,7 @@ msgid ""
 "the <key>Shift</key> to select a range of files."
 msgstr ""
 "Στον επιλογέα αρχείου παρακάτω, επιλέξτε τα επιθυμητά αρχεία για προσθήκη. "
-"Έπειτα κλικ στο κουμπί <gui>προσθήκη</gui> για να προσθέσετε αυτά τα αρχεία "
+"Έπειτα κλικ στο κουμπί <gui>Προσθήκη</gui> για να προσθέσετε αυτά τα αρχεία "
 "στο έργο σας. Μπορείτε να επιλέξετε πολλά αρχεία ταυτόχρονα κρατώντας "
 "πατημένο το πλήκτρο <key>Ctrl</key> πή χρησιμοποιώντας το <key>Shift</key> "
 "για να επιλέξετε μια περιοχή αρχείων."
@@ -5181,8 +5176,8 @@ msgid ""
 "outside the project directory are automatically copied inside to fulfill "
 "this requirement."
 msgstr ""
-"Μπορείτε να προσθέσετε αρχεία σε υποκαταλόγους του έργου. Οι περισσότεροι "
-"τύποι έργου απαιτούν τα αρχεία να είναι κάτω από τον κατάλογο έργου. "
+"Μπορείτε να προσθέσετε αρχεία σε υποκαταλόγους του έργου. Οι περισσότερες "
+"μορφές έργου απαιτούν τα αρχεία να είναι κάτω από τον κατάλογο έργου. "
 "Προστεθέντα πηγαία αρχεία έξω από τον κατάλογο έργου αντιγράφονται αυτόματα "
 "μέσα για να εκπληρώσουν αυτήν την απαίτηση."
 
@@ -5215,7 +5210,7 @@ msgid ""
 msgstr ""
 "Επιλέξτε τον επιθυμητό αρχείο για αφαίρεση στην <gui>προβολή έργου</gui>, "
 "κλικ στο δεξί πλήκτρο ποντικιού για την εμφάνιση του <gui>μενού περιεχομένου "
-"έργου</gui> και επιλέξτε <gui>αφαίρεση</gui>."
+"έργου</gui> και επιλέξτε <gui>Αφαίρεση</gui>."
 
 #. (itstool) path: item/p
 #: C/project-manager-source-remove.page:32
@@ -5239,12 +5234,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/project-manager-target-add.page:9
 msgid "Add a target to a project."
-msgstr "Προσθήκη στόχου σε έργο."
+msgstr "Προσθήκη προορισμού σε έργο."
 
 #. (itstool) path: page/title
 #: C/project-manager-target-add.page:22
 msgid "Add a Target"
-msgstr "Προσθήκη στόχου"
+msgstr "Προσθήκη προορισμού"
 
 #. (itstool) path: page/p
 #: C/project-manager-target-add.page:24
@@ -5253,9 +5248,10 @@ msgid ""
 "represent a program, with all its source files as its children or only group "
 "data files those should be installed at the same place."
 msgstr ""
-"Ένας στόχος ομαδοποιεί αρχεία μαζί και ορίζει τη χρήση τους. Χρησιμοποιείται "
-"για αναπαράσταση προγράμματος, με όλα τα πηγαία αρχεία του ως κατιόντα του ή "
-"μόνο ομάδα αρχείων δεδομένων που πρέπει να εγκατασταθούν στην ίδια τοποθεσία."
+"Ένας προορισμός ομαδοποιεί αρχεία μαζί και ορίζει τη χρήση τους. "
+"Χρησιμοποιείται για αναπαράσταση προγράμματος, με όλα τα πηγαία αρχεία του "
+"ως θυγατρικά του ή μόνο ομάδα αρχείων δεδομένων που πρέπει να εγκατασταθούν "
+"στην ίδια τοποθεσία."
 
 #. (itstool) path: item/p
 #: C/project-manager-target-add.page:30
@@ -5264,9 +5260,10 @@ msgid ""
 "<gui>project view</gui>, click on the right mouse button to make the "
 "<gui>project context menu</gui> appear and select <gui>New Target</gui>."
 msgstr ""
-"Επιλέξτε τον επιθυμητό κατάλογο για προσθήκη του νέου στόχου στην "
+"Επιλέξτε τον επιθυμητό κατάλογο για προσθήκη του νέου προορισμού στην "
 "<gui>προβολή έργου</gui>, κλικ στο δεξί πλήκτρο ποντικιού για την εμφάνιση "
-"του <gui>μενού περιεχομένου έργου</gui> και επιλέξτε <gui>νέος στόχος</gui>."
+"του <gui>μενού περιεχομένου έργου</gui> και επιλέξτε <gui>Νέος προορισμός</"
+"gui>."
 
 #. (itstool) path: item/p
 #: C/project-manager-target-add.page:34
@@ -5274,8 +5271,8 @@ msgid ""
 "Or from the <gui>main menu</gui>, select <guiseq><gui>Project</gui> <gui>New "
 "Target...</gui></guiseq>."
 msgstr ""
-"Ή από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>έργο</gui> <gui>νέος "
-"στόχος...</gui></guiseq>."
+"Ή από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Έργο</gui> <gui>Νέος "
+"προορισμός...</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/project-manager-target-add.page:38
@@ -5293,9 +5290,9 @@ msgid ""
 "below. Depending on your project backend, various types of target are "
 "possible, see at the bottom."
 msgstr ""
-"Εισάγετε ένα όνομα στόχου και επιλέξτε τον τύπο του στόχου στην πτυσσόμενη "
-"λίστα παρακάτω. Ανάλογα με την οπισθοφυλακή του έργου σας, ποικίλοι τύποι "
-"στόχου είναι δυνατοί, δείτε στον πάτο."
+"Εισάγετε ένα όνομα προορισμού και επιλέξτε τον τύπο του προορισμού στην "
+"πτυσσόμενη λίστα παρακάτω. Ανάλογα με το σύστημα υποστήριξης του έργου σας, "
+"ποικίλοι τύποι προορισμού είναι δυνατοί, δείτε στο κάτω μέρος."
 
 #. (itstool) path: note/p
 #: C/project-manager-target-add.page:45
@@ -5303,7 +5300,7 @@ msgid ""
 "Target names are typically restricted to letters, digits and the underscore, "
 "so it's safer to avoid other characters."
 msgstr ""
-"Τα ονόματα στόχου περιορίζονται τυπικά σε γράμματα, αριθμούς και την "
+"Τα ονόματα προορισμού περιορίζονται τυπικά σε γράμματα, αριθμούς και την "
 "υπογράμμιση, έτσι είναι ασφαλέστερο να αποφύγετε άλλους χαρακτήρες."
 
 #. (itstool) path: item/p
@@ -5312,28 +5309,28 @@ msgid ""
 "When you have chosen the target name, type and parent, click on the "
 "<gui>Add</gui> button to create this new target."
 msgstr ""
-"Όταν επιλέξετε το όνομα στόχου, τύπο και ανιόντα, κλικ στο κουμπί "
-"<gui>προσθήκη</gui> για δημιουργία αυτού του νέου στόχου."
+"Όταν επιλέξετε το όνομα προορισμού , τύπο και γονικό, κλικ στο κουμπί "
+"<gui>Προσθήκη</gui> για δημιουργία αυτού του νέου προορισμού."
 
 #. (itstool) path: info/desc
 #: C/project-manager-target.page:12
 msgid "Add, edit or remove targets from a project."
-msgstr "Προσθήκη, επεξεργασία ή αφαίρεση στόχων από ένα έργο."
+msgstr "Προσθήκη, επεξεργασία ή αφαίρεση προορισμών από ένα έργο."
 
 #. (itstool) path: page/title
 #: C/project-manager-target.page:21
 msgid "Manage Targets"
-msgstr "Διαχείριση στόχων"
+msgstr "Διαχείριση προορισμών"
 
 #. (itstool) path: info/desc
 #: C/project-manager-target-remove.page:9
 msgid "Remove a target from a project."
-msgstr "Αφαίρεση στόχου από έργο."
+msgstr "Αφαίρεση προορισμού από έργο."
 
 #. (itstool) path: page/title
 #: C/project-manager-target-remove.page:22
 msgid "Remove a Target"
-msgstr "Αφαίρεση στόχου"
+msgstr "Αφαίρεση προορισμού"
 
 #. (itstool) path: item/p
 #: C/project-manager-target-remove.page:26
@@ -5342,9 +5339,9 @@ msgid ""
 "on the right mouse button to make the <gui>project context menu</gui> appear "
 "and select <gui>Remove</gui>."
 msgstr ""
-"Επιλέξτε τον επιθυμητό στόχο για αφαίρεση στην <gui>προβολή έργου</gui>, "
+"Επιλέξτε τον επιθυμητό προορισμό για αφαίρεση στην <gui>προβολή έργου</gui>, "
 "κλικ στο δεξί πλήκτρο ποντικιού για την εμφάνιση του <gui>μενού περιεχομένου "
-"έργου</gui> και επιλέξτε <gui>αφαίρεση</gui>."
+"έργου</gui> και επιλέξτε <gui>Αφαίρεση</gui>."
 
 #. (itstool) path: item/p
 #: C/project-manager-target-remove.page:32
@@ -5352,9 +5349,9 @@ msgid ""
 "Confirm the removal. The target and all its properties will be removed from "
 "the project file. All its files stay untouched on your hard disk."
 msgstr ""
-"Επιβεβαιώστε την αφαίρεση. Ο στόχος και όλες οι ιδιότητες του θα αφαιρεθούν "
-"από το αρχείο έργου. Όλα τα αρχεία του παραμένουν άθικτα στον σκληρό σας "
-"δίσκο."
+"Επιβεβαιώστε την αφαίρεση. Ο προορισμός και όλες οι ιδιότητες του θα "
+"αφαιρεθούν από το αρχείο έργου. Όλα τα αρχεία του παραμένουν άθικτα στον "
+"σκληρό σας δίσκο."
 
 #. (itstool) path: info/desc
 #: C/project-manager-treeview.page:8
@@ -5376,11 +5373,11 @@ msgid ""
 "in several categories, depending on the backend not all are available:"
 msgstr ""
 "Ένα έργο αναπαριστάνεται από ένα δέντρο, το ριζικό στοιχείο αντιστοιχεί στο "
-"έργο, ενώ τα κατιόντα αντιπροσωπεύουν προγράμματα, βιβλιοθήκες, καταλόγους "
+"έργο, ενώ τα θυγατρικά αντιπροσωπεύουν προγράμματα, βιβλιοθήκες, καταλόγους "
 "και πηγαία αρχεία. Κάθε στοιχείο μπορεί να έχει ιδιότητες επιτρέποντας τον "
 "ορισμό περισσότερων λεπτομερειών όπως έκδοση έργου, σημαίες μεταγλωτιστή ή "
 "καταλόγους εγκατάστασης. Αυτά τα στοιχεία διαιρούνται σε αρκετές κατηγορίες, "
-"ανάλογα με την οπισθοφυλακή και δεν είναι όλα διαθέσιμα:"
+"ανάλογα με το σύστημα υποστήριξης και δεν είναι όλα διαθέσιμα:"
 
 #. (itstool) path: item/title
 #: C/project-manager-treeview.page:28
@@ -5412,9 +5409,10 @@ msgid ""
 "new\"/>."
 msgstr ""
 "Αυτό είναι ένα σύνολο πακέτων που χρησιμεύει στο έργο autotools. "
-"Εμφανίζονται ως κατιόντα του ριζικού κόμβου για να αντιπροσωπεύσουν όλα τα "
-"καθοριζόμενα αρθρώματα και ως κατιόντα κάθε στόχου που τα χρησιμοποιεί. Για "
-"περισσότερες λεπτομέρειες, δείτε <link xref=\"project-manager-module-new\"/>."
+"Εμφανίζονται ως θυγατρικά του ριζικού κόμβου για να αντιπροσωπεύσουν όλα τα "
+"καθοριζόμενα αρθρώματα και ως θυγατρικά κάθε προορισμού που τα χρησιμοποιεί. "
+"Για περισσότερες λεπτομέρειες, δείτε <link xref=\"project-manager-module-new"
+"\"/>."
 
 #. (itstool) path: item/title
 #: C/project-manager-treeview.page:41
@@ -5429,7 +5427,7 @@ msgid ""
 "library\"/>."
 msgstr ""
 "Αυτό είναι μια πακεταρισμένη βιβλιοθήκη που χρησιμεύει στο έργο autotools. "
-"Εμφανίζονται ως κατιόντα καθενός αρθρώματος. Για περισσότερες λεπτομέρειες, "
+"Εμφανίζονται ως θυγατρικά κάθε αρθρώματος. Για περισσότερες λεπτομέρειες, "
 "δείτε <link xref=\"project-manager-library\"/>."
 
 #. (itstool) path: item/title
@@ -5444,14 +5442,14 @@ msgid ""
 "often implemented by sub directories. For more details, see <link xref="
 "\"project-manager-folder\"/>."
 msgstr ""
-"Αυτό χρησιμεύει για ομαδοποίηση στόχων επιτρέποντας τον ορισμό κοινών "
+"Αυτό χρησιμεύει για ομαδοποίηση προορισμών επιτρέποντας τον ορισμό κοινών "
 "ιδιοτήτων. Υλοποιούνται συχνά από υποκαταλόγους. Για περισσότερες "
 "λεπτομέρειες, δείτε <link xref=\"project-manager-folder\"/>."
 
 #. (itstool) path: item/title
 #: C/project-manager-treeview.page:53
 msgid "Target"
-msgstr "Στόχος"
+msgstr "Προορισμός"
 
 #. (itstool) path: item/p
 #: C/project-manager-treeview.page:54
@@ -5462,11 +5460,11 @@ msgid ""
 "compiled programs or libraries. For more details see <link xref=\"project-"
 "manager-target\"/>."
 msgstr ""
-"Ομαδοποιεί αρχεία και καθορίζει τη χρήση τους. Υπάρχουν πολλά είδη στόχων, "
-"για παράδειγμα προγράμματα, βιβλιοθήκες ή δεδομένα, που αντιστοιχούν σε "
-"διαφορετική χρήση κατιόντων φακέλων. Συχνά αντιπροσωπεύουν δημιουργημένα "
-"αρχεία έργου όπως μεταγλωττισμένα προγράμματα ή βιβλιοθήκες. Για "
-"περισσότερες λεπτομέρειες δείτε <link xref=\"project-manager-target\"/>."
+"Ομαδοποιεί αρχεία και καθορίζει τη χρήση τους. Υπάρχουν πολλά είδη "
+"προορισμών, για παράδειγμα προγράμματα, βιβλιοθήκες ή δεδομένα, που "
+"αντιστοιχούν σε διαφορετική χρήση θυγατρικά φακέλων. Συχνά αντιπροσωπεύουν "
+"δημιουργημένα αρχεία έργου όπως μεταγλωττισμένα προγράμματα ή βιβλιοθήκες. "
+"Για περισσότερες λεπτομέρειες δείτε <link xref=\"project-manager-target\"/>."
 
 #. (itstool) path: note/p
 #: C/project-manager-treeview.page:61
@@ -5475,9 +5473,10 @@ msgid ""
 "create a shortcut allowing to access them more easily. By default all "
 "program targets are already put here."
 msgstr ""
-"Μπορείτε να σύρετε και να αποθέσετε στόχους στην αρχή της προβολής δένδρου "
-"του έργου, να δημιουργήσετε μια συντόμευση επιτρέποντας την πιο εύκολη "
-"πρόσβασή τους. Από προεπιλογή, όλοι οι στόχοι προγράμματος είναι ήδη εδώ."
+"Μπορείτε να σύρετε και να αποθέσετε προορισμούς στην αρχή της προβολής "
+"δένδρου του έργου, να δημιουργήσετε μια συντόμευση επιτρέποντας την πιο "
+"εύκολη πρόσβασή τους. Από προεπιλογή, όλοι οι προορισμοί προγράμματος είναι "
+"ήδη εδώ."
 
 #. (itstool) path: item/title
 #: C/project-manager-treeview.page:68
@@ -5494,10 +5493,11 @@ msgid ""
 "\"project-manager-source\"/>."
 msgstr ""
 "Κάθε πηγαίο αρχείο αντιπροσωπεύεται από ένα στοιχείο στην προβολή έργου. Η "
-"χρήση κάθε αρχείου εξαρτάται από το γονικό στόχο. Όλοι οι κατιόντες ενός "
-"στόχου προγράμματος μεταγλωττίζονται για τη δημιουργία του. Ενώ οι κατιόντες "
-"στόχου δεδομένων απλά αντιγράφονται σε κατάλογο, όταν το έργο εγκαθίσταται. "
-"Για περισσότερες λεπτομέρειες δείτε <link xref=\"project-manager-source\"/>."
+"χρήση κάθε αρχείου εξαρτάται από τον γονικό προορισμό. Όλα τα θυγατρικά ενός "
+"προορισμού προγράμματος μεταγλωττίζονται για τη δημιουργία του. Ενώ τα "
+"θυγατρικά προορισμού δεδομένων απλά αντιγράφονται σε κατάλογο, όταν το έργο "
+"εγκαθίσταται. Για περισσότερες λεπτομέρειες δείτε <link xref=\"project-"
+"manager-source\"/>."
 
 #. (itstool) path: info/desc
 #: C/project-wizard-create.page:10
@@ -5524,8 +5524,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>File</gui> <gui>New</"
 "gui><gui>Project</gui></guiseq>."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>αρχείο</gui> <gui>νέο</"
-"gui><gui>έργο</gui></guiseq>."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αρχείο</gui> <gui>Νέο</"
+"gui><gui>Έργο</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/project-wizard-create.page:36
@@ -5533,8 +5533,8 @@ msgid ""
 "Or from the drop-down list of the <gui>New</gui> button in the <gui>top tool "
 "bar</gui>, select <gui>Project</gui> to start the project wizard."
 msgstr ""
-"Ή από την πτυσσόμενη λίστα του κουμπιού <gui>νέο</gui> στην <gui> πάνω "
-"γραμμή εργαλείων</gui>, επιλέξτε <gui>έργο</gui> για εκκίνηση του οδηγού "
+"Ή από την πτυσσόμενη λίστα του κουμπιού <gui>Νέο</gui> στην <gui> πάνω "
+"γραμμή εργαλείων</gui>, επιλέξτε <gui>Έργο</gui> για εκκίνηση του οδηγού "
 "έργου."
 
 #. (itstool) path: item/p
@@ -5544,7 +5544,7 @@ msgid ""
 "click on <gui>Forward</gui>."
 msgstr ""
 "Επιλέξτε το εικονίδιο που αντιπροσωπεύει τον τύπο του επιθυμητού έργου για "
-"δημιουργία και κλικ στο <gui>μπροστά</gui>."
+"δημιουργία και κλικ στο <gui>Μπροστά</gui>."
 
 #. (itstool) path: note/p
 #: C/project-wizard-create.page:49
@@ -5563,7 +5563,7 @@ msgid ""
 "information. When you are done, click on <gui>Forward</gui>."
 msgstr ""
 "Ανάλογα με τον επιλεγμένο τύπο έργου, θα πρέπει να εισάγετε διαφορετικές "
-"πληροφορίες. Τελειώνοντας, κλικ στο <gui>μπροστά</gui>."
+"πληροφορίες. Τελειώνοντας, κλικ στο <gui>Μπροστά</gui>."
 
 #. (itstool) path: item/p
 #: C/project-wizard-create.page:61
@@ -5573,7 +5573,7 @@ msgid ""
 msgstr ""
 "Όλες οι πληροφορίες ομαδοποιούνται σε σελίδες, τυπικά θα πρέπει να γεμίσετε "
 "δύο ή τρεις σελίδες. Μπορείτε να επιστρέψετε οποτεδήποτε χρησιμοποιώντας το "
-"κουμπί <gui>πίσω</gui>."
+"κουμπί <gui>Πίσω</gui>."
 
 #. (itstool) path: note/p
 #: C/project-wizard-create.page:67
@@ -5595,7 +5595,7 @@ msgid ""
 msgstr ""
 "Μετά τη συμπλήρωση όλων των σελίδων πληροφοριών, θα πάρετε μια σελίδα "
 "περίληψης που καταχωρίζει τις κύριες πληροφορίες για το έργο σας. Τίποτα δεν "
-"έχει γραφτεί ακόμα στον δίσκο σας μέχρι εδώ. Κλικ στο <gui>εφαρμογή</gui> "
+"έχει γραφτεί ακόμα στον δίσκο σας μέχρι εδώ. Κλικ στο <gui>Εφαρμογή</gui> "
 "για αποθήκευση του έργου και άνοιγμά του στο <app>Anjuta</app>."
 
 #. (itstool) path: note/p
@@ -5612,12 +5612,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/project-wizard-template.page:9
 msgid "Project wizard template."
-msgstr "Πρότυπος οδηγός έργου."
+msgstr "Πρότυπο βοηθού έργου."
 
 #. (itstool) path: page/title
 #: C/project-wizard-template.page:22
 msgid "Project wizard template"
-msgstr "Πρότυπος οδηγός έργου"
+msgstr "Πρότυπο βοηθού έργου"
 
 #. (itstool) path: page/p
 #: C/project-wizard-template.page:24
@@ -5675,10 +5675,10 @@ msgid ""
 "created by the current project, but you can click on the <gui>Browse</gui> "
 "button to choose any other program."
 msgstr ""
-"Αυτό είναι το πρόγραμμα που θα εκτελεστεί εάν τρέξετε ένα πρόγραμμα με ή "
+"Αυτό είναι το πρόγραμμα που θα εκτελεστεί εάν εκτελέσετε ένα πρόγραμμα με ή "
 "χωρίς αποσφαλμάτωση. Η πτυσσόμενη λίστα επιτρέπει την επιλογή προγραμμάτων "
 "που δημιουργήθηκαν από το τρέχον έργο, αλλά μπορείτε με κλικ στο κουμπί "
-"<gui>περιήγηση</gui> να επιλέξετε οποιοδήποτε άλλο πρόγραμμα."
+"<gui>Περιήγηση</gui> να επιλέξετε οποιοδήποτε άλλο πρόγραμμα."
 
 #. (itstool) path: item/title
 #: C/run-parameters-dialog.page:34
@@ -5706,7 +5706,7 @@ msgid ""
 "The working directory is the current directory when your program will be run."
 msgstr ""
 "Ο κατάλογος εργασίας είναι ο τρέχον κατάλογος όταν το πρόγραμμά σας θα "
-"τρέξει."
+"εκτελεστεί."
 
 #. (itstool) path: item/title
 #: C/run-parameters-dialog.page:45
@@ -5730,7 +5730,7 @@ msgstr ""
 msgid ""
 "You can click on the <gui>New</gui> button to add a new environment variable."
 msgstr ""
-"Μπορείτε με κλικ στο κουμπί <gui>νέο</gui> να προσθέσετε μια νέα μεταβλητή "
+"Μπορείτε με κλικ στο κουμπί <gui>Νέο</gui> να προσθέσετε μια νέα μεταβλητή "
 "περιβάλλοντος."
 
 #. (itstool) path: item/p
@@ -5739,7 +5739,7 @@ msgid ""
 "You can click on the <gui>Edit</gui> button to change the value of the "
 "selected environment variable."
 msgstr ""
-"Μπορείτε με κλικ στο κουμπί <gui>επεξεργασία</gui> να αλλάξετε την τιμή της "
+"Μπορείτε με κλικ στο κουμπί <gui>Επεξεργασία</gui> να αλλάξετε την τιμή της "
 "επιλεγμένης μεταβλητής περιβάλλοντος."
 
 #. (itstool) path: item/p
@@ -5748,7 +5748,7 @@ msgid ""
 "You can click on the <gui>Delete</gui> button to remove the selected "
 "environment variable."
 msgstr ""
-"Μπορείτε με κλικ στο κουμπί <gui>διαγραφή</gui> να αφαιρέσετε την επιλεγμένη "
+"Μπορείτε με κλικ στο κουμπί <gui>Διαγραφή</gui> να αφαιρέσετε την επιλεγμένη "
 "μεταβλητή περιβάλλοντος."
 
 #. (itstool) path: item/p
@@ -5794,7 +5794,7 @@ msgid ""
 "date and builds it if needed."
 msgstr ""
 "Εάν το <app>Anjuta</app> χρησιμοποιείται για εκκίνηση προγράμματος, ελέγχει "
-"την ενημερότητα και το κατασκευάζει εάν χρειάζεται."
+"την ενημερότητα και το δομεί εάν χρειάζεται."
 
 #. (itstool) path: item/p
 #: C/run-run.page:31
@@ -5822,8 +5822,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Run</gui> <gui>Program "
 "Parameters...</gui></guiseq> to display the dialog."
 msgstr ""
-"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>εκτέλεση</gui> "
-"<gui>παράμετροι προγράμμα...</gui></guiseq> για εμφάνιση του διαλόγου."
+"Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Εκτέλεση</gui> "
+"<gui>Παράμετροι προγράμματος...</gui></guiseq> για εμφάνιση του διαλόγου."
 
 #. (itstool) path: note/p
 #: C/run-run.page:49
@@ -5845,6 +5845,21 @@ msgstr "Όλα τα παράθυρα και οι διάλογοι."
 #: C/widget-index.page:16
 msgid "Windows and dialogs"
 msgstr "Παράθυρα και διάλογοι"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/anjuta_logo.png' "
+#~ "md5='82636133d39ac4a688facd76954b8b29'"
+#~ msgstr ""
+#~ "external ref='figures/anjuta_logo.png' "
+#~ "md5='82636133d39ac4a688facd76954b8b29'"
+
+#~ msgid ""
+#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/anjuta_logo.png"
+#~ "\">Anjuta logo</media> Anjuta DevStudio"
+#~ msgstr ""
+#~ "<media type=\"image\" mime=\"image/png\" src=\"figures/anjuta_logo.png"
+#~ "\">Λογότυπος Anjuta</media> Anjuta DevStudio"
 
 #~ msgid "User interface editor"
 #~ msgstr "Επεξεργαστής διεπαφής χρήστη"
