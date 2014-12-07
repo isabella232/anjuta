@@ -41,10 +41,15 @@ G_BEGIN_DECLS
 #define SYMBOL_IS_DB_ENGINE(obj)          (G_TYPE_CHECK_INSTANCE_TYPE ((obj), SYMBOL_TYPE_DB_ENGINE))
 #define SYMBOL_IS_DB_ENGINE_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE ((klass), SYMBOL_TYPE_DB_ENGINE))
 #define SYMBOL_DB_ENGINE_GET_CLASS(obj)   (G_TYPE_INSTANCE_GET_CLASS ((obj), SYMBOL_TYPE_DB_ENGINE, SymbolDBEngineClass))
+#define SYMBOL_DB_ENGINE_ERROR            (symbol_db_engine_error_quark ())
 
 typedef struct _SymbolDBEngineClass SymbolDBEngineClass;
 typedef struct _SymbolDBEngine SymbolDBEngine;
 typedef struct _SymbolDBEnginePriv SymbolDBEnginePriv;
+
+typedef enum {
+	SYMBOL_DB_ENGINE_ERROR_INVALID_PARSER,
+} SymbolDBEngineError;
 
 struct _SymbolDBEngineClass
 {
@@ -77,7 +82,7 @@ typedef enum _SymbolDBEngineOpenStatus
 	
 } SymbolDBEngineOpenStatus;
 
-
+GQuark symbol_db_engine_error_quark (void);
 GType sdb_engine_get_type (void) G_GNUC_CONST;
 
 
@@ -93,7 +98,7 @@ symbol_db_engine_set_ctags_path (SymbolDBEngine *dbe, const gchar * ctags_path);
 
 SymbolDBEngineOpenStatus
 symbol_db_engine_open_db (SymbolDBEngine *dbe, const gchar* base_db_path,
-						  const gchar * prj_directory);
+						  const gchar * prj_directory, GError **error);
 
 gboolean 
 symbol_db_engine_close_db (SymbolDBEngine *dbe);

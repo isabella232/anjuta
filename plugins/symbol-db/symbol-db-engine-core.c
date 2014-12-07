@@ -182,6 +182,12 @@ sdb_engine_add_new_symbol (SymbolDBEngine * dbe, const tagEntry * tag_entry,
 const GdaStatement *
 sdb_engine_get_statement_by_query_id (SymbolDBEngine * dbe, static_query_type query_id);
 
+GQuark
+symbol_db_engine_error_quark (void)
+{
+	return g_quark_from_static_string ("symbol-db-engine-error-quark");
+}
+
 /*
  * implementation starts here 
  */
@@ -2426,7 +2432,7 @@ sdb_engine_set_defaults_db_parameters (SymbolDBEngine * dbe)
  * because it is required and cannot be null.
  */
 static gboolean
-sdb_engine_connect_to_db (SymbolDBEngine * dbe, const gchar *cnc_string)
+sdb_engine_connect_to_db (SymbolDBEngine * dbe, const gchar *cnc_string, GError **error)
 {
 	SymbolDBEnginePriv *priv;
 
@@ -2447,20 +2453,22 @@ sdb_engine_connect_to_db (SymbolDBEngine * dbe, const gchar *cnc_string)
 	 * be created 
 	 */
 	priv->db_connection = gda_connection_open_from_string ("SQLite", cnc_string, NULL, 
-										   GDA_CONNECTION_OPTIONS_THREAD_SAFE, NULL);	
+										   GDA_CONNECTION_OPTIONS_THREAD_SAFE, error);
 	
 	if (!GDA_IS_CONNECTION (priv->db_connection))
 	{
 		g_warning ("Could not open connection to %s\n", cnc_string);
-		return FALSE;		
+		return FALSE;
 	}
 
 	priv->cnc_string = g_strdup (cnc_string);
 	priv->sql_parser = gda_connection_create_parser (priv->db_connection);
 	
-	if (!GDA_IS_SQL_PARSER (priv->sql_parser)) 
+	if (!GDA_IS_SQL_PARSER (priv->sql_parser))
 	{
-		g_warning ("Could not create sql parser. Check your libgda installation");
+		g_set_error_literal (error, SYMBOL_DB_ENGINE_ERROR,
+		                     SYMBOL_DB_ENGINE_ERROR_INVALID_PARSER,
+		                     _("Could not create sql parser. Check your libgda installation"));
 		return FALSE;
 	}
 	
@@ -2741,7 +2749,7 @@ sdb_engine_check_db_version_and_upgrade (SymbolDBEngine *dbe,
 		}		
 
 		/* 3. reconnect */
-		sdb_engine_connect_to_db (dbe, cnc_string);
+		sdb_engine_connect_to_db (dbe, cnc_string, NULL);
 
 		/* 4. create fresh new tables, indexes, triggers etc.  */			
 		sdb_engine_create_db_tables (dbe, TABLES_SQL);
@@ -2767,6 +2775,7 @@ sdb_engine_check_db_version_and_upgrade (SymbolDBEngine *dbe,
  *        directory of /home/user/project/foo_prj/. On db it'll be represented as
  *        src/file.c. In this way you can move around the project dir without dealing
  *        with relative paths.
+ * @error: a place to store an error, or %NULL
  * 
  * Open, create or upgrade a database at given directory. 
  * Be sure to give a base_db_path with the ending '/' for directory.
@@ -2775,7 +2784,7 @@ sdb_engine_check_db_version_and_upgrade (SymbolDBEngine *dbe,
  */
 SymbolDBEngineOpenStatus
 symbol_db_engine_open_db (SymbolDBEngine * dbe, const gchar * base_db_path,
-						  const gchar * prj_directory)
+						  const gchar * prj_directory, GError **error)
 {
 	SymbolDBEnginePriv *priv;
 	gboolean needs_tables_creation = FALSE;
@@ -2812,7 +2821,7 @@ symbol_db_engine_open_db (SymbolDBEngine * dbe, const gchar * base_db_path,
 								priv->anjuta_db_file);
 	DEBUG_PRINT ("Connecting to "
 				 "database with %s...", cnc_string);
-	connect_res = sdb_engine_connect_to_db (dbe, cnc_string);
+	connect_res = sdb_engine_connect_to_db (dbe, cnc_string, error);
 	
 
 	if (connect_res == FALSE)
