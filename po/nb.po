@@ -1,14 +1,14 @@
 # Norwegian bokmål translation of anjuta.
 # Copyright (C) 2001 Free Software Foundation, Inc.
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
-# Kjartan Maraas <kmaraas@gnome.org>, 2001-2014.
+# Kjartan Maraas <kmaraas@gnome.org>, 2001-2015.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: anjuta 3.13.x\n"
+"Project-Id-Version: anjuta 3.15.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-24 14:19+0200\n"
-"PO-Revision-Date: 2014-07-24 14:24+0200\n"
+"POT-Creation-Date: 2015-02-12 01:01+0100\n"
+"PO-Revision-Date: 2015-02-12 01:03+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norsk, bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -594,28 +594,28 @@ msgid "Shortcut"
 msgstr "Snarvei"
 
 #. Avoid space in translated string
-#: ../libanjuta/anjuta-utils.c:363
+#: ../libanjuta/anjuta-utils.c:369
 msgid "System:"
 msgstr "System:"
 
-#: ../libanjuta/anjuta-utils.c:512
+#: ../libanjuta/anjuta-utils.c:518
 msgid ""
 "You do not seem to have PackageKit installed. PackageKit is required for "
 "installing missing packages. Please install \"packagekit-gnome\" package "
 "from your distribution, or install the missing packages manually."
 msgstr ""
 
-#: ../libanjuta/anjuta-utils.c:521
+#: ../libanjuta/anjuta-utils.c:527
 #, c-format
 msgid "Installation failed: %s"
 msgstr "Installering feilet: %s"
 
-#: ../libanjuta/anjuta-utils.c:582
+#: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
 msgstr ""
 
-#: ../libanjuta/anjuta-utils.c:596
+#: ../libanjuta/anjuta-utils.c:602
 #, c-format
 msgid ""
 "The \"%s\" package is not installed.\n"
@@ -624,7 +624,7 @@ msgstr ""
 "Pakken «%s» er ikke installert.\n"
 "Vennligst innstaller den."
 
-#: ../libanjuta/anjuta-utils.c:614
+#: ../libanjuta/anjuta-utils.c:620
 #, c-format
 msgid ""
 "The \"%s\" utility is not installed.\n"
@@ -634,17 +634,17 @@ msgstr ""
 "Vennligst innstaller det."
 
 #. Try xterm
-#: ../libanjuta/anjuta-utils.c:1208
+#: ../libanjuta/anjuta-utils.c:1214
 msgid "Cannot find a terminal; using xterm, even if it may not work"
 msgstr ""
 "Kan ikke finne en terminal; bruker xterm selv om den kanskje ikke virker"
 
-#: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
+#: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
 #, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr "Kan ikke kjøre kommandoen: %s (med skallet %s): %s\n"
 
-#: ../libanjuta/anjuta-utils.c:2456
+#: ../libanjuta/anjuta-utils.c:2462
 #, c-format
 msgid "Unable to load user interface file: %s"
 msgstr "Kan ikke laste brukergrensesnittfil: %s"
@@ -2143,7 +2143,7 @@ msgid "Patch-Style diff"
 msgstr ""
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "Lokal"
 
@@ -3253,7 +3253,7 @@ msgstr "Ramme"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Fil"
@@ -3983,7 +3983,7 @@ msgstr "Klipp ut valgt tekst fra redigeringsprogrammet til utklippstavlen"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:592
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:627
 msgid "_Copy"
 msgstr "_Kopier"
 
@@ -3991,7 +3991,7 @@ msgstr "_Kopier"
 msgid "Copy the selected text to the clipboard"
 msgstr "Kopier valgt tekst til utklippstavlen"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:600
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:635
 msgid "_Paste"
 msgstr "_Lim inn"
 
@@ -4517,7 +4517,7 @@ msgstr "Velg aktivt dokument automatisk"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "Global"
 
@@ -5447,7 +5447,6 @@ msgid "Mark selected conflicted files as resolved"
 msgstr ""
 
 #: ../plugins/git/plugin.c:205 ../plugins/git/plugin.c:958
-#, fuzzy
 msgid "Stash"
 msgstr "Lager"
 
@@ -6869,7 +6868,7 @@ msgstr "Oppdater prosjektvisning …"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "Prosjekt"
 
@@ -7218,14 +7217,6 @@ msgstr "Forvalgt brukernavn i et nytt prosjekt"
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
 msgid "If empty, the current user name is used."
 msgstr "Hvis denne er tom blir navn på aktiv bruker brukt."
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-msgid "Default email used in new project"
-msgstr "Forvalgt e-post som skal brukes i nytt prosjekt"
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
-msgid "If empty, current login and machine name is used."
-msgstr "Hvis denne er tom blir brukernavn og maskin for aktiv bruker brukt."
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -8667,14 +8658,10 @@ msgid "View online library documentation"
 msgstr "Vis dokumentasjon for bibliotek på nettet"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "label"
-msgstr "etikett"
-
-#: ../plugins/starter/starter.ui.h:8
 msgid "Remove recently used project from list"
 msgstr ""
 
-#: ../plugins/starter/starter.ui.h:9
+#: ../plugins/starter/starter.ui.h:8
 #, fuzzy
 msgid "Unlist Project"
 msgstr "_Installer prosjekt"
@@ -9319,29 +9306,29 @@ msgid_plural "%d files scanned out of %d"
 msgstr[0] "%d av %d fil gjennomsøkt"
 msgstr[1] "%d av %d filer gjennomsøkt"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "Populerer symboldatabase …"
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "Symboler"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "Søk"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 #, fuzzy
 msgid "SymbolDb popup actions"
 msgstr "CVS-operasjoner"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 #, fuzzy
 msgid "SymbolDb menu actions"
 msgstr "Eksempel-tillegg"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Symboldatabase"
@@ -9360,8 +9347,8 @@ msgid "Symbol"
 msgstr "Symbol"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:781 ../plugins/terminal/terminal.c:981
-#: ../plugins/terminal/terminal.c:1067
+#: ../plugins/terminal/terminal.c:820 ../plugins/terminal/terminal.c:1005
+#: ../plugins/terminal/terminal.c:1091
 msgid "Terminal"
 msgstr "Terminal"
 
@@ -9381,23 +9368,23 @@ msgstr "Bruk forvalgt profil for GNOME terminal"
 msgid "Terminal options"
 msgstr "Alternativer for terminal"
 
-#: ../plugins/terminal/terminal.c:609
+#: ../plugins/terminal/terminal.c:644
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:617
+#: ../plugins/terminal/terminal.c:652
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:625
+#: ../plugins/terminal/terminal.c:660
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:763
+#: ../plugins/terminal/terminal.c:802
 msgid "terminal operations"
 msgstr "terminaloperasjoner"
 
-#: ../plugins/terminal/terminal.c:898
+#: ../plugins/terminal/terminal.c:937
 #, c-format
 msgid "Unable to execute command"
 msgstr "Kan ikke kjøre kommando"
@@ -9944,14 +9931,22 @@ msgid "Value doesn't exist"
 msgstr "Verdien eksisterer ikke"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
+msgid "Default email used in new project"
+msgstr "Forvalgt e-post som skal brukes i nytt prosjekt"
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+msgid "If empty, current login and machine name is used."
+msgstr "Hvis denne er tom blir brukernavn og maskin for aktiv bruker brukt."
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
 msgid "Use tabulation for indentation"
 msgstr "Bruk tabulator for innrykk"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:4
 msgid "Number of characters of one tabulation"
 msgstr "Antall tegn for en tabulator"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
 msgstr "Antall mellomrom for hvert innrykkssteg"
 
