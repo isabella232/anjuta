@@ -3,23 +3,26 @@
 # Serkan Kenar <serkan@ieee.metu.edu.tr> 2004.
 #
 # Baris Cicek <baris@teamforce.name.tr>, 2008, 2009.
-# Muhammet Kara <muhammetk@gmail.com>, 2011, 2014.
+# Necdet Yücel <necdetyucel@gmail.com>, 2015.
+# İşbaran Akçayır <isbaran@gmail.com>, 2015.
+# Muhammet Kara <muhammetk@gmail.com>, 2011, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-12-08 15:46+0000\n"
-"PO-Revision-Date: 2014-12-08 22:39+0200\n"
+"POT-Creation-Date: 2015-01-07 15:46+0000\n"
+"PO-Revision-Date: 2015-02-18 19:51+0200\n"
 "Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
-"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
+"Language-Team: Turkish <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Gtranslator 2.91.6\n"
+"X-POOTLE-MTIME: 1420658658.000000\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -29,6 +32,11 @@ msgid ""
 "GUI designer, profiler and many more tools. It focuses on providing simple "
 "and usable user interface, yet powerful for efficient development."
 msgstr ""
+"Anjuta DevStudio, proje yönetimi, uygulama sihirbazı, etkileşimli hata "
+"ayıklayıcı, kaynak kod editörü, sürüm kontrolü, GUI tasarlayıcısı ve daha "
+"bir çok gelişmiş programlama aracını içeren çok yönlü bir yazılım geliştirme "
+"ortamıdır. Basit ve kullanışlı, aynı zamanda da etkin geliştirmeye olanak "
+"tanıyacak kadar güçlü bir kullanıcı arayüzü sağlamaya odaklanır."
 
 #: ../anjuta.appdata.xml.in.h:2
 msgid ""
@@ -39,6 +47,13 @@ msgid ""
 "project making it easy to work on projects with various levels of "
 "complexity. Using plugins, you can extend Anjuta with your own features."
 msgstr ""
+"Anjuta eklentilerle geliştirilebilirdir. Anjuta'daki hemen hemen tüm "
+"özellikler dinamik olarak kapatılıp etkinleştirilebilen eklentiler "
+"kullanılarak geliştirilmiştir. Projeniz için hangi eklentilerin aktif olması "
+"gerektiğini seçebilirsiniz. Kullanıcı arayüzü yerleşimi gibi, etkin eklenti "
+"kümesi de her proje için kalıcıdır; bu da bir çok seviyede karmaşıklık "
+"içeren projeler üstünde çalışmayı kolaylaştırır. Eklentileri kullanarak, "
+"Anjuta'yı kendi özelliklerinizle genişletebilirsiniz."
 
 #: ../anjuta.appdata.xml.in.h:3
 msgid ""
@@ -47,6 +62,10 @@ msgid ""
 "+, GNOME, Java, Python projects and more. New templates can be easily "
 "downloaded and installed."
 msgstr ""
+"Proje sihirbazı belirli bir takım proje şablonlarından yeni projeler "
+"oluşturmanızı sağlar. Seçimler basit cins, düz (alt dizin yok), GTK+, GNOME, "
+"Java, Python projeleri ve fazlası olabilir. Yeni şablonlar kolaylıkla "
+"indirilip yüklenebilir."
 
 #: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
@@ -70,13 +89,11 @@ msgstr "Autogen meşgul"
 
 #: ../libanjuta/anjuta-autogen.c:251
 #, c-format
-#| msgid "Could not find application pixmap file: %s"
 msgid "Could not write definition file \"%s\": %s"
 msgstr "Tanım dosyası \"%s\" yazılamadı: %s"
 
 #: ../libanjuta/anjuta-autogen.c:585
 #, c-format
-#| msgid "Could not open %s: %s"
 msgid "Could not open file \"%s\": %s"
 msgstr "\"%s\" dosyası açılamadı: %s"
 
@@ -277,7 +294,7 @@ msgstr "Yardım metni"
 
 #: ../libanjuta/anjuta-entry.c:248
 msgid "Text to show the user what to enter into the entry"
-msgstr ""
+msgstr "Girdiye ne girileceğini kullanıcıya gösteren metin"
 
 #. Create all needed widgets
 #: ../libanjuta/anjuta-environment-editor.c:543
@@ -308,7 +325,7 @@ msgstr "Değer"
 
 #: ../libanjuta/anjuta-file-drop-entry.c:206
 msgid "Path that dropped files should be relative to"
-msgstr ""
+msgstr "Bırakılan dosyaların bağıl olacağı yol"
 
 #: ../libanjuta/anjuta-file-list.c:104
 msgid "Drop a file or enter a path here"
@@ -320,7 +337,7 @@ msgstr "Dosyaları Seçin"
 
 #: ../libanjuta/anjuta-file-list.c:547
 msgid "Path that all files in the list should be relative to"
-msgstr ""
+msgstr "Listedeki tüm dosyaların bağıl olacağı yol"
 
 #: ../libanjuta/anjuta-file-list.c:554
 msgid "Show Add button"
@@ -394,19 +411,14 @@ msgid "Only show user activatable plugins"
 msgstr "Sadece kullanıcı tarafından etkinleştirilebilen eklentileri göster"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1197
-#, fuzzy
-#| msgid ""
-#| "These are the plugins selected by you when Anjuta prompted to choose one "
-#| "of many suitable plugins. Removing the preferred plugin will let Anjuta "
-#| "prompt you again to choose different plugin."
 msgid ""
 "These are the plugins selected by you when you have been prompted to choose "
 "one of many suitable plugins. Removing the preferred plugin will let you "
 "choose a different plugin."
 msgstr ""
-"Anjuta uygun eklentilerden birini seçmenizi istediği zaman seçtiğiniz "
-"eklentiler var. Tercih edilen eklentiyi silmek Anjuta'nın size tekrar başka "
-"bir eklenti seçmeniz için sormasını sağlar."
+"Uygun eklentilerden birini seçmeniz istendiğinde seçtiğiniz eklentiler "
+"bunlar. Tercih edilen eklentiyi silmek başka bir eklenti seçmenizi "
+"sağlayacak."
 
 #: ../libanjuta/anjuta-plugin-manager.c:1223
 msgid "Forget selected plugin"
@@ -536,18 +548,13 @@ msgid "%s: Install it from '%s'\n"
 msgstr "%s: '%s' konumundan yükle\n"
 
 #: ../libanjuta/anjuta-profile.c:964
-#, fuzzy, c-format
-#| msgid ""
-#| "Failed to read '%s': Following mandatory plugins are missing:\n"
-#| "%s"
+#, c-format
 msgid "Failed to read '%s': Following mandatory plugins are missing"
-msgstr ""
-"'%s' okurken başarısız olundu: Aşağıdaki zorunlu eklentiler eksik:\n"
-"%s"
+msgstr "'%s' okurken başarısız olundu: Aşağıdaki zorunlu eklentiler eksik"
 
 #: ../libanjuta/anjuta-save-prompt.c:157
 msgid "Select the items to save:"
-msgstr "Kaydetmek için öğeleri seçin:"
+msgstr "Kaydedilecek ögeleri seçin:"
 
 #: ../libanjuta/anjuta-save-prompt.c:182
 msgid "If you do not save, all your changes will be lost."
@@ -561,7 +568,7 @@ msgstr "Kaydet"
 
 #: ../libanjuta/anjuta-save-prompt.c:196
 msgid "Item"
-msgstr "Öğe"
+msgstr "Öge"
 
 #: ../libanjuta/anjuta-save-prompt.c:202
 msgid "_Discard changes"
@@ -573,17 +580,16 @@ msgid "There is %d item with unsaved changes. Save changes before closing?"
 msgid_plural ""
 "There are %d items with unsaved changes. Save changes before closing?"
 msgstr[0] ""
-"Değişiklikleri kaydedilmemiş %d adet öğe var. Kapatmadan önce değişiklikler "
+"Değişiklikleri kaydedilmemiş %d adet öge var. Kapatmadan önce değişiklikler "
 "kaydedilsin mi?"
 
 #: ../libanjuta/anjuta-save-prompt.c:305
 msgid "There is an item with unsaved changes. Save changes before closing?"
 msgstr ""
-"Değişiklikleri kaydedilmemiş bir öğe var. Kapatmadan önce değişiklikler "
+"Değişiklikleri kaydedilmemiş bir öge var. Kapatmadan önce değişiklikler "
 "kaydedilsin mi?"
 
 #: ../libanjuta/anjuta-tree-combo.c:1090
-#| msgid "Invalid entry"
 msgid "<Invalid>"
 msgstr "<Geçersiz>"
 
@@ -592,7 +598,6 @@ msgid "ComboBox model"
 msgstr "ComboBox modeli"
 
 #: ../libanjuta/anjuta-tree-combo.c:1206
-#, fuzzy
 msgid "The model for the combo box"
 msgstr "Çoklu kutucuğun modeli"
 
@@ -623,6 +628,9 @@ msgid ""
 "installing missing packages. Please install \"packagekit-gnome\" package "
 "from your distribution, or install the missing packages manually."
 msgstr ""
+"PackageKit yüklenmiş görünmüyor. Eksik paketlerin yüklenmesi için PackageKit "
+"gereklidir. Lütfen \"packagekit-gnome\" paketini dağıtımınızdan yükleyin, "
+"veya eksik paketleri elle kurun."
 
 #: ../libanjuta/anjuta-utils.c:527
 #, c-format
@@ -632,7 +640,7 @@ msgstr "Kurulum başarısız oldu: %s"
 #: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
-msgstr ""
+msgstr "\"%s\" çalıştırılamadı. Dönen hata: \"%s\"."
 
 #: ../libanjuta/anjuta-utils.c:602
 #, c-format
@@ -659,10 +667,9 @@ msgstr ""
 "Bir uçbirim bulunamıyor. Çalışmama ihtimali olsa bile xterm kullanılacak."
 
 #: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
-#, fuzzy, c-format
-#| msgid "Cannot execute command: %s (using shell %s)\n"
+#, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
-msgstr "Komut çalıştırılamıyor: %s (kullanılan kabuk %s)\n"
+msgstr "Komut çalıştırılamıyor: %s (kullanılan kabuk %s): %s\n"
 
 #: ../libanjuta/anjuta-utils.c:2462
 #, c-format
@@ -725,23 +732,19 @@ msgid "Could not find application pixmap file: %s"
 msgstr "Uygulama pixmap dosyası bulunamadı: %s"
 
 #: ../libanjuta/resources.c:277
-#, fuzzy, c-format
-#| msgid "Cannot execute command: \"%s\""
+#, c-format
 msgid "Cannot execute command \"%s\": %s"
-msgstr "Komut çalıştırılamıyor: \"%s\""
+msgstr "Komut çalıştırılamıyor \"%s\": %s"
 
 #: ../plugins/am-project/amp-group.c:627
 msgid "Please specify group name"
 msgstr "Lütfen bir grup ismi belirtin"
 
 #: ../plugins/am-project/amp-group.c:641
-#, fuzzy
-#| msgid ""
-#| "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~\" characters"
 msgid ""
 "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~/\" characters"
 msgstr ""
-"Grup ismi sadece alfanümerik ya da  \"#$:%+,-.=@^_`~\" karakterlerini "
+"Grup ismi sadece alfanümerik ya da \"#$:%+,-.=@^_`~/\" karakterlerini "
 "içerebilir"
 
 #: ../plugins/am-project/amp-group.c:665
@@ -757,9 +760,8 @@ msgid "Project doesn't exist or invalid path"
 msgstr "Proje mevcut değil ya da geçersiz yol"
 
 #: ../plugins/am-project/am-project.c:90
-#, fuzzy
 msgid "Root"
-msgstr "kök paneli"
+msgstr "Kök"
 
 #: ../plugins/am-project/am-project.c:98
 #: ../plugins/dir-project/dir-project.c:1007
@@ -774,7 +776,6 @@ msgid "Source"
 msgstr "Kaynak"
 
 #: ../plugins/am-project/am-project.c:124
-#| msgid "Shared Library"
 msgid "Shared Library (Libtool)"
 msgstr "Paylaşılan Kütüphane (Libtool)"
 
@@ -783,7 +784,6 @@ msgid "Module (Libtool)"
 msgstr "Modül (Libtool)"
 
 #: ../plugins/am-project/am-project.c:140
-#| msgid "Static Library"
 msgid "Static Library (Libtool)"
 msgstr "Statik Kütüphane (Libtool)"
 
@@ -847,10 +847,8 @@ msgid "Autotools backend"
 msgstr "Autotools aracı"
 
 #: ../plugins/am-project/am-project.plugin.in.h:2
-#, fuzzy
-#| msgid "Autotools backend for project manager"
 msgid "New Autotools backend for project manager"
-msgstr "Proje yöneticisi için yeni autotools aracı"
+msgstr "Proje yöneticisi için yeni Autotools art alanı"
 
 #: ../plugins/am-project/am-properties.c:49
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:5
@@ -862,7 +860,7 @@ msgstr "İsim:"
 
 #: ../plugins/am-project/am-properties.c:52
 msgid "Project name, it can contain spaces by example 'GNU Autoconf'"
-msgstr ""
+msgstr "Proje ismi, sadece boşluk içerebilir, örneğin 'GNU Autoconf'"
 
 #: ../plugins/am-project/am-properties.c:58
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:9
@@ -891,6 +889,7 @@ msgstr "Sürüm:"
 msgid ""
 "Project version, typically a few numbers separated by dot by example '1.0.0'"
 msgstr ""
+"Proje sürümü, genellikle noktayla ayrılan az sayıda sayı, örneğin '1.0.0'"
 
 #: ../plugins/am-project/am-properties.c:67
 msgid "Bug report URL:"
@@ -901,6 +900,8 @@ msgid ""
 "An email address or a link to a web page where the user can report bug. It "
 "is optional."
 msgstr ""
+"Kullanıcının bir hata raporlayabilmesini sağlayacak bir e-posta adresi ya da "
+"web sayfasına bağlantı. İsteğe bağlıdır."
 
 #: ../plugins/am-project/am-properties.c:76
 msgid "Package name:"
@@ -911,6 +912,8 @@ msgid ""
 "Package name, it can contains only alphanumerics and underscore characters."
 "It is generated from the project name if not provided."
 msgstr ""
+"Paket ismi, sadece alfanümerik karakterler ve alt çizgi içerebilir. "
+"Belirtilmezse proje isminden üretilir."
 
 #: ../plugins/am-project/am-properties.c:86 ../plugins/git/anjuta-git.ui.h:10
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:20
@@ -919,17 +922,15 @@ msgstr "URL:"
 
 #: ../plugins/am-project/am-properties.c:89
 msgid "An link to the project web page if provided."
-msgstr ""
+msgstr "Eğer belirtilmişse, proje web sayfasına bağlantı."
 
 #: ../plugins/am-project/am-properties.c:95
 msgid "Libtool support:"
 msgstr "Libtool desteği:"
 
 #: ../plugins/am-project/am-properties.c:98
-#, fuzzy
-#| msgid "Adds support for building shared libraries in your project"
 msgid "Add support to compile shared and static libraries with Libtool."
-msgstr "Projenize paylaşılan kütüphane inşa etme desteğini ekler"
+msgstr "Libtool ile statik ve paylaşılan kiptalık derlenmesi desteği ekle."
 
 #: ../plugins/am-project/am-properties.c:104
 #: ../plugins/am-project/am-properties.c:211
@@ -943,7 +944,7 @@ msgstr "Bağlayıcı imleri:"
 #: ../plugins/am-project/am-properties.c:107
 #: ../plugins/am-project/am-properties.c:214
 msgid "Common additional linker flags for all targets in this group."
-msgstr ""
+msgstr "Bu gruptaki hedeflerin hepsi için yaygın linker bayrakları."
 
 #: ../plugins/am-project/am-properties.c:113
 #: ../plugins/am-project/am-properties.c:220
@@ -957,7 +958,7 @@ msgstr "C ön işleyici imleri:"
 #: ../plugins/am-project/am-properties.c:116
 #: ../plugins/am-project/am-properties.c:223
 msgid "Common additional C preprocessor flags for all targets in this group."
-msgstr ""
+msgstr "Bu gruptaki tüm hedefler için yaygın ilave C preprocessor bayrakları."
 
 #: ../plugins/am-project/am-properties.c:122
 #: ../plugins/am-project/am-properties.c:229
@@ -971,7 +972,7 @@ msgstr "C derleyici imleri:"
 #: ../plugins/am-project/am-properties.c:125
 #: ../plugins/am-project/am-properties.c:232
 msgid "Common additional C compiler flags for all targets in this group."
-msgstr ""
+msgstr "Bu gruptaki tüm hedefler için yaygın ilave C derleyici bayrakları."
 
 #: ../plugins/am-project/am-properties.c:131
 #: ../plugins/am-project/am-properties.c:238
@@ -985,7 +986,7 @@ msgstr "C++ derleyici imleri:"
 #: ../plugins/am-project/am-properties.c:134
 #: ../plugins/am-project/am-properties.c:241
 msgid "Common additional C++ compiler flags for all targets in this group."
-msgstr ""
+msgstr "Bu gruptaki tüm hedefler için yaygın ilave C++ derleyici bayrakları."
 
 #: ../plugins/am-project/am-properties.c:140
 #: ../plugins/am-project/am-properties.c:247
@@ -999,7 +1000,7 @@ msgstr "Java derleyici bayrakları:"
 #: ../plugins/am-project/am-properties.c:143
 #: ../plugins/am-project/am-properties.c:250
 msgid "Common additional Java compiler flags for all targets in this group."
-msgstr ""
+msgstr "Bu gruptaki tüm hedefler için yaygın ilave Java derleyici bayrakları."
 
 #: ../plugins/am-project/am-properties.c:149
 #: ../plugins/am-project/am-properties.c:256
@@ -1013,7 +1014,7 @@ msgstr "Vala derleyici bayrakları:"
 #: ../plugins/am-project/am-properties.c:152
 #: ../plugins/am-project/am-properties.c:259
 msgid "Common additional Vala compiler flags for all targets in this group."
-msgstr ""
+msgstr "Bu gruptaki tüm hedefler için geçerli ek Vala derleyici bayrakları."
 
 #: ../plugins/am-project/am-properties.c:158
 #: ../plugins/am-project/am-properties.c:265
@@ -1027,7 +1028,7 @@ msgstr "Fortran derleyici imleri:"
 #: ../plugins/am-project/am-properties.c:161
 #: ../plugins/am-project/am-properties.c:268
 msgid "Common additional Fortran compiler flags for all targets in this group."
-msgstr ""
+msgstr "Bu gruptaki tüm hedefler için geçerli ek Fortran derleyici bayrakları."
 
 #: ../plugins/am-project/am-properties.c:167
 #: ../plugins/am-project/am-properties.c:274
@@ -1043,6 +1044,7 @@ msgstr "Objective C derleyici bayrakları:"
 msgid ""
 "Common additional Objective C compiler flags for all targets in this group."
 msgstr ""
+"Bu gruptaki tüm hedefler için geçerli ek Objective C derleyici bayrakları."
 
 #: ../plugins/am-project/am-properties.c:176
 #: ../plugins/am-project/am-properties.c:283
@@ -1059,6 +1061,8 @@ msgid ""
 "Common additional Lex or Flex lexical analyser generator flags for all "
 "targets in this group."
 msgstr ""
+"Bu gruptaki tüm hedefler için geçerli Lex veya Flex sözdizim analizcisi ek "
+"derleyici bayrakları."
 
 #: ../plugins/am-project/am-properties.c:185
 #: ../plugins/am-project/am-properties.c:292
@@ -1075,6 +1079,8 @@ msgid ""
 "Common additional Yacc or Bison parser generator flags for all targets in "
 "this group."
 msgstr ""
+"Bu gruptaki tüm hedefler için geçerli ek Yacc veya Bison ayrıştırıcı üreteci "
+"bayrakları."
 
 #: ../plugins/am-project/am-properties.c:194
 #: ../plugins/am-project/am-properties.c:301
@@ -1084,7 +1090,7 @@ msgstr "Kurulum dizinleri:"
 #: ../plugins/am-project/am-properties.c:197
 #: ../plugins/am-project/am-properties.c:304
 msgid "List of custom installation directories used by targets in this group."
-msgstr ""
+msgstr "Bu gruptaki hedeflerce kullanılan özel kurulum dizinleri listesi."
 
 #: ../plugins/am-project/am-properties.c:317
 #: ../plugins/am-project/am-properties.c:501
@@ -1092,10 +1098,8 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:851
 #: ../plugins/am-project/am-properties.c:1062
 #: ../plugins/am-project/am-properties.c:1138
-#, fuzzy
-#| msgid "Do not show tabs"
 msgid "Do not install:"
-msgstr "Gönderme (commit)"
+msgstr "Yükleme:"
 
 #: ../plugins/am-project/am-properties.c:320
 #: ../plugins/am-project/am-properties.c:504
@@ -1104,7 +1108,7 @@ msgstr "Gönderme (commit)"
 #: ../plugins/am-project/am-properties.c:1065
 #: ../plugins/am-project/am-properties.c:1141
 msgid "Build but do not install the target."
-msgstr ""
+msgstr "Derle ama hedefi yükleme"
 
 #: ../plugins/am-project/am-properties.c:327
 #: ../plugins/am-project/am-properties.c:511
@@ -1124,7 +1128,7 @@ msgstr "Kurulum dizini:"
 msgid ""
 "It has to be a standard directory or a custom one defined in group "
 "properties."
-msgstr ""
+msgstr "Standart, ya da grup özelliklerinde belirtilen özel bir dizin olmalı."
 
 #: ../plugins/am-project/am-properties.c:339
 #: ../plugins/am-project/am-properties.c:523
@@ -1208,6 +1212,8 @@ msgstr "Bu hedef için ek Objective C derleyicisi bayrakları."
 msgid ""
 "Additional Lex or Flex lexical analyser generator flags for this target."
 msgstr ""
+"Bu gruptaki tüm hedefler için ilave Lex veya Flex söz dizim analiz üreteçi "
+"bayrakları."
 
 #: ../plugins/am-project/am-properties.c:438
 #: ../plugins/am-project/am-properties.c:613
@@ -1215,6 +1221,8 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:964
 msgid "Additional Yacc or Bison parser generator flags for this target."
 msgstr ""
+"Bu gruptaki tüm hedefler için ilave Yacc veya Bison ayrıştırıcı üreteci "
+"bayrakları."
 
 #: ../plugins/am-project/am-properties.c:444
 #: ../plugins/am-project/am-properties.c:619
@@ -1223,10 +1231,8 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:1027
 #: ../plugins/am-project/am-properties.c:1081
 #: ../plugins/am-project/am-properties.c:1156
-#, fuzzy
-#| msgid "Plugin Dependencies:"
 msgid "Additional dependencies:"
-msgstr "Eklenti Bağımlılıkları:"
+msgstr "İlave bağımlılıklar:"
 
 #: ../plugins/am-project/am-properties.c:447
 #: ../plugins/am-project/am-properties.c:622
@@ -1235,9 +1241,8 @@ msgstr "Eklenti Bağımlılıkları:"
 #: ../plugins/am-project/am-properties.c:1030
 #: ../plugins/am-project/am-properties.c:1084
 #: ../plugins/am-project/am-properties.c:1159
-#, fuzzy
 msgid "Additional dependencies for this target."
-msgstr "Bu hedef için ek kütüphaneler."
+msgstr "Bu hedef için ilave bağımlılıklar."
 
 #: ../plugins/am-project/am-properties.c:453
 #: ../plugins/am-project/am-properties.c:628
@@ -1245,10 +1250,8 @@ msgstr "Bu hedef için ek kütüphaneler."
 #: ../plugins/am-project/am-properties.c:979
 #: ../plugins/am-project/am-properties.c:1090
 #: ../plugins/am-project/am-properties.c:1165
-#, fuzzy
-#| msgid "Plugin Description:"
 msgid "Include in distribution:"
-msgstr "Ekran görüntüsünde belirteci de içer"
+msgstr "Dağıtımda bulundur:"
 
 #: ../plugins/am-project/am-properties.c:456
 #: ../plugins/am-project/am-properties.c:631
@@ -1257,7 +1260,7 @@ msgstr "Ekran görüntüsünde belirteci de içer"
 #: ../plugins/am-project/am-properties.c:1093
 #: ../plugins/am-project/am-properties.c:1168
 msgid "Include this target in the distributed package."
-msgstr ""
+msgstr "Bu hedefi dağıtım paketine dahil et."
 
 #: ../plugins/am-project/am-properties.c:463
 #: ../plugins/am-project/am-properties.c:638
@@ -1265,10 +1268,8 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:989
 #: ../plugins/am-project/am-properties.c:1100
 #: ../plugins/am-project/am-properties.c:1174
-#, fuzzy
-#| msgid "Build Directory:"
 msgid "Build for check only:"
-msgstr "_Sadece bundan daha küçük dosyalar:"
+msgstr "Sadece kontrol için derle:"
 
 #: ../plugins/am-project/am-properties.c:466
 #: ../plugins/am-project/am-properties.c:641
@@ -1277,7 +1278,7 @@ msgstr "_Sadece bundan daha küçük dosyalar:"
 #: ../plugins/am-project/am-properties.c:1103
 #: ../plugins/am-project/am-properties.c:1177
 msgid "Build this target only when running automatic tests."
-msgstr ""
+msgstr "Bu hedefi sadece otomatik testleri çalıştırırken derle."
 
 #: ../plugins/am-project/am-properties.c:473
 #: ../plugins/am-project/am-properties.c:648
@@ -1286,9 +1287,8 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:1036
 #: ../plugins/am-project/am-properties.c:1110
 #: ../plugins/am-project/am-properties.c:1183
-#, fuzzy
 msgid "Do not use prefix:"
-msgstr "İç içe dizinlerde çalışma"
+msgstr "Ön ek kullanma:"
 
 #: ../plugins/am-project/am-properties.c:476
 #: ../plugins/am-project/am-properties.c:651
@@ -1301,6 +1301,8 @@ msgid ""
 "Do not rename the target with an optional prefix, used to avoid overwritting "
 "system program. "
 msgstr ""
+"Hedefi isteğe bağlı bir ön ekle isimlendirme, sistem programlarının üstüne "
+"yazılmasını engellemek için. "
 
 #: ../plugins/am-project/am-properties.c:483
 #: ../plugins/am-project/am-properties.c:658
@@ -1308,9 +1310,8 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:1009
 #: ../plugins/am-project/am-properties.c:1120
 #: ../plugins/am-project/am-properties.c:1192
-#, fuzzy
 msgid "Keep target path:"
-msgstr "İlk yolu kullan"
+msgstr "Hedef yolu koru:"
 
 #: ../plugins/am-project/am-properties.c:486
 #: ../plugins/am-project/am-properties.c:661
@@ -1323,6 +1324,8 @@ msgid ""
 "program subdir/app installed in bin directory it will be installed in bin/"
 "subdir/app not in bin/app."
 msgstr ""
+"Yüklemek için göreceli hedef yolunu koru. Örneğin bin dizinine yüklü bir "
+"altdizin/app uygulamanız varsa bin/app değil bin/subdir/app altına yüklenir."
 
 #: ../plugins/am-project/am-properties.c:529
 #: ../plugins/am-project/am-properties.c:704
@@ -1331,39 +1334,35 @@ msgid "Libraries:"
 msgstr "Kütüphaneler:"
 
 #: ../plugins/am-project/am-properties.c:1046
-#, fuzzy
-#| msgid "Maximum Actions"
 msgid "Manual section:"
-msgstr "Bölüm Öğeleri"
+msgstr "Kişisel seçim:"
 
 #: ../plugins/am-project/am-properties.c:1049
 msgid ""
 "Section where are installed the man pages. Valid section names are the "
 "digits ‘0’ through ‘9’, and the letters ‘l’ and ‘n’. "
 msgstr ""
+"Man sayfalarının yüklendiği bölüm. Geçerli bölüm isimleri '0'dan '9'a "
+"rakamlar, ve 'l' ve 'n' harfleridir. "
 
 #: ../plugins/am-project/amp-source.c:97
-#, fuzzy
-#| msgid "Source file must be inside the project directory"
 msgid "Source file must be a regular file, not a directory"
-msgstr "Kaynak dosyası proje dizinini içerisinde olmalıdır"
+msgstr "Kaynak dosyası klasör değil düz dosya olmalıdır"
 
 #: ../plugins/am-project/amp-target.c:359
 msgid "Target parent is not a valid group"
-msgstr ""
+msgstr "Hedefin üstü geçerli bir grup değil"
 
 #: ../plugins/am-project/amp-target.c:369
 msgid "Please specify target name"
 msgstr "Lütfen bir hedef ismi belirleyin"
 
 #: ../plugins/am-project/amp-target.c:383
-#, fuzzy
-#| msgid ""
-#| "Target name can only contain alphanumeric, '_', '-' or '.' characters"
 msgid ""
 "Target name can only contain alphanumeric, '_', '-', '/' or '.' characters"
 msgstr ""
-"Hedef ismi sadece alfanümerik, '_', '-' ya da '.' karakterlerini içerebilir."
+"Hedef ismi sadece alfanümerik, '_', '-' , '/'ya da '.' karakterlerini "
+"içerebilir"
 
 #: ../plugins/am-project/amp-target.c:398
 msgid "Shared library target name must be of the form 'libxxx.la'"
@@ -1374,10 +1373,8 @@ msgid "Static library target name must be of the form 'libxxx.a'"
 msgstr "Sabit kütüphane hedef isimi 'libxxx.a' biçiminde olmalıdır"
 
 #: ../plugins/am-project/amp-target.c:415
-#, fuzzy
-#| msgid "Shared library target name must be of the form 'libxxx.la'"
 msgid "Module target name must be of the form 'xxx.la'"
-msgstr "Paylaşılan kütüphane hedef ismi 'libxxx.la' biçiminde olmalıdır"
+msgstr "Modül hedef ismi 'xxx.la' biçiminde olmalıdır"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:1
 msgid "Automake Build"
@@ -1467,16 +1464,12 @@ msgid "Install"
 msgstr "Kur"
 
 #: ../plugins/build-basic-autotools/build.c:578
-#, fuzzy
-#| msgid ""
-#| "Before using this new configuration, the default one needs to be removed. "
-#| "Do you want to do that ?"
 msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
 "you want to do that?"
 msgstr ""
-"Bu yeni yapılandırma kullanılmadan önce öntanımlı olanın kaldırılması "
-"gerekiyor. Bunu yapmak istiyor musunuz?"
+"Bu yeni yapılandırma kullanılmadan önce varsayılan yapılandırmanın "
+"kaldırılması gerekiyor. Bunu yapmak istiyor musunuz?"
 
 #: ../plugins/build-basic-autotools/build.c:583
 #: ../plugins/build-basic-autotools/plugin.c:970
@@ -1496,10 +1489,8 @@ msgid "Cannot configure project: Missing configure script in %s."
 msgstr "Proje yapılandırılamıyor: %s içinde eksik yapılandırma betiği."
 
 #: ../plugins/build-basic-autotools/build-options.c:80
-#, fuzzy
-#| msgid "Source file must be inside the project directory"
 msgid "Select a build directory inside the project directory"
-msgstr "Proje kaynak dizininden bir dosya seçin"
+msgstr "Proje dizini içinden bir inşa dizini seçin"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
@@ -1559,11 +1550,11 @@ msgstr "Çalıştırılabilir '%s' güncel değil."
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:1
 msgid "True if we need a special command to install files"
-msgstr ""
+msgstr "Dosyaları yüklemek için özel bir komuta ihtiyacımız varsa doğru"
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:2
 msgid "Command used to be allowed to install files"
-msgstr ""
+msgstr "Dosyaları yüklemek için gerekli komut"
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:4
 #, no-c-format
@@ -1574,6 +1565,11 @@ msgid ""
 "quoted command. You can use %% to get a \"%\" character. A typical value is "
 "\"sudo %s\" or \"su -c %q\"."
 msgstr ""
+"Komut \"%s\" veya \"%q\" içermelidir. Bu, dosyaları yüklemek için gerekli "
+"komutla değiştirilecektir, örneğin \"make install\". %s değişiklik "
+"yapılmadan komutla, %q ise tırnak içine alınmış komutla değiştirilir. % "
+"karakteri elde etmek için %% kullanabilirsiniz. Tipik bir değer \"sudo %s\" "
+"veya \"su -c %q\"dur."
 
 #. The translations should match that of 'make' program. Both strings uses
 #. * pearl regular expression
@@ -1706,16 +1702,12 @@ msgid "Install whole project"
 msgstr "Tüm projeyi kur"
 
 #: ../plugins/build-basic-autotools/plugin.c:1683
-#, fuzzy
-#| msgid "_Clean Project"
 msgid "_Check Project"
-msgstr "Projeyi Yapılandır"
+msgstr "Projeyi _Kontrol Et"
 
 #: ../plugins/build-basic-autotools/plugin.c:1684
-#, fuzzy
-#| msgid "Clean whole project"
 msgid "Check whole project"
-msgstr "Tüm projeyi inşa et"
+msgstr "Tüm projeyi kontrol et"
 
 #: ../plugins/build-basic-autotools/plugin.c:1689
 msgid "_Clean Project"
@@ -1727,7 +1719,7 @@ msgstr "Tüm projeyi temizle"
 
 #: ../plugins/build-basic-autotools/plugin.c:1695
 msgid "C_onfigure Project…"
-msgstr "Projeyi Y_apılandır..."
+msgstr "Projeyi Y_apılandır…"
 
 #: ../plugins/build-basic-autotools/plugin.c:1696
 msgid "Configure project"
@@ -1758,16 +1750,12 @@ msgid "Install module associated with current file"
 msgstr "Mevcut dosya ile ilişkili modülü kur"
 
 #: ../plugins/build-basic-autotools/plugin.c:1719
-#, fuzzy
-#| msgid "_Clean Module"
 msgid "_Check Module"
-msgstr "Python Modülü"
+msgstr "Modülü _Kontrol Et"
 
 #: ../plugins/build-basic-autotools/plugin.c:1720
-#, fuzzy
-#| msgid "Clean module associated with current file"
 msgid "Check module associated with current file"
-msgstr "Mevcut dosya ile ilişkili modülü inşa et"
+msgstr "Mevcut dosya ile ilişkili modülü kontrol et"
 
 #: ../plugins/build-basic-autotools/plugin.c:1725
 msgid "_Clean Module"
@@ -1842,16 +1830,12 @@ msgid "Clean module"
 msgstr "Modülü temizle"
 
 #: ../plugins/build-basic-autotools/plugin.c:1803
-#, fuzzy
-#| msgid "Check Out Files"
 msgid "_Check"
-msgstr "_Kontrol et"
+msgstr "_Kontrol"
 
 #: ../plugins/build-basic-autotools/plugin.c:1804
-#, fuzzy
-#| msgid "Check Out Files"
 msgid "Check module"
-msgstr "Python Modülü"
+msgstr "Modülü kontrol et"
 
 #: ../plugins/build-basic-autotools/plugin.c:1815
 msgid "_Cancel command"
@@ -1902,12 +1886,13 @@ msgid "Build Autotools"
 msgstr "Autotools İnşa Et"
 
 #: ../plugins/build-basic-autotools/program.c:300
-#, fuzzy, c-format
-#| msgid "Error closing project: %s"
+#, c-format
 msgid ""
 "Error while setting up build environment:\n"
 " %s"
-msgstr "Proje kapatılırken hata: %s"
+msgstr ""
+"İnşa ortamı ayarlanırken hata:\n"
+" %s"
 
 #: ../plugins/build-basic-autotools/program.c:373
 msgid "Command aborted"
@@ -1923,7 +1908,6 @@ msgid "Anjuta Class Generator Plugin"
 msgstr "Anjuta Sınıf Oluşturucu Eklentisi"
 
 #: ../plugins/class-gen/anjuta-class-gen.plugin.in.h:3
-#| msgid "Pass"
 msgid "Class"
 msgstr "Sınıf"
 
@@ -2033,16 +2017,12 @@ msgid "Python Class"
 msgstr "Python Sınıfı"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:27
-#, fuzzy
-#| msgid "Base Class:"
 msgid "is Sub-Class"
-msgstr "[%s] Nesne sınıfı '%s' sürümü %s %d.%d artık kullanılmıyor\n"
+msgstr "Alt-Sınıft"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:28
-#, fuzzy
-#| msgid "_Initialize repository"
 msgid "Initializer Arguments:"
-msgstr "Fonksiyonun Bağımsız Değişkenleri"
+msgstr "Başlangıç bağımsız değişkenleri:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:29
 msgid "Methods"
@@ -2054,10 +2034,8 @@ msgid "Variables"
 msgstr "Değişkenler"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:31
-#, fuzzy
-#| msgid "Import"
 msgid "Imports"
-msgstr "İçe aktar"
+msgstr "Aktarımlar"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:32
 msgid "JavaScript Class"
@@ -2068,7 +2046,6 @@ msgid "GLib.Object"
 msgstr "GLib.Object"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:34
-#| msgid "Class Name:"
 msgid "Class Scope:"
 msgstr "Sınıf Kapsamı:"
 
@@ -2097,10 +2074,8 @@ msgid "Source File:"
 msgstr "Kaynak Dosyası:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:41
-#, fuzzy
-#| msgid "Add to Project"
 msgid "Add to Project Target:"
-msgstr "Projeye yeni bir hedef ekle"
+msgstr "Proje Hedefine Ekle:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:42
 msgid "Add to Repository"
@@ -2124,16 +2099,12 @@ msgid "File to which the processed template will be written"
 msgstr "İşlenen şablomun yazılacağı dosya"
 
 #: ../plugins/class-gen/plugin.c:107 ../plugins/project-wizard/druid.c:1368
-#, fuzzy
-#| msgid ""
-#| "Could not find autogen version 5, please install the autogen package. You "
-#| "can get it from http://autogen.sourceforge.net"
 msgid ""
 "Could not find autogen version 5; please install the autogen package. You "
 "can get it from http://autogen.sourceforge.net."
 msgstr ""
-"Autogen sürüm 5 bulunanadı, lütfen autogen paketini kurun. Paketi http://"
-"autogen.sourceforge.net adresinden indirebilirsiniz"
+"Autogen sürüm 5 bulunamadı; lütfen autogen paketini yükleyin. http://autogen."
+"sourceforge.net adresinden alabilirsiniz."
 
 #: ../plugins/class-gen/plugin.c:261 ../plugins/class-gen/plugin.c:472
 #, c-format
@@ -2202,16 +2173,12 @@ msgid "Automatic"
 msgstr "Kendiliğinden"
 
 #: ../plugins/class-gen/window.c:815
-#, fuzzy
-#| msgid "Western"
 msgid "Getter"
-msgstr "Batı"
+msgstr "Okuyucu"
 
 #: ../plugins/class-gen/window.c:816
-#, fuzzy
-#| msgid "Starter"
 msgid "Setter"
-msgstr "Başlatıcı"
+msgstr "Yazıcı"
 
 #: ../plugins/class-gen/window.c:1232
 msgid "XML description of the user interface"
@@ -2279,7 +2246,7 @@ msgstr "Eklemek için dosya ya da dizin seçin:"
 #: ../plugins/subversion/anjuta-subversion.ui.h:5
 #: ../plugins/tools/anjuta-tools.ui.h:8
 msgid "Browse…"
-msgstr "Gözat..."
+msgstr "Gözat…"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:14
 msgid "File is binary"
@@ -2294,13 +2261,6 @@ msgid "Choose file or directory to remove:"
 msgstr "Silmek için dosya ya da dizin seçin:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:17
-#, fuzzy
-#| msgid ""
-#| "<b>Please note: </b>\n"
-#| "\n"
-#| "Pressing OK will delete the file from disk and from CVS. Of course the "
-#| "file won't be removed from CVS before you use CVS Commit. <b>You have "
-#| "been warned!</b>"
 msgid ""
 "<b>Please note: </b>\n"
 "\n"
@@ -2308,10 +2268,10 @@ msgid ""
 "won't be removed from CVS before you use CVS Commit. <b>You have been warned!"
 "</b>"
 msgstr ""
-"<b>Lütfen dikkat edin:</b>\n"
+"<b>Lütfen dikkat:</b>\n"
 "\n"
-"Tamam' basmak dosyayı diskinizden ve CVS'den siler. Tabi ki dosya CVS Commit "
-"kullanmadan önce silinmeyecek. <b>Uyarıldınız!</b>"
+"OK'e tıklamak dosyayı diskinizden ve CVS'den silecek. Tabi ki dosya CVS'den "
+"siz CVS'e göndermeden silinmeyecek. <b>Uyarıldınız!</b>"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:20
 msgid "CVS: Commit file/directory"
@@ -2411,10 +2371,8 @@ msgid "CVS: Log file/directory"
 msgstr "CVS: Dosya/dizin günlüğü"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:42
-#, fuzzy
-#| msgid "Choose file or directory to get log:"
 msgid "Choose file or directory to get log for:"
-msgstr "Durum almak için dosya ya da dizin seçin:"
+msgstr "Günlük almak için dosya ya da dizin seçin:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:43
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:7
@@ -2505,24 +2463,18 @@ msgid "Are you sure that you do not want a log message?"
 msgstr "Günlük mesajı istemediğinizden emin misiniz?"
 
 #: ../plugins/cvs-plugin/cvs-execute.c:125
-#, fuzzy
-#| msgid "CVS command failed - See above for details"
 msgid "CVS command failed. See above for details"
-msgstr "CVS komutu başarısız oldu - Ayrıntılar için yukarıya bakın"
+msgstr "CVS komutu başarısız oldu. Ayrıntılar için yukarıya bakın"
 
 #: ../plugins/cvs-plugin/cvs-execute.c:130
-#, fuzzy, c-format
-#| msgid "CVS command successful! - Time taken: %ld second"
-#| msgid_plural "CVS command successful! - Time taken: %ld seconds"
+#, c-format
 msgid "CVS command successful! Time taken: %ld second"
 msgid_plural "CVS command successful! Time taken: %ld seconds"
-msgstr[0] "CVS komutu başarılı! - Geçen süre %ld saniye"
+msgstr[0] "CVS komutu başarılı! Geçen süre: %ld saniye"
 
 #: ../plugins/cvs-plugin/cvs-execute.c:221
-#, fuzzy
-#| msgid "CVS command is running - please wait until it finishes!"
 msgid "CVS command is running — please wait until it finishes!"
-msgstr "CVS komutu çalışıyor! Lütfen o bitene kadar bekleyin!"
+msgstr "CVS komutu çalışıyor — lütfen bitene kadar bekleyin!"
 
 #: ../plugins/cvs-plugin/cvs-execute.c:229
 #: ../plugins/cvs-plugin/cvs-execute.c:233 ../plugins/cvs-plugin/plugin.c:472
@@ -2582,10 +2534,8 @@ msgstr "_Güncelle"
 #. Display label
 #. short-cut
 #: ../plugins/cvs-plugin/plugin.c:80 ../plugins/cvs-plugin/plugin.c:139
-#, fuzzy
-#| msgid "Sync your local copy with the CVS tree"
 msgid "Syncronize your local copy with the CVS tree"
-msgstr "CVS ağacı ile yerel kopyayı eş zamanlandır"
+msgstr "CVS ağacı ile yerel kopyanızı eş zamanlandırın"
 
 #. Action name
 #. Stock icon, if any
@@ -2859,14 +2809,6 @@ msgid "Remote debugging"
 msgstr "Uzaktan hata ayıklama"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:52
-#, fuzzy
-#| msgid ""
-#| "<span weight=\"bold\" size=\"larger\">Are you sure you want to debug a "
-#| "program not using the Debug configuration ?</span>\n"
-#| "\n"
-#| "When optimizations are enabled, the debugger cannot always identify the "
-#| "source code corresponding to the instructions, some commands can perform "
-#| "in a strange way, especially steps."
 msgid ""
 "<span weight=\"bold\" size=\"larger\">Are you sure you want to debug a "
 "program not using the Debug configuration?</span>\n"
@@ -2876,12 +2818,12 @@ msgid ""
 "in a strange way, especially steps."
 msgstr ""
 "<span weight=\"bold\" size=\"larger\">Hata Ayıklama yapılandırmasını "
-"kullanmadan bir programın hata ayıklamasını yapmak istediğinizden emin "
-"misiniz?</span>\n"
+"kullanmadan bir programın hata ayıklamasını yapmak istediğinize emin misiniz?"
+"</span>\n"
 "\n"
-"Optimizasyonlar etkin olduğunda hata ayıklayıcı her zaman kaynak kodundaki "
-"ilgili işlemleri tanımlayamaz, bazı komutlar özellikle adımlar garip bir "
-"şekilde gerçekleşebilir."
+"İyileştirmeler etkin olduğunda hata ayıklayıcı her zaman kaynak kodu "
+"işlemlere göre tanımlayamaz, yani bazı komutlar garip davranabilirler, "
+"özellikle adımlar."
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:55
 msgid "Do not show again"
@@ -2913,7 +2855,7 @@ msgstr "Mevcut konumda kesme noktası belirle"
 #. Stock icon, if any
 #: ../plugins/debug-manager/breakpoints.c:1830
 msgid "Add Breakpoint…"
-msgstr "Kesme Noktası Ekle..."
+msgstr "Kesme Noktası Ekle…"
 
 #. Display label
 #. short-cut
@@ -3091,7 +3033,7 @@ msgstr "Programın çalışmasını duraklatır"
 
 #: ../plugins/debug-manager/plugin.c:453
 msgid "Running…"
-msgstr "Çalışıyor..."
+msgstr "Çalışıyor…"
 
 #. Action name
 #. Stock icon, if any
@@ -3143,17 +3085,15 @@ msgstr "Hata ayıklayıcıyı başlat ve programı yükle"
 
 #: ../plugins/debug-manager/plugin.c:877
 msgid "_Debug Process…"
-msgstr "_Hata Ayıklama Süreci..."
+msgstr "_Hata Ayıklama Süreci…"
 
 #: ../plugins/debug-manager/plugin.c:879
 msgid "Start debugger and attach to a running program"
 msgstr "Hata ayıklayıcıyı başlat ve çalışan bir programa ekle"
 
 #: ../plugins/debug-manager/plugin.c:885
-#, fuzzy
-#| msgid "Debug _Remote Target..."
 msgid "Debug _Remote Target…"
-msgstr "Uzak Klasörü Tara…"
+msgstr "_Uzak Hedefte Hata Ayıklama…"
 
 #: ../plugins/debug-manager/plugin.c:887
 msgid "Connect to a remote debugging target"
@@ -3169,7 +3109,7 @@ msgstr "Hata ayıklayıcıyı hoşçakal de"
 
 #: ../plugins/debug-manager/plugin.c:901
 msgid "Add source paths…"
-msgstr "Kaynak yolları ekle..."
+msgstr "Kaynak yolları ekle…"
 
 #: ../plugins/debug-manager/plugin.c:903
 msgid "Add additional source paths"
@@ -3180,7 +3120,7 @@ msgstr "Ek kaynak yolları ekler"
 #: ../plugins/debug-manager/plugin.c:913
 #: ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
-msgstr "Hata Ayıklayıcı Komutu..."
+msgstr "Hata Ayıklayıcı Komutu…"
 
 #. Display label
 #. short-cut
@@ -3210,16 +3150,12 @@ msgid "Show kernel signals"
 msgstr "Çekirdek sinyallerini göster"
 
 #: ../plugins/debug-manager/plugin.c:945
-#, fuzzy
-#| msgid "_Continue"
 msgid "_Continue/Suspend"
-msgstr "Otomatik olarak _askıya al"
+msgstr "_Devam/Beklet"
 
 #: ../plugins/debug-manager/plugin.c:947
-#, fuzzy
-#| msgid "Continue the execution of the program"
 msgid "Continue or suspend the execution of the program"
-msgstr "Programın çalışmasına devam et"
+msgstr "Programın çalışmasına devam et ya da çalışmasını beklet"
 
 #: ../plugins/debug-manager/plugin.c:965
 msgid "Step _In"
@@ -3242,10 +3178,8 @@ msgid "Step _Out"
 msgstr "Dışa _Adımla"
 
 #: ../plugins/debug-manager/plugin.c:983
-#, fuzzy
-#| msgid "Single step out of the function"
 msgid "Single step out of function"
-msgstr "İşlevin içine tek adımla"
+msgstr "İşlev dışına tek adım"
 
 #: ../plugins/debug-manager/plugin.c:989
 msgid "_Run to Cursor"
@@ -3256,16 +3190,12 @@ msgid "Run to the cursor"
 msgstr "İmlece kadar çalıştır"
 
 #: ../plugins/debug-manager/plugin.c:997
-#, fuzzy
-#| msgid "_Run to Cursor"
 msgid "_Run from Cursor"
-msgstr "İmlece Kadar Ç_alıştır"
+msgstr "İmleçten _çalıştır"
 
 #: ../plugins/debug-manager/plugin.c:999
-#, fuzzy
-#| msgid "Run to the cursor"
 msgid "Run from the cursor"
-msgstr "İmlece Kadar Ç_alıştır"
+msgstr "İmleçten çalıştır"
 
 #: ../plugins/debug-manager/plugin.c:1083
 #: ../plugins/debug-manager/plugin.c:1089
@@ -3275,12 +3205,10 @@ msgid "Debugger operations"
 msgstr "Hata ayıklayıcı işlemleri"
 
 #: ../plugins/debug-manager/queue.c:514
-#, fuzzy, c-format
-#| msgid ""
-#| "Unable to find one debugger plugin supporting a target with %s mime type"
+#, c-format
 msgid "Unable to find a debugger plugin supporting a target with %s MIME type"
 msgstr ""
-"%s mime türü ile hedefi kabul eden bir hata ayıklayıcı eklentisi bulunamadı"
+"%s MIME türü olan bir hedefi kabul eden hata ayıklayıcı eklentisi bulunamadı"
 
 #: ../plugins/debug-manager/registers.c:462
 msgid "Register"
@@ -3377,11 +3305,8 @@ msgid "View Source"
 msgstr "Kaynağı Göster"
 
 #: ../plugins/debug-manager/stack_trace.c:740
-#, fuzzy
 msgid "Get Stack trace"
-msgstr ""
-"Hatalı izleme bilgisi:\n"
-"%s"
+msgstr "Yığın izini getir"
 
 #: ../plugins/debug-manager/stack_trace.c:780
 msgid "Active"
@@ -3439,7 +3364,7 @@ msgstr "Komut"
 #: ../plugins/debug-manager/start.c:628
 #, c-format
 msgid "Unable to execute: \"%s\". The returned error was: \"%s\"."
-msgstr ""
+msgstr "Çalıştırılamadı: \"%s\". Dönen hata: \"%s\"."
 
 #: ../plugins/debug-manager/start.c:644
 #, c-format
@@ -3452,32 +3377,27 @@ msgid "Unable to open %s. Debugger cannot start."
 msgstr "%s açılamıyor. Hata ayıklayıcı başlatılamıyor."
 
 #: ../plugins/debug-manager/start.c:981
-#, fuzzy, c-format
-#| msgid "Unable to detect mime-type of %s. Debugger cannot start."
+#, c-format
 msgid "Unable to detect MIME type of %s. Debugger cannot start."
-msgstr "%s için mime tipi tespit edilemedi. Hata ayıklayıcı başlatılamıyor."
+msgstr "%s için MIME türü tespit edilemedi. Hata ayıklayıcı başlayamaz."
 
 #: ../plugins/debug-manager/start.c:1343
 msgid "Path"
 msgstr "Yol"
 
 #: ../plugins/debug-manager/start.c:1392
-#, fuzzy
-#| msgid ""
-#| "The program is running.\n"
-#| "Do you still want to stop the debugger?"
 msgid ""
 "The program is already running.\n"
 "Do you still want to stop the debugger?"
 msgstr ""
-"Program çalışıyor.\n"
-"Hata ayıklayıcıyı gene de durdurmak istiyor musunuz?"
+"Program zaten çalışıyor.\n"
+"Hata ayıklayıcıyı yine de durdurmak istiyor musunuz?"
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/debug-manager/watch.c:406
 msgid "Ins_pect/Evaluate…"
-msgstr "İn_cele/Değerlendir..."
+msgstr "İn_cele/Değerlendir…"
 
 #. Display label
 #. short-cut
@@ -3487,7 +3407,7 @@ msgstr "İfade veya değişkeni incele ya da değerlendir"
 
 #: ../plugins/debug-manager/watch.c:414
 msgid "Add Watch…"
-msgstr "İzleme Ekle..."
+msgstr "İzleme Ekle…"
 
 #: ../plugins/debug-manager/watch.c:422
 msgid "Remove Watch"
@@ -3587,22 +3507,21 @@ msgstr "Eksik isim"
 #: ../plugins/dir-project/dir-project.c:1142
 #: ../plugins/mk-project/mk-project.c:1024
 #: ../plugins/mk-project/mk-project.c:1034
-#, fuzzy, c-format
-#| msgid "Project doesn't exist"
+#, c-format
 msgid "Project doesn't allow to set properties"
-msgstr "Proje mevcut değil"
+msgstr "Proje özelliklerin ayarlanmasına izin vermiyor"
 
 #: ../plugins/dir-project/dir-project.plugin.in.h:1
-#, fuzzy
-#| msgid "_Directory name:"
 msgid "Directory backend"
-msgstr "Autotools aracı"
+msgstr "Dizin arka ucu"
 
 #: ../plugins/dir-project/dir-project.plugin.in.h:2
 msgid ""
 "Directory project backend, get only source files, use it when other backend "
 "fails"
 msgstr ""
+"Dizin proje arka ucu, sadece kaynak dosyaları al, diğer arka uçlar başarısız "
+"olunca kullan"
 
 #: ../plugins/document-manager/action-callbacks.c:315
 #, c-format
@@ -3642,10 +3561,8 @@ msgid "Remove"
 msgstr "Sil"
 
 #: ../plugins/document-manager/anjuta-docman.c:164
-#, fuzzy
-#| msgid "[read-only]"
 msgid " [read-only]"
-msgstr "[salt-okunur]"
+msgstr " [salt-okunur]"
 
 #: ../plugins/document-manager/anjuta-docman.c:533
 #: ../plugins/document-manager/plugin.c:156
@@ -3749,45 +3666,32 @@ msgid "Position:"
 msgstr "Konum:"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:13
-#, fuzzy
-#| msgid "_Show Status"
 msgid "Show tabs"
-msgstr "Sekmeleri Göster"
+msgstr "Sekmeleri göster"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:14
-#, fuzzy
 msgid "Show drop-down list"
-msgstr "S_üzülmüş dosya listesini göster (%d dosya)"
+msgstr "Aşağı açılır listeyi göster"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:15
-#, fuzzy
-#| msgid "Close other documents"
 msgid "Do not show open documents"
-msgstr "Gizli dosyaları gösterme"
+msgstr "Açık belgeleri gösterme"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:16
-#, fuzzy
-#| msgid "Documents"
 msgid "Open documents"
-msgstr "DjVu Belgeleri"
+msgstr "Açık belgeler"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:17
-#, fuzzy
-#| msgid "Case Sensitive"
 msgid "Case sensitive"
-msgstr "Büyük/Küçük Harfe Duyarlı"
+msgstr "Büyük/küçük harfe duyarlı"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:18
-#, fuzzy
-#| msgid "Regular Expression"
 msgid "Regular expression"
-msgstr "Düzenli İfade"
+msgstr "Düzenli ifade"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:19
-#, fuzzy
-#| msgid "Replace all"
 msgid "Replace All"
-msgstr "Tümünü değiştir"
+msgstr "Tümünü Değiştir"
 
 #: ../plugins/document-manager/plugin.c:142
 msgid "_Save"
@@ -3799,7 +3703,7 @@ msgstr "Mevcut dosyayı kaydet"
 
 #: ../plugins/document-manager/plugin.c:144
 msgid "Save _As…"
-msgstr "Farklı _Kaydet..."
+msgstr "Farklı _Kaydet…"
 
 #: ../plugins/document-manager/plugin.c:145
 msgid "Save the current file with a different name"
@@ -3847,7 +3751,7 @@ msgstr "Son Kullanılan _Dosyalar"
 
 #: ../plugins/document-manager/plugin.c:166
 msgid "_Print…"
-msgstr "_Yazdır..."
+msgstr "_Yazdır…"
 
 #: ../plugins/document-manager/plugin.c:167
 msgid "Print the current file"
@@ -3911,11 +3815,8 @@ msgid "Convert EOL to Majority EOL"
 msgstr "EOL'i EOL'e çevir"
 
 #: ../plugins/document-manager/plugin.c:197
-#, fuzzy
-#| msgid ""
-#| "Convert End Of Line characters to majority of the EOL found in the file"
 msgid "Convert End Of Line characters to the most common EOL found in the file"
-msgstr "Satır sonu karakterlerini dosyada bulunan çoğunluk EOL'ye çevir"
+msgstr "Satır sonu karakterlerini dosyada en çok görülen EOL'ye çevir"
 
 #: ../plugins/document-manager/plugin.c:202
 msgid "_Select"
@@ -3976,7 +3877,7 @@ msgstr "Seçili metni akım açıklamaya çevir"
 #. menu title
 #: ../plugins/document-manager/plugin.c:235
 msgid "_Line Number…"
-msgstr "_Satır Numarası..."
+msgstr "_Satır Numarası…"
 
 #: ../plugins/document-manager/plugin.c:236
 msgid "Go to a particular line in the editor"
@@ -4011,20 +3912,16 @@ msgid "Previous _History"
 msgstr "Önceki _Geçmiş"
 
 #: ../plugins/document-manager/plugin.c:248
-#, fuzzy
-#| msgid "Goto previous history"
 msgid "Go to previous history"
-msgstr "Önceki geçmiş ögesine git"
+msgstr "Önceki geçmişe git"
 
 #: ../plugins/document-manager/plugin.c:250
 msgid "Next Histor_y"
 msgstr "Sonraki G_eçmiş"
 
 #: ../plugins/document-manager/plugin.c:251
-#, fuzzy
-#| msgid "Goto next history"
 msgid "Go to next history"
-msgstr "Sonraki geçmiş ögesine git"
+msgstr "Sonraki geçmişe git"
 
 #: ../plugins/document-manager/plugin.c:256
 msgid "_Search"
@@ -4043,13 +3940,12 @@ msgid "Find _Next"
 msgstr "_Sonrakini Bul"
 
 #: ../plugins/document-manager/plugin.c:261
-#, fuzzy
 msgid "Search for next appearance of term."
-msgstr "Yardımı bir terim için ara"
+msgstr "İfadeyi ileride ara."
 
 #: ../plugins/document-manager/plugin.c:263
 msgid "Find and R_eplace…"
-msgstr "Bul ve D_eğiştir..."
+msgstr "Bul ve D_eğiştir…"
 
 #: ../plugins/document-manager/plugin.c:264
 msgid "Search and replace"
@@ -4064,27 +3960,20 @@ msgid "Repeat the last Find command"
 msgstr "Son Bul komutunu tekrarla"
 
 #: ../plugins/document-manager/plugin.c:270
-#, fuzzy
-#| msgid "Highlight"
 msgid "Clear Highlight"
-msgstr "_Vurguları Temizle"
+msgstr "Vurguyu Temizle"
 
 #: ../plugins/document-manager/plugin.c:271
-#, fuzzy
 msgid "Clear all highlighted text"
-msgstr "Düzenleyici içindeki bütün yazıyı seç"
+msgstr "Tüm vurgulanmış metni temizle"
 
 #: ../plugins/document-manager/plugin.c:273
-#, fuzzy
-#| msgid "Fin_d in Files..."
 msgid "Find in Files"
-msgstr "\"%s\" içindeki dosyalar yeniden adlandırılıyor"
+msgstr "Dosyalar içinde Ara"
 
 #: ../plugins/document-manager/plugin.c:274
-#, fuzzy
-#| msgid "Open recent files"
 msgid "Search in project files"
-msgstr "Dosyaları projeye ekle"
+msgstr "Proje dosyalarında ara"
 
 #: ../plugins/document-manager/plugin.c:280
 msgid "Case Sensitive"
@@ -4099,19 +3988,16 @@ msgid "Highlight All"
 msgstr "Tümünü Vurgula"
 
 #: ../plugins/document-manager/plugin.c:285
-#, fuzzy
 msgid "Highlight all occurrences"
-msgstr "Tüm oluşumları sil"
+msgstr "Tüm oluşumları vurgula"
 
 #: ../plugins/document-manager/plugin.c:288
 msgid "Regular Expression"
 msgstr "Düzenli İfade"
 
 #: ../plugins/document-manager/plugin.c:289
-#, fuzzy
-#| msgid "Search for a string or regular expression in the editor"
 msgid "Search using regular expressions"
-msgstr "Düzenleyicide bir dizgi ya da düzenli ifade için ara"
+msgstr "Düzenli ifadeler kullanarak ara"
 
 #: ../plugins/document-manager/plugin.c:295
 #: ../plugins/indentation-c-style/plugin.c:218
@@ -4193,16 +4079,12 @@ msgid "Delete the selected text from the editor"
 msgstr "Düzenleyiciden seçili metni temizle"
 
 #: ../plugins/document-manager/plugin.c:334
-#, fuzzy
-#| msgid "_AutoComplete"
 msgid "_Auto-Complete"
-msgstr "Otomatik Tamamlama Gecikmesi"
+msgstr "_Otomatik-Tamamla"
 
 #: ../plugins/document-manager/plugin.c:335
-#, fuzzy
-#| msgid "AutoComplete the current word"
 msgid "Auto-complete the current word"
-msgstr "Düzenleyicideki mevcut kelime"
+msgstr "Mevcut kelimeyi otomatik-tamamla"
 
 #: ../plugins/document-manager/plugin.c:341
 msgid "Zoom In"
@@ -4273,16 +4155,12 @@ msgid "Bookmar_k"
 msgstr "_Yer imi"
 
 #: ../plugins/document-manager/plugin.c:377
-#, fuzzy
-#| msgid "_Next Bookmark"
 msgid "_Toggle Bookmark"
-msgstr "_Yer imi ekle..."
+msgstr "Yer imini _Tetikle"
 
 #: ../plugins/document-manager/plugin.c:378
-#, fuzzy
-#| msgid "Add a bookmark at the current line position"
 msgid "Toggle bookmark at the current line position"
-msgstr "Mevcut satır pozisyonunda bir yer imi ekle"
+msgstr "Yerimini mevcut satır pozisyonunda değiştir"
 
 #: ../plugins/document-manager/plugin.c:380
 msgid "_Previous Bookmark"
@@ -4362,10 +4240,8 @@ msgid "Documents"
 msgstr "Belgeler"
 
 #: ../plugins/document-manager/plugin.c:424
-#, fuzzy
-#| msgid "Toggle Breakpoint"
 msgid "Toggle search options"
-msgstr "Arama seçeneklerini göster"
+msgstr "Arama seçeneklerini değiştir"
 
 #: ../plugins/document-manager/plugin.c:587
 msgid "Reload"
@@ -4407,44 +4283,37 @@ msgid "Autosave completed"
 msgstr "Kendiliğinen kaydetme tamamlandı"
 
 #: ../plugins/document-manager/search-box.c:520
-#, fuzzy, c-format
-#| msgid "Search for \"%s\" reached end and was continued on top."
+#, c-format
 msgid "Search for \"%s\" reached the end and was continued at the top."
-msgstr "\"%s\" için arama sona ulaştı ve baştan devam edildi."
+msgstr "\"%s\" araması sona ulaştı ve yukardan devam ettirildi."
 
 #: ../plugins/document-manager/search-box.c:525
-#, fuzzy, c-format
-#| msgid "Search for \"%s\" reached end and was continued on top."
+#, c-format
 msgid "Search for \"%s\" reached top and was continued at the bottom."
-msgstr "\"%s\" için arama sona ulaştı ve baştan devam edildi."
+msgstr "\"%s\" için arama yukarı ulaştı ve alttan devam edildi."
 
 #: ../plugins/document-manager/search-box.c:535
-#, fuzzy, c-format
-#| msgid ""
-#| "Search for \"%s\" reached end and was continued on top but no new match "
-#| "was found."
+#, c-format
 msgid ""
 "Search for \"%s\" reached the end and was continued at the top but no new "
 "match was found."
 msgstr ""
-"\"%s\" için arama sona ulaştı ve baştan devam edildi ancak yeni eşleşme "
+"\"%s\" için arama sona ulaştı ve yukardan devam edildi ancak yeni eşleşme "
 "bulunamadı."
 
 #: ../plugins/document-manager/search-box.c:540
-#, fuzzy, c-format
-#| msgid ""
-#| "Search for \"%s\" reached end and was continued on top but no new match "
-#| "was found."
+#, c-format
 msgid ""
 "Search for \"%s\" reached top and was continued at the bottom but no new "
 "match was found."
 msgstr ""
-"\"%s\" için arama sona ulaştı ve baştan devam edildi ancak yeni eşleşme "
+"\"%s\" araması yukarı ulaştı ve alttan devam edildi ancak yeni eşleşme "
 "bulunamadı."
 
 #: ../plugins/document-manager/search-box.c:917
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
+"Daha fazla arama seçeneği için \"Ara\" simgesinin içerik menüsünü kullanın"
 
 #: ../plugins/document-manager/search-box.c:988
 msgid "Replace"
@@ -4460,16 +4329,12 @@ msgid "Filename"
 msgstr "Dosya İsmi"
 
 #: ../plugins/document-manager/search-files.c:728
-#, fuzzy
-#| msgid "All files"
 msgid "All text files"
-msgstr "Tüm Metin Dosyaları"
+msgstr "Tüm metin dosyaları"
 
 #: ../plugins/document-manager/search-files.c:871
-#, fuzzy
-#| msgid "Fin_d in Files..."
 msgid "Find in files"
-msgstr "\"%s\" içindeki dosyalar yeniden adlandırılıyor"
+msgstr "Dosyalarda bul"
 
 #: ../plugins/file-loader/anjuta-loader.plugin.in.h:1
 #: ../plugins/file-loader/plugin.c:1230 ../plugins/file-loader/plugin.c:1236
@@ -4492,14 +4357,13 @@ msgstr "Farklı dosyaları yüklemek için dosya yükleyici"
 #.
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:521
 msgid "No items found"
-msgstr "Hiçbir öğe bulunamadı"
+msgstr "Hiçbir öge bulunamadı"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:669
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:725
-#, fuzzy, c-format
-#| msgid "No recently used resource found with URI `%s'"
+#, c-format
 msgid "No recently used resource found with URI \"%s\""
-msgstr "URI `%s' ile en son kullanılan hiçbir kaynak bulunamadı"
+msgstr "URI \"%s\" ile en son kullanılan hiçbir kaynak bulunamadı"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:749
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:757
@@ -4514,7 +4378,7 @@ msgstr "Aç '%s'"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:966
 msgid "Unknown item"
-msgstr "Bilinmeyen öğe"
+msgstr "Bilinmeyen öge"
 
 #. This is the label format that is used for the first 10 items
 #. * in a recent files menu. The %d is the number of the item,
@@ -4548,17 +4412,7 @@ msgstr ""
 "%s"
 
 #: ../plugins/file-loader/plugin.c:270
-#, fuzzy, c-format
-#| msgid ""
-#| "<b>Cannot open \"%s\"</b>.\n"
-#| "\n"
-#| "There is no plugin, default action, or application configured to handle "
-#| "this file type.\n"
-#| "\n"
-#| "Mime type: %s\n"
-#| "\n"
-#| "You may choose to try opening it with the following plugins or "
-#| "applications."
+#, c-format
 msgid ""
 "<b>Cannot open \"%s\"</b>.\n"
 "\n"
@@ -4571,10 +4425,10 @@ msgid ""
 msgstr ""
 "<b>\"%s\" açılamıyor</b>.\n"
 "\n"
-"Bu dosya türünü işlemek için yapılandırılmış hiçbir eklenti, öntanımlı "
+"Bu dosya türünü işlemek için yapılandırılmış hiçbir eklenti, varsayılan "
 "eylem, ya da uygulama yok.\n"
 "\n"
-"Mime türü: %s\n"
+"MIME türü: %s\n"
 "\n"
 "Aşağıdaki eklentileri ya da uygulamaları kullanarak açmayı deneyebilirsiniz."
 
@@ -4620,10 +4474,8 @@ msgid "Python source files"
 msgstr "Python kaynak dosyaları"
 
 #: ../plugins/file-loader/plugin.c:561
-#, fuzzy
-#| msgid "Hyper text markup files"
 msgid "Hypertext markup files"
-msgstr "Dosyaları otomatik kayıt etkin"
+msgstr "Bağlantılı metin işaret dosyaları"
 
 #: ../plugins/file-loader/plugin.c:570
 msgid "Shell script files"
@@ -4656,7 +4508,7 @@ msgstr "Yeni boş dosya"
 
 #: ../plugins/file-loader/plugin.c:885
 msgid "_Open…"
-msgstr "_Aç..."
+msgstr "_Aç…"
 
 #: ../plugins/file-loader/plugin.c:896 ../plugins/file-loader/plugin.c:909
 msgid "_Open"
@@ -4732,10 +4584,8 @@ msgid "Choose Directory to show if no project is open"
 msgstr "Eğer hiçbir proje açık değilse Dizin Seç göster"
 
 #: ../plugins/file-manager/file-manager.ui.h:3
-#, fuzzy
-#| msgid "AutoComplete the current word"
 msgid "Automatically select the current document"
-msgstr "Geçerli belgenin _dilini seç."
+msgstr "Otomatik olarak mevcut belgeyi seç"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
@@ -4769,29 +4619,26 @@ msgstr "Yükleniyor..."
 
 #: ../plugins/file-manager/file-model.c:708
 #: ../plugins/file-manager/file-view.c:980
-#, fuzzy
-#| msgid "Path"
 msgid "Base Path"
-msgstr "İlk Yol:"
+msgstr "Taban Yol"
 
 #: ../plugins/file-manager/file-model.c:709
 #: ../plugins/file-manager/file-view.c:981
-#, fuzzy
-#| msgid "Uri of the top-most path displayed"
 msgid "GFile representing the top-most path displayed"
-msgstr "Gösterilecek en üst yolun uri'si"
+msgstr "Gösterilen en yukardaki yolu temsil eden GFile"
 
 #. You try to rename "/"
 #: ../plugins/file-manager/file-view.c:139
-#, fuzzy
 msgid "You can't rename \"/\"!"
-msgstr "Birim yeniden adlandırılamıyor"
+msgstr "\"/\" yeniden isimlendirilemez!"
 
 #: ../plugins/file-manager/file-view.c:153
 msgid ""
 "An error has occured!\n"
 "Maybe you permissions're insuficient or the filename is wrong"
 msgstr ""
+"Bir hata oluştu!\n"
+"İzinleriniz yetersiz ya da dosya ismi yanlış olabilir"
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
@@ -4802,16 +4649,12 @@ msgid "Rename file or directory"
 msgstr "Dosya ya da dizini yeniden adlandır"
 
 #: ../plugins/file-manager/plugin.c:110
-#, fuzzy
-#| msgid "File Manager"
 msgid "_Show in File manager"
-msgstr "Dosya yöneticisi eklentisinde seçilen URI"
+msgstr "Dosya yöneticisinde _göster"
 
 #: ../plugins/file-manager/plugin.c:110
-#, fuzzy
-#| msgid "File Manager"
 msgid "Show in File manager"
-msgstr "Dosya yöneticisi eklentisinde seçilen URI"
+msgstr "Dosya yöneticisinde göster"
 
 #: ../plugins/file-manager/plugin.c:366
 msgid "File manager popup actions"
@@ -4851,10 +4694,8 @@ msgid "Type:"
 msgstr "Tür:"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:8
-#, fuzzy
-#| msgid "Add License Information"
 msgid "Add License Information:"
-msgstr "Genel Proje Bilgisi"
+msgstr "Lisans bilgisi ekle:"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:9
 msgid "Create corresponding header file"
@@ -4865,10 +4706,8 @@ msgid "Use Template for the Header file"
 msgstr "Başlık dosyası için Şablom kullan"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:11
-#, fuzzy
-#| msgid "Add to project"
 msgid "Add to project target:"
-msgstr "Projeye yeni bir hedef ekle"
+msgstr "Proje hedefine ekle:"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:12
 msgid "Add to repository"
@@ -4919,22 +4758,16 @@ msgid "BSD Public License"
 msgstr "BSD Kamu Lisansı"
 
 #: ../plugins/gdb/anjuta-gdb.plugin.in.h:1
-#, fuzzy
-#| msgid "Debugger"
 msgid "GNU Debugger"
-msgstr "Hata Ayıklayıcıyı Başlat"
+msgstr "GNU Hata Ayıklayıcısı"
 
 #: ../plugins/gdb/anjuta-gdb.plugin.in.h:2
-#, fuzzy
-#| msgid "Debug Manager plugin."
 msgid "GNU Debugger Plugin"
-msgstr "%s eklentisinin eksik konumu"
+msgstr "GNU Hata Ayıklama Eklentisi"
 
 #: ../plugins/gdb/anjuta-gdb.ui.h:1
-#, fuzzy
-#| msgid "Available plugins"
 msgid "Available pretty printers"
-msgstr "Mevcut yazıcı bulunmuyor"
+msgstr "Kullanılabilir güzel yazıcılar"
 
 #. The %s argument is a program name, anjuta by example
 #: ../plugins/gdb/debugger.c:729
@@ -4960,10 +4793,8 @@ msgstr ""
 "Anjuta'nın doğru olarak kurulduğundan emin olun."
 
 #: ../plugins/gdb/debugger.c:1131
-#, fuzzy
-#| msgid "Getting ready to start debugging session...\n"
 msgid "Getting ready to start debugging session…\n"
-msgstr "Hata ayıklayıcısı oturumu başlamaya hazırlanıyor...\n"
+msgstr "Hata ayıklama oturumu başlamaya hazırlanıyor…\n"
 
 #: ../plugins/gdb/debugger.c:1137
 msgid "Loading Executable: "
@@ -5052,7 +4883,7 @@ msgstr "Program bağlı\n"
 #: ../plugins/gdb/debugger.c:2201
 #, c-format
 msgid "Attaching to process: %d…\n"
-msgstr "Sürece bağlanılıyor: %d...\n"
+msgstr "Sürece bağlanılıyor: %d…\n"
 
 #: ../plugins/gdb/debugger.c:2227
 msgid ""
@@ -5077,16 +4908,15 @@ msgstr "Program ayrıldı\n"
 #: ../plugins/gdb/debugger.c:2329
 #, c-format
 msgid "Detaching the process…\n"
-msgstr "Süreçten ayrılınıyor...\n"
+msgstr "Süreçten ayrılınıyor…\n"
 
 #: ../plugins/gdb/debugger.c:2352
 msgid "Interrupting the process\n"
 msgstr "Süreç kesmeye uğratılıyor\n"
 
 #: ../plugins/gdb/debugger.c:3926
-#, fuzzy
 msgid "more children"
-msgstr "%s altlarını yeniden sırala"
+msgstr "daha çok çocuk süreç"
 
 #: ../plugins/gdb/debugger.c:4179
 #, c-format
@@ -5098,14 +4928,11 @@ msgid "Error whilst signaling the process."
 msgstr "Sürece sinyal gönderilirken hata oluştu."
 
 #: ../plugins/gdb/plugin.c:120
-#, fuzzy, c-format
-#| msgid ""
-#| "Failed to create fifo file named %s. The program will run without a "
-#| "terminal."
+#, c-format
 msgid ""
 "Failed to create FIFO file named %s. The program will run without a terminal."
 msgstr ""
-"%s isimli fifo dosyası oluşturulamadı. Program bir uçbirim olmadan çalışacak."
+"%s isimli FIFO dosyası oluşturulamadı. Program bir uçbirim olmadan çalışacak."
 
 #: ../plugins/gdb/plugin.c:204
 msgid "Cannot start terminal for debugging."
@@ -5126,31 +4953,32 @@ msgid ""
 "rows. Most of the time the register function name contains the word "
 "\"register\"."
 msgstr ""
+"Kayıt fonksiyonu aşağıdaki güzel yazıcı dosyalarda otomatik olarak "
+"bulunamadı:\n"
+"%s\n"
+"Satırları etkinleştirmeden önce kendiniz kayıt fonksiyonunun kolonlarını "
+"doldurmalısınız. Çoğu zaman kayıt fonksiyonunun ismi \"register\" kelimesini "
+"içerir."
 
 #: ../plugins/gdb/preferences.c:223
-#, fuzzy
-#| msgid "Select project type"
 msgid "Select a pretty printer file"
-msgstr "ICC Profil Dosyası Seç"
+msgstr "Güzel yazıcı dosyası seçin"
 
 #: ../plugins/gdb/preferences.c:358
 msgid "Activate"
-msgstr "Aktifleştir"
+msgstr "Etkinleştir"
 
 #. Translators: The "Register Function" column contains the name of a
 #. * function used to register pretty printers in gdb.
 #: ../plugins/gdb/preferences.c:372
-#, fuzzy
-#| msgid "Current Function"
 msgid "Register Function"
-msgstr "İşlev bitti\n"
+msgstr "Kayıt Fonksiyonu"
 
 #: ../plugins/gdb/preferences.c:396 ../plugins/gdb/preferences.c:404
 msgid "Gdb Debugger"
 msgstr "Gdb Hata Ayıklayıcısı"
 
 #: ../plugins/git/anjuta-git.ui.h:1
-#, fuzzy
 msgid "Cancel"
 msgstr "İptal"
 
@@ -5164,9 +4992,8 @@ msgid "Do not commit"
 msgstr "Gönderme (commit)"
 
 #: ../plugins/git/anjuta-git.ui.h:4
-#, fuzzy
 msgid "OK"
-msgstr "Tamam"
+msgstr "OK"
 
 #: ../plugins/git/anjuta-git.ui.h:5
 msgid "Add signed off by line"
@@ -5181,40 +5008,32 @@ msgid "Add Files:"
 msgstr "Dosyaları Ekle:"
 
 #: ../plugins/git/anjuta-git.ui.h:9
-#, fuzzy
-#| msgid "Module name:"
 msgid "Remote name:"
-msgstr "Uzaktaki cihazın ismi"
+msgstr "Uzak isim:"
 
 #: ../plugins/git/anjuta-git.ui.h:11
 msgid "Fetch remote branches after creation"
-msgstr "Oluşturduktan sonra uzaktaki branşları al"
+msgstr "Oluşturduktan sonra uzak dalları getir"
 
 #: ../plugins/git/anjuta-git.ui.h:12
-#, fuzzy
-#| msgid "Mailbox file containing patches:"
 msgid "Mailbox files to apply:"
-msgstr "Bu eylemi tüm dosyalara uygula"
+msgstr "Uygulanacak mailbox dosyaları:"
 
 #: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:940
 msgid "Branches"
-msgstr "Branşlar"
+msgstr "Dallar"
 
 #: ../plugins/git/anjuta-git.ui.h:14
-#, fuzzy
-#| msgid "Commit to Cherry Pick:"
 msgid "Commit to cherry pick:"
-msgstr "Atamak (commit) için Dosyaları Seç:"
+msgstr "Seçmece alınacak gönderi (commit):"
 
 #: ../plugins/git/anjuta-git.ui.h:15
 msgid "Show source revision in log message"
 msgstr "Günlük mesajında kaynak revizyonu göster"
 
 #: ../plugins/git/anjuta-git.ui.h:16
-#, fuzzy
-#| msgid "Add signed-off by line"
 msgid "Append signed-off-by line"
-msgstr "Satır satır sign off ekle"
+msgstr "-imzalayan- satırı ekle"
 
 #: ../plugins/git/anjuta-git.ui.h:17
 #: ../plugins/subversion/anjuta-subversion.ui.h:12
@@ -5242,10 +5061,8 @@ msgid "Branch name:"
 msgstr "Branş ismi:"
 
 #: ../plugins/git/anjuta-git.ui.h:24
-#, fuzzy
-#| msgid "Reset repository head to this revision"
 msgid "Repository head; Drop or type a different revision here"
-msgstr "Bu gözden geçirmeyi depo head'ine sıfırla"
+msgstr "Depo başı; Buraya sürükleyin ya da farklı revizyon yazın"
 
 #: ../plugins/git/anjuta-git.ui.h:25
 #: ../plugins/subversion/subversion-log-dialog.c:151
@@ -5265,10 +5082,8 @@ msgid "Sign this tag"
 msgstr "Bu etiketi imzala"
 
 #: ../plugins/git/anjuta-git.ui.h:30
-#, fuzzy
-#| msgid "Annotate this tag"
 msgid "Annotate this tag:"
-msgstr "Bu etiketi imzala"
+msgstr "Bu etiketi dipnotla:"
 
 #: ../plugins/git/anjuta-git.ui.h:31
 msgid "Branches must be fully merged"
@@ -5281,14 +5096,13 @@ msgid "Git"
 msgstr "Git"
 
 #: ../plugins/git/anjuta-git.ui.h:33
-#, fuzzy
-#| msgid "_Tasks"
 msgid "Tasks"
 msgstr "Görevler"
 
 #: ../plugins/git/anjuta-git.ui.h:35
 msgid "Whole project; Drop a file here to view a file or folder log"
 msgstr ""
+"Tüm proje; Bir klasör ya da dosya günlüğü görmek için buraya dosya bırakın"
 
 #: ../plugins/git/anjuta-git.ui.h:36
 #: ../plugins/subversion/anjuta-subversion.ui.h:32
@@ -5332,19 +5146,16 @@ msgid "Changes:"
 msgstr "Değişiklikler:"
 
 #: ../plugins/git/anjuta-git.ui.h:45
-#, fuzzy
 msgid "Revision to merge with:"
-msgstr "Başlangıç seviyesi"
+msgstr "Birleştirilecek revizyon:"
 
 #: ../plugins/git/anjuta-git.ui.h:46
-#, fuzzy
-#| msgid "Use a custom log message"
 msgid "Use a custom log message:"
-msgstr "Özel sahip bilgisini kullan:"
+msgstr "Özel günlük mesajı kullan:"
 
 #: ../plugins/git/anjuta-git.ui.h:47
 msgid "Repository origin; Drop or type a different revision here"
-msgstr ""
+msgstr "Depo kökeni; Buraya farklı bir revizyon bırakın ya da yazın"
 
 #: ../plugins/git/anjuta-git.ui.h:48
 msgid "Generate patches relative to:"
@@ -5379,10 +5190,8 @@ msgid "Repository to push to:"
 msgstr "Gönderilecek (push) depo:"
 
 #: ../plugins/git/anjuta-git.ui.h:56
-#, fuzzy
-#| msgid "Branches"
 msgid "Branches:"
-msgstr "Branşlar"
+msgstr "Dallar:"
 
 #: ../plugins/git/anjuta-git.ui.h:57
 msgid "Tags:"
@@ -5397,16 +5206,12 @@ msgid "Push all branches and tags"
 msgstr "Tüm branşlarda ve etiketleri gönder (push)"
 
 #: ../plugins/git/anjuta-git.ui.h:60
-#, fuzzy
-#| msgid "_Remote repository"
 msgid "Remote Repositories:"
-msgstr "Uzaktan hata ayıklama"
+msgstr "Uzak Depolar:"
 
 #: ../plugins/git/anjuta-git.ui.h:61
-#, fuzzy
-#| msgid "Remove File"
 msgid "Remove Files:"
-msgstr "Dosyaları Kaldır"
+msgstr "Dosyaları Kaldır:"
 
 #: ../plugins/git/anjuta-git.ui.h:63
 msgid "Mixed"
@@ -5429,67 +5234,49 @@ msgid "Commit to revert:"
 msgstr "Geriye çevirmek için atama (commit):"
 
 #: ../plugins/git/anjuta-git.ui.h:68
-#, fuzzy
-#| msgid "<b>Stash Message (Optional)</b>"
 msgid "Stash Message (Optional):"
-msgstr "Tercihsel e-posta adresi"
+msgstr "Zula İletisi (İsteğe bağlı):"
 
 #: ../plugins/git/anjuta-git.ui.h:69
 msgid "Stash indexed changes"
 msgstr "Dizinlenmiş değişiklikleri sakla"
 
 #: ../plugins/git/anjuta-git.ui.h:70
-#, fuzzy
-#| msgid "Stash indexed changes"
 msgid "Stashed Changes:"
-msgstr "_Değişiklikleri sil"
+msgstr "Zulalanan Değişiklikler:"
 
 #: ../plugins/git/anjuta-git.ui.h:71
-#, fuzzy
-#| msgid "Repository to push to:"
 msgid "Repository Status:"
-msgstr "Anjuta Durumu"
+msgstr "Depo Durumu:"
 
 #: ../plugins/git/anjuta-git.ui.h:72
-#, fuzzy
-#| msgid "_Show commit diff"
 msgid "Show Diff"
-msgstr "Standart diff"
+msgstr "Farkı Göster"
 
 #: ../plugins/git/git-add-files-pane.c:160
-#, fuzzy
-#| msgid "Add File"
 msgid "Add Files"
-msgstr "Dosyaları Ekle"
+msgstr "Dosya Ekle"
 
 #: ../plugins/git/git-add-remote-pane.c:52
-#, fuzzy
-#| msgid "Please enter a tag name."
 msgid "Please enter a remote name."
-msgstr "Lütfen bir branş ismi girin."
+msgstr "Lütfen uzak uç ismi girin."
 
 #: ../plugins/git/git-add-remote-pane.c:55
 msgid "Please enter a URL"
 msgstr "Lütfen bir URL girin"
 
 #: ../plugins/git/git-add-remote-pane.c:182
-#, fuzzy
-#| msgid "Remote"
 msgid "Add Remote"
-msgstr "Uzaktan hata ayıklama"
+msgstr "Uzak uç Ekle"
 
 #: ../plugins/git/git-apply-mailbox-pane.c:159
-#, fuzzy
-#| msgid "Apply mailbox files"
 msgid "Apply Mailbox Files"
-msgstr "Posta kutusu dosyalarına uygula"
+msgstr "Mailbox Dosyalarını Uygula"
 
 #: ../plugins/git/git-apply-stash-pane.c:54
 #: ../plugins/git/git-drop-stash-pane.c:48
-#, fuzzy
-#| msgid "No group selected"
 msgid "No stash selected."
-msgstr "Hiçbir etiket seçilmemiş."
+msgstr "Zula seçilmedi."
 
 #: ../plugins/git/git-checkout-pane.c:150
 msgid "Check Out Files"
@@ -5507,26 +5294,20 @@ msgstr "Tek Tek Seç"
 
 #: ../plugins/git/git-commit-pane.c:124
 #: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
-#, fuzzy
-#| msgid "Please enter a tag name."
 msgid "Please enter a log message."
-msgstr "Lütfen bir branş ismi girin."
+msgstr "Lütfen bir günlük iletisi girin."
 
 #: ../plugins/git/git-commit-pane.c:145
-#, fuzzy
-#| msgid "Please enter the commit author's name."
 msgid "Please enter the commit author's name"
-msgstr "Lütfen atama (commit) sahibinin e-posta adresini girin."
+msgstr "Lütfen gönderi sahibinin ismini girin"
 
 #: ../plugins/git/git-commit-pane.c:149
 msgid "Please enter the commit author's e-mail address."
 msgstr "Lütfen atama (commit) sahibinin e-posta adresini girin."
 
 #: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:149
-#, fuzzy
-#| msgid "_Commit"
 msgid "Commit"
-msgstr "_Commit"
+msgstr "Gönder"
 
 #: ../plugins/git/git-create-branch-pane.c:51
 msgid "Please enter a branch name."
@@ -5541,16 +5322,13 @@ msgid "Create Tag"
 msgstr "Etiket Oluştur"
 
 #: ../plugins/git/git-delete-branches-pane.c:238
-#, fuzzy, c-format
-#| msgid "Are you sure you want to delete the '%s' tool?"
+#, c-format
 msgid "Are you sure you want to delete branch %s?"
-msgstr "'%s' aracını silmek istediğinizden emin misiniz?"
+msgstr "%s dalını silmek istediğinize emin misiniz?"
 
 #: ../plugins/git/git-delete-remote-pane.c:49
-#, fuzzy
-#| msgid "No group selected"
 msgid "No remote selected."
-msgstr "Hiçbir etiket seçilmemiş."
+msgstr "Hiçbir uzak uç seçilmedi."
 
 #: ../plugins/git/git-delete-tags-pane.c:49
 msgid "No tags selected."
@@ -5558,16 +5336,13 @@ msgstr "Hiçbir etiket seçilmemiş."
 
 #. Translators: file name for an existing commits diff, %s is an SHASUM of a commit
 #: ../plugins/git/git-diff-pane.c:40
-#, fuzzy, c-format
-#| msgid "_Show commit diff"
+#, c-format
 msgid "Commit %s.diff"
-msgstr "Standart diff"
+msgstr "%s.diff'i gönder"
 
 #: ../plugins/git/git-diff-pane.c:73
-#, fuzzy
-#| msgid "No group selected"
 msgid "No revision selected"
-msgstr "Seçili Gözden Geçirmeyi Görüntüle"
+msgstr "Revizyon seçilmedi"
 
 #: ../plugins/git/git-log-pane.c:581
 #, c-format
@@ -5597,10 +5372,8 @@ msgid "Git Warning"
 msgstr "Git Uyarısı"
 
 #: ../plugins/git/git-patch-series-pane.c:169
-#, fuzzy
-#| msgid "Create patch series"
 msgid "Generate Patch Series"
-msgstr "Yama-Biçimi diff"
+msgstr "Yama Serisi Oluştur"
 
 #: ../plugins/git/git.plugin.in.h:2
 msgid "Git version control"
@@ -5619,10 +5392,8 @@ msgid "Push"
 msgstr "Gönder"
 
 #: ../plugins/git/git-rebase-pane.c:61
-#, fuzzy
-#| msgid "No group selected"
 msgid "No remote selected"
-msgstr "Hiçbir etiket seçilmemiş."
+msgstr "Uzak uç seçilmedi"
 
 #: ../plugins/git/git-remove-files-pane.c:160
 msgid "Remove Files"
@@ -5637,65 +5408,53 @@ msgid "URL"
 msgstr "URL"
 
 #: ../plugins/git/git-repository-selector.c:101
-#, fuzzy
-#| msgid "<b>Remote:</b> %s"
 msgid "<b>Selected Remote:</b>"
-msgstr "Uzaktan hata ayıklama"
+msgstr "<b>Seçili Uzak Uç:</b>"
 
 #: ../plugins/git/git-repository-selector.c:200
 msgid ""
 "No remote selected; using origin by default.\n"
 "To push to a different remote, select one from the Remotes list above."
 msgstr ""
+"Uzak uç seçilmedi; varsayılan olarak origin kullanılıyor.\n"
+"Değişik bir uzak uca yollamak için, aşağıdaki Uzak uçlar listesinden bir "
+"tane seçin."
 
 #: ../plugins/git/git-reset-pane.c:176
 msgid "Reset"
 msgstr "Sıfırla"
 
 #: ../plugins/git/git-resolve-conflicts-pane.c:50
-#, fuzzy
-#| msgid "Mark conflicted files as resolved"
 msgid "No conflicted files selected."
-msgstr "Hiçbir üst grup seçilmemiş"
+msgstr "Hiçbir çatışan dosya seçilmedi."
 
 #: ../plugins/git/git-revert-pane.c:48
-#, fuzzy
-#| msgid "Please enter a path."
 msgid "Please enter a commit."
-msgstr "Lütfen bir dosya ismi girin!"
+msgstr "Lütfen bir gönderi girin."
 
 #: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:513
-#, fuzzy
-#| msgid "_Revert..."
 msgid "Revert"
-msgstr "_Eski Durumuna Getir"
+msgstr "Geri al"
 
 #: ../plugins/git/git-stash-changes-pane.c:160
 msgid "Stash Uncommitted Changes"
 msgstr "Atanmamış (commit) Değişiklikleri Sakla"
 
 #: ../plugins/git/git-status-pane.c:551
-#, fuzzy
 msgid "Changes to be committed"
-msgstr ""
-"Belge içerisinde son %d saat içerisinde yapılan değişiklikler kaybolacak."
+msgstr "Gönderilecek değişiklikler"
 
 #: ../plugins/git/git-status-pane.c:561
-#, fuzzy
 msgid "Changed but not updated"
-msgstr "Belge güncellenmedi"
+msgstr "Değişti ama güncellenmedi"
 
 #: ../plugins/git/git-unstage-pane.c:51
-#, fuzzy
-#| msgid "No target has been selected"
 msgid "No staged files selected."
-msgstr "Hiçbir üst grup seçilmemiş"
+msgstr "Geçici katmandaki herhangi bir dosya seçilmedi."
 
 #: ../plugins/git/plugin.c:68
-#, fuzzy
-#| msgid "Branches"
 msgid "Branch tools"
-msgstr "Etiket araçları"
+msgstr "Dallanma araçları"
 
 #: ../plugins/git/plugin.c:76 ../plugins/git/plugin.c:77
 msgid "Create a branch"
@@ -5706,16 +5465,12 @@ msgid "Delete branches"
 msgstr "Branşları sil"
 
 #: ../plugins/git/plugin.c:92 ../plugins/git/plugin.c:93
-#, fuzzy
-#| msgid "Switch to another branch"
 msgid "Switch to the selected branch"
-msgstr "Branş/etiket değiştir"
+msgstr "Seçili dala geç"
 
 #: ../plugins/git/plugin.c:101
-#, fuzzy
-#| msgid "Merge this commit into the current branch"
 msgid "Merge a revision into the current branch"
-msgstr "Bu atamayı (commit) mevcut branş içine birleştir (merge)"
+msgstr "Bir revizyonu mevcut dalla birleştir"
 
 #: ../plugins/git/plugin.c:112
 msgid "Tag tools"
@@ -5734,10 +5489,8 @@ msgid "Changes"
 msgstr "Değişiklikler"
 
 #: ../plugins/git/plugin.c:150
-#, fuzzy
-#| msgid "Commit Changes"
 msgid "Commit changes"
-msgstr "Değişiklikleri Ata (Commit)"
+msgstr "Değişiklikleri gönder"
 
 #: ../plugins/git/plugin.c:165
 #: ../plugins/snippets-manager/snippets-editor.ui.h:18
@@ -5745,276 +5498,200 @@ msgid "Add"
 msgstr "Ekle"
 
 #: ../plugins/git/plugin.c:166
-#, fuzzy
 msgid "Add files to the index"
-msgstr "Dosyaları projeye ekle"
+msgstr "Dosyaları indekse ekle"
 
 #: ../plugins/git/plugin.c:174
 msgid "Remove files from the repository"
 msgstr "Depodaki dosyaları sil"
 
 #: ../plugins/git/plugin.c:181 ../plugins/git/plugin.c:477
-#, fuzzy
-#| msgid "Check Out Files"
 msgid "Check out"
-msgstr "Dosyaları Dene (Check Out)"
+msgstr "Kontrol et"
 
 #: ../plugins/git/plugin.c:182
-#, fuzzy
-#| msgid "Revert uncommitted changes to files"
 msgid "Revert changes in unstaged files"
-msgstr "Ayarlardaki değişiklikler %d saniye içinde eski haline döndürülecek"
+msgstr "Aşamadan çıkarılan dosyalardaki değişiklikleri geri al"
 
 #: ../plugins/git/plugin.c:189 ../plugins/git/plugin.c:485
-#, fuzzy
-#| msgid "Unstage Files"
 msgid "Unstage"
-msgstr "Dosyaları Unstage Et"
+msgstr "Aşamadan çıkar"
 
 #: ../plugins/git/plugin.c:190
-#, fuzzy
-#| msgid "Remove files from the commit index"
 msgid "Remove staged files from the index"
-msgstr "Seçilen dosyaları projeden çıkar"
+msgstr "Geçici katmandaki dosyaları indeksten çıkar"
 
 #: ../plugins/git/plugin.c:197
-#, fuzzy
-#| msgid "_Resolve conflicts..."
 msgid "Resolve conflicts"
-msgstr "Subversion: Çözümleme tamamlandı."
+msgstr "Çatışmaları çözümle"
 
 #: ../plugins/git/plugin.c:198
-#, fuzzy
-#| msgid "Mark conflicted files as resolved"
 msgid "Mark selected conflicted files as resolved"
-msgstr "Çözüldü Olarak İşaretlenecek Dosyaları Seç:"
+msgstr "Seçili çatışan dosyaları çözülmüş olarak işaretle"
 
 #: ../plugins/git/plugin.c:205 ../plugins/git/plugin.c:958
 msgid "Stash"
 msgstr "Sakla"
 
 #: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
-#, fuzzy
-#| msgid "_Stash uncommitted changes..."
 msgid "Stash uncommitted changes"
-msgstr "Atanmamış (commit) Değişiklikleri Sakla"
+msgstr "Gönderilmemiş değişiklikleri zulala"
 
 #: ../plugins/git/plugin.c:214 ../plugins/git/plugin.c:326
-#, fuzzy
-#| msgid "Revert uncommitted changes to files"
 msgid "Save uncommitted changes without committing them"
-msgstr "Dosyalara atanmamış (uncommit) değişiklikleri geriye çevir"
+msgstr "Gönderilmemiş değişiklikleri göndermeden kaydet"
 
 #: ../plugins/git/plugin.c:225
-#, fuzzy
-#| msgid "_Remote repository"
 msgid "Remote repository tools"
-msgstr "Değişiklikleri uzaktaki bir depoya gönder (push)"
+msgstr "Uzak depo araçları"
 
 #: ../plugins/git/plugin.c:233
-#, fuzzy
-#| msgid "Add a remote branch"
 msgid "Add a remote"
-msgstr "Uzaktan hata ayıklama"
+msgstr "Bir uzak uç ekle"
 
 #: ../plugins/git/plugin.c:234
-#, fuzzy
-#| msgid "Add to repository"
 msgid "Add a remote repository"
-msgstr "Depoya Ekle"
+msgstr "Uzak depo ekle"
 
 #: ../plugins/git/plugin.c:241
-#, fuzzy
-#| msgid "Git: Deleted selected tags."
 msgid "Delete selected remote"
-msgstr "Seçilen etiketleri sil"
+msgstr "Seçili uzak ucu sil"
 
 #: ../plugins/git/plugin.c:242
-#, fuzzy
-#| msgid "Delete a remote branch"
 msgid "Delete a remote"
-msgstr "Uzaktan hata ayıklama"
+msgstr "Bir uzak ucu sil"
 
 #: ../plugins/git/plugin.c:250
 msgid "Push changes to a remote repository"
 msgstr "Değişiklikleri uzaktaki bir depoya gönder (push)"
 
 #: ../plugins/git/plugin.c:258
-#, fuzzy
-#| msgid "Push changes to a remote repository"
 msgid "Pull changes from a remote repository"
-msgstr "Değişiklikleri uzaktaki bir depoya gönder (push)"
+msgstr "Değişiklikleri uzak depodan çek"
 
 #: ../plugins/git/plugin.c:265 ../plugins/git/plugin.c:577
-#, fuzzy
-#| msgid "_Fetch"
 msgid "Fetch"
-msgstr "Alma verisini ekle"
+msgstr "Getir"
 
 #: ../plugins/git/plugin.c:266
-#, fuzzy
-#| msgid "Push changes to a remote repository"
 msgid "Fetch changes from remote repositories"
-msgstr "Değişiklikleri uzaktaki bir depoya gönder (push)"
+msgstr "Değişiklikleri uzak depodan getir"
 
 #: ../plugins/git/plugin.c:281
 msgid "Rebase against selected remote"
-msgstr ""
+msgstr "Seçili uzak uca göre yeniden temellendir"
 
 #: ../plugins/git/plugin.c:282
 msgid "Start a rebase operation relative to the selected remote repository"
-msgstr ""
+msgstr "Seçili uzak depoya göre rebase işlemi başlat"
 
 #: ../plugins/git/plugin.c:289 ../plugins/git/plugin.c:449
 msgid "Continue"
 msgstr "Devam"
 
 #: ../plugins/git/plugin.c:290
-#, fuzzy
-#| msgid "_Continue with resolved conflicts"
 msgid "Continue a rebase with resolved conflicts"
-msgstr "Çözümlenen çakışmalarla _devam et"
+msgstr "Rebase işlemine çözümlenen çatışmalarla devam et"
 
 #: ../plugins/git/plugin.c:297 ../plugins/git/plugin.c:457
 msgid "Skip"
 msgstr "Atla"
 
 #: ../plugins/git/plugin.c:298
-#, fuzzy
-#| msgid "Mark the current head revision as bad"
 msgid "Skip the current revision"
-msgstr "Yenileme/etiket kullan:"
+msgstr "Mevcut revizyonu atla"
 
 #: ../plugins/git/plugin.c:305 ../plugins/git/plugin.c:465
 msgid "Abort"
 msgstr "İptal"
 
 #: ../plugins/git/plugin.c:306
-#, fuzzy
-#| msgid "Abort the rebase and put the repository in its original state"
 msgid "Abort the rebase and return the repository to its previous state"
-msgstr ""
-"Yeniden temellendirmeyi (rebase) iptal et ve depoyu orjinal durumuna koy"
+msgstr "Rebase işlemini iptal et ve depoyu önceki durumuna getir"
 
 #: ../plugins/git/plugin.c:317
-#, fuzzy
-#| msgid "Stash"
 msgid "Stash tools"
-msgstr "Etiket araçları"
+msgstr "Zula araçları"
 
 #: ../plugins/git/plugin.c:333
-#, fuzzy
-#| msgid "Apply the selected stash"
 msgid "Apply selected stash"
-msgstr "Dizinlenmiş değişiklikleri sakla"
+msgstr "Seçili zulayı uygula"
 
 #: ../plugins/git/plugin.c:334
-#, fuzzy
-#| msgid "Apply stashed changes to the working tree"
 msgid "Apply stashed changes back into the working tree"
-msgstr "Saklı değişiklikleri çalışma ağacına uygula"
+msgstr "Zulalanmış değişiklikleri çalışma ağacına geri uygula"
 
 #: ../plugins/git/plugin.c:341
-#, fuzzy
-#| msgid "Apply stashed changes to the working tree"
 msgid "Apply stash and restore index"
-msgstr "Saklı değişiklikleri çalışma ağacına uygula"
+msgstr "Zulayı uygula ve indeksi geri yükle"
 
 #: ../plugins/git/plugin.c:342
-#, fuzzy
-#| msgid "Apply stashed changes to the working tree"
 msgid "Apply stashed changes back into the working tree and the index"
-msgstr "Saklı değişiklikleri çalışma ağacına uygula"
+msgstr "Zulalanmış değişiklikleri çalışma ağacına ve indekse geri uygula"
 
 #: ../plugins/git/plugin.c:349
-#, fuzzy
-#| msgid "Drop the selected stash"
 msgid "Drop selected stash"
-msgstr "Dizinlenmiş değişiklikleri sakla"
+msgstr "Seçili zulayı düşür"
 
 #: ../plugins/git/plugin.c:350
-#, fuzzy
-#| msgid "Drop the selected stash"
 msgid "Delete the selected stash"
-msgstr "Seçilen etiketleri sil"
+msgstr "Seçili zulayı sil"
 
 #: ../plugins/git/plugin.c:357
 msgid "Clear all stashes"
 msgstr "Tüm gizlemeleri temizle"
 
 #: ../plugins/git/plugin.c:358
-#, fuzzy
-#| msgid "Select all text in the editor"
 msgid "Delete all stashes in this repository"
-msgstr "Düzenleyici içindeki bütün yazıyı seç"
+msgstr "Bu depodaki tüm zulaları sil"
 
 #: ../plugins/git/plugin.c:369
-#, fuzzy
-#| msgid "Revision"
 msgid "Revision tools"
-msgstr "Etiket araçları"
+msgstr "Revizyon araçları"
 
 #: ../plugins/git/plugin.c:377 ../plugins/git/plugin.c:497
-#, fuzzy
-#| msgid "_Show commit diff"
 msgid "Show commit diff"
-msgstr "Yama-Biçimi diff"
+msgstr "Gönderim değişikliklerini göster"
 
 #: ../plugins/git/plugin.c:378
-#, fuzzy
-#| msgid "_View selected revision"
 msgid "Show a diff of the selected revision"
-msgstr "Günlük mesajında kaynak revizyonu göster"
+msgstr "Seçili revizyondan değişiklikleri göster"
 
 #: ../plugins/git/plugin.c:385 ../plugins/git/plugin.c:505
-#, fuzzy
-#| msgid "Cherry Pick"
 msgid "Cherry pick"
-msgstr "Tek Tek Seç"
+msgstr "Seçmece"
 
 #: ../plugins/git/plugin.c:386
-#, fuzzy
-#| msgid "Merge this commit into the current branch"
 msgid "Merge an individual commit from another branch"
-msgstr "Bu atamayı (commit) mevcut branş içine birleştir (merge)"
+msgstr "Başka bir daldan tek bir gönderiyi birleştir"
 
 #: ../plugins/git/plugin.c:393
-#, fuzzy
-#| msgid "_Reset/Revert"
 msgid "Reset/Revert"
-msgstr "Bir atamayı (commit) geri al"
+msgstr "Sıfırla/Geri Al"
 
 #: ../plugins/git/plugin.c:401
 msgid "Reset tree"
 msgstr "Ağacı sıfırla"
 
 #: ../plugins/git/plugin.c:402
-#, fuzzy
-#| msgid "Reset repository head to this revision"
 msgid "Reset tree to a previous revision"
-msgstr "Bu gözden geçirmeyi depo head'ine sıfırla"
+msgstr "Ağacı önceki revizyona sıfırla"
 
 #: ../plugins/git/plugin.c:409
-#, fuzzy
-#| msgid "Revert a commit"
 msgid "Revert commit"
-msgstr "Bir atamayı (commit) geri al"
+msgstr "Gönderiyi geri al"
 
 #: ../plugins/git/plugin.c:410
 msgid "Revert a commit"
 msgstr "Bir atamayı (commit) geri al"
 
 #: ../plugins/git/plugin.c:417
-#, fuzzy
-#| msgid "Patches"
 msgid "Patch series"
-msgstr "Yama Eklentisi"
+msgstr "Yama serisi"
 
 #: ../plugins/git/plugin.c:425 ../plugins/git/plugin.c:426
-#, fuzzy
-#| msgid "Create patch series"
 msgid "Generate a patch series"
-msgstr "Yama-Biçimi diff"
+msgstr "Bir seri yama üret"
 
 #: ../plugins/git/plugin.c:433
 msgid "Mailbox files"
@@ -6025,111 +5702,81 @@ msgid "Apply mailbox files"
 msgstr "Posta kutusu dosyalarına uygula"
 
 #: ../plugins/git/plugin.c:442
-#, fuzzy
-#| msgid "Apply mailbox files"
 msgid "Apply patches from mailbox files"
-msgstr "Posta kutusu dosyalarına uygula"
+msgstr "Yamaları mailbox dosyalarından uygula"
 
 #: ../plugins/git/plugin.c:450
-#, fuzzy
-#| msgid "Continue applying a series after resolving conflicts"
 msgid "Continue applying patches with resolved conflicts"
-msgstr "Çakışmalar çözüldükten sonra bir dizi uygulamaya devam et"
+msgstr "Çözülen çatışmalarla yamaları uygulamaya devam et"
 
 #: ../plugins/git/plugin.c:458
-#, fuzzy
-#| msgid "Skip the current patch in the series and continue"
 msgid "Skip the current patch in the series"
-msgstr "Serideki mevcut yamayı atla ve devam et"
+msgstr "Serideki mevcut yamayı atla"
 
 #: ../plugins/git/plugin.c:466
-#, fuzzy
-#| msgid ""
-#| "Stop applying the series and return the repository to its original state"
 msgid ""
 "Stop applying the patch series and return the tree to its previous state"
-msgstr "Seriyi uygulamayı durdur ve depoyu orjinal durumuna geri getir"
+msgstr "Yama serisini uygulamayı durdur ve ağacı önceki durumuna getir"
 
 #: ../plugins/git/plugin.c:521
-#, fuzzy
-#| msgid "Reset"
 msgid "Reset..."
-msgstr "_Sıfırla"
+msgstr "Sıfırla..."
 
 #: ../plugins/git/plugin.c:533
-#, fuzzy
 msgid "Switch"
-msgstr "Switch"
+msgstr "Değiştir"
 
 #: ../plugins/git/plugin.c:541
-#, fuzzy
-#| msgid "_Delete..."
 msgid "Delete..."
-msgstr "Sil"
+msgstr "Sil..."
 
 #: ../plugins/git/plugin.c:549
 msgid "Merge..."
 msgstr "Birleştir..."
 
 #: ../plugins/git/plugin.c:561
-#, fuzzy
-#| msgid "_Push..."
 msgid "Push..."
-msgstr "Gönder"
+msgstr "Gönder..."
 
 #: ../plugins/git/plugin.c:569
-#, fuzzy
-#| msgid "_Pull..."
 msgid "Pull..."
-msgstr "Çek (pull)"
+msgstr "Çek..."
 
 #: ../plugins/git/plugin.c:589
-#, fuzzy
-#| msgid "_Apply..."
 msgid "Apply"
-msgstr "Uygul_a"
+msgstr "Uygula"
 
 #: ../plugins/git/plugin.c:597
-#, fuzzy
-#| msgid "Apply stashed changes to the working tree"
 msgid "Apply and restore index"
-msgstr "Dizin ve arama panelinin genişliği"
+msgstr "Uygula ve indeksi geri yükle"
 
 #: ../plugins/git/plugin.c:605
-#, fuzzy
 msgid "Drop"
-msgstr "Bırak"
+msgstr "Düşür"
 
 #: ../plugins/git/plugin.c:694 ../plugins/git/plugin.c:767
 msgid "Branch"
 msgstr "Branş"
 
 #: ../plugins/git/plugin.c:855
-#, fuzzy
 msgid "Status popup menu"
-msgstr "SymbolDb menu eylemleri"
+msgstr "Durum açılan menüsü"
 
 #: ../plugins/git/plugin.c:860
-#, fuzzy
 msgid "Log popup menu"
-msgstr "SymbolDb menu eylemleri"
+msgstr "Günlük açılan menüsü"
 
 #: ../plugins/git/plugin.c:866
-#, fuzzy
-#| msgid "Branch name:"
 msgid "Branch popup menu"
-msgstr "SymbolDb menu eylemleri"
+msgstr "Dallanma açılan menüsü"
 
 #: ../plugins/git/plugin.c:872
-#, fuzzy
-#| msgid "Module name:"
 msgid "Remote popup menu"
-msgstr "SymbolDb menu eylemleri"
+msgstr "Uzak uç açılan menüsü"
 
 #: ../plugins/git/plugin.c:877
-#, fuzzy
 msgid "Popup menu entries"
-msgstr "Başka giriş yok."
+msgstr "Açılan menü girdileri"
 
 #: ../plugins/git/plugin.c:928
 msgid "Status"
@@ -6144,10 +5791,8 @@ msgid "Tags"
 msgstr "Etiketler"
 
 #: ../plugins/git/plugin.c:952
-#, fuzzy
-#| msgid "Remote"
 msgid "Remotes"
-msgstr "Uzaktaki"
+msgstr "Uzak uçlar"
 
 #: ../plugins/glade/anjuta-design-document.c:170
 #: ../plugins/glade/anjuta-design-document.c:201
@@ -6169,38 +5814,28 @@ msgid "Glade Plugin for Anjuta."
 msgstr "Anjuta için Glade Eklentisi"
 
 #: ../plugins/glade/anjuta-glade.plugin.in.h:3
-#, fuzzy
-#| msgid "Unable to load user interface file: %s"
 msgid "User interface file"
-msgstr "Kullanıcı arayüzünün XML tanımı"
+msgstr "Kullanıcı arayüzü dosyası"
 
 #: ../plugins/glade/anjuta-glade.ui.h:1
-#, fuzzy
-#| msgid "Select all text in the editor"
 msgid "Select widgets in the workspace"
-msgstr "Çalışma alanındaki parçaları seç"
+msgstr "Çalışma alanında parçacıkları seç"
 
 #: ../plugins/glade/anjuta-glade.ui.h:2
-#, fuzzy
 msgid "Drag and resize widgets in the workspace"
-msgstr "Çalışma alanındaki parçaları taşı ve yeniden boyutlandır"
+msgstr "Çalışma alanındaki parçacıkları sürükle ve yeniden boyutlandır"
 
 #: ../plugins/glade/anjuta-glade.ui.h:3
-#, fuzzy
-#| msgid "Show right margin"
 msgid "Edit widget margins"
-msgstr "Parça bulunamadı: %s"
+msgstr "Parçacık kenar boşluklarını düzenle"
 
 #: ../plugins/glade/anjuta-glade.ui.h:4
-#, fuzzy
 msgid "Edit widget alignment"
-msgstr "Yatay Hizalama sütunu"
+msgstr "Parçacık hizalarını düzenle"
 
 #: ../plugins/glade/plugin.c:688
-#, fuzzy
-#| msgid "Properties"
 msgid "Glade Properties…"
-msgstr "Açıklama Özellikleri..."
+msgstr "Glade Özellikleri…"
 
 #: ../plugins/glade/plugin.c:690
 msgid "Switch between library versions and check deprecations"
@@ -6209,7 +5844,7 @@ msgstr ""
 
 #: ../plugins/glade/plugin.c:731
 msgid "Loading Glade…"
-msgstr "Glade Yükleniyor..."
+msgstr "Glade Yükleniyor…"
 
 #: ../plugins/glade/plugin.c:818
 msgid "Glade designer operations"
@@ -6244,11 +5879,11 @@ msgstr "Akıllı girintilemeyi etkinleştir"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:2
 msgid "Leading asterisk in multi-line comment"
-msgstr ""
+msgstr "Çok satırlı yorumda takip eden yıldız işareti"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:3
 msgid "Prefer vim/emacs modelines over indentation settings"
-msgstr ""
+msgstr "Girinti ayarlarında vim/emacs kip satırlarını tercih et"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:4
 msgid "Enable smart brace completion"
@@ -6278,115 +5913,89 @@ msgid "Indent:"
 msgstr "Girintileme:"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:10
-#, fuzzy
-#| msgid "Parenthese indentation"
 msgid "Use spaces for parenthesis indentation"
-msgstr "Parantez girintileme"
+msgstr "Parantez girintileri için boşluk kullan"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:11
-#, fuzzy
-#| msgid "Parenthese indentation"
 msgid "Parenthesis indentation"
-msgstr "Akıllı girintilemeyi etkinleştir"
+msgstr "Parantez girintileri"
 
 #. ANJUTA_STOCK_AUTOINDENT,
 #: ../plugins/indentation-c-style/plugin.c:224
 #: ../plugins/indentation-python-style/plugin.c:206
-#, fuzzy
-#| msgid "Auto Indent"
 msgid "Auto-Indent"
-msgstr "Girintiyi Arttır"
+msgstr "Otomatik-Girinti"
 
 #: ../plugins/indentation-c-style/plugin.c:225
 #: ../plugins/indentation-python-style/plugin.c:207
-#, fuzzy
-#| msgid "Auto indent current line or selection based on indentation settings"
 msgid "Auto-indent current line or selection based on indentation settings"
-msgstr ""
-"Girintileme ayarlarına göre seçimi ya da mevcut satırı kendiliğinden "
-"girintile"
+msgstr "Mevcut satırı ya da seçimi girinti ayarlarına göre otomatik girintile"
 
 #: ../plugins/indentation-c-style/plugin.c:265
-#, fuzzy
-#| msgid "Smart Indentation"
 msgid "C Indentation"
-msgstr "Girintileme parametreleri"
+msgstr "C Girintileri"
 
 #: ../plugins/indentation-c-style/plugin.c:363
 #: ../plugins/indentation-c-style/plugin.c:372
 #: ../plugins/indentation-python-style/plugin.c:324
 #: ../plugins/indentation-python-style/plugin.c:333
-#, fuzzy
-#| msgid "Smart Indentation"
 msgid "Indentation"
-msgstr "Girintileme parametreleri"
+msgstr "Girinti"
 
 #: ../plugins/indentation-python-style/anjuta-indentation-python-style.ui.h:2
-#, fuzzy
-#| msgid "Enable smart indentation"
 msgid "Enable adaptive indentation"
-msgstr "Akıllı girintilemeyi etkinleştir"
+msgstr "Uyarlanabilir girintilemeyi etkinleştir"
 
 #: ../plugins/indentation-python-style/plugin.c:227
-#, fuzzy
-#| msgid "Smart Indentation"
 msgid "Python Indentation"
-msgstr "Girintileme parametreleri"
+msgstr "Python Girintileme"
 
 #: ../plugins/jhbuild/anjuta-jhbuild.plugin.in.h:1
-#, fuzzy
-#| msgid "Build"
 msgid "JHBuild"
-msgstr "İnşa Et"
+msgstr "JHBuild"
 
 #: ../plugins/jhbuild/anjuta-jhbuild.plugin.in.h:2
 msgid "Build and run programs inside the JHBuild environment"
-msgstr ""
+msgstr "JHBuild ortamında programlar derle ve çalıştır"
 
 #: ../plugins/jhbuild/plugin.c:121
-#, fuzzy
-#| msgid "Failed to read file"
 msgid "Failed to run \"jhbuild run\""
-msgstr "Çalıştırmak için program seçin:"
+msgstr "\"jhbuild run\" çalıştırılamadı"
 
 #: ../plugins/jhbuild/plugin.c:127
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to run \"jhbuild run\" (%s)"
-msgstr "Çalıştırmak için program seçin:"
+msgstr "\"jhbuild run\" çalıştırılamadı (%s)"
 
 #: ../plugins/jhbuild/plugin.c:172
 msgid "Could not find the JHBuild install prefix."
-msgstr ""
+msgstr "JHBuild kurulum ön eki bulunamadı."
 
 #: ../plugins/jhbuild/plugin.c:180
 msgid ""
 "Could not find the JHBuild library directory. You need JHBuild from "
 "2012-11-06 or later."
 msgstr ""
+"JHBuild kitaplık dizini bulunamadı. JHBuild 2012-11-06 inşası ya da daha "
+"yeni bir inşaya ihtiyacınız var."
 
 #: ../plugins/jhbuild/plugin.c:198
-#, fuzzy, c-format
-#| msgid "Failed to activate plugin: %s"
+#, c-format
 msgid "Failed to activate the JHBuild Plugin: %s"
-msgstr "Etkinleştirmek için bir eklenti seçin"
+msgstr "JHBuild Eklentisi etkinleştirilemedi: %s"
 
 #: ../plugins/js-debugger/debugger-js.c:548
 #: ../plugins/js-debugger/plugin.c:142
-#, fuzzy
 msgid "Error: cant bind port"
-msgstr "Fotograf makinesi iletişim portu ayarlanırken hata"
+msgstr "Hata: porta bağlanılamıyor"
 
 #: ../plugins/js-debugger/js_debugger.plugin.in.h:1
-#, fuzzy
-#| msgid "Start Debugger"
 msgid "Javascript Debugger"
-msgstr "Hata Ayıklayıcıyı Başlat"
+msgstr "Javascript Hata Ayıklayıcı"
 
 #: ../plugins/js-debugger/js_debugger.plugin.in.h:2
-#, fuzzy
-#| msgid "Start Debugger"
 msgid "Javascript Debugger Plugin"
-msgstr "%s eklentisinin eksik konumu"
+msgstr "Javascript Hata Ayıklama Eklentisi"
 
 #: ../plugins/js-debugger/plugin.c:122
 #, c-format
@@ -6406,54 +6015,41 @@ msgid "C++ and Java support Plugin"
 msgstr "C++ ve Java Desteği Eklentisi"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.plugin.in.h:2
-#, fuzzy
-#| msgid ""
-#| "C++ and Java support plugin for code completion, auto indentation etc."
 msgid "C++ and Java support plugin for code completion, auto-indentation, etc."
 msgstr ""
-"Kod tamamlama, kendiliğinden girintileme vb. için c++ ve Java desteği "
-"eklentisijava"
+"Kod tamamlama, otomatik girintileme vs. için C++ ve Java destek eklentisi"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:1
-#, fuzzy
-#| msgid "Automatically add resources"
 msgid "Automatically load required libraries of the project"
-msgstr "Kaynakları kendiliğinden ekle"
+msgstr "Proje için gerekli kitaplıkları otomatik yükle"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:2
 msgid "Load API tags for C standard library"
-msgstr ""
+msgstr "C standart kitaplığı için API etiketlerini yükle"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:3
 msgid "Load API tags for C++ standard template library"
-msgstr ""
+msgstr "C++ standart kitaplığı için API etiketlerini yükle"
 
 #: ../plugins/language-support-cpp-java/plugin.c:784
-#, fuzzy
 msgid "Code added for widget."
-msgstr "Eşleştirilen parça için sınıf adaptörü"
+msgstr "Parçacık için kod eklendi."
 
 #: ../plugins/language-support-cpp-java/plugin.c:1198
-#, fuzzy
-#| msgid "Bo_x Comment/Uncomment"
 msgid "Comment/Uncomment"
-msgstr "_Bloğu Açıklamaya Çevir/Çevirme"
+msgstr "Açıklamaya Çevir/Çevirme"
 
 #: ../plugins/language-support-cpp-java/plugin.c:1199
-#, fuzzy
-#| msgid "Current selection"
 msgid "Comment or uncomment current selection"
-msgstr "Mevcut seçim"
+msgstr "Mevcut seçimi açıklamaya çevir ya da çevirme"
 
 #: ../plugins/language-support-cpp-java/plugin.c:1204
 msgid "Swap .h/.c"
 msgstr "Değiştir .h/.c"
 
 #: ../plugins/language-support-cpp-java/plugin.c:1205
-#, fuzzy
-#| msgid "Swap c header and source files"
 msgid "Swap C header and source files"
-msgstr "C başlık ve kaynak dosyaları değiştir"
+msgstr "C başlık ve kaynak dosyalarını yer değiştir"
 
 #: ../plugins/language-support-cpp-java/plugin.c:1245
 msgid "C++/Java Assistance"
@@ -6461,10 +6057,8 @@ msgstr "C++/Java Yardımcısı"
 
 #: ../plugins/language-support-cpp-java/plugin.c:1462
 #: ../plugins/language-support-cpp-java/plugin.c:1491
-#, fuzzy
-#| msgid "API Tags"
 msgid "API Tags (C/C++)"
-msgstr "API Tarayıcısı"
+msgstr "API Etiketleri (C/C++)"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:1
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:1
@@ -6490,19 +6084,15 @@ msgstr "Çağrı kendiliğinden tamamlamada işlev sonrası '(' ekle"
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:4
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:4
 #: ../plugins/parser-cxx/anjuta-parser-cxx.ui.h:4
-#, fuzzy
-#| msgid "Add '(' after function call autocompletion"
 msgid "Add ')' after function call autocompletion"
-msgstr "Çağrı kendiliğinden tamamlamada işlev sonrası '(' ekle"
+msgstr "Fonksiyon çağrısı otomatik tamamlaması ardından ')' ekle"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:5
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:5
 #: ../plugins/language-support-vala/anjuta-vala.ui.h:4
 #: ../plugins/parser-cxx/anjuta-parser-cxx.ui.h:5
-#, fuzzy
-#| msgid "Autocomplete"
 msgid "Autocompletion"
-msgstr "Otomatik Tamamlama"
+msgstr "Otomatik tamamlama"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:6
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:6
@@ -6519,16 +6109,12 @@ msgid "Calltips"
 msgstr "Çağrı İpuçları"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:8
-#, fuzzy
-#| msgid "Highlight message locations in editor"
 msgid "Highlight missed semicolon"
-msgstr "Cevapsız çağrı %s"
+msgstr "Eksik noktalı virgülü vurgula"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:9
-#, fuzzy
-#| msgid "Highlight All"
 msgid "Highlights"
-msgstr "Tümünü Vurgula"
+msgstr "Vurgulamalar"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:10
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:8
@@ -6536,46 +6122,33 @@ msgid "Autocomplete"
 msgstr "Kendiliğinden Tamamlama"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:11
-#, fuzzy
 msgid "JS Find dirs"
-msgstr "Bul ve D_eğiştir..."
+msgstr "JS Dizin bul"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-#, fuzzy
-#| msgid "Project root directory:"
 msgid "Gir repository's directory:"
-msgstr "make(\\[\\d+\\])?:\\s+Girilen\\s+dizin\\s+`(.+)'"
+msgstr "Git deposu dizini:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-#, fuzzy
-#| msgid "Project root directory:"
 msgid "Gjs repository's directory:"
-msgstr "make(\\[\\d+\\])?:\\s+Girilen\\s+dizin\\s+`(.+)'"
+msgstr "Gjs deposu dizini:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
-#, fuzzy
-#| msgid "Enable code completion"
 msgid "Min character for completion:"
-msgstr "karakter sınıfı için eksik sonlanan ]"
+msgstr "Tamamlama için gerekli azami karakter:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
-#, fuzzy
-#| msgid "Environment Variables:"
 msgid "Environment"
-msgstr "Çevresel Değişiklikler:"
+msgstr "Ortam"
 
 #: ../plugins/language-support-js/js-support-plugin.plugin.in.h:1
-#, fuzzy
-#| msgid "C++ and Java support Plugin"
 msgid "JS Support Plugin"
-msgstr "C++ ve Java Desteği Eklentisi"
+msgstr "JS Destek Eklentisi"
 
 #: ../plugins/language-support-js/js-support-plugin.plugin.in.h:2
-#, fuzzy
-#| msgid "C++ and Java support Plugin"
 msgid "JavaScript Support Plugin"
-msgstr "C++ ve Java Desteği Eklentisi"
+msgstr "JavaScript Destek Eklentisi"
 
 #: ../plugins/language-support-js/plugin.c:364
 #: ../plugins/language-support-js/plugin.c:377
@@ -6584,15 +6157,12 @@ msgid "JavaScript"
 msgstr "JavaScript"
 
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:10
-#, fuzzy
-#| msgid "Interface"
 msgid "Interpreter"
-msgstr "Arayüz"
+msgstr "Yorumlayıcı"
 
 #: ../plugins/language-support-python/plugin.c:73
-#, fuzzy
 msgid "Python support warning"
-msgstr "Bilinmeyen uyarı türü"
+msgstr "Python destek uyarısı"
 
 #: ../plugins/language-support-python/plugin.c:81
 msgid ""
@@ -6600,49 +6170,38 @@ msgid ""
 "aren't installed. Both are required for autocompletion in python files.\n"
 "Please install them and check the python path in the preferences."
 msgstr ""
+"Ya python yolu yanlış ya da python (http://rope.sf.net) kitaplıkları "
+"yüklenmemiş\n"
+"Python dosyalarında otomatik tamamlama için ikisi de gereklidir.\n"
+"Lütfen bunları yükleyin ve seçeneklerde python yolunu işaretleyin."
 
 #: ../plugins/language-support-python/plugin.c:84
-#, fuzzy
-#| msgid "Do not show again"
 msgid "Do not show that warning again"
-msgstr "_Bu mesajı bir daha gösterme"
+msgstr "Bu uyarıyı bir daha gösterme"
 
 #: ../plugins/language-support-python/plugin.c:428
-#, fuzzy
-#| msgid "Project Assistant"
 msgid "Python Assistance"
-msgstr "C++/Java Yardımcısı"
+msgstr "Python Yardımı"
 
 #: ../plugins/language-support-python/plugin.c:557
 #: ../plugins/language-support-python/plugin.c:570
 #: ../plugins/language-support-python/python-assist.c:807
-#, fuzzy
-#| msgid "Python Module"
 msgid "Python"
 msgstr "Python"
 
 #: ../plugins/language-support-vala/anjuta-vala.plugin.in.h:1
-#, fuzzy
-#| msgid "C++ and Java support Plugin"
 msgid "Vala support Plugin"
-msgstr "C++ ve Java Desteği Eklentisi"
+msgstr "Vala destek Eklentisi"
 
 #: ../plugins/language-support-vala/anjuta-vala.plugin.in.h:2
-#, fuzzy
-#| msgid ""
-#| "C++ and Java support plugin for code completion, auto indentation etc."
 msgid "Vala support plugin, adds code completion."
-msgstr ""
-"Kod tamamlama, kendiliğinden girintileme vb. için c++ ve Java desteği "
-"eklentisijava"
+msgstr "Vala destek eklentisi, kod tamamlama ekler."
 
 #: ../plugins/language-support-vala/plugin.vala:657
 #: ../plugins/language-support-vala/plugin.vala:665
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
-#, fuzzy
-#| msgid "Autocomplete"
 msgid "Auto-complete"
-msgstr "Otomatik Tamamlama Gecikmesi"
+msgstr "Otomatik-tamamlama"
 
 #: ../plugins/message-view/anjuta-message-manager.plugin.in.h:1
 msgid "Message Manager"
@@ -6702,10 +6261,8 @@ msgid "Errors:"
 msgstr "Hatalar:"
 
 #: ../plugins/message-view/anjuta-message-manager-plugin.ui.h:17
-#, fuzzy
-#| msgid "Import"
 msgid "Important:"
-msgstr "Ön_emli"
+msgstr "Önemli:"
 
 #: ../plugins/message-view/anjuta-message-manager-plugin.ui.h:18
 msgid "Message colors"
@@ -6734,16 +6291,12 @@ msgid "Copy message"
 msgstr "İletiyi kopyala"
 
 #: ../plugins/message-view/plugin.c:83
-#, fuzzy
-#| msgid "_Copy Message"
 msgid "_Copy All Messages"
-msgstr "Tüm İletileri Bildir"
+msgstr "Tüm İletileri _Kopyala"
 
 #: ../plugins/message-view/plugin.c:84
-#, fuzzy
-#| msgid "_Copy Message"
 msgid "Copy All Messages"
-msgstr "Tüm İletileri Bildir"
+msgstr "Tüm İletileri Kopyala"
 
 #: ../plugins/message-view/plugin.c:87
 msgid "_Next Message"
@@ -6790,10 +6343,8 @@ msgid_plural "%d Errors"
 msgstr[0] "%d Hata"
 
 #: ../plugins/mk-project/mk-project.c:505
-#, fuzzy
-#| msgid "Unable to delete file"
 msgid "Unable to parse make file"
-msgstr "Proje dosyası ayrıştırılamadı"
+msgstr "Make dosyası ayrıştırılamadı"
 
 #: ../plugins/mk-project/mk-project.plugin.in.h:1
 msgid "Makefile backend"
@@ -6801,17 +6352,15 @@ msgstr "Makefile aracı"
 
 #: ../plugins/mk-project/mk-project.plugin.in.h:2
 msgid "Makefile project backend, allowing only to read the project"
-msgstr ""
+msgstr "Makefile proje arka ucu, sadece projenin okunmasına izin veriliyor"
 
 #: ../plugins/mk-project/mk-project.ui.h:1
 msgid "Select package"
 msgstr "Paket seç"
 
 #: ../plugins/mk-project/mk-project.ui.h:2
-#, fuzzy
-#| msgid "<b>Select Package to add:</b>"
 msgid "Select Package to add:"
-msgstr "Alarm eklemek için <b>Yeni</b>yi seçin"
+msgstr "Eklenecek paket seçin:"
 
 #: ../plugins/mk-project/mk-project.ui.h:4
 msgid "Add _module"
@@ -6827,7 +6376,7 @@ msgstr "Paketler"
 
 #: ../plugins/parser-cxx/parser-cxx-assist.c:1260
 msgid "C/C++"
-msgstr ""
+msgstr "C/C++"
 
 #: ../plugins/patch/anjuta-patch.plugin.in.h:1
 msgid "Patch Plugin"
@@ -6863,22 +6412,16 @@ msgid "Patching %s using %s\n"
 msgstr "%s, %s kullanılarak yamalanıyor\n"
 
 #: ../plugins/patch/patch-plugin.c:212
-#, fuzzy
-#| msgid "Patching...\n"
 msgid "Patching…\n"
-msgstr "Yamalanıyor...\n"
+msgstr "Yamalanıyor…\n"
 
 #: ../plugins/patch/patch-plugin.c:222
-#, fuzzy
-#| msgid "Patching..."
 msgid "Patching…"
-msgstr "Yamalanıyor..."
+msgstr "Yamalanıyor…"
 
 #: ../plugins/patch/patch-plugin.c:227
-#, fuzzy
-#| msgid "There are unfinished jobs, please wait until they are finished."
 msgid "There are unfinished jobs: please wait until they are finished."
-msgstr "Henüz bitmemiş işler var, lütfen işler bitene kadar bekleyiniz."
+msgstr "Henüz bitmemiş işler var: lütfen işler bitene kadar bekleyiniz."
 
 #: ../plugins/patch/patch-plugin.c:269
 msgid ""
@@ -6920,10 +6463,8 @@ msgstr "_Araçlar"
 #. Action name
 #. Stock icon, if any
 #: ../plugins/patch/plugin.c:61
-#, fuzzy
-#| msgid "Patch"
 msgid "_Patch…"
-msgstr "Yama"
+msgstr "_Yama…"
 
 #: ../plugins/patch/plugin.c:93
 msgid "Patch files/directories"
@@ -6934,16 +6475,12 @@ msgid "Project Import Assistant"
 msgstr "Proje İçe Aktarıcı Yardımcısı"
 
 #: ../plugins/project-import/anjuta-project-import.plugin.in.h:2
-#, fuzzy
-#| msgid "Import an existing autotools project to anjuta"
 msgid "Import an existing autotools project to Anjuta"
-msgstr "Var olan bir autotools projesini anjuta'ya aktar"
+msgstr "Var olan bir autotools projesini Anjuta'ya aktar"
 
 #: ../plugins/project-import/anjuta-project-import.plugin.in.h:3
-#, fuzzy
-#| msgid "Project From Existing Sources"
 msgid "Project from Existing Sources"
-msgstr "Projeye göreli bir dizinden"
+msgstr "Var olan Kaynaklardan Proje"
 
 #: ../plugins/project-import/plugin.c:82
 #: ../plugins/project-import/plugin.c:189
@@ -6954,44 +6491,34 @@ msgstr ""
 "musunuz?"
 
 #: ../plugins/project-import/plugin.c:224
-#, fuzzy, c-format
-#| msgid ""
-#| "A file named \"%s\" cannot be written: %s.  Check if you have write "
-#| "access to the project directory."
+#, c-format
 msgid ""
 "A file named \"%s\" cannot be written: %s. Check if you have write access to "
 "the project directory."
 msgstr ""
-"\"%s\" isimli dosyaya yazılamıyor: %s. Proje dizinine yazma izniniz olduğunu "
-"kontrol edin."
+"\"%s\" isimli dosya yazılamıyor: %s. Proje dizinine yazma izniniz olup "
+"olmadığını kontrol edin."
 
 #: ../plugins/project-import/plugin.c:285
-#, fuzzy, c-format
-#| msgid "Please select a plugin to open <b>%s</b>."
+#, c-format
 msgid "Please select a project backend to open %s."
-msgstr "Lütfen <b>%s</b> açmak için bir eklenti seçin."
+msgstr "Lütfen %s'i açmak için bir proje arka ucu seçin."
 
 #: ../plugins/project-import/plugin.c:305
-#, fuzzy, c-format
-#| msgid ""
-#| "Could not find a valid project backend for the directory given (%s). "
-#| "Please select a different directory, or try upgrading to a newer version "
-#| "of Anjuta."
+#, c-format
 msgid ""
 "Could not find a valid project backend for the given directory (%s). Please "
 "select a different directory, or try upgrading to a newer version of Anjuta."
 msgstr ""
-"Girilen dizin (%s) için geçerli bir proje arkaucu bulunmadı. Lütfen farklı "
-"bir dizin seçin, ya da Anjuta'yı yeni bir sürüme güncellemeyi deneyin."
+"Verilen dizin için geçerli proje arka ucu bulunamadı (%s). Lütfen başka bir "
+"dizin seçin, veya Anjuta'yı yeni bir sürüme güncellemeye çalışın."
 
 #: ../plugins/project-import/plugin.c:371
 #: ../plugins/project-import/plugin.c:428
-#, fuzzy, c-format
-#| msgid ""
-#| "Couldn't checkout the supplied uri \"%s\", the error returned was: \"%s\""
+#, c-format
 msgid ""
 "Couldn't check out the supplied URI \"%s\". The error returned was: \"%s\""
-msgstr "Verilen uri \"%s\" kontrolü yapılamadı, hata mesajı: \"%s\""
+msgstr "Verilen URI \"%s\" kontrol edilemedi. Dönen hata: \"%s\""
 
 #: ../plugins/project-import/project-import-dialog.c:310
 msgid "Import project"
@@ -7062,22 +6589,18 @@ msgstr "Anjuta için Proje Yöneticisi Eklentisi"
 #. else
 #. uri = g_strdup("");
 #: ../plugins/project-manager/dialogs.c:334
-#, fuzzy
-#| msgid "Select sources..."
 msgid "Select sources…"
-msgstr "Hepsini Seç"
+msgstr "Kaynakları seçin…"
 
 #: ../plugins/project-manager/dialogs.c:409
-#, fuzzy
 msgid " This property is not modifiable."
-msgstr "‘%s’ özelliği yazılabilir değil: %s"
+msgstr " Bu özellik değiştirilebilir değil."
 
 #. Several backend are possible, ask the user to select one
 #: ../plugins/project-manager/dialogs.c:644
-#, fuzzy, c-format
-#| msgid "Please select a plugin to open <b>%s</b>."
+#, c-format
 msgid "Please select a project backend to use."
-msgstr "Lütfen <b>%s</b> açmak için bir eklenti seçin."
+msgstr "Lütfen kullanılacak proje arka ucunu seçin."
 
 #: ../plugins/project-manager/dialogs.c:683
 #: ../plugins/project-manager/dialogs.c:688
@@ -7086,57 +6609,42 @@ msgid "Project properties"
 msgstr "Proje özellikleri"
 
 #: ../plugins/project-manager/dialogs.c:692
-#, fuzzy
-#| msgid "Group properties"
 msgid "Folder properties"
-msgstr "Klasör Özellikleri"
+msgstr "Klasör özellikleri"
 
 #: ../plugins/project-manager/dialogs.c:696
 msgid "Target properties"
 msgstr "Hedef özellikleri"
 
 #: ../plugins/project-manager/dialogs.c:699
-#, fuzzy
-#| msgid "Group properties"
 msgid "Source properties"
-msgstr "Grup/hedef/kaynak özellikleri"
+msgstr "Kaynak özellikleri"
 
 #: ../plugins/project-manager/dialogs.c:702
-#, fuzzy
-#| msgid "Group properties"
 msgid "Module properties"
-msgstr "Kesme noktası özellikleri"
+msgstr "Modül özellikleri"
 
 #: ../plugins/project-manager/dialogs.c:705
-#, fuzzy
-#| msgid "Target properties"
 msgid "Package properties"
-msgstr "Kesme noktası özellikleri"
+msgstr "Paket özellikleri"
 
 #: ../plugins/project-manager/dialogs.c:708
-#, fuzzy
-#| msgid "Breakpoint properties"
 msgid "Unknown properties"
-msgstr "Kesme noktası özellikleri"
+msgstr "Bilinmeyen özellikler"
 
 #: ../plugins/project-manager/dialogs.c:737
-#, fuzzy
-#| msgid "Backward"
 msgid "Backend:"
-msgstr "Arka Uç"
+msgstr "Arka Uç:"
 
 #: ../plugins/project-manager/dialogs.c:929
-#, fuzzy, c-format
-#| msgid "Loading project: %s"
+#, c-format
 msgid "Reloading project: %s"
-msgstr "Projeyi Yapılandır"
+msgstr "Proje yeniden yükleniyor: %s"
 
 #: ../plugins/project-manager/dialogs.c:1178
 #: ../plugins/project-manager/dialogs.c:1189
-#, fuzzy
-#| msgid "Can not add group"
 msgid "Cannot add group"
-msgstr "Kişi eklenemiyor: "
+msgstr "Grup eklenemiyor"
 
 #: ../plugins/project-manager/dialogs.c:1190
 msgid "No parent group selected"
@@ -7146,24 +6654,18 @@ msgstr "Hiçbir üst grup seçilmemiş"
 #: ../plugins/project-manager/dialogs.c:1362
 #: ../plugins/project-manager/dialogs.c:1547
 #: ../plugins/project-manager/dialogs.c:1557
-#, fuzzy
-#| msgid "Can not add source files"
 msgid "Cannot add source files"
-msgstr "Dosyaları projeye ekle"
+msgstr "Kaynak dosyalar eklenemiyor"
 
 #: ../plugins/project-manager/dialogs.c:1363
 #: ../plugins/project-manager/dialogs.c:1558
-#, fuzzy
-#| msgid "Select the _target for the new source files:"
 msgid "The selected node cannot contain source files."
-msgstr "Yeni kaynak dosyaları için _hedef seçin:"
+msgstr "Seçili düğüm kaynak dosya içeremez."
 
 #: ../plugins/project-manager/dialogs.c:1744
 #: ../plugins/project-manager/dialogs.c:1755
-#, fuzzy
-#| msgid "Can not add target"
 msgid "Cannot add target"
-msgstr "Kişi eklenemiyor: "
+msgstr "Hedef eklenemiyor"
 
 #: ../plugins/project-manager/dialogs.c:1756
 msgid "No group selected"
@@ -7171,10 +6673,8 @@ msgstr "Hiçbir grup seçilmemiş"
 
 #: ../plugins/project-manager/dialogs.c:1922
 #: ../plugins/project-manager/dialogs.c:1933
-#, fuzzy
-#| msgid "Can not add source files"
 msgid "Cannot add modules"
-msgstr "Kişi eklenemiyor: "
+msgstr "Modül eklenemiyor"
 
 #: ../plugins/project-manager/dialogs.c:1934
 msgid "No target has been selected"
@@ -7182,154 +6682,108 @@ msgstr "Hiçbir hedef seçilmemiş"
 
 #. Missing module name
 #: ../plugins/project-manager/dialogs.c:2140
-#, fuzzy
-#| msgid "Missing tool name"
 msgid "Missing module name"
-msgstr "Hiperlinkli Modül İsmi"
+msgstr "Eksik modül ismi"
 
 #: ../plugins/project-manager/dialogs.c:2202
-#, fuzzy
-#| msgid "Can not add target"
 msgid "Cannot add packages"
-msgstr "Kişi eklenemiyor: "
+msgstr "Paketler eklenemiyor"
 
 #: ../plugins/project-manager/plugin.c:693
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following group from project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the group \"%s\" from the project?\n"
 "\n"
-msgstr "Bu fotoğrafı anahtarınızdan kaldırmak istediğinize emin misiniz?"
+msgstr ""
+"\"%s\" grubunu projeden silmek istediğinize emin misiniz?\n"
+"\n"
 
 #: ../plugins/project-manager/plugin.c:696
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following target from project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the target \"%s\" from the project?\n"
 "\n"
-msgstr "Bu fotoğrafı anahtarınızdan kaldırmak istediğinize emin misiniz?"
+msgstr ""
+"\"%s\" hedefini projeden silmek istediğinize emin misiniz?\n"
+"\n"
 
 #: ../plugins/project-manager/plugin.c:699
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following source file from project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the source \"%s\" from the project?\n"
 "\n"
-msgstr "Bu fotoğrafı anahtarınızdan kaldırmak istediğinize emin misiniz?"
+msgstr ""
+"\"%s\" kaynağını projeden silmek istediğinize emin misiniz?\n"
+"\n"
 
 #: ../plugins/project-manager/plugin.c:702
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following group from project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the shortcut \"%s\" from the project?\n"
 "\n"
-msgstr "Bu fotoğrafı anahtarınızdan kaldırmak istediğinize emin misiniz?"
+msgstr ""
+"\"%s\" kısayolunu projeden silmek istediğinize emin misiniz?\n"
+"\n"
 
 #: ../plugins/project-manager/plugin.c:706
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following group from project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the module \"%s\" from the project?\n"
 "\n"
-msgstr "Bu fotoğrafı anahtarınızdan kaldırmak istediğinize emin misiniz?"
+msgstr ""
+"\"%s\" modülünü projeden silmek istediğinize emin misiniz?\n"
+"\n"
 
 #: ../plugins/project-manager/plugin.c:709
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following target from project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the package \"%s\" from the project?\n"
 "\n"
-msgstr "Bu fotoğrafı anahtarınızdan kaldırmak istediğinize emin misiniz?"
+msgstr ""
+"\"%s\" paketini projeden silmek istediğinize emin misiniz?\n"
+"\n"
 
 #: ../plugins/project-manager/plugin.c:712
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following target from project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the element \"%s\" from the project?\n"
 "\n"
-msgstr "Bu fotoğrafı anahtarınızdan kaldırmak istediğinize emin misiniz?"
+msgstr ""
+"\"%s\" elemanını projeden kaldırmak istediğinize emin misiniz?\n"
+"\n"
 
 #. Translator: there is at least 2 elements to remove
 #: ../plugins/project-manager/plugin.c:721
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following target from project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove %d element from the project?\n"
 "\n"
 msgid_plural ""
 "Are you sure you want to remove %d elements from the project?\n"
 "\n"
-msgstr[0] "Bu fotoğrafı anahtarınızdan kaldırmak istediğinize emin misiniz?"
+msgstr[0] ""
+"Projeden %d ögeyi silmek istediğinize emin misiniz?\n"
+"\n"
 
 #: ../plugins/project-manager/plugin.c:726
-#, fuzzy
-#| msgid ""
-#| "Group: %s\n"
-#| "\n"
-#| "The group will not be deleted from file system."
 msgid "The group will be deleted from the file system.\n"
-msgstr ""
-"Grup:%s\n"
-"\n"
-"Grup dosya sisteminden silinmeyecek."
+msgstr "Grup dosya sisteminden silinecek.\n"
 
 #: ../plugins/project-manager/plugin.c:731
-#, fuzzy
-#| msgid ""
-#| "Group: %s\n"
-#| "\n"
-#| "The group will not be deleted from file system."
 msgid "The group will not be deleted from the file system.\n"
-msgstr ""
-"Grup:%s\n"
-"\n"
-"Grup dosya sisteminden silinmeyecek."
+msgstr "Grup dosya sisteminden silinmeyecek.\n"
 
 #: ../plugins/project-manager/plugin.c:737
-#, fuzzy
-#| msgid ""
-#| "Source: %s\n"
-#| "\n"
-#| "The source file will not be deleted from file system."
 msgid "The source file will be deleted from the file system.\n"
-msgstr ""
-"Kaynak: %s\n"
-"\n"
-"Kaynak dosyası dosya sisteminden silinmeyecek."
+msgstr "Kaynak dosya dosya sisteminden silinecek.\n"
 
 #: ../plugins/project-manager/plugin.c:742
-#, fuzzy
-#| msgid ""
-#| "Source: %s\n"
-#| "\n"
-#| "The source file will not be deleted from file system."
 msgid "The source file will not be deleted from the file system.\n"
-msgstr ""
-"Kaynak: %s\n"
-"\n"
-"Kaynak dosyası dosya sisteminden silinmeyecek."
+msgstr "Kaynak dosya dosya sisteminden silinmeyecek.\n"
 
 #: ../plugins/project-manager/plugin.c:754
-#, fuzzy
-#| msgid "Configure Project"
 msgid "Confirm remove"
-msgstr "Asları çıkart"
+msgstr "Silmeyi onayla"
 
 #: ../plugins/project-manager/plugin.c:801
 #, c-format
@@ -7350,21 +6804,17 @@ msgid "_Project"
 msgstr "_Proje"
 
 #: ../plugins/project-manager/plugin.c:907
-#, fuzzy
-#| msgid "New _Directory…"
 msgid "New _Folder…"
-msgstr "Klasörü Tara…"
+msgstr "Yeni _Klasör…"
 
 #: ../plugins/project-manager/plugin.c:907
 #: ../plugins/project-manager/plugin.c:941
-#, fuzzy
-#| msgid "Add a new directory to the project"
 msgid "Add a new folder to the project"
-msgstr "Projeye yeni bir hedef ekle"
+msgstr "Projeye yeni klasör ekle"
 
 #: ../plugins/project-manager/plugin.c:912
 msgid "New _Target…"
-msgstr "Yeni _Hedef..."
+msgstr "Yeni _Hedef…"
 
 #: ../plugins/project-manager/plugin.c:912
 #: ../plugins/project-manager/plugin.c:946
@@ -7373,27 +6823,21 @@ msgstr "Projeye yeni bir hedef ekle"
 
 #: ../plugins/project-manager/plugin.c:917
 msgid "Add _Source File…"
-msgstr "_Kaynak Dosyası Ekle..."
+msgstr "_Kaynak Dosyası Ekle…"
 
 #: ../plugins/project-manager/plugin.c:917
 #: ../plugins/project-manager/plugin.c:951
 #: ../plugins/project-manager/plugin.c:961
-#, fuzzy
-#| msgid "Add a source file to project"
 msgid "Add a source file to a target"
-msgstr "Kaynak dosya oluşturulamadı"
+msgstr "Hedefe kaynak dosya ekle"
 
 #: ../plugins/project-manager/plugin.c:922
-#, fuzzy
-#| msgid "Shared Library"
 msgid "Add _Library…"
-msgstr "_Yeni kütüphane..."
+msgstr "_Kütüphane Ekle…"
 
 #: ../plugins/project-manager/plugin.c:922
-#, fuzzy
-#| msgid "Add a source file to project"
 msgid "Add a module to a target"
-msgstr "Hedefe bir kütüphane ekle"
+msgstr "Hedefe bir modül ekle"
 
 #: ../plugins/project-manager/plugin.c:927
 #: ../plugins/project-manager/plugin.c:966
@@ -7409,8 +6853,6 @@ msgid "Close project"
 msgstr "Projeyi kapat"
 
 #: ../plugins/project-manager/plugin.c:941
-#, fuzzy
-#| msgid "New File"
 msgid "New _Folder"
 msgstr "Yeni _Klasör"
 
@@ -7465,7 +6907,7 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:1321
 msgid "Update project view…"
-msgstr "Proje görünümünü güncelle..."
+msgstr "Proje görünümünü güncelle…"
 
 #: ../plugins/project-manager/plugin.c:1326
 #: ../plugins/project-manager/plugin.c:1448
@@ -7495,10 +6937,8 @@ msgid "Project manager popup actions"
 msgstr "Proje yöneticis beliren pencere eylemleri"
 
 #: ../plugins/project-manager/plugin.c:2480
-#, fuzzy
-#| msgid "Initializing Project..."
 msgid "Initializing Project…"
-msgstr "Projeyi Y_apılandır..."
+msgstr "Proje İlklendiriliyor…"
 
 #: ../plugins/project-manager/plugin.c:2483
 msgid "Project Loaded"
@@ -7509,14 +6949,12 @@ msgid "Add Library"
 msgstr "Kütüphane Ekle"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:2
-#, fuzzy
-#| msgid "Select the _target for the new source files:"
 msgid "Select the _target for the library:"
-msgstr "Yeni kaynak dosyaları için _hedef seçin:"
+msgstr "Kitaplık için _hedefi seçin:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:3
 msgid "_New library…"
-msgstr "_Yeni kütüphane..."
+msgstr "_Yeni kütüphane…"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:4
 msgid "Modules:"
@@ -7539,38 +6977,28 @@ msgid "Add Source"
 msgstr "Kaynak Ekle"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:9
-#, fuzzy
-#| msgid "Target: %s\n"
 msgid "Target:"
-msgstr "Hedef özellikleri"
+msgstr "Hedef:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:10
-#, fuzzy
-#| msgid "New File"
 msgid "New Folder"
 msgstr "Yeni Klasör"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:11
-#, fuzzy
-#| msgid "_Module name:"
 msgid "_Folder name:"
-msgstr "Klasör _adı:"
+msgstr "_Klasör adı:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:12
-#, fuzzy
-#| msgid "Specify _where to create the target:"
 msgid "Specify _where to create the folder:"
-msgstr "Klasörün nerede yaratılacağını belirtin:"
+msgstr "Klasörün _nerede oluşturulacağını belirtin:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:13
 msgid "Select the _target for the new source files:"
 msgstr "Yeni kaynak dosyaları için _hedef seçin:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:14
-#, fuzzy
-#| msgid "Select file to add:"
 msgid "_Select file to add…"
-msgstr "İçe aktarılacak dosyayı seçin"
+msgstr "Eklenecek dosyayı _seçin…"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:15
 msgid "Source files:"
@@ -7601,35 +7029,25 @@ msgid "More options:"
 msgstr "Daha fazla seçenek:"
 
 #: ../plugins/project-manager/project-chooser.c:296
-#, fuzzy
-#| msgid "Select projects directory"
 msgid "<Select any project node>"
-msgstr "Proje kaynak dizininden bir dosya seçin"
+msgstr "<Herhangi bir proje düğümü seçin>"
 
 #: ../plugins/project-manager/project-chooser.c:301
 #: ../plugins/project-manager/project-chooser.c:311
-#, fuzzy
-#| msgid "Select package"
 msgid "<Select a target>"
-msgstr "Hedefi Seç"
+msgstr "<Bir hedef seçin>"
 
 #: ../plugins/project-manager/project-chooser.c:306
-#, fuzzy
-#| msgid "Clean module"
 msgid "<Select any module>"
-msgstr "GTK IM Modülü"
+msgstr "<Herhangi bir modül seçin>"
 
 #: ../plugins/project-manager/project-chooser.c:316
-#, fuzzy
-#| msgid "Select the _target for the new source files:"
 msgid "<Select a target or a folder>"
-msgstr "Hedefi çalıştır ya da yeniden başlat"
+msgstr "<Bir hedef ya da klasör seçin>"
 
 #: ../plugins/project-manager/project-chooser.c:321
-#, fuzzy
-#| msgid "Select A Folder"
 msgid "<Select a folder>"
-msgstr "Bir Klasör Seçin"
+msgstr "<Klasör seçin>"
 
 #: ../plugins/project-manager/project-model.c:185
 msgid "GbfProject Object"
@@ -7644,10 +7062,8 @@ msgid "Project Assistant"
 msgstr "Proje Yardımcısı"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:1
-#, fuzzy
-#| msgid "Select projects directory"
 msgid "Select a project type"
-msgstr "Oynamak için oyun türünü seç"
+msgstr "Proje türü seçin"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
 #: ../plugins/project-wizard/druid.c:200
@@ -7655,10 +7071,8 @@ msgid "Error"
 msgstr "Hata"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
-#, fuzzy
-#| msgid "<b>Details</b>"
 msgid "Details"
-msgstr "Ayrıntılar"
+msgstr "Detaylar"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
 msgid "Summary"
@@ -7673,12 +7087,8 @@ msgid "Message"
 msgstr "İleti"
 
 #: ../plugins/project-wizard/druid.c:284
-#, fuzzy
-#| msgid ""
-#| "<b>Confirm the following information:</b>\n"
-#| "\n"
 msgid "Confirm the following information:"
-msgstr "Aşağıdaki bilgilere ihtiyacınız olacak:"
+msgstr "Aşağıdaki bilgiyi onaylayın:"
 
 #. The project type is translated too, it is something like
 #. * generic, GNOME applet, Makefile project...
@@ -7708,6 +7118,8 @@ msgid ""
 "\"#$:%%+,.=@^_`~\". In addition you cannot have a leading dash. Please fix "
 "it."
 msgstr ""
+"\"%s\" alanı sadece harf, rakam ya da \"#$:%%+,.=@^_`~\" karakterlerini "
+"içerebilir. Ayrıca sonunda tire olmamalı. Lütfen düzeltin."
 
 #: ../plugins/project-wizard/druid.c:732
 #, c-format
@@ -7716,6 +7128,8 @@ msgid ""
 "$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a "
 "leading dash. Please fix it."
 msgstr ""
+"\"%s\" alanı sadece harf, rakam, \"#$:%%+,.=@^_`~\" karakterlerini veya "
+"dizin ayraçlarını içerebilir. Ayrıca sonunda tire olmamalı. Lütfen düzeltin."
 
 #: ../plugins/project-wizard/druid.c:737
 #, c-format
@@ -7723,6 +7137,8 @@ msgid ""
 "Field \"%s\" must contains only ASCII printable characters, no accentuated "
 "characters by example. Please fix it."
 msgstr ""
+"\"%s\" alanı sadece ASCII yazdırılabilir karakterler içermeli, vurgulanmış "
+"karakterler olmamalı mesela. Lütfen düzeltin."
 
 #: ../plugins/project-wizard/druid.c:742
 #, c-format
@@ -7780,25 +7196,13 @@ msgstr ""
 "yüklendiğinden emin olun.\n"
 
 #: ../plugins/project-wizard/druid.c:995
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Missing packages: %s."
 msgid "Install missing packages"
-msgstr "Seçili paketleri sisteme kur"
+msgstr "Eksik paketleri yükle"
 
 #. Translators: Application Manager is the program used to install
 #. * new application like apt on Ubuntu, yum on Fedora, zypper on
 #. * OpenSuSE and emerge on Gentoo
 #: ../plugins/project-wizard/druid.c:1007
-#, fuzzy
-#| msgid ""
-#| "The missing programs are usually part of some distrubution packages and "
-#| "can be searched in your Application Manager. Similarly, the development "
-#| "packages are contained in special packages that your distribution provide "
-#| "to allow development of projects based on them. They usually end with -"
-#| "dev or -devel suffix in package names and can be found by searching in "
-#| "your Application Manager."
 msgid ""
 "The missing programs are usually part of some distribution packages and can "
 "be searched for in your Application Manager. Similarly, the development "
@@ -7807,12 +7211,11 @@ msgid ""
 "dev\" or \"-devel\" suffix in package names and can be found by searching in "
 "your Application Manager."
 msgstr ""
-"Eksik programlar bazı dağıtım paketlerinin parçası olabilir ve Uygulama "
-"Yönetici'niz içerisinde aratılabilir. Benzer bir şekilde, dağıtımınız "
-"projeleri temellerindirerek geliştirmeye olanak sağlamak için sağladığı özel "
-"paketlerde geliştirici paketlerini bulabilirsiniz. Bu paketler genllikle "
-"paket isminde -dev ya da -devel son ekini taşırlar ve Uygulama Yönetici ile "
-"aratarak bulunabilirler."
+"Eksik programlar genelde bir dağıtım paketidirler ve Uygulama Yöneticisi ile "
+"aranabilirler. Aynı şekilde, geliştirme paketleri de özel olarak dağıtımınız "
+"tarafından sağlanırlar ve onlara dayalı geliştirme projelerine imkan "
+"verirler. Paket isimlerinde genellikle \"-dev\" ya da \"-devel\" son eki "
+"bulunur ve Uygulama Yöneticiniz ile aratılarak bulunabilirler."
 
 #: ../plugins/project-wizard/druid.c:1015
 msgid "Missing components"
@@ -7832,22 +7235,19 @@ msgid "Skipping %s: file already exists"
 msgstr "%s geçiliyor: dosya zaten mevcut"
 
 #: ../plugins/project-wizard/install.c:510
-#, fuzzy, c-format
-#| msgid "Creating %s ... Fail to create directory"
+#, c-format
 msgid "Creating %s … Failed to create directory"
-msgstr "“%s” dizini oluşturulurken hata oluştu."
+msgstr "%s oluşturuluyor … Dizin oluşturma başarısız oldu"
 
 #: ../plugins/project-wizard/install.c:526
-#, fuzzy, c-format
-#| msgid "Creating %s (using AutoGen)... %s"
+#, c-format
 msgid "Creating %s (using AutoGen)… %s"
-msgstr "E-posta adresi kullanılarak"
+msgstr "%s Oluşturuluyor (AutoGen kullanılarak)… %s"
 
 #: ../plugins/project-wizard/install.c:531
-#, fuzzy, c-format
-#| msgid "Creating %s ... %s"
+#, c-format
 msgid "Creating %s … %s"
-msgstr "\"%s\" oluşturuluyor"
+msgstr "%s oluşturuluyor … %s"
 
 #. The %s is a name of a unix command line, by example
 #. * cp foobar.c project
@@ -7858,29 +7258,27 @@ msgstr "Çalıştırılıyor: %s"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:1
 msgid "Directory where the new projects are created by default"
-msgstr ""
+msgstr "Yeni projelerin öntanımlı olarak oluşturuldukları dizin"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:2
 msgid ""
 "If empty, the user home directory is used. If the path is relative, it is "
 "relative to the home directory."
 msgstr ""
+"Boşsa, kullanıcı ev dizini kullanılır. Yol göreceli ise, ev dizinine göredir."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
-#, fuzzy
-#| msgid "Create File/Project"
 msgid "Default user name used in new project"
-msgstr "Dosya/Proje Oluştur"
+msgstr "Yeni projede kullanılan varsayılan kullanıcı adı"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
 msgid "If empty, the current user name is used."
-msgstr ""
+msgstr "Boşsa, mevcut kullanıcı adı kullanılır."
 
 #: ../plugins/project-wizard/plugin.c:50
-#, fuzzy, c-format
-#| msgid "Unable to find any project template in %s"
+#, c-format
 msgid "Unable to extract project template %s: %s"
-msgstr "%s içinde proje şablomu bulunamadı"
+msgstr "Proje şablonu %s çıkarılamadı: %s"
 
 #: ../plugins/project-wizard/plugin.c:286
 msgid "New Project Assistant"
@@ -8237,10 +7635,8 @@ msgstr ""
 #: ../plugins/project-wizard/templates/wxwin.wiz.in.h:20
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:22
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:22
-#, fuzzy
-#| msgid "Require Package:"
 msgid "Required Packages:"
-msgstr "Gerekli Paketler"
+msgstr "Gerekli Paketler:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:33
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:23
@@ -8256,7 +7652,7 @@ msgstr "Gerekli Paketler"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:23
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:23
 msgid "Check the packages that your project requires"
-msgstr ""
+msgstr "Projenizin ihtiyacı olan paketleri kontrol edin"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:34
 msgid "Values to watch"
@@ -8396,10 +7792,8 @@ msgstr ""
 #: ../plugins/project-wizard/templates/library.wiz.in.h:24
 #: ../plugins/project-wizard/templates/terminal.wiz.in.h:19
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:19
-#, fuzzy
-#| msgid "Add C++ support:"
 msgid "Add Windows support:"
-msgstr "Paylaşılan kütüphane desteği ekle:"
+msgstr "Windows desteği ekle:"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:20
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:26
@@ -8408,10 +7802,8 @@ msgstr "Paylaşılan kütüphane desteği ekle:"
 #: ../plugins/project-wizard/templates/library.wiz.in.h:25
 #: ../plugins/project-wizard/templates/terminal.wiz.in.h:20
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:20
-#, fuzzy
-#| msgid "Adds support for building shared libraries in your project"
 msgid "Adds support for building on Windows platforms"
-msgstr "Projenize paylaşılan kütüphane inşa etme desteğini ekler"
+msgstr "Windows platformlarında derlemek için destek ekler"
 
 #: ../plugins/project-wizard/templates/django.wiz.in.h:1
 msgid "Django Project"
@@ -8445,35 +7837,28 @@ msgid "GCJ needs to know which class contains the main() function"
 msgstr "GCJ'nin hangi sınıfın main() işlevini içerdiğini bilmesi gerekiyor"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:1
-#, fuzzy
 msgid "Gnome Shell Extension"
-msgstr "GNOME Kabuğu Eklenti Tercihleri"
+msgstr "Gnome Kabuk Eklentisi"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:2
-#, fuzzy
 msgid "A minimal Gnome Shell extension"
-msgstr "GNOME Kabuğu Eklenti Tercihleri"
+msgstr "Asgari bir Gnome Kabuk eklentisi"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:5
-#, fuzzy
-#| msgid "Plugin Class Name:"
 msgid "Plugin Name:"
-msgstr "Eklenti profilinin ismi"
+msgstr "Eklenti İsmi:"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:6
 msgid "Short but descriptive user-visible plugin name"
-msgstr ""
+msgstr "Kısa ama açıklayıcı kullanıcıya-görünür eklenti ismi"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:14
-#, fuzzy
-#| msgid "Display description of the plugin"
 msgid "Long description of your plugin"
-msgstr "Eklentinin tanımını göster"
+msgstr "Eklentinizin uzun tanımı"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:15
-#, fuzzy
 msgid "UUID:"
-msgstr "UUID"
+msgstr "UUID:"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:16
 msgid ""
@@ -8484,30 +7869,34 @@ msgid ""
 "uuid on your\n"
 "email address."
 msgstr ""
+"Uuid eklentiniz için eşsiz bir tanımlayıcıdır.\n"
+"Bir e-posta adresi formatı biçiminde olmalıdır (foo.bar@eklentiler.ornek."
+"com), ama\n"
+"gerçek bir e-posta adresi olmasına gerek yoktur, tabi uuid'i e-posta "
+"adresinizle temellendirmeniz\n"
+"iyi bir fikir olur."
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:21
-#, fuzzy
 msgid "Extension URL"
-msgstr "Adres Arama"
+msgstr "Eklenti URL'si"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:22
-#, fuzzy
 msgid "Gnome Shell Compatibility:"
-msgstr "GNOME Kabuğu Uzantıları"
+msgstr "Gnome Kabuğu Uyumluluğu:"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:23
 msgid ""
 "Comma-separated list of gnome-shell version your plugin is compatible with"
 msgstr ""
+"Eklentinizin uyumlu olduğu gnome-kabuk sürümlerinin virgülle ayrılmış listesi"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:1
-#, fuzzy
 msgid "GTK+ (Application)"
-msgstr "Seçilmiş uygulama"
+msgstr "GTK+ (Uygulama)"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:2
 msgid "Full features Gtk+ Application with file handling"
-msgstr ""
+msgstr "Tam özellikli, dosya işlemleri destekli tam Gtk+ Uygulaması"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:19
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:17
@@ -8532,10 +7921,8 @@ msgstr ""
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:23
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:17
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:17
-#, fuzzy
-#| msgid "Create Gtk Builder interface file"
 msgid "Use GtkBuilder for user interface:"
-msgstr "%s için kullanıcı arayüzü oluşturulamadı"
+msgstr "Kullanıcı arayüzü için GtkBuilder kullan:"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:24
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:22
@@ -8546,6 +7933,8 @@ msgid ""
 "Use GtkBuilder to create the user-interface in a graphical way and load it "
 "from xml files at runtime"
 msgstr ""
+"Grafiksel yolla kullanıcı arayüzü oluşturmak için GtkBuilder kullan ve "
+"çalışma zamanında xml dsoyasından yüke"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:28
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:28
@@ -8566,28 +7955,22 @@ msgstr ""
 "ya da 'libgnomeui-2.0 >= 2.2.0'"
 
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:1
-#, fuzzy
 msgid "GTKmm (Simple)"
-msgstr "Basit arama"
+msgstr "GTKmm (Basit)"
 
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:2
-#, fuzzy
-#| msgid "A generic GTK+ project"
 msgid "A minimal GTKmm project"
-msgstr "Genel minik ve düz proje"
+msgstr "Asgari GTKmm projesi"
 
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:1
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:1
-#, fuzzy
 msgid "GTK+ (simple)"
-msgstr "Basit arama"
+msgstr "GTK+ (basit)"
 
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:2
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:2
-#, fuzzy
-#| msgid "A generic GTK+ project"
 msgid "Simple GTK+ project"
-msgstr "Tüm projeyi inşa et"
+msgstr "Basit GTK+ projesi"
 
 #: ../plugins/project-wizard/templates/java.wiz.in.h:1
 msgid "Generic java (automake)"
@@ -8602,9 +7985,8 @@ msgid "Main class"
 msgstr "Ana sınıf"
 
 #: ../plugins/project-wizard/templates/js.wiz.in.h:1
-#, fuzzy
 msgid "Generic JavaScript"
-msgstr "JavaScript Sınıfı"
+msgstr "Genel JavaScript"
 
 #: ../plugins/project-wizard/templates/js.wiz.in.h:2
 #: ../plugins/project-wizard/templates/minimal.wiz.in.h:2
@@ -8612,43 +7994,32 @@ msgid "A generic minimal and flat project"
 msgstr "Genel minik ve düz proje"
 
 #: ../plugins/project-wizard/templates/library.wiz.in.h:1
-#, fuzzy
-#| msgid "Libraries:"
 msgid "Library"
-msgstr "%s (kütüphane)"
+msgstr "Kitaplık"
 
 #: ../plugins/project-wizard/templates/library.wiz.in.h:2
-#, fuzzy
-#| msgid "Add shared library support:"
 msgid "A shared or a static library project"
-msgstr "Paylaşılan kütüphane desteği ekle:"
+msgstr "Paylaşılan ya da statik kitaplık projesi"
 
 #: ../plugins/project-wizard/templates/library.wiz.in.h:13
-#, fuzzy
-#| msgid "Build Directory:"
 msgid "Build library as"
-msgstr "root olarak yükle:"
+msgstr "Derleme şekli"
 
 #: ../plugins/project-wizard/templates/library.wiz.in.h:14
-#, fuzzy
 msgid "Select library type to build"
-msgstr "Oynamak için oyun türünü seç"
+msgstr "Derlenecek kitaplık türünü seçin"
 
 #: ../plugins/project-wizard/templates/library.wiz.in.h:15
-#, fuzzy
-#| msgid "Static Library"
 msgid "Shared and Static library"
-msgstr "Paylaşılan kütüphane eşleşmelerini göster"
+msgstr "Paylaşılan ve Statik kitaplık"
 
 #: ../plugins/project-wizard/templates/library.wiz.in.h:16
-#, fuzzy
 msgid "Only Shared"
-msgstr "Paylaşılan kütüphaneler"
+msgstr "Sadece Paylaşılan"
 
 #: ../plugins/project-wizard/templates/library.wiz.in.h:17
-#, fuzzy
 msgid "Only Static"
-msgstr "Bir Tek"
+msgstr "Sadece Statik"
 
 #: ../plugins/project-wizard/templates/licenses.tpl.in.h:1
 msgid "License"
@@ -8687,16 +8058,12 @@ msgid "Project directory:"
 msgstr "Proje dizini:"
 
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:1
-#, fuzzy
-#| msgid "Generic java (automake)"
 msgid "PyGTK (automake)"
-msgstr "Automake İnşası"
+msgstr "PyGTK (automake)"
 
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:2
-#, fuzzy
-#| msgid "project name"
 msgid "PyGTK project using automake"
-msgstr "Genel java projesi automake proje yönetimi kullanılarak"
+msgstr "Automake kullanan PyGTK projesi"
 
 #: ../plugins/project-wizard/templates/python.wiz.in.h:1
 msgid "Generic python (automake)"
@@ -8795,40 +8162,30 @@ msgid "A generic Xlib project"
 msgstr "Genel Xlib projesi"
 
 #: ../plugins/python-loader/anjuta-python-loader.plugin.in.h:1
-#, fuzzy
-#| msgid "Python Module"
 msgid "Python loader"
-msgstr "Dosya Yükleyici"
+msgstr "Python yükleyici"
 
 #: ../plugins/python-loader/anjuta-python-loader.plugin.in.h:2
 msgid "Allows loading Anjuta plugins written in Python"
-msgstr ""
+msgstr "Python ile yazılmış Anjuta eklentilerinin yüklenmesini sağlar"
 
 #: ../plugins/quick-open/anjuta-quick-open.ui.h:1
-#, fuzzy
-#| msgid "Loading..."
 msgid "Loading files..."
-msgstr "Dosyaları Seçin"
+msgstr "Dosyalar yükleniyor..."
 
 #: ../plugins/quick-open/plugin.c:221
-#, fuzzy
-#| msgid "_Quick Search"
 msgid "Quick open"
-msgstr "Hızlı Aç..."
+msgstr "Hızlı aç"
 
 #: ../plugins/quick-open/plugin.c:223
 msgid "Quickly open a file in the current project."
-msgstr ""
+msgstr "Mevcut projedeki bir dosyayı hızlıca aç."
 
 #: ../plugins/quick-open/plugin.c:243
-#, fuzzy
-#| msgid "Run operations"
 msgid "Quick open operations"
-msgstr "CVS yeniden beliren işlemleri"
+msgstr "İşlemleri hızlı aç"
 
 #: ../plugins/quick-open/quick-open-dialog.c:775
-#, fuzzy
-#| msgid "_Quick Search"
 msgid "Quick Open"
 msgstr "Hızlı Aç"
 
@@ -8845,7 +8202,6 @@ msgid "Program Parameters"
 msgstr "Program Parametreleri"
 
 #: ../plugins/run-program/anjuta-run-program.ui.h:2
-#| msgid "Run in terminal"
 msgid "Run in Terminal"
 msgstr "Uçbirimde Çalıştır"
 
@@ -8872,16 +8228,12 @@ msgid "Load Target to run"
 msgstr "Çalıştırmak için hedefi yükle"
 
 #: ../plugins/run-program/plugin.c:228
-#, fuzzy
-#| msgid ""
-#| "The program is running.\n"
-#| "Do you want to restart it?"
 msgid ""
 "The program is already running.\n"
 "Do you want to stop it before restarting a new instance?"
 msgstr ""
-"Program çalışıyor.\n"
-"Yeniden başlatılmasını ister misiniz?"
+"Program zaten çalışıyor.\n"
+"Yeniden başlatılmadan önce durdurmak ister misiniz?"
 
 #. Action name
 #. Stock icon, if any
@@ -8902,16 +8254,12 @@ msgid "Kill program"
 msgstr "Programı Öldür"
 
 #: ../plugins/run-program/plugin.c:314
-#, fuzzy
-#| msgid "Program Parameters"
 msgid "Program Parameters…"
-msgstr "Program Seç"
+msgstr "Program Parametreleri…"
 
 #: ../plugins/run-program/plugin.c:316
-#, fuzzy
-#| msgid "Set current program, arguments and so on"
 msgid "Set current program, arguments, etc."
-msgstr "Mevcut programı, parametrelerini ve başka şeyleri ata"
+msgstr "Mevcut program, bağımsız değişken, vs. ayarla"
 
 #: ../plugins/run-program/plugin.c:348
 msgid "Run operations"
@@ -8921,33 +8269,30 @@ msgstr "Çalıştırma işlemleri"
 #: ../plugins/snippets-manager/plugin.c:942
 #: ../plugins/snippets-manager/plugin.c:979
 #: ../plugins/snippets-manager/snippets-provider.c:754
-#, fuzzy
 msgid "Code Snippets"
-msgstr "_Parçaları Yönet..."
+msgstr "Kod Parçacıkları"
 
 #: ../plugins/snippets-manager/anjuta-snippets-manager.plugin.in.h:2
 msgid "Allows insertion of snippets into the editor."
-msgstr ""
+msgstr "Düzenleyiciye ufak parçaların eklenmesine izin verir."
 
 #: ../plugins/snippets-manager/plugin.c:62
 #: ../plugins/snippets-manager/plugin.c:307
 #: ../plugins/snippets-manager/snippets-browser.c:214
-#, fuzzy
 msgid "Snippets"
-msgstr "Parçalar"
+msgstr "Parçacıklar"
 
 #. Translator: Appears in Edit->Snippets menu. It is used mainly for providing a
 #. shortcut for the trigger-key based insertion of snippets. It's called like this
 #. because you type the trigger-key in the editor, followed by Trigger Insert and
 #. the snippet gets inserted.
 #: ../plugins/snippets-manager/plugin.c:73
-#, fuzzy
 msgid "_Trigger insert"
-msgstr "Eylem/Tetik"
+msgstr "Eklemeyi _Tetikle"
 
 #: ../plugins/snippets-manager/plugin.c:75
 msgid "Insert a snippet using the trigger-key"
-msgstr ""
+msgstr "Tetikleme tuşu ile bir parçacık ekle"
 
 #. Translator: In a similar matter, it also appears in Edit->Snippets. It's another method
 #. for inserting snippets. In this case, you call Auto complete insert, start
@@ -8956,165 +8301,133 @@ msgstr ""
 #. (they are showed by their names). After selecting one of them, the snippet gets
 #. inserted.
 #: ../plugins/snippets-manager/plugin.c:86
-#, fuzzy
-#| msgid "Autocomplete"
 msgid "_Auto complete insert"
-msgstr "Otomatik Tamamlama Gecikmesi"
+msgstr "_Otomatik tamamlama ile ekle"
 
 #: ../plugins/snippets-manager/plugin.c:88
-#, fuzzy
-#| msgid "Insert handler stub, autoposition"
 msgid "Insert a snippet using auto-completion"
-msgstr "İşleyici stub'ı ekle, kendiliğinden konumlandır"
+msgstr "Otomatik tamamlama kullanarak bir parçacık ekle"
 
 #: ../plugins/snippets-manager/plugin.c:93
-#, fuzzy
 msgid "_Import snippets …"
-msgstr "Parçaları aktar"
+msgstr "Parçacıkları içe _aktar …"
 
 #: ../plugins/snippets-manager/plugin.c:95
-#, fuzzy
 msgid "Import snippets to the database"
-msgstr "Kullanılacak öntanımlı veritabanı"
+msgstr "Parçacıkları veri tabanına aktar"
 
 #: ../plugins/snippets-manager/plugin.c:100
-#, fuzzy
 msgid "_Export snippets …"
-msgstr "Parçaları aktar"
+msgstr "Parçaları _dışa aktar …"
 
 #: ../plugins/snippets-manager/plugin.c:102
-#, fuzzy
 msgid "Export snippets from the database"
-msgstr "'%s' veritabanından nesne getirilemiyor :%s"
+msgstr "Parçaları veri tabanından dışa aktar"
 
 #: ../plugins/snippets-manager/plugin.c:332
-#, fuzzy
-#| msgid "Project manager actions"
 msgid "Snippets Manager actions"
-msgstr "Proje yöneticisi eylemleri"
+msgstr "Parça Yöneticisi eylemleri"
 
 #: ../plugins/snippets-manager/plugin.c:779
-#| msgid "Command"
 msgid "Command?"
 msgstr "Komut?"
 
 #: ../plugins/snippets-manager/plugin.c:795
-#| msgid "Variable list"
 msgid "Variable text"
 msgstr "Değişken metni"
 
 #: ../plugins/snippets-manager/plugin.c:813
 #: ../plugins/snippets-manager/snippets-editor.c:40
-#, fuzzy
-#| msgid "Inspect/Evaluate"
 msgid "Instant value"
-msgstr "Şimdiki değer"
+msgstr "Anlık değer"
 
 #: ../plugins/snippets-manager/snippets-browser.c:193
 #: ../plugins/snippets-manager/snippets-manager-preferences.ui.h:1
-#, fuzzy
-#| msgid "Import project"
 msgid "Add snippet"
-msgstr "Parça Ekle"
+msgstr "Parçacık ekle"
 
 #: ../plugins/snippets-manager/snippets-browser.c:199
 #: ../plugins/snippets-manager/snippets-manager-preferences.ui.h:2
-#, fuzzy
-#| msgid "Select Files"
 msgid "Remove selected snippet"
-msgstr "Seçilen bölümleri ilk haline getir"
+msgstr "Seçili parçayı sil"
 
 #: ../plugins/snippets-manager/snippets-browser.c:205
-#, fuzzy
-#| msgid "Paste the content of clipboard at the current position"
 msgid "Insert snippet into editor at current cursor position"
-msgstr "Pano içeriğini mevcut pozisyona yapıştır"
+msgstr "Parçayı düzenleyiciye mevcut imleç pozisyonunda ekle"
 
 #: ../plugins/snippets-manager/snippets-browser.c:552
-#, fuzzy
 msgid "Trigger"
-msgstr "Eylem/Tetik"
+msgstr "Tetikleyici"
 
 #: ../plugins/snippets-manager/snippets-browser.c:563
-#| msgid "Language Manager"
 msgid "Languages"
 msgstr "Diller"
 
 #. Insert the Add Snippet menu item
 #: ../plugins/snippets-manager/snippets-browser.c:809
-#, fuzzy
-#| msgid "Add Watch…"
 msgid "Add Snippet…"
-msgstr "_Yer imi ekle..."
+msgstr "Parça Ekle…"
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
-#, fuzzy
 msgid "Add Snippets Group…"
-msgstr "Tek parçalar dosyası"
+msgstr "Parça Grubu Ekle…"
 
 #: ../plugins/snippets-manager/snippets-editor.c:39
-#| msgid "Default"
 msgid "Default value"
 msgstr "Öntanımlı değer"
 
 #: ../plugins/snippets-manager/snippets-editor.c:48
 msgid "<b>Error:</b> You must choose at least one language for the snippet!"
-msgstr ""
+msgstr "<b>Hata:</b>Parça için en azından bir dil seçmelisiniz!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:49
 msgid ""
 "<b>Error:</b> The trigger key is already in use for one of the languages!"
-msgstr ""
+msgstr "<b>Hata:</b>Tetikleyici tuş zaten bir dil tarafından kullanılıyor!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
-#, fuzzy
-#| msgid ""
-#| "Source file name can only contain alphanumeric, '_', '-' or '.' characters"
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
 "\"_\"!"
 msgstr ""
-"Kaynak dosyası ismi sadece alfanümerik, '_', '-' ya da '.' karakterlerini "
-"içerebilir"
+"<b>Hata:</b>Tetikleyici tuş sadece alfanümerik karater ve \"_\" içerebilir!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:51
 msgid "<b>Error:</b> You haven't entered a trigger key for the snippet!"
-msgstr ""
+msgstr "<b>Hata:</b>Parça için tetikleyici tuş girmediniz!"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:1
-#, fuzzy
-#| msgid "New Name:"
 msgid "Snippet Name:"
-msgstr "Profil İsmi"
+msgstr "Parça İsmi:"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:2
 msgid ""
 "Select the name of the Snippet. \n"
 "The role of the name is purely informative."
 msgstr ""
+"Parçanın ismini seçin.\n"
+"İsim sadece bilgi amaçlıdır."
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:4
 msgid "<b>Warning:</b> You should choose a name for the snippet!"
-msgstr ""
+msgstr "<b>Uyarı:</b> Bu parçacık için isim seçmelisiniz!"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:5
-#, fuzzy
 msgid "Snippets Group:"
-msgstr "Grup Ekle"
+msgstr "Parçacık Grubu:"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:6
 msgid "Select the Snippets Group to which this snippet belongs."
-msgstr ""
+msgstr "Bu parçacığın ait olduğu Parçacık Grubunu seçin."
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:7
 msgid "<b>Error:</b> The snippet must belong to a group!"
-msgstr ""
+msgstr "<b>Hata:</b> Parçacık bir gruba ait olmalı!"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:8
-#, fuzzy
 msgid "Trigger Key:"
-msgstr "Anahtar tuşu"
+msgstr "Tetikleyen Anahtar:"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:9
 msgid ""
@@ -9123,15 +8436,18 @@ msgid ""
 "snippet.\n"
 "<b>Warning: Must be unique per language. </b>"
 msgstr ""
+"Tetikleme tuşu parçanın hızlıca eklenebilmesi için kullanılır. Bir parça "
+"eklemek için düzenleyicide tetikleyici tuşu yazın, ardından \"Hızlı Ekleme\" "
+"kısayolunu kullanın.\n"
+"<b>Uyarı:Her dil için eşsiz olmalıdır.</b>"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:11
-#| msgid "Changes:"
 msgid "Languages:"
 msgstr "Diller:"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:12
 msgid "Select the languages for which you want to use this snippet."
-msgstr ""
+msgstr "Bu parçayı kullanacağınız dilleri seçin."
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:13
 msgid "Keywords:"
@@ -9142,68 +8458,52 @@ msgid ""
 "Keywords are used for better searching of the snippets. They should be "
 "relevant to the snippet content. Type them separated by a single space."
 msgstr ""
+"Anahtar kelimeler parçaların daha iyi aranabilmesi için kullanılır. Parça "
+"içeriğiyle alakalı olmalıdırlar. Tek bir boşlukla ayırarak yazın."
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:15
-#, fuzzy
-#| msgid "Properties"
 msgid "Snippet Properties"
-msgstr "Kesme noktası özellikleri"
+msgstr "Parça Özellikleri"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:16
-#| msgid "_Print Preview"
 msgid "Preview"
 msgstr "Önizleme"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:17
-#, fuzzy
-#| msgid "Contents"
 msgid "Snippet Content"
-msgstr "Web İçeriği"
+msgstr "Parça İçeriği"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:20
 msgid "Insert"
 msgstr "Araya Ekle"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:21
-#, fuzzy
-#| msgid "Environment Variables:"
 msgid "Snippet Variables"
-msgstr "Çevresel Değişiklikler:"
+msgstr "Parça Değişkenleri"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:22
-#| msgid "Close All"
 msgid "Close"
 msgstr "Kapat"
 
 #: ../plugins/snippets-manager/snippets-export-dialog.ui.h:1
-#, fuzzy
-#| msgid "Import project"
 msgid "Export snippets"
-msgstr "Parçaları aktar"
+msgstr "Parçaları dışa aktar"
 
 #: ../plugins/snippets-manager/snippets-export-dialog.ui.h:3
-#, fuzzy
-#| msgid "Save current file"
 msgid "Save in folder:"
-msgstr "_Dizine Kaydet"
+msgstr "Klasöre kaydet:"
 
 #: ../plugins/snippets-manager/snippets-export-dialog.ui.h:4
-#, fuzzy
-#| msgid "Select Files"
 msgid "Select snippets"
-msgstr "_Parçaları Yönet..."
+msgstr "Parçaları seç"
 
 #: ../plugins/snippets-manager/snippets-import-export.c:155
-#, fuzzy
-#| msgid "Import project"
 msgid "Import Snippets"
-msgstr "Parçaları İçe Aktar"
+msgstr "Parçacıkları İçe Aktar"
 
 #: ../plugins/snippets-manager/snippets-manager-preferences.ui.h:3
-#, fuzzy
-#| msgid "Anjuta macros"
 msgid "Anjuta variables"
-msgstr "Çevresel Değişiklikler:"
+msgstr "Anjuta değişkenleri"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:1
 msgid "Use tabs for indentation"
@@ -9214,10 +8514,8 @@ msgid "Tab size in spaces:"
 msgstr "Boşluk cinsinden sekme boyutu:"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:3
-#, fuzzy
-#| msgid "Brace indentation size in spaces:"
 msgid "Indentation size in spaces:"
-msgstr "Boşluk cinsinden sekme boyutu:"
+msgstr "Girintilerin boşluk olarak boyutu:"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:4
 msgid "Indentation and auto-format options"
@@ -9236,10 +8534,8 @@ msgid "Create backup files"
 msgstr "Yedek dosyaları oluştur"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:8
-#, fuzzy
-#| msgid "AutoComplete the current word"
 msgid "Enable autocompletion for document words"
-msgstr "Mevcut kelimede Kendiliğinden Tamamlama"
+msgstr "Belge kelimelerin için otomatik tamamlamayı aç"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:10
 msgid "Highlight current line"
@@ -9335,27 +8631,21 @@ msgid "GtkSourceView Editor"
 msgstr "GtkSourceView Düzenleyicisi"
 
 #: ../plugins/sourceview/sourceview.c:629
-#, fuzzy, c-format
-#| msgid ""
-#| "The file '%s' on the disk is more recent than the current buffer.\n"
-#| "Do you want to reload it?"
+#, c-format
 msgid ""
 "The file \"%s\" on the disk is more recent than the current buffer.\n"
 "Do you want to reload it?"
 msgstr ""
-"'%s' dosyasının diskteki hali mevcut tampondaki halinden daha yeni.\n"
-"Tekrar yüklemek ister misiniz?"
+"Diskteki \"%s\" dosyası mevcut tampondakinden daha yeni.\n"
+"Yeniden yüklemek ister misiniz?"
 
 #: ../plugins/sourceview/sourceview.c:661
-#, fuzzy, c-format
-#| msgid ""
-#| "The file '%s' has been deleted on the disk.\n"
-#| "Do you want to close it?"
+#, c-format
 msgid ""
 "The file \"%s\" has been deleted on the disk.\n"
 "Do you want to close it?"
 msgstr ""
-"'%s' dosyası diskten silinmiş.\n"
+"\"%s\" dosyası diskten silinmiş.\n"
 "Kapatmak ister misiniz?"
 
 #. Could not open <filename>: <error message>
@@ -9366,7 +8656,6 @@ msgstr "%s açılamadı: %s"
 
 #: ../plugins/sourceview/sourceview.c:745
 #, c-format
-#| msgid "The file '%s' is read-only! Edit anyway?"
 msgid "The file \"%s\" is read-only! Edit anyway?"
 msgstr "Dosya \"%s\" salt-okunur! Yine de düzenlensin mi?"
 
@@ -9387,47 +8676,36 @@ msgid "New file %d"
 msgstr "Yeni dosya %d"
 
 #: ../plugins/sourceview/sourceview.plugin.in.h:1
-#| msgid "GtkSourceView Editor"
 msgid "GtkSourceView editor"
 msgstr "GtkSourceView düzenleyicisi"
 
 #: ../plugins/sourceview/sourceview.plugin.in.h:2
-#, fuzzy
-#| msgid "The default editor based on GtkSourceview"
 msgid "The default editor based on GtkSourceView"
-msgstr "GtkSourceview temelli öntanımlı düzenleyici"
+msgstr "GtkSourceview tabanlı varsayılan düzenleyici"
 
 #: ../plugins/sourceview/sourceview-print.c:47
 msgid "Preparing pages for printing"
 msgstr "Sayfalar yazdırma için hazırlanıyor"
 
 #: ../plugins/sourceview/sourceview-print.c:111
-#, fuzzy
 msgid "Wrap lines"
-msgstr "Satır kaydırma"
+msgstr "Satırları kaydır"
 
 #: ../plugins/sourceview/sourceview-print.c:113
-#| msgid "Show Line Numbers"
 msgid "Line numbers"
 msgstr "Satır numaraları"
 
 #: ../plugins/sourceview/sourceview-print.c:115
-#, fuzzy
-#| msgid "Head"
 msgid "Header"
-msgstr "Üstbilgi"
+msgstr "Başlık"
 
 #: ../plugins/sourceview/sourceview-print.c:117
-#, fuzzy
-#| msgid "Filter"
 msgid "Footer"
-msgstr "dipnot"
+msgstr "Dipnot"
 
 #: ../plugins/sourceview/sourceview-print.c:119
-#, fuzzy
-#| msgid "_Highlight Mode"
 msgid "Highlight source code"
-msgstr "_Kod Bloğunu Seç"
+msgstr "Kaynak kodu vurgula"
 
 #: ../plugins/starter/anjuta-starter.plugin.in.h:1
 msgid "Starter"
@@ -9438,54 +8716,40 @@ msgid "Welcome page with most common actions."
 msgstr "Yaygın eylemler ile hoşgeldin sayfası."
 
 #: ../plugins/starter/plugin.c:425
-#| msgid "Started"
 msgid "Start"
 msgstr "Başla"
 
 #: ../plugins/starter/starter.ui.h:1
-#| msgid "Create File/Project"
 msgid "Create a new project"
 msgstr "Yeni bir proje oluştur"
 
 #: ../plugins/starter/starter.ui.h:2
-#| msgid "Import project"
 msgid "Import a project"
 msgstr "Projeyi içe aktar"
 
 #: ../plugins/starter/starter.ui.h:3
-#, fuzzy
-#| msgid "Search complete"
 msgid "Search for example code"
-msgstr "Açık Dosyaları Ara"
+msgstr "Örnek kod ara"
 
 #: ../plugins/starter/starter.ui.h:4
-#, fuzzy
-#| msgid "Man Documentation"
 msgid "View local Anjuta documentation"
-msgstr "Son yerel ve çevrimiçi fotoğrafları görüntüleyin"
+msgstr "Yerel Anjuta belgelerine göz at"
 
 #: ../plugins/starter/starter.ui.h:5
-#, fuzzy
 msgid "View local Anjuta FAQ"
-msgstr "Son yerel ve çevrimiçi fotoğrafları görüntüleyin"
+msgstr "Yerel Anjuta FAQ'ına göz at"
 
 #: ../plugins/starter/starter.ui.h:6
-#, fuzzy
-#| msgid "Gnome Online API Documentation"
 msgid "View online library documentation"
-msgstr "Çevirim için belgelendirme ve kaynakları"
+msgstr "Çevrim içi kitaplık belgelerine göz at"
 
 #: ../plugins/starter/starter.ui.h:7
-#, fuzzy
-#| msgid "No recently used resource found with URI `%s'"
 msgid "Remove recently used project from list"
-msgstr "Seçilen öğeleri son kullanılanlar listesinden kaldır"
+msgstr "Listeden yakın zamanda kullanılan projeyi kaldır"
 
 #: ../plugins/starter/starter.ui.h:8
-#, fuzzy
-#| msgid "_Install Project"
 msgid "Unlist Project"
-msgstr "Projeyi Yapılandır"
+msgstr "Projeyi Listeden Çıkar"
 
 #: ../plugins/subversion/anjuta-subversion.plugin.in.h:1
 #: ../plugins/subversion/subversion-ui-utils.c:64
@@ -9530,7 +8794,6 @@ msgid "Select Files to Commit:"
 msgstr "Atamak (commit) için Dosyaları Seç:"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:16
-#| msgid "Retrieving status..."
 msgid "Retrieving status…"
 msgstr "Durum alınıyor…"
 
@@ -9639,7 +8902,6 @@ msgid "Select Files to Mark as Resolved:"
 msgstr "Çözüldü Olarak İşaretlenecek Dosyaları Seç:"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:50
-#| msgid "Retrieving status..."
 msgid "Retrieving status……"
 msgstr "Durum alınıyor……"
 
@@ -9696,7 +8958,6 @@ msgstr "_Subversion"
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:60 ../plugins/subversion/plugin.c:175
-#| msgid "_Add"
 msgid "_Add…"
 msgstr "_Ekle…"
 
@@ -9709,10 +8970,8 @@ msgstr "Subversion ağacına yeni dosya/dizin ekle"
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:68 ../plugins/subversion/plugin.c:183
-#, fuzzy
-#| msgid "_Remove"
 msgid "_Remove…"
-msgstr "_Ekle veya Çıkar..."
+msgstr "_Çıkar…"
 
 #. Display label
 #. short-cut
@@ -9723,10 +8982,8 @@ msgstr "Subversion ağacından dosya/dizin sil"
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:76
-#, fuzzy
-#| msgid "_Commit"
 msgid "_Commit…"
-msgstr "_Commit"
+msgstr "_Gönder…"
 
 #. Display label
 #. short-cut
@@ -9737,10 +8994,8 @@ msgstr "Subversion ağacına değişiklikleri commit et"
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:84 ../plugins/subversion/plugin.c:167
-#, fuzzy
-#| msgid "_Revert..."
 msgid "_Revert…"
-msgstr "_Geri çevir..."
+msgstr "_Geri al…"
 
 #. Display label
 #. short-cut
@@ -9751,10 +9006,8 @@ msgstr "Çalışan kopyanızda yapılan değişiklikleri geri çevir."
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:92
-#, fuzzy
-#| msgid "_Resolve Conflicts..."
 msgid "_Resolve Conflicts…"
-msgstr "Subversion: Çözümleme tamamlandı."
+msgstr "_Çatışmaları Çöz…"
 
 #. Display label
 #. short-cut
@@ -9765,22 +9018,18 @@ msgstr "Çalışan kopyanızdaki çakışmaları çözün."
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:100 ../plugins/subversion/plugin.c:159
-#| msgid "_Update"
 msgid "_Update…"
 msgstr "_Güncelle…"
 
 #. Display label
 #. short-cut
 #: ../plugins/subversion/plugin.c:102 ../plugins/subversion/plugin.c:161
-#, fuzzy
-#| msgid "Sync your local copy with the Subversion tree"
 msgid "Syncronize your local copy with the Subversion tree"
-msgstr "Subversion ağacı ile yerel kopyanızı eşzamanlandırın"
+msgstr "Yerel kopyanızı Subversion ağacıyla eşleştirin"
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:108
-#| msgid "Copy Files/Folders..."
 msgid "Copy Files/Folders…"
 msgstr "Dosyaları/Klasörleri Kopyala…"
 
@@ -9793,10 +9042,8 @@ msgstr "Depodaki dosyaları/klasörleri kopyala"
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:116
-#, fuzzy
-#| msgid "Switch to a Branch/Tag..."
 msgid "Switch to a Branch/Tag…"
-msgstr "Branş/etiket değiştir"
+msgstr "Bir Dala/Etikete Geç…"
 
 #. Display label
 #. short-cut
@@ -9807,7 +9054,6 @@ msgstr "Yerel kopyanızı depodaki bir branş ya da etikete değiştir"
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:124
-#| msgid "Merge"
 msgid "Merge…"
 msgstr "Birleştir…"
 
@@ -9820,7 +9066,6 @@ msgstr "Çalışan kopyanızla değişiklikleri birleştirin"
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:132 ../plugins/subversion/plugin.c:191
-#| msgid "View Log"
 msgid "_View Log…"
 msgstr "Günlüğü _Görüntüle…"
 
@@ -9833,10 +9078,8 @@ msgstr "Dosya geçmişini göster"
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:140
-#, fuzzy
-#| msgid "_Diff"
 msgid "_Diff…"
-msgstr "_Diff"
+msgstr "_Fark…"
 
 #. Display label
 #. short-cut
@@ -9847,17 +9090,14 @@ msgstr "Depo ile yerel ağacı diff et"
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:199
-#| msgid "_Copy"
 msgid "Copy…"
 msgstr "Kopyala…"
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:207
-#, fuzzy
-#| msgid "Diff"
 msgid "Diff…"
-msgstr "Diff"
+msgstr "Fark…"
 
 #: ../plugins/subversion/plugin.c:488
 msgid "Subversion operations"
@@ -9887,10 +9127,8 @@ msgid "Subversion: Commit complete."
 msgstr "Subversion: Commit tamamlandı."
 
 #: ../plugins/subversion/subversion-commit-dialog.c:123
-#, fuzzy
-#| msgid "Subversion: Committing changes to the repository..."
 msgid "Subversion: Committing changes to the repository…"
-msgstr "Subversion ağacına değişiklikleri commit et"
+msgstr "Subversion: Değişiklikler depoya gönderiliyor…"
 
 #: ../plugins/subversion/subversion-copy-dialog.c:138
 msgid "Subversion: Copy complete."
@@ -9911,27 +9149,22 @@ msgstr "[Head/Çalışan Kopya]"
 #: ../plugins/subversion/subversion-diff-dialog.c:61
 #: ../plugins/subversion/subversion-log-dialog.c:426
 #: ../plugins/subversion/subversion-log-dialog.c:493
-#, fuzzy
-#| msgid "Subversion: Retrieving diff..."
 msgid "Subversion: Retrieving diff…"
-msgstr "DVD anahtarları tespit ediliyor"
+msgstr "Subversion: Farklılıklar getiriliyor…"
 
 #: ../plugins/subversion/subversion-log-dialog.c:119
 msgid "Diff"
 msgstr "Diff"
 
 #: ../plugins/subversion/subversion-log-dialog.c:257
-#, fuzzy
-#| msgid "Subversion: Retrieving log..."
 msgid "Subversion: Retrieving log…"
-msgstr "DVD anahtarları tespit ediliyor"
+msgstr "Subversion: Günlük getiriliyor…"
 
 #: ../plugins/subversion/subversion-log-dialog.c:309
 msgid "Subversion: File retrieved."
 msgstr "Subversion: Dosya alındı."
 
 #: ../plugins/subversion/subversion-log-dialog.c:351
-#| msgid "Subversion: Retrieving file..."
 msgid "Subversion: Retrieving file…"
 msgstr "Subversion: Dosya alınıyor…"
 
@@ -10074,40 +9307,30 @@ msgid "Parallel scan of project and global symbols"
 msgstr "Proje ve genel sembollerin paralel taraması"
 
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:2
-#, fuzzy
-#| msgid ""
-#| "This option means that the global system packages will be scanned "
-#| "contemporary with the project's ones"
 msgid ""
 "This option means that the global system packages will be scanned "
 "simultaneously with the project's ones"
 msgstr ""
-"Bu seçenek, küresel sistem paketlerinin projeninkiler ile aynı dönemli "
-"taranacağı anlamına gelir"
+"Bu seçenek, sistem paketlerinin projeninkiler ile eş zamanlı taranacağı "
+"anlamına gelir"
 
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:3
 msgid "Automatically update symbols without saving file"
 msgstr "Dosyayı kaydetmeden sembolleri kendiliğinden güncelle"
 
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:4
-#, fuzzy
-#| msgid ""
-#| "Update automatically the file's symbols without saving. The update occurs "
-#| "after 10 seconds of no keypress by user."
 msgid ""
 "Automatically update the file's symbols without saving. The update occurs "
 "after 10 seconds without keypresses by the user."
 msgstr ""
-"Kaydetmeden dosyanın simgelerini kendiliğinden güncelle. Güncelleme "
-"kullanıcı tarafından 10 saniye boyunca herhangi bir tuşa basılmadığında "
-"yapılır."
+"Dosyanın sembollerini kaydetmeden otomatik olarak güncelle. Güncelleme 10 "
+"saniye sonra ,kullanıcı tarafından herhangi bir tuşa basılmadan yapılır."
 
 #: ../plugins/symbol-db/plugin.c:331
 msgid "Tag De_claration"
 msgstr "Etiket _Bildirimi"
 
 #: ../plugins/symbol-db/plugin.c:333
-#| msgid "Goto symbol declaration"
 msgid "Go to symbol declaration"
 msgstr "Sembol bildirimine git"
 
@@ -10117,12 +9340,10 @@ msgid "Tag _Implementation"
 msgstr "Etiket _Uygulaması"
 
 #: ../plugins/symbol-db/plugin.c:342
-#| msgid "Goto symbol definition"
 msgid "Go to symbol definition"
 msgstr "Sembol tanımına git"
 
 #: ../plugins/symbol-db/plugin.c:349
-#| msgid "Find Symbol"
 msgid "_Find Symbol…"
 msgstr "Sembol _Bul…"
 
@@ -10131,34 +9352,29 @@ msgid "Find Symbol"
 msgstr "Sembol Bul"
 
 #: ../plugins/symbol-db/plugin.c:1067
-#, fuzzy, c-format
-#| msgid "%s: Generating inheritances..."
+#, c-format
 msgid "%s: Generating inheritances…"
-msgstr "Profil oluşturuluyor"
+msgstr "%s: Kalıtımlar oluşturuluyor…"
 
 #. Translators: %s is the name of a system library
 #: ../plugins/symbol-db/plugin.c:1073
-#, fuzzy, c-format
-#| msgid "%s: %d files scanned out of %d"
+#, c-format
 msgid "%s: %d file scanned out of %d"
 msgid_plural "%s: %d files scanned out of %d"
-msgstr[0] "Seçili dosyayı çöpten dışarı taşı"
+msgstr[0] "%s: %d dosya toplam %d dosya içinden tarandı"
 
 #: ../plugins/symbol-db/plugin.c:1104
-#, fuzzy, c-format
-#| msgid "Generating inheritances..."
+#, c-format
 msgid "Generating inheritances…"
-msgstr "Kalıtımlar üretiliyor…"
+msgstr "Kalıtımlar oluşturuluyor…"
 
 #: ../plugins/symbol-db/plugin.c:1106
-#, fuzzy, c-format
-#| msgid "%d files scanned out of %d"
+#, c-format
 msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
-msgstr[0] "Seçili dosyayı çöpten dışarı taşı"
+msgstr[0] "%d dosya %d dosya içinden tarandı"
 
 #: ../plugins/symbol-db/plugin.c:1767
-#| msgid "Populating symbols' db..."
 msgid "Populating symbol database…"
 msgstr "Sembol veritabanı dolduruluyor…"
 
@@ -10206,17 +9422,14 @@ msgid "Terminal Plugin for Anjuta."
 msgstr "Anjuta için Uçbirim Eklentisi"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:2
-#| msgid "Use GNOME terminal profile:"
 msgid "Use GNOME Terminal profile:"
 msgstr "GNOME Uçbirimi profilini kullan:"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
-#| msgid "Use GNOME terminal profile:"
 msgid "Use default GNOME terminal profile"
 msgstr "Öntanımlı GNOME uçbirimi profilini kullan"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
-#| msgid "terminal operations"
 msgid "Terminal options"
 msgstr "Uçbirim seçenekleri"
 
@@ -10238,7 +9451,6 @@ msgstr "uçbirim işlemleri"
 
 #: ../plugins/terminal/terminal.c:937
 #, c-format
-#| msgid "Unable to execute: %s."
 msgid "Unable to execute command"
 msgstr "Komut çalıştırılamadı"
 
@@ -10261,7 +9473,6 @@ msgid "Save all files"
 msgstr "Tüm dosyaları kaydet"
 
 #: ../plugins/tools/anjuta-tools.ui.h:9
-#| msgid "Variable"
 msgid "_Variable…"
 msgstr "_Değişken…"
 
@@ -10358,10 +9569,8 @@ msgid "Unable to edit script"
 msgstr "Betik düzenlenemedi"
 
 #: ../plugins/tools/editor.c:1047
-#, fuzzy
-#| msgid "New accelerator..."
 msgid "New accelerator…"
-msgstr "Yeni Görünüm..."
+msgstr "Yeni hızlandırıcı…"
 
 #: ../plugins/tools/execute.c:314
 #, c-format
@@ -10386,10 +9595,9 @@ msgstr "(hata)"
 
 #. Display the name of the command
 #: ../plugins/tools/execute.c:469
-#, fuzzy, c-format
-#| msgid "Running command: %s...\n"
+#, c-format
 msgid "Running command: %s…\n"
-msgstr "%s'e döndürülüyor..."
+msgstr "Komut çalıştırılıyor: %s…\n"
 
 #: ../plugins/tools/execute.c:509
 #, c-format
@@ -10397,16 +9605,12 @@ msgid "Completed unsuccessfully with status code %d\n"
 msgstr "%d kodu ile başarısız olarak tamamlandı\n"
 
 #: ../plugins/tools/execute.c:629
-#, fuzzy
-#| msgid "Unable to create a buffer, command aborted"
 msgid "Unable to create a buffer: command aborted"
-msgstr "Girdi dosyası %s açılamadı, komut iptal edildi"
+msgstr "Tampon alan oluşturulamadı: komut iptal edildi"
 
 #: ../plugins/tools/execute.c:641
-#, fuzzy
-#| msgid "No document currently open, command aborted"
 msgid "No document currently open: command aborted"
-msgstr "Hiçbir belge henüz açık değil, komut iptal edildi"
+msgstr "Hiçbir belge henüz açık değil: komut iptal edildi"
 
 #: ../plugins/tools/execute.c:1025
 #, c-format
@@ -10420,7 +9624,7 @@ msgstr "Eksik araç ismi"
 #: ../plugins/tools/fileop.c:258
 #, c-format
 msgid "Unexpected element \"%s\""
-msgstr "Beklenmeyen öğe \"%s\""
+msgstr "Beklenmeyen öge \"%s\""
 
 #: ../plugins/tools/fileop.c:537
 msgid "Error when loading external tools"
@@ -10456,10 +9660,8 @@ msgid "Replace buffer"
 msgstr "Tamponun yerine koy"
 
 #: ../plugins/tools/tool.c:86
-#, fuzzy
-#| msgid "Insert in buffer"
 msgid "Insert into buffer"
-msgstr "Özel karakterleri belgelere yerleştir"
+msgstr "Tampona ekle"
 
 #: ../plugins/tools/tool.c:87
 msgid "Append to buffer"
@@ -10591,7 +9793,6 @@ msgid "Command line parameters"
 msgstr "Komut satırı parametreleri"
 
 #: ../src/about.c:186
-#| msgid "Copyright (c) Naba Kumar"
 msgid "Copyright © Naba Kumar"
 msgstr "Telif Hakkı © Naba Kumar"
 
@@ -10708,7 +9909,6 @@ msgid "About External _Plugins"
 msgstr "Harici _Eklentiler Hakkında"
 
 #: ../src/anjuta-actions.h:88
-#| msgid "About third party Anjuta plugins"
 msgid "About third-party Anjuta plugins"
 msgstr "Üçüncü parti Anjuta eklentileri hakkında"
 
@@ -10723,16 +9923,12 @@ msgid "WIDTHxHEIGHT+XOFF+YOFF"
 msgstr "GENİŞLİKxYÜKSEKLİK+XOFF+YOFF"
 
 #: ../src/anjuta-application.c:382
-#, fuzzy
-#| msgid "Do not show the splashscreen"
 msgid "Do not show the splash screen"
-msgstr "Gizli dosyaları gösterme"
+msgstr "Açılış ekranını gösterme"
 
 #: ../src/anjuta-application.c:388
-#, fuzzy
-#| msgid "Start a new instance and do not open the file in a existing"
 msgid "Start a new instance and do not open the file in an existing instance"
-msgstr "Yeni bir oluşum başlat ve dosyayı mevcut olan içine açma"
+msgstr "Yeni bir oluşum başlat ve dosyayı mevcut oluşumda açma"
 
 #: ../src/anjuta-application.c:394
 msgid "Do not open last session on startup"
@@ -10743,11 +9939,9 @@ msgid "Do not open last project and files on startup"
 msgstr "Başlangıçta son projeyi ve dosyalarını açma"
 
 #: ../src/anjuta-application.c:406
-#, fuzzy
-#| msgid "Shutdown anjuta properly releasing all resources (for debugging)"
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
 msgstr ""
-"Anjutayı tüm kaynakları tam olarak bırakarak kapat (hata ayıklamak için)"
+"Anjutayı tüm kaynakları bırakarak, düzgünce kapat (hata ayıklamak için)"
 
 #: ../src/anjuta-application.c:412
 msgid "Display program version"
@@ -10758,9 +9952,8 @@ msgid "Specify another profile"
 msgstr "Başka bir profil belirtin"
 
 #: ../src/anjuta-application.c:419
-#, fuzzy
 msgid "PROFILE_FILE"
-msgstr "PROFİL-ADI"
+msgstr "PROFİL_DOSYASI"
 
 #: ../src/anjuta-application.c:436
 msgid "- Integrated Development Environment"
@@ -10768,15 +9961,12 @@ msgstr "- Bütünleşik Geliştirme Ortamı"
 
 #: ../src/anjuta-application.c:776
 #, c-format
-#| msgid "Installation failed: %s"
 msgid "Invalid profile %s: %s"
 msgstr "Geçersiz profil %s: %s"
 
 #: ../src/anjuta-application.c:830
-#, fuzzy
-#| msgid "Loaded Session..."
 msgid "Loaded Session…"
-msgstr "Proje Yüklendi"
+msgstr "Oturum Yüklendi…"
 
 #: ../src/anjuta-menu.ui.h:1
 msgid "_New Window"
@@ -10804,29 +9994,24 @@ msgid "Value doesn't exist"
 msgstr "Değer mevcut değil"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
-#| msgid "Create File/Project"
 msgid "Default email used in new project"
 msgstr "Yeni projede kullanılan öntanımlı e-posta"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:2
 msgid "If empty, current login and machine name is used."
-msgstr ""
+msgstr "Eğer boşsa, mevcut kullanıcı ve makine adı kullanılır."
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:3
-#, fuzzy
-#| msgid "Use tabs for indentation"
 msgid "Use tabulation for indentation"
-msgstr "Girintileme için sekmeler kullan"
+msgstr "Girintileme için sekme kullan"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:4
-#, fuzzy
-#| msgid "Number of last characters to show:"
 msgid "Number of characters of one tabulation"
-msgstr "Bir toplu işte eklenen öneri sayısı"
+msgstr "Bir sekme için girilecek karakter sayısı"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
-msgstr ""
+msgstr "Her girinti adımında girilecek boşluk sayısı"
 
 #: ../src/preferences.ui.h:1
 msgid "Do not load last session on startup"
@@ -10863,7 +10048,6 @@ msgid "Text + Icons"
 msgstr "Metin + Simgeler"
 
 #: ../src/preferences.ui.h:13
-#| msgid "Gnome toolbar setting"
 msgid "GNOME toolbar setting"
 msgstr "GNOME araç çubuğu ayarı"
 
