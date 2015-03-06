@@ -473,7 +473,7 @@ static AmpPropertyInfo AmpTargetNodeProperties[] = {
 		N_("Do not use prefix:"),
 			ANJUTA_PROJECT_PROPERTY_BOOLEAN,
 			ANJUTA_PROJECT_PROPERTY_READ_ONLY | ANJUTA_PROJECT_PROPERTY_STATIC,
-			N_("Do not rename the target with an optional prefix, used to avoid overwritting system program. ")},
+			N_("Do not rename the target with an optional prefix, used to avoid overwriting system program. ")},
 		AM_TOKEN__PROGRAMS, 	1, NULL,
 		AM_PROPERTY_IN_MAKEFILE,
 		"0"
@@ -648,7 +648,7 @@ static AmpPropertyInfo AmpProgramTargetProperties[] = {
 		N_("Do not use prefix:"),
 			ANJUTA_PROJECT_PROPERTY_BOOLEAN,
 			ANJUTA_PROJECT_PROPERTY_READ_WRITE | ANJUTA_PROJECT_PROPERTY_STATIC,
-			N_("Do not rename the target with an optional prefix, used to avoid overwritting system program. ")},
+			N_("Do not rename the target with an optional prefix, used to avoid overwriting system program. ")},
 		AM_TOKEN__PROGRAMS, 	1, "notrans_",
 		AM_PROPERTY_IN_MAKEFILE,
 		"0"
@@ -823,7 +823,7 @@ static AmpPropertyInfo AmpLibraryTargetProperties[] = {
 		N_("Do not use prefix:"),
 			ANJUTA_PROJECT_PROPERTY_BOOLEAN,
 			ANJUTA_PROJECT_PROPERTY_READ_WRITE | ANJUTA_PROJECT_PROPERTY_STATIC,
-			N_("Do not rename the target with an optional prefix, used to avoid overwritting system program. ")},
+			N_("Do not rename the target with an optional prefix, used to avoid overwriting system program. ")},
 		AM_TOKEN__PROGRAMS, 	1, "notrans_",
 		AM_PROPERTY_IN_MAKEFILE,
 		"0"
@@ -999,7 +999,7 @@ static AmpPropertyInfo AmpModuleTargetProperties[] = {
 		N_("Do not use prefix:"),
 			ANJUTA_PROJECT_PROPERTY_BOOLEAN,
 			ANJUTA_PROJECT_PROPERTY_READ_WRITE | ANJUTA_PROJECT_PROPERTY_STATIC,
-			N_("Do not rename the target with an optional prefix, used to avoid overwritting system program. ")},
+			N_("Do not rename the target with an optional prefix, used to avoid overwriting system program. ")},
 		AM_TOKEN__PROGRAMS, 	1, "notrans_",
 		AM_PROPERTY_IN_MAKEFILE,
 		"0"
@@ -1036,7 +1036,7 @@ static AmpPropertyInfo AmpManTargetProperties[] = {
 		N_("Do not use prefix:"),
 			ANJUTA_PROJECT_PROPERTY_BOOLEAN,
 			ANJUTA_PROJECT_PROPERTY_READ_WRITE | ANJUTA_PROJECT_PROPERTY_STATIC,
-			N_("Do not rename the target with an optional prefix, used to avoid overwritting system program. ")},
+			N_("Do not rename the target with an optional prefix, used to avoid overwriting system program. ")},
 		AM_TOKEN__PROGRAMS,	1, "notrans_",
 		AM_PROPERTY_IN_MAKEFILE,
 		"0"
@@ -1110,7 +1110,7 @@ static AmpPropertyInfo AmpDataTargetProperties[] = {
 		N_("Do not use prefix:"),
 			ANJUTA_PROJECT_PROPERTY_BOOLEAN,
 			ANJUTA_PROJECT_PROPERTY_READ_WRITE | ANJUTA_PROJECT_PROPERTY_STATIC,
-			N_("Do not rename the target with an optional prefix, used to avoid overwritting system program. ")},
+			N_("Do not rename the target with an optional prefix, used to avoid overwriting system program. ")},
 		AM_TOKEN__PROGRAMS, 	1, "notrans_",
 		AM_PROPERTY_IN_MAKEFILE,
 		"0"
@@ -1183,7 +1183,7 @@ static AmpPropertyInfo AmpScriptTargetProperties[] = {
 		N_("Do not use prefix:"),
 			ANJUTA_PROJECT_PROPERTY_BOOLEAN,
 			ANJUTA_PROJECT_PROPERTY_READ_WRITE | ANJUTA_PROJECT_PROPERTY_STATIC,
-			N_("Do not rename the target with an optional prefix, used to avoid overwritting system program. ")},
+			N_("Do not rename the target with an optional prefix, used to avoid overwriting system program. ")},
 		AM_TOKEN__PROGRAMS, 	1, "notrans_",
 		AM_PROPERTY_IN_MAKEFILE
 	},
