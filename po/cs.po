@@ -1466,7 +1466,7 @@ msgstr "Přeložit zprávy"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:15
 msgid "Highlight build warnings and errors in editor"
-msgstr "Vyznačit v editoru varování a chyby při sestavování"
+msgstr "Vyznačit v editoru varování a chyby sestavení"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:16
 msgid "Build"
@@ -2700,7 +2700,7 @@ msgstr "Vlastnosti bodu přerušení"
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:19
 #: ../plugins/debug-manager/breakpoints.c:1953
 msgid "Location"
-msgstr "Umístění"
+msgstr "Místo"
 
 #. This is the number of time that the program executes the line where a breakpoint is located. It is used as a list header, so I have tried to find a quite short name.
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:21
@@ -3433,11 +3433,11 @@ msgstr "Přidat sledování…"
 
 #: ../plugins/debug-manager/watch.c:422
 msgid "Remove Watch"
-msgstr "Odstranit sledování"
+msgstr "Odstranit sledované"
 
 #: ../plugins/debug-manager/watch.c:430
 msgid "Update Watch"
-msgstr "Aktualizovat sledování"
+msgstr "Aktualizovat sledované"
 
 #: ../plugins/debug-manager/watch.c:438
 msgid "Change Value"
@@ -3455,7 +3455,7 @@ msgstr "Odstranit vše"
 #. Stock icon, if any
 #: ../plugins/debug-manager/watch.c:465
 msgid "Automatic update"
-msgstr "Automatická aktualizace"
+msgstr "Automaticky aktualizovat"
 
 #: ../plugins/debug-manager/watch.c:491 ../plugins/debug-manager/watch.c:497
 msgid "Watch operations"
@@ -5944,7 +5944,7 @@ msgstr "Odsazení závorek"
 #: ../plugins/indentation-c-style/plugin.c:224
 #: ../plugins/indentation-python-style/plugin.c:206
 msgid "Auto-Indent"
-msgstr "Automatické-odsazování"
+msgstr "Automatické odsazování"
 
 #: ../plugins/indentation-c-style/plugin.c:225
 #: ../plugins/indentation-python-style/plugin.c:207
