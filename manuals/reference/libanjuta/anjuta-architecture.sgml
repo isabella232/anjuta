@@ -5,7 +5,7 @@
 		its core is the shell
 		(<link linkend="AnjutaShell"><type>AnjutaShell</type></link>)
 		in which all plugins are loaded. Plugins can also merge
-		thier UI and preferences in
+		their UI and preferences in
 		<link linkend="AnjutaUI"><type>AnjutaUI</type></link>
 		and
 		<link linkend="AnjutaPreferences"><type>AnjutaPreferences</type></link>,
@@ -14,7 +14,7 @@
 	<para>
 		Plugins subclass <link linkend="AnjutaPlugin"><type>AnjutaPlugin</type></link>
 		abstract class and interact with each other using predefined interfaces.
-		They can also export objects with <emphasis>Values Sytem</emphasis> in
+		They can also export objects with <emphasis>Values System</emphasis> in
 		<link linkend="AnjutaShell"><type>AnjutaShell</type></link>.
 	</para>
 	<para>

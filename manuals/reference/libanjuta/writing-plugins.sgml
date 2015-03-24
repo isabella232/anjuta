@@ -5,7 +5,7 @@
 		<xref linkend="anjuta-architecture"/>
 		to get a picture of how plugins interact with Anjuta shell and other
 		plugins. Only a general overview is necessary for now. Eventually, as
-		we procceed through this article, you can visit respective sections
+		we proceed through this article, you can visit respective sections
 		to read more.
 		This is a tutorial style article and is never meant to be a cover-all
 		document. You should read other relevent documents linked at respective
@@ -222,7 +222,7 @@ static gpointer parent_class;
 		</para>
 		<para>
 			We have one action in our plugin and here is the callback for that.
-			In this function, we are quering
+			In this function, we are querying
 			<link linkend="AnjutaShell"><type>AnjutaShell</type></link>
 			for a plugin implementing
 			<link linkend="IAnjutaDocumentManager"><type>IAnjutaDocumentManager</type></link>
@@ -230,7 +230,7 @@ static gpointer parent_class;
 			to see if it implements
 			<link linkend="IAnjutaFile"><type>IAnjutaFile</type></link>
 			interface,
-			using which we deternime filename of currently active editor. If
+			using which we determine filename of currently active editor. If
 			the editor doesn't support
 			<link linkend="IAnjutaFile"><type>IAnjutaFile</type></link>
 			interface, we show an error dialog.

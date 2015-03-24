@@ -30,7 +30,7 @@
     <item>
       <title>Module (Libtool)</title>
       <p>It represents a library, often named a plugin, linked at run time
-      explicitely by the program itself.
+      explicitly by the program itself.
       It is used to only load the code corresponding to the used features.</p>
       <p>It uses the Libtool package. Its name does not need the 'lib'
       prefix but must have the '.la' extension.</p>
@@ -44,7 +44,7 @@
     </item>
     <item>
       <title>Program</title>
-      <p>It represents compiled program by example from C souces files.
+      <p>It represents compiled program by example from C source files.
       All children represent the source files compiled to generate the
       program.</p>
     </item>
@@ -54,11 +54,11 @@
     </item>
     <item>
       <title>Java module</title>
-      <p>It represents a progran written in Java.</p>
+      <p>It represents a program written in Java.</p>
     </item>
     <item>
       <title>LISP module</title>
-      <p>It represents a progran written in LISP.</p>
+      <p>It represents a program written in LISP.</p>
     </item>
     <item>
       <title>Header files</title>
