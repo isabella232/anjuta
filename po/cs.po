@@ -848,11 +848,11 @@ msgstr "Projekt neexistuje nebo má neplatnou cestu"
 
 #: ../plugins/am-project/am-project.plugin.in.h:1
 msgid "Autotools backend"
-msgstr "Výkonný modul Autotools"
+msgstr "Zpracující jádro Autotools"
 
 #: ../plugins/am-project/am-project.plugin.in.h:2
 msgid "New Autotools backend for project manager"
-msgstr "Nový výkonný modul Autotools pro Správce projektu"
+msgstr "Nové zpracující jádro Autotools pro Správce projektu"
 
 #: ../plugins/am-project/am-properties.c:49
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:5
@@ -3008,7 +3008,7 @@ msgstr "Proměnná"
 
 #: ../plugins/debug-manager/disassemble.c:846
 msgid "Disassembly"
-msgstr "Zpětně přeložit"
+msgstr "Kód assembleru"
 
 #: ../plugins/debug-manager/info.c:52 ../plugins/debug-manager/info.c:101
 #: ../plugins/project-wizard/druid.c:188
@@ -3124,7 +3124,7 @@ msgstr "Připojit se na vzdálený cíl ladění"
 
 #: ../plugins/debug-manager/plugin.c:893
 msgid "Stop Debugger"
-msgstr "Zastavit ladicí program"
+msgstr "Ukončit ladění"
 
 #: ../plugins/debug-manager/plugin.c:895
 msgid "Say goodbye to the debugger"
@@ -3206,11 +3206,11 @@ msgstr "Jeden krok ven z funkce"
 
 #: ../plugins/debug-manager/plugin.c:989
 msgid "_Run to Cursor"
-msgstr "Spustit ke ku_rzoru"
+msgstr "Spustit po ku_rzor"
 
 #: ../plugins/debug-manager/plugin.c:991
 msgid "Run to the cursor"
-msgstr "Spustit do kurzoru"
+msgstr "Spustit po kurzor"
 
 #: ../plugins/debug-manager/plugin.c:997
 msgid "_Run from Cursor"
@@ -3535,15 +3535,15 @@ msgstr "Projekt neumožňuje nastavit vlastnosti"
 
 #: ../plugins/dir-project/dir-project.plugin.in.h:1
 msgid "Directory backend"
-msgstr "Výkonný modul Složka"
+msgstr "Zpracující jádro Složka"
 
 #: ../plugins/dir-project/dir-project.plugin.in.h:2
 msgid ""
 "Directory project backend, get only source files, use it when other backend "
 "fails"
 msgstr ""
-"Projektový výkonný modul Složka, pouze vybírá zdrojové soubory; použijte "
-"jej, když ostatní výkonné moduly selžou"
+"Zpracující jádro projektu Složka, pouze vybírá zdrojové soubory; použijte "
+"jej, když ostatní zpracující jádra selžou"
 
 #: ../plugins/document-manager/action-callbacks.c:315
 #, c-format
@@ -6380,11 +6380,11 @@ msgstr "Nelze analyzovat soubor make"
 
 #: ../plugins/mk-project/mk-project.plugin.in.h:1
 msgid "Makefile backend"
-msgstr "Výkonný modul Makefile"
+msgstr "Zpracující jádro Makefile"
 
 #: ../plugins/mk-project/mk-project.plugin.in.h:2
 msgid "Makefile project backend, allowing only to read the project"
-msgstr "Projektový výkonný modul Makefile, dovoluje pouze čtení projektu"
+msgstr "Zpracující jádro projektu Makefile, dovoluje pouze čtení projektu"
 
 #: ../plugins/mk-project/mk-project.ui.h:1
 msgid "Select package"
@@ -6532,7 +6532,7 @@ msgstr ""
 #: ../plugins/project-import/plugin.c:285
 #, c-format
 msgid "Please select a project backend to open %s."
-msgstr "Vyberte prosím výkonný modul, pomocí kterého otevřete %s."
+msgstr "Vyberte prosím zpracující jádro, pomocí kterého otevřete %s."
 
 #: ../plugins/project-import/plugin.c:305
 #, c-format
@@ -6540,7 +6540,7 @@ msgid ""
 "Could not find a valid project backend for the given directory (%s). Please "
 "select a different directory, or try upgrading to a newer version of Anjuta."
 msgstr ""
-"Nelze najít platný výkonný modul pro zadanou složku (%s). Zvolte prosím "
+"Nelze najít platné zpracující jádro pro zadanou složku (%s). Zvolte prosím "
 "jinou složku nebo zkuste aktualizovat na novější verzi Anjuty."
 
 #: ../plugins/project-import/plugin.c:371
@@ -6631,7 +6631,7 @@ msgstr "Tuto vlastnost nelze upravovat."
 #: ../plugins/project-manager/dialogs.c:644
 #, c-format
 msgid "Please select a project backend to use."
-msgstr "Vyberte prosím výkonný modul, který se má použít."
+msgstr "Vyberte prosím zpracující jádro, které se má použít."
 
 #: ../plugins/project-manager/dialogs.c:683
 #: ../plugins/project-manager/dialogs.c:688
@@ -6665,7 +6665,7 @@ msgstr "Neznámé vlastnosti"
 
 #: ../plugins/project-manager/dialogs.c:737
 msgid "Backend:"
-msgstr "Výkonný modul:"
+msgstr "Zpracující jádro:"
 
 #: ../plugins/project-manager/dialogs.c:929
 #, c-format
