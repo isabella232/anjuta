@@ -2107,7 +2107,7 @@ msgstr "Přidat do repozitáře"
 #: ../plugins/class-gen/generator.c:133
 #, c-format
 msgid "Header or source file has not been created"
-msgstr "Hlavičkový nebo zdrojový soubor nebyl vytvořen"
+msgstr "Hlavičkový soubor nebo soubor se zdrojovým kódem nebyl vytvořen"
 
 #: ../plugins/class-gen/generator.c:297
 msgid "Autogen template used for the header file"
@@ -3136,7 +3136,7 @@ msgstr "Přidat zdrojové cesty…"
 
 #: ../plugins/debug-manager/plugin.c:903
 msgid "Add additional source paths"
-msgstr "Přidat další zdrojové cesty"
+msgstr "Přidat další cesty ke zdrojům"
 
 #. Action name
 #. Stock icon, if any
@@ -6071,7 +6071,7 @@ msgstr "Přepnout .h/.c"
 
 #: ../plugins/language-support-cpp-java/plugin.c:1205
 msgid "Swap C header and source files"
-msgstr "Prohodit hlavičkový a zdrojový soubory v C"
+msgstr "Prohodit hlavičkový soubor se souborem se zdrojovým kódem v C"
 
 #: ../plugins/language-support-cpp-java/plugin.c:1245
 msgid "C++/Java Assistance"
@@ -6594,7 +6594,7 @@ msgstr "Cíl:"
 
 #: ../plugins/project-import/project-import.ui.h:4
 msgid "Import from version control system"
-msgstr "Import z nástroje pro správu verzí"
+msgstr "Import ze systému pro správu verzí"
 
 #: ../plugins/project-import/project-import.ui.h:5
 msgid "Import options"
@@ -6867,7 +6867,7 @@ msgstr "Přidat _zdrojový soubor…"
 #: ../plugins/project-manager/plugin.c:951
 #: ../plugins/project-manager/plugin.c:961
 msgid "Add a source file to a target"
-msgstr "Přidat cíli zdrojový soubor"
+msgstr "Přidat do cíle zdrojový soubor"
 
 #: ../plugins/project-manager/plugin.c:922
 msgid "Add _Library…"
@@ -6875,7 +6875,7 @@ msgstr "Přidat _knihovnu…"
 
 #: ../plugins/project-manager/plugin.c:922
 msgid "Add a module to a target"
-msgstr "Přidat cíli nový modul"
+msgstr "Přidat do cíle nový modul"
 
 #: ../plugins/project-manager/plugin.c:927
 #: ../plugins/project-manager/plugin.c:966
