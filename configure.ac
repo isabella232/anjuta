@@ -831,13 +831,6 @@ pixmaps/hicolor/24x24/Makefile
 pixmaps/hicolor/32x32/Makefile
 pixmaps/hicolor/48x48/Makefile
 pixmaps/hicolor/scalable/Makefile
-pixmaps/HighContrast/Makefile
-pixmaps/HighContrast/16x16/Makefile
-pixmaps/HighContrast/22x22/Makefile
-pixmaps/HighContrast/24x24/Makefile
-pixmaps/HighContrast/32x32/Makefile
-pixmaps/HighContrast/48x48/Makefile
-pixmaps/HighContrast/256x256/Makefile
 data/Makefile
 data/welcome.txt
 data/templates/Makefile
