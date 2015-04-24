@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
-"POT-Creation-Date: 2015-02-25 15:47+0000\n"
-"PO-Revision-Date: 2015-03-29 12:30+0200\n"
+"POT-Creation-Date: 2015-04-24 14:50+0000\n"
+"PO-Revision-Date: 2015-04-24 22:44+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -101,7 +101,7 @@ msgid ""
 "Autocompletion automatically suggests functions and other code symbols after "
 "you start typing by trying to match existing symbols with the first "
 "characters typed. It will popup a drop-down menu where you can select a "
-"match by using the <key>Enter</key> key. Normally this happens automaticly "
+"match by using the <key>Enter</key> key. Normally this happens automatically "
 "after you typed the third (non-whitespace) character but you can also force "
 "it by using the <guiseq><gui>Edit</gui><gui>Auto-Complete</gui></guiseq> "
 "menu item."
@@ -262,7 +262,7 @@ msgstr ""
 #. (itstool) path: note/p
 #: C/anjuta-code-indentation.page:38
 msgid ""
-"Unless explicitely changed in the preferences the indentation settings found "
+"Unless explicitly changed in the preferences the indentation settings found "
 "in the Modeline of a file will be used instead of the configured settings to "
 "keep the file consistent."
 msgstr ""
@@ -304,7 +304,7 @@ msgstr "Odsazení bloku kódu"
 #. (itstool) path: section/p
 #: C/anjuta-code-indentation.page:61
 msgid ""
-"Normally new lines are approprietely indented automatically but you can "
+"Normally new lines are appropriately indented automatically but you can "
 "indent existing lines or all selected code with the <guiseq><gui>Edit</"
 "gui><gui>Auto-Indent</gui></guiseq> menu item."
 msgstr ""
@@ -1083,9 +1083,9 @@ msgstr "Modul (Libtool)"
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:32
 msgid ""
-"It represents a library, often named a plugin, linked at run time "
-"explicitely by the program itself. It is used to only load the code "
-"corresponding to the used features."
+"It represents a library, often named a plugin, linked at run time explicitly "
+"by the program itself. It is used to only load the code corresponding to the "
+"used features."
 msgstr ""
 "Představuje knihovnu, často nazývanou zásuvný modul, která se linkuje za "
 "běhu na výslovnou žádost programu. Používá se pouze k načtení kódu "
@@ -1130,7 +1130,7 @@ msgstr "Program"
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:47
 msgid ""
-"It represents compiled program by example from C souces files. All children "
+"It represents compiled program by example from C source files. All children "
 "represent the source files compiled to generate the program."
 msgstr ""
 "Představuje zkompilovaný program, například ze zdrojových kódů v jazyce C. K "
@@ -1154,7 +1154,7 @@ msgstr "Modul Java"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:57
-msgid "It represents a progran written in Java."
+msgid "It represents a program written in Java."
 msgstr "Představuje program napsaný v jazyce Java."
 
 #. (itstool) path: item/title
@@ -1164,7 +1164,7 @@ msgstr "Modul LISP"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:61
-msgid "It represents a progran written in LISP."
+msgid "It represents a program written in LISP."
 msgstr "Představuje program napsaný v jazyce LISP."
 
 #. (itstool) path: item/title
@@ -1923,7 +1923,7 @@ msgstr "<cmd>make dist</cmd>"
 #. (itstool) path: item/p
 #: C/autotools-build-plugin.page:49
 msgid ""
-"Use to build a distributation package, called only in the project directory."
+"Use to build a distribution package, called only in the project directory."
 msgstr ""
 "Používá se k sestavení distribučního balíčku, volá se jen ve složce projektu."
 
@@ -4802,7 +4802,7 @@ msgstr ""
 #: C/project-manager-module-new.page:57
 msgid ""
 "It could be that the library is not packaged, it is often the case for "
-"libraries not developped on Linux. See the chapter <link xref=\"project-"
+"libraries not developed on Linux. See the chapter <link xref=\"project-"
 "manager-library-add\"/> explaining how to use them."
 msgstr ""
 "Může to být i tím, že knihovna není z balíčku, což je často případ knihoven "
@@ -4908,7 +4908,7 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/project-manager.page:29
 msgid ""
-"The project backend to use is choosen when creating or importing a new "
+"The project backend to use is chosen when creating or importing a new "
 "project in <app>Anjuta</app>. It is displayed in the properties of the "
 "project root node and can be changed at any time."
 msgstr ""
