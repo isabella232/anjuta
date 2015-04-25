@@ -7,15 +7,15 @@
 # Andre Klapper <ak-47@gmx.net>, 2009.
 # Petr Kovar <pknbe@volny.cz>, 2008, 2009, 2010.
 # Lucas Lommer <llommer@svn.gnome.org>, 2008, 2009, 2010, 2011, 2012.
-# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2013, 2014.
+# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-08-24 02:44+0000\n"
-"PO-Revision-Date: 2014-05-18 08:01+0100\n"
+"POT-Creation-Date: 2015-04-25 02:49+0000\n"
+"PO-Revision-Date: 2015-04-25 12:06+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -1315,10 +1315,10 @@ msgstr "Nepoužívat předponu:"
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
-"Neprovádět přejmenování cíle za pomoci volitelné předpony, používá se k "
+"Neprovádět přejmenování cíle za pomoci volitelné předpony. Používá se k "
 "tomu, aby se zabránilo přepsání systémového programu."
 
 #: ../plugins/am-project/am-properties.c:483
@@ -2224,7 +2224,7 @@ msgid "Patch-Style diff"
 msgstr "Rozdílový soubor diff ve stylu záplaty"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "Místní"
 
@@ -3345,7 +3345,7 @@ msgstr "Rámec"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Soubor"
@@ -4612,7 +4612,7 @@ msgstr "Automaticky vybrat aktuální dokument"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "Globální"
 
@@ -6951,7 +6951,7 @@ msgstr "Aktualizovat pohled na projekt…"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "Projekt"
 
@@ -8784,14 +8784,10 @@ msgid "View online library documentation"
 msgstr "Zobrazit on-line dokumentaci ke knihovnám"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "label"
-msgstr ""
-
-#: ../plugins/starter/starter.ui.h:8
 msgid "Remove recently used project from list"
 msgstr "Odebrat nedávno použitý projekt ze seznamu"
 
-#: ../plugins/starter/starter.ui.h:9
+#: ../plugins/starter/starter.ui.h:8
 msgid "Unlist Project"
 msgstr "Odebrat projekt"
 
@@ -9422,27 +9418,27 @@ msgstr[0] "%d z %d souboru proskenován"
 msgstr[1] "%d ze %d souborů proskenováno"
 msgstr[2] "%d z %d souborů proskenováno"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "Naplňuje se databáze symbolů…"
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "Symboly"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "Hledat"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
 msgstr "Kontextové akce SymbolDb"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
 msgstr "Akce nabídky SymbolDb"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Databáze symbolů"
@@ -10120,21 +10116,3 @@ msgstr "Jen ikony"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Jen text"
-
-#~ msgid "Import an existing project"
-#~ msgstr "Import existujícího projektu"
-
-#~ msgid "Recent projects:"
-#~ msgstr "Nedávné projekty:"
-
-#~ msgid "Tutorials"
-#~ msgstr "Průvodci"
-
-#~ msgid "Anjuta Manual"
-#~ msgstr "Příručka uživatele Anjuty"
-
-#~ msgid "FAQ"
-#~ msgstr "FAQ"
-
-#~ msgid "Getting started:"
-#~ msgstr "Začínáme:"
