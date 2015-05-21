@@ -48,8 +48,8 @@ msgid ""
 msgstr ""
 "L'Anjuta és molt extensible amb connectors. Gairebé totes les "
 "característiques de l'Anjuta estan implementades mitjançant connectors que "
-"es poden activar dinàmicament. Podeu triar quins connectors s'han activar "
-"per el vostre projecte. La interfície d'usuari, així com el conjunt de "
+"es poden activar dinàmicament. Podeu triar quins connectors s'han d'activar "
+"pel vostre projecte. La interfície d'usuari, així com el conjunt de "
 "connectors actius són persistents per cada projecte, fent que sigui molt "
 "fàcil treballar en diferents projectes amb diferents nivells de complexitat. "
 "Podeu ampliar l'Anjuta amb les vostres pròpies funcions fent servir "
@@ -420,7 +420,7 @@ msgid ""
 "one of many suitable plugins. Removing the preferred plugin will let you "
 "choose a different plugin."
 msgstr ""
-"Aquests són els connectors que vau seleccionar quan s'us va sol·licitar "
+"Aquests són els connectors que vau seleccionar quan se us va sol·licitar "
 "triar-ne un d'entre molts connectors adequats. Si suprimiu el connector "
 "preferit, podreu seleccionar-ne un altre."
 
@@ -2862,7 +2862,7 @@ msgstr ""
 "que no utilitza la configuració de depuració?</span>\n"
 "\n"
 "Quan s'habiliten les optimitzacions, a vegades el depurador no pot "
-"identificar el codi font al que corresponen les instruccions i algunes "
+"identificar el codi font al qual corresponen les instruccions i algunes "
 "ordres es comportaran de forma estranya, especialment els passos."
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:55
@@ -3212,7 +3212,7 @@ msgstr "A_vança al final"
 
 #: ../plugins/debug-manager/plugin.c:975
 msgid "Single step over function"
-msgstr "Avança fins el final de la funció"
+msgstr "Avança fins al final de la funció"
 
 #: ../plugins/debug-manager/plugin.c:981
 msgid "Step _Out"
@@ -5498,7 +5498,7 @@ msgstr "Canvis a publicar"
 
 #: ../plugins/git/git-status-pane.c:561
 msgid "Changed but not updated"
-msgstr "S'ha canviat per no s'ha actualitzat"
+msgstr "S'ha canviat però no s'ha actualitzat"
 
 #: ../plugins/git/git-unstage-pane.c:51
 msgid "No staged files selected."
@@ -8246,7 +8246,7 @@ msgstr "Xlib"
 
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:2
 msgid "A generic Xlib project"
-msgstr "Un projecte genèric d'Xlib"
+msgstr "Un projecte genèric de Xlib"
 
 #: ../plugins/python-loader/anjuta-python-loader.plugin.in.h:1
 msgid "Python loader"
