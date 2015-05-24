@@ -1,16 +1,16 @@
 # Thai translation of anjuta.
-# Copyright (C) 2008-2014 Free Software Foundation, Inc.
+# Copyright (C) 2008-2015 Free Software Foundation, Inc.
 # This file is distributed under the same license as the anjuta package.
 # Theppitak Karoonboonyanan <thep@linux.thai.net>, 2008-2010.
-# Akom Chotiphantawanon <knight2000@gmail.com>, 2008-2014.
+# Akom Chotiphantawanon <knight2000@gmail.com>, 2008-2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-06-14 06:46+0000\n"
-"PO-Revision-Date: 2014-06-19 13:42+0700\n"
+"POT-Creation-Date: 2015-04-25 10:08+0000\n"
+"PO-Revision-Date: 2015-05-24 17:12+0700\n"
 "Last-Translator: Akom Chotiphantawanon <knight2000@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -605,11 +605,11 @@ msgid "Shortcut"
 msgstr "ปุ่มลัด"
 
 #. Avoid space in translated string
-#: ../libanjuta/anjuta-utils.c:363
+#: ../libanjuta/anjuta-utils.c:369
 msgid "System:"
 msgstr "ระบบ:"
 
-#: ../libanjuta/anjuta-utils.c:512
+#: ../libanjuta/anjuta-utils.c:518
 msgid ""
 "You do not seem to have PackageKit installed. PackageKit is required for "
 "installing missing packages. Please install \"packagekit-gnome\" package "
@@ -618,17 +618,17 @@ msgstr ""
 "ดูเหมือนว่าคุณยังไม่ได้ติดตั้ง PackageKit ซึ่งจำเป็นสำหรับการติดตั้งแพกเกจที่ขาดไป "
 "กรุณาติดตั้งแพกเกจ \"packagekit-gnome \" จากชุดแจกจ่ายของคุณ หรือติดตั้งแพกเกจที่ขาดเอง"
 
-#: ../libanjuta/anjuta-utils.c:521
+#: ../libanjuta/anjuta-utils.c:527
 #, c-format
 msgid "Installation failed: %s"
 msgstr "การติดตั้งล้มเหลว: %s"
 
-#: ../libanjuta/anjuta-utils.c:582
+#: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
 msgstr "เรียกทำงาน \"%s\" ไม่สำเร็จ ข้อผิดพลาดที่ส่งกลับมาคือ: \"%s\""
 
-#: ../libanjuta/anjuta-utils.c:596
+#: ../libanjuta/anjuta-utils.c:602
 #, c-format
 msgid ""
 "The \"%s\" package is not installed.\n"
@@ -637,7 +637,7 @@ msgstr ""
 "แพกเกจ \"%s\" ยังไม่ได้ติดตั้ง\n"
 "กรุณาติดตั้งด้วย"
 
-#: ../libanjuta/anjuta-utils.c:614
+#: ../libanjuta/anjuta-utils.c:620
 #, c-format
 msgid ""
 "The \"%s\" utility is not installed.\n"
@@ -647,18 +647,18 @@ msgstr ""
 "กรุณาติดตั้ง"
 
 #. Try xterm
-#: ../libanjuta/anjuta-utils.c:1208
+#: ../libanjuta/anjuta-utils.c:1214
 msgid "Cannot find a terminal; using xterm, even if it may not work"
 msgstr "หาเทอร์มินัลไม่พบ จะใช้ xterm แม้ว่ามันอาจจะทำงานไม่สมบูรณ์"
 
-#: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
+#: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
 #, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr "ไม่สามารถเรียกคำสั่ง: %s (โดยใช้เชลล์ %s): %s\n"
 
 # msgid "Unable to build user interface for New File"
 # c-format
-#: ../libanjuta/anjuta-utils.c:2456
+#: ../libanjuta/anjuta-utils.c:2462
 #, c-format
 msgid "Unable to load user interface file: %s"
 msgstr "ไม่สามารถโหลดแฟ้มส่วนติดต่อผู้ใช้: %s"
@@ -1273,10 +1273,10 @@ msgstr "ไม่ใช้ prefix:"
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
-"ไม่ต้องเปลี่ยนชื่อเป้าหมายด้วยการเติมคำนำหน้าที่อาจจะมีการกำหนดมาให้ "
+"ไม่ต้องเปลี่ยนชื่อเป้าหมายด้วยการเติมพาธส่วนหน้าที่อาจจะมีการกำหนดมาให้ "
 "ใช้เพื่อหลีกเลี่ยงการเขียนทับโปรแกรมระบบ"
 
 #: ../plugins/am-project/am-properties.c:483
@@ -2170,7 +2170,7 @@ msgid "Patch-Style diff"
 msgstr "diff แบบแพตช์"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "เฉพาะที่"
 
@@ -3288,7 +3288,7 @@ msgstr "เฟรม"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "แฟ้ม"
@@ -4017,7 +4017,7 @@ msgstr "ตัดข้อความที่เลือกจากเคร
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:592
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:627
 msgid "_Copy"
 msgstr "_คัดลอก"
 
@@ -4025,7 +4025,7 @@ msgstr "_คัดลอก"
 msgid "Copy the selected text to the clipboard"
 msgstr "คัดลอกข้อความที่เลือกไปยังคลิปบอร์ด"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:600
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:635
 msgid "_Paste"
 msgstr "_แปะ"
 
@@ -4546,7 +4546,7 @@ msgstr "เลือกเอกสารปัจจุบันโดยอั
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "ส่วนกลาง"
 
@@ -6146,8 +6146,8 @@ msgstr "ปลั๊กอินรองรับ Vala"
 msgid "Vala support plugin, adds code completion."
 msgstr "ปลั๊กอินรองรับ Vala เพิ่มการช่วยเติมโค้ด"
 
-#: ../plugins/language-support-vala/plugin.vala:655
-#: ../plugins/language-support-vala/plugin.vala:663
+#: ../plugins/language-support-vala/plugin.vala:657
+#: ../plugins/language-support-vala/plugin.vala:665
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "เติมเต็มคำอัตโนมัติ"
@@ -6859,7 +6859,7 @@ msgstr "ปรับข้อมูลมุมมองของโครงก
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "โครงการ"
 
@@ -7216,14 +7216,6 @@ msgstr "ชื่อผู้ใช้ปริยายที่จะใช้
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
 msgid "If empty, the current user name is used."
 msgstr "ถ้าเว้นว่าง จะใช้ชื่อผู้ใช้ปัจจุบัน"
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-msgid "Default email used in new project"
-msgstr "อีเมลปริยายที่จะใช้ในโครงการใหม่"
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
-msgid "If empty, current login and machine name is used."
-msgstr "ถ้าเว้นว่าง จะใช้ชื่อเข้าสู่ระบบและชื่อเครื่องปัจจุบัน"
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -8680,14 +8672,10 @@ msgid "View online library documentation"
 msgstr "ดูเอกสารจากห้องสมุดออนไลน์"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "label"
-msgstr "ฉลาก"
-
-#: ../plugins/starter/starter.ui.h:8
 msgid "Remove recently used project from list"
 msgstr "ลบโครงการที่เปิดใช้ล่าสุดออกจากรายชื่อ"
 
-#: ../plugins/starter/starter.ui.h:9
+#: ../plugins/starter/starter.ui.h:8
 msgid "Unlist Project"
 msgstr "ลบโครงการจากรายชื่อ"
 
@@ -9312,27 +9300,27 @@ msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
 msgstr[0] "สแกนแล้ว %d จาก %d แฟ้ม"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "กำลังเติมข้อมูลฐานข้อมูลสัญลักษณ์…"
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "สัญลักษณ์"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "ค้นหา"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
 msgstr "การกระทำในเมนูผุดขึ้นของฐานข้อมูลสัญลักษณ์"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
 msgstr "การกระทำในเมนูของฐานข้อมูลสัญลักษณ์"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "ฐานข้อมูลสัญลักษณ์"
@@ -9350,8 +9338,8 @@ msgid "Symbol"
 msgstr "สัญลักษณ์"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:781 ../plugins/terminal/terminal.c:981
-#: ../plugins/terminal/terminal.c:1067
+#: ../plugins/terminal/terminal.c:820 ../plugins/terminal/terminal.c:1005
+#: ../plugins/terminal/terminal.c:1091
 msgid "Terminal"
 msgstr "เทอร์มินัล"
 
@@ -9371,23 +9359,23 @@ msgstr "ใช้โพรไฟล์ปริยายของเทอร์
 msgid "Terminal options"
 msgstr "ตัวเลือกสำหรับเทอร์มินัล"
 
-#: ../plugins/terminal/terminal.c:609
+#: ../plugins/terminal/terminal.c:644
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:617
+#: ../plugins/terminal/terminal.c:652
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:625
+#: ../plugins/terminal/terminal.c:660
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:763
+#: ../plugins/terminal/terminal.c:802
 msgid "terminal operations"
 msgstr "การกระทำเกี่ยวกับเทอร์มินัล"
 
-#: ../plugins/terminal/terminal.c:898
+#: ../plugins/terminal/terminal.c:937
 #, c-format
 msgid "Unable to execute command"
 msgstr "ไม่สามารถเรียกคำสั่งทำงาน"
@@ -9929,14 +9917,22 @@ msgid "Value doesn't exist"
 msgstr "ค่าที่ไม่มีอยู่"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
+msgid "Default email used in new project"
+msgstr "อีเมลปริยายที่จะใช้ในโครงการใหม่"
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+msgid "If empty, current login and machine name is used."
+msgstr "ถ้าเว้นว่าง จะใช้ชื่อเข้าสู่ระบบและชื่อเครื่องปัจจุบัน"
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
 msgid "Use tabulation for indentation"
 msgstr "ใช้แท็บในการร่นย่อหน้า"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:4
 msgid "Number of characters of one tabulation"
 msgstr "จำนวนตัวอักษรของระยะหนึ่งแท็บ"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
 msgstr "จำนวนช่องว่างของการร่นย่อหน้าแต่ละชั้น"
 
@@ -9997,6 +9993,9 @@ msgstr "ไอคอนเท่านั้น"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "ข้อความเท่านั้น"
+
+#~ msgid "label"
+#~ msgstr "ฉลาก"
 
 #~ msgid "Import an existing project"
 #~ msgstr "นำเข้าโครงการที่มีอยู่"
