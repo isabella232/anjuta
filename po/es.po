@@ -7,15 +7,15 @@
 # Francisco Javier F. Serrador <serrador@cvs.gnome.es>, 2003, 2005.
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-06-17 14:44+0000\n"
-"PO-Revision-Date: 2014-06-17 18:19+0200\n"
+"POT-Creation-Date: 2015-05-26 14:49+0000\n"
+"PO-Revision-Date: 2015-05-26 18:50+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -631,11 +631,11 @@ msgid "Shortcut"
 msgstr "Combinación de teclas"
 
 #. Avoid space in translated string
-#: ../libanjuta/anjuta-utils.c:363
+#: ../libanjuta/anjuta-utils.c:369
 msgid "System:"
 msgstr "Sistema:"
 
-#: ../libanjuta/anjuta-utils.c:512
+#: ../libanjuta/anjuta-utils.c:518
 msgid ""
 "You do not seem to have PackageKit installed. PackageKit is required for "
 "installing missing packages. Please install \"packagekit-gnome\" package "
@@ -645,17 +645,17 @@ msgstr ""
 "instalar los paquetes que faltan. Instale el paquete «packagekit-gnome» para "
 "su distribución o instale manualmente los paquetes que faltan."
 
-#: ../libanjuta/anjuta-utils.c:521
+#: ../libanjuta/anjuta-utils.c:527
 #, c-format
 msgid "Installation failed: %s"
 msgstr "Falló la instalación: %s"
 
-#: ../libanjuta/anjuta-utils.c:582
+#: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
 msgstr "Falló al ejecutar «%s». El error devuelto fue: «%s»."
 
-#: ../libanjuta/anjuta-utils.c:596
+#: ../libanjuta/anjuta-utils.c:602
 #, c-format
 msgid ""
 "The \"%s\" package is not installed.\n"
@@ -664,7 +664,7 @@ msgstr ""
 "El paquete «%s» no está instalado.\n"
 "Instálelo."
 
-#: ../libanjuta/anjuta-utils.c:614
+#: ../libanjuta/anjuta-utils.c:620
 #, c-format
 msgid ""
 "The \"%s\" utility is not installed.\n"
@@ -674,18 +674,18 @@ msgstr ""
 "Instálela."
 
 #. Try xterm
-#: ../libanjuta/anjuta-utils.c:1208
+#: ../libanjuta/anjuta-utils.c:1214
 msgid "Cannot find a terminal; using xterm, even if it may not work"
 msgstr ""
 "No se puede encontrar una terminal, usando xterm, aunque puede que no "
 "funcione"
 
-#: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
+#: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
 #, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr "No se puede ejecutar el comando: %s (usando shell %s): %s\n"
 
-#: ../libanjuta/anjuta-utils.c:2456
+#: ../libanjuta/anjuta-utils.c:2462
 #, c-format
 msgid "Unable to load user interface file: %s"
 msgstr "No se pudo cargar el archivo de interfaz de usuario: %s"
@@ -1329,11 +1329,14 @@ msgstr "No usar prefijo:"
 #: ../plugins/am-project/am-properties.c:1039
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
+#| msgid ""
+#| "Do not rename the target with an optional prefix, used to avoid "
+#| "overwritting system program. "
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
-"No renombrar el objetivo con un prefijo adicional, usado para evitar "
+"No renombrar el objetivo con un prefijo opcionar, usado para evitar "
 "sobrescribir el programa del sistema."
 
 #: ../plugins/am-project/am-properties.c:483
@@ -2242,7 +2245,7 @@ msgid "Patch-Style diff"
 msgstr "Diff estilo patch"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "Local"
 
@@ -3367,7 +3370,7 @@ msgstr "Marco"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Archivo"
@@ -4100,7 +4103,7 @@ msgstr "Corta el texto seleccionado al portapapeles"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:592
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:627
 msgid "_Copy"
 msgstr "_Copiar"
 
@@ -4108,7 +4111,7 @@ msgstr "_Copiar"
 msgid "Copy the selected text to the clipboard"
 msgstr "Copia el texto seleccionado al portapapeles"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:600
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:635
 msgid "_Paste"
 msgstr "_Pegar"
 
@@ -4635,7 +4638,7 @@ msgstr "Seleccionar automáticamente el documento actual"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "Global"
 
@@ -6257,8 +6260,8 @@ msgstr "Complemento de soporte para Vala"
 msgid "Vala support plugin, adds code completion."
 msgstr "Complemento de soporte para Vala, añade completado de código."
 
-#: ../plugins/language-support-vala/plugin.vala:655
-#: ../plugins/language-support-vala/plugin.vala:663
+#: ../plugins/language-support-vala/plugin.vala:657
+#: ../plugins/language-support-vala/plugin.vala:665
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Autocompletar"
@@ -6981,7 +6984,7 @@ msgstr "Actualizar vista del proyecto…"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "Proyecto"
 
@@ -7346,15 +7349,6 @@ msgstr "Nombre de usuario predeterminado usado en un proyecto nuevo"
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
 msgid "If empty, the current user name is used."
 msgstr "Si está vacío, se usa el nombre del usuario actual."
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-msgid "Default email used in new project"
-msgstr "Dirección de correo-e predeterminada usada en un proyecto nuevo"
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
-msgid "If empty, current login and machine name is used."
-msgstr ""
-"Si está vacío, se usa el nombre de inicio de sesión y de equipo actuales."
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -8817,17 +8811,14 @@ msgid "Create a new project"
 msgstr "Crear un proyecto nuevo"
 
 #: ../plugins/starter/starter.ui.h:2
-#| msgid "Import project"
 msgid "Import a project"
 msgstr "Importar un proyecto"
 
 #: ../plugins/starter/starter.ui.h:3
-#| msgid "Search complete"
 msgid "Search for example code"
 msgstr "Buscar código de ejemplo"
 
 #: ../plugins/starter/starter.ui.h:4
-#| msgid "Man Documentation"
 msgid "View local Anjuta documentation"
 msgstr "Ver la documentación local de Anjuta"
 
@@ -8836,21 +8827,14 @@ msgid "View local Anjuta FAQ"
 msgstr "Ver las preguntas más frecuentes locales de Anjuta"
 
 #: ../plugins/starter/starter.ui.h:6
-#| msgid "GNOME Online API Documentation"
 msgid "View online library documentation"
 msgstr "Ver la documentación de la biblioteca en línea"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "label"
-msgstr "etiqueta"
-
-#: ../plugins/starter/starter.ui.h:8
-#| msgid "No recently used resource found with URI \"%s\""
 msgid "Remove recently used project from list"
 msgstr "Quitar de la lista el proyecto usado recientemente"
 
-#: ../plugins/starter/starter.ui.h:9
-#| msgid "_Install Project"
+#: ../plugins/starter/starter.ui.h:8
 msgid "Unlist Project"
 msgstr "Proyecto no listado"
 
@@ -9480,27 +9464,27 @@ msgid_plural "%d files scanned out of %d"
 msgstr[0] "%d archivo analizado de %d"
 msgstr[1] "%d archivos analizados de %d"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "Llenando la BB. DD. de símbolos…"
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "Símbolos"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "Buscar"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
 msgstr "Acciones emergentes de la BB DD de símbolos"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
 msgstr "Acciones del menú de la BB DD de símbolos"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Base de datos de símbolos"
@@ -9518,8 +9502,8 @@ msgid "Symbol"
 msgstr "Símbolo"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:781 ../plugins/terminal/terminal.c:981
-#: ../plugins/terminal/terminal.c:1067
+#: ../plugins/terminal/terminal.c:820 ../plugins/terminal/terminal.c:1005
+#: ../plugins/terminal/terminal.c:1091
 msgid "Terminal"
 msgstr "Terminal"
 
@@ -9539,23 +9523,23 @@ msgstr "Usar el perfil del terminal predeterminado de GNOME"
 msgid "Terminal options"
 msgstr "Opciones de la terminal"
 
-#: ../plugins/terminal/terminal.c:609
+#: ../plugins/terminal/terminal.c:644
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:617
+#: ../plugins/terminal/terminal.c:652
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:625
+#: ../plugins/terminal/terminal.c:660
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:763
+#: ../plugins/terminal/terminal.c:802
 msgid "terminal operations"
 msgstr "operaciones en la terminal"
 
-#: ../plugins/terminal/terminal.c:898
+#: ../plugins/terminal/terminal.c:937
 #, c-format
 msgid "Unable to execute command"
 msgstr "No se puede ejecutar el comando"
@@ -10120,14 +10104,23 @@ msgid "Value doesn't exist"
 msgstr "El valor no existe"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
+msgid "Default email used in new project"
+msgstr "Dirección de correo-e predeterminada usada en un proyecto nuevo"
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+msgid "If empty, current login and machine name is used."
+msgstr ""
+"Si está vacío, se usa el nombre de inicio de sesión y de equipo actuales."
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
 msgid "Use tabulation for indentation"
 msgstr "Usar tabulador para sangrar"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:4
 msgid "Number of characters of one tabulation"
 msgstr "Número de caracteres de una tabulación"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
 msgstr "Número de espacios en cada paso del sangrado"
 
@@ -10188,6 +10181,9 @@ msgstr "Sólo iconos"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Sólo texto"
+
+#~ msgid "label"
+#~ msgstr "etiqueta"
 
 #~ msgid "Import an existing project"
 #~ msgstr "Importar un proyecto existente"
