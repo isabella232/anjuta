@@ -5,15 +5,14 @@
 # Andras Toth <toth_bandi at users.sourceforge dot net>, 2004.
 # Laszlo Dvornik <dvornik at gnome dot hu>, 2004.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014.
-# Balázs Úr <urbalazs at gmail dot com>, 2013, 2014.
-# Balázs Úr <urbalazs@gmail.com>, 2014.
+# Balázs Úr <urbalazs at gmail dot com>, 2013, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-06-30 14:44+0000\n"
-"PO-Revision-Date: 2014-06-30 21:07+0200\n"
+"POT-Creation-Date: 2015-06-04 14:49+0000\n"
+"PO-Revision-Date: 2015-06-04 22:01+0200\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
@@ -624,11 +623,11 @@ msgid "Shortcut"
 msgstr "Gyorsbillentyű"
 
 #. Avoid space in translated string
-#: ../libanjuta/anjuta-utils.c:363
+#: ../libanjuta/anjuta-utils.c:369
 msgid "System:"
 msgstr "Rendszer:"
 
-#: ../libanjuta/anjuta-utils.c:512
+#: ../libanjuta/anjuta-utils.c:518
 msgid ""
 "You do not seem to have PackageKit installed. PackageKit is required for "
 "installing missing packages. Please install \"packagekit-gnome\" package "
@@ -638,17 +637,17 @@ msgstr ""
 "PackageKit szükséges. Telepítse a disztribúció által biztosított „packagekit-"
 "gnome” csomagot, vagy telepítse a hiányzó csomagokat saját kezűleg."
 
-#: ../libanjuta/anjuta-utils.c:521
+#: ../libanjuta/anjuta-utils.c:527
 #, c-format
 msgid "Installation failed: %s"
 msgstr "A telepítés meghiúsult: %s"
 
-#: ../libanjuta/anjuta-utils.c:582
+#: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
 msgstr "Nem sikerült a(z) „%s” futtatása. A visszaadott hiba ez volt: „%s”."
 
-#: ../libanjuta/anjuta-utils.c:596
+#: ../libanjuta/anjuta-utils.c:602
 #, c-format
 msgid ""
 "The \"%s\" package is not installed.\n"
@@ -657,7 +656,7 @@ msgstr ""
 "A(z) „%s” csomag nincs telepítve.\n"
 "Kérem telepítse."
 
-#: ../libanjuta/anjuta-utils.c:614
+#: ../libanjuta/anjuta-utils.c:620
 #, c-format
 msgid ""
 "The \"%s\" utility is not installed.\n"
@@ -667,18 +666,18 @@ msgstr ""
 "Kérem telepítse."
 
 #. Try xterm
-#: ../libanjuta/anjuta-utils.c:1208
+#: ../libanjuta/anjuta-utils.c:1214
 msgid "Cannot find a terminal; using xterm, even if it may not work"
 msgstr ""
 "Nem található terminál, az xterm lesz használva, még ha az esetleg nem is "
 "működik"
 
-#: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
+#: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
 #, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr "„%s” parancs végrehajtása (%s héj használatával) sikertelen: %s\n"
 
-#: ../libanjuta/anjuta-utils.c:2456
+#: ../libanjuta/anjuta-utils.c:2462
 #, c-format
 msgid "Unable to load user interface file: %s"
 msgstr "A felhasználóifelület-fájl nem tölthető be: %s"
@@ -1303,8 +1302,11 @@ msgstr "Ne használjon előtagot:"
 #: ../plugins/am-project/am-properties.c:1039
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
+#| msgid ""
+#| "Do not rename the target with an optional prefix, used to avoid "
+#| "overwritting system program. "
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
 "Ne nevezze át a célt elhagyható előtaggal, rendszerprogramok felülírásának "
@@ -1471,9 +1473,6 @@ msgid "Install"
 msgstr "Telepítés"
 
 #: ../plugins/build-basic-autotools/build.c:578
-#| msgid ""
-#| "Before using this new configuration, the default one needs to be removed. "
-#| "Do you want to do that ?"
 msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
 "you want to do that?"
@@ -2214,7 +2213,7 @@ msgid "Patch-Style diff"
 msgstr "Patch-stílusú diff"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "Helyi"
 
@@ -3337,7 +3336,7 @@ msgstr "Keret"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Fájl"
@@ -4070,7 +4069,7 @@ msgstr "Kijelölt szöveg kivágása a szerkesztőből a vágólapra"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:592
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:627
 msgid "_Copy"
 msgstr "Má_solás"
 
@@ -4078,7 +4077,7 @@ msgstr "Má_solás"
 msgid "Copy the selected text to the clipboard"
 msgstr "A kijelölt szöveg másolása a vágólapra"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:600
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:635
 msgid "_Paste"
 msgstr "_Beillesztés"
 
@@ -4604,7 +4603,7 @@ msgstr "A jelenlegi dokumentum automatikus kiválasztása"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "Globális"
 
@@ -6223,8 +6222,8 @@ msgstr "Vala támogatás bővítmény"
 msgid "Vala support plugin, adds code completion."
 msgstr "Vala bővítmény kódkiegészítéshez."
 
-#: ../plugins/language-support-vala/plugin.vala:655
-#: ../plugins/language-support-vala/plugin.vala:663
+#: ../plugins/language-support-vala/plugin.vala:657
+#: ../plugins/language-support-vala/plugin.vala:665
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Automatikus kiegészítés"
@@ -6317,12 +6316,10 @@ msgid "Copy message"
 msgstr "Üzenet másolása"
 
 #: ../plugins/message-view/plugin.c:83
-#| msgid "_Copy Message"
 msgid "_Copy All Messages"
 msgstr "Minden üzenet _másolása"
 
 #: ../plugins/message-view/plugin.c:84
-#| msgid "_Copy Message"
 msgid "Copy All Messages"
 msgstr "Minden üzenet másolása"
 
@@ -6948,7 +6945,7 @@ msgstr "Projektnézet frissítése…"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "Projekt"
 
@@ -7309,14 +7306,6 @@ msgstr "Az új projektben használt alapértelmezett felhasználónév"
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
 msgid "If empty, the current user name is used."
 msgstr "Ha üres, a jelenlegi felhasználónév lesz használva."
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-msgid "Default email used in new project"
-msgstr "Az új projektben használt alapértelmezett e-mail"
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
-msgid "If empty, current login and machine name is used."
-msgstr "Ha üres, a jelenlegi felhasználónév és gépnév lesz használva."
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -8432,9 +8421,6 @@ msgid ""
 msgstr "<b>Hiba:</b> az aktiválókulcs már használatban van az egyik nyelvhez."
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
-#| msgid ""
-#| "<b>Error:</b> The trigger key can only contain alphanumeric characters "
-#| "and _ !"
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
 "\"_\"!"
@@ -8773,17 +8759,14 @@ msgid "Create a new project"
 msgstr "Új projekt létrehozása"
 
 #: ../plugins/starter/starter.ui.h:2
-#| msgid "Import project"
 msgid "Import a project"
 msgstr "Projekt importálása"
 
 #: ../plugins/starter/starter.ui.h:3
-#| msgid "Search for next appearance of term."
 msgid "Search for example code"
 msgstr "Példakód keresése"
 
 #: ../plugins/starter/starter.ui.h:4
-#| msgid "Man Documentation"
 msgid "View local Anjuta documentation"
 msgstr "A helyi Anjuta dokumentáció megtekintése"
 
@@ -8796,16 +8779,10 @@ msgid "View online library documentation"
 msgstr "Az online könyvtár-dokumentáció megtekintése"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "label"
-msgstr "címke"
-
-#: ../plugins/starter/starter.ui.h:8
-#| msgid "No recently used resource found with URI \"%s\""
 msgid "Remove recently used project from list"
 msgstr "A jelenleg használt projekt eltávolítása a listából"
 
-#: ../plugins/starter/starter.ui.h:9
-#| msgid "_Install Project"
+#: ../plugins/starter/starter.ui.h:8
 msgid "Unlist Project"
 msgstr "Projekt listázásának megszüntetése"
 
@@ -9434,27 +9411,27 @@ msgid_plural "%d files scanned out of %d"
 msgstr[0] "%d fájl megvizsgálva, összesen %d"
 msgstr[1] "%d fájl megvizsgálva, összesen %d"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "Szimbólum-adatbázis feltöltése…"
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "Szimbólumok"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "Keresés"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
 msgstr "Szimbólum-DB felugró műveletek"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
 msgstr "Szimbólum-DB menüműveletek"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Szimbólum-adatbázis"
@@ -9472,8 +9449,8 @@ msgid "Symbol"
 msgstr "Szimbólum"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:781 ../plugins/terminal/terminal.c:981
-#: ../plugins/terminal/terminal.c:1067
+#: ../plugins/terminal/terminal.c:820 ../plugins/terminal/terminal.c:1005
+#: ../plugins/terminal/terminal.c:1091
 msgid "Terminal"
 msgstr "Terminál"
 
@@ -9493,23 +9470,23 @@ msgstr "Az alapértelmezett GNOME Terminál profil használata"
 msgid "Terminal options"
 msgstr "Terminálbeállítások"
 
-#: ../plugins/terminal/terminal.c:609
+#: ../plugins/terminal/terminal.c:644
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:617
+#: ../plugins/terminal/terminal.c:652
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:625
+#: ../plugins/terminal/terminal.c:660
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:763
+#: ../plugins/terminal/terminal.c:802
 msgid "terminal operations"
 msgstr "terminálműveletek"
 
-#: ../plugins/terminal/terminal.c:898
+#: ../plugins/terminal/terminal.c:937
 #, c-format
 msgid "Unable to execute command"
 msgstr "A parancs nem hajtható végre"
@@ -9855,7 +9832,6 @@ msgid "Command line parameters"
 msgstr "Parancssori paraméterek"
 
 #: ../src/about.c:186
-#| msgid "Copyright (c) Naba Kumar"
 msgid "Copyright © Naba Kumar"
 msgstr "Copyright © Naba Kumar"
 
@@ -10061,14 +10037,22 @@ msgid "Value doesn't exist"
 msgstr "Az érték nem létezik"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
+msgid "Default email used in new project"
+msgstr "Az új projektben használt alapértelmezett e-mail"
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+msgid "If empty, current login and machine name is used."
+msgstr "Ha üres, a jelenlegi felhasználónév és gépnév lesz használva."
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
 msgid "Use tabulation for indentation"
 msgstr "Tabok használata a behúzáshoz"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:4
 msgid "Number of characters of one tabulation"
 msgstr "Karakterek száma egy tabban"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
 msgstr "Szóközök száma minden behúzási lépésben"
 
@@ -10129,6 +10113,9 @@ msgstr "Csak ikonok"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Csak szöveg"
+
+#~ msgid "label"
+#~ msgstr "címke"
 
 #~ msgid "Error writing %s"
 #~ msgstr "Hiba %s írásakor"
