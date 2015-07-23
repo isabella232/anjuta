@@ -484,9 +484,11 @@ dnl Checks for typedefs, structures, and compiler characteristics.
 AC_CANONICAL_HOST
 CYGWIN=no
 MINGW32=no
+MACOSX=no
 case $host_os in
   *cygwin* ) CYGWIN=yes;;
   *mingw32* ) MINGW32=yes;;
+  *darwin* ) MACOSX=yes;;
 esac
 
 

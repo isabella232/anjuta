@@ -38,7 +38,8 @@ libanjuta_jhbuild_la_SOURCES = \
 	plugin.h
 
 libanjuta_jhbuild_la_LDFLAGS = $(ANJUTA_PLUGIN_LDFLAGS)
-
+libanjuta_jhbuild_la_LIBADD = \
+        $(LIBANJUTA_LIBS)
 
 EXTRA_DIST = \
 	$(plugin_in_files)

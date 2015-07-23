@@ -50,6 +50,8 @@ libanjuta_indentation_c_style_la_SOURCES = \
 	indentation.h
 
 libanjuta_indentation_c_style_la_LDFLAGS = $(ANJUTA_PLUGIN_LDFLAGS)
+libanjuta_indentation_c_style_la_LIBADD = \
+        $(LIBANJUTA_LIBS)
 
 gsettings_in_file = org.gnome.anjuta.plugins.indent-c.gschema.xml.in
 gsettings_SCHEMAS = $(gsettings_in_file:.xml.in=.xml)
