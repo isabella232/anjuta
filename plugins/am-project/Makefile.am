@@ -98,10 +98,14 @@ am-scanner.h: am-parser.c
 noinst_PROGRAMS = projectparser
 
 projectparser_SOURCES = \
-	projectparser.c
+	projectparser.c \
+	$(libam_project_la_SOURCES)
+
+# This is needed to have different objects for libam_project_la_SOURCES, one
+# compiled with libtool another without
+projectparser_CFLAGS = $(AM_CFLAGS)
 
 projectparser_LDADD = \
-	libam-project.la \
 	$(GIO_LIBS) \
 	$(LIBANJUTA_LIBS) \
 	$(ANJUTA_LIBS)

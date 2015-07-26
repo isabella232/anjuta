@@ -15,7 +15,7 @@ benchmark_libgda_LDFLAGS = \
 	$(ANJUTA_LIBS) \
 	$(GDA_LIBS)
 
-benchmark_libgda_LDADD = ../../libanjuta-symbol-db.la
+benchmark_libgda_LDADD = ../../libbenchmark-symbol-db.la
 
 
 ## File created by the gnome-build tools
