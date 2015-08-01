@@ -88,7 +88,7 @@ libanjuta_symbol_db_la_LIBADD = \
 	$(SHM_LIBS)
 
 # libanjuta-symbol-db.la without the -module flag to be used in benchmark
-plugin_LTLIBRARIES = libbenchmark-symbol-db.la
+noinst_LTLIBRARIES = libbenchmark-symbol-db.la
 
 libbenchmark_symbol_db_la_SOURCES = \
 	$(libanjuta_symbol_db_la_SOURCES)
