@@ -150,8 +150,8 @@ file_view_rename_edit_finish (GtkCellRendererText *renderer,
 	
 	if(g_rename(oldFilename, newFilename))
 		anjuta_util_dialog_error(NULL,
-								_("An error has occured!\n\
-Maybe you permissions're insuficient or the filename is wrong")
+								_("An error has occurred!\n\
+Maybe your permissions are insufficient or the filename is wrong")
 		                         , NULL);
 	
 	g_object_unref(parent) ;
