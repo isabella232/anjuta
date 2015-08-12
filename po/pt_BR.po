@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of Anjuta.
-# Copyright (C) 2001-2014 Free Software Foundation, Inc.
+# Copyright (C) 2001-2015 Free Software Foundation, Inc.
 # This file is distributed under the same license as the anjuta package.
 # Marcelo Elias Del Valle <marceloelias@iname.com>, 2002.
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2001, 2002, 2003.
@@ -16,15 +16,16 @@
 # Djavan Fagundes <djavan@comum.org>, 2011.
 # Jonh Wendell <jwendell@gnome.org>, 2008, 2010, 2012.
 # Rafael Ferreira <rafael.f.f1@gmail.com>, 2012, 2013, 2014.
-# Enrico Nicoletto <liverig@gmail.com, 2013, 2014.
+# Enrico Nicoletto <liverig@gmail.com, 2013, 2014, 2015.
+# Felipe Braga <fbobraga@gmail.com>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-07-18 02:44+0000\n"
-"PO-Revision-Date: 2014-07-18 15:09-0300\n"
+"POT-Creation-Date: 2015-08-05 18:05+0000\n"
+"PO-Revision-Date: 2015-08-12 14:51-0300\n"
 "Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -32,7 +33,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Project-Style: gnome\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -631,11 +633,11 @@ msgid "Shortcut"
 msgstr "Atalho"
 
 #. Avoid space in translated string
-#: ../libanjuta/anjuta-utils.c:363
+#: ../libanjuta/anjuta-utils.c:369
 msgid "System:"
 msgstr "Sistema:"
 
-#: ../libanjuta/anjuta-utils.c:512
+#: ../libanjuta/anjuta-utils.c:518
 msgid ""
 "You do not seem to have PackageKit installed. PackageKit is required for "
 "installing missing packages. Please install \"packagekit-gnome\" package "
@@ -646,17 +648,17 @@ msgstr ""
 "\"packagekit-gnome\" da sua distribuição ou instale os pacotes ausentes "
 "manualmente."
 
-#: ../libanjuta/anjuta-utils.c:521
+#: ../libanjuta/anjuta-utils.c:527
 #, c-format
 msgid "Installation failed: %s"
 msgstr "A instalação falhou: %s"
 
-#: ../libanjuta/anjuta-utils.c:582
+#: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
 msgstr "Falha ao executar \"%s\". O erro retornado foi: \"%s\"."
 
-#: ../libanjuta/anjuta-utils.c:596
+#: ../libanjuta/anjuta-utils.c:602
 #, c-format
 msgid ""
 "The \"%s\" package is not installed.\n"
@@ -665,7 +667,7 @@ msgstr ""
 "O pacote \"%s\" não está instalado.\n"
 "Por favor, instale-o."
 
-#: ../libanjuta/anjuta-utils.c:614
+#: ../libanjuta/anjuta-utils.c:620
 #, c-format
 msgid ""
 "The \"%s\" utility is not installed.\n"
@@ -675,18 +677,18 @@ msgstr ""
 "Por favor, instale-o."
 
 #. Try xterm
-#: ../libanjuta/anjuta-utils.c:1208
+#: ../libanjuta/anjuta-utils.c:1214
 msgid "Cannot find a terminal; using xterm, even if it may not work"
 msgstr ""
 "Não foi possível encontrar um terminal; usando o xterm, mesmo que este não "
 "funcione"
 
-#: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
+#: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
 #, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr "Não foi possível executar o comando: %s (usando o shell %s): %s\n"
 
-#: ../libanjuta/anjuta-utils.c:2456
+#: ../libanjuta/anjuta-utils.c:2462
 #, c-format
 msgid "Unable to load user interface file: %s"
 msgstr "Não foi possível carregar arquivo de interface com usuário: %s"
@@ -1183,7 +1185,7 @@ msgstr "Bibliotecas adicionais:"
 #: ../plugins/am-project/am-properties.c:707
 #: ../plugins/am-project/am-properties.c:883
 msgid "Additional libraries for this target."
-msgstr "Bibliotecas adicionais para este alvo"
+msgstr "Bibliotecas adicionais para este alvo."
 
 #: ../plugins/am-project/am-properties.c:354
 msgid "Additional objects:"
@@ -1191,7 +1193,7 @@ msgstr "Objetos adicionais:"
 
 #: ../plugins/am-project/am-properties.c:357
 msgid "Additional object files for this target."
-msgstr "Arquivos objeto adicionais para este alvo"
+msgstr "Arquivos objeto adicionais para este alvo."
 
 #: ../plugins/am-project/am-properties.c:366
 #: ../plugins/am-project/am-properties.c:541
@@ -1335,11 +1337,11 @@ msgstr "Não usar prefixo:"
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
-"Não renomeia o alvo com um prefixo adicional, usado para evitar sobrescrita "
-"de programas do sistema. "
+"Não renomeie o alvo usando um prefixo adicional, para evitar sobrescrita de "
+"programas do sistema. "
 
 #: ../plugins/am-project/am-properties.c:483
 #: ../plugins/am-project/am-properties.c:658
@@ -1661,7 +1663,7 @@ msgstr "aviso:"
 
 #: ../plugins/build-basic-autotools/plugin.c:808
 msgid "warning:-old"
-msgstr "warning:"
+msgstr "warning:-old"
 
 #. The translations should match that of 'gcc' program.
 #. * The second string with -old should be used for an older
@@ -1675,7 +1677,7 @@ msgstr "erro:"
 
 #: ../plugins/build-basic-autotools/plugin.c:820
 msgid "error:-old"
-msgstr "error:"
+msgstr "error:-old"
 
 #: ../plugins/build-basic-autotools/plugin.c:960
 #, c-format
@@ -1761,7 +1763,7 @@ msgstr "Limpa todo o projeto"
 
 #: ../plugins/build-basic-autotools/plugin.c:1695
 msgid "C_onfigure Project…"
-msgstr "Configurar projeto…"
+msgstr "_Configurar projeto…"
 
 #: ../plugins/build-basic-autotools/plugin.c:1696
 msgid "Configure project"
@@ -2148,7 +2150,7 @@ msgid ""
 msgstr ""
 "Não foi possível localizar a versão 5 do autogen. Por favor, instale o "
 "pacote do autogen. Você pode obtê-lo a partir do sítio http://autogen."
-"sourceforge.net"
+"sourceforge.net."
 
 #: ../plugins/class-gen/plugin.c:261 ../plugins/class-gen/plugin.c:472
 #, c-format
@@ -2238,14 +2240,14 @@ msgstr "Um plug-in de controle de versão de sistema"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:1
 msgid "Standard diff"
-msgstr "Diff padrão:"
+msgstr "Diff padrão"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:2
 msgid "Patch-Style diff"
 msgstr "Diff no estilo patch"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "Local"
 
@@ -2598,7 +2600,7 @@ msgstr "Mostra as diferenças entre sua cópia local e a árvore"
 #. Stock icon, if any
 #: ../plugins/cvs-plugin/plugin.c:94 ../plugins/cvs-plugin/plugin.c:153
 msgid "_Show Status"
-msgstr "_Mostrar _status"
+msgstr "Mostrar _status"
 
 #. Display label
 #. short-cut
@@ -3368,7 +3370,7 @@ msgstr "Frame"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Arquivo"
@@ -3585,7 +3587,7 @@ msgstr "_Recarregar"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:334
 msgid "Add bookmark"
-msgstr "_Adicionar marcador"
+msgstr "Adicionar marcador"
 
 #: ../plugins/document-manager/anjuta-bookmarks.c:340
 msgid "Remove bookmark"
@@ -3827,7 +3829,7 @@ msgstr "Converte o texto selecionado para maiúsculas"
 
 #: ../plugins/document-manager/plugin.c:184
 msgid "Make Selection Lowercase"
-msgstr "Converter a Seleção para mi_núsculas"
+msgstr "Converter a seleção para minúsculas"
 
 #: ../plugins/document-manager/plugin.c:185
 msgid "Make the selected text lowercase"
@@ -4104,7 +4106,7 @@ msgstr "Corta o texto selecionado do editor para a área de transferência"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:592
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:627
 msgid "_Copy"
 msgstr "_Copiar"
 
@@ -4112,7 +4114,7 @@ msgstr "_Copiar"
 msgid "Copy the selected text to the clipboard"
 msgstr "Copia o texto selecionado para a área de transferência"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:600
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:635
 msgid "_Paste"
 msgstr "Col_ar"
 
@@ -4275,7 +4277,9 @@ msgid "Editor syntax highlighting styles"
 msgstr "Estilos de realce de sintaxe do editor"
 
 #: ../plugins/document-manager/plugin.c:416
-msgid "Editor text formating"
+#, fuzzy
+#| msgid "Editor text formating"
+msgid "Editor text formatting"
 msgstr "Formatação de texto do editor"
 
 #: ../plugins/document-manager/plugin.c:417
@@ -4644,7 +4648,7 @@ msgstr "Seleciona automaticamente o documento atual"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "Global"
 
@@ -4688,9 +4692,13 @@ msgid "You can't rename \"/\"!"
 msgstr "Você não pode renomear \"/\"!"
 
 #: ../plugins/file-manager/file-view.c:153
+#, fuzzy
+#| msgid ""
+#| "An error has occured!\n"
+#| "Maybe you permissions're insuficient or the filename is wrong"
 msgid ""
-"An error has occured!\n"
-"Maybe you permissions're insuficient or the filename is wrong"
+"An error has occurred!\n"
+"Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
 "Ocorreu um erro!\n"
 "Talvez suas permissões são insuficientes ou o nome do arquivo está errado"
@@ -4818,7 +4826,7 @@ msgstr "Depurador GNU (GDB)"
 
 #: ../plugins/gdb/anjuta-gdb.plugin.in.h:2
 msgid "GNU Debugger Plugin"
-msgstr "Plug-in de depuração GNU."
+msgstr "Plug-in de depuração GNU"
 
 #: ../plugins/gdb/anjuta-gdb.ui.h:1
 msgid "Available pretty printers"
@@ -5245,7 +5253,7 @@ msgstr "Repositório para fazer push para: "
 
 #: ../plugins/git/anjuta-git.ui.h:56
 msgid "Branches:"
-msgstr "Ramos"
+msgstr "Ramos:"
 
 #: ../plugins/git/anjuta-git.ui.h:57
 msgid "Tags:"
@@ -5317,7 +5325,7 @@ msgstr "Por favor, digitar um nome remoto."
 
 #: ../plugins/git/git-add-remote-pane.c:55
 msgid "Please enter a URL"
-msgstr "Por favor, digite um URL."
+msgstr "Por favor, digite um URL"
 
 #: ../plugins/git/git-add-remote-pane.c:182
 msgid "Add Remote"
@@ -5353,7 +5361,7 @@ msgstr "Por favor, digite uma mensagem de log."
 
 #: ../plugins/git/git-commit-pane.c:145
 msgid "Please enter the commit author's name"
-msgstr "Por favor, digite o nome do autor do commit."
+msgstr "Por favor, digite o nome do autor do commit"
 
 #: ../plugins/git/git-commit-pane.c:149
 msgid "Please enter the commit author's e-mail address."
@@ -6074,8 +6082,8 @@ msgstr "Plug-in de suporte a C++ e Java"
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.plugin.in.h:2
 msgid "C++ and Java support plugin for code completion, auto-indentation, etc."
 msgstr ""
-"Plug-in para completamento automático, recuo automático etc. dos códigos C++ "
-"e Java"
+"Plug-in de suporte em códigos C++ e Java para auto-completar, recuo "
+"automático, etc."
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:1
 msgid "Automatically load required libraries of the project"
@@ -6198,7 +6206,7 @@ msgstr "Número mínimo de caracteres para completar:"
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
 msgid "Environment"
-msgstr "Ambiente:"
+msgstr "Ambiente"
 
 #: ../plugins/language-support-js/js-support-plugin.plugin.in.h:1
 msgid "JS Support Plugin"
@@ -6254,10 +6262,10 @@ msgstr "Suporte à vala"
 
 #: ../plugins/language-support-vala/anjuta-vala.plugin.in.h:2
 msgid "Vala support plugin, adds code completion."
-msgstr "Plug-in para completamento automático dos códigos vala."
+msgstr "Plug-in para suporte de auto-completar em códigos vala."
 
-#: ../plugins/language-support-vala/plugin.vala:655
-#: ../plugins/language-support-vala/plugin.vala:663
+#: ../plugins/language-support-vala/plugin.vala:657
+#: ../plugins/language-support-vala/plugin.vala:665
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Completar automaticamente"
@@ -6513,7 +6521,7 @@ msgstr "Arquivo/Diretório para aplicar patch:"
 
 #: ../plugins/patch/patch-plugin.ui.h:4
 msgid "Patch file:"
-msgstr "Arquivo de patch"
+msgstr "Arquivo de patch:"
 
 #: ../plugins/patch/patch-plugin.ui.h:5
 msgid "Patch level:"
@@ -6529,7 +6537,7 @@ msgstr "_Ferramentas"
 #. Stock icon, if any
 #: ../plugins/patch/plugin.c:61
 msgid "_Patch…"
-msgstr "Patch…"
+msgstr "_Patch…"
 
 #: ../plugins/patch/plugin.c:93
 msgid "Patch files/directories"
@@ -6935,7 +6943,7 @@ msgstr "Adicionar arquivo _fonte"
 
 #: ../plugins/project-manager/plugin.c:956
 msgid "Add _Library"
-msgstr "Adicionar biblioteca"
+msgstr "Adicionar _biblioteca"
 
 #: ../plugins/project-manager/plugin.c:956
 msgid "Add a library to a target"
@@ -6943,7 +6951,7 @@ msgstr "Adiciona uma biblioteca ao alvo"
 
 #: ../plugins/project-manager/plugin.c:961
 msgid "_Add to Project"
-msgstr "Adicionar ao projeto"
+msgstr "_Adicionar ao projeto"
 
 #: ../plugins/project-manager/plugin.c:966
 msgid "Properties of group/target/source"
@@ -6983,7 +6991,7 @@ msgstr "Atualizar visão de projeto…"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "Projeto"
 
@@ -7067,7 +7075,7 @@ msgstr "Selecione o alvo para o novo código fon_te:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:14
 msgid "_Select file to add…"
-msgstr "Selecionar arquivo para adicionar…"
+msgstr "_Selecionar arquivo para adicionar…"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:15
 msgid "Source files:"
@@ -7348,14 +7356,6 @@ msgstr "Nome de usuário padrão usado em novo projeto"
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
 msgid "If empty, the current user name is used."
 msgstr "Se vazio, o nome de usuário atual é usado."
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-msgid "Default email used in new project"
-msgstr "E-mail padrão usado em novo projeto"
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
-msgid "If empty, current login and machine name is used."
-msgstr "Se vazio, a conta e nome de máquina atual são usados."
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -7965,7 +7965,7 @@ msgstr "URL da extensão"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:22
 msgid "Gnome Shell Compatibility:"
-msgstr "Compatibilidade com o GNOME Shell"
+msgstr "Compatibilidade com o GNOME Shell:"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:23
 msgid ""
@@ -8006,7 +8006,7 @@ msgstr ""
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:17
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:17
 msgid "Use GtkBuilder for user interface:"
-msgstr "Usar GtkBuilder para a interface do usuário."
+msgstr "Usar GtkBuilder para a interface do usuário:"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:24
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:22
@@ -8171,7 +8171,9 @@ msgid "Require SDL version:"
 msgstr "Requer SDL versão:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-msgid "Mininum SDL version required"
+#, fuzzy
+#| msgid "Mininum SDL version required"
+msgid "Minimum SDL version required"
 msgstr "Versão mínima SDL necessária"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
@@ -8387,11 +8389,11 @@ msgstr "Insere um trecho usando a tecla disparadora"
 #. inserted.
 #: ../plugins/snippets-manager/plugin.c:86
 msgid "_Auto complete insert"
-msgstr "Inserir pelo completamento automático"
+msgstr "Inserir pelo _auto-completar"
 
 #: ../plugins/snippets-manager/plugin.c:88
 msgid "Insert a snippet using auto-completion"
-msgstr "Insere um trecho usando o completamento automático"
+msgstr "Insere um trecho usando o auto-completar"
 
 #: ../plugins/snippets-manager/plugin.c:93
 msgid "_Import snippets …"
@@ -8802,7 +8804,7 @@ msgstr "Iniciador"
 
 #: ../plugins/starter/anjuta-starter.plugin.in.h:2
 msgid "Welcome page with most common actions."
-msgstr "Página de boas vindas com as ações mais comuns"
+msgstr "Página de boas vindas com as ações mais comuns."
 
 #: ../plugins/starter/plugin.c:425
 msgid "Start"
@@ -8813,17 +8815,14 @@ msgid "Create a new project"
 msgstr "Criar um novo projeto"
 
 #: ../plugins/starter/starter.ui.h:2
-#| msgid "Import project"
 msgid "Import a project"
 msgstr "Importar um projeto"
 
 #: ../plugins/starter/starter.ui.h:3
-#| msgid "Search for next appearance of term."
 msgid "Search for example code"
 msgstr "Pesquisar por código de exemplo"
 
 #: ../plugins/starter/starter.ui.h:4
-#| msgid "Man Documentation"
 msgid "View local Anjuta documentation"
 msgstr "Ver documentação local do Anjuta"
 
@@ -8836,16 +8835,10 @@ msgid "View online library documentation"
 msgstr "Ver documentação on-line de biblioteca"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "label"
-msgstr "rótulo"
-
-#: ../plugins/starter/starter.ui.h:8
-#| msgid "No recently used resource found with URI \"%s\""
 msgid "Remove recently used project from list"
 msgstr "Remover projeto recentemente usado da lista"
 
-#: ../plugins/starter/starter.ui.h:9
-#| msgid "_Install Project"
+#: ../plugins/starter/starter.ui.h:8
 msgid "Unlist Project"
 msgstr "Não listar projeto"
 
@@ -9444,7 +9437,7 @@ msgstr "Ir para definição de símbolo"
 
 #: ../plugins/symbol-db/plugin.c:349
 msgid "_Find Symbol…"
-msgstr "Localizar símbolo…"
+msgstr "_Localizar símbolo…"
 
 #: ../plugins/symbol-db/plugin.c:350
 msgid "Find Symbol"
@@ -9475,27 +9468,27 @@ msgid_plural "%d files scanned out of %d"
 msgstr[0] "%d arquivo lido de %d"
 msgstr[1] "%d arquivos lidos de %d"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "Povoando banco de dados de símbolos…"
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "Símbolos"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "Pesquisar"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
 msgstr "Ações do menu de contexto do SymbolDb"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
 msgstr "Ações de menu do SymbolDb"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Base de dados de símbolos"
@@ -9513,8 +9506,8 @@ msgid "Symbol"
 msgstr "Símbolo"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:781 ../plugins/terminal/terminal.c:981
-#: ../plugins/terminal/terminal.c:1067
+#: ../plugins/terminal/terminal.c:820 ../plugins/terminal/terminal.c:1005
+#: ../plugins/terminal/terminal.c:1091
 msgid "Terminal"
 msgstr "Terminal"
 
@@ -9534,23 +9527,23 @@ msgstr "Usar perfil padrão do Terminal do GNOME"
 msgid "Terminal options"
 msgstr "Operações de terminal"
 
-#: ../plugins/terminal/terminal.c:609
+#: ../plugins/terminal/terminal.c:644
 msgid "Ctrl-C"
 msgstr "Ctrl-C"
 
-#: ../plugins/terminal/terminal.c:617
+#: ../plugins/terminal/terminal.c:652
 msgid "Ctrl-X"
 msgstr "Ctrl-X"
 
-#: ../plugins/terminal/terminal.c:625
+#: ../plugins/terminal/terminal.c:660
 msgid "Ctrl-Z"
 msgstr "Ctrl-Z"
 
-#: ../plugins/terminal/terminal.c:763
+#: ../plugins/terminal/terminal.c:802
 msgid "terminal operations"
 msgstr "operações de terminal"
 
-#: ../plugins/terminal/terminal.c:898
+#: ../plugins/terminal/terminal.c:937
 #, c-format
 msgid "Unable to execute command"
 msgstr "Não foi possível executar o comando"
@@ -9944,7 +9937,7 @@ msgstr "_Tela cheia"
 
 #: ../src/anjuta-actions.h:48
 msgid "Toggle fullscreen mode"
-msgstr "Al_ternar o modo de tela cheia"
+msgstr "Alternar o modo de tela cheia"
 
 #: ../src/anjuta-actions.h:51
 msgid "_Lock Dock Layout"
@@ -10108,14 +10101,22 @@ msgid "Value doesn't exist"
 msgstr "O valor não existe"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
+msgid "Default email used in new project"
+msgstr "E-mail padrão usado em novo projeto"
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+msgid "If empty, current login and machine name is used."
+msgstr "Se vazio, a conta e nome de máquina atual são usados."
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
 msgid "Use tabulation for indentation"
 msgstr "Usar tabulação para recuo"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:4
 msgid "Number of characters of one tabulation"
 msgstr "Número de caracteres de uma tabulação"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
 msgstr "Número de espaços em toda etapa de recuo"
 
@@ -10139,7 +10140,7 @@ msgstr "Rótulos na barra de ferramentas:"
 #. Style of the buttons/tabs used to select docked windows in anjuta
 #: ../src/preferences.ui.h:7
 msgid "Dock switcher style:"
-msgstr "Estilo do alternador de encaixe"
+msgstr "Estilo do alternador de encaixe:"
 
 #: ../src/preferences.ui.h:8
 msgid "Appearance"
@@ -10176,6 +10177,9 @@ msgstr "Somente ícones"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Somente texto"
+
+#~ msgid "label"
+#~ msgstr "rótulo"
 
 #~ msgid "Import an existing project"
 #~ msgstr "Importa um projeto existente"
