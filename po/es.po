@@ -14,10 +14,10 @@ msgstr ""
 "Project-Id-Version: anjuta.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-05-26 14:49+0000\n"
-"PO-Revision-Date: 2015-05-26 18:50+0200\n"
+"POT-Creation-Date: 2015-08-11 02:49+0000\n"
+"PO-Revision-Date: 2015-08-11 \n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
+"Language-Team: Spanish <gnome-es-list@gnome.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1090,8 +1090,8 @@ msgid ""
 "Common additional Lex or Flex lexical analyser generator flags for all "
 "targets in this group."
 msgstr ""
-"Opciones comunes adicionales y generales del analizador léxicos «Lex» o "
-"«Flex» para todos los objetivos en este grupo."
+"Opciones comunes adicionales y generales del analizador léxicos «Lex» o «Flex» "
+"para todos los objetivos en este grupo."
 
 #: ../plugins/am-project/am-properties.c:185
 #: ../plugins/am-project/am-properties.c:292
@@ -1329,9 +1329,6 @@ msgstr "No usar prefijo:"
 #: ../plugins/am-project/am-properties.c:1039
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
-#| msgid ""
-#| "Do not rename the target with an optional prefix, used to avoid "
-#| "overwritting system program. "
 msgid ""
 "Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
@@ -1397,8 +1394,8 @@ msgstr "Especifique el nombre del objetivo"
 msgid ""
 "Target name can only contain alphanumeric, '_', '-', '/' or '.' characters"
 msgstr ""
-"El nombre del objetivo sólo puede contener caracteres alfanuméricos, «_», "
-"«-», «/» o «.»"
+"El nombre del objetivo sólo puede contener caracteres alfanuméricos, «_», «-», "
+"«/» o «.»"
 
 #: ../plugins/am-project/amp-target.c:398
 msgid "Shared library target name must be of the form 'libxxx.la'"
@@ -1409,8 +1406,8 @@ msgstr ""
 #: ../plugins/am-project/amp-target.c:407
 msgid "Static library target name must be of the form 'libxxx.a'"
 msgstr ""
-"El nombre de la biblioteca estática del objetivo debe ser de la forma "
-"«libxxx.a»"
+"El nombre de la biblioteca estática del objetivo debe ser de la forma «libxxx."
+"a»"
 
 #: ../plugins/am-project/amp-target.c:415
 msgid "Module target name must be of the form 'xxx.la'"
@@ -1607,8 +1604,8 @@ msgid ""
 "quoted command. You can use %% to get a \"%\" character. A typical value is "
 "\"sudo %s\" or \"su -c %q\"."
 msgstr ""
-"El comando tiene que contener «%s» o «%q». Esto se reemplazará por el "
-"comando usado para instalar los archivos, por ejemplo, «make install». %s se "
+"El comando tiene que contener «%s» o «%q». Esto se reemplazará por el comando "
+"usado para instalar los archivos, por ejemplo, «make install». %s se "
 "reemplazará con el comando sin ningún cambio, mientras que %q se reemplazará "
 "por el comando entrecomillado. Puede usar «%%» para obtener el carácter «%». "
 "Un valor habitual es «sudo %s» o «su -c %q»."
@@ -4273,7 +4270,8 @@ msgid "Editor syntax highlighting styles"
 msgstr "Estilos de resaltado de sintaxis del editor"
 
 #: ../plugins/document-manager/plugin.c:416
-msgid "Editor text formating"
+#| msgid "Editor text formating"
+msgid "Editor text formatting"
 msgstr "Formateado del texto del editor"
 
 #: ../plugins/document-manager/plugin.c:417
@@ -4682,13 +4680,16 @@ msgid "You can't rename \"/\"!"
 msgstr "No puede renombrar «/»"
 
 #: ../plugins/file-manager/file-view.c:153
+#| msgid ""
+#| "An error has occured!\n"
+#| "Maybe you permissions're insuficient or the filename is wrong"
 msgid ""
-"An error has occured!\n"
-"Maybe you permissions're insuficient or the filename is wrong"
+"An error has occurred!\n"
+"Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
 "Ha ocurrido un error.\n"
 "Tal vez no tenga los permisos suficientes o el nombre del archivo no es "
-"correcto."
+"correcto"
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
@@ -5679,8 +5680,7 @@ msgstr "Aplicar los cambios guardados («stash») y restablecer el índice"
 
 #: ../plugins/git/plugin.c:342
 msgid "Apply stashed changes back into the working tree and the index"
-msgstr ""
-"Aplicar los cambios guardados («stash») al árbol de trabajo y al índice"
+msgstr "Aplicar los cambios guardados («stash») al árbol de trabajo y al índice"
 
 #: ../plugins/git/plugin.c:349
 msgid "Drop selected stash"
@@ -6031,8 +6031,8 @@ msgstr "No se pudo encontrar el prefijo de instalación de JHBuild."
 
 #: ../plugins/jhbuild/plugin.c:180
 msgid ""
-"Could not find the JHBuild library directory. You need JHBuild from "
-"2012-11-06 or later."
+"Could not find the JHBuild library directory. You need JHBuild from 2012-11-"
+"06 or later."
 msgstr ""
 "No se pudo encontrar la carpeta de bibliotecas de JHBuild. Necesita la "
 "versión de JHBuild del 06/11/2012 o superior."
@@ -6561,8 +6561,8 @@ msgid ""
 "A file named \"%s\" cannot be written: %s. Check if you have write access to "
 "the project directory."
 msgstr ""
-"No se puede escribir el archivo de nombre «%s»: %s. Compruebe si tiene "
-"acceso de escritura a la carpeta del proyecto."
+"No se puede escribir el archivo de nombre «%s»: %s. Compruebe si tiene acceso "
+"de escritura a la carpeta del proyecto."
 
 #: ../plugins/project-import/plugin.c:285
 #, c-format
@@ -6575,9 +6575,9 @@ msgid ""
 "Could not find a valid project backend for the given directory (%s). Please "
 "select a different directory, or try upgrading to a newer version of Anjuta."
 msgstr ""
-"No se pudo encontrar un «backend» válido del proyecto para la carpeta dada "
-"(%s). Seleccione una carpeta diferente, o intente actualizar a una versión "
-"más moderna de Anjuta."
+"No se pudo encontrar un «backend» válido del proyecto para la carpeta dada (%"
+"s). Seleccione una carpeta diferente, o intente actualizar a una versión más "
+"moderna de Anjuta."
 
 #: ../plugins/project-import/plugin.c:371
 #: ../plugins/project-import/plugin.c:428
@@ -7199,8 +7199,8 @@ msgid ""
 "$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a "
 "leading dash. Please fix it."
 msgstr ""
-"El campo «%s» debe contener sólo letras, dígitos, los siguientes caracteres "
-"«#$:%%+,.=@^_`~» o separadores de carpeta. Además, no puede tener un guión "
+"El campo «%s» debe contener sólo letras, dígitos, los siguientes caracteres «#"
+"$:%%+,.=@^_`~» o separadores de carpeta. Además, no puede tener un guión "
 "precedente. Arréglelo."
 
 #: ../plugins/project-wizard/druid.c:737
@@ -8033,8 +8033,8 @@ msgid ""
 "'libgnomeui-2.0 >= 2.2.0'"
 msgstr ""
 "Proporcione un nombre de paquete que requiere su proyecto. También puede "
-"mencionar cuál es la versión requerida del paquete. Por ejemplo, "
-"«libgnomeui-2.0» o «libgnomeui-2.0 >= 2.2.0»"
+"mencionar cuál es la versión requerida del paquete. Por ejemplo, «libgnomeui-"
+"2.0» o «libgnomeui-2.0 >= 2.2.0»"
 
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:1
 msgid "GTKmm (Simple)"
@@ -8168,8 +8168,9 @@ msgid "Require SDL version:"
 msgstr "Requiere la versión de SDL:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-msgid "Mininum SDL version required"
-msgstr "Versión inferior de SDL requerida"
+#| msgid "Mininum SDL version required"
+msgid "Minimum SDL version required"
+msgstr "Versión mínima de SDL requerida"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
 msgid "Require SDL_image:"
@@ -10900,8 +10901,8 @@ msgstr "Sólo texto"
 
 #~ msgid "The match \"%s\" was not found. Wrap search around the document?"
 #~ msgstr ""
-#~ "No se ha encontrado ninguna coincidencia con «%s». ¿Quiere continuar "
-#~ "desde el principio del documento?"
+#~ "No se ha encontrado ninguna coincidencia con «%s». ¿Quiere continuar desde "
+#~ "el principio del documento?"
 
 #~ msgid "The match \"%s\" was not found."
 #~ msgstr "No se ha encontrado ninguna coincidencia con «%s»."
