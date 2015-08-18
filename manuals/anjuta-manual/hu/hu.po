@@ -2,26 +2,26 @@
 # Copyright (C) 2012, 2013. Free Software Foundation, Inc.
 # This file is distributed under the same license as the anjuta help.
 #
-# Gabor Kelemen <kelemeng at gnome dot hu>, 2012, 2013.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2012, 2013, 2015.
 # Balázs Úr <urbalazs at gmail dot com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta_help master\n"
-"POT-Creation-Date: 2014-09-20 14:45+0000\n"
-"PO-Revision-Date: 2014-09-21 01:07+0200\n"
-"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
-"Language-Team: Hungarian <openscope at googlegroups dot com>\n"
+"POT-Creation-Date: 2015-08-18 14:50+0000\n"
+"PO-Revision-Date: 2015-08-18 17:12+0200\n"
+"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"Language-Team: Hungarian <openscope at gmail dot com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Kelemen Gábor <kelemeng at gnome dot hu>, 2012, 2013."
+msgstr "Kelemen Gábor <kelemeng at gnome dot hu>, 2012, 2013, 2015."
 
 #. (itstool) path: info/desc
 #: C/index.page:8
@@ -48,15 +48,11 @@ msgstr "Johannes Schmid"
 
 #. (itstool) path: media/span
 #: C/index.page:24
-#| msgctxt "link"
-#| msgid "Anjuta"
 msgid "Anjuta logo"
 msgstr "Anjuta logó"
 
 #. (itstool) path: page/title
 #: C/index.page:23
-#| msgctxt "text"
-#| msgid "Anjuta DevStudio"
 msgid "<_:media-1/> Anjuta DevStudio"
 msgstr "<_:media-1/> Anjuta DevStudio"
 
@@ -102,11 +98,19 @@ msgstr "Automatikus kiegészítés"
 
 #. (itstool) path: section/p
 #: C/anjuta-code-assist.page:22
+#| msgid ""
+#| "Autocompletion automatically suggests functions and other code symbols "
+#| "after you start typing by trying to match existing symbols with the first "
+#| "characters typed. It will popup a drop-down menu where you can select a "
+#| "match by using the <key>Enter</key> key. Normally this happens "
+#| "automaticly after you typed the third (non-whitespace) character but you "
+#| "can also force it by using the <guiseq><gui>Edit</gui><gui>Auto-Complete</"
+#| "gui></guiseq> menu item."
 msgid ""
 "Autocompletion automatically suggests functions and other code symbols after "
 "you start typing by trying to match existing symbols with the first "
 "characters typed. It will popup a drop-down menu where you can select a "
-"match by using the <key>Enter</key> key. Normally this happens automaticly "
+"match by using the <key>Enter</key> key. Normally this happens automatically "
 "after you typed the third (non-whitespace) character but you can also force "
 "it by using the <guiseq><gui>Edit</gui><gui>Auto-Complete</gui></guiseq> "
 "menu item."
@@ -271,8 +275,12 @@ msgstr ""
 
 #. (itstool) path: note/p
 #: C/anjuta-code-indentation.page:38
+#| msgid ""
+#| "Unless explicitely changed in the preferences the indentation settings "
+#| "found in the Modeline of a file will be used instead of the configured "
+#| "settings to keep the file consistent."
 msgid ""
-"Unless explicitely changed in the preferences the indentation settings found "
+"Unless explicitly changed in the preferences the indentation settings found "
 "in the Modeline of a file will be used instead of the configured settings to "
 "keep the file consistent."
 msgstr ""
@@ -313,8 +321,12 @@ msgstr "Kódblokkok behúzása"
 
 #. (itstool) path: section/p
 #: C/anjuta-code-indentation.page:61
+#| msgid ""
+#| "Normally new lines are approprietely indented automatically but you can "
+#| "indent existing lines or all selected code with the <guiseq><gui>Edit</"
+#| "gui><gui>Auto-Indent</gui></guiseq> menu item."
 msgid ""
-"Normally new lines are approprietely indented automatically but you can "
+"Normally new lines are appropriately indented automatically but you can "
 "indent existing lines or all selected code with the <guiseq><gui>Edit</"
 "gui><gui>Auto-Indent</gui></guiseq> menu item."
 msgstr ""
@@ -1077,10 +1089,14 @@ msgstr "Modul (Libtool)"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:32
+#| msgid ""
+#| "It represents a library, often named a plugin, linked at run time "
+#| "explicitely by the program itself. It is used to only load the code "
+#| "corresponding to the used features."
 msgid ""
-"It represents a library, often named a plugin, linked at run time "
-"explicitely by the program itself. It is used to only load the code "
-"corresponding to the used features."
+"It represents a library, often named a plugin, linked at run time explicitly "
+"by the program itself. It is used to only load the code corresponding to the "
+"used features."
 msgstr ""
 "Egy programkönyvtárat képvisel, amelyet gyakran bővítménynek is neveznek, "
 "ezt futásidőben explicit módon maga a program szerkeszti. Ezt kizárólag a "
@@ -1126,8 +1142,11 @@ msgstr "Program"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:47
+#| msgid ""
+#| "It represents compiled program by example from C souces files. All "
+#| "children represent the source files compiled to generate the program."
 msgid ""
-"It represents compiled program by example from C souces files. All children "
+"It represents compiled program by example from C source files. All children "
 "represent the source files compiled to generate the program."
 msgstr ""
 "Ez például egy C forrásfájlokból lefordított programot képvisel. Minden "
@@ -1150,7 +1169,8 @@ msgstr "Java modul"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:57
-msgid "It represents a progran written in Java."
+#| msgid "It represents a progran written in Java."
+msgid "It represents a program written in Java."
 msgstr "Egy Javaban írt programot képvisel."
 
 #. (itstool) path: item/title
@@ -1160,7 +1180,8 @@ msgstr "LISP modul"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:61
-msgid "It represents a progran written in LISP."
+#| msgid "It represents a progran written in LISP."
+msgid "It represents a program written in LISP."
 msgstr "Egy LISP-ben írt programot képvisel."
 
 #. (itstool) path: item/title
@@ -1925,8 +1946,11 @@ msgstr "<cmd>make dist</cmd>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-plugin.page:49
+#| msgid ""
+#| "Use to build a distributation package, called only in the project "
+#| "directory."
 msgid ""
-"Use to build a distributation package, called only in the project directory."
+"Use to build a distribution package, called only in the project directory."
 msgstr "Disztribúciós csomag építése, csak a projekt könyvtárában hívható."
 
 #. (itstool) path: note/p
@@ -4835,9 +4859,13 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/project-manager-module-new.page:57
+#| msgid ""
+#| "It could be that the library is not packaged, it is often the case for "
+#| "libraries not developped on Linux. See the chapter <link xref=\"project-"
+#| "manager-library-add\"/> explaining how to use them."
 msgid ""
 "It could be that the library is not packaged, it is often the case for "
-"libraries not developped on Linux. See the chapter <link xref=\"project-"
+"libraries not developed on Linux. See the chapter <link xref=\"project-"
 "manager-library-add\"/> explaining how to use them."
 msgstr ""
 "Előfordulhat, hogy a programkönyvtár nincs becsomagolva, ez gyakran fennáll "
@@ -4943,8 +4971,12 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/project-manager.page:29
+#| msgid ""
+#| "The project backend to use is choosen when creating or importing a new "
+#| "project in <app>Anjuta</app>. It is displayed in the properties of the "
+#| "project root node and can be changed at any time."
 msgid ""
-"The project backend to use is choosen when creating or importing a new "
+"The project backend to use is chosen when creating or importing a new "
 "project in <app>Anjuta</app>. It is displayed in the properties of the "
 "project root node and can be changed at any time."
 msgstr ""
