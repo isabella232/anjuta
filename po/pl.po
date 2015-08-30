@@ -8,15 +8,15 @@
 # Artur Flinta <aflinta@at.kernel.pl>, 2004.
 # Piotr Leszczyński <piotr@kontury.pl>, 2008.
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2009.
-# Piotr Drąg <piotrdrag@gmail.com>, 2010-2014.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2015.
 # Paweł Żołnowski <pawel@zolnowski.name>, 2014.
-# Aviary.pl <gnomepl@aviary.pl>, 2008-2014.
+# Aviary.pl <gnomepl@aviary.pl>, 2008-2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-20 17:59+0200\n"
-"PO-Revision-Date: 2014-09-20 18:00+0200\n"
+"POT-Creation-Date: 2015-08-30 03:14+0200\n"
+"PO-Revision-Date: 2015-08-30 03:15+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -96,12 +96,12 @@ msgstr "Program Autogen jest zajęty"
 #: ../libanjuta/anjuta-autogen.c:251
 #, c-format
 msgid "Could not write definition file \"%s\": %s"
-msgstr "Nie można zapisać pliku definicji \"%s\": %s"
+msgstr "Nie można zapisać pliku definicji „%s”: %s"
 
 #: ../libanjuta/anjuta-autogen.c:585
 #, c-format
 msgid "Could not open file \"%s\": %s"
-msgstr "Nie można otworzyć pliku \"%s\": %s"
+msgstr "Nie można otworzyć pliku „%s”: %s"
 
 #: ../libanjuta/anjuta-cell-renderer-captioned-image.c:239
 #: ../src/preferences.ui.h:10
@@ -368,7 +368,7 @@ msgstr "[Hh]asło.*:"
 #: ../libanjuta/anjuta-launcher.c:1167 ../plugins/gdb/utilities.c:282
 #, c-format
 msgid "Cannot execute command: \"%s\""
-msgstr "Nie można wykonać polecenia: \"%s\""
+msgstr "Nie można wykonać polecenia: „%s”"
 
 #: ../libanjuta/anjuta-launcher.c:1168
 msgid "execvp failed"
@@ -385,7 +385,7 @@ msgstr "Powłoka programu Anjuta, która ma zawierać wtyczkę"
 #: ../libanjuta/anjuta-plugin-manager.c:714
 #, c-format
 msgid "Plugin '%s' does not want to be deactivated"
-msgstr "Wtyczka \"%s\" nie zezwala na wyłączenie"
+msgstr "Wtyczka „%s” nie zezwala na wyłączenie"
 
 #: ../libanjuta/anjuta-plugin-manager.c:747
 #, c-format
@@ -546,20 +546,20 @@ msgid ""
 "Failed to read '%s': XML parse error. Invalid or corrupted Anjuta plugins "
 "profile."
 msgstr ""
-"Odczytanie \"%s\" się nie powiodło: błąd przetwarzania XML. Nieprawidłowy "
-"lub uszkodzony profil wtyczek programu Anjuta."
+"Odczytanie „%s” się nie powiodło: błąd przetwarzania XML. Nieprawidłowy lub "
+"uszkodzony profil wtyczek programu Anjuta."
 
 #. <Pluginname>: Install it from <some location on the web>
 #: ../libanjuta/anjuta-profile.c:956
 #, c-format
 msgid "%s: Install it from '%s'\n"
-msgstr "%s: proszę zainstalować ją ze strony internetowej \"%s\"\n"
+msgstr "%s: proszę zainstalować ją ze strony internetowej „%s”\n"
 
 #: ../libanjuta/anjuta-profile.c:964
 #, c-format
 msgid "Failed to read '%s': Following mandatory plugins are missing"
 msgstr ""
-"Odczytanie \"%s\" się nie powiodło: brak następujących wymaganych wtyczek"
+"Odczytanie „%s” się nie powiodło: brak następujących wymaganych wtyczek"
 
 #: ../libanjuta/anjuta-save-prompt.c:157
 msgid "Select the items to save:"
@@ -643,7 +643,7 @@ msgid ""
 "from your distribution, or install the missing packages manually."
 msgstr ""
 "Program PackageKit nie jest zainstalowany. Jest on wymagany do instalowania "
-"brakujących pakietów. Proszę zainstalować pakiet \"packagekit-gnome\" dla "
+"brakujących pakietów. Proszę zainstalować pakiet „packagekit-gnome” dla "
 "danej dystrybucji lub ręcznie zainstalować brakujące pakiety."
 
 #: ../libanjuta/anjuta-utils.c:527
@@ -654,7 +654,7 @@ msgstr "Instalacja się nie powiodła: %s"
 #: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
-msgstr "Wykonanie \"%s\" się nie powiodło. Zwrócony błąd: \"%s\"."
+msgstr "Wykonanie „%s” się nie powiodło. Zwrócony błąd: „%s”."
 
 #: ../libanjuta/anjuta-utils.c:602
 #, c-format
@@ -662,7 +662,7 @@ msgid ""
 "The \"%s\" package is not installed.\n"
 "Please install it."
 msgstr ""
-"Pakiet \"%s\" nie jest zainstalowany.\n"
+"Pakiet „%s” nie jest zainstalowany.\n"
 "Proszę go zainstalować."
 
 #: ../libanjuta/anjuta-utils.c:620
@@ -671,7 +671,7 @@ msgid ""
 "The \"%s\" utility is not installed.\n"
 "Please install it."
 msgstr ""
-"Narzędzie \"%s\" nie jest zainstalowane.\n"
+"Narzędzie „%s” nie jest zainstalowane.\n"
 "Proszę je zainstalować."
 
 #. Try xterm
@@ -748,7 +748,7 @@ msgstr "Nie można odnaleźć pliku z mapą pikseli programu: %s"
 #: ../libanjuta/resources.c:277
 #, c-format
 msgid "Cannot execute command \"%s\": %s"
-msgstr "Nie można wykonać polecenia \"%s\": %s"
+msgstr "Nie można wykonać polecenia „%s”: %s"
 
 #: ../plugins/am-project/amp-group.c:627
 msgid "Please specify group name"
@@ -758,8 +758,8 @@ msgstr "Proszę określić nazwę grupy"
 msgid ""
 "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~/\" characters"
 msgstr ""
-"Nazwa grupy może zawierać tylko znaki alfanumeryczne lub znaki \"#$:%+,-."
-"=@^_`~/\""
+"Nazwa grupy może zawierać tylko znaki alfanumeryczne lub znaki „#$:%+,-."
+"=@^_`~/”"
 
 #: ../plugins/am-project/amp-group.c:665
 #: ../plugins/am-project/am-project.c:1680
@@ -874,7 +874,7 @@ msgstr "Nazwa:"
 
 #: ../plugins/am-project/am-properties.c:52
 msgid "Project name, it can contain spaces by example 'GNU Autoconf'"
-msgstr "Nazwa projektu. Może zawierać spacje, na przykład \"GNU Autoconf\""
+msgstr "Nazwa projektu. Może zawierać spacje, na przykład „GNU Autoconf”"
 
 #: ../plugins/am-project/am-properties.c:58
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:9
@@ -904,7 +904,7 @@ msgid ""
 "Project version, typically a few numbers separated by dot by example '1.0.0'"
 msgstr ""
 "Wersja projektu, zwykle kilka liczb oddzielonych kropkami, na przykład "
-"\"1.0.0\""
+"„1.0.0”"
 
 #: ../plugins/am-project/am-properties.c:67
 msgid "Bug report URL:"
@@ -1337,7 +1337,7 @@ msgstr "Bez używania przedrostka:"
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
 "Bez zmieniania nazwy obiektu docelowego za pomocą opcjonalnego przedrostka, "
@@ -1384,7 +1384,7 @@ msgid ""
 "digits ‘0’ through ‘9’, and the letters ‘l’ and ‘n’. "
 msgstr ""
 "Sekcja, w której są instalowane strony podręcznika. Prawidłowe nazwy sekcji "
-"to cyfry od \"0\" do \"9\" oraz litery \"l\" i \"n\". "
+"to cyfry od „0” do „9” oraz litery „l” i „n”. "
 
 #: ../plugins/am-project/amp-source.c:97
 msgid "Source file must be a regular file, not a directory"
@@ -1402,21 +1402,20 @@ msgstr "Proszę określić nazwę docelową"
 msgid ""
 "Target name can only contain alphanumeric, '_', '-', '/' or '.' characters"
 msgstr ""
-"Nazwa docelowa może zawierać tylko znaki alfanumeryczne, \"_\", \"-\", \"/\" "
-"lub \".\""
+"Nazwa docelowa może zawierać tylko znaki alfanumeryczne, „_”, „-”, „/” lub "
+"„.”"
 
 #: ../plugins/am-project/amp-target.c:398
 msgid "Shared library target name must be of the form 'libxxx.la'"
-msgstr ""
-"Nazwa docelowa biblioteki współdzielonej musi być w formie \"libxxx.la\""
+msgstr "Nazwa docelowa biblioteki współdzielonej musi być w formie „libxxx.la”"
 
 #: ../plugins/am-project/amp-target.c:407
 msgid "Static library target name must be of the form 'libxxx.a'"
-msgstr "Nazwa docelowa biblioteki statycznej musi być w formie \"libxxx.a\""
+msgstr "Nazwa docelowa biblioteki statycznej musi być w formie „libxxx.a”"
 
 #: ../plugins/am-project/amp-target.c:415
 msgid "Module target name must be of the form 'xxx.la'"
-msgstr "Nazwa docelowa modułu musi być w formie \"xxx.la\""
+msgstr "Nazwa docelowa modułu musi być w formie „xxx.la”"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:1
 msgid "Automake Build"
@@ -1521,8 +1520,8 @@ msgstr "Polecenie anulowanie przez użytkownika"
 #, c-format
 msgid "Cannot compile \"%s\": No compile rule defined for this file type."
 msgstr ""
-"Nie można skompilować \"%s\": nie określono reguły kompilowania dla tego "
-"typu plików."
+"Nie można skompilować „%s”: nie określono reguły kompilowania dla tego typu "
+"plików."
 
 #: ../plugins/build-basic-autotools/build.c:1107
 #, c-format
@@ -1566,19 +1565,19 @@ msgstr "Brak obecnie otwartego pliku lub projektu."
 #: ../plugins/run-program/execute.c:73
 #, c-format
 msgid "Program '%s' is not a local file"
-msgstr "Program \"%s\" nie jest plikiem lokalnym"
+msgstr "Program „%s” nie jest plikiem lokalnym"
 
 #: ../plugins/build-basic-autotools/executer.c:298
 #: ../plugins/run-program/execute.c:79
 #, c-format
 msgid "Program '%s' does not exist"
-msgstr "Program \"%s\" nie istnieje"
+msgstr "Program „%s” nie istnieje"
 
 #: ../plugins/build-basic-autotools/executer.c:306
 #: ../plugins/run-program/execute.c:83
 #, c-format
 msgid "Program '%s' does not have execution permission"
-msgstr "Program \"%s\" nie posiada uprawnień do wykonywania"
+msgstr "Program „%s” nie posiada uprawnień do wykonywania"
 
 #: ../plugins/build-basic-autotools/executer.c:338
 msgid "No executable for this file."
@@ -1587,7 +1586,7 @@ msgstr "Brak pliku wykonywalnego dla tego pliku."
 #: ../plugins/build-basic-autotools/executer.c:344
 #, c-format
 msgid "Executable '%s' is not up-to-date."
-msgstr "Plik wykonywalny \"%s\" jest nieaktualny."
+msgstr "Plik wykonywalny „%s” jest nieaktualny."
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:1
 msgid "True if we need a special command to install files"
@@ -1608,11 +1607,11 @@ msgid ""
 "quoted command. You can use %% to get a \"%\" character. A typical value is "
 "\"sudo %s\" or \"su -c %q\"."
 msgstr ""
-"Polecenie musi zawierać \"%s\" lub \"%q\". Zostanie to zastąpione przez "
-"polecenie używane do instalacji plików, na przykład \"make install\". %s "
-"jest zastępowane przez polecenie bez żadnych zmian, podczas gdy %q jest "
-"zastępowane przez cytowane polecenie. Można użyć %%, aby uzyskać znak \"%\". "
-"Typowa wartość to \"sudo %s\" lub \"su -c %q\"."
+"Polecenie musi zawierać „%s” lub „%q”. Zostanie to zastąpione przez "
+"polecenie używane do instalacji plików, na przykład „make install”. %s jest "
+"zastępowane przez polecenie bez żadnych zmian, podczas gdy %q jest "
+"zastępowane przez cytowane polecenie. Można użyć %%, aby uzyskać znak „%”. "
+"Typowa wartość to „sudo %s” lub „su -c %q”."
 
 #. The translations should match that of 'make' program. Both strings uses
 #. * pearl regular expression
@@ -2246,7 +2245,7 @@ msgid "Patch-Style diff"
 msgstr "Różnica łaty-stylu"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "Lokalne"
 
@@ -2264,7 +2263,7 @@ msgstr "Preferencje CVS"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:7
 msgid "Path to \"cvs\" command"
-msgstr "Ścieżka do polecenia \"cvs\""
+msgstr "Ścieżka do polecenia „cvs”"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:8
 msgid "Compression Level (0=off, 10=max):"
@@ -3373,7 +3372,7 @@ msgstr "Ramka"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Plik"
@@ -3414,7 +3413,7 @@ msgstr "Polecenie"
 #: ../plugins/debug-manager/start.c:628
 #, c-format
 msgid "Unable to execute: \"%s\". The returned error was: \"%s\"."
-msgstr "Nie można wykonać: \"%s\". Zwrócony błąd: \"%s\"."
+msgstr "Nie można wykonać: „%s”. Zwrócony błąd: „%s”."
 
 #: ../plugins/debug-manager/start.c:644
 #, c-format
@@ -3579,7 +3578,7 @@ msgid ""
 "Are you sure you want to reload '%s'?\n"
 "Any unsaved changes will be lost."
 msgstr ""
-"Na pewno ponownie wczytać \"%s\"?\n"
+"Na pewno ponownie wczytać „%s”?\n"
 "Wszystkie niezapisane zmiany zostaną utracone."
 
 #: ../plugins/document-manager/action-callbacks.c:324
@@ -3646,7 +3645,7 @@ msgid ""
 "The file '%s' already exists.\n"
 "Do you want to replace it with the one you are saving?"
 msgstr ""
-"Plik \"%s\" już istnieje.\n"
+"Plik „%s” już istnieje.\n"
 "Zastąpić go tym zapisywanym?"
 
 #: ../plugins/document-manager/anjuta-docman.c:999
@@ -4276,7 +4275,7 @@ msgid "Editor syntax highlighting styles"
 msgstr "Style wyróżniania elementów składni w edytorze"
 
 #: ../plugins/document-manager/plugin.c:416
-msgid "Editor text formating"
+msgid "Editor text formatting"
 msgstr "Formatowanie tekstu w edytorze"
 
 #: ../plugins/document-manager/plugin.c:417
@@ -4328,7 +4327,7 @@ msgstr "Tryb"
 #: ../plugins/document-manager/plugin.c:1554
 #, c-format
 msgid "Autosave failed for %s"
-msgstr "Automatyczny zapis \"%s\" się nie powiódł"
+msgstr "Automatyczny zapis „%s” się nie powiódł"
 
 #: ../plugins/document-manager/plugin.c:1568
 msgid "Autosave completed"
@@ -4338,14 +4337,13 @@ msgstr "Ukończono automatyczny zapis"
 #, c-format
 msgid "Search for \"%s\" reached the end and was continued at the top."
 msgstr ""
-"Wyszukiwanie \"%s\" osiągnęło koniec pliku i zostało kontynuowane od "
-"początku."
+"Wyszukiwanie „%s” osiągnęło koniec pliku i zostało kontynuowane od początku."
 
 #: ../plugins/document-manager/search-box.c:525
 #, c-format
 msgid "Search for \"%s\" reached top and was continued at the bottom."
 msgstr ""
-"Wyszukiwanie \"%s\" osiągnęło koniec pliku i zostało kontynuowane od końca."
+"Wyszukiwanie „%s” osiągnęło koniec pliku i zostało kontynuowane od końca."
 
 #: ../plugins/document-manager/search-box.c:535
 #, c-format
@@ -4353,8 +4351,8 @@ msgid ""
 "Search for \"%s\" reached the end and was continued at the top but no new "
 "match was found."
 msgstr ""
-"Wyszukiwanie \"%s\" osiągnęło koniec pliku i zostało kontynuowane od "
-"początku, ale nie odnaleziono nowych wyników."
+"Wyszukiwanie „%s” osiągnęło koniec pliku i zostało kontynuowane od początku, "
+"ale nie odnaleziono nowych wyników."
 
 #: ../plugins/document-manager/search-box.c:540
 #, c-format
@@ -4362,14 +4360,13 @@ msgid ""
 "Search for \"%s\" reached top and was continued at the bottom but no new "
 "match was found."
 msgstr ""
-"Wyszukiwanie \"%s\" osiągnęło koniec pliku i zostało kontynuowane od końca, "
+"Wyszukiwanie „%s” osiągnęło koniec pliku i zostało kontynuowane od końca, "
 "ale nie odnaleziono nowych wyników."
 
 #: ../plugins/document-manager/search-box.c:917
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
-"Więcej opcji wyszukiwania można znaleźć w menu kontekstowym ikony \"Wyszukaj"
-"\""
+"Więcej opcji wyszukiwania można znaleźć w menu kontekstowym ikony „Wyszukaj”"
 
 #: ../plugins/document-manager/search-box.c:988
 msgid "Replace"
@@ -4419,18 +4416,18 @@ msgstr "Nie odnaleziono żadnych elementów"
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:725
 #, c-format
 msgid "No recently used resource found with URI \"%s\""
-msgstr "Nie znaleziono ostatnio używanych zasobów pod adresem URI \"%s\""
+msgstr "Nie znaleziono ostatnio używanych zasobów pod adresem URI „%s”"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:749
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:757
 #, c-format
 msgid "This function is not implemented for widgets of class '%s'"
-msgstr "Ta funkcja nie jest zaimplementowana dla widżetów klasy \"%s\""
+msgstr "Ta funkcja nie jest zaimplementowana dla widżetów klasy „%s”"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:936
 #, c-format
 msgid "Open '%s'"
-msgstr "Otwórz \"%s\""
+msgstr "Otwórz „%s”"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:966
 msgid "Unknown item"
@@ -4463,7 +4460,7 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Nie można otworzyć \"%s\".\n"
+"Nie można otworzyć „%s”.\n"
 "\n"
 "%s"
 
@@ -4479,7 +4476,7 @@ msgid ""
 "\n"
 "You may choose to try opening it with the following plugins or applications."
 msgstr ""
-"<b>Nie można otworzyć \"%s\"</b>.\n"
+"<b>Nie można otworzyć „%s”</b>.\n"
 "\n"
 "Brak wtyczki, domyślnej czynności lub programu skonfigurowanego do obsługi "
 "tego typu plików.\n"
@@ -4645,7 +4642,7 @@ msgstr "Automatyczny wybór bieżącego dokumentu"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "Globalne"
 
@@ -4671,7 +4668,7 @@ msgstr "Filtr"
 
 #: ../plugins/file-manager/file-model.c:128 ../plugins/git/anjuta-git.ui.h:34
 msgid "Loading..."
-msgstr "Wczytywanie..."
+msgstr "Wczytywanie…"
 
 #: ../plugins/file-manager/file-model.c:708
 #: ../plugins/file-manager/file-view.c:980
@@ -4686,12 +4683,12 @@ msgstr "GFile reprezentujący najczęściej wyświetlaną ścieżkę"
 #. You try to rename "/"
 #: ../plugins/file-manager/file-view.c:139
 msgid "You can't rename \"/\"!"
-msgstr "Nie można zmienić nazwy \"/\"."
+msgstr "Nie można zmienić nazwy „/”."
 
 #: ../plugins/file-manager/file-view.c:153
 msgid ""
-"An error has occured!\n"
-"Maybe you permissions're insuficient or the filename is wrong"
+"An error has occurred!\n"
+"Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
 "Wystąpił błąd.\n"
 "Być może uprawnienia są niewystarczające lub nazwa pliku jest błędna"
@@ -4872,8 +4869,7 @@ msgstr "Wystąpił błąd podczas uruchamiania debugera.\n"
 
 #: ../plugins/gdb/debugger.c:1162
 msgid "Make sure 'gdb' is installed on the system.\n"
-msgstr ""
-"Proszę upewnić się, że program \"gdb\" jest zainstalowany w systemie.\n"
+msgstr "Proszę upewnić się, że program „gdb” jest zainstalowany w systemie.\n"
 
 #: ../plugins/gdb/debugger.c:1483
 msgid "Program exited normally\n"
@@ -5015,7 +5011,7 @@ msgstr ""
 "ładnych wskaźników:\n"
 "%s\n"
 "Należy samemu wypełnić kolumny funkcji rejestru przed włączeniem wierszy. "
-"Zazwyczaj nazwy funkcji rejestru zawierają słowo \"register\"."
+"Zazwyczaj nazwy funkcji rejestru zawierają słowo „register”."
 
 #: ../plugins/gdb/preferences.c:223
 msgid "Select a pretty printer file"
@@ -5054,7 +5050,7 @@ msgstr "OK"
 
 #: ../plugins/git/anjuta-git.ui.h:5
 msgid "Add signed off by line"
-msgstr "Dodaj wiersz \"signed off by\""
+msgstr "Dodaj wiersz „signed-off-by”"
 
 #: ../plugins/git/anjuta-git.ui.h:6
 msgid "Squash"
@@ -5090,7 +5086,7 @@ msgstr "Wyświetla wydanie źródła w komunikacie dziennika"
 
 #: ../plugins/git/anjuta-git.ui.h:16
 msgid "Append signed-off-by line"
-msgstr "Dodaj wiersz \"signed-off-by\""
+msgstr "Dodaj wiersz „signed-off-by”"
 
 #: ../plugins/git/anjuta-git.ui.h:17
 #: ../plugins/subversion/anjuta-subversion.ui.h:12
@@ -5121,7 +5117,7 @@ msgstr "Nazwa gałęzi:"
 #: ../plugins/git/anjuta-git.ui.h:24
 msgid "Repository head; Drop or type a different revision here"
 msgstr ""
-"\"head\" repozytorium; w tym miejscu należy umieścić lub wpisać inne wydanie"
+"„head” repozytorium; w tym miejscu należy umieścić lub wpisać inne wydanie"
 
 #: ../plugins/git/anjuta-git.ui.h:25
 #: ../plugins/subversion/subversion-log-dialog.c:151
@@ -5216,8 +5212,7 @@ msgstr "Własny komunikat dziennika:"
 #: ../plugins/git/anjuta-git.ui.h:47
 msgid "Repository origin; Drop or type a different revision here"
 msgstr ""
-"\"origin\" repozytorium; w tym miejscu należy umieścić lub wpisać inne "
-"wydanie"
+"„origin” repozytorium; w tym miejscu należy umieścić lub wpisać inne wydanie"
 
 #: ../plugins/git/anjuta-git.ui.h:48
 msgid "Generate patches relative to:"
@@ -5478,7 +5473,7 @@ msgid ""
 "No remote selected; using origin by default.\n"
 "To push to a different remote, select one from the Remotes list above."
 msgstr ""
-"Nie wybrano zdalnego; używanie domyślnego \"origin\".\n"
+"Nie wybrano zdalnego; używanie domyślnego „origin”.\n"
 "Aby wysłać inne zdalne, należy wybrać je z listy Zdalne powyżej."
 
 #: ../plugins/git/git-reset-pane.c:176
@@ -5783,7 +5778,7 @@ msgstr ""
 
 #: ../plugins/git/plugin.c:521
 msgid "Reset..."
-msgstr "Przywróć..."
+msgstr "Przywróć…"
 
 #: ../plugins/git/plugin.c:533
 msgid "Switch"
@@ -5791,19 +5786,19 @@ msgstr "Przełącz"
 
 #: ../plugins/git/plugin.c:541
 msgid "Delete..."
-msgstr "Usuń..."
+msgstr "Usuń…"
 
 #: ../plugins/git/plugin.c:549
 msgid "Merge..."
-msgstr "Scal..."
+msgstr "Scal…"
 
 #: ../plugins/git/plugin.c:561
 msgid "Push..."
-msgstr "Wyślij..."
+msgstr "Wyślij…"
 
 #: ../plugins/git/plugin.c:569
 msgid "Pull..."
-msgstr "Pobierz..."
+msgstr "Pobierz…"
 
 #: ../plugins/git/plugin.c:589
 msgid "Apply"
@@ -5861,7 +5856,7 @@ msgstr "Zdalne"
 #: ../plugins/glade/anjuta-design-document.c:201
 #, c-format
 msgid "Glade project '%s' saved"
-msgstr "Zapisano projekt Glade \"%s\""
+msgstr "Zapisano projekt Glade „%s”"
 
 #: ../plugins/glade/anjuta-design-document.c:181
 #: ../plugins/glade/anjuta-design-document.c:208
@@ -6024,12 +6019,12 @@ msgstr "Buduje i uruchamia programy w środowisku JHBuild"
 
 #: ../plugins/jhbuild/plugin.c:121
 msgid "Failed to run \"jhbuild run\""
-msgstr "Wykonanie polecenia \"jhbuild run\" się nie powiodło"
+msgstr "Wykonanie polecenia „jhbuild run” się nie powiodło"
 
 #: ../plugins/jhbuild/plugin.c:127
 #, c-format
 msgid "Failed to run \"jhbuild run\" (%s)"
-msgstr "Wykonanie polecenia \"jhbuild run\" się nie powiodło (%s)"
+msgstr "Wykonanie polecenia „jhbuild run” się nie powiodło (%s)"
 
 #: ../plugins/jhbuild/plugin.c:172
 msgid "Could not find the JHBuild install prefix."
@@ -6144,13 +6139,13 @@ msgstr "Dodawanie spacji po automatycznym uzupełnieniu wywołania funkcji"
 #: ../plugins/language-support-vala/anjuta-vala.ui.h:3
 #: ../plugins/parser-cxx/anjuta-parser-cxx.ui.h:3
 msgid "Add '(' after function call autocompletion"
-msgstr "Dodawanie \"(\" po automatycznym uzupełnieniu wywołania funkcji"
+msgstr "Dodawanie „(” po automatycznym uzupełnieniu wywołania funkcji"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:4
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:4
 #: ../plugins/parser-cxx/anjuta-parser-cxx.ui.h:4
 msgid "Add ')' after function call autocompletion"
-msgstr "Dodawanie \")\" po automatycznym uzupełnieniu wywołania funkcji"
+msgstr "Dodawanie „)” po automatycznym uzupełnieniu wywołania funkcji"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:5
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:5
@@ -6235,10 +6230,10 @@ msgid ""
 "aren't installed. Both are required for autocompletion in python files.\n"
 "Please install them and check the python path in the preferences."
 msgstr ""
-"Ścieżka do pliku wykonywalnego \"python\" jest błędna lub biblioteki\n"
+"Ścieżka do pliku wykonywalnego „python” jest błędna lub biblioteki\n"
 "python-rope (http://rope.sf.net) nie są zainstalowane. Oba te pliki są\n"
 "wymagane do automatycznego uzupełniania w plikach języka Python. Proszę je\n"
-"zainstalować i sprawdzić ścieżkę do pliku \"python\" w preferencjach."
+"zainstalować i sprawdzić ścieżkę do pliku „python” w preferencjach."
 
 #: ../plugins/language-support-python/plugin.c:84
 msgid "Do not show that warning again"
@@ -6559,7 +6554,7 @@ msgstr "Projekt z istniejących źródeł"
 #: ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
-msgstr "Plik o nazwie \"%s\" już istnieje. Zastąpić go?"
+msgstr "Plik o nazwie „%s” już istnieje. Zastąpić go?"
 
 #: ../plugins/project-import/plugin.c:224
 #, c-format
@@ -6567,7 +6562,7 @@ msgid ""
 "A file named \"%s\" cannot be written: %s. Check if you have write access to "
 "the project directory."
 msgstr ""
-"Plik o nazwie \"%s\" nie może zostać zapisany: %s. Proszę sprawdzić, czy "
+"Plik o nazwie „%s” nie może zostać zapisany: %s. Proszę sprawdzić, czy "
 "użytkownik ma prawa zapisu do katalogu projektu."
 
 #: ../plugins/project-import/plugin.c:285
@@ -6590,7 +6585,7 @@ msgstr ""
 #, c-format
 msgid ""
 "Couldn't check out the supplied URI \"%s\". The error returned was: \"%s\""
-msgstr "Nie można sprawdzić podanego adresu URI \"%s\". Zwrócony błąd: \"%s\""
+msgstr "Nie można sprawdzić podanego adresu URI „%s”. Zwrócony błąd: „%s”"
 
 #: ../plugins/project-import/project-import-dialog.c:310
 msgid "Import project"
@@ -6767,7 +6762,7 @@ msgid ""
 "Are you sure you want to remove the group \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Na pewno usunąć grupę \"%s\" z projektu?\n"
+"Na pewno usunąć grupę „%s” z projektu?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:696
@@ -6776,7 +6771,7 @@ msgid ""
 "Are you sure you want to remove the target \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Na pewno usunąć obiekt docelowy \"%s\" z projektu?\n"
+"Na pewno usunąć obiekt docelowy „%s” z projektu?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:699
@@ -6785,7 +6780,7 @@ msgid ""
 "Are you sure you want to remove the source \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Na pewno usunąć plik źródłowy \"%s\" z projektu?\n"
+"Na pewno usunąć plik źródłowy „%s” z projektu?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:702
@@ -6794,7 +6789,7 @@ msgid ""
 "Are you sure you want to remove the shortcut \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Na pewno usunąć skrót \"%s\" z projektu?\n"
+"Na pewno usunąć skrót „%s” z projektu?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:706
@@ -6803,7 +6798,7 @@ msgid ""
 "Are you sure you want to remove the module \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Na pewno usunąć moduł \"%s\" z projektu?\n"
+"Na pewno usunąć moduł „%s” z projektu?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:709
@@ -6812,7 +6807,7 @@ msgid ""
 "Are you sure you want to remove the package \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Na pewno usunąć pakiet \"%s\" z projektu?\n"
+"Na pewno usunąć pakiet „%s” z projektu?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:712
@@ -6821,7 +6816,7 @@ msgid ""
 "Are you sure you want to remove the element \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Na pewno usunąć element \"%s\" z projektu?\n"
+"Na pewno usunąć element „%s” z projektu?\n"
 "\n"
 
 #. Translator: there is at least 2 elements to remove
@@ -6869,7 +6864,7 @@ msgid ""
 "Failed to remove '%s':\n"
 "%s"
 msgstr ""
-"Usunięcie \"%s\" się nie powiodło:\n"
+"Usunięcie „%s” się nie powiodło:\n"
 "%s"
 
 #: ../plugins/project-manager/plugin.c:867
@@ -6992,7 +6987,7 @@ msgstr "Zaktualizuj widok projektu…"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "Projekt"
 
@@ -7187,7 +7182,7 @@ msgid ""
 "Field \"%s\" is mandatory. Please enter it."
 msgstr ""
 "\n"
-"Pole \"%s\" jest obowiązkowe. Proszę je wypełnić."
+"Pole „%s” jest obowiązkowe. Proszę je wypełnić."
 
 #: ../plugins/project-wizard/druid.c:727
 #, c-format
@@ -7196,8 +7191,8 @@ msgid ""
 "\"#$:%%+,.=@^_`~\". In addition you cannot have a leading dash. Please fix "
 "it."
 msgstr ""
-"Pole \"%s\" może zawierać tylko litery, cyfry lub następujące znaki: \"#$:%%"
-"+,.=@^_`~\". Dodatkowo nie może zaczynać się od kreski. Proszę je naprawić."
+"Pole „%s” może zawierać tylko litery, cyfry lub następujące znaki: „#$:%%+,."
+"=@^_`~”. Dodatkowo nie może zaczynać się od kreski. Proszę je naprawić."
 
 #: ../plugins/project-wizard/druid.c:732
 #, c-format
@@ -7206,8 +7201,8 @@ msgid ""
 "$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a "
 "leading dash. Please fix it."
 msgstr ""
-"Pole \"%s\" może zawierać tylko litery, cyfry oraz znaki \"#$:%%+,.=@^_`~\" "
-"i separatory katalogów. Dodatkowo nie może zaczynać się od kreski. Proszę je "
+"Pole „%s” może zawierać tylko litery, cyfry oraz znaki „#$:%%+,.=@^_`~” i "
+"separatory katalogów. Dodatkowo nie może zaczynać się od kreski. Proszę je "
 "naprawić."
 
 #: ../plugins/project-wizard/druid.c:737
@@ -7216,8 +7211,8 @@ msgid ""
 "Field \"%s\" must contains only ASCII printable characters, no accentuated "
 "characters by example. Please fix it."
 msgstr ""
-"Pole \"%s\" może zawierać tylko znaki ASCII, bez znaków akcentowanych. "
-"Proszę je naprawić."
+"Pole „%s” może zawierać tylko znaki ASCII, bez znaków akcentowanych. Proszę "
+"je naprawić."
 
 #: ../plugins/project-wizard/druid.c:742
 #, c-format
@@ -7230,13 +7225,13 @@ msgid ""
 "Directory \"%s\" is not empty. Project creation could fail if some files "
 "cannot be written. Do you want to continue?"
 msgstr ""
-"Katalog \"%s\" nie jest pusty. Utworzenie projektu może się nie powieść, "
-"jeśli pliki nie będą mogły zostać zapisane. Kontynuować?"
+"Katalog „%s” nie jest pusty. Utworzenie projektu może się nie powieść, jeśli "
+"pliki nie będą mogły zostać zapisane. Kontynuować?"
 
 #: ../plugins/project-wizard/druid.c:771
 #, c-format
 msgid "File \"%s\" already exists. Do you want to overwrite it?"
-msgstr "Plik \"%s\" już istnieje. Zastąpić go?"
+msgstr "Plik „%s” już istnieje. Zastąpić go?"
 
 #: ../plugins/project-wizard/druid.c:804
 msgid "Invalid entry"
@@ -7293,8 +7288,8 @@ msgstr ""
 "Brakujące programy są zwykle częścią pakietów dystrybucji i mogą zostać "
 "wyszukiwane za pomocą Menedżera programów. Pakiety programistyczne również "
 "znajdują się w specjalnych pakietach, pozwalających na rozwijanie projektów, "
-"które są na nich oparte. Zwykle mają one przyrostek \"-dev\" lub \"-devel\" "
-"w nazwie i mogą zostać wyszukiwane za pomocą Menedżera programów."
+"które są na nich oparte. Zwykle mają one przyrostek „-dev” lub „-devel” w "
+"nazwie i mogą zostać wyszukiwane za pomocą Menedżera programów."
 
 #: ../plugins/project-wizard/druid.c:1015
 msgid "Missing components"
@@ -8036,8 +8031,8 @@ msgid ""
 "'libgnomeui-2.0 >= 2.2.0'"
 msgstr ""
 "Proszę nadać nazwę pakietowi wymaganemu przez projekt. Można także zamieścić "
-"informację o wymaganej wersji pakietu. Na przykład \"libgnomeui-2.0\" lub "
-"\"libgnomeui-2.0 >= 2.2.0\""
+"informację o wymaganej wersji pakietu. Na przykład „libgnomeui-2.0” lub "
+"„libgnomeui-2.0 >= 2.2.0”"
 
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:1
 msgid "GTKmm (Simple)"
@@ -8173,7 +8168,7 @@ msgid "Require SDL version:"
 msgstr "Wymagana wersja biblioteki SDL:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-msgid "Mininum SDL version required"
+msgid "Minimum SDL version required"
 msgstr "Minimalna wymagana wersja biblioteki SDL"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
@@ -8259,7 +8254,7 @@ msgstr ""
 
 #: ../plugins/quick-open/anjuta-quick-open.ui.h:1
 msgid "Loading files..."
-msgstr "Wczytywanie plików..."
+msgstr "Wczytywanie plików…"
 
 #: ../plugins/quick-open/plugin.c:221
 msgid "Quick open"
@@ -8309,7 +8304,7 @@ msgstr "Wybór katalogu roboczego"
 #: ../plugins/run-program/execute.c:110
 #, c-format
 msgid "Program directory '%s' is not local"
-msgstr "Katalog programu \"%s\" nie jest lokalny"
+msgstr "Katalog programu „%s” nie jest lokalny"
 
 #: ../plugins/run-program/parameters.c:180
 msgid "Load Target to run"
@@ -8481,7 +8476,7 @@ msgid ""
 "\"_\"!"
 msgstr ""
 "<b>Błąd:</b> klawisz przełączenia może zawierać tylko znaki alfanumeryczne i "
-"\"_\"."
+"„_”."
 
 #: ../plugins/snippets-manager/snippets-editor.c:51
 msgid "<b>Error:</b> You haven't entered a trigger key for the snippet!"
@@ -8528,7 +8523,7 @@ msgid ""
 msgstr ""
 "Klawisz przełączenia jest używany do szybkiego umieszczania wstawek. Aby "
 "umieścić wstawkę, należy nacisnąć klawisz przełączenia w edytorze, "
-"poprzedzony skrótem \"Szybkie wstawienie\".\n"
+"poprzedzony skrótem „Szybkie wstawienie”.\n"
 "<b>Ostrzeżenie: klawisz musi być unikalny w obrębie języka. </b>"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:11
@@ -8726,8 +8721,7 @@ msgid ""
 "The file \"%s\" on the disk is more recent than the current buffer.\n"
 "Do you want to reload it?"
 msgstr ""
-"Plik \"%s\" na dysku jest nowszy niż plik znajdujący się w bieżącym "
-"buforze.\n"
+"Plik „%s” na dysku jest nowszy niż plik znajdujący się w bieżącym buforze.\n"
 "Wczytać go ponownie?"
 
 #: ../plugins/sourceview/sourceview.c:661
@@ -8736,7 +8730,7 @@ msgid ""
 "The file \"%s\" has been deleted on the disk.\n"
 "Do you want to close it?"
 msgstr ""
-"Plik \"%s\" został usunięty z dysku.\n"
+"Plik „%s” został usunięty z dysku.\n"
 "Zamknąć go?"
 
 #. Could not open <filename>: <error message>
@@ -8748,7 +8742,7 @@ msgstr "Nie można otworzyć %s: %s"
 #: ../plugins/sourceview/sourceview.c:745
 #, c-format
 msgid "The file \"%s\" is read-only! Edit anyway?"
-msgstr "Plik \"%s\" jest tylko do odczytu. Modyfikować mimo to?"
+msgstr "Plik „%s” jest tylko do odczytu. Modyfikować mimo to?"
 
 #. Could not open <filename>: <error message>
 #: ../plugins/sourceview/sourceview.c:804
@@ -8906,7 +8900,7 @@ msgstr "Kopia robocza"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:22
 msgid "Repository Head"
-msgstr "\"head\" repozytorium"
+msgstr "„head” repozytorium"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:23
 msgid "Other Revision:"
@@ -9235,7 +9229,7 @@ msgstr "Proszę wprowadzić ścieżkę docelową."
 
 #: ../plugins/subversion/subversion-diff-dialog.c:46
 msgid "[Head/Working Copy]"
-msgstr "[\"head\"/Kopia robocza]"
+msgstr "[„head”/Kopia robocza]"
 
 #: ../plugins/subversion/subversion-diff-dialog.c:61
 #: ../plugins/subversion/subversion-log-dialog.c:426
@@ -9469,27 +9463,27 @@ msgstr[0] "Przeskanowano %d plik z %d"
 msgstr[1] "Przeskanowano %d pliki z %d"
 msgstr[2] "Przeskanowano %d plików z %d"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "Wypełnianie bazy danych symboli…"
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "Symbole"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "Wyszukiwanie"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
 msgstr "Czynności wyskakujące bazy danych symboli"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
 msgstr "Czynności menu bazy danych symboli"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Baza danych symboli"
@@ -9617,7 +9611,7 @@ msgstr "Lista zmiennych"
 #: ../plugins/tools/dialog.c:178
 #, c-format
 msgid "Are you sure you want to delete the '%s' tool?"
-msgstr "Na pewno usunąć narzędzie \"%s\"?"
+msgstr "Na pewno usunąć narzędzie „%s”?"
 
 #: ../plugins/tools/dialog.c:344
 msgid "Tool"
@@ -9719,7 +9713,7 @@ msgstr "Brak nazwy narzędzia"
 #: ../plugins/tools/fileop.c:258
 #, c-format
 msgid "Unexpected element \"%s\""
-msgstr "Nieoczekiwany element \"%s\""
+msgstr "Nieoczekiwany element „%s”"
 
 #: ../plugins/tools/fileop.c:537
 msgid "Error when loading external tools"
@@ -9911,7 +9905,7 @@ msgstr "_Preferencje"
 
 #: ../src/anjuta-actions.h:33
 msgid "Do you prefer coffee to tea? Check it out."
-msgstr "Wolisz kawę czy herbatę? Sprawdź to."
+msgstr "Wolisz kawę czy herbatę? Zobacz sam."
 
 #: ../src/anjuta-actions.h:38
 msgid "_View"
@@ -10057,7 +10051,7 @@ msgstr "PLIK_PROFILU"
 
 #: ../src/anjuta-application.c:436
 msgid "- Integrated Development Environment"
-msgstr "- zintegrowane środowisko programistyczne"
+msgstr "— zintegrowane środowisko programistyczne"
 
 #: ../src/anjuta-application.c:776
 #, c-format
