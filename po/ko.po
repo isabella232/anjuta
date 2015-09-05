@@ -5,15 +5,15 @@
 # Seongchong Park <lostinu@kaist.ac.kr>, 2004
 #           by Takeshi Aihana <aihana@gnome.gr.jp>, 2001-2003.
 # Namhyung Kim <namhyung@gmail.com>, 2007
-# Seong-ho Cho <darkcircle.0426@gmail.com>, 2012, 2013, 2014.
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2012-2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-09-09 14:44+0000\n"
-"PO-Revision-Date: 2014-09-07 18:22+0900\n"
+"POT-Creation-Date: 2015-09-04 07:56+0000\n"
+"PO-Revision-Date: 2015-09-04 23:00+0900\n"
 "Last-Translator: Seong-ho Cho <shcho@gnome.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
@@ -656,7 +656,7 @@ msgstr ""
 #. Try xterm
 #: ../libanjuta/anjuta-utils.c:1214
 msgid "Cannot find a terminal; using xterm, even if it may not work"
-msgstr "터미널을 찾을 수 없습니다; 동작하지 않는다면 xterm을 사용합니다"
+msgstr "터미널을 찾을 수 없습니다. 동작하지 않는다면 xterm을 사용합니다"
 
 #: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
 #, c-format
@@ -749,7 +749,7 @@ msgstr ""
 #: ../plugins/mk-project/mk-project.c:876
 #, c-format
 msgid "Project doesn't exist or invalid path"
-msgstr "프로젝트가 존재하지 않거나 경로가 잘못되었습니다"
+msgstr "프로젝트가 없거나 경로가 잘못되었습니다"
 
 #: ../plugins/am-project/am-project.c:90
 msgid "Root"
@@ -832,7 +832,7 @@ msgstr "프로젝트 파일을 해석할 수 없습니다"
 #: ../plugins/am-project/am-project.c:1721
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
-msgstr "프로젝트가 존재하지 않거나 잘못된 경로를 넣었습니다"
+msgstr "프로젝트가 없거나 잘못된 경로를 넣었습니다"
 
 #: ../plugins/am-project/am-project.plugin.in.h:1
 msgid "Autotools backend"
@@ -1285,11 +1285,11 @@ msgstr "접두어 사용하지 않음:"
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
-"시스템 프로그램을 덮어쓰는 것을 방지하려면, 선택적 접두어를 사용하여 타겟의 "
-"이름을 바꾸지 않습니다."
+"시스템 프로그램 덮어쓰기를 막으려면, 선택적 접두어를 사용하여 타겟의 이름을 "
+"바꾸지 마십시오."
 
 #: ../plugins/am-project/am-properties.c:483
 #: ../plugins/am-project/am-properties.c:658
@@ -1517,7 +1517,7 @@ msgstr "'%s' 프로그램은 로컬 파일이 아닙니다"
 #: ../plugins/run-program/execute.c:79
 #, c-format
 msgid "Program '%s' does not exist"
-msgstr "'%s' 프로그램이 존재하지 않습니다"
+msgstr "'%s' 프로그램이 없습니다"
 
 #: ../plugins/build-basic-autotools/executer.c:306
 #: ../plugins/run-program/execute.c:83
@@ -2187,7 +2187,7 @@ msgid "Patch-Style diff"
 msgstr "패치 방식 diff"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "지역"
 
@@ -2389,7 +2389,7 @@ msgstr "공급자 태그:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:49
 msgid "Release tag:"
-msgstr "릴리즈 태그:"
+msgstr "릴리스 태그:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:50
 msgid "Module Details:"
@@ -2441,7 +2441,7 @@ msgstr "Vendor"
 
 #: ../plugins/cvs-plugin/cvs-callbacks.c:442
 msgid "Release"
-msgstr "릴리즈"
+msgstr "릴리스"
 
 #: ../plugins/cvs-plugin/cvs-callbacks.c:458
 msgid "Are you sure that you do not want a log message?"
@@ -3305,7 +3305,7 @@ msgstr "프레임"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "파일"
@@ -4207,7 +4207,7 @@ msgid "Editor syntax highlighting styles"
 msgstr "편집기 문법 강조 스타일"
 
 #: ../plugins/document-manager/plugin.c:416
-msgid "Editor text formating"
+msgid "Editor text formatting"
 msgstr "편집기 텍스트 서식"
 
 #: ../plugins/document-manager/plugin.c:417
@@ -4571,7 +4571,7 @@ msgstr "현재 문서를 자동으로 선택"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "전역"
 
@@ -4616,8 +4616,8 @@ msgstr "\"/\"의 이름을 바꿀 수 없습니다!"
 
 #: ../plugins/file-manager/file-view.c:153
 msgid ""
-"An error has occured!\n"
-"Maybe you permissions're insuficient or the filename is wrong"
+"An error has occurred!\n"
+"Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
 "오류가 발생했습니다!\n"
 "권한이 없거나 파일 이름이 잘못되었을지도 모릅니다"
@@ -6879,8 +6879,8 @@ msgid ""
 "Failed to parse project (the project is opened, but there will be no project "
 "view) %s: %s\n"
 msgstr ""
-"프로젝트를 분석할 수 없습니다(프로젝트을 열었지만, 프로젝트 보기가 존재하지 "
-"않습니다) %s: %s\n"
+"프로젝트를 분석할 수 없습니다(프로젝트을 열었지만, 프로젝트 보기가 없습니다) "
+"%s: %s\n"
 
 #: ../plugins/project-manager/plugin.c:1321
 msgid "Update project view…"
@@ -6891,7 +6891,7 @@ msgstr "프로젝트 보기 업데이트…"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "프로젝트"
 
@@ -8058,8 +8058,8 @@ msgid "Require SDL version:"
 msgstr "필요한 SDL 버전:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-msgid "Mininum SDL version required"
-msgstr "필요한 최소 SDL 버전"
+msgid "Minimum SDL version required"
+msgstr "최소 SDL 버전 정보가 필요합니다"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
 msgid "Require SDL_image:"
@@ -9341,27 +9341,27 @@ msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
 msgstr[0] "파일 %2$d개 중 %1$d개를 검색했습니다"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "심볼 데이터베이스 이동 중…"
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "심볼"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "검색"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
 msgstr "SymbolDb 팝업 동작"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
 msgstr "SymbolDb 메뉴 동작"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "심볼 데이터베이스"
@@ -9587,7 +9587,7 @@ msgstr "%s 입력 파일을 열 수 없어 명령을 중지했습니다"
 
 #: ../plugins/tools/fileop.c:248
 msgid "Missing tool name"
-msgstr "도구 이름이 존재하지 않습니다"
+msgstr "도구 이름이 없습니다"
 
 #: ../plugins/tools/fileop.c:258
 #, c-format
@@ -9958,7 +9958,7 @@ msgstr "바로 가기"
 #: ../src/anjuta-window.c:1074
 #, c-format
 msgid "Value doesn't exist"
-msgstr "값이 존재하지 않습니다"
+msgstr "값이 없습니다"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
 msgid "Default email used in new project"
