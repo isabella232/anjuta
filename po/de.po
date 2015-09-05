@@ -31,25 +31,26 @@
 # Andre Klapper <ak-47@gmx.net>, 2007.
 # Philipp Kerling <k.philipp@gmail.com>, 2008.
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2010-2013.
-# Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2011.
+# Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2011, 2015.
 # Christian Kirbach <christian.kirbach@gmail.com>, 2008-2010, 2011, 2012, 2013.
 # Alexander Wilms <f.alexander.wilms+spam@gmail.com>, 2013.
+# Wolfgang Stöggl <c72578@yahoo.de>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-09-19 02:44+0000\n"
-"PO-Revision-Date: 2014-09-19 19:34+0100\n"
-"Last-Translator: Benjamin Steinwender <b@stbe.at>\n"
+"POT-Creation-Date: 2015-09-05 02:42+0000\n"
+"PO-Revision-Date: 2015-09-05 08:06+0200\n"
+"Last-Translator: Wolfgang Stoeggl <c72578@yahoo.de>\n"
 "Language-Team: German <>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.8.4\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -524,7 +525,7 @@ msgstr "Laden:"
 
 #: ../libanjuta/anjuta-preferences-dialog.c:99
 msgid "Category"
-msgstr "Kategory"
+msgstr "Kategorie"
 
 #. FIXME: Make the general page first
 #: ../libanjuta/anjuta-preferences-dialog.c:142
@@ -1279,7 +1280,7 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:964
 msgid "Additional Yacc or Bison parser generator flags for this target."
 msgstr ""
-"Zusätzliche Generator-Flags für die Yac- und Bison-Parser für dieses Ziel."
+"Zusätzliche Generator-Flags für die Yacc- und Bison-Parser für dieses Ziel."
 
 #: ../plugins/am-project/am-properties.c:444
 #: ../plugins/am-project/am-properties.c:619
@@ -1557,8 +1558,7 @@ msgstr "Wählen Sie einen Erstellungsordner innerhalb des Projektordners"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
-#: ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "Vorgabe"
 
@@ -1676,8 +1676,7 @@ msgstr "Verlasse: %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
-#: ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "Warnung:"
 
@@ -1690,8 +1689,7 @@ msgstr "Warnung: -old"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
-#: ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "Fehler:"
 
@@ -2205,8 +2203,7 @@ msgstr "Typ"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "Argumente"
 
@@ -2271,7 +2268,7 @@ msgid "Patch-Style diff"
 msgstr "Diff im Patch-Stil"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "Lokal"
 
@@ -2786,8 +2783,7 @@ msgid "Shared libraries"
 msgstr "Gemeinsam verwendete Bibliotheken"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937
-#: ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Kernelsignale"
 
@@ -3094,15 +3090,13 @@ msgstr "Geladen"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "Programm a_nhalten"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Ausführung des Programms anhalten"
 
@@ -3192,35 +3186,29 @@ msgstr "Zusätzliche Ordner mit Quelldateien hinzufügen"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913
-#: ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "Fehlerdiagnose-Befehl …"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Benutzerdefinierter Fehlerdiagnose-Befehl"
 
-#: ../plugins/debug-manager/plugin.c:921
-#: ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Info"
 
-#: ../plugins/debug-manager/plugin.c:929
-#: ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Gemeinsam verwendete Bibliotheken"
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Zuordnungen der gemeinsam verwendeten Bibliotheken anzeigen"
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Kernelsignale anzeigen"
 
@@ -3399,7 +3387,7 @@ msgstr "Frame"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Datei"
@@ -4685,7 +4673,7 @@ msgstr "Das aktuelle Dokument automatisch auswählen"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "Global"
 
@@ -4734,7 +4722,7 @@ msgid ""
 "Maybe you permissions're insuficient or the filename is wrong"
 msgstr ""
 "Ein Fehler ist aufgetreten.\n"
-"Möglicherweise haben sie keine Zugriffsrechte oder der Dateiname ist falsch."
+"Möglicherweise haben Sie keine Zugriffsrechte oder der Dateiname ist falsch."
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
@@ -4913,7 +4901,7 @@ msgstr "Beim Starten der Fehlerdiagnose ist ein Fehler aufgetreten.\n"
 #: ../plugins/gdb/debugger.c:1162
 msgid "Make sure 'gdb' is installed on the system.\n"
 msgstr ""
-"Sie sollten sicher stellen, dass »gdb« auf Ihrem Rechner installiert ist.\n"
+"Sie sollten sicherstellen, dass »gdb« auf Ihrem Rechner installiert ist.\n"
 
 #: ../plugins/gdb/debugger.c:1483
 msgid "Program exited normally\n"
@@ -5123,7 +5111,7 @@ msgstr "Zweige"
 
 #: ../plugins/git/anjuta-git.ui.h:14
 msgid "Commit to cherry pick:"
-msgstr "Handlese zum Einspielen:"
+msgstr "Handlese (cherry pick) zum Einspielen:"
 
 #: ../plugins/git/anjuta-git.ui.h:15
 msgid "Show source revision in log message"
@@ -5398,8 +5386,8 @@ msgstr "Bitte geben Sie eine Revision ein."
 msgid "Cherry Pick"
 msgstr "Handverlesen"
 
-#: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
+#: ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "Bitte geben Sie eine Protokollmeldung an."
 
@@ -5765,7 +5753,7 @@ msgstr "Revisionswerkzeuge"
 
 #: ../plugins/git/plugin.c:377 ../plugins/git/plugin.c:497
 msgid "Show commit diff"
-msgstr "Eingespielte Änderungen  als Diff zeigen"
+msgstr "Eingespielte Änderungen als Diff zeigen"
 
 #: ../plugins/git/plugin.c:378
 msgid "Show a diff of the selected revision"
@@ -6094,7 +6082,7 @@ msgid ""
 "Could not find the JHBuild library directory. You need JHBuild from "
 "2012-11-06 or later."
 msgstr ""
-"Der Bibliothkesordner von JHBuild konnte nicht gefunden werden. Sie "
+"Der Bibliotheksordner von JHBuild konnte nicht gefunden werden. Sie "
 "benötigen JHBuild vom 6.11.2012 oder neuer."
 
 #: ../plugins/jhbuild/plugin.c:198
@@ -6102,8 +6090,7 @@ msgstr ""
 msgid "Failed to activate the JHBuild Plugin: %s"
 msgstr "Die JHBuild-Komponente konnte nicht aktiviert werden: %s"
 
-#: ../plugins/js-debugger/debugger-js.c:548
-#: ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "Fehler: Port kann nicht belegt werden"
 
@@ -6611,8 +6598,7 @@ msgstr "Ein bereits existierendes Autotools-Projekt in Anjuta importieren"
 msgid "Project from Existing Sources"
 msgstr "Projekt aus vorhandenen Quellen"
 
-#: ../plugins/project-import/plugin.c:82
-#: ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "Die Datei »%s« existiert bereits. Soll sie überschrieben werden?"
@@ -6843,7 +6829,7 @@ msgid ""
 "Are you sure you want to remove the source \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Sind Sie sicher, dass die Quelldatei  »%s« aus dem Projekt entfernt werden "
+"Sind Sie sicher, dass die Quelldatei »%s« aus dem Projekt entfernt werden "
 "soll?\n"
 "\n"
 
@@ -7050,7 +7036,7 @@ msgstr "Projektansicht aktualisieren …"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "Projekt"
 
@@ -7684,7 +7670,7 @@ msgstr "Komponente besitzt Menüs und/oder Werkzeugleisten"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:26
 msgid "Whether the plugin has menus or toolbars"
-msgstr "Legt fest, ob die Komponente Menüs or Werkzeugleisten besitzt"
+msgstr "Legt fest, ob die Komponente Menüs oder Werkzeugleisten besitzt"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:27
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:17
@@ -8518,12 +8504,12 @@ msgstr "Sprachen"
 #. Insert the Add Snippet menu item
 #: ../plugins/snippets-manager/snippets-browser.c:809
 msgid "Add Snippet…"
-msgstr "Schnipsel hinzufügen…"
+msgstr "Schnipsel hinzufügen …"
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
 msgid "Add Snippets Group…"
-msgstr "Schnipselgruppe hinzufügen…"
+msgstr "Schnipselgruppe hinzufügen …"
 
 #: ../plugins/snippets-manager/snippets-editor.c:39
 msgid "Default value"
@@ -8673,7 +8659,7 @@ msgstr "Breite des Tabulators in Leerzeichen:"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:3
 msgid "Indentation size in spaces:"
-msgstr "Einrückungweite in Leerzeichen:"
+msgstr "Einrückungsweite in Leerzeichen:"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:4
 msgid "Indentation and auto-format options"
@@ -9537,27 +9523,27 @@ msgid_plural "%d files scanned out of %d"
 msgstr[0] "%d Datei von %d durchsucht"
 msgstr[1] "%d Dateien von %d durchsucht"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "Symbol-Datenbank wird erstellt …"
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "Symbole"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "Suchen"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
 msgstr "Aktionen im Kontextmenü der Symbol-Datenbank"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
 msgstr "Symbol-Datenbank Aktionen"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Symboldatenbank"
@@ -9804,7 +9790,7 @@ msgstr "Werkzeug-Funktionen"
 
 #: ../plugins/tools/tool.c:81
 msgid "Same as output"
-msgstr "Das Selbe wie die Ausgabe"
+msgstr "Dasselbe wie die Ausgabe"
 
 #: ../plugins/tools/tool.c:82
 msgid "Existing message pane"
