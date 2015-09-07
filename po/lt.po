@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the anjuta package.
 #
 # Gintautas Miliauskas <gintas@akl.lt>, 2008.
-# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014.
+# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-06-28 14:44+0000\n"
-"PO-Revision-Date: 2014-06-28 22:11+0300\n"
+"POT-Creation-Date: 2015-09-07 02:49+0000\n"
+"PO-Revision-Date: 2015-09-07 17:32+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -617,11 +617,11 @@ msgid "Shortcut"
 msgstr "Trumpinys"
 
 #. Avoid space in translated string
-#: ../libanjuta/anjuta-utils.c:363
+#: ../libanjuta/anjuta-utils.c:369
 msgid "System:"
 msgstr "Sistema:"
 
-#: ../libanjuta/anjuta-utils.c:512
+#: ../libanjuta/anjuta-utils.c:518
 msgid ""
 "You do not seem to have PackageKit installed. PackageKit is required for "
 "installing missing packages. Please install \"packagekit-gnome\" package "
@@ -631,17 +631,17 @@ msgstr ""
 "paketams įdiegti. Įdiekite „packagekit-gnome“ paketą iš savo distribucijos "
 "arba rankiniu būdu įdiekite trūkstamus paketus."
 
-#: ../libanjuta/anjuta-utils.c:521
+#: ../libanjuta/anjuta-utils.c:527
 #, c-format
 msgid "Installation failed: %s"
 msgstr "Diegimas nepavyko: %s"
 
-#: ../libanjuta/anjuta-utils.c:582
+#: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
 msgstr "Nepavyko paleisti „%s“. Grąžinta klaida: „%s“."
 
-#: ../libanjuta/anjuta-utils.c:596
+#: ../libanjuta/anjuta-utils.c:602
 #, c-format
 msgid ""
 "The \"%s\" package is not installed.\n"
@@ -650,7 +650,7 @@ msgstr ""
 "Paketas „%s“ neįdiegtas.\n"
 "Įdiekite jį."
 
-#: ../libanjuta/anjuta-utils.c:614
+#: ../libanjuta/anjuta-utils.c:620
 #, c-format
 msgid ""
 "The \"%s\" utility is not installed.\n"
@@ -660,17 +660,17 @@ msgstr ""
 "Įdiekite jį."
 
 #. Try xterm
-#: ../libanjuta/anjuta-utils.c:1208
+#: ../libanjuta/anjuta-utils.c:1214
 msgid "Cannot find a terminal; using xterm, even if it may not work"
 msgstr ""
 "Nepavyko rasti terminalo; naudojamas xterm, nors jis taip pat gali neveikti"
 
-#: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
+#: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
 #, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr "Nepavyko įvykdyti komandos: %s (naudojamas apvalkalas %s): %s\n"
 
-#: ../libanjuta/anjuta-utils.c:2456
+#: ../libanjuta/anjuta-utils.c:2462
 #, c-format
 msgid "Unable to load user interface file: %s"
 msgstr "Nepavyko įkelti naudotojo sąsajos failo: %s"
@@ -1307,8 +1307,11 @@ msgstr "Nenaudoti priešdėlio:"
 #: ../plugins/am-project/am-properties.c:1039
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
+#| msgid ""
+#| "Do not rename the target with an optional prefix, used to avoid "
+#| "overwritting system program. "
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
 "Nepervadinti tikslo su papildomu priešdėliu, naudojama išvengti sisteminės "
@@ -1477,9 +1480,6 @@ msgid "Install"
 msgstr "Įdiegti"
 
 #: ../plugins/build-basic-autotools/build.c:578
-#| msgid ""
-#| "Before using this new configuration, the default one needs to be removed. "
-#| "Do you want to do that ?"
 msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
 "you want to do that?"
@@ -2220,7 +2220,7 @@ msgid "Patch-Style diff"
 msgstr "Patch stiliaus diff"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "Vietinis"
 
@@ -3341,7 +3341,7 @@ msgstr "Rėmas"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Failas"
@@ -4072,7 +4072,7 @@ msgstr "Iškirpti pažymėtą tekstą redaktoriuje į iškarpinę"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:592
+#: ../plugins/document-manager/plugin.c:318 ../plugins/terminal/terminal.c:627
 msgid "_Copy"
 msgstr "K_opijuoti"
 
@@ -4080,7 +4080,7 @@ msgstr "K_opijuoti"
 msgid "Copy the selected text to the clipboard"
 msgstr "Kopijuoti pažymėtą tekstą į iškarpinę"
 
-#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:600
+#: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:635
 msgid "_Paste"
 msgstr "_Įdėti"
 
@@ -4242,7 +4242,8 @@ msgid "Editor syntax highlighting styles"
 msgstr "Redaktoriaus sintaksės paryškinimo stiliai"
 
 #: ../plugins/document-manager/plugin.c:416
-msgid "Editor text formating"
+#| msgid "Editor text formating"
+msgid "Editor text formatting"
 msgstr "Redaktoriaus teksto formatavimas"
 
 #: ../plugins/document-manager/plugin.c:417
@@ -4608,7 +4609,7 @@ msgstr "Automatiškai pažymėti esamą dokumentą"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "Visuotinis"
 
@@ -4652,9 +4653,12 @@ msgid "You can't rename \"/\"!"
 msgstr "Negalima pervadinti „/“!"
 
 #: ../plugins/file-manager/file-view.c:153
+#| msgid ""
+#| "An error has occured!\n"
+#| "Maybe you permissions're insuficient or the filename is wrong"
 msgid ""
-"An error has occured!\n"
-"Maybe you permissions're insuficient or the filename is wrong"
+"An error has occurred!\n"
+"Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
 "Įvyko klaida!\n"
 "Galbūt yra nepakankamos teisės arba failo pavadinimas yra blogas"
@@ -6213,8 +6217,8 @@ msgstr "Vala palaikymo įskiepis"
 msgid "Vala support plugin, adds code completion."
 msgstr "Vala palaikymo įskiepis, prideda kodo užbaigimą."
 
-#: ../plugins/language-support-vala/plugin.vala:655
-#: ../plugins/language-support-vala/plugin.vala:663
+#: ../plugins/language-support-vala/plugin.vala:657
+#: ../plugins/language-support-vala/plugin.vala:665
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Auto-užbaigimas"
@@ -6307,12 +6311,10 @@ msgid "Copy message"
 msgstr "Kopijuoti pranešimą"
 
 #: ../plugins/message-view/plugin.c:83
-#| msgid "_Copy Message"
 msgid "_Copy All Messages"
 msgstr "_Kopijuoti visus pranešimus"
 
 #: ../plugins/message-view/plugin.c:84
-#| msgid "_Copy Message"
 msgid "Copy All Messages"
 msgstr "Kopijuoti visus pranešimus"
 
@@ -6945,7 +6947,7 @@ msgstr "Atnaujinti projekto rodinį..."
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "Projektas"
 
@@ -7306,15 +7308,6 @@ msgstr "Numatytasis naudotojo vardas naujam projektui"
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
 msgid "If empty, the current user name is used."
 msgstr "Jei tuščia, naudojamas dabartinis vardas."
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:5
-msgid "Default email used in new project"
-msgstr "Numatytasis el. paštas naujam projektui"
-
-#: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:6
-msgid "If empty, current login and machine name is used."
-msgstr ""
-"Jei tuščia, naudojamas dabartinis prisijungimo vardas ir kompiuterio vardas"
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -8129,8 +8122,9 @@ msgid "Require SDL version:"
 msgstr "Reikalinga SDL versija:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-msgid "Mininum SDL version required"
-msgstr "Mažiausia reikalingas SDL versija"
+#| msgid "Mininum SDL version required"
+msgid "Minimum SDL version required"
+msgstr "Mažiausia reikalinga SDL versija"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
 msgid "Require SDL_image:"
@@ -8430,9 +8424,6 @@ msgid ""
 msgstr "<b>Klaida:</b> Sukeliantis klavišas jau naudojamas vienoje iš kalbų!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
-#| msgid ""
-#| "<b>Error:</b> The trigger key can only contain alphanumeric characters "
-#| "and _ !"
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
 "\"_\"!"
@@ -8771,17 +8762,14 @@ msgid "Create a new project"
 msgstr "Sukurti naują projektą"
 
 #: ../plugins/starter/starter.ui.h:2
-#| msgid "Import project"
 msgid "Import a project"
 msgstr "Importuoti projektą"
 
 #: ../plugins/starter/starter.ui.h:3
-#| msgid "Search for next appearance of term."
 msgid "Search for example code"
 msgstr "Ieškoti kodo pavyzdžio"
 
 #: ../plugins/starter/starter.ui.h:4
-#| msgid "Man Documentation"
 msgid "View local Anjuta documentation"
 msgstr "Rodyti vietinę Anjuta dokumentaciją"
 
@@ -8794,16 +8782,10 @@ msgid "View online library documentation"
 msgstr "Rodyti internetinę bibliotekos dokumentaciją"
 
 #: ../plugins/starter/starter.ui.h:7
-msgid "label"
-msgstr "etiketė"
-
-#: ../plugins/starter/starter.ui.h:8
-#| msgid "No recently used resource found with URI \"%s\""
 msgid "Remove recently used project from list"
 msgstr "Pašalinti neseniai naudotą projektą iš sąrašo"
 
-#: ../plugins/starter/starter.ui.h:9
-#| msgid "_Install Project"
+#: ../plugins/starter/starter.ui.h:8
 msgid "Unlist Project"
 msgstr "Pašalinti projektą"
 
@@ -9434,27 +9416,27 @@ msgstr[0] "Perskaitytas %d failas iš %d"
 msgstr[1] "Perskaityti %d failai iš %d"
 msgstr[2] "Perskaityta %d failų iš %d"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "Kuriama simbolių duomenų bazė..."
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "Simboliai"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "Ieškoti"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
 msgstr "SymbolDB iššokančio meniu veiksmai"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
 msgstr "SymbolDb meniu veiksmai"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Simbolių duomenų bazė"
@@ -9472,8 +9454,8 @@ msgid "Symbol"
 msgstr "Simbolis"
 
 #: ../plugins/terminal/anjuta-terminal.plugin.in.h:1
-#: ../plugins/terminal/terminal.c:781 ../plugins/terminal/terminal.c:981
-#: ../plugins/terminal/terminal.c:1067
+#: ../plugins/terminal/terminal.c:820 ../plugins/terminal/terminal.c:1005
+#: ../plugins/terminal/terminal.c:1091
 msgid "Terminal"
 msgstr "Terminalas"
 
@@ -9493,23 +9475,23 @@ msgstr "Naudoti GNOME terminalo numatytąjį profilį"
 msgid "Terminal options"
 msgstr "Terminalo parinktys"
 
-#: ../plugins/terminal/terminal.c:609
+#: ../plugins/terminal/terminal.c:644
 msgid "Ctrl-C"
 msgstr "Vald-C"
 
-#: ../plugins/terminal/terminal.c:617
+#: ../plugins/terminal/terminal.c:652
 msgid "Ctrl-X"
 msgstr "Vald-X"
 
-#: ../plugins/terminal/terminal.c:625
+#: ../plugins/terminal/terminal.c:660
 msgid "Ctrl-Z"
 msgstr "Vald-Z"
 
-#: ../plugins/terminal/terminal.c:763
+#: ../plugins/terminal/terminal.c:802
 msgid "terminal operations"
 msgstr "terminalo veiksmai"
 
-#: ../plugins/terminal/terminal.c:898
+#: ../plugins/terminal/terminal.c:937
 #, c-format
 msgid "Unable to execute command"
 msgstr "Nepavyksta įvykdyti komandos"
@@ -9854,7 +9836,6 @@ msgid "Command line parameters"
 msgstr "Komandų eilutės parametrai"
 
 #: ../src/about.c:186
-#| msgid "Copyright (c) Naba Kumar"
 msgid "Copyright © Naba Kumar"
 msgstr "Autorinės teisės © Naba Kumar"
 
@@ -10056,14 +10037,23 @@ msgid "Value doesn't exist"
 msgstr "Vertės nėra"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
+msgid "Default email used in new project"
+msgstr "Numatytasis el. paštas naujam projektui"
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+msgid "If empty, current login and machine name is used."
+msgstr ""
+"Jei tuščia, naudojamas dabartinis prisijungimo vardas ir kompiuterio vardas"
+
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
 msgid "Use tabulation for indentation"
 msgstr "Naudoti tabuliaciją įtraukoms"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:2
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:4
 msgid "Number of characters of one tabulation"
 msgstr "Vienos tabuliacijos simbolių skaičius"
 
-#: ../src/org.gnome.anjuta.gschema.xml.in.h:3
+#: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
 msgstr "Tarpų skaičius kiekvienam įtraukos žingsniui"
 
@@ -10125,3 +10115,5 @@ msgstr "Tik piktogramos"
 msgid "Text only"
 msgstr "Tik tekstas"
 
+#~ msgid "label"
+#~ msgstr "etiketė"
