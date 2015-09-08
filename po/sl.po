@@ -9,18 +9,18 @@ msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-02-16 15:39+0000\n"
-"PO-Revision-Date: 2015-02-16 21:18+0100\n"
+"POT-Creation-Date: 2015-09-08 14:49+0000\n"
+"PO-Revision-Date: 2015-09-08 22:08+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
-"Language: Slovenian\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.7.5\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -1301,11 +1301,11 @@ msgstr "Ne uporabi predpone:"
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
-"Ne preimenuj cilja z izbrino predpono. Uporablja se za izogibanje "
-"prepisovanja sistemskih programov."
+"Ne preimenuj cilja z izbirno predpono; možnost je uporabljena za prepis "
+"sistemskega programa."
 
 #: ../plugins/am-project/am-properties.c:483
 #: ../plugins/am-project/am-properties.c:658
@@ -2211,7 +2211,7 @@ msgid "Patch-Style diff"
 msgstr "Primerjava popravkov"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "Krajevno"
 
@@ -3335,7 +3335,7 @@ msgstr "Okvir"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Datoteka"
@@ -4237,8 +4237,8 @@ msgid "Editor syntax highlighting styles"
 msgstr "Urejanje slogov poudarjanja skladnje"
 
 #: ../plugins/document-manager/plugin.c:416
-msgid "Editor text formating"
-msgstr "Urejanje oblikovanja besedila"
+msgid "Editor text formatting"
+msgstr "Oblikovanje besedila urejevalnika"
 
 #: ../plugins/document-manager/plugin.c:417
 msgid "Simple searching"
@@ -4605,7 +4605,7 @@ msgstr "Samodejno izberi trenutni dokument"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "Splošno"
 
@@ -4650,11 +4650,11 @@ msgstr "Ni mogoče preimenovati \"/\"!"
 
 #: ../plugins/file-manager/file-view.c:153
 msgid ""
-"An error has occured!\n"
-"Maybe you permissions're insuficient or the filename is wrong"
+"An error has occurred!\n"
+"Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
 "Prišlo je do napake!\n"
-"Morda dovoljenja niso ustrezna ali pa je ime datoteke predolgo."
+"Najverjetneje ni ustreznih dovoljenj, ali pa je napačno ime datoteke"
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
@@ -6956,7 +6956,7 @@ msgstr "Posodobi pogled projekta ..."
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "Projekt"
 
@@ -8126,8 +8126,8 @@ msgid "Require SDL version:"
 msgstr "Zahtvana SDL različica:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-msgid "Mininum SDL version required"
-msgstr "Najmanjša dovoljena SLD različica"
+msgid "Minimum SDL version required"
+msgstr "Zahtevana je različica SDL najmanj"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
 msgid "Require SDL_image:"
@@ -9422,27 +9422,27 @@ msgstr[1] "preučenih %d od %d datotek"
 msgstr[2] "preučenih %d od %d datotek"
 msgstr[3] "preučenih %d od %d datotek"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "Nalaganje zbirke simbolov ..."
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "Simboli"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "Iskanje"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
 msgstr "SimbolDb pojavna dejanja"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
 msgstr "SimbolDb dejanja menija"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Podatkovna zbirka simbolov"
@@ -10120,6 +10120,26 @@ msgstr "Le ikone"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Le besedilo"
+
+#~ msgid ""
+#~ "Do not rename the target with an optional prefix, used to avoid "
+#~ "overwritting system program. "
+#~ msgstr ""
+#~ "Ne preimenuj cilja z izbrino predpono. Uporablja se za izogibanje "
+#~ "prepisovanja sistemskih programov."
+
+#~ msgid "Editor text formating"
+#~ msgstr "Urejanje oblikovanja besedila"
+
+#~ msgid ""
+#~ "An error has occured!\n"
+#~ "Maybe you permissions're insuficient or the filename is wrong"
+#~ msgstr ""
+#~ "Prišlo je do napake!\n"
+#~ "Morda dovoljenja niso ustrezna ali pa je ime datoteke predolgo."
+
+#~ msgid "Mininum SDL version required"
+#~ msgstr "Najmanjša dovoljena SLD različica"
 
 #~ msgid "Error writing %s"
 #~ msgstr "Napaka med pisanjem %s"
