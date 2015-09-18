@@ -6,14 +6,14 @@
 #
 # Raivis Dejus <orvils@gmail.com>, 2009.
 # Peteris Krisjanis <pecisk@gmail.com>, 2011.
-# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013, 2014.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-09-07 02:44+0000\n"
-"PO-Revision-Date: 2014-09-07 15:32+0300\n"
+"POT-Creation-Date: 2015-09-18 14:50+0000\n"
+"PO-Revision-Date: 2015-09-18 22:19+0300\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -1305,8 +1305,11 @@ msgstr "Nelietot prefiksu:"
 #: ../plugins/am-project/am-properties.c:1039
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
+#| msgid ""
+#| "Do not rename the target with an optional prefix, used to avoid "
+#| "overwritting system program. "
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
 "Nepārsaukt mērķi, pievienojot tam prefiksu; parasti to izmanto, lai "
@@ -1473,9 +1476,6 @@ msgid "Install"
 msgstr "Instalēt"
 
 #: ../plugins/build-basic-autotools/build.c:578
-#| msgid ""
-#| "Before using this new configuration, the default one needs to be removed. "
-#| "Do you want to do that ?"
 msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
 "you want to do that?"
@@ -2214,7 +2214,7 @@ msgid "Patch-Style diff"
 msgstr "Ielāpa veida atšķirību datne"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "Vietējs"
 
@@ -3339,7 +3339,7 @@ msgstr "Kadrs"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Datne"
@@ -4241,7 +4241,8 @@ msgid "Editor syntax highlighting styles"
 msgstr "Redaktora sintakses izcelšanas stili"
 
 #: ../plugins/document-manager/plugin.c:416
-msgid "Editor text formating"
+#| msgid "Editor text formating"
+msgid "Editor text formatting"
 msgstr "Redaktora teksta formatēšana"
 
 #: ../plugins/document-manager/plugin.c:417
@@ -4608,7 +4609,7 @@ msgstr "Automātiski izvēlēties pašreizējo dokumentu"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "Globāli"
 
@@ -4652,9 +4653,12 @@ msgid "You can't rename \"/\"!"
 msgstr "Jūs nevarat pārdēvēt “/”!"
 
 #: ../plugins/file-manager/file-view.c:153
+#| msgid ""
+#| "An error has occured!\n"
+#| "Maybe you permissions're insuficient or the filename is wrong"
 msgid ""
-"An error has occured!\n"
-"Maybe you permissions're insuficient or the filename is wrong"
+"An error has occurred!\n"
+"Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
 "Gadījās kļūda!\n"
 "Iespējas, ka jums nepietiek tiesību, vai arī datnes nosaukums nav pareizs"
@@ -6314,12 +6318,10 @@ msgid "Copy message"
 msgstr "Kopēt ziņojumu"
 
 #: ../plugins/message-view/plugin.c:83
-#| msgid "_Copy Message"
 msgid "_Copy All Messages"
 msgstr "_Kopēt visus ziņojumus"
 
 #: ../plugins/message-view/plugin.c:84
-#| msgid "_Copy Message"
 msgid "Copy All Messages"
 msgstr "Kopēt visus ziņojumus"
 
@@ -6952,7 +6954,7 @@ msgstr "Atjaunināt projekta skatu..."
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "Projekts"
 
@@ -8128,7 +8130,8 @@ msgid "Require SDL version:"
 msgstr "Nepieciešamā SDL versija:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-msgid "Mininum SDL version required"
+#| msgid "Mininum SDL version required"
+msgid "Minimum SDL version required"
 msgstr "Nepieciešamā minimālā SDL versija"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
@@ -8430,9 +8433,6 @@ msgstr ""
 "<b>Kļūda:</b> Trigera atslēgvārds jau tiek izmantots vienai no valodām!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
-#| msgid ""
-#| "<b>Error:</b> The trigger key can only contain alphanumeric characters "
-#| "and _ !"
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
 "\"_\"!"
@@ -8772,17 +8772,14 @@ msgid "Create a new project"
 msgstr "Izveidot jaunu projektu"
 
 #: ../plugins/starter/starter.ui.h:2
-#| msgid "Import project"
 msgid "Import a project"
 msgstr "Importēt projektu"
 
 #: ../plugins/starter/starter.ui.h:3
-#| msgid "Search for next appearance of term."
 msgid "Search for example code"
 msgstr "Meklēt piemēra kodu"
 
 #: ../plugins/starter/starter.ui.h:4
-#| msgid "Man Documentation"
 msgid "View local Anjuta documentation"
 msgstr "Skatīt lokālo Anjuta dokumentāciju"
 
@@ -8795,12 +8792,10 @@ msgid "View online library documentation"
 msgstr "Skatīt tiešsaistes bibliotēkas dokumentāciju"
 
 #: ../plugins/starter/starter.ui.h:7
-#| msgid "No recently used resource found with URI \"%s\""
 msgid "Remove recently used project from list"
 msgstr "No saraksta izņemt nesen izmantoto projektu"
 
 #: ../plugins/starter/starter.ui.h:8
-#| msgid "_Install Project"
 msgid "Unlist Project"
 msgstr "Izņemt projektu no saraksta"
 
@@ -9431,27 +9426,27 @@ msgstr[0] "Noskanēta %d datne no %d"
 msgstr[1] "Noskanētas %d datnes no %d"
 msgstr[2] "Noskanētas %d datnes no %d"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "Ievieto datus simbolu datubāzē..."
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "Simboli"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "Meklēt"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
 msgstr "Simbolu datubāzes izlēcošās izvēlnes darbības"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
 msgstr "Simbolu datubāzes izvēlnes darbības"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Simbolu datubāze"
@@ -9855,7 +9850,6 @@ msgid "Command line parameters"
 msgstr "Komandrindas parametri"
 
 #: ../src/about.c:186
-#| msgid "Copyright (c) Naba Kumar"
 msgid "Copyright © Naba Kumar"
 msgstr "Autortiesības © Naba Kumar"
 
@@ -10132,855 +10126,3 @@ msgstr "Tikai ikonas"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Tikai teksts"
-
-#~ msgid "Error writing %s"
-#~ msgstr "Kļūda rakstot %s"
-
-#~ msgid "_Save Message"
-#~ msgstr "_Saglabāt ziņojumu"
-
-#~ msgid "Save message"
-#~ msgstr "Saglabāt ziņojumu"
-
-#~ msgid "Import an existing project"
-#~ msgstr "Importēt eksistējošu projektu"
-
-#~ msgid "Recent projects:"
-#~ msgstr "Nesenie projekti"
-
-#~ msgid "Tutorials"
-#~ msgstr "Pamācības"
-
-#~ msgid "Anjuta Manual"
-#~ msgstr "Anjuta rokasgrāmata"
-
-#~ msgid "FAQ"
-#~ msgstr "BUJ"
-
-#~ msgid "Getting started:"
-#~ msgstr "Ar ko sākt:"
-
-#~ msgid "Use currently selected profile in GNOME terminal"
-#~ msgstr "Izmantot pašreiz GNOME terminālī izvēlēto profilu"
-
-#~ msgid "Path: "
-#~ msgstr "Ceļš: "
-
-#~ msgid "profile file"
-#~ msgstr "profila datne"
-
-#~ msgid "Profile Plugins"
-#~ msgstr "Profila spraudņi"
-
-#~ msgid "List of plugins for this profile"
-#~ msgstr "Šī profīla spraudņu saraksts"
-
-#~ msgid "Select a build directory"
-#~ msgstr "Izvēlieties būvēšanas direktoriju"
-
-#~ msgid "Unable to execute: %s."
-#~ msgstr "Neizdevās izpildīt: %s."
-
-#~ msgid "Contents"
-#~ msgstr "Saturs"
-
-#~ msgid "Do not show tabs"
-#~ msgstr "Nerādīt cilnes"
-
-#~ msgid "Editor tabs"
-#~ msgstr "Redaktora cilnes"
-
-#~ msgid "<b>Open With</b>"
-#~ msgstr "<b>Atvērt ar</b>"
-
-#~ msgid "Base URI"
-#~ msgstr "Pamata URI"
-
-#~ msgid "Drop or enter revision here"
-#~ msgstr "Iemet vai ievadi revīzīju šeit"
-
-#~ msgid ""
-#~ "Whole project; Drop a file here or type a path to view a file or folder "
-#~ "log"
-#~ msgstr ""
-#~ "Viss projekts; šeit iemetiet datni vai ievadiet ceļu, lai redzētu datnes "
-#~ "vai mapes žurnālu"
-
-#~ msgid "Previous commit; Drop or enter a different revision here"
-#~ msgstr "Iepriekšējais nodevums; šeit iemetiet vai ievadiet citu revīziju"
-
-#~ msgid "Drop or type a revision here"
-#~ msgstr "Iemet vai ievadi revīzīju šeit"
-
-#~ msgid "Uncommitted Changes.diff"
-#~ msgstr "Nenodotās izmaiņas.diff"
-
-#~ msgid "Stash %i.diff"
-#~ msgstr "Slēptuve %i.diff"
-
-#~ msgid "Diff uncommitted changes"
-#~ msgstr "Parādīt nenodoto izmaiņu atšķirības"
-
-#~ msgid "Show a diff of uncommitted changes in an editor"
-#~ msgstr "Parādīt nenodoto izmaiņu atšķirības redaktorā"
-
-#~ msgid "Diff selected stash"
-#~ msgstr "Rādīt atšķirības slēptuvei"
-
-#~ msgid "Show a diff of the selected stash"
-#~ msgstr "Rādīt atšķirības izvēlētajai slēptuvei"
-
-#~ msgid "Git Tasks"
-#~ msgstr "Git uzdevumi"
-
-#~ msgid "Refreshing symbol tree…"
-#~ msgstr "Atsvaidzina simbolu koku..."
-
-#~ msgid "Failed to refresh project: %s"
-#~ msgstr "Neizdevās atsvaidzināt projektu: %s"
-
-#~ msgid "Group: %s\n"
-#~ msgstr "Grupa: %s\n"
-
-#~ msgid "Target: %s\n"
-#~ msgstr "Mērķis: %s\n"
-
-#~ msgid "Source: %s\n"
-#~ msgstr "Pirmkoda datne: %s\n"
-
-#~ msgid "Shortcut: %s\n"
-#~ msgstr "Saīsne: %s\n"
-
-#~ msgid "Module: %s\n"
-#~ msgstr "Modulis: %s\n"
-
-#~ msgid "Package: %s\n"
-#~ msgstr "Pakotne: %s\n"
-
-#~ msgid "New _Library…"
-#~ msgstr "Jauna _bibliotēka..."
-
-#~ msgid "Add a new package to the project"
-#~ msgstr "Pievienot jaunu pakotni projektam"
-
-#~ msgid "New _Library"
-#~ msgstr "Jauna _bibliotēka"
-
-#~ msgid "Add a new library to the project"
-#~ msgstr "Pievienot jaunu bibliotēku projektam"
-
-#~ msgid "Code Analyzer"
-#~ msgstr "Koda analizētājs"
-
-#~ msgid "Analyze code with the clang-analyzer framework"
-#~ msgstr "Analizē kodu ar clang-analyzer rāmja struktūru"
-
-#~ msgid "Enable CLang code analyzer"
-#~ msgstr "Aktivizēt CLang koda analizētāju"
-
-#~ msgid ""
-#~ "The project needs to be reconfigured after enabling this option. Please "
-#~ "run Build->Configure!"
-#~ msgstr ""
-#~ "Projektu ir jākonfigurē vēlreiz, lai aktivizētu šo opciju. Lūdzu, "
-#~ "palaidiet Būvēt->Konfigurēt!"
-
-#~ msgid "ccc-analyzer:"
-#~ msgstr "ccc-analizētājs:"
-
-#~ msgid "c++-analyzer:"
-#~ msgstr "c++-analizētājs:"
-
-#~ msgid "CLang Paths"
-#~ msgstr "CLang ceļi"
-
-#~ msgid ""
-#~ "Couldn't find clang analyzer, please check if it is installed and if the "
-#~ "paths are configured correctly in the preferences"
-#~ msgstr ""
-#~ "Neizdevās atrast clang analizētāju, lūdzu, pārbaudiet vai tas ir "
-#~ "uzinstalēts un vai ceļi iestatījumos ir norādīti korekti."
-
-#~ msgid "CLang Analyzer"
-#~ msgstr "CLang analizētājs"
-
-#~ msgid "Indentation C Style"
-#~ msgstr "Atkāpju veidošanas C stilā"
-
-#~ msgid "Indentation Python Style"
-#~ msgstr "Atkāpju veidošana Python stilā"
-
-#~ msgid "C/C++/Java/Vala"
-#~ msgstr "C/C++/Java/Vala"
-
-#~ msgid "Add brace after function call autocompletion"
-#~ msgstr ""
-#~ "Pievienot figūriekavas pēc funkciju izsaukuma automātiskas pabeigšanas"
-
-#~ msgid "JS"
-#~ msgstr "JS"
-
-#~ msgid "Failed to write autogen definition file"
-#~ msgstr "Neizdevās izveidot autogen definīcijas failu"
-
-#~| msgid "Python support warning"
-#~ msgid "Python support Plugin"
-#~ msgstr "Python atbalsta spraudnis"
-
-#~| msgid ""
-#~| "C++ and Java support plugin for code completion, auto-indentation, etc."
-#~ msgid "Python support plugin for code completion, auto indentation etc."
-#~ msgstr ""
-#~ "Python atbalsta spraudnis koda pabeigšanai, automātiskām atkāpēm utt."
-
-#~ msgid "Anjuta IDE"
-#~ msgstr "Anjuta integrētā izstrādes vide"
-
-#~ msgid "Loaded:"
-#~ msgstr "Ielādēti:"
-
-#~ msgid ""
-#~ "Unable to display help. Please make sure the Anjuta documentation package "
-#~ "is installed. It can be downloaded from http://anjuta.org."
-#~ msgstr ""
-#~ "Neizdevās parādīt palīdzību.  Lūdzu, pārliecinieties ka Anjuta "
-#~ "dokumentācijas pakotne ir uzinstalēta. To var lejupielādēt no vietnes "
-#~ "http://anjuta.org."
-
-#~ msgid "X"
-#~ msgstr "X"
-
-#~ msgid "Y"
-#~ msgstr "Y"
-
-#~ msgid "Markup"
-#~ msgstr "Marķējums"
-
-#~ msgid "Marked up text to render"
-#~ msgstr "Marķētais teksts, ko renderēt"
-
-#~ msgid "Font description as a string"
-#~ msgstr "Fonta apraksts kā virkne"
-
-#~ msgid "Font description"
-#~ msgstr "Fonta apraksts"
-
-#~ msgid "Font description as a PangoFontDescription struct"
-#~ msgstr "Fonta apraksts kā PangoFontDescription struktūra"
-
-#~ msgid "Font family"
-#~ msgstr "Fonta saime"
-
-#~ msgid "Name of the font family, e.g. Sans, Helvetica, Times, Monospace"
-#~ msgstr "Fonta saimes nosaukums, piem., Sans, Helvetica, Times, Monospace"
-
-#~ msgid "Font style"
-#~ msgstr "Fonta stils"
-
-#~ msgid "Font variant"
-#~ msgstr "Fonta variants"
-
-#~ msgid "Font weight"
-#~ msgstr "Fonta platums"
-
-#~ msgid "Font stretch"
-#~ msgstr "Fonta izstiepums"
-
-#~ msgid "Font size"
-#~ msgstr "Fonta izmērs"
-
-#~ msgid "Font points"
-#~ msgstr "Fonta punkti"
-
-#~ msgid "Font size in points"
-#~ msgstr "Fonta izmērs punktos"
-
-#~ msgid "Rise"
-#~ msgstr "Pacēlums"
-
-#~ msgid ""
-#~ "Offset of text above the baseline (below the baseline if rise is negative)"
-#~ msgstr ""
-#~ "Teksta nobīde no bāzes līnijas (zem līnijas, ja pacēlums ir negatīvs)"
-
-#~ msgid "Strikethrough"
-#~ msgstr "Pārsvītrojums"
-
-#~ msgid "Whether to strike through the text"
-#~ msgstr "Vai pārsvītrot tekstu"
-
-#~ msgid "Underline"
-#~ msgstr "Pasvītrojums"
-
-#~ msgid "Style of underline for this text"
-#~ msgstr "Pasvītrojuma stils šim tekstam"
-
-#~ msgid "Scale"
-#~ msgstr "Mērogs"
-
-#~ msgid "Size of font, relative to default size"
-#~ msgstr "Fonta izmērs, kas relatīvs attiecībā uz noklusēto izmēru"
-
-#~ msgid "Color"
-#~ msgstr "Krāsa"
-
-#~ msgid "Text color, as string"
-#~ msgstr "Teksta krāsa, kā virkne"
-
-#~ msgid "Text color, as a GdkColor"
-#~ msgstr "Teksta krāsa, kā GdkColor"
-
-#~ msgid "Text color, as an R/G/B/A combined integer"
-#~ msgstr "Teksta krāsa, kā R/G/B/A vērtību kominētais veselais skaitlis"
-
-#~ msgid "Text width"
-#~ msgstr "Teksta platums"
-
-#~ msgid "Width of the rendered text"
-#~ msgstr "Renderētā teksta platums"
-
-#~ msgid "Text height"
-#~ msgstr "Teksta augstums"
-
-#~ msgid "Height of the rendered text"
-#~ msgstr "Atveidojamā teksta augstums"
-
-#~ msgid "Font family set"
-#~ msgstr "Fonta saime iestatīta"
-
-#~ msgid "Whether this tag affects the font family"
-#~ msgstr "Vai šī birka ietekmē fonta saimi"
-
-#~ msgid "Font style set"
-#~ msgstr "Fonta stils iestatīts"
-
-#~ msgid "Whether this tag affects the font style"
-#~ msgstr "Vai šī birka ietekmē fonta stilu"
-
-#~ msgid "Font variant set"
-#~ msgstr "Fonta variants iestatīts"
-
-#~ msgid "Whether this tag affects the font variant"
-#~ msgstr "Vai šī birka ietekmē fonta variantu"
-
-#~ msgid "Font weight set"
-#~ msgstr "Fonta platums iestatīts"
-
-#~ msgid "Whether this tag affects the font weight"
-#~ msgstr "Vai šī birka ietekmē fonta platumu"
-
-#~ msgid "Font stretch set"
-#~ msgstr "Fonta izstiepums iestatīts"
-
-#~ msgid "Whether this tag affects the font stretch"
-#~ msgstr "Vai šī birka ietekmē fonta izstiepumu"
-
-#~ msgid "Font size set"
-#~ msgstr "Fonta izmērs iestatīts"
-
-#~ msgid "Whether this tag affects the font size"
-#~ msgstr "Vai šī birka ietekmē fonta izmēru"
-
-#~ msgid "Rise set"
-#~ msgstr "Pacēlums iestatīts"
-
-#~ msgid "Whether this tag affects the rise"
-#~ msgstr "Vai šī birka ietekmē pacēlumu"
-
-#~ msgid "Strikethrough set"
-#~ msgstr "Pārsvītrojums iestatīts"
-
-#~ msgid "Whether this tag affects strikethrough"
-#~ msgstr "Vai šī birka ietekmē pārsvītrojumu"
-
-#~ msgid "Underline set"
-#~ msgstr "Pasvītrojums iestatīts"
-
-#~ msgid "Whether this tag affects underlining"
-#~ msgstr "Vai šī birka ietekmē pasvītrojumu"
-
-#~ msgid "Scale set"
-#~ msgstr "Mērogs iestatīts"
-
-#~ msgid "Whether this tag affects font scaling"
-#~ msgstr "Vai šī birka ietkmē fonta mērogu"
-
-#~ msgid "Args: %s"
-#~ msgstr "Argumenti: %s"
-
-#~ msgid "Inheritance Graph"
-#~ msgstr "Mantošanas grafs"
-
-#~ msgid "Info _Target Files"
-#~ msgstr "Informācija par _mērķa failiem"
-
-#~ msgid "Display information on the files the debugger is active with"
-#~ msgstr "Rādīt informāciju par atkļūdotājam aktīviem failiem"
-
-#~ msgid "Info _Program"
-#~ msgstr "Informācija par _programmu"
-
-#~ msgid "Display information on the execution status of the program"
-#~ msgstr "Rādīt informāciju par programmas izpildes statusu"
-
-#~ msgid "Info _Kernel User Struct"
-#~ msgstr "Informācija par _kodola 'user struct'"
-
-#~ msgid "Display the contents of kernel 'struct user' for current child"
-#~ msgstr "Rādīt kodola 'struct user' saturu pašreizējam bērnam"
-
-#~ msgid "Info _Global Variables"
-#~ msgstr "Informācija par _globālajiem mainīgajiem"
-
-#~ msgid "Display all global and static variables of the program"
-#~ msgstr "Rādīt visus programmas globālos un statiskos mainīgos"
-
-#~ msgid "Info _Current Frame"
-#~ msgstr "Informācija par _pašreizējo kadru"
-
-#~ msgid "Display information about the current frame of execution"
-#~ msgstr "Rādīt informāciju par pašreizējo izpildes kadru"
-
-#~ msgid "Info Function _Arguments"
-#~ msgstr "Informācija par funkcijas _argumentiem"
-
-#~ msgid "Display function arguments of the current frame"
-#~ msgstr "Parādīt pašreizējā kadra funkciju argumentus"
-
-#~ msgid "Set current thread"
-#~ msgstr "Iestatīt pašreizējo pavedienu"
-
-#~ msgid "ID"
-#~ msgstr "ID"
-
-#~ msgid "Thread operations"
-#~ msgstr "Pavediena darbības"
-
-#~ msgid "Search for \"%s\" reached the end and wrapped around."
-#~ msgstr "Meklējot \"%s\", tika sasniegtas beigas, un sākts no sākuma."
-
-#~ msgid ""
-#~ "Search for \"%s\" reached the end and wrapped around but no new match was "
-#~ "found."
-#~ msgstr ""
-#~ "Meklējot \"%s\", tika sasniegtas beigas, un sākts no sākuma, bet nekas "
-#~ "jauns netika atrasts."
-
-#~ msgid "Unable to build user interface for New File"
-#~ msgstr "Neizdevās izveidot lietotāja saskarni jaunajam failam"
-
-#~ msgid "Browse other nodes"
-#~ msgstr "Pārlūkot citus mezglus"
-
-#~| msgid "Directory"
-#~ msgid "New Directory"
-#~ msgstr "Jauna direktorija"
-
-#~| msgid "Directory"
-#~ msgid "New _Directory"
-#~ msgstr "Jauna _direktorija"
-
-#~| msgid "Group properties"
-#~ msgid "Directory properties"
-#~ msgstr "Direktorijas īpašības"
-
-#~ msgid "Unable to build project assistant user interface reading %s."
-#~ msgstr "Neizdevās uzbūvēt projekta asistenta lietotāja saskarni lasot %s."
-
-#~ msgid "Command used for starting a terminal"
-#~ msgstr "Komanda, kas jāizmanto termināla palaišanai"
-
-#~ msgid "Kick start _tutorial"
-#~ msgstr "Ātrais _ievads Anjuta"
-
-#~ msgid "Anjuta Kick start tutorial"
-#~ msgstr "Ātrais ievads Anjuta"
-
-#~ msgid "_Advanced tutorial"
-#~ msgstr "Paplašināta _pamācība"
-
-#~ msgid "Anjuta advanced tutorial"
-#~ msgstr "Paplašināta pamācība par Anjuta"
-
-#~ msgid "A graph painter for the inheritance of the classes."
-#~ msgstr "Klašu mantošanas grafika zīmētājs."
-
-#~ msgid "Class Inheritance"
-#~ msgstr "Klašu mantošana"
-
-#, fuzzy
-#~| msgid "Search"
-#~ msgid "RegEx Search"
-#~ msgstr "Meklēt"
-
-#~ msgid "<b>Options</b>"
-#~ msgstr "<b>Iespējas</b>"
-
-#~ msgid "Id"
-#~ msgstr "Id"
-
-#~ msgid "Online"
-#~ msgstr "Tiešsaistē"
-
-#~ msgid "_Print..."
-#~ msgstr "_Drukāt..."
-
-#~ msgid "Match case"
-#~ msgstr "Precīzs meklējums"
-
-#~ msgid "_Open..."
-#~ msgstr "_Atvērt..."
-
-#~ msgid "Invalid GbfAmConfigValue type"
-#~ msgstr "Nederīgs GbfAmConfigValue tips"
-
-#~ msgid "Group doesn't exist"
-#~ msgstr "Grupa neeksistē"
-
-#~ msgid "Target doesn't exist"
-#~ msgstr "Mērķis neeksistē"
-
-#~ msgid "Malformed project"
-#~ msgstr "Sakropļots projekts"
-
-#~ msgid "Source doesn't exist"
-#~ msgstr "Avots neeksistē"
-
-#~ msgid "Project directory"
-#~ msgstr "Projekta direktorija"
-
-#~ msgid "Group name:"
-#~ msgstr "Grupas nosaukums:"
-
-#~ msgid "Advanced"
-#~ msgstr "Paplašināti"
-
-#~ msgid "Advanced..."
-#~ msgstr "Paplašināti..."
-
-#~ msgid "Source couldn't be added"
-#~ msgstr "Avots nevarēja tikt pievients"
-
-#~ msgid "Source coudn't be removed"
-#~ msgstr "Avots nevar tikt izņemts"
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "From:"
-#~ msgstr "No:"
-
-#~ msgid "To:"
-#~ msgstr "Uz:"
-
-#~ msgid "_Add..."
-#~ msgstr "_Pievienot..."
-
-#~ msgid "_Remove..."
-#~ msgstr "_Izņemt..."
-
-#~ msgid "Widget name"
-#~ msgstr "Logdaļas nosaukums"
-
-#~ msgid "Cut the selection"
-#~ msgstr "Izgriezt izvēlēto"
-
-#~ msgid "Paste the clipboard"
-#~ msgstr "Ievietot starpliktuvi"
-
-#~ msgid "Edit Item"
-#~ msgstr "Rediģēt ierakstu"
-
-#~ msgid "Summary:"
-#~ msgstr "Kopsavilkums:"
-
-#~ msgid "Category:"
-#~ msgstr "Kategorija:"
-
-#~ msgid "Edit Categories"
-#~ msgstr "Kategoriju rediģēšana"
-
-#~ msgid "Priority:"
-#~ msgstr "Prioritāte:"
-
-#~ msgid "Medium"
-#~ msgstr "Vidējs"
-
-#~ msgid "Comment:"
-#~ msgstr "Komentārs:"
-
-#~ msgid "n/a"
-#~ msgstr "n/p"
-
-#~ msgid "XML"
-#~ msgstr "XML"
-
-#~ msgid "Plain Text"
-#~ msgstr "Vienkāršs teksts"
-
-#~ msgid "HTML"
-#~ msgstr "HTML"
-
-#~ msgid "All"
-#~ msgstr "Visi"
-
-#~ msgid "Priority"
-#~ msgstr "Prioritāte"
-
-#~ msgid "Due date"
-#~ msgstr "Līdz datumam"
-
-#~ msgid "Personal"
-#~ msgstr "Personīgi"
-
-#~ msgid "Business"
-#~ msgstr "Bizness"
-
-#~ msgid "Unfiled"
-#~ msgstr "Nekategorizēts"
-
-#~ msgid "Delete"
-#~ msgstr "Dzēst"
-
-#~ msgid "Misc"
-#~ msgstr "Dažādi"
-
-#~ msgid "Notification"
-#~ msgstr "Paziņojums"
-
-#~ msgid "No Date"
-#~ msgstr "Nav datuma"
-
-#~ msgid "Edit..."
-#~ msgstr "Rediģēt..."
-
-#~ msgid "Macros"
-#~ msgstr "Makrosi"
-
-#~ msgid "_Add Macro..."
-#~ msgstr "_Pievienot makrosu..."
-
-#~ msgid "No Errors"
-#~ msgstr "Nav Kļūdu"
-
-#~ msgid "Refresh"
-#~ msgstr "Atsvaidzināt"
-
-#~ msgid "Options..."
-#~ msgstr "Iespējas..."
-
-#~ msgid "New Group"
-#~ msgstr "Jauna grupa"
-
-#~ msgid "_Refresh"
-#~ msgstr "_Atjaunināt"
-
-#~ msgid "No"
-#~ msgstr "Nē"
-
-#~ msgid "GNOME"
-#~ msgstr "GNOME"
-
-#~ msgid "GTK+"
-#~ msgstr "GTK+"
-
-#~ msgid "Background color:"
-#~ msgstr "Fona krāsa:"
-
-#~ msgid "Bold"
-#~ msgstr "Treknraksts"
-
-#~ msgid "Disable syntax highlighting"
-#~ msgstr "Deaktivizēt sintakses iekrāsošanu"
-
-#~ msgid "Foreground color:"
-#~ msgstr "Priekšplāna krāsa:"
-
-#~ msgid "Italic"
-#~ msgstr "Slīpraksts"
-
-#~ msgid "Monochrome"
-#~ msgstr "Melnbalts"
-
-#~ msgid "Printing"
-#~ msgstr "Drukāšana"
-
-#~ msgid "File: %s"
-#~ msgstr "Fails: %s"
-
-#~ msgid "Could not open file"
-#~ msgstr "Nevar atvērt failu"
-
-#~ msgid "<b>Actions</b>"
-#~ msgstr "<b>Darbības</b>"
-
-#~ msgid "Forward"
-#~ msgstr "Uz priekšu"
-
-#~ msgid "Modify"
-#~ msgstr "Modificēt"
-
-#~ msgid "No Limit"
-#~ msgstr "Nav ierobežojuma"
-
-#~ msgid "Setting"
-#~ msgstr "Iestatījums"
-
-#~ msgid "_Find..."
-#~ msgstr "_Meklēt..."
-
-#~ msgid "Searching..."
-#~ msgstr "Meklēju..."
-
-#~ msgid "Replace next match"
-#~ msgstr "Aizvietot nākamo atbilstību"
-
-#~ msgid "Replace all matches"
-#~ msgstr "Aizvietot visas atbilstības"
-
-#~ msgid "Find:"
-#~ msgstr "Meklēt:"
-
-#~ msgid "Links"
-#~ msgstr "Saites"
-
-#~ msgid "Copy..."
-#~ msgstr "Kopēt..."
-
-#~ msgid "lines above and below the target line."
-#~ msgstr "rindas virs un zem.mērķa līnijas."
-
-#~ msgid "Failed to create pipe to '%s': %s"
-#~ msgstr "Nevar izveidot kanālu uz'%s': %s"
-
-#~ msgid "Failed to create child process '%s': %s"
-#~ msgstr "Neizdevās izveidot bērna procesu '%s': %s "
-
-#~ msgid ""
-#~ "Invalid syntax in settings '%s'.\n"
-#~ "Please enter a value of the form \"<integer>,<integer>,<integer>\"."
-#~ msgstr ""
-#~ "Nederīga sintakse iestatījumos '%s'.\n"
-#~ "Lūdzu ierakstiet vērtību sekojošā formā\"<integer>,<integer>,<integer>\"."
-
-#~ msgid "Override default settings"
-#~ msgstr "Aizstāt noklusētos iestatījumus"
-
-#~ msgid "Enter <size>,<assoc>,<line_size>:"
-#~ msgstr "Ievadi <size>,<assoc>,<line_size>:"
-
-#~ msgid "Cachegrind"
-#~ msgstr "Cachegrind"
-
-#~ msgid "Function contains"
-#~ msgstr "Funkcija satur"
-
-#~ msgid "Object contains"
-#~ msgstr "Objekts satur"
-
-#~ msgid "Source filename contains"
-#~ msgstr "Pirmkoda faila nosaukums satur"
-
-#~ msgid "Valgrind Suppression Rules"
-#~ msgstr "Valgrind apspiešanas noteikumi"
-
-#~ msgid "Valgrind Suppression"
-#~ msgstr "Valgrind apspiešana"
-
-#~ msgid "Cu_t"
-#~ msgstr "Izgiez_t"
-
-#~ msgid "Edit in Custom Editor"
-#~ msgstr "Rediģēt ārējā redaktorā"
-
-#~ msgid "Show"
-#~ msgstr "Parādīt"
-
-#~ msgid "Stop showing errors if there are too many"
-#~ msgstr "Beigt rādīt kļūdas ja to ir pārāk daudz"
-
-#~ msgid "Round malloc sizes to next word"
-#~ msgstr "Noapaļot malloc izmērus līdz nākamajam vārdam"
-
-#~ msgid "Trace any child processes forked off by the program being debugged"
-#~ msgstr ""
-#~ "Sekot līdz jebkuriem bērnu procesem, kas atzarojas programmu atkļūdošanas "
-#~ "laikā"
-
-#~ msgid "Track open file descriptors"
-#~ msgstr "Seko tlīdz failu arvēršanas aprakstiem"
-
-#~ msgid "Call __libc_freeres() at exit before checking for memory leaks"
-#~ msgstr "Izsaukums __libc_freeres() izejot pirms pārbauda atmiņas noplūdes"
-
-#~ msgid "Suppressions File:"
-#~ msgstr "Apspriešanas fails:"
-
-#~ msgid "Choose Valgrind Suppressions File..."
-#~ msgstr "Izvēlēties Valgrind apspiešanas failu..."
-
-#~ msgid "Helgrind"
-#~ msgstr "Helgrind"
-
-#~ msgid "Assume thread stacks are used privately"
-#~ msgstr "Pieņemtie steka pavedieni tiek lietoti privāti"
-
-#~ msgid "Show location of last word access on error:"
-#~ msgstr "Parādīt pēdējā vārda atrašanās vietu kļūdainai pieejai:"
-
-#~ msgid "Memcheck"
-#~ msgstr "Memcheck"
-
-#~ msgid "Memory leaks"
-#~ msgstr "Atmiņas noplūde"
-
-#~ msgid "Leak check:"
-#~ msgstr "Noplūde pārbaude:"
-
-#~ msgid "Show reachable blocks in leak check"
-#~ msgstr "Parādīt sasniedzamos blokus noplūdes pārbaudē"
-
-#~ msgid "Leak resolution:"
-#~ msgstr "Noplūdes atrisināšana:"
-
-#~ msgid "Keep up to"
-#~ msgstr "Paturēt virs"
-
-#~ msgid "bytes in the queue after being free()'d"
-#~ msgstr "baiti rindā pēc free()"
-
-#~ msgid "Work around bugs generated by gcc 2.96"
-#~ msgstr "Strādāt ar gcc 2.96 ģenerētajām kļūdām"
-
-#~ msgid "Grow"
-#~ msgstr "Palielināt"
-
-#~ msgid "Shrink"
-#~ msgstr "Sašaurināt"
-
-#~ msgid "Suppress messages of type:"
-#~ msgstr "Apspiest šī tipa ziņas:"
-
-#~ msgid "Suppress when using:"
-#~ msgstr "Apspiest kad tiek lietots:"
-
-#~ msgid "System call:"
-#~ msgstr "Sistēmas izsaukums:"
-
-#~ msgid "Call chain:"
-#~ msgstr "Izsaukuma secība:"
-
-#~ msgid "You have forgotten to name your suppression rule."
-#~ msgstr "Esat aizmirsis nosaukt savu apspiešanas noteikumu."
-
-#~ msgid "You have not set a suppressions file in your settings."
-#~ msgstr "Jūs neesat uzstādījis noteikuma failu savos iestatījumos."
-
-#~ msgid "Task Manager"
-#~ msgstr "Uzdevumu pārvaldnieks"
-
-#~ msgid "Profile"
-#~ msgstr "Profils"
-
-#~ msgid "Searching"
-#~ msgstr "Meklē"
