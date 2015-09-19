@@ -6,6 +6,7 @@
 # Keld Simonsen <keld@dkuug.dk>, 2002.
 # Joe Hansen <joedalton2@yahoo.dk>, 2011.
 # Ask Hjorth Larsen <asklarsen@gmail.com>, 2008, 09, 10, 11, 12, 13, 14.
+# scootergrisen, 2015.
 #
 # Konventioner
 #   watch -> overvåger (funktion der holder øje med værdien af variable)
@@ -33,10 +34,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-20 17:42+0200\n"
-"PO-Revision-Date: 2014-09-20 17:38+0200\n"
-"Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=anjuta&keywords=I18N+L10N&component=core application\n"
+"POT-Creation-Date: 2015-09-08 14:49+0000\n"
+"PO-Revision-Date: 2015-09-08 19:39+0200\n"
+"Last-Translator: scootergrisen\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -1323,8 +1325,12 @@ msgstr "Brug ikke præfiks:"
 #: ../plugins/am-project/am-properties.c:1039
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
+#, fuzzy
+#| msgid ""
+#| "Do not rename the target with an optional prefix, used to avoid "
+#| "overwritting system program. "
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
 "Omdøb ikke målet med et valgfrit præfiks. Dette bruges til at undgå at "
@@ -2237,7 +2243,7 @@ msgid "Patch-Style diff"
 msgstr "Patch-agtig diff"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "Lokal"
 
@@ -2306,7 +2312,7 @@ msgid ""
 msgstr ""
 "<b>Bemærk venligst: </b>\n"
 "\n"
-"Trykkes O.k., så vil filen blive slettet fra disken og fra CVS. Dog vil "
+"Trykkes OK, så vil filen blive slettet fra disken og fra CVS. Dog vil "
 "filen naturligvis ikke blive fjernet fra CVS før du integrerer med CVS "
 "Commit. <b>Du er blevet advaret!</b>"
 
@@ -2860,7 +2866,7 @@ msgstr ""
 "fejlsøgningskonfigurationen?</span>\n"
 "\n"
 "Når optimering er slået til, kan fejlsøgeren ikke altid identificere "
-"kildekoden, der svarer til specifikke instruktioner.  Visse kommandoer kan "
+"kildekoden, der svarer til specifikke instruktioner. Visse kommandoer kan "
 "derfor opføre sig upålideligt, især trinvis eksekvering."
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:55
@@ -3361,7 +3367,7 @@ msgstr "Ramme"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Fil"
@@ -3922,7 +3928,7 @@ msgstr "_Linjenummer…"
 
 #: ../plugins/document-manager/plugin.c:236
 msgid "Go to a particular line in the editor"
-msgstr "Gå til en bestemt linie i editoren"
+msgstr "Gå til en bestemt linje i editoren"
 
 #: ../plugins/document-manager/plugin.c:238
 msgid "Matching _Brace"
@@ -4265,7 +4271,9 @@ msgid "Editor syntax highlighting styles"
 msgstr "Stil for syntaksfremhævning i redigering"
 
 #: ../plugins/document-manager/plugin.c:416
-msgid "Editor text formating"
+#, fuzzy
+#| msgid "Editor text formating"
+msgid "Editor text formatting"
 msgstr "Tekstformattering i redigering"
 
 #: ../plugins/document-manager/plugin.c:417
@@ -4631,7 +4639,7 @@ msgstr "Vælg automatisk det nuværende dokument"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "Global"
 
@@ -4675,9 +4683,13 @@ msgid "You can't rename \"/\"!"
 msgstr "Du kan ikke omdøbe \"/\"!"
 
 #: ../plugins/file-manager/file-view.c:153
+#, fuzzy
+#| msgid ""
+#| "An error has occured!\n"
+#| "Maybe you permissions're insuficient or the filename is wrong"
 msgid ""
-"An error has occured!\n"
-"Maybe you permissions're insuficient or the filename is wrong"
+"An error has occurred!\n"
+"Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
 "Der opstod en fejl!\n"
 "Måske har du ikke tilstrækkelige rettigheder eller filnavnet er forkert"
@@ -5036,7 +5048,7 @@ msgstr "Commit ikke"
 
 #: ../plugins/git/anjuta-git.ui.h:4
 msgid "OK"
-msgstr "O.k."
+msgstr "OK"
 
 # "signed-off-by" er vist noget man kan tilføje når man committer med versionsstyringsprogrammet git
 #: ../plugins/git/anjuta-git.ui.h:5
@@ -6976,7 +6988,7 @@ msgstr "Opdatér projektvisning…"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "Projekt"
 
@@ -8157,7 +8169,9 @@ msgid "Require SDL version:"
 msgstr "Forudsæt SDL-version:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-msgid "Mininum SDL version required"
+#, fuzzy
+#| msgid "Mininum SDL version required"
+msgid "Minimum SDL version required"
 msgstr "Mindste påkrævede version af SDL"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
@@ -8662,7 +8676,7 @@ msgstr "_Linjenummermargen"
 
 #: ../plugins/sourceview/plugin.c:111
 msgid "Show/Hide line numbers"
-msgstr "Gem/Vis linienummer"
+msgstr "Gem/Vis linjenummer"
 
 #: ../plugins/sourceview/plugin.c:113
 msgid "_Marker Margin"
@@ -9454,27 +9468,27 @@ msgid_plural "%d files scanned out of %d"
 msgstr[0] "%d af %d fil scannet"
 msgstr[1] "%d af %d filer scannet"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "Opbygger symboldatabase…"
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "Symboler"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "Søg"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
 msgstr "Pop op-handlinger for symboldatabase"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
 msgstr "Menuhandlinger for symboldatabase"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Symboldatabase"
@@ -9926,7 +9940,7 @@ msgstr "Lås det nuværende doklayout så kontroller ikke kan flyttes"
 
 #: ../src/anjuta-actions.h:55
 msgid "_Toolbar"
-msgstr "_Værktøjslinie"
+msgstr "_Værktøjslinje"
 
 #: ../src/anjuta-actions.h:56
 msgid "Show or hide the toolbar"
