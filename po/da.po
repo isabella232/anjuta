@@ -34,13 +34,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-09-08 14:49+0000\n"
-"PO-Revision-Date: 2015-09-08 19:39+0200\n"
-"Last-Translator: scootergrisen\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-20 20:13+0200\n"
+"PO-Revision-Date: 2015-09-20 19:17+0200\n"
+"Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
-"Language: \n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1325,10 +1324,6 @@ msgstr "Brug ikke præfiks:"
 #: ../plugins/am-project/am-properties.c:1039
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
-#, fuzzy
-#| msgid ""
-#| "Do not rename the target with an optional prefix, used to avoid "
-#| "overwritting system program. "
 msgid ""
 "Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
@@ -2312,9 +2307,9 @@ msgid ""
 msgstr ""
 "<b>Bemærk venligst: </b>\n"
 "\n"
-"Trykkes OK, så vil filen blive slettet fra disken og fra CVS. Dog vil "
-"filen naturligvis ikke blive fjernet fra CVS før du integrerer med CVS "
-"Commit. <b>Du er blevet advaret!</b>"
+"Trykkes OK, så vil filen blive slettet fra disken og fra CVS. Dog vil filen "
+"naturligvis ikke blive fjernet fra CVS før du integrerer med CVS Commit. "
+"<b>Du er blevet advaret!</b>"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:20
 msgid "CVS: Commit file/directory"
@@ -4271,10 +4266,8 @@ msgid "Editor syntax highlighting styles"
 msgstr "Stil for syntaksfremhævning i redigering"
 
 #: ../plugins/document-manager/plugin.c:416
-#, fuzzy
-#| msgid "Editor text formating"
 msgid "Editor text formatting"
-msgstr "Tekstformattering i redigering"
+msgstr "Tekstformatering i redigering"
 
 #: ../plugins/document-manager/plugin.c:417
 msgid "Simple searching"
@@ -4683,10 +4676,6 @@ msgid "You can't rename \"/\"!"
 msgstr "Du kan ikke omdøbe \"/\"!"
 
 #: ../plugins/file-manager/file-view.c:153
-#, fuzzy
-#| msgid ""
-#| "An error has occured!\n"
-#| "Maybe you permissions're insuficient or the filename is wrong"
 msgid ""
 "An error has occurred!\n"
 "Maybe your permissions are insufficient or the filename is wrong"
@@ -8169,8 +8158,6 @@ msgid "Require SDL version:"
 msgstr "Forudsæt SDL-version:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-#, fuzzy
-#| msgid "Mininum SDL version required"
 msgid "Minimum SDL version required"
 msgstr "Mindste påkrævede version af SDL"
 
