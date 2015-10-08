@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: 3.8\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-09-29 02:40+0000\n"
-"PO-Revision-Date: 2015-10-08 07:14+0100\n"
+"POT-Creation-Date: 2015-10-08 06:15+0000\n"
+"PO-Revision-Date: 2015-10-08 07:18+0100\n"
 "Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
 "Language-Team: Português <palbuquerque73@gmail.com>\n"
 "Language: pt\n"
@@ -504,9 +504,6 @@ msgstr "%s: instalar a partir de \"%s\"\n"
 
 #: ../libanjuta/anjuta-profile.c:964
 #, c-format
-#| msgid ""
-#| "Failed to read '%s': Following mandatory plugins are missing:\n"
-#| "%s"
 msgid "Failed to read '%s': Following mandatory plugins are missing"
 msgstr "Falha ao ler \"%s\": faltam as seguintes extensões obrigatórias"
 
@@ -630,7 +627,6 @@ msgstr ""
 
 #: ../libanjuta/anjuta-utils.c:1255 ../libanjuta/anjuta-utils.c:1306
 #, c-format
-#| msgid "Cannot execute command: %s (using shell %s)\n"
 msgid "Cannot execute command: %s (using shell %s): %s\n"
 msgstr "Impossível executar o comando: %s (a usar o terminal %s): %s\n"
 
@@ -696,7 +692,6 @@ msgstr "Impossível encontrar o ficheiro pixmap da aplicação: %s"
 
 #: ../libanjuta/resources.c:277
 #, c-format
-#| msgid "Cannot execute command: \"%s\""
 msgid "Cannot execute command \"%s\": %s"
 msgstr "Impossível executar o comando: \"%s\": %s"
 
@@ -894,7 +889,8 @@ msgid "Libtool support:"
 msgstr "Suporte para libtool:"
 
 #: ../plugins/am-project/am-properties.c:98
-msgid "Add support to compile shared and static libraries with Libtool."
+#| msgid "Add support to compile shared and static libraries with Libtool."
+msgid "Add support to compile shared and static libraries with libtool."
 msgstr ""
 "Adiciona suporte para compilar bibliotecas partilhadas e estáticas com o "
 "libtool."
@@ -4957,7 +4953,6 @@ msgid "Gdb Debugger"
 msgstr "Depurador Gdb"
 
 #: ../plugins/git/anjuta-git.ui.h:1
-#| msgid "gtk-cancel"
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -5076,7 +5071,6 @@ msgid "Git"
 msgstr "Git"
 
 #: ../plugins/git/anjuta-git.ui.h:33
-#| msgid "_Tasks"
 msgid "Tasks"
 msgstr "Tarefas"
 
@@ -5232,7 +5226,6 @@ msgid "Repository Status:"
 msgstr "Estado do repositório:"
 
 #: ../plugins/git/anjuta-git.ui.h:72
-#| msgid "Show commit diff"
 msgid "Show Diff"
 msgstr "Mostrar diferenças"
 
@@ -5306,7 +5299,6 @@ msgstr "Criar etiqueta"
 
 #: ../plugins/git/git-delete-branches-pane.c:238
 #, c-format
-#| msgid "Are you sure you want to delete the '%s' tool?"
 msgid "Are you sure you want to delete branch %s?"
 msgstr "Tem a certeza que deseja eliminar o ramo \"%s\"?"
 
@@ -5705,7 +5697,6 @@ msgstr ""
 "Parar de aplicar a série de patches e repor a árvore no seu estado anterior"
 
 #: ../plugins/git/plugin.c:520
-#| msgid "Reset"
 msgid "Reset..."
 msgstr "Repor..."
 
@@ -5714,7 +5705,6 @@ msgid "Switch"
 msgstr "Trocar"
 
 #: ../plugins/git/plugin.c:540
-#| msgid "_Delete..."
 msgid "Delete..."
 msgstr "Eliminar..."
 
@@ -5723,22 +5713,18 @@ msgid "Merge..."
 msgstr "Unir..."
 
 #: ../plugins/git/plugin.c:560
-#| msgid "_Push..."
 msgid "Push..."
 msgstr "Empurrar..."
 
 #: ../plugins/git/plugin.c:568
-#| msgid "_Pull..."
 msgid "Pull..."
 msgstr "Puxar..."
 
 #: ../plugins/git/plugin.c:588
-#| msgid "_Apply…"
 msgid "Apply"
 msgstr "Aplicar"
 
 #: ../plugins/git/plugin.c:596
-#| msgid "Apply stash and restore index"
 msgid "Apply and restore index"
 msgstr "Aplicar e restaurar o índice"
 
@@ -5759,12 +5745,10 @@ msgid "Log popup menu"
 msgstr "Menu contextual de diário"
 
 #: ../plugins/git/plugin.c:869
-#| msgid "Branch name:"
 msgid "Branch popup menu"
 msgstr "Menu contextual do ramo"
 
 #: ../plugins/git/plugin.c:875
-#| msgid "Remote name:"
 msgid "Remote popup menu"
 msgstr "Menu contextual remoto"
 
@@ -6702,9 +6686,6 @@ msgstr "Impossível adicionar pacotes"
 
 #: ../plugins/project-manager/plugin.c:693
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following group from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the group \"%s\" from the project?\n"
 "\n"
@@ -6714,9 +6695,6 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:696
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following target from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the target \"%s\" from the project?\n"
 "\n"
@@ -6726,10 +6704,6 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:699
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following source file from the "
-#| "project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the source \"%s\" from the project?\n"
 "\n"
@@ -6739,9 +6713,6 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:702
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following group from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the shortcut \"%s\" from the project?\n"
 "\n"
@@ -6751,9 +6722,6 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:706
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following module from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the module \"%s\" from the project?\n"
 "\n"
@@ -6763,9 +6731,6 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:709
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following package from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the package \"%s\" from the project?\n"
 "\n"
@@ -6775,9 +6740,6 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:712
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following elements from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the element \"%s\" from the project?\n"
 "\n"
@@ -6788,9 +6750,6 @@ msgstr ""
 #. Translator: there is at least 2 elements to remove
 #: ../plugins/project-manager/plugin.c:721
 #, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following elements from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove %d element from the project?\n"
 "\n"
@@ -6805,22 +6764,18 @@ msgstr[1] ""
 "\n"
 
 #: ../plugins/project-manager/plugin.c:726
-#| msgid "The group will be deleted from the file system."
 msgid "The group will be deleted from the file system.\n"
 msgstr "O grupo será eliminado do sistema de ficheiros.\n"
 
 #: ../plugins/project-manager/plugin.c:731
-#| msgid "The group will not be deleted from the file system."
 msgid "The group will not be deleted from the file system.\n"
 msgstr "O grupo não será eliminado do sistema de ficheiros.\n"
 
 #: ../plugins/project-manager/plugin.c:737
-#| msgid "The source file will be deleted from the file system."
 msgid "The source file will be deleted from the file system.\n"
 msgstr "O ficheiro fonte será eliminado do sistema de ficheiros.\n"
 
 #: ../plugins/project-manager/plugin.c:742
-#| msgid "The source file will not be deleted from the file system."
 msgid "The source file will not be deleted from the file system.\n"
 msgstr "O ficheiro fonte não será eliminado do sistema de ficheiros.\n"
 
@@ -7823,7 +7778,6 @@ msgstr ""
 #: ../plugins/project-wizard/templates/library.wiz.in.h:24
 #: ../plugins/project-wizard/templates/terminal.wiz.in.h:19
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:19
-#| msgid "Add C++ support:"
 msgid "Add Windows support:"
 msgstr "Adicionar suporte para Windows:"
 
@@ -7834,7 +7788,6 @@ msgstr "Adicionar suporte para Windows:"
 #: ../plugins/project-wizard/templates/library.wiz.in.h:25
 #: ../plugins/project-wizard/templates/terminal.wiz.in.h:20
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:20
-#| msgid "Adds support for building shared libraries in your project"
 msgid "Adds support for building on Windows platforms"
 msgstr "Adiciona suporte para construir em plataformas Windows"
 
@@ -9465,12 +9418,13 @@ msgid "Terminal Plugin for Anjuta."
 msgstr "Extensão de terminal para o Anjuta."
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:2
-msgid "Use GNOME Terminal profile:"
-msgstr "Utilizar o perfil do terminal GNOME:"
+#| msgid "Currently selected text in editor"
+msgid "Use currently selected profile in GNOME terminal"
+msgstr "Usar o perfil atualmente selecionado no terminal GNOME"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
-msgid "Use default GNOME terminal profile"
-msgstr "Utilizar o perfil predefinido do terminal GNOME:"
+msgid "Use GNOME Terminal profile:"
+msgstr "Utilizar o perfil do terminal GNOME:"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
@@ -10007,7 +9961,6 @@ msgid "Specify another profile"
 msgstr "Especifique outro perfil"
 
 #: ../src/anjuta-application.c:408
-#| msgid "Compile file"
 msgid "profile file"
 msgstr "ficheiro de perfil"
 
@@ -10017,7 +9970,6 @@ msgstr "- ambiente integrado de desenvolvimento"
 
 #: ../src/anjuta-application.c:764
 #, c-format
-#| msgid "Installation failed: %s"
 msgid "Invalid profile %s: %s"
 msgstr "Perfil %s inválido: %s"
 
@@ -10119,6 +10071,9 @@ msgstr "Só ícones"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Só texto"
+
+#~ msgid "Use default GNOME terminal profile"
+#~ msgstr "Utilizar o perfil predefinido do terminal GNOME:"
 
 #~ msgid "Profile Plugins"
 #~ msgstr "Plugins do Perfil"
