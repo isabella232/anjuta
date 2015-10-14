@@ -1,25 +1,25 @@
 # Basque translation for Anjuta
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
+#
 # Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008, 2009.
 # Edurne Labaka <elabaka@uzei.com>, 2015.
-#
+# Inaki Larranaga Murgoitio <dooteo@zundan.com>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-02-07 10:36+0100\n"
-"PO-Revision-Date: 2015-01-26 14:52+0100\n"
-"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-14 10:31+0200\n"
+"PO-Revision-Date: 2015-09-28 22:50+0200\n"
+"Last-Translator: Inaki Larranaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: Basque <librezale@librezale.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -1320,11 +1320,11 @@ msgstr "Ez erabili aurrizkia:"
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
 "Ez aldatu izena helburuari aukerako aurrizki batekin (sistemaren "
-"programazioa gainidaztea saihesteko erabiltzen da)."
+"programazioa gainidaztea saihesteko erabiltzen da). "
 
 #: ../plugins/am-project/am-properties.c:483
 #: ../plugins/am-project/am-properties.c:658
@@ -4256,8 +4256,8 @@ msgid "Editor syntax highlighting styles"
 msgstr "Sintaxia nabarmentzeko editorearen estiloak"
 
 #: ../plugins/document-manager/plugin.c:416
-msgid "Editor text formating"
-msgstr "Testuari formatua emateko editorearen aukera"
+msgid "Editor text formatting"
+msgstr "Testuari formatua emateko editorea"
 
 #: ../plugins/document-manager/plugin.c:417
 msgid "Simple searching"
@@ -4665,8 +4665,8 @@ msgstr "Ezin diozu izena aldatu honi: \"/\""
 
 #: ../plugins/file-manager/file-view.c:153
 msgid ""
-"An error has occured!\n"
-"Maybe you permissions're insuficient or the filename is wrong"
+"An error has occurred!\n"
+"Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
 "Errore bat gertatu da.\n"
 "Beharbada zure baimenak ez dira nahikoa edo fitxategi-izena okerra da"
@@ -8134,7 +8134,7 @@ msgid "Require SDL version:"
 msgstr "SDL bertsio hau behar du:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-msgid "Mininum SDL version required"
+msgid "Minimum SDL version required"
 msgstr "Behar den gutxieneko SDL bertsioa"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
