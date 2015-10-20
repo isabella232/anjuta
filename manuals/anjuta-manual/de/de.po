@@ -21,20 +21,21 @@
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2009-2013.
 # Jonas Rebmann <jonas.rebmann@googlemail.com>, 2010.
 # Christian Kirbach <christian.kirbach@gmail.com>, 2010-2012, 2013.
+# Wolfgang Stöggl <c72578@yahoo.de>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta doc\n"
-"POT-Creation-Date: 2015-01-03 03:40+0000\n"
-"PO-Revision-Date: 2015-01-03 16:13+0100\n"
-"Last-Translator: Benjamin Steinwender <b@stbe.at>\n"
+"POT-Creation-Date: 2015-10-12 14:46+0000\n"
+"PO-Revision-Date: 2015-10-18 07:37+0200\n"
+"Last-Translator: Wolfgang Stoeggl <c72578@yahoo.de>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.7.1\n"
+"X-Generator: Poedit 1.8.5\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -42,7 +43,7 @@ msgid "translator-credits"
 msgstr ""
 "Mario Blättermann <mario.blaettermann@gmail.com>, 2009-2013\n"
 "Jonas Rebmann <jonas.rebmann@googlemail.com>, 2010\n"
-"Christian Kirbach <christian.kirbach@gmail.com>, 2010, 2011, 2012, 2013"
+"Christian Kirbach <christian.kirbach@gmail.com>, 2010, 2011, 2012, 2013, 2015"
 
 #. (itstool) path: info/desc
 #: C/index.page:8
@@ -124,7 +125,7 @@ msgid ""
 "Autocompletion automatically suggests functions and other code symbols after "
 "you start typing by trying to match existing symbols with the first "
 "characters typed. It will popup a drop-down menu where you can select a "
-"match by using the <key>Enter</key> key. Normally this happens automaticly "
+"match by using the <key>Enter</key> key. Normally this happens automatically "
 "after you typed the third (non-whitespace) character but you can also force "
 "it by using the <guiseq><gui>Edit</gui><gui>Auto-Complete</gui></guiseq> "
 "menu item."
@@ -133,7 +134,7 @@ msgstr ""
 "Code-Symbole vor, nachdem Sie die ersten Zeichen eingetippt haben. Es wird "
 "nach einer Übereinstimmung der eingegebenen Zeichen mit den ersten Zeichen "
 "von bestehenden Symbolen gesucht. Daraufhin wird eine Auswahlliste "
-"eingeblendet, in der Sie einen ggfs. Eintrag mit der <key>Eingabetaste</key> "
+"eingeblendet, in der Sie einen Eintrag mit der <key>Eingabetaste</key> "
 "auswählen. Normalerweise geschieht dies automatisch, nachdem Sie den dritten "
 "Buchstaben eingegeben haben. Sie können es aber auch mittels des "
 "Menüeintrags <guiseq><gui>Bearbeiten</gui><gui>Automatische "
@@ -179,7 +180,7 @@ msgid ""
 "signature."
 msgstr ""
 "Es ist normalerweise schwierig, die Signatur jeder Methode oder Funktion "
-"eines Projekts auswendig zu wissen. Der Editor zeigt automaitsch ein kleine "
+"eines Projekts auswendig zu wissen. Der Editor zeigt automatisch ein kleine "
 "Mini-Hilfe mit der Signatur an, wenn Sie »(« nach einem Funktionsnamen "
 "eingeben."
 
@@ -293,13 +294,13 @@ msgstr ""
 #. (itstool) path: note/p
 #: C/anjuta-code-indentation.page:38
 msgid ""
-"Unless explicitely changed in the preferences the indentation settings found "
+"Unless explicitly changed in the preferences the indentation settings found "
 "in the Modeline of a file will be used instead of the configured settings to "
 "keep the file consistent."
 msgstr ""
 "Nur wenn Sie die Einrückung explizit in den Einstellungen geändert haben, "
-"werden diese angewendet, ansonsten ist die Modeline einer Datei maßgebend. "
-"So sorgt die Modeline dafür, die Datei konsistent zu halten."
+"werden diese angewendet, ansonsten ist die »Modeline« einer Datei maßgebend. "
+"So sorgt die »Modeline« dafür die Datei konsistent zu halten."
 
 #. (itstool) path: section/title
 #: C/anjuta-code-indentation.page:45
@@ -335,7 +336,7 @@ msgstr "Codeblöcke einrücken"
 #. (itstool) path: section/p
 #: C/anjuta-code-indentation.page:61
 msgid ""
-"Normally new lines are approprietely indented automatically but you can "
+"Normally new lines are appropriately indented automatically but you can "
 "indent existing lines or all selected code with the <guiseq><gui>Edit</"
 "gui><gui>Auto-Indent</gui></guiseq> menu item."
 msgstr ""
@@ -368,7 +369,7 @@ msgid ""
 msgstr ""
 "Der Symbolbrowser gibt Ihnen eine Übersicht über die in Ihrem Projekt "
 "verwendeten Symbole. Symbole beziehen sich hier auf Variablen, Funktionen/"
-"Methoden und Klassen. Die exakte Definitionen hängt von der verwendeten "
+"Methoden und Klassen. Die exakte Definition hängt von der verwendeten "
 "Programmiersprache ab."
 
 #. (itstool) path: section/p
@@ -494,11 +495,10 @@ msgstr "Sébastien Granjoux"
 #: C/project-manager-module-add.page:18 C/project-manager-module-new.page:20
 #: C/project-manager-module-remove.page:18
 #: C/project-manager-package-remove.page:17 C/project-manager.page:16
-#: C/project-manager-source-add.page:17
-#: C/project-manager-source-remove.page:17
-#: C/project-manager-target-add.page:17
-#: C/project-manager-target-remove.page:17 C/project-wizard-create.page:18
-#: C/project-wizard-template.page:17 C/run-run.page:19
+#: C/project-manager-source-add.page:17 C/project-manager-source-remove.page:17
+#: C/project-manager-target-add.page:17 C/project-manager-target-remove.page:17
+#: C/project-wizard-create.page:18 C/project-wizard-template.page:17
+#: C/run-run.page:19
 msgid "Philip Chimento"
 msgstr "Philip Chimento"
 
@@ -519,7 +519,7 @@ msgstr ""
 "entworfen, um Quellcodepakete auf einer Vielzahl von Unix-ähnlichen Systemen "
 "zu verteilen. Wenn Sie jemals ein Programm mit Hilfe von <cmd>configure</"
 "cmd>, <cmd>make</cmd> und <cmd>make install</cmd> installiert haben, so "
-"haben sie es wahrscheinlich schon als Benutzer verwendet."
+"haben Sie es wahrscheinlich schon als Benutzer verwendet."
 
 #. (itstool) path: page/p
 #: C/autotools-project-backend.page:31
@@ -1127,9 +1127,9 @@ msgstr "Modul (Libtool)"
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:32
 msgid ""
-"It represents a library, often named a plugin, linked at run time "
-"explicitely by the program itself. It is used to only load the code "
-"corresponding to the used features."
+"It represents a library, often named a plugin, linked at run time explicitly "
+"by the program itself. It is used to only load the code corresponding to the "
+"used features."
 msgstr ""
 "Repräsentiert eine Bibliothek, oft auch Plugin genannt, die zur Laufzeit "
 "explizit vom Programm selbst gebunden wird. Wird verwendet, um nur den Code "
@@ -1176,7 +1176,7 @@ msgstr "Programm"
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:47
 msgid ""
-"It represents compiled program by example from C souces files. All children "
+"It represents compiled program by example from C source files. All children "
 "represent the source files compiled to generate the program."
 msgstr ""
 "Repräsentiert ein übersetztes Programm, z.B. aus C-Quelldateien. Alle "
@@ -1200,7 +1200,7 @@ msgstr "Java-Modul"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:57
-msgid "It represents a progran written in Java."
+msgid "It represents a program written in Java."
 msgstr "Es repräsentiert ein in Java geschriebenes Programm."
 
 #. (itstool) path: item/title
@@ -1210,7 +1210,7 @@ msgstr "LISP-Modul"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:61
-msgid "It represents a progran written in LISP."
+msgid "It represents a program written in LISP."
 msgstr "Es repräsentiert ein in LISP geschriebenes Programm."
 
 #. (itstool) path: item/title
@@ -1627,7 +1627,7 @@ msgid ""
 "directory and everything will be recompiled on each change of the "
 "configuration."
 msgstr ""
-"Einige Autotools-Projekte können nicht außerhalb der Projektordners erstellt "
+"Einige Autotools-Projekte können nicht außerhalb des Projektordners erstellt "
 "werden. Es können zwar dennoch verschiedene Konfigurationen eingesetzt "
 "werden, aber alle müssen den Projektordner verwenden und alles muss bei "
 "Konfigurationswechsel neu kompiliert werden."
@@ -1986,7 +1986,7 @@ msgstr "<cmd>make dist</cmd>"
 #. (itstool) path: item/p
 #: C/autotools-build-plugin.page:49
 msgid ""
-"Use to build a distributation package, called only in the project directory."
+"Use to build a distribution package, called only in the project directory."
 msgstr ""
 "Verwenden Sie dies, um ein verteilbares Paket zu erstellen. Es wird nur im "
 "Projektordner aufgerufen."
@@ -2070,7 +2070,7 @@ msgstr ""
 "Per Voreinstellung werden Fehler und Warnungen übersetzt. Dies hat jedoch "
 "zwei Nachteile. Um Fehler und Warnungen zu erkennen, sollten die "
 "Übersetzungen in <app>Anjuta</app> und dem Compiler exakt übereinstimmen. "
-"Des weiteren ist es oft schwierig, Hilfe im Internet zu erhalten, wenn Sie "
+"Des Weiteren ist es oft schwierig, Hilfe im Internet zu erhalten, wenn Sie "
 "nach übersetzten Meldungen suchen, weil diese seltener zu finden sind. "
 "Wählen Sie dieses Ankreuzfeld ab, um Übersetzungen auszuschalten."
 
@@ -2471,7 +2471,7 @@ msgid ""
 "> for more information."
 msgstr ""
 "Ändern Sie das Feld <gui>Bedingung</gui> oder <gui>Durchgang</gui> und "
-"klicken Sie auf <gui>OK</gui>, sobald Sie fertig sind. Lesen SIe <link xref="
+"klicken Sie auf <gui>OK</gui>, sobald Sie fertig sind. Lesen Sie <link xref="
 "\"debug-breakpoint-dialog\"/> für weitere Informationen."
 
 #. (itstool) path: section/title
@@ -2592,7 +2592,7 @@ msgid ""
 "possible to change the value of any register by clicking in the value column "
 "and entering a new value."
 msgstr ""
-"Register, deren Wert seit dem letzten Stopp geändert wurden, werden rot "
+"Register, deren Werte seit dem letzten Stopp geändert wurden, werden rot "
 "dargestellt. Es ist möglich, den Wert eines beliebigen Registers zu ändern, "
 "indem Sie in die Wertspalte klicken und einen neuen Wert eingeben."
 
@@ -2901,9 +2901,9 @@ msgid ""
 "all its items disabled because the corresponding functions are not "
 "implemented yet."
 msgstr ""
-"Die Einträge des über einen Klick mit der rechten Maustaste erreichbare "
-"Kontextmenü sind derzeit deaktiviert, da die entsprechenden Funktionen noch "
-"nicht implementiert wurden."
+"Die Einträge des über einen Klick mit der rechten Maustaste erreichbaren "
+"Kontextmenüs sind derzeit deaktiviert, da die entsprechenden Funktionen noch "
+"nicht implementiert worden sind."
 
 #. (itstool) path: info/desc
 #: C/debug-local.page:9
@@ -3484,7 +3484,7 @@ msgstr ""
 "geben dann die Kontrolle zurück. Wenn die ausgeführte Anweisung eine "
 "Funktion ausführt, so versucht die Fehlerdiagnose in die Funktion zu "
 "springen (in der Reihenfolge, in der die Funktionen ausgeführt werden). "
-"Sobald die Anweisung ausgeführt und die Kontrolle zurück gegeben wurde, "
+"Sobald die Anweisung ausgeführt und die Kontrolle zurückgegeben wurde, "
 "können Sie den Zustand Ihres Programms analysieren."
 
 #. (itstool) path: note/p
@@ -4776,7 +4776,7 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/project-manager-module-add.page:10
 msgid "Add a set of libraries to a target."
-msgstr "So füen Sie einen Satz Bibliotheken einem Ziel hinzu."
+msgstr "So fügen Sie einem Ziel einen Satz Bibliotheken hinzu."
 
 #. (itstool) path: page/title
 #: C/project-manager-module-add.page:23
@@ -4795,7 +4795,7 @@ msgstr ""
 "Unter Linux werden die meisten Bibliotheken mit zusätzlichen Daten verteilt, "
 "die in der Datei <app>pkg-config</app> hinterlegt sind. Diese Datei enthält "
 "Information über andere erforderliche Bibliotheken, den C-Compiler und ´von "
-"dieser Bibliothek verlangte Linker-Flags . Diese Datei, die Header-Dateien "
+"dieser Bibliothek verlangte Linker-Flags. Diese Datei, die Header-Dateien "
 "und die Dateien der Bibliothek selbst werden ein Paket genannt."
 
 #. (itstool) path: item/p
@@ -4943,7 +4943,7 @@ msgstr ""
 #: C/project-manager-module-new.page:57
 msgid ""
 "It could be that the library is not packaged, it is often the case for "
-"libraries not developped on Linux. See the chapter <link xref=\"project-"
+"libraries not developed on Linux. See the chapter <link xref=\"project-"
 "manager-library-add\"/> explaining how to use them."
 msgstr ""
 "Möglicherweise ist die Bibliothek nicht als Paket verfügbar. Dies ist oft "
@@ -5054,7 +5054,7 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/project-manager.page:29
 msgid ""
-"The project backend to use is choosen when creating or importing a new "
+"The project backend to use is chosen when creating or importing a new "
 "project in <app>Anjuta</app>. It is displayed in the properties of the "
 "project root node and can be changed at any time."
 msgstr ""
