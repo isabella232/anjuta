@@ -196,8 +196,18 @@ static void on_file_changed (GFileMonitor* monitor,
 			break;
 		}
 		case G_FILE_MONITOR_EVENT_DELETED:
-			g_signal_emit_by_name (sio, "deleted");
+		{
+			gchar* filename = NULL;
+
+			if (G_IS_FILE (file))
+				filename = g_file_get_basename (file);
+			/* Only emit "deleted" if monitored file isn't temporary */
+			if (filename != NULL && !g_str_has_prefix (filename, ".goutputstream-"))
+				g_signal_emit_by_name (sio, "deleted");
+
+			g_free (filename);
 			break;
+		}
 		default:
 			break;
 	}
