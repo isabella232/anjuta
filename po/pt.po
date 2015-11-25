@@ -9,16 +9,17 @@ msgstr ""
 "Project-Id-Version: 3.8\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-10-19 02:42+0000\n"
-"PO-Revision-Date: 2014-10-10 08:39+0100\n"
+"POT-Creation-Date: 2015-11-25 05:48+0000\n"
+"PO-Revision-Date: 2015-11-25 05:57+0000\n"
 "Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
-"Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
+"Language-Team: Português <palbuquerque73@gmail.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\\n\n"
+"X-Generator: Gtranslator 2.91.6\n"
+"X-Project-Style: gnome\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -779,7 +780,8 @@ msgid "Source"
 msgstr "Origem"
 
 #: ../plugins/am-project/am-project.c:124
-msgid "Shared Library (libtool)"
+#| msgid "Shared Library (libtool)"
+msgid "Shared Library (Libtool)"
 msgstr "Biblioteca partilhada (libtool)"
 
 #: ../plugins/am-project/am-project.c:132
@@ -1486,9 +1488,6 @@ msgid "Install"
 msgstr "Instalar"
 
 #: ../plugins/build-basic-autotools/build.c:578
-#| msgid ""
-#| "Before using this new configuration, the default one needs to be removed. "
-#| "Do you want to do that ?"
 msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
 "you want to do that?"
@@ -1520,7 +1519,8 @@ msgstr "Selecione uma pasta de compilação dentro da pasta do projeto"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
+#: ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "Predefinição"
 
@@ -1637,7 +1637,8 @@ msgstr "A sair %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807
+#: ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "aviso:"
 
@@ -1650,7 +1651,8 @@ msgstr "warning: -antigo"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819
+#: ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "erro:"
 
@@ -2161,7 +2163,8 @@ msgstr "Tipo"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826
+#: ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "Argumentos"
 
@@ -2738,7 +2741,8 @@ msgid "Shared libraries"
 msgstr "Bibliotecas partilhadas"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937
+#: ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Sinais de Kernel"
 
@@ -3042,13 +3046,15 @@ msgstr "Carregado"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449
+#: ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "Pa_Usar a aplicação"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450
+#: ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Pausa a execução da aplicação"
 
@@ -3138,29 +3144,35 @@ msgstr "Adicionar caminhos adicionais para o código..."
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913
+#: ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "Comando do depurador…"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915
+#: ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Comando personalizado de depuração"
 
-#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921
+#: ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Info"
 
-#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929
+#: ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Bibliotecas partilhadas"
 
-#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931
+#: ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Mostrar os mapeamentos das bibliotecas partilhadas"
 
-#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939
+#: ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Mostrar os sinais de kernel"
 
@@ -5313,8 +5325,8 @@ msgstr "Por favor, insira uma revisão."
 msgid "Cherry Pick"
 msgstr "Cherry Pick"
 
-#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
-#: ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124
+#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "Insira uma mensagem de registo."
 
@@ -6010,7 +6022,8 @@ msgstr ""
 msgid "Failed to activate the JHBuild Plugin: %s"
 msgstr "Falha ao ativar a extensão JHBuild: %s"
 
-#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548
+#: ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "Erro: impossível ligar à porta"
 
@@ -6153,12 +6166,14 @@ msgid "JS Find dirs"
 msgstr "Pastas de procura JS"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-msgid "Gir repository's directory: "
-msgstr "Pasta do repositório gir: "
+#| msgid "Gir repository's directory: "
+msgid "Gir repository's directory:"
+msgstr "Pasta do repositório gir:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-msgid "Gjs repository's directory: "
-msgstr "Pasta do repositório gjs: "
+#| msgid "Gjs repository's directory: "
+msgid "Gjs repository's directory:"
+msgstr "Pasta do repositório gjs:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
 msgid "Min character for completion:"
@@ -6319,12 +6334,10 @@ msgid "Copy message"
 msgstr "Copiar a mensagem"
 
 #: ../plugins/message-view/plugin.c:83
-#| msgid "_Copy Message"
 msgid "_Copy All Messages"
 msgstr "_Copiar todas as mensagens"
 
 #: ../plugins/message-view/plugin.c:84
-#| msgid "_Copy Message"
 msgid "Copy All Messages"
 msgstr "Copiar todas as mensagens"
 
@@ -6516,7 +6529,8 @@ msgstr "Importar um projeto autotools existente para o Anjuta."
 msgid "Project from Existing Sources"
 msgstr "Projeto a partir de código existente"
 
-#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82
+#: ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "Já existe um ficheiro denominado \"%s\". Deseja substituí-lo?"
@@ -8411,13 +8425,15 @@ msgstr "Linguagens"
 
 #. Insert the Add Snippet menu item
 #: ../plugins/snippets-manager/snippets-browser.c:809
-msgid "Add Snippet …"
-msgstr "Adicionar excerto …"
+#| msgid "Add Snippet …"
+msgid "Add Snippet…"
+msgstr "Adicionar excerto…"
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
-msgid "Add Snippets Group …"
-msgstr "Adicionar grupo de excertos …"
+#| msgid "Add Snippets Group …"
+msgid "Add Snippets Group…"
+msgstr "Adicionar grupo de excertos…"
 
 #: ../plugins/snippets-manager/snippets-editor.c:39
 msgid "Default value"
@@ -8436,9 +8452,6 @@ msgstr ""
 "linguagens!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
-#| msgid ""
-#| "<b>Error:</b> The trigger key can only contain alphanumeric characters "
-#| "and _ !"
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
 "\"_\"!"
@@ -8780,17 +8793,14 @@ msgid "Create a new project"
 msgstr "Criar um novo projeto"
 
 #: ../plugins/starter/starter.ui.h:2
-#| msgid "Import project"
 msgid "Import a project"
 msgstr "Importar um projeto"
 
 #: ../plugins/starter/starter.ui.h:3
-#| msgid "Search complete"
 msgid "Search for example code"
 msgstr "Procurar código exemplo"
 
 #: ../plugins/starter/starter.ui.h:4
-#| msgid "Man Documentation"
 msgid "View local Anjuta documentation"
 msgstr "Ver documentação local do Anjuta"
 
@@ -8799,17 +8809,14 @@ msgid "View local Anjuta FAQ"
 msgstr "Ver FAQ locais do Anjuta"
 
 #: ../plugins/starter/starter.ui.h:6
-#| msgid "GNOME Online API Documentation"
 msgid "View online library documentation"
 msgstr "Ver documentação online da biblioteca"
 
 #: ../plugins/starter/starter.ui.h:7
-#| msgid "No recently used resource found with URI \"%s\""
 msgid "Remove recently used project from list"
 msgstr "Remover projeto usado recentemente da lista"
 
 #: ../plugins/starter/starter.ui.h:8
-#| msgid "_Install Project"
 msgid "Unlist Project"
 msgstr "Remover projeto da lista"
 
@@ -9779,7 +9786,8 @@ msgstr "Pasta selecionada na extensão de gestor de ficheiros"
 
 #: ../plugins/tools/variable.c:91
 msgid "Selected full file name in the file manager plugin"
-msgstr "Nome completo de ficheiro selecionado na extensão de gestor de ficheiros"
+msgstr ""
+"Nome completo de ficheiro selecionado na extensão de gestor de ficheiros"
 
 #: ../plugins/tools/variable.c:92
 msgid "Selected full file name without extension in the file manager plugin"
@@ -9810,7 +9818,8 @@ msgstr "Pasta selecionada na extensão de gestor de projetos"
 
 #: ../plugins/tools/variable.c:98
 msgid "Selected full file name in the project manager plugin"
-msgstr "Nome completo de ficheiro selecionado na extensão de gestor de projetos"
+msgstr ""
+"Nome completo de ficheiro selecionado na extensão de gestor de projetos"
 
 #: ../plugins/tools/variable.c:99
 msgid "Selected full file name without extension in the project manager plugin"
@@ -9864,7 +9873,6 @@ msgid "Command line parameters"
 msgstr "Parâmetros de linha de comando"
 
 #: ../src/about.c:186
-#| msgid "Copyright (c) Naba Kumar"
 msgid "Copyright © Naba Kumar"
 msgstr "Copyright © Naba Kumar"
 
