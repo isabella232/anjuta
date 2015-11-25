@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: 3.8\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-08-09 02:49+0000\n"
+"POT-Creation-Date: 2015-11-03 03:52+0000\n"
 "PO-Revision-Date: 2015-08-09 08:33+0100\n"
 "Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
 "Language-Team: Português <palbuquerque73@gmail.com>\n"
@@ -764,7 +764,7 @@ msgstr "Projeto não existe ou o caminho é inválido"
 
 #: ../plugins/am-project/am-project.c:90
 msgid "Root"
-msgstr "Raíz"
+msgstr "Raiz"
 
 #: ../plugins/am-project/am-project.c:98
 #: ../plugins/dir-project/dir-project.c:1007
@@ -1517,8 +1517,7 @@ msgstr "Selecione uma pasta de compilação dentro da pasta do projeto"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
-#: ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "Predefinição"
 
@@ -1635,8 +1634,7 @@ msgstr "A sair %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
-#: ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "aviso:"
 
@@ -1649,8 +1647,7 @@ msgstr "warning: -antigo"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
-#: ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "erro:"
 
@@ -2161,8 +2158,7 @@ msgstr "Tipo"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "Argumentos"
 
@@ -2739,8 +2735,7 @@ msgid "Shared libraries"
 msgstr "Bibliotecas partilhadas"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937
-#: ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Sinais de Kernel"
 
@@ -3044,15 +3039,13 @@ msgstr "Carregado"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "Pa_Usar a aplicação"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Pausa a execução da aplicação"
 
@@ -3142,35 +3135,29 @@ msgstr "Adicionar caminhos adicionais para o código..."
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913
-#: ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "Comando do depurador…"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Comando personalizado de depuração"
 
-#: ../plugins/debug-manager/plugin.c:921
-#: ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Info"
 
-#: ../plugins/debug-manager/plugin.c:929
-#: ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Bibliotecas partilhadas"
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Mostrar os mapeamentos das bibliotecas partilhadas"
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Mostrar os sinais de kernel"
 
@@ -4252,7 +4239,6 @@ msgid "Editor syntax highlighting styles"
 msgstr "Estilos de realce de sintaxe do editor"
 
 #: ../plugins/document-manager/plugin.c:416
-#| msgid "Editor text formating"
 msgid "Editor text formatting"
 msgstr "Formatação de texto do editor"
 
@@ -4664,9 +4650,6 @@ msgid "You can't rename \"/\"!"
 msgstr "Não pode renomear \"/\"!"
 
 #: ../plugins/file-manager/file-view.c:153
-#| msgid ""
-#| "An error has occured!\n"
-#| "Maybe you permissions're insuficient or the filename is wrong"
 msgid ""
 "An error has occurred!\n"
 "Maybe your permissions are insufficient or the filename is wrong"
@@ -5327,8 +5310,8 @@ msgstr "Por favor, insira uma revisão."
 msgid "Cherry Pick"
 msgstr "Cherry Pick"
 
-#: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
+#: ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "Insira uma mensagem de registo."
 
@@ -5781,7 +5764,7 @@ msgstr "Puxar..."
 
 #: ../plugins/git/plugin.c:589
 msgid "Apply"
-msgstr "Aplicar…"
+msgstr "Aplicar"
 
 #: ../plugins/git/plugin.c:597
 msgid "Apply and restore index"
@@ -6024,8 +6007,7 @@ msgstr ""
 msgid "Failed to activate the JHBuild Plugin: %s"
 msgstr "Falha ao ativar a extensão JHBuild: %s"
 
-#: ../plugins/js-debugger/debugger-js.c:548
-#: ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "Erro: impossível ligar à porta"
 
@@ -6177,7 +6159,7 @@ msgstr "Pasta do repositório gjs: "
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
 msgid "Min character for completion:"
-msgstr "Número mínimo de caracteres para concluir: "
+msgstr "Nº mínimo de caracteres para concluir:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
@@ -6529,8 +6511,7 @@ msgstr "Importar um projeto autotools existente para o Anjuta."
 msgid "Project from Existing Sources"
 msgstr "Projeto a partir de código existente"
 
-#: ../plugins/project-import/plugin.c:82
-#: ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "Já existe um ficheiro denominado \"%s\". Deseja substituí-lo?"
@@ -6758,7 +6739,7 @@ msgid ""
 "Are you sure you want to remove the source \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Tem a certeza que quer remover a fonte \"%s\" do projeto?\n"
+"Tem a certeza que quer remover a origem \"%s\" do projeto?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:702
@@ -8146,7 +8127,6 @@ msgid "Require SDL version:"
 msgstr "Necessita da versão SDL:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-#| msgid "Mininum SDL version required"
 msgid "Minimum SDL version required"
 msgstr "Versão SDL mínima necessária"
 
@@ -8731,14 +8711,14 @@ msgstr "O ficheiro \"%s\" é só de leitura! Ainda assim deseja editá-lo?"
 msgid "Could not save %s: %s"
 msgstr "Impossível gravar %s: %s"
 
-#: ../plugins/sourceview/sourceview-io.c:308
+#: ../plugins/sourceview/sourceview-io.c:318
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr ""
 "Impossível gravar o ficheiro pois ainda não foi especificado um nome de "
 "ficheiro"
 
-#: ../plugins/sourceview/sourceview-io.c:556
+#: ../plugins/sourceview/sourceview-io.c:566
 #, c-format
 msgid "New file %d"
 msgstr "Novo ficheiro %d"
@@ -8801,15 +8781,15 @@ msgstr "Procurar código exemplo"
 
 #: ../plugins/starter/starter.ui.h:4
 msgid "View local Anjuta documentation"
-msgstr "Ver a documentação local do Anjuta"
+msgstr "Ver documentação local do Anjuta"
 
 #: ../plugins/starter/starter.ui.h:5
 msgid "View local Anjuta FAQ"
-msgstr "Ver as FAQ locais do Anjuta"
+msgstr "Ver FAQ locais do Anjuta"
 
 #: ../plugins/starter/starter.ui.h:6
 msgid "View online library documentation"
-msgstr "Ver documentação online de biblioteca"
+msgstr "Ver documentação online da biblioteca"
 
 #: ../plugins/starter/starter.ui.h:7
 msgid "Remove recently used project from list"
@@ -8817,7 +8797,7 @@ msgstr "Remover projeto usado recentemente da lista"
 
 #: ../plugins/starter/starter.ui.h:8
 msgid "Unlist Project"
-msgstr "Não listar projeto"
+msgstr "Remover projeto da lista"
 
 #: ../plugins/subversion/anjuta-subversion.plugin.in.h:1
 #: ../plugins/subversion/subversion-ui-utils.c:64
@@ -9494,11 +9474,11 @@ msgstr "Extensão de terminal para o Anjuta."
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:2
 msgid "Use GNOME Terminal profile:"
-msgstr "Utilizar o perfil do terminal GNOME:"
+msgstr "Usar o perfil do terminal GNOME:"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
 msgid "Use default GNOME terminal profile"
-msgstr "Utilizar o perfil predefinido do terminal GNOME:"
+msgstr "Usar o perfil predefinido do terminal GNOME:"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
@@ -9785,8 +9765,7 @@ msgstr "Pasta selecionada na extensão de gestor de ficheiros"
 
 #: ../plugins/tools/variable.c:91
 msgid "Selected full file name in the file manager plugin"
-msgstr ""
-"Nome completo de ficheiro selecionado na extensão de gestor de ficheiros"
+msgstr "Nome completo de ficheiro selecionado na extensão de gestor de ficheiros"
 
 #: ../plugins/tools/variable.c:92
 msgid "Selected full file name without extension in the file manager plugin"
@@ -9817,8 +9796,7 @@ msgstr "Pasta selecionada na extensão de gestor de projetos"
 
 #: ../plugins/tools/variable.c:98
 msgid "Selected full file name in the project manager plugin"
-msgstr ""
-"Nome completo de ficheiro selecionado na extensão de gestor de projetos"
+msgstr "Nome completo de ficheiro selecionado na extensão de gestor de projetos"
 
 #: ../plugins/tools/variable.c:99
 msgid "Selected full file name without extension in the project manager plugin"
@@ -10040,7 +10018,7 @@ msgstr "FICHEIRO_PERFIL"
 
 #: ../src/anjuta-application.c:436
 msgid "- Integrated Development Environment"
-msgstr "- Ambiente integrado de desenvolvimento"
+msgstr "- ambiente integrado de desenvolvimento"
 
 #: ../src/anjuta-application.c:776
 #, c-format
@@ -10152,7 +10130,7 @@ msgstr "Só ícones"
 
 #: ../src/preferences.ui.h:19
 msgid "Text only"
-msgstr "texto só"
+msgstr "Só texto"
 
 #~ msgid "Error writing %s"
 #~ msgstr "Erro ao escrever em %s"
