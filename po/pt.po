@@ -764,7 +764,7 @@ msgstr "Projeto não existe ou o caminho é inválido"
 
 #: ../plugins/am-project/am-project.c:90
 msgid "Root"
-msgstr "Raíz"
+msgstr "Raiz"
 
 #: ../plugins/am-project/am-project.c:98
 #: ../plugins/dir-project/dir-project.c:1007
@@ -4671,7 +4671,7 @@ msgid ""
 "Maybe you permissions're insuficient or the filename is wrong"
 msgstr ""
 "Ocorreu um erro!\n"
-"Talvez não tenha permissões suficientes ou o nome de ficheiro esteja errado."
+"Talvez não tenha permissões suficientes ou o nome de ficheiro esteja errado"
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
@@ -5780,7 +5780,7 @@ msgstr "Puxar..."
 
 #: ../plugins/git/plugin.c:589
 msgid "Apply"
-msgstr "Aplicar…"
+msgstr "Aplicar"
 
 #: ../plugins/git/plugin.c:597
 msgid "Apply and restore index"
@@ -6176,7 +6176,7 @@ msgstr "Pasta do repositório gjs: "
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
 msgid "Min character for completion:"
-msgstr "Número mínimo de caracteres para concluir: "
+msgstr "Nº mínimo de caracteres para concluir:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
@@ -6759,7 +6759,7 @@ msgid ""
 "Are you sure you want to remove the source \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Tem a certeza que quer remover a fonte \"%s\" do projeto?\n"
+"Tem a certeza que quer remover a origem \"%s\" do projeto?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:702
@@ -8807,16 +8807,16 @@ msgstr "Procurar código exemplo"
 #: ../plugins/starter/starter.ui.h:4
 #| msgid "Man Documentation"
 msgid "View local Anjuta documentation"
-msgstr "Ver a documentação local do Anjuta"
+msgstr "Ver documentação local do Anjuta"
 
 #: ../plugins/starter/starter.ui.h:5
 msgid "View local Anjuta FAQ"
-msgstr "Ver as FAQ locais do Anjuta"
+msgstr "Ver FAQ locais do Anjuta"
 
 #: ../plugins/starter/starter.ui.h:6
 #| msgid "GNOME Online API Documentation"
 msgid "View online library documentation"
-msgstr "Ver documentação online de biblioteca"
+msgstr "Ver documentação online da biblioteca"
 
 #: ../plugins/starter/starter.ui.h:7
 #| msgid "No recently used resource found with URI \"%s\""
@@ -8826,7 +8826,7 @@ msgstr "Remover projeto usado recentemente da lista"
 #: ../plugins/starter/starter.ui.h:8
 #| msgid "_Install Project"
 msgid "Unlist Project"
-msgstr "Não listar projeto"
+msgstr "Remover projeto da lista"
 
 #: ../plugins/subversion/anjuta-subversion.plugin.in.h:1
 #: ../plugins/subversion/subversion-ui-utils.c:64
@@ -9503,11 +9503,11 @@ msgstr "Extensão de terminal para o Anjuta."
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:2
 msgid "Use GNOME Terminal profile:"
-msgstr "Utilizar o perfil do terminal GNOME:"
+msgstr "Usar o perfil do terminal GNOME:"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
 msgid "Use default GNOME terminal profile"
-msgstr "Utilizar o perfil predefinido do terminal GNOME:"
+msgstr "Usar o perfil predefinido do terminal GNOME:"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
@@ -9794,8 +9794,7 @@ msgstr "Pasta selecionada na extensão de gestor de ficheiros"
 
 #: ../plugins/tools/variable.c:91
 msgid "Selected full file name in the file manager plugin"
-msgstr ""
-"Nome completo de ficheiro selecionado na extensão de gestor de ficheiros"
+msgstr "Nome completo de ficheiro selecionado na extensão de gestor de ficheiros"
 
 #: ../plugins/tools/variable.c:92
 msgid "Selected full file name without extension in the file manager plugin"
@@ -9826,8 +9825,7 @@ msgstr "Pasta selecionada na extensão de gestor de projetos"
 
 #: ../plugins/tools/variable.c:98
 msgid "Selected full file name in the project manager plugin"
-msgstr ""
-"Nome completo de ficheiro selecionado na extensão de gestor de projetos"
+msgstr "Nome completo de ficheiro selecionado na extensão de gestor de projetos"
 
 #: ../plugins/tools/variable.c:99
 msgid "Selected full file name without extension in the project manager plugin"
@@ -10050,7 +10048,7 @@ msgstr "FICHEIRO_PERFIL"
 
 #: ../src/anjuta-application.c:436
 msgid "- Integrated Development Environment"
-msgstr "- Ambiente integrado de desenvolvimento"
+msgstr "- ambiente integrado de desenvolvimento"
 
 #: ../src/anjuta-application.c:776
 #, c-format
@@ -10162,7 +10160,7 @@ msgstr "Só ícones"
 
 #: ../src/preferences.ui.h:19
 msgid "Text only"
-msgstr "texto só"
+msgstr "Só texto"
 
 #~ msgid "Error writing %s"
 #~ msgstr "Erro ao escrever em %s"
