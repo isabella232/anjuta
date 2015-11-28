@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-09-07 02:49+0000\n"
-"PO-Revision-Date: 2015-09-07 17:32+0300\n"
+"POT-Creation-Date: 2015-11-28 15:51+0000\n"
+"PO-Revision-Date: 2015-11-28 17:57+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -1307,9 +1307,6 @@ msgstr "Nenaudoti priešdėlio:"
 #: ../plugins/am-project/am-properties.c:1039
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
-#| msgid ""
-#| "Do not rename the target with an optional prefix, used to avoid "
-#| "overwritting system program. "
 msgid ""
 "Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
@@ -1512,8 +1509,7 @@ msgstr "Pasirinkite kūrimo katalogą projekto katalogo viduje"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
-#: ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "Numatytasis"
 
@@ -1629,8 +1625,7 @@ msgstr "Paliekama: %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
-#: ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "įspėjimas:"
 
@@ -1643,8 +1638,7 @@ msgstr "įspėjimas:-senas"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
-#: ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "klaida:"
 
@@ -2156,8 +2150,7 @@ msgstr "Tipas"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "Argumentai"
 
@@ -2734,8 +2727,7 @@ msgid "Shared libraries"
 msgstr "Bendro naudojimo bibliotekos"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937
-#: ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Branduolio signalai"
 
@@ -3038,15 +3030,13 @@ msgstr "Įkelta"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "S_ustabdyti programą"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Sustabdo programos vykdymą"
 
@@ -3136,35 +3126,29 @@ msgstr "Pridėti papildomus pradinio kodo kelius"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913
-#: ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "Derintuvės komanda..."
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Pasirinktinė derintuvės komanda"
 
-#: ../plugins/debug-manager/plugin.c:921
-#: ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Informacija"
 
-#: ../plugins/debug-manager/plugin.c:929
-#: ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Bendro naudojimo bibliotekos"
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Rodyti bendro naudojimo bibliotekų susiejimus"
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Rodyti branduolio signalus"
 
@@ -4242,7 +4226,6 @@ msgid "Editor syntax highlighting styles"
 msgstr "Redaktoriaus sintaksės paryškinimo stiliai"
 
 #: ../plugins/document-manager/plugin.c:416
-#| msgid "Editor text formating"
 msgid "Editor text formatting"
 msgstr "Redaktoriaus teksto formatavimas"
 
@@ -4653,9 +4636,6 @@ msgid "You can't rename \"/\"!"
 msgstr "Negalima pervadinti „/“!"
 
 #: ../plugins/file-manager/file-view.c:153
-#| msgid ""
-#| "An error has occured!\n"
-#| "Maybe you permissions're insuficient or the filename is wrong"
 msgid ""
 "An error has occurred!\n"
 "Maybe your permissions are insufficient or the filename is wrong"
@@ -5313,8 +5293,8 @@ msgstr "Įveskite modifikaciją."
 msgid "Cherry Pick"
 msgstr "Ištraukti"
 
-#: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
+#: ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "Įveskite žurnalo pranešimą."
 
@@ -6005,8 +5985,7 @@ msgstr ""
 msgid "Failed to activate the JHBuild Plugin: %s"
 msgstr "Nepavyko aktyvuoti JHBuild įskiepio: %s"
 
-#: ../plugins/js-debugger/debugger-js.c:548
-#: ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "Klaida: nepavyko susieti su prievadu"
 
@@ -6510,8 +6489,7 @@ msgstr "Importuoti esamą autotools projektą į Anjuta"
 msgid "Project from Existing Sources"
 msgstr "Projektas iš esamų kodo failų"
 
-#: ../plugins/project-import/plugin.c:82
-#: ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "Failas pavadinimu „%s“ jau yra. Ar norite jį perrašyti?"
@@ -8122,7 +8100,6 @@ msgid "Require SDL version:"
 msgstr "Reikalinga SDL versija:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-#| msgid "Mininum SDL version required"
 msgid "Minimum SDL version required"
 msgstr "Mažiausia reikalinga SDL versija"
 
@@ -8703,12 +8680,12 @@ msgstr "Failas „%s“ yra tik skaitymui! Vistiek redaguoti?"
 msgid "Could not save %s: %s"
 msgstr "Nepavyko įrašyti %s: %s"
 
-#: ../plugins/sourceview/sourceview-io.c:308
+#: ../plugins/sourceview/sourceview-io.c:318
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr "Nepavyko įrašyti failo, nes failo pavadinimas dar nenurodytas"
 
-#: ../plugins/sourceview/sourceview-io.c:556
+#: ../plugins/sourceview/sourceview-io.c:566
 #, c-format
 msgid "New file %d"
 msgstr "Naujas failas %d"
@@ -9918,7 +9895,7 @@ msgstr "Anjuta dažnai užduodami klausimai"
 
 #: ../src/anjuta-actions.h:71
 msgid "Anjuta _Home Page"
-msgstr "Anjuta _namų tinklapis"
+msgstr "Anjuta _namų tinklalapis"
 
 #: ../src/anjuta-actions.h:72
 msgid "Online documentation and resources"
