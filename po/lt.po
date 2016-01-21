@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-11-28 15:51+0000\n"
-"PO-Revision-Date: 2015-11-28 17:57+0200\n"
+"POT-Creation-Date: 2016-01-06 15:52+0000\n"
+"PO-Revision-Date: 2016-01-06 19:22+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 1.8.6\n"
 
 #: ../anjuta.appdata.xml.in.h:1
 msgid ""
@@ -31,11 +31,11 @@ msgid ""
 "and usable user interface, yet powerful for efficient development."
 msgstr ""
 "Anjuta DevStudio yra universali programinės įrangos kūrimo aplinka su daug "
-"sudėtingų programavimo galimybių, tarp kurių yra projektų valdymas, programų "
-"vedlys, interaktyvi derintuvė, kodo redaktorius, versijų valdymas, grafinės "
-"sąsajos kūrimo įrankis, profiliatorius ir daug kitų įrankių. Ji siekia "
-"pateikti paprastą ir lengvai naudojamą naudotojo sąsają, tačiau galingą "
-"efektyviam kūrimui."
+"sudėtingų programavimo galimybių, tarp kurių yra projektų tvarkymas, "
+"programų vedlys, interaktyvi derintuvė, kodo redaktorius, versijų valdymas, "
+"grafinės sąsajos kūrimo įrankis, profiliatorius ir daug kitų įrankių. Ji "
+"siekia pateikti paprastą ir lengvai naudojamą naudotojo sąsają, tačiau "
+"galingą efektyviam kūrimui."
 
 #: ../anjuta.appdata.xml.in.h:2
 msgid ""
@@ -500,15 +500,15 @@ msgstr "Bendra"
 
 #: ../libanjuta/anjuta-preferences-dialog.c:244
 msgid "Anjuta Preferences"
-msgstr "Anjuta nustatymai"
+msgstr "Anjuta nuostatos"
 
 #: ../libanjuta/anjuta-profile.c:270
 msgid "Plugin Manager"
-msgstr "Įskiepių tvarkyklė"
+msgstr "Įskiepių tvarkytuvė"
 
 #: ../libanjuta/anjuta-profile.c:271
 msgid "The plugin manager to use for resolving plugins"
-msgstr "Įskiepių tvarkyklė, naudojama įskiepiams tvarkyti"
+msgstr "Įskiepių tvarkytuvė, naudojama įskiepiams tvarkyti"
 
 #: ../libanjuta/anjuta-profile.c:279
 msgid "Profile Name"
@@ -847,7 +847,7 @@ msgstr "Autotools realizacija"
 
 #: ../plugins/am-project/am-project.plugin.in.h:2
 msgid "New Autotools backend for project manager"
-msgstr "Nauja Autotools realizacija projektų tvarkyklei"
+msgstr "Nauja Autotools realizacija projektų tvarkytuvei"
 
 #: ../plugins/am-project/am-properties.c:49
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:5
@@ -1416,7 +1416,7 @@ msgstr "Konfigūracija:"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:4
 msgid "Configure Options:"
-msgstr "Konfigūracijos parinktys:"
+msgstr "Konfigūracijos parametrai:"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:5
 msgid "Build Directory:"
@@ -1904,7 +1904,7 @@ msgid ""
 "Error while setting up build environment:\n"
 " %s"
 msgstr ""
-"Klaida nustatant kūrimo aplinką:\n"
+"Klaida, nustatant kūrimo aplinką:\n"
 " %s"
 
 #: ../plugins/build-basic-autotools/program.c:373
@@ -1963,7 +1963,7 @@ msgstr "Bazinės klasės paveldėjimas:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:10
 msgid "Class Options:"
-msgstr "Klasės parinktys:"
+msgstr "Klasės parametrai:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:11
 msgid "Source/Header Headings:"
@@ -2227,7 +2227,7 @@ msgstr "Slaptažodžių serveris (pserver)"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:6
 msgid "CVS Preferences"
-msgstr "CVS nustatymai"
+msgstr "CVS nuostatos"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:7
 msgid "Path to \"cvs\" command"
@@ -2243,7 +2243,7 @@ msgstr "Nepaisyti .cvsrc failo (rekomenduojama)"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:10
 msgid "CVS Options"
-msgstr "CVS nustatymai"
+msgstr "CVS parametrai"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:11
 msgid "CVS: Add file/directory"
@@ -2317,7 +2317,7 @@ msgstr "Nedirbti rekursyviai"
 #: ../plugins/git/anjuta-git.ui.h:8
 #: ../plugins/subversion/anjuta-subversion.ui.h:8
 msgid "Options:"
-msgstr "Nustatymai:"
+msgstr "Parametrai:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:27
 msgid "CVS: Update file/directory"
@@ -2391,7 +2391,7 @@ msgstr "Pasirinkite failą arba katalogą, kuriam gauti žurnalą:"
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:9
 #: ../plugins/subversion/anjuta-subversion.ui.h:14
 msgid "Options"
-msgstr "Nustatymai"
+msgstr "Parametrai"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:44
 msgid "CVS: Import"
@@ -2615,7 +2615,7 @@ msgstr "Derintuvė"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.plugin.in.h:2
 msgid "Debug Manager plugin."
-msgstr "Derinimo valdyklės įskiepis"
+msgstr "Derinimo tvarkytuvės įskiepis."
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:1
 msgid "Attach to process"
@@ -3154,11 +3154,11 @@ msgstr "Rodyti branduolio signalus"
 
 #: ../plugins/debug-manager/plugin.c:945
 msgid "_Continue/Suspend"
-msgstr "_Tęsti/stabdyti"
+msgstr "_Tęsti/pristabdyti"
 
 #: ../plugins/debug-manager/plugin.c:947
 msgid "Continue or suspend the execution of the program"
-msgstr "Tęsti arba stabdyti programos vykdymą"
+msgstr "Tęsti arba pristabdyti programos vykdymą"
 
 #: ../plugins/debug-manager/plugin.c:965
 msgid "Step _In"
@@ -3613,11 +3613,11 @@ msgstr "[tik skaitymui]"
 #: ../plugins/document-manager/anjuta-document-manager.plugin.in.h:1
 #: ../plugins/file-loader/plugin.c:299
 msgid "Document Manager"
-msgstr "Dokumentų tvarkyklė"
+msgstr "Dokumentų tvarkytuvė"
 
 #: ../plugins/document-manager/anjuta-document-manager.plugin.in.h:2
 msgid "Provides document management capabilities."
-msgstr "Suteikia dokumentų tvarkymo galimybes"
+msgstr "Suteikia dokumentų tvarkymo galimybes."
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:1
 msgid "Top"
@@ -4243,7 +4243,7 @@ msgstr "Dokumentai"
 
 #: ../plugins/document-manager/plugin.c:424
 msgid "Toggle search options"
-msgstr "Perjungti paieškos parinktis"
+msgstr "Perjungti paieškos parametrus"
 
 #: ../plugins/document-manager/plugin.c:587
 msgid "Reload"
@@ -4316,7 +4316,7 @@ msgstr ""
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
 "Naudokite piktogramos „Rasti“ kontekstinį meniu, jei norite daugiau paieškos "
-"parinkčių"
+"parametrų"
 
 #: ../plugins/document-manager/search-box.c:988
 msgid "Replace"
@@ -4572,11 +4572,11 @@ msgstr "Atverti su"
 #: ../plugins/file-manager/file-manager.plugin.in.h:1
 #: ../plugins/file-manager/plugin.c:538 ../plugins/file-manager/plugin.c:547
 msgid "File Manager"
-msgstr "Failų tvarkyklė"
+msgstr "Failų tvarkytuvė"
 
 #: ../plugins/file-manager/file-manager.plugin.in.h:2
 msgid "File manager for project and single files"
-msgstr "Failų tvarkyklė projekto ir pavieniams failams"
+msgstr "Failų tvarkytuvė projekto ir pavieniams failams"
 
 #: ../plugins/file-manager/file-manager.ui.h:1
 msgid "Root directory if no project is open:"
@@ -4653,15 +4653,15 @@ msgstr "Pervadinti failą ar katalogą"
 
 #: ../plugins/file-manager/plugin.c:110
 msgid "_Show in File manager"
-msgstr "_Rodyti failų tvarkyklėje"
+msgstr "_Rodyti failų tvarkytuvėje"
 
 #: ../plugins/file-manager/plugin.c:110
 msgid "Show in File manager"
-msgstr "Rodyti failų tvarkyklėje"
+msgstr "Rodyti failų tvarkytuvėje"
 
 #: ../plugins/file-manager/plugin.c:366
 msgid "File manager popup actions"
-msgstr "Failų tvarkyklės iššokančio meniu veiksmai"
+msgstr "Failų tvarkytuvės iššokančio meniu veiksmai"
 
 #: ../plugins/file-manager/plugin.c:399 ../plugins/git/plugin.c:157
 msgid "Files"
@@ -5820,11 +5820,11 @@ msgstr "Naudotojo sąsajos failas"
 
 #: ../plugins/glade/anjuta-glade.ui.h:1
 msgid "Select widgets in the workspace"
-msgstr "Pasirinkti elementus darbalaukyje"
+msgstr "Pasirinkti elementus darbo srityje"
 
 #: ../plugins/glade/anjuta-glade.ui.h:2
 msgid "Drag and resize widgets in the workspace"
-msgstr "Tempti ir keisti elementų dydį darbalaukyje"
+msgstr "Tempti ir keisti elementų dydį darbo srityje"
 
 #: ../plugins/glade/anjuta-glade.ui.h:3
 msgid "Edit widget margins"
@@ -6004,7 +6004,7 @@ msgstr "Klaida: %s"
 
 #: ../plugins/language-manager/language-manager.plugin.in.h:1
 msgid "Language Manager"
-msgstr "Kalbos valdyklė"
+msgstr "Kalbos tvarkytuvė"
 
 #: ../plugins/language-manager/language-manager.plugin.in.h:2
 msgid "Plugin to keep track of multiple programming languages"
@@ -6172,7 +6172,7 @@ msgstr ""
 "Arba python kelias yra blogas, arba python-rope (http://rope.sf.net) "
 "bibliotekos\n"
 "nėra įdiegtos. Abu yra būtini auto-užbaigimui python failuose.\n"
-"Įdiekite juos ir patikrinkite python kelią nustatymuose."
+"Įdiekite juos ir patikrinkite nuostatose python kelią."
 
 #: ../plugins/language-support-python/plugin.c:84
 msgid "Do not show that warning again"
@@ -6204,7 +6204,7 @@ msgstr "Auto-užbaigimas"
 
 #: ../plugins/message-view/anjuta-message-manager.plugin.in.h:1
 msgid "Message Manager"
-msgstr "Pranešimų valdyklė"
+msgstr "Pranešimų tvarkytuvė"
 
 #: ../plugins/message-view/anjuta-message-manager.plugin.in.h:2
 msgid "Manages messages from external apps"
@@ -6572,7 +6572,7 @@ msgstr "Importuoti iš versijų valdymo sistemos"
 
 #: ../plugins/project-import/project-import.ui.h:5
 msgid "Import options"
-msgstr "Importavimo parinktys"
+msgstr "Importavimo parametrai"
 
 #: ../plugins/project-import/project-import.ui.h:6
 msgid "Project name"
@@ -6580,11 +6580,11 @@ msgstr "Projekto pavadinimas"
 
 #: ../plugins/project-manager/anjuta-project-manager.plugin.in.h:1
 msgid "Project Manager"
-msgstr "Projektų valdyklė"
+msgstr "Projektų tvarkytuvė"
 
 #: ../plugins/project-manager/anjuta-project-manager.plugin.in.h:2
 msgid "Project Manager Plugin for Anjuta."
-msgstr "Projektų valdyklės įskiepis Anjuta."
+msgstr "Projektų tvarkytuvės įskiepis Anjuta."
 
 #. if (gtk_tree_model_get_iter_first(model, &iter))
 #. {
@@ -6941,11 +6941,11 @@ msgstr "Klaida užveriant projektą: %s"
 
 #: ../plugins/project-manager/plugin.c:1607
 msgid "Project manager actions"
-msgstr "Projektų valdyklės veiksmai"
+msgstr "Projektų tvarkytuvės veiksmai"
 
 #: ../plugins/project-manager/plugin.c:1615
 msgid "Project manager popup actions"
-msgstr "Projektų valdyklės iššokančio meniu veiksmai"
+msgstr "Projektų tvarkytuvės iššokančio meniu veiksmai"
 
 #: ../plugins/project-manager/plugin.c:2480
 msgid "Initializing Project…"
@@ -7037,7 +7037,7 @@ msgstr "Nurodykite, _kur sukurti tikslą:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:21
 msgid "More options:"
-msgstr "Daugiau parinkčių:"
+msgstr "Daugiau parametrų:"
 
 #: ../plugins/project-manager/project-chooser.c:296
 msgid "<Select any project node>"
@@ -7223,10 +7223,10 @@ msgid ""
 "your Application Manager."
 msgstr ""
 "Trūkstamos programos dažniausiai yra tam tikrų distribucijos paketų dalis ir "
-"jų galima ieškoti jūsų programų tvarkyklėje. Panašiai programų kūrimo "
+"jų galima ieškoti jūsų programų tvarkytuvėje. Panašiai programų kūrimo "
 "paketai yra laikomi specialiuose paketuose, kuriuos jūsų distribucija "
 "pateikia ir leidžia jų pagrindu kurti projektus. Jų pavadinimai dažniausiai "
-"baigiasi „-dev“ arba „-devel“ ir juos galima rasti programų tvarkyklėje."
+"baigiasi „-dev“ arba „-devel“ ir juos galima rasti programų tvarkytuvėje."
 
 #: ../plugins/project-wizard/druid.c:1015
 msgid "Missing components"
@@ -7470,7 +7470,7 @@ msgstr "El. pašto adresas:"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:10
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:10
 msgid "Project options"
-msgstr "Projekto parinktys"
+msgstr "Projekto parametrai"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:11
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:11
@@ -7492,7 +7492,7 @@ msgstr "Projekto parinktys"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:11
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:11
 msgid "Options for project build system"
-msgstr "Parinktys projekto kūrimo sistemai"
+msgstr "Parametrai projekto kūrimo sistemai"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:13
 msgid "Plugin Title:"
@@ -7992,7 +7992,7 @@ msgstr "Bendrinis java (automake)"
 
 #: ../plugins/project-wizard/templates/java.wiz.in.h:2
 msgid "A generic java project using automake project management"
-msgstr "Bendrinis java projektas naudojant automake projekto valdymą"
+msgstr "Bendrinis java projektas, naudojant automake projekto tvarkymą"
 
 #: ../plugins/project-wizard/templates/java.wiz.in.h:8
 msgid "Main class"
@@ -8085,7 +8085,7 @@ msgstr "Bendrinis python (automake)"
 
 #: ../plugins/project-wizard/templates/python.wiz.in.h:2
 msgid "A generic python project using automake project management"
-msgstr "Bendrinis python projektas naudojant automake projekto valdymą"
+msgstr "Bendrinis python projektas, naudojant automake projekto tvarkymą"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:1
 msgid "SDL"
@@ -8340,7 +8340,7 @@ msgstr "Eksportuoti iškarpas iš duomenų bazės"
 
 #: ../plugins/snippets-manager/plugin.c:332
 msgid "Snippets Manager actions"
-msgstr "Iškarpų valdyklės veiksmai"
+msgstr "Iškarpų tvarkytuvės veiksmai"
 
 #: ../plugins/snippets-manager/plugin.c:779
 msgid "Command?"
@@ -8534,7 +8534,7 @@ msgstr "Įtraukos dydis tarpais:"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:4
 msgid "Indentation and auto-format options"
-msgstr "Įtraukos ir auto-formatavimo parinktys"
+msgstr "Įtraukos ir auto-formatavimo parametrai"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:5
 msgid "Highlight syntax"
@@ -8778,11 +8778,11 @@ msgstr "libsvn pagrindo Subversion kliento įskiepis"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:1
 msgid "Subversion Preferences"
-msgstr "Subversion nustatymai"
+msgstr "Subversion nuostatos"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:2
 msgid "Subversion Options"
-msgstr "Subversion parinktys"
+msgstr "Subversion parametrai"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:3
 msgid "Add file/directory"
@@ -9326,8 +9326,8 @@ msgid ""
 "This option means that the global system packages will be scanned "
 "simultaneously with the project's ones"
 msgstr ""
-"Ši parinktis reiškia, kad visuotiniai sistemos paketai bus skenuojami kartu "
-"su projektu"
+"Šis parametras reiškia, kad visuotiniai sistemos paketai bus skenuojami "
+"kartu su projektu"
 
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:3
 msgid "Automatically update symbols without saving file"
@@ -9450,7 +9450,7 @@ msgstr "Naudoti GNOME terminalo numatytąjį profilį"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
-msgstr "Terminalo parinktys"
+msgstr "Terminalo parametrai"
 
 #: ../plugins/terminal/terminal.c:644
 msgid "Ctrl-C"
@@ -9724,61 +9724,63 @@ msgstr "Projekto šaknies kelias"
 
 #: ../plugins/tools/variable.c:89
 msgid "Selected URI in the file manager plugin"
-msgstr "Pasirinktas URI failų tvarkyklės įskiepyje"
+msgstr "Failų tvarkytuvės įskiepyje pasirinktas URI"
 
 #: ../plugins/tools/variable.c:90
 msgid "Selected directory in the file manager plugin"
-msgstr "Failų tvarkyklės įskiepyje pasirinktas katalogas"
+msgstr "Failų tvarkytuvės įskiepyje pasirinktas katalogas"
 
 #: ../plugins/tools/variable.c:91
 msgid "Selected full file name in the file manager plugin"
-msgstr "Failų tvarkyklės įskiepyje pasirinkto failo visas pavadinimas"
+msgstr "Failų tvarkytuvės įskiepyje pasirinkto failo visas pavadinimas"
 
 #: ../plugins/tools/variable.c:92
 msgid "Selected full file name without extension in the file manager plugin"
 msgstr ""
-"Failų tvarkyklės įskiepyje pasirinkto failo visas pavadinimas be plėtinio"
+"Failų tvarkytuvės įskiepyje pasirinkto failo visas pavadinimas be plėtinio"
 
 #: ../plugins/tools/variable.c:93
 msgid "Selected file name in the file manager plugin"
-msgstr "Failų tvarkyklės įskiepyje pasirinkto failo pavadinimas"
+msgstr "Failų tvarkytuvės įskiepyje pasirinkto failo pavadinimas"
 
 #: ../plugins/tools/variable.c:94
 msgid "Selected file name without extension in the file manager plugin"
-msgstr "Failų tvarkyklės įskiepyje pasirinkto failo pavadinimas be plėtinio"
+msgstr "Failų tvarkytuvės įskiepyje pasirinkto failo pavadinimas be plėtinio"
 
 #: ../plugins/tools/variable.c:95
 msgid "Selected file's extension in the file manager plugin"
-msgstr "Failų tvarkyklės įskiepyje pasirinkto failo plėtinys"
+msgstr "Failų tvarkytuvės įskiepyje pasirinkto failo plėtinys"
 
 #: ../plugins/tools/variable.c:96
 msgid "Selected URI in the project manager plugin"
-msgstr "Pasirinktas URI projektų tvarkyklės įskiepyje"
+msgstr "Projektų tvarkytuvės įskiepyje pasirinktas URI"
 
 #: ../plugins/tools/variable.c:97
 msgid "Selected directory in the project manager plugin"
-msgstr "Projektų tvarkyklės įskiepyje pasirinktas katalogas"
+msgstr "Projektų tvarkytuvės įskiepyje pasirinktas katalogas"
 
 #: ../plugins/tools/variable.c:98
 msgid "Selected full file name in the project manager plugin"
-msgstr "Projektų tvarkyklės įskiepyje pasirinkto failo pilnas pavadinimas"
+msgstr "Projektų tvarkytuvės įskiepyje pasirinkto failo pilnas pavadinimas"
 
 #: ../plugins/tools/variable.c:99
 msgid "Selected full file name without extension in the project manager plugin"
 msgstr ""
-"Projektų tvarkyklės įskiepyje pasirinkto failo pilnas pavadinimas be plėtinio"
+"Projektų tvarkytuvės įskiepyje pasirinkto failo pilnas pavadinimas be "
+"plėtinio"
 
 #: ../plugins/tools/variable.c:100
 msgid "Selected file name in the project manager plugin"
-msgstr "Projektų tvarkyklės įskiepyje pasirinkto failo pavadinimas"
+msgstr "Projektų tvarkytuvės įskiepyje pasirinkto failo pavadinimas"
 
 #: ../plugins/tools/variable.c:101
 msgid "Selected file name without extension in the project manager plugin"
-msgstr "Projektų tvarkyklės įskiepyje pasirinkto failo pavadinimas be plėtinio"
+msgstr ""
+"Projektų tvarkytuvės įskiepyje pasirinkto failo pavadinimas be plėtinio"
 
 #: ../plugins/tools/variable.c:102
 msgid "Selected file extension in the project manager plugin"
-msgstr "Projektų tvarkyklės įskiepyje pasirinkto failo plėtinys"
+msgstr "Projektų tvarkytuvės įskiepyje pasirinkto failo plėtinys"
 
 #: ../plugins/tools/variable.c:103
 msgid "Currently edited file name"
@@ -9830,7 +9832,7 @@ msgstr "Palikti Anjuta IDE"
 
 #: ../src/anjuta-actions.h:32 ../src/anjuta-menu.ui.h:2
 msgid "_Preferences"
-msgstr "_Nustatymai"
+msgstr "_Nuostatos"
 
 #: ../src/anjuta-actions.h:33
 msgid "Do you prefer coffee to tea? Check it out."
