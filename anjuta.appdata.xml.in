@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application>
-  <id type="desktop">anjuta.desktop</id>
-  <licence>CC0</licence>
+<component type="desktop">
+  <id>anjuta.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <_name>Anjuta</_name>
+  <_summary>Develop software in an integrated development environment</_summary>
   <description>
     <_p>
       Anjuta DevStudio is a versatile software development studio featuring a
@@ -29,8 +32,14 @@
     </_p>
   </description>
   <screenshots>
-    <screenshot type="default">https://git.gnome.org/browse/anjuta/plain/pixmaps/screenshot.png</screenshot>
+    <screenshot type="default">
+      <image>https://git.gnome.org/browse/anjuta/plain/pixmaps/screenshot.png</image>
+    </screenshot>
   </screenshots>
+  <project_group>GNOME</project_group>
   <url type="homepage">https://projects.gnome.org/anjuta/</url>
-  <updatecontact>anjuta-list@gnome.org</updatecontact>
-</application>
+  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=anjuta</url>
+  <url type="donation">http://www.gnome.org/friends/</url>
+  <url type="help">https://developer.gnome.org/anjuta-manual/stable/</url>
+  <update_contact>anjuta-list@gnome.org</update_contact>
+</component>
