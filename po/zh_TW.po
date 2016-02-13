@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: anjuta 3.3.92\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-07-21 14:49+0000\n"
-"PO-Revision-Date: 2015-07-29 09:26+0800\n"
+"POT-Creation-Date: 2016-02-10 03:52+0000\n"
+"PO-Revision-Date: 2016-02-11 08:04+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@lists.linux.org.tw>\n"
 "Language: zh_TW\n"
@@ -20,9 +20,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.8\n"
+"X-Generator: Poedit 1.8.6\n"
 
-#: ../anjuta.appdata.xml.in.h:1
+#: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
+msgid "Anjuta"
+msgstr "Anjuta"
+
+#: ../anjuta.appdata.xml.in.h:2 ../anjuta.desktop.in.in.h:3
+msgid "Develop software in an integrated development environment"
+msgstr "在整合式開發環境中開發軟體"
+
+#: ../anjuta.appdata.xml.in.h:3
 msgid ""
 "Anjuta DevStudio is a versatile software development studio featuring a "
 "number of advanced programming facilities including project management, "
@@ -35,7 +43,7 @@ msgstr ""
 "剖析等工具。它著眼於提供簡單而易用的使用者介面，但能同時提供足夠的軟體開發需"
 "求。"
 
-#: ../anjuta.appdata.xml.in.h:2
+#: ../anjuta.appdata.xml.in.h:4
 msgid ""
 "Anjuta is very extensible with plugins. Almost all features in Anjuta are "
 "implemented using plugins which can be dynamically enabled or disabled. You "
@@ -49,7 +57,7 @@ msgstr ""
 "如使用者介面配置，使用中的外掛程式也會在每個專案中呈現，以便能在不同複雜程度"
 "的專案中運行。使用外掛程式，您可以在 Anjuta 中擴充自己的功能。"
 
-#: ../anjuta.appdata.xml.in.h:3
+#: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
 "templates. The selection includes simple generic, flat (no subdirectory), GTK"
@@ -60,17 +68,9 @@ msgstr ""
 "有子資料夾)、GTK+、GNOME、Java、Python 專案等等。新的範本可以輕易的下載與安"
 "裝。"
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
-msgid "Anjuta"
-msgstr "Anjuta"
-
 #: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
 msgstr "整合式開發環境"
-
-#: ../anjuta.desktop.in.in.h:3
-msgid "Develop software in an integrated development environment"
-msgstr "在整合式開發環境中開發軟體"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
@@ -599,7 +599,7 @@ msgstr "區分大小寫"
 
 #: ../libanjuta/anjuta-ui.c:1436
 msgid "Shortcut"
-msgstr "快捷鍵"
+msgstr "捷徑鍵"
 
 #. Avoid space in translated string
 #: ../libanjuta/anjuta-utils.c:369
@@ -1453,8 +1453,7 @@ msgstr "從專案目錄選擇一個組建目錄"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
-#: ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "預設"
 
@@ -1569,8 +1568,7 @@ msgstr "正在離開： %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
-#: ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "警告："
 
@@ -1583,8 +1581,7 @@ msgstr "警告:-old"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
-#: ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "錯誤："
 
@@ -2094,8 +2091,7 @@ msgstr "類型"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "參數"
 
@@ -2669,8 +2665,7 @@ msgid "Shared libraries"
 msgstr "共享程式庫"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937
-#: ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "內核訊號"
 
@@ -2972,15 +2967,13 @@ msgstr "已載入"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "暫停程式(_U)"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "暫停執行程式"
 
@@ -3070,35 +3063,29 @@ msgstr "加入額外的原始檔路徑"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913
-#: ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "除錯工具指令…"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "自訂除錯器指令"
 
-#: ../plugins/debug-manager/plugin.c:921
-#: ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "資訊(_I)"
 
-#: ../plugins/debug-manager/plugin.c:929
-#: ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "共享程式庫"
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "顯示共享程式庫對映"
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "顯示核心訊號"
 
@@ -4174,7 +4161,7 @@ msgid "Editor syntax highlighting styles"
 msgstr "編輯器語法標示風格"
 
 #: ../plugins/document-manager/plugin.c:416
-msgid "Editor text formating"
+msgid "Editor text formatting"
 msgstr "編輯器文字格式"
 
 #: ../plugins/document-manager/plugin.c:417
@@ -4578,8 +4565,8 @@ msgstr "您不能重新命名 \"/\"！"
 
 #: ../plugins/file-manager/file-view.c:153
 msgid ""
-"An error has occured!\n"
-"Maybe you permissions're insuficient or the filename is wrong"
+"An error has occurred!\n"
+"Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
 "有錯誤發生！\n"
 "也許您的權限不足或檔案名稱錯誤"
@@ -5230,8 +5217,8 @@ msgstr "請輸入修訂版。"
 msgid "Cherry Pick"
 msgstr "Cherry Pick"
 
-#: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
+#: ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "請輸入紀錄訊息。"
 
@@ -5918,8 +5905,7 @@ msgstr "找不到 JHBuild 函式庫目錄。您需要 JHBuild 2012-11-06 或之�
 msgid "Failed to activate the JHBuild Plugin: %s"
 msgstr "請選擇欲啟用的 JHBuild 外掛程式：%s"
 
-#: ../plugins/js-debugger/debugger-js.c:548
-#: ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "錯誤：不能綁定連接埠"
 
@@ -6418,8 +6404,7 @@ msgstr "匯入已存在的 autotools 專案至 Anjuta"
 msgid "Project from Existing Sources"
 msgstr "從現有源碼產生專案"
 
-#: ../plugins/project-import/plugin.c:82
-#: ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "名為「%s」的檔案已存在。是否要取代它？"
@@ -8001,7 +7986,7 @@ msgid "Require SDL version:"
 msgstr "需要 SDL 版本："
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-msgid "Mininum SDL version required"
+msgid "Minimum SDL version required"
 msgstr "需要最小 SDL 版本"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
@@ -8578,12 +8563,12 @@ msgstr "檔案「%s」是唯讀的！仍然要編輯嗎？"
 msgid "Could not save %s: %s"
 msgstr "無法儲存檔案 %s：%s"
 
-#: ../plugins/sourceview/sourceview-io.c:308
+#: ../plugins/sourceview/sourceview-io.c:318
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr "無法儲存檔案，因為檔案名稱尚未指定"
 
-#: ../plugins/sourceview/sourceview-io.c:556
+#: ../plugins/sourceview/sourceview-io.c:566
 #, c-format
 msgid "New file %d"
 msgstr "新增檔案 %d"
@@ -9892,7 +9877,7 @@ msgstr "已安裝的外掛程式"
 
 #: ../src/anjuta-window.c:1002
 msgid "Shortcuts"
-msgstr "快捷鍵"
+msgstr "捷徑鍵"
 
 #: ../src/anjuta-window.c:1074
 #, c-format
