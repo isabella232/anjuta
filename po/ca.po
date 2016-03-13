@@ -5,15 +5,15 @@
 # Joan Duran <jodufi@gmail.com>, 2007-2013.
 # Jordi Serratosa <jordis@softcatala.cat>, 2012.
 # Josep Sànchez <papapep@gmx.com>, 2013.
-# Gil Forcada <gilforcada@guifi.net>, 2014.
+# Gil Forcada <gilforcada@guifi.net>, 2014, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-09-15 14:44+0000\n"
-"PO-Revision-Date: 2014-09-15 20:55+0200\n"
+"POT-Creation-Date: 2016-03-13 03:52+0000\n"
+"PO-Revision-Date: 2016-03-13 14:40+0100\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -21,8 +21,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bits\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
-#: ../anjuta.appdata.xml.in.h:1
+#: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
+msgid "Anjuta"
+msgstr "Anjuta"
+
+#: ../anjuta.appdata.xml.in.h:2 ../anjuta.desktop.in.in.h:3
+msgid "Develop software in an integrated development environment"
+msgstr "Desenvolupeu programari en un entorn integrat de desenvolupament"
+
+#: ../anjuta.appdata.xml.in.h:3
 msgid ""
 "Anjuta DevStudio is a versatile software development studio featuring a "
 "number of advanced programming facilities including project management, "
@@ -34,10 +43,11 @@ msgstr ""
 "sèrie d'ajudes avançades a la programació incloent la gestió de projectes, "
 "l'auxiliar de creació d'aplicacions, el depurador interactiu, l'editor de "
 "codi font, el control de versions, el dissenyador d'interfícies, "
-"l'analitzador de rendiment i moltes altres eines. Se centra en proporcionar una interfície "
-"senzilla i usable, a la vegada que potent per a un desenvolupament eficient."
+"l'analitzador de rendiment i moltes altres eines. Se centra en proporcionar "
+"una interfície senzilla i usable, a la vegada que potent per a un "
+"desenvolupament eficient."
 
-#: ../anjuta.appdata.xml.in.h:2
+#: ../anjuta.appdata.xml.in.h:4
 msgid ""
 "Anjuta is very extensible with plugins. Almost all features in Anjuta are "
 "implemented using plugins which can be dynamically enabled or disabled. You "
@@ -55,7 +65,7 @@ msgstr ""
 "Podeu ampliar l'Anjuta amb les vostres pròpies funcions fent servir "
 "connectors."
 
-#: ../anjuta.appdata.xml.in.h:3
+#: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
 "templates. The selection includes simple generic, flat (no subdirectory), GTK"
@@ -67,17 +77,9 @@ msgstr ""
 "simples, plans (sense subdirectori), GTK+, GNOME, Java, Python i més. Es "
 "poden baixar i instal·lar fàcilment noves plantilles."
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
-msgid "Anjuta"
-msgstr "Anjuta"
-
 #: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
 msgstr "Entorn integrat de desenvolupament"
-
-#: ../anjuta.desktop.in.in.h:3
-msgid "Develop software in an integrated development environment"
-msgstr "Desenvolupeu programari en un entorn integrat de desenvolupament"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
@@ -1332,7 +1334,7 @@ msgstr "No utilitzis el prefix:"
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
 "No canviïs el nom de l'objectiu amb un prefix opcional. S'utilitza per "
@@ -1532,8 +1534,7 @@ msgstr "Seleccioneu un directori de muntatge dins del directori del projecte"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
-#: ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "Per defecte"
 
@@ -1650,8 +1651,7 @@ msgstr "S'està sortint: %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
-#: ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "avís:"
 
@@ -1664,8 +1664,7 @@ msgstr "avís:-antic"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
-#: ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "errors:"
 
@@ -2177,8 +2176,7 @@ msgstr "Tipus"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "Arguments"
 
@@ -2241,7 +2239,7 @@ msgid "Patch-Style diff"
 msgstr "Diff estil pedaç"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2201
 msgid "Local"
 msgstr "Local"
 
@@ -2755,8 +2753,7 @@ msgid "Shared libraries"
 msgstr "Biblioteques compartides"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937
-#: ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Senyals del nucli"
 
@@ -3060,15 +3057,13 @@ msgstr "Carregat"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "Fes una pa_usa al programa"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Fes una pausa a l'execució del programa"
 
@@ -3158,35 +3153,29 @@ msgstr "Afegeix camins de fonts addicionals"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913
-#: ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "Ordre del depurador…"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Ordre personalitzada del depurador"
 
-#: ../plugins/debug-manager/plugin.c:921
-#: ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Informació"
 
-#: ../plugins/debug-manager/plugin.c:929
-#: ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Biblioteques compartides"
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Mostra les correspondències de les biblioteques compartides"
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Mostra els senyals del nucli"
 
@@ -3365,7 +3354,7 @@ msgstr "Marc"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Fitxer"
@@ -4269,7 +4258,7 @@ msgid "Editor syntax highlighting styles"
 msgstr "Estils de ressaltat de sintaxi de l'editor"
 
 #: ../plugins/document-manager/plugin.c:416
-msgid "Editor text formating"
+msgid "Editor text formatting"
 msgstr "Format del text de l'editor"
 
 #: ../plugins/document-manager/plugin.c:417
@@ -4635,7 +4624,7 @@ msgstr "Selecciona automàticament el document actual"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2213
 msgid "Global"
 msgstr "Global"
 
@@ -4680,8 +4669,8 @@ msgstr "No podeu canviar el nom de «/»!"
 
 #: ../plugins/file-manager/file-view.c:153
 msgid ""
-"An error has occured!\n"
-"Maybe you permissions're insuficient or the filename is wrong"
+"An error has occurred!\n"
+"Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
 "S'ha produït un error.\n"
 "Potser no teniu prou permisos o el nom de fitxer és erroni"
@@ -5343,8 +5332,8 @@ msgstr "Introduïu una revisió."
 msgid "Cherry Pick"
 msgstr "Cherry Pick"
 
-#: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
+#: ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "Introduïu un missatge de registre."
 
@@ -6042,8 +6031,7 @@ msgstr ""
 msgid "Failed to activate the JHBuild Plugin: %s"
 msgstr "No s'ha pogut activar el connector JHBuild: %s"
 
-#: ../plugins/js-debugger/debugger-js.c:548
-#: ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "Error: no es pot vincular el port"
 
@@ -6547,8 +6535,7 @@ msgstr "Importa un projecte existent d'autotools a l'Anjuta"
 msgid "Project from Existing Sources"
 msgstr "Projecte des de fonts existents"
 
-#: ../plugins/project-import/plugin.c:82
-#: ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "Ja existeix un fitxer anomenat «%s». Voleu sobreescriure'l?"
@@ -6983,7 +6970,7 @@ msgstr "Actualitza la visualització del projecte…"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2164
 msgid "Project"
 msgstr "Projecte"
 
@@ -8173,7 +8160,7 @@ msgid "Require SDL version:"
 msgstr "Necessita la versió SDL:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-msgid "Mininum SDL version required"
+msgid "Minimum SDL version required"
 msgstr "Versió mínima necessària de l'SDL"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
@@ -8757,13 +8744,13 @@ msgstr "El fitxer «%s» només és de lectura. El voleu editar igualment?"
 msgid "Could not save %s: %s"
 msgstr "No s'ha pogut desar %s: %s"
 
-#: ../plugins/sourceview/sourceview-io.c:308
+#: ../plugins/sourceview/sourceview-io.c:318
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr ""
 "No s'ha pogut desar el fitxer perquè encara no se n'ha especificat el nom"
 
-#: ../plugins/sourceview/sourceview-io.c:556
+#: ../plugins/sourceview/sourceview-io.c:566
 #, c-format
 msgid "New file %d"
 msgstr "Fitxer nou %d"
@@ -9469,27 +9456,27 @@ msgid_plural "%d files scanned out of %d"
 msgstr[0] "%d fitxer analitzat de %d"
 msgstr[1] "%d fitxers analitzats de %d"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
 msgstr "S'està creant la base de dades de símbols…"
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
 msgstr "Símbols"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
 msgstr "Cerca"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
 msgstr "Accions emergents de la base de dades de símbols"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
 msgstr "Accions del menú de la base de dades de símbols"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Base de dades de símbols"
