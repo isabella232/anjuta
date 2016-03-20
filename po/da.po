@@ -35,8 +35,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-20 20:10+0200\n"
-"PO-Revision-Date: 2015-09-20 19:17+0200\n"
+"POT-Creation-Date: 2016-03-20 23:00+0100\n"
+"PO-Revision-Date: 2016-03-20 21:48+0100\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -46,7 +46,15 @@ msgstr ""
 "X-Generator: KBabel 0.9.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../anjuta.appdata.xml.in.h:1
+#: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
+msgid "Anjuta"
+msgstr "Anjuta"
+
+#: ../anjuta.appdata.xml.in.h:2 ../anjuta.desktop.in.in.h:3
+msgid "Develop software in an integrated development environment"
+msgstr "Skriv software i et integreret udviklingsmiljø"
+
+#: ../anjuta.appdata.xml.in.h:3
 msgid ""
 "Anjuta DevStudio is a versatile software development studio featuring a "
 "number of advanced programming facilities including project management, "
@@ -61,7 +69,7 @@ msgstr ""
 "fokuserer på at tilbyde en simpel og nyttig brugergrænseflade, men også "
 "funktionsrig, for at tillade effektiv udvikling."
 
-#: ../anjuta.appdata.xml.in.h:2
+#: ../anjuta.appdata.xml.in.h:4
 msgid ""
 "Anjuta is very extensible with plugins. Almost all features in Anjuta are "
 "implemented using plugins which can be dynamically enabled or disabled. You "
@@ -78,7 +86,7 @@ msgstr ""
 "nemmere at arbejde på projekter med forskellige grader af kompleksitet. Med "
 "udvidelsesmoduler kan du udvide Anjuta med dine egne funktioner."
 
-#: ../anjuta.appdata.xml.in.h:3
+#: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
 "templates. The selection includes simple generic, flat (no subdirectory), GTK"
@@ -90,17 +98,9 @@ msgstr ""
 "uden underkataloger), GTK+, GNOME, Java, Python med mere. Nye skabeloner kan "
 "nemt hentes og installeres."
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
-msgid "Anjuta"
-msgstr "Anjuta"
-
 #: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
 msgstr "Integreret udviklingsmiljø (IDE)"
-
-#: ../anjuta.desktop.in.in.h:3
-msgid "Develop software in an integrated development environment"
-msgstr "Skriv software i et integreret udviklingsmiljø"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
@@ -924,7 +924,7 @@ msgid ""
 "An email address or a link to a web page where the user can report bug. It "
 "is optional."
 msgstr ""
-"En e-post-adresse eller et link til en webside, hvor brugeren kan "
+"En e-mail-adresse eller et link til en webside, hvor brugeren kan "
 "indrapportere fejl. Kan udelades."
 
 #: ../plugins/am-project/am-properties.c:76
@@ -2092,7 +2092,7 @@ msgstr "Vala-klasse"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:36
 msgid "Author Email Address:"
-msgstr "Forfatterens e-post-adresse:"
+msgstr "Forfatterens e-mail-adresse:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:37
 msgid "Author Name:"
@@ -5100,7 +5100,7 @@ msgstr "Anvend brugertilpasset forfatterinformation:"
 
 #: ../plugins/git/anjuta-git.ui.h:22
 msgid "E-mail:"
-msgstr "E-post-adresse:"
+msgstr "E-mail-adresse:"
 
 #: ../plugins/git/anjuta-git.ui.h:23
 msgid "Branch name:"
@@ -5349,7 +5349,7 @@ msgstr "Indtast venligst commit-forfatters navn"
 
 #: ../plugins/git/git-commit-pane.c:149
 msgid "Please enter the commit author's e-mail address."
-msgstr "Indtast venligst commit-forfatters e-post-adresse."
+msgstr "Indtast venligst commit-forfatters e-mail-adresse."
 
 #: ../plugins/git/git-commit-pane.c:299 ../plugins/git/plugin.c:149
 msgid "Commit"
@@ -7503,7 +7503,7 @@ msgstr "Forfatter:"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:8
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:8
 msgid "Email address:"
-msgstr "E-post-adresse:"
+msgstr "E-mail-adresse:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:10
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:10
@@ -7940,11 +7940,11 @@ msgid ""
 "email address."
 msgstr ""
 "Uuid er en globalt unik identifikation til dit udvidelsesmodul.\n"
-"Den bør have format som en e-post-adresse (foo.bar@udvidelser.eksempel.dk), "
+"Den bør have format som en e-mail-adresse (foo.bar@udvidelser.eksempel.dk), "
 "men\n"
-"bør ikke være en faktisk e-post-adresse, selv om det er en god idé at "
+"bør ikke være en faktisk e-mail-adresse, selv om det er en god idé at "
 "basere\n"
-"uuid'en på din e-post-adresse."
+"uuid'en på din e-mail-adresse."
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:21
 msgid "Extension URL"
@@ -8740,12 +8740,12 @@ msgstr "Filen \"%s\" er skrivebeskyttet! Redigér alligevel?"
 msgid "Could not save %s: %s"
 msgstr "Kunne ikke gemme %s: %s"
 
-#: ../plugins/sourceview/sourceview-io.c:308
+#: ../plugins/sourceview/sourceview-io.c:318
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr "Kunne ikke gemme filen da filnavnet endnu ikke er angivet"
 
-#: ../plugins/sourceview/sourceview-io.c:556
+#: ../plugins/sourceview/sourceview-io.c:566
 #, c-format
 msgid "New file %d"
 msgstr "Ny fil %d"
@@ -9755,7 +9755,7 @@ msgstr "Erstat markering"
 #. Translators: Checkbox if a dialog should be shown after some operation finishes, so translate as "to pop up a dialog"
 #: ../plugins/tools/tool.c:90
 msgid "Popup dialog"
-msgstr "Pop op-dialogvindue"
+msgstr "Pop op-dialog"
 
 #: ../plugins/tools/tool.c:91
 msgid "Discard output"
@@ -11762,7 +11762,7 @@ msgstr "Kun tekst"
 #~ msgstr "Standardprojektmappe:"
 
 #~ msgid "Developer email address:"
-#~ msgstr "Udviklers e-post-adresse:"
+#~ msgstr "Udviklers e-mail-adresse:"
 
 #~ msgid "Developer name:"
 #~ msgstr "Udviklernavn:"
@@ -13514,9 +13514,6 @@ msgstr "Kun tekst"
 
 #~ msgid "Data module Makefile.am"
 #~ msgstr "Datamodul Makefile.am"
-
-#~ msgid "Dialog on job complete"
-#~ msgstr "Dialogvindue når jobbet er klart"
 
 #~ msgid "Enable Debugging"
 #~ msgstr "Aktivér fejlsøgning"
