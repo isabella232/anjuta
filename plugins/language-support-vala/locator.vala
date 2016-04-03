@@ -146,8 +146,23 @@ public class BlockLocator : Vala.CodeVisitor {
 	public override void visit_lock_statement (Vala.LockStatement stmt) {
 		stmt.accept_children(this);
 	}
+	// go to lambda body directly if exists.
 	public override void visit_lambda_expression (Vala.LambdaExpression expr) {
-		expr.accept_children(this);
+		if (expr.statement_body != null) {
+			if (update_location (expr.statement_body))
+				expr.statement_body.accept_children(this);
+		}
+		else
+			expr.accept_children (this);
+	}
+	public override void visit_expression_statement (Vala.ExpressionStatement stmt) {
+		stmt.accept_children (this);
+	}
+	public override void visit_method_call (Vala.MethodCall mc) {
+		mc.accept_children (this);
+	}
+	public override void visit_signal (Vala.Signal sig) {
+		sig.accept_children (this);
 	}
 }
 
