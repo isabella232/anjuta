@@ -24,6 +24,8 @@
  * 	51 Franklin Street, Fifth Floor
  * 	Boston, MA  02110-1301, USA.
  */
+ 
+#include <config.h>
 
 #include <time.h>
 #include <unistd.h>
@@ -528,8 +530,16 @@ sdb_engine_disconnect_from_db (SymbolDBEngine * dbe)
 	g_free (priv->cnc_string);
 	priv->cnc_string = NULL;
 
-	if (priv->db_connection != NULL)
+	if (priv->db_connection != NULL) {
+#ifdef HAVE_GDA6
+		GError* err = NULL;
+		gda_connection_close (priv->db_connection, &err);
+		if (err != NULL)
+			return FALSE;
+#else
 		gda_connection_close (priv->db_connection);
+#endif
+	}
 	priv->db_connection = NULL;
 
 	if (priv->sql_parser != NULL)
@@ -2452,9 +2462,14 @@ sdb_engine_connect_to_db (SymbolDBEngine * dbe, const gchar *cnc_string, GError 
 	/* establish a connection. If the sqlite file does not exist it will 
 	 * be created 
 	 */
-	priv->db_connection = gda_connection_open_from_string ("SQLite", cnc_string, NULL, 
-										   GDA_CONNECTION_OPTIONS_THREAD_SAFE, error);
-	
+	priv->db_connection = gda_connection_open_from_string ("SQLite", cnc_string, NULL,
+#ifdef HAVE_GDA6
+											GDA_CONNECTION_OPTIONS_NONE,
+#else
+											GDA_CONNECTION_OPTIONS_THREAD_SAFE,
+#endif										
+											error);
+										
 	if (!GDA_IS_CONNECTION (priv->db_connection))
 	{
 		g_warning ("Could not open connection to %s\n", cnc_string);

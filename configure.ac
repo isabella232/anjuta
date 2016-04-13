@@ -37,6 +37,7 @@ GTHREAD_REQUIRED=2.22.0
 GDK_PIXBUF_REQUIRED=2.0.0
 GDA4_REQUIRED=4.2.0
 GDA5_REQUIRED=5.0.0
+GDA6_REQUIRED=5.99.0
 LIBXML_REQUIRED=2.4.23
 GDL_REQUIRED=3.5.5
 LIBWNCK_REQUIRED=2.12
@@ -161,9 +162,13 @@ PKG_CHECK_MODULES([GDL],
    [gdl-3.0 >= $GDL_REQUIRED])
 
 PKG_CHECK_MODULES([GDA],
-   [libgda-5.0 >= $GDA5_REQUIRED],,
+   [libgda-6.0 >= $GDA6_REQUIRED], [
+		AC_DEFINE(HAVE_GDA6,[1],[libgda-6.0 support])
+	],
    [PKG_CHECK_MODULES([GDA],
-      [libgda-4.0 >= $GDA4_REQUIRED])])
+      [libgda-5.0 >= $GDA5_REQUIRED],,
+         [PKG_CHECK_MODULES([GDA],
+            [libgda-4.0 >= $GDA4_REQUIRED])])])
 
 dnl Check for autogen
 dnl -----------------

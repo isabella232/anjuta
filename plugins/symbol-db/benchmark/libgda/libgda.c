@@ -1,3 +1,4 @@
+#include <config.h>
 #include <libgda/libgda.h>
 #include <gtk/gtk.h>
 #include <sql-parser/gda-sql-parser.h>
@@ -153,8 +154,12 @@ main (int argc, char *argv[])
 
 	insert_data (cnc);	
 
-	
+#ifdef HAVE_GDA6
+	GError* err = NULL;
+	gda_connection_close (cnc, &err);
+#else
     gda_connection_close (cnc);
+#endif
 	g_object_unref (cnc);
 
     return 0;
@@ -171,7 +176,11 @@ open_connection ()
 
 	/* open connection */
     cnc = gda_connection_open_from_string ("SQLite", "DB_DIR=.;DB_NAME="DB_FILE, NULL,
+#ifdef HAVE_GDA6
+					       GDA_CONNECTION_OPTIONS_NONE,
+#else
 					       GDA_CONNECTION_OPTIONS_THREAD_SAFE,
+#endif
 					       &error);
     if (!cnc) {
     	g_print ("Could not open connection to SQLite database in example_db.db file: %s\n",
