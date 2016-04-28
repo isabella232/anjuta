@@ -3,24 +3,33 @@
 # This file is distributed under the same license as the anjuta package.
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2001, 2002, 2003, 2008, 2009, 2010, 2011, 2012, 2013.
 # Pedro Albuquerque <palbuquerque73@gmail.com>, 2015.
+# Sérgio Cardeira <cardeira dot sergio at gmail dot com>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.8\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-11-03 03:52+0000\n"
-"PO-Revision-Date: 2015-08-09 08:33+0100\n"
-"Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
-"Language-Team: Português <palbuquerque73@gmail.com>\n"
+"POT-Creation-Date: 2016-02-17 15:52+0000\n"
+"PO-Revision-Date: 2016-02-17 20:04-0100\n"
+"Last-Translator: Sérgio Cardeira <cardeira dot sergio at gmail dot com>\n"
+"Language-Team: Português <>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
-#: ../anjuta.appdata.xml.in.h:1
+#: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
+msgid "Anjuta"
+msgstr "Anjuta"
+
+#: ../anjuta.appdata.xml.in.h:2 ../anjuta.desktop.in.in.h:3
+msgid "Develop software in an integrated development environment"
+msgstr "Desenvolva aplicações num ambiente integrado de desenvolvimento (IDE)"
+
+#: ../anjuta.appdata.xml.in.h:3
 msgid ""
 "Anjuta DevStudio is a versatile software development studio featuring a "
 "number of advanced programming facilities including project management, "
@@ -35,7 +44,7 @@ msgstr ""
 "ferramentas. Foca-se em fornecer um ambiente simples e utilizável, mas, no "
 "entanto, poderoso, tudo para um desenvolvimento eficiente."
 
-#: ../anjuta.appdata.xml.in.h:2
+#: ../anjuta.appdata.xml.in.h:4
 msgid ""
 "Anjuta is very extensible with plugins. Almost all features in Anjuta are "
 "implemented using plugins which can be dynamically enabled or disabled. You "
@@ -52,7 +61,7 @@ msgstr ""
 "fácil trabalhar em projetos com diferentes níveis de complexidade. Usando "
 "extensões, pode expandir o Anjuta com as suas próprias funcionalidades."
 
-#: ../anjuta.appdata.xml.in.h:3
+#: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
 "templates. The selection includes simple generic, flat (no subdirectory), GTK"
@@ -64,17 +73,9 @@ msgstr ""
 "sub pastas), GTK+, GNOME, Java, Python e muito mais. Pode transferir e "
 "instalar facilmente novos modelos."
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
-msgid "Anjuta"
-msgstr "Anjuta"
-
 #: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
 msgstr "Ambiente Integrado de Desenvolvimento (IDE)"
-
-#: ../anjuta.desktop.in.in.h:3
-msgid "Develop software in an integrated development environment"
-msgstr "Desenvolva aplicações num ambiente integrado de desenvolvimento (IDE)"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
@@ -1739,7 +1740,7 @@ msgstr "Limpar o projeto todo"
 
 #: ../plugins/build-basic-autotools/plugin.c:1695
 msgid "C_onfigure Project…"
-msgstr "Configurar _O projeto…"
+msgstr "Configurar _o projeto…"
 
 #: ../plugins/build-basic-autotools/plugin.c:1696
 msgid "Configure project"
@@ -1787,7 +1788,7 @@ msgstr "Limpar o módulo associado ao ficheiro atual"
 
 #: ../plugins/build-basic-autotools/plugin.c:1731
 msgid "Co_mpile File"
-msgstr "Co_Mpilar ficheiro"
+msgstr "Co_mpilar ficheiro"
 
 #: ../plugins/build-basic-autotools/plugin.c:1732
 msgid "Compile current editor file"
@@ -1884,12 +1885,12 @@ msgstr "_Limpar (%s)"
 #: ../plugins/build-basic-autotools/plugin.c:1895
 #, c-format
 msgid "Co_mpile (%s)"
-msgstr "Co_Mpilar (%s)"
+msgstr "Co_mpilar (%s)"
 
 #: ../plugins/build-basic-autotools/plugin.c:1895
 #, c-format
 msgid "Co_mpile"
-msgstr "Co_Mpilar"
+msgstr "Co_mpilar"
 
 #: ../plugins/build-basic-autotools/plugin.c:2493
 msgid "Build commands"
@@ -2639,7 +2640,7 @@ msgstr "_Ocultar os caminhos"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:4
 msgid "Hide process para_meters"
-msgstr "Ocultar os parâ_Metros do processo"
+msgstr "Ocultar os parâ_metros do processo"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:5
 msgid "Display process _tree"
@@ -2706,7 +2707,7 @@ msgstr "_Contagem de passagens:"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:22
 msgid "_Condition:"
-msgstr "_Condição::"
+msgstr "_Condição:"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:23
 msgid "_Location:"
@@ -2936,7 +2937,7 @@ msgstr "Desativar todos os pontos de paragem"
 #. Stock icon, if any
 #: ../plugins/debug-manager/breakpoints.c:1870
 msgid "R_emove All Breakpoints"
-msgstr "R_Emover todos os pontos de paragem"
+msgstr "R_emover todos os pontos de paragem"
 
 #. Display label
 #. short-cut
@@ -3041,7 +3042,7 @@ msgstr "Carregado"
 #. Stock icon, if any
 #: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
-msgstr "Pa_Usar a aplicação"
+msgstr "Pa_usar a aplicação"
 
 #. Display label
 #. short-cut
@@ -3095,7 +3096,7 @@ msgstr "_Iniciar o depurador"
 
 #: ../plugins/debug-manager/plugin.c:869
 msgid "_Debug Program"
-msgstr "Aplicação de _Depuração"
+msgstr "Aplicação de _depuração"
 
 #: ../plugins/debug-manager/plugin.c:871
 msgid "Start debugger and load the program"
@@ -3171,7 +3172,7 @@ msgstr "Continuar ou suspender a execução da aplicação"
 
 #: ../plugins/debug-manager/plugin.c:965
 msgid "Step _In"
-msgstr "Avançar Em"
+msgstr "Avançar em"
 
 #: ../plugins/debug-manager/plugin.c:967
 msgid "Single step into function"
@@ -3179,7 +3180,7 @@ msgstr "Avançar uma instrução dentro da função"
 
 #: ../plugins/debug-manager/plugin.c:973
 msgid "Step O_ver"
-msgstr "Avançar _Sobre"
+msgstr "Avançar _sobre"
 
 #: ../plugins/debug-manager/plugin.c:975
 msgid "Single step over function"
@@ -3187,7 +3188,7 @@ msgstr "Avançar uma instrução sobre a função"
 
 #: ../plugins/debug-manager/plugin.c:981
 msgid "Step _Out"
-msgstr "Sair _De"
+msgstr "Sair _de"
 
 #: ../plugins/debug-manager/plugin.c:983
 msgid "Single step out of function"
@@ -3195,7 +3196,7 @@ msgstr "Avançar uma instrução para fora da função"
 
 #: ../plugins/debug-manager/plugin.c:989
 msgid "_Run to Cursor"
-msgstr "Executar até ao _Cursor"
+msgstr "Executar até ao _cursor"
 
 #: ../plugins/debug-manager/plugin.c:991
 msgid "Run to the cursor"
@@ -3203,7 +3204,7 @@ msgstr "Executar as instruções até ao cursor"
 
 #: ../plugins/debug-manager/plugin.c:997
 msgid "_Run from Cursor"
-msgstr "Executar a _Partir do cursor"
+msgstr "Executar a _partir do cursor"
 
 #: ../plugins/debug-manager/plugin.c:999
 msgid "Run from the cursor"
@@ -3410,7 +3411,7 @@ msgstr ""
 #. Stock icon, if any
 #: ../plugins/debug-manager/watch.c:406
 msgid "Ins_pect/Evaluate…"
-msgstr "Ins_Pecionar/Avaliar…"
+msgstr "Ins_pecionar/Avaliar…"
 
 #. Display label
 #. short-cut
@@ -3483,7 +3484,7 @@ msgstr "Navegar nas páginas da API"
 
 #: ../plugins/devhelp/plugin.c:241
 msgid "_Context Help"
-msgstr "Ajuda _Contextual"
+msgstr "Ajuda _contextual"
 
 #: ../plugins/devhelp/plugin.c:243
 msgid "Search help for the current word in the editor"
@@ -3716,7 +3717,7 @@ msgstr "Gravar o ficheiro atual"
 
 #: ../plugins/document-manager/plugin.c:144
 msgid "Save _As…"
-msgstr "Gravar _Como…"
+msgstr "Gravar _como…"
 
 #: ../plugins/document-manager/plugin.c:145
 msgid "Save the current file with a different name"
@@ -3724,7 +3725,7 @@ msgstr "Gravar o ficheiro atual com um nome diferente"
 
 #: ../plugins/document-manager/plugin.c:147
 msgid "Save A_ll"
-msgstr "Gravar _Todos"
+msgstr "Gravar _todos"
 
 #: ../plugins/document-manager/plugin.c:148
 msgid "Save all currently open files, except new files"
@@ -3752,7 +3753,7 @@ msgstr "Fechar outros documentos"
 
 #: ../plugins/document-manager/plugin.c:159
 msgid "Reload F_ile"
-msgstr "Recarregar o f_Icheiro"
+msgstr "Recarregar o f_icheiro"
 
 #: ../plugins/document-manager/plugin.c:160
 msgid "Reload current file"
@@ -3772,7 +3773,7 @@ msgstr "Imprimir o ficheiro atual"
 
 #: ../plugins/document-manager/plugin.c:174
 msgid "_Print Preview"
-msgstr "Antever im_Pressão"
+msgstr "Antever im_pressão"
 
 #: ../plugins/document-manager/plugin.c:175
 msgid "Preview the current file in print format"
@@ -3793,7 +3794,7 @@ msgstr "Alterar o texto selecionado para ser todo em maiúsculas"
 
 #: ../plugins/document-manager/plugin.c:184
 msgid "Make Selection Lowercase"
-msgstr "Alterar a seleção para _Minúsculas"
+msgstr "Alterar a seleção para _minúsculas"
 
 #: ../plugins/document-manager/plugin.c:185
 msgid "Make the selected text lowercase"
@@ -3839,7 +3840,7 @@ msgstr "_Selecionar"
 
 #: ../plugins/document-manager/plugin.c:204
 msgid "Select _All"
-msgstr "Selecionar _Tudo"
+msgstr "Selecionar _tudo"
 
 #: ../plugins/document-manager/plugin.c:205
 msgid "Select all text in the editor"
@@ -3847,7 +3848,7 @@ msgstr "Selecionar todo o texto no editor"
 
 #: ../plugins/document-manager/plugin.c:207
 msgid "Select _Code Block"
-msgstr "Selecionar bloco de _Código"
+msgstr "Selecionar bloco de _código"
 
 #: ../plugins/document-manager/plugin.c:208
 msgid "Select the current code block"
@@ -3855,13 +3856,13 @@ msgstr "Selecionar o bloco de código atual"
 
 #: ../plugins/document-manager/plugin.c:213
 msgid "Co_mment"
-msgstr "Co_Mentário"
+msgstr "Co_mentário"
 
 #. Block comment: Uses line-comment (comment that affects only single line
 #. such as '//' or '#') and comments a block of lines.
 #: ../plugins/document-manager/plugin.c:216
 msgid "_Block Comment/Uncomment"
-msgstr "Comentar/Remover comentário em _Bloco"
+msgstr "Comentar/Remover comentário em _bloco"
 
 #: ../plugins/document-manager/plugin.c:217
 msgid "Block comment the selected text"
@@ -3871,7 +3872,7 @@ msgstr "Comentar em bloco o texto selecionado"
 #. some decorations, to give an appearance of box.
 #: ../plugins/document-manager/plugin.c:221
 msgid "Bo_x Comment/Uncomment"
-msgstr "Comentar/Remover comentário em cai_Xa"
+msgstr "Comentar/Remover comentário em cai_xa"
 
 #: ../plugins/document-manager/plugin.c:222
 msgid "Box comment the selected text"
@@ -3883,7 +3884,7 @@ msgstr "Comentar em caixa o texto selecionado"
 #. lines).
 #: ../plugins/document-manager/plugin.c:228
 msgid "_Stream Comment/Uncomment"
-msgstr "Comentar/Remover comentário em _Fluxo"
+msgstr "Comentar/Remover comentário em _fluxo"
 
 #: ../plugins/document-manager/plugin.c:229
 msgid "Stream comment the selected text"
@@ -3892,7 +3893,7 @@ msgstr "Comentar em fluxo o texto selecionado"
 #. menu title
 #: ../plugins/document-manager/plugin.c:235
 msgid "_Line Number…"
-msgstr "Número da _Linha…"
+msgstr "Número da _linha…"
 
 #: ../plugins/document-manager/plugin.c:236
 msgid "Go to a particular line in the editor"
@@ -3932,7 +3933,7 @@ msgstr "Ir para o histórico anterior"
 
 #: ../plugins/document-manager/plugin.c:250
 msgid "Next Histor_y"
-msgstr "Histórico _Seguinte"
+msgstr "Histórico _seguinte"
 
 #: ../plugins/document-manager/plugin.c:251
 msgid "Go to next history"
@@ -3944,7 +3945,7 @@ msgstr "_Procurar"
 
 #: ../plugins/document-manager/plugin.c:257
 msgid "_Quick Search"
-msgstr "Procura _Rápida"
+msgstr "Procura _rápida"
 
 #: ../plugins/document-manager/plugin.c:258
 msgid "Quick editor embedded search"
@@ -3952,7 +3953,7 @@ msgstr "Procura rápida embutida no editor"
 
 #: ../plugins/document-manager/plugin.c:260
 msgid "Find _Next"
-msgstr "Localizar _Seguinte"
+msgstr "Localizar _seguinte"
 
 #: ../plugins/document-manager/plugin.c:261
 msgid "Search for next appearance of term."
@@ -3960,7 +3961,7 @@ msgstr "Procurar a ocorrência seguinte do termo."
 
 #: ../plugins/document-manager/plugin.c:263
 msgid "Find and R_eplace…"
-msgstr "Localizar _E substituir…"
+msgstr "Localizar _e substituir…"
 
 #: ../plugins/document-manager/plugin.c:264
 msgid "Search and replace"
@@ -3968,7 +3969,7 @@ msgstr "Procurar e substituir"
 
 #: ../plugins/document-manager/plugin.c:266
 msgid "Find _Previous"
-msgstr "Localizar _Anterior"
+msgstr "Localizar _anterior"
 
 #: ../plugins/document-manager/plugin.c:268
 msgid "Repeat the last Find command"
@@ -4061,7 +4062,7 @@ msgstr "Refazer a última ação desfeita"
 
 #: ../plugins/document-manager/plugin.c:315
 msgid "C_ut"
-msgstr "C_Ortar"
+msgstr "C_ortar"
 
 #: ../plugins/document-manager/plugin.c:316
 msgid "Cut the selected text from the editor to the clipboard"
@@ -4079,7 +4080,7 @@ msgstr "Copiar o texto selecionado para a área de transferência"
 
 #: ../plugins/document-manager/plugin.c:321 ../plugins/terminal/terminal.c:635
 msgid "_Paste"
-msgstr "Co_Lar"
+msgstr "Co_lar"
 
 #: ../plugins/document-manager/plugin.c:322
 msgid "Paste the content of clipboard at the current position"
@@ -4095,7 +4096,7 @@ msgstr "Eliminar o texto selecionado do editor"
 
 #: ../plugins/document-manager/plugin.c:334
 msgid "_Auto-Complete"
-msgstr "Completar _Automaticamente"
+msgstr "Completar _automaticamente"
 
 #: ../plugins/document-manager/plugin.c:335
 msgid "Auto-complete the current word"
@@ -4119,7 +4120,7 @@ msgstr "Reduzir: reduzir o tamanho da letra"
 
 #: ../plugins/document-manager/plugin.c:350
 msgid "_Highlight Mode"
-msgstr "M_Odo de realce"
+msgstr "M_odo de realce"
 
 #: ../plugins/document-manager/plugin.c:354
 msgid "_Close All Folds"
@@ -4171,7 +4172,7 @@ msgstr "_Marcar"
 
 #: ../plugins/document-manager/plugin.c:377
 msgid "_Toggle Bookmark"
-msgstr "Al_Ternar um marcador"
+msgstr "Al_ternar um marcador"
 
 #: ../plugins/document-manager/plugin.c:378
 msgid "Toggle bookmark at the current line position"
@@ -4179,7 +4180,7 @@ msgstr "Alternar um marcador na posição da linha atual"
 
 #: ../plugins/document-manager/plugin.c:380
 msgid "_Previous Bookmark"
-msgstr "Marcador _Anterior"
+msgstr "Marcador _anterior"
 
 #: ../plugins/document-manager/plugin.c:381
 msgid "Jump to the previous bookmark in the file"
@@ -4187,7 +4188,7 @@ msgstr "Ir para o marcador anterior do ficheiro"
 
 #: ../plugins/document-manager/plugin.c:383
 msgid "_Next Bookmark"
-msgstr "Marcador _Seguinte"
+msgstr "Marcador _seguinte"
 
 #: ../plugins/document-manager/plugin.c:384
 msgid "Jump to the next bookmark in the file"
@@ -4533,7 +4534,7 @@ msgstr "_Abrir"
 
 #: ../plugins/file-loader/plugin.c:903 ../plugins/file-loader/plugin.c:916
 msgid "Open _With"
-msgstr "Abrir _Com"
+msgstr "Abrir _com"
 
 #: ../plugins/file-loader/plugin.c:904 ../plugins/file-loader/plugin.c:917
 msgid "Open with"
@@ -4553,7 +4554,7 @@ msgstr "Abrir"
 
 #: ../plugins/file-loader/plugin.c:1252
 msgid "Open _Recent"
-msgstr "Abrir _Recente"
+msgstr "Abrir _recente"
 
 #: ../plugins/file-loader/plugin.c:1253 ../plugins/file-loader/plugin.c:1290
 msgid "Open recent file"
@@ -6325,7 +6326,7 @@ msgstr "Copiar todas as mensagens"
 
 #: ../plugins/message-view/plugin.c:87
 msgid "_Next Message"
-msgstr "Mensagem _Seguinte"
+msgstr "Mensagem _seguinte"
 
 #: ../plugins/message-view/plugin.c:88
 msgid "Next message"
@@ -6333,7 +6334,7 @@ msgstr "Mensagem seguinte"
 
 #: ../plugins/message-view/plugin.c:91
 msgid "_Previous Message"
-msgstr "Mensagem _Anterior"
+msgstr "Mensagem _anterior"
 
 #: ../plugins/message-view/plugin.c:92
 msgid "Previous message"
@@ -6393,11 +6394,11 @@ msgstr "Selecionar o pacote a adicionar:"
 
 #: ../plugins/mk-project/mk-project.ui.h:4
 msgid "Add _module"
-msgstr "Adicionar _Módulo"
+msgstr "Adicionar _módulo"
 
 #: ../plugins/mk-project/mk-project.ui.h:5
 msgid "Add _Package"
-msgstr "Adicionar _Pacote"
+msgstr "Adicionar _pacote"
 
 #: ../plugins/mk-project/mk-project.ui.h:6
 msgid "Packages"
@@ -6493,7 +6494,7 @@ msgstr "_Ferramentas"
 #. Stock icon, if any
 #: ../plugins/patch/plugin.c:61
 msgid "_Patch…"
-msgstr "Aplicar _Patch…"
+msgstr "Aplicar _patch…"
 
 #: ../plugins/patch/plugin.c:93
 msgid "Patch files/directories"
@@ -6834,7 +6835,7 @@ msgstr "_Projeto"
 
 #: ../plugins/project-manager/plugin.c:907
 msgid "New _Folder…"
-msgstr "Nova _Pasta…"
+msgstr "Nova _pasta…"
 
 #: ../plugins/project-manager/plugin.c:907
 #: ../plugins/project-manager/plugin.c:941
@@ -6843,7 +6844,7 @@ msgstr "Adicionar uma nova pasta ao projeto"
 
 #: ../plugins/project-manager/plugin.c:912
 msgid "New _Target…"
-msgstr "Novo _Alvo…"
+msgstr "Novo _alvo…"
 
 #: ../plugins/project-manager/plugin.c:912
 #: ../plugins/project-manager/plugin.c:946
@@ -6852,7 +6853,7 @@ msgstr "Adicionar um novo alvo ao projeto"
 
 #: ../plugins/project-manager/plugin.c:917
 msgid "Add _Source File…"
-msgstr "Adicionar ficheiro de _Código…"
+msgstr "Adicionar ficheiro de _código…"
 
 #: ../plugins/project-manager/plugin.c:917
 #: ../plugins/project-manager/plugin.c:951
@@ -6862,7 +6863,7 @@ msgstr "Adicionar um ficheiro de código a um alvo"
 
 #: ../plugins/project-manager/plugin.c:922
 msgid "Add _Library…"
-msgstr "Adicionar _Biblioteca…"
+msgstr "Adicionar _biblioteca…"
 
 #: ../plugins/project-manager/plugin.c:922
 msgid "Add a module to a target"
@@ -6875,7 +6876,7 @@ msgstr "_Propriedades"
 
 #: ../plugins/project-manager/plugin.c:932
 msgid "Close Pro_ject"
-msgstr "Fechar o pro_Jecto"
+msgstr "Fechar o pro_jeto"
 
 #: ../plugins/project-manager/plugin.c:932
 msgid "Close project"
@@ -6883,19 +6884,19 @@ msgstr "Fechar o projeto"
 
 #: ../plugins/project-manager/plugin.c:941
 msgid "New _Folder"
-msgstr "Nova _Pasta"
+msgstr "Nova _pasta"
 
 #: ../plugins/project-manager/plugin.c:946
 msgid "New _Target"
-msgstr "Novo _Alvo"
+msgstr "Novo _alvo"
 
 #: ../plugins/project-manager/plugin.c:951
 msgid "Add _Source File"
-msgstr "Adicionar ficheiro de _Código"
+msgstr "Adicionar ficheiro de _código"
 
 #: ../plugins/project-manager/plugin.c:956
 msgid "Add _Library"
-msgstr "Adicionar _Biblioteca"
+msgstr "Adicionar _biblioteca"
 
 #: ../plugins/project-manager/plugin.c:956
 msgid "Add a library to a target"
@@ -6911,7 +6912,7 @@ msgstr "Propriedades do grupo/alvo/código"
 
 #: ../plugins/project-manager/plugin.c:971
 msgid "Re_move"
-msgstr "Re_Mover"
+msgstr "Re_mover"
 
 #: ../plugins/project-manager/plugin.c:971
 msgid "Remove from project"
@@ -6979,7 +6980,7 @@ msgstr "Adicionar biblioteca"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:2
 msgid "Select the _target for the library:"
-msgstr "Selecione o _Alvo para a biblioteca:"
+msgstr "Selecione o _alvo para a biblioteca:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:3
 msgid "_New library…"
@@ -6999,7 +7000,7 @@ msgstr "Lista de pacotes:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:7
 msgid "_Module name:"
-msgstr "Nome do _Módulo:"
+msgstr "Nome do _módulo:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:8
 msgid "Add Source"
@@ -7015,15 +7016,15 @@ msgstr "Nova pasta"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:11
 msgid "_Folder name:"
-msgstr "Nome da _Pasta:"
+msgstr "Nome da _pasta:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:12
 msgid "Specify _where to create the folder:"
-msgstr "Especifique _Onde criar a pasta:"
+msgstr "Especifique _onde criar a pasta:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:13
 msgid "Select the _target for the new source files:"
-msgstr "Selecione o _Alvo para os novos ficheiros de código:"
+msgstr "Selecione o _alvo para os novos ficheiros de código:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:14
 msgid "_Select file to add…"
@@ -7051,7 +7052,7 @@ msgstr "_Nome do alvo:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:20
 msgid "Specify _where to create the target:"
-msgstr "Especifique _Onde criar o alvo:"
+msgstr "Especifique _onde criar o alvo:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:21
 msgid "More options:"
@@ -8329,7 +8330,7 @@ msgstr "Excertos"
 #. the snippet gets inserted.
 #: ../plugins/snippets-manager/plugin.c:73
 msgid "_Trigger insert"
-msgstr "Inserir por _Invocação"
+msgstr "Inserir por _invocação"
 
 #: ../plugins/snippets-manager/plugin.c:75
 msgid "Insert a snippet using the trigger-key"
@@ -8343,7 +8344,7 @@ msgstr "Inserir um excerto utilizando a sigla de invocação"
 #. inserted.
 #: ../plugins/snippets-manager/plugin.c:86
 msgid "_Auto complete insert"
-msgstr "Inserir por conclusão _Automática"
+msgstr "Inserir por conclusão _automática"
 
 #: ../plugins/snippets-manager/plugin.c:88
 msgid "Insert a snippet using auto-completion"
@@ -8630,7 +8631,7 @@ msgstr "Letra"
 
 #: ../plugins/sourceview/plugin.c:110
 msgid "_Line Number Margin"
-msgstr "Margem do número da _Linha"
+msgstr "Margem do número da _linha"
 
 #: ../plugins/sourceview/plugin.c:111
 msgid "Show/Hide line numbers"
@@ -8646,7 +8647,7 @@ msgstr "Mostrar/Ocultar a margem de marcadores"
 
 #: ../plugins/sourceview/plugin.c:116
 msgid "_White Space"
-msgstr "Espaço em _Branco"
+msgstr "Espaço em _branco"
 
 #: ../plugins/sourceview/plugin.c:117
 msgid "Show/Hide white spaces"
@@ -8654,7 +8655,7 @@ msgstr "Mostrar/Ocultar os espaços em branco"
 
 #: ../plugins/sourceview/plugin.c:119
 msgid "_Line End Characters"
-msgstr "Caracteres de final de _Linha"
+msgstr "Caracteres de final de _linha"
 
 #: ../plugins/sourceview/plugin.c:120
 msgid "Show/Hide line end characters"
@@ -9377,7 +9378,7 @@ msgstr ""
 
 #: ../plugins/symbol-db/plugin.c:331
 msgid "Tag De_claration"
-msgstr "De_Claração de etiqueta"
+msgstr "De_claração de etiqueta"
 
 #: ../plugins/symbol-db/plugin.c:333
 msgid "Go to symbol declaration"
@@ -9765,7 +9766,8 @@ msgstr "Pasta selecionada na extensão de gestor de ficheiros"
 
 #: ../plugins/tools/variable.c:91
 msgid "Selected full file name in the file manager plugin"
-msgstr "Nome completo de ficheiro selecionado na extensão de gestor de ficheiros"
+msgstr ""
+"Nome completo de ficheiro selecionado na extensão de gestor de ficheiros"
 
 #: ../plugins/tools/variable.c:92
 msgid "Selected full file name without extension in the file manager plugin"
@@ -9796,7 +9798,8 @@ msgstr "Pasta selecionada na extensão de gestor de projetos"
 
 #: ../plugins/tools/variable.c:98
 msgid "Selected full file name in the project manager plugin"
-msgstr "Nome completo de ficheiro selecionado na extensão de gestor de projetos"
+msgstr ""
+"Nome completo de ficheiro selecionado na extensão de gestor de projetos"
 
 #: ../plugins/tools/variable.c:99
 msgid "Selected full file name without extension in the project manager plugin"
@@ -9905,7 +9908,7 @@ msgstr ""
 
 #: ../src/anjuta-actions.h:55
 msgid "_Toolbar"
-msgstr "Barra de ferramen_Tas"
+msgstr "Barra de ferramen_tas"
 
 #: ../src/anjuta-actions.h:56
 msgid "Show or hide the toolbar"
@@ -9913,11 +9916,11 @@ msgstr "Mostrar ou esconder a barra de ferramentas"
 
 #: ../src/anjuta-actions.h:61 ../src/anjuta-menu.ui.h:3
 msgid "_Help"
-msgstr "A_Juda"
+msgstr "A_juda"
 
 #: ../src/anjuta-actions.h:63
 msgid "_User's Manual"
-msgstr "Manual do _Utilizador"
+msgstr "Manual do _utilizador"
 
 #: ../src/anjuta-actions.h:64
 msgid "Anjuta user's manual"
@@ -9925,7 +9928,7 @@ msgstr "Manual do utilizador do Anjuta"
 
 #: ../src/anjuta-actions.h:67
 msgid "_Frequently Asked Questions"
-msgstr "Questões _Frequentes"
+msgstr "Questões _frequentes"
 
 #: ../src/anjuta-actions.h:68
 msgid "Anjuta frequently asked questions"
@@ -9941,7 +9944,7 @@ msgstr "Documentação e recursos online"
 
 #: ../src/anjuta-actions.h:75
 msgid "Report _Bugs/Patches/Requests"
-msgstr "Relatar _Erros/alterações/pedidos"
+msgstr "Relatar _Erros/Alterações/Pedidos"
 
 #: ../src/anjuta-actions.h:76
 msgid "Submit a bug report, patch or feature request for Anjuta"
@@ -9951,7 +9954,7 @@ msgstr ""
 
 #: ../src/anjuta-actions.h:79
 msgid "Ask a _Question"
-msgstr "Colocar uma _Questão"
+msgstr "Colocar uma _questão"
 
 #: ../src/anjuta-actions.h:80
 msgid "Submit a question for FAQs"
@@ -9967,7 +9970,7 @@ msgstr "Sobre o Anjuta"
 
 #: ../src/anjuta-actions.h:87
 msgid "About External _Plugins"
-msgstr "Sobre os _Extensões externas"
+msgstr "Sobre as _extensões externas"
 
 #: ../src/anjuta-actions.h:88
 msgid "About third-party Anjuta plugins"
@@ -10018,7 +10021,7 @@ msgstr "FICHEIRO_PERFIL"
 
 #: ../src/anjuta-application.c:436
 msgid "- Integrated Development Environment"
-msgstr "- ambiente integrado de desenvolvimento"
+msgstr "- Ambiente Integrado de Desenvolvimento"
 
 #: ../src/anjuta-application.c:776
 #, c-format
