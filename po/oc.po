@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: anjuta.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=anjuta&"
 "keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2016-04-29 14:53+0000\n"
-"PO-Revision-Date: 2016-05-06 20:21+0200\n"
+"POT-Creation-Date: 2016-05-19 14:53+0000\n"
+"PO-Revision-Date: 2016-05-29 20:29+0200\n"
 "Last-Translator: Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>\n"
 "Language-Team: Tot En Òc\n"
 "Language: oc\n"
@@ -1337,8 +1337,8 @@ msgid ""
 "Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
-"Renomenar pas la cibla amb un prefix facultatiu, opcion utilizada per "
-"evitar l'espotiment de programa sistèma. "
+"Renomenar pas la cibla amb un prefix facultatiu, opcion utilizada per evitar "
+"l'espotiment de programa sistèma. "
 
 #: ../plugins/am-project/am-properties.c:483
 #: ../plugins/am-project/am-properties.c:658
@@ -1487,7 +1487,7 @@ msgstr "Contunhar malgrat las errors"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:14
 msgid "Translate messages"
-msgstr "Tradusir los messatges"
+msgstr "Traduire los messatges"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:15
 msgid "Highlight build warnings and errors in editor"
@@ -2168,7 +2168,7 @@ msgstr "L'execucion d'autogen a fracassat : %s"
 
 #: ../plugins/class-gen/window.c:113
 msgid "Guess from type"
-msgstr "Dedusir a partir del tipe"
+msgstr "Deduire a partir del tipe"
 
 #: ../plugins/class-gen/window.c:716 ../plugins/class-gen/window.c:727
 #: ../plugins/class-gen/window.c:801 ../plugins/class-gen/window.c:811
@@ -2288,7 +2288,7 @@ msgid "CVS Options"
 msgstr "Opcions CVS"
 
 # Utilizar coma títol de bóstia de dialòg
-# Utilizar comme titre de boîte de dialogue
+# Utilizar comme títol de boîte de dialogue
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:11
 msgid "CVS: Add file/directory"
 msgstr "CVS : apondon de fichièrs/repertòris"
@@ -3887,7 +3887,7 @@ msgstr "Selecciona tot lo tèxte dins l'editor"
 
 #: ../plugins/document-manager/plugin.c:207
 msgid "Select _Code Block"
-msgstr "Seleccionar lo blòt de _còde"
+msgstr "Seleccionar lo blòt de _còdi"
 
 #: ../plugins/document-manager/plugin.c:208
 msgid "Select the current code block"
@@ -4151,7 +4151,7 @@ msgstr "Zoom avant : aumenta la talha de la poliça"
 
 #: ../plugins/document-manager/plugin.c:344
 msgid "Zoom Out"
-msgstr "Redusir el zoom"
+msgstr "Reduire el zoom"
 
 #: ../plugins/document-manager/plugin.c:345
 msgid "Zoom out: Decrease font size"
@@ -4986,7 +4986,8 @@ msgstr "Mandadís del senhal %s al processus : %d"
 
 #: ../plugins/gdb/debugger.c:4205
 msgid "Error whilst signaling the process."
-msgstr "Una error s'es produita al moment del mandadís del senhal al processus."
+msgstr ""
+"Una error s'es produita al moment del mandadís del senhal al processus."
 
 #: ../plugins/gdb/plugin.c:120
 #, c-format
@@ -7227,9 +7228,9 @@ msgid ""
 "$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a "
 "leading dash. Please fix it."
 msgstr ""
-"Lo camp « %s » pòt pas conténer que de letras, de chifras, los caractèrs « "
-"#$:%%+,.=@^_`~ » e de separadors de repertòri. A mai, pòt pas començar per "
-"un tiret. Corregissètz-lo."
+"Lo camp « %s » pòt pas conténer que de letras, de chifras, los caractèrs « #"
+"$:%%+,.=@^_`~ » e de separadors de repertòri. A mai, pòt pas començar per un "
+"tiret. Corregissètz-lo."
 
 #: ../plugins/project-wizard/druid.c:737
 #, c-format
@@ -7600,7 +7601,7 @@ msgstr "Descripcion de l'empeuton :"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:16
 msgid "Display description of the plugin"
-msgstr "Afichar la description de l'empeuton"
+msgstr "Afichar la descripcion de l'empeuton"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:17
 msgid "Plugin Class Name:"
@@ -7784,7 +7785,7 @@ msgstr "Implementa las interfàcias de l'empeuton"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:39
 msgid "Plugin interfaces to implement"
-msgstr "Interfàcias de l'empeuton a implémenter"
+msgstr "Interfàcias de l'empeuton a implementar"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:40
 msgid "Interface:"
@@ -8428,7 +8429,7 @@ msgstr "_Importar d'extraits de còdi…"
 
 #: ../plugins/snippets-manager/plugin.c:95
 msgid "Import snippets to the database"
-msgstr "Impòrta d'extraits de còdi cap a la banca de donadas"
+msgstr "Impòrta d'extraits de còdi cap a la basa de donadas"
 
 #: ../plugins/snippets-manager/plugin.c:100
 msgid "_Export snippets …"
@@ -8436,7 +8437,7 @@ msgstr "_Exportar d'extraits de còdi…"
 
 #: ../plugins/snippets-manager/plugin.c:102
 msgid "Export snippets from the database"
-msgstr "Expòrta d'extraits de còdi a partir de la banca de donadas"
+msgstr "Expòrta d'extraits de còdi a partir de la basa de donadas"
 
 #: ../plugins/snippets-manager/plugin.c:332
 msgid "Snippets Manager actions"
@@ -8517,7 +8518,7 @@ msgstr ""
 msgid "<b>Error:</b> You haven't entered a trigger key for the snippet!"
 msgstr ""
 "<b>Error :</b> avètz pas picat de tòca de desenclavament per l'extrait de "
-"còde !"
+"còdi !"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:1
 msgid "Snippet Name:"
@@ -8561,8 +8562,8 @@ msgid ""
 "<b>Warning: Must be unique per language. </b>"
 msgstr ""
 "La tòca de desenclavament es utilizada per l'insercion rapida de l'extrait "
-"de còdi. Picatz la tòca de desenclavament dins l'editor, seguit per l'acorchi "
-"clavièr d'« insercion rapida » per inserir l'extrait de còdi.\n"
+"de còdi. Picatz la tòca de desenclavament dins l'editor, seguit per "
+"l'acorchi clavièr d'« insercion rapida » per inserir l'extrait de còdi.\n"
 "<b>Atencion : deu èsser unica per lengatge. </b>"
 
 #
@@ -8688,7 +8689,7 @@ msgstr "Posicion de lo marge dreita en caractèrs"
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:15
 #: ../src/anjuta-window.c:692 ../src/anjuta-window.c:697
 msgid "View"
-msgstr "Visualizacion"
+msgstr "Afichatge"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:16
 msgid "Editor"
@@ -8903,7 +8904,7 @@ msgstr "Opcions de Subversion"
 
 #
 # Utilizar coma títol de bóstia de dialòg
-# Utilizar comme titre de boîte de dialogue
+# Utilizar comme títol de boîte de dialogue
 #: ../plugins/subversion/anjuta-subversion.ui.h:3
 msgid "Add file/directory"
 msgstr "Apondre un fichièr/repertòri"
@@ -9127,7 +9128,8 @@ msgstr "_Sometre…"
 #. short-cut
 #: ../plugins/subversion/plugin.c:78
 msgid "Commit your changes to the Subversion tree"
-msgstr "Fa una somission de vòstras modificacions dins l'arborescéncia Subversion"
+msgstr ""
+"Fa una somission de vòstras modificacions dins l'arborescéncia Subversion"
 
 #. Action name
 #. Stock icon, if any
@@ -9520,7 +9522,7 @@ msgstr[1] "%d fichièrs analisats sus %d"
 
 #: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
-msgstr "Emplenatge de la banca de donadas dels simbòls…"
+msgstr "Emplenatge de la basa de donadas dels simbòls…"
 
 #: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
@@ -9532,16 +9534,16 @@ msgstr "Recercar"
 
 #: ../plugins/symbol-db/plugin.c:2243
 msgid "SymbolDb popup actions"
-msgstr "Operacions contextualas de la banca de donadas dels simbòls"
+msgstr "Operacions contextualas de la basa de donadas dels simbòls"
 
 #: ../plugins/symbol-db/plugin.c:2251
 msgid "SymbolDb menu actions"
-msgstr "Accions de menús de la banca de donadas dels simbòls"
+msgstr "Accions de menús de la basa de donadas dels simbòls"
 
 #: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
-msgstr "Banca de donadas dels simbòls"
+msgstr "Basa de donadas dels simbòls"
 
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:2
 msgid "Symbol Database Plugin for Anjuta."
@@ -9926,7 +9928,7 @@ msgstr "Nom del fichièr actualament editat, sens extension"
 #
 #
 # Utilizar coma títol de bóstia de dialòg
-# Utilizar comme titre de boîte de dialogue
+# Utilizar comme títol de boîte de dialogue
 #: ../plugins/tools/variable.c:105
 msgid "Currently edited file directory"
 msgstr "Repertòri del fichièr actualament editat"
@@ -9977,7 +9979,7 @@ msgstr "Vos agrada mai lo cafè o lo tè ? A vos de causir."
 
 #: ../src/anjuta-actions.h:38
 msgid "_View"
-msgstr "_Visualizacion"
+msgstr "_Afichatge"
 
 #: ../src/anjuta-actions.h:40
 msgid "_Reset Dock Layout"
