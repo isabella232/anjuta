@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-30 03:14+0200\n"
-"PO-Revision-Date: 2015-08-30 03:15+0200\n"
+"POT-Creation-Date: 2016-07-11 11:22+0200\n"
+"PO-Revision-Date: 2016-07-11 11:23+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -28,7 +28,15 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../anjuta.appdata.xml.in.h:1
+#: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
+msgid "Anjuta"
+msgstr "Anjuta"
+
+#: ../anjuta.appdata.xml.in.h:2 ../anjuta.desktop.in.in.h:3
+msgid "Develop software in an integrated development environment"
+msgstr "Rozwijanie oprogramowania w zintegrowanym środowisku programistycznym"
+
+#: ../anjuta.appdata.xml.in.h:3
 msgid ""
 "Anjuta DevStudio is a versatile software development studio featuring a "
 "number of advanced programming facilities including project management, "
@@ -44,7 +52,7 @@ msgstr ""
 "użyteczny, a przy tym rozbudowany, co czyni program skutecznym narzędziem "
 "programistycznym."
 
-#: ../anjuta.appdata.xml.in.h:2
+#: ../anjuta.appdata.xml.in.h:4
 msgid ""
 "Anjuta is very extensible with plugins. Almost all features in Anjuta are "
 "implemented using plugins which can be dynamically enabled or disabled. You "
@@ -61,7 +69,7 @@ msgstr ""
 "poziomach złożoności. Używając wtyczek, można rozszerzyć program o swoje "
 "własne funkcje."
 
-#: ../anjuta.appdata.xml.in.h:3
+#: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
 "templates. The selection includes simple generic, flat (no subdirectory), GTK"
@@ -73,17 +81,9 @@ msgstr ""
 "GNOME, Java, Python i wiele więcej. Nowe szablony można z łatwością pobrać i "
 "zainstalować."
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
-msgid "Anjuta"
-msgstr "Anjuta"
-
 #: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
 msgstr "Zintegrowane środowisko programistyczne"
-
-#: ../anjuta.desktop.in.in.h:3
-msgid "Develop software in an integrated development environment"
-msgstr "Rozwijanie oprogramowania w zintegrowanym środowisku programistycznym"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
@@ -238,11 +238,11 @@ msgstr "celtyckie"
 
 #: ../libanjuta/anjuta-encodings.c:179
 msgid "Romanian"
-msgstr "romańskie"
+msgstr "rumuńskie"
 
 #: ../libanjuta/anjuta-encodings.c:191
 msgid "Armenian"
-msgstr "armeńskie"
+msgstr "ormiańskie"
 
 #: ../libanjuta/anjuta-encodings.c:193 ../libanjuta/anjuta-encodings.c:195
 #: ../libanjuta/anjuta-encodings.c:209
@@ -293,7 +293,7 @@ msgstr "tajskie"
 #: ../libanjuta/anjuta-encodings.c:443 ../plugins/am-project/am-project.c:116
 #: ../plugins/mk-project/mk-project.c:76
 msgid "Unknown"
-msgstr "Nieznany"
+msgstr "Nieznane"
 
 #: ../libanjuta/anjuta-entry.c:247
 msgid "Help text"
@@ -1534,8 +1534,7 @@ msgstr "Wybór katalogu budowania w katalogu projektu"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
-#: ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "Domyślne"
 
@@ -1654,8 +1653,7 @@ msgstr "Opuszczanie: %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
-#: ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "ostrzeżenie:"
 
@@ -1668,8 +1666,7 @@ msgstr "ostrzeżenie:-stare"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
-#: ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "błąd:"
 
@@ -2181,8 +2178,7 @@ msgstr "Typ"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "Parametry"
 
@@ -2762,8 +2758,7 @@ msgid "Shared libraries"
 msgstr "Biblioteki współdzielone"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937
-#: ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Sygnały jądra"
 
@@ -3067,15 +3062,13 @@ msgstr "Wczytano"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "W_strzymaj program"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Wstrzymuje wykonywanie programu"
 
@@ -3165,35 +3158,29 @@ msgstr "Dodaje dodatkowe ścieżki źródeł"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913
-#: ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "Polecenie debugera…"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Własne polecenie debugera"
 
-#: ../plugins/debug-manager/plugin.c:921
-#: ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Informacje"
 
-#: ../plugins/debug-manager/plugin.c:929
-#: ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Biblioteki współdzielone"
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Wyświetla mapowania bibliotek współdzielonych"
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Wyświetla sygnały jądra"
 
@@ -5349,8 +5336,8 @@ msgstr "Proszę wprowadzić wydanie."
 msgid "Cherry Pick"
 msgstr "Wybierz zmiany"
 
-#: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
+#: ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "Proszę wprowadzić komunikat dziennika."
 
@@ -6043,8 +6030,7 @@ msgstr ""
 msgid "Failed to activate the JHBuild Plugin: %s"
 msgstr "Aktywowanie wtyczki JHBuild się nie powiodło: %s"
 
-#: ../plugins/js-debugger/debugger-js.c:548
-#: ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "Błąd: nie można dowiązać do portu"
 
@@ -6550,8 +6536,7 @@ msgstr "Importuje istniejący projekt Autotools do programu Anjuta"
 msgid "Project from Existing Sources"
 msgstr "Projekt z istniejących źródeł"
 
-#: ../plugins/project-import/plugin.c:82
-#: ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "Plik o nazwie „%s” już istnieje. Zastąpić go?"
@@ -8750,12 +8735,12 @@ msgstr "Plik „%s” jest tylko do odczytu. Modyfikować mimo to?"
 msgid "Could not save %s: %s"
 msgstr "Nie można zapisać %s: %s"
 
-#: ../plugins/sourceview/sourceview-io.c:308
+#: ../plugins/sourceview/sourceview-io.c:318
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr "Nie można zapisać pliku, ponieważ nie podano jego nazwy"
 
-#: ../plugins/sourceview/sourceview-io.c:556
+#: ../plugins/sourceview/sourceview-io.c:566
 #, c-format
 msgid "New file %d"
 msgstr "Nowy plik %d"
