@@ -2,19 +2,19 @@
 # traducción de Anjuta al Español
 # Copyright © 2001-2003, 2006, 2007, 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the anjuta package.
-#
+# 
 # Javier Conde Rueda <f3285740@est.fib.upc.es>, 2003.
 # Francisco Javier F. Serrador <serrador@cvs.gnome.es>, 2003, 2005.
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
 # Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014, 2015.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-08-11 02:49+0000\n"
+"POT-Creation-Date: 2016-07-14 16:56+0000\n"
 "PO-Revision-Date: 2015-08-11 \n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish <gnome-es-list@gnome.org>\n"
@@ -26,7 +26,15 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../anjuta.appdata.xml.in.h:1
+#: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
+msgid "Anjuta"
+msgstr "Anjuta"
+
+#: ../anjuta.appdata.xml.in.h:2 ../anjuta.desktop.in.in.h:3
+msgid "Develop software in an integrated development environment"
+msgstr "Software de desarrollo en un entorno integrado de desarrollo"
+
+#: ../anjuta.appdata.xml.in.h:3
 msgid ""
 "Anjuta DevStudio is a versatile software development studio featuring a "
 "number of advanced programming facilities including project management, "
@@ -41,7 +49,7 @@ msgstr ""
 "muchas otras herramientas. Se centra en proporcionar una interfaz simple, "
 "usable y potente para un desarrollo eficiente."
 
-#: ../anjuta.appdata.xml.in.h:2
+#: ../anjuta.appdata.xml.in.h:4
 msgid ""
 "Anjuta is very extensible with plugins. Almost all features in Anjuta are "
 "implemented using plugins which can be dynamically enabled or disabled. You "
@@ -59,7 +67,7 @@ msgstr ""
 "complejidad. Al usar los complementos, puede ampliar Anjuta con sus propias "
 "características."
 
-#: ../anjuta.appdata.xml.in.h:3
+#: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
 "templates. The selection includes simple generic, flat (no subdirectory), GTK"
@@ -71,17 +79,9 @@ msgstr ""
 "(sin subcarpetas) GTK+, GNOME, Java, Python y más. Se pueden descargar e "
 "instalar plantillas nuevas fácilmente."
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
-msgid "Anjuta"
-msgstr "Anjuta"
-
 #: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
 msgstr "Entorno Integrado de Desarrollo"
-
-#: ../anjuta.desktop.in.in.h:3
-msgid "Develop software in an integrated development environment"
-msgstr "Software de desarrollo en un entorno integrado de desarrollo"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
@@ -1090,8 +1090,8 @@ msgid ""
 "Common additional Lex or Flex lexical analyser generator flags for all "
 "targets in this group."
 msgstr ""
-"Opciones comunes adicionales y generales del analizador léxicos «Lex» o «Flex» "
-"para todos los objetivos en este grupo."
+"Opciones comunes adicionales y generales del analizador léxicos «Lex» o "
+"«Flex» para todos los objetivos en este grupo."
 
 #: ../plugins/am-project/am-properties.c:185
 #: ../plugins/am-project/am-properties.c:292
@@ -1394,8 +1394,8 @@ msgstr "Especifique el nombre del objetivo"
 msgid ""
 "Target name can only contain alphanumeric, '_', '-', '/' or '.' characters"
 msgstr ""
-"El nombre del objetivo sólo puede contener caracteres alfanuméricos, «_», «-», "
-"«/» o «.»"
+"El nombre del objetivo sólo puede contener caracteres alfanuméricos, «_», "
+"«-», «/» o «.»"
 
 #: ../plugins/am-project/amp-target.c:398
 msgid "Shared library target name must be of the form 'libxxx.la'"
@@ -1406,8 +1406,8 @@ msgstr ""
 #: ../plugins/am-project/amp-target.c:407
 msgid "Static library target name must be of the form 'libxxx.a'"
 msgstr ""
-"El nombre de la biblioteca estática del objetivo debe ser de la forma «libxxx."
-"a»"
+"El nombre de la biblioteca estática del objetivo debe ser de la forma "
+"«libxxx.a»"
 
 #: ../plugins/am-project/amp-target.c:415
 msgid "Module target name must be of the form 'xxx.la'"
@@ -1533,8 +1533,7 @@ msgstr "Seleccione una carpeta en la carpeta de proyectos"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
-#: ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "Predeterminado"
 
@@ -1604,8 +1603,8 @@ msgid ""
 "quoted command. You can use %% to get a \"%\" character. A typical value is "
 "\"sudo %s\" or \"su -c %q\"."
 msgstr ""
-"El comando tiene que contener «%s» o «%q». Esto se reemplazará por el comando "
-"usado para instalar los archivos, por ejemplo, «make install». %s se "
+"El comando tiene que contener «%s» o «%q». Esto se reemplazará por el "
+"comando usado para instalar los archivos, por ejemplo, «make install». %s se "
 "reemplazará con el comando sin ningún cambio, mientras que %q se reemplazará "
 "por el comando entrecomillado. Puede usar «%%» para obtener el carácter «%». "
 "Un valor habitual es «sudo %s» o «su -c %q»."
@@ -1651,8 +1650,7 @@ msgstr "Saliendo de: %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
-#: ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "aviso:"
 
@@ -1665,8 +1663,7 @@ msgstr "aviso:-old"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
-#: ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "error:"
 
@@ -2178,8 +2175,7 @@ msgstr "Tipo"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "Argumentos"
 
@@ -2485,7 +2481,7 @@ msgstr "No se puede eliminar el archivo"
 #: ../plugins/cvs-plugin/cvs-callbacks.c:244
 #: ../plugins/subversion/subversion-commit-dialog.c:88
 msgid "Are you sure that you want to pass an empty log message?"
-msgstr "¿Seguro que quiere pasar un un mensaje vacío de registro?"
+msgstr "¿Seguro que quiere pasar unmensaje vacío de registro?"
 
 #: ../plugins/cvs-plugin/cvs-callbacks.c:433
 msgid "CVSROOT"
@@ -2756,8 +2752,7 @@ msgid "Shared libraries"
 msgstr "Bibliotecas compartidas"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937
-#: ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Señales del núcleo"
 
@@ -3062,15 +3057,13 @@ msgstr "Cargado"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "Pa_usar el programa"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Pausa la ejecución del programa"
 
@@ -3160,35 +3153,29 @@ msgstr "Añadir rutas de fuentes adicionales"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913
-#: ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "Comando del depurador…"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Comando personalizado de depuración"
 
-#: ../plugins/debug-manager/plugin.c:921
-#: ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Info"
 
-#: ../plugins/debug-manager/plugin.c:929
-#: ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Bibliotecas compartidas"
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Mostrar mapas de bibliotecas compartidas"
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Mostrar señales del núcleo"
 
@@ -4270,7 +4257,6 @@ msgid "Editor syntax highlighting styles"
 msgstr "Estilos de resaltado de sintaxis del editor"
 
 #: ../plugins/document-manager/plugin.c:416
-#| msgid "Editor text formating"
 msgid "Editor text formatting"
 msgstr "Formateado del texto del editor"
 
@@ -4680,9 +4666,6 @@ msgid "You can't rename \"/\"!"
 msgstr "No puede renombrar «/»"
 
 #: ../plugins/file-manager/file-view.c:153
-#| msgid ""
-#| "An error has occured!\n"
-#| "Maybe you permissions're insuficient or the filename is wrong"
 msgid ""
 "An error has occurred!\n"
 "Maybe your permissions are insufficient or the filename is wrong"
@@ -5344,8 +5327,8 @@ msgstr "Introduzca una revisión."
 msgid "Cherry Pick"
 msgstr "Cherry Pick"
 
-#: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
+#: ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "Introducir un mensaje de registro."
 
@@ -5680,7 +5663,8 @@ msgstr "Aplicar los cambios guardados («stash») y restablecer el índice"
 
 #: ../plugins/git/plugin.c:342
 msgid "Apply stashed changes back into the working tree and the index"
-msgstr "Aplicar los cambios guardados («stash») al árbol de trabajo y al índice"
+msgstr ""
+"Aplicar los cambios guardados («stash») al árbol de trabajo y al índice"
 
 #: ../plugins/git/plugin.c:349
 msgid "Drop selected stash"
@@ -6031,8 +6015,8 @@ msgstr "No se pudo encontrar el prefijo de instalación de JHBuild."
 
 #: ../plugins/jhbuild/plugin.c:180
 msgid ""
-"Could not find the JHBuild library directory. You need JHBuild from 2012-11-"
-"06 or later."
+"Could not find the JHBuild library directory. You need JHBuild from "
+"2012-11-06 or later."
 msgstr ""
 "No se pudo encontrar la carpeta de bibliotecas de JHBuild. Necesita la "
 "versión de JHBuild del 06/11/2012 o superior."
@@ -6042,8 +6026,7 @@ msgstr ""
 msgid "Failed to activate the JHBuild Plugin: %s"
 msgstr "Falló al activar el complemento de JHBuild: %s"
 
-#: ../plugins/js-debugger/debugger-js.c:548
-#: ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "Error: no se puede vincular el puerto"
 
@@ -6549,8 +6532,7 @@ msgstr "Importar un proyecto de autotools existente en Anjuta"
 msgid "Project from Existing Sources"
 msgstr "Proyecto desde fuentes existentes"
 
-#: ../plugins/project-import/plugin.c:82
-#: ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "Ya existe un archivo llamado «%s». ¿Quiere reemplazarlo?"
@@ -6561,8 +6543,8 @@ msgid ""
 "A file named \"%s\" cannot be written: %s. Check if you have write access to "
 "the project directory."
 msgstr ""
-"No se puede escribir el archivo de nombre «%s»: %s. Compruebe si tiene acceso "
-"de escritura a la carpeta del proyecto."
+"No se puede escribir el archivo de nombre «%s»: %s. Compruebe si tiene "
+"acceso de escritura a la carpeta del proyecto."
 
 #: ../plugins/project-import/plugin.c:285
 #, c-format
@@ -6575,9 +6557,9 @@ msgid ""
 "Could not find a valid project backend for the given directory (%s). Please "
 "select a different directory, or try upgrading to a newer version of Anjuta."
 msgstr ""
-"No se pudo encontrar un «backend» válido del proyecto para la carpeta dada (%"
-"s). Seleccione una carpeta diferente, o intente actualizar a una versión más "
-"moderna de Anjuta."
+"No se pudo encontrar un «backend» válido del proyecto para la carpeta dada "
+"(%s). Seleccione una carpeta diferente, o intente actualizar a una versión "
+"más moderna de Anjuta."
 
 #: ../plugins/project-import/plugin.c:371
 #: ../plugins/project-import/plugin.c:428
@@ -7199,8 +7181,8 @@ msgid ""
 "$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a "
 "leading dash. Please fix it."
 msgstr ""
-"El campo «%s» debe contener sólo letras, dígitos, los siguientes caracteres «#"
-"$:%%+,.=@^_`~» o separadores de carpeta. Además, no puede tener un guión "
+"El campo «%s» debe contener sólo letras, dígitos, los siguientes caracteres "
+"«#$:%%+,.=@^_`~» o separadores de carpeta. Además, no puede tener un guión "
 "precedente. Arréglelo."
 
 #: ../plugins/project-wizard/druid.c:737
@@ -7904,7 +7886,7 @@ msgstr "Java genérico compilado con gcj"
 msgid ""
 "A generic natively compiled java project using the GNU Java Compiler (gcj)"
 msgstr ""
-"Un proyecto compilado en Java nativo usando el el compilador de Java de GNU "
+"Un proyecto compilado en Java nativo usando elcompilador de Java de GNU "
 "(gcj)"
 
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:7
@@ -8033,8 +8015,8 @@ msgid ""
 "'libgnomeui-2.0 >= 2.2.0'"
 msgstr ""
 "Proporcione un nombre de paquete que requiere su proyecto. También puede "
-"mencionar cuál es la versión requerida del paquete. Por ejemplo, «libgnomeui-"
-"2.0» o «libgnomeui-2.0 >= 2.2.0»"
+"mencionar cuál es la versión requerida del paquete. Por ejemplo, "
+"«libgnomeui-2.0» o «libgnomeui-2.0 >= 2.2.0»"
 
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:1
 msgid "GTKmm (Simple)"
@@ -8168,7 +8150,6 @@ msgid "Require SDL version:"
 msgstr "Requiere la versión de SDL:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-#| msgid "Mininum SDL version required"
 msgid "Minimum SDL version required"
 msgstr "Versión mínima de SDL requerida"
 
@@ -8751,14 +8732,14 @@ msgstr "El archivo «%s» es de sólo lectura. ¿Editarlo de todas formas?"
 msgid "Could not save %s: %s"
 msgstr "No se puede guardar %s: %s."
 
-#: ../plugins/sourceview/sourceview-io.c:308
+#: ../plugins/sourceview/sourceview-io.c:318
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr ""
 "No se puede guardar el archivo porque el nombre de archivo aún no se ha "
 "especificado"
 
-#: ../plugins/sourceview/sourceview-io.c:556
+#: ../plugins/sourceview/sourceview-io.c:566
 #, c-format
 msgid "New file %d"
 msgstr "Archivo nuevo %d"
@@ -10901,8 +10882,8 @@ msgstr "Sólo texto"
 
 #~ msgid "The match \"%s\" was not found. Wrap search around the document?"
 #~ msgstr ""
-#~ "No se ha encontrado ninguna coincidencia con «%s». ¿Quiere continuar desde "
-#~ "el principio del documento?"
+#~ "No se ha encontrado ninguna coincidencia con «%s». ¿Quiere continuar "
+#~ "desde el principio del documento?"
 
 #~ msgid "The match \"%s\" was not found."
 #~ msgstr "No se ha encontrado ninguna coincidencia con «%s»."
