@@ -5,22 +5,25 @@
 # Gareth Owen <gowen72@yahoo.com>, David Lodge <dave@cirt.net>, 2004.
 # Bruce Cowan <bruce@bcowan.me.uk>, 2009, 2010, 2011, 2012.
 # Philip Withnall <philip@tecnocode.co.uk>, 2009, 2010.
+# Chris Leonard <cjlhomeaddress@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-05 14:47+0100\n"
-"PO-Revision-Date: 2012-09-05 14:48+0100\n"
-"Last-Translator: Bruce Cowan <bruce@bcowan.me.uk>\n"
-"Language-Team: British English <en@li.org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=anjuta"
+"&keywords=I18N+L10N&component=core application\n"
+"POT-Creation-Date: 2012-10-30 23:19+0000\n"
+"PO-Revision-Date: 2012-11-01 23:01-0400\n"
+"Last-Translator: Chris Leonard <cjlhomeaddress@gmail.com>\n"
+"Language-Team: Sugar Labs\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:181
+#: ../anjuta.desktop.in.in.h:1 ../src/main.c:50
 msgid "Anjuta"
 msgstr "Anjuta"
 
@@ -248,7 +251,6 @@ msgstr "Text to show the user what to enter into the entry"
 
 #. Create all needed widgets
 #: ../libanjuta/anjuta-environment-editor.c:543
-#: ../plugins/run-program/anjuta-run-program.ui.h:7
 msgid "Environment Variables:"
 msgstr "Environment Variables:"
 
@@ -260,7 +262,6 @@ msgstr "Environment Variables:"
 #: ../plugins/class-gen/window.c:793 ../plugins/class-gen/window.c:803
 #: ../plugins/class-gen/window.c:813 ../plugins/class-gen/window.c:825
 #: ../plugins/project-manager/dialogs.c:481
-#: ../plugins/run-program/parameters.c:754
 #: ../plugins/snippets-manager/plugin.c:762
 #: ../plugins/snippets-manager/snippets-browser.c:533
 #: ../plugins/snippets-manager/snippets-editor.c:37
@@ -271,8 +272,7 @@ msgstr "Name"
 #: ../plugins/class-gen/window.c:770 ../plugins/class-gen/window.c:786
 #: ../plugins/class-gen/window.c:817 ../plugins/debug-manager/debug_tree.c:128
 #: ../plugins/debug-manager/registers.c:469
-#: ../plugins/project-manager/dialogs.c:489
-#: ../plugins/run-program/parameters.c:763 ../plugins/tools/editor.c:476
+#: ../plugins/project-manager/dialogs.c:489 ../plugins/tools/editor.c:476
 msgid "Value"
 msgstr "Value"
 
@@ -356,7 +356,7 @@ msgstr "Load"
 msgid "Available Plugins"
 msgstr "Available Plugins"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1036 ../src/anjuta-app.c:937
+#: ../libanjuta/anjuta-plugin-manager.c:1036 ../src/anjuta-window.c:938
 msgid "Preferred plugins"
 msgstr "Preferred plugins"
 
@@ -451,7 +451,7 @@ msgstr "Category"
 #. FIXME: Make the general page first
 #: ../libanjuta/anjuta-preferences-dialog.c:139
 #: ../libanjuta/anjuta-preferences-dialog.c:142
-#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-app.c:924
+#: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:925
 #: ../src/preferences.ui.h:9
 msgid "General"
 msgstr "General"
@@ -555,15 +555,15 @@ msgstr[1] ""
 msgid "There is an item with unsaved changes. Save changes before closing?"
 msgstr "There is an item with unsaved changes. Save changes before closing?"
 
-#: ../libanjuta/anjuta-tree-combo.c:1079
+#: ../libanjuta/anjuta-tree-combo.c:1092
 msgid "<Invalid>"
 msgstr "<Invalid>"
 
-#: ../libanjuta/anjuta-tree-combo.c:1196
+#: ../libanjuta/anjuta-tree-combo.c:1209
 msgid "ComboBox model"
 msgstr "ComboBox model"
 
-#: ../libanjuta/anjuta-tree-combo.c:1197
+#: ../libanjuta/anjuta-tree-combo.c:1210
 msgid "The model for the combo box"
 msgstr "The model for the combo box"
 
@@ -692,19 +692,19 @@ msgstr "Widget not found: %s"
 msgid "Could not find application pixmap file: %s"
 msgstr "Could not find application pixmap file: %s"
 
-#: ../plugins/am-project/amp-group.c:622
+#: ../plugins/am-project/amp-group.c:627
 msgid "Please specify group name"
 msgstr "Please specify group name"
 
-#: ../plugins/am-project/amp-group.c:636
+#: ../plugins/am-project/amp-group.c:641
 msgid ""
 "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~/\" characters"
 msgstr ""
 "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~/\" characters"
 
-#: ../plugins/am-project/amp-group.c:660
-#: ../plugins/am-project/am-project.c:1698
-#: ../plugins/am-project/am-project.c:1791
+#: ../plugins/am-project/amp-group.c:665
+#: ../plugins/am-project/am-project.c:1673
+#: ../plugins/am-project/am-project.c:1766
 #: ../plugins/dir-project/dir-project.c:723
 #: ../plugins/dir-project/dir-project.c:857
 #: ../plugins/mk-project/mk-project.c:723
@@ -788,11 +788,11 @@ msgstr "Module"
 msgid "Package"
 msgstr "Package"
 
-#: ../plugins/am-project/am-project.c:1728
+#: ../plugins/am-project/am-project.c:1703
 msgid "Unable to parse project file"
 msgstr "Unable to parse project file"
 
-#: ../plugins/am-project/am-project.c:1739
+#: ../plugins/am-project/am-project.c:1714
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "Project doesn't exist or has an invalid path"
@@ -1305,29 +1305,29 @@ msgstr ""
 msgid "Source file must be a regular file, not a directory"
 msgstr "Source file must be a regular file, not a directory"
 
-#: ../plugins/am-project/amp-target.c:342
+#: ../plugins/am-project/amp-target.c:359
 msgid "Target parent is not a valid group"
 msgstr "Target parent is not a valid group"
 
-#: ../plugins/am-project/amp-target.c:352
+#: ../plugins/am-project/amp-target.c:369
 msgid "Please specify target name"
 msgstr "Please specify target name"
 
-#: ../plugins/am-project/amp-target.c:366
+#: ../plugins/am-project/amp-target.c:383
 msgid ""
 "Target name can only contain alphanumeric, '_', '-', '/' or '.' characters"
 msgstr ""
 "Target name can only contain alphanumeric, '_', '-', '/' or '.' characters"
 
-#: ../plugins/am-project/amp-target.c:381
+#: ../plugins/am-project/amp-target.c:398
 msgid "Shared library target name must be of the form 'libxxx.la'"
 msgstr "Shared library target name must be of the form 'libxxx.la'"
 
-#: ../plugins/am-project/amp-target.c:390
+#: ../plugins/am-project/amp-target.c:407
 msgid "Static library target name must be of the form 'libxxx.a'"
 msgstr "Static library target name must be of the form 'libxxx.a'"
 
-#: ../plugins/am-project/amp-target.c:398
+#: ../plugins/am-project/amp-target.c:415
 msgid "Module target name must be of the form 'xxx.la'"
 msgstr "Module target name must be of the form 'xxx.la'"
 
@@ -3279,7 +3279,7 @@ msgstr "Frame"
 #: ../plugins/debug-manager/stack_trace.c:823
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
 #: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2130
-#: ../plugins/tools/tool.c:100 ../src/anjuta-app.c:626
+#: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:627
 msgid "File"
 msgstr "File"
 
@@ -4388,7 +4388,7 @@ msgid "Open with:"
 msgstr "Open with:"
 
 #: ../plugins/file-loader/plugin.c:497 ../plugins/patch/patch-plugin.c:122
-#: ../plugins/run-program/parameters.c:310
+#: ../plugins/run-program/parameters.c:188
 msgid "All files"
 msgstr "All files"
 
@@ -5809,6 +5809,15 @@ msgstr "Enable adaptive indentation"
 #: ../plugins/language-support-python/plugin.c:428
 msgid "Python Assistance"
 msgstr "Python Assistance"
+
+#: ../plugins/jhbuild/anjuta-jhbuild.plugin.in.h:1
+#| msgid "Build"
+msgid "JHBuild"
+msgstr "JHBuild"
+
+#: ../plugins/jhbuild/anjuta-jhbuild.plugin.in.h:2
+msgid "Build and run programs inside the JHBuild environment"
+msgstr "Build and run programs inside the JHBuild environment"
 
 #: ../plugins/js-debugger/debugger-js.c:548
 #: ../plugins/js-debugger/plugin.c:142
@@ -8010,7 +8019,7 @@ msgstr "Choose a working directory"
 msgid "Program directory '%s' is not local"
 msgstr "Program directory '%s' is not local"
 
-#: ../plugins/run-program/parameters.c:302
+#: ../plugins/run-program/parameters.c:180
 msgid "Load Target to run"
 msgstr "Load Target to run"
 
@@ -8347,7 +8356,7 @@ msgid "Right margin position in characters"
 msgstr "Right margin position in characters"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:15
-#: ../src/anjuta-app.c:634 ../src/anjuta-app.c:639
+#: ../src/anjuta-window.c:635 ../src/anjuta-window.c:640
 msgid "View"
 msgstr "View"
 
@@ -9696,64 +9705,64 @@ msgstr "About External _Plugins"
 msgid "About third-party Anjuta plugins"
 msgstr "About third-party Anjuta plugins"
 
-#: ../src/anjuta-app.c:630
-msgid "Edit"
-msgstr "Edit"
-
-#: ../src/anjuta-app.c:643
-msgid "Help"
-msgstr "Help"
-
-#: ../src/anjuta-app.c:935
-msgid "Installed plugins"
-msgstr "Installed plugins"
-
-#: ../src/anjuta-app.c:939
-msgid "Shortcuts"
-msgstr "Shortcuts"
-
-#: ../src/anjuta-app.c:1011
-#, c-format
-msgid "Value doesn't exist"
-msgstr "Value doesn't exist"
-
-#: ../src/anjuta.c:443
+#: ../src/anjuta-application.c:460
 msgid "Loaded Session…"
 msgstr "Loaded Session…"
 
-#: ../src/main.c:67
+#: ../src/anjuta-application.c:508
 msgid "Specify the size and location of the main window"
 msgstr "Specify the size and location of the main window"
 
 #. This is the format you can specify the size andposition
 #. * of the window on command line
-#: ../src/main.c:70
+#: ../src/anjuta-application.c:511
 msgid "WIDTHxHEIGHT+XOFF+YOFF"
 msgstr "WIDTHxHEIGHT+XOFF+YOFF"
 
-#: ../src/main.c:75
+#: ../src/anjuta-application.c:516
 msgid "Do not show the splash screen"
 msgstr "Do not show the splash screen"
 
-#: ../src/main.c:81
+#: ../src/anjuta-application.c:522
 msgid "Start a new instance and do not open the file in an existing instance"
 msgstr "Start a new instance and do not open the file in an existing instance"
 
-#: ../src/main.c:87
+#: ../src/anjuta-application.c:528
 msgid "Do not open last session on startup"
 msgstr "Do not open last session on startup"
 
-#: ../src/main.c:93
+#: ../src/anjuta-application.c:534
 msgid "Do not open last project and files on startup"
 msgstr "Do not open last project and files on startup"
 
-#: ../src/main.c:99
+#: ../src/anjuta-application.c:540
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
 msgstr "Shut down Anjuta, properly releasing all resources (for debugging)"
 
-#: ../src/main.c:138
+#: ../src/anjuta-application.c:564
 msgid "- Integrated Development Environment"
 msgstr "- Integrated Development Environment"
+
+#: ../src/anjuta-window.c:631
+msgid "Edit"
+msgstr "Edit"
+
+#: ../src/anjuta-window.c:644
+msgid "Help"
+msgstr "Help"
+
+#: ../src/anjuta-window.c:936
+msgid "Installed plugins"
+msgstr "Installed plugins"
+
+#: ../src/anjuta-window.c:940
+msgid "Shortcuts"
+msgstr "Shortcuts"
+
+#: ../src/anjuta-window.c:1012
+#, c-format
+msgid "Value doesn't exist"
+msgstr "Value doesn't exist"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
 msgid "Use tabulation for indentation"
