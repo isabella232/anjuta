@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-22 23:40+0200\n"
-"PO-Revision-Date: 2016-08-22 23:42+0200\n"
+"POT-Creation-Date: 2016-09-06 04:34+0200\n"
+"PO-Revision-Date: 2016-09-06 04:35+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -62,7 +62,7 @@ msgstr ""
 "użytkownika należy decyzja, które wtyczki są potrzebne do obecnego projektu. "
 "Tak jak układ interfejsu użytkownika, zestaw włączonych wtyczek jest stały "
 "dla każdego projektu, ułatwiając tym pracę nad projektami o różnych "
-"poziomach złożoności. Używając wtyczek, można rozszerzyć program o swoje "
+"poziomach złożoności. Za pomocą wtyczek można rozszerzyć program o swoje "
 "własne funkcje."
 
 #: ../anjuta.appdata.xml.in.h:5
@@ -144,7 +144,7 @@ msgstr "Kolumna 1"
 #: ../libanjuta/anjuta-convert.c:74 ../libanjuta/anjuta-convert.c:111
 #, c-format
 msgid "The file you are trying to open contains an invalid byte sequence."
-msgstr "Plik, jaki ma zostać otwarty zawiera nieprawidłową sekwencję bajtów."
+msgstr "Otwierany plik zawiera nieprawidłową sekwencję bajtów."
 
 #: ../libanjuta/anjuta-convert.c:168 ../libanjuta/anjuta-convert.c:207
 #, c-format
@@ -854,7 +854,7 @@ msgstr "Projekt nie istnieje lub ścieżka jest nieprawidłowa"
 
 #: ../plugins/am-project/am-project.plugin.in.h:1
 msgid "Autotools backend"
-msgstr "Mechenizm Autotools"
+msgstr "Mechanizm Autotools"
 
 #: ../plugins/am-project/am-project.plugin.in.h:2
 msgid "New Autotools backend for project manager"
@@ -923,7 +923,7 @@ msgid ""
 "Package name, it can contains only alphanumerics and underscore characters."
 "It is generated from the project name if not provided."
 msgstr ""
-"Nazwa pakietu, może zawierać tylko znaki alfanumeryczne i podkreślniki. "
+"Nazwa pakietu. Może zawierać tylko znaki alfanumeryczne i podkreślniki. "
 "Zostanie utworzona z nazwy projektu, jeśli nie zostanie podana."
 
 #: ../plugins/am-project/am-properties.c:86 ../plugins/git/anjuta-git.ui.h:10
@@ -1572,7 +1572,7 @@ msgstr "Program „%s” nie istnieje"
 #: ../plugins/run-program/execute.c:83
 #, c-format
 msgid "Program '%s' does not have execution permission"
-msgstr "Program „%s” nie posiada uprawnień do wykonywania"
+msgstr "Program „%s” nie ma uprawnień do wykonywania"
 
 #: ../plugins/build-basic-autotools/executer.c:338
 msgid "No executable for this file."
@@ -3552,7 +3552,7 @@ msgid ""
 "Directory project backend, get only source files, use it when other backend "
 "fails"
 msgstr ""
-"Mechanizm katalogu projektu, pobiera tylko pliki źródłowe, należy używać, "
+"Mechanizm katalogu projektu. Pobiera tylko pliki źródłowe. Należy używać, "
 "kiedy inne mechanizmy się nie powiodą"
 
 #: ../plugins/document-manager/action-callbacks.c:315
@@ -3747,7 +3747,7 @@ msgstr "Zapisz _wszystkie"
 
 #: ../plugins/document-manager/plugin.c:148
 msgid "Save all currently open files, except new files"
-msgstr "Zapisuje wszystkie otwarte pliki, za wyjątkiem nowych"
+msgstr "Zapisuje wszystkie otwarte pliki, z wyjątkiem nowych"
 
 #: ../plugins/document-manager/plugin.c:150
 msgid "_Close File"
@@ -4031,7 +4031,7 @@ msgstr "Wyrażenie regularne"
 
 #: ../plugins/document-manager/plugin.c:289
 msgid "Search using regular expressions"
-msgstr "Wyszukuje używając wyrażeń regularnych"
+msgstr "Wyszukuje za pomocą wyrażeń regularnych"
 
 #: ../plugins/document-manager/plugin.c:295
 #: ../plugins/indentation-c-style/plugin.c:218
@@ -4643,7 +4643,7 @@ msgstr "Bez wyświetlania kopii zapasowych"
 
 #: ../plugins/file-manager/file-manager.ui.h:8
 msgid "Do not show unversioned files"
-msgstr "Bez wyświetlania plików nie podlegających zarządzaniu wersjami"
+msgstr "Bez wyświetlania plików niepodlegających zarządzaniu wersjami"
 
 #: ../plugins/file-manager/file-manager.ui.h:9
 msgid "Filter"
@@ -4722,7 +4722,7 @@ msgid ""
 "The extension will be added according to the type."
 msgstr ""
 "Proszę wprowadzić nazwę pliku.\n"
-"Rozszerzenie zostanie dodane w oparciu o typ pliku."
+"Rozszerzenie zostanie dodane na podstawie typu pliku."
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:6
 #: ../plugins/project-manager/dialogs.c:775
@@ -5954,7 +5954,7 @@ msgstr "Wcięcie:"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:10
 msgid "Use spaces for parenthesis indentation"
-msgstr "Użycie spacji dla nadrzędności wcięć"
+msgstr "Spacje dla nadrzędności wcięć"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:11
 msgid "Parenthesis indentation"
@@ -5970,7 +5970,7 @@ msgstr "Automatyczne wcięcia"
 #: ../plugins/indentation-python-style/plugin.c:207
 msgid "Auto-indent current line or selection based on indentation settings"
 msgstr ""
-"Automatyczne wcięcia w bieżącym wierszu lub wyborze w oparciu o ustawienia "
+"Automatyczne wcięcia w bieżącym wierszu lub wyborze na podstawie ustawień "
 "wcięć"
 
 #: ../plugins/indentation-c-style/plugin.c:265
@@ -6402,7 +6402,8 @@ msgstr "Mechanizm pliku make"
 
 #: ../plugins/mk-project/mk-project.plugin.in.h:2
 msgid "Makefile project backend, allowing only to read the project"
-msgstr "Mechanizm pliku make projekty, umożliwia tylko odczytywanie projektu"
+msgstr ""
+"Mechanizm projektu pliku make, umożliwiający tylko odczytywanie projektu"
 
 #: ../plugins/mk-project/mk-project.ui.h:1
 msgid "Select package"
@@ -7449,7 +7450,7 @@ msgid ""
 "project build target (executable, library etc.)"
 msgstr ""
 "Nazwa projektu nie może zawierać spacji, ponieważ będzie ona nazwą obiektu "
-"docelowego (pliku wykonywalnego, biblioteki, itd.)"
+"docelowego (pliku wykonywalnego, biblioteki, itd)."
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:7
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:7
@@ -7594,11 +7595,11 @@ msgstr "Tworzy szablon pliku interfejsu GtkBuilder"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:25
 msgid "Plugin has menus or/and toolbars"
-msgstr "Wtyczka posiada menu lub/i paski narzędziowe"
+msgstr "Wtyczka ma menu lub paski narzędziowe"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:26
 msgid "Whether the plugin has menus or toolbars"
-msgstr "Określa, czy wtyczka posiada menu lub paski narzędziowe"
+msgstr "Określa, czy wtyczka ma menu lub paski narzędziowe"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:27
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:17
@@ -7871,7 +7872,7 @@ msgstr "Projekt Django"
 
 #: ../plugins/project-wizard/templates/django.wiz.in.h:2
 msgid "Python webproject using Django Web Framework"
-msgstr "Projekt sieciowy w języku Python używając struktury WWW Django"
+msgstr "Projekt sieciowy w języku Python używający struktury WWW Django"
 
 #: ../plugins/project-wizard/templates/django.wiz.in.h:3
 msgid "Django Project information"
@@ -7885,7 +7886,7 @@ msgstr "Standardowy język Java kompilowany za pomocą GCJ"
 msgid ""
 "A generic natively compiled java project using the GNU Java Compiler (gcj)"
 msgstr ""
-"Standardowy natywnie kompilowany projekt języka Java używając kompilatora "
+"Standardowy natywnie kompilowany projekt języka Java używający kompilatora "
 "języka Java GNU (GCJ)"
 
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:7
@@ -8356,7 +8357,7 @@ msgstr "_Przełącz wstawkę"
 
 #: ../plugins/snippets-manager/plugin.c:75
 msgid "Insert a snippet using the trigger-key"
-msgstr "Umieszcza wstawkę używając klawisza przełączenia"
+msgstr "Umieszcza wstawkę za pomocą klawisza przełączenia"
 
 #. Translator: In a similar matter, it also appears in Edit->Snippets. It's another method
 #. for inserting snippets. In this case, you call Auto complete insert, start
@@ -8370,7 +8371,7 @@ msgstr "_Automatyczne uzupełnianie wstawek"
 
 #: ../plugins/snippets-manager/plugin.c:88
 msgid "Insert a snippet using auto-completion"
-msgstr "Umieszcza wstawkę używając automatycznego uzupełniania"
+msgstr "Umieszcza wstawkę za pomocą automatycznego uzupełniania"
 
 #: ../plugins/snippets-manager/plugin.c:93
 msgid "_Import snippets …"
@@ -8634,7 +8635,7 @@ msgstr "Edytor"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:17
 msgid "Use theme font"
-msgstr "Użycie czcionki motywu"
+msgstr "Czcionka motywu"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:18
 msgid "Font:"
