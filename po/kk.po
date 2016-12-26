@@ -1,25 +1,33 @@
 # Kazakh translation for anjuta.
 # Copyright (C) 2015 anjuta's COPYRIGHT HOLDER
 # This file is distributed under the same license as the anjuta package.
-# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2015.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2015-2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-09-13 02:50+0000\n"
-"PO-Revision-Date: 2015-09-13 16:58+0500\n"
+"POT-Creation-Date: 2016-08-17 12:15+0000\n"
+"PO-Revision-Date: 2016-12-26 16:38+0500\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 1.8.11\n"
 
-#: ../anjuta.appdata.xml.in.h:1
+#: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
+msgid "Anjuta"
+msgstr "Anjuta"
+
+#: ../anjuta.appdata.xml.in.h:2 ../anjuta.desktop.in.in.h:3
+msgid "Develop software in an integrated development environment"
+msgstr ""
+
+#: ../anjuta.appdata.xml.in.h:3
 msgid ""
 "Anjuta DevStudio is a versatile software development studio featuring a "
 "number of advanced programming facilities including project management, "
@@ -28,7 +36,7 @@ msgid ""
 "and usable user interface, yet powerful for efficient development."
 msgstr ""
 
-#: ../anjuta.appdata.xml.in.h:2
+#: ../anjuta.appdata.xml.in.h:4
 msgid ""
 "Anjuta is very extensible with plugins. Almost all features in Anjuta are "
 "implemented using plugins which can be dynamically enabled or disabled. You "
@@ -38,7 +46,7 @@ msgid ""
 "complexity. Using plugins, you can extend Anjuta with your own features."
 msgstr ""
 
-#: ../anjuta.appdata.xml.in.h:3
+#: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
 "templates. The selection includes simple generic, flat (no subdirectory), GTK"
@@ -46,17 +54,9 @@ msgid ""
 "downloaded and installed."
 msgstr ""
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
-msgid "Anjuta"
-msgstr "Anjuta"
-
 #: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
-msgstr ""
-
-#: ../anjuta.desktop.in.in.h:3
-msgid "Develop software in an integrated development environment"
-msgstr ""
+msgstr "Интеграцияланған өндіру ортасы"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
@@ -74,7 +74,7 @@ msgstr ""
 #: ../libanjuta/anjuta-autogen.c:585
 #, c-format
 msgid "Could not open file \"%s\": %s"
-msgstr ""
+msgstr "\"%s\" файлын ашу мүмкін емес: %s"
 
 #: ../libanjuta/anjuta-cell-renderer-captioned-image.c:239
 #: ../src/preferences.ui.h:10
@@ -268,7 +268,7 @@ msgstr "Белгісіз"
 
 #: ../libanjuta/anjuta-entry.c:247
 msgid "Help text"
-msgstr ""
+msgstr "Көмек мәтіні"
 
 #: ../libanjuta/anjuta-entry.c:248
 msgid "Text to show the user what to enter into the entry"
@@ -277,7 +277,7 @@ msgstr ""
 #. Create all needed widgets
 #: ../libanjuta/anjuta-environment-editor.c:543
 msgid "Environment Variables:"
-msgstr ""
+msgstr "Қоршам айнымалылары:"
 
 #: ../libanjuta/anjuta-environment-editor.c:586
 #: ../plugins/class-gen/window.c:719 ../plugins/class-gen/window.c:729
@@ -299,7 +299,7 @@ msgstr "Аты"
 #: ../plugins/debug-manager/registers.c:469
 #: ../plugins/project-manager/dialogs.c:490 ../plugins/tools/editor.c:476
 msgid "Value"
-msgstr ""
+msgstr "Мәні"
 
 #: ../libanjuta/anjuta-file-drop-entry.c:206
 msgid "Path that dropped files should be relative to"
@@ -369,7 +369,7 @@ msgstr ""
 
 #: ../libanjuta/anjuta-plugin-manager.c:885
 msgid "Load"
-msgstr ""
+msgstr "Жүктеу"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
 #: ../libanjuta/anjuta-plugin-manager.c:2015
@@ -533,7 +533,7 @@ msgstr ""
 #: ../plugins/document-manager/plugin.c:583
 #: ../plugins/snippets-manager/snippets-editor.ui.h:23
 msgid "Save"
-msgstr ""
+msgstr "Сақтау"
 
 #: ../libanjuta/anjuta-save-prompt.c:196
 msgid "Item"
@@ -541,7 +541,7 @@ msgstr "Элемент"
 
 #: ../libanjuta/anjuta-save-prompt.c:202
 msgid "_Discard changes"
-msgstr ""
+msgstr "Өз_герістерді елемеу"
 
 #: ../libanjuta/anjuta-save-prompt.c:296
 #, c-format
@@ -777,7 +777,7 @@ msgstr ""
 
 #: ../plugins/am-project/am-project.c:212
 msgid "Script"
-msgstr ""
+msgstr "Скрипт"
 
 #: ../plugins/am-project/am-project.c:220 ../plugins/class-gen/window.c:794
 #: ../plugins/cvs-plugin/cvs-callbacks.c:436
@@ -786,7 +786,7 @@ msgstr "Модуль"
 
 #: ../plugins/am-project/am-project.c:228
 msgid "Package"
-msgstr ""
+msgstr "Десте"
 
 #: ../plugins/am-project/am-project.c:1710
 msgid "Unable to parse project file"
@@ -857,7 +857,7 @@ msgstr ""
 
 #: ../plugins/am-project/am-properties.c:76
 msgid "Package name:"
-msgstr ""
+msgstr "Десте аты:"
 
 #: ../plugins/am-project/am-properties.c:79
 msgid ""
@@ -876,7 +876,7 @@ msgstr ""
 
 #: ../plugins/am-project/am-properties.c:95
 msgid "Libtool support:"
-msgstr ""
+msgstr "Libtool қолдауы:"
 
 #: ../plugins/am-project/am-properties.c:98
 msgid "Add support to compile shared and static libraries with Libtool."
@@ -1044,7 +1044,7 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:1062
 #: ../plugins/am-project/am-properties.c:1138
 msgid "Do not install:"
-msgstr ""
+msgstr "Орнатпау:"
 
 #: ../plugins/am-project/am-properties.c:320
 #: ../plugins/am-project/am-properties.c:504
@@ -1084,7 +1084,7 @@ msgstr ""
 
 #: ../plugins/am-project/am-properties.c:345
 msgid "Additional libraries:"
-msgstr ""
+msgstr "Қосымша библиотекалар:"
 
 #: ../plugins/am-project/am-properties.c:348
 #: ../plugins/am-project/am-properties.c:532
@@ -1095,7 +1095,7 @@ msgstr ""
 
 #: ../plugins/am-project/am-properties.c:354
 msgid "Additional objects:"
-msgstr ""
+msgstr "Қосымша объекттер:"
 
 #: ../plugins/am-project/am-properties.c:357
 msgid "Additional object files for this target."
@@ -1320,7 +1320,7 @@ msgstr ""
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:3
 #: ../plugins/run-program/plugin.c:298
 msgid "Execute"
-msgstr ""
+msgstr "Орындау:"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:1
 msgid "Configure Project"
@@ -1362,11 +1362,11 @@ msgstr ""
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:10
 msgid "sudo"
-msgstr ""
+msgstr "sudo"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:11
 msgid "su -c"
-msgstr ""
+msgstr "su -c"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:12
 msgid "Run several commands at a time:"
@@ -1378,7 +1378,7 @@ msgstr ""
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:14
 msgid "Translate messages"
-msgstr ""
+msgstr "Хабарламаларды аудару"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:15
 msgid "Highlight build warnings and errors in editor"
@@ -1424,8 +1424,7 @@ msgstr ""
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
-#: ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "Үнсіз келісім бойынша"
 
@@ -1537,8 +1536,7 @@ msgstr ""
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
-#: ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr ""
 
@@ -1551,8 +1549,7 @@ msgstr ""
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
-#: ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr ""
 
@@ -1718,17 +1715,17 @@ msgstr ""
 #: ../plugins/build-basic-autotools/plugin.c:1757
 #: ../plugins/build-basic-autotools/plugin.c:1785
 msgid "_Compile"
-msgstr ""
+msgstr "Компил_яциялау"
 
 #: ../plugins/build-basic-autotools/plugin.c:1758
 #: ../plugins/build-basic-autotools/plugin.c:1786
 msgid "Compile file"
-msgstr ""
+msgstr "Файлды компиляциялау"
 
 #: ../plugins/build-basic-autotools/plugin.c:1764
 #: ../plugins/build-basic-autotools/plugin.c:1792
 msgid "Build module"
-msgstr ""
+msgstr "Модульді құрастыру"
 
 #: ../plugins/build-basic-autotools/plugin.c:1769
 #: ../plugins/build-basic-autotools/plugin.c:1797
@@ -1740,14 +1737,14 @@ msgstr "Ор_нату"
 #: ../plugins/build-basic-autotools/plugin.c:1770
 #: ../plugins/build-basic-autotools/plugin.c:1798
 msgid "Install module"
-msgstr ""
+msgstr "Модульді орнату"
 
 #: ../plugins/build-basic-autotools/plugin.c:1775
 #: ../plugins/build-basic-autotools/plugin.c:1809
 #: ../plugins/build-basic-autotools/plugin.c:1887
 #, c-format
 msgid "_Clean"
-msgstr ""
+msgstr "Та_зарту"
 
 #: ../plugins/build-basic-autotools/plugin.c:1776
 #: ../plugins/build-basic-autotools/plugin.c:1810
@@ -1773,17 +1770,17 @@ msgstr ""
 #: ../plugins/build-basic-autotools/plugin.c:1873
 #, c-format
 msgid "_Build (%s)"
-msgstr ""
+msgstr "Құраст_ыру (%s)"
 
 #: ../plugins/build-basic-autotools/plugin.c:1880
 #, c-format
 msgid "_Install (%s)"
-msgstr ""
+msgstr "Ор_нату (%s)"
 
 #: ../plugins/build-basic-autotools/plugin.c:1887
 #, c-format
 msgid "_Clean (%s)"
-msgstr ""
+msgstr "Та_зарту (%s)"
 
 #: ../plugins/build-basic-autotools/plugin.c:1895
 #, c-format
@@ -1832,7 +1829,7 @@ msgstr ""
 
 #: ../plugins/class-gen/anjuta-class-gen.plugin.in.h:3
 msgid "Class"
-msgstr ""
+msgstr "Класс"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:1
 #: ../plugins/file-wizard/file.c:109
@@ -1853,7 +1850,7 @@ msgstr ""
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:4
 msgid "No License"
-msgstr ""
+msgstr "Лицензиясы жоқ"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:6
 msgid "Create"
@@ -1861,11 +1858,11 @@ msgstr "Жасау"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:7
 msgid "Class Name:"
-msgstr ""
+msgstr "Класс аты:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:8
 msgid "Base Class:"
-msgstr ""
+msgstr "Негізгі класс:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:9
 msgid "Base Class Inheritance:"
@@ -1949,7 +1946,7 @@ msgstr ""
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:29
 msgid "Methods"
-msgstr ""
+msgstr "Тәсілдер"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:30
 #: ../plugins/mk-project/mk-project.ui.h:7
@@ -2058,14 +2055,13 @@ msgstr "Түрі"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
-msgstr ""
+msgstr "Аргументтер"
 
 #: ../plugins/class-gen/window.c:738
 msgid "Nick"
-msgstr ""
+msgstr "Ник аты"
 
 #: ../plugins/class-gen/window.c:739
 msgid "Blurb"
@@ -2073,11 +2069,11 @@ msgstr ""
 
 #: ../plugins/class-gen/window.c:740
 msgid "GType"
-msgstr ""
+msgstr "GType"
 
 #: ../plugins/class-gen/window.c:741
 msgid "ParamSpec"
-msgstr ""
+msgstr "ParamSpec"
 
 #. Somehow redundant with marshaller, but required for default handler
 #: ../plugins/class-gen/window.c:743 ../plugins/class-gen/window.c:753
@@ -2086,7 +2082,7 @@ msgstr "Жалаушалар"
 
 #: ../plugins/class-gen/window.c:754
 msgid "Marshaller"
-msgstr ""
+msgstr "Marshaller"
 
 #. Automatic highlight menu
 #: ../plugins/class-gen/window.c:814 ../plugins/document-manager/plugin.c:1014
@@ -2107,7 +2103,7 @@ msgstr ""
 
 #: ../plugins/cvs-plugin/anjuta-cvs.plugin.in.h:1
 msgid "CVS Plugin"
-msgstr ""
+msgstr "CVS плагині"
 
 #: ../plugins/cvs-plugin/anjuta-cvs.plugin.in.h:2
 msgid "A version control system plugin"
@@ -2136,7 +2132,7 @@ msgstr ""
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:6
 msgid "CVS Preferences"
-msgstr ""
+msgstr "CVS баптаулары"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:7
 msgid "Path to \"cvs\" command"
@@ -2152,7 +2148,7 @@ msgstr ""
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:10
 msgid "CVS Options"
-msgstr ""
+msgstr "CVS опциялары"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:11
 msgid "CVS: Add file/directory"
@@ -2264,7 +2260,7 @@ msgstr ""
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:36
 msgid "Be verbose"
-msgstr ""
+msgstr "Көбірек ақпаратты шығару"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:37
 msgid "CVS: Diff file/directory"
@@ -2364,7 +2360,7 @@ msgstr ""
 
 #: ../plugins/cvs-plugin/cvs-callbacks.c:433
 msgid "CVSROOT"
-msgstr ""
+msgstr "CVSROOT"
 
 #: ../plugins/cvs-plugin/cvs-callbacks.c:439
 msgid "Vendor"
@@ -2372,7 +2368,7 @@ msgstr "Өндіруші"
 
 #: ../plugins/cvs-plugin/cvs-callbacks.c:442
 msgid "Release"
-msgstr ""
+msgstr "Шығарылым"
 
 #: ../plugins/cvs-plugin/cvs-callbacks.c:458
 msgid "Are you sure that you do not want a log message?"
@@ -2396,13 +2392,13 @@ msgstr ""
 #: ../plugins/cvs-plugin/cvs-execute.c:233 ../plugins/cvs-plugin/plugin.c:472
 #: ../plugins/cvs-plugin/plugin.c:479
 msgid "CVS"
-msgstr ""
+msgstr "CVS"
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/cvs-plugin/plugin.c:46 ../plugins/cvs-plugin/plugin.c:121
 msgid "_CVS"
-msgstr ""
+msgstr "_CVS"
 
 #. Action name
 #. Stock icon, if any
@@ -2630,8 +2626,7 @@ msgid "Shared libraries"
 msgstr ""
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937
-#: ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr ""
 
@@ -2678,7 +2673,7 @@ msgstr ""
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:40
 msgid "Debugger:"
-msgstr ""
+msgstr "Жөндеуші:"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:41
 msgid "Debugger command"
@@ -2928,15 +2923,13 @@ msgstr ""
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr ""
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr ""
 
@@ -3026,35 +3019,29 @@ msgstr ""
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913
-#: ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr ""
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr ""
 
-#: ../plugins/debug-manager/plugin.c:921
-#: ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr ""
 
-#: ../plugins/debug-manager/plugin.c:929
-#: ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr ""
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr ""
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr ""
 
@@ -3153,7 +3140,7 @@ msgstr ""
 
 #: ../plugins/debug-manager/signals.c:291
 msgid "Signal"
-msgstr ""
+msgstr "Сигнал"
 
 #: ../plugins/debug-manager/signals.c:297
 msgid "Stop"
@@ -3575,11 +3562,11 @@ msgstr ""
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:15
 msgid "Do not show open documents"
-msgstr ""
+msgstr "Ашық құжаттарды көрсетпеу"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:16
 msgid "Open documents"
-msgstr ""
+msgstr "Ашық құжаттар"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:17
 msgid "Case sensitive"
@@ -3611,7 +3598,7 @@ msgstr ""
 
 #: ../plugins/document-manager/plugin.c:147
 msgid "Save A_ll"
-msgstr ""
+msgstr "Бар_лығын сақтау"
 
 #: ../plugins/document-manager/plugin.c:148
 msgid "Save all currently open files, except new files"
@@ -3619,23 +3606,23 @@ msgstr ""
 
 #: ../plugins/document-manager/plugin.c:150
 msgid "_Close File"
-msgstr ""
+msgstr "Файлды _жабу"
 
 #: ../plugins/document-manager/plugin.c:151
 msgid "Close current file"
-msgstr ""
+msgstr "Ағымдағы файлды жабу"
 
 #: ../plugins/document-manager/plugin.c:153
 msgid "Close All"
-msgstr ""
+msgstr "Барлығын жабу"
 
 #: ../plugins/document-manager/plugin.c:154
 msgid "Close all files"
-msgstr ""
+msgstr "Барлық файлдарды жабу"
 
 #: ../plugins/document-manager/plugin.c:157
 msgid "Close other documents"
-msgstr ""
+msgstr "Басқа құжаттарды жабу"
 
 #: ../plugins/document-manager/plugin.c:159
 msgid "Reload F_ile"
@@ -3647,7 +3634,7 @@ msgstr ""
 
 #: ../plugins/document-manager/plugin.c:162
 msgid "Recent _Files"
-msgstr ""
+msgstr "Жуырдағы _файлдар"
 
 #: ../plugins/document-manager/plugin.c:166
 msgid "_Print…"
@@ -3655,11 +3642,11 @@ msgstr "Бас_паға шығару…"
 
 #: ../plugins/document-manager/plugin.c:167
 msgid "Print the current file"
-msgstr ""
+msgstr "Ағымдағы файлды баспаға шығару"
 
 #: ../plugins/document-manager/plugin.c:174
 msgid "_Print Preview"
-msgstr ""
+msgstr "Бас_па алдында қарау"
 
 #: ../plugins/document-manager/plugin.c:175
 msgid "Preview the current file in print format"
@@ -3869,7 +3856,7 @@ msgstr ""
 
 #: ../plugins/document-manager/plugin.c:273
 msgid "Find in Files"
-msgstr ""
+msgstr "Файлдардан табу"
 
 #: ../plugins/document-manager/plugin.c:274
 msgid "Search in project files"
@@ -3934,7 +3921,7 @@ msgstr ""
 
 #: ../plugins/document-manager/plugin.c:310
 msgid "Undo the last action"
-msgstr ""
+msgstr "Соңғы әрекетті болдырмау"
 
 #: ../plugins/document-manager/plugin.c:312
 msgid "_Redo"
@@ -3942,7 +3929,7 @@ msgstr "Қа_йталау"
 
 #: ../plugins/document-manager/plugin.c:313
 msgid "Redo the last undone action"
-msgstr ""
+msgstr "Соңғы әрекетті қайталау"
 
 #: ../plugins/document-manager/plugin.c:315
 msgid "C_ut"
@@ -3988,7 +3975,7 @@ msgstr ""
 
 #: ../plugins/document-manager/plugin.c:341
 msgid "Zoom In"
-msgstr ""
+msgstr "Үлкейту"
 
 #: ../plugins/document-manager/plugin.c:342
 msgid "Zoom in: Increase font size"
@@ -3996,7 +3983,7 @@ msgstr ""
 
 #: ../plugins/document-manager/plugin.c:344
 msgid "Zoom Out"
-msgstr ""
+msgstr "Кішірейту"
 
 #: ../plugins/document-manager/plugin.c:345
 msgid "Zoom out: Decrease font size"
@@ -4141,7 +4128,7 @@ msgstr "Құжаттар"
 
 #: ../plugins/document-manager/plugin.c:424
 msgid "Toggle search options"
-msgstr ""
+msgstr "Іздеу опцияларын көрсету/жасыру"
 
 #: ../plugins/document-manager/plugin.c:587
 msgid "Reload"
@@ -4149,7 +4136,7 @@ msgstr "Қайта жүктеу"
 
 #: ../plugins/document-manager/plugin.c:593
 msgid "Go to"
-msgstr ""
+msgstr "Өту"
 
 #: ../plugins/document-manager/plugin.c:917
 msgid "OVR"
@@ -4334,47 +4321,47 @@ msgstr "Anjuta жобалары"
 
 #: ../plugins/file-loader/plugin.c:514
 msgid "C/C++ source files"
-msgstr ""
+msgstr "C/C++ бастапқы код файлдары"
 
 #: ../plugins/file-loader/plugin.c:526
 msgid "C# source files"
-msgstr ""
+msgstr "C# бастапқы код файлдары"
 
 #: ../plugins/file-loader/plugin.c:532
 msgid "Java source files"
-msgstr ""
+msgstr "Java бастапқы код файлдары"
 
 #: ../plugins/file-loader/plugin.c:538
 msgid "Pascal source files"
-msgstr ""
+msgstr "Pascal бастапқы код файлдары"
 
 #: ../plugins/file-loader/plugin.c:543
 msgid "PHP source files"
-msgstr ""
+msgstr "PHP бастапқы код файлдары"
 
 #: ../plugins/file-loader/plugin.c:550
 msgid "Perl source files"
-msgstr ""
+msgstr "Perl бастапқы код файлдары"
 
 #: ../plugins/file-loader/plugin.c:556
 msgid "Python source files"
-msgstr ""
+msgstr "Python бастапқы код файлдары"
 
 #: ../plugins/file-loader/plugin.c:561
 msgid "Hypertext markup files"
-msgstr ""
+msgstr "Гипермәтін белгілеу файлдары"
 
 #: ../plugins/file-loader/plugin.c:570
 msgid "Shell script files"
-msgstr ""
+msgstr "Қоршам скрипттер файлдары"
 
 #: ../plugins/file-loader/plugin.c:575
 msgid "Makefiles"
-msgstr ""
+msgstr "Make файлдары"
 
 #: ../plugins/file-loader/plugin.c:581
 msgid "Lua files"
-msgstr ""
+msgstr "Lua файлдары"
 
 #: ../plugins/file-loader/plugin.c:586
 msgid "Diff files"
@@ -4391,7 +4378,7 @@ msgstr "Ж_аңа"
 
 #: ../plugins/file-loader/plugin.c:879
 msgid "New empty file"
-msgstr ""
+msgstr "Жаңа бос файл"
 
 #: ../plugins/file-loader/plugin.c:885
 msgid "_Open…"
@@ -4427,15 +4414,15 @@ msgstr "С_оңғысын ашу"
 
 #: ../plugins/file-loader/plugin.c:1253 ../plugins/file-loader/plugin.c:1290
 msgid "Open recent file"
-msgstr ""
+msgstr "Жуырдағы файлды ашу"
 
 #: ../plugins/file-loader/plugin.c:1259
 msgid "Open recent files"
-msgstr ""
+msgstr "Жуырдағы файлдарды ашу"
 
 #: ../plugins/file-loader/plugin.c:1289
 msgid "Open a file"
-msgstr ""
+msgstr "Файлды ашу"
 
 #: ../plugins/file-loader/plugin.c:1403 ../plugins/file-loader/plugin.c:1405
 #, c-format
@@ -4598,39 +4585,39 @@ msgstr "Репозиторийге қосу"
 
 #: ../plugins/file-wizard/file.c:89
 msgid "C Source File"
-msgstr ""
+msgstr "C бастапқы код файлы"
 
 #: ../plugins/file-wizard/file.c:90
 msgid "C/C++ Header File"
-msgstr ""
+msgstr "C/C++ тақырыптама файлы"
 
 #: ../plugins/file-wizard/file.c:91
 msgid "C++ Source File"
-msgstr ""
+msgstr "C++ бастапқы код файлы"
 
 #: ../plugins/file-wizard/file.c:92
 msgid "C# Source File"
-msgstr ""
+msgstr "C# бастапқы код файлы"
 
 #: ../plugins/file-wizard/file.c:93
 msgid "Java Source File"
-msgstr ""
+msgstr "Java бастапқы код файлы"
 
 #: ../plugins/file-wizard/file.c:94
 msgid "Perl Source File"
-msgstr ""
+msgstr "Perl бастапқы код файлы"
 
 #: ../plugins/file-wizard/file.c:95
 msgid "Python Source File"
-msgstr ""
+msgstr "Python бастапқы код файлы"
 
 #: ../plugins/file-wizard/file.c:96
 msgid "Shell Script File"
-msgstr ""
+msgstr "Қоршам скрипттер файлы"
 
 #: ../plugins/file-wizard/file.c:97
 msgid "Vala Source File"
-msgstr ""
+msgstr "Vala бастапқы код файлы"
 
 #: ../plugins/file-wizard/file.c:98
 msgid "Other"
@@ -4638,7 +4625,7 @@ msgstr "Басқа"
 
 #: ../plugins/file-wizard/file.c:111
 msgid "BSD Public License"
-msgstr ""
+msgstr "BSD публикалық лицензиясы"
 
 #: ../plugins/gdb/anjuta-gdb.plugin.in.h:1
 msgid "GNU Debugger"
@@ -5154,8 +5141,8 @@ msgstr ""
 msgid "Cherry Pick"
 msgstr ""
 
-#: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
+#: ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr ""
 
@@ -5615,7 +5602,7 @@ msgstr ""
 
 #: ../plugins/git/plugin.c:694 ../plugins/git/plugin.c:767
 msgid "Branch"
-msgstr ""
+msgstr "Бұтақ"
 
 #: ../plugins/git/plugin.c:855
 msgid "Status popup menu"
@@ -5840,8 +5827,7 @@ msgstr ""
 msgid "Failed to activate the JHBuild Plugin: %s"
 msgstr ""
 
-#: ../plugins/js-debugger/debugger-js.c:548
-#: ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr ""
 
@@ -5995,7 +5981,7 @@ msgstr ""
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
 msgid "Environment"
-msgstr ""
+msgstr "Қоршам"
 
 #: ../plugins/language-support-js/js-support-plugin.plugin.in.h:1
 msgid "JS Support Plugin"
@@ -6105,11 +6091,11 @@ msgstr ""
 
 #: ../plugins/message-view/anjuta-message-manager-plugin.ui.h:15
 msgid "Warnings:"
-msgstr ""
+msgstr "Ескертулер:"
 
 #: ../plugins/message-view/anjuta-message-manager-plugin.ui.h:16
 msgid "Errors:"
-msgstr ""
+msgstr "Қателер:"
 
 #: ../plugins/message-view/anjuta-message-manager-plugin.ui.h:17
 msgid "Important:"
@@ -6131,7 +6117,7 @@ msgstr "Таңбаша"
 #: ../plugins/message-view/plugin.c:386 ../plugins/message-view/plugin.c:400
 #: ../plugins/message-view/plugin.c:519 ../plugins/message-view/plugin.c:530
 msgid "Messages"
-msgstr ""
+msgstr "Хабарламалар"
 
 #: ../plugins/message-view/plugin.c:79
 msgid "_Copy Message"
@@ -6330,8 +6316,7 @@ msgstr ""
 msgid "Project from Existing Sources"
 msgstr ""
 
-#: ../plugins/project-import/plugin.c:82
-#: ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr ""
@@ -6413,7 +6398,7 @@ msgstr ""
 
 #: ../plugins/project-import/project-import.ui.h:6
 msgid "Project name"
-msgstr ""
+msgstr "Жоба атауы"
 
 #: ../plugins/project-manager/anjuta-project-manager.plugin.in.h:1
 msgid "Project Manager"
@@ -6800,11 +6785,11 @@ msgstr ""
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:9
 msgid "Target:"
-msgstr ""
+msgstr "Мақсаты:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:10
 msgid "New Folder"
-msgstr ""
+msgstr "Жаңа бума"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:11
 msgid "_Folder name:"
@@ -6902,7 +6887,7 @@ msgstr "Қорытынды"
 
 #: ../plugins/project-wizard/druid.c:192 ../plugins/project-wizard/druid.c:196
 msgid "Warning"
-msgstr ""
+msgstr "Ескерту"
 
 #: ../plugins/project-wizard/druid.c:203
 msgid "Message"
@@ -7808,7 +7793,7 @@ msgstr ""
 
 #: ../plugins/project-wizard/templates/licenses.tpl.in.h:6
 msgid "No license"
-msgstr ""
+msgstr "Лицензиясы жоқ"
 
 #: ../plugins/project-wizard/templates/minimal.wiz.in.h:1
 msgid "Generic (Minimal)"
@@ -8150,7 +8135,7 @@ msgstr ""
 
 #: ../plugins/snippets-manager/snippets-editor.c:39
 msgid "Default value"
-msgstr ""
+msgstr "Бастапқы мәні"
 
 #: ../plugins/snippets-manager/snippets-editor.c:48
 msgid "<b>Error:</b> You must choose at least one language for the snippet!"
@@ -8293,7 +8278,7 @@ msgstr ""
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:6
 msgid "Highlight matching brackets"
-msgstr ""
+msgstr "Сәйкес жақшаларды түспен ерекшелеу"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:7
 msgid "Create backup files"
@@ -8309,7 +8294,7 @@ msgstr "Ағымдағы жолды түспен ерекшелеу"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:11
 msgid "Show line numbers"
-msgstr ""
+msgstr "Жол нөмірлерін көрсету"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:12
 msgid "Show marks"
@@ -8427,12 +8412,12 @@ msgstr ""
 msgid "Could not save %s: %s"
 msgstr ""
 
-#: ../plugins/sourceview/sourceview-io.c:308
+#: ../plugins/sourceview/sourceview-io.c:318
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr ""
 
-#: ../plugins/sourceview/sourceview-io.c:556
+#: ../plugins/sourceview/sourceview-io.c:566
 #, c-format
 msgid "New file %d"
 msgstr ""
@@ -8455,7 +8440,7 @@ msgstr ""
 
 #: ../plugins/sourceview/sourceview-print.c:113
 msgid "Line numbers"
-msgstr ""
+msgstr "Жолдар нөмірлері"
 
 #: ../plugins/sourceview/sourceview-print.c:115
 msgid "Header"
@@ -8990,7 +8975,7 @@ msgstr ""
 
 #: ../plugins/subversion/svn-command.c:204
 msgid "Hostname:"
-msgstr ""
+msgstr "Хост аты:"
 
 #: ../plugins/subversion/svn-command.c:205
 msgid "Fingerprint:"
@@ -9138,7 +9123,7 @@ msgstr ""
 
 #: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
-msgstr ""
+msgstr "Таңбалар"
 
 #: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
 msgid "Search"
@@ -9189,23 +9174,23 @@ msgstr ""
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
-msgstr ""
+msgstr "Терминал опциялары"
 
 #: ../plugins/terminal/terminal.c:644
 msgid "Ctrl-C"
-msgstr ""
+msgstr "Ctrl-C"
 
 #: ../plugins/terminal/terminal.c:652
 msgid "Ctrl-X"
-msgstr ""
+msgstr "Ctrl-X"
 
 #: ../plugins/terminal/terminal.c:660
 msgid "Ctrl-Z"
-msgstr ""
+msgstr "Ctrl-Z"
 
 #: ../plugins/terminal/terminal.c:802
 msgid "terminal operations"
-msgstr ""
+msgstr "терминал әрекеттері"
 
 #: ../plugins/terminal/terminal.c:937
 #, c-format
@@ -9228,7 +9213,7 @@ msgstr ""
 
 #: ../plugins/tools/anjuta-tools.ui.h:6
 msgid "Save all files"
-msgstr ""
+msgstr "Барлық файлдарды сақтау"
 
 #: ../plugins/tools/anjuta-tools.ui.h:9
 msgid "_Variable…"
@@ -9240,11 +9225,11 @@ msgstr ""
 
 #: ../plugins/tools/anjuta-tools.ui.h:11
 msgid "Parameters:"
-msgstr ""
+msgstr "Параметрлер:"
 
 #: ../plugins/tools/anjuta-tools.ui.h:12
 msgid "Command:"
-msgstr ""
+msgstr "Команда:"
 
 #: ../plugins/tools/anjuta-tools.ui.h:13
 msgid "Short cut:"
@@ -9284,7 +9269,7 @@ msgstr ""
 
 #: ../plugins/tools/dialog.c:344
 msgid "Tool"
-msgstr ""
+msgstr "Сайман"
 
 #: ../plugins/tools/editor.c:318
 msgid "ask at runtime"
@@ -9339,7 +9324,7 @@ msgstr "%s ашу"
 #.
 #: ../plugins/tools/execute.c:409
 msgid "(output)"
-msgstr ""
+msgstr "(шығыс)"
 
 #. This is append to the tool name to give something
 #. * like "My tools (error)". It's used to name the message
@@ -9347,7 +9332,7 @@ msgstr ""
 #.
 #: ../plugins/tools/execute.c:417
 msgid "(error)"
-msgstr ""
+msgstr "(қате)"
 
 #. Display the name of the command
 #: ../plugins/tools/execute.c:469
@@ -9800,11 +9785,11 @@ msgstr "Таңбашалар"
 
 #: ../src/preferences.ui.h:12
 msgid "Text + Icons"
-msgstr ""
+msgstr "Таңбашалар + мәтін"
 
 #: ../src/preferences.ui.h:13
 msgid "GNOME toolbar setting"
-msgstr ""
+msgstr "GNOME саймандар панелінің баптаулары"
 
 #: ../src/preferences.ui.h:14
 msgid "Tabs"
@@ -9812,16 +9797,16 @@ msgstr "Беттер"
 
 #: ../src/preferences.ui.h:16
 msgid "Text below icons"
-msgstr ""
+msgstr "Таңбашалар астындағы мәтін"
 
 #: ../src/preferences.ui.h:17
 msgid "Text beside icons"
-msgstr ""
+msgstr "Таңбашалар қасындағы мәтін"
 
 #: ../src/preferences.ui.h:18
 msgid "Icons only"
-msgstr ""
+msgstr "Тек таңбашалар"
 
 #: ../src/preferences.ui.h:19
 msgid "Text only"
-msgstr ""
+msgstr "Тек мәтін"
