@@ -34,8 +34,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-26 03:40+0200\n"
+"Report-Msgid-Bugs-To: "
+"http://bugzilla.gnome.org/enter_bug.cgi?product=anjuta&keywords=I18N+L10N&component=core "
+"application\n"
+"POT-Creation-Date: 2016-08-26 01:42+0000\n"
 "PO-Revision-Date: 2016-03-20 21:48+0100\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
@@ -89,8 +91,8 @@ msgstr ""
 #: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
-"templates. The selection includes simple generic, flat (no subdirectory), GTK"
-"+, GNOME, Java, Python projects and more. New templates can be easily "
+"templates. The selection includes simple generic, flat (no subdirectory), "
+"GTK+, GNOME, Java, Python projects and more. New templates can be easily "
 "downloaded and installed."
 msgstr ""
 "Projektassistenten lader dig oprette nye projekter fra et udvalg af "
@@ -769,8 +771,8 @@ msgstr "Angiv venligst gruppenavn"
 msgid ""
 "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~/\" characters"
 msgstr ""
-"Gruppenavnet kan kun indeholde alfanumeriske tegn samt tegnene \"#$:%+,-."
-"=@^_`~/\""
+"Gruppenavnet kan kun indeholde alfanumeriske tegn samt tegnene "
+"\"#$:%+,-.=@^_`~/\""
 
 #: ../plugins/am-project/amp-group.c:665
 #: ../plugins/am-project/am-project.c:1680
@@ -933,8 +935,8 @@ msgstr "Pakkenavn:"
 
 #: ../plugins/am-project/am-properties.c:79
 msgid ""
-"Package name, it can contains only alphanumerics and underscore characters."
-"It is generated from the project name if not provided."
+"Package name, it can contains only alphanumerics and underscore "
+"characters.It is generated from the project name if not provided."
 msgstr ""
 "Pakkenavn. Kan kun indeholde alfanumeriske tegn og bundstreg. Hvis dette "
 "ikke er givet, genereres det fra projektnavnet."
@@ -1053,7 +1055,8 @@ msgstr "Fortrankompilerflag:"
 
 #: ../plugins/am-project/am-properties.c:161
 #: ../plugins/am-project/am-properties.c:268
-msgid "Common additional Fortran compiler flags for all targets in this group."
+msgid ""
+"Common additional Fortran compiler flags for all targets in this group."
 msgstr "Fælles ekstraflag til Fortrankompileren for alle mål i denne gruppe."
 
 #: ../plugins/am-project/am-properties.c:167
@@ -1249,7 +1252,8 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:788
 #: ../plugins/am-project/am-properties.c:964
 msgid "Additional Yacc or Bison parser generator flags for this target."
-msgstr "Øvrige flag til fortolkergeneratorerne Yacc eller Bison for dette mål."
+msgstr ""
+"Øvrige flag til fortolkergeneratorerne Yacc eller Bison for dette mål."
 
 #: ../plugins/am-project/am-properties.c:444
 #: ../plugins/am-project/am-properties.c:619
@@ -1348,8 +1352,8 @@ msgstr "Behold målsti:"
 #: ../plugins/am-project/am-properties.c:1195
 msgid ""
 "Keep relative target path for installing it. By example if you have a "
-"program subdir/app installed in bin directory it will be installed in bin/"
-"subdir/app not in bin/app."
+"program subdir/app installed in bin directory it will be installed in "
+"bin/subdir/app not in bin/app."
 msgstr ""
 "Behold relativ målsti til installation. Hvis du for eksempel har et program, "
 "undermappe/program, installeret i bin-mappen, vil der blive installeret i "
@@ -1524,8 +1528,7 @@ msgstr "Vælg et byggekatalog inden i projektkataloget"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
-#: ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "Standard"
 
@@ -1644,8 +1647,7 @@ msgstr "Forlader: %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
-#: ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "advarsel:"
 
@@ -1659,8 +1661,7 @@ msgstr "warning:-old"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
-#: ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "fejl:"
 
@@ -1753,7 +1754,7 @@ msgstr "Rens hele projektet"
 
 #: ../plugins/build-basic-autotools/plugin.c:1695
 msgid "C_onfigure Project…"
-msgstr "K_onfigurér projekt…"
+msgstr "K_onfigurér projekt …"
 
 #: ../plugins/build-basic-autotools/plugin.c:1696
 msgid "Configure project"
@@ -2174,8 +2175,7 @@ msgstr "Type"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "Argumenter"
 
@@ -2283,7 +2283,7 @@ msgstr "Vælg fil eller mappe at tilføje:"
 #: ../plugins/subversion/anjuta-subversion.ui.h:5
 #: ../plugins/tools/anjuta-tools.ui.h:8
 msgid "Browse…"
-msgstr "Gennemse…"
+msgstr "Gennemse …"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:14
 msgid "File is binary"
@@ -2302,8 +2302,8 @@ msgid ""
 "<b>Please note: </b>\n"
 "\n"
 "Pressing OK will delete the file from disk and from CVS. Of course, the file "
-"won't be removed from CVS before you use CVS Commit. <b>You have been warned!"
-"</b>"
+"won't be removed from CVS before you use CVS Commit. <b>You have been "
+"warned!</b>"
 msgstr ""
 "<b>Bemærk venligst: </b>\n"
 "\n"
@@ -2753,8 +2753,7 @@ msgid "Shared libraries"
 msgstr "Delte biblioteker"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937
-#: ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Kernesignaler"
 
@@ -2894,7 +2893,7 @@ msgstr "Slå stoppunkt til eller fra for den aktuelle placering"
 #. Stock icon, if any
 #: ../plugins/debug-manager/breakpoints.c:1830
 msgid "Add Breakpoint…"
-msgstr "Tilføj stoppunkt…"
+msgstr "Tilføj stoppunkt …"
 
 #. Display label
 #. short-cut
@@ -3058,21 +3057,19 @@ msgstr "Indlæst"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "Hold pa_use"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Sætter programkørslen på pause"
 
 #: ../plugins/debug-manager/plugin.c:453
 msgid "Running…"
-msgstr "Kører…"
+msgstr "Kører …"
 
 #. Action name
 #. Stock icon, if any
@@ -3124,7 +3121,7 @@ msgstr "Start fejlsøger og indlæs programmet"
 
 #: ../plugins/debug-manager/plugin.c:877
 msgid "_Debug Process…"
-msgstr "_Fejlsøg proces…"
+msgstr "_Fejlsøg proces …"
 
 #: ../plugins/debug-manager/plugin.c:879
 msgid "Start debugger and attach to a running program"
@@ -3132,7 +3129,7 @@ msgstr "Start fejlsøger og vedhæft den til et kørende program"
 
 #: ../plugins/debug-manager/plugin.c:885
 msgid "Debug _Remote Target…"
-msgstr "Fejlsøg _fjernt mål…"
+msgstr "Fejlsøg _fjernt mål …"
 
 #: ../plugins/debug-manager/plugin.c:887
 msgid "Connect to a remote debugging target"
@@ -3148,7 +3145,7 @@ msgstr "Sig farvel til fejlsøgeren"
 
 #: ../plugins/debug-manager/plugin.c:901
 msgid "Add source paths…"
-msgstr "Tilføj kildestier…"
+msgstr "Tilføj kildestier …"
 
 #: ../plugins/debug-manager/plugin.c:903
 msgid "Add additional source paths"
@@ -3156,35 +3153,29 @@ msgstr "Tilføj yderligere kildestier"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913
-#: ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
-msgstr "Fejlsøgerkommando…"
+msgstr "Fejlsøgerkommando …"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Tilpasset fejlsøgerkommando"
 
-#: ../plugins/debug-manager/plugin.c:921
-#: ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Info"
 
-#: ../plugins/debug-manager/plugin.c:929
-#: ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Delte biblioteker"
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Vis kortlægning for delte biblioteker"
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Vis kernesignaler"
 
@@ -3436,7 +3427,7 @@ msgstr ""
 #. Stock icon, if any
 #: ../plugins/debug-manager/watch.c:406
 msgid "Ins_pect/Evaluate…"
-msgstr "Unde_rsøg/Evaluér…"
+msgstr "Unde_rsøg/Evaluér …"
 
 #. Display label
 #. short-cut
@@ -3446,7 +3437,7 @@ msgstr "Gennemse eller evaluér et udtryk eller en variabel"
 
 #: ../plugins/debug-manager/watch.c:414
 msgid "Add Watch…"
-msgstr "Tilføj overvåger…"
+msgstr "Tilføj overvåger …"
 
 #: ../plugins/debug-manager/watch.c:422
 msgid "Remove Watch"
@@ -3743,7 +3734,7 @@ msgstr "Gem aktuel fil"
 
 #: ../plugins/document-manager/plugin.c:144
 msgid "Save _As…"
-msgstr "Gem _som…"
+msgstr "Gem _som …"
 
 #: ../plugins/document-manager/plugin.c:145
 msgid "Save the current file with a different name"
@@ -3791,7 +3782,7 @@ msgstr "Seneste _filer"
 
 #: ../plugins/document-manager/plugin.c:166
 msgid "_Print…"
-msgstr "_Udskriv…"
+msgstr "_Udskriv …"
 
 #: ../plugins/document-manager/plugin.c:167
 msgid "Print the current file"
@@ -3855,7 +3846,8 @@ msgid "Convert EOL to Majority EOL"
 msgstr "Konvertér EOL til mest benyttede"
 
 #: ../plugins/document-manager/plugin.c:197
-msgid "Convert End Of Line characters to the most common EOL found in the file"
+msgid ""
+"Convert End Of Line characters to the most common EOL found in the file"
 msgstr ""
 "Konvertér linjeafslutningstegn (EOL) til den mest benyttede type af EOL-tegn "
 "i filen"
@@ -3919,7 +3911,7 @@ msgstr "Strømkommentér den markerede tekst"
 #. menu title
 #: ../plugins/document-manager/plugin.c:235
 msgid "_Line Number…"
-msgstr "_Linjenummer…"
+msgstr "_Linjenummer …"
 
 #: ../plugins/document-manager/plugin.c:236
 msgid "Go to a particular line in the editor"
@@ -3987,7 +3979,7 @@ msgstr "Søg efter næste forekomst af ordet."
 
 #: ../plugins/document-manager/plugin.c:263
 msgid "Find and R_eplace…"
-msgstr "Søg og _erstat…"
+msgstr "Søg og _erstat …"
 
 #: ../plugins/document-manager/plugin.c:264
 msgid "Search and replace"
@@ -4355,7 +4347,8 @@ msgstr ""
 
 #: ../plugins/document-manager/search-box.c:917
 msgid "Use the context menu of the \"Find\" icon for more search options"
-msgstr "Brug kontekstmenuen for ikonet \"Find\" for at se flere søgemuligheder"
+msgstr ""
+"Brug kontekstmenuen for ikonet \"Find\" for at se flere søgemuligheder"
 
 #: ../plugins/document-manager/search-box.c:988
 msgid "Replace"
@@ -4551,7 +4544,7 @@ msgstr "Ny tom fil"
 
 #: ../plugins/file-loader/plugin.c:885
 msgid "_Open…"
-msgstr "_Åbn…"
+msgstr "_Åbn …"
 
 #: ../plugins/file-loader/plugin.c:896 ../plugins/file-loader/plugin.c:909
 msgid "_Open"
@@ -4658,7 +4651,7 @@ msgstr "Filter"
 
 #: ../plugins/file-manager/file-model.c:128 ../plugins/git/anjuta-git.ui.h:34
 msgid "Loading..."
-msgstr "Indlæser..."
+msgstr "Indlæser …"
 
 #: ../plugins/file-manager/file-model.c:708
 #: ../plugins/file-manager/file-view.c:980
@@ -4837,7 +4830,7 @@ msgstr ""
 
 #: ../plugins/gdb/debugger.c:1131
 msgid "Getting ready to start debugging session…\n"
-msgstr "Gør klar til ar starte fejlsøgningssession…\n"
+msgstr "Gør klar til ar starte fejlsøgningssession …\n"
 
 #: ../plugins/gdb/debugger.c:1137
 msgid "Loading Executable: "
@@ -4926,7 +4919,7 @@ msgstr "Program vedhæftet\n"
 #: ../plugins/gdb/debugger.c:2201
 #, c-format
 msgid "Attaching to process: %d…\n"
-msgstr "Vedhæfter til proces: %d…\n"
+msgstr "Vedhæfter til proces: %d …\n"
 
 #: ../plugins/gdb/debugger.c:2227
 msgid ""
@@ -4951,7 +4944,7 @@ msgstr "Program afhæftet\n"
 #: ../plugins/gdb/debugger.c:2329
 #, c-format
 msgid "Detaching the process…\n"
-msgstr "Afhæfter processen…\n"
+msgstr "Afhæfter processen …\n"
 
 #: ../plugins/gdb/debugger.c:2352
 msgid "Interrupting the process\n"
@@ -5338,8 +5331,8 @@ msgstr "Indtast venligst en revision."
 msgid "Cherry Pick"
 msgstr "Cherry-pick"
 
-#: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
+#: ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "Indtast venligst en logbesked."
 
@@ -5769,7 +5762,7 @@ msgstr ""
 
 #: ../plugins/git/plugin.c:521
 msgid "Reset..."
-msgstr "Nulstil..."
+msgstr "Nulstil …"
 
 #: ../plugins/git/plugin.c:533
 msgid "Switch"
@@ -5777,19 +5770,19 @@ msgstr "Skift"
 
 #: ../plugins/git/plugin.c:541
 msgid "Delete..."
-msgstr "Slet..."
+msgstr "Slet …"
 
 #: ../plugins/git/plugin.c:549
 msgid "Merge..."
-msgstr "Flet..."
+msgstr "Flet …"
 
 #: ../plugins/git/plugin.c:561
 msgid "Push..."
-msgstr "Skub..."
+msgstr "Skub …"
 
 #: ../plugins/git/plugin.c:569
 msgid "Pull..."
-msgstr "Træk..."
+msgstr "Træk …"
 
 #: ../plugins/git/plugin.c:589
 msgid "Apply"
@@ -5884,7 +5877,7 @@ msgstr "Justér kontrolposition"
 
 #: ../plugins/glade/plugin.c:688
 msgid "Glade Properties…"
-msgstr "Glade-egenskaber…"
+msgstr "Glade-egenskaber …"
 
 #: ../plugins/glade/plugin.c:690
 msgid "Switch between library versions and check deprecations"
@@ -5892,7 +5885,7 @@ msgstr "Skift mellem biblioteksversioner og kontrollér deprecieringer"
 
 #: ../plugins/glade/plugin.c:731
 msgid "Loading Glade…"
-msgstr "Indlæser Glade…"
+msgstr "Indlæser Glade …"
 
 #: ../plugins/glade/plugin.c:818
 msgid "Glade designer operations"
@@ -6034,8 +6027,7 @@ msgstr ""
 msgid "Failed to activate the JHBuild Plugin: %s"
 msgstr "Kunne ikke aktivere JHBuild-udvidelsesmodulet: %s"
 
-#: ../plugins/js-debugger/debugger-js.c:548
-#: ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "Fejl: kan ikke binde port"
 
@@ -6065,7 +6057,8 @@ msgid "C++ and Java support Plugin"
 msgstr "Modul til C++- og Javaunderstøttelse"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.plugin.in.h:2
-msgid "C++ and Java support plugin for code completion, auto-indentation, etc."
+msgid ""
+"C++ and Java support plugin for code completion, auto-indentation, etc."
 msgstr ""
 "Modul til C++ og Java med understøttelse af kodefuldførelse, autoindrykning "
 "osv."
@@ -6472,11 +6465,11 @@ msgstr "Patcher %s med %s\n"
 
 #: ../plugins/patch/patch-plugin.c:212
 msgid "Patching…\n"
-msgstr "Patcher…\n"
+msgstr "Patcher …\n"
 
 #: ../plugins/patch/patch-plugin.c:222
 msgid "Patching…"
-msgstr "Patcher…"
+msgstr "Patcher …"
 
 #: ../plugins/patch/patch-plugin.c:227
 msgid "There are unfinished jobs: please wait until they are finished."
@@ -6524,7 +6517,7 @@ msgstr "_Værktøjer"
 #. Stock icon, if any
 #: ../plugins/patch/plugin.c:61
 msgid "_Patch…"
-msgstr "_Patch…"
+msgstr "_Patch …"
 
 #: ../plugins/patch/plugin.c:93
 msgid "Patch files/directories"
@@ -6542,8 +6535,7 @@ msgstr "Importér et eksisterende autotools-projekt i Anjuta"
 msgid "Project from Existing Sources"
 msgstr "Projekt fra eksisterende kilder"
 
-#: ../plugins/project-import/plugin.c:82
-#: ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "En fil ved navn \"%s\" findes allerede. Vil du erstatte den?"
@@ -6650,7 +6642,7 @@ msgstr "Projekthåndteringsmodul til Anjuta."
 #. uri = g_strdup("");
 #: ../plugins/project-manager/dialogs.c:334
 msgid "Select sources…"
-msgstr "Vælg kilder…"
+msgstr "Vælg kilder …"
 
 #: ../plugins/project-manager/dialogs.c:409
 msgid " This property is not modifiable."
@@ -6868,7 +6860,7 @@ msgstr "_Projekt"
 
 #: ../plugins/project-manager/plugin.c:907
 msgid "New _Folder…"
-msgstr "Ny _mappe…"
+msgstr "Ny _mappe …"
 
 #: ../plugins/project-manager/plugin.c:907
 #: ../plugins/project-manager/plugin.c:941
@@ -6877,7 +6869,7 @@ msgstr "Føj en ny mappe til projektet"
 
 #: ../plugins/project-manager/plugin.c:912
 msgid "New _Target…"
-msgstr "Nyt _mål…"
+msgstr "Nyt _mål …"
 
 #: ../plugins/project-manager/plugin.c:912
 #: ../plugins/project-manager/plugin.c:946
@@ -6886,7 +6878,7 @@ msgstr "Føj et nyt mål til projektet"
 
 #: ../plugins/project-manager/plugin.c:917
 msgid "Add _Source File…"
-msgstr "Tilføj _kildefil…"
+msgstr "Tilføj _kildefil …"
 
 #: ../plugins/project-manager/plugin.c:917
 #: ../plugins/project-manager/plugin.c:951
@@ -6896,7 +6888,7 @@ msgstr "Føj en kildefil til et mål"
 
 #: ../plugins/project-manager/plugin.c:922
 msgid "Add _Library…"
-msgstr "Tilføj _bibliotek…"
+msgstr "Tilføj _bibliotek …"
 
 #: ../plugins/project-manager/plugin.c:922
 msgid "Add a module to a target"
@@ -6970,7 +6962,7 @@ msgstr ""
 
 #: ../plugins/project-manager/plugin.c:1321
 msgid "Update project view…"
-msgstr "Opdatér projektvisning…"
+msgstr "Opdatér projektvisning …"
 
 #: ../plugins/project-manager/plugin.c:1326
 #: ../plugins/project-manager/plugin.c:1448
@@ -7001,7 +6993,7 @@ msgstr "Pop op-handlinger til projekthåndtering"
 
 #: ../plugins/project-manager/plugin.c:2480
 msgid "Initializing Project…"
-msgstr "Initierer projekt…"
+msgstr "Initierer projekt …"
 
 #: ../plugins/project-manager/plugin.c:2483
 msgid "Project Loaded"
@@ -7017,7 +7009,7 @@ msgstr "Vælg _målet for biblioteket:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:3
 msgid "_New library…"
-msgstr "_Ny bibliotek…"
+msgstr "_Ny bibliotek …"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:4
 msgid "Modules:"
@@ -7061,7 +7053,7 @@ msgstr "Vælg _målet for de nye kildefiler:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:14
 msgid "_Select file to add…"
-msgstr "_Vælg fil at tilføje…"
+msgstr "_Vælg fil at tilføje …"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:15
 msgid "Source files:"
@@ -7168,12 +7160,8 @@ msgstr "Kan ikke finde nogen projektskabelon i %s"
 
 #: ../plugins/project-wizard/druid.c:712
 #, c-format
-msgid ""
-"\n"
-"Field \"%s\" is mandatory. Please enter it."
-msgstr ""
-"\n"
-"Feltet \"%s\" er påkrævet. Udfyld det venligst."
+msgid "\nField \"%s\" is mandatory. Please enter it."
+msgstr "\nFeltet \"%s\" er påkrævet. Udfyld det venligst."
 
 #: ../plugins/project-wizard/druid.c:727
 #, c-format
@@ -7182,15 +7170,15 @@ msgid ""
 "\"#$:%%+,.=@^_`~\". In addition you cannot have a leading dash. Please fix "
 "it."
 msgstr ""
-"Feltet \"%s\" må kun indeholde bogstaver, tal og følgende tegn: \"#$:%%+,."
-"=@^_`~\". Derudover må der ikke være indledende bindestreg. Fiks det "
-"venligst."
+"Feltet \"%s\" må kun indeholde bogstaver, tal og følgende tegn: "
+"\"#$:%%+,.=@^_`~\". Derudover må der ikke være indledende bindestreg. Fiks "
+"det venligst."
 
 #: ../plugins/project-wizard/druid.c:732
 #, c-format
 msgid ""
-"Field \"%s\" must contains only letters, digits, the following characters \"#"
-"$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a "
+"Field \"%s\" must contains only letters, digits, the following characters "
+"\"#$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a "
 "leading dash. Please fix it."
 msgstr ""
 "Feltet \"%s\" må kun indeholde bogstaver, tal, tegnene \"#$:%%+,.=@^_`~\" "
@@ -7235,21 +7223,13 @@ msgstr "Tvivlsom post"
 
 #: ../plugins/project-wizard/druid.c:966
 #, c-format
-msgid ""
-"\n"
-"Missing programs: %s."
-msgstr ""
-"\n"
-"Manglende programmer: %s."
+msgid "\nMissing programs: %s."
+msgstr "\nManglende programmer: %s."
 
 #: ../plugins/project-wizard/druid.c:977
 #, c-format
-msgid ""
-"\n"
-"Missing packages: %s."
-msgstr ""
-"\n"
-"Manglende pakker: %s."
+msgid "\nMissing packages: %s."
+msgstr "\nManglende pakker: %s."
 
 #: ../plugins/project-wizard/druid.c:986
 msgid ""
@@ -7273,9 +7253,9 @@ msgid ""
 "The missing programs are usually part of some distribution packages and can "
 "be searched for in your Application Manager. Similarly, the development "
 "packages are contained in special packages that your distribution provides "
-"to allow development of projects based on them. They usually end with a \"-"
-"dev\" or \"-devel\" suffix in package names and can be found by searching in "
-"your Application Manager."
+"to allow development of projects based on them. They usually end with a "
+"\"-dev\" or \"-devel\" suffix in package names and can be found by searching "
+"in your Application Manager."
 msgstr ""
 "De manglende programmer indgår sædvanligvis i distributionspakkerne, som kan "
 "gennemsøges med din programhåndtering. På tilsvarende vis findes "
@@ -7309,7 +7289,7 @@ msgstr "Opretter %s … Kunne ikke oprette mappe"
 #: ../plugins/project-wizard/install.c:526
 #, c-format
 msgid "Creating %s (using AutoGen)… %s"
-msgstr "Opretter %s (bruger AutoGen)… %s"
+msgstr "Opretter %s (bruger AutoGen) … %s"
 
 #: ../plugins/project-wizard/install.c:531
 #, c-format
@@ -7816,7 +7796,8 @@ msgstr "Tilføj understøttelse for delte biblioteker:"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:18
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:18
 msgid "Adds support for building shared libraries in your project"
-msgstr "Tilføjer understøttelse for bygning af delte biblioteker i dit projekt"
+msgstr ""
+"Tilføjer understøttelse for bygning af delte biblioteker i dit projekt"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:15
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:17
@@ -7895,7 +7876,8 @@ msgstr "Generisk gcj-kompileret Java"
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:2
 msgid ""
 "A generic natively compiled java project using the GNU Java Compiler (gcj)"
-msgstr "Et generisk kompileret Javaprojekt, der bruger GNUs Javakompiler (gcj)"
+msgstr ""
+"Et generisk kompileret Javaprojekt, der bruger GNUs Javakompiler (gcj)"
 
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:7
 #: ../plugins/project-wizard/templates/java.wiz.in.h:7
@@ -7933,8 +7915,8 @@ msgstr "UUID:"
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:16
 msgid ""
 "Uuid is a globally-unique identifier for your extension.\n"
-"This should be in the format of an email address (foo.bar@extensions.example."
-"com), but\n"
+"This should be in the format of an email address "
+"(foo.bar@extensions.example.com), but\n"
 "need not be an actual email address, though it's a good idea to base the "
 "uuid on your\n"
 "email address."
@@ -7983,7 +7965,8 @@ msgstr "Tilføj gtk-doc-system:"
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:20
 #: ../plugins/project-wizard/templates/java.wiz.in.h:18
 #: ../plugins/project-wizard/templates/python.wiz.in.h:16
-msgid "gtk-doc is used to compile API documentations for GObject based classes"
+msgid ""
+"gtk-doc is used to compile API documentations for GObject based classes"
 msgstr ""
 "gtk-doc bruges til at kompilere API-dokumentation for klasser baseret på "
 "GObject"
@@ -8243,7 +8226,7 @@ msgstr "Tillader indlæsning af Anjuta-udvidelsesmoduler skrevet i Python"
 
 #: ../plugins/quick-open/anjuta-quick-open.ui.h:1
 msgid "Loading files..."
-msgstr "Indlæser filer..."
+msgstr "Indlæser filer …"
 
 #: ../plugins/quick-open/plugin.c:221
 msgid "Quick open"
@@ -8327,7 +8310,7 @@ msgstr "Dræb program"
 
 #: ../plugins/run-program/plugin.c:314
 msgid "Program Parameters…"
-msgstr "Programparametre…"
+msgstr "Programparametre …"
 
 #: ../plugins/run-program/plugin.c:316
 msgid "Set current program, arguments, etc."
@@ -8440,12 +8423,12 @@ msgstr "Sprog"
 #. Insert the Add Snippet menu item
 #: ../plugins/snippets-manager/snippets-browser.c:809
 msgid "Add Snippet…"
-msgstr "Tilføj tekststump…"
+msgstr "Tilføj tekststump …"
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
 msgid "Add Snippets Group…"
-msgstr "Tilføj stumpgruppe…"
+msgstr "Tilføj stumpgruppe …"
 
 #: ../plugins/snippets-manager/snippets-editor.c:39
 msgid "Default value"
@@ -8458,7 +8441,8 @@ msgstr "<b>Fejl:</b> Du skal vælge mindst et sprog for tekststumpen!"
 #: ../plugins/snippets-manager/snippets-editor.c:49
 msgid ""
 "<b>Error:</b> The trigger key is already in use for one of the languages!"
-msgstr "<b>Fejl:</b> Denne udløsernøgle er allerede i brug for at af sprogene!"
+msgstr ""
+"<b>Fejl:</b> Denne udløsernøgle er allerede i brug for at af sprogene!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
 msgid ""
@@ -8870,7 +8854,7 @@ msgstr "Vælg filer at integrere:"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:16
 msgid "Retrieving status…"
-msgstr "Henter status…"
+msgstr "Henter status …"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:17
 msgid "Copy files/folders"
@@ -8978,7 +8962,7 @@ msgstr "Vælg filer at markere som løst (resolved):"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:50
 msgid "Retrieving status……"
-msgstr "Henter status…"
+msgstr "Henter status …"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:51
 msgid "Revert Changes"
@@ -9035,7 +9019,7 @@ msgstr "_Subversion"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:60 ../plugins/subversion/plugin.c:175
 msgid "_Add…"
-msgstr "_Tilføj…"
+msgstr "_Tilføj …"
 
 #. Display label
 #. short-cut
@@ -9047,7 +9031,7 @@ msgstr "Tilføj en nu fil/mappe til Subversion-træet"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:68 ../plugins/subversion/plugin.c:183
 msgid "_Remove…"
-msgstr "_Fjern…"
+msgstr "_Fjern …"
 
 #. Display label
 #. short-cut
@@ -9060,7 +9044,7 @@ msgstr "Fjern en fil/mappe fra Subversion-træet"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:76
 msgid "_Commit…"
-msgstr "_Integrér…"
+msgstr "_Integrér …"
 
 #. Display label
 #. short-cut
@@ -9072,7 +9056,7 @@ msgstr "Integrér (commit) dine ændringer i Subversion-træet"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:84 ../plugins/subversion/plugin.c:167
 msgid "_Revert…"
-msgstr "_Forkast…"
+msgstr "_Forkast …"
 
 #. Display label
 #. short-cut
@@ -9084,7 +9068,7 @@ msgstr "Forkast (revert) ændringer af din arbejdskopi."
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:92
 msgid "_Resolve Conflicts…"
-msgstr "_Løs konflikter…"
+msgstr "_Løs konflikter …"
 
 #. Display label
 #. short-cut
@@ -9096,7 +9080,7 @@ msgstr "Løs konflikter i din arbejdskopi."
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:100 ../plugins/subversion/plugin.c:159
 msgid "_Update…"
-msgstr "_Opdatér…"
+msgstr "_Opdatér …"
 
 #. Display label
 #. short-cut
@@ -9108,7 +9092,7 @@ msgstr "Synkronisér din lokale kopi med Subversion-træet"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:108
 msgid "Copy Files/Folders…"
-msgstr "Kopiér filer/mapper…"
+msgstr "Kopiér filer/mapper …"
 
 #. Display label
 #. short-cut
@@ -9120,7 +9104,7 @@ msgstr "Kopier filer/mapper i arkivet"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:116
 msgid "Switch to a Branch/Tag…"
-msgstr "Skift til gren/mærke…"
+msgstr "Skift til gren/mærke …"
 
 #. Display label
 #. short-cut
@@ -9132,7 +9116,7 @@ msgstr "Skift din lokale kopi til en bren eller et mærke i arkivet"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:124
 msgid "Merge…"
-msgstr "Flet…"
+msgstr "Flet …"
 
 #. Display label
 #. short-cut
@@ -9144,7 +9128,7 @@ msgstr "Flet (merge) ændringer ind i din arbejdskopi"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:132 ../plugins/subversion/plugin.c:191
 msgid "_View Log…"
-msgstr "_Vis log…"
+msgstr "_Vis log …"
 
 #. Display label
 #. short-cut
@@ -9156,7 +9140,7 @@ msgstr "Vis filhistorik"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:140
 msgid "_Diff…"
-msgstr "_Diff…"
+msgstr "_Diff …"
 
 #. Display label
 #. short-cut
@@ -9168,13 +9152,13 @@ msgstr "Diff det lokale træ og arkivet"
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:199
 msgid "Copy…"
-msgstr "Kopiér…"
+msgstr "Kopiér …"
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/subversion/plugin.c:207
 msgid "Diff…"
-msgstr "Diff…"
+msgstr "Diff …"
 
 #: ../plugins/subversion/plugin.c:488
 msgid "Subversion operations"
@@ -9205,7 +9189,7 @@ msgstr "Subversion: Commit fuldført."
 
 #: ../plugins/subversion/subversion-commit-dialog.c:123
 msgid "Subversion: Committing changes to the repository…"
-msgstr "Subversion: Committer ændringer til arkivet…"
+msgstr "Subversion: Committer ændringer til arkivet …"
 
 #: ../plugins/subversion/subversion-copy-dialog.c:138
 msgid "Subversion: Copy complete."
@@ -9228,7 +9212,7 @@ msgstr "[Head/Arbejdskopi]"
 #: ../plugins/subversion/subversion-log-dialog.c:426
 #: ../plugins/subversion/subversion-log-dialog.c:493
 msgid "Subversion: Retrieving diff…"
-msgstr "Subversion: Henter diff…"
+msgstr "Subversion: Henter diff …"
 
 #: ../plugins/subversion/subversion-log-dialog.c:119
 msgid "Diff"
@@ -9236,7 +9220,7 @@ msgstr "Diff"
 
 #: ../plugins/subversion/subversion-log-dialog.c:257
 msgid "Subversion: Retrieving log…"
-msgstr "Subversion: Henter log…"
+msgstr "Subversion: Henter log …"
 
 #: ../plugins/subversion/subversion-log-dialog.c:309
 msgid "Subversion: File retrieved."
@@ -9244,7 +9228,7 @@ msgstr "Subversion Fil hentet."
 
 #: ../plugins/subversion/subversion-log-dialog.c:351
 msgid "Subversion: Retrieving file…"
-msgstr "Subversion: Henter fil…"
+msgstr "Subversion: Henter fil …"
 
 #: ../plugins/subversion/subversion-merge-dialog.c:38
 msgid "Subversion: Merge complete."
@@ -9424,7 +9408,7 @@ msgstr "Gå til symboldefinition"
 
 #: ../plugins/symbol-db/plugin.c:349
 msgid "_Find Symbol…"
-msgstr "_Find symbol…"
+msgstr "_Find symbol …"
 
 #: ../plugins/symbol-db/plugin.c:350
 msgid "Find Symbol"
@@ -9433,7 +9417,7 @@ msgstr "Find symbol"
 #: ../plugins/symbol-db/plugin.c:1067
 #, c-format
 msgid "%s: Generating inheritances…"
-msgstr "%s: Genererer nedarvningsstruktur…"
+msgstr "%s: Genererer nedarvningsstruktur …"
 
 #. Translators: %s is the name of a system library
 #: ../plugins/symbol-db/plugin.c:1073
@@ -9446,7 +9430,7 @@ msgstr[1] "%s: %d af %d filer scannet"
 #: ../plugins/symbol-db/plugin.c:1104
 #, c-format
 msgid "Generating inheritances…"
-msgstr "Genererer nedarvningsstruktur…"
+msgstr "Genererer nedarvningsstruktur …"
 
 #: ../plugins/symbol-db/plugin.c:1106
 #, c-format
@@ -9457,7 +9441,7 @@ msgstr[1] "%d af %d filer scannet"
 
 #: ../plugins/symbol-db/plugin.c:1767
 msgid "Populating symbol database…"
-msgstr "Opbygger symboldatabase…"
+msgstr "Opbygger symboldatabase …"
 
 #: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
 msgid "Symbols"
@@ -9555,7 +9539,7 @@ msgstr "Gem alle filer"
 
 #: ../plugins/tools/anjuta-tools.ui.h:9
 msgid "_Variable…"
-msgstr "_Variabel…"
+msgstr "_Variabel …"
 
 #: ../plugins/tools/anjuta-tools.ui.h:10
 msgid "Working directory:"
@@ -9651,7 +9635,7 @@ msgstr "Kan ikke redigere script"
 
 #: ../plugins/tools/editor.c:1047
 msgid "New accelerator…"
-msgstr "Ny genvej…"
+msgstr "Ny genvej …"
 
 #: ../plugins/tools/execute.c:314
 #, c-format
@@ -9678,7 +9662,7 @@ msgstr "(fejl)"
 #: ../plugins/tools/execute.c:469
 #, c-format
 msgid "Running command: %s…\n"
-msgstr "Kører kommando: %s…\n"
+msgstr "Kører kommando: %s …\n"
 
 #: ../plugins/tools/execute.c:509
 #, c-format
@@ -9826,7 +9810,8 @@ msgid "Selected full file name in the project manager plugin"
 msgstr "Valgte fulde filnavn i projekthåndteringsmodulet"
 
 #: ../plugins/tools/variable.c:99
-msgid "Selected full file name without extension in the project manager plugin"
+msgid ""
+"Selected full file name without extension in the project manager plugin"
 msgstr "Valgte fulde filnavn uden endelse i projekthåndteringsmodulet"
 
 #: ../plugins/tools/variable.c:100
@@ -10047,7 +10032,7 @@ msgstr "Ugyldig profil %s: %s"
 
 #: ../src/anjuta-application.c:830
 msgid "Loaded Session…"
-msgstr "Session indlæst…"
+msgstr "Session indlæst …"
 
 #: ../src/anjuta-menu.ui.h:1
 msgid "_New Window"
@@ -10173,7 +10158,7 @@ msgstr "Kun tekst"
 #~ msgid "Anjuta Manual"
 #~ msgstr "Manual til Anjuta"
 
-# Synes efterhånden OSS bruges en hel del steder på dansk
+#~ # Synes efterhånden OSS bruges en hel del steder på dansk
 #~ msgid "FAQ"
 #~ msgstr "OSS"
 
@@ -10202,11 +10187,10 @@ msgstr "Kun tekst"
 #~ msgstr "Træk eller indtast revision her"
 
 #~ msgid ""
-#~ "Whole project; Drop a file here or type a path to view a file or folder "
-#~ "log"
+#~ "Whole project; Drop a file here or type a path to view a file or folder log"
 #~ msgstr ""
-#~ "Hele projektet; træk en fil her eller skriv en sti for at vise en fil "
-#~ "eller mappelog"
+#~ "Hele projektet; træk en fil her eller skriv en sti for at vise en fil eller "
+#~ "mappelog"
 
 #~ msgid "Previous commit; Drop or enter a different revision here"
 #~ msgstr "Forrige commit; træk eller indtast en anden revision her"
@@ -10220,7 +10204,7 @@ msgstr "Kun tekst"
 #~ msgid "Stash %i.diff"
 #~ msgstr "Put %i.diff i gemmested"
 
-# det vil være klart at ændringerne ikke er committede
+#~ # det vil være klart at ændringerne ikke er committede
 #~ msgid "Diff uncommitted changes"
 #~ msgstr "Diff ændringer"
 
@@ -10273,13 +10257,13 @@ msgstr "Kun tekst"
 #~ msgstr "Basis-URI"
 
 #~ msgid "Refreshing symbol tree…"
-#~ msgstr "Opdaterer symboltræ…"
+#~ msgstr "Opdaterer symboltræ …"
 
 #~ msgid "Failed to refresh project: %s"
 #~ msgstr "Kunne ikke genopfriske projektet: %s"
 
 #~ msgid "New _Library…"
-#~ msgstr "Nyt _bibliotek…"
+#~ msgstr "Nyt _bibliotek …"
 
 #~ msgid "Add a new package to the project"
 #~ msgstr "Føj en ny pakke til projektet"
@@ -10297,8 +10281,8 @@ msgstr "Kun tekst"
 #~ msgstr "Slå CLang-kodeanalysatoren til"
 
 #~ msgid ""
-#~ "The project needs to be reconfigured after enabling this option. Please "
-#~ "run Build->Configure!"
+#~ "The project needs to be reconfigured after enabling this option. Please run "
+#~ "Build->Configure!"
 #~ msgstr ""
 #~ "Projektet skal omkonfigureres efter at dette tilvalg er slået til. Kør "
 #~ "venligst Byg->Konfigurér!"
@@ -10338,8 +10322,8 @@ msgstr "Kun tekst"
 #~ msgstr "Indlæst:"
 
 #~ msgid ""
-#~ "Unable to display help. Please make sure the Anjuta documentation package "
-#~ "is installed. It can be downloaded from http://anjuta.org."
+#~ "Unable to display help. Please make sure the Anjuta documentation package is "
+#~ "installed. It can be downloaded from http://anjuta.org."
 #~ msgstr ""
 #~ "Kan ikke vise hjælp. Sikr dig venligst, at Anjuta-dokumentationspakken er "
 #~ "installeret. Den kan hentes fra http://anjuta.org."
@@ -10469,7 +10453,7 @@ msgstr "Kun tekst"
 #~ msgid "Whether to strike through the text"
 #~ msgstr "Om teksten skal være gennemstreget"
 
-# ?
+#~ # ?
 #~ msgid "Underline"
 #~ msgstr "Understreget"
 
@@ -10584,11 +10568,11 @@ msgstr "Kun tekst"
 #~ msgid "Display information on the execution status of the program"
 #~ msgstr "Vis information om kørselsstatus af programmet"
 
-# Citat fra docs
-#
-# 5.7.5. Information about kernel structure
-#
-# It is possible to get some information kernel data on the current process by choosing the menu item Debug->Information->Kernel user struct. A window will open displaying all informations. 
+#~ # Citat fra docs
+#~ #
+#~ # 5.7.5. Information about kernel structure
+#~ #
+#~ # It is possible to get some information kernel data on the current process by choosing the menu item Debug->Information->Kernel user struct. A window will open displaying all informations. 
 #~ msgid "Info _Kernel User Struct"
 #~ msgstr "Information om _kernens struktur"
 
@@ -10660,7 +10644,7 @@ msgstr "Kun tekst"
 #~ msgid "Extra target"
 #~ msgstr "Ekstra mål"
 
-# Configure plejer at være et 'mål' for make, så man har kommandoer såsom 'make install', 'make configure' og den slags.  Bemærk placeringen i samme kildefil som strenge der har med mål at gøre
+#~ # Configure plejer at være et 'mål' for make, så man har kommandoer såsom 'make install', 'make configure' og den slags.  Bemærk placeringen i samme kildefil som strenge der har med mål at gøre
 #~ msgid "Configure file"
 #~ msgstr "Konfigureringsfil"
 
@@ -10670,7 +10654,7 @@ msgstr "Kun tekst"
 #~ msgid "GLib genmarshal"
 #~ msgstr "GLib genmarshal"
 
-# i princippet kan rule måske oversættes, men vi må hellere være forsigtige
+#~ # i princippet kan rule måske oversættes, men vi må hellere være forsigtige
 #~ msgid "Intl rule"
 #~ msgstr "Intl rule"
 
@@ -10799,7 +10783,7 @@ msgstr "Kun tekst"
 #~ msgstr "Målnavn:"
 
 #~ msgid "Advanced…"
-#~ msgstr "Avanceret…"
+#~ msgstr "Avanceret …"
 
 #~ msgid "Invalid GbfMkfileConfigValue type"
 #~ msgstr "Ugyldig GbfMkfileConfigValue-type"
@@ -10937,7 +10921,7 @@ msgstr "Kun tekst"
 #~ msgstr "Git: Tilføjede den fjerne gren \"%s\"."
 
 #~ msgid "Git: Fetching…"
-#~ msgstr "Git: Henter…"
+#~ msgstr "Git: Henter …"
 
 #~ msgid "Please select a mailbox file."
 #~ msgstr "Vælg venligst en postkassefil."
@@ -10964,7 +10948,7 @@ msgstr "Kun tekst"
 #~ msgstr "Kort log"
 
 #~ msgid "Git: Retrieving log…"
-#~ msgstr "Git: Henter log…"
+#~ msgstr "Git: Henter log …"
 
 #~ msgid "Select a file"
 #~ msgstr "Vælg en fil"
@@ -10991,7 +10975,7 @@ msgstr "Kun tekst"
 #~ msgstr "Indtast URL til arkivet, der skal skubbes til."
 
 #~ msgid "Git: Pushing…"
-#~ msgstr "Git: Skubber…"
+#~ msgstr "Git: Skubber …"
 
 #~ msgid "Git: Rebasing"
 #~ msgstr "Git: Flytter forgreningspunkt"
@@ -11042,19 +11026,19 @@ msgstr "Kun tekst"
 #~ msgstr "Gem uintegrerede ændringer og genanvend dem senere"
 
 #~ msgid "_Apply stashed changes…"
-#~ msgstr "_Anvend gemte ændringer…"
+#~ msgstr "_Anvend gemte ændringer …"
 
 #~ msgid "_View log…"
-#~ msgstr "_Vis log…"
+#~ msgstr "_Vis log …"
 
 #~ msgid "View change history"
 #~ msgstr "Vis ændringshistorik"
 
 #~ msgid "_Push…"
-#~ msgstr "_Skub…"
+#~ msgstr "_Skub …"
 
 #~ msgid "_Pull…"
-#~ msgstr "_Træk…"
+#~ msgstr "_Træk …"
 
 #~ msgid "Update the working copy"
 #~ msgstr "Opdatér arbejdskopien"
@@ -11066,19 +11050,19 @@ msgstr "Kun tekst"
 #~ msgstr "_Filer"
 
 #~ msgid "_Ignore…"
-#~ msgstr "_Ignorér…"
+#~ msgstr "_Ignorér …"
 
 #~ msgid "Ignore files"
 #~ msgstr "Ignorér filer"
 
 #~ msgid "_Check out files…"
-#~ msgstr "Hent filer (_checkout)…"
+#~ msgstr "Hent filer (_checkout) …"
 
 #~ msgid "_Unstage files…"
-#~ msgstr "_Fjern (unstage) filer fra indeks…"
+#~ msgstr "_Fjern (unstage) filer fra indeks …"
 
 #~ msgid "Create patch series…"
-#~ msgstr "Opret patch-række…"
+#~ msgstr "Opret patch-række …"
 
 #~ msgid "Generate patch files for submission upstream"
 #~ msgstr "Generér patchfiler til indsendelse upstream"
@@ -11093,16 +11077,16 @@ msgstr "Kun tekst"
 #~ msgstr "_Grene"
 
 #~ msgid "_Create branch…"
-#~ msgstr "_Opret gren…"
+#~ msgstr "_Opret gren …"
 
 #~ msgid "_Delete branch…"
-#~ msgstr "_Fjern gren…"
+#~ msgstr "_Fjern gren …"
 
 #~ msgid "_Switch to another branch…"
-#~ msgstr "_Skift til en anden gren…"
+#~ msgstr "_Skift til en anden gren …"
 
 #~ msgid "_Merge…"
-#~ msgstr "_Flet…"
+#~ msgstr "_Flet …"
 
 #~ msgid "Merge changes from another branch into the current one"
 #~ msgstr "Flet ændringer fra en anden gren ind i den aktuelle"
@@ -11114,7 +11098,7 @@ msgstr "Kun tekst"
 #~ msgstr "Flet dine ændringer med en fjern upstream-gren"
 
 #~ msgid "_Start…"
-#~ msgstr "_Start…"
+#~ msgstr "_Start …"
 
 #~ msgid "Start a rebase"
 #~ msgstr "Start flytning af forgreningspunkt"
@@ -11125,35 +11109,34 @@ msgstr "Kun tekst"
 #~ "konflikter"
 
 #~ msgid "_Cherry pick…"
-#~ msgstr "_Cherry-pick…"
+#~ msgstr "_Cherry-pick …"
 
 #~ msgid ""
-#~ "Selectively merge individual changes from other branches into the current "
-#~ "one"
+#~ "Selectively merge individual changes from other branches into the current one"
 #~ msgstr "Flet selektivt enkelte ændringer fra andre grene til den aktuelle"
 
 #~ msgid "_Remote branches"
 #~ msgstr "_Fjerne grene"
 
 #~ msgid "_Delete…"
-#~ msgstr "_Slet…"
+#~ msgstr "_Slet …"
 
 #~ msgid "_Create tag…"
-#~ msgstr "_Opret mærke…"
+#~ msgstr "_Opret mærke …"
 
 #~ msgid "_Delete tag…"
-#~ msgstr "_Slet mærke…"
+#~ msgstr "_Slet mærke …"
 
 #~ msgid "Delete tags"
 #~ msgstr "Slet mærker"
 
 #~ msgid "_Reset tree…"
-#~ msgstr "_Nulstil træ…"
+#~ msgstr "_Nulstil træ …"
 
 #~ msgid "Reset repository head to any past state"
 #~ msgstr "Nulstil arkivhoved til enhver tidligere tilstand"
 
-# En kommando der bruger bisektion til at finde ud af hvilken revision der introducerede en bestemt fejl
+#~ # En kommando der bruger bisektion til at finde ud af hvilken revision der introducerede en bestemt fejl
 #~ msgid "Bisect"
 #~ msgstr "Bisektion"
 
@@ -11184,7 +11167,7 @@ msgstr "Kun tekst"
 #~ msgid "Create a tag at this revision"
 #~ msgstr "Opret et mærke for denne revision"
 
-# En kommando der bruger bisektion til at finde ud af hvilken revision der introducerede en bestemt fejl
+#~ # En kommando der bruger bisektion til at finde ud af hvilken revision der introducerede en bestemt fejl
 #~ msgid "_Bisect"
 #~ msgstr "_Bisektion"
 
@@ -11285,7 +11268,7 @@ msgstr "Kun tekst"
 #~ msgid "XML"
 #~ msgstr "XML"
 
-# Nok ikke klartekst, da dette har kryptografiske konnotationer
+#~ # Nok ikke klartekst, da dette har kryptografiske konnotationer
 #~ msgid "Plain Text"
 #~ msgstr "Ren tekst"
 
@@ -11347,8 +11330,7 @@ msgstr "Kun tekst"
 #~ msgstr "Høj"
 
 #~ msgid "When you delete the category \"%s\", all containing items are lost"
-#~ msgstr ""
-#~ "Når du sletter kategorien \"%s\", vil alle tilhørende punkter gå tabt"
+#~ msgstr "Når du sletter kategorien \"%s\", vil alle tilhørende punkter gå tabt"
 
 #~ msgid "Delete"
 #~ msgstr "Slet"
@@ -11445,11 +11427,9 @@ msgstr "Kun tekst"
 #~ msgstr "Påmindelse"
 
 #~ msgid "Allow to-do items to notify me when they are due in %i minute"
-#~ msgid_plural ""
-#~ "Allow to-do items to notify me when they are due in %i minutes"
+#~ msgid_plural "Allow to-do items to notify me when they are due in %i minutes"
 #~ msgstr[0] "Tillad gøremål at påminde mig når de skal være klar om %i minut"
-#~ msgstr[1] ""
-#~ "Tillad gøremål at påminde mig når de skal være klar om %i minutter"
+#~ msgstr[1] "Tillad gøremål at påminde mig når de skal være klar om %i minutter"
 
 #~ msgid "Open a Task List"
 #~ msgstr "Åbn en opgaveliste"
@@ -11495,7 +11475,7 @@ msgstr "Kun tekst"
 #~ msgstr "Genopfrisk projekthåndteringstræ"
 
 #~ msgid "Add _Group…"
-#~ msgstr "Tilføj _gruppe…"
+#~ msgstr "Tilføj _gruppe …"
 
 #~ msgid "Add a group to project"
 #~ msgstr "Tilføj en gruppe til projektet"
@@ -11507,21 +11487,21 @@ msgstr "Kun tekst"
 #~ msgstr "Tilføj _mål"
 
 #~ msgid ""
-#~ "Field \"%s\" must start with a letter, a digit or an underscore and "
-#~ "contain only letters, digits, underscore, minus and dot. Please fix it."
+#~ "Field \"%s\" must start with a letter, a digit or an underscore and contain "
+#~ "only letters, digits, underscore, minus and dot. Please fix it."
 #~ msgstr ""
-#~ "Feltet \"%s\" skal begynde med et bogstav, et ciffer eller en bundstreg "
-#~ "og indeholde kun bogstaver, cifre, bundstreger, minus og punktum.  Fiks "
-#~ "det venligst."
+#~ "Feltet \"%s\" skal begynde med et bogstav, et ciffer eller en bundstreg og "
+#~ "indeholde kun bogstaver, cifre, bundstreger, minus og punktum.  Fiks det "
+#~ "venligst."
 
 #~ msgid ""
-#~ "Field \"%s\" must start with a letter, a digit, an underscore or a "
-#~ "directory separator and contain only letters, digits, underscore, "
-#~ "directory separator, minus and dot. Please fix it."
+#~ "Field \"%s\" must start with a letter, a digit, an underscore or a directory "
+#~ "separator and contain only letters, digits, underscore, directory separator, "
+#~ "minus and dot. Please fix it."
 #~ msgstr ""
-#~ "Feltet \"%s\" skal begynde med et bogstav, et ciffer eller en bundstreg "
-#~ "og indeholde kun bogstaver, cifre, bundstreger, minus og punktum.  Fiks "
-#~ "det venligst."
+#~ "Feltet \"%s\" skal begynde med et bogstav, et ciffer eller en bundstreg og "
+#~ "indeholde kun bogstaver, cifre, bundstreger, minus og punktum.  Fiks det "
+#~ "venligst."
 
 #~ msgid "No"
 #~ msgstr "Nej"
@@ -11638,7 +11618,7 @@ msgstr "Kun tekst"
 #~ msgstr "Indstilling"
 
 #~ msgid "_Find…"
-#~ msgstr "_Søg…"
+#~ msgstr "_Søg …"
 
 #~ msgid ""
 #~ "Search for and replace a string or regular expression with another string"
@@ -11649,7 +11629,7 @@ msgstr "Kun tekst"
 #~ msgstr "Søg efter en streng i flere filer eller kataloger"
 
 #~ msgid "Searching…"
-#~ msgstr "Søger…"
+#~ msgstr "Søger …"
 
 #~ msgid "Basic Search"
 #~ msgstr "Basal søgning"
@@ -11747,16 +11727,15 @@ msgstr "Kun tekst"
 #~ msgstr "Tilgængelige API-mærker"
 
 #~ msgid "Checking if package is parseable…"
-#~ msgstr "Kontrollerer om pakken kan fortolkes…"
+#~ msgstr "Kontrollerer om pakken kan fortolkes …"
 
 #~ msgid ""
 #~ "This option enables the default packages required by your opened project, "
-#~ "e.g. Glib and GTK+ if you create a GTK+ project (may require more CPU "
-#~ "work)"
+#~ "e.g. Glib and GTK+ if you create a GTK+ project (may require more CPU work)"
 #~ msgstr ""
-#~ "Denne indstilling aktiverer pakkerne, der som standard kræves af dit "
-#~ "åbnede projekt, f.eks. Glib og GTK+, hvis du opretter et GTK+-projekt "
-#~ "(kan kræve mere CPU-arbejde)"
+#~ "Denne indstilling aktiverer pakkerne, der som standard kræves af dit åbnede "
+#~ "projekt, f.eks. Glib og GTK+, hvis du opretter et GTK+-projekt (kan kræve "
+#~ "mere CPU-arbejde)"
 
 #~ msgid "Default project directory:"
 #~ msgstr "Standardprojektmappe:"
@@ -11800,8 +11779,7 @@ msgstr "Kun tekst"
 #~ msgid ""
 #~ "<b>There is %d item with unsaved changes. Save changes before closing?</b>"
 #~ msgid_plural ""
-#~ "<b>There are %d items with unsaved changes. Save changes before closing?</"
-#~ "b>"
+#~ "<b>There are %d items with unsaved changes. Save changes before closing?</b>"
 #~ msgstr[0] ""
 #~ "<b>Der er %d element med ugemte ændringer. Gem ændringer før der "
 #~ "afsluttes?</b>"
@@ -11918,12 +11896,10 @@ msgstr "Kun tekst"
 #~ msgstr "Kunne ikke finde signalinformation"
 
 #~ msgid "Error while adding a new handler stub: No current editor"
-#~ msgstr ""
-#~ "Fejl under tilføjelse af ny håndteringsstub: Ingen aktuel redigering"
+#~ msgstr "Fejl under tilføjelse af ny håndteringsstub: Ingen aktuel redigering"
 
 #~ msgid ""
-#~ "To avoid this message turn off \"%s\" flag in Preferences->Glade GUI "
-#~ "Designer"
+#~ "To avoid this message turn off \"%s\" flag in Preferences->Glade GUI Designer"
 #~ msgstr ""
 #~ "Slå flaget \"%s\" fra i Indstillinger->Glade grænsefladedesigner for at "
 #~ "undgå denne meddelelse"
@@ -11966,11 +11942,11 @@ msgstr "Kun tekst"
 #~ msgstr "Associér sidste designer og redigering"
 
 #~ msgid "Associations dialog…"
-#~ msgstr "Dialogen associationer…"
+#~ msgstr "Dialogen associationer …"
 
-# Det står faktisk i RO
+#~ # Det står faktisk i RO
 #~ msgid "Versioning…"
-#~ msgstr "Versionering…"
+#~ msgstr "Versionering …"
 
 #~ msgid "Set as default resource target"
 #~ msgstr "Sæt som standardressourcemål"
@@ -12009,7 +11985,7 @@ msgstr "Kun tekst"
 #~ msgstr "Glade grænsefladedesigner"
 
 #~ msgid "Edit…"
-#~ msgstr "Redigér…"
+#~ msgstr "Redigér …"
 
 #~ msgid "Macro details:"
 #~ msgstr "Makrodetaljer:"
@@ -12024,7 +12000,7 @@ msgstr "Kun tekst"
 #~ msgstr "Genvej:"
 
 #~ msgid "Press macro shortcut…"
-#~ msgstr "Tryk makrogenvej…"
+#~ msgstr "Tryk makrogenvej …"
 
 #~ msgid "Press shortcut"
 #~ msgstr "Tryk genvej"
@@ -12057,19 +12033,19 @@ msgstr "Kun tekst"
 #~ msgstr "Makron"
 
 #~ msgid "_Insert Macro…"
-#~ msgstr "_Indsæt makro…"
+#~ msgstr "_Indsæt makro …"
 
 #~ msgid "Insert a macro using a shortcut"
 #~ msgstr "Indslæt en makro ved brug af genvej"
 
 #~ msgid "_Add Macro…"
-#~ msgstr "_Tilføj makro…"
+#~ msgstr "_Tilføj makro …"
 
 #~ msgid "Add a macro"
 #~ msgstr "Tilføj en makro"
 
 #~ msgid "Macros…"
-#~ msgstr "Makroer…"
+#~ msgstr "Makroer …"
 
 #~ msgid "Add/Edit/Remove macros"
 #~ msgstr "Tilføj/redigér/fjern makroer"
@@ -12141,7 +12117,7 @@ msgstr "Kun tekst"
 #~ msgstr "Programmet \"%s\" findes ikke"
 
 #~ msgid "C_onfigure Project..."
-#~ msgstr "K_onfigurér projekt..."
+#~ msgstr "K_onfigurér projekt …"
 
 #~ msgid "private"
 #~ msgstr "privat"
@@ -12165,19 +12141,19 @@ msgstr "Kun tekst"
 #~ msgstr "<b>Fejlsøger:</b>"
 
 #~ msgid "Debugger Command..."
-#~ msgstr "Fejlsøgerkommando..."
+#~ msgstr "Fejlsøgerkommando …"
 
 #~ msgid "Pid"
 #~ msgstr "Pid"
 
 #~ msgid "Ins_pect/Evaluate..."
-#~ msgstr "Gennem_se/Evaluér..."
+#~ msgstr "Gennem_se/Evaluér …"
 
 #~ msgid "Add Watch..."
-#~ msgstr "Tilføj overvåger..."
+#~ msgstr "Tilføj overvåger …"
 
 #~ msgid "_Print..."
-#~ msgstr "_Udskriv..."
+#~ msgstr "_Udskriv …"
 
 #~ msgid "recent menu label|_%d. %s"
 #~ msgstr "_%d. %s"
@@ -12186,13 +12162,13 @@ msgstr "Kun tekst"
 #~ msgstr "%d. %s"
 
 #~ msgid "_Open..."
-#~ msgstr "_Åbn..."
+#~ msgstr "_Åbn …"
 
 #~ msgid "Url:"
 #~ msgstr "Url:"
 
 #~ msgid "Advanced..."
-#~ msgstr "Avanceret..."
+#~ msgstr "Avanceret …"
 
 #~ msgid "Source coudn't be removed"
 #~ msgstr "Kilden kunne ikke fjernes"
@@ -12201,26 +12177,26 @@ msgstr "Kun tekst"
 #~ msgstr "<b>Mærker</b>"
 
 #~ msgid "_View log..."
-#~ msgstr "_Vis log..."
+#~ msgstr "_Vis log …"
 
 #~ msgid "_Add..."
-#~ msgstr "_Tilføj..."
+#~ msgstr "_Tilføj …"
 
 #~ msgid "_Remove..."
-#~ msgstr "_Fjern..."
+#~ msgstr "_Fjern …"
 
 #~ msgid "_Ignore..."
-#~ msgstr "_Ignorér..."
+#~ msgstr "_Ignorér …"
 
-# ???
+#~ # ???
 #~ msgid "Create patch series..."
-#~ msgstr "Opret patch-række..."
+#~ msgstr "Opret patch-række …"
 
 #~ msgid "_Switch to another branch..."
-#~ msgstr "_Skift til en anden gren..."
+#~ msgstr "_Skift til en anden gren …"
 
 #~ msgid "_Delete tag..."
-#~ msgstr "_Slet mærke..."
+#~ msgstr "_Slet mærke …"
 
 #~ msgid "Unknown language of the editor \"%s\""
 #~ msgstr "Ukendt sprog for redigeringen \"%s\""
@@ -12235,28 +12211,28 @@ msgstr "Kun tekst"
 #~ msgstr "<b>Makroer:</b>"
 
 #~ msgid "Edit..."
-#~ msgstr "Redigér..."
+#~ msgstr "Redigér …"
 
 #~ msgid "Macros..."
-#~ msgstr "Makroer..."
+#~ msgstr "Makroer …"
 
 #~ msgid "_Patch..."
-#~ msgstr "_Patch..."
+#~ msgstr "_Patch …"
 
 #~ msgid "<b>Project name</b>"
 #~ msgstr "<b>Projektnavn</b>"
 
 #~ msgid "_Select file to add..."
-#~ msgstr "_Vælg fil at tilføje..."
+#~ msgstr "_Vælg fil at tilføje …"
 
 #~ msgid "Add _Group..."
-#~ msgstr "Tilføj _gruppe..."
+#~ msgstr "Tilføj _gruppe …"
 
 #~ msgid "Add _Target..."
-#~ msgstr "Tilføj _mål..."
+#~ msgstr "Tilføj _mål …"
 
 #~ msgid "Add _Source File..."
-#~ msgstr "Tilføj _kildefil..."
+#~ msgstr "Tilføj _kildefil …"
 
 #~ msgid "_Add To Project"
 #~ msgstr "_Føj til projekt"
@@ -12268,34 +12244,34 @@ msgstr "Kun tekst"
 #~ msgstr "Kør i terminal"
 
 #~ msgid "Program Parameters..."
-#~ msgstr "Programparametre..."
+#~ msgstr "Programparametre …"
 
 #~ msgid "<b>Actions</b>"
 #~ msgstr "<b>Handlinger</b>"
 
 #~ msgid "_Find..."
-#~ msgstr "_Find..."
+#~ msgstr "_Find …"
 
 #~ msgid "Searching..."
-#~ msgstr "Søger..."
+#~ msgstr "Søger …"
 
 #~ msgid "_Update..."
-#~ msgstr "_Opdatér..."
+#~ msgstr "_Opdatér …"
 
 #~ msgid "_View Log..."
-#~ msgstr "_Vis log..."
+#~ msgstr "_Vis log …"
 
 #~ msgid "_Diff..."
-#~ msgstr "_Diff..."
+#~ msgstr "_Diff …"
 
 #~ msgid "Copy..."
-#~ msgstr "Kopier..."
+#~ msgstr "Kopier …"
 
 #~ msgid "Diff..."
-#~ msgstr "Diff..."
+#~ msgstr "Diff …"
 
 #~ msgid "_Find Symbol..."
-#~ msgstr "_Find symbol..."
+#~ msgstr "_Find symbol …"
 
 #~ msgid "<b>Global</b>"
 #~ msgstr "<b>Global</b>"
@@ -12307,7 +12283,7 @@ msgstr "Kun tekst"
 #~ msgstr "<b>Værktøjer</b>"
 
 #~ msgid "_Variable..."
-#~ msgstr "_Variabel..."
+#~ msgstr "_Variabel …"
 
 #~ msgid "Gdb plugin."
 #~ msgstr "Gdb-modul."
@@ -12315,11 +12291,11 @@ msgstr "Kun tekst"
 #~ msgid "GtkSourceview editor"
 #~ msgstr "GtkSourcevew-redigering"
 
-# ??? fejlrapport
+#~ # ??? fejlrapport
 #~ msgid "on_widget_signal"
 #~ msgstr "on_widget_signal"
 
-# fejlrapport
+#~ # fejlrapport
 #~ msgid "widget_signal_cb"
 #~ msgstr "widget_signal_cb"
 
@@ -12499,13 +12475,13 @@ msgstr "Kun tekst"
 #~ msgid ""
 #~ "This target does not have any profiling data.\n"
 #~ "\n"
-#~ "Please ensure that the target is complied with profiling support and that "
-#~ "it is run at least once."
+#~ "Please ensure that the target is complied with profiling support and that it "
+#~ "is run at least once."
 #~ msgstr ""
 #~ "Dette mål har ingen profileringsdata.\n"
 #~ "\n"
-#~ "Sikr dig venligst, at målet er kompileret med understøttelse for "
-#~ "profilering og at det er blevet kørt mindst én gang."
+#~ "Sikr dig venligst, at målet er kompileret med understøttelse for profilering "
+#~ "og at det er blevet kørt mindst én gang."
 
 #~ msgid "Profiler"
 #~ msgstr "Profiler"
@@ -12567,7 +12543,7 @@ msgstr "Kun tekst"
 #~ "symbolspecifikationer."
 
 #~ msgid "Options..."
-#~ msgstr "Indstillinger..."
+#~ msgstr "Indstillinger …"
 
 #~ msgid "Profiling Options"
 #~ msgstr "Profileringsindstillinger"
@@ -12579,7 +12555,7 @@ msgstr "Kun tekst"
 #~ msgstr "Benyt kun viderestilling af tidsforbrug for disse symboler:"
 
 #~ msgid "Select Other Target..."
-#~ msgstr "Vælg andet mål..."
+#~ msgstr "Vælg andet mål …"
 
 #~ msgid "Select Profiling Target"
 #~ msgstr "Vælg profileringsmål"
@@ -12734,7 +12710,7 @@ msgstr "Kun tekst"
 #~ msgid "Enable python comments folding"
 #~ msgstr "Aktivér python-kommentarfoldning"
 
-# ???
+#~ # ???
 #~ msgid "Enable python quoted strings folding"
 #~ msgstr "Aktivér foldning af python quote-strenge"
 
@@ -12850,9 +12826,9 @@ msgstr "Kun tekst"
 #~ "supported. Please check if the encoding of file is in the supported "
 #~ "encodings list. If not, add it from the preferences."
 #~ msgstr ""
-#~ "Filen ligner ikke en tekstfil eller kodningen understøttes ikke. "
-#~ "Kontrollér venligst om kodningen af filen optræder i listen over "
-#~ "understøttede kodninger. Hvis ikke, så tilføj den i indstillingerne."
+#~ "Filen ligner ikke en tekstfil eller kodningen understøttes ikke. Kontrollér "
+#~ "venligst om kodningen af filen optræder i listen over understøttede "
+#~ "kodninger. Hvis ikke, så tilføj den i indstillingerne."
 
 #~ msgid ""
 #~ "Could not load file: %s\n"
@@ -12867,7 +12843,7 @@ msgstr "Kun tekst"
 #~ msgstr "Fil indlæst problemfrit"
 
 #~ msgid "Saving file..."
-#~ msgstr "Gemmer fil..."
+#~ msgstr "Gemmer fil …"
 
 #~ msgid "File saved successfully"
 #~ msgstr "Filen blev gemt"
@@ -12918,11 +12894,10 @@ msgstr "Kun tekst"
 #~ msgstr "Valgrind"
 
 #~ msgid ""
-#~ "No executable target selected for debugging with Valgrind. Please select "
-#~ "one."
+#~ "No executable target selected for debugging with Valgrind. Please select one."
 #~ msgstr ""
-#~ "Intet eksekverbart mål er valgt til fejlsøgning med Valgrind. Vælg "
-#~ "venligst et."
+#~ "Intet eksekverbart mål er valgt til fejlsøgning med Valgrind. Vælg venligst "
+#~ "et."
 
 #~ msgid ""
 #~ "There aren't any available executable targets for this project.\n"
@@ -12941,7 +12916,7 @@ msgstr "Kun tekst"
 #~ msgstr "_Valgrind"
 
 #~ msgid "_Select Tool and Run..."
-#~ msgstr "_Vælg værktøj og kør..."
+#~ msgstr "_Vælg værktøj og kør …"
 
 #~ msgid "_Kill Execution"
 #~ msgstr "_Dræb eksekvering"
@@ -12965,7 +12940,7 @@ msgstr "Kun tekst"
 #~ msgstr "Sti til binær fil for Valgrind:"
 
 #~ msgid "Choose Valgrind Binary File Path..."
-#~ msgstr "Vælg sti til binær fil for Valgrind..."
+#~ msgstr "Vælg sti til binær fil for Valgrind …"
 
 #~ msgid "lines above and below the target line."
 #~ msgstr "linjer over og under mållinjen."
@@ -12976,11 +12951,9 @@ msgstr "Kun tekst"
 #~ msgid "Failed to create child process '%s': %s"
 #~ msgstr "Kunne ikke oprette underprocessen \"%s\": %s"
 
-#~ msgid ""
-#~ "Reached the end of the input file or error in parsing valgrind output."
+#~ msgid "Reached the end of the input file or error in parsing valgrind output."
 #~ msgstr ""
-#~ "Nåede slutningen af inputfilen eller fejl ved fortolkning af valgrind-"
-#~ "uddata."
+#~ "Nåede slutningen af inputfilen eller fejl ved fortolkning af valgrind-uddata."
 
 #~ msgid "Process exited."
 #~ msgstr "Proces afsluttet."
@@ -12989,8 +12962,8 @@ msgstr "Kun tekst"
 #~ msgstr "Kunne ikke hente den rette gconf-nøgle for valgrind binærfil:"
 
 #~ msgid ""
-#~ "Valgrind binary [%s] does not exist. Please check the preferences or "
-#~ "install Valgrind package."
+#~ "Valgrind binary [%s] does not exist. Please check the preferences or install "
+#~ "Valgrind package."
 #~ msgstr ""
 #~ "Valgrinds binærfil [%s] findes ikke. Kontrollér venligst indstillingerne "
 #~ "eller installér Valgrind-pakken."
@@ -13068,7 +13041,7 @@ msgstr "Kun tekst"
 #~ msgstr "Underkendelsesfil:"
 
 #~ msgid "Choose Valgrind Suppressions File..."
-#~ msgstr "Vælg underkendelsesfil til Valgrind..."
+#~ msgstr "Vælg underkendelsesfil til Valgrind …"
 
 #~ msgid "Helgrind"
 #~ msgstr "Helgrind"
@@ -13266,10 +13239,10 @@ msgstr "Kun tekst"
 #~ msgstr "Filen du valgte er et link og kan ikke føjes til projektet"
 
 #~ msgid "Loaded Project... Initializing"
-#~ msgstr "Projekt indlæst... initierer"
+#~ msgstr "Projekt indlæst … initierer"
 
 #~ msgid "Loaded Project..."
-#~ msgstr "Projekt indlæst..."
+#~ msgstr "Projekt indlæst …"
 
 #~ msgid "<b>Project description:</b>"
 #~ msgstr "<b>Projektbeskrivelse</b>"
@@ -13295,13 +13268,13 @@ msgstr "Kun tekst"
 #~ msgid ""
 #~ "The Application Assistant will generate a basic skeleton for a project, "
 #~ "including all of the build files. It will ask for details of the initial "
-#~ "structure for the application. Please answer the questions carefully, as "
-#~ "it may not be possible to change some of the settings later."
+#~ "structure for the application. Please answer the questions carefully, as it "
+#~ "may not be possible to change some of the settings later."
 #~ msgstr ""
-#~ "Programguiden vil generere et simpelt skelet til dit projekt, inklusive "
-#~ "alle byggefiler. Den vil spørge dig om den grundlæggende struktur for det "
-#~ "program, du vil udvikle. Svar venligst omhyggeligt på spørgsmålene, da "
-#~ "det måske ikke er muligt at ændre visse af indstillingerne senere."
+#~ "Programguiden vil generere et simpelt skelet til dit projekt, inklusive alle "
+#~ "byggefiler. Den vil spørge dig om den grundlæggende struktur for det "
+#~ "program, du vil udvikle. Svar venligst omhyggeligt på spørgsmålene, da det "
+#~ "måske ikke er muligt at ændre visse af indstillingerne senere."
 
 #~ msgid "label"
 #~ msgstr "mærkat"
@@ -13330,7 +13303,7 @@ msgstr "Kun tekst"
 #~ msgid "Scanning package: %s"
 #~ msgstr "Skanner pakke: %s"
 
-# ???
+#~ # ???
 #~ msgid "Completed system tags generation"
 #~ msgstr "Generering af systemmærker fuldført"
 
@@ -13374,11 +13347,11 @@ msgstr "Kun tekst"
 #~ msgstr "Symbolviser-modul til Anjuta."
 
 #~ msgid ""
-#~ "Anjuta terminal plugin is not installed. The program will be run without "
-#~ "a terminal."
+#~ "Anjuta terminal plugin is not installed. The program will be run without a "
+#~ "terminal."
 #~ msgstr ""
-#~ "Anjuta-terminalmodulet er ikke installeret. Programmet vil blive kørt "
-#~ "uden en terminal."
+#~ "Anjuta-terminalmodulet er ikke installeret. Programmet vil blive kørt uden "
+#~ "en terminal."
 
 #~ msgid "Visible whitespaces"
 #~ msgstr "Vis blanke tegn"
@@ -13414,19 +13387,19 @@ msgstr "Kun tekst"
 #~ msgstr "Indstil parametre:"
 
 #~ msgid "Run C_onfigure..."
-#~ msgstr "Kør k_onfiguration..."
+#~ msgstr "Kør k_onfiguration …"
 
 #~ msgid "Run _Autogenerate..."
-#~ msgstr "Kør _Autogenerér..."
+#~ msgstr "Kør _Autogenerér …"
 
 #~ msgid "_Execute Program..."
-#~ msgstr "_Kør program..."
+#~ msgstr "_Kør program …"
 
 #~ msgid "Execute program"
 #~ msgstr "Kør program"
 
 #~ msgid "Run Target..."
-#~ msgstr "Kør mål..."
+#~ msgstr "Kør mål …"
 
 #~ msgid "load and start the target for debugging"
 #~ msgstr "indlæs og start målet til fejlsøgning"
@@ -13465,7 +13438,7 @@ msgstr "Kun tekst"
 #~ msgstr "Ugemt dokument %d"
 
 #~ msgid "Saving..."
-#~ msgstr "Gemmer..."
+#~ msgstr "Gemmer …"
 
 #~ msgid "The file %s was modified by another application. Save it anyway?"
 #~ msgstr "Filen %s blev modificeret af et andet program. Gem den alligevel?"
@@ -13561,7 +13534,7 @@ msgstr "Kun tekst"
 #~ msgstr "Kompilerer"
 
 #~ msgid "Compiling file: %s ...\n"
-#~ msgstr "Kompilerer fil: %s...\n"
+#~ msgstr "Kompilerer fil: %s …\n"
 
 #~ msgid "Unable to execute file. Check Settings->Commands."
 #~ msgstr "Kan ikke køre filen. Kontrollér Indstillinger->Kommandoer."
@@ -13578,14 +13551,13 @@ msgstr "Kun tekst"
 #~ msgid "Auto _Format"
 #~ msgstr "Auto_formatér"
 
-#~ msgid ""
-#~ "Auto format is currently disabled. Change the setting in Preferences."
+#~ msgid "Auto format is currently disabled. Change the setting in Preferences."
 #~ msgstr ""
 #~ "Autoformatering er slået fra. Hvis du vil, kan du slå det til i "
 #~ "Indstillinger."
 
 #~ msgid "Error in auto formatting ..."
-#~ msgstr "Fejl i autoformatering ..."
+#~ msgstr "Fejl i autoformatering …"
 
 #~ msgid "Back"
 #~ msgstr "Tilbage"
@@ -13830,10 +13802,11 @@ msgstr "Kun tekst"
 #~ msgstr "_Indstillinger"
 
 #~ msgid "_Preferences ..."
-#~ msgstr "_Indstillinger ..."
+#~ msgstr "_Indstillinger …"
 
 #~ msgid "Set _Default Preferences"
 #~ msgstr "Sæt _standard indstillinger"
 
 #~ msgid "But I prefer tea."
 #~ msgstr "Men jeg foretrækker the."
+
