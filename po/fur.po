@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
 "POT-Creation-Date: 2017-03-09 22:48+0000\n"
-"PO-Revision-Date: 2017-03-29 17:30+0200\n"
+"PO-Revision-Date: 2017-03-30 00:19+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -361,7 +361,7 @@ msgstr ""
 #: ../libanjuta/anjuta-plugin-manager.c:714
 #, c-format
 msgid "Plugin '%s' does not want to be deactivated"
-msgstr ""
+msgstr "Il plugin '%s' nol vûl jessi disativât"
 
 #: ../libanjuta/anjuta-plugin-manager.c:747
 #, c-format
@@ -371,6 +371,10 @@ msgid ""
 "leading to this was:\n"
 "%s"
 msgstr ""
+"Impussibil cjariâ %s\n"
+"Chest di solit al significhe che la tô instalazion e je ruvinade. Il messaç "
+"di erôr che ti a puartât a chest al jere:\n"
+"%s"
 
 #: ../libanjuta/anjuta-plugin-manager.c:885
 msgid "Load"
@@ -387,7 +391,7 @@ msgstr "Plugin preferîts"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1157
 msgid "Only show user activatable plugins"
-msgstr ""
+msgstr "Mostre dome i plugin che l'utent al pues ativâ"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1197
 msgid ""
@@ -395,10 +399,13 @@ msgid ""
 "one of many suitable plugins. Removing the preferred plugin will let you "
 "choose a different plugin."
 msgstr ""
+"Chescj a son i plugin selezionâts di te cuant che ti si domande di sielzi un "
+"o plui plugins adats. Gjavant il plugin preferît ti vignarà dade la sielte "
+"di un plugin diferent."
 
 #: ../libanjuta/anjuta-plugin-manager.c:1223
 msgid "Forget selected plugin"
-msgstr ""
+msgstr "Dismentee il plugin selezionât"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1357
 #: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
@@ -414,11 +421,11 @@ msgstr "Selezione un plugin di ativâ"
 #: ../libanjuta/anjuta-plugin-manager.c:1372
 #, c-format
 msgid "No plugin is able to load other plugins in %s"
-msgstr ""
+msgstr "Nissun plugin al pues cjariâ altris plugin in %s"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1518
 msgid "<b>Please select a plugin to activate</b>"
-msgstr ""
+msgstr "<b>Selezione un plugin di ativâ</b>"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2044
 msgid "Remember this selection"
@@ -438,7 +445,7 @@ msgstr "Plugin disponibii"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2389
 msgid "Currently available plugins found in plugin paths"
-msgstr ""
+msgstr "Plugin atualmentri disponibii cjatâts intai percors di plugin"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2395
 msgid "Activated plugins"
@@ -454,11 +461,11 @@ msgstr ""
 
 #: ../libanjuta/anjuta-plugin-manager.c:2410
 msgid "Anjuta Status"
-msgstr ""
+msgstr "Stât di Anjuta"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2411
 msgid "Anjuta status to use in loading and unloading of plugins"
-msgstr ""
+msgstr "Stât di Anjuta di doprâ tal cjariament e discjamament dai plugin"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2564
 msgid "Loading:"
@@ -466,7 +473,7 @@ msgstr ""
 
 #: ../libanjuta/anjuta-preferences-dialog.c:99
 msgid "Category"
-msgstr ""
+msgstr "Categorie"
 
 #. FIXME: Make the general page first
 #: ../libanjuta/anjuta-preferences-dialog.c:142
@@ -474,15 +481,15 @@ msgstr ""
 #: ../plugins/mk-project/mk-project.ui.h:3 ../src/anjuta-window.c:987
 #: ../src/preferences.ui.h:9
 msgid "General"
-msgstr ""
+msgstr "Gjenerâl"
 
 #: ../libanjuta/anjuta-preferences-dialog.c:244
 msgid "Anjuta Preferences"
-msgstr ""
+msgstr "Preferencis Anjuta"
 
 #: ../libanjuta/anjuta-profile.c:270
 msgid "Plugin Manager"
-msgstr ""
+msgstr "Gjestôr plugin"
 
 #: ../libanjuta/anjuta-profile.c:271
 msgid "The plugin manager to use for resolving plugins"
@@ -490,23 +497,23 @@ msgstr ""
 
 #: ../libanjuta/anjuta-profile.c:279
 msgid "Profile Name"
-msgstr ""
+msgstr "Non profîl"
 
 #: ../libanjuta/anjuta-profile.c:280
 msgid "Name of the plugin profile"
-msgstr ""
+msgstr "Non dal profîl dal plugin"
 
 #: ../libanjuta/anjuta-profile.c:288
 msgid "Synchronization file"
-msgstr ""
+msgstr "File di sincronizazion"
 
 #: ../libanjuta/anjuta-profile.c:289
 msgid "File to syncronize the profile XML"
-msgstr ""
+msgstr "File par sincronizâ il profîl XML"
 
 #: ../libanjuta/anjuta-profile.c:632
 msgid "Please select a plugin from the list"
-msgstr ""
+msgstr "Selezione un plugin de liste"
 
 #: ../libanjuta/anjuta-profile.c:655
 #, c-format
@@ -514,39 +521,41 @@ msgid ""
 "Failed to read '%s': XML parse error. Invalid or corrupted Anjuta plugins "
 "profile."
 msgstr ""
+"No si è rivâts a lei '%s': erôr analisi XML. Profîl plugin di Anjuta no "
+"valit o ruvinât."
 
 #. <Pluginname>: Install it from <some location on the web>
 #: ../libanjuta/anjuta-profile.c:956
 #, c-format
 msgid "%s: Install it from '%s'\n"
-msgstr ""
+msgstr "%s: Instalilu di '%s'\n"
 
 #: ../libanjuta/anjuta-profile.c:964
 #, c-format
 msgid "Failed to read '%s': Following mandatory plugins are missing"
-msgstr ""
+msgstr "No si è rivâts a lie '%s': A mancjin i plugin obligatoris chi daurman"
 
 #: ../libanjuta/anjuta-save-prompt.c:157
 msgid "Select the items to save:"
-msgstr ""
+msgstr "Selezione i elements di salvâ:"
 
 #: ../libanjuta/anjuta-save-prompt.c:182
 msgid "If you do not save, all your changes will be lost."
-msgstr ""
+msgstr "Se no si salve, dutis lis modifichis a vignaran pierdudis."
 
 #: ../libanjuta/anjuta-save-prompt.c:189
 #: ../plugins/document-manager/plugin.c:583
 #: ../plugins/snippets-manager/snippets-editor.ui.h:23
 msgid "Save"
-msgstr ""
+msgstr "Salve"
 
 #: ../libanjuta/anjuta-save-prompt.c:196
 msgid "Item"
-msgstr ""
+msgstr "Element"
 
 #: ../libanjuta/anjuta-save-prompt.c:202
 msgid "_Discard changes"
-msgstr ""
+msgstr "_Scarte modifichis"
 
 #: ../libanjuta/anjuta-save-prompt.c:296
 #, c-format
@@ -554,15 +563,21 @@ msgid "There is %d item with unsaved changes. Save changes before closing?"
 msgid_plural ""
 "There are %d items with unsaved changes. Save changes before closing?"
 msgstr[0] ""
+"Al è %d element cun modifichis no salvadis. Salvâ lis modifichis prime di "
+"sierâ?"
 msgstr[1] ""
+"A son %d elements cun modifichis no salvadis. Salvâ lis modifichis prime di "
+"sierâ?"
 
 #: ../libanjuta/anjuta-save-prompt.c:305
 msgid "There is an item with unsaved changes. Save changes before closing?"
 msgstr ""
+"Al è un element cun modifichis no salvadis. Salvâ lis modifichis prime di "
+"sierâ?"
 
 #: ../libanjuta/anjuta-tree-combo.c:1090
 msgid "<Invalid>"
-msgstr ""
+msgstr "<no valit>"
 
 #: ../libanjuta/anjuta-tree-combo.c:1205
 msgid "ComboBox model"
@@ -574,11 +589,11 @@ msgstr ""
 
 #: ../libanjuta/anjuta-ui.c:1394
 msgid "Action"
-msgstr ""
+msgstr "Azion"
 
 #: ../libanjuta/anjuta-ui.c:1415
 msgid "Visible"
-msgstr ""
+msgstr "Visibil"
 
 #: ../libanjuta/anjuta-ui.c:1428
 msgid "Sensitive"
@@ -586,12 +601,12 @@ msgstr ""
 
 #: ../libanjuta/anjuta-ui.c:1436
 msgid "Shortcut"
-msgstr ""
+msgstr "Scurte"
 
 #. Avoid space in translated string
 #: ../libanjuta/anjuta-utils.c:369
 msgid "System:"
-msgstr ""
+msgstr "Sisteme:"
 
 #: ../libanjuta/anjuta-utils.c:518
 msgid ""
@@ -599,16 +614,19 @@ msgid ""
 "installing missing packages. Please install \"packagekit-gnome\" package "
 "from your distribution, or install the missing packages manually."
 msgstr ""
+"Nol semee che tu vedis instalât PackageKit. PackageKit al covente par "
+"instalâ i pachets che a mancjin. Instale il pachet \"packagekit-gnome\" de "
+"tô distribuzion o instale a man i pachets che a mancjin."
 
 #: ../libanjuta/anjuta-utils.c:527
 #, c-format
 msgid "Installation failed: %s"
-msgstr ""
+msgstr "Instalazion falide: %s"
 
 #: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
-msgstr ""
+msgstr "No si è rivâts a eseguî \"%s\". L'erôr tornât al jere: \"%s\"."
 
 #: ../libanjuta/anjuta-utils.c:602
 #, c-format
@@ -616,6 +634,8 @@ msgid ""
 "The \"%s\" package is not installed.\n"
 "Please install it."
 msgstr ""
+"Il pachet \"%s\" nol è instalât.\n"
+"Instalilu."
 
 #: ../libanjuta/anjuta-utils.c:620
 #, c-format
@@ -623,21 +643,24 @@ msgid ""
 "The \"%s\" utility is not installed.\n"
 "Please install it."
 msgstr ""
+"La utilitât \"%s\" no je instalade.\n"
+"Instalile."
 
 #. Try xterm
 #: ../libanjuta/anjuta-utils.c:1214
 msgid "Cannot find a terminal; using xterm, even if it may not work"
 msgstr ""
+"Impussibil cjatâ un terminâl; si dopre xterm, ancje se al podarès no funzionâ"
 
 #: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
 #, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
-msgstr ""
+msgstr "Impussibil eseguî il comant: %s (doprant la shell %s): %s\n"
 
 #: ../libanjuta/anjuta-utils.c:2462
 #, c-format
 msgid "Unable to load user interface file: %s"
-msgstr ""
+msgstr "Impussibil cjariâ il file de interface dal utent: %s"
 
 #: ../libanjuta/anjuta-vcs-status-tree-view.c:92
 #: ../plugins/file-manager/file-view.c:80 ../plugins/git/git-status-pane.c:182
@@ -697,16 +720,18 @@ msgstr ""
 #: ../libanjuta/resources.c:277
 #, c-format
 msgid "Cannot execute command \"%s\": %s"
-msgstr ""
+msgstr "Impussibil eseguî il comant \"%s\": %s"
 
 #: ../plugins/am-project/amp-group.c:627
 msgid "Please specify group name"
-msgstr ""
+msgstr "Specifiche il non dal grup"
 
 #: ../plugins/am-project/amp-group.c:641
 msgid ""
 "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~/\" characters"
 msgstr ""
+"Il non dal grup al pues contignî dome alfanumerics o caratars \"#$:%+,-."
+"=@^_`~/\""
 
 #: ../plugins/am-project/amp-group.c:665
 #: ../plugins/am-project/am-project.c:1680
@@ -718,7 +743,7 @@ msgstr ""
 #: ../plugins/mk-project/mk-project.c:876
 #, c-format
 msgid "Project doesn't exist or invalid path"
-msgstr ""
+msgstr "Il progjet nol esist o il percors nol è valit"
 
 #: ../plugins/am-project/am-project.c:90
 msgid "Root"
@@ -796,12 +821,12 @@ msgstr "Pachet"
 
 #: ../plugins/am-project/am-project.c:1710
 msgid "Unable to parse project file"
-msgstr ""
+msgstr "Impussibil analizâ il file di progjet"
 
 #: ../plugins/am-project/am-project.c:1721
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
-msgstr ""
+msgstr "Il progjet nol esist o al à un percors no valit"
 
 #: ../plugins/am-project/am-project.plugin.in.h:1
 msgid "Autotools backend"
