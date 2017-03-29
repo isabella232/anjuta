@@ -6,17 +6,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2017-02-16 12:10+0000\n"
-"PO-Revision-Date: 2017-03-09 23:46+0100\n"
+"POT-Creation-Date: 2017-03-09 22:48+0000\n"
+"PO-Revision-Date: 2017-03-29 17:30+0200\n"
+"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "X-Generator: Poedit 1.8.12\n"
 
 #: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
@@ -25,7 +25,7 @@ msgstr "Anjuta"
 
 #: ../anjuta.appdata.xml.in.h:2 ../anjuta.desktop.in.in.h:3
 msgid "Develop software in an integrated development environment"
-msgstr ""
+msgstr "Svilupe software intun ambient di svilup integrât"
 
 #: ../anjuta.appdata.xml.in.h:3
 msgid ""
@@ -56,25 +56,25 @@ msgstr ""
 
 #: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
-msgstr ""
+msgstr "Ambient di svilup integrât"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
-msgstr ""
+msgstr "IDE;svilup;programazion;"
 
 #: ../libanjuta/anjuta-autogen.c:239
 msgid "Autogen is busy"
-msgstr ""
+msgstr "Autogen al è ocupât"
 
 #: ../libanjuta/anjuta-autogen.c:251
 #, c-format
 msgid "Could not write definition file \"%s\": %s"
-msgstr ""
+msgstr "Impussibil scrivi il file di definizion \"%s\": %s"
 
 #: ../libanjuta/anjuta-autogen.c:585
 #, c-format
 msgid "Could not open file \"%s\": %s"
-msgstr ""
+msgstr "Impussibil vierzi il file \"%s\": %s"
 
 #: ../libanjuta/anjuta-cell-renderer-captioned-image.c:239
 #: ../src/preferences.ui.h:10
@@ -96,17 +96,18 @@ msgstr ""
 #: ../libanjuta/anjuta-c-module.c:212
 #, c-format
 msgid "Unable to find plugin module %s"
-msgstr ""
+msgstr "Impussibil cjatâ il modul dal plugin %s"
 
 #: ../libanjuta/anjuta-c-module.c:222
 #, c-format
 msgid "Unable to find plugin registration function %s in module %s"
 msgstr ""
+"Impussibil cjatâ la funzion di regjistrazion dal plugin %s tal modul %s"
 
 #: ../libanjuta/anjuta-c-module.c:228
 #, c-format
 msgid "Unknown error in module %s"
-msgstr ""
+msgstr "Erôr no cognossût tal modul %s"
 
 #: ../libanjuta/anjuta-column-text-view.c:40 ../plugins/git/git-pane.c:142
 #, c-format
@@ -122,6 +123,8 @@ msgstr "Colone 1"
 #, c-format
 msgid "The file you are trying to open contains an invalid byte sequence."
 msgstr ""
+"Il file che tu stâs cirint di vierzi al conten une secuence di byte no "
+"valide."
 
 #: ../libanjuta/anjuta-convert.c:168 ../libanjuta/anjuta-convert.c:207
 #, c-format
@@ -129,21 +132,23 @@ msgid ""
 "Anjuta was not able to automatically determine the encoding of the file you "
 "want to open."
 msgstr ""
+"Anjuta nol è rivât a determinâ in automatic la codifiche dal file che tu vûs "
+"vierzi."
 
 #: ../libanjuta/anjuta-c-plugin-factory.c:108
 #, c-format
 msgid "Missing location of plugin %s"
-msgstr ""
+msgstr "A mancje la posizion dal plugin %s"
 
 #: ../libanjuta/anjuta-c-plugin-factory.c:141
 #, c-format
 msgid "Missing type defined by plugin %s"
-msgstr ""
+msgstr "Al mancje il gjenar definît dal plugin %s"
 
 #: ../libanjuta/anjuta-c-plugin-factory.c:149
 #, c-format
 msgid "plugin %s fails to register type %s"
-msgstr ""
+msgstr "il plugin %s nol rive a regjistrâ il gjenar %s"
 
 #: ../libanjuta/anjuta-encodings.c:137 ../libanjuta/anjuta-encodings.c:182
 #: ../libanjuta/anjuta-encodings.c:184 ../libanjuta/anjuta-encodings.c:186
@@ -268,16 +273,16 @@ msgstr "No cognossût"
 
 #: ../libanjuta/anjuta-entry.c:247
 msgid "Help text"
-msgstr ""
+msgstr "Test di jutori"
 
 #: ../libanjuta/anjuta-entry.c:248
 msgid "Text to show the user what to enter into the entry"
-msgstr ""
+msgstr "Test di mostrâ al utent ce inserî intal cjamp di inseriment"
 
 #. Create all needed widgets
 #: ../libanjuta/anjuta-environment-editor.c:543
 msgid "Environment Variables:"
-msgstr ""
+msgstr "Variabilis di ambient:"
 
 #: ../libanjuta/anjuta-environment-editor.c:586
 #: ../plugins/class-gen/window.c:719 ../plugins/class-gen/window.c:729
@@ -307,7 +312,7 @@ msgstr ""
 
 #: ../libanjuta/anjuta-file-list.c:104
 msgid "Drop a file or enter a path here"
-msgstr ""
+msgstr "Mole un file o inserìs un percors chi"
 
 #: ../libanjuta/anjuta-file-list.c:277
 msgid "Select Files"
@@ -319,11 +324,11 @@ msgstr ""
 
 #: ../libanjuta/anjuta-file-list.c:554
 msgid "Show Add button"
-msgstr ""
+msgstr "Mostre boton Zonte"
 
 #: ../libanjuta/anjuta-file-list.c:555
 msgid "Display an Add button"
-msgstr ""
+msgstr "Visualize un boton «Zonte»"
 
 #.
 #. * Translators: This regex should match the password prompts of
@@ -334,12 +339,12 @@ msgstr ""
 #.
 #: ../libanjuta/anjuta-launcher.c:675
 msgid "[Pp]assword.*:"
-msgstr ""
+msgstr "[Pp]assword.*:"
 
 #: ../libanjuta/anjuta-launcher.c:1167 ../plugins/gdb/utilities.c:282
 #, c-format
 msgid "Cannot execute command: \"%s\""
-msgstr ""
+msgstr "Impussibil eseguî il comant: \"%s\""
 
 #: ../libanjuta/anjuta-launcher.c:1168
 msgid "execvp failed"
