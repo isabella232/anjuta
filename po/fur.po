@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
 "POT-Creation-Date: 2017-03-09 22:48+0000\n"
-"PO-Revision-Date: 2017-03-30 00:19+0200\n"
+"PO-Revision-Date: 2017-03-30 15:30+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -846,7 +846,7 @@ msgstr "Non:"
 
 #: ../plugins/am-project/am-properties.c:52
 msgid "Project name, it can contain spaces by example 'GNU Autoconf'"
-msgstr ""
+msgstr "Non progjet, al pues contignî spazis par esempli 'GNU Autoconf'"
 
 #: ../plugins/am-project/am-properties.c:58
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:9
@@ -875,6 +875,8 @@ msgstr "Version:"
 msgid ""
 "Project version, typically a few numbers separated by dot by example '1.0.0'"
 msgstr ""
+"Version progjet, di solit un pâr di numars separâts di un pont, par esempli "
+"'1.0.0'"
 
 #: ../plugins/am-project/am-properties.c:67
 msgid "Bug report URL:"
@@ -885,6 +887,8 @@ msgid ""
 "An email address or a link to a web page where the user can report bug. It "
 "is optional."
 msgstr ""
+"Une direzion e-mail o un colegament a une pagjine web dulà che l'utent al "
+"pues segnalâ erôrs. Al è facoltatîf."
 
 #: ../plugins/am-project/am-properties.c:76
 msgid "Package name:"
@@ -895,6 +899,8 @@ msgid ""
 "Package name, it can contains only alphanumerics and underscore characters."
 "It is generated from the project name if not provided."
 msgstr ""
+"Non pachet, al pues contignî dome alfanumerics e sotliniaduris. Al ven "
+"gjenerât dal non dal progjet se nol ven furnît."
 
 #: ../plugins/am-project/am-properties.c:86 ../plugins/git/anjuta-git.ui.h:10
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:20
@@ -903,7 +909,7 @@ msgstr "URL:"
 
 #: ../plugins/am-project/am-properties.c:89
 msgid "An link to the project web page if provided."
-msgstr ""
+msgstr "Un colegament ae pagjine web dal progjet, se furnît."
 
 #: ../plugins/am-project/am-properties.c:95
 msgid "Libtool support:"
@@ -912,6 +918,7 @@ msgstr "Supuart Libtool:"
 #: ../plugins/am-project/am-properties.c:98
 msgid "Add support to compile shared and static libraries with Libtool."
 msgstr ""
+"Zonte il supuart par compilâ librariis statichis o condividudis cun Libtool."
 
 #: ../plugins/am-project/am-properties.c:104
 #: ../plugins/am-project/am-properties.c:211
@@ -1313,7 +1320,7 @@ msgstr ""
 
 #: ../plugins/am-project/amp-source.c:97
 msgid "Source file must be a regular file, not a directory"
-msgstr ""
+msgstr "Il file sorzint al à di jessi un file regolâr, no une cartele"
 
 #: ../plugins/am-project/amp-target.c:359
 msgid "Target parent is not a valid group"
@@ -1478,43 +1485,43 @@ msgstr "Nissun eseguibil in chest progjet!"
 
 #: ../plugins/build-basic-autotools/executer.c:243
 msgid "No file or project currently opened."
-msgstr ""
+msgstr "Nissun file o progjet atualmentri viert."
 
 #. Only local program are supported
 #: ../plugins/build-basic-autotools/executer.c:283
 #: ../plugins/run-program/execute.c:73
 #, c-format
 msgid "Program '%s' is not a local file"
-msgstr ""
+msgstr "Il program '%s' nol è un file locâl"
 
 #: ../plugins/build-basic-autotools/executer.c:298
 #: ../plugins/run-program/execute.c:79
 #, c-format
 msgid "Program '%s' does not exist"
-msgstr ""
+msgstr "Il program '%s' nol esist"
 
 #: ../plugins/build-basic-autotools/executer.c:306
 #: ../plugins/run-program/execute.c:83
 #, c-format
 msgid "Program '%s' does not have execution permission"
-msgstr ""
+msgstr "Il program '%s' nol à i permès di esecuzion"
 
 #: ../plugins/build-basic-autotools/executer.c:338
 msgid "No executable for this file."
-msgstr ""
+msgstr "Nissun eseguibil par chest file."
 
 #: ../plugins/build-basic-autotools/executer.c:344
 #, c-format
 msgid "Executable '%s' is not up-to-date."
-msgstr ""
+msgstr "L'Eseguibil '%s' nol è inzornât."
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:1
 msgid "True if we need a special command to install files"
-msgstr ""
+msgstr "Vêr se al covente un comant speciâl par instalâ i file"
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:2
 msgid "Command used to be allowed to install files"
-msgstr ""
+msgstr "Comant doprât par jessi abilitâts a instalâ i file"
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:4
 #, no-c-format
@@ -1591,21 +1598,21 @@ msgstr ""
 #: ../plugins/build-basic-autotools/plugin.c:960
 #, c-format
 msgid "Command exited with status %d"
-msgstr ""
+msgstr "Comant jessût cul stât %d"
 
 #: ../plugins/build-basic-autotools/plugin.c:975
 #, c-format
 msgid "Command aborted by user"
-msgstr ""
+msgstr "Comant terminât dal utent"
 
 #: ../plugins/build-basic-autotools/plugin.c:980
 #, c-format
 msgid "Command terminated with signal %d"
-msgstr ""
+msgstr "Comant terminât cul segnâl %d"
 
 #: ../plugins/build-basic-autotools/plugin.c:988
 msgid "Command terminated for an unknown reason"
-msgstr ""
+msgstr "Comant terminât par une reson no cognossude"
 
 #: ../plugins/build-basic-autotools/plugin.c:1006
 #, c-format
@@ -1648,35 +1655,35 @@ msgstr ""
 
 #: ../plugins/build-basic-autotools/plugin.c:1677
 msgid "_Install Project"
-msgstr ""
+msgstr "_Instale progjet"
 
 #: ../plugins/build-basic-autotools/plugin.c:1678
 msgid "Install whole project"
-msgstr ""
+msgstr "Instale dut il progjet"
 
 #: ../plugins/build-basic-autotools/plugin.c:1683
 msgid "_Check Project"
-msgstr ""
+msgstr "_Verifiche progjet"
 
 #: ../plugins/build-basic-autotools/plugin.c:1684
 msgid "Check whole project"
-msgstr ""
+msgstr "Verifiche dut il progjet"
 
 #: ../plugins/build-basic-autotools/plugin.c:1689
 msgid "_Clean Project"
-msgstr ""
+msgstr "_Nete progjet"
 
 #: ../plugins/build-basic-autotools/plugin.c:1690
 msgid "Clean whole project"
-msgstr ""
+msgstr "Nete dut il progjet"
 
 #: ../plugins/build-basic-autotools/plugin.c:1695
 msgid "C_onfigure Project…"
-msgstr ""
+msgstr "C_onfigure Progjet…"
 
 #: ../plugins/build-basic-autotools/plugin.c:1696
 msgid "Configure project"
-msgstr ""
+msgstr "Configure progjet"
 
 #: ../plugins/build-basic-autotools/plugin.c:1701
 msgid "Build _Tarball"
@@ -1696,27 +1703,27 @@ msgstr ""
 
 #: ../plugins/build-basic-autotools/plugin.c:1713
 msgid "_Install Module"
-msgstr ""
+msgstr "_Instale modul"
 
 #: ../plugins/build-basic-autotools/plugin.c:1714
 msgid "Install module associated with current file"
-msgstr ""
+msgstr "Instale il modul associât al file atuâl"
 
 #: ../plugins/build-basic-autotools/plugin.c:1719
 msgid "_Check Module"
-msgstr ""
+msgstr "_Verifiche modul"
 
 #: ../plugins/build-basic-autotools/plugin.c:1720
 msgid "Check module associated with current file"
-msgstr ""
+msgstr "Verifiche il modul associât al file atuâl"
 
 #: ../plugins/build-basic-autotools/plugin.c:1725
 msgid "_Clean Module"
-msgstr ""
+msgstr "_Nete modul"
 
 #: ../plugins/build-basic-autotools/plugin.c:1726
 msgid "Clean module associated with current file"
-msgstr ""
+msgstr "Nete il modul associât al file atuâl"
 
 #: ../plugins/build-basic-autotools/plugin.c:1731
 msgid "Co_mpile File"
@@ -1728,30 +1735,31 @@ msgstr ""
 
 #: ../plugins/build-basic-autotools/plugin.c:1737
 msgid "Select Configuration"
-msgstr ""
+msgstr "Selezione configurazion"
 
 #: ../plugins/build-basic-autotools/plugin.c:1738
 msgid "Select current configuration"
-msgstr ""
+msgstr "Selezione la configurazion atuâl"
 
 #: ../plugins/build-basic-autotools/plugin.c:1743
 msgid "Remove Configuration"
-msgstr ""
+msgstr "Gjave configurazion"
 
 #: ../plugins/build-basic-autotools/plugin.c:1744
 msgid ""
 "Clean project (distclean) and remove configuration directory if possible"
 msgstr ""
+"Nete il progjet (distclean) e gjave la cartele di configurazion se pussibil"
 
 #: ../plugins/build-basic-autotools/plugin.c:1757
 #: ../plugins/build-basic-autotools/plugin.c:1785
 msgid "_Compile"
-msgstr ""
+msgstr "_Compile"
 
 #: ../plugins/build-basic-autotools/plugin.c:1758
 #: ../plugins/build-basic-autotools/plugin.c:1786
 msgid "Compile file"
-msgstr ""
+msgstr "Compile il file"
 
 #: ../plugins/build-basic-autotools/plugin.c:1764
 #: ../plugins/build-basic-autotools/plugin.c:1792
@@ -1763,36 +1771,36 @@ msgstr ""
 #: ../plugins/build-basic-autotools/plugin.c:1880
 #, c-format
 msgid "_Install"
-msgstr ""
+msgstr "_Instale"
 
 #: ../plugins/build-basic-autotools/plugin.c:1770
 #: ../plugins/build-basic-autotools/plugin.c:1798
 msgid "Install module"
-msgstr ""
+msgstr "Instale il modul"
 
 #: ../plugins/build-basic-autotools/plugin.c:1775
 #: ../plugins/build-basic-autotools/plugin.c:1809
 #: ../plugins/build-basic-autotools/plugin.c:1887
 #, c-format
 msgid "_Clean"
-msgstr ""
+msgstr "_Nete"
 
 #: ../plugins/build-basic-autotools/plugin.c:1776
 #: ../plugins/build-basic-autotools/plugin.c:1810
 msgid "Clean module"
-msgstr ""
+msgstr "Nete il modul"
 
 #: ../plugins/build-basic-autotools/plugin.c:1803
 msgid "_Check"
-msgstr ""
+msgstr "_Verifiche"
 
 #: ../plugins/build-basic-autotools/plugin.c:1804
 msgid "Check module"
-msgstr ""
+msgstr "Verifiche il modul"
 
 #: ../plugins/build-basic-autotools/plugin.c:1815
 msgid "_Cancel command"
-msgstr ""
+msgstr "Anule _comant"
 
 #: ../plugins/build-basic-autotools/plugin.c:1816
 msgid "Cancel build command"
@@ -1806,22 +1814,22 @@ msgstr ""
 #: ../plugins/build-basic-autotools/plugin.c:1880
 #, c-format
 msgid "_Install (%s)"
-msgstr ""
+msgstr "_Instale (%s)"
 
 #: ../plugins/build-basic-autotools/plugin.c:1887
 #, c-format
 msgid "_Clean (%s)"
-msgstr ""
+msgstr "_Nete (%s)"
 
 #: ../plugins/build-basic-autotools/plugin.c:1895
 #, c-format
 msgid "Co_mpile (%s)"
-msgstr ""
+msgstr "Co_mpile (%s)"
 
 #: ../plugins/build-basic-autotools/plugin.c:1895
 #, c-format
 msgid "Co_mpile"
-msgstr ""
+msgstr "Co_mpile"
 
 #: ../plugins/build-basic-autotools/plugin.c:2493
 msgid "Build commands"
@@ -2163,23 +2171,23 @@ msgstr ""
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:6
 msgid "CVS Preferences"
-msgstr ""
+msgstr "Preferencis CVS"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:7
 msgid "Path to \"cvs\" command"
-msgstr ""
+msgstr "Percors al comant \"cvs\""
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:8
 msgid "Compression Level (0=off, 10=max):"
-msgstr ""
+msgstr "Nivel compression (0=distudât, 10=massim):"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:9
 msgid "Ignore .cvsrc file (recommended)"
-msgstr ""
+msgstr "Ignore file .cvsrc (conseât)"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:10
 msgid "CVS Options"
-msgstr ""
+msgstr "Opzions CVS"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:11
 msgid "CVS: Add file/directory"
