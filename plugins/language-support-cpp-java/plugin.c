@@ -69,7 +69,7 @@
 #define C_OFFSET 4
 
 #define CHDR_SEPARATOR " "
-#define CHDR_BODY ";\n"
+#define CHDR_BODY ";"
 #define CHDR_OFFSET 1
 
 /* Widgets marker */
@@ -436,7 +436,7 @@ get_text_between (IAnjutaEditor *editor, gchar *prefix, gchar *suffix)
 static gchar*
 prepare_callback_body (gchar* user_data, IAnjutaEditor* editor, gint *offset)
 {
-    if (g_strcmp0 (user_data, "(null)")) {
+    if (g_strcmp0 (user_data, "(null)") != 0 && g_strcmp0 (user_data, "(none)") != 0) {
         *offset = C_OFFSET + 1;
         return g_strdup_printf("\n{\n\tGObject *%s = G_OBJECT (user_data);\n\n}\n", user_data);
     }
