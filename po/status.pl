@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 
 ## status.pl
 ## Copyright (C) 2000-2001  Kh. Naba Kumar Singh

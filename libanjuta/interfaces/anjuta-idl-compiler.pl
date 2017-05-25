@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 # 
 # Copyright (C) 2004 Naba Kumar  <naba@gnome.org>
 # 
@@ -17,6 +17,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
 use strict;
+use warnings;
 use Data::Dumper;
 
 if (@ARGV != 1)

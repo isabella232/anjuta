@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 
 ## find-fixmes.pl
 ## Copyright (C) Naba Kumar  <naba@gnome.org>

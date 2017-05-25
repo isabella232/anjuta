@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 
 ## status.pl
 ## Copyright (C) Naba Kumar  <naba@gnome.org>

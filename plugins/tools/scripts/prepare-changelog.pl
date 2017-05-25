@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 # vim: ft=perl
 # -*- Mode: perl; indent-tabs-mode: nil; c-basic-offset: 2  -*-
 
@@ -44,6 +44,7 @@
 #     the blank lines before it makes diff think you've changed the
 #     previous function.
 
+use warnings;
 use diagnostics;
 use strict;
 
