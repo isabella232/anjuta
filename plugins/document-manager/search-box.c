@@ -582,38 +582,41 @@ highlight_in_background (SearchBox *search_box)
 {
 	gboolean found = FALSE;
 	
-	GTimer *timer = g_timer_new();
 
 	if (search_box->priv->start_highlight != NULL)
 	{
 		const gchar* search_text = gtk_entry_get_text (GTK_ENTRY (search_box->priv->search_entry));
+		GTimer *timer = g_timer_new();
 
-		do
+		if (*search_text != '\0')
 		{
-			IAnjutaEditorCell* result_start;
-			IAnjutaEditorCell* result_end;
-
-			found = editor_search (search_box->priv->current_editor,
-			                       search_text,
-			                       search_box->priv->case_sensitive,
-			                       TRUE,
-			                       search_box->priv->regex_mode,
-			                       search_box->priv->start_highlight,
-			                       search_box->priv->end_highlight,
-			                       &result_start,
-			                       &result_end);
-			if (found)
+			do
 			{
-				ianjuta_indicable_set(IANJUTA_INDICABLE(search_box->priv->current_editor), 
-				                      IANJUTA_ITERABLE (result_start), 
-				                      IANJUTA_ITERABLE (result_end),
-				                      IANJUTA_INDICABLE_IMPORTANT, NULL);
-				g_object_unref (result_start);
-				g_object_unref (search_box->priv->start_highlight);
-				search_box->priv->start_highlight = result_end;
+				IAnjutaEditorCell* result_start;
+				IAnjutaEditorCell* result_end;
+
+				found = editor_search (search_box->priv->current_editor,
+				                       search_text,
+				                       search_box->priv->case_sensitive,
+			        	               TRUE,
+			                	       search_box->priv->regex_mode,
+				                       search_box->priv->start_highlight,
+				                       search_box->priv->end_highlight,
+				                       &result_start,
+				                       &result_end);
+				if (found)
+				{
+					ianjuta_indicable_set(IANJUTA_INDICABLE(search_box->priv->current_editor), 
+					                      IANJUTA_ITERABLE (result_start), 
+					                      IANJUTA_ITERABLE (result_end),
+				        	              IANJUTA_INDICABLE_IMPORTANT, NULL);
+					g_object_unref (result_start);
+					g_object_unref (search_box->priv->start_highlight);
+					search_box->priv->start_highlight = result_end;
+				}
 			}
+			while (found && g_timer_elapsed(timer, NULL) < CONTINUOUS_SEARCH_TIMEOUT);
 		}
-		while (found && g_timer_elapsed(timer, NULL) < CONTINUOUS_SEARCH_TIMEOUT);
 		g_timer_destroy (timer);
 	}
 
