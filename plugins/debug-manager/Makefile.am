@@ -21,6 +21,9 @@ AM_CPPFLAGS= \
 	$(GIO_CFLAGS) \
 	$(LIBANJUTA_CFLAGS)
 
+AM_CFLAGS += \
+	-Wno-error=format-nonliteral
+
 plugindir = $(anjuta_plugin_dir)
 plugin_LTLIBRARIES = libanjuta-debug-manager.la
 

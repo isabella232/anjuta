@@ -2,6 +2,9 @@
 cvs_plugin_gladedir = $(anjuta_glade_dir)
 dist_cvs_plugin_glade_DATA = anjuta-cvs-plugin.ui
 
+AM_CFLAGS += \
+	-Wno-error=format-nonliteral
+
 cvs_plugin_pixmapsdir = $(anjuta_image_dir)
 dist_cvs_plugin_pixmaps_DATA = \
 	anjuta-cvs-plugin.svg \

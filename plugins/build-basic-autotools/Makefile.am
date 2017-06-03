@@ -32,6 +32,9 @@ AM_CPPFLAGS = \
 	$(DEPRECATED_FLAGS) \
 	$(LIBANJUTA_CFLAGS)
 
+AM_CFLAGS += \
+	-Wno-error=format-nonliteral
+
 # Where to install the plugin
 plugindir = $(anjuta_plugin_dir)
 

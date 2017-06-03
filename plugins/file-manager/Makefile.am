@@ -33,6 +33,9 @@ AM_CPPFLAGS = \
 	$(GDL_CFLAGS) \
 	$(GIO_CFLAGS)
 
+AM_CFLAGS += \
+	-Wno-error=format-y2k
+
 # Where to install the plugin
 plugindir = $(anjuta_plugin_dir)
 
