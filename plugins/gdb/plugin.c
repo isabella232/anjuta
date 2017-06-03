@@ -429,6 +429,7 @@ idebugger_load (IAnjutaDebugger *plugin, const gchar *file, const gchar* mime_ty
 		/* Hope that the target is supported */
 	}
 	else if ((strcmp (mime_type, "application/x-executable") == 0) ||
+		(strcmp (mime_type, "application/x-sharedlib") == 0) ||
 		(strcmp (mime_type, "application/octet-stream") == 0))
 	{
 		/* Supported target */
