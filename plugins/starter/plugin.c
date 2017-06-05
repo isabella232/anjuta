@@ -118,7 +118,7 @@ on_online_doc_activated (GtkListBoxRow *row, gpointer user_data)
 static void
 on_search_example_code_activated (GtkListBoxRow *row, gpointer user_data)
 {
-	gtk_show_uri (NULL, "http://www.koders.com", GDK_CURRENT_TIME, NULL);
+	gtk_show_uri (NULL, "http://www.softwareheritage.org/archive", GDK_CURRENT_TIME, NULL);
 }
 
 static void
