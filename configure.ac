@@ -329,7 +329,7 @@ if test "$user_disabled_vala" = 1; then
 else
         AC_MSG_RESULT(no)
 	AC_MSG_CHECKING(if libvala is available)
-	m4_foreach([VERSION], [[0.18], [0.20], [0.22], [0.24], [0.26], [0.28], [0.30], [0.32]],
+	m4_foreach([VERSION], [[0.18], [0.20], [0.22], [0.24], [0.26], [0.28], [0.30], [0.32],[0.34]],
 		[PKG_CHECK_EXISTS([ libvala-VERSION ],
 			 [ valaver="-VERSION" ])
 			 ])
