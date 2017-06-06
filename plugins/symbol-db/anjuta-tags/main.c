@@ -96,12 +96,7 @@ static struct { long files, lines, bytes; } Totals = { 0, 0, 0 };
 #ifdef AMIGA
 # include "ctags.h"
   static const char *VERsion = "$VER: "PROGRAM_NAME" "PROGRAM_VERSION" "
-# ifdef __SASC
-  __AMIGADATE__
-# else
-  __DATE__
-# endif
-  " "AUTHOR_NAME" $";
+  AUTHOR_NAME" $";
 #endif
 
 /*

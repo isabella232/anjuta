@@ -26,7 +26,6 @@ long _stack          = 24576;  /* Plenty of stack space */
 long _memincr        = 10240;  /* Big increments to cut fragmentation */
 char _prog_name []   = "ctags";
 char _version []     = PROGRAM_VERSION;
-char _copyright [32] = __DATE__;
 char *_endmsg        = "\nPress a key to exit.";
 int  custom_expand (char * param, char ***argvptr, int *argcptr);
 int  (*_cmdwildcard) ()  = custom_expand;
