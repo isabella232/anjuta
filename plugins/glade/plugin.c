@@ -199,24 +199,24 @@ signal_editor_signal_activated_cb (GladeSignalEditor* seditor,
                                    GladePlugin *plugin)
 {
 	IAnjutaEditor* current_editor;
-    GladeWidget *gwidget = glade_signal_editor_get_widget (seditor);
-    GladeProject *project = glade_widget_get_project (gwidget);
-    const gchar *path = glade_project_get_path (project);
+	GladeWidget *gwidget = glade_signal_editor_get_widget (seditor);
+	GladeProject *project = glade_widget_get_project (gwidget);
+	const gchar *path = glade_project_get_path (project);
 	
-    IAnjutaDocumentManager *docman;
-    IAnjutaDocument *doc;
+	IAnjutaDocumentManager *docman;
+	IAnjutaDocument *doc;
 
-    docman = anjuta_shell_get_interface (ANJUTA_PLUGIN (plugin)->shell,
+	docman = anjuta_shell_get_interface (ANJUTA_PLUGIN (plugin)->shell,
                                          IAnjutaDocumentManager, NULL);
-    if (!docman)
-        return;
+	if (!docman)
+		return;
 
 	doc = ianjuta_document_manager_get_current_document (docman, NULL);
 	if(!doc)
 		return;
 
 	current_editor = IANJUTA_IS_EDITOR (doc) ? IANJUTA_EDITOR (doc)
-											 : get_doc_with_associated_file (plugin, doc);
+				: get_doc_with_associated_file (plugin, doc);
 
 	if(!current_editor)
 	    return;

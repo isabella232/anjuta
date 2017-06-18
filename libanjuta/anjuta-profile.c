@@ -1234,7 +1234,7 @@ anjuta_profile_set_sync_file (AnjutaProfile *profile, GFile *sync_file)
 	if (priv->sync_file)
 		g_object_unref (priv->sync_file);
 	priv->sync_file = sync_file;
-	if (priv->sync_file);
+	if (priv->sync_file)
 		g_object_ref (priv->sync_file);
 }
 

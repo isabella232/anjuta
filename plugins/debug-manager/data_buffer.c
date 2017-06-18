@@ -242,7 +242,7 @@ dma_data_buffer_read_page (DmaDataBuffer *buffer, gulong address)
 	{
 		if (page != NULL) page->validation = buffer->validation;
 		/* Data need to be refresh */
-		if (buffer->read != NULL);
+		if (buffer->read != NULL)
 			buffer->read (address - (address % DMA_DATA_BUFFER_PAGE_SIZE), DMA_DATA_BUFFER_PAGE_SIZE, buffer->user_data);
 		
 		return page;
