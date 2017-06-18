@@ -136,7 +136,7 @@ anjuta_plugin_manager_error_quark (void)
 	return quark;
 }
 
-/** Dependency Resolution **/
+/* Dependency Resolution */
 
 static gboolean
 collect_cycle (AnjutaPluginManager *plugin_manager,
@@ -1035,8 +1035,6 @@ foreach_remembered_plugin (gpointer key, gpointer value, gpointer user_data)
 {
 	AnjutaPluginHandle *handle = (AnjutaPluginHandle *) value;
 	GtkListStore *store = GTK_LIST_STORE (user_data);
-	AnjutaPluginManager *manager = g_object_get_data (G_OBJECT (store),
-													  "plugin-manager");
 	
 	if (anjuta_plugin_handle_get_name (handle) &&
 		anjuta_plugin_handle_get_description (handle))
@@ -2678,8 +2676,8 @@ anjuta_plugin_manager_set_remembered_plugins (AnjutaPluginManager *plugin_manage
 /**
  * anjuta_plugin_manager_set_disable_plugins:
  * @plugin_manager: A #AnjutaPluginManager object
- * @plugins_list: A list of plugins to disable or reenable
- * @hide: %TRUE to disable, %FALSE to re-enable plugins in the list
+ * @plugin_handles: A list of plugins to disable or reenable
+ * @disable: %TRUE to disable, %FALSE to re-enable plugins in the list
  *
  * Disable or re-enable plugins. By default, all plugins are enabled but they
  * can be disabled and they will not be proposed when a plugin is requested.

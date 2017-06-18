@@ -585,7 +585,7 @@ anjuta_token_first_item (AnjutaToken *list)
 AnjutaToken *
 anjuta_token_next_item (AnjutaToken *item)
 {
-	AnjutaToken *next;
+	AnjutaToken *next = NULL;
 
 	if (item != NULL)
 	{

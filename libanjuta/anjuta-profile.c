@@ -338,7 +338,7 @@ anjuta_profile_class_init (AnjutaProfileClass *klass)
 		              G_SIGNAL_RUN_FIRST,
 		              G_STRUCT_OFFSET (AnjutaProfileClass, changed),
 		              NULL, NULL,
-		              anjuta_cclosure_marshal_VOID__POINTER,
+		              anjuta_cclosure_marshal_VOID__VOID,
 		              G_TYPE_NONE, 0);
 
 	/**
@@ -1372,7 +1372,7 @@ anjuta_profile_load (AnjutaProfile *profile, GError **error)
 }
 
 /**
- * anjuta_profile_load:
+ * anjuta_profile_unload:
  * @profile: a #AnjutaProfile object.
  * @error: error propagation and reporting.
  *

@@ -290,6 +290,7 @@ anjuta_status_busy_push (AnjutaStatus *status)
 	GtkWidget *top;
 	GdkCursor *cursor;
 	GdkWindow *window;
+	GdkDisplay *display;
 	
 	g_return_if_fail (ANJUTA_IS_STATUS (status));
 	
@@ -303,7 +304,8 @@ anjuta_status_busy_push (AnjutaStatus *status)
 	
 	if (status->priv->busy_count > 1)
 		return;
-	cursor = gdk_cursor_new (GDK_WATCH);
+	display = gtk_widget_get_display (top);
+	cursor = gdk_cursor_new_for_display (display, GDK_WATCH);
 	window = gtk_widget_get_window (top);
 	if (window)
 		gdk_window_set_cursor (window, cursor);
