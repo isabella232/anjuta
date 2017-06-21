@@ -401,7 +401,7 @@ get_icon (GFile *file)
 		icon_info = gtk_icon_theme_choose_icon (gtk_icon_theme_get_default(),
 							icon_names,
 							ICON_SIZE,
-							GTK_ICON_LOOKUP_GENERIC_FALLBACK);
+							0);
 		if (icon_info != NULL)
 		{
 			pixbuf = gtk_icon_info_load_icon (icon_info, NULL);
@@ -415,7 +415,7 @@ get_icon (GFile *file)
 		pixbuf = gtk_icon_theme_load_icon (gtk_icon_theme_get_default(),
 						   GTK_STOCK_MISSING_IMAGE,
 						   ICON_SIZE,
-						   GTK_ICON_LOOKUP_GENERIC_FALLBACK,
+						   0,
 						   NULL);
 	}
 
@@ -454,14 +454,14 @@ set_pixbuf (GtkCellLayout *layout,
 			pixbuf = gtk_icon_theme_load_icon (gtk_icon_theme_get_default(),
 							   GTK_STOCK_OPEN,
 							   ICON_SIZE,
-							   GTK_ICON_LOOKUP_GENERIC_FALLBACK,
+							   0,
 							   NULL);
 			break;
 		case GBF_TREE_NODE_GROUP:
 			pixbuf = gtk_icon_theme_load_icon (gtk_icon_theme_get_default(),
 							   GTK_STOCK_DIRECTORY,
 							   ICON_SIZE,
-							   GTK_ICON_LOOKUP_GENERIC_FALLBACK,
+							   0,
 							   NULL);
 			break;
 		case GBF_TREE_NODE_TARGET:
@@ -469,7 +469,7 @@ set_pixbuf (GtkCellLayout *layout,
 			pixbuf = gtk_icon_theme_load_icon (gtk_icon_theme_get_default(),
 							   GTK_STOCK_CONVERT,
 							   ICON_SIZE,
-							   GTK_ICON_LOOKUP_GENERIC_FALLBACK,
+							   0,
 							   NULL);
 			break;
 		}
@@ -478,7 +478,7 @@ set_pixbuf (GtkCellLayout *layout,
 			pixbuf = gtk_icon_theme_load_icon (gtk_icon_theme_get_default(),
 							   GTK_STOCK_DND_MULTIPLE,
 							   ICON_SIZE,
-							   GTK_ICON_LOOKUP_GENERIC_FALLBACK,
+							   0,
 							   NULL);
 			break;
 		}
@@ -487,7 +487,7 @@ set_pixbuf (GtkCellLayout *layout,
 			pixbuf = gtk_icon_theme_load_icon (gtk_icon_theme_get_default(),
 							   GTK_STOCK_DND,
 							   ICON_SIZE,
-							   GTK_ICON_LOOKUP_GENERIC_FALLBACK,
+							   0,
 							   NULL);
 			break;
 		}

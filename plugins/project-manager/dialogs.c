@@ -1613,7 +1613,7 @@ build_types_store (AnjutaPmProject *project, AnjutaProjectNodeType store_type)
             pixbuf = gtk_icon_theme_load_icon (gtk_icon_theme_get_default(),
                                             GTK_STOCK_CONVERT,
                                             ICON_SIZE,
-                                            GTK_ICON_LOOKUP_GENERIC_FALLBACK,
+                                            0,
                                             NULL);
 
             gtk_list_store_append (store, &iter);

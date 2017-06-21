@@ -706,7 +706,7 @@ anjuta_docman_get_pixbuf_for_file (GFile* file)
 		icon_info = gtk_icon_theme_choose_icon (gtk_icon_theme_get_default(),
 												icon_names,
 												size,
-												GTK_ICON_LOOKUP_GENERIC_FALLBACK);
+												0);
 		if (icon_info != NULL)
 		{
 			pixbuf = gtk_icon_info_load_icon (icon_info, NULL);
