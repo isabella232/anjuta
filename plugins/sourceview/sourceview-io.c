@@ -181,6 +181,10 @@ static void on_file_changed (GFileMonitor* monitor,
 			GFileInfo* info;
 			const gchar* etag;
 
+			/* Ignore changes that happen during a save. */
+			if (sio->write_buffer)
+				break;
+
 			info = g_file_query_info (file, G_FILE_ATTRIBUTE_ETAG_VALUE,
 			                          G_FILE_QUERY_INFO_NONE, NULL, NULL);
 			if (!info)
