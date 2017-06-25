@@ -461,7 +461,10 @@ on_editor_buffer_symbols_update_timeout (gpointer user_data)
 	
 	sdb_plugin = ANJUTA_PLUGIN_SYMBOL_DB (user_data);
 	if (sdb_plugin->current_editor == NULL)
+	{
+		sdb_plugin->buf_update_timeout_id = 0;
 		return FALSE;
+	}
 	
 	/* check the timer. If it's elapsed enought time since the last time the user
 	 * typed in something, than proceed with updating, elsewhere don't do nothing 
@@ -474,8 +477,10 @@ on_editor_buffer_symbols_update_timeout (gpointer user_data)
 	if (seconds_elapsed < TIMEOUT_SECONDS_AFTER_LAST_TIP)
 		return TRUE;
 
-	return editor_buffer_symbols_update (IANJUTA_EDITOR (sdb_plugin->current_editor),
+	editor_buffer_symbols_update (IANJUTA_EDITOR (sdb_plugin->current_editor),
 										 sdb_plugin);
+
+	return TRUE;
 }
 
 static void
