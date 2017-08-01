@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2017-03-30 13:31+0000\n"
-"PO-Revision-Date: 2017-05-05 18:08+0200\n"
+"POT-Creation-Date: 2017-06-28 17:31+0000\n"
+"PO-Revision-Date: 2017-08-01 14:41+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <f.t.public@gmail.com>\n"
 "Language: fur\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 2.0.2\n"
 
 #: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
@@ -119,14 +119,14 @@ msgstr "Colone %i"
 msgid "Column 1"
 msgstr "Colone 1"
 
-#: ../libanjuta/anjuta-convert.c:74 ../libanjuta/anjuta-convert.c:111
+#: ../libanjuta/anjuta-convert.c:75 ../libanjuta/anjuta-convert.c:113
 #, c-format
 msgid "The file you are trying to open contains an invalid byte sequence."
 msgstr ""
 "Il file che tu stâs cirint di vierzi al conten une secuence di byte no "
 "valide."
 
-#: ../libanjuta/anjuta-convert.c:168 ../libanjuta/anjuta-convert.c:207
+#: ../libanjuta/anjuta-convert.c:170 ../libanjuta/anjuta-convert.c:209
 #, c-format
 msgid ""
 "Anjuta was not able to automatically determine the encoding of the file you "
@@ -350,7 +350,7 @@ msgstr "Impussibil eseguî il comant: \"%s\""
 msgid "execvp failed"
 msgstr ""
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2399
 msgid "Anjuta Shell"
 msgstr ""
 
@@ -381,7 +381,7 @@ msgid "Load"
 msgstr "Cjarie"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2015
+#: ../libanjuta/anjuta-plugin-manager.c:2013
 msgid "Available Plugins"
 msgstr "Plugin disponibii"
 
@@ -389,11 +389,11 @@ msgstr "Plugin disponibii"
 msgid "Preferred plugins"
 msgstr "Plugin preferîts"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1157
+#: ../libanjuta/anjuta-plugin-manager.c:1155
 msgid "Only show user activatable plugins"
 msgstr "Mostre dome i plugin che l'utent al pues ativâ"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1197
+#: ../libanjuta/anjuta-plugin-manager.c:1195
 msgid ""
 "These are the plugins selected by you when you have been prompted to choose "
 "one of many suitable plugins. Removing the preferred plugin will let you "
@@ -403,71 +403,71 @@ msgstr ""
 "o plui plugins adats. Gjavant il plugin preferît ti vignarà dade la sielte "
 "di un plugin diferent."
 
-#: ../libanjuta/anjuta-plugin-manager.c:1223
+#: ../libanjuta/anjuta-plugin-manager.c:1221
 msgid "Forget selected plugin"
 msgstr "Dismentee il plugin selezionât"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1355
+#: ../libanjuta/anjuta-plugin-manager.c:1515 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "Selezione un plugin"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1358
+#: ../libanjuta/anjuta-plugin-manager.c:1356
 #: ../plugins/debug-manager/queue.c:528
 msgid "Please select a plugin to activate"
 msgstr "Selezione un plugin di ativâ"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1372
+#: ../libanjuta/anjuta-plugin-manager.c:1370
 #, c-format
 msgid "No plugin is able to load other plugins in %s"
 msgstr "Nissun plugin al pues cjariâ altris plugin in %s"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1518
+#: ../libanjuta/anjuta-plugin-manager.c:1516
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Selezione un plugin di ativâ</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2044
+#: ../libanjuta/anjuta-plugin-manager.c:2042
 msgid "Remember this selection"
 msgstr "Visâsi di cheste selezion"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2382
+#: ../libanjuta/anjuta-plugin-manager.c:2380
 msgid "Profiles"
 msgstr "Profîi"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2381
 msgid "Current stack of profiles"
 msgstr ""
 
-#: ../libanjuta/anjuta-plugin-manager.c:2388
+#: ../libanjuta/anjuta-plugin-manager.c:2386
 msgid "Available plugins"
 msgstr "Plugin disponibii"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2389
+#: ../libanjuta/anjuta-plugin-manager.c:2387
 msgid "Currently available plugins found in plugin paths"
 msgstr "Plugin atualmentri disponibii cjatâts intai percors di plugin"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2395
+#: ../libanjuta/anjuta-plugin-manager.c:2393
 msgid "Activated plugins"
 msgstr "Plugin ativâts"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin-manager.c:2394
 msgid "Currently activated plugins"
 msgstr "Plugin atualmentri ativâts"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2402
+#: ../libanjuta/anjuta-plugin-manager.c:2400
 msgid "Anjuta shell for which the plugins are made"
 msgstr ""
 
-#: ../libanjuta/anjuta-plugin-manager.c:2410
+#: ../libanjuta/anjuta-plugin-manager.c:2408
 msgid "Anjuta Status"
 msgstr "Stât di Anjuta"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2411
+#: ../libanjuta/anjuta-plugin-manager.c:2409
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "Stât di Anjuta di doprâ tal cjariament e discjamament dai plugin"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2564
+#: ../libanjuta/anjuta-plugin-manager.c:2562
 msgid "Loading:"
 msgstr ""
 
@@ -2157,7 +2157,7 @@ msgid "Patch-Style diff"
 msgstr ""
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2201
+#: ../plugins/symbol-db/plugin.c:2206
 msgid "Local"
 msgstr ""
 
@@ -3260,7 +3260,7 @@ msgstr ""
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2164
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "File"
@@ -4237,15 +4237,15 @@ msgid ""
 "match was found."
 msgstr ""
 
-#: ../plugins/document-manager/search-box.c:917
+#: ../plugins/document-manager/search-box.c:920
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
 
-#: ../plugins/document-manager/search-box.c:988
+#: ../plugins/document-manager/search-box.c:991
 msgid "Replace"
 msgstr "Sostituìs"
 
-#: ../plugins/document-manager/search-box.c:993
+#: ../plugins/document-manager/search-box.c:996
 msgid "Replace all"
 msgstr "Sostituìs dut"
 
@@ -4507,7 +4507,7 @@ msgstr ""
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2213
+#: ../plugins/symbol-db/plugin.c:2218
 msgid "Global"
 msgstr "Globâl"
 
@@ -6771,7 +6771,7 @@ msgstr ""
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2164
+#: ../plugins/symbol-db/plugin.c:2169
 msgid "Project"
 msgstr ""
 
@@ -8462,12 +8462,12 @@ msgstr ""
 msgid "Could not save %s: %s"
 msgstr ""
 
-#: ../plugins/sourceview/sourceview-io.c:318
+#: ../plugins/sourceview/sourceview-io.c:322
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr ""
 
-#: ../plugins/sourceview/sourceview-io.c:566
+#: ../plugins/sourceview/sourceview-io.c:570
 #, c-format
 msgid "New file %d"
 msgstr ""
@@ -9144,52 +9144,52 @@ msgstr ""
 msgid "Find Symbol"
 msgstr ""
 
-#: ../plugins/symbol-db/plugin.c:1067
+#: ../plugins/symbol-db/plugin.c:1072
 #, c-format
 msgid "%s: Generating inheritances…"
 msgstr ""
 
 #. Translators: %s is the name of a system library
-#: ../plugins/symbol-db/plugin.c:1073
+#: ../plugins/symbol-db/plugin.c:1078
 #, c-format
 msgid "%s: %d file scanned out of %d"
 msgid_plural "%s: %d files scanned out of %d"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../plugins/symbol-db/plugin.c:1104
+#: ../plugins/symbol-db/plugin.c:1109
 #, c-format
 msgid "Generating inheritances…"
 msgstr ""
 
-#: ../plugins/symbol-db/plugin.c:1106
+#: ../plugins/symbol-db/plugin.c:1111
 #, c-format
 msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../plugins/symbol-db/plugin.c:1767
+#: ../plugins/symbol-db/plugin.c:1772
 msgid "Populating symbol database…"
 msgstr ""
 
-#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
+#: ../plugins/symbol-db/plugin.c:2154 ../plugins/symbol-db/plugin.c:2239
 msgid "Symbols"
 msgstr ""
 
-#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
+#: ../plugins/symbol-db/plugin.c:2174 ../plugins/symbol-db/plugin.c:2226
 msgid "Search"
 msgstr ""
 
-#: ../plugins/symbol-db/plugin.c:2243
+#: ../plugins/symbol-db/plugin.c:2248
 msgid "SymbolDb popup actions"
 msgstr ""
 
-#: ../plugins/symbol-db/plugin.c:2251
+#: ../plugins/symbol-db/plugin.c:2256
 msgid "SymbolDb menu actions"
 msgstr ""
 
-#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
+#: ../plugins/symbol-db/plugin.c:2586 ../plugins/symbol-db/plugin.c:2604
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr ""
@@ -9754,111 +9754,111 @@ msgstr ""
 #: ../src/anjuta-application.c:776
 #, c-format
 msgid "Invalid profile %s: %s"
-msgstr ""
+msgstr "Profîl %s no valit: %s"
 
 #: ../src/anjuta-application.c:830
 msgid "Loaded Session…"
-msgstr ""
+msgstr "Session cjariade…"
 
 #: ../src/anjuta-menu.ui.h:1
 msgid "_New Window"
-msgstr ""
+msgstr "_Gnûf barcon"
 
 #: ../src/anjuta-window.c:688
 msgid "Edit"
-msgstr ""
+msgstr "Modifiche"
 
 #: ../src/anjuta-window.c:701
 msgid "Help"
-msgstr ""
+msgstr "Jutori"
 
 #: ../src/anjuta-window.c:998
 msgid "Installed plugins"
-msgstr ""
+msgstr "Plugin instalâts"
 
 #: ../src/anjuta-window.c:1002
 msgid "Shortcuts"
-msgstr ""
+msgstr "Scurtis"
 
 #: ../src/anjuta-window.c:1074
 #, c-format
 msgid "Value doesn't exist"
-msgstr ""
+msgstr "Il valôr no esist"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
 msgid "Default email used in new project"
-msgstr ""
+msgstr "E-mail predefinide doprade intun gnûf progjet"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:2
 msgid "If empty, current login and machine name is used."
-msgstr ""
+msgstr "Se vueit, l'acès atuâl e il non de machine al ven doprât."
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:3
 msgid "Use tabulation for indentation"
-msgstr ""
+msgstr "Dopre la tabulazion pe indintidure"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:4
 msgid "Number of characters of one tabulation"
-msgstr ""
+msgstr "Numar di caratars di une tabulazion"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
-msgstr ""
+msgstr "Numar di spazis su ogni pas di indintidure"
 
 #: ../src/preferences.ui.h:1
 msgid "Do not load last session on startup"
-msgstr ""
+msgstr "No sta cjariâ la ultime session al inviament"
 
 #: ../src/preferences.ui.h:2
 msgid "Do not load last project and files on startup"
-msgstr ""
+msgstr "No sta cjariâ l'ultin progjet e i file al inviament"
 
 #: ../src/preferences.ui.h:3
 msgid "Session"
-msgstr ""
+msgstr "Session"
 
 #. translators: translate the same as in gnome-control-center
 #: ../src/preferences.ui.h:5
 msgid "Toolbar button labels:"
-msgstr ""
+msgstr "Etichetis botons de sbare dai struments:"
 
 #. Style of the buttons/tabs used to select docked windows in anjuta
 #: ../src/preferences.ui.h:7
 msgid "Dock switcher style:"
-msgstr ""
+msgstr "Stîl dal seletôr dai barcons che si tachin:"
 
 #: ../src/preferences.ui.h:8
 msgid "Appearance"
-msgstr ""
+msgstr "Aspiet"
 
 #: ../src/preferences.ui.h:11
 msgid "Icons"
-msgstr ""
+msgstr "Iconis"
 
 #: ../src/preferences.ui.h:12
 msgid "Text + Icons"
-msgstr ""
+msgstr "Test + iconis"
 
 #: ../src/preferences.ui.h:13
 msgid "GNOME toolbar setting"
-msgstr ""
+msgstr "Impostazions de sbare dai struments di GNOME"
 
 #: ../src/preferences.ui.h:14
 msgid "Tabs"
-msgstr ""
+msgstr "Schedis"
 
 #: ../src/preferences.ui.h:16
 msgid "Text below icons"
-msgstr ""
+msgstr "Test sot des iconis"
 
 #: ../src/preferences.ui.h:17
 msgid "Text beside icons"
-msgstr ""
+msgstr "Test in bande des iconis"
 
 #: ../src/preferences.ui.h:18
 msgid "Icons only"
-msgstr ""
+msgstr "Dome iconis"
 
 #: ../src/preferences.ui.h:19
 msgid "Text only"
-msgstr ""
+msgstr "Dome test"
