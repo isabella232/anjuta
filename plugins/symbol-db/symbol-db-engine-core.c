@@ -1561,7 +1561,7 @@ sdb_engine_scan_files_1 (SymbolDBEngine * dbe, GPtrArray * files_list,
 		if ((priv->shared_mem_fd = 
 			 shm_open (temp_file, O_CREAT|O_RDWR, S_IRUSR|S_IWUSR)) < 0)
 		{
-			g_warning ("Error while trying to open a shared memory file. Be"
+			g_error ("Error while trying to open a shared memory file. Be"
 					   "sure to have "SHARED_MEMORY_PREFIX" mounted with tmpfs");
 		}
 	
