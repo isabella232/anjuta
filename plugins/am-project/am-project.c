@@ -277,6 +277,12 @@ get_relative_path (GFile *parent, GFile *file)
 {
 	gchar *relative;
 
+	if (file == NULL)
+	{
+		g_warning("get_relative_path for a NULL file");
+		return NULL;
+	}
+
 	relative = g_file_get_relative_path (parent, file);
 	if (relative == NULL)
 	{
