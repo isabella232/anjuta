@@ -1,3 +1,67 @@
+Anjuta 3.25.91 (August 20, 2017) -- Sébastien Granjoux
+
+Changes:
+
+Sébastien Granjoux (14)
+    bgo #782633 - Scintilla editor occupies 100% of a core after switching tabs
+    bgo #782452 - Using #!/usr/bin/perl in scripts is not portable
+    Avoid errors with recent version of gcc
+    gdb: bgo #783380 Unable to debug executable compiled with -pie option
+    bgo#770822 - "Search for example code" points to discontinued webpage
+    bgo #763115 - Anjuta builds are not reproducible
+    Fix some compiler warnings
+    Fix warning misleading-indentation
+    Remove obsolete CSS properties
+    Remove deprecated flags
+    Fix some run time critical warnings
+    Avoid an endless loop when updating a project
+    Fix another crash when updating project files
+    bgo #786309 - segfault when shm support is missing
+
+Ove Kåven (1)
+    gtksourceview: Ignore changes that happen during a save
+
+Yannick Inizan (1)
+    symbol-db: add support for libgda-6.0
+
+Dominique Leuenberger (1)
+    Support reproducible builds
+    
+Ting-Wei Lan (1)
+    manuals: Remove extra - symbols before =
+
+Jeremy Bicha (1)
+    Allow building with vala 0.36 and 0.38
+
+Michael Biebl (1)
+    bgo#771625 - needs support for vala 0.34
+
+Marco Diego Aurélio Mesquita (1)
+    Fix callback generation when user_data is set on glade
+
+Piotr Drąg (1)
+    Fix translator comments
+
+Pawan Chitrakar (1)
+    Update Nepali translation
+
+Fabio Tomat (6)
+    Add Friulian translation
+
+Ask Hjorth Larsen (2)
+    Updated Danish translation
+
+Mandy Wang (1)
+    Update zh_CN translations
+
+Baurzhan Muftakhidinov (1)
+    Update Kazakh translation
+
+David King (1)
+    Updated British English translation
+
+
+
 Anjuta 3.22.0 (September 18, 2016) -- Sébastien Granjoux
 
 Changes:
