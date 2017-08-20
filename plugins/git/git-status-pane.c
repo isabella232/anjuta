@@ -568,6 +568,7 @@ git_status_pane_clear (GitStatusPane *self)
 
 	g_hash_table_remove_all (self->priv->selected_commit_items);
 	g_hash_table_remove_all (self->priv->selected_not_updated_items);
+	g_hash_table_remove_all (self->priv->diff_commands);
 }
 
 static void
