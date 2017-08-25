@@ -19,5 +19,6 @@ plugins/symbol-db/symbol-db.glade
 src/anjuta_cbs.c
 src/shell.c
 src/utilities.c
+# Workaround intltool bug https://bugs.launchpad.net/intltool/+bug/1117944
 sub/plugins/language-support-vala/plugin.c
 sub/anjuta.desktop.in
