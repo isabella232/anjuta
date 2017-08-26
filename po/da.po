@@ -35,9 +35,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: "
-"http://bugzilla.gnome.org/enter_bug.cgi?product=anjuta&keywords=I18N+L10N&component=core "
+"https://bugzilla.gnome.org/enter_bug.cgi?product=anjuta&keywords=I18N+L10N&component=core "
 "application\n"
-"POT-Creation-Date: 2016-08-26 01:42+0000\n"
+"POT-Creation-Date: 2017-06-28 17:31+0000\n"
 "PO-Revision-Date: 2017-03-25 17:20+0100\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
@@ -115,12 +115,12 @@ msgstr "Autogen har travlt"
 #: ../libanjuta/anjuta-autogen.c:251
 #, c-format
 msgid "Could not write definition file \"%s\": %s"
-msgstr "Kunne ikke skrive definitionsfilen \"%s\": %s"
+msgstr "Kunne ikke skrive definitionsfilen “%s”: %s"
 
 #: ../libanjuta/anjuta-autogen.c:585
 #, c-format
 msgid "Could not open file \"%s\": %s"
-msgstr "Kunne ikke åbne filen \"%s\": %s"
+msgstr "Kunne ikke åbne filen “%s”: %s"
 
 #: ../libanjuta/anjuta-cell-renderer-captioned-image.c:239
 #: ../src/preferences.ui.h:10
@@ -164,12 +164,12 @@ msgstr "Kolonne %i"
 msgid "Column 1"
 msgstr "Kolonne 1"
 
-#: ../libanjuta/anjuta-convert.c:74 ../libanjuta/anjuta-convert.c:111
+#: ../libanjuta/anjuta-convert.c:75 ../libanjuta/anjuta-convert.c:113
 #, c-format
 msgid "The file you are trying to open contains an invalid byte sequence."
 msgstr "Filen du forsøger at åbne, indeholder en ugyldig bytesekvens."
 
-#: ../libanjuta/anjuta-convert.c:168 ../libanjuta/anjuta-convert.c:207
+#: ../libanjuta/anjuta-convert.c:170 ../libanjuta/anjuta-convert.c:209
 #, c-format
 msgid ""
 "Anjuta was not able to automatically determine the encoding of the file you "
@@ -387,13 +387,13 @@ msgstr "([Aa]dgangskode.*:)|([Pp]assword.*:)"
 #: ../libanjuta/anjuta-launcher.c:1167 ../plugins/gdb/utilities.c:282
 #, c-format
 msgid "Cannot execute command: \"%s\""
-msgstr "Kan ikke køre kommando: \"%s\""
+msgstr "Kan ikke køre kommando: “%s”"
 
 #: ../libanjuta/anjuta-launcher.c:1168
 msgid "execvp failed"
 msgstr "execvp slog fejl"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2399
 msgid "Anjuta Shell"
 msgstr "Anjuta-skal"
 
@@ -404,7 +404,7 @@ msgstr "Anjuta-skal som vil indeholde udvidelsesmodulet"
 #: ../libanjuta/anjuta-plugin-manager.c:714
 #, c-format
 msgid "Plugin '%s' does not want to be deactivated"
-msgstr "Udvidelsesmodulet \"%s\" vil ikke deaktiveres"
+msgstr "Udvidelsesmodulet “%s” vil ikke deaktiveres"
 
 #: ../libanjuta/anjuta-plugin-manager.c:747
 #, c-format
@@ -424,7 +424,7 @@ msgid "Load"
 msgstr "Indlæs"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2015
+#: ../libanjuta/anjuta-plugin-manager.c:2013
 msgid "Available Plugins"
 msgstr "Tilgængelige udvidelsesmoduler"
 
@@ -432,11 +432,11 @@ msgstr "Tilgængelige udvidelsesmoduler"
 msgid "Preferred plugins"
 msgstr "Foretrukne udvidelsesmoduler"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1157
+#: ../libanjuta/anjuta-plugin-manager.c:1155
 msgid "Only show user activatable plugins"
 msgstr "Vis kun brugeraktiverbare udvidelsesmoduler"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1197
+#: ../libanjuta/anjuta-plugin-manager.c:1195
 msgid ""
 "These are the plugins selected by you when you have been prompted to choose "
 "one of many suitable plugins. Removing the preferred plugin will let you "
@@ -446,71 +446,71 @@ msgstr ""
 "vælge et af flere passende moduler. Fjernelse af det foretrukne modul vil "
 "lade dig vælge et andet modul."
 
-#: ../libanjuta/anjuta-plugin-manager.c:1223
+#: ../libanjuta/anjuta-plugin-manager.c:1221
 msgid "Forget selected plugin"
 msgstr "Glem det valgte udvidelsesmodul"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1355
+#: ../libanjuta/anjuta-plugin-manager.c:1515 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "Vælg et udvidelsesmodul"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1358
+#: ../libanjuta/anjuta-plugin-manager.c:1356
 #: ../plugins/debug-manager/queue.c:528
 msgid "Please select a plugin to activate"
 msgstr "Vælg et udvidelsesmodul at aktivere"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1372
+#: ../libanjuta/anjuta-plugin-manager.c:1370
 #, c-format
 msgid "No plugin is able to load other plugins in %s"
 msgstr "Intet udvidelsesmodul kan indlæse andre udvidelsesmoduler i %s"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1518
+#: ../libanjuta/anjuta-plugin-manager.c:1516
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Vælg et udvidelsesmodul at aktivere</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2044
+#: ../libanjuta/anjuta-plugin-manager.c:2042
 msgid "Remember this selection"
 msgstr "Husk dette udvalg"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2382
+#: ../libanjuta/anjuta-plugin-manager.c:2380
 msgid "Profiles"
 msgstr "Profiler"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2381
 msgid "Current stack of profiles"
 msgstr "Aktuel stak af profiler"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2388
+#: ../libanjuta/anjuta-plugin-manager.c:2386
 msgid "Available plugins"
 msgstr "Tilgængelige udvidelsesmoduler"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2389
+#: ../libanjuta/anjuta-plugin-manager.c:2387
 msgid "Currently available plugins found in plugin paths"
 msgstr "Aktuelt tilgængelige moduler fundet i modulstier"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2395
+#: ../libanjuta/anjuta-plugin-manager.c:2393
 msgid "Activated plugins"
 msgstr "Aktiverede udvidelsesmoduler"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin-manager.c:2394
 msgid "Currently activated plugins"
 msgstr "Aktive udvidelsesmoduler"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2402
+#: ../libanjuta/anjuta-plugin-manager.c:2400
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Anjuta-skal, som modulere er skrevet til"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2410
+#: ../libanjuta/anjuta-plugin-manager.c:2408
 msgid "Anjuta Status"
 msgstr "Status for Anjuta"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2411
+#: ../libanjuta/anjuta-plugin-manager.c:2409
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "Anjuta-status der benyttes ved aktivering og deaktivering af moduler"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2564
+#: ../libanjuta/anjuta-plugin-manager.c:2562
 msgid "Loading:"
 msgstr "Indlæser:"
 
@@ -564,19 +564,19 @@ msgid ""
 "Failed to read '%s': XML parse error. Invalid or corrupted Anjuta plugins "
 "profile."
 msgstr ""
-"Kunne ikke læse \"%s\": XML-fortolkningsfejl. Ugyldig eller korrumperet "
+"Kunne ikke læse “%s”: XML-fortolkningsfejl. Ugyldig eller korrumperet "
 "udvidelsesmodulprofil til Anjuta."
 
 #. <Pluginname>: Install it from <some location on the web>
 #: ../libanjuta/anjuta-profile.c:956
 #, c-format
 msgid "%s: Install it from '%s'\n"
-msgstr "%s: Installér fra \"%s\"\n"
+msgstr "%s: Installér fra “%s”\n"
 
 #: ../libanjuta/anjuta-profile.c:964
 #, c-format
 msgid "Failed to read '%s': Following mandatory plugins are missing"
-msgstr "Kunne ikke læse \"%s\": Følgende påkrævede moduler mangler"
+msgstr "Kunne ikke læse “%s”: Følgende påkrævede moduler mangler"
 
 #: ../libanjuta/anjuta-save-prompt.c:157
 msgid "Select the items to save:"
@@ -655,7 +655,7 @@ msgid ""
 "from your distribution, or install the missing packages manually."
 msgstr ""
 "Du synes ikke at have PackageKit installeret. PackageKit kræves til at "
-"installere manglende pakker. Installér venligst pakken \"packagekit-gnome\" "
+"installere manglende pakker. Installér venligst pakken “packagekit-gnome” "
 "fra din distribution, eller installér de manglende pakker manuelt."
 
 #: ../libanjuta/anjuta-utils.c:527
@@ -666,7 +666,7 @@ msgstr "Installationen mislykkedes: %s"
 #: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
-msgstr "Kunne ikke køre \"%s\". Den returnerede fejl var: \"%s\"."
+msgstr "Kunne ikke køre “%s”. Den returnerede fejl var: “%s”."
 
 #: ../libanjuta/anjuta-utils.c:602
 #, c-format
@@ -674,7 +674,7 @@ msgid ""
 "The \"%s\" package is not installed.\n"
 "Please install it."
 msgstr ""
-"Pakken \"%s\" er ikke installeret.\n"
+"Pakken “%s” er ikke installeret.\n"
 "Installér den venligst."
 
 #: ../libanjuta/anjuta-utils.c:620
@@ -683,7 +683,7 @@ msgid ""
 "The \"%s\" utility is not installed.\n"
 "Please install it."
 msgstr ""
-"Værktøjet \"%s\" er ikke installeret.\n"
+"Værktøjet “%s” er ikke installeret.\n"
 "Installér det venligst."
 
 #. Try xterm
@@ -761,7 +761,7 @@ msgstr "Kunde ikke finde programbildfil: %s"
 #: ../libanjuta/resources.c:277
 #, c-format
 msgid "Cannot execute command \"%s\": %s"
-msgstr "Kan ikke køre kommandoen \"%s\": %s"
+msgstr "Kan ikke køre kommandoen “%s”: %s"
 
 #: ../plugins/am-project/amp-group.c:627
 msgid "Please specify group name"
@@ -772,7 +772,7 @@ msgid ""
 "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~/\" characters"
 msgstr ""
 "Gruppenavnet kan kun indeholde alfanumeriske tegn samt tegnene "
-"\"#$:%+,-.=@^_`~/\""
+"“#$:%+,-.=@^_`~/”"
 
 #: ../plugins/am-project/amp-group.c:665
 #: ../plugins/am-project/am-project.c:1680
@@ -887,7 +887,7 @@ msgstr "Navn:"
 
 #: ../plugins/am-project/am-properties.c:52
 msgid "Project name, it can contain spaces by example 'GNU Autoconf'"
-msgstr "Projektnavn. Kan indeholde mellemrum, f.eks. \"GNU Autoconf\""
+msgstr "Projektnavn. Kan indeholde mellemrum, f.eks. “GNU Autoconf”"
 
 #: ../plugins/am-project/am-properties.c:58
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:9
@@ -915,7 +915,7 @@ msgstr "Version:"
 #: ../plugins/am-project/am-properties.c:61
 msgid ""
 "Project version, typically a few numbers separated by dot by example '1.0.0'"
-msgstr "Projektversion, typisk nogle tal adskilt med punktum såsom \"1.0.0\""
+msgstr "Projektversion, typisk nogle tal adskilt med punktum såsom “1.0.0”"
 
 #: ../plugins/am-project/am-properties.c:67
 msgid "Bug report URL:"
@@ -1375,7 +1375,7 @@ msgid ""
 "digits ‘0’ through ‘9’, and the letters ‘l’ and ‘n’. "
 msgstr ""
 "Sektion hvor man-siderne er installeret. Gyldige sektionsnavne er cifrene "
-"\"0\" til \"9\" samt bogstaverne \"l\" og \"n\". "
+"“0” til “9” samt bogstaverne “l” og “n”. "
 
 #: ../plugins/am-project/amp-source.c:97
 msgid "Source file must be a regular file, not a directory"
@@ -1393,20 +1393,19 @@ msgstr "Angiv venligst målnavn"
 msgid ""
 "Target name can only contain alphanumeric, '_', '-', '/' or '.' characters"
 msgstr ""
-"Målnavnet kan kun indeholde alfanumeriske tegn samt \"_\", \"-\", \"/\" og "
-"\".\""
+"Målnavnet kan kun indeholde alfanumeriske tegn samt “_”, “-”, “/” og “.”"
 
 #: ../plugins/am-project/amp-target.c:398
 msgid "Shared library target name must be of the form 'libxxx.la'"
-msgstr "Navnet på det delte bibliotek skal være på formen \"libxxx.la\""
+msgstr "Navnet på det delte bibliotek skal være på formen “libxxx.la”"
 
 #: ../plugins/am-project/amp-target.c:407
 msgid "Static library target name must be of the form 'libxxx.a'"
-msgstr "Navnet på det statiske bibliotek skal være på formen \"libxxx.a\""
+msgstr "Navnet på det statiske bibliotek skal være på formen “libxxx.a”"
 
 #: ../plugins/am-project/amp-target.c:415
 msgid "Module target name must be of the form 'xxx.la'"
-msgstr "Modulmålnavn skal være på formen \"xxx.la\""
+msgstr "Modulmålnavn skal være på formen “xxx.la”"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:1
 msgid "Automake Build"
@@ -1514,7 +1513,7 @@ msgstr "Kommando annulleret af bruger"
 #, c-format
 msgid "Cannot compile \"%s\": No compile rule defined for this file type."
 msgstr ""
-"Kan ikke kompilere \"%s\": Ingen kompileringsregel er defineret for denne "
+"Kan ikke kompilere “%s”: Ingen kompileringsregel er defineret for denne "
 "filtype."
 
 #: ../plugins/build-basic-autotools/build.c:1107
@@ -1559,19 +1558,19 @@ msgstr "Ingen fil eller projekt er i øjeblikket åbnet."
 #: ../plugins/run-program/execute.c:73
 #, c-format
 msgid "Program '%s' is not a local file"
-msgstr "Programmet \"%s\" er ikke en lokal fil"
+msgstr "Programmet “%s” er ikke en lokal fil"
 
 #: ../plugins/build-basic-autotools/executer.c:298
 #: ../plugins/run-program/execute.c:79
 #, c-format
 msgid "Program '%s' does not exist"
-msgstr "Programmet \"%s\" findes ikke"
+msgstr "Programmet “%s” findes ikke"
 
 #: ../plugins/build-basic-autotools/executer.c:306
 #: ../plugins/run-program/execute.c:83
 #, c-format
 msgid "Program '%s' does not have execution permission"
-msgstr "Programmet \"%s\" har ikke eksekveringsrettigheder"
+msgstr "Programmet “%s” har ikke eksekveringsrettigheder"
 
 #: ../plugins/build-basic-autotools/executer.c:338
 msgid "No executable for this file."
@@ -1580,7 +1579,7 @@ msgstr "Ingen eksekverbar fil for denne fil."
 #: ../plugins/build-basic-autotools/executer.c:344
 #, c-format
 msgid "Executable '%s' is not up-to-date."
-msgstr "Den eksekverbare fil \"%s\" er ikke opdateret."
+msgstr "Den eksekverbare fil “%s” er ikke opdateret."
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:1
 msgid "True if we need a special command to install files"
@@ -1599,11 +1598,11 @@ msgid ""
 "quoted command. You can use %% to get a \"%\" character. A typical value is "
 "\"sudo %s\" or \"su -c %q\"."
 msgstr ""
-"Kommandoen skal indeholde \"%s\" eller \"%q\". Dette vil blive erstattet med "
-"kommandoen, der bruges til at installere filer, såsom \"make install\". %s "
+"Kommandoen skal indeholde “%s” eller “%q”. Dette vil blive erstattet med "
+"kommandoen, der bruges til at installere filer, såsom “make install”. %s "
 "erstattes med den uændrede kommando, mens %q erstattes med kommandoen i "
-"anførselstegn. Du kan bruge %% til at skrive et \"%\"-tegn. En typisk værdi "
-"er \"sudo %s\" eller \"su -c %q\"."
+"anførselstegn. Du kan bruge %% til at skrive et “%”-tegn. En typisk værdi er "
+"“sudo %s” eller “su -c %q”."
 
 # For satan!  Nå, den er vistnok sat til det rigtige (med '')
 #. The translations should match that of 'make' program. Both strings uses
@@ -2238,7 +2237,7 @@ msgid "Patch-Style diff"
 msgstr "Patch-agtig diff"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2201
+#: ../plugins/symbol-db/plugin.c:2206
 msgid "Local"
 msgstr "Lokal"
 
@@ -2256,7 +2255,7 @@ msgstr "CVS-indstillinger"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:7
 msgid "Path to \"cvs\" command"
-msgstr "Sti til \"cvs\"-kommando"
+msgstr "Sti til “cvs”-kommando"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:8
 msgid "Compression Level (0=off, 10=max):"
@@ -2983,6 +2982,8 @@ msgstr "Slå stoppunkt fra"
 msgid "Disable a breakpoint"
 msgstr "Slå et stoppunkt fra"
 
+#. Translators: Enabled refers to a breakpoint. It is a column name, like
+#. * other words.
 #. This enable an user defined command
 #: ../plugins/debug-manager/breakpoints.c:1953
 #: ../plugins/tools/anjuta-tools.ui.h:5
@@ -3353,7 +3354,7 @@ msgstr "Ramme"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2164
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Fil"
@@ -3394,7 +3395,7 @@ msgstr "Kommando"
 #: ../plugins/debug-manager/start.c:628
 #, c-format
 msgid "Unable to execute: \"%s\". The returned error was: \"%s\"."
-msgstr "Kan ikke køre: \"%s\". Den returnerede fejl var: \"%s\"."
+msgstr "Kan ikke køre: “%s”. Den returnerede fejl var: “%s”."
 
 #: ../plugins/debug-manager/start.c:644
 #, c-format
@@ -3560,7 +3561,7 @@ msgid ""
 "Are you sure you want to reload '%s'?\n"
 "Any unsaved changes will be lost."
 msgstr ""
-"Er du sikker på, at du vil genindlæse \"%s\"?\n"
+"Er du sikker på, at du vil genindlæse “%s”?\n"
 "Du vil tabe alle ændringer der ikke er gemt."
 
 #: ../plugins/document-manager/action-callbacks.c:324
@@ -3627,7 +3628,7 @@ msgid ""
 "The file '%s' already exists.\n"
 "Do you want to replace it with the one you are saving?"
 msgstr ""
-"Filen \"%s\" findes allerede.\n"
+"Filen “%s” findes allerede.\n"
 "Vil du overskrive den med filen, du er ved at gemme?"
 
 #: ../plugins/document-manager/anjuta-docman.c:999
@@ -4320,12 +4321,12 @@ msgstr "Autogemning fuldført"
 #: ../plugins/document-manager/search-box.c:520
 #, c-format
 msgid "Search for \"%s\" reached the end and was continued at the top."
-msgstr "Søgningen efter \"%s\" nåede bunden og blev fortsat fra toppen."
+msgstr "Søgningen efter “%s” nåede bunden og blev fortsat fra toppen."
 
 #: ../plugins/document-manager/search-box.c:525
 #, c-format
 msgid "Search for \"%s\" reached top and was continued at the bottom."
-msgstr "Søgningen efter \"%s\" nåede toppen og blev fortsat fra bunden."
+msgstr "Søgningen efter “%s” nåede toppen og blev fortsat fra bunden."
 
 #: ../plugins/document-manager/search-box.c:535
 #, c-format
@@ -4333,7 +4334,7 @@ msgid ""
 "Search for \"%s\" reached the end and was continued at the top but no new "
 "match was found."
 msgstr ""
-"Søgningen efter \"%s\" nåede bunden og blev fortsat fra toppen uden nye "
+"Søgningen efter “%s” nåede bunden og blev fortsat fra toppen uden nye "
 "resultater."
 
 #: ../plugins/document-manager/search-box.c:540
@@ -4342,19 +4343,18 @@ msgid ""
 "Search for \"%s\" reached top and was continued at the bottom but no new "
 "match was found."
 msgstr ""
-"Søgningen efter \"%s\" nåede toppen og blev fortsat fra bunden uden nye "
+"Søgningen efter “%s” nåede toppen og blev fortsat fra bunden uden nye "
 "resultater."
 
-#: ../plugins/document-manager/search-box.c:917
+#: ../plugins/document-manager/search-box.c:920
 msgid "Use the context menu of the \"Find\" icon for more search options"
-msgstr ""
-"Brug kontekstmenuen for ikonet \"Find\" for at se flere søgemuligheder"
+msgstr "Brug kontekstmenuen for ikonet “Find” for at se flere søgemuligheder"
 
-#: ../plugins/document-manager/search-box.c:988
+#: ../plugins/document-manager/search-box.c:991
 msgid "Replace"
 msgstr "Erstat"
 
-#: ../plugins/document-manager/search-box.c:993
+#: ../plugins/document-manager/search-box.c:996
 msgid "Replace all"
 msgstr "Erstat alle"
 
@@ -4398,18 +4398,18 @@ msgstr "Ingen elementer fundet"
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:725
 #, c-format
 msgid "No recently used resource found with URI \"%s\""
-msgstr "Ingen nyligt brugt ressource blev fundet med URI'en \"%s\""
+msgstr "Ingen nyligt brugt ressource blev fundet med URI'en “%s”"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:749
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:757
 #, c-format
 msgid "This function is not implemented for widgets of class '%s'"
-msgstr "Denne funktion er ikke implementeret for kontroller af klassen \"%s\""
+msgstr "Denne funktion er ikke implementeret for kontroller af klassen “%s”"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:936
 #, c-format
 msgid "Open '%s'"
-msgstr "Åbn \"%s\""
+msgstr "Åbn “%s”"
 
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:966
 msgid "Unknown item"
@@ -4442,7 +4442,7 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Kan ikke åbne \"%s\".\n"
+"Kan ikke åbne “%s”.\n"
 "\n"
 "%s"
 
@@ -4458,7 +4458,7 @@ msgid ""
 "\n"
 "You may choose to try opening it with the following plugins or applications."
 msgstr ""
-"<b>Kan ikke åbne \"%s\"</b>.\n"
+"<b>Kan ikke åbne “%s”</b>.\n"
 "\n"
 "Der er intet udvidelsesmodul, standardhandling eller program konfigureret "
 "til at håndtere denne filtype.\n"
@@ -4625,7 +4625,7 @@ msgstr "Vælg automatisk det nuværende dokument"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2213
+#: ../plugins/symbol-db/plugin.c:2218
 msgid "Global"
 msgstr "Global"
 
@@ -4666,7 +4666,7 @@ msgstr "GFile som repræsenterer den øverste viste sti"
 #. You try to rename "/"
 #: ../plugins/file-manager/file-view.c:139
 msgid "You can't rename \"/\"!"
-msgstr "Du kan ikke omdøbe \"/\"!"
+msgstr "Du kan ikke omdøbe “/”!"
 
 #: ../plugins/file-manager/file-view.c:153
 msgid ""
@@ -4852,7 +4852,7 @@ msgstr "En fejl opstod ved start af fejlsøgeren.\n"
 
 #: ../plugins/gdb/debugger.c:1162
 msgid "Make sure 'gdb' is installed on the system.\n"
-msgstr "Vær sikker på at \"gdb\" er installeret på systemet.\n"
+msgstr "Vær sikker på at “gdb” er installeret på systemet.\n"
 
 #: ../plugins/gdb/debugger.c:1483
 msgid "Program exited normally\n"
@@ -4995,7 +4995,7 @@ msgstr ""
 "%s\n"
 "Du bliver selv nødt til at udfylde registerfunktionens kolonner, før "
 "rækkerne aktiveres. I de fleste tilfælde indeholder navnet på "
-"registerfunktionen ordet \"register\"."
+"registerfunktionen ordet “register”."
 
 #: ../plugins/gdb/preferences.c:223
 msgid "Select a pretty printer file"
@@ -5035,7 +5035,7 @@ msgstr "OK"
 # "signed-off-by" er vist noget man kan tilføje når man committer med versionsstyringsprogrammet git
 #: ../plugins/git/anjuta-git.ui.h:5
 msgid "Add signed off by line"
-msgstr "Tilføj \"signed-off-by\"-linje"
+msgstr "Tilføj “signed-off-by”-linje"
 
 #: ../plugins/git/anjuta-git.ui.h:6
 msgid "Squash"
@@ -5072,7 +5072,7 @@ msgstr "Vis kilderevision i logbesked"
 # hvad har de røget?
 #: ../plugins/git/anjuta-git.ui.h:16
 msgid "Append signed-off-by line"
-msgstr "Tilføj \"signed-of-by\"-linje"
+msgstr "Tilføj “signed-of-by”-linje"
 
 #: ../plugins/git/anjuta-git.ui.h:17
 #: ../plugins/subversion/anjuta-subversion.ui.h:12
@@ -5304,6 +5304,7 @@ msgstr "Indtast venligst navn på fjernarkiv."
 msgid "Please enter a URL"
 msgstr "Indtast venligst en URL"
 
+#. Translators: Remote means the git remote repository
 #: ../plugins/git/git-add-remote-pane.c:182
 msgid "Add Remote"
 msgstr "Tilføj fjern"
@@ -5840,7 +5841,7 @@ msgstr "Fjernarkiver"
 #: ../plugins/glade/anjuta-design-document.c:201
 #, c-format
 msgid "Glade project '%s' saved"
-msgstr "Glade-projektet \"%s\" gemt"
+msgstr "Glade-projektet “%s” gemt"
 
 #: ../plugins/glade/anjuta-design-document.c:181
 #: ../plugins/glade/anjuta-design-document.c:208
@@ -6003,12 +6004,12 @@ msgstr "Byg og kør programmer i JHBuild-miljøet"
 
 #: ../plugins/jhbuild/plugin.c:121
 msgid "Failed to run \"jhbuild run\""
-msgstr "Kunne ikke køre \"jhbuild run\""
+msgstr "Kunne ikke køre “jhbuild run”"
 
 #: ../plugins/jhbuild/plugin.c:127
 #, c-format
 msgid "Failed to run \"jhbuild run\" (%s)"
-msgstr "Kunne ikke køre \"jhbuild run\" (%s)"
+msgstr "Kunne ikke køre “jhbuild run” (%s)"
 
 #: ../plugins/jhbuild/plugin.c:172
 msgid "Could not find the JHBuild install prefix."
@@ -6123,13 +6124,13 @@ msgstr "Tilføj et mellemrum efter autofuldførelse af funktionskald"
 #: ../plugins/language-support-vala/anjuta-vala.ui.h:3
 #: ../plugins/parser-cxx/anjuta-parser-cxx.ui.h:3
 msgid "Add '(' after function call autocompletion"
-msgstr "Tilføj \"(\" efter autofuldførelse af funktionskald"
+msgstr "Tilføj “(” efter autofuldførelse af funktionskald"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:4
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:4
 #: ../plugins/parser-cxx/anjuta-parser-cxx.ui.h:4
 msgid "Add ')' after function call autocompletion"
-msgstr "Tilføj \")\" efter autofuldførelse af funktionskald"
+msgstr "Tilføj “)” efter autofuldførelse af funktionskald"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:5
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:5
@@ -6538,7 +6539,7 @@ msgstr "Projekt fra eksisterende kilder"
 #: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
-msgstr "En fil ved navn \"%s\" findes allerede. Vil du erstatte den?"
+msgstr "En fil ved navn “%s” findes allerede. Vil du erstatte den?"
 
 #: ../plugins/project-import/plugin.c:224
 #, c-format
@@ -6546,8 +6547,8 @@ msgid ""
 "A file named \"%s\" cannot be written: %s. Check if you have write access to "
 "the project directory."
 msgstr ""
-"En fil ved navn \"%s\" kan ikke skrives: %s. Kontrollér om du har "
-"skriveadgang til projektmappen."
+"En fil ved navn “%s” kan ikke skrives: %s. Kontrollér om du har skriveadgang "
+"til projektmappen."
 
 #: ../plugins/project-import/plugin.c:285
 #, c-format
@@ -6570,7 +6571,7 @@ msgstr ""
 msgid ""
 "Couldn't check out the supplied URI \"%s\". The error returned was: \"%s\""
 msgstr ""
-"Kunne ikke hente fra den givne URI \"%s\". Den returnerede fejl var: \"%s\""
+"Kunne ikke hente fra den givne URI “%s”. Den returnerede fejl var: “%s”"
 
 #: ../plugins/project-import/project-import-dialog.c:310
 msgid "Import project"
@@ -6747,7 +6748,7 @@ msgid ""
 "Are you sure you want to remove the group \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Er du sikker på, at du vil fjerne gruppen \"%s\" fra projektet?\n"
+"Er du sikker på, at du vil fjerne gruppen “%s” fra projektet?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:696
@@ -6756,7 +6757,7 @@ msgid ""
 "Are you sure you want to remove the target \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Er du sikker på, at du vil fjerne målet \"%s\" fra projektet?\n"
+"Er du sikker på, at du vil fjerne målet “%s” fra projektet?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:699
@@ -6765,7 +6766,7 @@ msgid ""
 "Are you sure you want to remove the source \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Er du sikker på, at du vil fjerne kilden \"%s\" fra projektet?\n"
+"Er du sikker på, at du vil fjerne kilden “%s” fra projektet?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:702
@@ -6774,7 +6775,7 @@ msgid ""
 "Are you sure you want to remove the shortcut \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Er du sikker på, at du vil fjerne genvejen \"%s\" fra projektet?\n"
+"Er du sikker på, at du vil fjerne genvejen “%s” fra projektet?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:706
@@ -6783,7 +6784,7 @@ msgid ""
 "Are you sure you want to remove the module \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Er du sikker på, at du vil fjerne modulet \"%s\" fra projektet?\n"
+"Er du sikker på, at du vil fjerne modulet “%s” fra projektet?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:709
@@ -6792,7 +6793,7 @@ msgid ""
 "Are you sure you want to remove the package \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Er du sikker på, at du vil fjerne pakken \"%s\" fra projektet?\n"
+"Er du sikker på, at du vil fjerne pakken “%s” fra projektet?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:712
@@ -6801,7 +6802,7 @@ msgid ""
 "Are you sure you want to remove the element \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Er du sikker på, at du vil fjerne elementet \"%s\" fra projektet?\n"
+"Er du sikker på, at du vil fjerne elementet “%s” fra projektet?\n"
 "\n"
 
 #. Translator: there is at least 2 elements to remove
@@ -6846,7 +6847,7 @@ msgid ""
 "Failed to remove '%s':\n"
 "%s"
 msgstr ""
-"Kunne ikke fjerne \"%s\":\n"
+"Kunne ikke fjerne “%s”:\n"
 "%s"
 
 #: ../plugins/project-manager/plugin.c:867
@@ -6969,7 +6970,7 @@ msgstr "Opdatér projektvisning …"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2164
+#: ../plugins/symbol-db/plugin.c:2169
 msgid "Project"
 msgstr "Projekt"
 
@@ -7161,7 +7162,7 @@ msgstr "Kan ikke finde nogen projektskabelon i %s"
 #: ../plugins/project-wizard/druid.c:712
 #, c-format
 msgid "\nField \"%s\" is mandatory. Please enter it."
-msgstr "\nFeltet \"%s\" er påkrævet. Udfyld det venligst."
+msgstr "\nFeltet “%s” er påkrævet. Udfyld det venligst."
 
 #: ../plugins/project-wizard/druid.c:727
 #, c-format
@@ -7170,9 +7171,9 @@ msgid ""
 "\"#$:%%+,.=@^_`~\". In addition you cannot have a leading dash. Please fix "
 "it."
 msgstr ""
-"Feltet \"%s\" må kun indeholde bogstaver, tal og følgende tegn: "
-"\"#$:%%+,.=@^_`~\". Derudover må der ikke være indledende bindestreg. Fiks "
-"det venligst."
+"Feltet “%s” må kun indeholde bogstaver, tal og følgende tegn: "
+"“#$:%%+,.=@^_`~”. Derudover må der ikke være indledende bindestreg. Fiks det "
+"venligst."
 
 #: ../plugins/project-wizard/druid.c:732
 #, c-format
@@ -7181,9 +7182,9 @@ msgid ""
 "\"#$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a "
 "leading dash. Please fix it."
 msgstr ""
-"Feltet \"%s\" må kun indeholde bogstaver, tal, tegnene \"#$:%%+,.=@^_`~\" "
-"eller mappeadskilningstegn. Derudover må der ikke være indledende "
-"bindestreg. Fiks det venligst."
+"Feltet “%s” må kun indeholde bogstaver, tal, tegnene “#$:%%+,.=@^_`~” eller "
+"mappeadskilningstegn. Derudover må der ikke være indledende bindestreg. Fiks "
+"det venligst."
 
 #: ../plugins/project-wizard/druid.c:737
 #, c-format
@@ -7191,8 +7192,8 @@ msgid ""
 "Field \"%s\" must contains only ASCII printable characters, no accentuated "
 "characters by example. Please fix it."
 msgstr ""
-"Feltet \"%s\" må kun indeholde skrivbare ASCII-tegn, og f.eks. ingen tegn "
-"med accent. Vær venlig at fikse det."
+"Feltet “%s” må kun indeholde skrivbare ASCII-tegn, og f.eks. ingen tegn med "
+"accent. Vær venlig at fikse det."
 
 #: ../plugins/project-wizard/druid.c:742
 #, c-format
@@ -7205,13 +7206,13 @@ msgid ""
 "Directory \"%s\" is not empty. Project creation could fail if some files "
 "cannot be written. Do you want to continue?"
 msgstr ""
-"Mappen \"%s\" er ikke tom. Projektoprettelse kan slå fejl hvis der er filer, "
+"Mappen “%s” er ikke tom. Projektoprettelse kan slå fejl hvis der er filer, "
 "der ikke kan skrives. Vil du fortsætte?"
 
 #: ../plugins/project-wizard/druid.c:771
 #, c-format
 msgid "File \"%s\" already exists. Do you want to overwrite it?"
-msgstr "Filen \"%s\" findes allerede. Vil du overskrive den?"
+msgstr "Filen “%s” findes allerede. Vil du overskrive den?"
 
 #: ../plugins/project-wizard/druid.c:804
 msgid "Invalid entry"
@@ -7279,7 +7280,7 @@ msgstr "Oprettelse af nyt projekt slog fejl."
 #: ../plugins/project-wizard/install.c:469
 #, c-format
 msgid "Skipping %s: file already exists"
-msgstr "Springer over \"%s\": filen findes allerede"
+msgstr "Springer over “%s”: filen findes allerede"
 
 #: ../plugins/project-wizard/install.c:510
 #, c-format
@@ -8006,8 +8007,8 @@ msgid ""
 "'libgnomeui-2.0 >= 2.2.0'"
 msgstr ""
 "Angiv pakkenavn påkrævet af dit projekt. Du kan også nævne den påkrævede "
-"version af pakken. For eksempel \"libgnomeui-2.0\" eller \"libgnomeui-2.0 >= "
-"2.2.0\""
+"version af pakken. For eksempel “libgnomeui-2.0” eller “libgnomeui-2.0 >= "
+"2.2.0”"
 
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:1
 msgid "GTKmm (Simple)"
@@ -8276,7 +8277,7 @@ msgstr "Vælg en arbejdsmappe"
 #: ../plugins/run-program/execute.c:110
 #, c-format
 msgid "Program directory '%s' is not local"
-msgstr "Programmappen \"%s\" er ikke lokal"
+msgstr "Programmappen “%s” er ikke lokal"
 
 #: ../plugins/run-program/parameters.c:180
 msgid "Load Target to run"
@@ -8449,7 +8450,7 @@ msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
 "\"_\"!"
 msgstr ""
-"<b>Fejl:</b> Udløsernøglen kan kun indeholde alfanumeriske tegn, samt \"_\"!"
+"<b>Fejl:</b> Udløsernøglen kan kun indeholde alfanumeriske tegn, samt “_”!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:51
 msgid "<b>Error:</b> You haven't entered a trigger key for the snippet!"
@@ -8495,8 +8496,8 @@ msgid ""
 "<b>Warning: Must be unique per language. </b>"
 msgstr ""
 "Udløsernøglen bruges til hurtig indsættelse af tekststumpen. Skriv "
-"udløsernøglen i tekstredigeringen, efterfulgt af genvejstasten for \"Hurtig "
-"indsættelse\" for at sætte en tekststump ind.\n"
+"udløsernøglen i tekstredigeringen, efterfulgt af genvejstasten for “Hurtig "
+"indsættelse” for at sætte en tekststump ind.\n"
 "<b>Advarsel: Skal være unik per sprog. </b>"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:11
@@ -8695,7 +8696,7 @@ msgid ""
 "The file \"%s\" on the disk is more recent than the current buffer.\n"
 "Do you want to reload it?"
 msgstr ""
-"Filen \"%s\" på disken er nyere end den aktuelle buffer.\n"
+"Filen “%s” på disken er nyere end den aktuelle buffer.\n"
 "Vil du genindlæse den?"
 
 #: ../plugins/sourceview/sourceview.c:661
@@ -8704,7 +8705,7 @@ msgid ""
 "The file \"%s\" has been deleted on the disk.\n"
 "Do you want to close it?"
 msgstr ""
-"Filen \"%s\" er blevet slettet på disken.\n"
+"Filen “%s” er blevet slettet på disken.\n"
 "Vil du lukke den?"
 
 #. Could not open <filename>: <error message>
@@ -8716,7 +8717,7 @@ msgstr "Kunne ikke åbne %s: %s"
 #: ../plugins/sourceview/sourceview.c:745
 #, c-format
 msgid "The file \"%s\" is read-only! Edit anyway?"
-msgstr "Filen \"%s\" er skrivebeskyttet! Redigér alligevel?"
+msgstr "Filen “%s” er skrivebeskyttet! Redigér alligevel?"
 
 #. Could not open <filename>: <error message>
 #: ../plugins/sourceview/sourceview.c:804
@@ -8724,12 +8725,12 @@ msgstr "Filen \"%s\" er skrivebeskyttet! Redigér alligevel?"
 msgid "Could not save %s: %s"
 msgstr "Kunne ikke gemme %s: %s"
 
-#: ../plugins/sourceview/sourceview-io.c:318
+#: ../plugins/sourceview/sourceview-io.c:322
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr "Kunne ikke gemme filen da filnavnet endnu ikke er angivet"
 
-#: ../plugins/sourceview/sourceview-io.c:566
+#: ../plugins/sourceview/sourceview-io.c:570
 #, c-format
 msgid "New file %d"
 msgstr "Ny fil %d"
@@ -9414,52 +9415,52 @@ msgstr "_Find symbol …"
 msgid "Find Symbol"
 msgstr "Find symbol"
 
-#: ../plugins/symbol-db/plugin.c:1067
+#: ../plugins/symbol-db/plugin.c:1072
 #, c-format
 msgid "%s: Generating inheritances…"
 msgstr "%s: Genererer nedarvningsstruktur …"
 
 #. Translators: %s is the name of a system library
-#: ../plugins/symbol-db/plugin.c:1073
+#: ../plugins/symbol-db/plugin.c:1078
 #, c-format
 msgid "%s: %d file scanned out of %d"
 msgid_plural "%s: %d files scanned out of %d"
 msgstr[0] "%s: %d af %d fil scannet"
 msgstr[1] "%s: %d af %d filer scannet"
 
-#: ../plugins/symbol-db/plugin.c:1104
+#: ../plugins/symbol-db/plugin.c:1109
 #, c-format
 msgid "Generating inheritances…"
 msgstr "Genererer nedarvningsstruktur …"
 
-#: ../plugins/symbol-db/plugin.c:1106
+#: ../plugins/symbol-db/plugin.c:1111
 #, c-format
 msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
 msgstr[0] "%d af %d fil scannet"
 msgstr[1] "%d af %d filer scannet"
 
-#: ../plugins/symbol-db/plugin.c:1767
+#: ../plugins/symbol-db/plugin.c:1772
 msgid "Populating symbol database…"
 msgstr "Opbygger symboldatabase …"
 
-#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
+#: ../plugins/symbol-db/plugin.c:2154 ../plugins/symbol-db/plugin.c:2239
 msgid "Symbols"
 msgstr "Symboler"
 
-#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
+#: ../plugins/symbol-db/plugin.c:2174 ../plugins/symbol-db/plugin.c:2226
 msgid "Search"
 msgstr "Søg"
 
-#: ../plugins/symbol-db/plugin.c:2243
+#: ../plugins/symbol-db/plugin.c:2248
 msgid "SymbolDb popup actions"
 msgstr "Pop op-handlinger for symboldatabase"
 
-#: ../plugins/symbol-db/plugin.c:2251
+#: ../plugins/symbol-db/plugin.c:2256
 msgid "SymbolDb menu actions"
 msgstr "Menuhandlinger for symboldatabase"
 
-#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
+#: ../plugins/symbol-db/plugin.c:2586 ../plugins/symbol-db/plugin.c:2604
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Symboldatabase"
@@ -9587,7 +9588,7 @@ msgstr "Variabelliste"
 #: ../plugins/tools/dialog.c:178
 #, c-format
 msgid "Are you sure you want to delete the '%s' tool?"
-msgstr "Er du sikker på, at du vil slette \"%s\"-værktøjet?"
+msgstr "Er du sikker på, at du vil slette “%s”-værktøjet?"
 
 #: ../plugins/tools/dialog.c:344
 msgid "Tool"
@@ -9689,7 +9690,7 @@ msgstr "Mangler værktøjsnavn"
 #: ../plugins/tools/fileop.c:258
 #, c-format
 msgid "Unexpected element \"%s\""
-msgstr "Uventet element \"%s\""
+msgstr "Uventet element “%s”"
 
 #: ../plugins/tools/fileop.c:537
 msgid "Error when loading external tools"
@@ -10350,13 +10351,13 @@ msgstr "Kun tekst"
 #~ msgstr "Vis/skjul indrykningsguider"
 
 #~ msgid "Search for \"%s\" reached the end and wrapped around."
-#~ msgstr "Søgningen efter \"%s\" nåede bunden og blev fortsat fra toppen."
+#~ msgstr "Søgningen efter “%s” nåede bunden og blev fortsat fra toppen."
 
 #~ msgid ""
 #~ "Search for \"%s\" reached the end and wrapped around but no new match was "
 #~ "found."
 #~ msgstr ""
-#~ "Søgningen efter \"%s\" nåede bunden og blev fortsat fra toppen uden nye "
+#~ "Søgningen efter “%s” nåede bunden og blev fortsat fra toppen uden nye "
 #~ "resultater."
 
 #~ msgid "Delete selected branches"
@@ -10577,7 +10578,7 @@ msgstr "Kun tekst"
 #~ msgstr "Information om _kernens struktur"
 
 #~ msgid "Display the contents of kernel 'struct user' for current child"
-#~ msgstr "Vis indholdet af kernens \"struct-user\" for aktuelle barn"
+#~ msgstr "Vis indholdet af kernens “struct-user” for aktuelle barn"
 
 #~ msgid "Info _Global Variables"
 #~ msgstr "Information om _globale variable"
@@ -10700,8 +10701,7 @@ msgstr "Kun tekst"
 #~ msgid ""
 #~ "Source file name can only contain alphanumeric, '_', '-' or '.' characters"
 #~ msgstr ""
-#~ "Kildefilnavnet kan kun indeholde alfanumeriske tegn, samt \"_\", \"-\" og "
-#~ "\".\""
+#~ "Kildefilnavnet kan kun indeholde alfanumeriske tegn, samt “_”, “-” og “.”"
 
 #~ msgid "Source file is already in given target"
 #~ msgstr "Kildefilen findes allerede i det givne mål"
@@ -10725,17 +10725,17 @@ msgstr "Kun tekst"
 #~ "Are you sure you want to remove module \"%s\" and all its associated "
 #~ "packages?"
 #~ msgstr ""
-#~ "Er du sikker på, at du vil fjerne modulet \"%s\" og alle dets tilhørende "
+#~ "Er du sikker på, at du vil fjerne modulet “%s” og alle dets tilhørende "
 #~ "pakker?"
 
 #~ msgid "Are you sure you want to remove package \"%s\"?"
-#~ msgstr "Er du sikker på, at du vil fjerne pakken \"%s\"?"
+#~ msgstr "Er du sikker på, at du vil fjerne pakken “%s”?"
 
 #~ msgid "Enter new variable"
 #~ msgstr "Indtast ny variabel"
 
 #~ msgid "Are you sure you want to remove variable \"%s\"?"
-#~ msgstr "Er du sikker på, at du vil fjerne variablen \"%s\"?"
+#~ msgstr "Er du sikker på, at du vil fjerne variablen “%s”?"
 
 #~ msgid "Project:"
 #~ msgstr "Projekt:"
@@ -10918,7 +10918,7 @@ msgstr "Kun tekst"
 #~ msgstr "Vælg venligst en fil."
 
 #~ msgid "Git: Added remote branch \"%s\"."
-#~ msgstr "Git: Tilføjede den fjerne gren \"%s\"."
+#~ msgstr "Git: Tilføjede den fjerne gren “%s”."
 
 #~ msgid "Git: Fetching…"
 #~ msgstr "Git: Henter …"
@@ -10933,10 +10933,10 @@ msgstr "Kun tekst"
 #~ msgstr "Git: Filer hentet."
 
 #~ msgid "Git: Created branch \"%s\"."
-#~ msgstr "Git: Oprettede grenen \"%s\"."
+#~ msgstr "Git: Oprettede grenen “%s”."
 
 #~ msgid "Git: Created tag \"%s\"."
-#~ msgstr "Git: Oprettede mærket \"%s\"."
+#~ msgstr "Git: Oprettede mærket “%s”."
 
 #~ msgid "Please select branches to delete"
 #~ msgstr "Vælg venligst grenene, der skal slettes"
@@ -11260,7 +11260,7 @@ msgstr "Kun tekst"
 #~ "category \"%s\"?"
 #~ msgstr ""
 #~ "Er du sikker på, at du vil fjerne alle de fuldførte gøremål i kategorien "
-#~ "\"%s\"?"
+#~ "“%s”?"
 
 #~ msgid "Export task list"
 #~ msgstr "Eksportér opgaveliste"
@@ -11330,7 +11330,7 @@ msgstr "Kun tekst"
 #~ msgstr "Høj"
 
 #~ msgid "When you delete the category \"%s\", all containing items are lost"
-#~ msgstr "Når du sletter kategorien \"%s\", vil alle tilhørende punkter gå tabt"
+#~ msgstr "Når du sletter kategorien “%s”, vil alle tilhørende punkter gå tabt"
 
 #~ msgid "Delete"
 #~ msgstr "Slet"
@@ -11490,7 +11490,7 @@ msgstr "Kun tekst"
 #~ "Field \"%s\" must start with a letter, a digit or an underscore and contain "
 #~ "only letters, digits, underscore, minus and dot. Please fix it."
 #~ msgstr ""
-#~ "Feltet \"%s\" skal begynde med et bogstav, et ciffer eller en bundstreg og "
+#~ "Feltet “%s” skal begynde med et bogstav, et ciffer eller en bundstreg og "
 #~ "indeholde kun bogstaver, cifre, bundstreger, minus og punktum.  Fiks det "
 #~ "venligst."
 
@@ -11499,7 +11499,7 @@ msgstr "Kun tekst"
 #~ "separator and contain only letters, digits, underscore, directory separator, "
 #~ "minus and dot. Please fix it."
 #~ msgstr ""
-#~ "Feltet \"%s\" skal begynde med et bogstav, et ciffer eller en bundstreg og "
+#~ "Feltet “%s” skal begynde med et bogstav, et ciffer eller en bundstreg og "
 #~ "indeholde kun bogstaver, cifre, bundstreger, minus og punktum.  Fiks det "
 #~ "venligst."
 
@@ -11677,10 +11677,10 @@ msgstr "Kun tekst"
 #~ msgstr "Find:"
 
 #~ msgid "The match \"%s\" was not found. Wrap search around the document?"
-#~ msgstr "Intet resultat for \"%s\". Ombryd til dokumentets begyndelse?"
+#~ msgstr "Intet resultat for “%s”. Ombryd til dokumentets begyndelse?"
 
 #~ msgid "The match \"%s\" was not found."
-#~ msgstr "Intet resultat for \"%s\"."
+#~ msgstr "Intet resultat for “%s”."
 
 #~ msgid "The maximum number of results has been reached."
 #~ msgstr "Det maksimale antal træfninger er nået."
@@ -11887,7 +11887,7 @@ msgstr "Kun tekst"
 #~ msgstr "Der er ingen associeret redigering for designeren"
 
 #~ msgid "Unknown editor language \"%s\""
-#~ msgstr "Ukendt redigeringssprog \"%s\""
+#~ msgstr "Ukendt redigeringssprog “%s”"
 
 #~ msgid "Error while adding a new handler stub: %s"
 #~ msgstr "Fejl under tilføjelse af ny håndteringsstub: %s"
@@ -11901,8 +11901,8 @@ msgstr "Kun tekst"
 #~ msgid ""
 #~ "To avoid this message turn off \"%s\" flag in Preferences->Glade GUI Designer"
 #~ msgstr ""
-#~ "Slå flaget \"%s\" fra i Indstillinger->Glade grænsefladedesigner for at "
-#~ "undgå denne meddelelse"
+#~ "Slå flaget “%s” fra i Indstillinger->Glade grænsefladedesigner for at undgå "
+#~ "denne meddelelse"
 
 #~ msgid "Couldn't find an associated document"
 #~ msgstr "Kunne ikke finde et tilknyttet dokument"
@@ -12114,7 +12114,7 @@ msgstr "Kun tekst"
 #~ msgstr "<b>Installér</b>"
 
 #~ msgid "Program '%s' does not exists"
-#~ msgstr "Programmet \"%s\" findes ikke"
+#~ msgstr "Programmet “%s” findes ikke"
 
 #~ msgid "C_onfigure Project..."
 #~ msgstr "K_onfigurér projekt …"
@@ -12199,7 +12199,7 @@ msgstr "Kun tekst"
 #~ msgstr "_Slet mærke …"
 
 #~ msgid "Unknown language of the editor \"%s\""
-#~ msgstr "Ukendt sprog for redigeringen \"%s\""
+#~ msgstr "Ukendt sprog for redigeringen “%s”"
 
 #~ msgid "n/a"
 #~ msgstr "-"
@@ -12946,10 +12946,10 @@ msgstr "Kun tekst"
 #~ msgstr "linjer over og under mållinjen."
 
 #~ msgid "Failed to create pipe to '%s': %s"
-#~ msgstr "Kunne ikke oprette pipe til \"%s\": %s"
+#~ msgstr "Kunne ikke oprette pipe til “%s”: %s"
 
 #~ msgid "Failed to create child process '%s': %s"
-#~ msgstr "Kunne ikke oprette underprocessen \"%s\": %s"
+#~ msgstr "Kunne ikke oprette underprocessen “%s”: %s"
 
 #~ msgid "Reached the end of the input file or error in parsing valgrind output."
 #~ msgstr ""
@@ -12997,7 +12997,7 @@ msgstr "Kun tekst"
 #~ msgstr "Kildefilnavn indeholder"
 
 #~ msgid "Invalid regular expression: '%s': %s"
-#~ msgstr "Ugyldigt regulært udtryk \"%s\": %s"
+#~ msgstr "Ugyldigt regulært udtryk “%s”: %s"
 
 #~ msgid "Valgrind Suppression Rules"
 #~ msgstr "Valgrind-underkendelsesregler"
@@ -13095,7 +13095,7 @@ msgstr "Kun tekst"
 #~ msgstr "Kald-kæde:"
 
 #~ msgid "Error saving to suppression file '%s': %s"
-#~ msgstr "Fejl ved gemning til underkendelsesfilen \"%s\": %s"
+#~ msgstr "Fejl ved gemning til underkendelsesfilen “%s”: %s"
 
 #~ msgid "You have forgotten to name your suppression rule."
 #~ msgstr "Du har glemt at navngive din underkendelsesregel."
@@ -13170,13 +13170,13 @@ msgstr "Kun tekst"
 #~ msgstr "Indlæst: "
 
 #~ msgid "Failed to read '%s': %s"
-#~ msgstr "Kunne ikke læse \"%s\": %s"
+#~ msgstr "Kunne ikke læse “%s”: %s"
 
 #~ msgid "No read permission for: %s"
 #~ msgstr "Ingen læserettigheder til: %s"
 
 #~ msgid "Failed to read '%s': XML parse error"
-#~ msgstr "Kunne ikke læse \"%s\": XML-fortolkningsfejl"
+#~ msgstr "Kunne ikke læse “%s”: XML-fortolkningsfejl"
 
 #~ msgid "Unable to complete file copy"
 #~ msgstr "Kan ikke fuldføre kopiering af fil"
@@ -13366,22 +13366,22 @@ msgstr "Kun tekst"
 #~ msgstr "Understøttede kodninger"
 
 #~ msgid "make: Entering directory '%s'"
-#~ msgstr "make: Tilgår mappen \"%s\""
+#~ msgstr "make: Tilgår mappen “%s”"
 
 #~ msgid "make[%d]: Entering directory `%s'"
-#~ msgstr "make[%d]: Tilgår mappen \"%s\""
+#~ msgstr "make[%d]: Tilgår mappen “%s”"
 
 #~ msgid "make: Entering directory `%s'"
-#~ msgstr "make: Tilgår mappen \"%s\""
+#~ msgstr "make: Tilgår mappen “%s”"
 
 #~ msgid "make: Leaving directory '%s'"
-#~ msgstr "make: Forlader mappen \"%s\""
+#~ msgstr "make: Forlader mappen “%s”"
 
 #~ msgid "make[%d]: Leaving directory `%s'"
-#~ msgstr "make[%d]: Forlader mappen \"%s\""
+#~ msgstr "make[%d]: Forlader mappen “%s”"
 
 #~ msgid "make: Leaving directory `%s'"
-#~ msgstr "make: Forlader mappen \"%s\""
+#~ msgstr "make: Forlader mappen “%s”"
 
 #~ msgid "Configure Parameters:"
 #~ msgstr "Indstil parametre:"
@@ -13809,4 +13809,5 @@ msgstr "Kun tekst"
 
 #~ msgid "But I prefer tea."
 #~ msgstr "Men jeg foretrækker the."
+
 
