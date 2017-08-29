@@ -9,21 +9,31 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 23.32\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=anjuta"
-"&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2014-09-17 14:44+0000\n"
-"PO-Revision-Date: 2014-09-17 18:15+0200\n"
-"Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=anjuta&keywords=I18N+L10N&component=core application\n"
+"POT-Creation-Date: 2017-06-28 17:31+0000\n"
+"PO-Revision-Date: 2015-09-22 20:44+0200\n"
+"Last-Translator: Marko M. Kostić (Marko M. Kostić) <marko.m.kostic@gmail."
+"com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
-"Language: sr@latin\n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
-"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
+"X-Generator: Poedit 1.8.4\n"
 
-#: ../anjuta.appdata.xml.in.h:1
+#: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
+msgid "Anjuta"
+msgstr "Anjuta"
+
+#: ../anjuta.appdata.xml.in.h:2 ../anjuta.desktop.in.in.h:3
+msgid "Develop software in an integrated development environment"
+msgstr "Programirajte u integrisanom razvojnom okruženju"
+
+#: ../anjuta.appdata.xml.in.h:3
 msgid ""
 "Anjuta DevStudio is a versatile software development studio featuring a "
 "number of advanced programming facilities including project management, "
@@ -38,7 +48,7 @@ msgstr ""
 "obezbeđivanje jednostavnog i upotrebljivo korisničko sučelje, još moćnije za "
 "delotvorno programiranje."
 
-#: ../anjuta.appdata.xml.in.h:2
+#: ../anjuta.appdata.xml.in.h:4
 msgid ""
 "Anjuta is very extensible with plugins. Almost all features in Anjuta are "
 "implemented using plugins which can be dynamically enabled or disabled. You "
@@ -55,7 +65,7 @@ msgstr ""
 "složenosti. Koristeći priključke, možete da proširite Anjutu vašim ličnim "
 "funkcijama."
 
-#: ../anjuta.appdata.xml.in.h:3
+#: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
 "templates. The selection includes simple generic, flat (no subdirectory), GTK"
@@ -67,17 +77,9 @@ msgstr ""
 "+, Gnomove, Javine, Pitonove projekte i mnoge druge. Novi šabloni mogu biti "
 "lako preuzeti i instalirani."
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
-msgid "Anjuta"
-msgstr "Anjuta"
-
 #: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
 msgstr "Integrisano razvojno okruženje"
-
-#: ../anjuta.desktop.in.in.h:3
-msgid "Develop software in an integrated development environment"
-msgstr "Programirajte u integrisanom razvojnom okruženju"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
@@ -139,12 +141,12 @@ msgstr "Kolona %i"
 msgid "Column 1"
 msgstr "Kolona 1"
 
-#: ../libanjuta/anjuta-convert.c:74 ../libanjuta/anjuta-convert.c:111
+#: ../libanjuta/anjuta-convert.c:75 ../libanjuta/anjuta-convert.c:113
 #, c-format
 msgid "The file you are trying to open contains an invalid byte sequence."
 msgstr "Datoteka koju pokušavate da otvorite sadrži neispravan niz bajtova."
 
-#: ../libanjuta/anjuta-convert.c:168 ../libanjuta/anjuta-convert.c:207
+#: ../libanjuta/anjuta-convert.c:170 ../libanjuta/anjuta-convert.c:209
 #, c-format
 msgid ""
 "Anjuta was not able to automatically determine the encoding of the file you "
@@ -368,7 +370,7 @@ msgstr "Ne mogu da izvršim naredbu: „%s“"
 msgid "execvp failed"
 msgstr "execvp nije uspeo"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2399
 msgid "Anjuta Shell"
 msgstr "Anjutina školjka"
 
@@ -398,7 +400,7 @@ msgid "Load"
 msgstr "Učitaj"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2015
+#: ../libanjuta/anjuta-plugin-manager.c:2013
 msgid "Available Plugins"
 msgstr "Dostupni priključci"
 
@@ -406,11 +408,11 @@ msgstr "Dostupni priključci"
 msgid "Preferred plugins"
 msgstr "Poželjni priključci"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1157
+#: ../libanjuta/anjuta-plugin-manager.c:1155
 msgid "Only show user activatable plugins"
 msgstr "Prikazuj samo priključke koje korisnik može da pokrene"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1197
+#: ../libanjuta/anjuta-plugin-manager.c:1195
 msgid ""
 "These are the plugins selected by you when you have been prompted to choose "
 "one of many suitable plugins. Removing the preferred plugin will let you "
@@ -420,71 +422,71 @@ msgstr ""
 "više mogućih priključaka. Kada uklonite poželjni priključak tada ćete moći da "
 "odaberete drugi priključak."
 
-#: ../libanjuta/anjuta-plugin-manager.c:1223
+#: ../libanjuta/anjuta-plugin-manager.c:1221
 msgid "Forget selected plugin"
 msgstr "Zaboravi označeni priključak"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1355
+#: ../libanjuta/anjuta-plugin-manager.c:1515 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "Odaberite priključak"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1358
+#: ../libanjuta/anjuta-plugin-manager.c:1356
 #: ../plugins/debug-manager/queue.c:528
 msgid "Please select a plugin to activate"
 msgstr "Odaberite priključak za pokretanje"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1372
+#: ../libanjuta/anjuta-plugin-manager.c:1370
 #, c-format
 msgid "No plugin is able to load other plugins in %s"
 msgstr "Nijedan priključak nije u mogućnosti da učita ostale priključke u %s"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1518
+#: ../libanjuta/anjuta-plugin-manager.c:1516
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Odaberite priključak za pokretanje</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2044
+#: ../libanjuta/anjuta-plugin-manager.c:2042
 msgid "Remember this selection"
 msgstr "Zapamti ovaj izbor"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2382
+#: ../libanjuta/anjuta-plugin-manager.c:2380
 msgid "Profiles"
 msgstr "Profili"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2381
 msgid "Current stack of profiles"
 msgstr "Trenutni stek profila"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2388
+#: ../libanjuta/anjuta-plugin-manager.c:2386
 msgid "Available plugins"
 msgstr "Dostupni priključci"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2389
+#: ../libanjuta/anjuta-plugin-manager.c:2387
 msgid "Currently available plugins found in plugin paths"
 msgstr "Dostupni priključci iz podešenih putanja"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2395
+#: ../libanjuta/anjuta-plugin-manager.c:2393
 msgid "Activated plugins"
 msgstr "Pokrenuti priključci"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin-manager.c:2394
 msgid "Currently activated plugins"
 msgstr "Trenutno pokrenuti priključci"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2402
+#: ../libanjuta/anjuta-plugin-manager.c:2400
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Anjutina školjka za koju su priključci pravljeni"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2410
+#: ../libanjuta/anjuta-plugin-manager.c:2408
 msgid "Anjuta Status"
 msgstr "Stanje Anjute"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2411
+#: ../libanjuta/anjuta-plugin-manager.c:2409
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "Stanje Anjute koje se koristi za učitavanje i uklanjanje priključaka"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2564
+#: ../libanjuta/anjuta-plugin-manager.c:2562
 msgid "Loading:"
 msgstr "Učitavam:"
 
@@ -1302,11 +1304,11 @@ msgstr "Ne koristi prefiks:"
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
 msgid ""
-"Do not rename the target with an optional prefix, used to avoid overwritting "
+"Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
 "Nemoj preimenovati metu sa opcionalnim prefiksom, koristi se za izbegavanje "
-"prepisivanja programa sistema. "
+"prepisivanja sistemskog programa. "
 
 #: ../plugins/am-project/am-properties.c:483
 #: ../plugins/am-project/am-properties.c:658
@@ -1467,9 +1469,6 @@ msgid "Install"
 msgstr "Instaliraj"
 
 #: ../plugins/build-basic-autotools/build.c:578
-#| msgid ""
-#| "Before using this new configuration, the default one needs to be removed. "
-#| "Do you want to do that ?"
 msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
 "you want to do that?"
@@ -1501,8 +1500,7 @@ msgstr "Izaberite direktorijum izgradnje unutar direktorijuma projekta"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
-#: ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "Osnovno"
 
@@ -1619,8 +1617,7 @@ msgstr "Napuštam: %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
-#: ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "upozorenje:"
 
@@ -1633,8 +1630,7 @@ msgstr "upozorenje:-staro"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
-#: ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "greška:"
 
@@ -2145,8 +2141,7 @@ msgstr "Vrsta"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "Argumenti"
 
@@ -2209,7 +2204,7 @@ msgid "Patch-Style diff"
 msgstr "Razlike u stilu zakrpe"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2197
+#: ../plugins/symbol-db/plugin.c:2206
 msgid "Local"
 msgstr "Lokalno"
 
@@ -2725,8 +2720,7 @@ msgid "Shared libraries"
 msgstr "Deljene biblioteke"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937
-#: ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Signali jezgra"
 
@@ -2955,6 +2949,8 @@ msgstr "Onemogući tačku prekida"
 msgid "Disable a breakpoint"
 msgstr "Onemogućava tačku prekida"
 
+#. Translators: Enabled refers to a breakpoint. It is a column name, like
+#. * other words.
 #. This enable an user defined command
 #: ../plugins/debug-manager/breakpoints.c:1953
 #: ../plugins/tools/anjuta-tools.ui.h:5
@@ -3030,15 +3026,13 @@ msgstr "Učitan"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "Pa_uziraj program"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Privremeno obustavlja izvršavanje programa"
 
@@ -3128,35 +3122,29 @@ msgstr "Dodaje dodatne putanje do izvornih kodova"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913
-#: ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "Naredba ispravljača grešaka…"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Proizvoljna naredba ispravljača grešaka"
 
-#: ../plugins/debug-manager/plugin.c:921
-#: ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Info"
 
-#: ../plugins/debug-manager/plugin.c:929
-#: ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Deljene biblioteke"
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Pokaži plan deljenih biblioteka"
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Pokaži signale jezgra"
 
@@ -3335,7 +3323,7 @@ msgstr "Okvir"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2155
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2164
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Datoteka"
@@ -4240,8 +4228,8 @@ msgid "Editor syntax highlighting styles"
 msgstr "Stil isticanja koda uređivača"
 
 #: ../plugins/document-manager/plugin.c:416
-msgid "Editor text formating"
-msgstr "Uobličavanje teksta uređivača"
+msgid "Editor text formatting"
+msgstr "Formatiranje teksta uređivača"
 
 #: ../plugins/document-manager/plugin.c:417
 msgid "Simple searching"
@@ -4328,15 +4316,15 @@ msgstr ""
 "Pretraga za „%s“ je stigla do kraja dokumenta i nastavljena je od početka ali "
 "ništa nije nađeno."
 
-#: ../plugins/document-manager/search-box.c:917
+#: ../plugins/document-manager/search-box.c:920
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr "Koristite priručni izbornik ikonice „Nađi“ za više opcija pretrage"
 
-#: ../plugins/document-manager/search-box.c:988
+#: ../plugins/document-manager/search-box.c:991
 msgid "Replace"
 msgstr "Zameni"
 
-#: ../plugins/document-manager/search-box.c:993
+#: ../plugins/document-manager/search-box.c:996
 msgid "Replace all"
 msgstr "Zameni sve"
 
@@ -4607,7 +4595,7 @@ msgstr "Sam izaberi tekući dokument"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2209
+#: ../plugins/symbol-db/plugin.c:2218
 msgid "Global"
 msgstr "Opšte"
 
@@ -4652,11 +4640,11 @@ msgstr "Ne možete da preimenujete /!"
 
 #: ../plugins/file-manager/file-view.c:153
 msgid ""
-"An error has occured!\n"
-"Maybe you permissions're insuficient or the filename is wrong"
+"An error has occurred!\n"
+"Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
 "Došlo je do greške!\n"
-"Možda vaša ovlašćenja nisu dovoljna ili je pogrešan naziv datoteke"
+"Možda nemate dovoljno ovlašćenja ili je ime datoteke pogrešno"
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
@@ -5281,6 +5269,7 @@ msgstr "Unesite udaljeni naziv."
 msgid "Please enter a URL"
 msgstr "Unesite adresu"
 
+#. Translators: Remote means the git remote repository
 #: ../plugins/git/git-add-remote-pane.c:182
 msgid "Add Remote"
 msgstr "Dodaj udaljeno"
@@ -5309,8 +5298,8 @@ msgstr "Unesite reviziju."
 msgid "Cherry Pick"
 msgstr "Probiranje"
 
-#: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
+#: ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "Unesite poruku dnevnika."
 
@@ -6004,8 +5993,7 @@ msgstr ""
 msgid "Failed to activate the JHBuild Plugin: %s"
 msgstr "Nisam uspeo da pokrenem priključak JH graditelja: %s"
 
-#: ../plugins/js-debugger/debugger-js.c:548
-#: ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "Greška: ne mogu da povežem port"
 
@@ -6311,12 +6299,10 @@ msgid "Copy message"
 msgstr "Umnožite poruku"
 
 #: ../plugins/message-view/plugin.c:83
-#| msgid "_Copy Message"
 msgid "_Copy All Messages"
 msgstr "_Umnoži sve poruke"
 
 #: ../plugins/message-view/plugin.c:84
-#| msgid "_Copy Message"
 msgid "Copy All Messages"
 msgstr "Umnožite sve poruke"
 
@@ -6517,8 +6503,7 @@ msgstr "Uvezite postojeći projekat samoalata u Anjutu"
 msgid "Project from Existing Sources"
 msgstr "Projekat iz postojećih izvora"
 
-#: ../plugins/project-import/plugin.c:82
-#: ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "Datoteka „%s“ već postoji. Da li želite da je zamenite?"
@@ -6958,7 +6943,7 @@ msgstr "Osveži pregled projekta…"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2160
+#: ../plugins/symbol-db/plugin.c:2169
 msgid "Project"
 msgstr "Projekat"
 
@@ -8134,7 +8119,7 @@ msgid "Require SDL version:"
 msgstr "Zahteva SDL izdanje:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-msgid "Mininum SDL version required"
+msgid "Minimum SDL version required"
 msgstr "Najmanje potrebno SDL izdanje"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
@@ -8435,15 +8420,11 @@ msgid ""
 msgstr "<b>Greška:</b> Taster-prekidač je već u upotrebi za jedan od jezika!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
-#| msgid ""
-#| "<b>Error:</b> The trigger key can only contain alphanumeric characters "
-#| "and _ !"
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
 "\"_\"!"
 msgstr ""
-"<b>Greška:</b> Taster-prekidač može da sadrži samo alfanumeričke znake i "
-"„_“!"
+"<b>Greška:</b> Taster-prekidač može da sadrži samo alfanumeričke znake i „_“!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:51
 msgid "<b>Error:</b> You haven't entered a trigger key for the snippet!"
@@ -8716,12 +8697,12 @@ msgstr "Datoteka „%s“ je samo za čitanje! Ipak želite da je uredite?"
 msgid "Could not save %s: %s"
 msgstr "Ne mogu da sačuvam: %s: %s"
 
-#: ../plugins/sourceview/sourceview-io.c:308
+#: ../plugins/sourceview/sourceview-io.c:322
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr "Ne mogu da sačuvam datoteku jer naziv datoteke nije određen"
 
-#: ../plugins/sourceview/sourceview-io.c:556
+#: ../plugins/sourceview/sourceview-io.c:570
 #, c-format
 msgid "New file %d"
 msgstr "Nova datoteka %d"
@@ -8775,17 +8756,14 @@ msgid "Create a new project"
 msgstr "Napravite novi projekat"
 
 #: ../plugins/starter/starter.ui.h:2
-#| msgid "Import project"
 msgid "Import a project"
 msgstr "Uvezite projekat"
 
 #: ../plugins/starter/starter.ui.h:3
-#| msgid "Search for next appearance of term."
 msgid "Search for example code"
 msgstr "Potražite primere koda"
 
 #: ../plugins/starter/starter.ui.h:4
-#| msgid "Man Documentation"
 msgid "View local Anjuta documentation"
 msgstr "Pogledajte mesnu dokumentaciju Anjute"
 
@@ -8798,12 +8776,10 @@ msgid "View online library documentation"
 msgstr "Pogledajte dokumentaciju biblioteke na mreži"
 
 #: ../plugins/starter/starter.ui.h:7
-#| msgid "No recently used resource found with URI \"%s\""
 msgid "Remove recently used project from list"
 msgstr "Uklonite nedavno korišćeni projekat sa spiska"
 
 #: ../plugins/starter/starter.ui.h:8
-#| msgid "_Install Project"
 msgid "Unlist Project"
 msgstr "Poništi spisak projekata"
 
@@ -9407,13 +9383,13 @@ msgstr "_Nađi simbol…"
 msgid "Find Symbol"
 msgstr "Nađite simbol"
 
-#: ../plugins/symbol-db/plugin.c:1067
+#: ../plugins/symbol-db/plugin.c:1072
 #, c-format
 msgid "%s: Generating inheritances…"
 msgstr "%s: Generišem nasleđa…"
 
 #. Translators: %s is the name of a system library
-#: ../plugins/symbol-db/plugin.c:1073
+#: ../plugins/symbol-db/plugin.c:1078
 #, c-format
 msgid "%s: %d file scanned out of %d"
 msgid_plural "%s: %d files scanned out of %d"
@@ -9422,12 +9398,12 @@ msgstr[1] "%s: %d datoteke su skenirane od %d"
 msgstr[2] "%s: %d datoteka je skenirano od %d"
 msgstr[3] "%s: %d datoteka je skenirana od %d"
 
-#: ../plugins/symbol-db/plugin.c:1104
+#: ../plugins/symbol-db/plugin.c:1109
 #, c-format
 msgid "Generating inheritances…"
 msgstr "Generišem nasleđa…"
 
-#: ../plugins/symbol-db/plugin.c:1106
+#: ../plugins/symbol-db/plugin.c:1111
 #, c-format
 msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
@@ -9436,27 +9412,27 @@ msgstr[1] "%d datoteke su skenirane od %d"
 msgstr[2] "%d datoteka je skenirano od %d"
 msgstr[3] "%d datoteka je skenirana od %d"
 
-#: ../plugins/symbol-db/plugin.c:1765
+#: ../plugins/symbol-db/plugin.c:1772
 msgid "Populating symbol database…"
 msgstr "Popunjavam bazu podataka simbola…"
 
-#: ../plugins/symbol-db/plugin.c:2145 ../plugins/symbol-db/plugin.c:2230
+#: ../plugins/symbol-db/plugin.c:2154 ../plugins/symbol-db/plugin.c:2239
 msgid "Symbols"
 msgstr "Simboli"
 
-#: ../plugins/symbol-db/plugin.c:2165 ../plugins/symbol-db/plugin.c:2217
+#: ../plugins/symbol-db/plugin.c:2174 ../plugins/symbol-db/plugin.c:2226
 msgid "Search"
 msgstr "Traži"
 
-#: ../plugins/symbol-db/plugin.c:2239
+#: ../plugins/symbol-db/plugin.c:2248
 msgid "SymbolDb popup actions"
 msgstr "Radnje iskakanja BP simbola"
 
-#: ../plugins/symbol-db/plugin.c:2247
+#: ../plugins/symbol-db/plugin.c:2256
 msgid "SymbolDb menu actions"
 msgstr "Radnje izbornika BP simbola"
 
-#: ../plugins/symbol-db/plugin.c:2577 ../plugins/symbol-db/plugin.c:2595
+#: ../plugins/symbol-db/plugin.c:2586 ../plugins/symbol-db/plugin.c:2604
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Baza podataka simbola"
@@ -9857,7 +9833,6 @@ msgid "Command line parameters"
 msgstr "Parametri linije naredbi"
 
 #: ../src/about.c:186
-#| msgid "Copyright (c) Naba Kumar"
 msgid "Copyright © Naba Kumar"
 msgstr "Autorska prava © Naba Kumar"
 
