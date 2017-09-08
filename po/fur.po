@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2017-06-28 17:31+0000\n"
-"PO-Revision-Date: 2017-08-01 14:41+0200\n"
+"POT-Creation-Date: 2017-08-01 12:42+0000\n"
+"PO-Revision-Date: 2017-09-09 00:01+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <f.t.public@gmail.com>\n"
 "Language: fur\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.2\n"
+"X-Generator: Poedit 2.0.3\n"
 
 #: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
@@ -2100,7 +2100,7 @@ msgstr "Argoments"
 
 #: ../plugins/class-gen/window.c:738
 msgid "Nick"
-msgstr ""
+msgstr "Sorenon"
 
 #: ../plugins/class-gen/window.c:739
 msgid "Blurb"
@@ -2108,7 +2108,7 @@ msgstr ""
 
 #: ../plugins/class-gen/window.c:740
 msgid "GType"
-msgstr ""
+msgstr "GType"
 
 #: ../plugins/class-gen/window.c:741
 msgid "ParamSpec"
@@ -2138,11 +2138,11 @@ msgstr ""
 
 #: ../plugins/class-gen/window.c:1232
 msgid "XML description of the user interface"
-msgstr ""
+msgstr "Descrizion XML de interface utent"
 
 #: ../plugins/cvs-plugin/anjuta-cvs.plugin.in.h:1
 msgid "CVS Plugin"
-msgstr ""
+msgstr "Plugin CVS"
 
 #: ../plugins/cvs-plugin/anjuta-cvs.plugin.in.h:2
 msgid "A version control system plugin"
@@ -2159,7 +2159,7 @@ msgstr ""
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
 #: ../plugins/symbol-db/plugin.c:2206
 msgid "Local"
-msgstr ""
+msgstr "Locâl"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:4
 msgid "Extern (rsh)"
@@ -2196,25 +2196,25 @@ msgstr ""
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:12
 #: ../plugins/subversion/anjuta-subversion.ui.h:4
 msgid "Choose file or directory to add:"
-msgstr ""
+msgstr "Sielç il file o la cartele di zontâ:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:13
 #: ../plugins/subversion/anjuta-subversion.ui.h:5
 #: ../plugins/tools/anjuta-tools.ui.h:8
 msgid "Browse…"
-msgstr ""
+msgstr "Esplore…"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:14
 msgid "File is binary"
-msgstr ""
+msgstr "Il file al è binari"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:15
 msgid "CVS: Remove file/directory"
-msgstr ""
+msgstr "CVS: gjave file/cartele"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:16
 msgid "Choose file or directory to remove:"
-msgstr ""
+msgstr "Sielç il file o la cartele di gjavâ:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:17
 msgid ""
@@ -2246,7 +2246,7 @@ msgstr ""
 #: ../plugins/git/anjuta-git.ui.h:62
 #: ../plugins/subversion/anjuta-subversion.ui.h:24
 msgid "Revision:"
-msgstr ""
+msgstr "Revision:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:25
 #: ../plugins/subversion/anjuta-subversion.ui.h:13
@@ -2261,12 +2261,12 @@ msgstr "Opzions:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:27
 msgid "CVS: Update file/directory"
-msgstr ""
+msgstr "CVS: inzorne file/cartele"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:28
 #: ../plugins/subversion/anjuta-subversion.ui.h:56
 msgid "Choose file or directory to update:"
-msgstr ""
+msgstr "Sielç il file o la cartele di inzornâ:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:29
 msgid "Delete empty directories"
@@ -2287,15 +2287,15 @@ msgstr ""
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:33
 msgid "CVS: Status"
-msgstr ""
+msgstr "CVS: Stât"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:34
 msgid "CVS: Status from file/directory"
-msgstr ""
+msgstr "CVS: Stât dal file/cartele"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:35
 msgid "Choose file or directory to get the status from:"
-msgstr ""
+msgstr "Sielç il file o la cartele che di chê vê il stât:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:36
 msgid "Be verbose"
@@ -2335,11 +2335,11 @@ msgstr "Opzions"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:44
 msgid "CVS: Import"
-msgstr ""
+msgstr "CVS: Impuarte"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:45
 msgid "Project root directory:"
-msgstr ""
+msgstr "Cartele lidrîs dal progjet:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:46
 msgid "Module name:"
@@ -2347,19 +2347,19 @@ msgstr "Non modul:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:47
 msgid "CVSROOT:"
-msgstr ""
+msgstr "CVSROOT:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:48
 msgid "Vendor tag:"
-msgstr ""
+msgstr "Etichete furnidôr:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:49
 msgid "Release tag:"
-msgstr ""
+msgstr "Etichete publicazion:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:50
 msgid "Module Details:"
-msgstr ""
+msgstr "Detais modul:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:51
 #: ../plugins/subversion/anjuta-subversion.ui.h:62
@@ -2373,7 +2373,7 @@ msgstr "Non utent:"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:53
 msgid "Repository:"
-msgstr ""
+msgstr "Repository:"
 
 #: ../plugins/cvs-plugin/cvs-callbacks.c:46
 msgid "Please enter a filename!"
@@ -2382,7 +2382,7 @@ msgstr "Inserìs un non di file!"
 #: ../plugins/cvs-plugin/cvs-callbacks.c:59
 #, c-format
 msgid "Please fill field: %s"
-msgstr ""
+msgstr "Jemplâ il cjamp: %s"
 
 #: ../plugins/cvs-plugin/cvs-callbacks.c:78
 msgid "CVS command is running! Please wait until it is finished!"
@@ -2399,15 +2399,15 @@ msgstr ""
 
 #: ../plugins/cvs-plugin/cvs-callbacks.c:433
 msgid "CVSROOT"
-msgstr ""
+msgstr "CVSROOT"
 
 #: ../plugins/cvs-plugin/cvs-callbacks.c:439
 msgid "Vendor"
-msgstr ""
+msgstr "Furnidôr"
 
 #: ../plugins/cvs-plugin/cvs-callbacks.c:442
 msgid "Release"
-msgstr ""
+msgstr "Publicazion"
 
 #: ../plugins/cvs-plugin/cvs-callbacks.c:458
 msgid "Are you sure that you do not want a log message?"
@@ -2432,13 +2432,13 @@ msgstr ""
 #: ../plugins/cvs-plugin/cvs-execute.c:233 ../plugins/cvs-plugin/plugin.c:472
 #: ../plugins/cvs-plugin/plugin.c:479
 msgid "CVS"
-msgstr ""
+msgstr "CVS"
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/cvs-plugin/plugin.c:46 ../plugins/cvs-plugin/plugin.c:121
 msgid "_CVS"
-msgstr ""
+msgstr "_CVS"
 
 #. Action name
 #. Stock icon, if any
@@ -2450,7 +2450,7 @@ msgstr "_Zonte"
 #. short-cut
 #: ../plugins/cvs-plugin/plugin.c:56
 msgid "Add a new file/directory to the CVS tree"
-msgstr ""
+msgstr "Zonte un gnûf file/cartele al arbul CVS"
 
 #. Action name
 #. Stock icon, if any
@@ -2462,7 +2462,7 @@ msgstr "_Gjave"
 #. short-cut
 #: ../plugins/cvs-plugin/plugin.c:64
 msgid "Remove a file/directory from CVS tree"
-msgstr ""
+msgstr "Gjave un file/cartele dal arbul CVS"
 
 #. Action name
 #. Stock icon, if any
@@ -2474,7 +2474,7 @@ msgstr ""
 #. short-cut
 #: ../plugins/cvs-plugin/plugin.c:72 ../plugins/cvs-plugin/plugin.c:131
 msgid "Commit your changes to the CVS tree"
-msgstr ""
+msgstr "Mande lis tôs modifichis al arbul CVS"
 
 #. Action name
 #. Stock icon, if any
@@ -2487,7 +2487,7 @@ msgstr "_Inzorne"
 #. short-cut
 #: ../plugins/cvs-plugin/plugin.c:80 ../plugins/cvs-plugin/plugin.c:139
 msgid "Syncronize your local copy with the CVS tree"
-msgstr ""
+msgstr "Sincronize la tô copie locâl cul arbul CVS"
 
 #. Action name
 #. Stock icon, if any
@@ -2499,37 +2499,37 @@ msgstr ""
 #. short-cut
 #: ../plugins/cvs-plugin/plugin.c:88 ../plugins/cvs-plugin/plugin.c:147
 msgid "Show differences between your local copy and the tree"
-msgstr ""
+msgstr "Mostre diferencis tra la tô copie locâl e l'arbul"
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/cvs-plugin/plugin.c:94 ../plugins/cvs-plugin/plugin.c:153
 msgid "_Show Status"
-msgstr ""
+msgstr "_Mostre stât"
 
 #. Display label
 #. short-cut
 #: ../plugins/cvs-plugin/plugin.c:96 ../plugins/cvs-plugin/plugin.c:155
 msgid "Show the status of a file/directory"
-msgstr ""
+msgstr "Mostre il stât di un file/cartele"
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/cvs-plugin/plugin.c:102 ../plugins/cvs-plugin/plugin.c:161
 msgid "_Show Log"
-msgstr ""
+msgstr "_Mostre regjistri"
 
 #. Display label
 #. short-cut
 #: ../plugins/cvs-plugin/plugin.c:104 ../plugins/cvs-plugin/plugin.c:163
 msgid "Show the log of a file/directory"
-msgstr ""
+msgstr "Mostre il regjistri di un file/cartele"
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/cvs-plugin/plugin.c:110
 msgid "_Import Tree"
-msgstr ""
+msgstr "_Impuarte arbul"
 
 #. Display label
 #. short-cut
@@ -2539,7 +2539,7 @@ msgstr ""
 
 #: ../plugins/cvs-plugin/plugin.c:360
 msgid "CVS operations"
-msgstr ""
+msgstr "Operazions CVS"
 
 #: ../plugins/cvs-plugin/plugin.c:366
 msgid "CVS popup operations"
@@ -2603,7 +2603,7 @@ msgstr ""
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:13
 msgid "_Automatic update"
-msgstr ""
+msgstr "Inzornament _automatic"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:14
 msgid "_Name:"
@@ -2672,7 +2672,7 @@ msgstr "Segnâi kernel"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:30
 msgid "Set Signal Property"
-msgstr ""
+msgstr "Stabilìs la proprietât dal segnâl"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:31
 msgid "Signal:"
@@ -2680,7 +2680,7 @@ msgstr "Segnâl:"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:32
 msgid "SIGINT"
-msgstr ""
+msgstr "SIGINT"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:33
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:13
@@ -2725,11 +2725,11 @@ msgstr ""
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:43
 msgid "Source Directories"
-msgstr ""
+msgstr "Cartelis sorzint"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:44
 msgid "Select one directory"
-msgstr ""
+msgstr "Selezione une cartele"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:45
 msgid "Connect to remote target"
@@ -2737,7 +2737,7 @@ msgstr ""
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:46
 msgid "TCP/IP Connection"
-msgstr ""
+msgstr "Conession TCP/IP"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:47
 msgid "Address:"
@@ -2936,7 +2936,7 @@ msgstr ""
 #: ../plugins/debug-manager/info.c:52 ../plugins/debug-manager/info.c:101
 #: ../plugins/project-wizard/druid.c:188
 msgid "Information"
-msgstr ""
+msgstr "Informazion"
 
 #: ../plugins/debug-manager/info.c:127
 msgid "Lines"
@@ -3085,7 +3085,7 @@ msgstr ""
 
 #: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
-msgstr ""
+msgstr "Mostre segnâi dal kernel"
 
 #: ../plugins/debug-manager/plugin.c:945
 msgid "_Continue/Suspend"
@@ -3213,15 +3213,15 @@ msgstr "Segnâi kernel"
 #: ../plugins/debug-manager/signals.c:477
 #: ../plugins/debug-manager/signals.c:483
 msgid "Signal operations"
-msgstr ""
+msgstr "Operazions segnâl"
 
 #: ../plugins/debug-manager/sparse_view.c:1244
 msgid "Show Line Numbers"
-msgstr ""
+msgstr "Mostre numars di rie"
 
 #: ../plugins/debug-manager/sparse_view.c:1245
 msgid "Whether to display line numbers"
-msgstr ""
+msgstr "Indiche se mostrâ i numars di rie"
 
 #: ../plugins/debug-manager/sparse_view.c:1252
 msgid "Show Line Markers"
@@ -3247,7 +3247,7 @@ msgstr ""
 
 #: ../plugins/debug-manager/stack_trace.c:780
 msgid "Active"
-msgstr ""
+msgstr "Atîf"
 
 #: ../plugins/debug-manager/stack_trace.c:789
 msgid "Thread"
@@ -3301,17 +3301,17 @@ msgstr "Comant"
 #: ../plugins/debug-manager/start.c:628
 #, c-format
 msgid "Unable to execute: \"%s\". The returned error was: \"%s\"."
-msgstr ""
+msgstr "Impussibil eseguî: \"%s\". L'erôr tornât al è stât: \"%s\"."
 
 #: ../plugins/debug-manager/start.c:644
 #, c-format
 msgid "Unable to open the file: %s\n"
-msgstr ""
+msgstr "Impussibil vierzi il file: %s\n"
 
 #: ../plugins/debug-manager/start.c:971
 #, c-format
 msgid "Unable to open %s. Debugger cannot start."
-msgstr ""
+msgstr "Impussibil vierzi %s. Il debugger nol pues partî."
 
 #: ../plugins/debug-manager/start.c:981
 #, c-format
@@ -3327,6 +3327,8 @@ msgid ""
 "The program is already running.\n"
 "Do you still want to stop the debugger?"
 msgstr ""
+"Il program al è za in esecuzion.\n"
+"Vûstu distès fermâ il debugger?"
 
 #. Action name
 #. Stock icon, if any
@@ -3354,7 +3356,7 @@ msgstr ""
 
 #: ../plugins/debug-manager/watch.c:438
 msgid "Change Value"
-msgstr ""
+msgstr "Cambie valôr"
 
 #: ../plugins/debug-manager/watch.c:446
 msgid "Update all"
@@ -3368,7 +3370,7 @@ msgstr "Gjave dut"
 #. Stock icon, if any
 #: ../plugins/debug-manager/watch.c:465
 msgid "Automatic update"
-msgstr ""
+msgstr "Inzornament automatic"
 
 #: ../plugins/debug-manager/watch.c:491 ../plugins/debug-manager/watch.c:497
 msgid "Watch operations"
@@ -3380,7 +3382,7 @@ msgstr ""
 
 #: ../plugins/devhelp/anjuta-devhelp.plugin.in.h:1
 msgid "API Help"
-msgstr ""
+msgstr "Jutori API"
 
 #: ../plugins/devhelp/anjuta-devhelp.plugin.in.h:2
 msgid "Devhelp Plugin for Anjuta."
