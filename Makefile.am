@@ -28,7 +28,7 @@ anjuta_data_DATA = AUTHORS
 
 gnomerelease:
 	scp *.tar.bz2 master.gnome.org:
-	
+
 sfrelease:
 	scp *.tar.bz2 clubfan@frs.sf.net:uploads
 

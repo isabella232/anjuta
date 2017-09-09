@@ -64,4 +64,10 @@ EXTRA_DIST = \
 
 CLEANFILES = libanjuta-interfaces.h iface-built.stamp
 
+DISTCLEANFILES = *.c \
+	*.h \
+	Makefile.am.iface \
+	Makefile.am.gir \
+	libanjuta-iface-marshallers.list
+
 -include $(top_srcdir)/git.mk
