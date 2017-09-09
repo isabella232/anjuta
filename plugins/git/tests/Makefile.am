@@ -14,4 +14,5 @@ testgit_SOURCES = \
 	../git-status.c \
 	../git-status.h 
 
-testgit_LDADD = $(LIBANJUTA_LIBS) $(ANJUTA_LIBS) 
+testgit_LDADD = $(LIBANJUTA_LIBS) $(ANJUTA_LIBS)
+-include $(top_srcdir)/git.mk
