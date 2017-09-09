@@ -63,5 +63,6 @@ EXTRA_DIST = \
 SUBDIRS = \
 	images 
 
+CLEANFILES = $(plugin_in_files:.plugin.in=.plugin)
 
 -include $(top_srcdir)/git.mk

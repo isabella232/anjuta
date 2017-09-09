@@ -232,7 +232,7 @@ libanjuta_git_la_SOURCES = \
 	git-apply-mailbox-pane.h \
 	git-status-factory.c \
 	git-status-factory.h
-	
+
 
 libanjuta_git_la_LDFLAGS = $(ANJUTA_PLUGIN_LDFLAGS)
 
@@ -249,6 +249,7 @@ EXTRA_DIST = \
 	$(plugin_in_files) \
 	$(gsettings_in_file)
 
-CLEANFILES = $(gsettings_SCHEMAS)
+CLEANFILES = $(gsettings_SCHEMAS) \
+	$(plugin_in_files:.plugin.in=.plugin)
 
 -include $(top_srcdir)/git.mk

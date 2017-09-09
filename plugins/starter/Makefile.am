@@ -43,7 +43,8 @@ gsettings_SCHEMAS = $(gsettings_in_file:.xml.in=.xml)
 
 CLEANFILES = \
 	$(BUILT_SOURCES) \
-	$(gsettings_SCHEMAS)
+	$(gsettings_SCHEMAS) \
+	$(plugin_in_files:.plugin.in=.plugin)
 
 EXTRA_DIST = \
 	$(plugin_in_files) \

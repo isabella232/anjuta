@@ -81,6 +81,8 @@ EXTRA_DIST = \
 	$(plugin_in_files) \
 	project-marshal.list
 
+CLEANFILES = $(plugin_in_files:.plugin.in=.plugin)
+
 DISTCLEANFILES = \
 	$(project_plugin_DATA) \
 	$(project_in_files)

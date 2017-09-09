@@ -115,6 +115,8 @@ EXTRA_DIST = \
 	ac-parser.h \
 	am-parser.h
 
+CLEANFILES = $(plugin_in_files:.plugin.in=.plugin)
+
 DISTCLEANFILES = \
 	$(plugin_DATA)
 

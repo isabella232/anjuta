@@ -65,6 +65,8 @@ EXTRA_DIST = \
 	$(plugin_in_files) \
 	mk-parser.h
 
+CLEANFILES = $(plugin_in_files:.plugin.in=.plugin)
+
 DISTCLEANFILES = \
 	$(plugin_DATA)
 

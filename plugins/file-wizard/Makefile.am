@@ -38,4 +38,6 @@ libanjuta_file_wizard_la_SOURCES= \
 EXTRA_DIST = \
 	$(plugin_in_files)
 
+CLEANFILES = $(plugin_in_files:.plugin.in=.plugin)
+
 -include $(top_srcdir)/git.mk

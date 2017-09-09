@@ -47,5 +47,6 @@ EXTRA_DIST = \
 	$(plugin_in_files) \
 	languages.xml
 
+CLEANFILES = $(plugin_in_files:.plugin.in=.plugin)
 
 -include $(top_srcdir)/git.mk

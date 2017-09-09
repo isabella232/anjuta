@@ -98,6 +98,8 @@ EXTRA_DIST = \
 	$(gsettings_in_files) \
 	anjuta-marshal.list
 
+CLEANFILES = $(plugin_in_files:.plugin.in=.plugin)
+
 DISTCLEANFILES = \
 	$(anjuta_plugin_DATA) \
 	$(gsettings_SCHEMAS)

@@ -49,6 +49,8 @@ libdir_project_la_LIBADD = \
 EXTRA_DIST = \
 	$(plugin_in_files)
 
+CLEANFILES = $(plugin_in_files:.plugin.in=.plugin)
+
 DISTCLEANFILES = \
 	$(plugin_DATA)
 

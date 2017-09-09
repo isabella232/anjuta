@@ -51,5 +51,6 @@ endif # HAVE_PYTHON
 EXTRA_DIST = \
 	$(plugin_in_files)
 
--include $(top_srcdir)/git.mk
+CLEANFILES = $(plugin_in_files:.plugin.in=.plugin)
 
+-include $(top_srcdir)/git.mk

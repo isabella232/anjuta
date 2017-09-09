@@ -80,7 +80,8 @@ EXTRA_DIST = \
 	libanjuta-3.0.vapi
 
 CLEANFILES += \
-  $(gsettings_SCHEMAS)
+	$(gsettings_SCHEMAS) \
+	$(plugin_in_files:.plugin.in=.plugin)
 
 -include $(top_srcdir)/git.mk
 

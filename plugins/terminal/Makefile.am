@@ -53,9 +53,10 @@ endif
 
 EXTRA_DIST = \
 	$(plugin_in_files) \
-        $(gsettings_in_file)
+	$(gsettings_in_file)
 
 CLEANFILES = \
-        $(gsettings_SCHEMAS)
+	$(gsettings_SCHEMAS) \
+	CLEANFILES = $(plugin_in_files:.plugin.in=.plugin)
 
 -include $(top_srcdir)/git.mk

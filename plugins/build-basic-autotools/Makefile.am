@@ -73,6 +73,7 @@ EXTRA_DIST = \
         $(gsettings_in_file)
 
 CLEANFILES = \
-        $(gsettings_SCHEMAS)
+        $(gsettings_SCHEMAS) \
+        $(plugin_in_files:.plugin.in=.plugin)
 
 -include $(top_srcdir)/git.mk

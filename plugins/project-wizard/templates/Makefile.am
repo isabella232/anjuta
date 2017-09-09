@@ -58,6 +58,8 @@ dist_wizard_files_DATA = \
 	rm $@_
 	
 
+CLEANFILES = $(template_in_files:.in=)
+
 EXTRA_DIST = $(template_in_files)
 
 -include $(top_srcdir)/git.mk

@@ -56,10 +56,11 @@ gsettings_SCHEMAS = $(gsettings_in_file:.xml.in=.xml)
 
 EXTRA_DIST = \
 	$(plugin_in_files) \
-        $(gsettings_in_file)
+	$(gsettings_in_file)
 
 CLEANFILES = \
-        $(gsettings_SCHEMAS)
+	$(gsettings_SCHEMAS) \
+	$(plugin_in_files:.plugin.in=.plugin)
 
 SUBDIRS = \
 	scripts 
