@@ -382,6 +382,9 @@ public class ValaPlugin : Plugin, IAnjuta.Preferences {
 		var scope = get_scope (editor, position.clone ());
 		var builder = new StringBuilder ();
 
+#if VALA_0_38
+		var handler_cname = "";
+#else
 		var scope_prefix = "";
 		if (scope != null) {
 			scope_prefix = Vala.CCodeBaseModule.get_ccode_lower_case_prefix (scope);
@@ -389,6 +392,7 @@ public class ValaPlugin : Plugin, IAnjuta.Preferences {
 				handler_name = handler_name.substring (scope_prefix.length);
 		}
 		var handler_cname = scope_prefix + handler_name;
+#endif
 
 		if (data[2] != handler_cname && !swapped) {
 			builder.append_printf ("[CCode (cname=\"%s\", instance_pos=-1)]\n", data[2]);
