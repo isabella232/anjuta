@@ -34,11 +34,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
-"Report-Msgid-Bugs-To: "
-"https://bugzilla.gnome.org/enter_bug.cgi?product=anjuta&keywords=I18N+L10N&component=core "
-"application\n"
-"POT-Creation-Date: 2017-06-28 17:31+0000\n"
-"PO-Revision-Date: 2017-03-25 17:20+0100\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=anjuta&keywords=I18N+L10N&component=core application\n"
+"POT-Creation-Date: 2017-09-28 11:14+0000\n"
+"PO-Revision-Date: 2017-09-28 22:05+0200\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -91,8 +90,8 @@ msgstr ""
 #: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
-"templates. The selection includes simple generic, flat (no subdirectory), "
-"GTK+, GNOME, Java, Python projects and more. New templates can be easily "
+"templates. The selection includes simple generic, flat (no subdirectory), GTK"
+"+, GNOME, Java, Python projects and more. New templates can be easily "
 "downloaded and installed."
 msgstr ""
 "Projektassistenten lader dig oprette nye projekter fra et udvalg af "
@@ -771,12 +770,12 @@ msgstr "Angiv venligst gruppenavn"
 msgid ""
 "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~/\" characters"
 msgstr ""
-"Gruppenavnet kan kun indeholde alfanumeriske tegn samt tegnene "
-"“#$:%+,-.=@^_`~/”"
+"Gruppenavnet kan kun indeholde alfanumeriske tegn samt tegnene “#$:%+,-."
+"=@^_`~/”"
 
 #: ../plugins/am-project/amp-group.c:665
-#: ../plugins/am-project/am-project.c:1680
-#: ../plugins/am-project/am-project.c:1773
+#: ../plugins/am-project/am-project.c:1686
+#: ../plugins/am-project/am-project.c:1779
 #: ../plugins/dir-project/dir-project.c:862
 #: ../plugins/dir-project/dir-project.c:996
 #: ../plugins/mk-project/mk-project.c:725
@@ -860,11 +859,11 @@ msgstr "Module"
 msgid "Package"
 msgstr "Pakke"
 
-#: ../plugins/am-project/am-project.c:1710
+#: ../plugins/am-project/am-project.c:1716
 msgid "Unable to parse project file"
 msgstr "Kan ikke fortolke projektfil"
 
-#: ../plugins/am-project/am-project.c:1721
+#: ../plugins/am-project/am-project.c:1727
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "Projektet findes ikke, eller har en ugyldig sti"
@@ -935,8 +934,8 @@ msgstr "Pakkenavn:"
 
 #: ../plugins/am-project/am-properties.c:79
 msgid ""
-"Package name, it can contains only alphanumerics and underscore "
-"characters.It is generated from the project name if not provided."
+"Package name, it can contains only alphanumerics and underscore characters."
+"It is generated from the project name if not provided."
 msgstr ""
 "Pakkenavn. Kan kun indeholde alfanumeriske tegn og bundstreg. Hvis dette "
 "ikke er givet, genereres det fra projektnavnet."
@@ -1055,8 +1054,7 @@ msgstr "Fortrankompilerflag:"
 
 #: ../plugins/am-project/am-properties.c:161
 #: ../plugins/am-project/am-properties.c:268
-msgid ""
-"Common additional Fortran compiler flags for all targets in this group."
+msgid "Common additional Fortran compiler flags for all targets in this group."
 msgstr "Fælles ekstraflag til Fortrankompileren for alle mål i denne gruppe."
 
 #: ../plugins/am-project/am-properties.c:167
@@ -1252,8 +1250,7 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:788
 #: ../plugins/am-project/am-properties.c:964
 msgid "Additional Yacc or Bison parser generator flags for this target."
-msgstr ""
-"Øvrige flag til fortolkergeneratorerne Yacc eller Bison for dette mål."
+msgstr "Øvrige flag til fortolkergeneratorerne Yacc eller Bison for dette mål."
 
 #: ../plugins/am-project/am-properties.c:444
 #: ../plugins/am-project/am-properties.c:619
@@ -1352,8 +1349,8 @@ msgstr "Behold målsti:"
 #: ../plugins/am-project/am-properties.c:1195
 msgid ""
 "Keep relative target path for installing it. By example if you have a "
-"program subdir/app installed in bin directory it will be installed in "
-"bin/subdir/app not in bin/app."
+"program subdir/app installed in bin directory it will be installed in bin/"
+"subdir/app not in bin/app."
 msgstr ""
 "Behold relativ målsti til installation. Hvis du for eksempel har et program, "
 "undermappe/program, installeret i bin-mappen, vil der blive installeret i "
@@ -2301,8 +2298,8 @@ msgid ""
 "<b>Please note: </b>\n"
 "\n"
 "Pressing OK will delete the file from disk and from CVS. Of course, the file "
-"won't be removed from CVS before you use CVS Commit. <b>You have been "
-"warned!</b>"
+"won't be removed from CVS before you use CVS Commit. <b>You have been warned!"
+"</b>"
 msgstr ""
 "<b>Bemærk venligst: </b>\n"
 "\n"
@@ -3847,8 +3844,7 @@ msgid "Convert EOL to Majority EOL"
 msgstr "Konvertér EOL til mest benyttede"
 
 #: ../plugins/document-manager/plugin.c:197
-msgid ""
-"Convert End Of Line characters to the most common EOL found in the file"
+msgid "Convert End Of Line characters to the most common EOL found in the file"
 msgstr ""
 "Konvertér linjeafslutningstegn (EOL) til den mest benyttede type af EOL-tegn "
 "i filen"
@@ -6058,8 +6054,7 @@ msgid "C++ and Java support Plugin"
 msgstr "Modul til C++- og Javaunderstøttelse"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.plugin.in.h:2
-msgid ""
-"C++ and Java support plugin for code completion, auto-indentation, etc."
+msgid "C++ and Java support plugin for code completion, auto-indentation, etc."
 msgstr ""
 "Modul til C++ og Java med understøttelse af kodefuldførelse, autoindrykning "
 "osv."
@@ -6167,24 +6162,28 @@ msgstr "Fremhævninger"
 msgid "Autocomplete"
 msgstr "Autofuldfør"
 
-# ????????
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:11
+msgid "Test"
+msgstr "Test"
+
+# ????????
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
 msgid "JS Find dirs"
 msgstr "JS Find-mapper"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
 msgid "Gir repository's directory:"
 msgstr "Gir-arkivets katalog:"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
 msgid "Gjs repository's directory:"
 msgstr "Gjs-arkivets katalog:"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 msgid "Min character for completion:"
 msgstr "Mindste antal tegn for fuldførelse:"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:16
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
 msgid "Environment"
 msgstr "Miljø"
@@ -6245,8 +6244,8 @@ msgstr "Modul til understøttelse af Vala"
 msgid "Vala support plugin, adds code completion."
 msgstr "Modul til understøttelse af Vala, som tilføjer kodefuldførelse."
 
-#: ../plugins/language-support-vala/plugin.vala:657
-#: ../plugins/language-support-vala/plugin.vala:665
+#: ../plugins/language-support-vala/plugin.vala:661
+#: ../plugins/language-support-vala/plugin.vala:669
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Autofuldfør"
@@ -7123,15 +7122,19 @@ msgid "Select a project type"
 msgstr "Vælg en projekttype"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
+msgid "Select project"
+msgstr "Vælg projekt"
+
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
 #: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr "Fejl"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
 msgid "Details"
 msgstr "Detaljer"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:5
 msgid "Summary"
 msgstr "Sammendrag"
 
@@ -7161,8 +7164,12 @@ msgstr "Kan ikke finde nogen projektskabelon i %s"
 
 #: ../plugins/project-wizard/druid.c:712
 #, c-format
-msgid "\nField \"%s\" is mandatory. Please enter it."
-msgstr "\nFeltet “%s” er påkrævet. Udfyld det venligst."
+msgid ""
+"\n"
+"Field \"%s\" is mandatory. Please enter it."
+msgstr ""
+"\n"
+"Feltet “%s” er påkrævet. Udfyld det venligst."
 
 #: ../plugins/project-wizard/druid.c:727
 #, c-format
@@ -7171,15 +7178,14 @@ msgid ""
 "\"#$:%%+,.=@^_`~\". In addition you cannot have a leading dash. Please fix "
 "it."
 msgstr ""
-"Feltet “%s” må kun indeholde bogstaver, tal og følgende tegn: "
-"“#$:%%+,.=@^_`~”. Derudover må der ikke være indledende bindestreg. Fiks det "
-"venligst."
+"Feltet “%s” må kun indeholde bogstaver, tal og følgende tegn: “#$:%%+,."
+"=@^_`~”. Derudover må der ikke være indledende bindestreg. Fiks det venligst."
 
 #: ../plugins/project-wizard/druid.c:732
 #, c-format
 msgid ""
-"Field \"%s\" must contains only letters, digits, the following characters "
-"\"#$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a "
+"Field \"%s\" must contains only letters, digits, the following characters \"#"
+"$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a "
 "leading dash. Please fix it."
 msgstr ""
 "Feltet “%s” må kun indeholde bogstaver, tal, tegnene “#$:%%+,.=@^_`~” eller "
@@ -7224,13 +7230,21 @@ msgstr "Tvivlsom post"
 
 #: ../plugins/project-wizard/druid.c:966
 #, c-format
-msgid "\nMissing programs: %s."
-msgstr "\nManglende programmer: %s."
+msgid ""
+"\n"
+"Missing programs: %s."
+msgstr ""
+"\n"
+"Manglende programmer: %s."
 
 #: ../plugins/project-wizard/druid.c:977
 #, c-format
-msgid "\nMissing packages: %s."
-msgstr "\nManglende pakker: %s."
+msgid ""
+"\n"
+"Missing packages: %s."
+msgstr ""
+"\n"
+"Manglende pakker: %s."
 
 #: ../plugins/project-wizard/druid.c:986
 msgid ""
@@ -7254,9 +7268,9 @@ msgid ""
 "The missing programs are usually part of some distribution packages and can "
 "be searched for in your Application Manager. Similarly, the development "
 "packages are contained in special packages that your distribution provides "
-"to allow development of projects based on them. They usually end with a "
-"\"-dev\" or \"-devel\" suffix in package names and can be found by searching "
-"in your Application Manager."
+"to allow development of projects based on them. They usually end with a \"-"
+"dev\" or \"-devel\" suffix in package names and can be found by searching in "
+"your Application Manager."
 msgstr ""
 "De manglende programmer indgår sædvanligvis i distributionspakkerne, som kan "
 "gennemsøges med din programhåndtering. På tilsvarende vis findes "
@@ -7797,8 +7811,7 @@ msgstr "Tilføj understøttelse for delte biblioteker:"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:18
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:18
 msgid "Adds support for building shared libraries in your project"
-msgstr ""
-"Tilføjer understøttelse for bygning af delte biblioteker i dit projekt"
+msgstr "Tilføjer understøttelse for bygning af delte biblioteker i dit projekt"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:15
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:17
@@ -7877,8 +7890,7 @@ msgstr "Generisk gcj-kompileret Java"
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:2
 msgid ""
 "A generic natively compiled java project using the GNU Java Compiler (gcj)"
-msgstr ""
-"Et generisk kompileret Javaprojekt, der bruger GNUs Javakompiler (gcj)"
+msgstr "Et generisk kompileret Javaprojekt, der bruger GNUs Javakompiler (gcj)"
 
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:7
 #: ../plugins/project-wizard/templates/java.wiz.in.h:7
@@ -7916,8 +7928,8 @@ msgstr "UUID:"
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:16
 msgid ""
 "Uuid is a globally-unique identifier for your extension.\n"
-"This should be in the format of an email address "
-"(foo.bar@extensions.example.com), but\n"
+"This should be in the format of an email address (foo.bar@extensions.example."
+"com), but\n"
 "need not be an actual email address, though it's a good idea to base the "
 "uuid on your\n"
 "email address."
@@ -7966,8 +7978,7 @@ msgstr "Tilføj gtk-doc-system:"
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:20
 #: ../plugins/project-wizard/templates/java.wiz.in.h:18
 #: ../plugins/project-wizard/templates/python.wiz.in.h:16
-msgid ""
-"gtk-doc is used to compile API documentations for GObject based classes"
+msgid "gtk-doc is used to compile API documentations for GObject based classes"
 msgstr ""
 "gtk-doc bruges til at kompilere API-dokumentation for klasser baseret på "
 "GObject"
@@ -8442,8 +8453,7 @@ msgstr "<b>Fejl:</b> Du skal vælge mindst et sprog for tekststumpen!"
 #: ../plugins/snippets-manager/snippets-editor.c:49
 msgid ""
 "<b>Error:</b> The trigger key is already in use for one of the languages!"
-msgstr ""
-"<b>Fejl:</b> Denne udløsernøgle er allerede i brug for at af sprogene!"
+msgstr "<b>Fejl:</b> Denne udløsernøgle er allerede i brug for at af sprogene!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
 msgid ""
@@ -9811,8 +9821,7 @@ msgid "Selected full file name in the project manager plugin"
 msgstr "Valgte fulde filnavn i projekthåndteringsmodulet"
 
 #: ../plugins/tools/variable.c:99
-msgid ""
-"Selected full file name without extension in the project manager plugin"
+msgid "Selected full file name without extension in the project manager plugin"
 msgstr "Valgte fulde filnavn uden endelse i projekthåndteringsmodulet"
 
 #: ../plugins/tools/variable.c:100
@@ -10159,7 +10168,7 @@ msgstr "Kun tekst"
 #~ msgid "Anjuta Manual"
 #~ msgstr "Manual til Anjuta"
 
-#~ # Synes efterhånden OSS bruges en hel del steder på dansk
+# Synes efterhånden OSS bruges en hel del steder på dansk
 #~ msgid "FAQ"
 #~ msgstr "OSS"
 
@@ -10188,10 +10197,11 @@ msgstr "Kun tekst"
 #~ msgstr "Træk eller indtast revision her"
 
 #~ msgid ""
-#~ "Whole project; Drop a file here or type a path to view a file or folder log"
+#~ "Whole project; Drop a file here or type a path to view a file or folder "
+#~ "log"
 #~ msgstr ""
-#~ "Hele projektet; træk en fil her eller skriv en sti for at vise en fil eller "
-#~ "mappelog"
+#~ "Hele projektet; træk en fil her eller skriv en sti for at vise en fil "
+#~ "eller mappelog"
 
 #~ msgid "Previous commit; Drop or enter a different revision here"
 #~ msgstr "Forrige commit; træk eller indtast en anden revision her"
@@ -10205,7 +10215,7 @@ msgstr "Kun tekst"
 #~ msgid "Stash %i.diff"
 #~ msgstr "Put %i.diff i gemmested"
 
-#~ # det vil være klart at ændringerne ikke er committede
+# det vil være klart at ændringerne ikke er committede
 #~ msgid "Diff uncommitted changes"
 #~ msgstr "Diff ændringer"
 
@@ -10282,8 +10292,8 @@ msgstr "Kun tekst"
 #~ msgstr "Slå CLang-kodeanalysatoren til"
 
 #~ msgid ""
-#~ "The project needs to be reconfigured after enabling this option. Please run "
-#~ "Build->Configure!"
+#~ "The project needs to be reconfigured after enabling this option. Please "
+#~ "run Build->Configure!"
 #~ msgstr ""
 #~ "Projektet skal omkonfigureres efter at dette tilvalg er slået til. Kør "
 #~ "venligst Byg->Konfigurér!"
@@ -10323,8 +10333,8 @@ msgstr "Kun tekst"
 #~ msgstr "Indlæst:"
 
 #~ msgid ""
-#~ "Unable to display help. Please make sure the Anjuta documentation package is "
-#~ "installed. It can be downloaded from http://anjuta.org."
+#~ "Unable to display help. Please make sure the Anjuta documentation package "
+#~ "is installed. It can be downloaded from http://anjuta.org."
 #~ msgstr ""
 #~ "Kan ikke vise hjælp. Sikr dig venligst, at Anjuta-dokumentationspakken er "
 #~ "installeret. Den kan hentes fra http://anjuta.org."
@@ -10454,7 +10464,7 @@ msgstr "Kun tekst"
 #~ msgid "Whether to strike through the text"
 #~ msgstr "Om teksten skal være gennemstreget"
 
-#~ # ?
+# ?
 #~ msgid "Underline"
 #~ msgstr "Understreget"
 
@@ -10569,11 +10579,11 @@ msgstr "Kun tekst"
 #~ msgid "Display information on the execution status of the program"
 #~ msgstr "Vis information om kørselsstatus af programmet"
 
-#~ # Citat fra docs
-#~ #
-#~ # 5.7.5. Information about kernel structure
-#~ #
-#~ # It is possible to get some information kernel data on the current process by choosing the menu item Debug->Information->Kernel user struct. A window will open displaying all informations. 
+# Citat fra docs
+#
+# 5.7.5. Information about kernel structure
+#
+# It is possible to get some information kernel data on the current process by choosing the menu item Debug->Information->Kernel user struct. A window will open displaying all informations. 
 #~ msgid "Info _Kernel User Struct"
 #~ msgstr "Information om _kernens struktur"
 
@@ -10645,7 +10655,7 @@ msgstr "Kun tekst"
 #~ msgid "Extra target"
 #~ msgstr "Ekstra mål"
 
-#~ # Configure plejer at være et 'mål' for make, så man har kommandoer såsom 'make install', 'make configure' og den slags.  Bemærk placeringen i samme kildefil som strenge der har med mål at gøre
+# Configure plejer at være et 'mål' for make, så man har kommandoer såsom 'make install', 'make configure' og den slags.  Bemærk placeringen i samme kildefil som strenge der har med mål at gøre
 #~ msgid "Configure file"
 #~ msgstr "Konfigureringsfil"
 
@@ -10655,7 +10665,7 @@ msgstr "Kun tekst"
 #~ msgid "GLib genmarshal"
 #~ msgstr "GLib genmarshal"
 
-#~ # i princippet kan rule måske oversættes, men vi må hellere være forsigtige
+# i princippet kan rule måske oversættes, men vi må hellere være forsigtige
 #~ msgid "Intl rule"
 #~ msgstr "Intl rule"
 
@@ -11112,7 +11122,8 @@ msgstr "Kun tekst"
 #~ msgstr "_Cherry-pick …"
 
 #~ msgid ""
-#~ "Selectively merge individual changes from other branches into the current one"
+#~ "Selectively merge individual changes from other branches into the current "
+#~ "one"
 #~ msgstr "Flet selektivt enkelte ændringer fra andre grene til den aktuelle"
 
 #~ msgid "_Remote branches"
@@ -11136,7 +11147,7 @@ msgstr "Kun tekst"
 #~ msgid "Reset repository head to any past state"
 #~ msgstr "Nulstil arkivhoved til enhver tidligere tilstand"
 
-#~ # En kommando der bruger bisektion til at finde ud af hvilken revision der introducerede en bestemt fejl
+# En kommando der bruger bisektion til at finde ud af hvilken revision der introducerede en bestemt fejl
 #~ msgid "Bisect"
 #~ msgstr "Bisektion"
 
@@ -11167,7 +11178,7 @@ msgstr "Kun tekst"
 #~ msgid "Create a tag at this revision"
 #~ msgstr "Opret et mærke for denne revision"
 
-#~ # En kommando der bruger bisektion til at finde ud af hvilken revision der introducerede en bestemt fejl
+# En kommando der bruger bisektion til at finde ud af hvilken revision der introducerede en bestemt fejl
 #~ msgid "_Bisect"
 #~ msgstr "_Bisektion"
 
@@ -11268,7 +11279,7 @@ msgstr "Kun tekst"
 #~ msgid "XML"
 #~ msgstr "XML"
 
-#~ # Nok ikke klartekst, da dette har kryptografiske konnotationer
+# Nok ikke klartekst, da dette har kryptografiske konnotationer
 #~ msgid "Plain Text"
 #~ msgstr "Ren tekst"
 
@@ -11427,9 +11438,11 @@ msgstr "Kun tekst"
 #~ msgstr "Påmindelse"
 
 #~ msgid "Allow to-do items to notify me when they are due in %i minute"
-#~ msgid_plural "Allow to-do items to notify me when they are due in %i minutes"
+#~ msgid_plural ""
+#~ "Allow to-do items to notify me when they are due in %i minutes"
 #~ msgstr[0] "Tillad gøremål at påminde mig når de skal være klar om %i minut"
-#~ msgstr[1] "Tillad gøremål at påminde mig når de skal være klar om %i minutter"
+#~ msgstr[1] ""
+#~ "Tillad gøremål at påminde mig når de skal være klar om %i minutter"
 
 #~ msgid "Open a Task List"
 #~ msgstr "Åbn en opgaveliste"
@@ -11487,17 +11500,17 @@ msgstr "Kun tekst"
 #~ msgstr "Tilføj _mål"
 
 #~ msgid ""
-#~ "Field \"%s\" must start with a letter, a digit or an underscore and contain "
-#~ "only letters, digits, underscore, minus and dot. Please fix it."
+#~ "Field \"%s\" must start with a letter, a digit or an underscore and "
+#~ "contain only letters, digits, underscore, minus and dot. Please fix it."
 #~ msgstr ""
 #~ "Feltet “%s” skal begynde med et bogstav, et ciffer eller en bundstreg og "
 #~ "indeholde kun bogstaver, cifre, bundstreger, minus og punktum.  Fiks det "
 #~ "venligst."
 
 #~ msgid ""
-#~ "Field \"%s\" must start with a letter, a digit, an underscore or a directory "
-#~ "separator and contain only letters, digits, underscore, directory separator, "
-#~ "minus and dot. Please fix it."
+#~ "Field \"%s\" must start with a letter, a digit, an underscore or a "
+#~ "directory separator and contain only letters, digits, underscore, "
+#~ "directory separator, minus and dot. Please fix it."
 #~ msgstr ""
 #~ "Feltet “%s” skal begynde med et bogstav, et ciffer eller en bundstreg og "
 #~ "indeholde kun bogstaver, cifre, bundstreger, minus og punktum.  Fiks det "
@@ -11731,11 +11744,12 @@ msgstr "Kun tekst"
 
 #~ msgid ""
 #~ "This option enables the default packages required by your opened project, "
-#~ "e.g. Glib and GTK+ if you create a GTK+ project (may require more CPU work)"
+#~ "e.g. Glib and GTK+ if you create a GTK+ project (may require more CPU "
+#~ "work)"
 #~ msgstr ""
-#~ "Denne indstilling aktiverer pakkerne, der som standard kræves af dit åbnede "
-#~ "projekt, f.eks. Glib og GTK+, hvis du opretter et GTK+-projekt (kan kræve "
-#~ "mere CPU-arbejde)"
+#~ "Denne indstilling aktiverer pakkerne, der som standard kræves af dit "
+#~ "åbnede projekt, f.eks. Glib og GTK+, hvis du opretter et GTK+-projekt "
+#~ "(kan kræve mere CPU-arbejde)"
 
 #~ msgid "Default project directory:"
 #~ msgstr "Standardprojektmappe:"
@@ -11779,7 +11793,8 @@ msgstr "Kun tekst"
 #~ msgid ""
 #~ "<b>There is %d item with unsaved changes. Save changes before closing?</b>"
 #~ msgid_plural ""
-#~ "<b>There are %d items with unsaved changes. Save changes before closing?</b>"
+#~ "<b>There are %d items with unsaved changes. Save changes before closing?</"
+#~ "b>"
 #~ msgstr[0] ""
 #~ "<b>Der er %d element med ugemte ændringer. Gem ændringer før der "
 #~ "afsluttes?</b>"
@@ -11896,13 +11911,15 @@ msgstr "Kun tekst"
 #~ msgstr "Kunne ikke finde signalinformation"
 
 #~ msgid "Error while adding a new handler stub: No current editor"
-#~ msgstr "Fejl under tilføjelse af ny håndteringsstub: Ingen aktuel redigering"
+#~ msgstr ""
+#~ "Fejl under tilføjelse af ny håndteringsstub: Ingen aktuel redigering"
 
 #~ msgid ""
-#~ "To avoid this message turn off \"%s\" flag in Preferences->Glade GUI Designer"
+#~ "To avoid this message turn off \"%s\" flag in Preferences->Glade GUI "
+#~ "Designer"
 #~ msgstr ""
-#~ "Slå flaget “%s” fra i Indstillinger->Glade grænsefladedesigner for at undgå "
-#~ "denne meddelelse"
+#~ "Slå flaget “%s” fra i Indstillinger->Glade grænsefladedesigner for at "
+#~ "undgå denne meddelelse"
 
 #~ msgid "Couldn't find an associated document"
 #~ msgstr "Kunne ikke finde et tilknyttet dokument"
@@ -11944,7 +11961,7 @@ msgstr "Kun tekst"
 #~ msgid "Associations dialog…"
 #~ msgstr "Dialogen associationer …"
 
-#~ # Det står faktisk i RO
+# Det står faktisk i RO
 #~ msgid "Versioning…"
 #~ msgstr "Versionering …"
 
@@ -12188,7 +12205,7 @@ msgstr "Kun tekst"
 #~ msgid "_Ignore..."
 #~ msgstr "_Ignorér …"
 
-#~ # ???
+# ???
 #~ msgid "Create patch series..."
 #~ msgstr "Opret patch-række …"
 
@@ -12291,11 +12308,11 @@ msgstr "Kun tekst"
 #~ msgid "GtkSourceview editor"
 #~ msgstr "GtkSourcevew-redigering"
 
-#~ # ??? fejlrapport
+# ??? fejlrapport
 #~ msgid "on_widget_signal"
 #~ msgstr "on_widget_signal"
 
-#~ # fejlrapport
+# fejlrapport
 #~ msgid "widget_signal_cb"
 #~ msgstr "widget_signal_cb"
 
@@ -12475,13 +12492,13 @@ msgstr "Kun tekst"
 #~ msgid ""
 #~ "This target does not have any profiling data.\n"
 #~ "\n"
-#~ "Please ensure that the target is complied with profiling support and that it "
-#~ "is run at least once."
+#~ "Please ensure that the target is complied with profiling support and that "
+#~ "it is run at least once."
 #~ msgstr ""
 #~ "Dette mål har ingen profileringsdata.\n"
 #~ "\n"
-#~ "Sikr dig venligst, at målet er kompileret med understøttelse for profilering "
-#~ "og at det er blevet kørt mindst én gang."
+#~ "Sikr dig venligst, at målet er kompileret med understøttelse for "
+#~ "profilering og at det er blevet kørt mindst én gang."
 
 #~ msgid "Profiler"
 #~ msgstr "Profiler"
@@ -12710,7 +12727,7 @@ msgstr "Kun tekst"
 #~ msgid "Enable python comments folding"
 #~ msgstr "Aktivér python-kommentarfoldning"
 
-#~ # ???
+# ???
 #~ msgid "Enable python quoted strings folding"
 #~ msgstr "Aktivér foldning af python quote-strenge"
 
@@ -12826,9 +12843,9 @@ msgstr "Kun tekst"
 #~ "supported. Please check if the encoding of file is in the supported "
 #~ "encodings list. If not, add it from the preferences."
 #~ msgstr ""
-#~ "Filen ligner ikke en tekstfil eller kodningen understøttes ikke. Kontrollér "
-#~ "venligst om kodningen af filen optræder i listen over understøttede "
-#~ "kodninger. Hvis ikke, så tilføj den i indstillingerne."
+#~ "Filen ligner ikke en tekstfil eller kodningen understøttes ikke. "
+#~ "Kontrollér venligst om kodningen af filen optræder i listen over "
+#~ "understøttede kodninger. Hvis ikke, så tilføj den i indstillingerne."
 
 #~ msgid ""
 #~ "Could not load file: %s\n"
@@ -12894,10 +12911,11 @@ msgstr "Kun tekst"
 #~ msgstr "Valgrind"
 
 #~ msgid ""
-#~ "No executable target selected for debugging with Valgrind. Please select one."
+#~ "No executable target selected for debugging with Valgrind. Please select "
+#~ "one."
 #~ msgstr ""
-#~ "Intet eksekverbart mål er valgt til fejlsøgning med Valgrind. Vælg venligst "
-#~ "et."
+#~ "Intet eksekverbart mål er valgt til fejlsøgning med Valgrind. Vælg "
+#~ "venligst et."
 
 #~ msgid ""
 #~ "There aren't any available executable targets for this project.\n"
@@ -12951,9 +12969,11 @@ msgstr "Kun tekst"
 #~ msgid "Failed to create child process '%s': %s"
 #~ msgstr "Kunne ikke oprette underprocessen “%s”: %s"
 
-#~ msgid "Reached the end of the input file or error in parsing valgrind output."
+#~ msgid ""
+#~ "Reached the end of the input file or error in parsing valgrind output."
 #~ msgstr ""
-#~ "Nåede slutningen af inputfilen eller fejl ved fortolkning af valgrind-uddata."
+#~ "Nåede slutningen af inputfilen eller fejl ved fortolkning af valgrind-"
+#~ "uddata."
 
 #~ msgid "Process exited."
 #~ msgstr "Proces afsluttet."
@@ -12962,8 +12982,8 @@ msgstr "Kun tekst"
 #~ msgstr "Kunne ikke hente den rette gconf-nøgle for valgrind binærfil:"
 
 #~ msgid ""
-#~ "Valgrind binary [%s] does not exist. Please check the preferences or install "
-#~ "Valgrind package."
+#~ "Valgrind binary [%s] does not exist. Please check the preferences or "
+#~ "install Valgrind package."
 #~ msgstr ""
 #~ "Valgrinds binærfil [%s] findes ikke. Kontrollér venligst indstillingerne "
 #~ "eller installér Valgrind-pakken."
@@ -13268,13 +13288,13 @@ msgstr "Kun tekst"
 #~ msgid ""
 #~ "The Application Assistant will generate a basic skeleton for a project, "
 #~ "including all of the build files. It will ask for details of the initial "
-#~ "structure for the application. Please answer the questions carefully, as it "
-#~ "may not be possible to change some of the settings later."
+#~ "structure for the application. Please answer the questions carefully, as "
+#~ "it may not be possible to change some of the settings later."
 #~ msgstr ""
-#~ "Programguiden vil generere et simpelt skelet til dit projekt, inklusive alle "
-#~ "byggefiler. Den vil spørge dig om den grundlæggende struktur for det "
-#~ "program, du vil udvikle. Svar venligst omhyggeligt på spørgsmålene, da det "
-#~ "måske ikke er muligt at ændre visse af indstillingerne senere."
+#~ "Programguiden vil generere et simpelt skelet til dit projekt, inklusive "
+#~ "alle byggefiler. Den vil spørge dig om den grundlæggende struktur for det "
+#~ "program, du vil udvikle. Svar venligst omhyggeligt på spørgsmålene, da "
+#~ "det måske ikke er muligt at ændre visse af indstillingerne senere."
 
 #~ msgid "label"
 #~ msgstr "mærkat"
@@ -13303,7 +13323,7 @@ msgstr "Kun tekst"
 #~ msgid "Scanning package: %s"
 #~ msgstr "Skanner pakke: %s"
 
-#~ # ???
+# ???
 #~ msgid "Completed system tags generation"
 #~ msgstr "Generering af systemmærker fuldført"
 
@@ -13347,11 +13367,11 @@ msgstr "Kun tekst"
 #~ msgstr "Symbolviser-modul til Anjuta."
 
 #~ msgid ""
-#~ "Anjuta terminal plugin is not installed. The program will be run without a "
-#~ "terminal."
+#~ "Anjuta terminal plugin is not installed. The program will be run without "
+#~ "a terminal."
 #~ msgstr ""
-#~ "Anjuta-terminalmodulet er ikke installeret. Programmet vil blive kørt uden "
-#~ "en terminal."
+#~ "Anjuta-terminalmodulet er ikke installeret. Programmet vil blive kørt "
+#~ "uden en terminal."
 
 #~ msgid "Visible whitespaces"
 #~ msgstr "Vis blanke tegn"
@@ -13551,7 +13571,8 @@ msgstr "Kun tekst"
 #~ msgid "Auto _Format"
 #~ msgstr "Auto_formatér"
 
-#~ msgid "Auto format is currently disabled. Change the setting in Preferences."
+#~ msgid ""
+#~ "Auto format is currently disabled. Change the setting in Preferences."
 #~ msgstr ""
 #~ "Autoformatering er slået fra. Hvis du vil, kan du slå det til i "
 #~ "Indstillinger."
@@ -13809,5 +13830,3 @@ msgstr "Kun tekst"
 
 #~ msgid "But I prefer tea."
 #~ msgstr "Men jeg foretrækker the."
-
-
