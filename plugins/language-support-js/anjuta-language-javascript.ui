@@ -308,7 +308,7 @@
                             <property name="search_column">0</property>
                             <child>
                               <object class="GtkTreeViewColumn" id="text">
-                                <property name="title">Test</property>
+                                <property name="title" translatable="yes">Test</property>
                                 <child>
                                   <object class="GtkCellRendererText" id="test-renderer"/>
                                   <attributes>

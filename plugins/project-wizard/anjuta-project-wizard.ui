@@ -77,7 +77,7 @@
       </object>
       <packing>
         <property name="page_type">intro</property>
-        <property name="title">Select project</property>
+        <property name="title" translatable="yes">Select project</property>
         <property name="header_image">applogo.png</property>
       </packing>
     </child>
@@ -194,7 +194,7 @@
         </child>
       </object>
       <packing>
-        <property name="title">Error</property>
+        <property name="title" translatable="yes">Error</property>
         <property name="header_image">applogo.png</property>
       </packing>
     </child>
@@ -249,7 +249,7 @@
       </object>
       <packing>
         <property name="page_type">confirm</property>
-        <property name="title">Summary</property>
+        <property name="title" translatable="yes">Summary</property>
         <property name="header_image">applogo.png</property>
         <property name="sidebar_image">appwizard.png</property>
       </packing>
