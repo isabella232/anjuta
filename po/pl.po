@@ -1,20 +1,20 @@
 # Polish translation for anjuta.
-# Copyright © 2001-2016 the anjuta authors.
+# Copyright © 2001-2017 the anjuta authors.
 # This file is distributed under the same license as the anjuta package.
 # Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 2001-2003.
 # Artur Flinta <aflinta@at.kernel.pl>, 2004.
 # Piotr Leszczyński <piotr@kontury.pl>, 2008.
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2009.
-# Piotr Drąg <piotrdrag@gmail.com>, 2010-2016.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2017.
 # Paweł Żołnowski <pawel@zolnowski.name>, 2014.
-# Aviary.pl <community-poland@mozilla.org>, 2008-2016.
+# Aviary.pl <community-poland@mozilla.org>, 2008-2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-06 04:34+0200\n"
-"PO-Revision-Date: 2016-09-06 04:35+0200\n"
+"POT-Creation-Date: 2017-09-28 14:37+0200\n"
+"PO-Revision-Date: 2017-09-28 14:38+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -134,19 +134,19 @@ msgstr "Nieznany błąd w module %s"
 #: ../libanjuta/anjuta-column-text-view.c:40 ../plugins/git/git-pane.c:142
 #, c-format
 msgid "Column %i"
-msgstr "Kolumna %i"
+msgstr "%i. kolumna"
 
 #. Column label
 #: ../libanjuta/anjuta-column-text-view.c:73
 msgid "Column 1"
-msgstr "Kolumna 1"
+msgstr "1. kolumna"
 
-#: ../libanjuta/anjuta-convert.c:74 ../libanjuta/anjuta-convert.c:111
+#: ../libanjuta/anjuta-convert.c:75 ../libanjuta/anjuta-convert.c:113
 #, c-format
 msgid "The file you are trying to open contains an invalid byte sequence."
 msgstr "Otwierany plik zawiera nieprawidłową sekwencję bajtów."
 
-#: ../libanjuta/anjuta-convert.c:168 ../libanjuta/anjuta-convert.c:207
+#: ../libanjuta/anjuta-convert.c:170 ../libanjuta/anjuta-convert.c:209
 #, c-format
 msgid ""
 "Anjuta was not able to automatically determine the encoding of the file you "
@@ -370,7 +370,7 @@ msgstr "Nie można wykonać polecenia: „%s”"
 msgid "execvp failed"
 msgstr "execvp się nie powiodło"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2399
 msgid "Anjuta Shell"
 msgstr "Powłoka programu Anjuta"
 
@@ -401,7 +401,7 @@ msgid "Load"
 msgstr "Wczytana"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2015
+#: ../libanjuta/anjuta-plugin-manager.c:2013
 msgid "Available Plugins"
 msgstr "Dostępne wtyczki"
 
@@ -409,12 +409,12 @@ msgstr "Dostępne wtyczki"
 msgid "Preferred plugins"
 msgstr "Preferowane wtyczki"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1157
+#: ../libanjuta/anjuta-plugin-manager.c:1155
 msgid "Only show user activatable plugins"
 msgstr ""
 "Wyświetlanie wyłącznie wtyczek możliwych do włączenia przez użytkownika"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1197
+#: ../libanjuta/anjuta-plugin-manager.c:1195
 msgid ""
 "These are the plugins selected by you when you have been prompted to choose "
 "one of many suitable plugins. Removing the preferred plugin will let you "
@@ -424,71 +424,71 @@ msgstr ""
 "odpowiednich wtyczek. Usunięcie preferowanej wtyczki spowoduje wyświetlenie "
 "prośby o wybranie innej wtyczki."
 
-#: ../libanjuta/anjuta-plugin-manager.c:1223
+#: ../libanjuta/anjuta-plugin-manager.c:1221
 msgid "Forget selected plugin"
 msgstr "Zapomnij wybraną wtyczkę"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1355
+#: ../libanjuta/anjuta-plugin-manager.c:1515 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "Wybór wtyczki"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1358
+#: ../libanjuta/anjuta-plugin-manager.c:1356
 #: ../plugins/debug-manager/queue.c:528
 msgid "Please select a plugin to activate"
 msgstr "Proszę wybrać wtyczkę, która ma zostać włączona"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1372
+#: ../libanjuta/anjuta-plugin-manager.c:1370
 #, c-format
 msgid "No plugin is able to load other plugins in %s"
 msgstr "Żadna wtyczka nie może wczytać innych wtyczek w %s"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1518
+#: ../libanjuta/anjuta-plugin-manager.c:1516
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Proszę wybrać wtyczkę, która ma zostać włączona</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2044
+#: ../libanjuta/anjuta-plugin-manager.c:2042
 msgid "Remember this selection"
 msgstr "Zapamiętanie tego wyboru"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2382
+#: ../libanjuta/anjuta-plugin-manager.c:2380
 msgid "Profiles"
 msgstr "Profile"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2381
 msgid "Current stack of profiles"
 msgstr "Bieżący stos profilów"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2388
+#: ../libanjuta/anjuta-plugin-manager.c:2386
 msgid "Available plugins"
 msgstr "Dostępne wtyczki"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2389
+#: ../libanjuta/anjuta-plugin-manager.c:2387
 msgid "Currently available plugins found in plugin paths"
 msgstr "Obecnie dostępne wtyczki odnalezione w ścieżkach wtyczek"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2395
+#: ../libanjuta/anjuta-plugin-manager.c:2393
 msgid "Activated plugins"
 msgstr "Włączone wtyczki"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin-manager.c:2394
 msgid "Currently activated plugins"
 msgstr "Obecnie włączone wtyczki"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2402
+#: ../libanjuta/anjuta-plugin-manager.c:2400
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Powłoka programu Anjuta, dla której są tworzone wtyczki"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2410
+#: ../libanjuta/anjuta-plugin-manager.c:2408
 msgid "Anjuta Status"
 msgstr "Stan programu Anjuta"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2411
+#: ../libanjuta/anjuta-plugin-manager.c:2409
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "Stan programu Anjuta stosowany przy wczytywaniu i zwalnianiu wtyczek"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2564
+#: ../libanjuta/anjuta-plugin-manager.c:2562
 msgid "Loading:"
 msgstr "Wczytywanie:"
 
@@ -758,8 +758,8 @@ msgstr ""
 "=@^_`~/”"
 
 #: ../plugins/am-project/amp-group.c:665
-#: ../plugins/am-project/am-project.c:1680
-#: ../plugins/am-project/am-project.c:1773
+#: ../plugins/am-project/am-project.c:1686
+#: ../plugins/am-project/am-project.c:1779
 #: ../plugins/dir-project/dir-project.c:862
 #: ../plugins/dir-project/dir-project.c:996
 #: ../plugins/mk-project/mk-project.c:725
@@ -843,11 +843,11 @@ msgstr "Moduł"
 msgid "Package"
 msgstr "Pakiet"
 
-#: ../plugins/am-project/am-project.c:1710
+#: ../plugins/am-project/am-project.c:1716
 msgid "Unable to parse project file"
 msgstr "Nie można przetworzyć pliku projektu"
 
-#: ../plugins/am-project/am-project.c:1721
+#: ../plugins/am-project/am-project.c:1727
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "Projekt nie istnieje lub ścieżka jest nieprawidłowa"
@@ -2237,7 +2237,7 @@ msgid "Patch-Style diff"
 msgstr "Różnica łaty-stylu"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2201
+#: ../plugins/symbol-db/plugin.c:2206
 msgid "Local"
 msgstr "Lokalne"
 
@@ -2983,6 +2983,8 @@ msgstr "Wyłącz punkt przerwania"
 msgid "Disable a breakpoint"
 msgstr "Wyłącz punkt przerwania"
 
+#. Translators: Enabled refers to a breakpoint. It is a column name, like
+#. * other words.
 #. This enable an user defined command
 #: ../plugins/debug-manager/breakpoints.c:1953
 #: ../plugins/tools/anjuta-tools.ui.h:5
@@ -3095,7 +3097,7 @@ msgstr "Niewczytane"
 #: ../plugins/debug-manager/plugin.c:550
 #, c-format
 msgid "Debugger terminated with error %d: %s\n"
-msgstr "Debuger zakończył pracę z błędem %d: %s\n"
+msgstr "Debuger zakończył działanie z błędem %d: %s\n"
 
 #: ../plugins/debug-manager/plugin.c:563
 #, c-format
@@ -3355,7 +3357,7 @@ msgstr "Ramka"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2164
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Plik"
@@ -4346,16 +4348,16 @@ msgstr ""
 "Wyszukiwanie „%s” osiągnęło koniec pliku i zostało kontynuowane od końca, "
 "ale nie odnaleziono nowych wyników."
 
-#: ../plugins/document-manager/search-box.c:917
+#: ../plugins/document-manager/search-box.c:920
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
 "Więcej opcji wyszukiwania można znaleźć w menu kontekstowym ikony „Wyszukaj”"
 
-#: ../plugins/document-manager/search-box.c:988
+#: ../plugins/document-manager/search-box.c:991
 msgid "Replace"
 msgstr "Zastąpienie"
 
-#: ../plugins/document-manager/search-box.c:993
+#: ../plugins/document-manager/search-box.c:996
 msgid "Replace all"
 msgstr "Zamiana wszystkiego"
 
@@ -4625,7 +4627,7 @@ msgstr "Automatyczny wybór bieżącego dokumentu"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2213
+#: ../plugins/symbol-db/plugin.c:2218
 msgid "Global"
 msgstr "Globalne"
 
@@ -5045,7 +5047,7 @@ msgstr "Dodanie plików:"
 
 #: ../plugins/git/anjuta-git.ui.h:9
 msgid "Remote name:"
-msgstr "Nazwa zdalnego:"
+msgstr "Nazwa zdalnego repozytorium:"
 
 #: ../plugins/git/anjuta-git.ui.h:11
 msgid "Fetch remote branches after creation"
@@ -5299,15 +5301,16 @@ msgstr "Dodaj pliki"
 
 #: ../plugins/git/git-add-remote-pane.c:52
 msgid "Please enter a remote name."
-msgstr "Proszę wprowadzić nazwę zdalnego."
+msgstr "Proszę wprowadzić nazwę zdalnego repozytorium."
 
 #: ../plugins/git/git-add-remote-pane.c:55
 msgid "Please enter a URL"
 msgstr "Proszę wprowadzić adres URL"
 
+#. Translators: Remote means the git remote repository
 #: ../plugins/git/git-add-remote-pane.c:182
 msgid "Add Remote"
-msgstr "Dodaj zdalne"
+msgstr "Dodaj zdalne repozytorium"
 
 #: ../plugins/git/git-apply-mailbox-pane.c:159
 msgid "Apply Mailbox Files"
@@ -5368,7 +5371,7 @@ msgstr "Na pewno usunąć gałąź %s?"
 
 #: ../plugins/git/git-delete-remote-pane.c:49
 msgid "No remote selected."
-msgstr "Nie wybrano żadnego zdalnego."
+msgstr "Nie wybrano żadnego zdalnego repozytorium."
 
 #: ../plugins/git/git-delete-tags-pane.c:49
 msgid "No tags selected."
@@ -5397,7 +5400,7 @@ msgstr "<b>Etykieta:</b> %s"
 #: ../plugins/git/git-log-pane.c:591
 #, c-format
 msgid "<b>Remote:</b> %s"
-msgstr "<b>Zdalne:</b> %s"
+msgstr "<b>Zdalne repozytorium:</b> %s"
 
 #: ../plugins/git/git-merge-pane.c:225 ../plugins/git/plugin.c:100
 msgid "Merge"
@@ -5433,7 +5436,7 @@ msgstr "Wyślij"
 
 #: ../plugins/git/git-rebase-pane.c:61
 msgid "No remote selected"
-msgstr "Nie wybrano żadnego zdalnego"
+msgstr "Nie wybrano żadnego zdalnego repozytorium"
 
 #: ../plugins/git/git-remove-files-pane.c:160
 msgid "Remove Files"
@@ -5441,7 +5444,7 @@ msgstr "Usuń pliki"
 
 #: ../plugins/git/git-repository-selector.c:67
 msgid "Remote"
-msgstr "Zdalne"
+msgstr "Zdalne repozytorium"
 
 #: ../plugins/git/git-repository-selector.c:82
 msgid "URL"
@@ -5449,15 +5452,16 @@ msgstr "Adres URL"
 
 #: ../plugins/git/git-repository-selector.c:101
 msgid "<b>Selected Remote:</b>"
-msgstr "<b>Wybrane zdalne:</b>"
+msgstr "<b>Wybrane zdalne repozytorium:</b>"
 
 #: ../plugins/git/git-repository-selector.c:200
 msgid ""
 "No remote selected; using origin by default.\n"
 "To push to a different remote, select one from the Remotes list above."
 msgstr ""
-"Nie wybrano zdalnego; używanie domyślnego „origin”.\n"
-"Aby wysłać inne zdalne, należy wybrać je z listy Zdalne powyżej."
+"Nie wybrano zdalnego repozytorium; używanie domyślnego „origin”.\n"
+"Aby wysłać inne zdalne repozytorium, należy wybrać je z listy „Zdalne "
+"repozytoria” powyżej."
 
 #: ../plugins/git/git-reset-pane.c:176
 msgid "Reset"
@@ -5586,7 +5590,7 @@ msgstr "Narzędzia zdalnego repozytorium"
 
 #: ../plugins/git/plugin.c:233
 msgid "Add a remote"
-msgstr "Dodaj zdalne"
+msgstr "Dodaj zdalne repozytorium"
 
 #: ../plugins/git/plugin.c:234
 msgid "Add a remote repository"
@@ -5594,11 +5598,11 @@ msgstr "Dodaje zdalne repozytorium"
 
 #: ../plugins/git/plugin.c:241
 msgid "Delete selected remote"
-msgstr "Usuwa wybrane zdalne"
+msgstr "Usuwa wybrane zdalne repozytorium"
 
 #: ../plugins/git/plugin.c:242
 msgid "Delete a remote"
-msgstr "Usuń zdalne"
+msgstr "Usuń zdalne repozytorium"
 
 #: ../plugins/git/plugin.c:250
 msgid "Push changes to a remote repository"
@@ -5618,7 +5622,7 @@ msgstr "Pobiera zmiany ze zdalnego repozytorium"
 
 #: ../plugins/git/plugin.c:281
 msgid "Rebase against selected remote"
-msgstr "Odnawia opierając na wybranym zdalnym"
+msgstr "Odnawia opierając na wybranym zdalnym repozytorium"
 
 #: ../plugins/git/plugin.c:282
 msgid "Start a rebase operation relative to the selected remote repository"
@@ -5813,7 +5817,7 @@ msgstr "Wyskakujące menu gałęzi"
 
 #: ../plugins/git/plugin.c:872
 msgid "Remote popup menu"
-msgstr "Wyskakujące menu zdalnego"
+msgstr "Wyskakujące menu zdalnego repozytorium"
 
 #: ../plugins/git/plugin.c:877
 msgid "Popup menu entries"
@@ -5833,7 +5837,7 @@ msgstr "Etykiety"
 
 #: ../plugins/git/plugin.c:952
 msgid "Remotes"
-msgstr "Zdalne"
+msgstr "Zdalne repozytoria"
 
 #: ../plugins/glade/anjuta-design-document.c:170
 #: ../plugins/glade/anjuta-design-document.c:201
@@ -6164,22 +6168,26 @@ msgid "Autocomplete"
 msgstr "Automatyczne uzupełnianie"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:11
+msgid "Test"
+msgstr "Test"
+
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
 msgid "JS Find dirs"
 msgstr "Wyszukiwanie katalogów języka JavaScript"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
 msgid "Gir repository's directory:"
 msgstr "Katalog repozytorium Gir:"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
 msgid "Gjs repository's directory:"
 msgstr "Katalog repozytorium Gjs:"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 msgid "Min character for completion:"
 msgstr "Minimalny znak do uzupełniania:"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:16
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
 msgid "Environment"
 msgstr "Środowisko"
@@ -6239,8 +6247,8 @@ msgstr "Wtyczka obsługi języka Vala"
 msgid "Vala support plugin, adds code completion."
 msgstr "Wtyczka obsługi języka Vala do uzupełniania kodu."
 
-#: ../plugins/language-support-vala/plugin.vala:657
-#: ../plugins/language-support-vala/plugin.vala:665
+#: ../plugins/language-support-vala/plugin.vala:661
+#: ../plugins/language-support-vala/plugin.vala:669
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Automatyczne uzupełnianie"
@@ -6969,7 +6977,7 @@ msgstr "Zaktualizuj widok projektu…"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2164
+#: ../plugins/symbol-db/plugin.c:2169
 msgid "Project"
 msgstr "Projekt"
 
@@ -7121,15 +7129,19 @@ msgid "Select a project type"
 msgstr "Wybór typu projektu"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
+msgid "Select project"
+msgstr "Wybór projektu"
+
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
 #: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr "Błąd"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
 msgid "Details"
 msgstr "Szczegóły"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:5
 msgid "Summary"
 msgstr "Podsumowanie"
 
@@ -8732,12 +8744,12 @@ msgstr "Plik „%s” jest tylko do odczytu. Modyfikować mimo to?"
 msgid "Could not save %s: %s"
 msgstr "Nie można zapisać %s: %s"
 
-#: ../plugins/sourceview/sourceview-io.c:318
+#: ../plugins/sourceview/sourceview-io.c:322
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr "Nie można zapisać pliku, ponieważ nie podano jego nazwy"
 
-#: ../plugins/sourceview/sourceview-io.c:566
+#: ../plugins/sourceview/sourceview-io.c:570
 #, c-format
 msgid "New file %d"
 msgstr "Nowy plik %d"
@@ -9418,13 +9430,13 @@ msgstr "_Znajdź symbol…"
 msgid "Find Symbol"
 msgstr "Wyszukanie symbolu"
 
-#: ../plugins/symbol-db/plugin.c:1067
+#: ../plugins/symbol-db/plugin.c:1072
 #, c-format
 msgid "%s: Generating inheritances…"
 msgstr "%s: tworzenie dziedziczeń…"
 
 #. Translators: %s is the name of a system library
-#: ../plugins/symbol-db/plugin.c:1073
+#: ../plugins/symbol-db/plugin.c:1078
 #, c-format
 msgid "%s: %d file scanned out of %d"
 msgid_plural "%s: %d files scanned out of %d"
@@ -9432,12 +9444,12 @@ msgstr[0] "%s: przeskanowano %d plik z %d"
 msgstr[1] "%s: przeskanowano %d pliki z %d"
 msgstr[2] "%s: przeskanowano %d plików z %d"
 
-#: ../plugins/symbol-db/plugin.c:1104
+#: ../plugins/symbol-db/plugin.c:1109
 #, c-format
 msgid "Generating inheritances…"
 msgstr "Tworzenie dziedziczeń…"
 
-#: ../plugins/symbol-db/plugin.c:1106
+#: ../plugins/symbol-db/plugin.c:1111
 #, c-format
 msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
@@ -9445,27 +9457,27 @@ msgstr[0] "Przeskanowano %d plik z %d"
 msgstr[1] "Przeskanowano %d pliki z %d"
 msgstr[2] "Przeskanowano %d plików z %d"
 
-#: ../plugins/symbol-db/plugin.c:1767
+#: ../plugins/symbol-db/plugin.c:1772
 msgid "Populating symbol database…"
 msgstr "Wypełnianie bazy danych symboli…"
 
-#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
+#: ../plugins/symbol-db/plugin.c:2154 ../plugins/symbol-db/plugin.c:2239
 msgid "Symbols"
 msgstr "Symbole"
 
-#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
+#: ../plugins/symbol-db/plugin.c:2174 ../plugins/symbol-db/plugin.c:2226
 msgid "Search"
 msgstr "Wyszukiwanie"
 
-#: ../plugins/symbol-db/plugin.c:2243
+#: ../plugins/symbol-db/plugin.c:2248
 msgid "SymbolDb popup actions"
 msgstr "Czynności wyskakujące bazy danych symboli"
 
-#: ../plugins/symbol-db/plugin.c:2251
+#: ../plugins/symbol-db/plugin.c:2256
 msgid "SymbolDb menu actions"
 msgstr "Czynności menu bazy danych symboli"
 
-#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
+#: ../plugins/symbol-db/plugin.c:2586 ../plugins/symbol-db/plugin.c:2604
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Baza danych symboli"
