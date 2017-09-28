@@ -9,10 +9,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-08-30 02:49+0000\n"
-"PO-Revision-Date: 2015-08-30 09:50+0200\n"
+"POT-Creation-Date: 2017-09-28 11:14+0000\n"
+"PO-Revision-Date: 2017-09-28 19:10+0200\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: slovenčina <>\n"
 "Language: sk\n"
@@ -20,9 +20,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 2.0.3\n"
 
-#: ../anjuta.appdata.xml.in.h:1
+#: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
+msgid "Anjuta"
+msgstr "Anjuta"
+
+#: ../anjuta.appdata.xml.in.h:2 ../anjuta.desktop.in.in.h:3
+msgid "Develop software in an integrated development environment"
+msgstr "Vývoj softvéru v integrovanom vývojovom prostredí"
+
+#: ../anjuta.appdata.xml.in.h:3
 msgid ""
 "Anjuta DevStudio is a versatile software development studio featuring a "
 "number of advanced programming facilities including project management, "
@@ -37,7 +45,7 @@ msgstr ""
 "poskytnutie jednoduchého a použiteľného rozhrania, ktoré je efektívne pre "
 "vývoj."
 
-#: ../anjuta.appdata.xml.in.h:2
+#: ../anjuta.appdata.xml.in.h:4
 msgid ""
 "Anjuta is very extensible with plugins. Almost all features in Anjuta are "
 "implemented using plugins which can be dynamically enabled or disabled. You "
@@ -53,7 +61,7 @@ msgstr ""
 "každý projekt, čo uľahčuje prácu na projektoch rôznej zložitosti. Moduly vám "
 "umožňujú rozšíriť program Anjuta tak, aby vyhovoval vašim nárokom."
 
-#: ../anjuta.appdata.xml.in.h:3
+#: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
 "templates. The selection includes simple generic, flat (no subdirectory), GTK"
@@ -65,17 +73,9 @@ msgstr ""
 "(bez podadresárov), pre projekty GTK+, GNOME, Java, Python a mnoho ďalších. "
 "Nové šablóny je jednoduché prevziať a nainštalovať."
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
-msgid "Anjuta"
-msgstr "Anjuta"
-
 #: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
 msgstr "Integrované vývojové prostredie"
-
-#: ../anjuta.desktop.in.in.h:3
-msgid "Develop software in an integrated development environment"
-msgstr "Vývoj softvéru v integrovanom vývojovom prostredí"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
@@ -138,12 +138,12 @@ msgstr "Stĺpec %i"
 msgid "Column 1"
 msgstr "Stĺpec 1"
 
-#: ../libanjuta/anjuta-convert.c:74 ../libanjuta/anjuta-convert.c:111
+#: ../libanjuta/anjuta-convert.c:75 ../libanjuta/anjuta-convert.c:113
 #, c-format
 msgid "The file you are trying to open contains an invalid byte sequence."
 msgstr "Súbor, ktorý sa pokúšate otvoriť, obsahuje neplatnú postupnosť bajtov."
 
-#: ../libanjuta/anjuta-convert.c:168 ../libanjuta/anjuta-convert.c:207
+#: ../libanjuta/anjuta-convert.c:170 ../libanjuta/anjuta-convert.c:209
 #, c-format
 msgid ""
 "Anjuta was not able to automatically determine the encoding of the file you "
@@ -373,7 +373,7 @@ msgstr "Nedá sa vykonať príkaz: „%s“"
 msgid "execvp failed"
 msgstr "zlyhalo execvp"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2399
 msgid "Anjuta Shell"
 msgstr "Anjuta Shell"
 
@@ -405,7 +405,7 @@ msgid "Load"
 msgstr "Načítať"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2015
+#: ../libanjuta/anjuta-plugin-manager.c:2013
 msgid "Available Plugins"
 msgstr "Dostupné zásuvné moduly"
 
@@ -415,12 +415,12 @@ msgid "Preferred plugins"
 msgstr "Preferované zásuvné moduly"
 
 # zaškrtávacie pole nad zoznamom dostupných zásuvných modulov
-#: ../libanjuta/anjuta-plugin-manager.c:1157
+#: ../libanjuta/anjuta-plugin-manager.c:1155
 msgid "Only show user activatable plugins"
 msgstr "Zobraziť iba zásuvné moduly aktivovateľné používateľom"
 
 # popis na karte v predvoľbách
-#: ../libanjuta/anjuta-plugin-manager.c:1197
+#: ../libanjuta/anjuta-plugin-manager.c:1195
 msgid ""
 "These are the plugins selected by you when you have been prompted to choose "
 "one of many suitable plugins. Removing the preferred plugin will let you "
@@ -431,24 +431,24 @@ msgstr ""
 "vybrať iný modul."
 
 # Tlačidlo v tabuľke s preferovanými modulmi
-#: ../libanjuta/anjuta-plugin-manager.c:1223
+#: ../libanjuta/anjuta-plugin-manager.c:1221
 msgid "Forget selected plugin"
 msgstr "Zabudnúť na označený modul"
 
 # Titulok okna
-#: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1355
+#: ../libanjuta/anjuta-plugin-manager.c:1515 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "Výber zásuvného modulu"
 
 # Nápis v okne s výberom ladiaceho modulu
-#: ../libanjuta/anjuta-plugin-manager.c:1358
+#: ../libanjuta/anjuta-plugin-manager.c:1356
 #: ../plugins/debug-manager/queue.c:528
 msgid "Please select a plugin to activate"
 msgstr "Vyberte, prosím, zásuvný modul, ktorý sa má aktivovať"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1372
+#: ../libanjuta/anjuta-plugin-manager.c:1370
 #, c-format
 msgid "No plugin is able to load other plugins in %s"
 msgstr ""
@@ -456,54 +456,54 @@ msgstr ""
 "%s"
 
 # Nápis v okne s výberom ladiaceho modulu
-#: ../libanjuta/anjuta-plugin-manager.c:1518
+#: ../libanjuta/anjuta-plugin-manager.c:1516
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Vyberte, prosím, zásuvný modul, ktorý sa má aktivovať</b>"
 
 # Zaškrtávacie pole v okne s výberom ladiaceho modulu
-#: ../libanjuta/anjuta-plugin-manager.c:2044
+#: ../libanjuta/anjuta-plugin-manager.c:2042
 msgid "Remember this selection"
 msgstr "Zapamätať si tento výber"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2382
+#: ../libanjuta/anjuta-plugin-manager.c:2380
 msgid "Profiles"
 msgstr "Profily"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2381
 msgid "Current stack of profiles"
 msgstr "Aktuálny zásobník profilov"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2388
+#: ../libanjuta/anjuta-plugin-manager.c:2386
 msgid "Available plugins"
 msgstr "Dostupné moduly"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2389
+#: ../libanjuta/anjuta-plugin-manager.c:2387
 msgid "Currently available plugins found in plugin paths"
 msgstr "Aktuálne dostupné moduly nájdené v cestách pre zásuvné moduly"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2395
+#: ../libanjuta/anjuta-plugin-manager.c:2393
 msgid "Activated plugins"
 msgstr "Aktivované moduly"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin-manager.c:2394
 msgid "Currently activated plugins"
 msgstr "Aktuálne aktivované moduly"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2402
+#: ../libanjuta/anjuta-plugin-manager.c:2400
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Shell programu Anjuta, pre ktorý bol zásuvný modul vytvorený"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2410
+#: ../libanjuta/anjuta-plugin-manager.c:2408
 msgid "Anjuta Status"
 msgstr "Stav programu Anjuta"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2411
+#: ../libanjuta/anjuta-plugin-manager.c:2409
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr ""
 "Stav programu Anjuta, ktorý sa použije pri načítavaní a zrušení načítavania "
 "modulov"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2564
+#: ../libanjuta/anjuta-plugin-manager.c:2562
 msgid "Loading:"
 msgstr "Načítava sa:"
 
@@ -791,8 +791,8 @@ msgstr ""
 "=@^_`~/\""
 
 #: ../plugins/am-project/amp-group.c:665
-#: ../plugins/am-project/am-project.c:1680
-#: ../plugins/am-project/am-project.c:1773
+#: ../plugins/am-project/am-project.c:1686
+#: ../plugins/am-project/am-project.c:1779
 #: ../plugins/dir-project/dir-project.c:862
 #: ../plugins/dir-project/dir-project.c:996
 #: ../plugins/mk-project/mk-project.c:725
@@ -891,11 +891,11 @@ msgstr "Modul"
 msgid "Package"
 msgstr "Balík"
 
-#: ../plugins/am-project/am-project.c:1710
+#: ../plugins/am-project/am-project.c:1716
 msgid "Unable to parse project file"
 msgstr "Nepodarilo sa analyzovať súbor projektu"
 
-#: ../plugins/am-project/am-project.c:1721
+#: ../plugins/am-project/am-project.c:1727
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "Projekt neexistuje alebo má neplatnú cestu"
@@ -2415,7 +2415,7 @@ msgstr "Rozdiel v štýle patch"
 
 # Názov karty v okne Symboly
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2201
+#: ../plugins/symbol-db/plugin.c:2206
 msgid "Local"
 msgstr "Lokálne"
 
@@ -3250,6 +3250,8 @@ msgid "Disable a breakpoint"
 msgstr "Zakáže zarážku"
 
 # * https://bugzilla.gnome.org/show_bug.cgi?id=645516
+#. Translators: Enabled refers to a breakpoint. It is a column name, like
+#. * other words.
 #. This enable an user defined command
 #: ../plugins/debug-manager/breakpoints.c:1953
 #: ../plugins/tools/anjuta-tools.ui.h:5
@@ -3676,7 +3678,7 @@ msgstr "Rámec"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2164
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Súbor"
@@ -4719,7 +4721,6 @@ msgstr "Štýly zvýrazňovania syntaxe v editore"
 
 # skupina akcií v tabuľke s klávesovými skratkami
 #: ../plugins/document-manager/plugin.c:416
-#| msgid "Editor text formating"
 msgid "Editor text formatting"
 msgstr "Formátovanie textu v editore"
 
@@ -4820,18 +4821,18 @@ msgstr ""
 "Pri vyhľadávaní reťazca „%s“ bol dosiahnutý začiatok dokumentu a pokračovalo "
 "sa od konca, no nenašiel sa žiadny nový výskyt."
 
-#: ../plugins/document-manager/search-box.c:917
+#: ../plugins/document-manager/search-box.c:920
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
 "Ďlašie možnosti vyhľadávania získate použitím kontextovej ponuky ikony "
 "„Nájsť“"
 
 # Tlačidlo
-#: ../plugins/document-manager/search-box.c:988
+#: ../plugins/document-manager/search-box.c:991
 msgid "Replace"
 msgstr "Nahradiť"
 
-#: ../plugins/document-manager/search-box.c:993
+#: ../plugins/document-manager/search-box.c:996
 msgid "Replace all"
 msgstr "Nahradiť všetko"
 
@@ -5122,7 +5123,7 @@ msgstr "Automaticky vybrať aktuálny dokument"
 # Názov karty v okne Symboly
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2213
+#: ../plugins/symbol-db/plugin.c:2218
 msgid "Global"
 msgstr "Globálne"
 
@@ -5171,9 +5172,6 @@ msgid "You can't rename \"/\"!"
 msgstr "Nemôžete premenovať „/“!"
 
 #: ../plugins/file-manager/file-view.c:153
-#| msgid ""
-#| "An error has occured!\n"
-#| "Maybe you permissions're insuficient or the filename is wrong"
 msgid ""
 "An error has occurred!\n"
 "Maybe your permissions are insufficient or the filename is wrong"
@@ -5839,6 +5837,7 @@ msgid "Please enter a URL"
 msgstr "Zadajte, prosím, URL"
 
 # *https://bugzilla.gnome.org/show_bug.cgi?id=646695
+#. Translators: Remote means the git remote repository
 #: ../plugins/git/git-add-remote-pane.c:182
 msgid "Add Remote"
 msgstr "Pridať vzdialené úložisko"
@@ -6740,26 +6739,30 @@ msgid "Autocomplete"
 msgstr "Automatické dokončovanie"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:11
+msgid "Test"
+msgstr "Skúška"
+
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
 msgid "JS Find dirs"
 msgstr "Adresáre hľadania JS"
 
 # * https://bugzilla.gnome.org/show_bug.cgi?id=708248
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
 msgid "Gir repository's directory:"
 msgstr "Adresár úložiska Gir:"
 
 # * https://bugzilla.gnome.org/show_bug.cgi?id=708248
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
 msgid "Gjs repository's directory:"
 msgstr "Adresár úložiska Gjs:"
 
 # * https://bugzilla.gnome.org/show_bug.cgi?id=708248
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 msgid "Min character for completion:"
 msgstr "Minimum znakov pre dokončenie:"
 
 # tab name
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:16
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
 msgid "Environment"
 msgstr "Prostredie"
@@ -6829,8 +6832,8 @@ msgstr ""
 "doplňovanie kódu."
 
 # karta v predvoľbách
-#: ../plugins/language-support-vala/plugin.vala:657
-#: ../plugins/language-support-vala/plugin.vala:665
+#: ../plugins/language-support-vala/plugin.vala:661
+#: ../plugins/language-support-vala/plugin.vala:669
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Automatické doplňovanie"
@@ -7623,7 +7626,7 @@ msgstr "Aktualizuje sa zobrazenie projektu…"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2164
+#: ../plugins/symbol-db/plugin.c:2169
 msgid "Project"
 msgstr "Projekt"
 
@@ -7788,15 +7791,19 @@ msgid "Select a project type"
 msgstr "Vyberte typ projektu"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
+msgid "Select project"
+msgstr "Výber projektu"
+
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
 #: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr "Chyba"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:5
 msgid "Summary"
 msgstr "Zhrnutie"
 
@@ -8904,7 +8911,6 @@ msgstr "Vyžadovať SDL verzie:"
 
 # tooltip nad poľom kam sa zadáva verzia SDL
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-#| msgid "Mininum SDL version required"
 msgid "Minimum SDL version required"
 msgstr "Minimálna vyžadovaná verzia SDL"
 
@@ -9557,13 +9563,13 @@ msgstr "Súbor „%s“ je iba na čítanie! Upraviť aj tak?"
 msgid "Could not save %s: %s"
 msgstr "Nepodarilo sa uložiť %s: %s"
 
-#: ../plugins/sourceview/sourceview-io.c:308
+#: ../plugins/sourceview/sourceview-io.c:322
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr "Súbor sa nepodarilo uložiť, pretože zatiaľ nebol určený názov súboru"
 
 # Názov nového(ešte neuloženého) súboru na karte
-#: ../plugins/sourceview/sourceview-io.c:556
+#: ../plugins/sourceview/sourceview-io.c:570
 #, c-format
 msgid "New file %d"
 msgstr "Nový súbor %d"
@@ -10273,13 +10279,13 @@ msgstr "Nájsť sy_mbol…"
 msgid "Find Symbol"
 msgstr "Nájde symbol"
 
-#: ../plugins/symbol-db/plugin.c:1067
+#: ../plugins/symbol-db/plugin.c:1072
 #, c-format
 msgid "%s: Generating inheritances…"
 msgstr "%s: Generujú sa dedičnosti…"
 
 #. Translators: %s is the name of a system library
-#: ../plugins/symbol-db/plugin.c:1073
+#: ../plugins/symbol-db/plugin.c:1078
 #, c-format
 msgid "%s: %d file scanned out of %d"
 msgid_plural "%s: %d files scanned out of %d"
@@ -10287,12 +10293,12 @@ msgstr[0] "%s: prehľadaných %d súborov z %d"
 msgstr[1] "%s: prehľadaný %d súbor z %d"
 msgstr[2] "%s: prehľadané %d súbory z %d"
 
-#: ../plugins/symbol-db/plugin.c:1104
+#: ../plugins/symbol-db/plugin.c:1109
 #, c-format
 msgid "Generating inheritances…"
 msgstr "Generujú sa dedičnosti…"
 
-#: ../plugins/symbol-db/plugin.c:1106
+#: ../plugins/symbol-db/plugin.c:1111
 #, c-format
 msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
@@ -10300,30 +10306,30 @@ msgstr[0] "prehľadaných %d súborov z %d"
 msgstr[1] "prehľadaný %d súbor z %d"
 msgstr[2] "prehľadané %d súbory z %d"
 
-#: ../plugins/symbol-db/plugin.c:1767
+#: ../plugins/symbol-db/plugin.c:1772
 msgid "Populating symbol database…"
 msgstr "Napĺňa sa databáza symbolov…"
 
 # Nadpis okna
-#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
+#: ../plugins/symbol-db/plugin.c:2154 ../plugins/symbol-db/plugin.c:2239
 msgid "Symbols"
 msgstr "Symboly"
 
 # Názov karty v okne Symboly
-#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
+#: ../plugins/symbol-db/plugin.c:2174 ../plugins/symbol-db/plugin.c:2226
 msgid "Search"
 msgstr "Hľadať"
 
-#: ../plugins/symbol-db/plugin.c:2243
+#: ../plugins/symbol-db/plugin.c:2248
 msgid "SymbolDb popup actions"
 msgstr "SymbolDb akcie kontextovej ponuky"
 
-#: ../plugins/symbol-db/plugin.c:2251
+#: ../plugins/symbol-db/plugin.c:2256
 msgid "SymbolDb menu actions"
 msgstr "SymbolDb akcie ponuky"
 
 # skupina predvolieb v predvoľbách
-#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
+#: ../plugins/symbol-db/plugin.c:2586 ../plugins/symbol-db/plugin.c:2604
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Databáza symbolov"
