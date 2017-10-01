@@ -1,5 +1,5 @@
 <schemalist>
-	<schema id="org.gnome.anjuta.plugins.project-wizard" path="/org/gnome/anjuta/plugins/project-wizard/">
+	<schema id="org.gnome.anjuta.plugins.project-wizard" path="/org/gnome/anjuta/plugins/project-wizard/" gettext-domain="anjuta">
 		<key name="project-directory" type="s">
 			<default>""</default>
 			<_summary>Directory where the new projects are created by default</_summary>

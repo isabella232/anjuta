@@ -1,5 +1,5 @@
 <schemalist>
-	<schema id="org.gnome.anjuta.plugins.build" path="/org/gnome/anjuta/plugins/build/">
+	<schema id="org.gnome.anjuta.plugins.build" path="/org/gnome/anjuta/plugins/build/" gettext-domain="anjuta">
 		<key name="parallel-make" type="b">
 			<default>false</default>
 		</key>

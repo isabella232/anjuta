@@ -1,5 +1,5 @@
 <schemalist>
-	<schema id="org.gnome.anjuta" path="/org/gnome/anjuta/">
+	<schema id="org.gnome.anjuta" path="/org/gnome/anjuta/" gettext-domain="anjuta">
 		<key name="toolbar-visible" type="b">
 			<default>true</default>
 		</key>
@@ -39,7 +39,7 @@
 			<_description>If empty, current login and machine name is used.</_description>
 		</key>
 	</schema>
-	<schema id="org.gnome.anjuta.editor" path="/org/gnome/anjuta/editor/">
+	<schema id="org.gnome.anjuta.editor" path="/org/gnome/anjuta/editor/" gettext-domain="anjuta">
 		<key name="use-tabs" type="b">
 			<default>true</default>
 			<_summary>Use tabulation for indentation</_summary>
