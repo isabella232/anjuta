@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-28 14:37+0200\n"
-"PO-Revision-Date: 2017-09-28 14:38+0200\n"
+"POT-Creation-Date: 2017-10-01 18:19+0200\n"
+"PO-Revision-Date: 2017-10-01 18:20+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -8299,6 +8299,10 @@ msgstr "Wybór katalogu roboczego"
 #, c-format
 msgid "Program directory '%s' is not local"
 msgstr "Katalog programu „%s” nie jest lokalny"
+
+#: ../plugins/run-program/org.gnome.anjuta.plugins.run.gschema.xml.in.h:1
+msgid "Command used for starting a terminal"
+msgstr "Polecenie używane do uruchomienia terminala"
 
 #: ../plugins/run-program/parameters.c:180
 msgid "Load Target to run"
