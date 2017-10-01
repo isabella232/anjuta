@@ -30,29 +30,37 @@
 # Jens Seidel <jseidel@cvs.gnome.org>, 2005.
 # Andre Klapper <ak-47@gmx.net>, 2007.
 # Philipp Kerling <k.philipp@gmail.com>, 2008.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2010-2013.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2010-2013, 2017.
 # Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2011, 2015.
-# Christian Kirbach <christian.kirbach@gmail.com>, 2008-2010, 2011, 2012, 2013.
+# Christian Kirbach <christian.kirbach@gmail.com>, 2008-2013.
 # Alexander Wilms <f.alexander.wilms+spam@gmail.com>, 2013.
 # Wolfgang Stöggl <c72578@yahoo.de>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-09-02 02:49+0000\n"
-"PO-Revision-Date: 2015-09-02 14:11+0200\n"
-"Last-Translator: Wolfgang Stoeggl <c72578@yahoo.de>\n"
+"POT-Creation-Date: 2017-09-28 11:14+0000\n"
+"PO-Revision-Date: 2017-10-01 13:30+0200\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German <>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 2.0.3\n"
 
-#: ../anjuta.appdata.xml.in.h:1
+#: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
+msgid "Anjuta"
+msgstr "Anjuta"
+
+#: ../anjuta.appdata.xml.in.h:2 ../anjuta.desktop.in.in.h:3
+msgid "Develop software in an integrated development environment"
+msgstr "Software in einer integrierten Umgebung entwickeln"
+
+#: ../anjuta.appdata.xml.in.h:3
 msgid ""
 "Anjuta DevStudio is a versatile software development studio featuring a "
 "number of advanced programming facilities including project management, "
@@ -68,7 +76,7 @@ msgstr ""
 "einfache und benutzerfreundliche Oberfläche zu bieten, die dennoch mächtig "
 "genug ist für effizientes Entwickeln."
 
-#: ../anjuta.appdata.xml.in.h:2
+#: ../anjuta.appdata.xml.in.h:4
 msgid ""
 "Anjuta is very extensible with plugins. Almost all features in Anjuta are "
 "implemented using plugins which can be dynamically enabled or disabled. You "
@@ -85,7 +93,7 @@ msgstr ""
 "Projekten unterschiedlicher Komplexität zu arbeiten. Mittels Plugins können "
 "Sie Anjuta auch um eigene Funktionen erweitern."
 
-#: ../anjuta.appdata.xml.in.h:3
+#: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
 "templates. The selection includes simple generic, flat (no subdirectory), GTK"
@@ -97,17 +105,9 @@ msgstr ""
 "flache (ohne Unterordner), GTK+, GNOME, JAVA und Python-Projekte und mehr. "
 "Neue Vorlagen können einfach heruntergeladen und installiert werden."
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
-msgid "Anjuta"
-msgstr "Anjuta"
-
 #: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
 msgstr "Integrierte Entwicklungsumgebung"
-
-#: ../anjuta.desktop.in.in.h:3
-msgid "Develop software in an integrated development environment"
-msgstr "Software in einer integrierten Umgebung entwickeln"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
@@ -171,12 +171,12 @@ msgstr "Spalte %i"
 msgid "Column 1"
 msgstr "Spalte 1"
 
-#: ../libanjuta/anjuta-convert.c:74 ../libanjuta/anjuta-convert.c:111
+#: ../libanjuta/anjuta-convert.c:75 ../libanjuta/anjuta-convert.c:113
 #, c-format
 msgid "The file you are trying to open contains an invalid byte sequence."
 msgstr "Die zu öffnende Datei enthält eine ungültige Byte-Reihenfolge."
 
-#: ../libanjuta/anjuta-convert.c:168 ../libanjuta/anjuta-convert.c:207
+#: ../libanjuta/anjuta-convert.c:170 ../libanjuta/anjuta-convert.c:209
 #, c-format
 msgid ""
 "Anjuta was not able to automatically determine the encoding of the file you "
@@ -401,7 +401,7 @@ msgstr "Befehl kann nicht ausgeführt werden: »%s«"
 msgid "execvp failed"
 msgstr "»execvp« fehlgeschlagen"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2399
 msgid "Anjuta Shell"
 msgstr "Anjuta-Shell"
 
@@ -432,7 +432,7 @@ msgid "Load"
 msgstr "Laden"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2015
+#: ../libanjuta/anjuta-plugin-manager.c:2013
 msgid "Available Plugins"
 msgstr "Verfügbare Komponenten"
 
@@ -440,11 +440,11 @@ msgstr "Verfügbare Komponenten"
 msgid "Preferred plugins"
 msgstr "Bevorzugte Komponenten"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1157
+#: ../libanjuta/anjuta-plugin-manager.c:1155
 msgid "Only show user activatable plugins"
 msgstr "Nur Komponenten zeigen, die vom Benutzer aktiviert werden können"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1197
+#: ../libanjuta/anjuta-plugin-manager.c:1195
 msgid ""
 "These are the plugins selected by you when you have been prompted to choose "
 "one of many suitable plugins. Removing the preferred plugin will let you "
@@ -454,72 +454,72 @@ msgstr ""
 "ausgewählt. Entfernen Sie eine der Komponenten, wird Anjuta Ihnen beim "
 "nächsten Mal erneut einen Auswahldialog anzeigen."
 
-#: ../libanjuta/anjuta-plugin-manager.c:1223
+#: ../libanjuta/anjuta-plugin-manager.c:1221
 msgid "Forget selected plugin"
 msgstr "Ausgewählte Komponente verwerfen"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1355
+#: ../libanjuta/anjuta-plugin-manager.c:1515 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "Komponente auswählen"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1358
+#: ../libanjuta/anjuta-plugin-manager.c:1356
 #: ../plugins/debug-manager/queue.c:528
 msgid "Please select a plugin to activate"
 msgstr "Bitte wählen Sie die zu aktivierende Komponente aus"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1372
+#: ../libanjuta/anjuta-plugin-manager.c:1370
 #, c-format
 msgid "No plugin is able to load other plugins in %s"
 msgstr "Keine Komponente kann andere Komponenten in %s laden"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1518
+#: ../libanjuta/anjuta-plugin-manager.c:1516
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Bitte wählen Sie die zu aktivierende Komponente aus</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2044
+#: ../libanjuta/anjuta-plugin-manager.c:2042
 msgid "Remember this selection"
 msgstr "Diese Auswahl merken"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2382
+#: ../libanjuta/anjuta-plugin-manager.c:2380
 msgid "Profiles"
 msgstr "Profile"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2381
 msgid "Current stack of profiles"
 msgstr "Aktueller Profil-Stapel"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2388
+#: ../libanjuta/anjuta-plugin-manager.c:2386
 msgid "Available plugins"
 msgstr "Verfügbare Komponenten"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2389
+#: ../libanjuta/anjuta-plugin-manager.c:2387
 msgid "Currently available plugins found in plugin paths"
-msgstr "Verfügbare Komponenten, die in Komponenten-Ordnern gefunden wurden."
+msgstr "Verfügbare Komponenten, die in Komponenten-Ordnern gefunden wurden"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2395
+#: ../libanjuta/anjuta-plugin-manager.c:2393
 msgid "Activated plugins"
 msgstr "Aktivierte Komponenten"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin-manager.c:2394
 msgid "Currently activated plugins"
 msgstr "Derzeit aktivierte Komponenten"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2402
+#: ../libanjuta/anjuta-plugin-manager.c:2400
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Die Anjuta-Shell, für welche die Komponenten erstellt sind"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2410
+#: ../libanjuta/anjuta-plugin-manager.c:2408
 msgid "Anjuta Status"
 msgstr "Status von Anjuta"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2411
+#: ../libanjuta/anjuta-plugin-manager.c:2409
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr ""
 "Status von Anjuta, der zum Laden und Entladen der Komponenten benutzt wird"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2564
+#: ../libanjuta/anjuta-plugin-manager.c:2562
 msgid "Loading:"
 msgstr "Laden:"
 
@@ -657,7 +657,7 @@ msgstr "Abkürzung"
 #. Avoid space in translated string
 #: ../libanjuta/anjuta-utils.c:369
 msgid "System:"
-msgstr "System: "
+msgstr "System:"
 
 #: ../libanjuta/anjuta-utils.c:518
 msgid ""
@@ -773,7 +773,7 @@ msgstr "Widget %s konnte nicht gefunden werden"
 #: ../libanjuta/resources.c:79 ../libanjuta/resources.c:101
 #, c-format
 msgid "Could not find application pixmap file: %s"
-msgstr "Pixmap %s der Anwendung konnte nicht gefunden werden."
+msgstr "Pixmap %s der Anwendung konnte nicht gefunden werden"
 
 # -- sigh, i think shell == prompt in German --
 #: ../libanjuta/resources.c:277
@@ -793,8 +793,8 @@ msgstr ""
 "\\« enthalten"
 
 #: ../plugins/am-project/amp-group.c:665
-#: ../plugins/am-project/am-project.c:1680
-#: ../plugins/am-project/am-project.c:1773
+#: ../plugins/am-project/am-project.c:1686
+#: ../plugins/am-project/am-project.c:1779
 #: ../plugins/dir-project/dir-project.c:862
 #: ../plugins/dir-project/dir-project.c:996
 #: ../plugins/mk-project/mk-project.c:725
@@ -879,11 +879,11 @@ msgstr "Modul"
 msgid "Package"
 msgstr "Paket"
 
-#: ../plugins/am-project/am-project.c:1710
+#: ../plugins/am-project/am-project.c:1716
 msgid "Unable to parse project file"
 msgstr "Projektdatei kann nicht verarbeitet werden"
 
-#: ../plugins/am-project/am-project.c:1721
+#: ../plugins/am-project/am-project.c:1727
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "Projekt ist nicht vorhanden oder ungültiger Pfad"
@@ -979,7 +979,7 @@ msgstr "Libtool-Unterstützung:"
 msgid "Add support to compile shared and static libraries with Libtool."
 msgstr ""
 "Fügt Unterstützung für das Erstellen von gemeinsam verwendeten und "
-"statischen Bibliotheken mit Libtool hinzu"
+"statischen Bibliotheken mit Libtool hinzu."
 
 #: ../plugins/am-project/am-properties.c:104
 #: ../plugins/am-project/am-properties.c:211
@@ -1360,7 +1360,7 @@ msgid ""
 "system program. "
 msgstr ""
 "Das Ziel nicht mit einem optionalen Präfix umbenennen. Wird zur Vermeidung "
-"des Überschreibens von Systemprogrammen verwendet."
+"des Überschreibens von Systemprogrammen verwendet. "
 
 #: ../plugins/am-project/am-properties.c:483
 #: ../plugins/am-project/am-properties.c:658
@@ -1443,7 +1443,7 @@ msgstr "Automake-Generierung"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:2
 msgid "Basic autotools build plugin."
-msgstr "Autotools-Erstellungs-Komponente für Anjuta"
+msgstr "Autotools-Erstellungs-Komponente für Anjuta."
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:3
 #: ../plugins/run-program/plugin.c:298
@@ -1714,7 +1714,7 @@ msgstr "Befehl wurde mit Status %d beendet"
 
 #: ../plugins/build-basic-autotools/plugin.c:988
 msgid "Command terminated for an unknown reason"
-msgstr "Befehl wurde aus unbekanntem Grund beendet "
+msgstr "Befehl wurde aus unbekanntem Grund beendet"
 
 # c-format
 #: ../plugins/build-basic-autotools/plugin.c:1006
@@ -2051,7 +2051,7 @@ msgstr "Autor/Datum-Zeit"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:19
 msgid "Class Function Prefix:"
-msgstr "Klassen-Funktionspräfix"
+msgstr "Klassen-Funktionspräfix:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:20
 msgid "Member Functions/Variables"
@@ -2268,7 +2268,7 @@ msgid "Patch-Style diff"
 msgstr "Diff im Patch-Stil"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2201
+#: ../plugins/symbol-db/plugin.c:2206
 msgid "Local"
 msgstr "Lokal"
 
@@ -3014,6 +3014,8 @@ msgstr "Haltepunkt abschalten"
 msgid "Disable a breakpoint"
 msgstr "Einen Haltepunkt abschalten"
 
+#. Translators: Enabled refers to a breakpoint. It is a column name, like
+#. * other words.
 #. This enable an user defined command
 #: ../plugins/debug-manager/breakpoints.c:1953
 #: ../plugins/tools/anjuta-tools.ui.h:5
@@ -3387,7 +3389,7 @@ msgstr "Frame"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2164
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Datei"
@@ -3633,7 +3635,7 @@ msgstr "Entfernen"
 
 #: ../plugins/document-manager/anjuta-docman.c:164
 msgid " [read-only]"
-msgstr "[schreibgeschützt]"
+msgstr " [schreibgeschützt]"
 
 #: ../plugins/document-manager/anjuta-docman.c:533
 #: ../plugins/document-manager/plugin.c:156
@@ -3686,7 +3688,7 @@ msgstr "Dokumentenverwaltung"
 
 #: ../plugins/document-manager/anjuta-document-manager.plugin.in.h:2
 msgid "Provides document management capabilities."
-msgstr "Stellt Dokumentenverwaltungsfunktionen zur Verfügung"
+msgstr "Stellt Dokumentenverwaltungsfunktionen zur Verfügung."
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:1
 msgid "Top"
@@ -4389,16 +4391,16 @@ msgstr ""
 "Die Suche nach »%s« wurde abgeschlossen und wird ab Dokumentende "
 "fortgesetzt, es wurde aber keine Übereinstimmung gefunden."
 
-#: ../plugins/document-manager/search-box.c:917
+#: ../plugins/document-manager/search-box.c:920
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
 "Verwenden Sie das Kontextmenü des »Suchen«-Symbols für weitere Suchoptionen"
 
-#: ../plugins/document-manager/search-box.c:988
+#: ../plugins/document-manager/search-box.c:991
 msgid "Replace"
 msgstr "Ersetzen"
 
-#: ../plugins/document-manager/search-box.c:993
+#: ../plugins/document-manager/search-box.c:996
 msgid "Replace all"
 msgstr "Alle ersetzen"
 
@@ -4659,7 +4661,7 @@ msgstr "Datei-Manager für Projekte und einzelne Dateien"
 
 #: ../plugins/file-manager/file-manager.ui.h:1
 msgid "Root directory if no project is open:"
-msgstr "Wurzelordner, wenn kein Projekt geöffnet ist"
+msgstr "Wurzelordner, wenn kein Projekt geöffnet ist:"
 
 #: ../plugins/file-manager/file-manager.ui.h:2
 msgid "Choose Directory to show if no project is open"
@@ -4673,7 +4675,7 @@ msgstr "Das aktuelle Dokument automatisch auswählen"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2213
+#: ../plugins/symbol-db/plugin.c:2218
 msgid "Global"
 msgstr "Global"
 
@@ -5359,6 +5361,7 @@ msgstr "Bitte legen Sie einen Gegenstellennamen fest."
 msgid "Please enter a URL"
 msgstr "Bitte geben Sie eine Adresse ein"
 
+#. Translators: Remote means the git remote repository
 #: ../plugins/git/git-add-remote-pane.c:182
 msgid "Add Remote"
 msgstr "Gegenstelle hinzufügen"
@@ -5916,7 +5919,7 @@ msgstr "Glade Oberflächenentwicklung"
 
 #: ../plugins/glade/anjuta-glade.plugin.in.h:2
 msgid "Glade Plugin for Anjuta."
-msgstr "Glade-Komponente für Anjuta"
+msgstr "Glade-Komponente für Anjuta."
 
 #: ../plugins/glade/anjuta-glade.plugin.in.h:3
 msgid "User interface file"
@@ -5996,7 +5999,7 @@ msgstr "Klammer-Vervollständigung einschalten"
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:5
 #: ../plugins/indentation-python-style/anjuta-indentation-python-style.ui.h:3
 msgid "Brace indentation size in spaces:"
-msgstr "Breite der Einrückung von Klammern in Leerzeichen"
+msgstr "Breite der Einrückung von Klammern in Leerzeichen:"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:6
 #: ../plugins/indentation-python-style/anjuta-indentation-python-style.ui.h:4
@@ -6100,7 +6103,7 @@ msgstr "Javascript-Debugger"
 
 #: ../plugins/js-debugger/js_debugger.plugin.in.h:2
 msgid "Javascript Debugger Plugin"
-msgstr "Plugin für Javascript-Fehlerdiagnose "
+msgstr "Plugin für Javascript-Fehlerdiagnose"
 
 #: ../plugins/js-debugger/plugin.c:122
 #, c-format
@@ -6228,22 +6231,26 @@ msgid "Autocomplete"
 msgstr "Automatische Vervollständigung"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:11
+msgid "Test"
+msgstr "Test"
+
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
 msgid "JS Find dirs"
 msgstr "JS-Suchordner"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-msgid "Gir repository's directory:"
-msgstr "Ablageordner von Gir: "
-
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-msgid "Gjs repository's directory:"
-msgstr "Ablageordner von Gjs: "
+msgid "Gir repository's directory:"
+msgstr "Ablageordner von Gir:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
+msgid "Gjs repository's directory:"
+msgstr "Ablageordner von Gjs:"
+
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 msgid "Min character for completion:"
 msgstr "Min. Zeichen für Vervollständigung:"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:16
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
 msgid "Environment"
 msgstr "Umgebung"
@@ -6306,8 +6313,8 @@ msgid "Vala support plugin, adds code completion."
 msgstr ""
 "Komponente für die Unterstützung von Vala, fügt Code-Vervollständigung hinzu."
 
-#: ../plugins/language-support-vala/plugin.vala:657
-#: ../plugins/language-support-vala/plugin.vala:665
+#: ../plugins/language-support-vala/plugin.vala:661
+#: ../plugins/language-support-vala/plugin.vala:669
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Automatische Vervollständigung"
@@ -6355,7 +6362,7 @@ msgstr "Anzeigestil für Warnungen:"
 
 #: ../plugins/message-view/anjuta-message-manager-plugin.ui.h:13
 msgid "Normal message indicator style:"
-msgstr "Anzeigestil für normale Meldungen"
+msgstr "Anzeigestil für normale Meldungen:"
 
 #: ../plugins/message-view/anjuta-message-manager-plugin.ui.h:14
 msgid "Indicators"
@@ -6497,7 +6504,7 @@ msgstr "Patch-Komponente"
 
 #: ../plugins/patch/anjuta-patch.plugin.in.h:2
 msgid "Patches files and directories."
-msgstr "Patches auf Dateien/Ordner anwenden"
+msgstr "Patches auf Dateien/Ordner anwenden."
 
 #: ../plugins/patch/patch-plugin.c:94
 msgid "File/Directory to patch"
@@ -6710,7 +6717,7 @@ msgstr "Quellen auswählen …"
 
 #: ../plugins/project-manager/dialogs.c:409
 msgid " This property is not modifiable."
-msgstr "Diese Eigenschaft ist nicht veränderbar."
+msgstr " Diese Eigenschaft ist nicht veränderbar."
 
 #. Several backend are possible, ask the user to select one
 #: ../plugins/project-manager/dialogs.c:644
@@ -7036,7 +7043,7 @@ msgstr "Projektansicht aktualisieren …"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2164
+#: ../plugins/symbol-db/plugin.c:2169
 msgid "Project"
 msgstr "Projekt"
 
@@ -7188,15 +7195,19 @@ msgid "Select a project type"
 msgstr "Den Projekttyp auswählen"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
+msgid "Select project"
+msgstr "Projekt auswählen"
+
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
 #: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr "Fehler"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
 msgid "Details"
 msgstr "Details"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:5
 msgid "Summary"
 msgstr "Zusammenfassung"
 
@@ -7637,7 +7648,7 @@ msgstr "Komponenten-Klassenname"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:19
 msgid "Plugin Dependencies:"
-msgstr "Komponenten-Abhängigkeiten"
+msgstr "Komponenten-Abhängigkeiten:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:20
 msgid ""
@@ -7740,7 +7751,7 @@ msgstr "Externe Pakete konfigurieren"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:13
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:13
 msgid "Add C++ support:"
-msgstr "Unterstützung für C++ hinzufügen"
+msgstr "Unterstützung für C++ hinzufügen:"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:31
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:14
@@ -7897,7 +7908,7 @@ msgstr ""
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:15
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:15
 msgid "Add internationalization:"
-msgstr "Internationalisierung hinzufügen"
+msgstr "Internationalisierung hinzufügen:"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:16
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:18
@@ -7928,7 +7939,7 @@ msgstr ""
 #: ../plugins/project-wizard/templates/terminal.wiz.in.h:19
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:19
 msgid "Add Windows support:"
-msgstr "Unterstützung für Windows hinzufügen;"
+msgstr "Unterstützung für Windows hinzufügen:"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:20
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:26
@@ -8041,7 +8052,7 @@ msgstr "Vollwertige Gtk+-Anwendung mit Dateiverarbeitung"
 #: ../plugins/project-wizard/templates/java.wiz.in.h:17
 #: ../plugins/project-wizard/templates/python.wiz.in.h:15
 msgid "Add gtk-doc system:"
-msgstr "»gtk-doc«-System hinzufügen"
+msgstr "»gtk-doc«-System hinzufügen:"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:20
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:18
@@ -8059,7 +8070,7 @@ msgstr ""
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:17
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:17
 msgid "Use GtkBuilder for user interface:"
-msgstr "GtkBuilder für die Benutzeroberfläche verwenden"
+msgstr "GtkBuilder für die Benutzeroberfläche verwenden:"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:24
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:22
@@ -8261,7 +8272,7 @@ msgstr "Benötigt »SDL_mixer«-Bibliothek"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:27
 msgid "Require SDL_net:"
-msgstr "Benötigt »SDL_net«"
+msgstr "Benötigt SDL_net:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:28
 msgid "Require SDL_net library"
@@ -8333,7 +8344,7 @@ msgstr "Programm ausführen"
 
 #: ../plugins/run-program/anjuta-run-program.plugin.in.h:2
 msgid "Allow to execute program without debugger."
-msgstr "Programm darf ohne Fehlerdiagnose ausgeführt werden"
+msgstr "Programm darf ohne Fehlerdiagnose ausgeführt werden."
 
 #: ../plugins/run-program/anjuta-run-program.ui.h:1
 msgid "Program Parameters"
@@ -8591,7 +8602,7 @@ msgstr "Sprachen:"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:12
 msgid "Select the languages for which you want to use this snippet."
-msgstr "Wählen Sie die Sprachen, für die dieser Schnipsel gültig ist"
+msgstr "Wählen Sie die Sprachen, für die dieser Schnipsel gültig ist."
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:13
 msgid "Keywords:"
@@ -8810,14 +8821,14 @@ msgstr "Die Datei »%s« ist nur lesbar! Soll Sie trotzdem bearbeitet werden?"
 msgid "Could not save %s: %s"
 msgstr "Datei %s konnte nicht gespeichert werden: %s"
 
-#: ../plugins/sourceview/sourceview-io.c:308
+#: ../plugins/sourceview/sourceview-io.c:322
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr ""
 "Die Datei konnte nicht gespeichert werden, weil der Dateiname nicht "
 "festgelegt ist"
 
-#: ../plugins/sourceview/sourceview-io.c:556
+#: ../plugins/sourceview/sourceview-io.c:570
 #, c-format
 msgid "New file %d"
 msgstr "Neue Datei %d"
@@ -9184,7 +9195,7 @@ msgstr "Dateien/Ordner kopieren …"
 #. short-cut
 #: ../plugins/subversion/plugin.c:110 ../plugins/subversion/plugin.c:201
 msgid "Copy files/folders in the repository"
-msgstr "Dateien/Ordner im Softwarebestand kopieren …"
+msgstr "Dateien/Ordner im Softwarebestand kopieren"
 
 #. Action name
 #. Stock icon, if any
@@ -9260,7 +9271,7 @@ msgstr "Subversion-Protokoll"
 
 #: ../plugins/subversion/subversion-add-dialog.c:41
 msgid "Subversion: File will be added on next commit."
-msgstr "Subversion: Datei wird beim nächsten Einspielen hinzugefügt"
+msgstr "Subversion: Datei wird beim nächsten Einspielen hinzugefügt."
 
 #: ../plugins/subversion/subversion-add-dialog.c:65
 #: ../plugins/subversion/subversion-diff-dialog.c:116
@@ -9498,52 +9509,52 @@ msgstr "Symbol _suchen …"
 msgid "Find Symbol"
 msgstr "Symbol suchen"
 
-#: ../plugins/symbol-db/plugin.c:1067
+#: ../plugins/symbol-db/plugin.c:1072
 #, c-format
 msgid "%s: Generating inheritances…"
 msgstr "%s: Vererbungen werden erstellt …"
 
 #. Translators: %s is the name of a system library
-#: ../plugins/symbol-db/plugin.c:1073
+#: ../plugins/symbol-db/plugin.c:1078
 #, c-format
 msgid "%s: %d file scanned out of %d"
 msgid_plural "%s: %d files scanned out of %d"
 msgstr[0] "%s: %d Datei von %d durchsucht"
 msgstr[1] "%s: %d Dateien von %d durchsucht"
 
-#: ../plugins/symbol-db/plugin.c:1104
+#: ../plugins/symbol-db/plugin.c:1109
 #, c-format
 msgid "Generating inheritances…"
 msgstr "Vererbungen werden erstellt …"
 
-#: ../plugins/symbol-db/plugin.c:1106
+#: ../plugins/symbol-db/plugin.c:1111
 #, c-format
 msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
 msgstr[0] "%d Datei von %d durchsucht"
 msgstr[1] "%d Dateien von %d durchsucht"
 
-#: ../plugins/symbol-db/plugin.c:1767
+#: ../plugins/symbol-db/plugin.c:1772
 msgid "Populating symbol database…"
 msgstr "Symbol-Datenbank wird erstellt …"
 
-#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
+#: ../plugins/symbol-db/plugin.c:2154 ../plugins/symbol-db/plugin.c:2239
 msgid "Symbols"
 msgstr "Symbole"
 
-#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
+#: ../plugins/symbol-db/plugin.c:2174 ../plugins/symbol-db/plugin.c:2226
 msgid "Search"
 msgstr "Suchen"
 
-#: ../plugins/symbol-db/plugin.c:2243
+#: ../plugins/symbol-db/plugin.c:2248
 msgid "SymbolDb popup actions"
 msgstr "Aktionen im Kontextmenü der Symbol-Datenbank"
 
-#: ../plugins/symbol-db/plugin.c:2251
+#: ../plugins/symbol-db/plugin.c:2256
 msgid "SymbolDb menu actions"
 msgstr "Symbol-Datenbank Aktionen"
 
-#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
+#: ../plugins/symbol-db/plugin.c:2586 ../plugins/symbol-db/plugin.c:2604
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Symboldatenbank"
@@ -9782,7 +9793,7 @@ msgstr "Externes Werkzeug konnte nicht geladen werden"
 #: ../plugins/tools/fileop.c:703
 #, c-format
 msgid "Unable to open %s for writing"
-msgstr "%s konnte nicht zum Schreiben geöffnet werden."
+msgstr "%s konnte nicht zum Schreiben geöffnet werden"
 
 #: ../plugins/tools/plugin.c:187
 msgid "Tool operations"
@@ -10232,141 +10243,3 @@ msgstr "Nur Symbole"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Nur Text"
-
-#~ msgid "label"
-#~ msgstr "Beschriftung"
-
-#~ msgid "Error writing %s"
-#~ msgstr "Fehler beim Schreiben von %s"
-
-#~ msgid "_Save Message"
-#~ msgstr "Nachricht _speichern"
-
-#~ msgid "Save message"
-#~ msgstr "Nachricht speichern"
-
-#~ msgid "Import an existing project"
-#~ msgstr "Ein bereits existierendes Projekt importieren"
-
-#~ msgid "Recent projects:"
-#~ msgstr "Zuletzt geöffnete Projekte:"
-
-#~ msgid "Tutorials"
-#~ msgstr "Selbstlernanleitungen"
-
-#~ msgid "Anjuta Manual"
-#~ msgstr "Anjuta-Benutzerhandbuch"
-
-#~ msgid "FAQ"
-#~ msgstr "Häufig gestellte Fragen"
-
-#~ msgid "Getting started:"
-#~ msgstr "Erste Schritte:"
-
-#~ msgid "Use currently selected profile in GNOME terminal"
-#~ msgstr "Das momentan verwendete GNOME-Terminalprofil verwenden"
-
-#~ msgid "Path: "
-#~ msgstr "Pfad:"
-
-#~ msgid "profile file"
-#~ msgstr "Profildatei"
-
-#~ msgid "Profile Plugins"
-#~ msgstr "Komponenten des Profils"
-
-#~ msgid "List of plugins for this profile"
-#~ msgstr "Liste der Komponenten für dieses Profil"
-
-#~ msgid "<b>Open With</b>"
-#~ msgstr "<b>Öffnen mit</b>"
-
-#~ msgid "Drop or enter revision here"
-#~ msgstr "Eine Revision hier ablegen oder eingeben"
-
-#~ msgid ""
-#~ "Whole project; Drop a file here or type a path to view a file or folder "
-#~ "log"
-#~ msgstr ""
-#~ "Ganzes Projekt; Legen Sie hier eine Datei ab, oder geben Sie einen Pfad "
-#~ "ein, um ein Datei- oder Ordner-Protokoll anzuzeigen"
-
-#~ msgid "Previous commit; Drop or enter a different revision here"
-#~ msgstr ""
-#~ "Vorherige Einspielung; Legen Sie hier eine andere Revision ab oder geben "
-#~ "Sie eine ein"
-
-#~ msgid "Drop or type a revision here"
-#~ msgstr "Eine Revision hier ablegen oder eintippen"
-
-#~ msgid "Uncommitted Changes.diff"
-#~ msgstr "Nicht eingespielte Änderungen.diff"
-
-#~ msgid "Stash %i.diff"
-#~ msgstr "%i.diff sichern"
-
-#~ msgid "Diff uncommitted changes"
-#~ msgstr "Differenzdatei aus nicht eingespielten Änderungen erstellen"
-
-#~ msgid "Show a diff of uncommitted changes in an editor"
-#~ msgstr "Nicht eingespielte Änderungen als Diff in einem Editor anzeigen"
-
-#~ msgid "Diff selected stash"
-#~ msgstr "Gewählte Sicherung als Diff darstellen"
-
-#~ msgid "Show a diff of the selected stash"
-#~ msgstr "Einen Diff der gewählten Sicherung anzeigen"
-
-#~ msgid "Group: %s\n"
-#~ msgstr "Gruppe: %s\n"
-
-#~ msgid "Target: %s\n"
-#~ msgstr "Ziel: %s\n"
-
-#~ msgid "Source: %s\n"
-#~ msgstr "Quelle: %s\n"
-
-#~ msgid "Shortcut: %s\n"
-#~ msgstr "Tastenkürzel: %s\n"
-
-#~ msgid "Module: %s\n"
-#~ msgstr "Modul: %s\n"
-
-#~ msgid "Package: %s\n"
-#~ msgstr "Paket: %s\n"
-
-#~ msgid "Select a build directory"
-#~ msgstr "Ordner zum Kompilieren auswählen"
-
-#~ msgid "Unable to execute: %s."
-#~ msgstr "%s konnte nicht ausgeführt werden."
-
-#~ msgid "Contents"
-#~ msgstr "Inhalt"
-
-#~ msgid "Do not show tabs"
-#~ msgstr "Keine Karteireiter zeigen"
-
-#~ msgid "Editor tabs"
-#~ msgstr "Karteireiter im Editor"
-
-#~ msgid "Base URI"
-#~ msgstr "Basisadresse"
-
-#~ msgid "Refreshing symbol tree…"
-#~ msgstr "Symbol-Baum wird neu aufgebaut ."
-
-#~ msgid "Failed to refresh project: %s"
-#~ msgstr "Projekt konnte nicht aufgefrischt werden: %s"
-
-#~ msgid "New _Library…"
-#~ msgstr "Neue Bib_liothek …"
-
-#~ msgid "Add a new package to the project"
-#~ msgstr "Ein neues Paket zum Projekt hinzufügen"
-
-#~ msgid "New _Library"
-#~ msgstr "Neue Bib_liothek"
-
-#~ msgid "Add a new library to the project"
-#~ msgstr "Eine neue Bibliothek zum Projekt hinzufügen"
