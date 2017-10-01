@@ -2,7 +2,7 @@
   <schema path="/org/gnome/anjuta/plugins/run/" id="org.gnome.anjuta.plugins.run">
     <key type="s" name="terminal-command">
       <default>"gnome-terminal -e %s"</default>
-      <summary>Command used for starting a terminal</summary>
+      <_summary>Command used for starting a terminal</_summary>
     </key>
   </schema>
 </schemalist>
