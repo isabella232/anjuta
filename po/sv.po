@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2017-09-28 11:14+0000\n"
-"PO-Revision-Date: 2017-10-01 00:07+0200\n"
+"POT-Creation-Date: 2017-10-01 16:19+0000\n"
+"PO-Revision-Date: 2017-10-02 20:14+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -8251,6 +8251,10 @@ msgstr "Välj en arbetskatalog"
 #, c-format
 msgid "Program directory '%s' is not local"
 msgstr "Programkatalogen ”%s” är inte lokal"
+
+#: ../plugins/run-program/org.gnome.anjuta.plugins.run.gschema.xml.in.h:1
+msgid "Command used for starting a terminal"
+msgstr "Kommando som används för att starta en terminal"
 
 #: ../plugins/run-program/parameters.c:180
 msgid "Load Target to run"
