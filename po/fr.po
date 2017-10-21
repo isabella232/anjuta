@@ -15,21 +15,23 @@
 # Claude Paroz <claude@2xlibre.net>, 2009-2011.
 # AlainLojewski <allomervan@gmail.com>, 2011-2013.
 # naybnet <naybnet@gmail.com>, 2014.
+# Charles Monzat <superboa@hotmail.fr>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta.HEAD\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2017-06-28 17:31+0000\n"
-"PO-Revision-Date: 2017-09-07 13:31+0200\n"
-"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
-"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"POT-Creation-Date: 2017-09-28 11:14+0000\n"
+"PO-Revision-Date: 2017-10-04 21:50+0200\n"
+"Last-Translator: Charles Monzat <superboa@hotmail.fr>\n"
+"Language-Team: français <gnomefr@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n>1;\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
@@ -433,7 +435,7 @@ msgid ""
 msgstr ""
 "Voici les greffons que vous avez sélectionnés lorsqu’il vous a été demandé "
 "de choisir un des nombreux greffons appropriés. La suppression du greffon "
-"favori vous permetttra de choisir un autre greffon."
+"favori vous permettra de choisir un autre greffon."
 
 #: ../libanjuta/anjuta-plugin-manager.c:1221
 msgid "Forget selected plugin"
@@ -774,8 +776,8 @@ msgstr ""
 "que les caractères « #$:%+,-.=@^_`~/ »"
 
 #: ../plugins/am-project/amp-group.c:665
-#: ../plugins/am-project/am-project.c:1680
-#: ../plugins/am-project/am-project.c:1773
+#: ../plugins/am-project/am-project.c:1686
+#: ../plugins/am-project/am-project.c:1779
 #: ../plugins/dir-project/dir-project.c:862
 #: ../plugins/dir-project/dir-project.c:996
 #: ../plugins/mk-project/mk-project.c:725
@@ -859,11 +861,11 @@ msgstr "Module"
 msgid "Package"
 msgstr "Paquet"
 
-#: ../plugins/am-project/am-project.c:1710
+#: ../plugins/am-project/am-project.c:1716
 msgid "Unable to parse project file"
 msgstr "Impossible d’analyser le fichier du projet"
 
-#: ../plugins/am-project/am-project.c:1721
+#: ../plugins/am-project/am-project.c:1727
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "Le projet n’existe pas ou le chemin n’est pas valide"
@@ -6223,22 +6225,26 @@ msgid "Autocomplete"
 msgstr "Compléter automatiquement"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:11
+msgid "Test"
+msgstr "Test"
+
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
 msgid "JS Find dirs"
 msgstr "Dossiers de recherche JS"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
 msgid "Gir repository's directory:"
 msgstr "Répertoire du dépôt Gir :"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
 msgid "Gjs repository's directory:"
 msgstr "Répertoire du dépôt Gjs :"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 msgid "Min character for completion:"
 msgstr "Nombre minimum de caractères pour la complétion :"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:16
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
 msgid "Environment"
 msgstr "Environnement"
@@ -6299,8 +6305,8 @@ msgstr "Greffon prenant en charge Vala"
 msgid "Vala support plugin, adds code completion."
 msgstr "Greffon prenant en charge Vala, ajoute la complétion du code."
 
-#: ../plugins/language-support-vala/plugin.vala:657
-#: ../plugins/language-support-vala/plugin.vala:665
+#: ../plugins/language-support-vala/plugin.vala:661
+#: ../plugins/language-support-vala/plugin.vala:669
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Compléter automatiquement"
@@ -7176,15 +7182,20 @@ msgid "Select a project type"
 msgstr "Sélectionner un type de projet"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
+#| msgid "Select a project type"
+msgid "Select project"
+msgstr "Sélectionner un projet"
+
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
 #: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr "Erreur"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
 msgid "Details"
 msgstr "Détails"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:5
 msgid "Summary"
 msgstr "Résumé"
 
