@@ -22,8 +22,8 @@ msgstr ""
 "Project-Id-Version: anjuta.HEAD\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2017-09-28 11:14+0000\n"
-"PO-Revision-Date: 2017-10-04 21:50+0200\n"
+"POT-Creation-Date: 2017-10-21 17:46+0000\n"
+"PO-Revision-Date: 2017-10-24 09:50+0200\n"
 "Last-Translator: Charles Monzat <superboa@hotmail.fr>\n"
 "Language-Team: français <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -7182,7 +7182,6 @@ msgid "Select a project type"
 msgstr "Sélectionner un type de projet"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
-#| msgid "Select a project type"
 msgid "Select project"
 msgstr "Sélectionner un projet"
 
@@ -8360,6 +8359,10 @@ msgstr "Choisissez un répertoire de travail"
 #, c-format
 msgid "Program directory '%s' is not local"
 msgstr "Le répertoire « %s » du programme n’est pas local"
+
+#: ../plugins/run-program/org.gnome.anjuta.plugins.run.gschema.xml.in.h:1
+msgid "Command used for starting a terminal"
+msgstr "Commande utilisée pour lancer un terminal"
 
 #: ../plugins/run-program/parameters.c:180
 msgid "Load Target to run"
