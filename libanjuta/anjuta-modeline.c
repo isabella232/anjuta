@@ -124,7 +124,7 @@ static gboolean
 parse_vim_modeline (IndentationParams *params, const gchar *line, gint linenum)
 {
 	gchar *ptr;
-	gchar *end;
+	const gchar *end;
 	gchar *key;
 	gchar *value;
 
@@ -149,23 +149,22 @@ parse_vim_modeline (IndentationParams *params, const gchar *line, gint linenum)
 	}
 	ptr += 3;
 
-	for (end = ptr;; end++)
+	for (end = ptr; *end != '\0'; end++)
 	{
 		if ((*end == ':') && (*(end-1) != '\\')) break;
 	}
-	*end = '\0';
 
-	while (*ptr != '\0')
+	while (ptr != end)
 	{
 		gchar sep;
 		
 		while (g_ascii_isspace (*ptr)) ptr++;
-		if (*ptr == '\0') break;
+		if (ptr == end) break;
 
 		/* Get key */
 		key = ptr++;
 		value = NULL;
-		while ((*ptr != '\0') && (*ptr != '=') && !g_ascii_isspace(*ptr)) ptr++;
+		while ((ptr != end) && (*ptr != '=') && !g_ascii_isspace(*ptr)) ptr++;
 		sep = *ptr;
 		*ptr = '\0';
 
@@ -173,7 +172,7 @@ parse_vim_modeline (IndentationParams *params, const gchar *line, gint linenum)
 		{
 			/* Get value */
 			value = ++ptr;
-			while ((*ptr != '\0') && !g_ascii_isspace(*ptr)) ptr++;
+			while ((ptr != end) && !g_ascii_isspace(*ptr)) ptr++;
 			sep = *ptr;
 			*ptr = '\0';
 			
