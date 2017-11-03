@@ -161,6 +161,8 @@ anjuta_docman_get_combo_filename (AnjutaDocman *docman,
 	}
 	if (ianjuta_file_savable_is_read_only (IANJUTA_FILE_SAVABLE (doc), NULL))
 	{
+		/* Translator: the space at the beginning is here because this
+		 * string is concatenated with the file name. */
 		read_only = _(" [read-only]");
 	}
 	else
