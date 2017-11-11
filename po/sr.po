@@ -6,15 +6,15 @@
 # Maintainer: Слободан Средојевић <ssl@uns.ns.ac.yu>
 # Милош Поповић <gpopac@gmail.com>, 2010.
 # Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011—2014.
+# Борисав Живановић <borisavzivanovic@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: 23.32\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-09-22 14:45+0000\n"
-"PO-Revision-Date: 2015-09-22 20:44+0200\n"
-"Last-Translator: Марко М. Костић (Marko M. Kostić) <marko.m.kostic@gmail."
-"com>\n"
+"POT-Creation-Date: 2017-10-01 16:19+0000\n"
+"PO-Revision-Date: 2017-10-08 17:02+0200\n"
+"Last-Translator: Борисав Живановић <borisavzivanovic@gmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
@@ -23,9 +23,17 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 2.0.3\n"
 
-#: ../anjuta.appdata.xml.in.h:1
+#: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
+msgid "Anjuta"
+msgstr "Ањута"
+
+#: ../anjuta.appdata.xml.in.h:2 ../anjuta.desktop.in.in.h:3
+msgid "Develop software in an integrated development environment"
+msgstr "Програмирајте у интегрисаном развојном окружењу"
+
+#: ../anjuta.appdata.xml.in.h:3
 msgid ""
 "Anjuta DevStudio is a versatile software development studio featuring a "
 "number of advanced programming facilities including project management, "
@@ -40,7 +48,7 @@ msgstr ""
 "обезбеђивање једноставног и употребљиво корисничко сучеље, још моћније за "
 "делотворно програмирање."
 
-#: ../anjuta.appdata.xml.in.h:2
+#: ../anjuta.appdata.xml.in.h:4
 msgid ""
 "Anjuta is very extensible with plugins. Almost all features in Anjuta are "
 "implemented using plugins which can be dynamically enabled or disabled. You "
@@ -57,7 +65,7 @@ msgstr ""
 "сложености. Користећи прикључке, можете да проширите Ањуту вашим личним "
 "функцијама."
 
-#: ../anjuta.appdata.xml.in.h:3
+#: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
 "templates. The selection includes simple generic, flat (no subdirectory), GTK"
@@ -69,17 +77,9 @@ msgstr ""
 "+, Гномове, Јавине, Питонове пројекте и многе друге. Нови шаблони могу бити "
 "лако преузети и инсталирани."
 
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
-msgid "Anjuta"
-msgstr "Ањута"
-
 #: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
 msgstr "Интегрисано развојно окружење"
-
-#: ../anjuta.desktop.in.in.h:3
-msgid "Develop software in an integrated development environment"
-msgstr "Програмирајте у интегрисаном развојном окружењу"
 
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
@@ -141,12 +141,12 @@ msgstr "Колона %i"
 msgid "Column 1"
 msgstr "Колона 1"
 
-#: ../libanjuta/anjuta-convert.c:74 ../libanjuta/anjuta-convert.c:111
+#: ../libanjuta/anjuta-convert.c:75 ../libanjuta/anjuta-convert.c:113
 #, c-format
 msgid "The file you are trying to open contains an invalid byte sequence."
 msgstr "Датотека коју покушавате да отворите садржи неисправан низ бајтова."
 
-#: ../libanjuta/anjuta-convert.c:168 ../libanjuta/anjuta-convert.c:207
+#: ../libanjuta/anjuta-convert.c:170 ../libanjuta/anjuta-convert.c:209
 #, c-format
 msgid ""
 "Anjuta was not able to automatically determine the encoding of the file you "
@@ -370,7 +370,7 @@ msgstr "Не могу да извршим наредбу: „%s“"
 msgid "execvp failed"
 msgstr "execvp није успео"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2399
 msgid "Anjuta Shell"
 msgstr "Ањутина шкољка"
 
@@ -400,7 +400,7 @@ msgid "Load"
 msgstr "Учитај"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2015
+#: ../libanjuta/anjuta-plugin-manager.c:2013
 msgid "Available Plugins"
 msgstr "Доступни прикључци"
 
@@ -408,11 +408,11 @@ msgstr "Доступни прикључци"
 msgid "Preferred plugins"
 msgstr "Пожељни прикључци"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1157
+#: ../libanjuta/anjuta-plugin-manager.c:1155
 msgid "Only show user activatable plugins"
 msgstr "Приказуј само прикључке које корисник може да покрене"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1197
+#: ../libanjuta/anjuta-plugin-manager.c:1195
 msgid ""
 "These are the plugins selected by you when you have been prompted to choose "
 "one of many suitable plugins. Removing the preferred plugin will let you "
@@ -422,71 +422,71 @@ msgstr ""
 "више могућих прикључака. Када уклоните пожељни прикључак тада ћете моћи да "
 "одаберете други прикључак."
 
-#: ../libanjuta/anjuta-plugin-manager.c:1223
+#: ../libanjuta/anjuta-plugin-manager.c:1221
 msgid "Forget selected plugin"
 msgstr "Заборави означени прикључак"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1355
+#: ../libanjuta/anjuta-plugin-manager.c:1515 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "Одаберите прикључак"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1358
+#: ../libanjuta/anjuta-plugin-manager.c:1356
 #: ../plugins/debug-manager/queue.c:528
 msgid "Please select a plugin to activate"
 msgstr "Одаберите прикључак за покретање"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1372
+#: ../libanjuta/anjuta-plugin-manager.c:1370
 #, c-format
 msgid "No plugin is able to load other plugins in %s"
 msgstr "Ниједан прикључак није у могућности да учита остале прикључке у %s"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1518
+#: ../libanjuta/anjuta-plugin-manager.c:1516
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Одаберите прикључак за покретање</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2044
+#: ../libanjuta/anjuta-plugin-manager.c:2042
 msgid "Remember this selection"
 msgstr "Запамти овај избор"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2382
+#: ../libanjuta/anjuta-plugin-manager.c:2380
 msgid "Profiles"
 msgstr "Профили"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2381
 msgid "Current stack of profiles"
 msgstr "Тренутни стек профила"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2388
+#: ../libanjuta/anjuta-plugin-manager.c:2386
 msgid "Available plugins"
 msgstr "Доступни прикључци"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2389
+#: ../libanjuta/anjuta-plugin-manager.c:2387
 msgid "Currently available plugins found in plugin paths"
 msgstr "Доступни прикључци из подешених путања"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2395
+#: ../libanjuta/anjuta-plugin-manager.c:2393
 msgid "Activated plugins"
 msgstr "Покренути прикључци"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin-manager.c:2394
 msgid "Currently activated plugins"
 msgstr "Тренутно покренути прикључци"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2402
+#: ../libanjuta/anjuta-plugin-manager.c:2400
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Ањутина шкољка за коју су прикључци прављени"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2410
+#: ../libanjuta/anjuta-plugin-manager.c:2408
 msgid "Anjuta Status"
 msgstr "Стање Ањуте"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2411
+#: ../libanjuta/anjuta-plugin-manager.c:2409
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "Стање Ањуте које се користи за учитавање и уклањање прикључака"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2564
+#: ../libanjuta/anjuta-plugin-manager.c:2562
 msgid "Loading:"
 msgstr "Учитавам:"
 
@@ -753,8 +753,8 @@ msgstr ""
 "Назив групе може да садржи само алфанумеричке или „#$:%+,-.=@^_`~/“ знаке"
 
 #: ../plugins/am-project/amp-group.c:665
-#: ../plugins/am-project/am-project.c:1680
-#: ../plugins/am-project/am-project.c:1773
+#: ../plugins/am-project/am-project.c:1686
+#: ../plugins/am-project/am-project.c:1779
 #: ../plugins/dir-project/dir-project.c:862
 #: ../plugins/dir-project/dir-project.c:996
 #: ../plugins/mk-project/mk-project.c:725
@@ -838,11 +838,11 @@ msgstr "Модул"
 msgid "Package"
 msgstr "Пакет"
 
-#: ../plugins/am-project/am-project.c:1710
+#: ../plugins/am-project/am-project.c:1716
 msgid "Unable to parse project file"
 msgstr "Не могу да рашчланим датотеку пројекта"
 
-#: ../plugins/am-project/am-project.c:1721
+#: ../plugins/am-project/am-project.c:1727
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "Пројекат не постоји или је путања неисправна"
@@ -2204,7 +2204,7 @@ msgid "Patch-Style diff"
 msgstr "Разлике у стилу закрпе"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2201
+#: ../plugins/symbol-db/plugin.c:2206
 msgid "Local"
 msgstr "Локално"
 
@@ -2949,6 +2949,8 @@ msgstr "Онемогући тачку прекида"
 msgid "Disable a breakpoint"
 msgstr "Онемогућава тачку прекида"
 
+#. Translators: Enabled refers to a breakpoint. It is a column name, like
+#. * other words.
 #. This enable an user defined command
 #: ../plugins/debug-manager/breakpoints.c:1953
 #: ../plugins/tools/anjuta-tools.ui.h:5
@@ -3321,7 +3323,7 @@ msgstr "Оквир"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2164
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Датотека"
@@ -4314,15 +4316,15 @@ msgstr ""
 "Претрага за „%s“ је стигла до краја документа и настављена је од почетка али "
 "ништа није нађено."
 
-#: ../plugins/document-manager/search-box.c:917
+#: ../plugins/document-manager/search-box.c:920
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr "Користите приручни изборник иконице „Нађи“ за више опција претраге"
 
-#: ../plugins/document-manager/search-box.c:988
+#: ../plugins/document-manager/search-box.c:991
 msgid "Replace"
 msgstr "Замени"
 
-#: ../plugins/document-manager/search-box.c:993
+#: ../plugins/document-manager/search-box.c:996
 msgid "Replace all"
 msgstr "Замени све"
 
@@ -4593,7 +4595,7 @@ msgstr "Сам изабери текући документ"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2213
+#: ../plugins/symbol-db/plugin.c:2218
 msgid "Global"
 msgstr "Опште"
 
@@ -5267,6 +5269,7 @@ msgstr "Унесите удаљени назив."
 msgid "Please enter a URL"
 msgstr "Унесите адресу"
 
+#. Translators: Remote means the git remote repository
 #: ../plugins/git/git-add-remote-pane.c:182
 msgid "Add Remote"
 msgstr "Додај удаљено"
@@ -6126,22 +6129,26 @@ msgid "Autocomplete"
 msgstr "Само-допуни"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:11
+msgid "Test"
+msgstr "Тест"
+
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
 msgid "JS Find dirs"
 msgstr "ЈС нађи директоријуме"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
 msgid "Gir repository's directory:"
 msgstr "Директоријум Гир ризнице:"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
 msgid "Gjs repository's directory:"
 msgstr "Директоријум Гјс ризнице:"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 msgid "Min character for completion:"
 msgstr "Најмањи знак за довршавање:"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:16
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
 msgid "Environment"
 msgstr "Окружење"
@@ -6200,8 +6207,8 @@ msgstr "Прикључак подршке Вала"
 msgid "Vala support plugin, adds code completion."
 msgstr "Прикључак подршке Вале за допуњавање кода, самоувлачење, итд."
 
-#: ../plugins/language-support-vala/plugin.vala:657
-#: ../plugins/language-support-vala/plugin.vala:665
+#: ../plugins/language-support-vala/plugin.vala:661
+#: ../plugins/language-support-vala/plugin.vala:669
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Сам доврши"
@@ -6940,7 +6947,7 @@ msgstr "Освежи преглед пројекта…"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2164
+#: ../plugins/symbol-db/plugin.c:2169
 msgid "Project"
 msgstr "Пројекат"
 
@@ -7092,15 +7099,19 @@ msgid "Select a project type"
 msgstr "Изаберите врсту пројекта"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
+msgid "Select project"
+msgstr "Изаберите пројекат"
+
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
 #: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr "Грешка"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
 msgid "Details"
 msgstr "Подаци"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:5
 msgid "Summary"
 msgstr "Сажетак"
 
@@ -8253,6 +8264,10 @@ msgstr "Изаберите радни директоријум"
 msgid "Program directory '%s' is not local"
 msgstr "Директоријум програма „%s“ није локални"
 
+#: ../plugins/run-program/org.gnome.anjuta.plugins.run.gschema.xml.in.h:1
+msgid "Command used for starting a terminal"
+msgstr "Наредба за покретање терминала"
+
 #: ../plugins/run-program/parameters.c:180
 msgid "Load Target to run"
 msgstr "Учитај мету за покретање"
@@ -8694,12 +8709,12 @@ msgstr "Датотека „%s“ је само за читање! Ипак же
 msgid "Could not save %s: %s"
 msgstr "Не могу да сачувам: %s: %s"
 
-#: ../plugins/sourceview/sourceview-io.c:308
+#: ../plugins/sourceview/sourceview-io.c:322
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr "Не могу да сачувам датотеку јер назив датотеке није одређен"
 
-#: ../plugins/sourceview/sourceview-io.c:556
+#: ../plugins/sourceview/sourceview-io.c:570
 #, c-format
 msgid "New file %d"
 msgstr "Нова датотека %d"
@@ -9380,13 +9395,13 @@ msgstr "_Нађи симбол…"
 msgid "Find Symbol"
 msgstr "Нађите симбол"
 
-#: ../plugins/symbol-db/plugin.c:1067
+#: ../plugins/symbol-db/plugin.c:1072
 #, c-format
 msgid "%s: Generating inheritances…"
 msgstr "%s: Генеришем наслеђа…"
 
 #. Translators: %s is the name of a system library
-#: ../plugins/symbol-db/plugin.c:1073
+#: ../plugins/symbol-db/plugin.c:1078
 #, c-format
 msgid "%s: %d file scanned out of %d"
 msgid_plural "%s: %d files scanned out of %d"
@@ -9395,12 +9410,12 @@ msgstr[1] "%s: %d датотеке су скениране од %d"
 msgstr[2] "%s: %d датотека је скенирано од %d"
 msgstr[3] "%s: %d датотека је скенирана од %d"
 
-#: ../plugins/symbol-db/plugin.c:1104
+#: ../plugins/symbol-db/plugin.c:1109
 #, c-format
 msgid "Generating inheritances…"
 msgstr "Генеришем наслеђа…"
 
-#: ../plugins/symbol-db/plugin.c:1106
+#: ../plugins/symbol-db/plugin.c:1111
 #, c-format
 msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
@@ -9409,27 +9424,27 @@ msgstr[1] "%d датотеке су скениране од %d"
 msgstr[2] "%d датотека је скенирано од %d"
 msgstr[3] "%d датотека је скенирана од %d"
 
-#: ../plugins/symbol-db/plugin.c:1767
+#: ../plugins/symbol-db/plugin.c:1772
 msgid "Populating symbol database…"
 msgstr "Попуњавам базу података симбола…"
 
-#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
+#: ../plugins/symbol-db/plugin.c:2154 ../plugins/symbol-db/plugin.c:2239
 msgid "Symbols"
 msgstr "Симболи"
 
-#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
+#: ../plugins/symbol-db/plugin.c:2174 ../plugins/symbol-db/plugin.c:2226
 msgid "Search"
 msgstr "Тражи"
 
-#: ../plugins/symbol-db/plugin.c:2243
+#: ../plugins/symbol-db/plugin.c:2248
 msgid "SymbolDb popup actions"
 msgstr "Радње искакања БП симбола"
 
-#: ../plugins/symbol-db/plugin.c:2251
+#: ../plugins/symbol-db/plugin.c:2256
 msgid "SymbolDb menu actions"
 msgstr "Радње изборника БП симбола"
 
-#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
+#: ../plugins/symbol-db/plugin.c:2586 ../plugins/symbol-db/plugin.c:2604
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "База података симбола"
