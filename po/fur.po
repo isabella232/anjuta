@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: anjuta master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2017-08-01 12:42+0000\n"
-"PO-Revision-Date: 2017-09-09 00:01+0200\n"
+"POT-Creation-Date: 2017-10-01 16:19+0000\n"
+"PO-Revision-Date: 2017-12-15 10:30+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <f.t.public@gmail.com>\n"
 "Language: fur\n"
@@ -581,11 +581,11 @@ msgstr "<no valit>"
 
 #: ../libanjuta/anjuta-tree-combo.c:1205
 msgid "ComboBox model"
-msgstr ""
+msgstr "Model ComboBox"
 
 #: ../libanjuta/anjuta-tree-combo.c:1206
 msgid "The model for the combo box"
-msgstr ""
+msgstr "Il model pe casele cumbinade"
 
 #: ../libanjuta/anjuta-ui.c:1394
 msgid "Action"
@@ -710,12 +710,12 @@ msgstr "Ignorât"
 #: ../libanjuta/resources.c:63
 #, c-format
 msgid "Widget not found: %s"
-msgstr ""
+msgstr "Widget no cjatât: %s"
 
 #: ../libanjuta/resources.c:79 ../libanjuta/resources.c:101
 #, c-format
 msgid "Could not find application pixmap file: %s"
-msgstr ""
+msgstr "Impussibil cjatâ il file pixmap de aplicazion: %s"
 
 #: ../libanjuta/resources.c:277
 #, c-format
@@ -734,8 +734,8 @@ msgstr ""
 "=@^_`~/\""
 
 #: ../plugins/am-project/amp-group.c:665
-#: ../plugins/am-project/am-project.c:1680
-#: ../plugins/am-project/am-project.c:1773
+#: ../plugins/am-project/am-project.c:1686
+#: ../plugins/am-project/am-project.c:1779
 #: ../plugins/dir-project/dir-project.c:862
 #: ../plugins/dir-project/dir-project.c:996
 #: ../plugins/mk-project/mk-project.c:725
@@ -819,11 +819,11 @@ msgstr "Modul"
 msgid "Package"
 msgstr "Pachet"
 
-#: ../plugins/am-project/am-project.c:1710
+#: ../plugins/am-project/am-project.c:1716
 msgid "Unable to parse project file"
 msgstr "Impussibil analizâ il file di progjet"
 
-#: ../plugins/am-project/am-project.c:1721
+#: ../plugins/am-project/am-project.c:1727
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "Il progjet nol esist o al à un percors no valit"
@@ -1473,11 +1473,11 @@ msgstr "Debug"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:72
 msgid "Profiling"
-msgstr ""
+msgstr "Profiladure"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:73
 msgid "Optimized"
-msgstr ""
+msgstr "Perfezionât"
 
 #: ../plugins/build-basic-autotools/executer.c:69
 msgid "No executables in this project!"
@@ -1576,11 +1576,11 @@ msgstr ""
 #. * replace the first string only.
 #: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
-msgstr ""
+msgstr "avertiment:"
 
 #: ../plugins/build-basic-autotools/plugin.c:808
 msgid "warning:-old"
-msgstr ""
+msgstr "avertiment:-vecjo"
 
 #. The translations should match that of 'gcc' program.
 #. * The second string with -old should be used for an older
@@ -1589,11 +1589,11 @@ msgstr ""
 #. * replace the first string only.
 #: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
-msgstr ""
+msgstr "erôr:"
 
 #: ../plugins/build-basic-autotools/plugin.c:820
 msgid "error:-old"
-msgstr ""
+msgstr "erôr:-vecjo"
 
 #: ../plugins/build-basic-autotools/plugin.c:960
 #, c-format
@@ -1941,7 +1941,7 @@ msgstr ""
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:18
 msgid "Author/Date-Time"
-msgstr ""
+msgstr "Autôr/Date-Ore"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:19
 msgid "Class Function Prefix:"
@@ -1949,7 +1949,7 @@ msgstr ""
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:20
 msgid "Member Functions/Variables"
-msgstr ""
+msgstr "Funzions/Variabilis membri"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:21
 msgid "Properties"
@@ -1961,19 +1961,19 @@ msgstr "Segnâi"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:23
 msgid "GObject Class\t"
-msgstr ""
+msgstr "Classe GObject\t"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:24
 msgid "Class Methods"
-msgstr ""
+msgstr "Metodis classe"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:25
 msgid "Constants/Variables"
-msgstr ""
+msgstr "Costantis/Variabilis"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:26
 msgid "Python Class"
-msgstr ""
+msgstr "Classe Python"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:27
 msgid "is Sub-Class"
@@ -1998,11 +1998,11 @@ msgstr ""
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:32
 msgid "JavaScript Class"
-msgstr ""
+msgstr "Classe JavaScript"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:33
 msgid "GLib.Object"
-msgstr ""
+msgstr "GLib.Object"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:34
 msgid "Class Scope:"
@@ -2010,7 +2010,7 @@ msgstr ""
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:35
 msgid "Vala Class"
-msgstr ""
+msgstr "Classe Vala"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:36
 msgid "Author Email Address:"
@@ -2038,12 +2038,12 @@ msgstr ""
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:42
 msgid "Add to Repository"
-msgstr ""
+msgstr "Zonte a Repository"
 
 #: ../plugins/class-gen/generator.c:133
 #, c-format
 msgid "Header or source file has not been created"
-msgstr ""
+msgstr "La intestazion o il file sorzint no son stâts creâts"
 
 #: ../plugins/class-gen/generator.c:297
 msgid "Autogen template used for the header file"
@@ -6010,22 +6010,26 @@ msgid "Autocomplete"
 msgstr ""
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:11
-msgid "JS Find dirs"
+msgid "Test"
 msgstr ""
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-msgid "Gir repository's directory:"
+msgid "JS Find dirs"
 msgstr ""
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-msgid "Gjs repository's directory:"
+msgid "Gir repository's directory:"
 msgstr ""
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
-msgid "Min character for completion:"
+msgid "Gjs repository's directory:"
 msgstr ""
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
+msgid "Min character for completion:"
+msgstr ""
+
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:16
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
 msgid "Environment"
 msgstr ""
@@ -6081,8 +6085,8 @@ msgstr ""
 msgid "Vala support plugin, adds code completion."
 msgstr ""
 
-#: ../plugins/language-support-vala/plugin.vala:657
-#: ../plugins/language-support-vala/plugin.vala:665
+#: ../plugins/language-support-vala/plugin.vala:661
+#: ../plugins/language-support-vala/plugin.vala:669
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr ""
@@ -6925,15 +6929,19 @@ msgid "Select a project type"
 msgstr ""
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
+msgid "Select project"
+msgstr "Selezione progjet"
+
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
 #: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr ""
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
 msgid "Details"
 msgstr ""
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:5
 msgid "Summary"
 msgstr ""
 
@@ -8035,6 +8043,10 @@ msgstr ""
 #: ../plugins/run-program/execute.c:110
 #, c-format
 msgid "Program directory '%s' is not local"
+msgstr ""
+
+#: ../plugins/run-program/org.gnome.anjuta.plugins.run.gschema.xml.in.h:1
+msgid "Command used for starting a terminal"
 msgstr ""
 
 #: ../plugins/run-program/parameters.c:180
