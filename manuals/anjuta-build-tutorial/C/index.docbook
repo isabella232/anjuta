@@ -331,7 +331,7 @@ aux.o: aux.c
 			<programlisting>
 <replaceable>target</replaceable>: <replaceable>prerequisites</replaceable>
 	<replaceable>commands</replaceable>
-	<replaceable>&hellip;</replaceable></programlisting>
+	<replaceable>...</replaceable></programlisting>
 			<para>
 				The <replaceable>target</replaceable> and the 
 				<replaceable>prerequisites</replaceable> are normally files but they could be
@@ -561,7 +561,7 @@ If tut_prog is older than main.o or aux.o
 				As <application>Anjuta</application> is using <application>Autotools</application>,
 				the first step is similar, you need to run configure.
 				Select <menuchoice><guisubmenu>Build</guisubmenu>
-				<guimenuitem>Configure Project&hellip;</guimenuitem></menuchoice>, to get the
+				<guimenuitem>Configure Project...</guimenuitem></menuchoice>, to get the
 				following dialog:
 			</para>
 			<figure>
