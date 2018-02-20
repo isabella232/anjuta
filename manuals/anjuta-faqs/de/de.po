@@ -4,224 +4,313 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta faq\n"
-"POT-Creation-Date: 2012-03-16 23:30+0100\n"
-"PO-Revision-Date: 2012-03-16 23:55+0100\n"
+"POT-Creation-Date: 2018-02-01 20:35+0000\n"
+"PO-Revision-Date: 2018-02-04 17:30+0100\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Mario Blättermann <mario.blaettermann@gmail.com>, 2012"
+msgstr "Mario Blättermann <mario.blaettermann@gmail.com>, 2012, 2018"
 
-#: editor-maximize.page:8(info/desc)
-msgid "Double click on the current tab."
-msgstr "Doppelklicken Sie auf den aktuellen Reiter."
+#. (itstool) path: info/desc
+#: C/index.page:6
+msgid "Frequently asked questions"
+msgstr "Häufig gestellte Fragen"
 
-#: editor-maximize.page:12(credit/name) general-bugs.page:11(credit/name)
-#: general-feature.page:11(credit/name) general-name.page:10(credit/name)
-#: general-windows.page:11(credit/name) index.page:10(credit/name)
+#. (itstool) path: credit/name
+#: C/index.page:10 C/editor-maximize.page:12 C/general-bugs.page:11
+#: C/general-feature.page:11 C/general-name.page:10 C/general-windows.page:11
 msgid "GNOME Documentation Project"
 msgstr "GNOME-Dokumentationsprojekt"
 
-#: editor-maximize.page:16(credit/name) general-bugs.page:15(credit/name)
-#: general-feature.page:15(credit/name) general-name.page:14(credit/name)
-#: general-windows.page:15(credit/name) index.page:14(credit/name)
+#. (itstool) path: credit/name
+#: C/index.page:14 C/editor-maximize.page:16 C/general-bugs.page:15
+#: C/general-feature.page:15 C/general-name.page:14 C/general-windows.page:15
 msgid "Andy Piper"
 msgstr "Andy Piper"
 
-#: editor-maximize.page:19(credit/name) general-bugs.page:18(credit/name)
-#: general-feature.page:18(credit/name) general-name.page:17(credit/name)
-#: general-windows.page:18(credit/name) index.page:17(credit/name)
+#. (itstool) path: credit/name
+#: C/index.page:17 C/editor-maximize.page:19 C/general-bugs.page:18
+#: C/general-feature.page:18 C/general-name.page:17 C/general-windows.page:18
 msgid "Naba Kumar"
 msgstr "Naba Kumar"
 
-#: editor-maximize.page:23(credit/name) general-bugs.page:22(credit/name)
-#: general-feature.page:22(credit/name) general-name.page:21(credit/name)
-#: general-windows.page:22(credit/name) index.page:21(credit/name)
+#. (itstool) path: credit/name
+#: C/index.page:21 C/editor-maximize.page:23 C/general-bugs.page:22
+#: C/general-feature.page:22 C/general-name.page:21 C/general-windows.page:22
 msgid "Biswapesh Chattopadhyayr"
 msgstr "Biswapesh Chattopadhyayr"
 
-#: editor-maximize.page:27(page/title)
+#. (itstool) path: page/title
+#: C/index.page:24
+msgid "Anjuta FAQ"
+msgstr "Anjuta FAQ"
+
+#. (itstool) path: section/title
+#: C/index.page:28
+msgid "General"
+msgstr "Allgemein"
+
+#. (itstool) path: section/title
+#: C/index.page:32
+msgid "Editor"
+msgstr "Editor"
+
+#. (itstool) path: section/title
+#: C/index.page:36
+msgid "Project"
+msgstr "Projekt"
+
+#. (itstool) path: info/desc
+#: C/editor-goto-error.page:10
+msgid "Double click on the message."
+msgstr "Doppelklicken Sie auf die Meldung."
+
+#. (itstool) path: credit/name
+#: C/editor-goto-error.page:14 C/editor-scintilla.page:12
+#: C/project-existing.page:11 C/project-resource.page:11
+msgid "Sébastien Granjoux"
+msgstr "Sébastien Granjoux"
+
+#. (itstool) path: page/title
+#: C/editor-goto-error.page:19
+msgid "How to jump to the line causing a build error or warning?"
+msgstr ""
+"Wie springe ich zu einer Zeile, die einen Erstellungsfehler oder eine "
+"Warnung verursacht hat?"
+
+#. (itstool) path: page/p
+#: C/editor-goto-error.page:21
+msgid ""
+"Normally errors reported by the compiler are highlighted in the message "
+"window pane. Double clicking on an error should open the corresponding file, "
+"if necessary, and move the view to the right position."
+msgstr ""
+"Vom Compiler gemeldete normale Fehler werden im Nachrichten-Teilfenster "
+"hervorgehoben. Durch Doppelklick auf einen Fehler wird die entsprechende "
+"Datei geöffnet, falls nötig, und die Ansicht in die richtige Position "
+"verschoben."
+
+#. (itstool) path: note/p
+#: C/editor-goto-error.page:26
+msgid ""
+"It can fail if <app>Anjuta</app> is not able to parse the output of the "
+"build program. This is much more common if the output is translated. So, as "
+"a work around, you can uncheck the option <gui>Translate messages</gui> in "
+"the preferences of the build plugin. The errors and warnings of the compiler "
+"will not be translated but you should be able to jump to the faulty line as "
+"explained above."
+msgstr ""
+"Es kann fehlschlagen, wenn <app>Anjuta</app> die Ausgabe des "
+"Erstellungsprogramms nicht auswerten kann. Dies kommt häufiger vor, wenn die "
+"Ausgabe lokalisiert ist. Sie können als Workaround die Option "
+"<gui>Nachrichten übersetzen</gui> in den Einstellungen des Erstellungs-"
+"Plugins deaktivieren. Die Fehlermeldungen und Warnungen des Compilers werden "
+"dann nicht übersetzt, aber Sie sollten dann zu der den Fehler verursachenden "
+"Zeile springen können, wie oben beschrieben."
+
+#. (itstool) path: info/desc
+#: C/editor-maximize.page:8
+msgid "Double click on the current tab."
+msgstr "Doppelklicken Sie auf den aktuellen Reiter."
+
+#. (itstool) path: page/title
+#: C/editor-maximize.page:27
 msgid "How to maximize the editor window"
 msgstr "Das Editorfenster maximieren"
 
-#: editor-maximize.page:29(page/p)
+#. (itstool) path: page/p
+#: C/editor-maximize.page:29
 msgid ""
 "Double click on the current tab to maximize the document window. Do the same "
 "again restore the previous state of all docked windows."
 msgstr ""
 "Doppelklicken Sie auf den aktuellen Reiter, um das Dokumentenfenster zu "
-"maximieren. Wiederholen Sie dies, um den vorherigen Zustand aller angedockten "
-"Fenster wiederherzustellen."
+"maximieren. Wiederholen Sie dies, um den vorherigen Zustand aller "
+"angedockten Fenster wiederherzustellen."
 
-#: editor-scintilla.page:7(info/desc)
-msgid "It is available now."
-msgstr "Jetzt verfügbar."
+#. (itstool) path: page/title
+#: C/editor-scintilla.page:17
+msgid "How to use <app>Scintilla editor</app>"
+msgstr "Verwendung des <app>Scintilla-Editors</app>"
 
-#: editor-scintilla.page:11(credit/name) project-existing.page:11(credit/name)
-#: project-resource.page:11(credit/name)
-msgid "Sébastien Granjoux"
-msgstr "Sébastien Granjoux"
-
-#: editor-scintilla.page:16(page/title)
-msgid "How to use <app href=\"http://www.scintilla.org\">Scintilla editor</app>"
-msgstr ""
-"Verwendung des <app href=\"http://www.scintilla.org\">Scintilla-Editors</app>"
-
-#: editor-scintilla.page:18(page/p)
+#. (itstool) path: page/p
+#: C/editor-scintilla.page:19
 msgid ""
-"It is available through the <app>anjuta-extras</app> package with can be "
-"download from the anjuta website. After you installed it you will be prompted "
-"to choose an editor and you can set it as the default editor for this project."
+"<app href=\"http://www.scintilla.org\">Scintilla editor</app> is available "
+"through the package <sys>anjuta-extras</sys> package which can either be "
+"downloaded from the <link href=\"http://projects.gnome.org/anjuta/downloads."
+"html\">Anjuta website</link> or installed from the software management "
+"application of your distribution. After you have installed it you will be "
+"prompted to choose an editor and you can set it as the default editor for "
+"this project."
 msgstr ""
-"Dieser ist im Paket <app>anjuta-extras</app> verfügbar, das Sie von der "
-"Anjuta-Webseite herunterladen können. Nachdem Sie es installiert haben, "
-"werden Sie gefragt, welchen Editor Sie verwenden wollen, und können diesen "
-"als Standardeditor für dieses Projekt verwenden."
+"Der <app href=\"http://www.scintilla.org\">Scintilla-Editor</app> ist im "
+"Paket <sys>anjuta-extras</sys> verfügbar, das Sie von der <link href="
+"\"http://projects.gnome.org/anjuta/downloads.html\">Anjuta-Webseite</link> "
+"herunterladen oder über die Softwareverwaltung Ihrer Distribution "
+"installieren können. Nachdem Sie es installiert haben, werden Sie gefragt, "
+"welchen Editor Sie verwenden wollen, und können diesen als Standardeditor "
+"für dieses Projekt verwenden."
 
-#: editor-scintilla.page:23(note/p)
+#. (itstool) path: note/p
+#: C/editor-scintilla.page:25
 msgid ""
-"The scintilla editor was not available in Anjuta 3.0 but it is now available "
-"since Anjuta 3.1."
+"<link action=\"install:anjuta-extras\" href=\"http://projects.gnome.org/"
+"anjuta/downloads.html\" style=\"button\">Install anjuta-extras</link>"
 msgstr ""
-"Der Scintilla-Editor war für Anjuta 3.0 nicht erhältlich, ist aber seit "
-"Anjuta 3.1 wieder verfügbar."
+"<link action=\"install:anjuta-extras\" href=\"http://projects.gnome.org/"
+"anjuta/downloads.html\" style=\"button\">anjuta-extras installieren</link>"
 
-#: general-bugs.page:7(info/desc)
-msgid "Use GNOME bugzilla."
-msgstr "Verwenden Sie GNOME Bugzilla."
+#. (itstool) path: note/p
+#: C/editor-scintilla.page:31
+msgid "<app>Scintilla Editor</app> is available since Anjuta version 3.2."
+msgstr ""
+"Der <app>Scintilla-Editor</app> ist in Anjuta seit Version 3.2 verfügbar."
 
-#: general-bugs.page:26(page/title)
-msgid "Where can I report bugs"
-msgstr "Wo kann ich Fehler melden?"
+#. (itstool) path: info/desc
+#: C/general-bugs.page:7
+msgid "Use GNOME's issue tracker tool."
+msgstr "Verwenden Sie das Fehlererfassungssystem von GNOME."
 
-#: general-bugs.page:28(page/p)
+#. (itstool) path: page/title
+#: C/general-bugs.page:26
+msgid "Where to report bugs and enhancement requests"
+msgstr "Melden von Fehlern und Verbesserungsanfragen"
+
+#. (itstool) path: page/p
+#: C/general-bugs.page:28
 msgid ""
-"Please report bugs in <app href=\"http://bugzilla.gnome.org/browse.cgi?"
-"product=anjuta\">GNOME Bugzilla</app>."
+"Please report bugs and enhancement requests in <app href=\"http://bugzilla."
+"gnome.org/browse.cgi?product=anjuta\">GNOME Bugzilla</app>."
 msgstr ""
 "Bitte melden Sie Fehler im <app href=\"http://bugzilla.gnome.org/browse.cgi?"
 "product=anjuta\">Fehlererfassungssystem von GNOME</app>."
 
-#: general-feature.page:7(info/desc)
-msgid "You are encouraged to do it yourself."
-msgstr "Sie sind herzlich eingeladen, dies selbst zu tun."
+#. (itstool) path: info/desc
+#: C/general-feature.page:7
+msgid "Because nobody has written it yet."
+msgstr "Weil niemand es bisher geschrieben hat."
 
-#: general-feature.page:26(page/title)
-msgid "Why doesn't <app>Anjuta</app> have my favourite XYZ feature?"
-msgstr "Warum hat <app>Anjuta</app> mein Lieblings-Funktionsmerkmal XYZ nicht?"
+#. (itstool) path: page/title
+#: C/general-feature.page:26
+msgid "Why does <app>Anjuta</app> not have my favourite feature?"
+msgstr "Warum hat <app>Anjuta</app> mein Lieblings-Funktionsmerkmal nicht?"
 
-#: general-feature.page:28(page/p)
+#. (itstool) path: page/p
+#: C/general-feature.page:28
 msgid ""
-"Because you haven't added them ? This is free software. You are free to, even "
-"encouraged to take the source code and add the features you need. If you "
-"don't think yourself to be capable of doing that, file a request for "
-"enhancement or send a mail to the devel list."
+"<app>Anjuta</app> is free and open source software. You are encouraged to "
+"<link href=\"https://live.gnome.org/Git/Developers\">take the source code</"
+"link> and add the features you would like to see. You can also <link xref="
+"\"general-bugs\">file an enhancement request</link> or send a message to the "
+"<link href=\"https://mail.gnome.org/mailman/listinfo/anjuta-devel-list"
+"\">development mailing list</link> to discuss your ideas first."
 msgstr ""
-"Vielleicht weil Sie es nicht hinzugefügt haben...? Dies ist freie Software. "
-"Es steht Ihnen frei und ist ausdrücklich erwünscht, den Quellcode zu "
-"bearbeiten und die von Ihnen benötigten Funktionsmerkmale hinzuzufügen. Wenn "
-"Sie meinen, dass Sie sich das zutrauen können, senden Sie einen "
-"Verbesserungsvorschlag in Bugzilla oder schreiben Sie eine E-Mail an die "
-"Mailingliste der Entwickler."
+"<app>Anjuta</app> ist freie und quelloffene Software. Sie sind herzlich "
+"eingeladen, den <link href=\"https://live.gnome.org/Git/Developers"
+"\">Quellcode</link> zu nehmen und die gewünschten Funktionsmerkmale "
+"hinzuzufügen. Sie können auch eine <link xref=\"general-bugs"
+"\">Verbesserungsanfrage einreichen</link> oder eine Nachricht an die <link "
+"href=\"https://mail.gnome.org/mailman/listinfo/anjuta-devel-list"
+"\">Mailingliste der Entwickler</link> senden, um dort zunächst über Ihre "
+"Ideen zu diskutieren."
 
-#: general-name.page:26(page/title)
+#. (itstool) path: page/title
+#: C/general-name.page:26
 msgid "What does the name <app>Anjuta</app> stand for?"
 msgstr "Wofür steht der Name <app>Anjuta</app>?"
 
-#: general-name.page:28(page/p)
+#. (itstool) path: page/p
+#: C/general-name.page:28
 msgid ""
-"It is not one of those recursive names. <app>Anjuta</app> is the name of Naba "
-"Kumar's (founder) girlfriend. This software is dedicated to her."
+"It is not one of those recursive names. <app>Anjuta</app> is the name of the "
+"girlfriend of the founder of this application, Naba Kumar. This application "
+"is dedicated to her."
 msgstr ""
 "Es handelt sich dabei nicht um eine der häufig anzutreffenden rekursiven "
-"Abkürzungen. <app>Anjuta</app> ist der Name von Naba Kumars (früherer) "
-"Freundin. Diese Software ist ihr gewidmet."
+"Abkürzungen. <app>Anjuta</app> ist der Name von Naba Kumars Freundin. Diese "
+"Software ist ihr gewidmet."
 
-#: general-windows.page:7(info/desc)
+#. (itstool) path: info/desc
+#: C/general-windows.page:7
 msgid "It is not planned."
 msgstr "Das ist nicht geplant."
 
-#: general-windows.page:26(page/title)
-msgid "Is here/will there ever be <app>Anjuta</app> for MS Windows?"
-msgstr "Gibt es <app>Anjuta</app> for MS Windows oder wird es das jemals geben?"
-
-#: general-windows.page:28(page/p)
-msgid ""
-"There is no native port for Windows and it most likely won't ever be. "
-"However, if you are interested, feel free to contact us."
+#. (itstool) path: page/title
+#: C/general-windows.page:26
+msgid "Is/will there be <app>Anjuta</app> for Microsoft Windows?"
 msgstr ""
-"Es gibt keine Portierung für Windows, und es ist unwahrscheinlich, das es "
-"jemals eine solche Version geben wird. Falls Die dennoch daran interessiert "
-"sind, nehmen Sie Kontakt mit uns auf."
+"Gibt es <app>Anjuta</app> for MS Windows oder wird es das jemals geben?"
 
-#: index.page:6(info/desc)
-msgid "Frequently asked questions"
-msgstr "Häufig gestellte Fragen"
+#. (itstool) path: page/p
+#: C/general-windows.page:28
+msgid ""
+"There is no native port for Microsoft Windows and most likely there will "
+"never be. However, if you are interested, feel free to <link href=\"https://"
+"mail.gnome.org/mailman/listinfo/anjuta-list\">contact us</link>."
+msgstr ""
+"Es gibt keine native Portierung für Windows, und es ist unwahrscheinlich, "
+"das es jemals eine solche Version geben wird. Falls Die dennoch daran "
+"interessiert sind, <link href=\"https://mail.gnome.org/mailman/listinfo/"
+"anjuta-list\">nehmen Sie Kontakt mit uns auf</link>."
 
-#: index.page:24(page/title)
-msgid "FAQ"
-msgstr "FAQ"
+#. (itstool) path: info/desc
+#: C/project-existing.page:7
+msgid "Import a project into <app>Anjuta</app>."
+msgstr "Importieren Sie ein Projekt in <app>Anjuta</app>."
 
-#: index.page:28(section/title)
-msgid "General"
-msgstr "Allgemein"
-
-#: index.page:32(section/title)
-msgid "Editor"
-msgstr "Editor"
-
-#: index.page:36(section/title)
-msgid "Project"
-msgstr "Projekt"
-
-#: project-existing.page:7(info/desc)
-msgid "Simply import the project in <app>Anjuta</app>."
-msgstr "Importieren Sie einfach ein Projekt in <app>Anjuta</app>."
-
-#: project-existing.page:16(page/title)
-msgid "How can I use anjuta with an existing project?"
+#. (itstool) path: page/title
+#: C/project-existing.page:16
+msgid "How can I use Anjuta with an existing project?"
 msgstr "Wie kann ich Anjuta für ein existierendes Projekt verwenden?"
 
-#: project-existing.page:18(page/p)
+#. (itstool) path: page/p
+#: C/project-existing.page:18
 msgid ""
-"Just run <guiseq><gui>File</gui><gui>New</gui><gui>Project from existing "
-"sources</gui></guiseq>."
+"Run <guiseq><gui>File</gui><gui>New</gui><gui>Project from existing sources</"
+"gui></guiseq>."
 msgstr ""
-"Wählen Sie <guiseq><gui>Datei</gui><gui>Neu</gui><gui>Projekt aus vorhandenen "
-"Quellen</gui></guiseq>."
+"Wählen Sie <guiseq><gui>Datei</gui><gui>Neu</gui><gui>Projekt aus "
+"vorhandenen Quellen</gui></guiseq>."
 
-#: project-existing.page:20(page/p)
+#. (itstool) path: page/p
+#: C/project-existing.page:20
 msgid ""
-"<app>Anjuta</app> has not its own project format and uses already existing "
-"project format, like autotools or makefile. On Linux, the most common format "
-"is autotools and it is supported quite well."
+"<app>Anjuta</app> has no own project format. It uses already existing "
+"project formats, like Autotools or Makefile. On Linux, the most common "
+"format is Autotools."
 msgstr ""
-"<app>Anjuta</app> hat kein eigenes Projektformat und nutzt bereits vorhandene "
-"Formate, wie Autotools oder Makefile. Anter Linux werden die Autotools am "
-"häufigsten verwendet und deren Funktionsmerkmale sehr gut unterstützt."
+"<app>Anjuta</app> hat kein eigenes Projektformat und nutzt bereits "
+"vorhandene Formate, wie Autotools oder Makefile. Unter Linux sind die "
+"Autotools das am häufigsten verwendete Format."
 
-#: project-resource.page:7(info/desc)
+#. (itstool) path: info/desc
+#: C/project-resource.page:7
 msgid "Add a folder and a data target."
 msgstr "Einen Ordner und ein Datenziel hinzufügen."
 
-#: project-resource.page:16(page/title)
+#. (itstool) path: page/title
+#: C/project-resource.page:16
 msgid "How to add a directory containing icons to a project"
 msgstr "Einen Ordner zu einem Projekt hinzufügen, welcher Symbole enthält"
 
-#: project-resource.page:18(page/p)
+#. (itstool) path: page/p
+#: C/project-resource.page:18
 msgid ""
 "In an autotools project, you can add a new directory by creating a folder "
 "(<guiseq><gui>Project</gui><gui>New Folder...</gui></guiseq>). Then inside "
 "this folder create a new data target (<guiseq><gui>Project</gui><gui>New "
 "Target...</gui></guiseq>) and add the files corresponding to the icons to "
-"this target (<guiseq><gui>Project</gui><gui>New Source...</gui></guiseq>)."
+"this target (<guiseq><gui>Project</gui><gui>Add Source File...</gui></"
+"guiseq>)."
 msgstr ""
 "Fügen Sie in einem Autotools-Projekt einen neuen Ordner hinzu: "
 "<guiseq><gui>Projekt</gui><gui>Neuer Ordner …</gui></guiseq>. Dann erstellen "
