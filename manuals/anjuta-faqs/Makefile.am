@@ -14,6 +14,6 @@ HELP_FILES = \
 	project-existing.page \
 	project-resource.page
 
-HELP_LINGUAS = de pt_BR
+HELP_LINGUAS = de es pt_BR
 
 -include $(top_srcdir)/git.mk
