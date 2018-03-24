@@ -1,0 +1,3888 @@
+# Czech translation for anjuta.
+# Copyright (C) 2018 anjuta's COPYRIGHT HOLDER
+# This file is distributed under the same license as the anjuta package.
+# Marek Černocký <marek@manet.cz>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: anjuta master\n"
+"POT-Creation-Date: 2018-03-10 20:54+0000\n"
+"PO-Revision-Date: 2018-03-22 21:28+0100\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: čeština <gnome-cs-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Gtranslator 2.91.7\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Marek Černocký <marek@manet.cz>"
+
+#. (itstool) path: bookinfo/title
+#: C/index.docbook:11
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:11
+msgid "Anjuta build tutorial"
+msgstr "Výuka sestavování v IDE Anjuta"
+
+#. (itstool) path: bookinfo/edition
+#: C/index.docbook:12
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:12
+msgid "v0.2"
+msgstr "v0.2"
+
+#. (itstool) path: bookinfo/copyright
+#: C/index.docbook:14
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:14
+msgid "<year>2004</year> <holder>Olivier Pinçon</holder>"
+msgstr "<year>2004</year> <holder>Olivier Pinçon</holder>"
+
+#. (itstool) path: bookinfo/copyright
+#: C/index.docbook:18
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:18
+msgid "<year>2008</year> <holder>Sébastien Granjoux</holder>"
+msgstr "<year>2008</year> <holder>Sébastien Granjoux</holder>"
+
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:31
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:31
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the <citetitle>GNU Free Documentation License</citetitle>, "
+"Version 1.1 or any later version published by the Free Software Foundation "
+"with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. "
+"You may obtain a copy of the <citetitle>GNU Free Documentation License</"
+"citetitle> from the Free Software Foundation by visiting <ulink type=\"http"
+"\" url=\"http://www.fsf.org\">their Web site</ulink> or by writing to: Free "
+"Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA "
+"02110-1301, USA."
+msgstr ""
+"Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek "
+"<citetitle>GNU Free Documentation License</citetitle> ve verzi 1.1 nebo v "
+"jakékoli další verzi vydané nadací Free Software Foundation; bez neměnných "
+"oddílů, bez textů předních desek a bez textů zadních desek. Kopii licence "
+"<citetitle>GNU Free Documentation License</citetitle> můžete získat od "
+"organizace Free Software Foundations na <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">jejich webových stránkách</ulink>, nebo když si o ni napíšete "
+"na adresu: Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, "
+"Boston, MA 02110-1301, USA."
+
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:43
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:43
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and those trademarks are made aware to the members of the "
+"GNOME Documentation Project, the names have been printed in caps or initial "
+"caps."
+msgstr ""
+"Mnoho názvů použitých firmami k zviditelnění produktů nebo služeb jsou "
+"ochranné známky. Na místech, kde jsou tyto názvy v dokumentaci použity a "
+"členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se "
+"jedná o ochrannou známku, je takovýto název psán velkými písmeny celý nebo s "
+"velkým písmenem na začátku.\""
+
+#. (itstool) path: bookinfo/releaseinfo
+#: C/index.docbook:53
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:53
+msgid "This is version 0.2 of Anjuta build tutorial"
+msgstr "Jedná se o verzi 2.0 výuky sestavování v IDE Anjuta"
+
+#. (itstool) path: chapter/title
+#: C/index.docbook:60
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:60
+msgid "Introduction"
+msgstr "Úvod"
+
+#. (itstool) path: chapter/para
+#: C/index.docbook:61
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:61
+msgid ""
+"If you come from the Windows world, when you first launched "
+"<application>Anjuta</application>, you can told yourself : \"Hey, that looks "
+"like MS Visual C++, as I know it pretty well, understanding "
+"<application>Anjuta</application> will be a piece of cake.\". "
+"<application>Anjuta</application> looks like <application>Microsoft Visual "
+"Studio</application> or <application>Borland's C++ Builder</application>. "
+"but it has some significative differences essentially in its build system."
+msgstr ""
+"Když přicházíte ze světa Windows a poprvé spustíte aplikaci "
+"<application>Anjuta</application>, můžete si říct: „Jé, to vypadá jak MS "
+"Visual C++, to dobře znám. Takže pochopit <application>Anjutu</application> "
+"bude pro mě malina.“ <application>Anjuta</application> opravdu vypadá jak "
+"<application>Microsoft Visual Studio</application> nebo "
+"<application>Borland's C++ Builder</application>. Jsou zde ale významné "
+"rozdíly v samotném sestavovacím systému."
+
+#. (itstool) path: chapter/para
+#: C/index.docbook:69
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:69
+msgid ""
+"If you are starting programming directly on GNU/Linux, you have probably "
+"already heard of the <application>Autotools</application>. They are a major "
+"and probably a bit intimidating part of the development environment."
+msgstr ""
+"Jestli jste s programováním začali z příkazové řádky, nejspíše jste již "
+"slyšeli o <application>Autotools</application>. Jedná se o hlavní a "
+"pravděpodobně trochu zastrašující část vývojářského prostředí."
+
+#. (itstool) path: chapter/para
+#: C/index.docbook:74
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:74
+msgid ""
+"The goal of <application>Anjuta</application> is to make it easier to use "
+"the already existing development tools. <application>Anjuta</application> "
+"main build system uses the standard Linux build system: "
+"<application>Autotools</application>. This tutorial is an updated version of "
+"the <application>Anjuta</application> advanced tutorial from Olivier Pinçon. "
+"It explains how the build system is working without <application>Anjuta</"
+"application> and how to use it within <application>Anjuta</application>. It "
+"assumes that you have only a basic understanding of C or C++ and have been "
+"written using <application>Anjuta 2.6 (September 2008)</application>."
+msgstr ""
+"Cílem <application>Anjuty</application> je usnadnit používání již "
+"existujících vývojářských nástrojů. Její hlavní sestavovací systém používá "
+"standardní sestavovací systém Linuxu: <application>Autotools</application>. "
+"Tato příručka je aktualizovanou verzí pokročilé příručky k IDE "
+"<application>Anjuta</application> od Oliviera Pinçona. Vysvětluje, jak "
+"sestavovací systém funguje bez <application>Anjuty</application> a jak se "
+"používá s ní. Předpokládá u vás jen základní znalosti C nebo C++ a byla "
+"napsán pro použití s verzí <application>Anjuta 2.6 (září 2008)</application>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:90
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:90
+msgid ""
+"Fill a bug in <ulink url=\"http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=anjuta\"> <application>Anjuta</application> bugzilla database</"
+"ulink>."
+msgstr ""
+"Vyplnit chybové hlášení do <ulink url=\"http://bugzilla.gnome.org/enter_bug."
+"cgi?product=anjuta\">databáze bugzilla pro projekt <application>Anjuta</"
+"application></ulink>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:94
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:94
+msgid ""
+"Send a message to <application>Anjuta</application> developer mailing list "
+"<email>anjuta-devel@lists.sourceforge.net</email>"
+msgstr ""
+"Poslat zprávu do vývojářské poštovní konference projektu "
+"<application>Anjuta</application> na adrese <email>anjuta-devel@lists."
+"sourceforge.net</email>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:98
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:98
+msgid ""
+"Join <application>Anjuta</application> IRC channel <ulink url=\"irc://irc."
+"gnome.org/anjuta\">#anjuta on irc.gnome.org</ulink>"
+msgstr ""
+"Připojit se ke kanálu IRC projektu <application>Anjuta</application> na "
+"adrese <ulink url=\"irc://irc.gnome.org/anjuta\">#anjuta on irc.gnome.org</"
+"ulink>"
+
+#. (itstool) path: chapter/para
+#: C/index.docbook:85
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:85
+msgid ""
+"If you find errors, need more explanations or have any idea for improvements "
+"on this tutorial or <application>Anjuta</application> in general, you can: "
+"<_:itemizedlist-1/>"
+msgstr ""
+"Když najdete chybu, budete potřebovat podrobnější vysvětlení nebo budete mít "
+"nápad na vylepšení této příručky nebo <application>Anjuty</application> "
+"obecně, můžete: <_:itemizedlist-1/>"
+
+#. (itstool) path: chapter/title
+#: C/index.docbook:107
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:107
+msgid "Building a project"
+msgstr "Sestavení projektu"
+
+#. (itstool) path: chapter/para
+#: C/index.docbook:108
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:108
+msgid ""
+"This chapter explains how to build a program starting from the most basic "
+"tool: the compiler. This order is important to understand how is it working "
+"because each tool adds a new layer on top of the previous ones."
+msgstr ""
+"Tato kapitola objasňuje, jak sestavit program, počínaje úplně základním "
+"nástrojem – kompilátorem. Je důležité začít takto, abyste pochopili, jak to "
+"funguje, protože každý další nástroj přidává novou vrstvu nad ten předchozí."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:114
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:114
+msgid "Using <application>GCC</application>"
+msgstr "Použití <application>GCC</application>"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:115
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:115
+msgid ""
+"Here is a typical command to generate an executable from C source files "
+"using <application>GCC</application>:"
+msgstr ""
+"Zde je typický příkaz pro vygenerování spustitelného souboru ze zdrojových "
+"kódů v jazyce C pomocí <application>GCC</application>:"
+
+#. (itstool) path: sect1/screen
+#: C/index.docbook:119
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:119
+#, no-wrap
+msgid ""
+"\n"
+"<prompt>$</prompt><userinput>gcc -g -Wall -I/usr/include/libxml2/libxml -lxml2 main.c aux.c -o tut_prog</userinput>"
+msgstr ""
+"\n"
+"<prompt>$</prompt><userinput>gcc -g -Wall -I/usr/include/libxml2/libxml -lxml2 main.c aux.c -o tut_prog</userinput>"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:121
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:121
+msgid ""
+"This command tells <application>GCC</application> to compile the source "
+"files main.c and aux.c, and produce a binary called 'tut_prog' (this stands "
+"for 'tutorial program'). The various switches have the following meaning :"
+msgstr ""
+"Tento příkaz říká <application>GCC</application>, aby zkompiloval zdrojové "
+"kódy main.c a aux.c a vytvořil binární soubor nazvaný „tut_prog“ (zkráceni z "
+"„tutorial program“ – „výukový program“). Jednotlivé přepínače mají "
+"následující význam:"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:128
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:128
+msgid "<parameter>-g</parameter>"
+msgstr "<parameter>-g</parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:130
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:130
+msgid ""
+"tells <application>GCC</application> to include debug information into the "
+"binary."
+msgstr ""
+"Říká <application>GCC</application>, aby do výsledného programu přidal "
+"ladicí informace."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:134
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:134
+msgid "<parameter>-Wall</parameter>"
+msgstr "<parameter>-Wall</parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:136
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:136
+msgid ""
+"Warning all : print every warning. This switch is used by the C compiler "
+"only."
+msgstr ""
+"„Warning all“, což znamená vypisovat všechna varování. Tento přepínač "
+"používá jen kompilátor jazyka C."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:140
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:140
+msgid "<parameter>-Idir <replaceable>dir</replaceable></parameter>"
+msgstr "<parameter>-Idir <replaceable>složka</replaceable></parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:142
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:142
+msgid ""
+"Look for included header files (like in #include &lt;myheader.h&gt;) in "
+"directory <replaceable>dir</replaceable>. This switch is used by the C "
+"preprocessor only."
+msgstr ""
+"Zajistí, že se hlavičkové soubory (jako je #include &lt;myheader.h&gt;) "
+"budou hledat ve složce <replaceable>složka</replaceable>. Tento přepínač "
+"používá pouze preprocesor jazyka C."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:148
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:148
+msgid "<parameter>-llib <replaceable>lib</replaceable></parameter>"
+msgstr "<parameter>-llib <replaceable>knihovna</replaceable></parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:150
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:150
+msgid ""
+"Link to library <replaceable>lib</replaceable>; here <application>libxml2</"
+"application>, used by the linker."
+msgstr ""
+"Odkaz na <replaceable>knihovnu</replaceable>, zde konkrétně "
+"<application>libxml2</application>, pro potřeby linkeru."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:155
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:155
+msgid ""
+"In fact, <application>GCC</application> does not do the compilation itself. "
+"It gets all arguments from the user and calls other programs passing them "
+"the needed arguments with some default one to do the four stages involved in "
+"the compilation."
+msgstr ""
+"Ve skutečnosti kompilaci neprovádí přímo <application>GCC</application>. Jen "
+"převezme parametry zadané uživatelem a zavolá jiné programy a předá jim "
+"potřebné parametry, případně včetně některých výchozích. Takto se postupně "
+"provedou čtyři fáze kompilace."
+
+#. (itstool) path: figure/title
+#: C/index.docbook:162
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:162
+msgid "<application>GCC</application> compilation stage"
+msgstr "Fáze kompilace pomocí <application>GCC</application>"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:165
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:165
+msgctxt "_"
+msgid ""
+"external ref='figures/compilation-stages.png' "
+"md5='395d9386a3de8f8c479265c6c5c5421f'"
+msgstr ""
+"external ref='figures/compilation-stages.png' "
+"md5='395d9386a3de8f8c479265c6c5c5421f'"
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:170
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:170
+msgid "Preprocessor"
+msgstr "Preprocesor"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:171
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:171
+msgid ""
+"Each C source file goes through the preprocessor, named <application>cpp</"
+"application>. In this stage, all include files and macros are expanded to "
+"get preprocessed C source code. The resulting file .i is rarely generated "
+"but it could be interesting to see how complex macros are expanded. You can "
+"do this by calling <application>cpp</application> directly or using the "
+"<userinput>-E</userinput> switch of <application>GCC</application>. The "
+"later option is better as it allows to run the preprocessor with all default "
+"options."
+msgstr ""
+"Každý soubor se zdrojovým kódem v jazyce C projde přes preprocesor nazvaný "
+"<application>cpp</application>. V této fázy se rozvinou všechny vložené "
+"soubory a makra – zdrojový kód se předpřipraví (anglicky preproces). "
+"Výsledný soubor s příponou <filename>.i</filename> se generuje jen výjimečně, "
+"ale může být zajímavé se podívat, jak složitě a rozsáhle se makra rozvíjejí. "
+"Nechast si soubor vytvořit se dá zavoláním <application>cpp</application> "
+"přímo nebo zavoláním <userinput>-E</userinput> s přepínačem <application>GCC"
+"</application>. Druhé zmíněné je lepší, protože preprocesoru předá navíc "
+"některé výchozí hodnoty."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:183
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:183
+msgid "Compiler"
+msgstr "Kompilátor"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:184
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:184
+msgid ""
+"In this stage each file is compiled into assembler code. The compiler "
+"depends on the language of the source file, C here. It is a complex program "
+"because there is not a one to one correspondence between C instructions and "
+"assembler instructions. By example, requesting the fastest or the smallest "
+"program will generate different sequences of assembler instructions. The "
+"assembler is the language of your computer, the most common one is called "
+"x86. The output is a, human readable, assembler source file ending with '."
+"s'. Like the preprocessor output, the assembler code is not normally written "
+"on the hard disk. You can stop the compilation at this stage to look at it "
+"by running <application>GCC</application> with the <userinput>-S</userinput> "
+"switch."
+msgstr ""
+"V této fázi jsou jednotlivé soubory zkompilovány do assemblerového kódu. "
+"Použitý kompilátor odvisí od použitého jazyka ve zdrojovém kódu, zde je to "
+"C. Jedná se o složitý program, protože neexistuje přepis jedna k jedné mezi "
+"instrukcí C a instrukcí assembleru. Například, požadavek na co nejrychlejší "
+"a na co nejmenší program vygenerují různou posloupnost assemblerových "
+"instrukcí. Assembler je jazyk závislý na použitém počítači, nejčastěji to "
+"asi bude x86. Výstupem je pro člověka čitelný zdrojový kód v assembleru v "
+"souboru s příponou <filename>.s</filename>. Stejně jako u výstupu z "
+"preprocesoru, ani tyto soubory se normálně nezapisují na disk. Jestli se "
+"ale chcete na soubory podívat, můžete kompilaci v této fázi zastavit "
+"spuštěním <application>GCC</application> s přepínačem <userinput>-S"
+"</userinput>."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:201
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:201
+msgid "Assembler"
+msgstr "Assembler"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:202
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:202
+msgid ""
+"In this stage each file is assembled: the assembler code is transformed to "
+"an object file with .o extension. It is much easier than the compilation as "
+"each assembler instruction corresponds to an unique code. The object file "
+"contains additional information for debugging or linking the program. The "
+"object file is a binary format, called ELF on recent Linux machine, you need "
+"to use special program to look in it like <application>objdump</"
+"application>. It is possible to write directly assembler code and assemble "
+"it using the assembler ,<application>as</application>, or <application>GCC</"
+"application> if your source file has a .s extension. These object files are "
+"commonly written on your hard disk because it depends only of theirs "
+"corresponding C source file (with all files included). If you modify only "
+"one source file, you need to regenerate only the corresponding object file. "
+"You can stop at this stage, without linking by using <userinput>-c</"
+"userinput> switch with <application>GCC</application>."
+msgstr ""
+"V této fázi jsou jednotlivé soubory zpracovány assemblerem: kód je převeden "
+"to objektových souborů s příponou <filename>.o</filename>. To je podstatně "
+"jednodušší než kompilace, protože každá instrukce odpovídá jedna k jedné "
+"unikátnímu kódu. Objektový soubor obsahuje doplňující informace pro ladění a "
+"linkovací program. Objektový soubor má binární formát, na počítačích s novými "
+"verzemi Linuxu nazývaný ELF. Abyste si jej mohli prohlédnou, potřebujete "
+"speciální program, jako je třeba <application>objdump</application>. Můžete "
+"psát programy v assembleru i přímo ručně do souborů s příponou <filename>.s"
+"</filename> a pak je převádět programem  <application>as</application>, stejně "
+"jako to dělá <application>GCC</application>. Výsledné objektové soubory se "
+"běžné zapisují na disk, protože závisí jen na příslušném souboru se zdrojovým "
+"kódem C (včetně všech vložených souborů). Když změníte jeden zdrojový soubor, "
+"stačí nově vygenerovat jen příslušné objektové soubory. Skončit v této fázi, "
+"bez následného slinkování, můžete použitím přepínače <userinput>-c"
+"</userinput> pro <application>GCC</application>."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:221
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:221
+msgid "Linker"
+msgstr "Linker"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:222
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:222
+msgid ""
+"This stage is used to combine all the object files and libraries into one "
+"executable file. The result is a binary file in a format close to the object "
+"file, on Linux it is even the same format."
+msgstr ""
+"Tato fáze slouží ke zkombinování všech objektových souborů a knihoven do "
+"jednoho spustitelného souboru. Výsledkem je binární soubor ve formátu velmi "
+"podobném objektovým souborům, v Linuxu je to dokonce tentýž formát."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:230
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:230
+msgid "Using <application>make</application>"
+msgstr "Použití <application>make</application>"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:231
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:231
+msgid ""
+"When a program is composed of lots of sources files, it is much faster to "
+"keep the object files and recompile each source files only when needed. This "
+"can be automated using <application>make</application>. It executes a "
+"program written in a makefile, normally named <filename>Makefile</filename>. "
+"A sample makefile for the previous tutorial program could be :"
+msgstr ""
+"V situaci, kdy se program skládá z velkého množství zdrojových souborů, je "
+"mnohem rychlejší objektové soubory zachovávat a znovu kompilovat jen ty "
+"zdrojové soubory, které je potřeba. To se dá automatizovat pomocí programu "
+"<application>make</application>. Ten spouští program napsaný ve formátu "
+"makefile, normálně pojmenovaný <filename>Makefile</filename>. Příklad pro "
+"předchozí ukázkový program by mohl vypadat takto:"
+
+#. (itstool) path: example/title
+#: C/index.docbook:240
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:240
+msgid "A simple Makefile file"
+msgstr "Jednoduchý soubor Makefile"
+
+#. (itstool) path: example/programlisting
+#: C/index.docbook:241
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:241
+#, no-wrap
+msgid ""
+"\n"
+"CC=gcc \t# the C compiler is gcc\n"
+"CFLAGS=-g -Wall -I/usr/include/libxml2\n"
+"LIBS=-lxml2\t\t\t\t\t\n"
+"\t\t\t\t\n"
+"tut_prog: main.o aux.o   # what we need to have 'tut_prog'...\n"
+"\t$(CC) $(LIBS) main.o aux.o -o tut_prog # ...and how to get it from the ingredients.\n"
+"\t\t\t\t\t\n"
+"main.o: main.c\n"
+"\t$(CC) -c $(CFLAGS) main.c\n"
+"\t\t\t\t\t\n"
+"aux.o: aux.c\n"
+"\t$(CC) -c $(CFLAGS) aux.c"
+msgstr ""
+"\n"
+"CC=gcc \t# kompilátor je gcc\n"
+"CFLAGS=-g -Wall -I/usr/include/libxml2\n"
+"LIBS=-lxml2\t\t\t\t\t\n"
+"\t\t\t\t\n"
+"tut_prog: main.o aux.o   # co je potřeba pro získání „tut_prog“…\n"
+"\t$(CC) $(LIBS) main.o aux.o -o tut_prog # … a jak jej získat z jednotlivých dílků.\n"
+"\t\t\t\t\t\n"
+"main.o: main.c\n"
+"\t$(CC) -c $(CFLAGS) main.c\n"
+"\t\t\t\t\t\n"
+"aux.o: aux.c\n"
+"\t$(CC) -c $(CFLAGS) aux.c"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:255
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:255
+msgid ""
+"Makefiles are a kind of program but instead of writing what should be done "
+"sequentially to get the result, you define some rules and <application>make</"
+"application> uses these rules in whatever order to achieve the result."
+msgstr ""
+"Soubory Makefile jsou jistým druhem skriptových programů, ale místo zapsané "
+"posloupnosti toho, co se má udělat, aby se dospělo k výsledku, definují "
+"určitá pravidla. Program <application>make</application> pak tato pravidla "
+"používá v různém pořadí, aby dosáhl žádaného výsledku."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:262
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:262
+msgid "Variables"
+msgstr "Proměnné"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:263
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:263
+msgid ""
+"Like in any programming language, you can define variables in a make file. "
+"All variables contains a string or a list of strings separated by "
+"whitespace. A variable is defined using the following syntax: "
+"<replaceable>name</replaceable>=<replaceable>value</replaceable>. You can "
+"get its value by writing $(<replaceable>name</replaceable>) or "
+"${<replaceable>name</replaceable>}. In the sample above, three variables are "
+"defined CC, CFLAGS and LIBS."
+msgstr ""
+"Stejně jako v jiných programovacích jazycích, můžete i souborech makefile "
+"definovat proměnné. Všechny proměnné obsahují řetězec nebo seznam řetězců "
+"oddělených bílými znaky. Proměnná je definovaná pomocí následující syntaxe: "
+"<replaceable>nazev</replaceable>=<replaceable>hodnota</replaceable>. Její "
+"hodnotu pak můžete získat zápisem $(<replaceable>nazev</replaceable>) nebo "
+"${<replaceable>nazev</replaceable>}. V předchozím příkladu jsou definované "
+"tři proměnné – CC, CFLAGS a LIBS."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:280
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:280
+msgid "<envar>CC</envar>"
+msgstr "<envar>CC</envar>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:281
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:281
+msgid "Program for compiling C programs, default 'cc'"
+msgstr "Program pro kompilaci z jazyka C; výchozí je „cc“"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:284
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:284
+msgid "<envar>CXX</envar>"
+msgstr "<envar>CXX</envar>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:285
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:285
+msgid "Program for compiling C++ programs, default 'g++'"
+msgstr "Program pro kompilaci z jazyka C++; výchozí je „g++“"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:288
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:288
+msgid "<envar>CPP</envar>"
+msgstr "<envar>CPP</envar>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:289
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:289
+msgid "Program for running C preprocessor, default '$(CC) -E'"
+msgstr "Program použitý jako preprocesor jazyka C; výchozí je „$(CC) -E“"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:292
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:292
+msgid "<envar>FC</envar>"
+msgstr "<envar>FC</envar>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:293
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:293
+msgid "Program for running Fortran compiler, default 'f77'"
+msgstr "Program pro kompilaci z jazyka Fortran; výchozí je „f77“"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:296
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:296
+msgid "<envar>RM</envar>"
+msgstr "<envar>RM</envar>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:297
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:297
+msgid "Command to remove a file, default 'rm -f'"
+msgstr "Program pro odtraňování souborů; výchozí je „rm -f“"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:300
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:300
+msgid "<envar>CFLAGS</envar>"
+msgstr "<envar>CFLAGS</envar>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:301
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:301
+msgid "Extra flags for the C compiler"
+msgstr "Doplňující přepínače pro kompilátor jazyka C"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:304 C/index.docbook:312
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:304
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:312
+msgid "<envar>CXXFLAGS</envar>"
+msgstr "<envar>CXXFLAGS</envar>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:305 C/index.docbook:309
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:305
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:309
+msgid "Extra flags for the C++ compiler"
+msgstr "Doplňující přepínače pro kompilátor jazyka C++"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:308
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:308
+msgid "<envar>CPPFLAGS</envar>"
+msgstr "<envar>CPPFLAGS</envar>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:313
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:313
+msgid "Extra flags for the C preprocessor"
+msgstr "Doplňující přepínače pro preprocesor jazyka C"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:316
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:316
+msgid "<envar>FFLAGS</envar>"
+msgstr "<envar>FFLAGS</envar>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:317
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:317
+msgid "Extra flags for the Fortran compiler"
+msgstr "Doplňující přepínače pro kompilátor jazyka Fortran"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:320
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:320
+msgid "<envar>LDFLAGS</envar>"
+msgstr "<envar>LDFLAGS</envar>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:321
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:321
+msgid "Extra flags for the linker"
+msgstr "Doplňující přepínače pro linker"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:272
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:272
+msgid ""
+"Variables can be redefined when calling <application>make</application> in "
+"the command line or using values from environment. Moreover "
+"<application>make</application> includes some default rules using predefined "
+"variables. Here is a list of the most common ones: <_:variablelist-1/>"
+msgstr ""
+"Proměnné je možné předefinovat, když se volá <application>make</"
+"application>, v příkazové řádce nebo pomocí hodnot z proměnných prostředí. "
+"Navíc <application>make</application> obsahuje některá výchozí pravidla "
+"používající předdefinované proměnné. Zde je seznam nejběžnějších z nich: <_:"
+"variablelist-1/>"
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:327
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:327
+msgid "Rules"
+msgstr "Pravidla"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:328
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:328
+msgid "The basic syntax for make rules is:"
+msgstr "Základní syntax pro pravidla make je:"
+
+#. (itstool) path: sect2/programlisting
+#: C/index.docbook:331
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:331
+#, no-wrap
+msgid ""
+"\n"
+"<replaceable>target</replaceable>: <replaceable>prerequisites</replaceable>\n"
+"\t<replaceable>commands</replaceable>\n"
+"\t<replaceable>...</replaceable>"
+msgstr ""
+"\n"
+"<replaceable>cíl</replaceable>: <replaceable>předpoklady</replaceable>\n"
+"\t<replaceable>příkazy</replaceable>\n"
+"\t<replaceable>…</replaceable>"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:335
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:335
+msgid ""
+"The <replaceable>target</replaceable> and the <replaceable>prerequisites</"
+"replaceable> are normally files but they could be actions. The rule is "
+"interpreted as in order to make the target or update it if it is older than "
+"its prerequisites, you need to make all prerequisites and then run all "
+"commands."
+msgstr ""
+"Údaje <replaceable>cíl</replaceable> a <replaceable>předpoklady</"
+"replaceable> jsou normálně soubory, ale mohou to být i akce. Pravidlo je "
+"interpretováno, když je potřeba vytvořit cíl, případně jej aktualizovat, "
+"pokud je starší než předpoklad. Pro interpretaci je potřeba mít splněné "
+"všechny předpoklady a následně jsou pak provedeny všechny příkazy."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:343
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:343
+msgid ""
+"<application>make</application> starts with the first target of the makefile "
+"or the one given in the command line and looks for a rule. If this rules has "
+"no prerequisites, the associated commands are run and that's all. Else "
+"before running the commands, for each prerequisite, <application>make</"
+"application> looks for a rule having it as target and repeats the same "
+"process."
+msgstr ""
+"<application>make</application> začne s prvním cílem v souboru Makefile, "
+"nebo s tím, který je předaný z příkazové řádky, a hledá pro něj pravidlo. "
+"Pokud nemá pravidlo žádné předpoklady, provedou se související příkazy a tím "
+"vše skončí. Pokud ale existují, před spuštěním příkazů hledá "
+"<application>make</application> pravidla, která mají jednotlivé předpoklady "
+"jako cíle a pro ně celý postup opakuje."
+
+#. (itstool) path: para/programlisting
+#: C/index.docbook:355
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:355
+#, no-wrap
+msgid ""
+"\n"
+"Search a rule with tut_prog as target\n"
+"Found with prerequisites main.o aux.o\n"
+"\tSearch a rule with main.o as target\n"
+"\tFound with prequisite main.c\n"
+"\t\tSearch a rule with main.c as target\n"
+"\t\tNot found (main.c is a source file)\n"
+"\tIf main.o does not exist or is older than main.c\n"
+"\t\tCompile main.c, do not link (-c switch)\n"
+"\tSearch a rule with aux.o as target\n"
+"\tFound with prequisite aux.c\n"
+"\t\tSearch a rule with aux.c as target\n"
+"\t\tNot found (aux.c is a source file)\n"
+"\tIf aux.o does not exist or is older than aux.c\n"
+"\t\tCompile aux.c, do not link (-c switch)\n"
+"If tut_prog is older than main.o or aux.o\n"
+"\tLink main.o, aux.o and libxml2"
+msgstr ""
+"\n"
+"Hledá pravidlo s cílem tut_prog\n"
+"Najde jej s předpoklady mani.o aux.o\n"
+"\tHledá pravidlo s cílem main.o\n"
+"\tNajde jej s předpokladem main.c\n"
+"\t\tHledá pravidlo s cílem main.c\n"
+"\t\tNenajde jej (main.c je zdrojový soubor)\n"
+"\tPokud main.o neexistuje nebo je starší než main.c\n"
+"\t\tZkompiluje main.c, bez linkování (-c switch)\n"
+"\tHledá pravidlo s cílem aux.o\n"
+"\tNajde jej s předpokladem aux.c\n"
+"\t\tHledá pravidlo s cílem aux.c\n"
+"\t\tNenajde jej (aux.c je zdrojový soubor)\n"
+"\tPokud aux.o neexistuje nebo je starší než aux.c\n"
+"\t\tZkompiluje aux.c, bez linkování (-c switch)\n"
+"Pokud je tut_prog starší než main.o nebo aux.o\n"
+"\tSlinkuje main.o, aux.o a libxml2"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:351
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:351
+msgid ""
+"In the sample above, if you run <userinput>make</userinput> or "
+"<userinput>make tut_prog</userinput>. <application>make</application> does "
+"the following: <_:programlisting-1/>"
+msgstr ""
+"Když v příkladu výše spustíte <userinput>make</userinput> nebo "
+"<userinput>make tut_prog</userinput>, provede <application>make</"
+"application> následující: <_:programlisting-1/>"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:373
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:373
+msgid "Like for variables, several target names are commonly defined:"
+msgstr ""
+"Podobně, jako je tomu u proměnných, i u cílů je definováno několik obedně používaných "
+"názvů:"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:378
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:378
+msgid "<parameter>all</parameter>"
+msgstr "<parameter>all</parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:379
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:379
+msgid "Do everything"
+msgstr "Provést vše"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:382
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:382
+msgid "<parameter>check</parameter>"
+msgstr "<parameter>check</parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:383
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:383
+msgid "Perform some self test after building the program"
+msgstr "Po sestavené programu provést automatizované testy"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:386
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:386
+msgid "<parameter>clean</parameter>"
+msgstr "<parameter>clean</parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:387
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:387
+msgid "Delete all files created by <application>make</application>"
+msgstr ""
+"Odstranit všechny soubory, které <application>make</application> vytvořil"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:390
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:390
+msgid "<parameter>distclean</parameter>"
+msgstr "<parameter>distclean</parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:391
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:391
+msgid "Delete more files than clean, could delete the Makefile itself"
+msgstr "Odstranit více souborů, než clean; může odstranit i Makefile samotný"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:394
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:394
+msgid "<parameter>dist</parameter>"
+msgstr "<parameter>dist</parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:395
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:395
+msgid "Create a distribution package, a compressed tarball by example"
+msgstr "Vytvořit distribuční balíček, například komprimovaný tar"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:398
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:398
+msgid "<parameter>install</parameter>"
+msgstr "<parameter>install</parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:399
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:399
+msgid ""
+"Install target created by <application>make</application>, need to be run as "
+"root to install in system directories"
+msgstr ""
+"Nainstalovat cíl vytvořený pomocí <application>make</application>; kvůli "
+"instalaci do systémových složek je potřeba spustit pod uživatelem root"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:403
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:403
+msgid "<parameter>uninstall</parameter>"
+msgstr "<parameter>uninstall</parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:404
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:404
+msgid "Remove files installed by <application>make</application>"
+msgstr "Odstranit soubory, které <application>make</application> nainstaloval"
+
+#. (itstool) path: note/para
+#: C/index.docbook:408
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:408
+msgid ""
+"Programs compiled from sources are installed by default in <filename class="
+"\"directory\"> /usr/local</filename>. If you want to install (or uninstall) "
+"a program in such system directory, you normally need to log as root using "
+"<userinput>su</userinput> or <userinput>sudo</userinput> before running "
+"<userinput>make install</userinput>."
+msgstr ""
+"Program zkompilovaný ze zdrojových kódů se standardně nainstaluje do "
+"<filename class=\"directory\"> /usr/local</filename>. Když chcete to "
+"takovéto systémové složky instalovat (nebo z ní naopak něco odinstalovat), "
+"musíte být pře spuštěním <userinput>make install</userinput> přihlášení jako "
+"uživatel root, nejlépe pomocí <userinput>su</userinput> nebo "
+"<userinput>sudo</userinput>."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:417 C/index.docbook:706 C/index.docbook:1306
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:417
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:706
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1306
+msgid "Using <application>Autotools</application>"
+msgstr "Použití <application>Autotools</application>"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:418
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:418
+msgid ""
+"If you want to build your program on another system, using "
+"<application>make</application> only could be quite difficult. The C "
+"compiler could be different. Some common C functions could be missing, have "
+"another name, declared in a different header and so on. This can be handled "
+"by enabling difference piece of code in your sources using preprocessor "
+"directive #if, #ifdef and others. But the user will have to define himself "
+"all these tuning which is not easy as there is a lots of systems with a lots "
+"of variations."
+msgstr ""
+"Pokud chcete sestavit program na jiném systému, mohlo by být použití "
+"samotného <application>make</application> poněkud obtížné. Mohl by být "
+"potřeba jiný kompilátor jazyka C. Některé funkce C by mohly scházet, mít "
+"jiný název, být deklarované s jinou hlavičkou apod. Dalo by se to sice řešit "
+"povolováním různých částí kód pomocí direktiv #if, #ifdef a podobných ve "
+"zdrojovém kódu, ale uživatel by se musel o vše postarat sám. A takové úpravy "
+"nejsou triviální, protože existuje spousta systémů ve spoustě variací."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:427
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:427
+msgid ""
+"Free softwares are mainly distributed as sources. It is crucial to be able "
+"to recompile them on various system without much technical knowledge. "
+"<application>Autotools</application> is designed to solve this and you "
+"probably have already use it using the magic combination <userinput> \"./"
+"configure; make; make install\"</userinput>. You may have noticed that many "
+"files are involved in this build process; globally all that stuff seems very "
+"complicated. So what's happening when you compile such software ?"
+msgstr ""
+"Svobodný software se často šíří v podobě zdrojových kódů. Je podstatné, aby "
+"jej bylo možné zkompilovat na různých systémech bez technických znalostí. "
+"<application>Autotools</application> jsou navržené k tomu, aby to řešily, a "
+"nejspíše jste se již setkali s magickou kombinací <userinput>„./configure; "
+"make; make install“</userinput>. Možná jste si všimli, že v sestavovacím "
+"procesu figuruje spousta souborů. Celkově se zdá všechno poněkud "
+"komplikované. Takže, co se vlastně děje, když kompilujete software?"
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:438
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:438
+msgid "Input files"
+msgstr "Vstupní soubory"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:439
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:439
+msgid ""
+"An <application>Autotools</application> project comes at least with a "
+"configure script, named <filename>configure</filename>, and a makefile "
+"template named <filename>Makefile.in</filename>. There is normally, one "
+"<filename>Makefile.in</filename> in each directory of the project. There are "
+"several other files used by an <application>Autotools</application> project "
+"but they are not stricly necessary or are generated automatically."
+msgstr ""
+"Projekt <application>Autotools</application> přichází přinejmenším s "
+"konfiguračním skriptem nazvaným <filename>configure</filename> a se šablonou "
+"pro Makefile nazvanou <filename>Makefile.in</filename>. Normálně bývá v "
+"každé složce projektu jedna šablona. Mimo to bývá v projektu ještě několik "
+"dalších souborů používaných <application>Autotools</application>, ale ty "
+"nejsou vysloveně nutné, nebo se generují automaticky."
+
+#. (itstool) path: tip/para
+#: C/index.docbook:449
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:449
+msgid ""
+"If you look inside these files, you will see that they are quite complex. Do "
+"not worry, these files are generated by <application>Autotools</application> "
+"from other templates easier to write as explained in <xref linkend=\"create-"
+"autotools\"/>. For the moment, we do not care, we consider these files exist "
+"as it is the case when you get a source package."
+msgstr ""
+"Když se do těchto souborů podíváte, zjistíte, že jsou trochu "
+"komplikovanější. Ale nebojte se, jsou generované automaticky pomocí "
+"<application>Autotools</application> ze šablon, které jsou pro napsání "
+"mnohem jednoduší, jak je vysvětleno v <xref linkend=\"create-autotools\"/>. "
+"V tuto chvíli se jimi nebudeme zabývat a budeme předpokládat, že ve chvíli, "
+"kdy stáhneme zdrojový balíček, již existují."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:457 C/index.docbook:559
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:457
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:559
+msgid "Configure"
+msgstr "Configure"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:458
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:458
+msgid ""
+"In fact, you don't need <application>Autotools</application> to build an "
+"autotools package, <application>configure</application> is a shell script "
+"running on the most basic shell: <filename>sh</filename>. It probes your "
+"system checking each characteristic and writes makefiles from the templates."
+msgstr ""
+"Ve skutečnosti na sestavení balíčku založeného na autotools nepotřebujete "
+"<application>Autotools</application>, protože <application>configure</"
+"application> je shellový skript běžící běžící na nejzákladnějším shellu: "
+"<filename>sh</filename>. Zkoumá váš systém pomocí kontroly jednotlivých "
+"vlastností a podle šablony zapisuje Makefile."
+
+#. (itstool) path: important/para
+#: C/index.docbook:466
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:466
+msgid ""
+"In order to build a project using a library, you need more information about "
+"it, so additional files. For a library used in a C program, you need the "
+"corresponding header files. This has to be installed on your system and is "
+"typically found in a so called development package. By example for the "
+"library <application>libxml2</application>, there are two packages:"
+msgstr ""
+"Abyste mohli sestavit projekt používající knihovnu, potřebujete o knihovně "
+"více informací, tj. další soubory. Pro knihovny, které se používají v "
+"programech napsaných v C, potřebujete příslušné hlavičkové soubory. Ty musí "
+"být nainstalované v systému a typicky je najdete v tzv. vývojářských "
+"balíčcích. Například pro knihovnu <application>libxml2</application> "
+"existují dva balíčky:"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:473
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:473
+msgid ""
+"<filename>libxml2</filename> necessary to run a program using it and "
+"installed automatically as a dependency of such program."
+msgstr ""
+"<filename>libxml2</filename> nutný ke spuštění programu, který jej používá, "
+"a instalovaný automaticky jako závislost takového programu."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:478
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:478
+msgid ""
+"<filename>libxml2-devel</filename> necessary to build a program using it. If "
+"you don't have it <application>configure</application> will display an error "
+"message."
+msgstr ""
+"<filename>libxml2-devel</filename> nutný k sestavení programu, který jej "
+"používá. Pokud jej nemáte nainstalovaný, zobrazí <application>configure</"
+"application> chybové hlášení."
+
+#. (itstool) path: figure/title
+#: C/index.docbook:485
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:485
+msgid "Configure process"
+msgstr "Zpracování pomocí configure"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:488
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:488
+msgctxt "_"
+msgid ""
+"external ref='figures/configure-process.png' "
+"md5='ab9bee38a1f4104bd289df6a9d74ffb7'"
+msgstr ""
+"external ref='figures/configure-process.png' "
+"md5='ab9bee38a1f4104bd289df6a9d74ffb7'"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:492
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:492
+msgid ""
+"<application>configure</application> creates all files in the directory "
+"where it is called. This directory is the <emphasis>build directory</"
+"emphasis>. If you run it from the source directory, using <userinput>./"
+"configure</userinput>, the build directory will be the same."
+msgstr ""
+"<application>configure</application> vytvoří všechny soubory ve složce, ze "
+"které je zavolán. Tato složka je pak <emphasis>složkou sestavení</emphasis>. "
+"Když jej spustíte ze složky se zdrojovými soubory, pomocí <userinput>./"
+"configure</userinput>, bude složka sestavení tamtéž."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:498
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:498
+msgid ""
+"<application>configure</application> accepts several options in the command "
+"line. They are used to install the files in different directories, to "
+"disable some parts of the project in order to get a smaller executable or if "
+"you haven't one needed library or force a value for some <application>make</"
+"application> variable (see <xref linkend=\"build-make-vars\"/>). You can get "
+"a list of them by running <userinput>configure --help</userinput>. Here is a "
+"list of the most common ones:"
+msgstr ""
+"<application>configure</application> přijímá na příkazové řádce několik "
+"přepínačů. Používají se k instalaci souborů do různých složek, k zakázání "
+"některých částí projektu, aby měl menší výslednou velikost a nebo se "
+"vynechala nechtěná knihovna, nebo k vynucení hodnot pro některé proměnné "
+"<application>make</application> (viz <xref linkend=\"build-make-vars\"/>). "
+"Seznam přepínačů získáte spuštěním <userinput>configure --help</userinput>. "
+"Zde je seznam nejběžnějších z nich:"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:509
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:509
+msgid "<parameter>--help</parameter>"
+msgstr "<parameter>--help</parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:510
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:510
+msgid "List all available options"
+msgstr "Seznam dostupných voleb"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:513
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:513
+msgid "<parameter>--host <replaceable>host</replaceable></parameter>"
+msgstr "<parameter>--host <replaceable>hostitel</replaceable></parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:514
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:514
+msgid "Compile to run on another system (cross compilation)"
+msgstr "Zkompilovat pro spuštění na jiném systému (tzv. křížová kompilace)"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:517
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:517
+msgid "<parameter>--prefix <replaceable>dir</replaceable></parameter>"
+msgstr "<parameter>--prefix <replaceable>složka</replaceable></parameter>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:518
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:518
+msgid ""
+"Select the root directory for installing the project, default /usr/local"
+msgstr "Určí kořenovou složku pro instalaci projektu; výchozí je /usr/local"
+
+#. (itstool) path: note/para
+#: C/index.docbook:522
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:522
+msgid ""
+"<application>configure</application> generates a few additional files which "
+"are less important. <filename>config.log</filename> is a log file useful "
+"when something goes wrong to get more details. <filename>config.status</"
+"filename> is another shell script, it can be run to restore the current "
+"configuration. <filename>config.h</filename> is a header file generated like "
+"<filename>Makefile</filename> from a template <filename>config.h.in</"
+"filename> if it exists."
+msgstr ""
+"<application>configure</application> vytváří pár dodatečných souborů, které "
+"nejsou až tak důležité. <filename>config.log</filename> je záznam, který se "
+"může hodit k dohledání podrobností, když je něco špatně. <filename>config."
+"status</filename> je další shellový skript, pomocí kterého se dá obnovit "
+"aktuální konfigurace. <filename>config.h</filename> je hlavičkový soubor "
+"generovaný podobně jako <filename>Makefile</filename> ze šablony, konkrétně "
+"z <filename>config.h.in</filename>, pokud existuje."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:531
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:531
+msgid "<application>make</application>"
+msgstr "<application>make</application>"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:532
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:532
+msgid ""
+"The makefiles generated by <application>configure</application> are quite "
+"complex but are standard makefiles. They define all standard targets needed "
+"by GNU standard."
+msgstr ""
+"Soubory Makefile vygenerované příkazem <application>configure</application> "
+"jsou sice trochu komplikovanější, ale pořád to jsou standardní soubory ve "
+"formátu makefile. Definují všechny standardní cíle požadované standardem GNU."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:539
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:539
+msgid ""
+"<userinput>make</userinput> or <userinput>make all</userinput> builds the "
+"program."
+msgstr ""
+"<userinput>make</userinput> nebo <userinput>make all</userinput> sestaví "
+"program."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:542
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:542
+msgid "<userinput>make install</userinput> installs the program."
+msgstr "<userinput>make install</userinput> nainstaluje program."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:545
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:545
+msgid ""
+"<userinput>make distclean</userinput> removes all files generated by "
+"<application>configure</application>, to let the project in the state it was "
+"when unpacking the distribution package."
+msgstr ""
+"<userinput>make distclean</userinput> odstraní všechny soubory vygenerované "
+"příkazem <application>configure</application>, takže dostanete projekt do "
+"stavu, jako byl před rozbalení distribučního balíčku."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:553 C/index.docbook:1055 C/index.docbook:1583
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:553
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1055
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1583
+msgid "Using <application>Anjuta</application>"
+msgstr "Použití IDE <application>Anjuta</application>"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:554
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:554
+msgid ""
+"Now, we will see the <application>Anjuta</application> interface allowing "
+"you to run all these commands without using the command line."
+msgstr ""
+"Nyní se podíváme na uživatelské rozhraní <application>Anjuty</application>, "
+"ve kterém můžete spouštět všechny tyto příkazy bez použití příkazové řádky."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:560
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:560
+msgid ""
+"As <application>Anjuta</application> is using <application>Autotools</"
+"application>, the first step is similar, you need to run configure. Select "
+"<menuchoice><guisubmenu>Build</guisubmenu> <guimenuitem>Configure Project..."
+"</guimenuitem></menuchoice>, to get the following dialog:"
+msgstr ""
+"Protože <application>Anjuta</application> používá <application>Autotools</"
+"application>, je první krok podobný – potřebujete spustit skript configure. "
+"Vyberte <menuchoice><guisubmenu>Sestavit</"
+"guisubmenu><guimenuitem>Konfigurovat projekt…</guimenuitem></menuchoice> a "
+"objeví se následující dialogové okno:"
+
+#. (itstool) path: figure/title
+#: C/index.docbook:568
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:568
+msgid "Configure dialog"
+msgstr "Dialogové okno konfigurace"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:572
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:572
+msgctxt "_"
+msgid ""
+"external ref='figures/configure-dialog.png' "
+"md5='c8ca3d93f18c8b680edf018d0a90a254'"
+msgstr ""
+"external ref='figures/configure-dialog.png' "
+"md5='c8ca3d93f18c8b680edf018d0a90a254'"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:577
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:577
+msgid ""
+"The <guilabel>Regenerate project</guilabel> checkbox will not be described "
+"now as it is related to project creation (see in <xref linkend=\"create-"
+"autotools-generate\"/>)."
+msgstr ""
+"Zaškrtávací políčko <guilabel>Přegenerovat projekt</guilabel> v tuto chvíli "
+"popisovat nebudeme, protože to patří k tématu vytváření projektu (viz <xref "
+"linkend=\"create-autotools-generate\"/>)."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:581
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:581
+msgid ""
+"The <guilabel>Configuration</guilabel> field is an user name used to "
+"reference this particular configuration to switch between different ones "
+"later. For <application>Anjuta</application> each configuration corresponds "
+"to one build directory and a set of configure options. <application>Anjuta</"
+"application> already provides some default configurations that you can "
+"select here."
+msgstr ""
+"Pole <guilabel>Konfigurace</guilabel> slouží pro uživatelský název, podle "
+"kterého uživatel danou konfiguraci rozpozná a může se na ni později "
+"přepnout. V <application>Anjutě</application> každá konfigurace odpovídá "
+"jedné složce sestavení a sadě konfiguračních voleb. <application>Anjuta</"
+"application> má připravených několik výchozích konfiguraci, ze kterých si "
+"zde můžete zvolit."
+
+#. (itstool) path: note/para
+#: C/index.docbook:588
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:588
+msgid ""
+"It is recommended to use the Debug configuration for debugging. It will "
+"compile your program with all optimizations disabled. When optimizations are "
+"enabled, some variables and functions are removed, you will not be able to "
+"see them with the debugger. Moreover some lines in your source code are re-"
+"ordered, so some steps will go backward."
+msgstr ""
+"Pro ladění se doporučuje použít konfiguraci Ladění. Zkompiluje váš program s "
+"vypnutými veškerými optimalizacemi. Když jsou optimalizace zapnuté, některé "
+"proměnné a funkce jsou odstraněny a nemůžete je tak vidět v ladicím "
+"programu. Navíc se mění pořadí řádků ve zdrojovém kódu, takže byste pak při "
+"krokování posouvali i zpět."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:594
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:594
+msgid ""
+"The <guilabel>Build Directory</guilabel> field allow to select the directory "
+"used to build the project. It must be different for each configuration."
+msgstr ""
+"Pole <guilabel>Složka sestavení</guilabel> slouží k výběru složky používané "
+"k sestavení projektu. Musí být pro každou konfiguraci jiná."
+
+#. (itstool) path: important/para
+#: C/index.docbook:599
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:599
+msgid ""
+"If you build the project in the source directory (leaving the "
+"<guilabel>Build Directory</guilabel> field empty), you cannot create a new "
+"configuration. It is a limitation of <application>Autotools</application>. "
+"You need to select <menuchoice><guisubmenu>Build</guisubmenu> "
+"<guimenuitem>Remove Configuration</guimenuitem></menuchoice> that will run "
+"<userinput>make distclean</userinput> in the source directory first."
+msgstr ""
+"Když sestavujete projekt ve zdrojové složce (tj. když ponecháte pole "
+"<guilabel>Složka sestavení</guilabel> prázdné), nemůžete vytvořit novou "
+"konfiguraci. Jde o omezení <application>Autotools</application>. Musíte "
+"nejprve použít <menuchoice><guisubmenu>Sestavit</guisubmenu> "
+"<guimenuitem>Odstranit konfiguraci</guimenuitem></menuchoice>, čímž se ve "
+"zdrojové složce spustí <userinput>make distclean</userinput>."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:606
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:606
+msgid ""
+"The <guilabel>Configure Options</guilabel> field allow passing different "
+"options to the configure script."
+msgstr ""
+"Pole <guilabel>Volby příkazu configure</guilabel> umožňuje předat "
+"konfiguračnímu skriptu další přepínače."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:610
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:610
+msgid ""
+"Clicking on <guibutton>Execute</guibutton> will run the configure script. "
+"All the output will appears in the message view of <application>Anjuta</"
+"application>. If the script runs without error, it will enable all other "
+"entries in the <guisubmenu>Build</guisubmenu> menu."
+msgstr ""
+"Kliknutím na <guibutton>Spustit</guibutton> se spustí konfigurační skript. "
+"Všechny jeho výstupy se objeví v zobrazení zpráv přímo v aplikaci "
+"<application>Anjuta</application>. V případě, že skript projde bez chyb, "
+"zpřístupní se všechny další položky v nabídce <guisubmenu>Sestavit</"
+"guisubmenu>."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:618
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:618
+msgid "Menu items"
+msgstr "Položky nabídky"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:619
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:619
+msgid ""
+"The build operations in <application>Anjuta</application>, rely on "
+"<application>make</application> only like <application>Autotools</"
+"application>. It is working for non <application>Autotools</application> "
+"project too. The compile command is even working with only a C source file "
+"because <application>make</application> has some builtin rules to compile "
+"them. Here is the correspondence between the <application>Anjuta</"
+"application> menu item and <application>make</application> commands."
+msgstr ""
+"Operace sestavení v <application>Ajutě</application> spoléhá pouze na "
+"<application>make</application>, stejné jako v <application>Autotools</"
+"application>. Funguje to i u projektů, které nejsou založené na "
+"<application>Autotools</application>. Příkaz pro kompilaci pak pracuje jen "
+"se zdrojovými soubory v jazyce C, protože <application>make</application> má "
+"vestavěná pravidla pro jejich kompilaci. Zde je uvedeno, která položka "
+"nabídky aplikace <application>Anjuta</application> odpovídá kterému příkazu "
+"<application>make</application>."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:630
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:630
+msgid ""
+"<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Compile</guimenu></"
+"menuchoice>"
+msgstr ""
+"<menuchoice><guisubmenu>Sestavit</guisubmenu><guimenu>Zkompilovat</guimenu></"
+"menuchoice>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:631
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:631
+msgid "make <replaceable>current_file</replaceable>"
+msgstr "make <replaceable>aktuální_soubor</replaceable>"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:634
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:634
+msgid ""
+"<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Build</guimenu></"
+"menuchoice>"
+msgstr ""
+"<menuchoice><guisubmenu>Sestavit</guisubmenu><guimenu>Sestavit</guimenu></"
+"menuchoice>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:635
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:635
+msgid "cd <userinput>current_file_directory</userinput>; make"
+msgstr "cd <userinput>složka_aktuálního_souboru</userinput>; make"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:638
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:638
+msgid ""
+"<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Build Project</guimenu></"
+"menuchoice>"
+msgstr ""
+"<menuchoice><guisubmenu>Sestavit</guisubmenu><guimenu>Sestavit projekt</"
+"guimenu></menuchoice>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:639
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:639
+msgid "cd <userinput>project_directory</userinput>; make"
+msgstr "cd <userinput>složka_projektu</userinput>; make"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:642
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:642
+msgid ""
+"<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Build Tarball</guimenu></"
+"menuchoice>"
+msgstr ""
+"<menuchoice><guisubmenu>Sestavit</guisubmenu><guimenu>Sestavit balíček TAR</"
+"guimenu></menuchoice>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:643
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:643
+msgid "cd <userinput>project_directory</userinput>; make dist"
+msgstr "cd <userinput>složka_projektu</userinput>; make dist"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:646
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:646
+msgid ""
+"<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Install</guimenu></"
+"menuchoice>"
+msgstr ""
+"<menuchoice><guisubmenu>Sestavit</guisubmenu><guimenu>Nainstalovat</"
+"guimenu></menuchoice>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:647
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:647
+msgid "cd <userinput>current_file_directory</userinput>; make install"
+msgstr "cd <userinput>složka_aktuálního_souboru</userinput>; make install"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:650
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:650
+msgid ""
+"<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Install Project</"
+"guimenu></menuchoice>"
+msgstr ""
+"<menuchoice><guisubmenu>Sestavit</guisubmenu><guimenu>Nainstalovat projekt</"
+"guimenu></menuchoice>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:651
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:651
+msgid "cd <userinput>project_directory</userinput>; make install"
+msgstr "cd <userinput>složka_projektu</userinput>; make install"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:654
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:654
+msgid ""
+"<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Clean</guimenu></"
+"menuchoice>"
+msgstr ""
+"<menuchoice><guisubmenu>Sestavit</guisubmenu><guimenu>Vyčistit</guimenu></"
+"menuchoice>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:655
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:655
+msgid "cd <userinput>current_file_directory</userinput>; make clean"
+msgstr "cd <userinput>složka_aktuálního_souboru</userinput>; make clean"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:658
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:658
+msgid ""
+"<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Clean Project</guimenu></"
+"menuchoice>"
+msgstr ""
+"<menuchoice><guisubmenu>Sestavit</guisubmenu><guimenu>Vyčistit projekt</"
+"guimenu></menuchoice>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:659
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:659
+msgid "cd <userinput>project_directory</userinput>; make clean"
+msgstr "cd <userinput>složka_projektu</userinput>; make clean"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:662
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:662
+msgid ""
+"<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Remove Configuration</"
+"guimenu></menuchoice>"
+msgstr ""
+"<menuchoice><guisubmenu>Sestavit</guisubmenu><guimenu>Odstranit konfiguraci</"
+"guimenu></menuchoice>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:663
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:663
+msgid "cd <userinput>project_directory</userinput>; make distclean"
+msgstr "cd <userinput>složka_projektu</userinput>; make distclean"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:666
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:666
+msgid ""
+"The last menu entry not described above ,<menuchoice><guisubmenu>Build</"
+"guisubmenu> <guimenuitem>Select Configuration</guimenuitem></menuchoice>, "
+"allows you to switch easily between different configurations and so between "
+"different build directories."
+msgstr ""
+"Poslední položka nabídky <menuchoice><guisubmenu>Sestavit</guisubmenu> "
+"<guimenuitem>Vybrat konfiguraci</guimenuitem></menuchoice>, které nebyla "
+"výše popsána, umožňuje přepnout mezi různými konfiguracemi a také mezi "
+"různými složkami sestavení."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:674
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:674
+msgid "Options"
+msgstr "Volby"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:675
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:675
+msgid ""
+"A few common build options are available in the preferences page that you "
+"can get by selecting <menuchoice><guisubmenu>Edit</guisubmenu> "
+"<guimenuitem>Preferences</guimenuitem><guimenuitem>Build autotools</"
+"guimenuitem> </menuchoice>."
+msgstr ""
+"Pár běžných voleb sestavení najdete na stránce s předvolbami, ke které se "
+"dostanete pomocí <menuchoice><guisubmenu>Upravit</guisubmenu> "
+"<guimenuitem>Předvolby</guimenuitem> <guimenuitem>Autotools pro sestavení</"
+"guimenuitem></menuchoice>."
+
+#. (itstool) path: figure/title
+#: C/index.docbook:682
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:682
+msgid "Build preferences"
+msgstr "Předvolby sestavení"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:686
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:686
+msgctxt "_"
+msgid ""
+"external ref='figures/build_preferences.png' "
+"md5='684664b3114b36b3cc33d8b35f175e5d'"
+msgstr ""
+"external ref='figures/build_preferences.png' "
+"md5='684664b3114b36b3cc33d8b35f175e5d'"
+
+#. (itstool) path: chapter/title
+#: C/index.docbook:699
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:699
+msgid "Creating a project"
+msgstr "Vytvoření projektu"
+
+#. (itstool) path: chapter/para
+#: C/index.docbook:700
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:700
+msgid ""
+"This chapter explains how to create a new project. Like the previous, it "
+"starts with <application>Autotools</application> before looking at "
+"<application>Anjuta</application>."
+msgstr ""
+"Tato kapitola vysvětluje, jak vytvořit nový projekt. Obdobně jako v "
+"předchozí kapitole, začneme s <application>Autotools</application> a teprve "
+"pak se podíváme na <application>Anjutu</application>."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:707
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:707
+msgid ""
+"In the first chapter, we have not really used the <application>Autotools</"
+"application>. It is not need to compile a project from the sources. But all "
+"files in the build process are not written by hand but generated from "
+"templates using <application>Autotools</application>."
+msgstr ""
+"V první kapitole jsme ve skutečnosti nepoužili nástroj "
+"<application>Autotools</application>. Při kompilaci ze zdrojových kódů není "
+"nutný. Ale všechny soubory v sestavovacím procesu se nepíšou ručně. Generují "
+"se ze šablon pomocí <application>Autotools</application>."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:712
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:712
+msgid ""
+"<application>Autotools</application> is composed of several tools: "
+"<filename>aclocal</filename>, <filename>autoconf</filename>, "
+"<filename>automake</filename> and other that we will not see here, belonging "
+"to two packages: <application>Automake</application> and "
+"<application>Autoconf</application>."
+msgstr ""
+"<application>Autotools</application> se ve skutečnosti skládají z několika "
+"nástrojů: <filename>aclocal</filename>, <filename>autoconf</filename>, "
+"<filename>automake</filename> a z dalších, které zde neuvidíme a které patří "
+"do dvou balíčků: <application>Automake</application> a "
+"<application>Autoconf</application>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:721
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:721
+msgid ""
+"<application>Autoconf</application> is used to generate the configure "
+"script, from a template named <filename>configure.ac</filename>. The "
+"configure script will check all characteristics of the host system and "
+"generate the makefiles from Makefile.in templates."
+msgstr ""
+"<application>Autoconf</application> se používá ke generování konfiguračního "
+"skriptu ze šablony nazvané <filename>configure.ac</filename>. Konfigurační "
+"skript zkontroluje všechny vlastnosti hostitelského systému a vygeneruje "
+"soubor <filename>Makefile</filename> ze šablony <filename>Makefile.in</"
+"filename>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:727
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:727
+msgid ""
+"<application>Automake</application> is used to generate complete Makefile.in "
+"templates, following GNU standards from very simple Makefile.am templates."
+msgstr ""
+"<application>Automake</application> se používá ke generování úplných šablon "
+"Makefile.in, které splňují standardy GNU, z velmi jednoduchých šablon "
+"Makefile.am."
+
+#. (itstool) path: figure/title
+#: C/index.docbook:732
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:732
+msgid "<application>Autotools</application> process"
+msgstr "Zpracování pomocí <application>Autotools</application>"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:735
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:735
+msgctxt "_"
+msgid ""
+"external ref='figures/autotools-process.png' "
+"md5='6141be893d6036796e47dc50bbaba82b'"
+msgstr ""
+"external ref='figures/autotools-process.png' "
+"md5='6141be893d6036796e47dc50bbaba82b'"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:739
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:739
+msgid ""
+"Now let's see a minimal example to start grasping the relationships between "
+"the various files."
+msgstr ""
+"Nyní se pojďme podívat na minimalistický příklad, abychom pochopili vztahy "
+"mezi jednotlivými soubory."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:744
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:744
+msgid "Write sources"
+msgstr "Psaní zdrojových kódů"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:747
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:747
+msgid ""
+"Create an empty directory called <filename>tut_prog</filename> and enter in "
+"it."
+msgstr ""
+"Vytvořte prázdnou složku s názvem <filename>tut_prog</filename> a přepněte "
+"se do ní."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:750
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:750
+msgid ""
+"In this new directory, create a new file named <filename>main.c</filename> "
+"containing:"
+msgstr ""
+"V této nové složce vytvořte nový soubor s názvem <filename>main.c</"
+"filename>, který bude obsahovat:"
+
+#. (itstool) path: example/title
+#: C/index.docbook:755
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:755
+msgid "main.c:"
+msgstr "main.c:"
+
+#. (itstool) path: example/programlisting
+#: C/index.docbook:756
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:756
+#, no-wrap
+msgid ""
+"\n"
+"#include &lt;stdio.h&gt; \n"
+"\t\n"
+"int main()\n"
+"{\n"
+"\tprintf(\"Hello world!\\n\");\n"
+"\treturn 0;\n"
+"}"
+msgstr ""
+"\n"
+"#include &lt;stdio.h&gt; \n"
+"\t\n"
+"int main()\n"
+"{\n"
+"\tprintf(\"Hello world!\\n\");\n"
+"\treturn 0;\n"
+"}"
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:767
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:767
+msgid "Run <application>Autoconf</application>"
+msgstr "Spuštění <application>Autoconf</application>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:770
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:770
+msgid "Write the following in a file named <filename>configure.ac</filename>:"
+msgstr ""
+"Zapište následující do souboru nazvaného <filename>configure.ac</filename>:"
+
+#. (itstool) path: example/title
+#: C/index.docbook:774
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:774
+msgid "minimal configure.ac:"
+msgstr "minimální configure.ac:"
+
+#. (itstool) path: example/programlisting
+#: C/index.docbook:775
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:775
+#, no-wrap
+msgid ""
+"\n"
+"AC_INIT([Tutorial Program], 1.0)\n"
+"AM_INIT_AUTOMAKE\n"
+"AC_PROG_CC\n"
+"AC_CONFIG_FILES(Makefile)\n"
+"AC_OUTPUT"
+msgstr ""
+"\n"
+"AC_INIT([Tutorial Program], 1.0)\n"
+"AM_INIT_AUTOMAKE\n"
+"AC_PROG_CC\n"
+"AC_CONFIG_FILES(Makefile)\n"
+"AC_OUTPUT"
+
+#. (itstool) path: note/para
+#: C/index.docbook:783
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:783
+msgid ""
+"The configure template script could be named <filename>configure.in</"
+"filename>. It is the name used in older version (before 2001) of "
+"<application>Autoconf</application>. Nevertheless, it is recommended to use "
+"<filename>configure.ac</filename> because the <filename>.in</filename> "
+"extension is already used by files processed by <application>configure</"
+"application> and generated by <application>Automake</application>: "
+"<filename>Makefile.in</filename> and <application>autoheader</application>: "
+"<filename>config.h.in</filename>."
+msgstr ""
+"Šablona konfiguračního skriptu by se mohla jmenovat <filename>configure.in</"
+"filename>. Tento název se skutečně používal ve starší verzi "
+"<application>Autoconf</application> (před rokem 2001). Nicméně doporučujeme "
+"použít <filename>configure.ac</filename>, protože přípona <filename>.in</"
+"filename> je již používaná soubory zpracovávanými pomocí "
+"<application>configure</application> a generovanými pomocí "
+"<application>Automake</application> (<filename>Makefile.in</filename>) a "
+"pomocí <application>autoheader</application> (<filename>config.h.in</"
+"filename>)."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:792
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:792
+msgid ""
+"AC_INIT, AM_INIT_AUTOMAKE, etc... are <application>M4</application> macros. "
+"<application>M4</application> is a macro expanding software used by "
+"<application>Autotools</application>; we don't need to know about it. When "
+"<application>Autoconf</application> will process this configure.in, the "
+"macros will be expanded and we will get a fresh huge configure script."
+msgstr ""
+"AC_INIT, AM_INIT_AUTOMAKE, atd. jsou makra <application>M4</application>. "
+"<application>M4</application> je software pro rozvíjení maker používaný "
+"<application>Autotools</application>. V zásadě o něm ani nepotřebujeme vědět. "
+"Když <application>Autoconf</application> zpracovává tento configure.in, "
+"makra se rozvíjí a nakonec dostaneme čistý dlouhý skript configure."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:801
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:801
+msgid "AC_INIT"
+msgstr "AC_INIT"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:803
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:803
+msgid ""
+"Is the first mandatory macro. We need to indicate the name of the project "
+"and its version."
+msgstr ""
+"Jedná se o povinné první makro. Musíte mu zadat název projektu a jeho verzi."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:810 C/index.docbook:1194
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:810
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1194
+msgid "AM_INIT_AUTOMAKE"
+msgstr "AM_INIT_AUTOMAKE"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:812
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:812
+msgid ""
+"Initialize environment for <application>Automake</application>. It is needed "
+"in all projects using <application>Automake</application>."
+msgstr ""
+"Inicializuje prostředí proměnných pro <application>Automake</application>. "
+"Je zapotřebí ve všech projektech používajících <application>Automake</"
+"application>."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:819
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:819
+msgid "AC_PROG_CC"
+msgstr "AC_PROG_CC"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:821
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:821
+msgid "Determine the C compiler to use."
+msgstr "Určuje, který kompilátor jazyka C se má použít."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:827
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:827
+msgid "AC_CONFIG_FILES"
+msgstr "AC_CONFIG_FILES"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:829
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:829
+msgid ""
+"Create each file by copying the corresponding template file (with .in "
+"extension) and substituting the output variable values."
+msgstr ""
+"Vytvoří jednotlivé soubory zkopírováním příslušných šablonových souborů (s "
+"příponou .in) a nahrazením hodnot výstupních proměnných."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:836 C/index.docbook:1218
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:836
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1218
+msgid "AC_OUTPUT"
+msgstr "AC_OUTPUT"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:838
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:838
+msgid "Marks the end of the configure template."
+msgstr "Označuje konec šablony pro skript configure."
+
+#. (itstool) path: note/para
+#: C/index.docbook:845
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:845
+msgid ""
+"The use of some macros has changed between different versions of "
+"<application>Autoconf</application>:"
+msgstr ""
+"Používání některých maker se změnilo mezi jednotlivými verzemi "
+"<application>Autoconf</application>:"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:848
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:848
+msgid ""
+"The package name and version was defined as arguments of AM_INIT_AUTOMAKE "
+"instead of AC_INIT."
+msgstr ""
+"Název balíčku býval definován jako argument AM_INIT_AUTOMAKE namísto AC_INIT."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:852
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:852
+msgid ""
+"AC_OUTPUT was getting the list of generated files instead of using the "
+"additional macro AC_CONFIG_FILES."
+msgstr ""
+"AC_OUTPUT přebíralo seznam generovaných souborů namísto použití přídavného "
+"makra AC_CONFIG_FILES."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:857
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:857
+msgid ""
+"<application>Autoconf</application> only knows its own macros but read "
+"additional ones in a file named <filename>aclocal.m4</filename>. These "
+"macros are used to extend <application>Autoconf</application>, it includes "
+"<application>Automake</application> macro (starting with AM_) and other "
+"third party macros. For instance, if you develop a library called foo, you "
+"might want to write an AC_CHECK_FOR_FOO macro so that developers using your "
+"library can check for its presence using <application>Autoconf</application>."
+msgstr ""
+"<application>Autoconf</application> zná jen svá vlastní makra, ale čte i "
+"další v souboru nazvaném <filename>aclocal.m4</filename>. Tato makra se "
+"používají k rozšíření funkčnosti <application>Autoconf</application>. Patří "
+"k nim makra z <application>Automake</application> (začínající AM_) a další "
+"makra od třetích stran. Například, když vyvíjíte knihovnu foo, můžete chtít "
+"napsat makro AC_CHECK_FOR_FOO, aby vývojáři, kteří budou knihovnu používat, "
+"mohli pomocí <application>Autoconf</application> kontrolovat její přítomnost "
+"v systému."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:866
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:866
+msgid ""
+"<application>aclocal</application> scans <filename>configure.ac</filename> "
+"and create an <filename>aclocal.m4</filename> file which contains the macros "
+"mentioned in <filename>configure.ac</filename>. <application>aclocal</"
+"application> is part of the <application>Automake</application> package and "
+"search by default in <application>Automake</application> macros and in a "
+"system path typically <filename>/usr/share/aclocal</filename>."
+msgstr ""
+"<application>aclocal</application> prochází <filename>configure.ac</"
+"filename> a vytváří soubor <filename>aclocal.m4</filename>, který obsahuje "
+"makra použitá v <filename>configure.ac</filename>. <application>aclocal</"
+"application> je součástí balíčku <application>Automake</application> a "
+"standardně hledá v makrech <application>Automake</application> a v nějaké "
+"systémové cestě, typicky <filename>/usr/share/aclocal</filename>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:876
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:876
+msgid ""
+"Launch <userinput>aclocal</userinput>. It will create a new file named "
+"<filename>aclocal.m4</filename> in the current directory."
+msgstr ""
+"Spusťte <userinput>aclocal</userinput>. Vytvoří se tím v aktuální složce "
+"nový soubor s názvem <filename>aclocal.m4</filename>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:880
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:880
+msgid ""
+"Launch <userinput>autoconf</userinput>. It will create the configure script "
+"<filename>configure</filename>."
+msgstr ""
+"Spusťte <userinput>autoconf</userinput>. Vytvoří se tím nový konfigurační "
+"skript <filename>configure</filename>."
+
+#. (itstool) path: tip/para
+#: C/index.docbook:885
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:885
+msgid ""
+"On my system, I actually get an extra directory called <filename>autom4te."
+"cache</filename>. That is for <application>Autoconf</application> internal "
+"purposes. You do not need to care about it."
+msgstr ""
+"Ve skutečnosti se vám vytvoří ještě další složka s názvem <filename>autom4te."
+"cache</filename>. Ta je pro interní účely <application>Autoconf</application> "
+"a nemusíte se jí zabývat."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:891
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:891
+msgid "Run <application>Automake</application>"
+msgstr "Spuštění <application>Automake</application>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:894
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:894
+msgid "Write the following in a file named <filename>Makefile.am</filename>:"
+msgstr ""
+"Do souboru s názvem <filename>Makefile.am</filename> zapište následující:"
+
+#. (itstool) path: example/title
+#: C/index.docbook:898
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:898
+msgid "minimal Makefile.am:"
+msgstr "minimální Makefile.am:"
+
+#. (itstool) path: example/programlisting
+#: C/index.docbook:899
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:899
+#, no-wrap
+msgid ""
+"\n"
+"bin_PROGRAMS = tut_prog\t\t\t\n"
+"tut_prog_SOURCES = main.c"
+msgstr ""
+"\n"
+"bin_PROGRAMS = tut_prog\t\t\t\n"
+"tut_prog_SOURCES = main.c"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:903
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:903
+msgid ""
+"In Makefile.am are the very essential data needed to build the project: the "
+"target program, called tut_prog, will be put in a $prefix/bin/ directory; to "
+"build it we need main.c. Note that we don't specify <emphasis>how</emphasis> "
+"that will be built: <application>Automake</application> will figure it out. "
+"We haven't even mentioned the compiler in this pre-makefile."
+msgstr ""
+"V Makefile.am jsou nejzákladnější data potřebná k sestavení projektu: cíl "
+"programu, nazvaný tut_prog, bude umístěn do složky $prefix/bin/ a k jeho "
+"sestavení potřebujeme main.c. Všimněte si, že není řečeno, <emphasis>jak</"
+"emphasis> bude sestaven. <application>Automake</application> si to zjistí. V "
+"tomto předchůdci Makefile není zmíněn ani kompilátor."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:910
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:910
+msgid ""
+"Makefile.am will be processed by <application>Automake</application>; the "
+"result will be a Makefile.in. This Makefile.in is close to being a real "
+"makefile, but it contains variable names which will be replaced when the "
+"configure script will run, resulting in a real makefile (called Makefile). "
+"For instance, <filename>configure</filename> will write in the final "
+"Makefile what compiler to use (it is the compiler it found using the "
+"AC_PROG_CC macro)."
+msgstr ""
+"Makefile.am bude zpracován pomocí <application>Automake</application> a "
+"výsledkem bude Makefile.in. Ten už se hodně podobá skutečnému souboru "
+"makefile, ale obsahuje názvy proměnných, které budou při spuštění skriptu "
+"configure nahrazené, a výsledkem se stane skutečný makefile (nazvaný "
+"Makefile). Skript <filename>configure</filename> kupříkladu zapíše do "
+"výsledného souboru Makefile, který kompilátor se má použít (což je ten, "
+"který nalezlo makro AC_PROG_CC)."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:921
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:921
+msgid ""
+"Run the command <userinput>automake --add-missing --foreign</userinput>. It "
+"will create a new file named <filename>Makefile.in</filename> as expected. "
+"Moreover, due to the switch <parameter>--add-missing</parameter> you get a "
+"few links to scripts necessary for building the project: <filename>depcomp</"
+"filename>, <filename>install.sh</filename> and <filename>missing</filename>. "
+"The other option <parameter>--foreign</parameter> tells to "
+"<application>Automake</application> that you don't want to follow GNU "
+"standard and you don't need mandatory documentation files: "
+"<filename>INSTALL</filename>, <filename>NEWS</filename>, <filename>README</"
+"filename>, <filename>AUTHORS</filename>, <filename>ChangeLog</filename> and "
+"<filename>COPYING</filename>. I have used it here to keep the number of "
+"created file to a minimum but else it is a good idea to provide these files, "
+"you can start with empty files."
+msgstr ""
+"Spusťte příkaz <userinput>automake --add-missing --foreign</userinput>. "
+"Vytvoří nový soubor nazvaný, podle očekávání, <filename>Makefile.in</"
+"filename>. Navíc, díky přepínači <parameter>--add-missing</parameter> "
+"získáte několik odkazů na na skripty nutné pro sestavení projektu: "
+"<filename>depcomp</filename>, <filename>install.sh</filename> a "
+"<filename>missing</filename>. Druhý přepínač <parameter>--foreign</"
+"parameter> říká <application>Automake</application>, že se nechcete držet "
+"standardů GNU a nepotřebujete povinné dokumentační soubory: "
+"<filename>INSTALL</filename>, <filename>NEWS</filename>, <filename>README</"
+"filename>, <filename>AUTHORS</filename>, <filename>ChangeLog</filename> a "
+"<filename>COPYING</filename>. Zde jsme jej použili, abychom udrželi počet "
+"vytvořených souborů na minimu, ale jinak je dobré tyto soubory poskytovat a "
+"začít můžete klidně s prázdnými."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:937
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:937
+msgid "Build project"
+msgstr "Sestavení projektu"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:940
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:940
+msgid ""
+"Run now the new configure script: <userinput>./configure</userinput>. You "
+"get the following output and it create the makefile for your program."
+msgstr ""
+"Nyní spusťte nový konfigurační skript: <userinput>./configure</userinput>. "
+"Objeví se následující výstup a vytvoří se <filename>Makefile</filename> pro "
+"váš program."
+
+#. (itstool) path: listitem/screen
+#: C/index.docbook:942
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:942
+#, no-wrap
+msgid ""
+"\n"
+"checking for a BSD-compatible install... /usr/bin/install -c\n"
+"checking whether build environment is sane... yes\n"
+"checking for a thread-safe mkdir -p... /bin/mkdir -p\n"
+"checking for gawk... gawk\n"
+"checking whether make sets $(MAKE)... yes\n"
+"checking for gcc... gcc\n"
+"checking for C compiler default output file name... a.out\n"
+"checking whether the C compiler works... yes\n"
+"checking whether we are cross compiling... no\n"
+"checking for suffix of executables... \n"
+"checking for suffix of object files... o\n"
+"checking whether we are using the GNU C compiler... yes\n"
+"checking whether gcc accepts -g... yes\n"
+"checking for gcc option to accept ISO C89... none needed\n"
+"checking for style of include used by make... GNU\n"
+"checking dependency style of gcc... gcc3\n"
+"configure: creating ./config.status\n"
+"config.status: creating Makefile\n"
+"config.status: executing depfiles commands"
+msgstr ""
+"\n"
+"checking for a BSD-compatible install... /usr/bin/install -c\n"
+"checking whether build environment is sane... yes\n"
+"checking for a thread-safe mkdir -p... /bin/mkdir -p\n"
+"checking for gawk... gawk\n"
+"checking whether make sets $(MAKE)... yes\n"
+"checking for gcc... gcc\n"
+"checking for C compiler default output file name... a.out\n"
+"checking whether the C compiler works... yes\n"
+"checking whether we are cross compiling... no\n"
+"checking for suffix of executables... \n"
+"checking for suffix of object files... o\n"
+"checking whether we are using the GNU C compiler... yes\n"
+"checking whether gcc accepts -g... yes\n"
+"checking for gcc option to accept ISO C89... none needed\n"
+"checking for style of include used by make... GNU\n"
+"checking dependency style of gcc... gcc3\n"
+"configure: creating ./config.status\n"
+"config.status: creating Makefile\n"
+"config.status: executing depfiles commands"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:964
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:964
+msgid ""
+"Run now <userinput>make</userinput>, to build your program. You get the "
+"following output and a new tut_prog executable"
+msgstr ""
+"Nyní spusťte <userinput>make</userinput>, aby se váš program sestavil. "
+"Objeví se následující výstup a nový spustitelný soubor tut_prog."
+
+#. (itstool) path: listitem/screen
+#: C/index.docbook:966
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:966
+#, no-wrap
+msgid ""
+"\n"
+"gcc -DPACKAGE_NAME=\\\"Tutorial\\ Program\\\" -DPACKAGE_TARNAME=\\\"tutorial-program\\\"   \\\n"
+"        -DPACKAGE_VERSION=\\\"1.0\\\" -DPACKAGE_STRING=\\\"Tutorial\\ Program\\ 1.0\\\"     \\\n"
+"        -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"tutorial-program\\\" -DVERSION=\\\"1.0\\\" \\\n"
+"        -I.     -g -O2 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c\n"
+"main.c: In function ‘main’:\n"
+"main.c:5: warning: return type of ‘main’ is not ‘int’\n"
+"mv -f .deps/main.Tpo .deps/main.Po\n"
+"gcc  -g -O2   -o tut_prog main.o"
+msgstr ""
+"\n"
+"gcc -DPACKAGE_NAME=\\\"Tutorial\\ Program\\\" -DPACKAGE_TARNAME=\\\"tutorial-program\\\"   \\\n"
+"        -DPACKAGE_VERSION=\\\"1.0\\\" -DPACKAGE_STRING=\\\"Tutorial\\ Program\\ 1.0\\\"     \\\n"
+"        -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"tutorial-program\\\" -DVERSION=\\\"1.0\\\" \\\n"
+"        -I.     -g -O2 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c\n"
+"main.c: In function ‘main’:\n"
+"main.c:5: warning: return type of ‘main’ is not ‘int’\n"
+"mv -f .deps/main.Tpo .deps/main.Po\n"
+"gcc  -g -O2   -o tut_prog main.o"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:977
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:977
+msgid ""
+"Now, if you can write in <filename>/usr/local/bin</filename>, run "
+"<userinput>make install</userinput> to install your program. Else you need "
+"to log as root before or use <application>sudo</application> and run "
+"<userinput>sudo make install</userinput>. You should get."
+msgstr ""
+"Nyní, za předpokladu, že máte právo zápisu do <filename>/usr/local/bin</"
+"filename>, můžete spustit <userinput>make install</userinput>, aby se "
+"program nainstaloval. Pokud jej nemáte, musíte se nejprve přihlásit jako "
+"uživatel root nebo použít <application>sudo</application> a spustit "
+"<userinput>sudo make install</userinput>. Mělo by se objevit:"
+
+#. (itstool) path: listitem/screen
+#: C/index.docbook:982
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:982
+#, no-wrap
+msgid ""
+"\n"
+"make[1]: Entering directory `/home/seb/Projects/Tutorial'\n"
+"test -z \"/usr/local/bin\" || /bin/mkdir -p \"/usr/local/bin\"\n"
+"  /usr/bin/install -c 'tut_prog' '/usr/local/bin/tut_prog'\n"
+"make[1]: Nothing to be done for `install-data-am'.\n"
+"make[1]: Leaving directory `/home/seb/Projects/Tutorial'"
+msgstr ""
+"\n"
+"make[1]: Vstupuje se do složky „/home/seb/Projects/Tutorial“\n"
+"test -z \"/usr/local/bin\" || /bin/mkdir -p \"/usr/local/bin\"\n"
+"  /usr/bin/install -c 'tut_prog' '/usr/local/bin/tut_prog'\n"
+"make[1]: Pro „install-data-am“ nebude nic uděláno.\n"
+"make[1]: Opouští se složka „/home/seb/Projects/Tutorial“"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:988
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:988
+msgid ""
+"Then, if <filename>/user/local/bin</filename> is in your path, you can run "
+"your program from everywhere."
+msgstr ""
+"Jestliže je <filename>/user/local/bin</filename> součástí prohledávaných "
+"cest, můžete svůj program potom spustit odkudkoliv."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:996
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:996
+msgid "Clean project"
+msgstr "Promazání projektu"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:999
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:999
+msgid ""
+"The program is installed, so you can clean the build directory running "
+"<userinput>make clean</userinput>. It removes all object files and the "
+"program but not the makefiles."
+msgstr ""
+"Program je nainstalovaný, takže složku sestavení můžete klidně promazat "
+"spuštěním <userinput>make clean</userinput>. Tím se odstraní všechny "
+"objektové soubory a program, ale ne už soubory Makefile."
+
+#. (itstool) path: listitem/screen
+#: C/index.docbook:1002
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1002
+#, no-wrap
+msgid ""
+"\n"
+"test -z \"tut_prog\" || rm -f tut_prog\n"
+"rm -f *.o"
+msgstr ""
+"\n"
+"test -z \"tut_prog\" || rm -f tut_prog\n"
+"rm -f *.o"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1005
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1005
+msgid ""
+"You can still run the program installed in <filename>/user/local/bin</"
+"filename>."
+msgstr ""
+"Program nainstalovaný v <filename>/user/local/bin</filename> ale můžete "
+"samozřejmě nadále spouštět."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1010
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1010
+msgid ""
+"To remove the installed program, run <userinput>make uninstall</userinput>. "
+"Like for the installation, you need to use have the writing right in the "
+"directory or use <application>su</application> or <application>sudo</"
+"application>."
+msgstr ""
+"Pokud byste chtěli odstranit nainstalovaný program, spusťte <userinput>make "
+"uninstall</userinput>. Podobně jako u instalace, musíte mít práva zápisu do "
+"složky, nebo použít <application>su</application> nebo <application>sudo</"
+"application>."
+
+#. (itstool) path: listitem/screen
+#: C/index.docbook:1013
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1013
+#, no-wrap
+msgid ""
+"\n"
+"rm -f '/usr/local/bin/tut_prog'"
+msgstr ""
+"\n"
+"rm -f '/usr/local/bin/tut_prog'"
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:1019
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1019
+msgid "Generate project"
+msgstr "Vygenerování projektu"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:1020
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1020
+msgid ""
+"Running <userinput>aclocal</userinput>, <userinput>automake</userinput> and "
+"<userinput>autoconf</userinput> one by one is fine for a tutorial to "
+"understand exactly what's happen. But, for a real work, it's a bit tedious "
+"especially because there are other tools those could be needed like "
+"<userinput>autoheader</userinput>, <userinput>autopoint</userinput> or "
+"<userinput>libtoolize</userinput>. After creating the project, the makefiles "
+"generated by <application>configure</application> should take care of "
+"regenerating <filename>configure</filename> and all <filename>Makefile.in</"
+"filename>. Anyway, this lets a room for improvement and there are even two "
+"responses to this:"
+msgstr ""
+"Abyste pochopili, co přesně se děje, je nejlepší si v rámci této výuky "
+"spustit jeden po druhém <userinput>aclocal</userinput>, <userinput>automake</"
+"userinput> a <userinput>autoconf</userinput>. Při skutečné práci by to ale "
+"bylo poněkud únavné, nehledě na další nástroje, které mohou být zapotřebí, "
+"jako <userinput>autoheader</userinput>, <userinput>autopoint</userinput> "
+"nebo <userinput>libtoolize</userinput>. Po vytvoření projektu by se o "
+"přegenerování souboru <filename>configure</filename> a všech souborů "
+"<filename>Makefile.in</filename> měly postarat speciální soubory "
+"<filename>Makefile</filename> vygenerované aplikací <application>configure</"
+"application>. Každopádně tu zůstává prostor k vylepšování a na výzvu "
+"existují i dvě odpovědi:"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:1034
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1034
+msgid "autoreconf"
+msgstr "autoreconf"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1036
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1036
+msgid ""
+"It is another tool part of the <application>Autoconf</application> package "
+"which is running all scripts in the right order. To start a new project, you "
+"can just run <userinput>autoreconf --install</userinput> and it will call "
+"all necessary commands."
+msgstr ""
+"Jedná se o další nástroj z balíčku <application>Autoconf</application>, "
+"který spustí všechny skripty ve správném pořadí. Když chcete začít nový "
+"projekt, stačí spustit <userinput>autoreconf --install</userinput> a "
+"zavolají se všechny potřebné příkazy."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:1043
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1043
+msgid "autogen.sh"
+msgstr "autogen.sh"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1045
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1045
+msgid ""
+"It is a script not part of <application>Autotools</application>, that it "
+"doing the same thing. There is one named <filename>gnome-autogen.sh</"
+"filename> which comes with GNOME common development package but other "
+"project can write their own ones."
+msgstr ""
+"Jedná se o skript, který není součástí <application>Autotools</application>, "
+"ale dělá stejné věci. Se základním vývojářským balíčkem GNOME je šířen jeden "
+"takový, s názvem <filename>gnome-autogen.sh</filename>. Jiné projekty mohou "
+"mít napsaný svůj vlastní."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:1056
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1056
+msgid ""
+"Creating a project with <application>Anjuta</application> need just a few "
+"clicks but then we will take a look at the created files."
+msgstr ""
+"Vytvoření projektu a IDE <application>Anjuta</application> vyžaduje jen pár "
+"kliknutí, ale pak si vytvořené soubory probereme."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:1061
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1061
+msgid "Create a new project"
+msgstr "Vytvoření nového projektu"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1064
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1064
+msgid ""
+"Click on <menuchoice><guisubmenu>File</guisubmenu><guisubmenu>New</"
+"guisubmenu> <guimenuitem>Project</guimenuitem></menuchoice>. The new project "
+"assistant appears."
+msgstr ""
+"Klikněte na <menuchoice><guisubmenu>Soubor</guisubmenu> <guisubmenu>Nový</"
+"guisubmenu> <guimenuitem>Projekt</guimenuitem></menuchoice>. Objeví se "
+"průvodce novým projektem."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1069
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1069
+msgid ""
+"Click on <guibutton>Forward</guibutton>. The project selection page appears:"
+msgstr ""
+"Klikněte na <guibutton>Následující</guibutton>. Objeví se stránka pro výběr "
+"projektu:"
+
+#. (itstool) path: figure/title
+#: C/index.docbook:1071
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1071
+msgid "Project selection page"
+msgstr "Stránka pro výběr projektu"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:1075
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1075
+msgctxt "_"
+msgid ""
+"external ref='figures/new-project-select.png' "
+"md5='f79e2454e7ccaf52b1b1b06aa04a4956'"
+msgstr ""
+"external ref='figures/new-project-select.png' "
+"md5='f79e2454e7ccaf52b1b1b06aa04a4956'"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1082
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1082
+msgid ""
+"Select <guilabel>Generic (minimal)</guilabel> project in the <guilabel>C</"
+"guilabel> page."
+msgstr ""
+"Vyberte <guilabel>Obecný (minimální)</guilabel> projekt na kartě "
+"<guilabel>C</guilabel>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1085 C/index.docbook:1121
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1085
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1121
+msgid "Click on <guibutton>Forward</guibutton>."
+msgstr "Klikněte na <guibutton>Následující</guibutton>."
+
+#. (itstool) path: figure/title
+#: C/index.docbook:1087
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1087
+msgid "Project basic information page"
+msgstr "Stránka se základními informacemi o projektu"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:1091
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1091
+msgctxt "_"
+msgid ""
+"external ref='figures/new-project-basic.png' "
+"md5='3e120013f61bdc811c7d3ace04201e33'"
+msgstr ""
+"external ref='figures/new-project-basic.png' "
+"md5='3e120013f61bdc811c7d3ace04201e33'"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1096
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1096
+msgid ""
+"Change <guilabel>Project Name</guilabel> to <userinput>tutprog</userinput>, "
+"the project name should contains only alpha numeric characters or "
+"underscore. Fill the remaining field."
+msgstr ""
+"Změňte <guilabel>Název projektu</guilabel> na <userinput>tutprog</"
+"userinput>. Název by měl obsahovat jen písmena a číslice, případně "
+"podtržítko. Vyplňte zbývající pole."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1103
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1103
+msgid "Click on <guilabel>Forward</guilabel>."
+msgstr "Klikněte na <guibutton>Následující</guibutton>."
+
+#. (itstool) path: figure/title
+#: C/index.docbook:1105
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1105
+msgid "Project options page"
+msgstr "Stránka s volbami projektu"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:1109
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1109
+msgctxt "_"
+msgid ""
+"external ref='figures/new-project-options.png' "
+"md5='4d386a284c3a40676f50c6dd6208bb1b'"
+msgstr ""
+"external ref='figures/new-project-options.png' "
+"md5='4d386a284c3a40676f50c6dd6208bb1b'"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1114
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1114
+msgid ""
+"Click on <guilabel>Destination</guilabel> and create a new directory named "
+"tutprog for your new project. You need to avoid space in the directory name. "
+"Then, keep all other options to their default value to get a minimal project."
+msgstr ""
+"Klikněte na <guilabel>Cíl</guilabel> a vytvořte pro svůj nový projekt novou "
+"složku nazvanou tutprog. V názvu složky se vyvarujte mezer a diakritiky. "
+"Všechny ostatní volby ponechejte na výchozích hodnotách, abychom dostali co "
+"nejmenší projekt."
+
+#. (itstool) path: figure/title
+#: C/index.docbook:1123
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1123
+msgid "Project summary page"
+msgstr "Stránka se souhrnným přehledem o projektu"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:1127
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1127
+msgctxt "_"
+msgid ""
+"external ref='figures/new-project-summary.png' "
+"md5='79bca5475883f9c43bf404df815eff58'"
+msgstr ""
+"external ref='figures/new-project-summary.png' "
+"md5='79bca5475883f9c43bf404df815eff58'"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1132
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1132
+msgid ""
+"This is the final page of the assistant, check that everything is right."
+msgstr ""
+"Jedná se o poslední stránku průvodce, na které si zkontrolujte, jestli je "
+"vše správně."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1137
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1137
+msgid ""
+"Click on <guibutton>Forward</guibutton>. <application>Anjuta</application> "
+"will create all needed files and directories, in the message window, you "
+"will see the following:"
+msgstr ""
+"Klikněte na <guibutton>Použít</guibutton>. <application>Anjuta</"
+"application> vytvoří všechny potřebné soubory a složky a v okně zpráv "
+"uvidíte následující:"
+
+#. (itstool) path: figure/title
+#: C/index.docbook:1141
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1141
+msgid "Project creation messages"
+msgstr "Zprávy o vytváření projektu"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:1145
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1145
+msgctxt "_"
+msgid ""
+"external ref='figures/new-project-message.png' "
+"md5='073f1d0fae8d7ed17a86f946077a6c18'"
+msgstr ""
+"external ref='figures/new-project-message.png' "
+"md5='073f1d0fae8d7ed17a86f946077a6c18'"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1150
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1150
+msgid ""
+"Then, autogen.sh is called and run the configure script. Finally "
+"<application>Anjuta</application> open the new project. You can directly "
+"build the project, as the main source contains a few lines of C and "
+"configure has been run."
+msgstr ""
+"Po té je zavolán skript autogen.sh a spuštěn konfigurační skript. Nakonec "
+"<application>Anjuta</application> otevře nový projekt. Jelikož hlavní "
+"zdrojový kód již obsahuje pár řádků a proběhla konfigurace, můžete projekt "
+"přímo sestavit."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:1160
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1160
+msgid "Looking at configure.ac"
+msgstr "Pohled do configure.ac"
+
+#. (itstool) path: example/title
+#: C/index.docbook:1162
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1162
+msgid "<application>Anjuta</application> minimal configure.ac:"
+msgstr "Nejzákladnější configure.ac v <application>Anjutě</application>:"
+
+#. (itstool) path: example/programlisting
+#: C/index.docbook:1163
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1163
+#, no-wrap
+msgid ""
+"\n"
+"dnl Process this file with autoconf to produce a configure script.\n"
+"dnl Created by Anjuta application wizard.\n"
+"\n"
+"AC_INIT(tutprog, 0.1)\n"
+"\n"
+"AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)\n"
+"AC_CONFIG_HEADERS([config.h])\n"
+"\n"
+"AC_PROG_CC\n"
+"\n"
+"AC_OUTPUT([\n"
+"Makefile\n"
+"])"
+msgstr ""
+"\n"
+"dnl Process this file with autoconf to produce a configure script.\n"
+"dnl Created by Anjuta application wizard.\n"
+"\n"
+"AC_INIT(tutprog, 0.1)\n"
+"\n"
+"AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)\n"
+"AC_CONFIG_HEADERS([config.h])\n"
+"\n"
+"AC_PROG_CC\n"
+"\n"
+"AC_OUTPUT([\n"
+"Makefile\n"
+"])"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:1178
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1178
+msgid ""
+"It is still quite simple with a bit more macros. Let's look at all unknown "
+"ones:"
+msgstr ""
+"Stále je to docela jednoduché s pár makry navíc. Pojďme se podívat na ty, co "
+"ještě neznáme:"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:1184
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1184
+msgid "dnl"
+msgstr "dnl"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1186
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1186
+msgid ""
+"It is not a macros, just the marker to start a comment in <application>M4</"
+"application>, the language used to write <filename>configure.ac</filename>. "
+"It is like '#' is scripts or '//' in C++."
+msgstr ""
+"Nejedná se o makro, ale jen o značku začínající komentář v <application>M4</"
+"application>, což je jazyk použitý pro psaní <filename>configure.ac</"
+"filename>. Je to obdoba „#“ ve skriptech nebo „//“ v C++."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1196
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1196
+msgid ""
+"The AC_INIT macro uses the new form with package and version but "
+"AM_INIT_AUTOMAKE keeps the old one. It is not needed anymore."
+msgstr ""
+"Makro AC_INIT používá novou podobu s balíčkem a verzí, zatímco "
+"AM_INIT_AUTOMAKE se drží staré a v současnosti již není zapotřebí."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:1203
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1203
+msgid "AC_CONFIG_HEADERS"
+msgstr "AC_CONFIG_HEADERS"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1205
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1205
+msgid ""
+"This tells <application>Autoconf</application> to pass all defines in a file "
+"named <filename>config.h</filename> instead of using several -Dxxxx flags on "
+"the command line (see <xref linkend=\"create-autotools-build\"/>). It is "
+"easier when there are lots of them. A file named <filename>config.h.in</"
+"filename> is created automatically from the <filename>configure.ac</"
+"filename> using <application>autoheader</application>. Then <filename>config."
+"h</filename> is created automatically like makefiles by "
+"<application>configure</application>. So it is painless for the developer."
+msgstr ""
+"Říká nástroji <application>Autoconf</application>, aby předal všechny "
+"definice v souboru s názvem <filename>config.h</filename>, místo toho, aby "
+"použil několik přepínačů -Dxxxx na příkazové řádce (viz <xref linkend="
+"\"create-autotools-build\"/>). Když je jich hodně, je to jednodušší. Soubor "
+"s názvem <filename>config.h.in</filename> se vytvoří automaticky z "
+"<filename>configure.ac</filename> pomocí <application>autoheader</"
+"application>. Soubor <filename>config.h</filename> je pak vytvořen "
+"automaticky pomocí <application>configure</application>, podobně jako "
+"soubory makefile. Takže je to pro vývojáře bezbolestné."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1220
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1220
+msgid ""
+"This is the old form of the AC_OUTPUT, where you specify all output files "
+"instead of using AC_CONFIG_FILES."
+msgstr ""
+"Jedná se o starou podobu AC_OUTPUT, ve které určujete všechny výstupní "
+"soubory, místo aby se použilo makro AC_CONFIG_FILES."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:1229
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1229
+msgid "Looking at Makefile.am"
+msgstr "Pohled do Makefile.am"
+
+#. (itstool) path: example/title
+#: C/index.docbook:1231
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1231
+msgid "<application>Anjuta</application> minimal Makefile.am:"
+msgstr "Nejzákladní Makefile.am v <application>Anjutě</application>:"
+
+#. (itstool) path: example/programlisting
+#: C/index.docbook:1232
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1232
+#, no-wrap
+msgid ""
+"## Process this file with automake to produce Makefile.in\n"
+"## Created by Anjuta\n"
+"\n"
+"AM_CPPFLAGS = \\\n"
+"        -DPACKAGE_DATA_DIR=\\\"\"$(datadir)\"\\\"\n"
+"\n"
+"AM_CFLAGS =\\\n"
+"         -Wall\\\n"
+"         -g\n"
+"\n"
+"bin_PROGRAMS = tutprog\n"
+"\n"
+"tutprog_SOURCES = \\\n"
+"        main.c\n"
+"\n"
+"tutprog_LDFLAGS =\n"
+"\n"
+"tutprog_LDADD ="
+msgstr ""
+"## Process this file with automake to produce Makefile.in\n"
+"## Created by Anjuta\n"
+"\n"
+"AM_CPPFLAGS = \\\n"
+"        -DPACKAGE_DATA_DIR=\\\"\"$(datadir)\"\\\"\n"
+"\n"
+"AM_CFLAGS =\\\n"
+"         -Wall\\\n"
+"         -g\n"
+"\n"
+"bin_PROGRAMS = tutprog\n"
+"\n"
+"tutprog_SOURCES = \\\n"
+"        main.c\n"
+"\n"
+"tutprog_LDFLAGS =\n"
+"\n"
+"tutprog_LDADD ="
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:1251
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1251
+msgid "Not much things in the <filename>Makefile.am</filename> neither:"
+msgstr "Moc toho v <filename>Makefile.am</filename> není:"
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:1256
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1256
+msgid "AM_CPPFLAGS"
+msgstr "AM_CPPFLAGS"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1258
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1258
+msgid ""
+"It is used to give additional flags to the C preprocessor. Here it defines "
+"an additional PACKAGE_DATA_DIR constant set by <application>configure</"
+"application>"
+msgstr ""
+"Používá se k předání dodatečných přepínačů preprocesoru C. Zde definuje "
+"dodatečnou konstantu PACKAGE_DATA_DIR nastavenou pomocí "
+"<application>configure</application>."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:1266
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1266
+msgid "AM_CFLAGS"
+msgstr "AM_CFLAGS"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1268
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1268
+msgid ""
+"It defines some additional flags for the C compiler: all warning and add "
+"debugging information that we have already seen at the beginning of this "
+"tutorial (see <xref linkend=\"build-gcc\"/>)"
+msgstr ""
+"Definuje některé dodatečné přepínače pro kompilátor C: zapíná všechna "
+"varování a ladicí informace, které jsme již viděli na začátku tohoto "
+"výukového materiálu (viz <xref linkend=\"build-gcc\"/>)."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:1276
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1276
+msgid "tutprog_LDFLAGS"
+msgstr "tutprog_LDFLAGS"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1278
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1278
+msgid ""
+"It adds a places where you can put additional linker options for the tutprog "
+"program."
+msgstr ""
+"Přidává místo, do kterého můžete doplnit pro program tutprog dodatečné přepínače "
+"linkeru."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:1285
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1285
+msgid "tutprog_LDADD"
+msgstr "tutprog_LDADD"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1287
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1287
+msgid ""
+"It adds a places where you can put additional libraries for the tutprog "
+"program."
+msgstr ""
+"Přidává místo, do kterého můžete doplnit pro program tutprog dodatečné "
+"knihovny."
+
+#. (itstool) path: chapter/title
+#: C/index.docbook:1300
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1300
+msgid "Adding a library"
+msgstr "Přidání knihovny"
+
+#. (itstool) path: chapter/para
+#: C/index.docbook:1301
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1301
+msgid ""
+"This chapter explains how to add a new library to a project. It starts with "
+"<application>Autotools</application> before looking at <application>Anjuta</"
+"application>."
+msgstr ""
+"Tato kapitola vysvětluje, jak přidat do projektu novou knihovnu. Než se "
+"podíváme na <application>Anjutu</application>, začneme s "
+"<application>Autotools</application>."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:1307
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1307
+msgid ""
+"Adding a new library in a autotools project could be more or less easy "
+"depending on how the library is packaged. To take an example, imagine that "
+"we want to read an xml file using <application>libxml2</application> (see "
+"its <ulink type=\"http\" url=\"www.xmlsoft.org\">homepage at www.xmlsoft."
+"org</ulink>)"
+msgstr ""
+"Přidání nové knihovny do projektu založeného na Autotools může být více či "
+"méně snadné, záleží na tom, jak je knihovna zabalená. Abychom měli příklad, "
+"představte si, že chcete číst soubor XML pomocí <application>libxml2</"
+"application> (viz <ulink type=\"http\" url=\"www.xmlsoft.org\">domovská "
+"stránka knihovny na www.xmlsoft.org</ulink>)."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1315
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1315
+msgid ""
+"Open the old tutorial project and replace <filename>main.c</filename> by the "
+"following."
+msgstr ""
+"Otevřete starý projekt z tohoto výukového materiálu a nahraďte <filename>main.c"
+"</filename> následujícím:"
+
+#. (itstool) path: example/title
+#: C/index.docbook:1318 C/index.docbook:1595
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1318
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1595
+msgid "main.c using <application>libxml2</application>:"
+msgstr "main.c používající <application>libxml2</application>:"
+
+#. (itstool) path: example/programlisting
+#: C/index.docbook:1319 C/index.docbook:1596
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1319
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1596
+#, no-wrap
+msgid ""
+"\n"
+"#include &lt;libxml/parser.h&gt;\t\t\t\n"
+"#include &lt;stdio.h&gt;\n"
+"\t\t\t\n"
+"int main()\n"
+"{\t\t\t\t\n"
+"\txmlDocPtr doc;                                                                                                                  \n"
+"\tdoc = xmlParseFile (\"testfile.xml\");\n"
+"\n"
+"\tif (doc == NULL) {\n"
+"\t\tprintf (\"Document not parsed successfully. \\n\");\n"
+"\t\treturn -1;\n"
+"\t}\n"
+"\telse {\n"
+"\t\tprintf (\"Document parsed successfully.\\n\");\n"
+"\t\txmlFreeDoc(doc);\n"
+"\t\treturn 0;\n"
+"\t}\n"
+"}"
+msgstr ""
+"\n"
+"#include &lt;libxml/parser.h&gt;\t\t\t\n"
+"#include &lt;stdio.h&gt;\n"
+"\t\t\t\n"
+"int main()\n"
+"{\t\t\t\t\n"
+"\txmlDocPtr doc;                                                                                                                  \n"
+"\tdoc = xmlParseFile (\"testfile.xml\");\n"
+"\n"
+"\tif (doc == NULL) {\n"
+"\t\tprintf (\"Document not parsed successfully. \\n\");\n"
+"\t\treturn -1;\n"
+"\t}\n"
+"\telse {\n"
+"\t\tprintf (\"Document parsed successfully.\\n\");\n"
+"\t\txmlFreeDoc(doc);\n"
+"\t\treturn 0;\n"
+"\t}\n"
+"}"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:1341
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1341
+msgid ""
+"Our goal is now to compile it and make it work correctly. For that purpose, "
+"we must tell <application>GCC</application> two things: where to find libxml/"
+"parser.h (that is to say, give <application>GCC</application> the right "
+"include path) and what library (i.e. shared object) it should link our "
+"project against. There are several ways to do that, I will start with the "
+"easiest."
+msgstr ""
+"Naším cílem je nyní zkompilovat jej a aby správně fungoval. Za tímto účelem "
+"musíme říci <application>GCC</application> dvě věci: kde najít libxml/parser."
+"h (tzn. dát <application>GCC</application> správnou cestu k hlavičkovým "
+"souborům) a s jakou knihovnu (tj. sdíleným objektem) by se měl náš projekt "
+"slinkovat. Je několik způsobů, jak to udělat, tak začneme tím nejjednodušším."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:1349 C/index.docbook:1589
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1349
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1589
+msgid "With pkg-config"
+msgstr "Pomocí pkg-config"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:1350
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1350
+msgid ""
+"<application>pkg-config</application> is tools for developers providing a "
+"unified interface for querying installed libraries with their version and "
+"all options needed to compile and link it. It comes with an "
+"<application>Autoconf</application> macro named PKG_CHECK_MODULES allowing "
+"to check the existence of the library and set all necessary flags."
+msgstr ""
+"<application>pkg-config</application> je nástroj, který se snaží poskytnout "
+"vývojářům jednotné rozhraní pro dotazování nainstalovaných knihoven na "
+"jejich verzi a všechny přepínače potřebné ke kompilaci a slinkování s nimi. "
+"Patří k němu i makro pro <application>Autoconf</application>, nazvané "
+"PKG_CHECK_MODULES, pomocí kterého se kontroluje přítomnost knihovny a "
+"nastavují všechny potřebné přepínače."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1360 C/index.docbook:1495
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1360
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1495
+msgid "Add the following line in <filename>configure.ac</filename>."
+msgstr "Přidejte následujíc řádek do <filename>configure.ac</filename>."
+
+#. (itstool) path: listitem/programlisting
+#: C/index.docbook:1361
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1361
+#, no-wrap
+msgid "PKG_CHECK_MODULES(XML, libxml-2.0 &gt;= 2.4)"
+msgstr "PKG_CHECK_MODULES(XML, libxml-2.0 &gt;= 2.4)"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1362
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1362
+msgid ""
+"This macro will check the existence of <application>libxml2</application> "
+"with a version higher or equal to 2.4 and create 2 variable XML_CFLAGS and "
+"XML_LIBS containing respectively, the flags for the C compiler and the "
+"linker. <userinput>XML</userinput> is an user defined name. "
+"<userinput>libxml-2.0</userinput> is the name of the library. You can run "
+"<userinput>pkg-config --list-all</userinput> to get a list of all installed "
+"libraries."
+msgstr ""
+"Toto makro kontroluje přítomnost <application>libxml2</application> ve verzi "
+"vyšší nebo rovné 2.4 a vytvoří dvě proměnné, XML_CFLAGS a XML_LIBS, které "
+"budou obsahovat přepínače pro kompilátor C, respektive linker. "
+"<userinput>XML</userinput> je uživatelem definovaný název. "
+"<userinput>libxml-2.0</userinput> je název knihovny. Pro vypsání všech "
+"nainstalovaných knihoven můžete spustit <userinput>pkg-config --list-all</"
+"userinput>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1372 C/index.docbook:1505 C/index.docbook:1532
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1372
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1505
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1532
+msgid "Add the following lines in <filename>Makefile.am</filename>."
+msgstr "Přidejte následujíc řádek do <filename>Makefile.am</filename>."
+
+#. (itstool) path: listitem/programlisting
+#: C/index.docbook:1373
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1373
+#, no-wrap
+msgid ""
+"tut_prog_CPPFLAGS = $(XML_CFLAGS)\n"
+"tut_prog_LDFLAGS= $(XML_LIBS)"
+msgstr ""
+"tut_prog_CPPFLAGS = $(XML_CFLAGS)\n"
+"tut_prog_LDFLAGS= $(XML_LIBS)"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1375
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1375
+msgid ""
+"This will use the options found by <application>configure</application> when "
+"the macro PKG_CHECK_MODULES is executed for compiling your program."
+msgstr ""
+"Pro kompilaci vašeho programu se použijí přepínače, které našel skript "
+"<application>configure</application>, když spustil makro PKG_CHECK_MODULES."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1381
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1381
+msgid "That's all. You can run <userinput>make</userinput> again."
+msgstr "Toť vše. Můžete znovu spustit <userinput>make</userinput>."
+
+#. (itstool) path: listitem/screen
+#: C/index.docbook:1382
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1382
+#, no-wrap
+msgid ""
+"\n"
+"cd . &amp;&amp; /bin/sh /home/seb2008.1/Projects/tutprog/missing --run aclocal-1.10 \n"
+"cd . &amp;&amp; /bin/sh /home/seb2008.1/Projects/tutprog/missing --run automake-1.10 --foreign \n"
+"cd . &amp;&amp; /bin/sh /home/seb2008.1/Projects/tutprog/missing --run autoconf\n"
+"/bin/sh ./config.status --recheck\n"
+"running CONFIG_SHELL=/bin/sh /bin/sh ./configure  --no-create --no-recursion\n"
+"checking for a BSD-compatible install... /usr/bin/install -c\n"
+"checking whether build environment is sane... yes\n"
+"checking for a thread-safe mkdir -p... /bin/mkdir -p\n"
+"checking for gawk... gawk\n"
+"checking whether make sets $(MAKE)... yes\n"
+"checking whether to enable maintainer-specific portions of Makefiles... yes\n"
+"checking for style of include used by make... GNU\n"
+"checking for gcc... gcc\n"
+"checking for C compiler default output file name... a.out\n"
+"checking whether the C compiler works... yes\n"
+"checking whether we are cross compiling... no\n"
+"checking for suffix of executables... \n"
+"checking for suffix of object files... o\n"
+"checking whether we are using the GNU C compiler... yes\n"
+"checking whether gcc accepts -g... yes\n"
+"checking for gcc option to accept ISO C89... none needed\n"
+"checking dependency style of gcc... gcc3\n"
+"checking for library containing strerror... none required\n"
+"checking for gcc... (cached) gcc\n"
+"checking whether we are using the GNU C compiler... (cached) yes\n"
+"checking whether gcc accepts -g... (cached) yes\n"
+"checking for gcc option to accept ISO C89... (cached) none needed\n"
+"checking dependency style of gcc... (cached) gcc3\n"
+"checking for gcc... (cached) gcc\n"
+"checking whether we are using the GNU C compiler... (cached) yes\n"
+"checking whether gcc accepts -g... (cached) yes\n"
+"checking for gcc option to accept ISO C89... (cached) none needed\n"
+"checking dependency style of gcc... (cached) gcc3\n"
+"checking how to run the C preprocessor... gcc -E\n"
+"checking for grep that handles long lines and -e... /bin/grep\n"
+"checking for egrep... /bin/grep -E\n"
+"checking for ANSI C header files... yes\n"
+"checking for pkg-config... /usr/bin/pkg-config\n"
+"checking pkg-config is at least version 0.9.0... yes\n"
+"checking for XML... yes\n"
+"configure: creating ./config.status\n"
+" /bin/sh ./config.status\n"
+"config.status: creating Makefile\n"
+"config.status: creating config.h\n"
+"config.status: config.h is unchanged\n"
+"config.status: executing depfiles commands\n"
+"cd . &amp;&amp; /bin/sh /home/seb2008.1/Projects/tutprog/missing --run autoheader\n"
+"rm -f stamp-h1\n"
+"touch config.h.in\n"
+"cd . &amp;&amp; /bin/sh ./config.status config.h\n"
+"config.status: creating config.h\n"
+"config.status: config.h is unchanged\n"
+"make  all-am\n"
+"make[1]: Entering directory `/home/seb/Projects/tutprog'\n"
+"gcc -DHAVE_CONFIG_H -I.  -DPACKAGE_DATA_DIR=\\\"\"/usr/local/share\"\\\" -I/usr/include/libxml2  \\\n"
+"        -Wall -g -g -O2 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c\n"
+"mv -f .deps/main.Tpo .deps/main.Po\n"
+"gcc -Wall -g -g -O2   -o tutprog main.o -lxml2   \n"
+"make[1]: Leaving directory `/home/seb/Projects/tutprog'"
+msgstr ""
+"\n"
+"cd . &amp;&amp; /bin/sh /home/seb2008.1/Projects/tutprog/missing --run aclocal-1.10 \n"
+"cd . &amp;&amp; /bin/sh /home/seb2008.1/Projects/tutprog/missing --run automake-1.10 --foreign \n"
+"cd . &amp;&amp; /bin/sh /home/seb2008.1/Projects/tutprog/missing --run autoconf\n"
+"/bin/sh ./config.status --recheck\n"
+"running CONFIG_SHELL=/bin/sh /bin/sh ./configure  --no-create --no-recursion\n"
+"checking for a BSD-compatible install... /usr/bin/install -c\n"
+"checking whether build environment is sane... yes\n"
+"checking for a thread-safe mkdir -p... /bin/mkdir -p\n"
+"checking for gawk... gawk\n"
+"checking whether make sets $(MAKE)... yes\n"
+"checking whether to enable maintainer-specific portions of Makefiles... yes\n"
+"checking for style of include used by make... GNU\n"
+"checking for gcc... gcc\n"
+"checking for C compiler default output file name... a.out\n"
+"checking whether the C compiler works... yes\n"
+"checking whether we are cross compiling... no\n"
+"checking for suffix of executables... \n"
+"checking for suffix of object files... o\n"
+"checking whether we are using the GNU C compiler... yes\n"
+"checking whether gcc accepts -g... yes\n"
+"checking for gcc option to accept ISO C89... none needed\n"
+"checking dependency style of gcc... gcc3\n"
+"checking for library containing strerror... none required\n"
+"checking for gcc... (cached) gcc\n"
+"checking whether we are using the GNU C compiler... (cached) yes\n"
+"checking whether gcc accepts -g... (cached) yes\n"
+"checking for gcc option to accept ISO C89... (cached) none needed\n"
+"checking dependency style of gcc... (cached) gcc3\n"
+"checking for gcc... (cached) gcc\n"
+"checking whether we are using the GNU C compiler... (cached) yes\n"
+"checking whether gcc accepts -g... (cached) yes\n"
+"checking for gcc option to accept ISO C89... (cached) none needed\n"
+"checking dependency style of gcc... (cached) gcc3\n"
+"checking how to run the C preprocessor... gcc -E\n"
+"checking for grep that handles long lines and -e... /bin/grep\n"
+"checking for egrep... /bin/grep -E\n"
+"checking for ANSI C header files... yes\n"
+"checking for pkg-config... /usr/bin/pkg-config\n"
+"checking pkg-config is at least version 0.9.0... yes\n"
+"checking for XML... yes\n"
+"configure: creating ./config.status\n"
+" /bin/sh ./config.status\n"
+"config.status: creating Makefile\n"
+"config.status: creating config.h\n"
+"config.status: config.h is unchanged\n"
+"config.status: executing depfiles commands\n"
+"cd . &amp;&amp; /bin/sh /home/seb2008.1/Projects/tutprog/missing --run autoheader\n"
+"rm -f stamp-h1\n"
+"touch config.h.in\n"
+"cd . &amp;&amp; /bin/sh ./config.status config.h\n"
+"config.status: creating config.h\n"
+"config.status: config.h is unchanged\n"
+"make  all-am\n"
+"make[1]: Entering directory `/home/seb/Projects/tutprog'\n"
+"gcc -DHAVE_CONFIG_H -I.  -DPACKAGE_DATA_DIR=\\\"\"/usr/local/share\"\\\" -I/usr/include/libxml2  \\\n"
+"        -Wall -g -g -O2 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c\n"
+"mv -f .deps/main.Tpo .deps/main.Po\n"
+"gcc -Wall -g -g -O2   -o tutprog main.o -lxml2   \n"
+"make[1]: Leaving directory `/home/seb/Projects/tutprog'"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1442
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1442
+msgid ""
+"There is no need to rerun <application>Autoconf</application> or "
+"<application>Automake</application> because the Makefile generated by it "
+"already contains some rules to do it."
+msgstr ""
+"Není potřeba znovu spouštět <application>Autoconf</application> nebo "
+"<application>Automake</application>, protože vygenerovaný Makefile již "
+"obsahuje nějaká pravidla, která to udělají."
+
+#. (itstool) path: tip/para
+#: C/index.docbook:1450
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1450
+msgid ""
+"When installed, each library supporting pkg-config copy a small text file, "
+"with .pc extension, in a system directory; normally <filename>/usr/lib/"
+"pkgconfig</filename>. If you install a library from source it will be by "
+"default in <filename>/usr/local/lib/pkgconfig</filename>. You can ask "
+"<application>pkg-config</application> to search in this directory too, by "
+"defining the environment variable <userinput> PKG_CONFIG_PATH=/usr/local/lib/"
+"pkgconfig</userinput>."
+msgstr ""
+"Když se instaluje knihovna podporující pkg-config, zkopíruje se spolu s ní "
+"do systémové složky, obvykle <filename>/usr/lib/pkgconfig</filename>, malý "
+"textový soubor s příponou .pc. Při instalaci ze zdrojových kódů je "
+"předvolenou složkou <filename>/usr/local/lib/pkgconfig</filename>. Můžete "
+"požádat <application>pkg-config</application>, aby hledal i v této složce, "
+"nastavením proměnné prostředí <userinput> PKG_CONFIG_PATH=/usr/local/lib/"
+"pkgconfig</userinput>."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:1460
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1460
+msgid "With an <application>Autoconf</application> macro"
+msgstr "S nějakým makrem z <application>Autoconf</application>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1467
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1467
+msgid ""
+"Check if the library author shipped a <application>M4</application> macro, "
+"and use it if present. It is a text file named like the library with a .m4 "
+"extension often installed in <filename>/usr/share/aclocal</filename>."
+msgstr ""
+"Podívejte se, jestli autor knihovny šíří i makro <application>M4</"
+"application>, a pokud ano, použijte jej. Jedná se o textový soubor nazvaný "
+"stejně jako knihovna, akorát s příponou .m4, a často je nainstalován v "
+"<filename>/usr/share/aclocal</filename>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1472
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1472
+msgid ""
+"If your library is a basic one, it might be checked by the standard "
+"<application>Autoconf</application> macros (see the list <ulink type=\"http"
+"\" url=\"http://sources.redhat.com/autobook/autobook/autobook_283."
+"html#SEC283\"> here</ulink>)."
+msgstr ""
+"Pokud se jedná o některou ze základních knihoven, může se kontrolovat pomocí "
+"standardních maker <application>Autoconf</application> (viz seznam <ulink "
+"type=\"http\" url=\"http://sources.redhat.com/autobook/autobook/autobook_283."
+"html#SEC283\">zde</ulink>)."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1478
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1478
+msgid ""
+"Perhaps the <application>M4</application> macro you need has already be "
+"programmed by someone else. Look at the contributions <ulink type=\"http\" "
+"url=\"http://www.gnu.org/software/ac-archive/\">here</ulink>."
+msgstr ""
+"Možná makro <application>M4</application>, které potřebujete, již někdo jiný "
+"naprogramoval. Podívejte se na příspěvky <ulink type=\"http\" url=\"http://"
+"www.gnu.org/software/ac-archive/\">zde</ulink>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1482
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1482
+msgid ""
+"If all that fail, go deeper in <application>M4</application>, make your own "
+"macro, and donate it to the library's author!"
+msgstr ""
+"Pokud všechno selže, zanořte se do <application>M4</application> hlouběji, "
+"vytvořte své vlastní makro a přispějte jím autorovi knihovny!"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:1461
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1461
+msgid ""
+"If the library does not support <application>pkg-config</application>: it "
+"does not appear in the list returned by <userinput>pkg-config --list-all</"
+"userinput>. You need a <application>Autoconf</application> macro: <_:"
+"itemizedlist-1/>"
+msgstr ""
+"Pokud knihovna nepodporuje <application>pkg-config</application>, tj. "
+"neobjevuje se ve výpise vráceném příkazem <userinput>pkg-config --list-all</"
+"userinput>, potřebujete makro z <application>Autoconf</application>: <_:"
+"itemizedlist-1/>"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:1487
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1487
+msgid ""
+"When, you have this macro, you can copy it in <filename>/usr/share/aclocal</"
+"filename>, so <application>aclocal</application> will find it. Then, you "
+"just need to look in the macro file to see how to use it. "
+"<application>libxml2</application> installs a macro named AM_PATH_XML2 which "
+"is in <filename>/usr/share/aclocal/libxml.m4</filename>."
+msgstr ""
+"Pokud makro máte, můžete jej nakopírovat do <filename>/usr/share/aclocal</"
+"filename>, aby jej <application>aclocal</application> našel. Pak už se jen "
+"stačí podívat do souboru s makrem, jak jej použít. <application>libxml2</"
+"application> instaluje makro s názvem AM_PATH_XML2, které najdete v "
+"<filename>/usr/share/aclocal/libxml.m4</filename>."
+
+#. (itstool) path: listitem/programlisting
+#: C/index.docbook:1496
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1496
+#, no-wrap
+msgid "AM_PATH_XML2(2.4.0)"
+msgstr "AM_PATH_XML2(2.4.0)"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1497
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1497
+msgid ""
+"This macro will check the existence of the library with a version higher or "
+"equal to 2.4 and create 2 variable XML_CPPFLAGS and XML_LIBS containing "
+"respectively, the flags for the C compiler and the linker. You get these "
+"information from the comments in the macro file."
+msgstr ""
+"Tohle makro bude kontrolovat přítomnost knihovny s verzí vyšší nebo rovnou "
+"2.4 a vytvoří dvě proměnné, XML_CPPFLAGS and XML_LIBS, které budou obsahovat "
+"přepínače pro kompilátor C, respektive pro linker. Tyhle informace získáte z "
+"komentářů v souboru s makrem."
+
+#. (itstool) path: listitem/programlisting
+#: C/index.docbook:1506
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1506
+#, no-wrap
+msgid ""
+"tut_prog_CPPFLAGS = $(XML_CPPFLAGS)\n"
+"tut_prog_LDFLAGS= $(XML_LIBS)"
+msgstr ""
+"tut_prog_CPPFLAGS = $(XML_CPPFLAGS)\n"
+"tut_prog_LDFLAGS= $(XML_LIBS)"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1508
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1508
+msgid ""
+"This will use the options found by configure for compiling your program. "
+"Note that the macro defined XML_CPPFLAGS instead of XML_CFLAGS with "
+"<application>pkg-config</application>. Using CPPFLAGS makes more sense, "
+"because these flags are used by the C preprocessor, most of the time only to "
+"setup the path of the include files."
+msgstr ""
+"Pro kompilaci programu se použijí přepínače nalezené skriptem configure. "
+"Všimněte si, že makro pomocí <application>pkg-config</application> "
+"definovalo XML_CPPFLAGS, a ne XML_CFLAGS. Použití CPPFLAGS dává větší smysl, "
+"protože tyto přepínače jsou používány preprocesorem C, nejčastěji jen k "
+"nastavení cesty k hlavičkovým souborům."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1516
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1516
+msgid ""
+"That's all. You can run <userinput>make</userinput> again. The generated "
+"<filename>Makefile</filename> is almost the same."
+msgstr ""
+"Toť vše. Můžete znovu spustit <userinput>make</userinput>. Vygenerovaný "
+"<filename>Makefile</filename> je téměř stejný."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:1522
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1522
+msgid "With hardcoded library path"
+msgstr "Pomocí pevně určených cest ke knihovnám"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:1523
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1523
+msgid ""
+"It is the approach one could naturally have: let's give <application>GCC</"
+"application> the stuff it needs directly ! On my system, <filename>libxml/"
+"parser.h</filename> is in <filename class=\"directory\">/usr/include/"
+"libxml2</filename>, and the shared object is 'libxml.so', located in "
+"<filename>/usr/lib</filename>. (I will assume it's all the same for you)."
+msgstr ""
+"Jde o přístup, který by člověka přirozeně napadl – přímo <application>GCC</"
+"application> předat to, co potřebuje. Například bývá v linuxových systémech "
+"<filename>libxml/parser.h</filename> uložený v <filename class=\"directory"
+"\">/usr/include/libxml2</filename> a sdílený objekt „libxml.so“ v <filename>/"
+"usr/lib</filename>. (Budeme předpokládat, že to máte stejně.)"
+
+#. (itstool) path: listitem/programlisting
+#: C/index.docbook:1533
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1533
+#, no-wrap
+msgid ""
+"tut_prog_CPPFLAGS = -I /usr/include/libxml2\n"
+"tut_prog_LDFLAGS= -lxml2"
+msgstr ""
+"tut_prog_CPPFLAGS = -I /usr/include/libxml2\n"
+"tut_prog_LDFLAGS= -lxml2"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1535
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1535
+msgid ""
+"There is no need to change <filename>configure.ac</filename> because you "
+"don't check anything and just assume that all host system will have the "
+"right library in the same place than you."
+msgstr ""
+"Není potřeba měnit <filename>configure.ac</filename>, protože nic "
+"nekontrolujete a prostě předpokládáte, že všechny hostitelské systémy budou "
+"mít správné knihovny na stejném místě, jako vy."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1542
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1542
+msgid ""
+"You can run <userinput>make</userinput> and it should work if you have the "
+"same system than me."
+msgstr ""
+"Můžete spustit <userinput>make</userinput> a pokud to máte v systému stejně, "
+"jak bylo zmíněno, mělo by to fungovat."
+
+#. (itstool) path: listitem/screen
+#: C/index.docbook:1544
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1544
+#, no-wrap
+msgid ""
+"\n"
+" cd . &amp;&amp; /bin/sh /home/seb2008.1/Projects/tutprog/missing --run automake-1.10 --foreign  Makefile\n"
+" cd . &amp;&amp; /bin/sh ./config.status Makefile depfiles\n"
+"config.status: creating Makefile\n"
+"config.status: executing depfiles commands\n"
+"make  all-am\n"
+"make[1]: Entering directory `/home/seb/Projects/tutprog'\n"
+"gcc -DHAVE_CONFIG_H -I.  -DPACKAGE_DATA_DIR=\\\"\"/usr/local/share\"\\\" -I /usr/include/libxml2  \\\n"
+"    -Wall -g -g -O2 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c\n"
+"mv -f .deps/main.Tpo .deps/main.Po\n"
+"gcc -Wall -g -g -O2   -o tutprog main.o -lxml2 \n"
+"make[1]: Leaving directory `/home/seb/Projects/tutprog'"
+msgstr ""
+"\n"
+" cd . &amp;&amp; /bin/sh /home/seb2008.1/Projects/tutprog/missing --run automake-1.10 --foreign  Makefile\n"
+" cd . &amp;&amp; /bin/sh ./config.status Makefile depfiles\n"
+"config.status: creating Makefile\n"
+"config.status: executing depfiles commands\n"
+"make  all-am\n"
+"make[1]: Entering directory `/home/seb/Projects/tutprog'\n"
+"gcc -DHAVE_CONFIG_H -I.  -DPACKAGE_DATA_DIR=\\\"\"/usr/local/share\"\\\" -I /usr/include/libxml2  \\\n"
+"    -Wall -g -g -O2 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c\n"
+"mv -f .deps/main.Tpo .deps/main.Po\n"
+"gcc -Wall -g -g -O2   -o tutprog main.o -lxml2 \n"
+"make[1]: Leaving directory `/home/seb/Projects/tutprog'"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1564
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1564
+msgid ""
+"It is not portable to various linuxes: perhaps on other distribution the "
+"include path is different."
+msgstr ""
+"Není to univerzálně přenositelné na jiné verze linuxu: v jiné distribuci je "
+"třeba cesta k hlavičkovým souborům jiná."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1568
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1568
+msgid ""
+"If the next versions of libxml have different paths, or different needed "
+"libraries, we will need to update the project."
+msgstr ""
+"Když bude mít příští verze knihovny libxml jiné cesty nebo jiné závislosti "
+"na knihovnách, budeme muset projekt aktualizovat."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1572
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1572
+msgid "We don't test whether the system of the packager/user has the library."
+msgstr "Netestujeme, jestli má systém balíčkáře/uživatele knihovnu."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1576
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1576
+msgid ""
+"We cannot check the version of the <application>libxml2</application> we use."
+msgstr ""
+"Nemůžeme zkontrolovat, kterou verzi <application>libxml2</application> "
+"používáme."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:1558
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1558
+msgid ""
+"I have described this here to show that it is possible to do simple thing "
+"using <application>Autotools</application>. But this approach has several "
+"drawbacks: <_:itemizedlist-1/>"
+msgstr ""
+"Tohle jsme si zde popsali, abychom viděli, jak jednoduše se to dá udělat s "
+"pomocí <application>Autotools</application>. Tento přístup má ale několik "
+"nevýhod: <_:itemizedlist-1/>"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:1584
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1584
+msgid ""
+"With <application>Anjuta</application> adding a library supporting "
+"<application>pkg-config</application> can be almost done without the "
+"keyboard."
+msgstr ""
+"Při použití <application>Anjuty</application> jde přidat knihovnu "
+"podporující <application>pkg-config</application> téměř bez použití "
+"klávesnice."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1592
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1592
+msgid ""
+"Open the file <filename>main.c</filename> of the <application>Anjuta</"
+"application> project created in the previous chapter. Replace it with the "
+"following text:"
+msgstr ""
+"Otevřete soubor <filename>main.c</filename> z projektu, který jsem v "
+"<application>Anjutě</application> vytvořili v předchozí kapitole. Nahraďte "
+"jeho obsah následujícím textem:"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1618
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1618
+msgid ""
+"Select <menuchoice><guisubmenu>Project</guisubmenu> <guimenuitem>Properties</"
+"guimenuitem><guilabel>Packages</guilabel></menuchoice>, to get the package "
+"properties dialog."
+msgstr ""
+"Vyberte <menuchoice><guisubmenu>Projekt</guisubmenu> "
+"<guimenuitem>Vlastnosti</guimenuitem> <guilabel>Balíčky</guilabel></"
+"menuchoice> a objeví se dialogové okno s vlastnostmi balíčku."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1623
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1623
+msgid ""
+"Click on <guibutton>Add module</guibutton> button and Enter a name in the "
+"<guilabel>Module/Package</guilabel> column, \"XML\" by example."
+msgstr ""
+"Klikněte na tlačítko <guibutton>Přidat modul</guibutton> a do sloupce "
+"<guilabel>Modul/balíček</guilabel> zadejte název, např. „XML“."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1627
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1627
+msgid ""
+"Click on <guibutton>Add Package</guibutton> button that should be enabled "
+"now. You get the a dialog where you can select the library that you want to "
+"use. This dialog list all libraries supporting <application>pkg-config</"
+"application>. Select <userinput>libxml-2.0</userinput>. Then click on "
+"<guibutton>Add</guibutton> button."
+msgstr ""
+"Klikněte na tlačítko <guibutton>Přidat balíček</guibutton>, které by teď "
+"mělo být přístupné. Objeví se dialogové okno, ve kterém můžete vybrat "
+"knihovnu, kterou chcete použít. V tomto dialogovém okně jsou vypsané všechny "
+"knihovny podporující <application>pkg-config</application>. Vyberte "
+"<userinput>libxml-2.0</userinput>. Pak klikněte na tlačítko "
+"<guibutton>Přidat</guibutton>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1633
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1633
+msgid "The package properties dialog should look like the following:"
+msgstr "Dialogové okno s vlastnostmi balíčku by mělo vypadat nějak následovně:"
+
+#. (itstool) path: figure/title
+#: C/index.docbook:1637
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1637
+msgid "Project package properties dialog"
+msgstr "Dialogové okno s vlastnosti projektového balíčku"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:1641
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1641
+msgctxt "_"
+msgid ""
+"external ref='figures/library-add-pkgconfig.png' "
+"md5='3ccc834696358394b215e27994b0f25e'"
+msgstr ""
+"external ref='figures/library-add-pkgconfig.png' "
+"md5='3ccc834696358394b215e27994b0f25e'"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1646
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1646
+msgid ""
+"The module XML contains one library named libxml-2.0. You can define a "
+"minimum version required by clicking in the version column and writing "
+"<userinput>&gt;= 2.4</userinput>. All this operation add the necessary lines "
+"in the file <filename>configure.ac</filename>."
+msgstr ""
+"Modul XML obsahuje knihovnu s názvem libxml-2.0. Můžete určit minimální "
+"požadovanou verzi kliknutím ve sloupci verze a napsáním <userinput>&gt;= "
+"2.4</userinput>. Tím se zapíší potřebné řádky do souboru <filename>configure."
+"ac</filename>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1653
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1653
+msgid ""
+"Close the dialog and select <menuchoice><guisubmenu>Project</guisubmenu> "
+"<guimenuitem>Refresh</guimenuitem></menuchoice>. This should not be needed "
+"but is necessary with the current version of <application>Anjuta</"
+"application>. This bug has already been reported (#541694) and will be fixed "
+"soon"
+msgstr ""
+"Zavřete dialogové okno a vyberte <menuchoice><guisubmenu>Projekt</"
+"guisubmenu> <guimenuitem>Aktualizovat</guimenuitem></menuchoice>. Nemělo by "
+"to být potřeba, ale u aktuální verze <application>Anjuty</application> je to "
+"bohužel nutné. Bylo to již nahlášeno jako chyba (#541694) a bude to opraveno."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1659
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1659
+msgid ""
+"In the project view, select the project target tutprog and click on right "
+"button to get a context menu and select Properties. You will get the target "
+"properties dialog."
+msgstr ""
+"V zobrazení projektu vyberte cíl projektu tutprog a klikněte na něj pravým "
+"tlačítkem, aby se objevila kontextová nabídka, ve které vyberte "
+"<guilabel>Vlastnosti</guilabel>. Objeví se dialogové okno s vlastnostmi cíle."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1663
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1663
+msgid ""
+"This dialog will list all modules available in your project, just check the "
+"XML module. This will modify the file <filename>Makefile.am</filename> to "
+"use the right library."
+msgstr ""
+"V dialogovém okně jsou uvedené všechny moduly dostupné ve vašem projektu, "
+"takže stačí jednoduše zaškrtnout modul XML. Tím se příslušně změní soubor "
+"<filename>Makefile.am</filename>, aby používal správnou knihovnu."
+
+#. (itstool) path: figure/title
+#: C/index.docbook:1669
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1669
+msgid "Target properties dialog"
+msgstr "Dialogové okno s vlastnostmi cíle"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:1673
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1673
+msgctxt "_"
+msgid ""
+"external ref='figures/library-add-properties.png' "
+"md5='53095c1d9d784e3b71111b856ca3a97a'"
+msgstr ""
+"external ref='figures/library-add-properties.png' "
+"md5='53095c1d9d784e3b71111b856ca3a97a'"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1680
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1680
+msgid ""
+"Click on <guibutton>Close</guibutton> and that's all. You can select "
+"<menuchoice><guisubmenu>Build</guisubmenu> <guimenuitem>Build</guimenuitem></"
+"menuchoice> to rebuild your project."
+msgstr ""
+"Klikněte na <guibutton>Zavřít</guibutton> a tím je vše hotovo. Můžete vybrat "
+"<menuchoice><guisubmenu>Sestavit</guisubmenu> <guimenuitem>Sestavit</"
+"guimenuitem></menuchoice>, aby se váš projekt znovu sestavil."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:1687
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1687
+msgid "Without pkg-config"
+msgstr "Bez pkg-config"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:1688
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1688
+msgid ""
+"<application>Anjuta</application> has no real support for library not using "
+"<application>pkg-config</application>. You need to edit the "
+"<filename>configure.ac</filename> directly to add all necessary macros. For "
+"passing flags to each target you can select the <guibutton>Advanced</"
+"guibutton> button in the target properties dialog."
+msgstr ""
+"<application>Anjuta</application> nemá skutečnou podporu pro knihovny, které "
+"nepoužívají <application>pkg-config</application>. Abyste přidali potřebná "
+"makra, musíte upravit <filename>configure.ac</filename> přímo. Pro předání "
+"přepínačů do jednotlivých cílů můžete použít tlačítko <guibutton>Pokročilé</"
+"guibutton> v dialogovém okně s vlastnostmi cíle."
+
+#. (itstool) path: chapter/title
+#: C/index.docbook:1701
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1701
+msgid "Resources"
+msgstr "Odkazy"
+
+#. (itstool) path: chapter/para
+#: C/index.docbook:1702
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1702
+msgid ""
+"Here are some links to reference documents dealing with "
+"<application>Autotools</application> in general and <application>Autoconf</"
+"application> and <application>Automake</application> in particular."
+msgstr ""
+"Zde jsou odkazy na dokumentaci, která se zabývá <application>Autotools"
+"</application> obecně a konkrétně pak nástroji <application>Autoconf"
+"</application> a <application>Automake</application>."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:1708
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1708
+msgid "English"
+msgstr "V anličtině"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1713
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1713
+msgid ""
+"First, you can take a look at the <ulink type=\"http\" url=\"http://www.gnu."
+"org/software/autoconf/manual/autoconf.html\"> Autoconf</ulink>, <ulink type="
+"\"http\" url=\"http://www.gnu.org/software/automake/manual/automake.html\"> "
+"Automake</ulink>, <ulink type=\"http\" url=\"http://www.gnu.org/software/"
+"libtool/manual/libtool.html\"> Libtool</ulink>, <ulink type=\"http\" url="
+"\"http://www.gnu.org/software/make/manual/make.html\"> make</ulink> and "
+"<ulink type=\"http\" url=\"http://www.gnu.org/software/m4/manual/m4.html\"> "
+"M4</ulink> manuals."
+msgstr ""
+"Pro začátek se můžete podívat do referenčních příruček k <ulink type=\"http\" url="
+"\"http://www.gnu.org/software/autoconf/manual/autoconf.html\">Autoconf</"
+"ulink>, <ulink type=\"http\" url=\"http://www.gnu.org/software/automake/"
+"manual/automake.html\">Automake</ulink>, <ulink type=\"http\" url=\"http://"
+"www.gnu.org/software/libtool/manual/libtool.html\">Libtool</ulink>, <ulink "
+"type=\"http\" url=\"http://www.gnu.org/software/make/manual/make.html"
+"\">make</ulink> a <ulink type=\"http\" url=\"http://www.gnu.org/software/m4/"
+"manual/m4.html\">M4</ulink>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1728
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1728
+msgid ""
+"The <ulink type=\"http\" url=\"http://sources.redhat.com/autobook/autobook/"
+"autobook_toc.html\"> Autobook</ulink> explains in details how the "
+"<application>Autotools</application> work."
+msgstr ""
+"V <ulink type=\"http\" url=\"http://sources.redhat.com/autobook/autobook/"
+"autobook_toc.html\">Autobook</ulink> je podrobně rozebráno, jak fungují "
+"<application>Autotools</application>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1733
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1733
+msgid ""
+"Amongst the various GNU development tools you are told about, <ulink type="
+"\"http\" url=\"http://autotoolset.sourceforge.net/tutorial.html\"> here</"
+"ulink> are <application>Autoconf</application> and <application>Automake</"
+"application>."
+msgstr ""
+"Mezi různými vývojářskými nástroji GNU, o kterých jsme mluvili <ulink type="
+"\"http\" url=\"http://autotoolset.sourceforge.net/tutorial.html\">zde</"
+"ulink>, jsou <application>Autoconf</application> a <application>Automake</"
+"application>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1739
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1739
+msgid ""
+"<ulink url=\"http://www.lrde.epita.fr/~adl/autotools.html\">Here</ulink> and "
+"<ulink url=\"http://seul.org/docs/autotut/\">here</ulink> are two other "
+"tutorials about <application>Autotools</application>."
+msgstr ""
+"<ulink url=\"http://www.lrde.epita.fr/~adl/autotools.html\">Zde</ulink> a "
+"<ulink url=\"http://seul.org/docs/autotut/\">zde</ulink> jsou dva základní "
+"výukové materiály k <application>Autotools</application>."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:1747
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1747
+msgid "French"
+msgstr "V češtině"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1748
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1748
+msgid ""
+"<ulink type=\"http\" url=\"http://www.infres.enst.fr/~dax/polys/configure/"
+"slide1.html\"> Here</ulink> are some slides by a teacher from Ecole "
+"Nationale Supérieure des Télecoms about the <application>Autotools</"
+"application>."
+msgstr ""
+"Na server ROOT vyšel <ulink type=\"http\" url=\"https://www.root.cz/serialy/"
+"gnu-pomoc-pri-tvorbe-programu/\">seriál o nástrojích GNU</ulink> s "
+"kapitolami <ulink type=\"http\" url=\"https://www.root.cz/clanky/gnu-pomoc-"
+"pri-tvorbe-programu-autoconf/\">Autoconf</ulink> a <ulink type=\"http\" url="
+"\"https://www.root.cz/clanky/gnu-pomoc-pri-tvorbe-programu-automake/"
+"\">Automake</ulink>."
+
+#. (itstool) path: varlistentry/term
+#: C/index.docbook:1754
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1754
+msgid "Japanese"
+msgstr "Ve slovenštině"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:1756
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1756
+msgid ""
+"<ulink type=\"http\" url=\"http://larse-gtk.hp.infoseek.co.jp/automake.html"
+"\"> A tutorial about <application>Autoconf</application> and "
+"<application>Automake</application> </ulink>."
+msgstr ""
+"<ulink type=\"http\" url=\"https://smnd.sk/anino/programming/tools/automake/"
+"automake.html\">Zde</ulink> je jeden kratší článek o <application>Automake</"
+"application>."
+
+#. (itstool) path: tip/para
+#: C/index.docbook:1762
+#: /var/www/gnomeweb/scratchdir/git/anjuta/manuals/anjuta-build-tutorial/C/index.docbook:1762
+msgid ""
+"This tutorial uses <application>Autoconf 2.61 (November 2006)</application> "
+"and <application>Automake 1.10.1 (January 2008)</application>. Some of these "
+"documentations uses older versions. the syntaxes could have changed quite a "
+"bit. These old syntaxes usually still work and are used in old project. It "
+"is useful to know them but it is a bad idea to use them in a new project."
+msgstr ""
+"Tento výukový materiál používá <application>Autoconf 2.61 (z listopadu "
+"2006)</application> a <application>Automake 1.10.1 (leden 2008)</"
+"application>. Některé z těchto dokumentů používají starší verze a syntax se "
+"mohla trochu změnit. Starší syntax obvykle stále funguje a používá se ve "
+"starších projektech. Je dobré ji znát, ale není dobrý nápad ji používat v "
+"nových projektech."
