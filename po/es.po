@@ -13,9 +13,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta.master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2017-10-01 16:19+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/anjuta/issues\n"
+"POT-Creation-Date: 2018-06-10 15:49+0000\n"
 "PO-Revision-Date: 2017-12-14 12:20+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
@@ -1534,8 +1533,7 @@ msgstr "Seleccione una carpeta en la carpeta de proyectos"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
-#: ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "Predeterminado"
 
@@ -1652,8 +1650,7 @@ msgstr "Saliendo de: %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
-#: ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "aviso:"
 
@@ -1666,8 +1663,7 @@ msgstr "aviso:-old"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
-#: ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "error:"
 
@@ -2179,8 +2175,7 @@ msgstr "Tipo"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "Argumentos"
 
@@ -2757,8 +2752,7 @@ msgid "Shared libraries"
 msgstr "Bibliotecas compartidas"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937
-#: ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Señales del núcleo"
 
@@ -3065,15 +3059,13 @@ msgstr "Cargado"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "Pa_usar el programa"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Pausa la ejecución del programa"
 
@@ -3163,35 +3155,29 @@ msgstr "Añadir rutas de fuentes adicionales"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913
-#: ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "Comando del depurador…"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Comando personalizado de depuración"
 
-#: ../plugins/debug-manager/plugin.c:921
-#: ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Info"
 
-#: ../plugins/debug-manager/plugin.c:929
-#: ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Bibliotecas compartidas"
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Mostrar mapas de bibliotecas compartidas"
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Mostrar señales del núcleo"
 
@@ -3608,37 +3594,39 @@ msgstr "Renombrar"
 msgid "Remove"
 msgstr "Quitar"
 
-#: ../plugins/document-manager/anjuta-docman.c:164
+#. Translator: the space at the beginning is here because this
+#. * string is concatenated with the file name.
+#: ../plugins/document-manager/anjuta-docman.c:166
 msgid " [read-only]"
 msgstr " [sólo-lectura]"
 
-#: ../plugins/document-manager/anjuta-docman.c:533
+#: ../plugins/document-manager/anjuta-docman.c:535
 #: ../plugins/document-manager/plugin.c:156
 msgid "Close Others"
 msgstr "Cerrar otros"
 
-#: ../plugins/document-manager/anjuta-docman.c:736
-#: ../plugins/document-manager/anjuta-docman.c:1156
+#: ../plugins/document-manager/anjuta-docman.c:738
+#: ../plugins/document-manager/anjuta-docman.c:1158
 msgid "Close file"
 msgstr "Cerrar archivo"
 
-#: ../plugins/document-manager/anjuta-docman.c:773
+#: ../plugins/document-manager/anjuta-docman.c:775
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:9
 #: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "Ruta:"
 
-#: ../plugins/document-manager/anjuta-docman.c:890
+#: ../plugins/document-manager/anjuta-docman.c:892
 #: ../plugins/file-loader/plugin.c:597 ../plugins/file-loader/plugin.c:887
 #: ../plugins/file-loader/plugin.c:897 ../plugins/file-loader/plugin.c:910
 msgid "Open file"
 msgstr "Abre un archivo"
 
-#: ../plugins/document-manager/anjuta-docman.c:909
+#: ../plugins/document-manager/anjuta-docman.c:911
 msgid "Save file as"
 msgstr "Guardar archivo como"
 
-#: ../plugins/document-manager/anjuta-docman.c:990
+#: ../plugins/document-manager/anjuta-docman.c:992
 #, c-format
 msgid ""
 "The file '%s' already exists.\n"
@@ -3647,11 +3635,11 @@ msgstr ""
 "El archivo «%s» ya existe.\n"
 "¿Quiere sobrescribirlo con el que está intentando guardar?"
 
-#: ../plugins/document-manager/anjuta-docman.c:999
+#: ../plugins/document-manager/anjuta-docman.c:1001
 msgid "_Replace"
 msgstr "_Reemplazar"
 
-#: ../plugins/document-manager/anjuta-docman.c:1743
+#: ../plugins/document-manager/anjuta-docman.c:1745
 msgid "[read-only]"
 msgstr "[sólo-lectura]"
 
@@ -5344,8 +5332,8 @@ msgstr "Introduzca una revisión."
 msgid "Cherry Pick"
 msgstr "Cherry Pick"
 
-#: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
+#: ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "Introducir un mensaje de registro."
 
@@ -6043,8 +6031,7 @@ msgstr ""
 msgid "Failed to activate the JHBuild Plugin: %s"
 msgstr "Falló al activar el complemento de JHBuild: %s"
 
-#: ../plugins/js-debugger/debugger-js.c:548
-#: ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "Error: no se puede vincular el puerto"
 
@@ -6554,8 +6541,7 @@ msgstr "Importar un proyecto de autotools existente en Anjuta"
 msgid "Project from Existing Sources"
 msgstr "Proyecto desde fuentes existentes"
 
-#: ../plugins/project-import/plugin.c:82
-#: ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "Ya existe un archivo llamado «%s». ¿Quiere reemplazarlo?"
@@ -7141,7 +7127,6 @@ msgid "Select a project type"
 msgstr "Seleccionar tipo de proyecto"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
-#| msgid "Select a project type"
 msgid "Select project"
 msgstr "Seleccionar proyecto"
 
@@ -12131,7 +12116,7 @@ msgstr "Sólo texto"
 #~ " %s"
 
 #~ msgid "<b>Handler template</b>"
-#~ msgstr "<b>Plantilla del manejador</b>"
+#~ msgstr "<b>Plantilla del gestor</b>"
 
 #~ msgid "<b>Manage associations</b>"
 #~ msgstr "<b>Gestionar asociaciones</b>"
@@ -12146,7 +12131,7 @@ msgstr "Sólo texto"
 #~ msgstr "Diseñador"
 
 #~ msgid "Insert handler on edit"
-#~ msgstr "Insertar manejador al editar"
+#~ msgstr "Insertar gestor al editar"
 
 #~ msgid "Position type"
 #~ msgstr "Tipo de posición"
@@ -12217,14 +12202,14 @@ msgstr "Sólo texto"
 #~ msgstr "Idioma del editor desconocido «%s»"
 
 #~ msgid "Error while adding a new handler stub: %s"
-#~ msgstr "Error al añadir un nuevo manejador de esbozos: %s"
+#~ msgstr "Error al añadir un nuevo gestor de esbozos: %s"
 
 #~ msgid "Couldn't find signal information"
 #~ msgstr "No se pudo encontrar una señal de información"
 
 #~ msgid "Error while adding a new handler stub: No current editor"
 #~ msgstr ""
-#~ "Error al añadir un nuevo manejador de esbozos: No existe un editor actual"
+#~ "Error al añadir un nuevo gestor de esbozos: No existe un editor actual"
 
 #~ msgid ""
 #~ "To avoid this message turn off \"%s\" flag in Preferences->Glade GUI "
@@ -12263,7 +12248,7 @@ msgstr "Sólo texto"
 #~ msgstr "Cambiar entre diseñador/código"
 
 #~ msgid "Insert handler stub"
-#~ msgstr "Insertar manejador de esbozos"
+#~ msgstr "Insertar gestor de esbozos"
 
 #~ msgid "Associate last designer and last editor"
 #~ msgstr "Asociar el último diseñador y el último editor"
