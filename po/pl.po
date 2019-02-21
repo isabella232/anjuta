@@ -1,20 +1,20 @@
 # Polish translation for anjuta.
-# Copyright © 2001-2017 the anjuta authors.
+# Copyright © 2001-2019 the anjuta authors.
 # This file is distributed under the same license as the anjuta package.
 # Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 2001-2003.
 # Artur Flinta <aflinta@at.kernel.pl>, 2004.
 # Piotr Leszczyński <piotr@kontury.pl>, 2008.
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2009.
-# Piotr Drąg <piotrdrag@gmail.com>, 2010-2017.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2019.
 # Paweł Żołnowski <pawel@zolnowski.name>, 2014.
-# Aviary.pl <community-poland@mozilla.org>, 2008-2017.
+# Aviary.pl <community-poland@mozilla.org>, 2008-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-01 18:19+0200\n"
-"PO-Revision-Date: 2017-10-01 18:20+0200\n"
+"POT-Creation-Date: 2019-02-21 17:21+0100\n"
+"PO-Revision-Date: 2019-02-21 17:22+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -73,7 +73,7 @@ msgid ""
 "downloaded and installed."
 msgstr ""
 "Kreator projektu umożliwia tworzenie nowych projektów z wybranego szablonu. "
-"Zestaw szablonów zawiera projekty ogólne, proste (bez podkatalogów), GTK+, "
+"Zestaw szablonów zawiera projekty ogólne, proste (bez podkatalogów), GTK, "
 "GNOME, Java, Python i wiele więcej. Nowe szablony można z łatwością pobrać "
 "i zainstalować."
 
@@ -3594,37 +3594,39 @@ msgstr "Zmień nazwę"
 msgid "Remove"
 msgstr "Usuń"
 
-#: ../plugins/document-manager/anjuta-docman.c:164
+#. Translator: the space at the beginning is here because this
+#. * string is concatenated with the file name.
+#: ../plugins/document-manager/anjuta-docman.c:166
 msgid " [read-only]"
 msgstr " [tylko do odczytu]"
 
-#: ../plugins/document-manager/anjuta-docman.c:533
+#: ../plugins/document-manager/anjuta-docman.c:535
 #: ../plugins/document-manager/plugin.c:156
 msgid "Close Others"
 msgstr "Zamknij inne"
 
-#: ../plugins/document-manager/anjuta-docman.c:736
-#: ../plugins/document-manager/anjuta-docman.c:1156
+#: ../plugins/document-manager/anjuta-docman.c:738
+#: ../plugins/document-manager/anjuta-docman.c:1158
 msgid "Close file"
 msgstr "Zamyka plik"
 
-#: ../plugins/document-manager/anjuta-docman.c:773
+#: ../plugins/document-manager/anjuta-docman.c:775
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:9
 #: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "Ścieżka:"
 
-#: ../plugins/document-manager/anjuta-docman.c:890
+#: ../plugins/document-manager/anjuta-docman.c:892
 #: ../plugins/file-loader/plugin.c:597 ../plugins/file-loader/plugin.c:887
 #: ../plugins/file-loader/plugin.c:897 ../plugins/file-loader/plugin.c:910
 msgid "Open file"
 msgstr "Otwiera plik"
 
-#: ../plugins/document-manager/anjuta-docman.c:909
+#: ../plugins/document-manager/anjuta-docman.c:911
 msgid "Save file as"
 msgstr "Zapisuje plik jako"
 
-#: ../plugins/document-manager/anjuta-docman.c:990
+#: ../plugins/document-manager/anjuta-docman.c:992
 #, c-format
 msgid ""
 "The file '%s' already exists.\n"
@@ -3633,11 +3635,11 @@ msgstr ""
 "Plik „%s” już istnieje.\n"
 "Zastąpić go tym zapisywanym?"
 
-#: ../plugins/document-manager/anjuta-docman.c:999
+#: ../plugins/document-manager/anjuta-docman.c:1001
 msgid "_Replace"
 msgstr "_Zastąp"
 
-#: ../plugins/document-manager/anjuta-docman.c:1743
+#: ../plugins/document-manager/anjuta-docman.c:1745
 msgid "[read-only]"
 msgstr "[tylko do odczytu]"
 
@@ -7966,11 +7968,11 @@ msgstr ""
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:1
 msgid "GTK+ (Application)"
-msgstr "GTK+ (program)"
+msgstr "GTK (program)"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:2
 msgid "Full features Gtk+ Application with file handling"
-msgstr "Pełne funkcje programów GTK+ z obsługą plików"
+msgstr "Pełne funkcje programów GTK z obsługą plików"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:19
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:17
@@ -8039,12 +8041,12 @@ msgstr "Minimalny projekt biblioteki GTKmm"
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:1
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:1
 msgid "GTK+ (simple)"
-msgstr "GTK+ (prosty)"
+msgstr "GTK (prosty)"
 
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:2
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:2
 msgid "Simple GTK+ project"
-msgstr "Prosty projekt biblioteki GTK+"
+msgstr "Prosty projekt biblioteki GTK"
 
 #: ../plugins/project-wizard/templates/java.wiz.in.h:1
 msgid "Generic java (automake)"
