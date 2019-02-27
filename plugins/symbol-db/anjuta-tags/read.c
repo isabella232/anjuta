@@ -554,15 +554,13 @@ long getInputFilePosition() {
  *  "location".
  */
 extern char *readSourceLine (
-		vString *const vLine, long location, long *const pSeekValue)
+		vString *const vLine, long location)
 {
 	fpos_t orignalPosition;
 	char *result;
 
 	fgetpos (File.fp, &orignalPosition);
 	fseek (File.fp, location, SEEK_SET);
-	if (pSeekValue != NULL)
-		*pSeekValue = ftell (File.fp);
 	result = readLine (vLine, File.fp);
 	if (result == NULL)
 		error (FATAL, "Unexpected end of file: %s", vStringValue (File.name));

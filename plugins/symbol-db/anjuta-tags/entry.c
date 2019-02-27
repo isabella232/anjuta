@@ -642,7 +642,7 @@ static size_t writeCompactSourceLine (FILE *const fp, const char *const line)
 static int writeXrefEntry (const tagEntryInfo *const tag)
 {
 	const char *const line =
-			readSourceLine (TagFile.vLine, tag->filePosition, NULL);
+			readSourceLine (TagFile.vLine, tag->filePosition);
 	int length;
 
 	if (Option.tagFileFormat == 1)
@@ -685,9 +685,8 @@ static int writeEtagsEntry (const tagEntryInfo *const tag)
 				tag->name, tag->lineNumber);
 	else
 	{
-		long seekValue;
 		char *const line =
-				readSourceLine (TagFile.vLine, tag->filePosition, &seekValue);
+				readSourceLine (TagFile.vLine, tag->filePosition);
 
 		if (tag->truncateLine)
 			truncateTagLine (line, tag->name, TRUE);
@@ -695,7 +694,7 @@ static int writeEtagsEntry (const tagEntryInfo *const tag)
 			line [strlen (line) - 1] = '\0';
 
 		length = fprintf (TagFile.etags.fp, "%s\177%s\001%lu,%ld\n", line,
-				tag->name, tag->lineNumber, seekValue);
+				tag->name, tag->lineNumber, tag->filePosition);
 	}
 	TagFile.etags.byteCount += length;
 
@@ -772,7 +771,7 @@ static int addExtensionFields (const tagEntryInfo *const tag)
 
 static int writePatternEntry (const tagEntryInfo *const tag)
 {
-	char *const line = readSourceLine (TagFile.vLine, tag->filePosition, NULL);
+	char *const line = readSourceLine (TagFile.vLine, tag->filePosition);
 	const int searchChar = Option.backward ? '?' : '/';
 	boolean newlineTerminated;
 	int length = 0;

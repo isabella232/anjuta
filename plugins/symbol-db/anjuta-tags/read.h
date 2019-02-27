@@ -108,7 +108,7 @@ extern int fileSkipToCharacter (int c);
 extern void fileUngetc (int c);
 extern const unsigned char *fileReadLine (void);
 extern char *readLine (vString *const vLine, FILE *const fp);
-extern char *readSourceLine (vString *const vLine, long location, long *const pSeekValue);
+extern char *readSourceLine (vString *const vLine, long location);
 extern long getInputFilePosition(void);
 
 #endif  /* _READ_H */
