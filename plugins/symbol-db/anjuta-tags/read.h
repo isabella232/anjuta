@@ -33,7 +33,6 @@
 */
 #define getInputLineNumber()     File.lineNumber
 #define getInputFileName()       vStringValue (File.source.name)
-#define getInputFilePosition()   File.filePosition
 #define getSourceFileName()      vStringValue (File.source.name)
 #define getSourceFileTagPath()   File.source.tagPath
 #define getSourceLanguage()      File.source.language
@@ -109,7 +108,8 @@ extern int fileSkipToCharacter (int c);
 extern void fileUngetc (int c);
 extern const unsigned char *fileReadLine (void);
 extern char *readLine (vString *const vLine, FILE *const fp);
-extern char *readSourceLine (vString *const vLine, fpos_t location, long *const pSeekValue);
+extern char *readSourceLine (vString *const vLine, long location, long *const pSeekValue);
+extern long getInputFilePosition(void);
 
 #endif  /* _READ_H */
 

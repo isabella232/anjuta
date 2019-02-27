@@ -34,5 +34,5 @@
  */
  
 
-void get_file_pos (gint line, fpos_t *fpos, FILE *f);
+void get_file_pos (gint line, long *fpos, FILE *f);
 

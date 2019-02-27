@@ -183,7 +183,7 @@ typedef struct sTokenInfo {
 	vString* string;
 	struct sTokenInfo *secondary;
 	unsigned long lineNumber;
-	fpos_t filePosition;
+	long filePosition;
 } tokenInfo;
 
 /*

@@ -540,17 +540,27 @@ extern char *readLine (vString *const vLine, FILE *const fp)
 	return result;
 }
 
+long getInputFilePosition() {
+    fpos_t originalPosition;
+    long ret;
+    fgetpos (File.fp, &originalPosition);
+    fsetpos (File.fp, &File.filePosition);
+    ret = ftell(File.fp);
+	fsetpos (File.fp, &originalPosition);
+    return ret;
+}
+
 /*  Places into the line buffer the contents of the line referenced by
  *  "location".
  */
 extern char *readSourceLine (
-		vString *const vLine, fpos_t location, long *const pSeekValue)
+		vString *const vLine, long location, long *const pSeekValue)
 {
 	fpos_t orignalPosition;
 	char *result;
 
 	fgetpos (File.fp, &orignalPosition);
-	fsetpos (File.fp, &location);
+	fseek (File.fp, location, SEEK_SET);
 	if (pSeekValue != NULL)
 		*pSeekValue = ftell (File.fp);
 	result = readLine (vLine, File.fp);

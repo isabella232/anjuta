@@ -166,7 +166,7 @@ typedef struct sTokenInfo {
 	vString *string;		/* the name of the token */
 	vString *scope;
 	unsigned long lineNumber;	/* line number of tag */
-	fpos_t filePosition;		/* file position of line containing name */
+	long filePosition;		/* file position of line containing name */
 } tokenInfo;
 
 /*

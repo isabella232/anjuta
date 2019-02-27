@@ -19,7 +19,7 @@
 #include "ctags-utils.h"
 
 void
-get_file_pos (gint line, fpos_t *fpos, FILE *f)
+get_file_pos (gint line, long *fpos, FILE *f)
 {
 	vString * str = vStringNew ();
 	gint i;
@@ -35,7 +35,8 @@ get_file_pos (gint line, fpos_t *fpos, FILE *f)
 	}
 
 	vStringDelete (str);
-	g_assert (fgetpos (f, fpos) == 0);
+	*fpos = ftell(f);
+	g_assert (*fpos != -1);
 }
 
 
