@@ -34,12 +34,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2017-09-28 11:14+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/anjuta/issues\n"
+"POT-Creation-Date: 2018-06-10 15:49+0000\n"
 "PO-Revision-Date: 2017-09-28 22:05+0200\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
-"Language-Team: <dansk@dansk-gruppen.dk>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2734,7 +2733,6 @@ msgstr "Hukommelse"
 msgid "Enter an address in hexadecimal or select one in the data"
 msgstr "Indtast en adresse i hexadecimal eller vælg en i dataene"
 
-# src/text_editor_menu.c:138 src/toolbar.c:1020, fuzzy
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:26
 msgid "Inspect"
 msgstr "Gennemse"
@@ -3589,37 +3587,39 @@ msgstr "Omdøb"
 msgid "Remove"
 msgstr "Fjern"
 
-#: ../plugins/document-manager/anjuta-docman.c:164
+#. Translator: the space at the beginning is here because this
+#. * string is concatenated with the file name.
+#: ../plugins/document-manager/anjuta-docman.c:166
 msgid " [read-only]"
 msgstr " [skrivebeskyttet]"
 
-#: ../plugins/document-manager/anjuta-docman.c:533
+#: ../plugins/document-manager/anjuta-docman.c:535
 #: ../plugins/document-manager/plugin.c:156
 msgid "Close Others"
 msgstr "Luk andre"
 
-#: ../plugins/document-manager/anjuta-docman.c:736
-#: ../plugins/document-manager/anjuta-docman.c:1156
+#: ../plugins/document-manager/anjuta-docman.c:738
+#: ../plugins/document-manager/anjuta-docman.c:1158
 msgid "Close file"
 msgstr "Luk fil"
 
-#: ../plugins/document-manager/anjuta-docman.c:773
+#: ../plugins/document-manager/anjuta-docman.c:775
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:9
 #: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "Sti:"
 
-#: ../plugins/document-manager/anjuta-docman.c:890
+#: ../plugins/document-manager/anjuta-docman.c:892
 #: ../plugins/file-loader/plugin.c:597 ../plugins/file-loader/plugin.c:887
 #: ../plugins/file-loader/plugin.c:897 ../plugins/file-loader/plugin.c:910
 msgid "Open file"
 msgstr "Åben fil"
 
-#: ../plugins/document-manager/anjuta-docman.c:909
+#: ../plugins/document-manager/anjuta-docman.c:911
 msgid "Save file as"
 msgstr "Gem fil som"
 
-#: ../plugins/document-manager/anjuta-docman.c:990
+#: ../plugins/document-manager/anjuta-docman.c:992
 #, c-format
 msgid ""
 "The file '%s' already exists.\n"
@@ -3628,11 +3628,11 @@ msgstr ""
 "Filen “%s” findes allerede.\n"
 "Vil du overskrive den med filen, du er ved at gemme?"
 
-#: ../plugins/document-manager/anjuta-docman.c:999
+#: ../plugins/document-manager/anjuta-docman.c:1001
 msgid "_Replace"
 msgstr "_Erstat"
 
-#: ../plugins/document-manager/anjuta-docman.c:1743
+#: ../plugins/document-manager/anjuta-docman.c:1745
 msgid "[read-only]"
 msgstr "[skrivebeskyttet]"
 
@@ -8290,6 +8290,10 @@ msgstr "Vælg en arbejdsmappe"
 msgid "Program directory '%s' is not local"
 msgstr "Programmappen “%s” er ikke lokal"
 
+#: ../plugins/run-program/org.gnome.anjuta.plugins.run.gschema.xml.in.h:1
+msgid "Command used for starting a terminal"
+msgstr "Kommando til at starte en terminal"
+
 #: ../plugins/run-program/parameters.c:180
 msgid "Load Target to run"
 msgstr "Indlæs mål for kørsel"
@@ -10384,9 +10388,6 @@ msgstr "Kun tekst"
 
 #~ msgid "Directory properties"
 #~ msgstr "Mappeegenskaber"
-
-#~ msgid "Command used for starting a terminal"
-#~ msgstr "Kommando til at starte en terminal"
 
 #~ msgid "Kick start _tutorial"
 #~ msgstr "Kickstart-_kursus"
