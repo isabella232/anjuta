@@ -10,7 +10,7 @@ SUBDIRS = \
 
 dist_doc_DATA = \
 	MAINTAINERS\
-	README\
+	README.md\
 	COPYING\
 	AUTHORS\
 	ChangeLog\
@@ -19,6 +19,9 @@ dist_doc_DATA = \
 	FUTURE\
 	ROADMAP\
 	THANKS
+
+README: README.md
+	cp $< $@
 
 ## Install it separately in datadir also because it is used in credits
 ## listing and packaging could compress the ones in docs dir.
