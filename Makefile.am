@@ -65,6 +65,7 @@ DISTCLEANFILES = \
 	intltool-extract \
 	intltool-merge \
 	intltool-update \
+	po/.intltool-merge-cache.lock \
 	$(gnomemenu_DATA)
 
 -include $(top_srcdir)/git.mk
