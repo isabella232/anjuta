@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of Anjuta.
-# Copyright (C) 2001-2015 Free Software Foundation, Inc.
+# Copyright (C) 2019 Free Software Foundation, Inc.
 # This file is distributed under the same license as the anjuta package.
 # Marcelo Elias Del Valle <marceloelias@iname.com>, 2002.
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2001, 2002, 2003.
@@ -15,25 +15,24 @@
 # Rodolfo RG <rodolforg@gmail.com>, 2011.
 # Djavan Fagundes <djavan@comum.org>, 2011.
 # Jonh Wendell <jwendell@gnome.org>, 2008, 2010, 2012.
-# Rafael Ferreira <rafael.f.f1@gmail.com>, 2012, 2013, 2014.
 # Enrico Nicoletto <liverig@gmail.com, 2013, 2014, 2015.
 # Felipe Braga <fbobraga@gmail.com>, 2015.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2017.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2012-2019.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Anjuta\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2017-09-28 11:14+0000\n"
-"PO-Revision-Date: 2017-09-28 20:23-0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/anjuta/issues\n"
+"POT-Creation-Date: 2019-09-08 19:48+0000\n"
+"PO-Revision-Date: 2019-09-12 20:32-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Virtaal 1.0.0-beta1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 3.32.0\n"
 "X-Project-Style: gnome\n"
 
 #: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
@@ -374,7 +373,7 @@ msgstr "Exibe um botão Adicionar"
 #.
 #: ../libanjuta/anjuta-launcher.c:675
 msgid "[Pp]assword.*:"
-msgstr "([Pp]assword.*:|[Ss]enha:)"
+msgstr "([Pp]assword.*:|[Ss]enha.*:)"
 
 #: ../libanjuta/anjuta-launcher.c:1167 ../plugins/gdb/utilities.c:282
 #, c-format
@@ -1607,10 +1606,10 @@ msgid ""
 "quoted command. You can use %% to get a \"%\" character. A typical value is "
 "\"sudo %s\" or \"su -c %q\"."
 msgstr ""
-"O comando deve conter “%s” ou “%q”. Eles serão substutuídos pelo comando "
+"O comando deve conter “%s” ou “%q”. Eles serão substituídos pelo comando "
 "usado para instalar os arquivos, por exemplo “make install”. %s será "
 "substituído pelo comando sem nenhuma mudança, enquanto %q será substituído "
-"pelo comando entre aspas. Você pode usar %% para obter o caracter %. Um "
+"pelo comando entre aspas. Você pode usar %% para obter o caractere %. Um "
 "valor comum seria “sudo %s” ou “su -c %q”."
 
 #. The translations should match that of 'make' program. Both strings uses
@@ -3597,37 +3596,39 @@ msgstr "Renomear"
 msgid "Remove"
 msgstr "Remover"
 
-#: ../plugins/document-manager/anjuta-docman.c:164
+#. Translator: the space at the beginning is here because this
+#. * string is concatenated with the file name.
+#: ../plugins/document-manager/anjuta-docman.c:166
 msgid " [read-only]"
 msgstr " [somente-leitura]"
 
-#: ../plugins/document-manager/anjuta-docman.c:533
+#: ../plugins/document-manager/anjuta-docman.c:535
 #: ../plugins/document-manager/plugin.c:156
 msgid "Close Others"
 msgstr "Fechar os outros"
 
-#: ../plugins/document-manager/anjuta-docman.c:736
-#: ../plugins/document-manager/anjuta-docman.c:1156
+#: ../plugins/document-manager/anjuta-docman.c:738
+#: ../plugins/document-manager/anjuta-docman.c:1158
 msgid "Close file"
 msgstr "Fechar arquivo"
 
-#: ../plugins/document-manager/anjuta-docman.c:773
+#: ../plugins/document-manager/anjuta-docman.c:775
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:9
 #: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "Caminho:"
 
-#: ../plugins/document-manager/anjuta-docman.c:890
+#: ../plugins/document-manager/anjuta-docman.c:892
 #: ../plugins/file-loader/plugin.c:597 ../plugins/file-loader/plugin.c:887
 #: ../plugins/file-loader/plugin.c:897 ../plugins/file-loader/plugin.c:910
 msgid "Open file"
 msgstr "Abre um arquivo"
 
-#: ../plugins/document-manager/anjuta-docman.c:909
+#: ../plugins/document-manager/anjuta-docman.c:911
 msgid "Save file as"
 msgstr "Salvar arquivo como"
 
-#: ../plugins/document-manager/anjuta-docman.c:990
+#: ../plugins/document-manager/anjuta-docman.c:992
 #, c-format
 msgid ""
 "The file '%s' already exists.\n"
@@ -3636,11 +3637,11 @@ msgstr ""
 "O arquivo \"%s\" já existe.\n"
 "Deseja sobrescrevê-lo?"
 
-#: ../plugins/document-manager/anjuta-docman.c:999
+#: ../plugins/document-manager/anjuta-docman.c:1001
 msgid "_Replace"
 msgstr "_Substituir"
 
-#: ../plugins/document-manager/anjuta-docman.c:1743
+#: ../plugins/document-manager/anjuta-docman.c:1745
 msgid "[read-only]"
 msgstr "[somente-leitura]"
 
@@ -5083,7 +5084,7 @@ msgstr "Mensagem de log:"
 
 #: ../plugins/git/anjuta-git.ui.h:18
 msgid "Amend the previous commit"
-msgstr "Fazer amend do commit anterior"
+msgstr "Emendar o commit anterior"
 
 #: ../plugins/git/anjuta-git.ui.h:19
 msgid "This commit concludes a failed merge (use -i)"
@@ -6035,11 +6036,11 @@ msgstr "Erro: não é possível realizar bind na porta"
 
 #: ../plugins/js-debugger/js_debugger.plugin.in.h:1
 msgid "Javascript Debugger"
-msgstr "Depurador para Javascript"
+msgstr "Depurador para JavaScript"
 
 #: ../plugins/js-debugger/js_debugger.plugin.in.h:2
 msgid "Javascript Debugger Plugin"
-msgstr "Plug-in de depuração para Javascript"
+msgstr "Plug-in de depuração para JavaScript"
 
 #: ../plugins/js-debugger/plugin.c:122
 #, c-format
@@ -6155,11 +6156,11 @@ msgstr "Dicas de funções"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:8
 msgid "Highlight missed semicolon"
-msgstr "Destaca os ponto-e-vírgulas faltantes"
+msgstr "Destaca os ponto e vírgulas faltantes"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:9
 msgid "Highlights"
-msgstr "Realçes"
+msgstr "Realces"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:10
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:8
@@ -7125,7 +7126,6 @@ msgid "Select a project type"
 msgstr "Escolha um tipo de projeto"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
-#| msgid "Select a project type"
 msgid "Select project"
 msgstr "Selecionar projeto"
 
@@ -8151,7 +8151,7 @@ msgstr "SDL"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:2
 msgid "A sample SDL project"
-msgstr "Um projeto SDL de examplo"
+msgstr "Um projeto SDL de exemplo"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:17
 msgid "Require SDL version:"
@@ -8223,7 +8223,7 @@ msgstr "Encaixe Xlib"
 
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:2
 msgid "A generic Xlib dock applet"
-msgstr "Um miniaplicatico genérico com Xlib para o encaixe (dock)"
+msgstr "Um miniaplicativo genérico com Xlib para o encaixe (dock)"
 
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:1
 msgid "Xlib"
@@ -8267,7 +8267,7 @@ msgstr "Executar programa"
 
 #: ../plugins/run-program/anjuta-run-program.plugin.in.h:2
 msgid "Allow to execute program without debugger."
-msgstr "Permite a execução do programa sem o debugger."
+msgstr "Permite a execução do programa sem o depurador."
 
 #: ../plugins/run-program/anjuta-run-program.ui.h:1
 msgid "Program Parameters"
@@ -8294,6 +8294,10 @@ msgstr "Escolha um diretório de trabalho"
 #, c-format
 msgid "Program directory '%s' is not local"
 msgstr "O diretório do programa “%s” não é local"
+
+#: ../plugins/run-program/org.gnome.anjuta.plugins.run.gschema.xml.in.h:1
+msgid "Command used for starting a terminal"
+msgstr "Comando usado para iniciar um terminal"
 
 #: ../plugins/run-program/parameters.c:180
 msgid "Load Target to run"
@@ -9150,7 +9154,7 @@ msgstr "_Ver log…"
 #. short-cut
 #: ../plugins/subversion/plugin.c:134 ../plugins/subversion/plugin.c:193
 msgid "View file history"
-msgstr "Vê histório do arquivo"
+msgstr "Vê histórico do arquivo"
 
 #. Action name
 #. Stock icon, if any
@@ -9268,7 +9272,7 @@ msgstr "Digite a revisão inicial."
 
 #: ../plugins/subversion/subversion-merge-dialog.c:136
 msgid "Please enter the end revision."
-msgstr "Digite a revisçao final."
+msgstr "Digite a revisão final."
 
 #: ../plugins/subversion/subversion-remove-dialog.c:39
 msgid "Subversion: File will be removed on next commit."
@@ -9781,7 +9785,7 @@ msgstr "URI raiz do projeto"
 
 #: ../plugins/tools/variable.c:87
 msgid "Project root path"
-msgstr "Caminho da raíz do projeto"
+msgstr "Caminho da raiz do projeto"
 
 #: ../plugins/tools/variable.c:89
 msgid "Selected URI in the file manager plugin"
@@ -9956,11 +9960,11 @@ msgstr "Manual do usuário do Anjuta"
 
 #: ../src/anjuta-actions.h:67
 msgid "_Frequently Asked Questions"
-msgstr "Perguntas _freqüentes"
+msgstr "Perguntas _frequentes"
 
 #: ../src/anjuta-actions.h:68
 msgid "Anjuta frequently asked questions"
-msgstr "Perguntas freqüentes do Anjuta"
+msgstr "Perguntas frequentes do Anjuta"
 
 #: ../src/anjuta-actions.h:71
 msgid "Anjuta _Home Page"
@@ -10412,9 +10416,6 @@ msgstr "Somente texto"
 
 #~ msgid "Directory properties"
 #~ msgstr "Propriedades do diretório"
-
-#~ msgid "Command used for starting a terminal"
-#~ msgstr "Comando usado para iniciar um terminal"
 
 #~ msgid "Kick start _tutorial"
 #~ msgstr "_Tutorial para início rápido"
