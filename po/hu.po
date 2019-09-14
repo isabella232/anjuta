@@ -1,20 +1,19 @@
-# Hungarian translation of anjuta.
-# Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012 Free Software Foundation, Inc.
+# Hungarian translation for anjuta.
+# Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2019 Free Software Foundation, Inc.
 # This file is distributed under the same license as the anjuta package.
 #
 # Andras Toth <toth_bandi at users.sourceforge dot net>, 2004.
 # Laszlo Dvornik <dvornik at gnome dot hu>, 2004.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014.
-# Balázs Úr <urbalazs at gmail dot com>, 2013, 2014, 2015.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2013, 2014, 2015, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2017-09-28 11:14+0000\n"
-"PO-Revision-Date: 2017-09-28 15:16+0200\n"
-"Last-Translator: Meskó Balázs <meskobalazs@fedoraproject.org>\n"
-"Language-Team: Hungarian <openscope at googlegroups dot com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/anjuta/issues\n"
+"POT-Creation-Date: 2019-09-13 00:01+0000\n"
+"PO-Revision-Date: 2019-09-14 18:05+0200\n"
+"Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
+"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3559,37 +3558,39 @@ msgstr "Átnevezés"
 msgid "Remove"
 msgstr "Eltávolítás"
 
-#: ../plugins/document-manager/anjuta-docman.c:164
+#. Translator: the space at the beginning is here because this
+#. * string is concatenated with the file name.
+#: ../plugins/document-manager/anjuta-docman.c:166
 msgid " [read-only]"
 msgstr " [csak olvasható]"
 
-#: ../plugins/document-manager/anjuta-docman.c:533
+#: ../plugins/document-manager/anjuta-docman.c:535
 #: ../plugins/document-manager/plugin.c:156
 msgid "Close Others"
 msgstr "Többi bezárása"
 
-#: ../plugins/document-manager/anjuta-docman.c:736
-#: ../plugins/document-manager/anjuta-docman.c:1156
+#: ../plugins/document-manager/anjuta-docman.c:738
+#: ../plugins/document-manager/anjuta-docman.c:1158
 msgid "Close file"
 msgstr "Fájl bezárása"
 
-#: ../plugins/document-manager/anjuta-docman.c:773
+#: ../plugins/document-manager/anjuta-docman.c:775
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:9
 #: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "Útvonal:"
 
-#: ../plugins/document-manager/anjuta-docman.c:890
+#: ../plugins/document-manager/anjuta-docman.c:892
 #: ../plugins/file-loader/plugin.c:597 ../plugins/file-loader/plugin.c:887
 #: ../plugins/file-loader/plugin.c:897 ../plugins/file-loader/plugin.c:910
 msgid "Open file"
 msgstr "Fájl megnyitása"
 
-#: ../plugins/document-manager/anjuta-docman.c:909
+#: ../plugins/document-manager/anjuta-docman.c:911
 msgid "Save file as"
 msgstr "Fájl mentése másként"
 
-#: ../plugins/document-manager/anjuta-docman.c:990
+#: ../plugins/document-manager/anjuta-docman.c:992
 #, c-format
 msgid ""
 "The file '%s' already exists.\n"
@@ -3598,11 +3599,11 @@ msgstr ""
 "A(z) „%s” fájl már létezik.\n"
 "Le akarja cserélni azzal, amit épp menteni készül?"
 
-#: ../plugins/document-manager/anjuta-docman.c:999
+#: ../plugins/document-manager/anjuta-docman.c:1001
 msgid "_Replace"
 msgstr "_Csere"
 
-#: ../plugins/document-manager/anjuta-docman.c:1743
+#: ../plugins/document-manager/anjuta-docman.c:1745
 msgid "[read-only]"
 msgstr "[csak olvasható]"
 
@@ -8250,6 +8251,10 @@ msgstr "Válasszon ki egy munkakönyvtárat"
 msgid "Program directory '%s' is not local"
 msgstr "A(z) „%s” programkönyvtár nem helyi"
 
+#: ../plugins/run-program/org.gnome.anjuta.plugins.run.gschema.xml.in.h:1
+msgid "Command used for starting a terminal"
+msgstr "Terminál indításához használt parancs"
+
 #: ../plugins/run-program/parameters.c:180
 msgid "Load Target to run"
 msgstr "Futtatandó cél betöltése"
@@ -10106,484 +10111,3 @@ msgstr "Csak ikonok"
 #: ../src/preferences.ui.h:19
 msgid "Text only"
 msgstr "Csak szöveg"
-
-#~ msgid "label"
-#~ msgstr "címke"
-
-#~ msgid "Error writing %s"
-#~ msgstr "Hiba %s írásakor"
-
-#~ msgid "_Save Message"
-#~ msgstr "Üzenet m_entése"
-
-#~ msgid "Save message"
-#~ msgstr "Üzenet mentése"
-
-#~ msgid "Import an existing project"
-#~ msgstr "Létező projekt importálása"
-
-#~ msgid "Recent projects:"
-#~ msgstr "Legutóbbi projektek:"
-
-#~ msgid "Tutorials"
-#~ msgstr "Ismertetők"
-
-#~ msgid "Anjuta Manual"
-#~ msgstr "Az Anjuta kézikönyve"
-
-#~ msgid "FAQ"
-#~ msgstr "GYIK"
-
-#~ msgid "Getting started:"
-#~ msgstr "Kezdeti lépések:"
-
-#~ msgid "Use currently selected profile in GNOME terminal"
-#~ msgstr "A jelenleg kiválasztott profil használata a GNOME terminállal"
-
-#~ msgid "Path: "
-#~ msgstr "Útvonal: "
-
-#~ msgid "profile file"
-#~ msgstr "profilfájl"
-
-#~ msgid "Group: %s\n"
-#~ msgstr "Csoport: %s\n"
-
-#~ msgid "Target: %s\n"
-#~ msgstr "Cél: %s\n"
-
-#~ msgid "Source: %s\n"
-#~ msgstr "Forrás: %s\n"
-
-#~ msgid "Shortcut: %s\n"
-#~ msgstr "Gyorsbillentyű: %s\n"
-
-#~ msgid "Module: %s\n"
-#~ msgstr "Modul: %s\n"
-
-#~ msgid "Package: %s\n"
-#~ msgstr "Csomag: %s\n"
-
-#~ msgid "Uncommitted Changes.diff"
-#~ msgstr "Nem véglegesített változtatások.diff"
-
-#~ msgid "Stash %i.diff"
-#~ msgstr "%i félretett változat.diff"
-
-#~ msgid "Diff uncommitted changes"
-#~ msgstr "Nem véglegesített változtatások diffelése"
-
-#~ msgid "Show a diff of uncommitted changes in an editor"
-#~ msgstr "Nem véglegesített változtatások megjelenítése szerkesztőben"
-
-#~ msgid "Diff selected stash"
-#~ msgstr "Kijelölt félretett változat diffelése"
-
-#~ msgid "Show a diff of the selected stash"
-#~ msgstr "A kijelölt félretett változat diffjének megjelenítése"
-
-#~ msgid "Profile Plugins"
-#~ msgstr "Profilbővítmények"
-
-#~ msgid "List of plugins for this profile"
-#~ msgstr "A profil bővítményeinek listája"
-
-#~ msgid "<b>Open With</b>"
-#~ msgstr "<b>Megnyitás ezzel</b>"
-
-#~ msgid "Drop or enter revision here"
-#~ msgstr "Ejtsen ide vagy írjon be egy revíziót"
-
-#~ msgid ""
-#~ "Whole project; Drop a file here or type a path to view a file or folder "
-#~ "log"
-#~ msgstr ""
-#~ "Teljes projekt; Ejtsen ide egy fájlt, vagy írjon be egy útvonalat fájl- "
-#~ "vagy mappanapló megjelenítéséhez"
-
-#~ msgid "Previous commit; Drop or enter a different revision here"
-#~ msgstr "Előző változat; ejtsen ide vagy írjon be másik revíziót"
-
-#~ msgid "Drop or type a revision here"
-#~ msgstr "Ejtsen ide vagy írjon be egy revíziót"
-
-#~ msgid "Select a build directory"
-#~ msgstr "Összeállítási könyvtár kiválasztása"
-
-#~ msgid "Unable to execute: %s."
-#~ msgstr "Nem hajtható végre: %s."
-
-#~ msgid "Contents"
-#~ msgstr "Tartalom"
-
-#~ msgid "Do not show tabs"
-#~ msgstr "Ne mutassa a lapokat"
-
-#~ msgid "Editor tabs"
-#~ msgstr "Szerkesztőlapok"
-
-#~ msgid "Base URI"
-#~ msgstr "Alap URI"
-
-#~ msgid "Refreshing symbol tree…"
-#~ msgstr "Szimbólumfa frissítése…"
-
-#~ msgid "Failed to refresh project: %s"
-#~ msgstr "A(z) %s projekt frissítése sikertelen"
-
-#~ msgid "New _Library…"
-#~ msgstr "Új pr_ogramkönyvtár…"
-
-#~ msgid "Add a new package to the project"
-#~ msgstr "Új csomag hozzáadása a projekthez"
-
-#~ msgid "New _Library"
-#~ msgstr "Új program_könyvtár"
-
-#~ msgid "Add a new library to the project"
-#~ msgstr "Új programkönyvtár hozzáadása a projekthez"
-
-#~ msgid "Failed to write autogen definition file"
-#~ msgstr "Nem sikerült az autogen meghatározási fájl írása"
-
-#~ msgid "CLang Paths"
-#~ msgstr "CLang útvonalak"
-
-#~ msgid "Enable CLang code analyzer"
-#~ msgstr "CLang kódelemző engedélyezése"
-
-#~ msgid ""
-#~ "The project needs to be reconfigured after enabling this option. Please "
-#~ "run Build->Configure!"
-#~ msgstr ""
-#~ "A projektet újra kell konfigurálni ezen lehetőség engedélyezése után. "
-#~ "Válassza ki az Összeállítás->Konfigurálás menüpontot!"
-
-#~ msgid "c++-analyzer:"
-#~ msgstr "c++-elemző:"
-
-#~ msgid "ccc-analyzer:"
-#~ msgstr "ccc-elemző:"
-
-#~ msgid "Analyze code with the clang-analyzer framework"
-#~ msgstr "Kód elemzése a clang elemző-keretrendszerrel"
-
-#~ msgid "Code Analyzer"
-#~ msgstr "Kódelemző"
-
-#~ msgid ""
-#~ "Couldn't find clang analyzer, please check if it is installed and if the "
-#~ "paths are configured correctly in the preferences"
-#~ msgstr ""
-#~ "A clang elemző nem található, ellenőrizze, hogy telepítve van-e, és hogy "
-#~ "az útvonalak a beállításokban megfelelőek."
-
-#~ msgid "CLang Analyzer"
-#~ msgstr "CLang elemző"
-
-#~ msgid "C/C++/Java/Vala"
-#~ msgstr "C/C++/Java/Vala"
-
-#~ msgid "Add brace after function call autocompletion"
-#~ msgstr "Zárójel hozzáadása függvényhívás automatikus kiegészítése után"
-
-#~ msgid "JS"
-#~ msgstr "JS"
-
-#~ msgid "Python support Plugin"
-#~ msgstr "Python támogatás bővítmény"
-
-#~ msgid "Python support plugin for code completion, auto indentation etc."
-#~ msgstr "Python bővítmény kódkiegészítéshez, automatikus behúzáshoz stb."
-
-#~ msgid "Anjuta IDE"
-#~ msgstr "Anjuta IDE"
-
-#~ msgid "Loaded:"
-#~ msgstr "Betöltve:"
-
-#~ msgid ""
-#~ "Unable to display help. Please make sure the Anjuta documentation package "
-#~ "is installed. It can be downloaded from http://anjuta.org."
-#~ msgstr ""
-#~ "Nem lehet megjeleníteni a súgót. Győződjön meg róla, hogy az Anjuta "
-#~ "dokumentációs csomag telepítve van. Ezt letöltheti a http://anjuta.org "
-#~ "címről."
-
-#~ msgid "Set current thread"
-#~ msgstr "Jelenlegi szál beállítása"
-
-#~ msgid "ID"
-#~ msgstr "Azonosító"
-
-#~ msgid "Thread operations"
-#~ msgstr "Szálműveletek"
-
-#~ msgid "_Code Fold Margin"
-#~ msgstr "_Kódblokkszegély"
-
-#~ msgid "Show/Hide code fold margin"
-#~ msgstr "Kódblokkszegély be/ki"
-
-#~ msgid "_Indentation Guides"
-#~ msgstr "_Bekezdésmutatók"
-
-#~ msgid "Show/Hide indentation guides"
-#~ msgstr "Bekezdésmutató megjelenítése/elrejtése"
-
-#~ msgid "Search for \"%s\" reached the end and wrapped around."
-#~ msgstr "„%s” keresése elérte a fájl végét, folytatva az elejétől."
-
-#~ msgid ""
-#~ "Search for \"%s\" reached the end and wrapped around but no new match was "
-#~ "found."
-#~ msgstr ""
-#~ "„%s” keresése elérte a fájl végét, folytatva az elejétől, de nincs új "
-#~ "találat."
-
-#~ msgid "Browse other nodes"
-#~ msgstr "Más csomópontok tallózása"
-
-#~ msgid "New Directory"
-#~ msgstr "Új könyvtár"
-
-#~ msgid "New _Directory"
-#~ msgstr "Új _könyvtár"
-
-#~ msgid "Directory properties"
-#~ msgstr "Könyvtár tulajdonságai"
-
-#~ msgid "Command used for starting a terminal"
-#~ msgstr "Terminál indításához használt parancs"
-
-#~ msgid "Kick start _tutorial"
-#~ msgstr "Rö_vid ismertető"
-
-#~ msgid "Anjuta Kick start tutorial"
-#~ msgstr "Rövid Anjuta ismertető"
-
-#~ msgid "_Advanced tutorial"
-#~ msgstr "_Részletes ismertető"
-
-#~ msgid "Anjuta advanced tutorial"
-#~ msgstr "Részletes Anjuta ismertető"
-
-#~ msgid "Info _Target Files"
-#~ msgstr "_Célfájlok információi"
-
-#~ msgid "Display information on the files the debugger is active with"
-#~ msgstr ""
-#~ "Információ megjelenítése azon fájlokról, melyekkel a hibakereső aktív"
-
-#~ msgid "Info _Program"
-#~ msgstr "Programi_nformációk"
-
-#~ msgid "Display information on the execution status of the program"
-#~ msgstr "Információk megjelenítése a program végrehajtásának állapotáról"
-
-#~ msgid "Info _Kernel User Struct"
-#~ msgstr "_Kernel felhasználói struktúra információi"
-
-#~ msgid "Display the contents of kernel 'struct user' for current child"
-#~ msgstr ""
-#~ "A jelenlegi gyermekhez tartozó kernel felhasználói struktúra tartalmának "
-#~ "megjelenítése"
-
-#~ msgid "Info _Global Variables"
-#~ msgstr "_Globális változók információi"
-
-#~ msgid "Display all global and static variables of the program"
-#~ msgstr "A program összes globális és statikus változójának megjelenítése"
-
-#~ msgid "Info _Current Frame"
-#~ msgstr "A jelenlegi ke_ret információi"
-
-#~ msgid "Display information about the current frame of execution"
-#~ msgstr "Információk megjelenítése a végrehajtás jelenlegi keretéről"
-
-#~ msgid "Info Function _Arguments"
-#~ msgstr "Függvény_paraméterek információi"
-
-#~ msgid "Display function arguments of the current frame"
-#~ msgstr "A jelenlegi fájl keret függvényparamétereinek megjelenítése"
-
-#~ msgid "X"
-#~ msgstr "X"
-
-#~ msgid "Y"
-#~ msgstr "Y"
-
-#~ msgid "Markup"
-#~ msgstr "Jelölés"
-
-#~ msgid "Marked up text to render"
-#~ msgstr "Megjelenítendő jelölt szöveg"
-
-#~ msgid "Font description as a string"
-#~ msgstr "Betűkészlet leírása szövegként"
-
-#~ msgid "Font description"
-#~ msgstr "Betűkészlet leírása"
-
-#~ msgid "Font description as a PangoFontDescription struct"
-#~ msgstr "Betűkészlet leírása PangoFontDescription struktúraként"
-
-#~ msgid "Font family"
-#~ msgstr "Betűkészlet-család"
-
-#~ msgid "Name of the font family, e.g. Sans, Helvetica, Times, Monospace"
-#~ msgstr ""
-#~ "A betűkészlet-család megnevezése, például Sans, Helvetica, Times, "
-#~ "Monospace"
-
-#~ msgid "Font style"
-#~ msgstr "Betűstílus"
-
-#~ msgid "Font variant"
-#~ msgstr "Betűváltozat"
-
-#~ msgid "Font weight"
-#~ msgstr "Betűvastagság"
-
-#~ msgid "Font stretch"
-#~ msgstr "Betűnyújtás"
-
-#~ msgid "Font size"
-#~ msgstr "Betűméret"
-
-#~ msgid "Font points"
-#~ msgstr "Betűpontok"
-
-#~ msgid "Font size in points"
-#~ msgstr "Betűméret pontokban"
-
-#~ msgid "Rise"
-#~ msgstr "Eltolás"
-
-#~ msgid ""
-#~ "Offset of text above the baseline (below the baseline if rise is negative)"
-#~ msgstr ""
-#~ "Szöveg eltolása az alapvonal fölé (ha az eltolás negatív, az alapvonal "
-#~ "alá)"
-
-#~ msgid "Strikethrough"
-#~ msgstr "Áthúzott"
-
-#~ msgid "Whether to strike through the text"
-#~ msgstr "Áthúzza-e a szöveget"
-
-#~ msgid "Underline"
-#~ msgstr "Aláhúzás"
-
-#~ msgid "Style of underline for this text"
-#~ msgstr "Ezen szöveg aláhúzásának stílusa"
-
-#~ msgid "Scale"
-#~ msgstr "Méretezés"
-
-#~ msgid "Size of font, relative to default size"
-#~ msgstr "Betűméret az alapértelmezetthez képest (relatív)"
-
-#~ msgid "Color"
-#~ msgstr "Szín"
-
-#~ msgid "Text color, as string"
-#~ msgstr "Szövegszín karakterláncként"
-
-#~ msgid "Text color, as a GdkColor"
-#~ msgstr "Szövegszín GdkColor-ként"
-
-#~ msgid "Text color, as an R/G/B/A combined integer"
-#~ msgstr "Szövegszín R/G/B/A kombinált egész számként"
-
-#~ msgid "Text width"
-#~ msgstr "Szöveg szélessége"
-
-#~ msgid "Width of the rendered text"
-#~ msgstr "A megjelenített szöveg szélessége"
-
-#~ msgid "Text height"
-#~ msgstr "Szöveg magassága"
-
-#~ msgid "Height of the rendered text"
-#~ msgstr "A megjelenített szöveg magassága"
-
-#~ msgid "Font family set"
-#~ msgstr "Betűcsalád beállítása"
-
-#~ msgid "Whether this tag affects the font family"
-#~ msgstr "Ez az elem befolyásolja-e a betűcsaládot"
-
-#~ msgid "Font style set"
-#~ msgstr "Betűstílus beállítása"
-
-#~ msgid "Whether this tag affects the font style"
-#~ msgstr "Ez az elem befolyásolja-e a betű stílusát"
-
-#~ msgid "Font variant set"
-#~ msgstr "Betűváltozat beállítása"
-
-#~ msgid "Whether this tag affects the font variant"
-#~ msgstr "Ez az elem befolyásolja-e a betű változatát"
-
-#~ msgid "Font weight set"
-#~ msgstr "Betű vastagságának beállítása"
-
-#~ msgid "Whether this tag affects the font weight"
-#~ msgstr "Ez az elem befolyásolja-e a betű vastagságát"
-
-#~ msgid "Font stretch set"
-#~ msgstr "Betűszélesség beállítása"
-
-#~ msgid "Whether this tag affects the font stretch"
-#~ msgstr "Ez az elem befolyásolja-e a betű szélességét"
-
-#~ msgid "Font size set"
-#~ msgstr "Betűméret beállítása"
-
-#~ msgid "Whether this tag affects the font size"
-#~ msgstr "Ez az elem befolyásolja-e a betű méretét"
-
-#~ msgid "Rise set"
-#~ msgstr "Elhelyezés beállítása"
-
-#~ msgid "Whether this tag affects the rise"
-#~ msgstr "Ez az elem befolyásolja-e a betű elhelyezését"
-
-#~ msgid "Strikethrough set"
-#~ msgstr "Áthúzás beállítása"
-
-#~ msgid "Whether this tag affects strikethrough"
-#~ msgstr "Ez az elem befolyásolja-e a betű áthúzását"
-
-#~ msgid "Underline set"
-#~ msgstr "Aláhúzás beállítása"
-
-#~ msgid "Whether this tag affects underlining"
-#~ msgstr "Ez az elem befolyásolja-e az aláhúzást"
-
-#~ msgid "Scale set"
-#~ msgstr "Méretezés beállítása"
-
-#~ msgid "Whether this tag affects font scaling"
-#~ msgstr "Az elem befolyásolja-e a betű méretezését"
-
-#~ msgid "Args: %s"
-#~ msgstr "Argumentumok: %s"
-
-#~ msgid "Inheritance Graph"
-#~ msgstr "Öröklődési grafikon"
-
-#~ msgid "Unable to build user interface for New File"
-#~ msgstr "Az Új fájl ablak felhasználói felülete nem állítható össze"
-
-#~ msgid "Unable to build project assistant user interface reading %s."
-#~ msgstr ""
-#~ "A projektvarázsló felhasználói felülete nem állítható össze a(z) %s "
-#~ "olvasásával."
-
-#~ msgid "A graph painter for the inheritance of the classes."
-#~ msgstr "Az osztályöröklődés grafikus megjelenítése"
-
-#~ msgid "Class Inheritance"
-#~ msgstr "Osztályöröklődés"
