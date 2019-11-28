@@ -1,21 +1,21 @@
 # Spanish translation for anjuta.
 # Copyright (C) 2018 anjuta's COPYRIGHT HOLDER
 # This file is distributed under the same license as the anjuta package.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2018.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2018-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
-"POT-Creation-Date: 2018-02-01 20:35+0000\n"
-"PO-Revision-Date: 2018-02-15 12:03+0100\n"
+"POT-Creation-Date: 2018-06-10 15:50+0000\n"
+"PO-Revision-Date: 2019-11-28 12:31+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: es <gnome-es-list@gnome.org>\n"
+"Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 3.34.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -117,6 +117,9 @@ msgid ""
 "product=anjuta\"> <application>Anjuta</application> bugzilla database</"
 "ulink>."
 msgstr ""
+"Informe de un error en la <ulink url=\"http://bugzilla.gnome.org/enter_bug."
+"cgi?product=anjuta\">base de datos del Bugzilla de <application>Anjuta</"
+"application></ulink>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:94
@@ -210,7 +213,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:140
 msgid "<parameter>-Idir <replaceable>dir</replaceable></parameter>"
-msgstr ""
+msgstr "<parameter>-Idir <replaceable>carpeta</replaceable></parameter>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:142
@@ -223,7 +226,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:148
 msgid "<parameter>-llib <replaceable>lib</replaceable></parameter>"
-msgstr ""
+msgstr "<parameter>-llib <replaceable>biblioteca</replaceable></parameter>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:150
@@ -244,7 +247,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: C/index.docbook:162
 msgid "<application>GCC</application> compilation stage"
-msgstr ""
+msgstr "Estado de compilación de <application>GCC</application>"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -354,7 +357,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: C/index.docbook:240
 msgid "A simple Makefile file"
-msgstr ""
+msgstr "Un ejemplo de archivo Makefile"
 
 #. (itstool) path: example/programlisting
 #: C/index.docbook:241
@@ -421,7 +424,7 @@ msgstr "<envar>CC</envar>"
 #. (itstool) path: listitem/para
 #: C/index.docbook:281
 msgid "Program for compiling C programs, default 'cc'"
-msgstr ""
+msgstr "Programa para compilar programas en C, el predeterminado es «cc»"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:284
@@ -431,7 +434,7 @@ msgstr "<envar>CXX</envar>"
 #. (itstool) path: listitem/para
 #: C/index.docbook:285
 msgid "Program for compiling C++ programs, default 'g++'"
-msgstr ""
+msgstr "Programa para compilar programas en C++, el predeterminado es «g++»"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:288
@@ -442,6 +445,7 @@ msgstr "<envar>CPP</envar>"
 #: C/index.docbook:289
 msgid "Program for running C preprocessor, default '$(CC) -E'"
 msgstr ""
+"Programa para ejecutar el preprocesador de C, el predeterminado es «$(CC) -E»"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:292
@@ -452,6 +456,7 @@ msgstr "<envar>FC</envar>"
 #: C/index.docbook:293
 msgid "Program for running Fortran compiler, default 'f77'"
 msgstr ""
+"Programa para ejecutar el compilador de Fortran, el predeterminado es «f77»"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:296
@@ -541,6 +546,10 @@ msgid ""
 "\t<replaceable>commands</replaceable>\n"
 "\t<replaceable>...</replaceable>"
 msgstr ""
+"\n"
+"<replaceable>objetivo</replaceable>: <replaceable>prerrequisitos</replaceable>\n"
+"\t<replaceable>commandos</replaceable>\n"
+"\t<replaceable>...</replaceable>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:335
@@ -824,7 +833,7 @@ msgstr "<parameter>--help</parameter>"
 #. (itstool) path: listitem/para
 #: C/index.docbook:510
 msgid "List all available options"
-msgstr ""
+msgstr "Listar todas las opciones disponibles"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:513
@@ -878,11 +887,13 @@ msgid ""
 "<userinput>make</userinput> or <userinput>make all</userinput> builds the "
 "program."
 msgstr ""
+"<userinput>make</userinput> o <userinput>make all</userinput> construyen el "
+"programa."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:542
 msgid "<userinput>make install</userinput> installs the program."
-msgstr ""
+msgstr "<userinput>make install</userinput> instala el programa."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:545
@@ -895,7 +906,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: C/index.docbook:553 C/index.docbook:1055 C/index.docbook:1583
 msgid "Using <application>Anjuta</application>"
-msgstr ""
+msgstr "Usar <application>Anjuta</application>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:554
@@ -916,7 +927,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: C/index.docbook:568
 msgid "Configure dialog"
-msgstr ""
+msgstr "Diálogo de configuración"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -1018,11 +1029,13 @@ msgid ""
 "<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Compile</guimenu></"
 "menuchoice>"
 msgstr ""
+"<menuchoice><guisubmenu>Construir</guisubmenu><guimenu>Compilar</guimenu></"
+"menuchoice>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:631
 msgid "make <replaceable>current_file</replaceable>"
-msgstr ""
+msgstr "make <replaceable>archivo_actual</replaceable>"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:634
@@ -1030,11 +1043,13 @@ msgid ""
 "<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Build</guimenu></"
 "menuchoice>"
 msgstr ""
+"<menuchoice><guisubmenu>Construir</guisubmenu><guimenu>Construir</guimenu></"
+"menuchoice>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:635
 msgid "cd <userinput>current_file_directory</userinput>; make"
-msgstr ""
+msgstr "cd <userinput>carpeta_archivo_actual</userinput>; make"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:638
@@ -1042,11 +1057,13 @@ msgid ""
 "<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Build Project</guimenu></"
 "menuchoice>"
 msgstr ""
+"<menuchoice><guisubmenu>Construir</guisubmenu><guimenu>Construir proyecto</"
+"guimenu></menuchoice>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:639
 msgid "cd <userinput>project_directory</userinput>; make"
-msgstr ""
+msgstr "cd <userinput>carpeta_proyecto</userinput>; make"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:642
@@ -1054,11 +1071,13 @@ msgid ""
 "<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Build Tarball</guimenu></"
 "menuchoice>"
 msgstr ""
+"<menuchoice><guisubmenu>Construir</guisubmenu><guimenu>Construir árbol</"
+"guimenu></menuchoice>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:643
 msgid "cd <userinput>project_directory</userinput>; make dist"
-msgstr ""
+msgstr "cd <userinput>carpeta_proyecto</userinput>; make dist"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:646
@@ -1066,11 +1085,13 @@ msgid ""
 "<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Install</guimenu></"
 "menuchoice>"
 msgstr ""
+"<menuchoice><guisubmenu>Construir</guisubmenu><guimenu>Instalar</guimenu></"
+"menuchoice>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:647
 msgid "cd <userinput>current_file_directory</userinput>; make install"
-msgstr ""
+msgstr "cd <userinput>carpeta_archivo_actual</userinput>; make install"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:650
@@ -1078,11 +1099,13 @@ msgid ""
 "<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Install Project</"
 "guimenu></menuchoice>"
 msgstr ""
+"<menuchoice><guisubmenu>Construir</guisubmenu><guimenu>Instalar proyecto</"
+"guimenu></menuchoice>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:651
 msgid "cd <userinput>project_directory</userinput>; make install"
-msgstr ""
+msgstr "cd <userinput>carpeta_proyecto</userinput>; make install"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:654
@@ -1090,11 +1113,13 @@ msgid ""
 "<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Clean</guimenu></"
 "menuchoice>"
 msgstr ""
+"<menuchoice><guisubmenu>Construir</guisubmenu><guimenu>Limpiar</guimenu></"
+"menuchoice>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:655
 msgid "cd <userinput>current_file_directory</userinput>; make clean"
-msgstr ""
+msgstr "cd <userinput>carpeta_archivo_actual</userinput>; make clean"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:658
@@ -1102,11 +1127,13 @@ msgid ""
 "<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Clean Project</guimenu></"
 "menuchoice>"
 msgstr ""
+"<menuchoice><guisubmenu>Construir</guisubmenu><guimenu>Limpiar proyecto</"
+"guimenu></menuchoice>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:659
 msgid "cd <userinput>project_directory</userinput>; make clean"
-msgstr ""
+msgstr "cd <userinput>carpeta_proyecto</userinput>; make clean"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:662
@@ -1114,11 +1141,13 @@ msgid ""
 "<menuchoice><guisubmenu>Build</guisubmenu><guimenu>Remove Configuration</"
 "guimenu></menuchoice>"
 msgstr ""
+"<menuchoice><guisubmenu>Construir</guisubmenu><guimenu>Eliminar "
+"configuración</guimenu></menuchoice>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:663
 msgid "cd <userinput>project_directory</userinput>; make distclean"
-msgstr ""
+msgstr "cd <userinput>carpeta_proyecto</userinput>; make distclean"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:666
@@ -1213,7 +1242,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: C/index.docbook:732
 msgid "<application>Autotools</application> process"
-msgstr ""
+msgstr "Proceso de <application>Autotools</application>"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -1239,7 +1268,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: C/index.docbook:744
 msgid "Write sources"
-msgstr ""
+msgstr "Escribir fuentes"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:747
@@ -1247,6 +1276,7 @@ msgid ""
 "Create an empty directory called <filename>tut_prog</filename> and enter in "
 "it."
 msgstr ""
+"Cree una carpeta nuva llamada <filename>tut_prog</filename> y entre en ella."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:750
@@ -1285,17 +1315,18 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: C/index.docbook:767
 msgid "Run <application>Autoconf</application>"
-msgstr ""
+msgstr "Ejecute <application>Autoconf</application>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:770
 msgid "Write the following in a file named <filename>configure.ac</filename>:"
 msgstr ""
+"Escriba lo siguiente en un archivo llamado <filename>configure.ac</filename>:"
 
 #. (itstool) path: example/title
 #: C/index.docbook:774
 msgid "minimal configure.ac:"
-msgstr ""
+msgstr "configure.ac mínimo:"
 
 #. (itstool) path: example/programlisting
 #: C/index.docbook:775
@@ -1370,7 +1401,7 @@ msgstr "AC_PROG_CC"
 #. (itstool) path: listitem/para
 #: C/index.docbook:821
 msgid "Determine the C compiler to use."
-msgstr ""
+msgstr "Determinar el compilador C que usar."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:827
@@ -1463,17 +1494,18 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: C/index.docbook:891
 msgid "Run <application>Automake</application>"
-msgstr ""
+msgstr "Ejecute <application>Automake</application>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:894
 msgid "Write the following in a file named <filename>Makefile.am</filename>:"
 msgstr ""
+"Escriba lo siguiente en un archivo llamado <filename>Makefile.am</filename>:"
 
 #. (itstool) path: example/title
 #: C/index.docbook:898
 msgid "minimal Makefile.am:"
-msgstr ""
+msgstr "Makefile.am mínimo:"
 
 #. (itstool) path: example/programlisting
 #: C/index.docbook:899
@@ -1759,7 +1791,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: C/index.docbook:1061
 msgid "Create a new project"
-msgstr ""
+msgstr "Crear un proyecto nuevo"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:1064
@@ -1778,7 +1810,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: C/index.docbook:1071
 msgid "Project selection page"
-msgstr ""
+msgstr "Página de selección del proyecto"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -1804,12 +1836,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:1085 C/index.docbook:1121
 msgid "Click on <guibutton>Forward</guibutton>."
-msgstr ""
+msgstr "Pulse en <guibutton>Siguiente</guibutton>."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:1087
 msgid "Project basic information page"
-msgstr ""
+msgstr "Página de información básica del proyecto"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -1836,12 +1868,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:1103
 msgid "Click on <guilabel>Forward</guilabel>."
-msgstr ""
+msgstr "Pulse en <guilabel>Atrás</guilabel>."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:1105
 msgid "Project options page"
-msgstr ""
+msgstr "Página de opciones del proyecto"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -1868,7 +1900,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: C/index.docbook:1123
 msgid "Project summary page"
-msgstr ""
+msgstr "Página de resumen del proyecto"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -1901,7 +1933,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: C/index.docbook:1141
 msgid "Project creation messages"
-msgstr ""
+msgstr "Mensajes de creación del proyecto"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -1929,12 +1961,12 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: C/index.docbook:1160
 msgid "Looking at configure.ac"
-msgstr ""
+msgstr "Buscar en configure.ac"
 
 #. (itstool) path: example/title
 #: C/index.docbook:1162
 msgid "<application>Anjuta</application> minimal configure.ac:"
-msgstr ""
+msgstr "configure.ac mínimo de <application>Anjuta</application>:"
 
 #. (itstool) path: example/programlisting
 #: C/index.docbook:1163
@@ -2025,12 +2057,12 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: C/index.docbook:1229
 msgid "Looking at Makefile.am"
-msgstr ""
+msgstr "Buscar en Makefile.am"
 
 #. (itstool) path: example/title
 #: C/index.docbook:1231
 msgid "<application>Anjuta</application> minimal Makefile.am:"
-msgstr ""
+msgstr "Makefile.am mínimo de <application>Anjuta</application>:"
 
 #. (itstool) path: example/programlisting
 #: C/index.docbook:1232
@@ -2162,7 +2194,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: C/index.docbook:1318 C/index.docbook:1595
 msgid "main.c using <application>libxml2</application>:"
-msgstr ""
+msgstr "main.c usando <application>libxml2</application>:"
 
 #. (itstool) path: example/programlisting
 #: C/index.docbook:1319 C/index.docbook:1596
@@ -2237,7 +2269,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:1360 C/index.docbook:1495
 msgid "Add the following line in <filename>configure.ac</filename>."
-msgstr ""
+msgstr "Añada la siguiente línea a <filename>configure.ac</filename>."
 
 #. (itstool) path: listitem/programlisting
 #: C/index.docbook:1361
@@ -2260,7 +2292,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:1372 C/index.docbook:1505 C/index.docbook:1532
 msgid "Add the following lines in <filename>Makefile.am</filename>."
-msgstr ""
+msgstr "Añada las siguientes líneas a <filename>Makefile.am</filename>."
 
 #. (itstool) path: listitem/programlisting
 #: C/index.docbook:1373
@@ -2680,7 +2712,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: C/index.docbook:1637
 msgid "Project package properties dialog"
-msgstr ""
+msgstr "Diálogo de propiedades del paquete del proyecto"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2734,7 +2766,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: C/index.docbook:1669
 msgid "Target properties dialog"
-msgstr ""
+msgstr "Diálogo de propiedades del objetivo"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2828,6 +2860,9 @@ msgid ""
 "<ulink url=\"http://seul.org/docs/autotut/\">here</ulink> are two other "
 "tutorials about <application>Autotools</application>."
 msgstr ""
+"<ulink url=\"http://www.lrde.epita.fr/~adl/autotools.html\">Aquí</ulink> y "
+"<ulink url=\"http://seul.org/docs/autotut/\">aquí</ulink> hay dos tutoriales "
+"sobre <application>Autotools</application>."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:1747
