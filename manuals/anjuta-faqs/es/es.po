@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
-"POT-Creation-Date: 2018-06-10 15:50+0000\n"
-"PO-Revision-Date: 2019-11-28 12:04+0100\n"
+"POT-Creation-Date: 2019-11-29 15:43+0000\n"
+"PO-Revision-Date: 2019-12-13 10:22+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -20,7 +20,7 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2018"
+msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2018, 2019"
 
 #. (itstool) path: info/desc
 #: C/index.page:6
@@ -95,6 +95,10 @@ msgid ""
 "window pane. Double clicking on an error should open the corresponding file, "
 "if necessary, and move the view to the right position."
 msgstr ""
+"Normalmente los errores reportados por el compilador se resaltan en el panel "
+"de mensajes de la ventana. Pulsar dos veces sobre un error debería abrir el "
+"archivo correspondiente, si es necesario, y mover la vista a la posición "
+"correcta."
 
 #. (itstool) path: note/p
 #: C/editor-goto-error.page:26
@@ -106,6 +110,12 @@ msgid ""
 "will not be translated but you should be able to jump to the faulty line as "
 "explained above."
 msgstr ""
+"Esto puede fallar si <app>Anjuta</app> no es capaz de analizar la salida del "
+"programa de construcción. Esto es muy habitual si la salida está traducida. "
+"Como solución alternativa puede desmarcar la opción <gui>Translate messages</"
+"gui> en las preferencias del complemento de construcción. Los errores y "
+"advertencias del compilador no se traducirán pero debería poder saltar a la "
+"línea errónea tal como se ha explicado anteriormente."
 
 #. (itstool) path: info/desc
 #: C/editor-maximize.page:8
@@ -123,6 +133,9 @@ msgid ""
 "Double click on the current tab to maximize the document window. Do the same "
 "again restore the previous state of all docked windows."
 msgstr ""
+"Pulse dos veces en la pestaña actual para maximizar la ventana del "
+"documento. Haga lo mismo otra vez para restaurar el estado de todas las "
+"ventanas ancladas."
 
 #. (itstool) path: page/title
 #: C/editor-scintilla.page:17
@@ -140,6 +153,12 @@ msgid ""
 "prompted to choose an editor and you can set it as the default editor for "
 "this project."
 msgstr ""
+"El <app href=\"http://www.scintilla.org\">editor Scintilla</app> está "
+"disponible en el paquete <sys>anjuta-extras</sys> que se puede o bien "
+"descargar de la <link href=\"http://projects.gnome.org/anjuta/downloads.html"
+"\">página web de Anjuta</link> o instalar desde el software de gestión de "
+"aplicaciones de su distribución. Una vez instalado se le pedirá que elija un "
+"editor y puede establecerlo como el predeterminado para este proyecto."
 
 #. (itstool) path: note/p
 #: C/editor-scintilla.page:25
@@ -197,6 +216,12 @@ msgid ""
 "<link href=\"https://mail.gnome.org/mailman/listinfo/anjuta-devel-list"
 "\">development mailing list</link> to discuss your ideas first."
 msgstr ""
+"<app>Anjuta</app> es software libre y abierto. Le animamos a que <link href="
+"\"https://live.gnome.org/Git/Developers\">baje el código fuente</link> y "
+"añada las funcionalidades que quiera. También puede <link xref=\"general-bugs"
+"\">enviar una petición de funcionalidad</link> o enviar un mensaje a la "
+"<link href=\"https://mail.gnome.org/mailman/listinfo/anjuta-devel-list"
+"\">lista de correo de desarrollo</link> para comentar primero sus ideas."
 
 #. (itstool) path: page/title
 #: C/general-name.page:26
@@ -231,6 +256,10 @@ msgid ""
 "never be. However, if you are interested, feel free to <link href=\"https://"
 "mail.gnome.org/mailman/listinfo/anjuta-list\">contact us</link>."
 msgstr ""
+"No hay una versión nativa para for Microsoft Windows y probablemente nunca "
+"la haya. Sin embargo, si está interesado, puede <link href=\"https://mail."
+"gnome.org/mailman/listinfo/anjuta-list\">contactar con nosotros</link> "
+"libremente."
 
 #. (itstool) path: info/desc
 #: C/project-existing.page:7
@@ -258,6 +287,9 @@ msgid ""
 "project formats, like Autotools or Makefile. On Linux, the most common "
 "format is Autotools."
 msgstr ""
+"<app>Anjuta</app> no tiene un formato de proyecto propio. Ya usa otros "
+"formatos existentes, como Autotools o Makefile. En Linuxm el formato más "
+"común es Autotools."
 
 #. (itstool) path: info/desc
 #: C/project-resource.page:7
@@ -279,3 +311,9 @@ msgid ""
 "this target (<guiseq><gui>Project</gui><gui>Add Source File...</gui></"
 "guiseq>)."
 msgstr ""
+"En un proyecto de autotools puede añadir una carpeta "
+"nueva(<guiseq><gui>Proyecto</gui><gui>Carpeta nueva...</gui></guiseq>). "
+"Dentro de la carpeta cree un objetivo de datos nuevo (<guiseq><gui>Proyecto</"
+"gui><gui>Nuevo objetivo...</gui></guiseq>) y añada los archivos "
+"correspondientes a los iconos a este objetivo (<guiseq><gui>Proyecto</"
+"gui><gui>Añadir archivo de fuentes...</gui></guiseq>)."
