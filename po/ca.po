@@ -362,7 +362,7 @@ msgstr "Mostra el botó d'afegir"
 #.
 #: ../libanjuta/anjuta-launcher.c:675
 msgid "[Pp]assword.*:"
-msgstr "[Cc]ontrasenya:"
+msgstr "[Cc]ontrasenya.*:"
 
 #: ../libanjuta/anjuta-launcher.c:1167 ../plugins/gdb/utilities.c:282
 #, c-format
@@ -1417,7 +1417,7 @@ msgstr "El nom del mòdul objectiu ha de ser de la forma «xxx.la»"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:1
 msgid "Automake Build"
-msgstr "Munta l'automake"
+msgstr "Munta amb l'automake"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:2
 msgid "Basic autotools build plugin."
@@ -9903,7 +9903,7 @@ msgstr "_Preferències"
 
 #: ../src/anjuta-actions.h:33
 msgid "Do you prefer coffee to tea? Check it out."
-msgstr "Preferiu cafè o té?"
+msgstr "Preferiu cafè o té? Descobreixi-ho."
 
 #: ../src/anjuta-actions.h:38
 msgid "_View"
@@ -9928,7 +9928,7 @@ msgstr "Commuta el mode a pantalla completa"
 
 #: ../src/anjuta-actions.h:51
 msgid "_Lock Dock Layout"
-msgstr "Bloca _la disposició"
+msgstr "B_loca la disposició acoblable"
 
 #: ../src/anjuta-actions.h:52
 msgid "Lock the current dock layout so that widgets cannot be moved"
