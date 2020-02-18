@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
-"POT-Creation-Date: 2020-01-01 09:44+0000\n"
-"PO-Revision-Date: 2020-02-13 15:29+0100\n"
+"POT-Creation-Date: 2020-02-13 14:34+0000\n"
+"PO-Revision-Date: 2020-02-18 13:18+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -135,6 +135,9 @@ msgid ""
 "Send a message to <application>Anjuta</application> developer mailing list "
 "<email>anjuta-devel@lists.sourceforge.net</email>"
 msgstr ""
+"Envíe un mensaje a la lista de correo de los desarrolladores de "
+"<application>Anjuta</application> <email>anjuta-devel@lists.sourceforge.net</"
+"email>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:98
@@ -152,6 +155,9 @@ msgid ""
 "on this tutorial or <application>Anjuta</application> in general, you can: "
 "<_:itemizedlist-1/>"
 msgstr ""
+"Si encuentra errores, necesita más explicaciones o tiene una idea para "
+"mejorar este manual o el propio <application>Anjuta</application> en "
+"general, puede: <_:itemizedlist-1/>"
 
 #. (itstool) path: chapter/title
 #: C/index.docbook:107
@@ -165,6 +171,10 @@ msgid ""
 "tool: the compiler. This order is important to understand how is it working "
 "because each tool adds a new layer on top of the previous ones."
 msgstr ""
+"Este capítulo explica cómo construir un programa empezando por la "
+"herramienta más básica: el compilador. Este orde es importante para entender "
+"cómo funciona, ya que cada herramienta añade una capa nueva sobre las "
+"anteriores."
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:114
@@ -177,6 +187,8 @@ msgid ""
 "Here is a typical command to generate an executable from C source files "
 "using <application>GCC</application>:"
 msgstr ""
+"Este es un comando habitual para generar un ejecutable desde archivos fuente "
+"en C usando <application>GCC</application>:"
 
 #. (itstool) path: sect1/screen
 #: C/index.docbook:119
@@ -195,6 +207,10 @@ msgid ""
 "files main.c and aux.c, and produce a binary called 'tut_prog' (this stands "
 "for 'tutorial program'). The various switches have the following meaning :"
 msgstr ""
+"Este comando indica a <application>GCC</application> que compile los archivo "
+"fuente main.c y aux.c, y que genere un binario llamado «tut_prog» (que "
+"significa 'tutorial program'). Las distintas opciones significan lo "
+"siguiente:"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:128
@@ -221,6 +237,8 @@ msgid ""
 "Warning all : print every warning. This switch is used by the C compiler "
 "only."
 msgstr ""
+"Advertir todo : mostrar todas las advertencias. Esta opción sólo usa el "
+"compilador de C."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:140
@@ -234,6 +252,9 @@ msgid ""
 "directory <replaceable>dir</replaceable>. This switch is used by the C "
 "preprocessor only."
 msgstr ""
+"Buscar archivos de cabecera incluidos (como en #include &lt;myheader.h&gt;) "
+"en la carpeta <replaceable>dir</replaceable>. Esto sólo lo usa el "
+"preprocesador de C."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:148
@@ -257,6 +278,10 @@ msgid ""
 "the needed arguments with some default one to do the four stages involved in "
 "the compilation."
 msgstr ""
+"De hecho, <application>GCC</application> no realiza la compilación como tal. "
+"Recoge todos los argumentos del usuario y llama a otros programas pasándoles "
+"los argumentos necesarios con algunas opciones predeterminadas para "
+"completar la cuatro fases involucradas en la compilación."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:162
@@ -294,6 +319,14 @@ msgid ""
 "later option is better as it allows to run the preprocessor with all default "
 "options."
 msgstr ""
+"Cada archivo fuente en C pasa por el preprocesador, llamado "
+"<application>cpp</application>. En esta fase se expanden todos los archivos "
+"y macros incluidas para preprocesar el código C. El archivo .i resultante se "
+"genera raramente pero puede ser interesante ver cómo se expanden las macros "
+"complejas. Puede hacer esto llamando a <application>cpp</application> "
+"directamente o usando la opción <userinput>-E</userinput> de "
+"<application>GCC</application>. La última opción es mejor  ya que permite "
+"ejecutar el preprocesador con todas las opciones predeterminadas."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:183
@@ -315,6 +348,17 @@ msgid ""
 "by running <application>GCC</application> with the <userinput>-S</userinput> "
 "switch."
 msgstr ""
+"En esta fase cada archivo se compila en código ensamblador. El compilador "
+"depende del lenguaje del archivo fuente, C en este caso. Es un programa "
+"complejo ya que no hay correspondencia uno a uno entre las instrucciones C y "
+"las de ensamblador. Por ejemplo solicitar el programa más rápido o más "
+"pequeño generará secuencias de instrucciones de ensamblador diferentes. El "
+"ensamblador es el lenguaje de su equipo, el mas habitual se llama x86. La "
+"salida es un archivo de fuentes en ensamblador legible, con extensión «.s». "
+"Al igual que salida del preprocesador, el código en ensamblador normalmente "
+"no se escribe en el disco duro. Puede detener la compilación en esta fase "
+"para verlo ejecutando <application>GCC</application> con la opción "
+"<userinput>-S</userinput>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:201
@@ -352,6 +396,9 @@ msgid ""
 "executable file. The result is a binary file in a format close to the object "
 "file, on Linux it is even the same format."
 msgstr ""
+"Esta fase se usa para combinar todos los archivos objeto y bibliotecas en un "
+"archivo ejecutable. El resultado es un archivo binario en un formato cercano "
+"al archivo objeto; en Linux es el mismo formato."
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:230
@@ -621,6 +668,7 @@ msgstr ""
 #: C/index.docbook:373
 msgid "Like for variables, several target names are commonly defined:"
 msgstr ""
+"Al igual que las variables, normalmente se definen varios nombres objetivo:"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:378
@@ -946,6 +994,8 @@ msgid ""
 "Now, we will see the <application>Anjuta</application> interface allowing "
 "you to run all these commands without using the command line."
 msgstr ""
+"Ahora verá que la interfaz de <application>Anjuta</application> le permite "
+"ejecutar todos estos comandos sin necesidad de usar la línea de comandos."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:560
@@ -955,6 +1005,10 @@ msgid ""
 "<menuchoice><guisubmenu>Build</guisubmenu> <guimenuitem>Configure Project..."
 "</guimenuitem></menuchoice>, to get the following dialog:"
 msgstr ""
+"Dado que <application>Anjuta</application> usa <application>Autotools</"
+"application>, el primer paso es similar, debe configurarlo. Seleccione "
+"<menuchoice><guisubmenu>Construir</guisubmenu> <guimenuitem>Configurar "
+"proyecto ...</guimenuitem></menuchoice>, para obtener el siguiente diálogo:"
 
 #. (itstool) path: figure/title
 #: C/index.docbook:568
@@ -982,6 +1036,9 @@ msgid ""
 "now as it is related to project creation (see in <xref linkend=\"create-"
 "autotools-generate\"/>)."
 msgstr ""
+"La casilla <guilabel>Regenerar proyecto</guilabel> no se explicará ahora ya "
+"que es relativa a la creación de proyectos (consulte la sección <xref "
+"linkend=\"create-autotools-generate\"/>)."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:581
@@ -1010,6 +1067,9 @@ msgid ""
 "The <guilabel>Build Directory</guilabel> field allow to select the directory "
 "used to build the project. It must be different for each configuration."
 msgstr ""
+"El campo <guilabel>Carpeta de construcción</guilabel> le permite seleccionar "
+"la carpeta usada para construir el proyecto. Debe ser diferente para cada "
+"configuración."
 
 #. (itstool) path: important/para
 #: C/index.docbook:599
@@ -1039,6 +1099,10 @@ msgid ""
 "application>. If the script runs without error, it will enable all other "
 "entries in the <guisubmenu>Build</guisubmenu> menu."
 msgstr ""
+"Al pulsar en <guibutton>Ejecutar</guibutton> se ejecutará el script de "
+"configuración. Toda la salida se mostrará en la vista de mensajes de "
+"<application>Anjuta</application>. Si el script se ejecuta sin errores se "
+"activará el resto de entradas en el menú <guisubmenu>Construir</guisubmenu>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:618
@@ -1205,6 +1269,10 @@ msgid ""
 "<guimenuitem>Preferences</guimenuitem><guimenuitem>Build autotools</"
 "guimenuitem> </menuchoice>."
 msgstr ""
+"Hay disponibles algunas opciones de construcción en la página de "
+"preferencias que puede seleccionar en <menuchoice><guisubmenu>Editar</"
+"guisubmenu> <guimenuitem>Preferencias</guimenuitem><guimenuitem>Construir "
+"autotools</guimenuitem> </menuchoice>."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:682
@@ -1237,6 +1305,9 @@ msgid ""
 "starts with <application>Autotools</application> before looking at "
 "<application>Anjuta</application>."
 msgstr ""
+"Este capítulo explica cómo crear un proyecto nuevo. Al igual que el "
+"anterior, empieza con <application>Autotools</application> antes de ver "
+"<application>Anjuta</application>."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:707
@@ -1270,6 +1341,10 @@ msgid ""
 "configure script will check all characteristics of the host system and "
 "generate the makefiles from Makefile.in templates."
 msgstr ""
+"<application>Autoconf</application> se usa para generar el script de "
+"configuración a partir de una plantilla llamada <filename>configure.ac</"
+"filename>. Este script comprobará todas las características del equipo "
+"anfitrión y generará los makefiles a partir de las plantillas Makefile.in."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:727
@@ -1306,6 +1381,8 @@ msgid ""
 "Now let's see a minimal example to start grasping the relationships between "
 "the various files."
 msgstr ""
+"Vea ahora un pequeño ejemplo para empezar a comprender las relaciones entre "
+"los distintos archivos."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:744
@@ -1412,6 +1489,12 @@ msgid ""
 "<application>Autoconf</application> will process this configure.in, the "
 "macros will be expanded and we will get a fresh huge configure script."
 msgstr ""
+"AC_INIT, AM_INIT_AUTOMAKE, etc... son macros de <application>M4</"
+"application>. <application>M4</application> es un software de expansión de "
+"macros usado por <application>Autotools</application>; no es necesario "
+"conocerlo. Cuando <application>Autoconf</application> procese el archivo "
+"configure.in, las macros se expandirá y obtendrá un script de configuración "
+"grande y actualizado."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:801
@@ -1424,6 +1507,8 @@ msgid ""
 "Is the first mandatory macro. We need to indicate the name of the project "
 "and its version."
 msgstr ""
+"Es la primera macro obligatoria. Es necesario indicar el nombre y la versión "
+"del proyecto."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:810 C/index.docbook:1194
@@ -1460,6 +1545,8 @@ msgid ""
 "Create each file by copying the corresponding template file (with .in "
 "extension) and substituting the output variable values."
 msgstr ""
+"Crea cada archivo copiando la plantilla correspondiente (con extensión .in) "
+"y sustituyendo los valores de la variable de salida."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:836 C/index.docbook:1218
@@ -1477,6 +1564,8 @@ msgid ""
 "The use of some macros has changed between different versions of "
 "<application>Autoconf</application>:"
 msgstr ""
+"El uso de algunas macros ha cambiado entre las diferentes versiones de "
+"<application>Autoconf</application>:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:848
@@ -1484,6 +1573,8 @@ msgid ""
 "The package name and version was defined as arguments of AM_INIT_AUTOMAKE "
 "instead of AC_INIT."
 msgstr ""
+"El nombre y la versión del paquete se definían como argumentos de "
+"AM_INIT_AUTOMAKE en lugar de AC_INIT."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:852
@@ -1491,6 +1582,8 @@ msgid ""
 "AC_OUTPUT was getting the list of generated files instead of using the "
 "additional macro AC_CONFIG_FILES."
 msgstr ""
+"AC_OUTPUT recibía la lista de archivos generados en lugar de usar la macro "
+"adicional AC_CONFIG_FILES."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:857
@@ -1514,6 +1607,13 @@ msgid ""
 "search by default in <application>Automake</application> macros and in a "
 "system path typically <filename>/usr/share/aclocal</filename>."
 msgstr ""
+"<application>aclocal</application> analiza <filename>configure.ac</filename> "
+"y crea un archivo <filename>aclocal.m4</filename> que contiene las macros "
+"mencionadas en <filename>configure.ac</filename>. <application>aclocal</"
+"application> es parte del paquete <application>Automake</application> y de "
+"manera predeterminada busca en las macros de <application>Automake</"
+"application> y en una ruta del sistema, normalmente <filename>/usr/share/"
+"aclocal</filename>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:876
@@ -1540,6 +1640,9 @@ msgid ""
 "cache</filename>. That is for <application>Autoconf</application> internal "
 "purposes. You do not need to care about it."
 msgstr ""
+"Actualmente tengo en mi sistema una carpeta adicional llamada "
+"<filename>autom4te.cache</filename>. Esto es para cuestiones internas de "
+"<application>Autoconf</application>. No debe tenerla en cuenta."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:891
@@ -1843,6 +1946,8 @@ msgid ""
 "Creating a project with <application>Anjuta</application> need just a few "
 "clicks but then we will take a look at the created files."
 msgstr ""
+"Crear un proyecto con <application>Anjuta</application> sólo necesita unas "
+"pocas pulsaciones del ratón y luego veremos los archivos creados."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:1061
@@ -1856,12 +1961,17 @@ msgid ""
 "guisubmenu> <guimenuitem>Project</guimenuitem></menuchoice>. The new project "
 "assistant appears."
 msgstr ""
+"Pulse en <menuchoice><guisubmenu>Archivo</guisubmenu><guisubmenu>Nuevo</"
+"guisubmenu> <guimenuitem>Proyecto</guimenuitem></menuchoice>. Aparece el "
+"asistente para un proyecto nuevo."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:1069
 msgid ""
 "Click on <guibutton>Forward</guibutton>. The project selection page appears:"
 msgstr ""
+"Pulse en <guibutton>Adelante</guibutton>. Aparecerá la página de selección "
+"de proyecto:"
 
 #. (itstool) path: figure/title
 #: C/index.docbook:1071
@@ -1922,6 +2032,9 @@ msgid ""
 "the project name should contains only alpha numeric characters or "
 "underscore. Fill the remaining field."
 msgstr ""
+"Cambie el <guilabel>Nombre del proyecto</guilabel> a <userinput>tutprog</"
+"userinput>, el nombre del proyecto sólo debe contener caracteres "
+"alfanuméricos o guiones bajos. Rellene el campo que falta."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:1103
@@ -2067,6 +2180,8 @@ msgid ""
 "It is still quite simple with a bit more macros. Let's look at all unknown "
 "ones:"
 msgstr ""
+"Todavía es muy sencillo con unas pocas más macros. Echemos un vistazo a las "
+"que no conocemos."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:1184
@@ -2080,6 +2195,9 @@ msgid ""
 "application>, the language used to write <filename>configure.ac</filename>. "
 "It is like '#' is scripts or '//' in C++."
 msgstr ""
+"No es una macro sólo un marcador para empezar un comentario en "
+"<application>M4</application>, el lenguaje usado para escribir "
+"<filename>configure.ac</filename>. Es como «#» en scripts o «//» in C++."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:1196
@@ -2087,6 +2205,8 @@ msgid ""
 "The AC_INIT macro uses the new form with package and version but "
 "AM_INIT_AUTOMAKE keeps the old one. It is not needed anymore."
 msgstr ""
+"La macro AC_INIT usa el nuevo formato con paquete y versión pero "
+"AM_INIT_AUTOMAKE mantiene el antiguo. Ya no se usa."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:1203
@@ -2251,6 +2371,8 @@ msgid ""
 "Open the old tutorial project and replace <filename>main.c</filename> by the "
 "following."
 msgstr ""
+"Abra el antiguo proyecto del tutorial y reemplace el <filename>main.c</"
+"filename> con lo siguiente."
 
 #. (itstool) path: example/title
 #: C/index.docbook:1318 C/index.docbook:1595
@@ -2371,6 +2493,8 @@ msgid ""
 "This will use the options found by <application>configure</application> when "
 "the macro PKG_CHECK_MODULES is executed for compiling your program."
 msgstr ""
+"Esto usará las opciones encontradas por <application>configure</application> "
+"cuando se ejecuta la macro PKG_CHECK_MODULES para compilar su programa."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:1381
@@ -2510,6 +2634,9 @@ msgid ""
 "<application>Automake</application> because the Makefile generated by it "
 "already contains some rules to do it."
 msgstr ""
+"No es necesario volver a ejecutar <application>Autoconf</application> o "
+"<application>Automake</application> ya que el Makefile ya contiene las "
+"reglas necesarias."
 
 #. (itstool) path: tip/para
 #: C/index.docbook:1450
@@ -2620,6 +2747,8 @@ msgid ""
 "That's all. You can run <userinput>make</userinput> again. The generated "
 "<filename>Makefile</filename> is almost the same."
 msgstr ""
+"Eso es todo. Puede ejecutar <userinput>make</userinput> otra vez. El "
+"<filename>Makefile</filename> generado es básicamente el mismo."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:1522
@@ -2660,6 +2789,8 @@ msgid ""
 "You can run <userinput>make</userinput> and it should work if you have the "
 "same system than me."
 msgstr ""
+"Puede ejecutar <userinput>make</userinput> y debería funcionar si tiene el "
+"mismo sistema que yo."
 
 #. (itstool) path: listitem/screen
 #: C/index.docbook:1544
@@ -2697,6 +2828,8 @@ msgid ""
 "It is not portable to various linuxes: perhaps on other distribution the "
 "include path is different."
 msgstr ""
+"No se puede portar a otras versiones de Linux: probablemente en otras "
+"distribuciones la ruta para incluirlo es diferente."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:1568
@@ -2704,6 +2837,8 @@ msgid ""
 "If the next versions of libxml have different paths, or different needed "
 "libraries, we will need to update the project."
 msgstr ""
+"Si la siguiente versión de libxml tiene rutas diferentes o necesita otras "
+"bibliotecas será necesario actualizar el proyecto."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:1572
@@ -2742,6 +2877,9 @@ msgid ""
 "application> project created in the previous chapter. Replace it with the "
 "following text:"
 msgstr ""
+"Abra el archivo <filename>main.c</filename> del proyecto creado con "
+"<application>Anjuta</application> en el capítulo anterior. Reemplácelo con "
+"el siguiente texto:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:1618
@@ -2757,6 +2895,8 @@ msgid ""
 "Click on <guibutton>Add module</guibutton> button and Enter a name in the "
 "<guilabel>Module/Package</guilabel> column, \"XML\" by example."
 msgstr ""
+"Pulse el botón <guibutton>Añadir módulo</guibutton> e introduzca un nombre "
+"en la columna <guilabel>Módulo/Paquete</guilabel>, «XML» por ejemplo."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:1627
@@ -2826,6 +2966,9 @@ msgid ""
 "XML module. This will modify the file <filename>Makefile.am</filename> to "
 "use the right library."
 msgstr ""
+"Este diálogo listará todos los módulos disponibles en su proyecto, "
+"simplemente marque el módulo XML. Esto modificará el archivo "
+"<filename>Makefile.am</filename> para que use la biblioteca correcta."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:1669
@@ -2853,6 +2996,10 @@ msgid ""
 "<menuchoice><guisubmenu>Build</guisubmenu> <guimenuitem>Build</guimenuitem></"
 "menuchoice> to rebuild your project."
 msgstr ""
+"Pulse el botón <guibutton>Cerrar</guibutton> y eso es todo. Puede "
+"seleccionar <menuchoice><guisubmenu>Construir</guisubmenu> "
+"<guimenuitem>Construir</guimenuitem></menuchoice> para volver a construir su "
+"proyecto."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:1687
@@ -2881,6 +3028,9 @@ msgid ""
 "<application>Autotools</application> in general and <application>Autoconf</"
 "application> and <application>Automake</application> in particular."
 msgstr ""
+"Aquí hay algunos enlaces a documentos de referencia para trabajar con "
+"<application>Autotools</application> en general e <application>Autoconf</"
+"application> e <application>Automake</application> en particular."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:1708
@@ -2899,6 +3049,14 @@ msgid ""
 "<ulink type=\"http\" url=\"http://www.gnu.org/software/m4/manual/m4.html\"> "
 "M4</ulink> manuals."
 msgstr ""
+"Para empezar puede consultar los manuales de <ulink type=\"http\" url="
+"\"http://www.gnu.org/software/autoconf/manual/autoconf.html\"> Autoconf</"
+"ulink>, <ulink type=\"http\" url=\"http://www.gnu.org/software/automake/"
+"manual/automake.html\"> Automake</ulink>, <ulink type=\"http\" url=\"http://"
+"www.gnu.org/software/libtool/manual/libtool.html\"> Libtool</ulink>, <ulink "
+"type=\"http\" url=\"http://www.gnu.org/software/make/manual/make.html\"> "
+"make</ulink> y <ulink type=\"http\" url=\"http://www.gnu.org/software/m4/"
+"manual/m4.html\"> M4</ulink>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:1728
@@ -2907,6 +3065,9 @@ msgid ""
 "autobook_toc.html\"> Autobook</ulink> explains in details how the "
 "<application>Autotools</application> work."
 msgstr ""
+"El <ulink type=\"http\" url=\"http://sources.redhat.com/autobook/autobook/"
+"autobook_toc.html\"> Autobook</ulink> explica detalladamente cómo funcionan "
+"las <application>Autotools</application>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:1733
