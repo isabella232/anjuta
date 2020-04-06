@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: anjuta IDE\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/anjuta/issues\n"
 "POT-Creation-Date: 2019-12-31 09:06+0000\n"
-"PO-Revision-Date: 2020-04-05 19:49+0300\n"
+"PO-Revision-Date: 2020-04-06 15:53+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -330,11 +330,11 @@ msgstr "Значення"
 
 #: ../libanjuta/anjuta-file-drop-entry.c:206
 msgid "Path that dropped files should be relative to"
-msgstr ""
+msgstr "Шлях має бути відносним у відношенні до"
 
 #: ../libanjuta/anjuta-file-list.c:104
 msgid "Drop a file or enter a path here"
-msgstr ""
+msgstr "Перетягніть файл або уведіть тут шлях"
 
 #: ../libanjuta/anjuta-file-list.c:277
 msgid "Select Files"
@@ -342,15 +342,15 @@ msgstr "Вибір файлів"
 
 #: ../libanjuta/anjuta-file-list.c:547
 msgid "Path that all files in the list should be relative to"
-msgstr ""
+msgstr "Шлях має бути відносним у відношенні до"
 
 #: ../libanjuta/anjuta-file-list.c:554
 msgid "Show Add button"
-msgstr ""
+msgstr "Показувати кнопку «Додати»"
 
 #: ../libanjuta/anjuta-file-list.c:555
 msgid "Display an Add button"
-msgstr ""
+msgstr "Показувати кнопку «Додати»"
 
 #.
 #. * Translators: This regex should match the password prompts of
@@ -366,7 +366,7 @@ msgstr "[Пп]ароль.*:"
 #: ../libanjuta/anjuta-launcher.c:1167 ../plugins/gdb/utilities.c:282
 #, c-format
 msgid "Cannot execute command: \"%s\""
-msgstr "Не вдалось виконати команду: \"%s\""
+msgstr "Не вдалось виконати команду: «%s»"
 
 #: ../libanjuta/anjuta-launcher.c:1168
 msgid "execvp failed"
@@ -383,7 +383,7 @@ msgstr "Оболонка Anjuta яка міститиме модуль"
 #: ../libanjuta/anjuta-plugin-manager.c:714
 #, c-format
 msgid "Plugin '%s' does not want to be deactivated"
-msgstr "Модуля '%s' не бажає припиняти роботу"
+msgstr "Додаток «%s» не бажає припиняти роботу"
 
 #: ../libanjuta/anjuta-plugin-manager.c:747
 #, c-format
@@ -415,7 +415,6 @@ msgid "Only show user activatable plugins"
 msgstr "Показувати лише доповнення, що активуються користувачем"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1195
-#, fuzzy
 #| msgid ""
 #| "These are the plugins selected by you when Anjuta prompted to choose one "
 #| "of many suitable plugins. Removing the preferred plugin will let Anjuta "
@@ -425,9 +424,8 @@ msgid ""
 "one of many suitable plugins. Removing the preferred plugin will let you "
 "choose a different plugin."
 msgstr ""
-"Тут вказані модулі, вказані вами як улюблені, коли вам пропонувався на вибір "
-"один з модулів. Якщо ви вилучите модуль зі списку, Anjuta запропонує знову "
-"обрати інший модуль."
+"Ви вибрали ці додатки, коли було запропоновано вибрати один з декількох "
+"відповідних. Вилучення додатка дозволить вибрати інший втулок."
 
 #: ../libanjuta/anjuta-plugin-manager.c:1221
 msgid "Forget selected plugin"
@@ -450,9 +448,8 @@ msgid "No plugin is able to load other plugins in %s"
 msgstr "Немає доповнення, здатного завантажити інше доповнення у %s"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1516
-#, fuzzy
 msgid "<b>Please select a plugin to activate</b>"
-msgstr "Виберіть модуль, який треба активувати"
+msgstr "<b>Будь ласка, виберіть модуль для активації</b>"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2042
 msgid "Remember this selection"
@@ -550,24 +547,22 @@ msgid ""
 "Failed to read '%s': XML parse error. Invalid or corrupted Anjuta plugins "
 "profile."
 msgstr ""
-"Не вдалось прочитати '%s': помилка розбору XML. Неправильний або зіпсований "
+"Не вдалось прочитати «%s»: помилка розбору XML. Неправильний або зіпсований "
 "профіль доповнень Anjuta."
 
 #. <Pluginname>: Install it from <some location on the web>
 #: ../libanjuta/anjuta-profile.c:956
 #, c-format
 msgid "%s: Install it from '%s'\n"
-msgstr "%s: Встановити з '%s'\n"
+msgstr "%s: Встановити з «%s»\n"
 
 #: ../libanjuta/anjuta-profile.c:964
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Failed to read '%s': Following mandatory plugins are missing:\n"
 #| "%s"
 msgid "Failed to read '%s': Following mandatory plugins are missing"
-msgstr ""
-"Не вдалось прочитати '%s': Відсутні наступні необхідні доповнення:\n"
-"%s"
+msgstr "Не вдалось прочитати «%s»: Відсутні наступні необхідні доповнення:"
 
 #: ../libanjuta/anjuta-save-prompt.c:157
 msgid "Select the items to save:"
@@ -592,23 +587,25 @@ msgid "_Discard changes"
 msgstr "_Відхилити зміни"
 
 #: ../libanjuta/anjuta-save-prompt.c:296
-#, fuzzy, c-format
+#, c-format
 msgid "There is %d item with unsaved changes. Save changes before closing?"
 msgid_plural ""
 "There are %d items with unsaved changes. Save changes before closing?"
-msgstr[0] "Не всі зміни збережено. Зберегти зміни перед закриттям?"
-msgstr[1] "Не всі зміни збережено. Зберегти зміни перед закриттям?"
-msgstr[2] "Не всі зміни збережено. Зберегти зміни перед закриттям?"
+msgstr[0] ""
+"Є %d елемент з незбереженими змінами. Зберегти зміни перед закриттям?"
+msgstr[1] ""
+"Є %d елементи з незбереженими змінами. Зберегти зміни перед закриттям?"
+msgstr[2] ""
+"Є %d елементів з незбереженими змінами. Зберегти зміни перед закриттям?"
 
 #: ../libanjuta/anjuta-save-prompt.c:305
 msgid "There is an item with unsaved changes. Save changes before closing?"
 msgstr "Не всі зміни збережено. Зберегти зміни перед закриттям?"
 
 #: ../libanjuta/anjuta-tree-combo.c:1090
-#, fuzzy
 #| msgid "Invalid entry"
 msgid "<Invalid>"
-msgstr "Некоректний елемент"
+msgstr "<Некоректний>"
 
 #: ../libanjuta/anjuta-tree-combo.c:1205
 msgid "ComboBox model"
@@ -750,21 +747,20 @@ msgid "Could not find application pixmap file: %s"
 msgstr "Не вдалось знайти файл зображення: %s"
 
 #: ../libanjuta/resources.c:277
-#, fuzzy, c-format
+#, c-format
 #| msgid "Cannot execute command: \"%s\""
 msgid "Cannot execute command \"%s\": %s"
-msgstr "Не вдалось виконати команду: \"%s\""
+msgstr "Не вдалося виконати команду «%s»: %s"
 
 #: ../plugins/am-project/amp-group.c:627
 msgid "Please specify group name"
 msgstr "Введіть назву групи"
 
 #: ../plugins/am-project/amp-group.c:641
-#, fuzzy
 msgid ""
 "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~/\" characters"
 msgstr ""
-"Назва групи може складатися лише з літер, цифр, символів «_», «-» або «.»"
+"Назва групи може містити лише літери, цифри та символи «#$:%+,-.=@^_`~/»"
 
 #: ../plugins/am-project/amp-group.c:665
 #: ../plugins/am-project/am-project.c:1686
@@ -859,19 +855,18 @@ msgid "Unable to parse project file"
 msgstr "Не вдалося обробити файл проєкту"
 
 #: ../plugins/am-project/am-project.c:1727
-#, fuzzy, c-format
+#, c-format
 #| msgid "Project doesn't exist or invalid path"
 msgid "Project doesn't exist or has an invalid path"
-msgstr "Проєкт не існує або шлях неправильний"
+msgstr "Проєкту не існує або шлях до проєкту невірний"
 
 #: ../plugins/am-project/am-project.plugin.in.h:1
 msgid "Autotools backend"
 msgstr "Модуль Autotools"
 
 #: ../plugins/am-project/am-project.plugin.in.h:2
-#, fuzzy
 msgid "New Autotools backend for project manager"
-msgstr "Модуль Autotools для менеджера проєктів"
+msgstr "Новий рушій Autotools для менеджера проєктів"
 
 #: ../plugins/am-project/am-properties.c:49
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:5
@@ -883,7 +878,7 @@ msgstr "Назва:"
 
 #: ../plugins/am-project/am-properties.c:52
 msgid "Project name, it can contain spaces by example 'GNU Autoconf'"
-msgstr ""
+msgstr "Назва проєкту. Може містити пробіли (наприклад, GNU Autoconf)"
 
 #: ../plugins/am-project/am-properties.c:58
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:9
@@ -911,17 +906,19 @@ msgstr "Версія:"
 #: ../plugins/am-project/am-properties.c:61
 msgid ""
 "Project version, typically a few numbers separated by dot by example '1.0.0'"
-msgstr ""
+msgstr "Версія проєкту. Декілька чисел, розділених крапкою (наприклад, 1.0.0)"
 
 #: ../plugins/am-project/am-properties.c:67
 msgid "Bug report URL:"
-msgstr ""
+msgstr "Адреса для звітування про вади:"
 
 #: ../plugins/am-project/am-properties.c:70
 msgid ""
 "An email address or a link to a web page where the user can report bug. It "
 "is optional."
 msgstr ""
+"Адреса ел. пошти або посилання на веб-сторінку, на якій користувач може "
+"повідомити про помилку. Є необов'язковими."
 
 #: ../plugins/am-project/am-properties.c:76
 msgid "Package name:"
@@ -932,6 +929,8 @@ msgid ""
 "Package name, it can contains only alphanumerics and underscore characters."
 "It is generated from the project name if not provided."
 msgstr ""
+"Назва пакунку. Може містити цифри, літери і символи підкреслювання. Якщо "
+"назви пакунку не вказано, то вона створюється на підставі назви проєкту."
 
 #: ../plugins/am-project/am-properties.c:86 ../plugins/git/anjuta-git.ui.h:10
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:20
@@ -940,17 +939,18 @@ msgstr "URL:"
 
 #: ../plugins/am-project/am-properties.c:89
 msgid "An link to the project web page if provided."
-msgstr ""
+msgstr "Посилання на веб-сторінку проєкту (якщо є)."
 
 #: ../plugins/am-project/am-properties.c:95
 msgid "Libtool support:"
-msgstr ""
+msgstr "Підтримка Libtool:"
 
 #: ../plugins/am-project/am-properties.c:98
-#, fuzzy
 #| msgid "Adds support for building shared libraries in your project"
 msgid "Add support to compile shared and static libraries with Libtool."
-msgstr "Додати можливість збирання спільних бібліотек"
+msgstr ""
+"Додати підтримку компілювання розділюваних та статичних бібліотек за "
+"допомогою Libtool."
 
 #: ../plugins/am-project/am-properties.c:104
 #: ../plugins/am-project/am-properties.c:211
@@ -964,7 +964,7 @@ msgstr "Ключі компонувальника:"
 #: ../plugins/am-project/am-properties.c:107
 #: ../plugins/am-project/am-properties.c:214
 msgid "Common additional linker flags for all targets in this group."
-msgstr ""
+msgstr "Додаткові ключі компонувальника для усіх цілей з цієї групи."
 
 #: ../plugins/am-project/am-properties.c:113
 #: ../plugins/am-project/am-properties.c:220
@@ -978,7 +978,7 @@ msgstr "Ключі препроцесора C:"
 #: ../plugins/am-project/am-properties.c:116
 #: ../plugins/am-project/am-properties.c:223
 msgid "Common additional C preprocessor flags for all targets in this group."
-msgstr ""
+msgstr "Додаткові ключі препроцесора мови C для усіх цілей із цієї групи."
 
 #: ../plugins/am-project/am-properties.c:122
 #: ../plugins/am-project/am-properties.c:229
@@ -992,7 +992,7 @@ msgstr "Ключі компілятора C:"
 #: ../plugins/am-project/am-properties.c:125
 #: ../plugins/am-project/am-properties.c:232
 msgid "Common additional C compiler flags for all targets in this group."
-msgstr ""
+msgstr "Додаткові ключі компілювальника мови C для усіх цілей з цієї групи."
 
 #: ../plugins/am-project/am-properties.c:131
 #: ../plugins/am-project/am-properties.c:238
@@ -1006,7 +1006,7 @@ msgstr "Ключі компілятора C++:"
 #: ../plugins/am-project/am-properties.c:134
 #: ../plugins/am-project/am-properties.c:241
 msgid "Common additional C++ compiler flags for all targets in this group."
-msgstr ""
+msgstr "Додаткові ключі компілювальника мови C++ для усіх цілей з цієї групи."
 
 #: ../plugins/am-project/am-properties.c:140
 #: ../plugins/am-project/am-properties.c:247
@@ -1020,7 +1020,7 @@ msgstr "Ключі компілятора Java:"
 #: ../plugins/am-project/am-properties.c:143
 #: ../plugins/am-project/am-properties.c:250
 msgid "Common additional Java compiler flags for all targets in this group."
-msgstr ""
+msgstr "Додаткові ключі компілювальника мови Java для усіх цілей з цієї групи."
 
 #: ../plugins/am-project/am-properties.c:149
 #: ../plugins/am-project/am-properties.c:256
@@ -1034,7 +1034,7 @@ msgstr "Ключі компілятора Vala:"
 #: ../plugins/am-project/am-properties.c:152
 #: ../plugins/am-project/am-properties.c:259
 msgid "Common additional Vala compiler flags for all targets in this group."
-msgstr ""
+msgstr "Додаткові ключі компілювальника мови Vala для усіх цілей з цієї групи."
 
 #: ../plugins/am-project/am-properties.c:158
 #: ../plugins/am-project/am-properties.c:265
@@ -1049,6 +1049,7 @@ msgstr "Ключі компілятора Fortran:"
 #: ../plugins/am-project/am-properties.c:268
 msgid "Common additional Fortran compiler flags for all targets in this group."
 msgstr ""
+"Додаткові ключі компілювальника мови Fortran для усіх цілей з цієї групи."
 
 #: ../plugins/am-project/am-properties.c:167
 #: ../plugins/am-project/am-properties.c:274
@@ -1064,6 +1065,7 @@ msgstr "Ключі компілятора Objective C:"
 msgid ""
 "Common additional Objective C compiler flags for all targets in this group."
 msgstr ""
+"Додаткові ключі компілювальника мови Objective C для усіх цілей з цієї групи."
 
 #: ../plugins/am-project/am-properties.c:176
 #: ../plugins/am-project/am-properties.c:283
@@ -1080,6 +1082,8 @@ msgid ""
 "Common additional Lex or Flex lexical analyser generator flags for all "
 "targets in this group."
 msgstr ""
+"Додаткові ключі лексичного аналізатора Lex або Flex для усіх цілей з цієї "
+"групи."
 
 #: ../plugins/am-project/am-properties.c:185
 #: ../plugins/am-project/am-properties.c:292
@@ -1095,7 +1099,7 @@ msgstr "Ключі Yacc/Bison:"
 msgid ""
 "Common additional Yacc or Bison parser generator flags for all targets in "
 "this group."
-msgstr ""
+msgstr "Додаткові ключі Yacc або Bison для усіх цілей з цієї групи."
 
 #: ../plugins/am-project/am-properties.c:194
 #: ../plugins/am-project/am-properties.c:301
@@ -1106,6 +1110,8 @@ msgstr "Каталоги встановлення:"
 #: ../plugins/am-project/am-properties.c:304
 msgid "List of custom installation directories used by targets in this group."
 msgstr ""
+"Перелік додаткових встановлювальних каталогів, що використовуються цілями з "
+"цієї групи."
 
 #: ../plugins/am-project/am-properties.c:317
 #: ../plugins/am-project/am-properties.c:501
@@ -1123,7 +1129,7 @@ msgstr "Не встановлювати:"
 #: ../plugins/am-project/am-properties.c:1065
 #: ../plugins/am-project/am-properties.c:1141
 msgid "Build but do not install the target."
-msgstr ""
+msgstr "Зібрати ціль, але не встановлювати."
 
 #: ../plugins/am-project/am-properties.c:327
 #: ../plugins/am-project/am-properties.c:511
@@ -1144,13 +1150,15 @@ msgid ""
 "It has to be a standard directory or a custom one defined in group "
 "properties."
 msgstr ""
+"Має бути стандартним каталогом або каталогом, визначеним у властивостях "
+"групи."
 
 #: ../plugins/am-project/am-properties.c:339
 #: ../plugins/am-project/am-properties.c:523
 #: ../plugins/am-project/am-properties.c:698
 #: ../plugins/am-project/am-properties.c:873
 msgid "Additional linker flags for this target."
-msgstr ""
+msgstr "Додаткові ключі компонувальника для цієї цілі."
 
 #: ../plugins/am-project/am-properties.c:345
 msgid "Additional libraries:"
@@ -1161,68 +1169,64 @@ msgstr "Додаткові бібліотеки:"
 #: ../plugins/am-project/am-properties.c:707
 #: ../plugins/am-project/am-properties.c:883
 msgid "Additional libraries for this target."
-msgstr ""
+msgstr "Додаткові бібліотеки для цієї цілі."
 
 #: ../plugins/am-project/am-properties.c:354
 msgid "Additional objects:"
 msgstr "Додаткові об'єкти:"
 
 #: ../plugins/am-project/am-properties.c:357
-#, fuzzy
 msgid "Additional object files for this target."
-msgstr "Немає властивостей доступних для цієї цілі"
+msgstr "Додаткові об'єктні файли для цієї цілі."
 
 #: ../plugins/am-project/am-properties.c:366
 #: ../plugins/am-project/am-properties.c:541
 #: ../plugins/am-project/am-properties.c:716
 #: ../plugins/am-project/am-properties.c:892
-#, fuzzy
 msgid "Additional C preprocessor flags for this target."
-msgstr "Немає властивостей доступних для цієї цілі"
+msgstr "Додаткові ключі препроцесора мови C для цієї цілі."
 
 #: ../plugins/am-project/am-properties.c:375
 #: ../plugins/am-project/am-properties.c:550
 #: ../plugins/am-project/am-properties.c:725
 #: ../plugins/am-project/am-properties.c:901
-#, fuzzy
 msgid "Additional C compiler flags for this target."
-msgstr "Немає властивостей доступних для цієї цілі"
+msgstr "Додаткові ключі компілювальника мови C для цієї цілі."
 
 #: ../plugins/am-project/am-properties.c:384
 #: ../plugins/am-project/am-properties.c:559
 #: ../plugins/am-project/am-properties.c:734
 #: ../plugins/am-project/am-properties.c:910
 msgid "Additional C++ compiler flags for this target."
-msgstr ""
+msgstr "Додаткові ключі компілятора C++ для цієї цілі."
 
 #: ../plugins/am-project/am-properties.c:393
 #: ../plugins/am-project/am-properties.c:568
 #: ../plugins/am-project/am-properties.c:743
 #: ../plugins/am-project/am-properties.c:919
 msgid "Additional Java compiler flags for this target."
-msgstr ""
+msgstr "Додаткові ключі компілятора Java для цієї цілі."
 
 #: ../plugins/am-project/am-properties.c:402
 #: ../plugins/am-project/am-properties.c:577
 #: ../plugins/am-project/am-properties.c:752
 #: ../plugins/am-project/am-properties.c:928
 msgid "Additional Vala compiler flags for this target."
-msgstr ""
+msgstr "Додаткові прапорці компілятора Vala для цієї цілі."
 
 #: ../plugins/am-project/am-properties.c:411
 #: ../plugins/am-project/am-properties.c:586
 #: ../plugins/am-project/am-properties.c:761
 #: ../plugins/am-project/am-properties.c:937
-#, fuzzy
 msgid "Additional Fortran compiler flags for this target."
-msgstr "Ключі компілятора Fortran:"
+msgstr "Додаткові ключі компілювальника Fortran для цієї цілі."
 
 #: ../plugins/am-project/am-properties.c:420
 #: ../plugins/am-project/am-properties.c:595
 #: ../plugins/am-project/am-properties.c:770
 #: ../plugins/am-project/am-properties.c:946
 msgid "Additional Objective C compiler flags for this target."
-msgstr ""
+msgstr "Додаткові ключі компілювальника Objective C для цієї цілі."
 
 #: ../plugins/am-project/am-properties.c:429
 #: ../plugins/am-project/am-properties.c:604
@@ -1231,13 +1235,14 @@ msgstr ""
 msgid ""
 "Additional Lex or Flex lexical analyser generator flags for this target."
 msgstr ""
+"Додаткові ключі генератора лексичного аналізатора Lex або Flex для цієї цілі."
 
 #: ../plugins/am-project/am-properties.c:438
 #: ../plugins/am-project/am-properties.c:613
 #: ../plugins/am-project/am-properties.c:788
 #: ../plugins/am-project/am-properties.c:964
 msgid "Additional Yacc or Bison parser generator flags for this target."
-msgstr ""
+msgstr "Додаткові ключі Yacc або Bison для цієї цілі."
 
 #: ../plugins/am-project/am-properties.c:444
 #: ../plugins/am-project/am-properties.c:619
@@ -1257,7 +1262,7 @@ msgstr "Додаткові залежності:"
 #: ../plugins/am-project/am-properties.c:1084
 #: ../plugins/am-project/am-properties.c:1159
 msgid "Additional dependencies for this target."
-msgstr ""
+msgstr "Додаткові залежності для цієї цілі."
 
 #: ../plugins/am-project/am-properties.c:453
 #: ../plugins/am-project/am-properties.c:628
@@ -1275,7 +1280,7 @@ msgstr "Включити до дистрибутива:"
 #: ../plugins/am-project/am-properties.c:1093
 #: ../plugins/am-project/am-properties.c:1168
 msgid "Include this target in the distributed package."
-msgstr ""
+msgstr "Включити цю ціль у пакунок."
 
 #: ../plugins/am-project/am-properties.c:463
 #: ../plugins/am-project/am-properties.c:638
@@ -1283,9 +1288,8 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:989
 #: ../plugins/am-project/am-properties.c:1100
 #: ../plugins/am-project/am-properties.c:1174
-#, fuzzy
 msgid "Build for check only:"
-msgstr "Каталог для збирання:"
+msgstr "Зібрати лише для перевірки:"
 
 #: ../plugins/am-project/am-properties.c:466
 #: ../plugins/am-project/am-properties.c:641
@@ -1294,7 +1298,7 @@ msgstr "Каталог для збирання:"
 #: ../plugins/am-project/am-properties.c:1103
 #: ../plugins/am-project/am-properties.c:1177
 msgid "Build this target only when running automatic tests."
-msgstr ""
+msgstr "Зібрати цю ціль лише при виконанні автоматичних тестів."
 
 #: ../plugins/am-project/am-properties.c:473
 #: ../plugins/am-project/am-properties.c:648
@@ -1304,7 +1308,7 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:1110
 #: ../plugins/am-project/am-properties.c:1183
 msgid "Do not use prefix:"
-msgstr ""
+msgstr "Не використовувати префікс:"
 
 #: ../plugins/am-project/am-properties.c:476
 #: ../plugins/am-project/am-properties.c:651
@@ -1317,6 +1321,8 @@ msgid ""
 "Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
+"Не перейменовувати ціль з необов'язковим префіксом; використовується для "
+"попередження перезапису системних програм. "
 
 #: ../plugins/am-project/am-properties.c:483
 #: ../plugins/am-project/am-properties.c:658
@@ -1325,7 +1331,7 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:1120
 #: ../plugins/am-project/am-properties.c:1192
 msgid "Keep target path:"
-msgstr ""
+msgstr "Шлях цілі:"
 
 #: ../plugins/am-project/am-properties.c:486
 #: ../plugins/am-project/am-properties.c:661
@@ -1338,6 +1344,9 @@ msgid ""
 "program subdir/app installed in bin directory it will be installed in bin/"
 "subdir/app not in bin/app."
 msgstr ""
+"Цільовий шлях для встановлення. Наприклад, при встановленні програми "
+"subdir/app у каталог bin програма буде встановлена у каталог bin/subdir/app, "
+"а не в bin/app."
 
 #: ../plugins/am-project/am-properties.c:529
 #: ../plugins/am-project/am-properties.c:704
@@ -1346,36 +1355,34 @@ msgid "Libraries:"
 msgstr "Бібліотеки:"
 
 #: ../plugins/am-project/am-properties.c:1046
-#, fuzzy
 msgid "Manual section:"
-msgstr "Максимум дій"
+msgstr "Розділ керівництв:"
 
 #: ../plugins/am-project/am-properties.c:1049
 msgid ""
 "Section where are installed the man pages. Valid section names are the "
 "digits ‘0’ through ‘9’, and the letters ‘l’ and ‘n’. "
 msgstr ""
+"Розділ для встановлення сторінок підручника (man). Дозволені назви розділу: "
+"цифри від 0 до 9 й літери «l» та «n». "
 
 #: ../plugins/am-project/amp-source.c:97
-#, fuzzy
 #| msgid "Source file must be inside the project directory"
 msgid "Source file must be a regular file, not a directory"
-msgstr "Файл первинного коду має знаходитися всередині каталогу проєкту"
+msgstr "Початковий файл має бути звичайним файлом, а не каталогом"
 
 #: ../plugins/am-project/amp-target.c:359
 msgid "Target parent is not a valid group"
-msgstr ""
+msgstr "Батьківський запис цілі не є припустимою групою"
 
 #: ../plugins/am-project/amp-target.c:369
 msgid "Please specify target name"
 msgstr "Введіть назву цілі."
 
 #: ../plugins/am-project/amp-target.c:383
-#, fuzzy
 msgid ""
 "Target name can only contain alphanumeric, '_', '-', '/' or '.' characters"
-msgstr ""
-"Назва цілі може складатися лише з літер, цифр, символів «_», «-» чи «.»"
+msgstr "Назва цілі може містити лише літери, цифри та символи «_», «-», «.»"
 
 #: ../plugins/am-project/amp-target.c:398
 msgid "Shared library target name must be of the form 'libxxx.la'"
@@ -1386,10 +1393,9 @@ msgid "Static library target name must be of the form 'libxxx.a'"
 msgstr "Назва статичної бібліотеки повинна мати вигляд «libxxx.a»"
 
 #: ../plugins/am-project/amp-target.c:415
-#, fuzzy
 #| msgid "Shared library target name must be of the form 'libxxx.la'"
 msgid "Module target name must be of the form 'xxx.la'"
-msgstr "Назва спільної бібліотеки повинна мати вигляд «libxxx.la»"
+msgstr "Назва цілі модуля повинна мати вигляд «xxx.la»"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:1
 msgid "Automake Build"
@@ -1448,7 +1454,7 @@ msgstr "sudo"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:11
 msgid "su -c"
-msgstr ""
+msgstr "su -c"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:12
 msgid "Run several commands at a time:"
@@ -1463,9 +1469,9 @@ msgid "Translate messages"
 msgstr "Перекладати повідомлення збирання"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:15
-#, fuzzy
 msgid "Highlight build warnings and errors in editor"
-msgstr "Виділяти кольором повідомлення збірки у редакторі"
+msgstr ""
+"Підсвічувати попереджувальні повідомлення збирання й помилки у редакторі"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:16
 msgid "Build"
@@ -1510,10 +1516,9 @@ msgstr ""
 "Не вдалось налаштувати проєкт: у %s відсутній конфігураційний сценарій."
 
 #: ../plugins/build-basic-autotools/build-options.c:80
-#, fuzzy
 #| msgid "Source file must be inside the project directory"
 msgid "Select a build directory inside the project directory"
-msgstr "Файл первинного коду має знаходитися всередині каталогу проєкту"
+msgstr "Виберіть каталог для збирання всередині каталогу проекту"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
@@ -1553,7 +1558,7 @@ msgstr "Програма «%s» не є локальним файлом"
 #: ../plugins/run-program/execute.c:79
 #, c-format
 msgid "Program '%s' does not exist"
-msgstr "Програма '%s' не існує"
+msgstr "Програма «%s» не існує"
 
 #: ../plugins/build-basic-autotools/executer.c:306
 #: ../plugins/run-program/execute.c:83
@@ -1572,11 +1577,11 @@ msgstr "Виконуваний файл %s застарів."
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:1
 msgid "True if we need a special command to install files"
-msgstr ""
+msgstr "Для встановлення файлів необхідна спеціальна команда"
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:2
 msgid "Command used to be allowed to install files"
-msgstr ""
+msgstr "Команда, використовувана для встановлення файлів"
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:4
 #, no-c-format
@@ -1587,6 +1592,11 @@ msgid ""
 "quoted command. You can use %% to get a \"%\" character. A typical value is "
 "\"sudo %s\" or \"su -c %q\"."
 msgstr ""
+"Команда повинна містити «%s» або «%q». Це буде заміщено командою, "
+"використовуваною для встановлення файлів, наприклад, «make install». %s "
+"заміщується командою без будь-яких змін, %q заміняється командою у лапках. "
+"Ви також можете використовувати %% для запису символу «%». Типові значення: "
+"«sudo %s» або «su -c %q»."
 
 #. The translations should match that of 'make' program. Both strings uses
 #. * pearl regular expression
@@ -1635,7 +1645,7 @@ msgstr "Попередження:"
 
 #: ../plugins/build-basic-autotools/plugin.c:808
 msgid "warning:-old"
-msgstr ""
+msgstr "попередження:-old"
 
 #. The translations should match that of 'gcc' program.
 #. * The second string with -old should be used for an older
@@ -1648,7 +1658,7 @@ msgstr "помилка: "
 
 #: ../plugins/build-basic-autotools/plugin.c:820
 msgid "error:-old"
-msgstr ""
+msgstr "помилка:-old"
 
 #: ../plugins/build-basic-autotools/plugin.c:960
 #, c-format
@@ -1719,7 +1729,7 @@ msgstr "Встановлення всього проєкту"
 #: ../plugins/build-basic-autotools/plugin.c:1683
 #| msgid "_Clean Project"
 msgid "_Check Project"
-msgstr ""
+msgstr "Перевірити _проєкт"
 
 #: ../plugins/build-basic-autotools/plugin.c:1684
 #| msgid "Clean whole project"
@@ -1767,10 +1777,9 @@ msgid "Install module associated with current file"
 msgstr "Встановити модуль, асоційований з цим файлом"
 
 #: ../plugins/build-basic-autotools/plugin.c:1719
-#, fuzzy
 #| msgid "_Clean Module"
 msgid "_Check Module"
-msgstr "Очистити _модуль"
+msgstr "Перевірити _модуль"
 
 #: ../plugins/build-basic-autotools/plugin.c:1720
 #| msgid "Clean module associated with current file"
@@ -1855,9 +1864,8 @@ msgid "_Check"
 msgstr "_Перевірити"
 
 #: ../plugins/build-basic-autotools/plugin.c:1804
-#, fuzzy
 msgid "Check module"
-msgstr "Отримати файли"
+msgstr "Перевірити модуль"
 
 #: ../plugins/build-basic-autotools/plugin.c:1815
 msgid "_Cancel command"
@@ -1908,11 +1916,13 @@ msgid "Build Autotools"
 msgstr "Збірка з Autotools"
 
 #: ../plugins/build-basic-autotools/program.c:300
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Error while setting up build environment:\n"
 " %s"
-msgstr "Помилка під час закриття проєкту: %s"
+msgstr ""
+"Помилка налаштування середовища для збирання:￼\n"
+"%s"
 
 #: ../plugins/build-basic-autotools/program.c:373
 msgid "Command aborted"
@@ -2042,7 +2052,7 @@ msgstr "є підкласом"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:28
 msgid "Initializer Arguments:"
-msgstr ""
+msgstr "Аргументи ініціалізатора:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:29
 msgid "Methods"
@@ -2194,11 +2204,11 @@ msgstr "Автоматично"
 
 #: ../plugins/class-gen/window.c:815
 msgid "Getter"
-msgstr ""
+msgstr "Функція читання (getter)"
 
 #: ../plugins/class-gen/window.c:816
 msgid "Setter"
-msgstr ""
+msgstr "Функція запису (setter)"
 
 #: ../plugins/class-gen/window.c:1232
 msgid "XML description of the user interface"
@@ -3164,14 +3174,12 @@ msgid "Show kernel signals"
 msgstr "Показати сигнали ядра"
 
 #: ../plugins/debug-manager/plugin.c:945
-#, fuzzy
 msgid "_Continue/Suspend"
-msgstr "Прод_овжити"
+msgstr "_Продовжити/Призупинити"
 
 #: ../plugins/debug-manager/plugin.c:947
-#, fuzzy
 msgid "Continue or suspend the execution of the program"
-msgstr "Продовжити виконання програми"
+msgstr "Продовжити або призупинити виконання програми"
 
 #: ../plugins/debug-manager/plugin.c:965
 msgid "Step _In"
@@ -3322,7 +3330,7 @@ msgstr "Первинний текст"
 
 #: ../plugins/debug-manager/stack_trace.c:740
 msgid "Get Stack trace"
-msgstr ""
+msgstr "Отримати стан стека"
 
 #: ../plugins/debug-manager/stack_trace.c:780
 msgid "Active"
@@ -3380,7 +3388,7 @@ msgstr "Команда"
 #: ../plugins/debug-manager/start.c:628
 #, c-format
 msgid "Unable to execute: \"%s\". The returned error was: \"%s\"."
-msgstr ""
+msgstr "Не вдалося виконати: «%s». Повернена помилка: «%s»."
 
 #: ../plugins/debug-manager/start.c:644
 #, c-format
@@ -3531,15 +3539,16 @@ msgid "Project doesn't allow to set properties"
 msgstr "У проєкт заборонено встановлювати властивості"
 
 #: ../plugins/dir-project/dir-project.plugin.in.h:1
-#, fuzzy
 msgid "Directory backend"
-msgstr "Назва проєкту:"
+msgstr "Модуль каталогів"
 
 #: ../plugins/dir-project/dir-project.plugin.in.h:2
 msgid ""
 "Directory project backend, get only source files, use it when other backend "
 "fails"
 msgstr ""
+"Модуль проєкту у каталозі; отримує лише файли початкових кодів, скористайтеся"
+" ним, якщо інші модулі не спрацьовують"
 
 #: ../plugins/document-manager/action-callbacks.c:315
 #, c-format
@@ -3693,7 +3702,7 @@ msgstr "Показувати вкладки"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:14
 msgid "Show drop-down list"
-msgstr ""
+msgstr "Показувати випадний перелік"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:15
 msgid "Do not show open documents"
@@ -3968,7 +3977,7 @@ msgstr "_Знайти наступне"
 
 #: ../plugins/document-manager/plugin.c:261
 msgid "Search for next appearance of term."
-msgstr ""
+msgstr "Знайти наступне входження слова."
 
 #: ../plugins/document-manager/plugin.c:263
 msgid "Find and R_eplace…"
@@ -3992,7 +4001,7 @@ msgstr "Зняти підсвічування"
 
 #: ../plugins/document-manager/plugin.c:271
 msgid "Clear all highlighted text"
-msgstr ""
+msgstr "Очистити увесь підсвічуваний текст"
 
 #: ../plugins/document-manager/plugin.c:273
 #| msgid "Fin_d in Files…"
@@ -4010,26 +4019,23 @@ msgstr "З врахуванням регістру"
 
 #: ../plugins/document-manager/plugin.c:281
 msgid "Match case in search results."
-msgstr ""
+msgstr "Виконувати пошук із врахуванням регістру символів."
 
 #: ../plugins/document-manager/plugin.c:284
-#, fuzzy
 msgid "Highlight All"
-msgstr "Виділення кольором"
+msgstr "Підсвітити все"
 
 #: ../plugins/document-manager/plugin.c:285
-#, fuzzy
 msgid "Highlight all occurrences"
-msgstr "Виділяти кольором поточний рядок"
+msgstr "Підсвітити усі відповідники"
 
 #: ../plugins/document-manager/plugin.c:288
 msgid "Regular Expression"
 msgstr "Формальний вираз"
 
 #: ../plugins/document-manager/plugin.c:289
-#, fuzzy
 msgid "Search using regular expressions"
-msgstr "Знайти рядок або регулярний вираз у редакторі"
+msgstr "Пошук з використанням регулярного виразу"
 
 #: ../plugins/document-manager/plugin.c:295
 #: ../plugins/indentation-c-style/plugin.c:218
@@ -4187,14 +4193,12 @@ msgid "Bookmar_k"
 msgstr "_Закладка"
 
 #: ../plugins/document-manager/plugin.c:377
-#, fuzzy
 msgid "_Toggle Bookmark"
-msgstr "_Наступна закладка"
+msgstr "_Додати/Прибрати закладку"
 
 #: ../plugins/document-manager/plugin.c:378
-#, fuzzy
 msgid "Toggle bookmark at the current line position"
-msgstr "Додати закладку на поточну позицію рядка"
+msgstr "Додати/Прибрати закладку у поточному рядку"
 
 #: ../plugins/document-manager/plugin.c:380
 msgid "_Previous Bookmark"
@@ -4258,7 +4262,6 @@ msgid "Editor syntax highlighting styles"
 msgstr "Виділення синтаксису кольором у редакторі"
 
 #: ../plugins/document-manager/plugin.c:416
-#, fuzzy
 #| msgid "Editor text formating"
 msgid "Editor text formatting"
 msgstr "Форматування тексту у редакторі"
@@ -4276,9 +4279,8 @@ msgid "Documents"
 msgstr "Документи"
 
 #: ../plugins/document-manager/plugin.c:424
-#, fuzzy
 msgid "Toggle search options"
-msgstr "Перемикнути точку зупинки"
+msgstr "Перемкнути параметри пошуку"
 
 #: ../plugins/document-manager/plugin.c:587
 msgid "Reload"
@@ -4325,9 +4327,9 @@ msgid "Search for \"%s\" reached the end and was continued at the top."
 msgstr "Пошук «%s» досяг кінця та буде продовжений спочатку."
 
 #: ../plugins/document-manager/search-box.c:525
-#, fuzzy, c-format
+#, c-format
 msgid "Search for \"%s\" reached top and was continued at the bottom."
-msgstr "Пошук «%s» досяг кінця та буде продовжений спочатку."
+msgstr "Пошук «%s» досягнув початку й продовжений з кінця."
 
 #: ../plugins/document-manager/search-box.c:535
 #, c-format
@@ -4339,17 +4341,19 @@ msgstr ""
 "виявлено."
 
 #: ../plugins/document-manager/search-box.c:540
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Search for \"%s\" reached top and was continued at the bottom but no new "
 "match was found."
 msgstr ""
-"Пошук «%s» досяг кінця та розпочатий спочатку, але нові збіги не було "
-"виявлено."
+"Пошук «%s» досягнув початку й продовжений з кінця, але нових збігів не "
+"знайдено."
 
 #: ../plugins/document-manager/search-box.c:920
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
+"Використовуйте контекстне меню піктограми «Знайти» для додаткових параметрів "
+"пошуку"
 
 #: ../plugins/document-manager/search-box.c:991
 msgid "Replace"
@@ -4621,10 +4625,9 @@ msgid "Choose Directory to show if no project is open"
 msgstr "Оберіть каталог, який буде показуватися, якщо немає відкритого проєкту"
 
 #: ../plugins/file-manager/file-manager.ui.h:3
-#, fuzzy
 #| msgid "Auto-complete the current word"
 msgid "Automatically select the current document"
-msgstr "Автодоповнення поточного слова"
+msgstr "Автоматично обирати поточний документ"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
@@ -4654,32 +4657,32 @@ msgstr "Фільтр"
 
 #: ../plugins/file-manager/file-model.c:128 ../plugins/git/anjuta-git.ui.h:34
 msgid "Loading..."
-msgstr "Завантаження..."
+msgstr "Завантаження…"
 
 #: ../plugins/file-manager/file-model.c:708
 #: ../plugins/file-manager/file-view.c:980
-#, fuzzy
 #| msgid "Path"
 msgid "Base Path"
-msgstr "Шлях"
+msgstr "Базовий шлях"
 
 #: ../plugins/file-manager/file-model.c:709
 #: ../plugins/file-manager/file-view.c:981
-#, fuzzy
 #| msgid "URI of the top-most path displayed"
 msgid "GFile representing the top-most path displayed"
-msgstr "URI початкового елементу"
+msgstr "GFile показує найвищий шлях із показаних"
 
 #. You try to rename "/"
 #: ../plugins/file-manager/file-view.c:139
 msgid "You can't rename \"/\"!"
-msgstr ""
+msgstr "Неможливо перейменувати «/»!"
 
 #: ../plugins/file-manager/file-view.c:153
 msgid ""
 "An error has occurred!\n"
 "Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
+"Трапилася помилка!￼\n"
+"Можливо, у вас бракує прав доступу або файл має неправилньу назвя"
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
@@ -4690,16 +4693,14 @@ msgid "Rename file or directory"
 msgstr "Перейменувати файл/каталог"
 
 #: ../plugins/file-manager/plugin.c:110
-#, fuzzy
 #| msgid "File Manager"
 msgid "_Show in File manager"
-msgstr "Керування файлами"
+msgstr "_Показати у менеджері файлів"
 
 #: ../plugins/file-manager/plugin.c:110
-#, fuzzy
 #| msgid "File Manager"
 msgid "Show in File manager"
-msgstr "Керування файлами"
+msgstr "Показати у менеджері файлів"
 
 #: ../plugins/file-manager/plugin.c:366
 msgid "File manager popup actions"
@@ -4739,10 +4740,9 @@ msgid "Type:"
 msgstr "Тип:"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:8
-#, fuzzy
 #| msgid "Add License Information"
 msgid "Add License Information:"
-msgstr "Додати відомості про ліцензії"
+msgstr "Додати відомості про ліцензію:"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:9
 msgid "Create corresponding header file"
@@ -4753,10 +4753,9 @@ msgid "Use Template for the Header file"
 msgstr "Використовувати шаблон файлу заголовків"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:11
-#, fuzzy
 #| msgid "Add to project"
 msgid "Add to project target:"
-msgstr "Додати до проєкту"
+msgstr "Додати до мети проєкту:"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:12
 msgid "Add to repository"
@@ -4795,9 +4794,8 @@ msgid "Shell Script File"
 msgstr "Файл сценарію оболонки"
 
 #: ../plugins/file-wizard/file.c:97
-#, fuzzy
 msgid "Vala Source File"
-msgstr "Файл первинних текстів Java"
+msgstr "Файл початкового коду на Vala"
 
 #: ../plugins/file-wizard/file.c:98
 msgid "Other"
@@ -4808,18 +4806,16 @@ msgid "BSD Public License"
 msgstr "Суспільна ліцензія BSD"
 
 #: ../plugins/gdb/anjuta-gdb.plugin.in.h:1
-#, fuzzy
 msgid "GNU Debugger"
-msgstr "Налагодження"
+msgstr "Зневаджувач GNU"
 
 #: ../plugins/gdb/anjuta-gdb.plugin.in.h:2
 msgid "GNU Debugger Plugin"
 msgstr "Модуль керування налагодженням"
 
 #: ../plugins/gdb/anjuta-gdb.ui.h:1
-#, fuzzy
 msgid "Available pretty printers"
-msgstr "Доступні доповнення"
+msgstr "Доступні pretty-принтери"
 
 #. The %s argument is a program name, anjuta by example
 #: ../plugins/gdb/debugger.c:729
@@ -4968,7 +4964,7 @@ msgstr "Переривання процесу\n"
 
 #: ../plugins/gdb/debugger.c:3926
 msgid "more children"
-msgstr ""
+msgstr "ще нащадки"
 
 #: ../plugins/gdb/debugger.c:4179
 #, c-format
@@ -5005,11 +5001,14 @@ msgid ""
 "rows. Most of the time the register function name contains the word "
 "\"register\"."
 msgstr ""
+"В такий файлах принтерів з оформлення не знайдено реєструвальної функції:￼\n"
+"%s￼\n"
+"Ви повинні самостійно заповнити стовпчики реєструвальної функції перед "
+"включенням рядків. Найчастіше реєструвальна функція містить слово «register»."
 
 #: ../plugins/gdb/preferences.c:223
-#, fuzzy
 msgid "Select a pretty printer file"
-msgstr "Виберіть файл"
+msgstr "Виберіть файл принтера з оформленням"
 
 #: ../plugins/gdb/preferences.c:358
 msgid "Activate"
@@ -5018,14 +5017,12 @@ msgstr "Задіяти"
 #. Translators: The "Register Function" column contains the name of a
 #. * function used to register pretty printers in gdb.
 #: ../plugins/gdb/preferences.c:372
-#, fuzzy
 msgid "Register Function"
-msgstr "Поточна функція"
+msgstr "Реєструвальна функція"
 
 #: ../plugins/gdb/preferences.c:396 ../plugins/gdb/preferences.c:404
-#, fuzzy
 msgid "Gdb Debugger"
-msgstr "Налагодження"
+msgstr "Зневаджувач gdb"
 
 #: ../plugins/git/anjuta-git.ui.h:1
 msgid "Cancel"
@@ -5045,7 +5042,6 @@ msgid "OK"
 msgstr "Гаразд"
 
 #: ../plugins/git/anjuta-git.ui.h:5
-#, fuzzy
 msgid "Add signed off by line"
 msgstr "Додати підпис"
 
@@ -5058,36 +5054,32 @@ msgid "Add Files:"
 msgstr "Додати файли:"
 
 #: ../plugins/git/anjuta-git.ui.h:9
-#, fuzzy
 msgid "Remote name:"
-msgstr "Назва модуля:"
+msgstr "Віддалений репозиторій:"
 
 #: ../plugins/git/anjuta-git.ui.h:11
 msgid "Fetch remote branches after creation"
 msgstr "Отримувати віддалені гілки після створення"
 
 #: ../plugins/git/anjuta-git.ui.h:12
-#, fuzzy
 msgid "Mailbox files to apply:"
-msgstr "Файл поштової скриньки, що містить латки:"
+msgstr "Застосувати для поштових файлів:"
 
 #: ../plugins/git/anjuta-git.ui.h:13 ../plugins/git/plugin.c:940
 msgid "Branches"
 msgstr "Гілки"
 
 #: ../plugins/git/anjuta-git.ui.h:14
-#, fuzzy
 msgid "Commit to cherry pick:"
-msgstr "Надіслати до Cherry Pick:"
+msgstr "Фіксація для застосування вибіркового змінювання:"
 
 #: ../plugins/git/anjuta-git.ui.h:15
 msgid "Show source revision in log message"
 msgstr "Показати первинну правку у повідомленні журналу"
 
 #: ../plugins/git/anjuta-git.ui.h:16
-#, fuzzy
 msgid "Append signed-off-by line"
-msgstr "Додати підпис"
+msgstr "Додано рядок «signed-off-by»"
 
 #: ../plugins/git/anjuta-git.ui.h:17
 #: ../plugins/subversion/anjuta-subversion.ui.h:12
@@ -5115,9 +5107,8 @@ msgid "Branch name:"
 msgstr "Назва гілки:"
 
 #: ../plugins/git/anjuta-git.ui.h:24
-#, fuzzy
 msgid "Repository head; Drop or type a different revision here"
-msgstr "Скинути корінь репозиторію до цієї правки"
+msgstr "Останнє виправлення; перетягніть або уведіть тут інше виправлення"
 
 #: ../plugins/git/anjuta-git.ui.h:25
 #: ../plugins/subversion/subversion-log-dialog.c:151
@@ -5137,9 +5128,8 @@ msgid "Sign this tag"
 msgstr "Підписати цю ціль"
 
 #: ../plugins/git/anjuta-git.ui.h:30
-#, fuzzy
 msgid "Annotate this tag:"
-msgstr "Позначити"
+msgstr "Коментувати цю позначку:"
 
 #: ../plugins/git/anjuta-git.ui.h:31
 msgid "Branches must be fully merged"
@@ -5158,7 +5148,7 @@ msgstr "Завдання"
 
 #: ../plugins/git/anjuta-git.ui.h:35
 msgid "Whole project; Drop a file here to view a file or folder log"
-msgstr ""
+msgstr "Увесь проєкт; перетягніть сюди файл, щоб продивитися журнал"
 
 #: ../plugins/git/anjuta-git.ui.h:36
 #: ../plugins/subversion/anjuta-subversion.ui.h:32
@@ -5203,16 +5193,15 @@ msgstr "Зміни:"
 
 #: ../plugins/git/anjuta-git.ui.h:45
 msgid "Revision to merge with:"
-msgstr ""
+msgstr "Об'єднати з виправленням:"
 
 #: ../plugins/git/anjuta-git.ui.h:46
-#, fuzzy
 msgid "Use a custom log message:"
-msgstr "Додати повідомлення до журналу"
+msgstr "Використовувати своє повідомлення для журналу:"
 
 #: ../plugins/git/anjuta-git.ui.h:47
 msgid "Repository origin; Drop or type a different revision here"
-msgstr ""
+msgstr "Типовий репозиторій; перетягніть або уведіть тут інше виправлення"
 
 #: ../plugins/git/anjuta-git.ui.h:48
 msgid "Generate patches relative to:"
@@ -5263,12 +5252,10 @@ msgid "Push all branches and tags"
 msgstr "Надіслати усі гілки та теги"
 
 #: ../plugins/git/anjuta-git.ui.h:60
-#, fuzzy
 msgid "Remote Repositories:"
-msgstr "В_идалити репозиторій"
+msgstr "Віддалені репозиторії:"
 
 #: ../plugins/git/anjuta-git.ui.h:61
-#, fuzzy
 msgid "Remove Files:"
 msgstr "Вилучити файли:"
 
@@ -5293,23 +5280,20 @@ msgid "Commit to revert:"
 msgstr "Зафіксувати у відкаті:"
 
 #: ../plugins/git/anjuta-git.ui.h:68
-#, fuzzy
 msgid "Stash Message (Optional):"
-msgstr "Параметри про приховування (необов'язково)"
+msgstr "Повідомлення про приховування (необов'язково):"
 
 #: ../plugins/git/anjuta-git.ui.h:69
 msgid "Stash indexed changes"
 msgstr "Індексовані зміни у схованці"
 
 #: ../plugins/git/anjuta-git.ui.h:70
-#, fuzzy
 msgid "Stashed Changes:"
-msgstr "Індексовані зміни у схованці"
+msgstr "Приховані зміни:"
 
 #: ../plugins/git/anjuta-git.ui.h:71
-#, fuzzy
 msgid "Repository Status:"
-msgstr "Стан сховища:"
+msgstr "Стан репозиторію:"
 
 #: ../plugins/git/anjuta-git.ui.h:72
 msgid "Show Diff"
@@ -5320,14 +5304,12 @@ msgid "Add Files"
 msgstr "Додати файли"
 
 #: ../plugins/git/git-add-remote-pane.c:52
-#, fuzzy
 msgid "Please enter a remote name."
-msgstr "Введіть назву познаки."
+msgstr "Уведіть ім'я віддаленого репозиторію."
 
 #: ../plugins/git/git-add-remote-pane.c:55
-#, fuzzy
 msgid "Please enter a URL"
-msgstr "Введіть URL."
+msgstr "Уведіть URL"
 
 #. Translators: Remote means the git remote repository
 #: ../plugins/git/git-add-remote-pane.c:182
@@ -5335,15 +5317,13 @@ msgid "Add Remote"
 msgstr "Додати віддалений об'єкт"
 
 #: ../plugins/git/git-apply-mailbox-pane.c:159
-#, fuzzy
 msgid "Apply Mailbox Files"
-msgstr "Застосувати файли mailbox"
+msgstr "Використовувати поштові файли"
 
 #: ../plugins/git/git-apply-stash-pane.c:54
 #: ../plugins/git/git-drop-stash-pane.c:48
-#, fuzzy
 msgid "No stash selected."
-msgstr "Групу не обрано"
+msgstr "Приховані зміни не обрано."
 
 #: ../plugins/git/git-checkout-pane.c:150
 msgid "Check Out Files"
@@ -5361,14 +5341,12 @@ msgstr "Cherry Pick"
 
 #: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
 #: ../plugins/git/git-merge-pane.c:70
-#, fuzzy
 msgid "Please enter a log message."
-msgstr "Введіть назву познаки."
+msgstr "Уведіть повідомлення для журналу."
 
 #: ../plugins/git/git-commit-pane.c:145
-#, fuzzy
 msgid "Please enter the commit author's name"
-msgstr "Введіть ім'я автора операції фіксації"
+msgstr "Уведіть ім'я автора фіксації зміни"
 
 #: ../plugins/git/git-commit-pane.c:149
 msgid "Please enter the commit author's e-mail address."
@@ -5391,31 +5369,28 @@ msgid "Create Tag"
 msgstr "Створити позначку"
 
 #: ../plugins/git/git-delete-branches-pane.c:238
-#, fuzzy, c-format
+#, c-format
 #| msgid "Are you sure you want to delete the '%s' tool?"
 msgid "Are you sure you want to delete branch %s?"
-msgstr "Вилучити інструмент «%s»?"
+msgstr "Справді вилучити гілку %s?"
 
 #: ../plugins/git/git-delete-remote-pane.c:49
-#, fuzzy
 msgid "No remote selected."
-msgstr "Групу не обрано"
+msgstr "Віддалений репозиторій не вибраний."
 
 #: ../plugins/git/git-delete-tags-pane.c:49
-#, fuzzy
 msgid "No tags selected."
-msgstr "Групу не обрано"
+msgstr "Позначки не вибрані."
 
 #. Translators: file name for an existing commits diff, %s is an SHASUM of a commit
 #: ../plugins/git/git-diff-pane.c:40
-#, fuzzy, c-format
+#, c-format
 msgid "Commit %s.diff"
-msgstr "Показати відмінності публік_ації"
+msgstr "Фіксувати %s.diff"
 
 #: ../plugins/git/git-diff-pane.c:73
-#, fuzzy
 msgid "No revision selected"
-msgstr "Групу не обрано"
+msgstr "Виправлення не обрано"
 
 #: ../plugins/git/git-log-pane.c:581
 #, c-format
@@ -5437,17 +5412,14 @@ msgid "Merge"
 msgstr "З об'єднанням"
 
 #: ../plugins/git/git-pane.c:223
-#, fuzzy
 msgid "Git Error"
-msgstr "Помилка"
+msgstr "Помилка git"
 
 #: ../plugins/git/git-pane.c:229
-#, fuzzy
 msgid "Git Warning"
-msgstr "Попередження"
+msgstr "Попередження git"
 
 #: ../plugins/git/git-patch-series-pane.c:169
-#, fuzzy
 msgid "Generate Patch Series"
 msgstr "Створити серію латок"
 
@@ -5468,12 +5440,10 @@ msgid "Push"
 msgstr "Надіслати"
 
 #: ../plugins/git/git-rebase-pane.c:61
-#, fuzzy
 msgid "No remote selected"
-msgstr "Групу не обрано"
+msgstr "Віддалений репозиторій не вибраний"
 
 #: ../plugins/git/git-remove-files-pane.c:160
-#, fuzzy
 msgid "Remove Files"
 msgstr "Вилучити файли"
 
@@ -5486,29 +5456,28 @@ msgid "URL"
 msgstr "URL"
 
 #: ../plugins/git/git-repository-selector.c:101
-#, fuzzy
 msgid "<b>Selected Remote:</b>"
-msgstr "<b>Віддалений:</b> %s"
+msgstr "<b>Вибраний віддалений репозиторій:</b>"
 
 #: ../plugins/git/git-repository-selector.c:200
 msgid ""
 "No remote selected; using origin by default.\n"
 "To push to a different remote, select one from the Remotes list above."
 msgstr ""
+"Віддалена гілка не вибрана; використовується типова гілка.￼\n"
+"Щоб внести зміни в іншу гілку, виберіть її з переліку."
 
 #: ../plugins/git/git-reset-pane.c:176
 msgid "Reset"
 msgstr "Скинути"
 
 #: ../plugins/git/git-resolve-conflicts-pane.c:50
-#, fuzzy
 msgid "No conflicted files selected."
-msgstr "Позначити конфліктні файли як розв'язані"
+msgstr "Файли, що конфліктують не обрані."
 
 #: ../plugins/git/git-revert-pane.c:48
-#, fuzzy
 msgid "Please enter a commit."
-msgstr "Введіть шлях."
+msgstr "Уведіть фіксацію."
 
 #: ../plugins/git/git-revert-pane.c:164 ../plugins/git/plugin.c:513
 msgid "Revert"
@@ -5520,21 +5489,19 @@ msgstr "Неопубліковані зміни у схованці"
 
 #: ../plugins/git/git-status-pane.c:551
 msgid "Changes to be committed"
-msgstr ""
+msgstr "Зміни для фіксації"
 
 #: ../plugins/git/git-status-pane.c:561
 msgid "Changed but not updated"
-msgstr ""
+msgstr "Змінено, але не оновлено"
 
 #: ../plugins/git/git-unstage-pane.c:51
-#, fuzzy
 msgid "No staged files selected."
-msgstr "Не обрано ціль"
+msgstr "Проіндексовані файли не обрано."
 
 #: ../plugins/git/plugin.c:68
-#, fuzzy
 msgid "Branch tools"
-msgstr "Гілки"
+msgstr "Знаряддя гілок"
 
 #: ../plugins/git/plugin.c:76 ../plugins/git/plugin.c:77
 msgid "Create a branch"
@@ -5545,33 +5512,28 @@ msgid "Delete branches"
 msgstr "Видалити гілки"
 
 #: ../plugins/git/plugin.c:92 ../plugins/git/plugin.c:93
-#, fuzzy
 msgid "Switch to the selected branch"
-msgstr "Перемикнутися на іншу гілку"
+msgstr "Перемикнутися на обрану гілку"
 
 #: ../plugins/git/plugin.c:101
-#, fuzzy
 msgid "Merge a revision into the current branch"
-msgstr "Об'єднати цю публікацію з поточною гілкою'"
+msgstr "Об'єднати виправлення у поточній гілці"
 
 #: ../plugins/git/plugin.c:112
-#, fuzzy
 msgid "Tag tools"
-msgstr "Інструменти"
+msgstr "Знаряддя позначок"
 
 #: ../plugins/git/plugin.c:120 ../plugins/git/plugin.c:121
 msgid "Create a tag"
 msgstr "Створити тег"
 
 #: ../plugins/git/plugin.c:128 ../plugins/git/plugin.c:129
-#, fuzzy
 msgid "Delete selected tags"
-msgstr "Git: вилучено вибрані гілки."
+msgstr "Вилучити обрані позначки"
 
 #: ../plugins/git/plugin.c:141
-#, fuzzy
 msgid "Changes"
-msgstr "Зміни:"
+msgstr "Зміни"
 
 #: ../plugins/git/plugin.c:150
 msgid "Commit changes"
@@ -5583,9 +5545,8 @@ msgid "Add"
 msgstr "Додати"
 
 #: ../plugins/git/plugin.c:166
-#, fuzzy
 msgid "Add files to the index"
-msgstr "Додати файли до репозиторію"
+msgstr "Додати файли до індексу"
 
 #: ../plugins/git/plugin.c:174
 msgid "Remove files from the repository"
@@ -5596,255 +5557,213 @@ msgid "Check out"
 msgstr "Завантажити"
 
 #: ../plugins/git/plugin.c:182
-#, fuzzy
 msgid "Revert changes in unstaged files"
-msgstr "Повернути назад неопубліковані зміни у файлах"
+msgstr "Скасувати зміни у непроіндексованих файлах"
 
 #: ../plugins/git/plugin.c:189 ../plugins/git/plugin.c:485
-#, fuzzy
 msgid "Unstage"
-msgstr "Прибрати файли"
+msgstr "Скасувати індексування"
 
 #: ../plugins/git/plugin.c:190
-#, fuzzy
 msgid "Remove staged files from the index"
-msgstr "Вилучити файли з індексу публікації"
+msgstr "Вилучити проіндексовані файли з індексу"
 
 #: ../plugins/git/plugin.c:197
-#, fuzzy
 msgid "Resolve conflicts"
-msgstr "Розв'язати _конфлікти…"
+msgstr "Розв’язати конфлікти"
 
 #: ../plugins/git/plugin.c:198
-#, fuzzy
 msgid "Mark selected conflicted files as resolved"
-msgstr "Позначити конфліктні файли як розв'язані"
+msgstr "Позначити виділені конфліктні файли як вирішені"
 
 #: ../plugins/git/plugin.c:205 ../plugins/git/plugin.c:958
 msgid "Stash"
 msgstr "Схованка"
 
 #: ../plugins/git/plugin.c:213 ../plugins/git/plugin.c:325
-#, fuzzy
 msgid "Stash uncommitted changes"
-msgstr "С_ховати неопубліковані зміни…"
+msgstr "Приховати незафіксовані зміни"
 
 #: ../plugins/git/plugin.c:214 ../plugins/git/plugin.c:326
-#, fuzzy
 msgid "Save uncommitted changes without committing them"
-msgstr "Повернути назад неопубліковані зміни у файлах"
+msgstr "Зберегти незафіксовані зміни без фіксації"
 
 #: ../plugins/git/plugin.c:225
-#, fuzzy
 msgid "Remote repository tools"
-msgstr "В_идалити репозиторій"
+msgstr "Знаряддя віддалених репозиторіїв"
 
 #: ../plugins/git/plugin.c:233
-#, fuzzy
 msgid "Add a remote"
-msgstr "Додати віддалену гілку"
+msgstr "Додати віддалений репозиторій"
 
 #: ../plugins/git/plugin.c:234
-#, fuzzy
 msgid "Add a remote repository"
-msgstr "Додати до репозиторію"
+msgstr "Додати у віддалений репозиторій"
 
 #: ../plugins/git/plugin.c:241
-#, fuzzy
 msgid "Delete selected remote"
-msgstr "Git: вилучено вибрані гілки."
+msgstr "Вилучити вибраний віддалений репозиторій"
 
 #: ../plugins/git/plugin.c:242
-#, fuzzy
 msgid "Delete a remote"
-msgstr "Вилучити гілку у мережі"
+msgstr "Вилучити віддалений репозиторій"
 
 #: ../plugins/git/plugin.c:250
 msgid "Push changes to a remote repository"
 msgstr "Опублікувати зміни у віддаленому репозиторії"
 
 #: ../plugins/git/plugin.c:258
-#, fuzzy
 msgid "Pull changes from a remote repository"
-msgstr "Опублікувати зміни у віддаленому репозиторії"
+msgstr "Забрати й об'єднати зміни з віддаленого репозиторію"
 
 #: ../plugins/git/plugin.c:265 ../plugins/git/plugin.c:577
 msgid "Fetch"
 msgstr "Отримати"
 
 #: ../plugins/git/plugin.c:266
-#, fuzzy
 msgid "Fetch changes from remote repositories"
-msgstr "Опублікувати зміни у віддаленому репозиторії"
+msgstr "Забрати зміни з віддалених репозиторіїв"
 
 #: ../plugins/git/plugin.c:281
 msgid "Rebase against selected remote"
-msgstr ""
+msgstr "Перенести відносно вибраного репозиторію"
 
 #: ../plugins/git/plugin.c:282
 msgid "Start a rebase operation relative to the selected remote repository"
-msgstr ""
+msgstr "Почати перенесення відносно вибраного віддаленого репозиторію"
 
 #: ../plugins/git/plugin.c:289 ../plugins/git/plugin.c:449
 msgid "Continue"
 msgstr "Продовжити"
 
 #: ../plugins/git/plugin.c:290
-#, fuzzy
 msgid "Continue a rebase with resolved conflicts"
-msgstr "_Продовжити розв'язання конфліктів"
+msgstr "Продовжити перенесення з вирішеними конфліктами"
 
 #: ../plugins/git/plugin.c:297 ../plugins/git/plugin.c:457
 msgid "Skip"
 msgstr "Пропустити"
 
 #: ../plugins/git/plugin.c:298
-#, fuzzy
 msgid "Skip the current revision"
-msgstr "Позначити потону верхівку правки як поганий"
+msgstr "Пропустити поточне виправлення"
 
 #: ../plugins/git/plugin.c:305 ../plugins/git/plugin.c:465
 msgid "Abort"
 msgstr "Перервати"
 
 #: ../plugins/git/plugin.c:306
-#, fuzzy
 msgid "Abort the rebase and return the repository to its previous state"
-msgstr "Перервати rebase та повернути репозиторій у оригінальний стан"
+msgstr "Припинити перенесення й повернути репозиторій у початковий стан"
 
 #: ../plugins/git/plugin.c:317
-#, fuzzy
 msgid "Stash tools"
-msgstr "Сховані зміни для застосування"
+msgstr "Знаряддя приховування змін"
 
 #: ../plugins/git/plugin.c:333
-#, fuzzy
 msgid "Apply selected stash"
-msgstr "Застосувати вибрані схованки"
+msgstr "Застосувати вибрану приховану зміну"
 
 #: ../plugins/git/plugin.c:334
-#, fuzzy
 msgid "Apply stashed changes back into the working tree"
-msgstr "Застосувати зміни у схованці до робочого дерева"
+msgstr "Застосувати приховані зміни у робочому дереві"
 
 #: ../plugins/git/plugin.c:341
-#, fuzzy
 msgid "Apply stash and restore index"
-msgstr "Застосувати зміни у схованці до робочого дерева"
+msgstr "Застосувати приховані зміни та відновити індекс"
 
 #: ../plugins/git/plugin.c:342
-#, fuzzy
 msgid "Apply stashed changes back into the working tree and the index"
-msgstr "Застосувати зміни у схованці до робочого дерева"
+msgstr "Застосувати приховані зміни до робочого дерева та індексу"
 
 #: ../plugins/git/plugin.c:349
-#, fuzzy
 msgid "Drop selected stash"
-msgstr "Відкинути вибрану схованку"
+msgstr "Вилучити вибрану приховану зміну"
 
 #: ../plugins/git/plugin.c:350
-#, fuzzy
 msgid "Delete the selected stash"
-msgstr "Відкинути вибрану схованку"
+msgstr "Вилучити вибрану приховану зміну"
 
 #: ../plugins/git/plugin.c:357
 msgid "Clear all stashes"
 msgstr "Позначити всі схованки"
 
 #: ../plugins/git/plugin.c:358
-#, fuzzy
 msgid "Delete all stashes in this repository"
-msgstr "Виділити весь текст в редакторі"
+msgstr "Вилучити усі приховані зміни у цьому репозиторії"
 
 #: ../plugins/git/plugin.c:369
-#, fuzzy
 msgid "Revision tools"
-msgstr "Засоби модифікації"
+msgstr "Знаряддя виправлень"
 
 #: ../plugins/git/plugin.c:377 ../plugins/git/plugin.c:497
-#, fuzzy
 msgid "Show commit diff"
-msgstr "Показати відмінності публік_ації"
+msgstr "Порівняти виправлення"
 
 #: ../plugins/git/plugin.c:378
-#, fuzzy
 msgid "Show a diff of the selected revision"
-msgstr "Переглянути _обрану правку"
+msgstr "Порівняти обране виправлення"
 
 #: ../plugins/git/plugin.c:385 ../plugins/git/plugin.c:505
-#, fuzzy
 msgid "Cherry pick"
-msgstr "Cherry Pick"
+msgstr "Вибіркова зміна"
 
 #: ../plugins/git/plugin.c:386
-#, fuzzy
 msgid "Merge an individual commit from another branch"
-msgstr "Об'єднати цю публікацію з поточною гілкою'"
+msgstr "Об'єднати дану фіксацію з іншої гілки"
 
 #: ../plugins/git/plugin.c:393
-#, fuzzy
 msgid "Reset/Revert"
-msgstr "_Скинути/вернути"
+msgstr "Скинути або скасувати"
 
 #: ../plugins/git/plugin.c:401
-#, fuzzy
 msgid "Reset tree"
 msgstr "Скинути дерево"
 
 #: ../plugins/git/plugin.c:402
-#, fuzzy
 msgid "Reset tree to a previous revision"
-msgstr "Скинути корінь репозиторію до цієї правки"
+msgstr "Скинути дерево до попереднього виправлення"
 
 #: ../plugins/git/plugin.c:409
-#, fuzzy
 msgid "Revert commit"
-msgstr "Скасувати публікацію"
+msgstr "Скасувати фіксацію"
 
 #: ../plugins/git/plugin.c:410
 msgid "Revert a commit"
 msgstr "Скасувати публікацію"
 
 #: ../plugins/git/plugin.c:417
-#, fuzzy
 msgid "Patch series"
-msgstr "Латки"
+msgstr "Серія латок"
 
 #: ../plugins/git/plugin.c:425 ../plugins/git/plugin.c:426
-#, fuzzy
 msgid "Generate a patch series"
-msgstr "Створити серію латок"
+msgstr "Генерувати серію латок"
 
 #: ../plugins/git/plugin.c:433
-#, fuzzy
 msgid "Mailbox files"
-msgstr "Застосувати файли mailbox"
+msgstr "Поштові файли"
 
 #: ../plugins/git/plugin.c:441
 msgid "Apply mailbox files"
 msgstr "Застосувати файли mailbox"
 
 #: ../plugins/git/plugin.c:442
-#, fuzzy
 msgid "Apply patches from mailbox files"
-msgstr "Застосувати файли mailbox"
+msgstr "Застосувати латки з поштових файлів"
 
 #: ../plugins/git/plugin.c:450
-#, fuzzy
 msgid "Continue applying patches with resolved conflicts"
-msgstr "Продовжити застосування серії після розв'язання конфліктів'"
+msgstr "Продовжити застосування латок з вирішеними конфліктами"
 
 #: ../plugins/git/plugin.c:458
-#, fuzzy
 msgid "Skip the current patch in the series"
-msgstr "Пропустити поточну латку у серії та продовжити"
+msgstr "Пропустити поточну латку з серії"
 
 #: ../plugins/git/plugin.c:466
-#, fuzzy
 msgid ""
 "Stop applying the patch series and return the tree to its previous state"
-msgstr ""
-"Зупинити застосування латок та повернути репозиторій до початкового стану"
+msgstr "Зупинити застосування серії латок й повернути дерево у початковий стан"
 
 #: ../plugins/git/plugin.c:521
 msgid "Reset..."
@@ -5880,9 +5799,8 @@ msgid "Apply"
 msgstr "Застосувати"
 
 #: ../plugins/git/plugin.c:597
-#, fuzzy
 msgid "Apply and restore index"
-msgstr "Застосувати зміни у схованці до робочого дерева"
+msgstr "Застосувати та відновити індекс"
 
 #: ../plugins/git/plugin.c:605
 msgid "Drop"
@@ -5894,26 +5812,24 @@ msgstr "Гілка"
 
 #: ../plugins/git/plugin.c:855
 msgid "Status popup menu"
-msgstr ""
+msgstr "Контекстне меню стану"
 
 #: ../plugins/git/plugin.c:860
 msgid "Log popup menu"
-msgstr ""
+msgstr "Контекстне меню журналу"
 
 #: ../plugins/git/plugin.c:866
-#, fuzzy
 #| msgid "Branch name:"
 msgid "Branch popup menu"
-msgstr "Назва гілки:"
+msgstr "Контекстне меню гілки"
 
 #: ../plugins/git/plugin.c:872
-#, fuzzy
 msgid "Remote popup menu"
-msgstr "Назва модуля:"
+msgstr "Контекстне меню віддаленого репозиторію"
 
 #: ../plugins/git/plugin.c:877
 msgid "Popup menu entries"
-msgstr ""
+msgstr "Пункти контекстного меню"
 
 #: ../plugins/git/plugin.c:928
 msgid "Status"
@@ -5935,7 +5851,7 @@ msgstr "Віддалені"
 #: ../plugins/glade/anjuta-design-document.c:201
 #, c-format
 msgid "Glade project '%s' saved"
-msgstr "Проєкт Glade '%s' збережено"
+msgstr "Проєкт Glade «%s» збережено"
 
 #: ../plugins/glade/anjuta-design-document.c:181
 #: ../plugins/glade/anjuta-design-document.c:208
@@ -5951,43 +5867,38 @@ msgid "Glade Plugin for Anjuta."
 msgstr "Модуль Glade для Anjuta"
 
 #: ../plugins/glade/anjuta-glade.plugin.in.h:3
-#, fuzzy
 msgid "User interface file"
-msgstr "Файл інтерфейсу"
+msgstr "Файл користувацького інтерфейсу"
 
 #: ../plugins/glade/anjuta-glade.ui.h:1
-#, fuzzy
 msgid "Select widgets in the workspace"
-msgstr "Виділити весь текст в редакторі"
+msgstr "Виділити віджети у робочому просторі"
 
 #: ../plugins/glade/anjuta-glade.ui.h:2
 msgid "Drag and resize widgets in the workspace"
-msgstr ""
+msgstr "Перетягнути та змінити розмір віджетів у робочому просторі"
 
 #: ../plugins/glade/anjuta-glade.ui.h:3
-#, fuzzy
 #| msgid "Show right margin"
 msgid "Edit widget margins"
-msgstr "Показати праву межу"
+msgstr "Змінити поля віджету"
 
 #: ../plugins/glade/anjuta-glade.ui.h:4
 msgid "Edit widget alignment"
-msgstr ""
+msgstr "Редагувати вирівнювання віджету"
 
 #: ../plugins/glade/plugin.c:688
-#, fuzzy
 #| msgid "Properties"
 msgid "Glade Properties…"
-msgstr "Властивості"
+msgstr "Властивості Glade…"
 
 #: ../plugins/glade/plugin.c:690
 msgid "Switch between library versions and check deprecations"
 msgstr "Перемикнутися між версіями бібліотек та перевірити залежності"
 
 #: ../plugins/glade/plugin.c:731
-#, fuzzy
 msgid "Loading Glade…"
-msgstr "Завантаження…"
+msgstr "Завантаження Glade…"
 
 #: ../plugins/glade/plugin.c:818
 msgid "Glade designer operations"
@@ -6022,11 +5933,11 @@ msgstr "Увімкнути «розумні» відступи"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:2
 msgid "Leading asterisk in multi-line comment"
-msgstr ""
+msgstr "Символ «*» у багаторядкових коментарях"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:3
 msgid "Prefer vim/emacs modelines over indentation settings"
-msgstr ""
+msgstr "Надавати перевагу налаштуванням відступів vim/emacs"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:4
 msgid "Enable smart brace completion"
@@ -6056,10 +5967,9 @@ msgid "Indent:"
 msgstr "Відступи"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:10
-#, fuzzy
 #| msgid "Parenthesis indentation"
 msgid "Use spaces for parenthesis indentation"
-msgstr "Відступи круглих дужок"
+msgstr "Використовувати пробіли для відступів дужок"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:11
 msgid "Parenthesis indentation"
@@ -6079,10 +5989,9 @@ msgstr ""
 "вирівнювання"
 
 #: ../plugins/indentation-c-style/plugin.c:265
-#, fuzzy
 #| msgid "Smart Indentation"
 msgid "C Indentation"
-msgstr "«Розумні» відступи"
+msgstr "Відступ C"
 
 #: ../plugins/indentation-c-style/plugin.c:363
 #: ../plugins/indentation-c-style/plugin.c:372
@@ -6093,61 +6002,58 @@ msgid "Indentation"
 msgstr "Відступи"
 
 #: ../plugins/indentation-python-style/anjuta-indentation-python-style.ui.h:2
-#, fuzzy
 msgid "Enable adaptive indentation"
-msgstr "Увімкнути «розумні» відступи"
+msgstr "Увімкнути адаптивні відступи"
 
 #: ../plugins/indentation-python-style/plugin.c:227
-#, fuzzy
 #| msgid "Smart Indentation"
 msgid "Python Indentation"
-msgstr "«Розумні» відступи"
+msgstr "Відступ Python"
 
 #: ../plugins/jhbuild/anjuta-jhbuild.plugin.in.h:1
-#, fuzzy
 #| msgid "Build"
 msgid "JHBuild"
-msgstr "Збирання"
+msgstr "JHBuild"
 
 #: ../plugins/jhbuild/anjuta-jhbuild.plugin.in.h:2
 msgid "Build and run programs inside the JHBuild environment"
-msgstr ""
+msgstr "Збірка і запуск програм в оточенні JHBuild"
 
 #: ../plugins/jhbuild/plugin.c:121
-#, fuzzy
 #| msgid "Failed to read file"
 msgid "Failed to run \"jhbuild run\""
-msgstr "Неможливо прочитати файл"
+msgstr "Не вдалося виконати «jhbuild run»"
 
 #: ../plugins/jhbuild/plugin.c:127
 #, c-format
 msgid "Failed to run \"jhbuild run\" (%s)"
-msgstr ""
+msgstr "Не вдалося виконати «jhbuild run» (%s)"
 
 #: ../plugins/jhbuild/plugin.c:172
 msgid "Could not find the JHBuild install prefix."
-msgstr ""
+msgstr "Не вдалося знайти префікс встановлення JHBuild."
 
 #: ../plugins/jhbuild/plugin.c:180
 msgid ""
 "Could not find the JHBuild library directory. You need JHBuild from "
 "2012-11-06 or later."
 msgstr ""
+"Не вдалося знайти каталог з бібліотеками JHBuild. Необхідний JHBuild від "
+"06.11.2012 або пізнішої версії."
 
 #: ../plugins/jhbuild/plugin.c:198
-#, fuzzy, c-format
+#, c-format
 #| msgid "Failed to activate plugin: %s"
 msgid "Failed to activate the JHBuild Plugin: %s"
-msgstr "Не вдалось активувати додатковий модуль: %s"
+msgstr "Не вдалося активувати додаток JHBuild: %s"
 
 #: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "Помилка: не вдалось приєднатися до порту"
 
 #: ../plugins/js-debugger/js_debugger.plugin.in.h:1
-#, fuzzy
 msgid "Javascript Debugger"
-msgstr "Модуль для налагодження Javascript"
+msgstr "Зневаджувач Javascript"
 
 #: ../plugins/js-debugger/js_debugger.plugin.in.h:2
 msgid "Javascript Debugger Plugin"
@@ -6177,31 +6083,28 @@ msgstr ""
 "та Java."
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:1
-#, fuzzy
 msgid "Automatically load required libraries of the project"
-msgstr "Автоматично додавати ресурси"
+msgstr "Автоматично завантажувати потрібні для проекту бібліотеки"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:2
 msgid "Load API tags for C standard library"
-msgstr ""
+msgstr "Завантажити позначки API для стандартної бібліотеки C"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:3
 msgid "Load API tags for C++ standard template library"
-msgstr ""
+msgstr "Завантажити позначки API для стандартної бібліотеки шаблонів C++"
 
 #: ../plugins/language-support-cpp-java/plugin.c:784
 msgid "Code added for widget."
-msgstr ""
+msgstr "Код, доданий для віджету."
 
 #: ../plugins/language-support-cpp-java/plugin.c:1198
-#, fuzzy
 msgid "Comment/Uncomment"
-msgstr "К_оментувати/розкоментувати блок"
+msgstr "Коментувати/Розкоментувати"
 
 #: ../plugins/language-support-cpp-java/plugin.c:1199
-#, fuzzy
 msgid "Comment or uncomment current selection"
-msgstr "Виділена область"
+msgstr "Коментувати або розкоментувати виділений фрагмент"
 
 #: ../plugins/language-support-cpp-java/plugin.c:1204
 msgid "Swap .h/.c"
@@ -6217,9 +6120,8 @@ msgstr "Підтримка C++/Java"
 
 #: ../plugins/language-support-cpp-java/plugin.c:1462
 #: ../plugins/language-support-cpp-java/plugin.c:1491
-#, fuzzy
 msgid "API Tags (C/C++)"
-msgstr "Теги API"
+msgstr "Позначки API (C/C++)"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:1
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:1
@@ -6245,10 +6147,9 @@ msgstr "Додавати '(' після автодоповнення викли�
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:4
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:4
 #: ../plugins/parser-cxx/anjuta-parser-cxx.ui.h:4
-#, fuzzy
 #| msgid "Add '(' after function call autocompletion"
 msgid "Add ')' after function call autocompletion"
-msgstr "Додавати '(' після автодоповнення викликів функції"
+msgstr "Додавати «)» після автодоповнення функції"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:5
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:5
@@ -6289,27 +6190,23 @@ msgid "Test"
 msgstr "Тест"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-#, fuzzy
 msgid "JS Find dirs"
-msgstr "<b>Шляхи пошуку JS</b>"
+msgstr "Каталоги пошуку JS"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-#, fuzzy
 #| msgid "Gir repository's directory:   "
 msgid "Gir repository's directory:"
-msgstr "Каталог репозиторію Gir:   "
+msgstr "Каталог репозиторію Gir:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
-#, fuzzy
 #| msgid "Gjs repository's directory:   "
 msgid "Gjs repository's directory:"
-msgstr "Каталог репозиторію Gjs:   "
+msgstr "Каталог репозиторію Gjs:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
-#, fuzzy
 #| msgid "Min character for completion "
 msgid "Min character for completion:"
-msgstr "Мінімальна кількість символів для доповнення"
+msgstr "Щонайменша кількість символів для доповнення:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:16
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
@@ -6331,13 +6228,12 @@ msgid "JavaScript"
 msgstr "Сценарій JavaScript"
 
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:10
-#, fuzzy
 msgid "Interpreter"
-msgstr "Інтерфейс"
+msgstr "Інтерпретатор"
 
 #: ../plugins/language-support-python/plugin.c:73
 msgid "Python support warning"
-msgstr ""
+msgstr "Попередження про підтримку Python"
 
 #: ../plugins/language-support-python/plugin.c:81
 msgid ""
@@ -6345,16 +6241,18 @@ msgid ""
 "aren't installed. Both are required for autocompletion in python files.\n"
 "Please install them and check the python path in the preferences."
 msgstr ""
+"Вказано неправильний шлях python, або не встановлені бібліотеки￼\n"
+"python-rope (http://rope.sf.net). Й то, й інше потрібне для автодоповнення\n"
+"у файлах python. Встановіть бібліотеки та перевірте у налаштуваннях шлях "
+"python."
 
 #: ../plugins/language-support-python/plugin.c:84
-#, fuzzy
 msgid "Do not show that warning again"
-msgstr "_Не показувати наступного разу"
+msgstr "Не показувати це попередження"
 
 #: ../plugins/language-support-python/plugin.c:428
-#, fuzzy
 msgid "Python Assistance"
-msgstr "Помічник проєкту"
+msgstr "Підтримка Python"
 
 #: ../plugins/language-support-python/plugin.c:557
 #: ../plugins/language-support-python/plugin.c:570
@@ -6363,19 +6261,15 @@ msgid "Python"
 msgstr "Python"
 
 #: ../plugins/language-support-vala/anjuta-vala.plugin.in.h:1
-#, fuzzy
 #| msgid "JS Support Plugin"
 msgid "Vala support Plugin"
-msgstr "Модуль підтримки JS"
+msgstr "Додаток підтримки Vala"
 
 #: ../plugins/language-support-vala/anjuta-vala.plugin.in.h:2
-#, fuzzy
 #| msgid ""
 #| "C++ and Java support plugin for code completion, auto-indentation, etc."
 msgid "Vala support plugin, adds code completion."
-msgstr ""
-"Модуль для підтримки автодоповнення, автоматичних відступів та т.і. для C++ "
-"та Java."
+msgstr "Додаток для підтримки Vala, додає доповнення коду."
 
 #: ../plugins/language-support-vala/plugin.vala:661
 #: ../plugins/language-support-vala/plugin.vala:669
@@ -6472,16 +6366,14 @@ msgid "Copy message"
 msgstr "Копіювати повідомлення"
 
 #: ../plugins/message-view/plugin.c:83
-#, fuzzy
 #| msgid "_Copy Message"
 msgid "_Copy All Messages"
-msgstr "_Копіювати повідомлення"
+msgstr "_Копіювати усі повідомлення"
 
 #: ../plugins/message-view/plugin.c:84
-#, fuzzy
 #| msgid "_Copy Message"
 msgid "Copy All Messages"
-msgstr "_Копіювати повідомлення"
+msgstr "Копіювати усі повідомлення"
 
 #: ../plugins/message-view/plugin.c:87
 msgid "_Next Message"
@@ -6536,9 +6428,8 @@ msgstr[1] "%d помилки"
 msgstr[2] "%d помилок"
 
 #: ../plugins/mk-project/mk-project.c:505
-#, fuzzy
 msgid "Unable to parse make file"
-msgstr "Не вдалось вилучити файл"
+msgstr "Не вдалося розібрати make-файл"
 
 #: ../plugins/mk-project/mk-project.plugin.in.h:1
 msgid "Makefile backend"
@@ -6546,7 +6437,7 @@ msgstr "Модуль сценаріїв (Makefiles)"
 
 #: ../plugins/mk-project/mk-project.plugin.in.h:2
 msgid "Makefile project backend, allowing only to read the project"
-msgstr ""
+msgstr "Проєкт на основі Makefile; дозволяє читати лише проєкт"
 
 #: ../plugins/mk-project/mk-project.ui.h:1
 msgid "Select package"
@@ -6785,14 +6676,14 @@ msgstr "Обрати файли первинних текстів…"
 
 #: ../plugins/project-manager/dialogs.c:409
 msgid " This property is not modifiable."
-msgstr ""
+msgstr " Цю властивість не можна змінити."
 
 #. Several backend are possible, ask the user to select one
 #: ../plugins/project-manager/dialogs.c:644
-#, fuzzy, c-format
+#, c-format
 #| msgid "Please select a project backend to open %s."
 msgid "Please select a project backend to use."
-msgstr "Виберіть модуль, щоб відкрити %s."
+msgstr "Виберіть модуль проєкту."
 
 #: ../plugins/project-manager/dialogs.c:683
 #: ../plugins/project-manager/dialogs.c:688
@@ -6809,24 +6700,20 @@ msgid "Target properties"
 msgstr "Властивості цілі"
 
 #: ../plugins/project-manager/dialogs.c:699
-#, fuzzy
 msgid "Source properties"
-msgstr "Властивості групи"
+msgstr "Властивості початкового коду"
 
 #: ../plugins/project-manager/dialogs.c:702
-#, fuzzy
 msgid "Module properties"
-msgstr "Властивості групи"
+msgstr "Властивості модуля"
 
 #: ../plugins/project-manager/dialogs.c:705
-#, fuzzy
 msgid "Package properties"
-msgstr "Властивості цілі"
+msgstr "Властивості пакунка"
 
 #: ../plugins/project-manager/dialogs.c:708
-#, fuzzy
 msgid "Unknown properties"
-msgstr "Властивості точки зупинки"
+msgstr "Невідомі властивості"
 
 #: ../plugins/project-manager/dialogs.c:737
 #| msgid "Backward"
@@ -6834,10 +6721,10 @@ msgid "Backend:"
 msgstr "Модуль:"
 
 #: ../plugins/project-manager/dialogs.c:929
-#, fuzzy, c-format
+#, c-format
 #| msgid "Loading project: %s"
 msgid "Reloading project: %s"
-msgstr "Завантаження проєкту: %s"
+msgstr "Перезавантаження проєкту: %s"
 
 #: ../plugins/project-manager/dialogs.c:1178
 #: ../plugins/project-manager/dialogs.c:1189
@@ -6857,9 +6744,8 @@ msgstr "Не вдалось додати файл первинних текст�
 
 #: ../plugins/project-manager/dialogs.c:1363
 #: ../plugins/project-manager/dialogs.c:1558
-#, fuzzy
 msgid "The selected node cannot contain source files."
-msgstr "Виділити _ціль для нових файлів первинних текстів"
+msgstr "Вибраний вузол не може містити файлів з джерельним кодом."
 
 #: ../plugins/project-manager/dialogs.c:1744
 #: ../plugins/project-manager/dialogs.c:1755
@@ -6872,9 +6758,8 @@ msgstr "Групу не обрано"
 
 #: ../plugins/project-manager/dialogs.c:1922
 #: ../plugins/project-manager/dialogs.c:1933
-#, fuzzy
 msgid "Cannot add modules"
-msgstr "Не вдалось додати файл первинних текстів"
+msgstr "Не вдалося додати модулі"
 
 #: ../plugins/project-manager/dialogs.c:1934
 msgid "No target has been selected"
@@ -6882,17 +6767,15 @@ msgstr "Не обрано ціль"
 
 #. Missing module name
 #: ../plugins/project-manager/dialogs.c:2140
-#, fuzzy
 msgid "Missing module name"
-msgstr "Пропущено назву інструменту:"
+msgstr "Пропущено назву модулю"
 
 #: ../plugins/project-manager/dialogs.c:2202
-#, fuzzy
 msgid "Cannot add packages"
-msgstr "Не вдалось додати ціль"
+msgstr "Не вдалося додати пакунки"
 
 #: ../plugins/project-manager/plugin.c:693
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Are you sure you want to remove the following group from the project?\n"
 #| "\n"
@@ -6900,11 +6783,12 @@ msgid ""
 "Are you sure you want to remove the group \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Вилучити групу з проєкту?\n"
+"Справді вилучити групу «%s» з проєкту?￼\n"
+"￼\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:696
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Are you sure you want to remove the following target from the project?\n"
 #| "\n"
@@ -6912,11 +6796,12 @@ msgid ""
 "Are you sure you want to remove the target \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Вилучити ціль з проєкту?\n"
+"Справді вилучити мету «%s» з проєкту?￼\n"
+"￼\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:699
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Are you sure you want to remove the following source file from the "
 #| "project?\n"
@@ -6925,11 +6810,12 @@ msgid ""
 "Are you sure you want to remove the source \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Вилучити файл первинного коду з проєкту?\n"
+"Справді вилучити файл початкового коду «%s» з проєкту?￼\n"
+"￼\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:702
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Are you sure you want to remove the following group from the project?\n"
 #| "\n"
@@ -6937,29 +6823,32 @@ msgid ""
 "Are you sure you want to remove the shortcut \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Вилучити групу з проєкту?\n"
+"Справді вилучити лейбу «%s» з проєкту?￼\n"
+"￼\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:706
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Are you sure you want to remove the module \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Вилучити групу з проєкту?\n"
+"Справді вилучити модуль «%s» з проєкту?￼\n"
+"￼\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:709
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Are you sure you want to remove the package \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Вилучити ціль з проєкту?\n"
+"Справді вилучити пакунок «%s» з проєкту?￼\n"
+"￼\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:712
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Are you sure you want to remove the following elements from the project?\n"
 #| "\n"
@@ -6967,12 +6856,13 @@ msgid ""
 "Are you sure you want to remove the element \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Вилучити ці елементи з проєкту?\n"
+"Справді вилучити елемент «%s» з проєкту?￼\n"
+"￼\n"
 "\n"
 
 #. Translator: there is at least 2 elements to remove
 #: ../plugins/project-manager/plugin.c:721
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Are you sure you want to remove the following elements from the project?\n"
 #| "\n"
@@ -6983,36 +6873,33 @@ msgid_plural ""
 "Are you sure you want to remove %d elements from the project?\n"
 "\n"
 msgstr[0] ""
-"Вилучити ці елементи з проєкту?\n"
+"Справді вилучити %d елемент з проєкту?￼\n"
+"￼\n"
 "\n"
 msgstr[1] ""
-"Вилучити ці елементи з проєкту?\n"
+"Справді вилучити %d елементи з проєкту?￼\n"
 "\n"
 msgstr[2] ""
-"Вилучити ці елементи з проєкту?\n"
+"Справді вилучити %d елементів з проєкту?￼\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:726
-#, fuzzy
 msgid "The group will be deleted from the file system.\n"
-msgstr "Групу не буде вилучено з файлової системи."
+msgstr "Група буде вилучена з файлової системи.￼\n"
 
 #: ../plugins/project-manager/plugin.c:731
-#, fuzzy
 #| msgid "The group will not be deleted from the file system."
 msgid "The group will not be deleted from the file system.\n"
-msgstr "Групу не буде вилучено з файлової системи."
+msgstr "Група не буде вилучена з файлової системи.￼\n"
 
 #: ../plugins/project-manager/plugin.c:737
-#, fuzzy
 msgid "The source file will be deleted from the file system.\n"
-msgstr "Файл первинного  коду не буде вилучено з файлової системи."
+msgstr "Файл початкового коду буде вилучено з файлової системи.￼\n"
 
 #: ../plugins/project-manager/plugin.c:742
-#, fuzzy
 #| msgid "The source file will not be deleted from the file system."
 msgid "The source file will not be deleted from the file system.\n"
-msgstr "Файл первинного  коду не буде вилучено з файлової системи."
+msgstr "Файл початкового коду не буде вилучено з файлової системи.￼\n"
 
 #: ../plugins/project-manager/plugin.c:754
 msgid "Confirm remove"
@@ -7042,20 +6929,17 @@ msgstr "Створити _теку…"
 
 #: ../plugins/project-manager/plugin.c:907
 #: ../plugins/project-manager/plugin.c:941
-#, fuzzy
 msgid "Add a new folder to the project"
-msgstr "Додати файл/каталог до дерева CVS"
+msgstr "Додати нову теку в проєкт"
 
 #: ../plugins/project-manager/plugin.c:912
-#, fuzzy
 msgid "New _Target…"
-msgstr "Нова ціль"
+msgstr "Створити _мету…"
 
 #: ../plugins/project-manager/plugin.c:912
 #: ../plugins/project-manager/plugin.c:946
-#, fuzzy
 msgid "Add a new target to the project"
-msgstr "Добавить ціль до проєкту"
+msgstr "Додати до проєкту нову мету"
 
 #: ../plugins/project-manager/plugin.c:917
 msgid "Add _Source File…"
@@ -7064,19 +6948,16 @@ msgstr "Додати _файл первинних текстів…"
 #: ../plugins/project-manager/plugin.c:917
 #: ../plugins/project-manager/plugin.c:951
 #: ../plugins/project-manager/plugin.c:961
-#, fuzzy
 msgid "Add a source file to a target"
-msgstr "Додати _файл первинних текстів до проєкту"
+msgstr "Додати до проєкту файл початкового коду"
 
 #: ../plugins/project-manager/plugin.c:922
-#, fuzzy
 msgid "Add _Library…"
-msgstr "Додати _ціль…"
+msgstr "Додати _бібліотеку…"
 
 #: ../plugins/project-manager/plugin.c:922
-#, fuzzy
 msgid "Add a module to a target"
-msgstr "Додати _файл первинних текстів до проєкту"
+msgstr "Додати до проєкту модуль"
 
 #: ../plugins/project-manager/plugin.c:927
 #: ../plugins/project-manager/plugin.c:966
@@ -7097,23 +6978,20 @@ msgid "New _Folder"
 msgstr "Створити _теку"
 
 #: ../plugins/project-manager/plugin.c:946
-#, fuzzy
 msgid "New _Target"
-msgstr "Нова ціль"
+msgstr "Створити _ціль"
 
 #: ../plugins/project-manager/plugin.c:951
 msgid "Add _Source File"
 msgstr "Додати _файл первинних текстів"
 
 #: ../plugins/project-manager/plugin.c:956
-#, fuzzy
 msgid "Add _Library"
-msgstr "Бібліотека"
+msgstr "Додати _бібліотеку"
 
 #: ../plugins/project-manager/plugin.c:956
-#, fuzzy
 msgid "Add a library to a target"
-msgstr "Підтримка спільних бібліотек:"
+msgstr "Додати бібліотеку до цілі"
 
 #: ../plugins/project-manager/plugin.c:961
 msgid "_Add to Project"
@@ -7136,9 +7014,8 @@ msgid "_Sort"
 msgstr "_Впорядкувати"
 
 #: ../plugins/project-manager/plugin.c:976
-#, fuzzy
 msgid "Sort shortcuts"
-msgstr "Комбінації клавіш"
+msgstr "Впорядкувати клавіатурні скорочення"
 
 #: ../plugins/project-manager/plugin.c:1311
 #, c-format
@@ -7150,9 +7027,8 @@ msgstr ""
 "%s\n"
 
 #: ../plugins/project-manager/plugin.c:1321
-#, fuzzy
 msgid "Update project view…"
-msgstr "Створено представлення проєкту…"
+msgstr "Оновити перегляд проєкту…"
 
 #: ../plugins/project-manager/plugin.c:1326
 #: ../plugins/project-manager/plugin.c:1448
@@ -7190,19 +7066,16 @@ msgid "Project Loaded"
 msgstr "Проєкт завантажено"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:1
-#, fuzzy
 msgid "Add Library"
-msgstr "Бібліотека"
+msgstr "Додати бібліотеку"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:2
-#, fuzzy
 msgid "Select the _target for the library:"
-msgstr "Виділити _ціль для нових файлів первинних текстів"
+msgstr "Виберіть _ціль для бібліотеки:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:3
-#, fuzzy
 msgid "_New library…"
-msgstr "Створити комбінацію клавіш…"
+msgstr "_Створити бібліотеку…"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:4
 msgid "Modules:"
@@ -7213,14 +7086,12 @@ msgid "New Library"
 msgstr "Нова бібліотека"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:6
-#, fuzzy
 msgid "Package list:"
-msgstr "Пакети"
+msgstr "Перелік пакунків:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:7
-#, fuzzy
 msgid "_Module name:"
-msgstr "Назва модуля:"
+msgstr "Назва _модуля:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:8
 msgid "Add Source"
@@ -7241,9 +7112,8 @@ msgid "_Folder name:"
 msgstr "Назва _теки:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:12
-#, fuzzy
 msgid "Specify _where to create the folder:"
-msgstr "_Вкажіть, де створити ціль:"
+msgstr "_Вкажіть, де створити теку:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:13
 msgid "Select the _target for the new source files:"
@@ -7282,34 +7152,29 @@ msgid "More options:"
 msgstr "Додаткові параметри:"
 
 #: ../plugins/project-manager/project-chooser.c:296
-#, fuzzy
 #| msgid "Select project directory"
 msgid "<Select any project node>"
-msgstr "Вибрати каталог проєктів"
+msgstr "<Виберіть вузол проєкту>"
 
 #: ../plugins/project-manager/project-chooser.c:301
 #: ../plugins/project-manager/project-chooser.c:311
-#, fuzzy
 #| msgid "Select package"
 msgid "<Select a target>"
-msgstr "Вибрати пакет"
+msgstr "<Виберіть мету>"
 
 #: ../plugins/project-manager/project-chooser.c:306
-#, fuzzy
 #| msgid "Clean module"
 msgid "<Select any module>"
-msgstr "Очищення модуля"
+msgstr "<Виберіть модуль>"
 
 #: ../plugins/project-manager/project-chooser.c:316
-#, fuzzy
 msgid "<Select a target or a folder>"
-msgstr "Виділити _ціль для нових файлів первинних текстів"
+msgstr "<Виберіть ціль або теку>"
 
 #: ../plugins/project-manager/project-chooser.c:321
-#, fuzzy
 #| msgid "Select a Folder"
 msgid "<Select a folder>"
-msgstr "Виберіть каталог"
+msgstr "<Виберіть теку>"
 
 #: ../plugins/project-manager/project-model.c:185
 msgid "GbfProject Object"
@@ -7324,10 +7189,9 @@ msgid "Project Assistant"
 msgstr "Помічник проєкту"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:1
-#, fuzzy
 #| msgid "Select project directory"
 msgid "Select a project type"
-msgstr "Вибрати каталог проєктів"
+msgstr "Виберіть тип проєкту"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
 #| msgid "Whole project"
@@ -7356,11 +7220,8 @@ msgid "Message"
 msgstr "Повідомлення"
 
 #: ../plugins/project-wizard/druid.c:284
-#, fuzzy
 msgid "Confirm the following information:"
-msgstr ""
-"<b>Підтвердьте наступну інформацію:</b>\n"
-"\n"
+msgstr "Підтвердьте наступну інформацію:"
 
 #. The project type is translated too, it is something like
 #. * generic, GNOME applet, Makefile project...
@@ -7390,6 +7251,8 @@ msgid ""
 "\"#$:%%+,.=@^_`~\". In addition you cannot have a leading dash. Please fix "
 "it."
 msgstr ""
+"Поле «%s» може містити лише літери, цифри та символи «#$:%%+,.=@^_`~». Окрім "
+"того, не можна використовувати як перший символ знак дефіса."
 
 #: ../plugins/project-wizard/druid.c:732
 #, c-format
@@ -7398,6 +7261,9 @@ msgid ""
 "$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a "
 "leading dash. Please fix it."
 msgstr ""
+"Поле «%s» може містити лише літери, цифри, символи «#$:%%+,.=@^_`~» та "
+"символ розділювача для каталогів. Окрім того, не можна використовувати як"
+" перший символ знак дефіса."
 
 #: ../plugins/project-wizard/druid.c:737
 #, c-format
@@ -7405,6 +7271,7 @@ msgid ""
 "Field \"%s\" must contains only ASCII printable characters, no accentuated "
 "characters by example. Please fix it."
 msgstr ""
+"Поле «%s» повинне містити лише друковані символи ASCII. Будь ласка, виправте."
 
 #: ../plugins/project-wizard/druid.c:742
 #, c-format
@@ -7469,7 +7336,6 @@ msgstr "Встановити відсутні пакети"
 #. * new application like apt on Ubuntu, yum on Fedora, zypper on
 #. * OpenSuSE and emerge on Gentoo
 #: ../plugins/project-wizard/druid.c:1007
-#, fuzzy
 msgid ""
 "The missing programs are usually part of some distribution packages and can "
 "be searched for in your Application Manager. Similarly, the development "
@@ -7478,12 +7344,10 @@ msgid ""
 "dev\" or \"-devel\" suffix in package names and can be found by searching in "
 "your Application Manager."
 msgstr ""
-"Відсутні пакети часто входять до складу пакетів у дистрибутиві та можуть "
-"бути встановлені, як будь-які інші, за допомогою менеджера пакетів. У "
-"пакетах дистрибутиву присутні пакети для розробників, що дозволяють "
-"створювати програми з використанням бібліотек дистрибутиву. У назві пакету "
-"вони часто мають суфікс -dev або -devel, їх також можна знайти у менеджері "
-"пакетів."
+"Відсутні програми зазвичай входять до складу пакунків дистрибутиву й можуть "
+"бути знайдені у програмі керування програмами. Зазвичай, пакунки для "
+"розробки містяться у особливих пакунках, назви яких закінчуються на «dev» "
+"або «devel» і можуть бути знайдені шляхом пошуку в упоряднику програм."
 
 #: ../plugins/project-wizard/druid.c:1015
 msgid "Missing components"
@@ -7526,27 +7390,28 @@ msgstr "Виконання: %s"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:1
 msgid "Directory where the new projects are created by default"
-msgstr ""
+msgstr "Каталог, у якому типово створюються нові проєкти"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:2
 msgid ""
 "If empty, the user home directory is used. If the path is relative, it is "
 "relative to the home directory."
 msgstr ""
+"Якщо порожня, використовується домашній каталог користувача. Якщо шлях "
+"відносний, то він береться відносно домашнього каталогу."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
-#, fuzzy
 msgid "Default user name used in new project"
-msgstr "Створити файл або проєкт"
+msgstr "Ім'я користувача, що використовується типово у новому проєкті"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
 msgid "If empty, the current user name is used."
-msgstr ""
+msgstr "Якщо порожня, використовується поточне ім'я користувача."
 
 #: ../plugins/project-wizard/plugin.c:50
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to extract project template %s: %s"
-msgstr "Не вдалось знайти шаблони проєктів у %s"
+msgstr "Не вдалося видобути шаблон проєкту %s: %s"
 
 #: ../plugins/project-wizard/plugin.c:286
 msgid "New Project Assistant"
@@ -7919,7 +7784,7 @@ msgstr "Потрібні пакунки:"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:23
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:23
 msgid "Check the packages that your project requires"
-msgstr ""
+msgstr "Перевірте пакунки, необхідні вашому проєкту"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:34
 msgid "Values to watch"
@@ -8058,10 +7923,9 @@ msgstr ""
 #: ../plugins/project-wizard/templates/library.wiz.in.h:24
 #: ../plugins/project-wizard/templates/terminal.wiz.in.h:19
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:19
-#, fuzzy
 #| msgid "Add C++ support:"
 msgid "Add Windows support:"
-msgstr "Підтримка C++:"
+msgstr "Додати підтримку Windows:"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:20
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:26
@@ -8070,10 +7934,9 @@ msgstr "Підтримка C++:"
 #: ../plugins/project-wizard/templates/library.wiz.in.h:25
 #: ../plugins/project-wizard/templates/terminal.wiz.in.h:20
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:20
-#, fuzzy
 #| msgid "Adds support for building shared libraries in your project"
 msgid "Adds support for building on Windows platforms"
-msgstr "Додати можливість збирання спільних бібліотек"
+msgstr "Додає можливість збірки на платформах Windows"
 
 #: ../plugins/project-wizard/templates/django.wiz.in.h:1
 msgid "Django Project"
@@ -8109,27 +7972,25 @@ msgstr "GCJ потрібно вказати, який клас містить ф
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:1
 msgid "Gnome Shell Extension"
-msgstr ""
+msgstr "Розширення Gnome Shell"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:2
 msgid "A minimal Gnome Shell extension"
-msgstr ""
+msgstr "Щонайменше розширення Gnome Shell"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:5
-#, fuzzy
 #| msgid "Plugin Class Name:"
 msgid "Plugin Name:"
-msgstr "Назва класу доповнення:"
+msgstr "Назва додатка:"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:6
 msgid "Short but descriptive user-visible plugin name"
-msgstr ""
+msgstr "Коротка, але описова назва додатка"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:14
-#, fuzzy
 #| msgid "Display description of the plugin"
 msgid "Long description of your plugin"
-msgstr "Показати опис доповнення"
+msgstr "Докладний опис додатка"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:15
 msgid "UUID:"
@@ -8144,27 +8005,32 @@ msgid ""
 "uuid on your\n"
 "email address."
 msgstr ""
+"Uuid — це глобальний унікальний ідентифікатор розширення.￼\n"
+"Uuid може бути записаний у вигляді адреси ел. пошти "
+"(foo.bar@extensions.example.com),￼\n"
+"адреса пошти повинна бути справжньою та актуальною."
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:21
 msgid "Extension URL"
-msgstr ""
+msgstr "URL-адреса розширення"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:22
 msgid "Gnome Shell Compatibility:"
-msgstr ""
+msgstr "Сумісність з Gnome Shell:"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:23
 msgid ""
 "Comma-separated list of gnome-shell version your plugin is compatible with"
 msgstr ""
+"Перелік версій gnome-shell, розділених комами, з якими сумісний додаток"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:1
 msgid "GTK+ (Application)"
-msgstr ""
+msgstr "GTK+ (програма)"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:2
 msgid "Full features Gtk+ Application with file handling"
-msgstr ""
+msgstr "Повнофункціональна програма GTK+ з опрацюванням файлів"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:19
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:17
@@ -8189,9 +8055,8 @@ msgstr ""
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:23
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:17
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:17
-#, fuzzy
 msgid "Use GtkBuilder for user interface:"
-msgstr "Створити файл інтерфейсу Gtk Builder"
+msgstr "Використовувати GtkBuilder для користувацького інтерфейсу:"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:24
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:22
@@ -8202,6 +8067,8 @@ msgid ""
 "Use GtkBuilder to create the user-interface in a graphical way and load it "
 "from xml files at runtime"
 msgstr ""
+"Використовувати GtkBuilder для створення користувацького інтерфейсу та його "
+"завантаження із файлів XML"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:28
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:28
@@ -8222,23 +8089,21 @@ msgstr ""
 
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:1
 msgid "GTKmm (Simple)"
-msgstr ""
+msgstr "GTKmm (простий)"
 
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:2
-#, fuzzy
 msgid "A minimal GTKmm project"
-msgstr "Проєкт GTK+"
+msgstr "Щонайменший проєкт GTKmm"
 
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:1
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:1
 msgid "GTK+ (simple)"
-msgstr ""
+msgstr "GTK+ (простий)"
 
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:2
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:2
-#, fuzzy
 msgid "Simple GTK+ project"
-msgstr "Проєкт GTK+"
+msgstr "Простий проєкт GTK+"
 
 #: ../plugins/project-wizard/templates/java.wiz.in.h:1
 msgid "Generic java (automake)"
@@ -8326,14 +8191,12 @@ msgid "Project directory:"
 msgstr "Кореневий каталог проєкту:"
 
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:1
-#, fuzzy
 msgid "PyGTK (automake)"
-msgstr "Звичайний java (automake)"
+msgstr "PyGTK (automake)"
 
 #: ../plugins/project-wizard/templates/pygtk.wiz.in.h:2
-#, fuzzy
 msgid "PyGTK project using automake"
-msgstr "Назва проєкту"
+msgstr "Проєкт PyGTK, що використовує automake"
 
 #: ../plugins/project-wizard/templates/python.wiz.in.h:1
 msgid "Generic python (automake)"
@@ -8356,10 +8219,9 @@ msgid "Require SDL version:"
 msgstr "Потрібна версія SDL:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-#, fuzzy
 #| msgid "Mininum SDL version required"
 msgid "Minimum SDL version required"
-msgstr "Мінімальна потрібна версія SDL"
+msgstr "Щонайменша потрібна версія SDL"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
 msgid "Require SDL_image:"
@@ -8434,20 +8296,18 @@ msgid "A generic Xlib project"
 msgstr "Проєкт Xlib"
 
 #: ../plugins/python-loader/anjuta-python-loader.plugin.in.h:1
-#, fuzzy
 #| msgid "Python Module"
 msgid "Python loader"
-msgstr "Модуль Python"
+msgstr "Завантажувач Python"
 
 #: ../plugins/python-loader/anjuta-python-loader.plugin.in.h:2
 msgid "Allows loading Anjuta plugins written in Python"
-msgstr ""
+msgstr "Дозволяє завантажувати додатки Anjuta, написані на Python"
 
 #: ../plugins/quick-open/anjuta-quick-open.ui.h:1
-#, fuzzy
 #| msgid "Loading..."
 msgid "Loading files..."
-msgstr "Завантаження..."
+msgstr "Завантаження файлів…"
 
 #: ../plugins/quick-open/plugin.c:221
 #| msgid "_Quick Search"
@@ -8456,13 +8316,12 @@ msgstr "Швидке відкривання"
 
 #: ../plugins/quick-open/plugin.c:223
 msgid "Quickly open a file in the current project."
-msgstr ""
+msgstr "Швидко відкрити файл у поточному проєкті."
 
 #: ../plugins/quick-open/plugin.c:243
-#, fuzzy
 #| msgid "Run operations"
 msgid "Quick open operations"
-msgstr "Команди запуску"
+msgstr "Операції швидкого відкриття"
 
 #: ../plugins/quick-open/quick-open-dialog.c:775
 #| msgid "_Quick Search"
@@ -8505,14 +8364,13 @@ msgstr "Каталог програми «%s» не є локальним"
 
 #: ../plugins/run-program/org.gnome.anjuta.plugins.run.gschema.xml.in.h:1
 msgid "Command used for starting a terminal"
-msgstr ""
+msgstr "Команда, яка використовується для запуску терміналу"
 
 #: ../plugins/run-program/parameters.c:180
 msgid "Load Target to run"
 msgstr "Завантажити ціль для запуску"
 
 #: ../plugins/run-program/plugin.c:228
-#, fuzzy
 #| msgid ""
 #| "The program is running.\n"
 #| "Do you want to restart it?"
@@ -8520,8 +8378,8 @@ msgid ""
 "The program is already running.\n"
 "Do you want to stop it before restarting a new instance?"
 msgstr ""
-"Програма запущена.\n"
-"Дійсно хочете перезапустити її?"
+"Програма вже запущена.￼\n"
+"Бажаєте її зупинити перед запуском нового примірника?"
 
 #. Action name
 #. Stock icon, if any
@@ -8558,11 +8416,11 @@ msgstr "Команди запуску"
 #: ../plugins/snippets-manager/plugin.c:979
 #: ../plugins/snippets-manager/snippets-provider.c:754
 msgid "Code Snippets"
-msgstr ""
+msgstr "Фрагменти коду"
 
 #: ../plugins/snippets-manager/anjuta-snippets-manager.plugin.in.h:2
 msgid "Allows insertion of snippets into the editor."
-msgstr ""
+msgstr "Дозволити вставку фрагментів коду у редактор."
 
 #: ../plugins/snippets-manager/plugin.c:62
 #: ../plugins/snippets-manager/plugin.c:307
@@ -8576,11 +8434,11 @@ msgstr "Фрагменти"
 #. the snippet gets inserted.
 #: ../plugins/snippets-manager/plugin.c:73
 msgid "_Trigger insert"
-msgstr ""
+msgstr "Вставка _тригера"
 
 #: ../plugins/snippets-manager/plugin.c:75
 msgid "Insert a snippet using the trigger-key"
-msgstr ""
+msgstr "Вставляти фрагмент коду за допомогою ключа тригера"
 
 #. Translator: In a similar matter, it also appears in Edit->Snippets. It's another method
 #. for inserting snippets. In this case, you call Auto complete insert, start
@@ -8589,50 +8447,45 @@ msgstr ""
 #. (they are showed by their names). After selecting one of them, the snippet gets
 #. inserted.
 #: ../plugins/snippets-manager/plugin.c:86
-#, fuzzy
 msgid "_Auto complete insert"
-msgstr "Автодоповнення"
+msgstr "Вставка _автодоповнення"
 
 #: ../plugins/snippets-manager/plugin.c:88
-#, fuzzy
 msgid "Insert a snippet using auto-completion"
-msgstr "Вставляти заглушку обробника, автоматично розміщуючи її у коді"
+msgstr "Вставляти фрагмент коду з використанням автодоповнення"
 
 #: ../plugins/snippets-manager/plugin.c:93
 msgid "_Import snippets …"
-msgstr ""
+msgstr "_Імпортувати фрагменти коду…"
 
 #: ../plugins/snippets-manager/plugin.c:95
 msgid "Import snippets to the database"
-msgstr ""
+msgstr "Імпортувати фрагменти коду у базу даних"
 
 #: ../plugins/snippets-manager/plugin.c:100
 msgid "_Export snippets …"
-msgstr ""
+msgstr "_Експортувати фрагменти коду…"
 
 #: ../plugins/snippets-manager/plugin.c:102
 msgid "Export snippets from the database"
-msgstr ""
+msgstr "Експортувати фрагменти коду із бази даних"
 
 #: ../plugins/snippets-manager/plugin.c:332
-#, fuzzy
 msgid "Snippets Manager actions"
-msgstr "Дії менеджера проєкту"
+msgstr "Дії диспетчера фрагментів коду"
 
 #: ../plugins/snippets-manager/plugin.c:779
 msgid "Command?"
 msgstr "Команда?"
 
 #: ../plugins/snippets-manager/plugin.c:795
-#, fuzzy
 msgid "Variable text"
-msgstr "Список змінних"
+msgstr "Змінний текст"
 
 #: ../plugins/snippets-manager/plugin.c:813
 #: ../plugins/snippets-manager/snippets-editor.c:40
-#, fuzzy
 msgid "Instant value"
-msgstr "Переглянути/обчислити"
+msgstr "Миттєве значення"
 
 #: ../plugins/snippets-manager/snippets-browser.c:193
 #: ../plugins/snippets-manager/snippets-manager-preferences.ui.h:1
@@ -8641,15 +8494,13 @@ msgstr "Додати фрагмент"
 
 #: ../plugins/snippets-manager/snippets-browser.c:199
 #: ../plugins/snippets-manager/snippets-manager-preferences.ui.h:2
-#, fuzzy
 msgid "Remove selected snippet"
-msgstr "Групу не обрано"
+msgstr "Вилучити виділений фрагмент коду"
 
 #: ../plugins/snippets-manager/snippets-browser.c:205
-#, fuzzy
 #| msgid "Paste the content of clipboard at the current position"
 msgid "Insert snippet into editor at current cursor position"
-msgstr "Вставити вміст буферу обміну в поточній позиції"
+msgstr "Вставити фрагмент коду у редактор у поточну позицію"
 
 #: ../plugins/snippets-manager/snippets-browser.c:552
 msgid "Trigger"
@@ -8666,9 +8517,8 @@ msgstr "Додати фрагмент…"
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
-#, fuzzy
 msgid "Add Snippets Group…"
-msgstr "Додати_ групу…"
+msgstr "Додати групу фрагментів коду…"
 
 #: ../plugins/snippets-manager/snippets-editor.c:39
 msgid "Default value"
@@ -8676,56 +8526,56 @@ msgstr "Типове значення"
 
 #: ../plugins/snippets-manager/snippets-editor.c:48
 msgid "<b>Error:</b> You must choose at least one language for the snippet!"
-msgstr ""
+msgstr "<b>Помилка:</b> виберіть хоч би одну мову для фрагмента коду!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:49
 msgid ""
 "<b>Error:</b> The trigger key is already in use for one of the languages!"
-msgstr ""
+msgstr "<b>Помилка:</b> ключ тригера вже використовується для однієї з мов!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
-#, fuzzy
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
 "\"_\"!"
 msgstr ""
-"Назва файлу первинного коду може складатися лише з літер, цифр, символів "
-"«_», «-» чи «.»"
+"<b>Помилка:</b> ключ тригера може містити лише літерно-цифрові символи та "
+"«_»!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:51
 msgid "<b>Error:</b> You haven't entered a trigger key for the snippet!"
-msgstr ""
+msgstr "<b>Помилка:</b> не вказано ключ тригера для фрагмента коду!"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:1
-#, fuzzy
 msgid "Snippet Name:"
-msgstr "Нова назва:"
+msgstr "Назва фрагмента коду:"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:2
 msgid ""
 "Select the name of the Snippet. \n"
 "The role of the name is purely informative."
 msgstr ""
+"Виберіть назву фрагмента коду. ￼\n"
+"Назва відіграє суто інформативну роль."
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:4
 msgid "<b>Warning:</b> You should choose a name for the snippet!"
-msgstr ""
+msgstr "<b>Увага:</b> необхідно вибрати назву для фрагмента коду!"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:5
 msgid "Snippets Group:"
-msgstr ""
+msgstr "Група фрагментів коду:"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:6
 msgid "Select the Snippets Group to which this snippet belongs."
-msgstr ""
+msgstr "Виберіть групу фрагментів коду, до якої належить цей фрагмент коду."
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:7
 msgid "<b>Error:</b> The snippet must belong to a group!"
-msgstr ""
+msgstr "<b>Помилка:</b> фрагмент коду повинен входити у групу!"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:8
 msgid "Trigger Key:"
-msgstr ""
+msgstr "Ключ тригера:"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:9
 msgid ""
@@ -8734,6 +8584,10 @@ msgid ""
 "snippet.\n"
 "<b>Warning: Must be unique per language. </b>"
 msgstr ""
+"Ключ тригера використовується для швидкої вставки фрагмента коду. Щоб "
+"вставити фрагмент коду, використовуйте сполучення клавіш «Швидка вставка», "
+"уведіть ключ тригера в редакторі.￼\n"
+"<b>Увага: має бути унікальним для кожної мови. </b>"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:11
 msgid "Languages:"
@@ -8741,7 +8595,7 @@ msgstr "Мови:"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:12
 msgid "Select the languages for which you want to use this snippet."
-msgstr ""
+msgstr "Оберіть мови, для яких ви бажаєте використовувати цей фрагмент коду."
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:13
 msgid "Keywords:"
@@ -8752,29 +8606,29 @@ msgid ""
 "Keywords are used for better searching of the snippets. They should be "
 "relevant to the snippet content. Type them separated by a single space."
 msgstr ""
+"Ключові слова використовуються для поліпшеного пошуку фрагментів коду. Вони "
+"повинні мати відношення до вмісту фрагментів коду. Уведіть їх, розділивши "
+"одним пробілом."
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:15
-#, fuzzy
 msgid "Snippet Properties"
-msgstr "Властивості"
+msgstr "Властивості фрагмента коду"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:16
 msgid "Preview"
 msgstr "Перегляд"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:17
-#, fuzzy
 msgid "Snippet Content"
-msgstr "Зміст"
+msgstr "Вміст фрагмента коду"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:20
 msgid "Insert"
 msgstr "Вставити"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:21
-#, fuzzy
 msgid "Snippet Variables"
-msgstr "Змінні оточення:"
+msgstr "Змінні фрагмента коду"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:22
 msgid "Close"
@@ -8785,24 +8639,21 @@ msgid "Export snippets"
 msgstr "Експорт фрагментів тексту"
 
 #: ../plugins/snippets-manager/snippets-export-dialog.ui.h:3
-#, fuzzy
 #| msgid "Save current file"
 msgid "Save in folder:"
-msgstr "Зберегти поточний файл"
+msgstr "Зберігати у теку:"
 
 #: ../plugins/snippets-manager/snippets-export-dialog.ui.h:4
-#, fuzzy
 msgid "Select snippets"
-msgstr "Виберіть файл"
+msgstr "Вибір фрагментів коду"
 
 #: ../plugins/snippets-manager/snippets-import-export.c:155
 msgid "Import Snippets"
 msgstr "Імпортувати фрагменти"
 
 #: ../plugins/snippets-manager/snippets-manager-preferences.ui.h:3
-#, fuzzy
 msgid "Anjuta variables"
-msgstr "Макроси Anjuta"
+msgstr "Змінні Anjuta"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:1
 msgid "Use tabs for indentation"
@@ -9004,9 +8855,8 @@ msgid "Footer"
 msgstr "Нижній колонтитул"
 
 #: ../plugins/sourceview/sourceview-print.c:119
-#, fuzzy
 msgid "Highlight source code"
-msgstr "Р_ежим виділення кольором"
+msgstr "Підсвічувати джерельний код"
 
 #: ../plugins/starter/anjuta-starter.plugin.in.h:1
 msgid "Starter"
@@ -9025,44 +8875,38 @@ msgid "Create a new project"
 msgstr "Створити новий проєкт"
 
 #: ../plugins/starter/starter.ui.h:2
-#, fuzzy
 #| msgid "Import project"
 msgid "Import a project"
 msgstr "Імпортувати проєкт"
 
 #: ../plugins/starter/starter.ui.h:3
-#, fuzzy
 #| msgid "Search complete"
 msgid "Search for example code"
-msgstr "Пошук завершений"
+msgstr "Знайти приклад з кодом"
 
 #: ../plugins/starter/starter.ui.h:4
-#, fuzzy
 #| msgid "Man Documentation"
 msgid "View local Anjuta documentation"
-msgstr "Документація man"
+msgstr "Відкрити локальну документацію з Anjuta"
 
 #: ../plugins/starter/starter.ui.h:5
 msgid "View local Anjuta FAQ"
-msgstr ""
+msgstr "Відкрити локальні ЧаПи з Anjuta"
 
 #: ../plugins/starter/starter.ui.h:6
-#, fuzzy
 #| msgid "GNOME Online API Documentation"
 msgid "View online library documentation"
-msgstr "Документація до API Gnome у Інтернеті"
+msgstr "Переглянути документацію  мережевої бібліотеки"
 
 #: ../plugins/starter/starter.ui.h:7
-#, fuzzy
 #| msgid "No recently used resource found with URI \"%s\""
 msgid "Remove recently used project from list"
-msgstr "Не знайдено недавно використаних ресурсів з URI «%s»"
+msgstr "Вилучити нещодавно використовуваний проєкт з переліку"
 
 #: ../plugins/starter/starter.ui.h:8
-#, fuzzy
 #| msgid "_Install Project"
 msgid "Unlist Project"
-msgstr "Встановити п_роєкт"
+msgstr "Вилучити з переліку"
 
 #: ../plugins/subversion/anjuta-subversion.plugin.in.h:1
 #: ../plugins/subversion/subversion-ui-utils.c:64
@@ -9374,7 +9218,7 @@ msgstr "Об'єднати…"
 #. short-cut
 #: ../plugins/subversion/plugin.c:126
 msgid "Merge changes into your working copy"
-msgstr "Об'єднання змін у робочій копії..."
+msgstr "Об'єднання змін у робочій копії…"
 
 #. Action name
 #. Stock icon, if any
@@ -9671,13 +9515,13 @@ msgstr "%s: створення спадкування…"
 
 #. Translators: %s is the name of a system library
 #: ../plugins/symbol-db/plugin.c:1078
-#, fuzzy, c-format
+#, c-format
 #| msgid "%s: %d files scanned out of %d"
 msgid "%s: %d file scanned out of %d"
 msgid_plural "%s: %d files scanned out of %d"
-msgstr[0] "%s: проскановано %d файлів з %d"
-msgstr[1] "%s: проскановано %d файлів з %d"
-msgstr[2] "%s: проскановано %d файлів з %d"
+msgstr[0] "%s: %d опрацьований файл із %d"
+msgstr[1] "%s: %d опрацьовано файли із %d"
+msgstr[2] "%s: %d опрацьовано файлів із %d"
 
 #: ../plugins/symbol-db/plugin.c:1109
 #, c-format
@@ -9685,13 +9529,13 @@ msgid "Generating inheritances…"
 msgstr "Створення спадкування…"
 
 #: ../plugins/symbol-db/plugin.c:1111
-#, fuzzy, c-format
+#, c-format
 #| msgid "%d files scanned out of %d"
 msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
-msgstr[0] "Проскановано %d файлів з %d"
-msgstr[1] "Проскановано %d файлів з %d"
-msgstr[2] "Проскановано %d файлів з %d"
+msgstr[0] "%d опрацьований файл із %d"
+msgstr[1] "%d опрацьовано файли із %d"
+msgstr[2] "%d опрацьовано файлів із %d"
 
 #: ../plugins/symbol-db/plugin.c:1772
 msgid "Populating symbol database…"
@@ -9745,10 +9589,9 @@ msgid "Use GNOME Terminal profile:"
 msgstr "Використовувати профіль терміналу GNOME:"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
-#, fuzzy
 #| msgid "Use GNOME Terminal profile:"
 msgid "Use default GNOME terminal profile"
-msgstr "Використовувати профіль терміналу GNOME:"
+msgstr "Використовувати типовий профіль терміналу GNOME"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
@@ -10114,10 +9957,9 @@ msgid "Command line parameters"
 msgstr "Параметри командного рядка"
 
 #: ../src/about.c:186
-#, fuzzy
 #| msgid "Copyright (c) Naba Kumar"
 msgid "Copyright © Naba Kumar"
-msgstr "Copyright (С) Naba Kumar"
+msgstr "Авторські права © Наба Кумар (Naba Kumar)"
 
 #: ../src/anjuta-actions.h:23
 msgid "_File"
@@ -10275,21 +10117,21 @@ msgstr "Показати версію програми"
 
 #: ../src/anjuta-application.c:418
 msgid "Specify another profile"
-msgstr ""
+msgstr "Вказати інший профіль"
 
 #: ../src/anjuta-application.c:419
 msgid "PROFILE_FILE"
-msgstr ""
+msgstr "ФАЙЛ_ПРОФІЛЯ"
 
 #: ../src/anjuta-application.c:436
 msgid "- Integrated Development Environment"
 msgstr "- Інтегроване середовище розробки"
 
 #: ../src/anjuta-application.c:776
-#, fuzzy, c-format
+#, c-format
 #| msgid "Installation failed: %s"
 msgid "Invalid profile %s: %s"
-msgstr "Помилка при встановленні: %s"
+msgstr "Неправильний профіль %s: %s"
 
 #: ../src/anjuta-application.c:830
 msgid "Loaded Session…"
@@ -10321,29 +10163,28 @@ msgid "Value doesn't exist"
 msgstr "Значення не існує"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
-#, fuzzy
 msgid "Default email used in new project"
-msgstr "Створити файл або проєкт"
+msgstr "Типова ел. пошта використовувана у новому проєкті"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:2
 msgid "If empty, current login and machine name is used."
 msgstr ""
+"Якщо порожня, використовується поточне ім'я для входу у систему й поточну"
+" назву машини."
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:3
-#, fuzzy
 #| msgid "Use tabs for indentation"
 msgid "Use tabulation for indentation"
-msgstr "Використовувати у відступах табуляції"
+msgstr "Використовувати табуляції у відступах"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:4
-#, fuzzy
 #| msgid "Number of last characters to show:"
 msgid "Number of characters of one tabulation"
-msgstr "Кількість кінцевих символів, що показуються:"
+msgstr "Кількість місць в одній табуляції"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
-msgstr ""
+msgstr "Кількість пробілів на кожному відступі"
 
 #: ../src/preferences.ui.h:1
 msgid "Do not load last session on startup"
