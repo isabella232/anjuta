@@ -1,0 +1,320 @@
+# Swedish translation for anjuta.
+# Copyright © 2019, 2020 anjuta's COPYRIGHT HOLDER
+# This file is distributed under the same license as the anjuta package.
+# Erik Sköldås <erik.skoldas@tele2.se>, 2019.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: anjuta master\n"
+"POT-Creation-Date: 2019-03-24 13:54+0000\n"
+"PO-Revision-Date: 2020-05-05 21:00+0200\n"
+"Last-Translator: Erik Sköldås <erik.skoldas@tele2.se>\n"
+"Language-Team: Swedish <gnome-se-list@gnome.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.3\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Erik Sköldås <erik.skoldas@tele2.se>, 2019"
+
+#. (itstool) path: info/desc
+#: C/index.page:6
+msgid "Frequently asked questions"
+msgstr "Frågor och svar"
+
+#. (itstool) path: credit/name
+#: C/index.page:10 C/editor-maximize.page:12 C/general-bugs.page:11
+#: C/general-feature.page:11 C/general-name.page:10 C/general-windows.page:11
+msgid "GNOME Documentation Project"
+msgstr "GNOME:s dokumentationsprojekt"
+
+#. (itstool) path: credit/name
+#: C/index.page:14 C/editor-maximize.page:16 C/general-bugs.page:15
+#: C/general-feature.page:15 C/general-name.page:14 C/general-windows.page:15
+msgid "Andy Piper"
+msgstr "Andy Piper"
+
+#. (itstool) path: credit/name
+#: C/index.page:17 C/editor-maximize.page:19 C/general-bugs.page:18
+#: C/general-feature.page:18 C/general-name.page:17 C/general-windows.page:18
+msgid "Naba Kumar"
+msgstr "Naba Kumar"
+
+#. (itstool) path: credit/name
+#: C/index.page:21 C/editor-maximize.page:23 C/general-bugs.page:22
+#: C/general-feature.page:22 C/general-name.page:21 C/general-windows.page:22
+msgid "Biswapesh Chattopadhyayr"
+msgstr "Biswapesh Chattopadhyayr"
+
+#. (itstool) path: page/title
+#: C/index.page:24
+msgid "Anjuta FAQ"
+msgstr "Anjuta Frågor och Svar"
+
+#. (itstool) path: section/title
+#: C/index.page:28
+msgid "General"
+msgstr "Allmänt"
+
+#. (itstool) path: section/title
+#: C/index.page:32
+msgid "Editor"
+msgstr "Redigerare"
+
+#. (itstool) path: section/title
+#: C/index.page:36
+msgid "Project"
+msgstr "Projekt"
+
+#. (itstool) path: info/desc
+#: C/editor-goto-error.page:10
+msgid "Double click on the message."
+msgstr "Dubbelklicka på meddelandet."
+
+#. (itstool) path: credit/name
+#: C/editor-goto-error.page:14 C/editor-scintilla.page:12
+#: C/project-existing.page:11 C/project-resource.page:11
+msgid "Sébastien Granjoux"
+msgstr "Sébastien Granjoux"
+
+#. (itstool) path: page/title
+#: C/editor-goto-error.page:19
+msgid "How to jump to the line causing a build error or warning?"
+msgstr "Hur hoppar jag till en rad som orsakat ett byggfel eller en varning?"
+
+#. (itstool) path: page/p
+#: C/editor-goto-error.page:21
+msgid ""
+"Normally errors reported by the compiler are highlighted in the message "
+"window pane. Double clicking on an error should open the corresponding file, "
+"if necessary, and move the view to the right position."
+msgstr ""
+"Normalt färgmarkeras fel som rapporteras av kompilatorn i "
+"meddelandefönsterpanelen. Om du dubbelklickar på ett fel öppnas motsvarande "
+"fil, och fokus flyttas till rätt position."
+
+#. (itstool) path: note/p
+#: C/editor-goto-error.page:26
+msgid ""
+"It can fail if <app>Anjuta</app> is not able to parse the output of the "
+"build program. This is much more common if the output is translated. So, as "
+"a work around, you can uncheck the option <gui>Translate messages</gui> in "
+"the preferences of the build plugin. The errors and warnings of the compiler "
+"will not be translated but you should be able to jump to the faulty line as "
+"explained above."
+msgstr ""
+"Det kan misslyckas om <app>Anjuta</app> inte kan analysera utdata från "
+"byggprogrammet. Detta är mycket vanligare om utdata är översatt. För att "
+"komma runt problemet kan du avmarkera alternativet <gui>Översätt "
+"meddelanden</gui> i inställningarna för insticksmodulen för bygge. "
+"Felmeddelandena och varningarna i kompilatorn kommer inte att översättas, "
+"men du borde kunna hoppa direkt till den felande raden som förklarats ovan."
+
+#. (itstool) path: info/desc
+#: C/editor-maximize.page:8
+msgid "Double click on the current tab."
+msgstr "Dubbelklicka på den aktuella fliken."
+
+#. (itstool) path: page/title
+#: C/editor-maximize.page:27
+msgid "How to maximize the editor window"
+msgstr "Hur man maximerar redigeringsfönstret"
+
+# TODO: the same again *TO* restore
+#. (itstool) path: page/p
+#: C/editor-maximize.page:29
+msgid ""
+"Double click on the current tab to maximize the document window. Do the same "
+"again restore the previous state of all docked windows."
+msgstr ""
+"Dubbelklicka på den aktuella fliken för att maximera dokumentfönstret. Gör "
+"samma sak igen för att återställa det tidigare tillståndet för alla dockade "
+"fönster."
+
+#. (itstool) path: page/title
+#: C/editor-scintilla.page:17
+msgid "How to use <app>Scintilla editor</app>"
+msgstr "Så här använder du redigeraren <app>Scintilla</app>"
+
+#. (itstool) path: page/p
+#: C/editor-scintilla.page:19
+msgid ""
+"<app href=\"http://www.scintilla.org\">Scintilla editor</app> is available "
+"through the package <sys>anjuta-extras</sys> package which can either be "
+"downloaded from the <link href=\"http://projects.gnome.org/anjuta/downloads."
+"html\">Anjuta website</link> or installed from the software management "
+"application of your distribution. After you have installed it you will be "
+"prompted to choose an editor and you can set it as the default editor for "
+"this project."
+msgstr ""
+"Redigeraren <app href=\"http://www.scintilla.org\">Scintilla</app> finns "
+"tillgänglig via paketet <sys>anjuta-extras</sys> som antingen kan hämtas "
+"från <link href=\"http://projects.gnome.org/anjuta/downloads.html\">Anjutas "
+"webbplats</link> eller installeras via din distributions pakethanterare. När "
+"du har installerat det kommer du att bli ombedd att välja ett "
+"redigeringsprogram, och du kan ställa in det som standardredigerare för det "
+"här projektet."
+
+#. (itstool) path: note/p
+#: C/editor-scintilla.page:25
+msgid ""
+"<link action=\"install:anjuta-extras\" href=\"http://projects.gnome.org/"
+"anjuta/downloads.html\" style=\"button\">Install anjuta-extras</link>"
+msgstr ""
+"<link action=\"install:anjuta-extras\" href=\"http://projects.gnome.org/"
+"anjuta/downloads.html\" style=\"button\">Installera anjuta-extras</link>"
+
+#. (itstool) path: note/p
+#: C/editor-scintilla.page:31
+msgid "<app>Scintilla Editor</app> is available since Anjuta version 3.2."
+msgstr ""
+"Redigeraren <app>Scintilla</app> är tillgänglig sedan Anjuta version 3.2."
+
+#. (itstool) path: info/desc
+#: C/general-bugs.page:7
+msgid "Use GNOME's issue tracker tool."
+msgstr "Använd GNOME:s ärendehanteringsverktyg."
+
+#. (itstool) path: page/title
+#: C/general-bugs.page:26
+msgid "Where to report bugs and enhancement requests"
+msgstr "Var rapporterar man fel och förbättringsförfrågningar"
+
+#. (itstool) path: page/p
+#: C/general-bugs.page:28
+msgid ""
+"Please report bugs and enhancement requests in <app href=\"http://bugzilla."
+"gnome.org/browse.cgi?product=anjuta\">GNOME Bugzilla</app>."
+msgstr ""
+"Rapportera fel och förbättringsförfrågningar i <app href=\"http://bugzilla."
+"gnome.org/browse.cgi?product=anjuta\">GNOME Bugzilla</app>."
+
+#. (itstool) path: info/desc
+#: C/general-feature.page:7
+msgid "Because nobody has written it yet."
+msgstr "Eftersom ingen har skrivit den än."
+
+#. (itstool) path: page/title
+#: C/general-feature.page:26
+msgid "Why does <app>Anjuta</app> not have my favourite feature?"
+msgstr "Varför har <app>Anjuta</app> inte min favoritfunktion?"
+
+#. (itstool) path: page/p
+#: C/general-feature.page:28
+msgid ""
+"<app>Anjuta</app> is free and open source software. You are encouraged to "
+"<link href=\"https://live.gnome.org/Git/Developers\">take the source code</"
+"link> and add the features you would like to see. You can also <link xref="
+"\"general-bugs\">file an enhancement request</link> or send a message to the "
+"<link href=\"https://mail.gnome.org/mailman/listinfo/anjuta-devel-list"
+"\">development mailing list</link> to discuss your ideas first."
+msgstr ""
+"<app>Anjuta</app> baseras på fri och öppen källkod. Du uppmuntras att <link "
+"href=\"https://live.gnome.org/Git/Developers\">hämta hem källkoden</link> "
+"och lägga till de funktioner du skulle vilja se. Du kan även <link xref="
+"\"general-bugs\">skicka en förbättringsförfrågan</link> eller skicka ett "
+"meddelande <link href=\"https://mail.gnome.org/mailman/listinfo/anjuta-devel-"
+"list\">till sändlistan för utveckling</link>, för att diskutera dina idéer "
+"först."
+
+#. (itstool) path: page/title
+#: C/general-name.page:26
+msgid "What does the name <app>Anjuta</app> stand for?"
+msgstr "Vad står namnet <app>Anjuta</app> för?"
+
+#. (itstool) path: page/p
+#: C/general-name.page:28
+msgid ""
+"It is not one of those recursive names. <app>Anjuta</app> is the name of the "
+"girlfriend of the founder of this application, Naba Kumar. This application "
+"is dedicated to her."
+msgstr ""
+"Det är inte ett av de rekursiva namnen. <app>Anjuta</app> är namnet på "
+"flickvännen till grundaren av detta program, Naba Kumar. Programmet är "
+"tillägnat henne."
+
+#. (itstool) path: info/desc
+#: C/general-windows.page:7
+msgid "It is not planned."
+msgstr "Det är inte planerat."
+
+#. (itstool) path: page/title
+#: C/general-windows.page:26
+msgid "Is/will there be <app>Anjuta</app> for Microsoft Windows?"
+msgstr ""
+"Finns det eller kommer det att finnas en <app>Anjuta</app>-version för "
+"Microsoft Windows?"
+
+#. (itstool) path: page/p
+#: C/general-windows.page:28
+msgid ""
+"There is no native port for Microsoft Windows and most likely there will "
+"never be. However, if you are interested, feel free to <link href=\"https://"
+"mail.gnome.org/mailman/listinfo/anjuta-list\">contact us</link>."
+msgstr ""
+"Det finns ingen inhemsk portering för Microsoft Windows och troligen kommer "
+"det aldrig att göra det. Men om du är intresserad, tveka inte att <link href="
+"\"https://mail.gnome.org/mailman/listinfo/anjuta-list\">kontakta oss</link>."
+
+#. (itstool) path: info/desc
+#: C/project-existing.page:7
+msgid "Import a project into <app>Anjuta</app>."
+msgstr "Importera ett projekt till <app>Anjuta</app>."
+
+#. (itstool) path: page/title
+#: C/project-existing.page:16
+msgid "How can I use Anjuta with an existing project?"
+msgstr "Hur kan jag använda Anjuta med ett befintligt projekt?"
+
+#. (itstool) path: page/p
+#: C/project-existing.page:18
+msgid ""
+"Run <guiseq><gui>File</gui><gui>New</gui><gui>Project from existing sources</"
+"gui></guiseq>."
+msgstr ""
+"Välj <guiseq><gui>Arkiv</gui><gui>Nytt</gui><gui>Projekt från befintlig "
+"källkod</gui></guiseq>."
+
+#. (itstool) path: page/p
+#: C/project-existing.page:20
+msgid ""
+"<app>Anjuta</app> has no own project format. It uses already existing "
+"project formats, like Autotools or Makefile. On Linux, the most common "
+"format is Autotools."
+msgstr ""
+"<app>Anjuta</app> har inget eget projektformat utan använder redan "
+"befintliga format, som Autotools eller Makefile. På Linux är det vanligaste "
+"formatet Autotools."
+
+#. (itstool) path: info/desc
+#: C/project-resource.page:7
+msgid "Add a folder and a data target."
+msgstr "Lägg till en mapp och ett datamål."
+
+#. (itstool) path: page/title
+#: C/project-resource.page:16
+msgid "How to add a directory containing icons to a project"
+msgstr "Så här lägger du till en katalog med ikoner till ett projekt"
+
+# TODO: no existing string "add source file"?
+#. (itstool) path: page/p
+#: C/project-resource.page:18
+msgid ""
+"In an autotools project, you can add a new directory by creating a folder "
+"(<guiseq><gui>Project</gui><gui>New Folder...</gui></guiseq>). Then inside "
+"this folder create a new data target (<guiseq><gui>Project</gui><gui>New "
+"Target...</gui></guiseq>) and add the files corresponding to the icons to "
+"this target (<guiseq><gui>Project</gui><gui>Add Source File...</gui></"
+"guiseq>)."
+msgstr ""
+"I ett autotools-projekt kan du lägga till en ny katalog genom att skapa en "
+"mapp (<guiseq><gui>Projekt</gui><gui>Ny mapp…</gui></guiseq>). Skapa sedan "
+"ett nytt datamål i den här mappen (<guiseq><gui>Projekt</gui><gui>Nytt mål…</"
+"gui></guiseq>) och lägg till de filer som motsvarar ikonerna för det här "
+"målet (<guiseq><gui>Projekt</gui><gui>Lägg till källkodsfil…</gui></guiseq>)."
