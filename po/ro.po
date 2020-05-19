@@ -7,21 +7,28 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta head\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2015-08-18 14:49+0000\n"
-"PO-Revision-Date: 2011-05-08 11:09+0300\n"
-"Last-Translator: Cristian Buzdugă <cristianbzdg@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/anjuta/issues\n"
+"POT-Creation-Date: 2020-04-06 12:57+0000\n"
+"PO-Revision-Date: 2020-05-19 15:54+0300\n"
+"Last-Translator: Florentina Mușat <emryslokadottir [at] gmail [dot] com>\n"
 "Language-Team: Gnome Romanian Team <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2);;\n"
-"X-Generator: Virtaal 0.6.1\n"
+"20)) ? 1 : 2);\n"
+"X-Generator: Poedit 2.3.1\n"
 
-#: ../anjuta.appdata.xml.in.h:1
+#: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
+msgid "Anjuta"
+msgstr "Anjuta"
+
+#: ../anjuta.appdata.xml.in.h:2 ../anjuta.desktop.in.in.h:3
+msgid "Develop software in an integrated development environment"
+msgstr "Dezvoltă software într-un mediu integrat de dezvoltare"
+
+#: ../anjuta.appdata.xml.in.h:3
 msgid ""
 "Anjuta DevStudio is a versatile software development studio featuring a "
 "number of advanced programming facilities including project management, "
@@ -29,8 +36,14 @@ msgid ""
 "GUI designer, profiler and many more tools. It focuses on providing simple "
 "and usable user interface, yet powerful for efficient development."
 msgstr ""
+"DevStudio Anjuta este un studio de dezvoltare de programe versatil oferind "
+"un număr de facilități de programare avansate inclusiv administrare de "
+"proiect, asistent de aplicație, depanator interactiv, editor de sursă, "
+"controlul versiunii, designer the GUI, profilator și multe alte unelte. Se "
+"concentrează pe furnizarea unei interfețe cu utilizatorul simple și "
+"utilizabile, dar puternice pentru o dezvoltare eficientă."
 
-#: ../anjuta.appdata.xml.in.h:2
+#: ../anjuta.appdata.xml.in.h:4
 msgid ""
 "Anjuta is very extensible with plugins. Almost all features in Anjuta are "
 "implemented using plugins which can be dynamically enabled or disabled. You "
@@ -39,46 +52,47 @@ msgid ""
 "project making it easy to work on projects with various levels of "
 "complexity. Using plugins, you can extend Anjuta with your own features."
 msgstr ""
+"Anjuta este foarte extensibilă cu module. Aproape toate funcționalitățile în "
+"Anjuta sunt implementate utilizând module care pot fi activate și "
+"dezactivate dinamic. Puteți alege care module ar trebui să fie active pentru "
+"proiect. Precum aranjamentul interfeței cu utilizatorul, setul de module "
+"active este, de asemenea, persistent pentru fiecare proiect, facilitând "
+"lucrul la proiecte cu diferite niveluri de complexitate. Utilizând modulele, "
+"puteți extinde Anjuta cu propriile caracteristici."
 
-#: ../anjuta.appdata.xml.in.h:3
+#: ../anjuta.appdata.xml.in.h:5
 msgid ""
 "The project wizard lets you create new projects from a selection of project "
 "templates. The selection includes simple generic, flat (no subdirectory), GTK"
 "+, GNOME, Java, Python projects and more. New templates can be easily "
 "downloaded and installed."
 msgstr ""
-
-#: ../anjuta.desktop.in.in.h:1 ../src/main.c:34
-msgid "Anjuta"
-msgstr "Anjuta"
+"Asistentul proiectului vă permite să creați un proiect nou dintr-o selecție "
+"de șabloane de proiecte. Selecția include proiecte generice simple, plate "
+"(fără subdirectoare), GTK+, GNOME, Java, Python și multe altele. Șabloane "
+"noi pot fi ușor descărcate și instalate."
 
 #: ../anjuta.desktop.in.in.h:2 ../src/about.c:188
 msgid "Integrated Development Environment"
 msgstr "Mediu integrat de dezvoltare"
 
-#: ../anjuta.desktop.in.in.h:3
-msgid "Develop software in an integrated development environment"
-msgstr "Dezvoltă software într-un mediu integrat de dezvoltare"
-
 #: ../anjuta.desktop.in.in.h:4
 msgid "IDE;development;programming;"
-msgstr ""
+msgstr "IDE;development;programming;dezvoltare;programare;"
 
 #: ../libanjuta/anjuta-autogen.c:239
 msgid "Autogen is busy"
-msgstr ""
+msgstr "Autogen este ocupat"
 
 #: ../libanjuta/anjuta-autogen.c:251
-#, fuzzy, c-format
-#| msgid "Could not find application pixmap file: %s"
+#, c-format
 msgid "Could not write definition file \"%s\": %s"
-msgstr "Nu s-a putut găsi fișierul pixmap al aplicației: %s"
+msgstr "Nu s-a putut citi definiția fișierului „%s”: %s"
 
 #: ../libanjuta/anjuta-autogen.c:585
-#, fuzzy, c-format
-#| msgid "Could not open %s: %s"
+#, c-format
 msgid "Could not open file \"%s\": %s"
-msgstr "Nu s-a putut deschide %s: %s"
+msgstr "Nu s-a putut deschide fișierul „%s”: %s"
 
 #: ../libanjuta/anjuta-cell-renderer-captioned-image.c:239
 #: ../src/preferences.ui.h:10
@@ -122,14 +136,14 @@ msgstr "Coloana %i"
 msgid "Column 1"
 msgstr "Coloana 1"
 
-#: ../libanjuta/anjuta-convert.c:74 ../libanjuta/anjuta-convert.c:111
+#: ../libanjuta/anjuta-convert.c:75 ../libanjuta/anjuta-convert.c:113
 #, c-format
 msgid "The file you are trying to open contains an invalid byte sequence."
 msgstr ""
 "Fișierul pe care încercați să-l deschideți conține o secvență nevalidă de "
 "octeți."
 
-#: ../libanjuta/anjuta-convert.c:168 ../libanjuta/anjuta-convert.c:207
+#: ../libanjuta/anjuta-convert.c:170 ../libanjuta/anjuta-convert.c:209
 #, c-format
 msgid ""
 "Anjuta was not able to automatically determine the encoding of the file you "
@@ -342,10 +356,8 @@ msgstr "Arată un buton Adaugă"
 #. * found at http://library.gnome.org/devel/glib/unstable/glib-regex-syntax.html
 #.
 #: ../libanjuta/anjuta-launcher.c:675
-#, fuzzy
-#| msgid "Password:"
 msgid "[Pp]assword.*:"
-msgstr "Parolă:"
+msgstr "[Pp]arolă.*:"
 
 #: ../libanjuta/anjuta-launcher.c:1167 ../plugins/gdb/utilities.c:282
 #, c-format
@@ -356,7 +368,7 @@ msgstr "Nu s-a putut executa comanda: „%s”"
 msgid "execvp failed"
 msgstr "execvp a eșuat"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2399
 msgid "Anjuta Shell"
 msgstr "Shell Anjuta"
 
@@ -387,7 +399,7 @@ msgid "Load"
 msgstr "Încarcă"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2015
+#: ../libanjuta/anjuta-plugin-manager.c:2013
 msgid "Available Plugins"
 msgstr "Module disponibile"
 
@@ -395,94 +407,87 @@ msgstr "Module disponibile"
 msgid "Preferred plugins"
 msgstr "Module preferate"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1157
+#: ../libanjuta/anjuta-plugin-manager.c:1155
 msgid "Only show user activatable plugins"
 msgstr "Arată doar modulele de activabile"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1197
-#, fuzzy
-#| msgid ""
-#| "These are the plugins selected by you when Anjuta prompted to choose one "
-#| "of many suitable plugins. Removing the preferred plugin will let Anjuta "
-#| "prompt you again to choose different plugin."
+#: ../libanjuta/anjuta-plugin-manager.c:1195
 msgid ""
 "These are the plugins selected by you when you have been prompted to choose "
 "one of many suitable plugins. Removing the preferred plugin will let you "
 "choose a different plugin."
 msgstr ""
-"Acestea sunt modulele pe care le-ați selectat când Anjuta v-a cerut să "
-"alegeți unul din mai multe module disponibile. Eliminând modulul preferat va "
-"face ca Anjuta să vă ceară din nou să alegeți un alt modul."
+"Acestea sunt modulele selectate când ați fost solicitat să alegeți unul din "
+"mai multe module potrivite. Eliminarea modulului preferat vă va permite să "
+"alegeți un modul diferit."
 
-#: ../libanjuta/anjuta-plugin-manager.c:1223
+#: ../libanjuta/anjuta-plugin-manager.c:1221
 msgid "Forget selected plugin"
 msgstr "Uită modulul selectat"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1355
+#: ../libanjuta/anjuta-plugin-manager.c:1515 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "Alege un modul de extensie"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1358
+#: ../libanjuta/anjuta-plugin-manager.c:1356
 #: ../plugins/debug-manager/queue.c:528
 msgid "Please select a plugin to activate"
 msgstr "Alegeți un modul de activat"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1372
+#: ../libanjuta/anjuta-plugin-manager.c:1370
 #, c-format
 msgid "No plugin is able to load other plugins in %s"
 msgstr "Niciun modul nu poate încărca alte module în %s"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1518
+#: ../libanjuta/anjuta-plugin-manager.c:1516
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>Alegeți un modul de activat</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2044
+#: ../libanjuta/anjuta-plugin-manager.c:2042
 msgid "Remember this selection"
 msgstr "Ține minte această selecție"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2382
+#: ../libanjuta/anjuta-plugin-manager.c:2380
 msgid "Profiles"
 msgstr "Profiluri"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2381
 msgid "Current stack of profiles"
 msgstr "Stiva curentă de profiluri"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2388
+#: ../libanjuta/anjuta-plugin-manager.c:2386
 msgid "Available plugins"
 msgstr "Module disponibile"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2389
+#: ../libanjuta/anjuta-plugin-manager.c:2387
 msgid "Currently available plugins found in plugin paths"
 msgstr "Module disponibile găsite în calea către module"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2395
+#: ../libanjuta/anjuta-plugin-manager.c:2393
 msgid "Activated plugins"
 msgstr "Module activate"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin-manager.c:2394
 msgid "Currently activated plugins"
 msgstr "Module activate în acest moment"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2402
+#: ../libanjuta/anjuta-plugin-manager.c:2400
 msgid "Anjuta shell for which the plugins are made"
 msgstr "Shell-ul Anjuta pentru care modulele au fost proiectate"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2410
+#: ../libanjuta/anjuta-plugin-manager.c:2408
 msgid "Anjuta Status"
 msgstr "Starea Anjuta"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2411
+#: ../libanjuta/anjuta-plugin-manager.c:2409
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "Starea Anjuta ce va fi folosită la încărcarea și descărcarea de module"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2564
-#, fuzzy
-#| msgid "Loading..."
+#: ../libanjuta/anjuta-plugin-manager.c:2562
 msgid "Loading:"
-msgstr "Se încarcă..."
+msgstr "Se încarcă:"
 
 #: ../libanjuta/anjuta-preferences-dialog.c:99
 msgid "Category"
@@ -544,14 +549,9 @@ msgid "%s: Install it from '%s'\n"
 msgstr "%s: Instalează-l din „%s”\n"
 
 #: ../libanjuta/anjuta-profile.c:964
-#, fuzzy, c-format
-#| msgid ""
-#| "Failed to read '%s': Following mandatory plugins are missing:\n"
-#| "%s"
+#, c-format
 msgid "Failed to read '%s': Following mandatory plugins are missing"
-msgstr ""
-"A eșuat citirea lui „%s”: Următoarele module obligatorii lipsesc:\n"
-"%s"
+msgstr "Nu s-a putut citi „%s”: Următoarele module obligatorii lipsesc"
 
 #: ../libanjuta/anjuta-save-prompt.c:157
 msgid "Select the items to save:"
@@ -597,18 +597,16 @@ msgstr ""
 "închide?"
 
 #: ../libanjuta/anjuta-tree-combo.c:1090
-#, fuzzy
-#| msgid "Invalid entry"
 msgid "<Invalid>"
-msgstr "Intrare nevalidă"
+msgstr "<Nevalid>"
 
 #: ../libanjuta/anjuta-tree-combo.c:1205
 msgid "ComboBox model"
-msgstr ""
+msgstr "Model ComboBox"
 
 #: ../libanjuta/anjuta-tree-combo.c:1206
 msgid "The model for the combo box"
-msgstr ""
+msgstr "Modelul pentru cutia combo"
 
 #: ../libanjuta/anjuta-ui.c:1394
 msgid "Action"
@@ -649,7 +647,7 @@ msgstr "Instalarea a eșuat: %s"
 #: ../libanjuta/anjuta-utils.c:588
 #, c-format
 msgid "Failed to run \"%s\". The returned error was: \"%s\"."
-msgstr ""
+msgstr "Nu s-a putut rula „%s”. Eroarea returnată a fost: „%s”."
 
 #: ../libanjuta/anjuta-utils.c:602
 #, c-format
@@ -677,10 +675,9 @@ msgstr ""
 "funcționeze"
 
 #: ../libanjuta/anjuta-utils.c:1261 ../libanjuta/anjuta-utils.c:1312
-#, fuzzy, c-format
-#| msgid "Cannot execute command: %s (using shell %s)\n"
+#, c-format
 msgid "Cannot execute command: %s (using shell %s): %s\n"
-msgstr "Nu se poate executa comanda: %s (se folosește shell-ul %s)\n"
+msgstr "Nu se poate executa comanda %s (utilizând shell %s): %s\n"
 
 #: ../libanjuta/anjuta-utils.c:2462
 #, c-format
@@ -743,28 +740,24 @@ msgid "Could not find application pixmap file: %s"
 msgstr "Nu s-a putut găsi fișierul pixmap al aplicației: %s"
 
 #: ../libanjuta/resources.c:277
-#, fuzzy, c-format
-#| msgid "Cannot execute command: \"%s\""
+#, c-format
 msgid "Cannot execute command \"%s\": %s"
-msgstr "Nu s-a putut executa comanda: „%s”"
+msgstr "Nu se poate executa comanda „%s”: %s"
 
 #: ../plugins/am-project/amp-group.c:627
 msgid "Please specify group name"
 msgstr "Specificați un nume de grup"
 
 #: ../plugins/am-project/amp-group.c:641
-#, fuzzy
-#| msgid ""
-#| "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~\" characters"
 msgid ""
 "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~/\" characters"
 msgstr ""
-"Numele grupului poate conține doar caractere alfanumerice sau caracterele „#"
-"$:%+,-.=@^_`~”"
+"Numele grupului poate să conțină doar caractere alfanumerice sau „#$:%+,-."
+"=@^_`~/”"
 
 #: ../plugins/am-project/amp-group.c:665
-#: ../plugins/am-project/am-project.c:1680
-#: ../plugins/am-project/am-project.c:1773
+#: ../plugins/am-project/am-project.c:1686
+#: ../plugins/am-project/am-project.c:1779
 #: ../plugins/dir-project/dir-project.c:862
 #: ../plugins/dir-project/dir-project.c:996
 #: ../plugins/mk-project/mk-project.c:725
@@ -775,10 +768,8 @@ msgid "Project doesn't exist or invalid path"
 msgstr "Proiectul nu există sau cale nu este validă"
 
 #: ../plugins/am-project/am-project.c:90
-#, fuzzy
-#| msgid "Remote"
 msgid "Root"
-msgstr "Locație la distanță"
+msgstr "Rădăcină"
 
 #: ../plugins/am-project/am-project.c:98
 #: ../plugins/dir-project/dir-project.c:1007
@@ -793,20 +784,16 @@ msgid "Source"
 msgstr "Sursă"
 
 #: ../plugins/am-project/am-project.c:124
-#, fuzzy
-#| msgid "Shared Library"
 msgid "Shared Library (Libtool)"
-msgstr "Bibliotecă partajată"
+msgstr "Bibliotecă partajată (Libtool)"
 
 #: ../plugins/am-project/am-project.c:132
 msgid "Module (Libtool)"
-msgstr ""
+msgstr "Modul (Libtool)"
 
 #: ../plugins/am-project/am-project.c:140
-#, fuzzy
-#| msgid "Static Library"
 msgid "Static Library (Libtool)"
-msgstr "Bibliotecă statică"
+msgstr "Bibliotecă statică (Libtool)"
 
 #: ../plugins/am-project/am-project.c:148
 #: ../plugins/build-basic-autotools/executer.c:143
@@ -854,15 +841,14 @@ msgstr "Modul"
 msgid "Package"
 msgstr "Pachet"
 
-#: ../plugins/am-project/am-project.c:1710
+#: ../plugins/am-project/am-project.c:1716
 msgid "Unable to parse project file"
 msgstr "Nu s-a putut analiza fișierul proiectului"
 
-#: ../plugins/am-project/am-project.c:1721
-#, fuzzy, c-format
-#| msgid "Project doesn't exist or invalid path"
+#: ../plugins/am-project/am-project.c:1727
+#, c-format
 msgid "Project doesn't exist or has an invalid path"
-msgstr "Proiectul nu există sau cale nu este validă"
+msgstr "Proiectul nu există sau are o cale nevalidă"
 
 #: ../plugins/am-project/am-project.plugin.in.h:1
 msgid "Autotools backend"
@@ -949,15 +935,13 @@ msgstr "O legătură la pagina web a proiectului dacă se furnizează."
 
 #: ../plugins/am-project/am-properties.c:95
 msgid "Libtool support:"
-msgstr ""
+msgstr "Suport Libtool:"
 
 #: ../plugins/am-project/am-properties.c:98
-#, fuzzy
-#| msgid "Adds support for building shared libraries in your project"
 msgid "Add support to compile shared and static libraries with Libtool."
 msgstr ""
-"Adaugă suport pentru construirea de biblioteci partajate în proiectul "
-"dumneavoastră."
+"Adaugă suport pentru compilarea bibliotecilor statice și partajate cu "
+"Libtool."
 
 #: ../plugins/am-project/am-properties.c:104
 #: ../plugins/am-project/am-properties.c:211
@@ -1340,16 +1324,12 @@ msgstr "Nu folosi prefix:"
 #: ../plugins/am-project/am-properties.c:1039
 #: ../plugins/am-project/am-properties.c:1113
 #: ../plugins/am-project/am-properties.c:1186
-#, fuzzy
-#| msgid ""
-#| "Do not rename the target with an optional prefix, used to avoid "
-#| "overwritting system program. "
 msgid ""
 "Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
-"Nu redenumește ținta cu un prefix opțional, folosit ca să se evite "
-"suprascrierea unui program sistem."
+"Nu redenumi ținta cu un prefix opțional, utilizat pentru a evita "
+"suprascrierea programului sistemului. "
 
 #: ../plugins/am-project/am-properties.c:483
 #: ../plugins/am-project/am-properties.c:658
@@ -1391,15 +1371,15 @@ msgid ""
 "digits ‘0’ through ‘9’, and the letters ‘l’ and ‘n’. "
 msgstr ""
 "Secțiunea unde sunt instalate paginile man. Nume valide de secțiuni sunt "
-"numerele de la „0” la „9” și literele „l” și „n”."
+"cifrele de la „0” la „9” și literele „l” și „n”. "
 
 #: ../plugins/am-project/amp-source.c:97
 msgid "Source file must be a regular file, not a directory"
-msgstr ""
+msgstr "Fișierul sursă trebuie să fie un fișier obișnuit, nu un director"
 
 #: ../plugins/am-project/amp-target.c:359
 msgid "Target parent is not a valid group"
-msgstr ""
+msgstr "Superiorul țintă nu este un grup valid"
 
 #: ../plugins/am-project/amp-target.c:369
 msgid "Please specify target name"
@@ -1422,11 +1402,8 @@ msgid "Static library target name must be of the form 'libxxx.a'"
 msgstr "Numele țintă al bibliotecii statice trebuie să fie de forma „libxxx.a”"
 
 #: ../plugins/am-project/amp-target.c:415
-#, fuzzy
-#| msgid "Shared library target name must be of the form 'libxxx.la'"
 msgid "Module target name must be of the form 'xxx.la'"
-msgstr ""
-"Numele țintă al bibliotecii partajate trebuie să fie de forma „libxxx.la”"
+msgstr "Numele țintei modul trebuie să fie de forma „xxx.la”"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:1
 msgid "Automake Build"
@@ -1434,7 +1411,7 @@ msgstr "Construiește cu Automake"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:2
 msgid "Basic autotools build plugin."
-msgstr "Modulul de construire simplă cu autotools"
+msgstr "Modulul de construire simplă cu autotools."
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools.plugin.in.h:3
 #: ../plugins/run-program/plugin.c:298
@@ -1516,16 +1493,12 @@ msgid "Install"
 msgstr "Instalează"
 
 #: ../plugins/build-basic-autotools/build.c:578
-#, fuzzy
-#| msgid ""
-#| "Before using this new configuration, the default one needs to be removed. "
-#| "Do you want to do that ?"
 msgid ""
 "Before using this new configuration, the default one needs to be removed. Do "
 "you want to do that?"
 msgstr ""
-"Înainte de a folosi noua configurație, cea implicită trebuie să fie "
-"eliminată. Doriți să faceți aceasta?"
+"Înainte de a folosi această nouă configurație, aceea implicită trebuie să "
+"fie eliminată. Doriți să faceți acest lucru?"
 
 #: ../plugins/build-basic-autotools/build.c:583
 #: ../plugins/build-basic-autotools/plugin.c:970
@@ -1547,15 +1520,12 @@ msgstr ""
 "Nu se poate configura proiectul: Lipsește scriptul de configurare din %s."
 
 #: ../plugins/build-basic-autotools/build-options.c:80
-#, fuzzy
-#| msgid "Selected directory in the project manager plugin"
 msgid "Select a build directory inside the project directory"
-msgstr "Dosarul ales în modulul de administrare proiect"
+msgstr "Selectați un director de generare înăuntrul directorului proiectului"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
-#: ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "Implicit"
 
@@ -1611,10 +1581,11 @@ msgstr "Fișierul executabil „%s” nu este actualizat."
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:1
 msgid "True if we need a special command to install files"
 msgstr ""
+"Adevărat dacă avem nevoie de o comandă specială pentru a instala fișiere"
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:2
 msgid "Command used to be allowed to install files"
-msgstr ""
+msgstr "Comanda utilizată să fie permis să instaleze fișiere"
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:4
 #, no-c-format
@@ -1625,6 +1596,11 @@ msgid ""
 "quoted command. You can use %% to get a \"%\" character. A typical value is "
 "\"sudo %s\" or \"su -c %q\"."
 msgstr ""
+"Comanda trebuie să conțină „%s” sau „%q”. Aceasta va fi înlocuită de comanda "
+"utilizată pentru a instala fișierele, de exemplu „make install”. %s este "
+"înlocuit de comandă fără alte schimbări în timp ce %q este înlocuit de "
+"comanda citată. Puteți utiliza %% pentru a obține un caracter „%”. O valoare "
+"tipică este „sudo %s” sau „su -c %q”."
 
 #. The translations should match that of 'make' program. Both strings uses
 #. * pearl regular expression
@@ -1667,8 +1643,7 @@ msgstr "Se iese din: %s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
-#: ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "warning:"
 
@@ -1681,8 +1656,7 @@ msgstr "warning:-old"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
-#: ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "error:"
 
@@ -1757,16 +1731,12 @@ msgid "Install whole project"
 msgstr "Instalează tot proiectul"
 
 #: ../plugins/build-basic-autotools/plugin.c:1683
-#, fuzzy
-#| msgid "_Clean Project"
 msgid "_Check Project"
-msgstr "_Curăță proiectul"
+msgstr "Verifi_că proiectul"
 
 #: ../plugins/build-basic-autotools/plugin.c:1684
-#, fuzzy
-#| msgid "Clean whole project"
 msgid "Check whole project"
-msgstr "Curăță tot proiectul"
+msgstr "Verifică întregul proiect"
 
 #: ../plugins/build-basic-autotools/plugin.c:1689
 msgid "_Clean Project"
@@ -1809,16 +1779,12 @@ msgid "Install module associated with current file"
 msgstr "Instalează modulul asociat cu fișierul curent"
 
 #: ../plugins/build-basic-autotools/plugin.c:1719
-#, fuzzy
-#| msgid "_Clean Module"
 msgid "_Check Module"
-msgstr "_Curăță modulul"
+msgstr "Verifi_că modulul"
 
 #: ../plugins/build-basic-autotools/plugin.c:1720
-#, fuzzy
-#| msgid "Clean module associated with current file"
 msgid "Check module associated with current file"
-msgstr "Curăță modulul asociat cu fișierul curent"
+msgstr "Verifică modulul asociat cu fișierul curent"
 
 #: ../plugins/build-basic-autotools/plugin.c:1725
 msgid "_Clean Module"
@@ -1895,16 +1861,12 @@ msgid "Clean module"
 msgstr "Curăță modulul"
 
 #: ../plugins/build-basic-autotools/plugin.c:1803
-#, fuzzy
-#| msgid "Check out"
 msgid "_Check"
-msgstr "Extrage"
+msgstr "Verifi_că"
 
 #: ../plugins/build-basic-autotools/plugin.c:1804
-#, fuzzy
-#| msgid "Check out"
 msgid "Check module"
-msgstr "Extrage"
+msgstr "Verifică modulul"
 
 #: ../plugins/build-basic-autotools/plugin.c:1815
 msgid "_Cancel command"
@@ -2087,7 +2049,7 @@ msgstr "Clasă Python"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:27
 msgid "is Sub-Class"
-msgstr "este clasă derivată:"
+msgstr "este sub-clasă"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:28
 msgid "Initializer Arguments:"
@@ -2143,10 +2105,8 @@ msgid "Source File:"
 msgstr "Fișier sursă:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:41
-#, fuzzy
-#| msgid "Add to Project"
 msgid "Add to Project Target:"
-msgstr "Adaugă la proiect"
+msgstr "Adaugă la ținta proiectului:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:42
 msgid "Add to Repository"
@@ -2208,8 +2168,7 @@ msgstr "Tip"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "Argumente"
 
@@ -2272,7 +2231,7 @@ msgid "Patch-Style diff"
 msgstr "Diff în stilul peticelor"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2201
+#: ../plugins/symbol-db/plugin.c:2206
 msgid "Local"
 msgstr "Local"
 
@@ -2787,8 +2746,7 @@ msgid "Shared libraries"
 msgstr "Biblioteci partajate"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937
-#: ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "Semnale de la nucleul sistemului de operare"
 
@@ -3017,6 +2975,8 @@ msgstr "Dezactivează punctul de oprire"
 msgid "Disable a breakpoint"
 msgstr "Dezactivează un punct de oprire"
 
+#. Translators: Enabled refers to a breakpoint. It is a column name, like
+#. * other words.
 #. This enable an user defined command
 #: ../plugins/debug-manager/breakpoints.c:1953
 #: ../plugins/tools/anjuta-tools.ui.h:5
@@ -3091,15 +3051,13 @@ msgstr "Încărcat"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "Pune programul în pa_uză"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "Pune programul în pauză"
 
@@ -3189,35 +3147,29 @@ msgstr "Adaugă căi adiționale de surse"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913
-#: ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "Comandă depanator…"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "Comandă personalizata depanator"
 
-#: ../plugins/debug-manager/plugin.c:921
-#: ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "_Info"
 
-#: ../plugins/debug-manager/plugin.c:929
-#: ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "Biblioteci partajate"
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "Afișează harta de memorie a bibliotecilor partajate"
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "Afișează semnalele de la nucleu"
 
@@ -3395,7 +3347,7 @@ msgstr "Cadru"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2164
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "Fișier"
@@ -3436,7 +3388,7 @@ msgstr "Comandă"
 #: ../plugins/debug-manager/start.c:628
 #, c-format
 msgid "Unable to execute: \"%s\". The returned error was: \"%s\"."
-msgstr ""
+msgstr "Nu s-a putut executa: „%s”. Eroarea întoarsă a fost: „%s”."
 
 #: ../plugins/debug-manager/start.c:644
 #, c-format
@@ -3459,15 +3411,11 @@ msgid "Path"
 msgstr "Cale"
 
 #: ../plugins/debug-manager/start.c:1392
-#, fuzzy
-#| msgid ""
-#| "The program is running.\n"
-#| "Do you still want to stop the debugger?"
 msgid ""
 "The program is already running.\n"
 "Do you still want to stop the debugger?"
 msgstr ""
-"Programul este în execuție.\n"
+"Programul deja rulează.\n"
 "Mai doriți să opriți depanatorul?"
 
 #. Action name
@@ -3526,7 +3474,7 @@ msgstr "Ajutor API"
 
 #: ../plugins/devhelp/anjuta-devhelp.plugin.in.h:2
 msgid "Devhelp Plugin for Anjuta."
-msgstr "Modul Devhelp pentru Anjuta"
+msgstr "Modul Devhelp pentru Anjuta."
 
 #: ../plugins/devhelp/plugin.c:199
 msgid "Search Help:"
@@ -3589,16 +3537,16 @@ msgid "Project doesn't allow to set properties"
 msgstr "Proiectul nu permite stabilirea proprietăților"
 
 #: ../plugins/dir-project/dir-project.plugin.in.h:1
-#, fuzzy
-#| msgid "_Directory name:"
 msgid "Directory backend"
-msgstr "Nume _dosar:"
+msgstr "Suport director"
 
 #: ../plugins/dir-project/dir-project.plugin.in.h:2
 msgid ""
 "Directory project backend, get only source files, use it when other backend "
 "fails"
 msgstr ""
+"Suport proiect director, obține doar fișierele sursă, utilizați-l când alt "
+"suport eșuează"
 
 #: ../plugins/document-manager/action-callbacks.c:315
 #, c-format
@@ -3637,39 +3585,39 @@ msgstr "Redenumește"
 msgid "Remove"
 msgstr "Elimină"
 
-#: ../plugins/document-manager/anjuta-docman.c:164
-#, fuzzy
-#| msgid "[read-only]"
+#. Translator: the space at the beginning is here because this
+#. * string is concatenated with the file name.
+#: ../plugins/document-manager/anjuta-docman.c:166
 msgid " [read-only]"
-msgstr "[doar-citire]"
+msgstr " [doar-citire]"
 
-#: ../plugins/document-manager/anjuta-docman.c:533
+#: ../plugins/document-manager/anjuta-docman.c:535
 #: ../plugins/document-manager/plugin.c:156
 msgid "Close Others"
 msgstr "Închide celelalte"
 
-#: ../plugins/document-manager/anjuta-docman.c:736
-#: ../plugins/document-manager/anjuta-docman.c:1156
+#: ../plugins/document-manager/anjuta-docman.c:738
+#: ../plugins/document-manager/anjuta-docman.c:1158
 msgid "Close file"
 msgstr "Închide fișierul"
 
-#: ../plugins/document-manager/anjuta-docman.c:773
+#: ../plugins/document-manager/anjuta-docman.c:775
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:9
 #: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "Cale:"
 
-#: ../plugins/document-manager/anjuta-docman.c:890
+#: ../plugins/document-manager/anjuta-docman.c:892
 #: ../plugins/file-loader/plugin.c:597 ../plugins/file-loader/plugin.c:887
 #: ../plugins/file-loader/plugin.c:897 ../plugins/file-loader/plugin.c:910
 msgid "Open file"
 msgstr "Deschide fișierul"
 
-#: ../plugins/document-manager/anjuta-docman.c:909
+#: ../plugins/document-manager/anjuta-docman.c:911
 msgid "Save file as"
 msgstr "Salvează fișierul ca"
 
-#: ../plugins/document-manager/anjuta-docman.c:990
+#: ../plugins/document-manager/anjuta-docman.c:992
 #, c-format
 msgid ""
 "The file '%s' already exists.\n"
@@ -3678,11 +3626,11 @@ msgstr ""
 "Fișieru „%s” există deja.\n"
 "Doriți să-l înlocuiți cu cel pe care îl salvați?"
 
-#: ../plugins/document-manager/anjuta-docman.c:999
+#: ../plugins/document-manager/anjuta-docman.c:1001
 msgid "_Replace"
 msgstr "Inlocuieș_te"
 
-#: ../plugins/document-manager/anjuta-docman.c:1743
+#: ../plugins/document-manager/anjuta-docman.c:1745
 msgid "[read-only]"
 msgstr "[doar-citire]"
 
@@ -3745,42 +3693,30 @@ msgid "Position:"
 msgstr "Poziție:"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:13
-#, fuzzy
-#| msgid "_Show Status"
 msgid "Show tabs"
-msgstr "Arată _starea"
+msgstr "Arată taburile"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:14
 msgid "Show drop-down list"
-msgstr ""
+msgstr "Arată lista de selecție"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:15
-#, fuzzy
-#| msgid "Close other documents"
 msgid "Do not show open documents"
-msgstr "Închide celelalte documente"
+msgstr "Nu arăta documentele deschise"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:16
-#, fuzzy
-#| msgid "Documents"
 msgid "Open documents"
-msgstr "Documente"
+msgstr "Documente deschise"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:17
-#, fuzzy
-#| msgid "Case Sensitive"
 msgid "Case sensitive"
 msgstr "Sensibil la majuscule"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:18
-#, fuzzy
-#| msgid "Regular Expression"
 msgid "Regular expression"
-msgstr "Expresii regulate"
+msgstr "Expresie regulată"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:19
-#, fuzzy
-#| msgid "Replace all"
 msgid "Replace All"
 msgstr "Înlocuiește toate"
 
@@ -4036,7 +3972,7 @@ msgstr "Caută următoarea apariție a termenului."
 
 #: ../plugins/document-manager/plugin.c:263
 msgid "Find and R_eplace…"
-msgstr "Caută și înlocui_ește..."
+msgstr "Caută și înlocui_ește…"
 
 #: ../plugins/document-manager/plugin.c:264
 msgid "Search and replace"
@@ -4059,16 +3995,12 @@ msgid "Clear all highlighted text"
 msgstr "Golește tot textul evidențiat"
 
 #: ../plugins/document-manager/plugin.c:273
-#, fuzzy
-#| msgid "Add Files"
 msgid "Find in Files"
-msgstr "Adaugă fișiere"
+msgstr "Caută în fișiere"
 
 #: ../plugins/document-manager/plugin.c:274
-#, fuzzy
-#| msgid "Open recent files"
 msgid "Search in project files"
-msgstr "Deschide fișiere recente"
+msgstr "Caută în fișierele proiectului"
 
 #: ../plugins/document-manager/plugin.c:280
 msgid "Case Sensitive"
@@ -4319,8 +4251,6 @@ msgid "Editor syntax highlighting styles"
 msgstr "Stiluri de evidențiere a sintaxei ale editorului"
 
 #: ../plugins/document-manager/plugin.c:416
-#, fuzzy
-#| msgid "Editor text formating"
 msgid "Editor text formatting"
 msgstr "Formatări de text ale editorului"
 
@@ -4407,15 +4337,16 @@ msgstr ""
 "Căutarea pentru „%s” a ajuns la început și a continuat de la sfârșit, dar nu "
 "s-a găsit nicio potrivire."
 
-#: ../plugins/document-manager/search-box.c:917
+#: ../plugins/document-manager/search-box.c:920
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr ""
+"Utilizează meniul contextual al iconiței „Caută” pentru a căuta opțiuni"
 
-#: ../plugins/document-manager/search-box.c:988
+#: ../plugins/document-manager/search-box.c:991
 msgid "Replace"
 msgstr "Înlocuiește"
 
-#: ../plugins/document-manager/search-box.c:993
+#: ../plugins/document-manager/search-box.c:996
 msgid "Replace all"
 msgstr "Înlocuiește toate"
 
@@ -4425,16 +4356,12 @@ msgid "Filename"
 msgstr "Nume fișier"
 
 #: ../plugins/document-manager/search-files.c:728
-#, fuzzy
-#| msgid "All files"
 msgid "All text files"
-msgstr "Toate fișierele"
+msgstr "Toate fișierele text"
 
 #: ../plugins/document-manager/search-files.c:871
-#, fuzzy
-#| msgid "Missing file %s"
 msgid "Find in files"
-msgstr "Fișier lipsă %s"
+msgstr "Caută în fișiere"
 
 #: ../plugins/file-loader/anjuta-loader.plugin.in.h:1
 #: ../plugins/file-loader/plugin.c:1230 ../plugins/file-loader/plugin.c:1236
@@ -4629,7 +4556,7 @@ msgstr "Nou"
 
 #: ../plugins/file-loader/plugin.c:1241
 msgid "New file, project and project components."
-msgstr "Fișier nou, proiect nou sau componentă nouă a unui proiect"
+msgstr "Fișier nou, proiect nou sau componente noi ale unui proiect."
 
 #: ../plugins/file-loader/plugin.c:1248 ../plugins/file-loader/plugin.c:1288
 msgid "Open"
@@ -4685,14 +4612,12 @@ msgid "Choose Directory to show if no project is open"
 msgstr "Alegeți dosarul de afișat dacă niciun proiect nu este deschis"
 
 #: ../plugins/file-manager/file-manager.ui.h:3
-#, fuzzy
-#| msgid "Auto-complete the current word"
 msgid "Automatically select the current document"
-msgstr "Completează automat cuvântul curent"
+msgstr "Selectează automat documentul curent"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2213
+#: ../plugins/symbol-db/plugin.c:2218
 msgid "Global"
 msgstr "Globale"
 
@@ -4722,28 +4647,26 @@ msgstr "Se încarcă..."
 
 #: ../plugins/file-manager/file-model.c:708
 #: ../plugins/file-manager/file-view.c:980
-#, fuzzy
-#| msgid "Path"
 msgid "Base Path"
-msgstr "Cale"
+msgstr "Calea de bază"
 
 #: ../plugins/file-manager/file-model.c:709
 #: ../plugins/file-manager/file-view.c:981
-#, fuzzy
-#| msgid "URI of the top-most path displayed"
 msgid "GFile representing the top-most path displayed"
-msgstr "URI al celei mai de sus căi afișate"
+msgstr "GFile reprezentând calea cea mai de sus afișată"
 
 #. You try to rename "/"
 #: ../plugins/file-manager/file-view.c:139
 msgid "You can't rename \"/\"!"
-msgstr ""
+msgstr "Nu puteți redenumi „/”!"
 
 #: ../plugins/file-manager/file-view.c:153
 msgid ""
 "An error has occurred!\n"
 "Maybe your permissions are insufficient or the filename is wrong"
 msgstr ""
+"A apărut o eroare!\n"
+"Poate că permisiunile nu sunt suficiente sau numele fișierului este greșit"
 
 #: ../plugins/file-manager/plugin.c:105
 msgid "_Rename"
@@ -4754,16 +4677,12 @@ msgid "Rename file or directory"
 msgstr "Redenumește un fișier sau un dosar"
 
 #: ../plugins/file-manager/plugin.c:110
-#, fuzzy
-#| msgid "File Manager"
 msgid "_Show in File manager"
-msgstr "Administrator de fișiere"
+msgstr "_Arată în administratorul de fișiere"
 
 #: ../plugins/file-manager/plugin.c:110
-#, fuzzy
-#| msgid "File Manager"
 msgid "Show in File manager"
-msgstr "Administrator de fișiere"
+msgstr "Arată în administratorul de fișiere"
 
 #: ../plugins/file-manager/plugin.c:366
 msgid "File manager popup actions"
@@ -4803,10 +4722,8 @@ msgid "Type:"
 msgstr "Tip:"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:8
-#, fuzzy
-#| msgid "Add License Information"
 msgid "Add License Information:"
-msgstr "Adaugă informații despre licență"
+msgstr "Adaugă informații de licență:"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:9
 msgid "Create corresponding header file"
@@ -4817,10 +4734,8 @@ msgid "Use Template for the Header file"
 msgstr "Folosește un șablon pentru antetul fișierului"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:11
-#, fuzzy
-#| msgid "Add to project"
 msgid "Add to project target:"
-msgstr "Adaugă la proiect"
+msgstr "Adaugă la ținta proiectului:"
 
 #: ../plugins/file-wizard/anjuta-file-wizard.ui.h:12
 msgid "Add to repository"
@@ -4911,7 +4826,7 @@ msgstr "Se pregătește pornirea sesiunii de depanare…\n"
 
 #: ../plugins/gdb/debugger.c:1137
 msgid "Loading Executable: "
-msgstr "Se încarcă executabilul:"
+msgstr "Se încarcă executabilul: "
 
 #: ../plugins/gdb/debugger.c:1146
 msgid "No executable specified.\n"
@@ -5093,7 +5008,7 @@ msgstr "Depanator Gdb"
 
 #: ../plugins/git/anjuta-git.ui.h:1
 msgid "Cancel"
-msgstr ""
+msgstr "Anulează"
 
 #: ../plugins/git/anjuta-git.ui.h:2
 #: ../plugins/subversion/anjuta-subversion.ui.h:6
@@ -5106,7 +5021,7 @@ msgstr "Nu comite"
 
 #: ../plugins/git/anjuta-git.ui.h:4
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: ../plugins/git/anjuta-git.ui.h:5
 msgid "Add signed off by line"
@@ -5145,10 +5060,8 @@ msgid "Show source revision in log message"
 msgstr "Arată revizia sursei în jurnalul de mesaje"
 
 #: ../plugins/git/anjuta-git.ui.h:16
-#, fuzzy
-#| msgid "Append signed-of- by line"
 msgid "Append signed-off-by line"
-msgstr "Adaugă deconectat- la linie"
+msgstr "Adaugă linia semnat de"
 
 #: ../plugins/git/anjuta-git.ui.h:17
 #: ../plugins/subversion/anjuta-subversion.ui.h:12
@@ -5211,10 +5124,8 @@ msgid "Git"
 msgstr "Git"
 
 #: ../plugins/git/anjuta-git.ui.h:33
-#, fuzzy
-#| msgid "Git Tasks"
 msgid "Tasks"
-msgstr "Sarcini Git"
+msgstr "Sarcini"
 
 #: ../plugins/git/anjuta-git.ui.h:35
 msgid "Whole project; Drop a file here to view a file or folder log"
@@ -5368,10 +5279,8 @@ msgid "Repository Status:"
 msgstr "Stare depozit:"
 
 #: ../plugins/git/anjuta-git.ui.h:72
-#, fuzzy
-#| msgid "Show commit diff"
 msgid "Show Diff"
-msgstr "Arată diff pentru comitere"
+msgstr "Arată diff-ul"
 
 #: ../plugins/git/git-add-files-pane.c:160
 msgid "Add Files"
@@ -5385,6 +5294,7 @@ msgstr "Introduceți un nume la distanță."
 msgid "Please enter a URL"
 msgstr "Introduceți un URL"
 
+#. Translators: Remote means the git remote repository
 #: ../plugins/git/git-add-remote-pane.c:182
 msgid "Add Remote"
 msgstr "Adaugă locație la distanță"
@@ -5396,7 +5306,7 @@ msgstr "Aplică fișierele de căsuță poștală"
 #: ../plugins/git/git-apply-stash-pane.c:54
 #: ../plugins/git/git-drop-stash-pane.c:48
 msgid "No stash selected."
-msgstr "Nicio valoare păstrată selectată"
+msgstr "Nu a fost selectat nicio rezervă."
 
 #: ../plugins/git/git-checkout-pane.c:150
 msgid "Check Out Files"
@@ -5406,14 +5316,14 @@ msgstr "Extrage fișierele"
 #: ../plugins/subversion/subversion-copy-dialog.c:207
 #: ../plugins/subversion/subversion-switch-dialog.c:122
 msgid "Please enter a revision."
-msgstr "Introduceți o revizie"
+msgstr "Introduceți o revizie."
 
 #: ../plugins/git/git-cherry-pick-pane.c:176
 msgid "Cherry Pick"
 msgstr "Alegere rubinie"
 
-#: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
+#: ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "Introduceți un mesaj de jurnal."
 
@@ -5442,10 +5352,9 @@ msgid "Create Tag"
 msgstr "Creează etichetă"
 
 #: ../plugins/git/git-delete-branches-pane.c:238
-#, fuzzy, c-format
-#| msgid "Are you sure you want to delete the '%s' tool?"
+#, c-format
 msgid "Are you sure you want to delete branch %s?"
-msgstr "Sigur doriți să ștergeți unealta „%s”?"
+msgstr "Sigur doriți să ștergeți ramura %s?"
 
 #: ../plugins/git/git-delete-remote-pane.c:49
 msgid "No remote selected."
@@ -5582,10 +5491,8 @@ msgid "Create a branch"
 msgstr "Creează o ramură"
 
 #: ../plugins/git/plugin.c:84 ../plugins/git/plugin.c:85
-#, fuzzy
-#| msgid "Delete selected branches"
 msgid "Delete branches"
-msgstr "Șterge ramurile alese"
+msgstr "Șterge ramurile"
 
 #: ../plugins/git/plugin.c:92 ../plugins/git/plugin.c:93
 msgid "Switch to the selected branch"
@@ -5847,52 +5754,40 @@ msgstr ""
 "anterioară"
 
 #: ../plugins/git/plugin.c:521
-#, fuzzy
-#| msgid "Reset"
 msgid "Reset..."
-msgstr "Restabilește"
+msgstr "Restabilește..."
 
 #: ../plugins/git/plugin.c:533
 msgid "Switch"
-msgstr ""
+msgstr "Interschimbă"
 
 #: ../plugins/git/plugin.c:541
-#, fuzzy
-#| msgid "Deleted"
 msgid "Delete..."
-msgstr "Șterse"
+msgstr "Șterge..."
 
 #: ../plugins/git/plugin.c:549
-#, fuzzy
-#| msgid "Merge"
 msgid "Merge..."
-msgstr "Combină"
+msgstr "Combină..."
 
 #: ../plugins/git/plugin.c:561
-#, fuzzy
-#| msgid "Push"
 msgid "Push..."
-msgstr "Împinge"
+msgstr "Împinge..."
 
 #: ../plugins/git/plugin.c:569
-#, fuzzy
-#| msgid "Pull"
 msgid "Pull..."
-msgstr "Trage"
+msgstr "Trage..."
 
 #: ../plugins/git/plugin.c:589
 msgid "Apply"
-msgstr ""
+msgstr "Aplică"
 
 #: ../plugins/git/plugin.c:597
-#, fuzzy
-#| msgid "Apply stash and restore index"
 msgid "Apply and restore index"
-msgstr "Aplică valorile păstrate și restaurează indexul"
+msgstr "Aplică și restaurează indexul"
 
 #: ../plugins/git/plugin.c:605
 msgid "Drop"
-msgstr ""
+msgstr "Plasează"
 
 #: ../plugins/git/plugin.c:694 ../plugins/git/plugin.c:767
 msgid "Branch"
@@ -5900,27 +5795,23 @@ msgstr "Ramură"
 
 #: ../plugins/git/plugin.c:855
 msgid "Status popup menu"
-msgstr ""
+msgstr "Stare meniu contextual"
 
 #: ../plugins/git/plugin.c:860
 msgid "Log popup menu"
-msgstr ""
+msgstr "Istoric meniu contextul"
 
 #: ../plugins/git/plugin.c:866
-#, fuzzy
-#| msgid "Branch name:"
 msgid "Branch popup menu"
-msgstr "Numele ramurii:"
+msgstr "Meniul contextual al ramurei"
 
 #: ../plugins/git/plugin.c:872
-#, fuzzy
-#| msgid "Remote name:"
 msgid "Remote popup menu"
-msgstr "Nume la distanță:"
+msgstr "Meniul contextual de la distanță"
 
 #: ../plugins/git/plugin.c:877
 msgid "Popup menu entries"
-msgstr ""
+msgstr "Intrări meniu contextual"
 
 #: ../plugins/git/plugin.c:928
 msgid "Status"
@@ -5970,34 +5861,29 @@ msgid "Drag and resize widgets in the workspace"
 msgstr "Trage și redimensionează widget-urile din spațiul de lucru"
 
 #: ../plugins/glade/anjuta-glade.ui.h:3
-#, fuzzy
-#| msgid "Show right margin"
 msgid "Edit widget margins"
-msgstr "Arată marginea din dreapta"
+msgstr "Editează marginile widget-ului"
 
 #: ../plugins/glade/anjuta-glade.ui.h:4
 msgid "Edit widget alignment"
-msgstr ""
+msgstr "Editează alinierea widget-ului"
 
 #: ../plugins/glade/plugin.c:688
-#, fuzzy
-#| msgid "Module properties"
 msgid "Glade Properties…"
-msgstr "Proprietățile modulului"
+msgstr "Proprietăți Glade…"
 
 #: ../plugins/glade/plugin.c:690
 msgid "Switch between library versions and check deprecations"
 msgstr ""
+"Interschimbă între versiunile bibliotecii și verifică părțile învechite"
 
 #: ../plugins/glade/plugin.c:731
 msgid "Loading Glade…"
 msgstr "Se încarcă Glade…"
 
 #: ../plugins/glade/plugin.c:818
-#, fuzzy
-#| msgid "Debugger operations"
 msgid "Glade designer operations"
-msgstr "Operații depanator"
+msgstr "Operatori designer Glade"
 
 #: ../plugins/glade/plugin.c:826
 msgid "Widgets"
@@ -6062,10 +5948,8 @@ msgid "Indent:"
 msgstr "Indentare:"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:10
-#, fuzzy
-#| msgid "Parenthesis indentation"
 msgid "Use spaces for parenthesis indentation"
-msgstr "Indentare paranteze"
+msgstr "Utilizează spații pentru indentarea parantezelor"
 
 #: ../plugins/indentation-c-style/anjuta-indentation-c-style.ui.h:11
 msgid "Parenthesis indentation"
@@ -6085,67 +5969,59 @@ msgstr ""
 "indentare"
 
 #: ../plugins/indentation-c-style/plugin.c:265
-#, fuzzy
-#| msgid "Smart Indentation"
 msgid "C Indentation"
-msgstr "Indentare inteligentă"
+msgstr "Indentare C"
 
 #: ../plugins/indentation-c-style/plugin.c:363
 #: ../plugins/indentation-c-style/plugin.c:372
 #: ../plugins/indentation-python-style/plugin.c:324
 #: ../plugins/indentation-python-style/plugin.c:333
-#, fuzzy
-#| msgid "Smart Indentation"
 msgid "Indentation"
-msgstr "Indentare inteligentă"
+msgstr "Indentare"
 
 #: ../plugins/indentation-python-style/anjuta-indentation-python-style.ui.h:2
 msgid "Enable adaptive indentation"
 msgstr "Activează indentare adaptivă"
 
 #: ../plugins/indentation-python-style/plugin.c:227
-#, fuzzy
-#| msgid "Smart Indentation"
 msgid "Python Indentation"
-msgstr "Indentare inteligentă"
+msgstr "Indentare Python"
 
 #: ../plugins/jhbuild/anjuta-jhbuild.plugin.in.h:1
-#, fuzzy
-#| msgid "Build"
 msgid "JHBuild"
-msgstr "Construiește"
+msgstr "JHBuild"
 
 #: ../plugins/jhbuild/anjuta-jhbuild.plugin.in.h:2
 msgid "Build and run programs inside the JHBuild environment"
-msgstr ""
+msgstr "Generează și rulează programe înăuntrul mediului JHBuild"
 
 #: ../plugins/jhbuild/plugin.c:121
 msgid "Failed to run \"jhbuild run\""
-msgstr ""
+msgstr "Nu s-a putut rula „jhbuild run”"
 
 #: ../plugins/jhbuild/plugin.c:127
 #, c-format
 msgid "Failed to run \"jhbuild run\" (%s)"
-msgstr ""
+msgstr "Nu s-a putut rula „jhbuild run” (%s)"
 
 #: ../plugins/jhbuild/plugin.c:172
 msgid "Could not find the JHBuild install prefix."
-msgstr ""
+msgstr "Nu s-a putut găsi prefixul de instalare JHBuild."
 
 #: ../plugins/jhbuild/plugin.c:180
 msgid ""
 "Could not find the JHBuild library directory. You need JHBuild from "
 "2012-11-06 or later."
 msgstr ""
+"Nu s-a putut găsi directorul bibliotecii JHBuild. Aveți nevoie de JHBuild de "
+"la 06-11-2012 sau mai târziu."
 
 #: ../plugins/jhbuild/plugin.c:198
-#, fuzzy, c-format
-#| msgid "Failed to activate plugin: %s"
+#, c-format
 msgid "Failed to activate the JHBuild Plugin: %s"
-msgstr "A eșuat activarea modulului: %s"
+msgstr "Nu s-a putut activa modulul JHBuild: %s"
 
-#: ../plugins/js-debugger/debugger-js.c:548
-#: ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "Eroare: nu se poate face legătura la port"
 
@@ -6193,7 +6069,7 @@ msgstr "Încarcă etichete API pentru biblioteca șablon standard C++"
 
 #: ../plugins/language-support-cpp-java/plugin.c:784
 msgid "Code added for widget."
-msgstr ""
+msgstr "Cod adăugat pentru widget."
 
 #: ../plugins/language-support-cpp-java/plugin.c:1198
 msgid "Comment/Uncomment"
@@ -6244,10 +6120,8 @@ msgstr "Adaugă „(” după completarea automată a apelului de funcție"
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:4
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:4
 #: ../plugins/parser-cxx/anjuta-parser-cxx.ui.h:4
-#, fuzzy
-#| msgid "Add '(' after function call autocompletion"
 msgid "Add ')' after function call autocompletion"
-msgstr "Adaugă „(” după completarea automată a apelului de funcție"
+msgstr "Adaugă „)” după completarea auto a apelului funcției"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:5
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:5
@@ -6275,10 +6149,8 @@ msgid "Highlight missed semicolon"
 msgstr "Evidențiază lipsa lui „punct și virgulă”"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:9
-#, fuzzy
-#| msgid "Highlight All"
 msgid "Highlights"
-msgstr "Evidențiază toate"
+msgstr "Evidențieri"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:10
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:8
@@ -6286,28 +6158,26 @@ msgid "Autocomplete"
 msgstr "Completare automată"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:11
+msgid "Test"
+msgstr "Test"
+
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
 msgid "JS Find dirs"
 msgstr "Dosare căutare JS"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
-#, fuzzy
-#| msgid "Gir repository's directory:   "
-msgid "Gir repository's directory:"
-msgstr "Dosarul depozitului Gir:   "
-
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
-#, fuzzy
-#| msgid "Gjs repository's directory:   "
-msgid "Gjs repository's directory:"
-msgstr "Dosarul depozitului Gjs:   "
+msgid "Gir repository's directory:"
+msgstr "Directorul depozitului Gir:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
-#, fuzzy
-#| msgid "Min character for completion "
-msgid "Min character for completion:"
-msgstr "Minimul caracterelor pentru completare"
+msgid "Gjs repository's directory:"
+msgstr "Directorul depozitului Gjs:"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
+msgid "Min character for completion:"
+msgstr "Caracter min pentru completare:"
+
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:16
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
 msgid "Environment"
 msgstr "Mediu"
@@ -6360,21 +6230,15 @@ msgid "Python"
 msgstr "Python"
 
 #: ../plugins/language-support-vala/anjuta-vala.plugin.in.h:1
-#, fuzzy
-#| msgid "JS Support Plugin"
 msgid "Vala support Plugin"
-msgstr "Modul pentru suport JS"
+msgstr "Modul suport Vala"
 
 #: ../plugins/language-support-vala/anjuta-vala.plugin.in.h:2
-#, fuzzy
-#| msgid ""
-#| "C++ and Java support plugin for code completion, auto-indentation, etc."
 msgid "Vala support plugin, adds code completion."
-msgstr ""
-"Modulul suport C++ și Java pentru completare de cod, indentare automată, etc."
+msgstr "Modul suport Vala, adaugă completarea codului."
 
-#: ../plugins/language-support-vala/plugin.vala:657
-#: ../plugins/language-support-vala/plugin.vala:665
+#: ../plugins/language-support-vala/plugin.vala:678
+#: ../plugins/language-support-vala/plugin.vala:686
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Completează automat"
@@ -6426,7 +6290,7 @@ msgstr "Stilul indicator al mesajului normal:"
 
 #: ../plugins/message-view/anjuta-message-manager-plugin.ui.h:14
 msgid "Indicators"
-msgstr "Indicatori:"
+msgstr "Indicatori"
 
 #: ../plugins/message-view/anjuta-message-manager-plugin.ui.h:15
 msgid "Warnings:"
@@ -6437,10 +6301,8 @@ msgid "Errors:"
 msgstr "Erori:"
 
 #: ../plugins/message-view/anjuta-message-manager-plugin.ui.h:17
-#, fuzzy
-#| msgid "Import"
 msgid "Important:"
-msgstr "Importă"
+msgstr "Important:"
 
 #: ../plugins/message-view/anjuta-message-manager-plugin.ui.h:18
 msgid "Message colors"
@@ -6469,16 +6331,12 @@ msgid "Copy message"
 msgstr "Copiază mesajul"
 
 #: ../plugins/message-view/plugin.c:83
-#, fuzzy
-#| msgid "_Copy Message"
 msgid "_Copy All Messages"
-msgstr "_Copiază mesajul"
+msgstr "_Copiază toate mesajele"
 
 #: ../plugins/message-view/plugin.c:84
-#, fuzzy
-#| msgid "_Copy Message"
 msgid "Copy All Messages"
-msgstr "_Copiază mesajul"
+msgstr "Copiază toate mesajele"
 
 #: ../plugins/message-view/plugin.c:87
 msgid "_Next Message"
@@ -6537,14 +6395,12 @@ msgid "Unable to parse make file"
 msgstr "Nu s-a putut parcurge fișierul make"
 
 #: ../plugins/mk-project/mk-project.plugin.in.h:1
-#, fuzzy
-#| msgid "Makefiles"
 msgid "Makefile backend"
-msgstr "Fișiere make"
+msgstr "Suport makefile"
 
 #: ../plugins/mk-project/mk-project.plugin.in.h:2
 msgid "Makefile project backend, allowing only to read the project"
-msgstr ""
+msgstr "Suport de proiect makefile, permițând doar citirea proiectului"
 
 #: ../plugins/mk-project/mk-project.ui.h:1
 msgid "Select package"
@@ -6674,8 +6530,7 @@ msgstr "Importă un proiect autotools existent în Anjuta"
 msgid "Project from Existing Sources"
 msgstr "Proiect din surse existente"
 
-#: ../plugins/project-import/plugin.c:82
-#: ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "Un fișier numit „%s” există deja. Doriți să-l înlocuiți?"
@@ -6790,10 +6645,9 @@ msgstr " Această proprietate nu este modificabilă."
 
 #. Several backend are possible, ask the user to select one
 #: ../plugins/project-manager/dialogs.c:644
-#, fuzzy, c-format
-#| msgid "Please select a project backend to open %s."
+#, c-format
 msgid "Please select a project backend to use."
-msgstr "Alegeți un suport de proiect pentru a deschide %s."
+msgstr "Selectați un suport de proiect de utilizat."
 
 #: ../plugins/project-manager/dialogs.c:683
 #: ../plugins/project-manager/dialogs.c:688
@@ -6802,10 +6656,8 @@ msgid "Project properties"
 msgstr "Proprietăți proiect"
 
 #: ../plugins/project-manager/dialogs.c:692
-#, fuzzy
-#| msgid "Module properties"
 msgid "Folder properties"
-msgstr "Proprietățile modulului"
+msgstr "Proprietăți dosar"
 
 #: ../plugins/project-manager/dialogs.c:696
 msgid "Target properties"
@@ -6829,13 +6681,12 @@ msgstr "Proprietăți necunoscute"
 
 #: ../plugins/project-manager/dialogs.c:737
 msgid "Backend:"
-msgstr ""
+msgstr "Suport:"
 
 #: ../plugins/project-manager/dialogs.c:929
-#, fuzzy, c-format
-#| msgid "Loading project: %s"
+#, c-format
 msgid "Reloading project: %s"
-msgstr "Se încarcă proiectul: %s"
+msgstr "Se reîncarcă proiectul: %s"
 
 #: ../plugins/project-manager/dialogs.c:1178
 #: ../plugins/project-manager/dialogs.c:1189
@@ -6886,131 +6737,96 @@ msgid "Cannot add packages"
 msgstr "Nu se pot adăuga pachete"
 
 #: ../plugins/project-manager/plugin.c:693
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following group from the project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the group \"%s\" from the project?\n"
 "\n"
-msgstr "Sigur doriți să eliminați următorul grup din proiect?\n"
+msgstr ""
+"Sigur doriți să eliminați grupul „%s” din proiect?\n"
+"\n"
 
 #: ../plugins/project-manager/plugin.c:696
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following target from the project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the target \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Sigur doriți să eliminați următoarea țintă din proiect?\n"
+"Sigur doriți să eliminați ținta „%s” din proiect?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:699
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following source file from the "
-#| "project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the source \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Sigur doriți să eliminați următorul fișier sursă din proiect?\n"
+"Sigur doriți să eliminați sursa „%s” din proiect?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:702
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following group from the project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the shortcut \"%s\" from the project?\n"
 "\n"
-msgstr "Sigur doriți să eliminați următorul grup din proiect?\n"
+msgstr ""
+"Sigur doriți să eliminați scurtătura „%s” din proiect?\n"
+"\n"
 
 #: ../plugins/project-manager/plugin.c:706
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following module from the project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the module \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Sigur doriți să eliminați următorul modul din proiect?\n"
+"Sigur doriți să eliminați modulul „%s” din proiect?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:709
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following package from the project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the package \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Sigur că doriți să eliminați următorul pachet din proiect?\n"
+"Sigur doriți să eliminați pachetul „%s” din proiect?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:712
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following elements from the project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove the element \"%s\" from the project?\n"
 "\n"
 msgstr ""
-"Sigur doriți să eliminați următoarele elemente din proiect?\n"
+"Sigur doriți să eliminați elementul „%s” din proiect?\n"
 "\n"
 
 #. Translator: there is at least 2 elements to remove
 #: ../plugins/project-manager/plugin.c:721
-#, fuzzy, c-format
-#| msgid ""
-#| "Are you sure you want to remove the following elements from the project?\n"
-#| "\n"
+#, c-format
 msgid ""
 "Are you sure you want to remove %d element from the project?\n"
 "\n"
 msgid_plural ""
 "Are you sure you want to remove %d elements from the project?\n"
 "\n"
-msgstr[0] ""
-"Sigur doriți să eliminați următoarele elemente din proiect?\n"
-"\n"
-msgstr[1] ""
-"Sigur doriți să eliminați următoarele elemente din proiect?\n"
-"\n"
-msgstr[2] ""
-"Sigur doriți să eliminați următoarele elemente din proiect?\n"
-"\n"
+msgstr[0] "Sigur doriți să eliminați %d element din proiect?\n"
+msgstr[1] "Sigur doriți să eliminați %d elemente din proiect?\n"
+msgstr[2] "Sigur doriți să eliminați %d de elemente din proiect?\n"
 
 #: ../plugins/project-manager/plugin.c:726
-#, fuzzy
-#| msgid "The group will be deleted from the file system."
 msgid "The group will be deleted from the file system.\n"
-msgstr "Grupul va fi șters din sistemul de fișiere."
+msgstr "Grupul va fi șters din sistemul de fișiere.\n"
 
 #: ../plugins/project-manager/plugin.c:731
-#, fuzzy
-#| msgid "The group will not be deleted from the file system."
 msgid "The group will not be deleted from the file system.\n"
-msgstr "Grupul nu va fi șters din sistemul de fișiere."
+msgstr "Grupul nu va fi șters din sistemul de fișiere.\n"
 
 #: ../plugins/project-manager/plugin.c:737
-#, fuzzy
-#| msgid "The source file will be deleted from the file system."
 msgid "The source file will be deleted from the file system.\n"
-msgstr "Fișierul sursă va fi șters din sistemul de fișiere."
+msgstr "Fișierul sursă va fi șters din sistemul de fișiere.\n"
 
 #: ../plugins/project-manager/plugin.c:742
-#, fuzzy
-#| msgid "The source file will not be deleted from the file system."
 msgid "The source file will not be deleted from the file system.\n"
-msgstr "Fișierul sursă nu va fi șters din sistemul de fișiere."
+msgstr "Fișierul sursă nu va fi șters din sistemul de fișiere.\n"
 
 #: ../plugins/project-manager/plugin.c:754
 msgid "Confirm remove"
@@ -7035,17 +6851,13 @@ msgid "_Project"
 msgstr "_Proiect"
 
 #: ../plugins/project-manager/plugin.c:907
-#, fuzzy
-#| msgid "New _Directory…"
 msgid "New _Folder…"
-msgstr "_Dosar nou..."
+msgstr "_Dosar nou…"
 
 #: ../plugins/project-manager/plugin.c:907
 #: ../plugins/project-manager/plugin.c:941
-#, fuzzy
-#| msgid "Add a new directory to the project"
 msgid "Add a new folder to the project"
-msgstr "Adaugă un nou dosar la proiect"
+msgstr "Adaugă un dosar nou la proiect"
 
 #: ../plugins/project-manager/plugin.c:912
 msgid "New _Target…"
@@ -7088,10 +6900,8 @@ msgid "Close project"
 msgstr "Închide proiect"
 
 #: ../plugins/project-manager/plugin.c:941
-#, fuzzy
-#| msgid "New File"
 msgid "New _Folder"
-msgstr "Fișier nou"
+msgstr "_Dosar nou"
 
 #: ../plugins/project-manager/plugin.c:946
 msgid "New _Target"
@@ -7151,7 +6961,7 @@ msgstr "Actualizează vizualizarea proiectului…"
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2164
+#: ../plugins/symbol-db/plugin.c:2169
 msgid "Project"
 msgstr "Proiect"
 
@@ -7214,28 +7024,20 @@ msgid "Add Source"
 msgstr "Adaugă sursă"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:9
-#, fuzzy
-#| msgid "Target: %s\n"
 msgid "Target:"
-msgstr "Țintă: %s\n"
+msgstr "Țintă:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:10
-#, fuzzy
-#| msgid "New File"
 msgid "New Folder"
-msgstr "Fișier nou"
+msgstr "Dosar nou"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:11
-#, fuzzy
-#| msgid "_Module name:"
 msgid "_Folder name:"
-msgstr "Nume _modul:"
+msgstr "Nume _dosar:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:12
-#, fuzzy
-#| msgid "Specify _where to create the directory:"
 msgid "Specify _where to create the folder:"
-msgstr "Specificați _unde să se creeze dosarul:"
+msgstr "Specifică _unde să se creeze dosarul:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:13
 msgid "Select the _target for the new source files:"
@@ -7274,35 +7076,25 @@ msgid "More options:"
 msgstr "Mai multe opțiuni:"
 
 #: ../plugins/project-manager/project-chooser.c:296
-#, fuzzy
-#| msgid "Select one directory"
 msgid "<Select any project node>"
-msgstr "Alegeți un dosar"
+msgstr "<Selectați orice nod de proiect>"
 
 #: ../plugins/project-manager/project-chooser.c:301
 #: ../plugins/project-manager/project-chooser.c:311
-#, fuzzy
-#| msgid "Select package"
 msgid "<Select a target>"
-msgstr "Alegeți pachetul"
+msgstr "<Selectați o țintă>"
 
 #: ../plugins/project-manager/project-chooser.c:306
-#, fuzzy
-#| msgid "Clean module"
 msgid "<Select any module>"
-msgstr "Curăță modulul"
+msgstr "<Selectați orice modul>"
 
 #: ../plugins/project-manager/project-chooser.c:316
-#, fuzzy
-#| msgid "Select the _target for the library:"
 msgid "<Select a target or a folder>"
-msgstr "Alegeți țin_ta pentru bibliotecă:"
+msgstr "<Selectați o țintă sau un dosar>"
 
 #: ../plugins/project-manager/project-chooser.c:321
-#, fuzzy
-#| msgid "Select file"
 msgid "<Select a folder>"
-msgstr "Selectează fișier"
+msgstr "<Selectați un fișier>"
 
 #: ../plugins/project-manager/project-model.c:185
 msgid "GbfProject Object"
@@ -7317,23 +7109,25 @@ msgid "Project Assistant"
 msgstr "Asistent de proiect"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:1
-#, fuzzy
-#| msgid "Select a pretty printer file"
 msgid "Select a project type"
-msgstr "Alegeți un fișier de afișare „pretty printer”"
+msgstr "Selectați un tip de proiect"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
+msgid "Select project"
+msgstr "Selectați un proiect"
+
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
 #: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr "Eroare"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
 msgid "Details"
 msgstr "Detalii"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:5
 msgid "Summary"
-msgstr ""
+msgstr "Rezumat"
 
 #: ../plugins/project-wizard/druid.c:192 ../plugins/project-wizard/druid.c:196
 msgid "Warning"
@@ -7391,18 +7185,13 @@ msgstr ""
 "cratimă la început. Corectați-l."
 
 #: ../plugins/project-wizard/druid.c:737
-#, fuzzy, c-format
-#| msgid ""
-#| "Field \"%s\" must contains only letters, digits or the following "
-#| "characters \"#$:%%+,.=@^_`~\". In addition you cannot have a leading "
-#| "dash. Please fix it."
+#, c-format
 msgid ""
 "Field \"%s\" must contains only ASCII printable characters, no accentuated "
 "characters by example. Please fix it."
 msgstr ""
-"Câmpul \"%s\" trebuie să conțină doar litere, cifre sau următoarele "
-"caractere \"#$:%%+,.=@^_`~\". În plus, nu puteți avea o cratimă la început. "
-"Corectați-l."
+"Câmpul „%s” trebuie să conțină doar caractere tipăribile ASCII, nu caractere "
+"cu accent de exemplu. Reparați-l."
 
 #: ../plugins/project-wizard/druid.c:742
 #, c-format
@@ -7523,23 +7312,23 @@ msgstr "Se execută: %s"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:1
 msgid "Directory where the new projects are created by default"
-msgstr ""
+msgstr "Director unde proiectele noi sunt create implicit"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:2
 msgid ""
 "If empty, the user home directory is used. If the path is relative, it is "
 "relative to the home directory."
 msgstr ""
+"Dacă este gol, directorul acasă a utilizatorului este utilizat. Dacă calea "
+"este relativă, este relativă la directorul acasă."
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:3
-#, fuzzy
-#| msgid "Create a new project"
 msgid "Default user name used in new project"
-msgstr "Creează un proiect nou"
+msgstr "Nume de utilizator implicit utilizat în proiectul nou"
 
 #: ../plugins/project-wizard/org.gnome.anjuta.plugins.project-wizard.gschema.xml.in.h:4
 msgid "If empty, the current user name is used."
-msgstr ""
+msgstr "Dacă este gol, numele de utilizator curent este utilizat."
 
 #: ../plugins/project-wizard/plugin.c:50
 #, c-format
@@ -8013,9 +7802,7 @@ msgstr "Adaugă suport pentru biblioteci partajate:"
 #: ../plugins/project-wizard/templates/xlib-dock.wiz.in.h:18
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:18
 msgid "Adds support for building shared libraries in your project"
-msgstr ""
-"Adaugă suport pentru construirea de biblioteci partajate în proiectul "
-"dumneavoastră."
+msgstr "Adaugă suport pentru construirea de biblioteci partajate în proiect"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:15
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:17
@@ -8062,10 +7849,8 @@ msgstr ""
 #: ../plugins/project-wizard/templates/library.wiz.in.h:24
 #: ../plugins/project-wizard/templates/terminal.wiz.in.h:19
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:19
-#, fuzzy
-#| msgid "Add C++ support:"
 msgid "Add Windows support:"
-msgstr "Adaugă suport C++:"
+msgstr "Adaugă suport Windows:"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:20
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:26
@@ -8074,12 +7859,8 @@ msgstr "Adaugă suport C++:"
 #: ../plugins/project-wizard/templates/library.wiz.in.h:25
 #: ../plugins/project-wizard/templates/terminal.wiz.in.h:20
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:20
-#, fuzzy
-#| msgid "Adds support for building shared libraries in your project"
 msgid "Adds support for building on Windows platforms"
-msgstr ""
-"Adaugă suport pentru construirea de biblioteci partajate în proiectul "
-"dumneavoastră."
+msgstr "Adaugă suport pentru generarea pe platforme Windows"
 
 #: ../plugins/project-wizard/templates/django.wiz.in.h:1
 msgid "Django Project"
@@ -8114,31 +7895,27 @@ msgstr "GCJ trebuie să știe ce clasă conține funcția main()"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:1
 msgid "Gnome Shell Extension"
-msgstr ""
+msgstr "Extensie Shell Gnome"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:2
 msgid "A minimal Gnome Shell extension"
-msgstr ""
+msgstr "O extensie de Shell Gnome minimală"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:5
-#, fuzzy
-#| msgid "Plugin Class Name:"
 msgid "Plugin Name:"
-msgstr "Numele clasei modulului:"
+msgstr "Nume modul:"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:6
 msgid "Short but descriptive user-visible plugin name"
-msgstr ""
+msgstr "Un nume de modul scurt dar descriptiv vizibil de către utilizator"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:14
-#, fuzzy
-#| msgid "Display description of the plugin"
 msgid "Long description of your plugin"
-msgstr "Afișează descrierea modulului"
+msgstr "Descriere lungă a modulului"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:15
 msgid "UUID:"
-msgstr ""
+msgstr "UUID:"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:16
 msgid ""
@@ -8149,19 +7926,27 @@ msgid ""
 "uuid on your\n"
 "email address."
 msgstr ""
+"Uuid este un identificator unic global pentru extensie.\n"
+"Acesta ar trebui să fie în formatul unei adrese de email (foo.bar@extensions."
+"example.com), dar\n"
+"nu trebuie să fie o adresă de email efectivă, deși este o idee bună să "
+"bazați uuid-ul pe\n"
+"adresa de email."
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:21
 msgid "Extension URL"
-msgstr ""
+msgstr "URL extensie"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:22
 msgid "Gnome Shell Compatibility:"
-msgstr ""
+msgstr "Compatibilitate Shell Gnome:"
 
 #: ../plugins/project-wizard/templates/gnome-shell-extension.wiz.in.h:23
 msgid ""
 "Comma-separated list of gnome-shell version your plugin is compatible with"
 msgstr ""
+"Listă separată prin virgulă a versiunii shell-gnome cu care este compatibilă "
+"modulul"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:1
 msgid "GTK+ (Application)"
@@ -8359,10 +8144,8 @@ msgid "Require SDL version:"
 msgstr "Necesită versiunea SDL:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:18
-#, fuzzy
-#| msgid "Mininum SDL version required"
 msgid "Minimum SDL version required"
-msgstr "Versiunea minimă de SDL necesară"
+msgstr "Versiune SDL minimă necesară"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:19
 msgid "Require SDL_image:"
@@ -8437,42 +8220,32 @@ msgid "A generic Xlib project"
 msgstr "Un proiect generic Xlib"
 
 #: ../plugins/python-loader/anjuta-python-loader.plugin.in.h:1
-#, fuzzy
-#| msgid "Python Module"
 msgid "Python loader"
-msgstr "Modul Python"
+msgstr "Încărcător Python"
 
 #: ../plugins/python-loader/anjuta-python-loader.plugin.in.h:2
 msgid "Allows loading Anjuta plugins written in Python"
-msgstr ""
+msgstr "Permite încărcarea modulelor Anjuta scrise în Python"
 
 #: ../plugins/quick-open/anjuta-quick-open.ui.h:1
-#, fuzzy
-#| msgid "Loading..."
 msgid "Loading files..."
-msgstr "Se încarcă..."
+msgstr "Se încarcă fișierele..."
 
 #: ../plugins/quick-open/plugin.c:221
-#, fuzzy
-#| msgid "_Quick Search"
 msgid "Quick open"
-msgstr "Căutare _rapidă"
+msgstr "Deschidere rapidă"
 
 #: ../plugins/quick-open/plugin.c:223
 msgid "Quickly open a file in the current project."
-msgstr ""
+msgstr "Deschide un fișier ușor în proiectul curent."
 
 #: ../plugins/quick-open/plugin.c:243
-#, fuzzy
-#| msgid "Run operations"
 msgid "Quick open operations"
-msgstr "Operații de execuție"
+msgstr "Operații de deschidere rapidă"
 
 #: ../plugins/quick-open/quick-open-dialog.c:775
-#, fuzzy
-#| msgid "_Quick Search"
 msgid "Quick Open"
-msgstr "Căutare _rapidă"
+msgstr "Deschidere rapidă"
 
 #: ../plugins/run-program/anjuta-run-program.plugin.in.h:1
 msgid "Run Program"
@@ -8508,21 +8281,21 @@ msgstr "Alegeți un dosar de lucru"
 msgid "Program directory '%s' is not local"
 msgstr "Dosarul programului „%s” nu este local"
 
+#: ../plugins/run-program/org.gnome.anjuta.plugins.run.gschema.xml.in.h:1
+msgid "Command used for starting a terminal"
+msgstr "Comandă folosită pentru pornirea unui terminal"
+
 #: ../plugins/run-program/parameters.c:180
 msgid "Load Target to run"
 msgstr "Încarcă ținta pentru a o executa"
 
 #: ../plugins/run-program/plugin.c:228
-#, fuzzy
-#| msgid ""
-#| "The program is running.\n"
-#| "Do you want to restart it?"
 msgid ""
 "The program is already running.\n"
 "Do you want to stop it before restarting a new instance?"
 msgstr ""
-"Programul rulează.\n"
-"Vreți să-l reporniți?"
+"Programul deja rulează.\n"
+"Doriți să îl opriți înainte de a reporni o instanță nouă?"
 
 #. Action name
 #. Stock icon, if any
@@ -8632,23 +8405,17 @@ msgstr "Valoare instantă"
 
 #: ../plugins/snippets-manager/snippets-browser.c:193
 #: ../plugins/snippets-manager/snippets-manager-preferences.ui.h:1
-#, fuzzy
-#| msgid "Add Snippet …"
 msgid "Add snippet"
-msgstr "Adaugă fragment …"
+msgstr "Adaugă un fragment"
 
 #: ../plugins/snippets-manager/snippets-browser.c:199
 #: ../plugins/snippets-manager/snippets-manager-preferences.ui.h:2
-#, fuzzy
-#| msgid "Select Files"
 msgid "Remove selected snippet"
-msgstr "Alegeți fișierele"
+msgstr "Elimină fragmentul selectat"
 
 #: ../plugins/snippets-manager/snippets-browser.c:205
-#, fuzzy
-#| msgid "Paste the content of clipboard at the current position"
 msgid "Insert snippet into editor at current cursor position"
-msgstr "Lipește textul selectat din editor și pune-l în clipboard"
+msgstr "Inserează fragmentul în editor la poziția curentă a cursorului"
 
 #: ../plugins/snippets-manager/snippets-browser.c:552
 msgid "Trigger"
@@ -8660,17 +8427,13 @@ msgstr "Limbaje"
 
 #. Insert the Add Snippet menu item
 #: ../plugins/snippets-manager/snippets-browser.c:809
-#, fuzzy
-#| msgid "Add Snippet …"
 msgid "Add Snippet…"
-msgstr "Adaugă fragment …"
+msgstr "Adaugă un fragment…"
 
 #. Insert the Add Snippets Group menu item
 #: ../plugins/snippets-manager/snippets-browser.c:819
-#, fuzzy
-#| msgid "Add Snippets Group …"
 msgid "Add Snippets Group…"
-msgstr "Adaugă grupul de fragmente …"
+msgstr "Adaugă grupul de fragmente…"
 
 #: ../plugins/snippets-manager/snippets-editor.c:39
 msgid "Default value"
@@ -8688,16 +8451,12 @@ msgstr ""
 "limbaje!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:50
-#, fuzzy
-#| msgid ""
-#| "<b>Error:</b> The trigger key can only contain alphanumeric characters "
-#| "and _ !"
 msgid ""
 "<b>Error:</b> The trigger key can only contain alphanumeric characters and "
 "\"_\"!"
 msgstr ""
-"<b>Eroare:</b> Tasta de declanșare poate să conțină numai caractere "
-"alfanumerice și _!"
+"<b>Eroare:</b> Cheia de declanșator poate să conțină doar caractere "
+"alfanumerice și „_”!"
 
 #: ../plugins/snippets-manager/snippets-editor.c:51
 msgid "<b>Error:</b> You haven't entered a trigger key for the snippet!"
@@ -8793,22 +8552,16 @@ msgid "Close"
 msgstr "Închide"
 
 #: ../plugins/snippets-manager/snippets-export-dialog.ui.h:1
-#, fuzzy
-#| msgid "Export Snippets"
 msgid "Export snippets"
-msgstr "Exportă fragmente"
+msgstr "Exportă fragmentele"
 
 #: ../plugins/snippets-manager/snippets-export-dialog.ui.h:3
-#, fuzzy
-#| msgid "Save current file"
 msgid "Save in folder:"
-msgstr "Salvează fișierul curent"
+msgstr "Salvează în dosarul:"
 
 #: ../plugins/snippets-manager/snippets-export-dialog.ui.h:4
-#, fuzzy
-#| msgid "Select Files"
 msgid "Select snippets"
-msgstr "Alegeți fișierele"
+msgstr "Selectează fragmentele"
 
 #: ../plugins/snippets-manager/snippets-import-export.c:155
 msgid "Import Snippets"
@@ -8824,13 +8577,11 @@ msgstr "Utilizează taburi pentru identare"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:2
 msgid "Tab size in spaces:"
-msgstr "Dimensiunea tabului în spații"
+msgstr "Dimensiunea tabului în spații:"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:3
-#, fuzzy
-#| msgid "Brace indentation size in spaces:"
 msgid "Indentation size in spaces:"
-msgstr "Dimensiunea indentării acoladei în spații:"
+msgstr "Dimensiunea indentării în spații:"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:4
 msgid "Indentation and auto-format options"
@@ -8980,12 +8731,12 @@ msgstr "Fișierul „%s” este protejat la scriere! Editați oricum?"
 msgid "Could not save %s: %s"
 msgstr "Nu s-a putut salva %s: %s"
 
-#: ../plugins/sourceview/sourceview-io.c:308
+#: ../plugins/sourceview/sourceview-io.c:322
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr "Nu s-a putut salva fișierul pentru că numele nu a fost încă specificat"
 
-#: ../plugins/sourceview/sourceview-io.c:556
+#: ../plugins/sourceview/sourceview-io.c:570
 #, c-format
 msgid "New file %d"
 msgstr "Noul fișier %d"
@@ -9039,42 +8790,32 @@ msgid "Create a new project"
 msgstr "Creează un proiect nou"
 
 #: ../plugins/starter/starter.ui.h:2
-#, fuzzy
-#| msgid "Import project"
 msgid "Import a project"
-msgstr "Importă proiect"
+msgstr "Importă un proiect"
 
 #: ../plugins/starter/starter.ui.h:3
-#, fuzzy
-#| msgid "Search for next appearance of term."
 msgid "Search for example code"
-msgstr "Caută următoarea apariție a termenului."
+msgstr "Caută pentru un cod exemplu"
 
 #: ../plugins/starter/starter.ui.h:4
-#, fuzzy
-#| msgid "Man Documentation"
 msgid "View local Anjuta documentation"
-msgstr "Documentație man"
+msgstr "Vizualizează documentația Anjuta locală"
 
 #: ../plugins/starter/starter.ui.h:5
 msgid "View local Anjuta FAQ"
-msgstr ""
+msgstr "Vizualizează FAQ Anjuta local"
 
 #: ../plugins/starter/starter.ui.h:6
 msgid "View online library documentation"
-msgstr ""
+msgstr "Vizualizează documentația de librărie online"
 
 #: ../plugins/starter/starter.ui.h:7
-#, fuzzy
-#| msgid "No recently used resource found with URI \"%s\""
 msgid "Remove recently used project from list"
-msgstr "Nu s-a găsit nicio resursă recent utilizată cu URI-ul „%s”"
+msgstr "Elimină proiectele utilizate recent din listă"
 
 #: ../plugins/starter/starter.ui.h:8
-#, fuzzy
-#| msgid "_Install Project"
 msgid "Unlist Project"
-msgstr "_Instalează proiectul"
+msgstr "Delistează proiectul"
 
 #: ../plugins/subversion/anjuta-subversion.plugin.in.h:1
 #: ../plugins/subversion/subversion-ui-utils.c:64
@@ -9196,7 +8937,7 @@ msgstr "Calea secundară:"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:41
 msgid "Working Copy Path:"
-msgstr "Calea copiei funcționabile"
+msgstr "Calea copiei de lucru:"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:42
 msgid "Start Revision:"
@@ -9676,56 +9417,54 @@ msgstr "_Caută simbol…"
 msgid "Find Symbol"
 msgstr "Caută simbol"
 
-#: ../plugins/symbol-db/plugin.c:1067
+#: ../plugins/symbol-db/plugin.c:1072
 #, c-format
 msgid "%s: Generating inheritances…"
 msgstr "%s: Se generează moștenirile…"
 
 #. Translators: %s is the name of a system library
-#: ../plugins/symbol-db/plugin.c:1073
-#, fuzzy, c-format
-#| msgid "%s: %d files scanned out of %d"
+#: ../plugins/symbol-db/plugin.c:1078
+#, c-format
 msgid "%s: %d file scanned out of %d"
 msgid_plural "%s: %d files scanned out of %d"
-msgstr[0] "%s: %d fișiere scanate din %d"
+msgstr[0] "%s: %d fișier scanat din %d"
 msgstr[1] "%s: %d fișiere scanate din %d"
-msgstr[2] "%s: %d fișiere scanate din %d"
+msgstr[2] "%s: %d de fișiere scanate din %d"
 
-#: ../plugins/symbol-db/plugin.c:1104
+#: ../plugins/symbol-db/plugin.c:1109
 #, c-format
 msgid "Generating inheritances…"
 msgstr "Se generează moștenirile…"
 
-#: ../plugins/symbol-db/plugin.c:1106
-#, fuzzy, c-format
-#| msgid "%d files scanned out of %d"
+#: ../plugins/symbol-db/plugin.c:1111
+#, c-format
 msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
-msgstr[0] "%d fișiere scanate din totalul de %d"
-msgstr[1] "%d fișiere scanate din totalul de %d"
-msgstr[2] "%d fișiere scanate din totalul de %d"
+msgstr[0] "%d fișier scanat din %d"
+msgstr[1] "%d fișiere scanate din %d"
+msgstr[2] "%d de fișiere scanate din %d"
 
-#: ../plugins/symbol-db/plugin.c:1767
+#: ../plugins/symbol-db/plugin.c:1772
 msgid "Populating symbol database…"
 msgstr "Se populează baza de date cu simboluri…"
 
-#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
+#: ../plugins/symbol-db/plugin.c:2154 ../plugins/symbol-db/plugin.c:2239
 msgid "Symbols"
 msgstr "Simboluri"
 
-#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
+#: ../plugins/symbol-db/plugin.c:2174 ../plugins/symbol-db/plugin.c:2226
 msgid "Search"
 msgstr "Caută"
 
-#: ../plugins/symbol-db/plugin.c:2243
+#: ../plugins/symbol-db/plugin.c:2248
 msgid "SymbolDb popup actions"
 msgstr "Acțiunile popupului SymbolDb"
 
-#: ../plugins/symbol-db/plugin.c:2251
+#: ../plugins/symbol-db/plugin.c:2256
 msgid "SymbolDb menu actions"
 msgstr "Acțiunile meniului SymbolDb"
 
-#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
+#: ../plugins/symbol-db/plugin.c:2586 ../plugins/symbol-db/plugin.c:2604
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "Baza de date a simbolurilor"
@@ -9757,10 +9496,8 @@ msgid "Use GNOME Terminal profile:"
 msgstr "Utilizați profilul din Terminal GNOME:"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:3
-#, fuzzy
-#| msgid "Use GNOME Terminal profile:"
 msgid "Use default GNOME terminal profile"
-msgstr "Utilizați profilul din Terminal GNOME:"
+msgstr "Utilizează profilul de terminal GNOME implicit"
 
 #: ../plugins/terminal/anjuta-terminal-plugin.ui.h:4
 msgid "Terminal options"
@@ -9903,7 +9640,7 @@ msgstr "Nu s-a putut edita scriptul"
 
 #: ../plugins/tools/editor.c:1047
 msgid "New accelerator…"
-msgstr "Accelerator nou..."
+msgstr "Accelerator nou…"
 
 #: ../plugins/tools/execute.c:314
 #, c-format
@@ -10132,10 +9869,8 @@ msgid "Command line parameters"
 msgstr "Parametrii liniei de comandă"
 
 #: ../src/about.c:186
-#, fuzzy
-#| msgid "Copyright (c) Naba Kumar"
 msgid "Copyright © Naba Kumar"
-msgstr "Drepturi de autor (c) Naba Kumar"
+msgstr "Drepturi de autor © Naba Kumar"
 
 #: ../src/anjuta-actions.h:23
 msgid "_File"
@@ -10292,25 +10027,24 @@ msgstr ""
 
 #: ../src/anjuta-application.c:412
 msgid "Display program version"
-msgstr ""
+msgstr "Afișează versiunea programului"
 
 #: ../src/anjuta-application.c:418
 msgid "Specify another profile"
-msgstr ""
+msgstr "Specifică alt profil"
 
 #: ../src/anjuta-application.c:419
 msgid "PROFILE_FILE"
-msgstr ""
+msgstr "FIȘIER_PROFIL"
 
 #: ../src/anjuta-application.c:436
 msgid "- Integrated Development Environment"
 msgstr "- Mediu integrat de dezvoltare"
 
 #: ../src/anjuta-application.c:776
-#, fuzzy, c-format
-#| msgid "Installation failed: %s"
+#, c-format
 msgid "Invalid profile %s: %s"
-msgstr "Instalarea a eșuat: %s"
+msgstr "Profil nevalid %s: %s"
 
 #: ../src/anjuta-application.c:830
 msgid "Loaded Session…"
@@ -10318,7 +10052,7 @@ msgstr "Sesiune încărcată…"
 
 #: ../src/anjuta-menu.ui.h:1
 msgid "_New Window"
-msgstr ""
+msgstr "Fereastră _nouă"
 
 #: ../src/anjuta-window.c:688
 msgid "Edit"
@@ -10342,28 +10076,25 @@ msgid "Value doesn't exist"
 msgstr "Valoarea nu există"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:1
-#, fuzzy
-#| msgid "Create a new project"
 msgid "Default email used in new project"
-msgstr "Creează un proiect nou"
+msgstr "Email implicit utilizat în proiectul nou"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:2
 msgid "If empty, current login and machine name is used."
 msgstr ""
+"Dacă este gol, autentificarea curentă și numele mașinii sunt utilizate."
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:3
-#, fuzzy
-#| msgid "Use tabs for indentation"
 msgid "Use tabulation for indentation"
-msgstr "Utilizează taburi pentru identare"
+msgstr "Utilizează intabularea pentru indentare"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:4
 msgid "Number of characters of one tabulation"
-msgstr ""
+msgstr "Numărul de caractere a unei intabulări"
 
 #: ../src/org.gnome.anjuta.gschema.xml.in.h:5
 msgid "Number of spaces on every indentation step"
-msgstr ""
+msgstr "Numărul de spații al fiecărui pas de indentare"
 
 #: ../src/preferences.ui.h:1
 msgid "Do not load last session on startup"
@@ -10882,9 +10613,6 @@ msgstr "Doar text"
 #~ msgstr ""
 #~ "Nu se poate construi interfața utilizator de citire a asistentului de "
 #~ "proiect %s."
-
-#~ msgid "Command used for starting a terminal"
-#~ msgstr "Comandă folosită pentru pornirea unui terminal"
 
 #~ msgid "Kick start _tutorial"
 #~ msgstr "_Ghid pentru începători"
