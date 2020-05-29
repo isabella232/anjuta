@@ -67,7 +67,7 @@ applications on-the-fly.
     * Function definition, structure, classes etc.
     * Full tags management for project.
     * Symbol Browser.
-    * File Brwoser.
+    * File Browser.
 6. Full project and build files management.
 7. Bookmark management.
 8. Basic windows are attachable and detachable.
