@@ -1,7 +1,6 @@
-# Simplified Chinese translation for anjuta.
-# Copyright (C) 2001, 2004, 2009, 2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as anjuta package.
-#
+# Chinese (China) translation for anjuta.
+# Copyright (C) 2001-2017 anjuta's COPYRIGHT HOLDER
+# This file is distributed under the same license as the anjuta package.
 # Conner Mo <connermo@hotmail.com>, 2001.
 # Noah Bentusi <blue_atlantis400@hotmail.com>, 2004.
 # Zhuo Li <mada@geekbone.org>, 2004.
@@ -22,17 +21,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-10 16:49+0800\n"
-"PO-Revision-Date: 2016-12-11 22:41+0800\n"
-"Last-Translator: Mandy Wang <wangmychn@gmail.com>\n"
-"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=anjuta&keywords=I18N+L10N&component=core application\n"
+"POT-Creation-Date: 2017-10-01 16:19+0000\n"
+"PO-Revision-Date: 2017-10-29 01:10+0800\n"
+"Last-Translator: Dingzhong Chen <wsxy162@gmail.com>\n"
+"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.0.3\n"
 
 #: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
@@ -142,12 +142,12 @@ msgstr "列 %i"
 msgid "Column 1"
 msgstr "列 1"
 
-#: ../libanjuta/anjuta-convert.c:74 ../libanjuta/anjuta-convert.c:111
+#: ../libanjuta/anjuta-convert.c:75 ../libanjuta/anjuta-convert.c:113
 #, c-format
 msgid "The file you are trying to open contains an invalid byte sequence."
 msgstr "您正试图打开的文件中含有非法字节序列。"
 
-#: ../libanjuta/anjuta-convert.c:168 ../libanjuta/anjuta-convert.c:207
+#: ../libanjuta/anjuta-convert.c:170 ../libanjuta/anjuta-convert.c:209
 #, c-format
 msgid ""
 "Anjuta was not able to automatically determine the encoding of the file you "
@@ -369,7 +369,7 @@ msgstr "无法执行命令：“%s”"
 msgid "execvp failed"
 msgstr "执行文件(execvp)失败"
 
-#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2401
+#: ../libanjuta/anjuta-plugin.c:319 ../libanjuta/anjuta-plugin-manager.c:2399
 msgid "Anjuta Shell"
 msgstr "Anjuta Shell"
 
@@ -399,7 +399,7 @@ msgid "Load"
 msgstr "加载"
 
 #: ../libanjuta/anjuta-plugin-manager.c:908
-#: ../libanjuta/anjuta-plugin-manager.c:2015
+#: ../libanjuta/anjuta-plugin-manager.c:2013
 msgid "Available Plugins"
 msgstr "可用插件"
 
@@ -407,11 +407,11 @@ msgstr "可用插件"
 msgid "Preferred plugins"
 msgstr "首选插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1157
+#: ../libanjuta/anjuta-plugin-manager.c:1155
 msgid "Only show user activatable plugins"
 msgstr "只显示用户可激活的插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1197
+#: ../libanjuta/anjuta-plugin-manager.c:1195
 msgid ""
 "These are the plugins selected by you when you have been prompted to choose "
 "one of many suitable plugins. Removing the preferred plugin will let you "
@@ -420,71 +420,71 @@ msgstr ""
 "这些是 Anjuta 提示您选择合适插件时您选择的插件。您可以删除首选插件，另选一"
 "个。"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1223
+#: ../libanjuta/anjuta-plugin-manager.c:1221
 msgid "Forget selected plugin"
 msgstr "忘记已经选择的插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1357
-#: ../libanjuta/anjuta-plugin-manager.c:1517 ../libanjuta/anjuta-profile.c:631
+#: ../libanjuta/anjuta-plugin-manager.c:1355
+#: ../libanjuta/anjuta-plugin-manager.c:1515 ../libanjuta/anjuta-profile.c:631
 #: ../plugins/debug-manager/queue.c:527
 msgid "Select a plugin"
 msgstr "选择插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1358
+#: ../libanjuta/anjuta-plugin-manager.c:1356
 #: ../plugins/debug-manager/queue.c:528
 msgid "Please select a plugin to activate"
 msgstr "请选择要激活的插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1372
+#: ../libanjuta/anjuta-plugin-manager.c:1370
 #, c-format
 msgid "No plugin is able to load other plugins in %s"
 msgstr "没有插件可以在 %s 内加载其它插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:1518
+#: ../libanjuta/anjuta-plugin-manager.c:1516
 msgid "<b>Please select a plugin to activate</b>"
 msgstr "<b>请选择要激活的插件</b>"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2044
+#: ../libanjuta/anjuta-plugin-manager.c:2042
 msgid "Remember this selection"
 msgstr "记住此选项"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2382
+#: ../libanjuta/anjuta-plugin-manager.c:2380
 msgid "Profiles"
 msgstr "配置文件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2383
+#: ../libanjuta/anjuta-plugin-manager.c:2381
 msgid "Current stack of profiles"
 msgstr "当前配置文件栈"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2388
+#: ../libanjuta/anjuta-plugin-manager.c:2386
 msgid "Available plugins"
 msgstr "可用插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2389
+#: ../libanjuta/anjuta-plugin-manager.c:2387
 msgid "Currently available plugins found in plugin paths"
 msgstr "在插件路径下发现的当前可用插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2395
+#: ../libanjuta/anjuta-plugin-manager.c:2393
 msgid "Activated plugins"
 msgstr "已激活插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2396
+#: ../libanjuta/anjuta-plugin-manager.c:2394
 msgid "Currently activated plugins"
 msgstr "当前已激活的插件"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2402
+#: ../libanjuta/anjuta-plugin-manager.c:2400
 msgid "Anjuta shell for which the plugins are made"
 msgstr "制作插件的 Anjuta Shell"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2410
+#: ../libanjuta/anjuta-plugin-manager.c:2408
 msgid "Anjuta Status"
 msgstr "Anjuta 状态"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2411
+#: ../libanjuta/anjuta-plugin-manager.c:2409
 msgid "Anjuta status to use in loading and unloading of plugins"
 msgstr "加载和卸载插件时 Anjuta 的状态"
 
-#: ../libanjuta/anjuta-plugin-manager.c:2564
+#: ../libanjuta/anjuta-plugin-manager.c:2562
 msgid "Loading:"
 msgstr "正在加载："
 
@@ -738,8 +738,8 @@ msgid ""
 msgstr "组名只能包含字母或“#$:%+,-.=@^_`~/”这些字符"
 
 #: ../plugins/am-project/amp-group.c:665
-#: ../plugins/am-project/am-project.c:1680
-#: ../plugins/am-project/am-project.c:1773
+#: ../plugins/am-project/am-project.c:1686
+#: ../plugins/am-project/am-project.c:1779
 #: ../plugins/dir-project/dir-project.c:862
 #: ../plugins/dir-project/dir-project.c:996
 #: ../plugins/mk-project/mk-project.c:725
@@ -823,11 +823,11 @@ msgstr "模块"
 msgid "Package"
 msgstr "包"
 
-#: ../plugins/am-project/am-project.c:1710
+#: ../plugins/am-project/am-project.c:1716
 msgid "Unable to parse project file"
 msgstr "无法解析项目文件"
 
-#: ../plugins/am-project/am-project.c:1721
+#: ../plugins/am-project/am-project.c:1727
 #, c-format
 msgid "Project doesn't exist or has an invalid path"
 msgstr "项目不存在或路径非法"
@@ -1462,8 +1462,7 @@ msgstr "在项目目录内选择一个构建目录"
 
 #: ../plugins/build-basic-autotools/configuration-list.c:70
 #: ../plugins/class-gen/window.c:742
-#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1
-#: ../src/preferences.ui.h:15
+#: ../plugins/terminal/anjuta-terminal-plugin.ui.h:1 ../src/preferences.ui.h:15
 msgid "Default"
 msgstr "默认"
 
@@ -1578,8 +1577,7 @@ msgstr "正在离开：%s"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:807
-#: ../plugins/tools/execute.c:330
+#: ../plugins/build-basic-autotools/plugin.c:807 ../plugins/tools/execute.c:330
 msgid "warning:"
 msgstr "警告："
 
@@ -1592,8 +1590,7 @@ msgstr "警告：-old"
 #. * version of 'gcc' if necessary. If you update one string,
 #. * move the first one to translate the -old string and then
 #. * replace the first string only.
-#: ../plugins/build-basic-autotools/plugin.c:819
-#: ../plugins/tools/execute.c:335
+#: ../plugins/build-basic-autotools/plugin.c:819 ../plugins/tools/execute.c:335
 msgid "error:"
 msgstr "错误："
 
@@ -2103,8 +2100,7 @@ msgstr "类型"
 #: ../plugins/class-gen/window.c:720 ../plugins/class-gen/window.c:730
 #: ../plugins/class-gen/window.c:752 ../plugins/class-gen/window.c:762
 #: ../plugins/class-gen/window.c:778 ../plugins/class-gen/window.c:804
-#: ../plugins/class-gen/window.c:826
-#: ../plugins/debug-manager/stack_trace.c:869
+#: ../plugins/class-gen/window.c:826 ../plugins/debug-manager/stack_trace.c:869
 msgid "Arguments"
 msgstr "参数"
 
@@ -2167,7 +2163,7 @@ msgid "Patch-Style diff"
 msgstr "Patch 风格 diff"
 
 #: ../plugins/cvs-plugin/anjuta-cvs-plugin.ui.h:3
-#: ../plugins/symbol-db/plugin.c:2201
+#: ../plugins/symbol-db/plugin.c:2206
 msgid "Local"
 msgstr "本地"
 
@@ -2679,8 +2675,7 @@ msgid "Shared libraries"
 msgstr "共享函数库"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:29
-#: ../plugins/debug-manager/plugin.c:937
-#: ../plugins/debug-manager/plugin.c:1029
+#: ../plugins/debug-manager/plugin.c:937 ../plugins/debug-manager/plugin.c:1029
 msgid "Kernel Signals"
 msgstr "内核信号"
 
@@ -2984,15 +2979,13 @@ msgstr "已加载"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:449
-#: ../plugins/debug-manager/plugin.c:1041
+#: ../plugins/debug-manager/plugin.c:449 ../plugins/debug-manager/plugin.c:1041
 msgid "Pa_use Program"
 msgstr "暂停程序(_U)"
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:450
-#: ../plugins/debug-manager/plugin.c:1043
+#: ../plugins/debug-manager/plugin.c:450 ../plugins/debug-manager/plugin.c:1043
 msgid "Pauses the execution of the program"
 msgstr "暂停正在执行的程序"
 
@@ -3082,35 +3075,29 @@ msgstr "添加其它源码路径"
 
 #. Action name
 #. Stock icon, if any
-#: ../plugins/debug-manager/plugin.c:913
-#: ../plugins/debug-manager/plugin.c:1005
+#: ../plugins/debug-manager/plugin.c:913 ../plugins/debug-manager/plugin.c:1005
 msgid "Debugger Command…"
 msgstr "调试器命令..."
 
 #. Display label
 #. short-cut
-#: ../plugins/debug-manager/plugin.c:915
-#: ../plugins/debug-manager/plugin.c:1007
+#: ../plugins/debug-manager/plugin.c:915 ../plugins/debug-manager/plugin.c:1007
 msgid "Custom debugger command"
 msgstr "定制调试器命令"
 
-#: ../plugins/debug-manager/plugin.c:921
-#: ../plugins/debug-manager/plugin.c:1013
+#: ../plugins/debug-manager/plugin.c:921 ../plugins/debug-manager/plugin.c:1013
 msgid "_Info"
 msgstr "信息(_I)"
 
-#: ../plugins/debug-manager/plugin.c:929
-#: ../plugins/debug-manager/plugin.c:1021
+#: ../plugins/debug-manager/plugin.c:929 ../plugins/debug-manager/plugin.c:1021
 msgid "Shared Libraries"
 msgstr "共享函数库"
 
-#: ../plugins/debug-manager/plugin.c:931
-#: ../plugins/debug-manager/plugin.c:1023
+#: ../plugins/debug-manager/plugin.c:931 ../plugins/debug-manager/plugin.c:1023
 msgid "Show shared library mappings"
 msgstr "显示共享函数库映射"
 
-#: ../plugins/debug-manager/plugin.c:939
-#: ../plugins/debug-manager/plugin.c:1031
+#: ../plugins/debug-manager/plugin.c:939 ../plugins/debug-manager/plugin.c:1031
 msgid "Show kernel signals"
 msgstr "显示内核信号"
 
@@ -3287,7 +3274,7 @@ msgstr "帧"
 #. Register actions
 #: ../plugins/debug-manager/stack_trace.c:821
 #: ../plugins/file-wizard/anjuta-file-wizard.plugin.in.h:3
-#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2159
+#: ../plugins/gdb/preferences.c:363 ../plugins/symbol-db/plugin.c:2164
 #: ../plugins/tools/tool.c:100 ../src/anjuta-window.c:684
 msgid "File"
 msgstr "文件"
@@ -4268,15 +4255,15 @@ msgid ""
 "match was found."
 msgstr "搜索“%s”时达到末尾，从底部继续搜索。但未找到新的匹配结果。"
 
-#: ../plugins/document-manager/search-box.c:917
+#: ../plugins/document-manager/search-box.c:920
 msgid "Use the context menu of the \"Find\" icon for more search options"
 msgstr "使用“查找”图标的上下文菜单获取更多搜索选项"
 
-#: ../plugins/document-manager/search-box.c:988
+#: ../plugins/document-manager/search-box.c:991
 msgid "Replace"
 msgstr "替换"
 
-#: ../plugins/document-manager/search-box.c:993
+#: ../plugins/document-manager/search-box.c:996
 msgid "Replace all"
 msgstr "替换所有"
 
@@ -4545,7 +4532,7 @@ msgstr "自动选择当前文档"
 
 #: ../plugins/file-manager/file-manager.ui.h:4
 #: ../plugins/symbol-db/anjuta-symbol-db.ui.h:5
-#: ../plugins/symbol-db/plugin.c:2213
+#: ../plugins/symbol-db/plugin.c:2218
 msgid "Global"
 msgstr "全局"
 
@@ -5243,8 +5230,8 @@ msgstr "请输入一个版本。"
 msgid "Cherry Pick"
 msgstr "优选(Cherry Pick)"
 
-#: ../plugins/git/git-commit-pane.c:124
-#: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
+#: ../plugins/git/git-commit-pane.c:124 ../plugins/git/git-create-tag-pane.c:79
+#: ../plugins/git/git-merge-pane.c:70
 msgid "Please enter a log message."
 msgstr "请输入日志信息。"
 
@@ -5931,8 +5918,7 @@ msgstr "找不到 JHBuild 库所在目录。您需要 2012-11-06 及之后版本
 msgid "Failed to activate the JHBuild Plugin: %s"
 msgstr "激活 JHBuild 插件失败：%s"
 
-#: ../plugins/js-debugger/debugger-js.c:548
-#: ../plugins/js-debugger/plugin.c:142
+#: ../plugins/js-debugger/debugger-js.c:548 ../plugins/js-debugger/plugin.c:142
 msgid "Error: cant bind port"
 msgstr "错误：无法绑定端口"
 
@@ -6068,22 +6054,26 @@ msgid "Autocomplete"
 msgstr "自动补全"
 
 #: ../plugins/language-support-js/anjuta-language-javascript.ui.h:11
+msgid "Test"
+msgstr "测试"
+
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
 msgid "JS Find dirs"
 msgstr "JS 查找目录"
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:12
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
 msgid "Gir repository's directory:"
 msgstr "Git 仓库的目录："
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:13
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
 msgid "Gjs repository's directory:"
 msgstr "Gjs 仓库的目录："
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:14
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
 msgid "Min character for completion:"
 msgstr "代码补全的最少字符："
 
-#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:15
+#: ../plugins/language-support-js/anjuta-language-javascript.ui.h:16
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:11
 msgid "Environment"
 msgstr "环境"
@@ -6142,8 +6132,8 @@ msgstr "Vala 支持插件"
 msgid "Vala support plugin, adds code completion."
 msgstr "Vala 支持插件，添加代码补全。"
 
-#: ../plugins/language-support-vala/plugin.vala:657
-#: ../plugins/language-support-vala/plugin.vala:665
+#: ../plugins/language-support-vala/plugin.vala:661
+#: ../plugins/language-support-vala/plugin.vala:669
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "自动补全"
@@ -6427,8 +6417,7 @@ msgstr "把现有的使用 autotools 的项目导入 Anjuta"
 msgid "Project from Existing Sources"
 msgstr "从现有源程序创建项目"
 
-#: ../plugins/project-import/plugin.c:82
-#: ../plugins/project-import/plugin.c:189
+#: ../plugins/project-import/plugin.c:82 ../plugins/project-import/plugin.c:189
 #, c-format
 msgid "A file named \"%s\" already exists. Do you want to replace it?"
 msgstr "文件“%s”已存在。要替换它吗？"
@@ -6853,7 +6842,7 @@ msgstr "更新项目视图..."
 #: ../plugins/project-manager/plugin.c:1628
 #: ../plugins/project-manager/project-model.c:184
 #: ../plugins/project-wizard/anjuta-project-wizard.plugin.in.h:2
-#: ../plugins/symbol-db/plugin.c:2164
+#: ../plugins/symbol-db/plugin.c:2169
 msgid "Project"
 msgstr "项目"
 
@@ -7005,15 +6994,19 @@ msgid "Select a project type"
 msgstr "选择项目类型"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:2
+msgid "Select project"
+msgstr "选择项目"
+
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
 #: ../plugins/project-wizard/druid.c:200
 msgid "Error"
 msgstr "错误"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:3
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
 msgid "Details"
 msgstr "详细信息"
 
-#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:4
+#: ../plugins/project-wizard/anjuta-project-wizard.ui.h:5
 msgid "Summary"
 msgstr "概要"
 
@@ -8141,6 +8134,10 @@ msgstr "选择工作目录"
 msgid "Program directory '%s' is not local"
 msgstr "程序目录“%s”文件不是本地路径"
 
+#: ../plugins/run-program/org.gnome.anjuta.plugins.run.gschema.xml.in.h:1
+msgid "Command used for starting a terminal"
+msgstr "用于启动终端的命令"
+
 #: ../plugins/run-program/parameters.c:180
 msgid "Load Target to run"
 msgstr "加载调试目标"
@@ -8579,12 +8576,12 @@ msgstr "文件“%s”是只读的！仍然要编辑吗？"
 msgid "Could not save %s: %s"
 msgstr "无法保存 %s：%s"
 
-#: ../plugins/sourceview/sourceview-io.c:318
+#: ../plugins/sourceview/sourceview-io.c:322
 #, c-format
 msgid "Could not save file because filename not yet specified"
 msgstr "无法保存文件，未指定文件名"
 
-#: ../plugins/sourceview/sourceview-io.c:566
+#: ../plugins/sourceview/sourceview-io.c:570
 #, c-format
 msgid "New file %d"
 msgstr "新建文件 %d"
@@ -9261,50 +9258,50 @@ msgstr "查找符号(_F)..."
 msgid "Find Symbol"
 msgstr "查找符号"
 
-#: ../plugins/symbol-db/plugin.c:1067
+#: ../plugins/symbol-db/plugin.c:1072
 #, c-format
 msgid "%s: Generating inheritances…"
 msgstr "%s：正在生成继承..."
 
 #. Translators: %s is the name of a system library
-#: ../plugins/symbol-db/plugin.c:1073
+#: ../plugins/symbol-db/plugin.c:1078
 #, c-format
 msgid "%s: %d file scanned out of %d"
 msgid_plural "%s: %d files scanned out of %d"
 msgstr[0] "%1$s：扫描了 %3$d 个文件中的 %2$d 个"
 
-#: ../plugins/symbol-db/plugin.c:1104
+#: ../plugins/symbol-db/plugin.c:1109
 #, c-format
 msgid "Generating inheritances…"
 msgstr "正在生成继承..."
 
-#: ../plugins/symbol-db/plugin.c:1106
+#: ../plugins/symbol-db/plugin.c:1111
 #, c-format
 msgid "%d file scanned out of %d"
 msgid_plural "%d files scanned out of %d"
 msgstr[0] "扫描了 %2$d 个文件中的 %1$d 个"
 
-#: ../plugins/symbol-db/plugin.c:1767
+#: ../plugins/symbol-db/plugin.c:1772
 msgid "Populating symbol database…"
 msgstr "正在填充符号库..."
 
-#: ../plugins/symbol-db/plugin.c:2149 ../plugins/symbol-db/plugin.c:2234
+#: ../plugins/symbol-db/plugin.c:2154 ../plugins/symbol-db/plugin.c:2239
 msgid "Symbols"
 msgstr "符号"
 
-#: ../plugins/symbol-db/plugin.c:2169 ../plugins/symbol-db/plugin.c:2221
+#: ../plugins/symbol-db/plugin.c:2174 ../plugins/symbol-db/plugin.c:2226
 msgid "Search"
 msgstr "搜索"
 
-#: ../plugins/symbol-db/plugin.c:2243
+#: ../plugins/symbol-db/plugin.c:2248
 msgid "SymbolDb popup actions"
 msgstr "SymbolDb 弹出动作"
 
-#: ../plugins/symbol-db/plugin.c:2251
+#: ../plugins/symbol-db/plugin.c:2256
 msgid "SymbolDb menu actions"
 msgstr "SymbolDb 菜单动作"
 
-#: ../plugins/symbol-db/plugin.c:2581 ../plugins/symbol-db/plugin.c:2599
+#: ../plugins/symbol-db/plugin.c:2586 ../plugins/symbol-db/plugin.c:2604
 #: ../plugins/symbol-db/symbol-db.plugin.in.h:1
 msgid "Symbol Database"
 msgstr "符号库"
@@ -10202,9 +10199,6 @@ msgstr "仅文字"
 
 #~ msgid "Directory properties"
 #~ msgstr "目录属性"
-
-#~ msgid "Command used for starting a terminal"
-#~ msgstr "用于启动终端的命令"
 
 #~ msgid "Kick start _tutorial"
 #~ msgstr "新手指南(_T)"
