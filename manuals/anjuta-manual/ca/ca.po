@@ -1319,7 +1319,7 @@ msgstr ""
 
 #: C/autotools-build-configure.page:30(section/title)
 msgid "Configure the project"
-msgstr "Configureu el projecte"
+msgstr "Configurar el projecte"
 
 #: C/autotools-build-configure.page:34(item/p)
 msgid ""
@@ -3453,7 +3453,7 @@ msgid ""
 msgstr ""
 "Si els fitxers de capçalera són instal·lats a una ubicació estàndard (<file>/"
 "usr/include</file>) no cal que ho definiu. En cas contrari i si utilitzeu el "
-"<app>gcc</app> com a compilador, heu d'afegir <input>-I<var>camí_inclusió</"
+"<app>gcc</app> com a compilador, heu d'afegir <input>-I<var>include_path</"
 "var></input> a la propietat <gui>Indicadors del preprocessador de C</gui>. "
 "Podeu afegir diversos camins separats per espais. S'utilitzaran aquestes "
 "opcions en tots els objectius dins d'aquest directori."
@@ -3487,8 +3487,8 @@ msgid ""
 "extension."
 msgstr ""
 "Heu de definir la propietat <gui>Indicadors de l'enllaçador</gui>; si el "
-"compilador és el <app>gcc</app>, afegiu <input>-l<var>nom_biblioteca</var></"
-"input>. <var>nom_biblioteca</var> és el nom del fitxer de biblioteca sense "
+"compilador és el <app>gcc</app>, afegiu <input>-l<var>library_name</var></"
+"input>. <var>library_name</var> és el nom del fitxer de biblioteca sense "
 "el prefix <file>lib</file> i sense l'extensió <file>.a</file> o <file>.so</"
 "file>."
 
@@ -3500,7 +3500,7 @@ msgid ""
 msgstr ""
 "Si la biblioteca no és a un directori estàndard, el <app>gcc</app> pot "
 "cercar a més directoris si especifiqueu l'opció <input>-"
-"L<var>camí_biblioteca</var></input>."
+"L<var>library_name</var></input>."
 
 #: C/project-manager-library.page:13(info/desc)
 msgid "Add or remove libraries to project targets."
@@ -3526,7 +3526,7 @@ msgid ""
 msgstr ""
 "A la <gui>vista de projecte</gui>, trieu l'objectiu que té la biblioteca que "
 "voleu suprimir, feu clic amb el botó secundari del ratolí perquè es mostri "
-"el <gui>menú contextual del projecte</gui> i trieu <gui>Propietats</gui>. "
+"el <gui>menú contextual del projecte</gui> i trieu <gui>Propietats</gui>."
 
 #: C/project-manager-library-remove.page:33(item/p)
 msgid ""
@@ -3818,7 +3818,7 @@ msgstr "Afegiu fitxers existents a un projecte."
 
 #: C/project-manager-source-add.page:22(page/title)
 msgid "Add Files"
-msgstr "Afegiu fitxers"
+msgstr "Afegir fitxers"
 
 #: C/project-manager-source-add.page:26(item/p)
 msgid ""
@@ -3876,11 +3876,11 @@ msgstr ""
 
 #: C/project-manager-source-remove.page:9(info/desc)
 msgid "Remove files from a project."
-msgstr "Suprimiu fitxers d'un projecte."
+msgstr "Suprimir fitxers d'un projecte."
 
 #: C/project-manager-source-remove.page:22(page/title)
 msgid "Remove Files"
-msgstr "Suprimiu fitxers"
+msgstr "Suprimir fitxers"
 
 #: C/project-manager-source-remove.page:26(item/p)
 msgid ""
@@ -3980,7 +3980,7 @@ msgstr "Suprimiu un objectiu d'un projecte."
 
 #: C/project-manager-target-remove.page:22(page/title)
 msgid "Remove a Target"
-msgstr "Suprimiu un objectiu"
+msgstr "Suprimir un objectiu"
 
 #: C/project-manager-target-remove.page:26(item/p)
 msgid ""
