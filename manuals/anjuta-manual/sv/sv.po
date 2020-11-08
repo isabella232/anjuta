@@ -1,40 +1,42 @@
+# Daniel Nylander <po@danielnylander.se>, 2007.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta manual\n"
-"POT-Creation-Date: 2015-02-26 15:47+0000\n"
-"PO-Revision-Date: 2007-02-07 01:44+0100\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"POT-Creation-Date: 2020-09-30 22:42+0000\n"
+"PO-Revision-Date: 2019-01-09 23:49+0100\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#, fuzzy
-#| msgid "translator-credits"
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Daniel Nylander <po@danielnylander.se>, 2007"
+msgstr ""
+"Daniel Nylander <po@danielnylander.se>, 2007\n"
+"Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017"
 
 #. (itstool) path: info/desc
 #: C/index.page:8
 msgid "Help for Anjuta DevStudio."
-msgstr ""
+msgstr "Hjälp för Anjuta DevStudio."
 
 #. (itstool) path: info/title
 #: C/index.page:9
-#, fuzzy
-#| msgid "Anjuta Team"
 msgctxt "link"
 msgid "Anjuta"
-msgstr "Anjuta-teamet"
+msgstr "Anjuta"
 
 #. (itstool) path: info/title
 #: C/index.page:10
 msgctxt "text"
 msgid "Anjuta DevStudio"
-msgstr ""
+msgstr "Anjuta DevStudio"
 
 #. (itstool) path: credit/name
 #: C/index.page:14 C/anjuta-code-assist.page:13 C/anjuta-code-help.page:14
@@ -44,15 +46,13 @@ msgstr "Johannes Schmid"
 
 #. (itstool) path: media/span
 #: C/index.page:24
-#, fuzzy
-#| msgid "Anjuta Team"
 msgid "Anjuta logo"
-msgstr "Anjuta-teamet"
+msgstr "Logo för Anjuta"
 
 #. (itstool) path: page/title
 #: C/index.page:23
 msgid "<_:media-1/> Anjuta DevStudio"
-msgstr ""
+msgstr "<_:media-1/> Anjuta DevStudio"
 
 #. (itstool) path: section/title
 #: C/index.page:29
@@ -62,43 +62,39 @@ msgstr "Projekthantering"
 #. (itstool) path: section/title
 #: C/index.page:33
 msgid "Coding and code navigation"
-msgstr ""
+msgstr "Kodande och kodnavigering"
 
 #. (itstool) path: section/title
 #: C/index.page:37
-#, fuzzy
-#| msgid "Project"
 msgid "Building Project"
-msgstr "Projekt"
+msgstr "Bygga projekt"
 
 #. (itstool) path: section/title
 #: C/index.page:41
-#, fuzzy
-#| msgid "Debugging"
 msgid "Debugging Program"
-msgstr "Felsökning"
+msgstr "Felsöka program"
 
 #. (itstool) path: section/title
 #: C/index.page:51
-#, fuzzy
-#| msgid "Preferences"
 msgid "Reference"
-msgstr "Inställningar"
+msgstr "Referens"
 
 #. (itstool) path: info/desc
 #: C/anjuta-code-assist.page:9
+#, fuzzy
 msgid "Configure and use the integrated editor features"
-msgstr ""
+msgstr "Konfigurera och använd de integrerade redigeringsfunktionerna"
 
 #. (itstool) path: page/title
 #: C/anjuta-code-assist.page:18
+#, fuzzy
 msgid "Autocompletion and calltips"
-msgstr ""
+msgstr "Automatisk komplettering och anropstips"
 
 #. (itstool) path: section/title
 #: C/anjuta-code-assist.page:21
 msgid "Autocompletion"
-msgstr ""
+msgstr "Automatisk komplettering"
 
 #. (itstool) path: section/p
 #: C/anjuta-code-assist.page:22
@@ -106,14 +102,22 @@ msgid ""
 "Autocompletion automatically suggests functions and other code symbols after "
 "you start typing by trying to match existing symbols with the first "
 "characters typed. It will popup a drop-down menu where you can select a "
-"match by using the <key>Enter</key> key. Normally this happens automaticly "
+"match by using the <key>Enter</key> key. Normally this happens automatically "
 "after you typed the third (non-whitespace) character but you can also force "
 "it by using the <guiseq><gui>Edit</gui><gui>Auto-Complete</gui></guiseq> "
 "menu item."
 msgstr ""
+"Automatiskt komplettering föreslår automatiskt funktioner och andra "
+"kodsymboler då du börjat skriva genom att försöka matcha befintliga symboler "
+"med de första tecknen som matats in. Detta kommer visa en rullgardinsmeny "
+"där du kan välja en matchning med tangenten <key>Retur</key>. Detta händer "
+"vanligen automatiskt efter att du matat in det tredje tecknet (ej blanksteg) "
+"men du kan också tvinga det genom att använda menyobjektet "
+"<guiseq><gui>Redigera</gui><gui>Automatisk komplettering</gui></guiseq>."
 
 #. (itstool) path: note/p
 #: C/anjuta-code-assist.page:31
+#, fuzzy
 msgid ""
 "Anjuta supports autocompletion for code written in C/C++, Vala, Javascript "
 "and Python. Note that autocompletion can only work if anjuta knows about the "
@@ -121,42 +125,57 @@ msgid ""
 "<cmd>pkg-config</cmd> and/or not added to the project configuration, anjuta "
 "won't be able to find those symbols and autocompletion might not work."
 msgstr ""
+"Anjuta stöder automatisk komplettering för kod som skrivits i C/C++, Vala, "
+"Javascript och Python. Observera att automatisk komplettering endast "
+"fungerar om anjuta känner till de använda symbolerna. Om du använder C/C++-"
+"bibliotek som inte konfigurerats med <cmd>pkg-config</cmd> och/eller inte "
+"har lagts till i projektets konfiguration kommer inte anjuta kunna hitta "
+"dessa symboler och automatisk komplettering kanske inte fungerar."
 
 #. (itstool) path: note/p
 #: C/anjuta-code-assist.page:38
+#, fuzzy
 msgid ""
 "In addition some syntax might be too complex for the integrated parser and "
 "it might not be able to detect which completion is required"
 msgstr ""
+"Dessutom kan viss syntax vara för komplex för den integrerade parsern och "
+"den kan kanske inte upptäcka vilken komplettering som krävs"
 
 #. (itstool) path: section/title
 #: C/anjuta-code-assist.page:44
+#, fuzzy
 msgid "Effective coding using calltips"
-msgstr ""
+msgstr "Effektivt kodande med anropstips"
 
 #. (itstool) path: section/p
 #: C/anjuta-code-assist.page:46
+#, fuzzy
 msgid ""
 "As it is usually quite hard to remember the signature of every method or "
 "function used in a project, the editor will automatically display a small "
 "tooltip whenever you type '(' after a function name and show you the "
 "signature."
 msgstr ""
+"Då det vanligen är rätt svårt att komma ihåg signaturen för varje metod "
+"eller funktion som används i ett projekt kommer redigeraren automatiskt att "
+"visa en liten inforuta varje gång du skriver ”(” efter ett funktionsnamn och "
+"visa dig signaturen."
 
 #. (itstool) path: info/desc
 #: C/anjuta-code-help.page:9
 msgid "Quickly find the information you need in the API documentation"
-msgstr ""
+msgstr "Hitta snabbt informationen du behöver i API-dokumentationen"
 
 #. (itstool) path: page/title
 #: C/anjuta-code-help.page:19
 msgid "Using the API reference"
-msgstr ""
+msgstr "Använda API-referensen"
 
 #. (itstool) path: section/title
 #: C/anjuta-code-help.page:22
 msgid "Browsing the API reference"
-msgstr ""
+msgstr "Bläddra i API-referensen"
 
 #. (itstool) path: section/p
 #: C/anjuta-code-help.page:24
@@ -167,6 +186,11 @@ msgid ""
 "<guiseq><gui>General</gui><gui>Plugins</gui></guiseq> by choosing the "
 "<app>DevHelp</app> plugin."
 msgstr ""
+"För snabb åtkomst till API-referensen för bibliotek har anjuta en integrerad "
+"API-bläddrare. Om det inte redan gjorts kan den aktiveras i inställningarna "
+"(<guiseq><gui>Redigera</gui><gui>Inställningar</gui></guiseq>) i "
+"<guiseq><gui>Allmänt</gui><gui>Insticksmoduler</gui></guiseq> genom att "
+"välja <app>DevHelp</app>-insticksmodulen."
 
 #. (itstool) path: section/p
 #: C/anjuta-code-help.page:30
@@ -174,11 +198,13 @@ msgid ""
 "The API reference has two windows, one for searching for a specific symbol "
 "and the browser for viewing the help documents."
 msgstr ""
+"API-referensen har två fönster, ett för att söka efter en specifik symbol, "
+"och bläddraren för att visa hjälpdokumenten."
 
 #. (itstool) path: section/title
 #: C/anjuta-code-help.page:36
 msgid "Jump to the API reference using shortcuts in the editor"
-msgstr ""
+msgstr "Hoppa till API-referensen genom att använda genvägar i redigeraren"
 
 #. (itstool) path: section/p
 #: C/anjuta-code-help.page:38
@@ -188,100 +214,134 @@ msgid ""
 "key><key>F1</key></keyseq> (or <guiseq><gui>Help</gui><gui>Context-Help</"
 "gui></guiseq>) to jump to the documentation."
 msgstr ""
+"Om du är osäker på hur en specifik funktion som används i befintlig kod "
+"fungerar kan du helt enkelt placera markören på funktionsnamnet och använda "
+"<keyseq><key>Skift</key><key>F1</key></keyseq> (eller <guiseq><gui>Hjälp</"
+"gui><gui>Sammanhangshjälp</gui></guiseq>) för att hoppa till dokumentationen."
 
 #. (itstool) path: info/desc
 #: C/anjuta-code-indentation.page:9
 msgid "Configure and use automatic indentation for a consistent coding style"
 msgstr ""
+"Konfigurera och använd automatisk indentering för en konsekvent kodningsstil"
 
 #. (itstool) path: page/title
 #: C/anjuta-code-indentation.page:19
 msgid "Auto-indentation"
-msgstr ""
+msgstr "Automatisk indentering"
 
 #. (itstool) path: section/title
 #: C/anjuta-code-indentation.page:22
 msgid "Configuring and using auto-indentation"
-msgstr ""
+msgstr "Konfigurera och använda automatisk indentering"
 
 #. (itstool) path: section/title
 #: C/anjuta-code-indentation.page:25
 msgid "Manual configuration"
-msgstr ""
+msgstr "Manuell konfiguration"
 
 #. (itstool) path: section/p
 #: C/anjuta-code-indentation.page:27
+#, fuzzy
 msgid ""
 "Automatic indentation is configured in the preferences (<guiseq><gui>Edit</"
 "gui><gui>Preferences</gui></guiseq>) in the tab corresponding to the used "
 "programming language. The indentation width for several types of statements "
 "can be set there."
 msgstr ""
+"Automatisk indentering konfigureras i inställningarna "
+"(<guiseq><gui>Redigera</gui><gui>Inställningar</gui></guiseq>) i fliken som "
+"motsvarar det använda programmeringsspråket. Indenteringsbredden för flera "
+"sorters satser kan ställas in där."
 
+# TODO: will result if -> will result in
 #. (itstool) path: section/p
 #: C/anjuta-code-indentation.page:32
+#, fuzzy
 msgid ""
 "The big disadvantage of manually configuring indentation is that all "
 "developers working on a project must use the same settings or it will result "
 "if different styles used in the same files. For a better solution, see the "
 "next section."
 msgstr ""
+"Den stora nackdelen med att manuellt konfigurera indentering är att alla "
+"utvecklare som jobbar på ett projekt måste använda samma inställningar, "
+"annars kommer det resultera i att olika stilar används i samma filer. För en "
+"bättre lösning, se nästa avsnitt."
 
 #. (itstool) path: note/p
 #: C/anjuta-code-indentation.page:38
+#, fuzzy
 msgid ""
-"Unless explicitely changed in the preferences the indentation settings found "
+"Unless explicitly changed in the preferences the indentation settings found "
 "in the Modeline of a file will be used instead of the configured settings to "
 "keep the file consistent."
 msgstr ""
+"Om de inte ändras explicit i inställningarna kommer "
+"indenteringsinställningarna i en fils Modeline att användas istället för de "
+"konfigurerade inställningarna för att behålla filen konsekvent."
 
 #. (itstool) path: section/title
 #: C/anjuta-code-indentation.page:45
+#, fuzzy
 msgid "Modelines"
-msgstr ""
+msgstr "Lägesrader"
 
 #. (itstool) path: section/p
 #: C/anjuta-code-indentation.page:47
+#, fuzzy
 msgid ""
 "Modelines are used to help editors to automatically detect the indentation "
 "mode which should be used for a particular file. They are especially useful "
 "if many developers work on the same project and use different environments."
 msgstr ""
+"Lägesrader används för att hjälpa redigerare att automatiskt upptäcka "
+"indenteringsläget som ska användas för en specifik fil. De är särskilt "
+"användbara om många utvecklare arbetar på samma projekt och använder olika "
+"miljöer."
 
 #. (itstool) path: section/p
 #: C/anjuta-code-indentation.page:51
+#, fuzzy
 msgid ""
 "Anjuta supports modelines in the two formats used by <app>Vim</app> and "
 "<app>Emacs</app>."
 msgstr ""
+"Anjuta stöder lägesrader i de två format som används av <app>Vim</app> och "
+"<app>Emacs</app>."
 
 #. (itstool) path: section/title
 #: C/anjuta-code-indentation.page:59
+#, fuzzy
 msgid "Indenting blocks of code"
-msgstr ""
+msgstr "Indentera kodblock"
 
 #. (itstool) path: section/p
 #: C/anjuta-code-indentation.page:61
+#, fuzzy
 msgid ""
-"Normally new lines are approprietely indented automatically but you can "
+"Normally new lines are appropriately indented automatically but you can "
 "indent existing lines or all selected code with the <guiseq><gui>Edit</"
 "gui><gui>Auto-Indent</gui></guiseq> menu item."
 msgstr ""
+"Vanligen indenteras automatiskt nya rader på korrekt sätt men du kan "
+"indentera befintliga rader eller all markerad kod med menyobjektet "
+"<guiseq><gui>Redigera</gui><gui>Automatisk indentering</gui></guiseq>."
 
 #. (itstool) path: info/desc
 #: C/anjuta-code-symbols.page:9
 msgid "Efficient ways to navigate through source code"
-msgstr ""
+msgstr "Effektiva sätt att navigera genom källkod"
 
 #. (itstool) path: page/title
 #: C/anjuta-code-symbols.page:18
 msgid "Code navigation using the symbol browser"
-msgstr ""
+msgstr "Kodnavigering med symbolbläddraren"
 
 #. (itstool) path: section/title
 #: C/anjuta-code-symbols.page:21
 msgid "Using the symbol browser"
-msgstr ""
+msgstr "Använda symbolbläddraren"
 
 #. (itstool) path: section/p
 #: C/anjuta-code-symbols.page:22
@@ -290,21 +350,25 @@ msgid ""
 "your project. Symbols refers to variables, functions/methods and classes "
 "here and the exact definition depends on the programming language used."
 msgstr ""
+"Symbolbläddraren låter dig få en överblick över symbolerna som används i "
+"ditt projekt. Symboler betyder här variabler, funktioner/metoder och "
+"klasser, och den exakta definitionen beror på programmeringsspråket som "
+"används."
 
 #. (itstool) path: section/p
 #: C/anjuta-code-symbols.page:26
 msgid "The symbol browser has three tabs:"
-msgstr ""
+msgstr "Symbolbläddraren har tre flikar:"
 
 #. (itstool) path: item/p
 #: C/anjuta-code-symbols.page:28
 msgid "<gui>File</gui> shows the symbols of the current file in the editor"
-msgstr ""
+msgstr "<gui>Fil</gui> visar symbolerna för aktuell fil i redigeraren"
 
 #. (itstool) path: item/p
 #: C/anjuta-code-symbols.page:29
 msgid "<gui>Project</gui> shows all symbols of the project"
-msgstr ""
+msgstr "<gui>Projekt</gui> visar alla symboler i projektet"
 
 #. (itstool) path: item/p
 #: C/anjuta-code-symbols.page:30
@@ -313,33 +377,40 @@ msgid ""
 "<keyseq><key>Ctrl</key><key>L</key></keyseq> to jump directly to the search "
 "box)"
 msgstr ""
+"<gui>Sök</gui> låter dig söka bland symbolerna i projektet (använd "
+"<keyseq><key>Ctrl</key><key>L</key></keyseq> för att hoppa direkt till "
+"sökrutan)"
 
+# TODO: *on* can be removed?
 #. (itstool) path: section/p
 #: C/anjuta-code-symbols.page:34
 msgid "Double click on jumps to the definition of the symbol in the editor."
-msgstr ""
+msgstr "Dubbelklick hoppar till definitionen för symbolen i redigeraren."
 
 #. (itstool) path: section/title
 #: C/anjuta-code-symbols.page:38
 msgid "Navigating in the editor"
-msgstr ""
+msgstr "Navigera i redigeraren"
 
+# TODO: there two -> there are two
 #. (itstool) path: section/p
 #: C/anjuta-code-symbols.page:39
 msgid ""
 "In the <gui>Goto</gui> popup-menu of the editor there two items that help "
 "you to quickly navigate through the source code:"
 msgstr ""
+"I redigerarens poppuppmeny <gui>Gå till</gui> finns det två saker som "
+"hjälper dig att snabbt navigera genom källkoden:"
 
 #. (itstool) path: item/p
 #: C/anjuta-code-symbols.page:43
 msgid "<gui>Symbol definition</gui>"
-msgstr ""
+msgstr "<gui>Symboldefinition</gui>"
 
 #. (itstool) path: item/p
 #: C/anjuta-code-symbols.page:44
 msgid "<gui>Symbol declaration</gui>"
-msgstr ""
+msgstr "<gui>Symboldeklaration</gui>"
 
 #. (itstool) path: section/p
 #: C/anjuta-code-symbols.page:47
@@ -348,11 +419,15 @@ msgid ""
 "shown items in the <gui>Goto</gui> menu you can use the <gui>Previous "
 "history</gui> (and <gui>Next history</gui>) items in the same menu."
 msgstr ""
+"Om du vill gå tillbaka till positionen i redigeraren där du använde de "
+"visade objekten i menyn <gui>Goto</gui> kan du använda objekten "
+"<gui>Föregående historik</gui> (och <gui>Nästa historik</gui>) i samma meny."
 
 #. (itstool) path: info/desc
 #: C/autotools-project-backend.page:8
+#, fuzzy
 msgid "Autotools project backend."
-msgstr ""
+msgstr "Bakände för Autotools-projekt."
 
 #. (itstool) path: credit/name
 #: C/autotools-project-backend.page:12 C/autotools-project-folder-edit.page:13
@@ -388,7 +463,7 @@ msgstr ""
 #: C/project-wizard-create.page:14 C/project-wizard-template.page:13
 #: C/run-parameters-dialog.page:15 C/run-run.page:15 C/widget-index.page:11
 msgid "Sébastien Granjoux"
-msgstr ""
+msgstr "Sébastien Granjoux"
 
 #. (itstool) path: credit/name
 #: C/autotools-project-backend.page:16 C/autotools-build-build.page:19
@@ -404,13 +479,12 @@ msgstr ""
 #: C/project-manager-module-add.page:18 C/project-manager-module-new.page:20
 #: C/project-manager-module-remove.page:18
 #: C/project-manager-package-remove.page:17 C/project-manager.page:16
-#: C/project-manager-source-add.page:17
-#: C/project-manager-source-remove.page:17
-#: C/project-manager-target-add.page:17
-#: C/project-manager-target-remove.page:17 C/project-wizard-create.page:18
-#: C/project-wizard-template.page:17 C/run-run.page:19
+#: C/project-manager-source-add.page:17 C/project-manager-source-remove.page:17
+#: C/project-manager-target-add.page:17 C/project-manager-target-remove.page:17
+#: C/project-wizard-create.page:18 C/project-wizard-template.page:17
+#: C/run-run.page:19
 msgid "Philip Chimento"
-msgstr ""
+msgstr "Philip Chimento"
 
 #. (itstool) path: page/title
 #: C/autotools-project-backend.page:21
@@ -419,15 +493,21 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/autotools-project-backend.page:23
+#, fuzzy
 msgid ""
 "This is the most common project format on Linux. It has been designed to "
 "distribute source code packages on a wide range of Unix-like systems. If you "
 "have ever installed a program using <cmd>configure</cmd>, <cmd>make</cmd> "
 "and <cmd>make install</cmd>, you probably have already used it as a user."
 msgstr ""
+"Det här är det vanligaste projektformatet i Linux. Det har designats för att "
+"distribuera källkodspaket över en rad Unix-liknande system. Om du någonsin "
+"har installerat ett program med <cmd>configure</cmd>, <cmd>make</cmd> och "
+"<cmd>make install</cmd> så har du troligen redan använt det som en användare."
 
 #. (itstool) path: page/p
 #: C/autotools-project-backend.page:31
+#, fuzzy
 msgid ""
 "It is typically a bit more difficult to use as a developer. However, it is "
 "the default backend for <app>Anjuta</app>, which has features that make it "
@@ -436,6 +516,12 @@ msgid ""
 "writing a line in <file>configure.ac</file> or any <file>Makefile.am</file> "
 "files."
 msgstr ""
+"Det är vanligen något svårare att använda som en utvecklare. Det är dock "
+"standardbakänden för <app>Anjuta</app>, vilken har funktioner som gör den "
+"lättare att använda. Alla projekthanterarens funktioner är aktiverade då den "
+"används. Du bör kunna underhålla ett projekt med Autotools-bakänden utan att "
+"skriva en rad i <file>configure.ac</file> eller några <file>Makefile.am</"
+"file>-filer."
 
 #. (itstool) path: note/p
 #: C/autotools-project-backend.page:41
@@ -464,24 +550,28 @@ msgid ""
 "These properties allows you to define common properties for all targets "
 "belonging to this folder."
 msgstr ""
+"Dessa egenskaper låter dig definiera gemensamma egenskaper för alla mål som "
+"tillhör denna mapp."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:25
 #: C/autotools-project-target-edit.page:30
 msgid "<gui>C compiler flags</gui>"
-msgstr ""
+msgstr "<gui>Flaggor för C-kompilator</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-folder-edit.page:26
+#, fuzzy
 msgid ""
 "The flags to pass to the C compiler if a per target value is not defined."
 msgstr ""
+"Flaggorna att skicka till C-kompilatorn om inget per-målvärde definierats."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:30
 #: C/autotools-project-target-edit.page:35
 msgid "<gui>C preprocessor flags</gui>"
-msgstr ""
+msgstr "<gui>Flaggor för C-preprocessor</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-folder-edit.page:31
@@ -494,32 +584,38 @@ msgstr ""
 #: C/autotools-project-folder-edit.page:36
 #: C/autotools-project-target-edit.page:41
 msgid "<gui>C++ compiler flags</gui>"
-msgstr ""
+msgstr "<gui>Flaggor för C++-kompilator</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-folder-edit.page:37
+#, fuzzy
 msgid ""
 "The flags to pass to the C++ compiler flags if a per target value is not "
 "defined."
 msgstr ""
+"Flaggorna att skicka till C++-kompilatorflaggorna om inget per-målvärde "
+"definierats."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:41
 #: C/autotools-project-target-edit.page:58
 msgid "<gui>Fortran compiler flags</gui>"
-msgstr ""
+msgstr "<gui>Flaggor för Fortran-kompilator</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-folder-edit.page:42
+#, fuzzy
 msgid ""
 "The flags to pass to the Fortran 9x compiler if a per target value is not "
 "defined."
 msgstr ""
+"Flaggorna att skicka till Fortran 9x-kompilatorn om inget per-målvärde "
+"definierats."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:46
 msgid "<gui>Installation directories</gui>"
-msgstr ""
+msgstr "<gui>Installationskataloger</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-folder-edit.page:47
@@ -527,24 +623,28 @@ msgid ""
 "This defines installation directories. It is needed if you want to install "
 "files in custom directories."
 msgstr ""
+"Detta definierar installationskataloger. Det behövs om du vill installera "
+"filer i anpassade kataloger."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:51
 #: C/autotools-project-target-edit.page:76
 msgid "<gui>Java compiler flags</gui>"
-msgstr ""
+msgstr "<gui>Flaggor för Java-kompilator</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-folder-edit.page:52
+#, fuzzy
 msgid ""
 "The flags to pass to the Java compiler if a per target value is not defined."
 msgstr ""
+"Flaggorna att skicka till Java-kompilatorn om inget per-målvärde definierats."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:56
 #: C/autotools-project-target-edit.page:87
 msgid "<gui>Lex/Flex compiler flags</gui>"
-msgstr ""
+msgstr "<gui>Kompilatorflaggor för Lex/Flex</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-folder-edit.page:57
@@ -557,43 +657,49 @@ msgstr ""
 #: C/autotools-project-folder-edit.page:61
 #: C/autotools-project-target-edit.page:100
 msgid "<gui>Linker flags</gui>"
-msgstr ""
+msgstr "<gui>Flaggor för länkare</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-folder-edit.page:62
+#, fuzzy
 msgid "The flags to pass to the linker if a per target value is not defined."
-msgstr ""
+msgstr "Flaggorna att skicka till länkaren om inget per-målvärde definierats."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:65
 #: C/autotools-project-target-edit.page:111
 msgid "<gui>Objective C compiler flags</gui>"
-msgstr ""
+msgstr "<gui>Flaggor för Objective C-kompilator</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-folder-edit.page:66
+#, fuzzy
 msgid ""
 "The flags to pass to the Objective C compiler if a per target value is not "
 "defined."
 msgstr ""
+"Flaggorna att skicka till Objective C-kompilatorn om inget per-målvärde "
+"definierats."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:70
 #: C/autotools-project-target-edit.page:117
 msgid "<gui>Vala compiler flags</gui>"
-msgstr ""
+msgstr "<gui>Flaggor för Vala-kompilator</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-folder-edit.page:71
+#, fuzzy
 msgid ""
 "The flags to pass to the Vala compiler if a per target value is not defined."
 msgstr ""
+"Flaggorna att skicka till Vala-kompilatorn om inget per-målvärde definierats."
 
 #. (itstool) path: item/title
 #: C/autotools-project-folder-edit.page:75
 #: C/autotools-project-target-edit.page:123
 msgid "<gui>Yacc/Bison compiler flags</gui>"
-msgstr ""
+msgstr "<gui>Kompilatorflaggor för Yacc/Bison</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-folder-edit.page:76
@@ -620,7 +726,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-root-edit.page:25
 msgid "<gui>Backend</gui>"
-msgstr ""
+msgstr "<gui>Bakände</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-root-edit.page:26
@@ -633,27 +739,27 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-root-edit.page:32
 msgid "<gui>Name</gui>"
-msgstr ""
+msgstr "<gui>Namn</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-root-edit.page:33
 msgid "The name of your project. It can contains space."
-msgstr ""
+msgstr "Namnet på ditt projekt. Det kan innehålla blanksteg."
 
 #. (itstool) path: item/title
 #: C/autotools-project-root-edit.page:36
 msgid "<gui>Version</gui>"
-msgstr ""
+msgstr "<gui>Version</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-root-edit.page:37
 msgid "This is the project version."
-msgstr ""
+msgstr "Detta är projektversionen."
 
 #. (itstool) path: item/title
 #: C/autotools-project-root-edit.page:40
 msgid "<gui>Bug report URL</gui>"
-msgstr ""
+msgstr "<gui>URL till felrapport</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-root-edit.page:41
@@ -661,11 +767,13 @@ msgid ""
 "This is an URL allowing to send bug report, by example an email address or a "
 "link to a bug tracker. It is optional."
 msgstr ""
+"Detta är en URL som möjliggör insändning av felrapporter, t.ex. en e-"
+"postadress eller en länk till ett felrapporteringssystem. Detta är valfritt."
 
 #. (itstool) path: item/title
 #: C/autotools-project-root-edit.page:45
 msgid "<gui>Package name</gui>"
-msgstr ""
+msgstr "<gui>Paketnamn</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-root-edit.page:46
@@ -677,12 +785,12 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-root-edit.page:50
 msgid "<gui>URL</gui>"
-msgstr ""
+msgstr "<gui>URL</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-root-edit.page:51
 msgid "This is the home page of the project. It is optional."
-msgstr ""
+msgstr "Detta är projektets webbsida. Detta är valfritt."
 
 #. (itstool) path: page/p
 #: C/autotools-project-root-edit.page:55
@@ -694,12 +802,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/autotools-project-target-edit.page:9
 msgid "Edit autotools target properties."
-msgstr ""
+msgstr "Redigera autotools-målegenskaper."
 
 #. (itstool) path: page/title
 #: C/autotools-project-target-edit.page:18
 msgid "Edit an Autotools Target"
-msgstr ""
+msgstr "Redigera ett Autotools-mål"
 
 #. (itstool) path: page/p
 #: C/autotools-project-target-edit.page:20
@@ -707,11 +815,13 @@ msgid ""
 "Here is a list of all target properties used in autotools project. Some of "
 "them are not available on all targets."
 msgstr ""
+"Här är en lista över alla målegenskaper som används i autotools-projekt. "
+"Vissa av dem är inte tillgängliga på alla mål."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:25
 msgid "<gui>Build for check only</gui>"
-msgstr ""
+msgstr "<gui>Bygg endast för kontroll</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-edit.page:26
@@ -744,7 +854,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:47
 msgid "<gui>Do not install</gui>"
-msgstr ""
+msgstr "<gui>Installera inte</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-edit.page:48
@@ -756,7 +866,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:53
 msgid "<gui>Do not use prefix</gui>"
-msgstr ""
+msgstr "<gui>Använd inte prefix</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-edit.page:54
@@ -775,17 +885,17 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:64
 msgid "<gui>Include in distribution</gui>"
-msgstr ""
+msgstr "<gui>Inkludera i distribution</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-edit.page:65
 msgid "If checked, include the target in the distribution package."
-msgstr ""
+msgstr "Om ikryssad, inkludera målet i distributionspaketet."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:68
 msgid "<gui>Installation directory</gui>"
-msgstr ""
+msgstr "<gui>Installationskatalog</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-edit.page:69
@@ -807,7 +917,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:82
 msgid "<gui>Keep target path</gui>"
-msgstr ""
+msgstr "<gui>Behåll målsökvägen</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-edit.page:83
@@ -827,7 +937,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:93
 msgid "<gui>Libraries</gui>"
-msgstr ""
+msgstr "<gui>Bibliotek</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-edit.page:94
@@ -844,10 +954,12 @@ msgid ""
 "overrides the one eventually defined in the parent folder."
 msgstr ""
 
+# TODO: man-avsnitt eller liknande
 #. (itstool) path: item/title
 #: C/autotools-project-target-edit.page:105
+#, fuzzy
 msgid "<gui>Manual section</gui>"
-msgstr ""
+msgstr "<gui>Manuell sektion</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-edit.page:106
@@ -886,17 +998,18 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/autotools-project-target-type.page:17
 msgid "Autotools project type"
-msgstr ""
+msgstr "Autotools-projekttyp"
 
+# TODO: This file unreachable from rest of help
 #. (itstool) path: page/p
 #: C/autotools-project-target-type.page:19
 msgid "There are different types of target available."
-msgstr ""
+msgstr "Det finns olika typer av mål tillgängliga."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-type.page:23
 msgid "Shared Library (Libtool)"
-msgstr ""
+msgstr "Delat bibliotek (Libtool)"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:24
@@ -916,14 +1029,14 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-target-type.page:31
 msgid "Module (Libtool)"
-msgstr ""
+msgstr "Modul (Libtool)"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:32
 msgid ""
-"It represents a library, often named a plugin, linked at run time "
-"explicitely by the program itself. It is used to only load the code "
-"corresponding to the used features."
+"It represents a library, often named a plugin, linked at run time explicitly "
+"by the program itself. It is used to only load the code corresponding to the "
+"used features."
 msgstr ""
 
 #. (itstool) path: item/p
@@ -936,7 +1049,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-target-type.page:39
 msgid "Static Library (Libtool)"
-msgstr ""
+msgstr "Statiskt bibliotek (Libtool)"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:40
@@ -955,49 +1068,49 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-target-type.page:46
 msgid "Program"
-msgstr ""
+msgstr "Program"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:47
 msgid ""
-"It represents compiled program by example from C souces files. All children "
+"It represents compiled program by example from C source files. All children "
 "represent the source files compiled to generate the program."
 msgstr ""
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-type.page:52
 msgid "Python module"
-msgstr ""
+msgstr "Python-modul"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:53
 msgid "It represents a program written in Python."
-msgstr ""
+msgstr "Det representerar ett program skrivet i Python."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-type.page:56
 msgid "Java module"
-msgstr ""
+msgstr "Java-modul"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:57
-msgid "It represents a progran written in Java."
-msgstr ""
+msgid "It represents a program written in Java."
+msgstr "Det representerar ett program skrivet i Java."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-type.page:60
 msgid "LISP module"
-msgstr ""
+msgstr "Lisp-modul"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:61
-msgid "It represents a progran written in LISP."
-msgstr ""
+msgid "It represents a program written in LISP."
+msgstr "Det representerar ett program skrivet i Lisp."
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-type.page:64
 msgid "Header files"
-msgstr ""
+msgstr "Header-filer"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:65
@@ -1030,8 +1143,9 @@ msgstr ""
 
 #. (itstool) path: item/title
 #: C/autotools-project-target-type.page:77
+#, fuzzy
 msgid "Miscellaneous Data"
-msgstr ""
+msgstr "Diverse data"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:78
@@ -1043,7 +1157,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-project-target-type.page:82
 msgid "Script"
-msgstr ""
+msgstr "Skript"
 
 #. (itstool) path: item/p
 #: C/autotools-project-target-type.page:83
@@ -1097,6 +1211,9 @@ msgid ""
 "keyseq> to build the complete project. All subdirectories are built "
 "recursively."
 msgstr ""
+"Från <gui>huvudmenyn</gui>, välj <guiseq><gui>Bygg</gui> <gui>Bygg projekt</"
+"gui></guiseq> eller tryck <keyseq><key>Skift</key><key>F7</key></keyseq> för "
+"att bygga hela projektet. Alla underkataloger byggs rekursivt."
 
 #. (itstool) path: item/p
 #: C/autotools-build-build.page:57 C/autotools-build-clean.page:45
@@ -1184,12 +1301,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/autotools-build-compile.page:11
 msgid "Compile files."
-msgstr ""
+msgstr "Kompilera filer."
 
 #. (itstool) path: page/title
 #: C/autotools-build-compile.page:20
 msgid "Compile files"
-msgstr ""
+msgstr "Kompilera filer"
 
 #. (itstool) path: page/p
 #: C/autotools-build-compile.page:22
@@ -1261,7 +1378,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-build-configure-dialog.page:29
 msgid "<gui>Regenerate Project</gui>"
-msgstr ""
+msgstr "<gui>Generera om projektet</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-configure-dialog.page:30
@@ -1274,7 +1391,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-build-configure-dialog.page:37
 msgid "<gui>Configuration</gui>"
-msgstr ""
+msgstr "<gui>Konfiguration</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-configure-dialog.page:38
@@ -1290,7 +1407,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-build-configure-dialog.page:49
 msgid "<gui>Build Directory</gui>"
-msgstr ""
+msgstr "<gui>Byggkatalog</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-configure-dialog.page:50
@@ -1320,7 +1437,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-build-configure-dialog.page:72
 msgid "<gui>Configure Options</gui>"
-msgstr ""
+msgstr "<gui>Konfigurationsalternativ</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-configure-dialog.page:73
@@ -1348,7 +1465,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/autotools-build-configure.page:20
 msgid "Configure a project"
-msgstr ""
+msgstr "Konfigurera ett projekt"
 
 #. (itstool) path: page/p
 #: C/autotools-build-configure.page:22
@@ -1362,7 +1479,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/autotools-build-configure.page:30
 msgid "Configure the project"
-msgstr ""
+msgstr "Konfigurera projektet"
 
 #. (itstool) path: item/p
 #: C/autotools-build-configure.page:34
@@ -1390,11 +1507,14 @@ msgid ""
 "The configuration could fail if some libraries or programs are not installed "
 "or do not have the right version. The error message tell you what is missing."
 msgstr ""
+"Konfigurationen kan misslyckas om några bibliotek eller program inte finns "
+"installerade eller inte är rätt version. Felmeddelandet kommer berätta vad "
+"som saknas."
 
 #. (itstool) path: section/title
 #: C/autotools-build-configure.page:60
 msgid "Change the configuration"
-msgstr ""
+msgstr "Ändra konfigurationen"
 
 #. (itstool) path: item/p
 #: C/autotools-build-configure.page:64
@@ -1409,11 +1529,13 @@ msgid ""
 "If the project has not been already configured, it will be automatically "
 "configured before building any file."
 msgstr ""
+"Om projektet inte redan har konfigurerats kommer det att konfigureras "
+"automatiskt innan någon fil byggs."
 
 #. (itstool) path: section/title
 #: C/autotools-build-configure.page:79
 msgid "Remove configuration"
-msgstr ""
+msgstr "Ta bort konfiguration"
 
 #. (itstool) path: section/p
 #: C/autotools-build-configure.page:81
@@ -1432,12 +1554,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/autotools-build-distribute.page:11
 msgid "Create a distribution package."
-msgstr ""
+msgstr "Skapa ett distributionspaket."
 
 #. (itstool) path: page/title
 #: C/autotools-build-distribute.page:20
 msgid "Create a distribution package"
-msgstr ""
+msgstr "Skapa ett distributionspaket"
 
 #. (itstool) path: page/p
 #: C/autotools-build-distribute.page:22
@@ -1458,12 +1580,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/autotools-build-install.page:11
 msgid "Install targets or project."
-msgstr ""
+msgstr "Installera mål eller projekt."
 
 #. (itstool) path: page/title
 #: C/autotools-build-install.page:20
 msgid "Install targets"
-msgstr ""
+msgstr "Installera mål"
 
 #. (itstool) path: page/p
 #: C/autotools-build-install.page:22
@@ -1550,8 +1672,9 @@ msgstr ""
 
 #. (itstool) path: item/title
 #: C/autotools-build-plugin.page:31
+#, fuzzy
 msgid "<cmd>make <var>object_file_name</var></cmd>"
-msgstr ""
+msgstr "<cmd>make <var>objektfilnamn</var></cmd>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-plugin.page:32
@@ -1563,43 +1686,47 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-build-plugin.page:36
 msgid "<cmd>make</cmd>"
-msgstr ""
+msgstr "<cmd>make</cmd>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-plugin.page:37
 msgid "Use to build all targets in a directory."
-msgstr ""
+msgstr "Använd för att bygga alla mål i en katalog."
 
 #. (itstool) path: item/title
 #: C/autotools-build-plugin.page:40
 msgid "<cmd>make install</cmd>"
-msgstr ""
+msgstr "<cmd>make install</cmd>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-plugin.page:41
 msgid "Use to install all targets in a directory."
-msgstr ""
+msgstr "Använd för att installera alla mål i en katalog."
 
 #. (itstool) path: item/title
 #: C/autotools-build-plugin.page:44
 msgid "<cmd>make clean</cmd>"
-msgstr ""
+msgstr "<cmd>make clean</cmd>"
 
+# TODO: file -> files
 #. (itstool) path: item/p
 #: C/autotools-build-plugin.page:45
 msgid "Use to delete all file built in a directory."
-msgstr ""
+msgstr "Använd för att ta bort alla filer som byggts i en katalog."
 
 #. (itstool) path: item/title
 #: C/autotools-build-plugin.page:48
 msgid "<cmd>make dist</cmd>"
-msgstr ""
+msgstr "<cmd>make dist</cmd>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-plugin.page:49
+#, fuzzy
 msgid ""
-"Use to build a distributation package, called only in the project directory."
+"Use to build a distribution package, called only in the project directory."
 msgstr ""
+"Använd för att bygga ett distributionspaket, anropat endast i "
+"projektkatalogen."
 
 #. (itstool) path: note/p
 #: C/autotools-build-plugin.page:54
@@ -1621,13 +1748,15 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/autotools-build-preferences-dialog.page:21
+#, fuzzy
 msgid "The dialog allows you to set global options for building files."
 msgstr ""
+"Dialogrutan låter dig ställa in globala alternativ för byggande av filer."
 
 #. (itstool) path: item/title
 #: C/autotools-build-preferences-dialog.page:27
 msgid "<gui>Run several commands at a time</gui>"
-msgstr ""
+msgstr "<gui>Kör flera kommandon samtidigt</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-preferences-dialog.page:28
@@ -1640,7 +1769,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-build-preferences-dialog.page:33
 msgid "<gui>Continue on errors</gui>"
-msgstr ""
+msgstr "<gui>Fortsätt vid fel</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-preferences-dialog.page:34
@@ -1653,7 +1782,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-build-preferences-dialog.page:39
 msgid "<gui>Translate messages</gui>"
-msgstr ""
+msgstr "<gui>Översätt meddelanden</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-preferences-dialog.page:40
@@ -1669,7 +1798,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-build-preferences-dialog.page:48
 msgid "<gui>Highlight build warnings and errors in editor</gui>"
-msgstr ""
+msgstr "<gui>Färgmarkera byggvarningar och fel i redigeraren</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-preferences-dialog.page:49
@@ -1682,7 +1811,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/autotools-build-preferences-dialog.page:54
 msgid "<gui>Install as root</gui>"
-msgstr ""
+msgstr "<gui>Installera som root</gui>"
 
 #. (itstool) path: item/p
 #: C/autotools-build-preferences-dialog.page:55
@@ -1706,7 +1835,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/debug-breakpoint-dialog.page:27
 msgid "<gui>Location</gui>"
-msgstr ""
+msgstr "<gui>Plats</gui>"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint-dialog.page:28
@@ -1719,22 +1848,22 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/debug-breakpoint-dialog.page:33
 msgid "<var>file_name</var>:<var>line_number</var>"
-msgstr ""
+msgstr "<var>filnamn</var>:<var>radnummer</var>"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint-dialog.page:34
 msgid "<var>function_name</var>"
-msgstr ""
+msgstr "<var>funktionsnamn</var>"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint-dialog.page:35
 msgid "<var>file_name</var>:<var>function_name</var>"
-msgstr ""
+msgstr "<var>filnamn</var>:<var>funktionsnamn</var>"
 
 #. (itstool) path: item/title
 #: C/debug-breakpoint-dialog.page:39
 msgid "<gui>Condition</gui>"
-msgstr ""
+msgstr "<gui>Villkor</gui>"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint-dialog.page:40
@@ -1756,7 +1885,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/debug-breakpoint-dialog.page:49
 msgid "<gui>Pass Count</gui>"
-msgstr ""
+msgstr "<gui>Körningar</gui>"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint-dialog.page:50
@@ -1777,12 +1906,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/debug-breakpoint.page:9
 msgid "Managing breakpoints."
-msgstr ""
+msgstr "Hantera brytpunkter."
 
 #. (itstool) path: page/title
 #: C/debug-breakpoint.page:22
 msgid "Breakpoints"
-msgstr ""
+msgstr "Brytpunkter"
 
 #. (itstool) path: page/p
 #: C/debug-breakpoint.page:24
@@ -1790,11 +1919,13 @@ msgid ""
 "Breakpoints are used to stop the execution of the program at a particular "
 "point so that the state of the program can be examined at those locations."
 msgstr ""
+"Brytpunkter används för att stoppa körningen av programmet på en specifik "
+"punkt så att programmets tillstånd kan utforskas på de platserna."
 
 #. (itstool) path: section/title
 #: C/debug-breakpoint.page:28
 msgid "Listing breakpoints"
-msgstr ""
+msgstr "Lista brytpunkter"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:32
@@ -1806,14 +1937,12 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/debug-breakpoint.page:38
 msgid "This view has the following columns:"
-msgstr ""
+msgstr "Denna vy har följande kolumner:"
 
 #. (itstool) path: item/title
 #: C/debug-breakpoint.page:42
-#, fuzzy
-#| msgid "Introduction"
 msgid "Location"
-msgstr "Introduktion"
+msgstr "Plats"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:43
@@ -1826,7 +1955,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/debug-breakpoint.page:48 C/debug-stack.page:79
 msgid "Address"
-msgstr ""
+msgstr "Adress"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:49
@@ -1838,7 +1967,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/debug-breakpoint.page:53 C/debug-local.page:55 C/debug-watch.page:53
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:54
@@ -1850,7 +1979,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/debug-breakpoint.page:58
 msgid "Condition"
-msgstr ""
+msgstr "Villkor"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:59
@@ -1860,8 +1989,9 @@ msgstr ""
 
 #. (itstool) path: item/title
 #: C/debug-breakpoint.page:63
+#, fuzzy
 msgid "Pass count"
-msgstr ""
+msgstr "Körningar"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:64
@@ -1882,42 +2012,43 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/debug-breakpoint.page:72
 msgid "State"
-msgstr ""
+msgstr "Tillstånd"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:73
 msgid "This is the state of the breakpoint. It may be"
-msgstr ""
+msgstr "Detta är brytpunktens tillstånd. Den kan vara"
 
 #. (itstool) path: item/title
 #: C/debug-breakpoint.page:75
+#, fuzzy
 msgid "Pending:"
-msgstr ""
+msgstr "Väntande:"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:75
 msgid "the breakpoint is not set in your program."
-msgstr ""
+msgstr "brytpunkten har inte ställts in i ditt program."
 
 #. (itstool) path: item/title
 #: C/debug-breakpoint.page:76
 msgid "Permanent:"
-msgstr ""
+msgstr "Permanent:"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:76
 msgid "the breakpoint is set (its id number is displayed in parentheses)."
-msgstr ""
+msgstr "brytpunkten har ställts in (dess id-nummer visas i parenteser)."
 
 #. (itstool) path: item/title
 #: C/debug-breakpoint.page:77
 msgid "Temporary:"
-msgstr ""
+msgstr "Temporär:"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:77
 msgid "the breakpoint is set but will be deleted if reached."
-msgstr ""
+msgstr "brytpunkten har ställts in men kommer att tas bort om den nås."
 
 #. (itstool) path: note/p
 #: C/debug-breakpoint.page:83
@@ -1930,7 +2061,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-breakpoint.page:90
 msgid "Setting breakpoints"
-msgstr ""
+msgstr "Ställa in brytpunkter"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:94
@@ -1968,7 +2099,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-breakpoint.page:125
 msgid "Editing breakpoints"
-msgstr ""
+msgstr "Redigera brytpunkter"
 
 #. (itstool) path: section/p
 #: C/debug-breakpoint.page:127
@@ -2001,7 +2132,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-breakpoint.page:151
 msgid "Removing breakpoints"
-msgstr ""
+msgstr "Ta bort brytpunkter"
 
 #. (itstool) path: section/p
 #: C/debug-breakpoint.page:153
@@ -2022,7 +2153,7 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/debug-breakpoint.page:169
 msgid "To remove all breakpoints:"
-msgstr ""
+msgstr "För att ta bort alla brytpunkter:"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:173
@@ -2035,7 +2166,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-breakpoint.page:184
 msgid "Enabling and disabling breakpoints"
-msgstr ""
+msgstr "Aktivera och inaktivera brytpunkter"
 
 #. (itstool) path: section/p
 #: C/debug-breakpoint.page:186
@@ -2043,6 +2174,8 @@ msgid ""
 "Sometimes you might want to disable a breakpoint temporarily instead of "
 "deleting it altogether. To disable or re-enable a breakpoint:"
 msgstr ""
+"Ibland kan du vilja inaktivera en brytpunkt tillfälligt snarare än att ta "
+"bort den helt. För att inaktivera eller åter aktivera en brytpunkt:"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:191
@@ -2055,7 +2188,7 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/debug-breakpoint.page:197
 msgid "You can disable all breakpoints using:"
-msgstr ""
+msgstr "Du kan inaktivera alla brytpunkter genom:"
 
 #. (itstool) path: item/p
 #: C/debug-breakpoint.page:201
@@ -2068,17 +2201,17 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/debug-cpu.page:9
 msgid "Examine CPU information."
-msgstr ""
+msgstr "Utforska processorinformation."
 
 #. (itstool) path: page/title
 #: C/debug-cpu.page:22
 msgid "CPU"
-msgstr ""
+msgstr "Processor"
 
 #. (itstool) path: section/title
 #: C/debug-cpu.page:25
 msgid "View CPU registers"
-msgstr ""
+msgstr "Visa processorregister"
 
 #. (itstool) path: item/p
 #: C/debug-cpu.page:29
@@ -2098,7 +2231,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-cpu.page:42
 msgid "View memory"
-msgstr ""
+msgstr "Visa minne"
 
 #. (itstool) path: item/p
 #: C/debug-cpu.page:46
@@ -2160,7 +2293,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/debug-custom.page:22
 msgid "Custom command"
-msgstr ""
+msgstr "Anpassat kommando"
 
 #. (itstool) path: page/p
 #: C/debug-custom.page:24
@@ -2177,7 +2310,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/debug-custom.page:32
 msgid "Enter your command."
-msgstr ""
+msgstr "Ange ditt kommando."
 
 #. (itstool) path: page/p
 #: C/debug-custom.page:36
@@ -2185,6 +2318,7 @@ msgid ""
 "The output of the command is displayed in the message window used by the "
 "debugger."
 msgstr ""
+"Utdata för programmet visas i meddelandefönstret som används av felsökaren."
 
 #. (itstool) path: note/p
 #: C/debug-custom.page:40
@@ -2198,39 +2332,39 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/debug-data.page:9
 msgid "Examine program Data."
-msgstr ""
+msgstr "Utforska programdata."
 
 #. (itstool) path: page/title
 #: C/debug-data.page:18
 msgid "Examine data"
-msgstr ""
+msgstr "Utforska data"
 
 #. (itstool) path: info/desc
 #: C/debug-execute.page:9
+#, fuzzy
 msgid "Control program execution."
-msgstr ""
+msgstr "Styr programkörning."
 
 #. (itstool) path: page/title
 #: C/debug-execute.page:18
 #, fuzzy
-#| msgid "Introduction"
 msgid "Control execution"
-msgstr "Introduktion"
+msgstr "Styr körning"
 
 #. (itstool) path: info/desc
 #: C/debug-expression.page:9
 msgid "Evaluate expressions and modify variables."
-msgstr ""
+msgstr "Evaluera uttryck och ändra variabler."
 
 #. (itstool) path: page/title
 #: C/debug-expression.page:22
 msgid "Examine expressions"
-msgstr ""
+msgstr "Utforska uttryck"
 
 #. (itstool) path: section/title
 #: C/debug-expression.page:25
 msgid "Inspect an expression and modify a variable"
-msgstr ""
+msgstr "Inspektera ett uttryck och ändra en variabel"
 
 #. (itstool) path: section/p
 #: C/debug-expression.page:27
@@ -2263,7 +2397,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/debug-information.page:22
 msgid "Miscellaneous information"
-msgstr ""
+msgstr "Diverse information"
 
 #. (itstool) path: page/p
 #: C/debug-information.page:24
@@ -2271,11 +2405,12 @@ msgid ""
 "The debugger can tell you various information about the program while it is "
 "running."
 msgstr ""
+"Felsökaren kan visa dig diverse information om programmet medan det körs."
 
 #. (itstool) path: section/title
 #: C/debug-information.page:28
 msgid "View shared libraries"
-msgstr ""
+msgstr "Visa delade bibliotek"
 
 #. (itstool) path: item/p
 #: C/debug-information.page:32
@@ -2283,6 +2418,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Debug</gui> <gui>Info</"
 "gui><gui>Shared Libraries</gui></guiseq>."
 msgstr ""
+"Från <gui>huvudmenyn</gui>, välj <guiseq><gui>Felsök</gui> <gui>Information</"
+"gui><gui>Delade bibliotek</gui></guiseq>."
 
 #. (itstool) path: section/p
 #: C/debug-information.page:37
@@ -2291,11 +2428,14 @@ msgid ""
 "loaded and their locations in memory. It also shows whether each library's "
 "symbol table is loaded or not."
 msgstr ""
+"Detta öppnar ett fönster som kommer att lista alla delade bibliotek som "
+"programmet har läst in och deras platser i minnet. Det visar också huruvida "
+"varje biblioteks symboltabell har lästs in eller inte."
 
 #. (itstool) path: section/title
 #: C/debug-information.page:44
 msgid "View signals"
-msgstr ""
+msgstr "Visa signaler"
 
 #. (itstool) path: item/p
 #: C/debug-information.page:48
@@ -2303,6 +2443,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Debug</gui> <gui>Info</"
 "gui><gui>Kernel signals</gui></guiseq>."
 msgstr ""
+"Från <gui>huvudmenyn</gui>, välj <guiseq><gui>Felsök</gui> <gui>Information</"
+"gui><gui>Kärnsignaler</gui></guiseq>."
 
 #. (itstool) path: section/p
 #: C/debug-information.page:53
@@ -2310,11 +2452,13 @@ msgid ""
 "This lists all available signals with a small description and three columns "
 "to specify what to do when a signal is received:"
 msgstr ""
+"Detta listar alla tillgängliga signaler med en liten beskrivning och tre "
+"kolumner som anger vad som ska göras då en signal tas emot:"
 
 #. (itstool) path: item/title
 #: C/debug-information.page:58
 msgid "Stop"
-msgstr ""
+msgstr "Stoppa"
 
 #. (itstool) path: item/p
 #: C/debug-information.page:59
@@ -2322,21 +2466,22 @@ msgid ""
 "The debugger stops the program execution when the program receives this "
 "signal."
 msgstr ""
+"Felsökaren stoppar programkörningen då programmet tar emot denna signal."
 
 #. (itstool) path: item/title
 #: C/debug-information.page:63
 msgid "Print"
-msgstr ""
+msgstr "Skriv ut"
 
 #. (itstool) path: item/p
 #: C/debug-information.page:64
 msgid "The debugger displays the received signal."
-msgstr ""
+msgstr "Felsökaren visar den mottagna signalen."
 
 #. (itstool) path: item/title
 #: C/debug-information.page:67
 msgid "Pass"
-msgstr ""
+msgstr "Pass"
 
 #. (itstool) path: item/p
 #: C/debug-information.page:68
@@ -2354,12 +2499,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/debug-local.page:9
 msgid "Examine local variables."
-msgstr ""
+msgstr "Undersök lokala variabler."
 
 #. (itstool) path: page/title
 #: C/debug-local.page:22
 msgid "Local variables"
-msgstr ""
+msgstr "Lokala variabler"
 
 #. (itstool) path: page/p
 #: C/debug-local.page:24
@@ -2375,7 +2520,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-local.page:32
 msgid "Listing local variables"
-msgstr ""
+msgstr "Lista lokala variabler"
 
 #. (itstool) path: item/p
 #: C/debug-local.page:36
@@ -2383,6 +2528,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> <gui>Locals</"
 "gui></guiseq> to open the <gui>Locals</gui> window."
 msgstr ""
+"Från <gui>huvudmenyn</gui>, välj <guiseq><gui>Visa</gui> <gui>Lokala "
+"variabler</gui></guiseq> för att öppna fönstret <gui>Lokala variabler</gui>."
 
 #. (itstool) path: section/p
 #: C/debug-local.page:42
@@ -2394,32 +2541,32 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/debug-local.page:47 C/debug-watch.page:45
 msgid "Variable"
-msgstr ""
+msgstr "Variabel"
 
 #. (itstool) path: item/p
 #: C/debug-local.page:48
 msgid "The name of the variable."
-msgstr ""
+msgstr "Namnet på variabeln."
 
 #. (itstool) path: item/title
 #: C/debug-local.page:51 C/debug-watch.page:49
 msgid "Value"
-msgstr ""
+msgstr "Värde"
 
 #. (itstool) path: item/p
 #: C/debug-local.page:52
 msgid "The variable value."
-msgstr ""
+msgstr "Variabelns värde."
 
 #. (itstool) path: item/p
 #: C/debug-local.page:56
 msgid "The type of the variable."
-msgstr ""
+msgstr "Variabelns typ."
 
 #. (itstool) path: section/title
 #: C/debug-local.page:62 C/debug-watch.page:153
 msgid "Changing the value of a variable"
-msgstr ""
+msgstr "Ändra värdet på en variabel"
 
 #. (itstool) path: item/p
 #: C/debug-local.page:66
@@ -2431,17 +2578,17 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/debug-local.page:70
 msgid "Type the new value."
-msgstr ""
+msgstr "Skriv in det nya värdet."
 
 #. (itstool) path: info/desc
 #: C/debug-process-dialog.page:9
 msgid "Attach to process dialog"
-msgstr ""
+msgstr "Dialogrutan Anslut till process"
 
 #. (itstool) path: page/title
 #: C/debug-process-dialog.page:22
 msgid "Attach to Process Dialog"
-msgstr ""
+msgstr "Dialogrutan Anslut till process"
 
 #. (itstool) path: page/p
 #: C/debug-process-dialog.page:24
@@ -2449,31 +2596,33 @@ msgid ""
 "The <gui>Attach to process</gui> dialog allows you to select a currently "
 "running process."
 msgstr ""
+"Dialogrutan <gui>Anslut till process</gui> låter dig välja en process som "
+"körs."
 
 #. (itstool) path: item/title
 #: C/debug-process-dialog.page:28
 msgid "<gui>Hide paths</gui>"
-msgstr ""
+msgstr "<gui>Dölj sökvägar</gui>"
 
 #. (itstool) path: item/p
 #: C/debug-process-dialog.page:29
 msgid "This hides command paths in the process list if checked."
-msgstr ""
+msgstr "Detta döljer kommandosökvägar i processlistan om ikryssat."
 
 #. (itstool) path: item/title
 #: C/debug-process-dialog.page:32
 msgid "<gui>Hide process parameters</gui>"
-msgstr ""
+msgstr "<gui>Dölj processparametrar</gui>"
 
 #. (itstool) path: item/p
 #: C/debug-process-dialog.page:33
 msgid "This hides the command line arguments in the process list if checked."
-msgstr ""
+msgstr "Detta döljer kommandoradsargument i processlistan om ikryssat."
 
 #. (itstool) path: item/title
 #: C/debug-process-dialog.page:36
 msgid "<gui>Display process tree</gui>"
-msgstr ""
+msgstr "<gui>Visa processträd</gui>"
 
 #. (itstool) path: item/p
 #: C/debug-process-dialog.page:37
@@ -2481,21 +2630,24 @@ msgid ""
 "If unchecked, the processes are displayed in a list. If checked, the "
 "processes are displayed in a tree."
 msgstr ""
+"Om inte ikryssat visas processerna i en lista. Om ikryssat visas processerna "
+"i ett träd."
 
 #. (itstool) path: info/desc
 #: C/debug-run.page:11
 msgid "Start a program with the debugger."
-msgstr ""
+msgstr "Starta ett program med felsökaren."
 
 #. (itstool) path: page/title
 #: C/debug-run.page:24
+#, fuzzy
 msgid "Debug a program"
-msgstr ""
+msgstr "Felsök ett program"
 
 #. (itstool) path: section/title
 #: C/debug-run.page:27
 msgid "Start a program in the debugger"
-msgstr ""
+msgstr "Starta ett program i felsökaren"
 
 #. (itstool) path: section/p
 #: C/debug-run.page:29
@@ -2527,8 +2679,9 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: C/debug-run.page:52
+#, fuzzy
 msgid "Debug an already running application"
-msgstr ""
+msgstr "Felsök ett program som redan kör"
 
 #. (itstool) path: section/p
 #: C/debug-run.page:54
@@ -2554,7 +2707,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-run.page:71
 msgid "Debug a remote application"
-msgstr ""
+msgstr "Felsök ett fjärrprogram"
 
 #. (itstool) path: section/p
 #: C/debug-run.page:73
@@ -2601,12 +2754,12 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-run.page:100
 msgid "Stop the debugger"
-msgstr ""
+msgstr "Stoppa felsökaren"
 
 #. (itstool) path: section/p
 #: C/debug-run.page:102
 msgid "The debugger and the program can be stopped at any time like this:"
-msgstr ""
+msgstr "Felsökaren och programmet kan stoppas när som helst på detta vis:"
 
 #. (itstool) path: item/p
 #: C/debug-run.page:106
@@ -2617,13 +2770,14 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/debug-stack.page:9
+#, fuzzy
 msgid "Examine the stack."
-msgstr ""
+msgstr "Undersök stacken."
 
 #. (itstool) path: page/title
 #: C/debug-stack.page:22
 msgid "Stack"
-msgstr ""
+msgstr "Stack"
 
 #. (itstool) path: section/title
 #: C/debug-stack.page:25
@@ -2664,7 +2818,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/debug-stack.page:49
 msgid "Active"
-msgstr ""
+msgstr "Aktiv"
 
 #. (itstool) path: item/p
 #: C/debug-stack.page:50
@@ -2678,7 +2832,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/debug-stack.page:56
 msgid "Thread"
-msgstr ""
+msgstr "Tråd"
 
 #. (itstool) path: item/p
 #: C/debug-stack.page:57
@@ -2688,7 +2842,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/debug-stack.page:60
 msgid "Frame"
-msgstr ""
+msgstr "Ram"
 
 #. (itstool) path: item/p
 #: C/debug-stack.page:61
@@ -2700,10 +2854,8 @@ msgstr ""
 
 #. (itstool) path: item/title
 #: C/debug-stack.page:66
-#, fuzzy
-#| msgid "Files"
 msgid "File"
-msgstr "Filer"
+msgstr "Fil"
 
 #. (itstool) path: item/p
 #: C/debug-stack.page:67
@@ -2714,7 +2866,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/debug-stack.page:71
 msgid "Line"
-msgstr ""
+msgstr "Rad"
 
 #. (itstool) path: item/p
 #: C/debug-stack.page:72
@@ -2723,10 +2875,8 @@ msgstr ""
 
 #. (itstool) path: item/title
 #: C/debug-stack.page:75
-#, fuzzy
-#| msgid "Function symbols"
 msgid "Function"
-msgstr "Funktionssymboler"
+msgstr "Funktion"
 
 #. (itstool) path: item/p
 #: C/debug-stack.page:76
@@ -2740,15 +2890,14 @@ msgstr ""
 
 #. (itstool) path: item/title
 #: C/debug-stack.page:83
-#, fuzzy
-#| msgid "Documents"
 msgid "Arguments"
-msgstr "Dokument"
+msgstr "Argument"
 
 #. (itstool) path: item/p
 #: C/debug-stack.page:84
+#, fuzzy
 msgid "The function arguments."
-msgstr ""
+msgstr "Funktionens argument."
 
 #. (itstool) path: section/title
 #: C/debug-stack.page:92
@@ -2777,17 +2926,18 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-stack.page:112
 msgid "View the current function"
-msgstr ""
+msgstr "Visa aktuell funktion"
 
 #. (itstool) path: item/p
 #: C/debug-stack.page:119
 msgid "Double-click, or right-click and select <gui>View Source</gui>."
-msgstr ""
+msgstr "Dubbelklicka, eller högerklicka och välj <gui>Visa källa</gui>."
 
 #. (itstool) path: section/title
 #: C/debug-stack.page:126
+#, fuzzy
 msgid "Get a stack trace"
-msgstr ""
+msgstr "Erhåll ett stackspår"
 
 #. (itstool) path: item/p
 #: C/debug-stack.page:130
@@ -2799,12 +2949,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/debug-step.page:9
 msgid "Stopping and continuing."
-msgstr ""
+msgstr "Stoppa och fortsätta."
 
 #. (itstool) path: page/title
 #: C/debug-step.page:22
 msgid "Stop and step"
-msgstr ""
+msgstr "Stoppa och stega"
 
 #. (itstool) path: page/p
 #: C/debug-step.page:24
@@ -2817,7 +2967,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-step.page:30
 msgid "Step in"
-msgstr ""
+msgstr "Stega in"
 
 #. (itstool) path: item/p
 #: C/debug-step.page:34
@@ -2848,7 +2998,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-step.page:55
 msgid "Step over"
-msgstr ""
+msgstr "Stega över"
 
 #. (itstool) path: item/p
 #: C/debug-step.page:59
@@ -2877,7 +3027,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-step.page:78
 msgid "Step out"
-msgstr ""
+msgstr "Stega ut"
 
 #. (itstool) path: item/p
 #: C/debug-step.page:82
@@ -2897,7 +3047,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-step.page:94
 msgid "Run and continue"
-msgstr ""
+msgstr "Kör och fortsätt"
 
 #. (itstool) path: item/p
 #: C/debug-step.page:98
@@ -2913,11 +3063,13 @@ msgid ""
 "This command restarts the program and lets it run until a breakpoint is "
 "encountered or the program exits."
 msgstr ""
+"Detta kommando startar om programmet och låter det köra tills en brytpunkt "
+"påträffas eller programmet avslutar."
 
 #. (itstool) path: section/title
 #: C/debug-step.page:109
 msgid "Run To"
-msgstr ""
+msgstr "Kör till"
 
 #. (itstool) path: item/p
 #: C/debug-step.page:113
@@ -2937,7 +3089,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-step.page:125
 msgid "Stopping the Program"
-msgstr ""
+msgstr "Stoppa programmet"
 
 #. (itstool) path: item/p
 #: C/debug-step.page:129
@@ -2955,20 +3107,19 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/debug-tips.page:9
+#, fuzzy
 msgid "Debugging tips and tricks."
-msgstr ""
+msgstr "Tips och trick för felsökning."
 
 #. (itstool) path: page/title
 #: C/debug-tips.page:22
-#, fuzzy
-#| msgid "Debugging"
 msgid "Debugging tips"
-msgstr "Felsökning"
+msgstr "Felsökningstips"
 
 #. (itstool) path: section/title
 #: C/debug-tips.page:25
 msgid "Fixing GLib/GTK+ critical errors"
-msgstr ""
+msgstr "Fixa kritiska GLib/GTK+-fel"
 
 #. (itstool) path: section/p
 #: C/debug-tips.page:27
@@ -3094,7 +3245,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-watch.page:60
 msgid "Update watches"
-msgstr ""
+msgstr "Uppdatera bevakare"
 
 #. (itstool) path: section/p
 #: C/debug-watch.page:62
@@ -3187,7 +3338,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/debug-watch.page:131
 msgid "Remove a watch"
-msgstr ""
+msgstr "Ta bort en bevakare"
 
 #. (itstool) path: section/p
 #: C/debug-watch.page:133
@@ -3229,7 +3380,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/debug-watch.page:164
 msgid "Enter the new value."
-msgstr ""
+msgstr "Ange det nya värdet."
 
 #. (itstool) path: info/desc
 #: C/directory-project-backend.page:8
@@ -3269,24 +3420,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/full-index.page:8
 msgid "All help topics."
-msgstr ""
+msgstr "Alla hjälpämnen."
 
 #. (itstool) path: page/title
 #: C/full-index.page:16
 msgid "Index"
-msgstr ""
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/introduction.page:53
-msgctxt "_"
-msgid ""
-"external ref='figures/anjuta-in-action.png' "
-"md5='a31f1c85a4a14032fcd30ab6f6d6b3c0'"
-msgstr ""
+msgstr "Index"
 
 #. (itstool) path: info/title
 #. (itstool) path: page/title
@@ -3347,14 +3486,30 @@ msgstr ""
 
 #. (itstool) path: figure/title
 #: C/introduction.page:51
+#, fuzzy
 msgid "<app>Anjuta</app> in action"
-msgstr ""
+msgstr "<app>Anjuta</app> under användning"
 
 #. (itstool) path: figure/desc
 #. (itstool) path: media/p
 #: C/introduction.page:52 C/introduction.page:54
 msgid "<app>Anjuta</app> main window"
+msgstr "Huvudfönstret för <app>Anjuta</app>"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/introduction.page:53
+#, fuzzy
+msgctxt "_"
+msgid ""
+"external ref='figures/anjuta-in-action.png' "
+"md5='a31f1c85a4a14032fcd30ab6f6d6b3c0'"
 msgstr ""
+"external ref='figures/anjuta-in-action.png' "
+"md5='a31f1c85a4a14032fcd30ab6f6d6b3c0'"
 
 #. (itstool) path: info/desc
 #: C/language-support-cpp-modelines-emacs.page:9
@@ -3363,8 +3518,9 @@ msgstr ""
 
 #. (itstool) path: page/title
 #: C/language-support-cpp-modelines-emacs.page:18
+#, fuzzy
 msgid "Emacs modelines"
-msgstr ""
+msgstr "Emacs-modelines"
 
 #. (itstool) path: page/p
 #: C/language-support-cpp-modelines-emacs.page:20
@@ -3377,8 +3533,9 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/language-support-cpp-modelines-emacs.page:25
+#, fuzzy
 msgid "A typical <app>Emacs</app> modeline looks like this:"
-msgstr ""
+msgstr "En typisk <app>Emacs</app>-modeline ser ut så här:"
 
 #. (itstool) path: page/code
 #: C/language-support-cpp-modelines-emacs.page:27
@@ -3388,16 +3545,19 @@ msgid ""
 "/* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */\n"
 "  "
 msgstr ""
+"\n"
+"/* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */\n"
+"  "
 
 #. (itstool) path: page/p
 #: C/language-support-cpp-modelines-emacs.page:31
 msgid "Anjuta supports only the following variables."
-msgstr ""
+msgstr "Anjuta stöder endast följande variabler."
 
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-emacs.page:35
 msgid "<code>indent-tabs-mode</code>"
-msgstr ""
+msgstr "<code>indent-tabs-mode</code>"
 
 #. (itstool) path: item/p
 #: C/language-support-cpp-modelines-emacs.page:36
@@ -3409,7 +3569,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-emacs.page:40
 msgid "<code>tab-width</code>"
-msgstr ""
+msgstr "<code>tab-width</code>"
 
 #. (itstool) path: item/p
 #: C/language-support-cpp-modelines-emacs.page:41
@@ -3420,7 +3580,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-emacs.page:44
 msgid "<code>c-basic-offset</code>"
-msgstr ""
+msgstr "<code>c-basic-offset</code>"
 
 #. (itstool) path: item/p
 #: C/language-support-cpp-modelines-emacs.page:45
@@ -3435,8 +3595,9 @@ msgstr ""
 
 #. (itstool) path: page/title
 #: C/language-support-cpp-modelines-vim.page:18
+#, fuzzy
 msgid "Vim modelines"
-msgstr ""
+msgstr "Lägesrader för Vim"
 
 #. (itstool) path: page/p
 #: C/language-support-cpp-modelines-vim.page:20
@@ -3449,8 +3610,9 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/language-support-cpp-modelines-vim.page:25
+#, fuzzy
 msgid "A typical <app>Vim</app> modeline looks like this:"
-msgstr ""
+msgstr "En typisk <app>Vim</app>-modeline ser ut så här:"
 
 #. (itstool) path: page/code
 #: C/language-support-cpp-modelines-vim.page:27
@@ -3459,76 +3621,79 @@ msgid ""
 "\n"
 "/* vim: set noet ts=4 sw=4: */"
 msgstr ""
+"\n"
+"/* vim: set noet ts=4 sw=4: */"
 
 #. (itstool) path: page/p
 #: C/language-support-cpp-modelines-vim.page:30
 msgid "Anjuta support only the following variables."
-msgstr ""
+msgstr "Anjuta stöder endast följande variabler."
 
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-vim.page:34
 msgid "<code>expandtab</code>"
-msgstr ""
+msgstr "<code>expandtab</code>"
 
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-vim.page:35
 msgid "<code>et</code>"
-msgstr ""
+msgstr "<code>et</code>"
 
 #. (itstool) path: item/p
 #: C/language-support-cpp-modelines-vim.page:36
 msgid "Use spaces for indentation."
-msgstr ""
+msgstr "Använd blanksteg för indentering."
 
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-vim.page:39
 msgid "<code>noexpandtab</code>"
-msgstr ""
+msgstr "<code>noexpandtab</code>"
 
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-vim.page:40
 msgid "<code>noet</code>"
-msgstr ""
+msgstr "<code>noet</code>"
 
 #. (itstool) path: item/p
 #: C/language-support-cpp-modelines-vim.page:41
 msgid "Use tabulation for indentation."
-msgstr ""
+msgstr "Använd tabbar för indentering."
 
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-vim.page:44
 msgid "<code>softtabstop</code>"
-msgstr ""
+msgstr "<code>softtabstop</code>"
 
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-vim.page:45
 msgid "<code>sts</code>"
-msgstr ""
+msgstr "<code>sts</code>"
 
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-vim.page:46
 msgid "<code>tabstop</code>"
-msgstr ""
+msgstr "<code>tabstop</code>"
 
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-vim.page:47
 msgid "<code>ts</code>"
-msgstr ""
+msgstr "<code>ts</code>"
 
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-vim.page:51
 msgid "<code>shiftwidth</code>"
-msgstr ""
+msgstr "<code>shiftwidth</code>"
 
 #. (itstool) path: item/title
 #: C/language-support-cpp-modelines-vim.page:52
 msgid "<code>sw</code>"
-msgstr ""
+msgstr "<code>sw</code>"
 
 #. (itstool) path: info/desc
 #: C/makefile-project-backend.page:8
+#, fuzzy
 msgid "Makefile project backend."
-msgstr ""
+msgstr "Makefile-projektsbakänden."
 
 #. (itstool) path: page/title
 #: C/makefile-project-backend.page:21
@@ -3575,14 +3740,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/project-import.page:11
 msgid "Import an existing project."
-msgstr ""
+msgstr "Importera ett befintligt projekt."
 
 #. (itstool) path: page/title
 #: C/project-import.page:24
-#, fuzzy
-#| msgid "Project"
 msgid "Import a Project"
-msgstr "Projekt"
+msgstr "Importera ett projekt"
 
 #. (itstool) path: page/p
 #: C/project-import.page:26
@@ -3640,13 +3803,15 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/project-manager-folder-add.page:9
+#, fuzzy
 msgid "Add a folder to a project."
-msgstr ""
+msgstr "Lägg till en mapp till ett projekt."
 
 #. (itstool) path: page/title
 #: C/project-manager-folder-add.page:18
+#, fuzzy
 msgid "Add a Folder"
-msgstr ""
+msgstr "Lägg till en mapp"
 
 #. (itstool) path: page/p
 #: C/project-manager-folder-add.page:20
@@ -3673,7 +3838,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/project-manager-folder-add.page:33
 msgid "Enter a new group name."
-msgstr ""
+msgstr "Ange ett nytt gruppnamn."
 
 #. (itstool) path: note/p
 #: C/project-manager-folder-add.page:35
@@ -3696,23 +3861,24 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/project-manager-folder.page:11
+#, fuzzy
 msgid "Add, edit or remove folders from a project."
-msgstr ""
+msgstr "Lägg till, redigera eller ta bort mappar från ett projekt."
 
 #. (itstool) path: page/title
 #: C/project-manager-folder.page:20
 msgid "Manage Folders"
-msgstr ""
+msgstr "Hantera mappar"
 
 #. (itstool) path: info/desc
 #: C/project-manager-folder-remove.page:9
 msgid "Remove folders from a project."
-msgstr ""
+msgstr "Ta bort mappar från ett projekt."
 
 #. (itstool) path: page/title
 #: C/project-manager-folder-remove.page:18
 msgid "Remove Folder"
-msgstr ""
+msgstr "Ta bort mapp"
 
 #. (itstool) path: item/p
 #: C/project-manager-folder-remove.page:22
@@ -3728,16 +3894,20 @@ msgid ""
 "Confirm the removal. This will only remove the folder from the project files "
 "without removing any files or directories from your disk."
 msgstr ""
+"Bekräfta borttagandet. Detta kommer endast ta bort mappen från "
+"projektfilerna utan att ta bort några filer eller kataloger från din disk."
 
 #. (itstool) path: info/desc
 #: C/project-manager-library-add.page:10
+#, fuzzy
 msgid "Add a custom library to a target."
-msgstr ""
+msgstr "Lägg till ett anpassat bibliotek till ett mål."
 
 #. (itstool) path: page/title
 #: C/project-manager-library-add.page:23
+#, fuzzy
 msgid "Add a Custom Library"
-msgstr ""
+msgstr "Lägg till ett anpassat bibliotek"
 
 #. (itstool) path: page/p
 #: C/project-manager-library-add.page:25
@@ -3821,23 +3991,24 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/project-manager-library.page:13
+#, fuzzy
 msgid "Add or remove libraries to project targets."
-msgstr ""
+msgstr "Lägga till eller ta bort bibliotek från projektmål."
 
 #. (itstool) path: page/title
 #: C/project-manager-library.page:22
 msgid "Manage Libraries"
-msgstr ""
+msgstr "Hantera bibliotek"
 
 #. (itstool) path: info/desc
 #: C/project-manager-library-remove.page:10
 msgid "Remove a custom library from a target."
-msgstr ""
+msgstr "Ta bort ett anpassat bibliotek från ett mål."
 
 #. (itstool) path: page/title
 #: C/project-manager-library-remove.page:23
 msgid "Remove a Custom Library"
-msgstr ""
+msgstr "Ta bort ett anpassat bibliotek"
 
 #. (itstool) path: item/p
 #: C/project-manager-library-remove.page:27
@@ -3857,13 +4028,15 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/project-manager-module-add.page:10
+#, fuzzy
 msgid "Add a set of libraries to a target."
-msgstr ""
+msgstr "Lägg till en uppsättning bibliotek till ett mål."
 
 #. (itstool) path: page/title
 #: C/project-manager-module-add.page:23
+#, fuzzy
 msgid "Add packaged libraries"
-msgstr ""
+msgstr "Lägg till paketerade bibliotek"
 
 #. (itstool) path: page/p
 #: C/project-manager-module-add.page:25
@@ -3930,13 +4103,15 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/project-manager-module-new.page:12
+#, fuzzy
 msgid "Groups libraries in a module."
-msgstr ""
+msgstr "Grupperar bibliotek i en modul."
 
 #. (itstool) path: page/title
 #: C/project-manager-module-new.page:25
+#, fuzzy
 msgid "Add a Module"
-msgstr ""
+msgstr "Lägg till en modul"
 
 #. (itstool) path: page/p
 #: C/project-manager-module-new.page:27
@@ -3944,6 +4119,8 @@ msgid ""
 "Packages cannot be added directly to a program but have to be grouped in a "
 "module."
 msgstr ""
+"Paket kan inte läggas till direkt till ett program utan måste grupperas i en "
+"modul."
 
 #. (itstool) path: item/p
 #: C/project-manager-module-new.page:32
@@ -3970,7 +4147,7 @@ msgstr ""
 #. (itstool) path: note/p
 #: C/project-manager-module-new.page:46
 msgid "If the library you want does not appear here:"
-msgstr ""
+msgstr "Om biblioteket du vill ha inte visas här:"
 
 #. (itstool) path: item/p
 #: C/project-manager-module-new.page:49
@@ -3985,7 +4162,7 @@ msgstr ""
 #: C/project-manager-module-new.page:57
 msgid ""
 "It could be that the library is not packaged, it is often the case for "
-"libraries not developped on Linux. See the chapter <link xref=\"project-"
+"libraries not developed on Linux. See the chapter <link xref=\"project-"
 "manager-library-add\"/> explaining how to use them."
 msgstr ""
 
@@ -4007,13 +4184,14 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/project-manager-module-remove.page:10
+#, fuzzy
 msgid "Remove a set of libraries from a target."
-msgstr ""
+msgstr "Ta bort en uppsättning bibliotek från ett mål."
 
 #. (itstool) path: page/title
 #: C/project-manager-module-remove.page:23
 msgid "Remove a Module"
-msgstr ""
+msgstr "Ta bort en modul"
 
 #. (itstool) path: item/p
 #: C/project-manager-module-remove.page:27
@@ -4031,12 +4209,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/project-manager-package-remove.page:9
 msgid "Remove a library from a module."
-msgstr ""
+msgstr "Ta bort ett bibliotek från en modul."
 
 #. (itstool) path: page/title
 #: C/project-manager-package-remove.page:22
 msgid "Remove a Package"
-msgstr ""
+msgstr "Ta bort ett paket"
 
 #. (itstool) path: item/p
 #: C/project-manager-package-remove.page:26
@@ -4055,9 +4233,8 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/project-manager.page:8
 #, fuzzy
-#| msgid "Project Management"
 msgid "Project manager."
-msgstr "Projekthantering"
+msgstr "Projekthanterare."
 
 #. (itstool) path: page/title
 #: C/project-manager.page:21
@@ -4076,7 +4253,7 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/project-manager.page:29
 msgid ""
-"The project backend to use is choosen when creating or importing a new "
+"The project backend to use is chosen when creating or importing a new "
 "project in <app>Anjuta</app>. It is displayed in the properties of the "
 "project root node and can be changed at any time."
 msgstr ""
@@ -4098,26 +4275,24 @@ msgstr "Projekthantering"
 #. (itstool) path: info/desc
 #: C/project-manager-root.page:12
 msgid "Edit project properties."
-msgstr ""
+msgstr "Redigera projektegenskaper."
 
 #. (itstool) path: page/title
 #: C/project-manager-root.page:21
-#, fuzzy
-#| msgid "Project"
 msgid "Edit a Project"
-msgstr "Projekt"
+msgstr "Redigera ett projekt"
 
 #. (itstool) path: info/desc
 #: C/project-manager-source-add.page:9
+#, fuzzy
 msgid "Add existing files to a project."
-msgstr ""
+msgstr "Lägg till befintliga filer till ett projekt."
 
 #. (itstool) path: page/title
 #: C/project-manager-source-add.page:22
 #, fuzzy
-#| msgid "Files"
 msgid "Add Files"
-msgstr "Filer"
+msgstr "Lägg till filer"
 
 #. (itstool) path: item/p
 #: C/project-manager-source-add.page:26
@@ -4160,23 +4335,24 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/project-manager-source.page:12
+#, fuzzy
 msgid "Add or remove files from a project."
-msgstr ""
+msgstr "Lägg till eller ta bort filer från ett projekt."
 
 #. (itstool) path: page/title
 #: C/project-manager-source.page:21
 msgid "Manage Files"
-msgstr ""
+msgstr "Hantera filer"
 
 #. (itstool) path: info/desc
 #: C/project-manager-source-remove.page:9
 msgid "Remove files from a project."
-msgstr ""
+msgstr "Ta bort filer från ett projekt."
 
 #. (itstool) path: page/title
 #: C/project-manager-source-remove.page:22
 msgid "Remove Files"
-msgstr ""
+msgstr "Ta bort filer"
 
 #. (itstool) path: item/p
 #: C/project-manager-source-remove.page:26
@@ -4202,13 +4378,15 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/project-manager-target-add.page:9
+#, fuzzy
 msgid "Add a target to a project."
-msgstr ""
+msgstr "Lägg till ett mål till ett projekt."
 
 #. (itstool) path: page/title
 #: C/project-manager-target-add.page:22
+#, fuzzy
 msgid "Add a Target"
-msgstr ""
+msgstr "Lägg till ett mål"
 
 #. (itstool) path: page/p
 #: C/project-manager-target-add.page:24
@@ -4270,17 +4448,17 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/project-manager-target.page:21
 msgid "Manage Targets"
-msgstr ""
+msgstr "Hantera mål"
 
 #. (itstool) path: info/desc
 #: C/project-manager-target-remove.page:9
 msgid "Remove a target from a project."
-msgstr ""
+msgstr "Ta bort ett mål från ett projekt."
 
 #. (itstool) path: page/title
 #: C/project-manager-target-remove.page:22
 msgid "Remove a Target"
-msgstr ""
+msgstr "Ta bort ett mål"
 
 #. (itstool) path: item/p
 #: C/project-manager-target-remove.page:26
@@ -4300,14 +4478,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/project-manager-treeview.page:8
 msgid "Display project's content."
-msgstr ""
+msgstr "Visa projektets innehåll."
 
 #. (itstool) path: page/title
 #: C/project-manager-treeview.page:17
-#, fuzzy
-#| msgid "Project"
 msgid "View a Project"
-msgstr "Projekt"
+msgstr "Visa ett projekt"
 
 #. (itstool) path: page/p
 #: C/project-manager-treeview.page:19
@@ -4321,8 +4497,9 @@ msgstr ""
 
 #. (itstool) path: item/title
 #: C/project-manager-treeview.page:28
+#, fuzzy
 msgid "Root"
-msgstr ""
+msgstr "Rot"
 
 #. (itstool) path: item/p
 #: C/project-manager-treeview.page:29
@@ -4335,7 +4512,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/project-manager-treeview.page:34
 msgid "Module"
-msgstr ""
+msgstr "Modul"
 
 #. (itstool) path: item/p
 #: C/project-manager-treeview.page:35
@@ -4349,7 +4526,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/project-manager-treeview.page:41
 msgid "Package"
-msgstr ""
+msgstr "Paket"
 
 #. (itstool) path: item/p
 #: C/project-manager-treeview.page:42
@@ -4362,7 +4539,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/project-manager-treeview.page:47
 msgid "Folder"
-msgstr ""
+msgstr "Mapp"
 
 #. (itstool) path: item/p
 #: C/project-manager-treeview.page:48
@@ -4375,7 +4552,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/project-manager-treeview.page:53
 msgid "Target"
-msgstr ""
+msgstr "Mål"
 
 #. (itstool) path: item/p
 #: C/project-manager-treeview.page:54
@@ -4398,7 +4575,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/project-manager-treeview.page:68
 msgid "Source"
-msgstr ""
+msgstr "Källa"
 
 #. (itstool) path: item/p
 #: C/project-manager-treeview.page:69
@@ -4413,14 +4590,12 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/project-wizard-create.page:10
 msgid "Create a new project from scratch."
-msgstr ""
+msgstr "Skapa ett nytt projekt från grunden."
 
 #. (itstool) path: page/title
 #: C/project-wizard-create.page:23
-#, fuzzy
-#| msgid "Project"
 msgid "Create a Project"
-msgstr "Projekt"
+msgstr "Skapa ett projekt"
 
 #. (itstool) path: page/p
 #: C/project-wizard-create.page:25
@@ -4521,6 +4696,9 @@ msgid ""
 "href=\"http://library.gnome.org/devel/libanjuta/stable/project-wizard-format."
 "html\">here</link>."
 msgstr ""
+"Denna <file>.wiz</file>-fil ser ut som en XML-fil och finns dokumenterad "
+"<link href=\"http://library.gnome.org/devel/libanjuta/stable/project-wizard-"
+"format.html\">här</link>."
 
 #. (itstool) path: info/desc
 #: C/run-parameters-dialog.page:11
@@ -4542,7 +4720,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/run-parameters-dialog.page:27
 msgid "<gui>Program</gui>"
-msgstr ""
+msgstr "<gui>Program</gui>"
 
 #. (itstool) path: item/p
 #: C/run-parameters-dialog.page:28
@@ -4556,7 +4734,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/run-parameters-dialog.page:34
 msgid "<gui>Arguments</gui>"
-msgstr ""
+msgstr "<gui>Argument</gui>"
 
 #. (itstool) path: item/p
 #: C/run-parameters-dialog.page:35
@@ -4568,7 +4746,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/run-parameters-dialog.page:40
 msgid "<gui>Working Directory</gui>"
-msgstr ""
+msgstr "<gui>Arbetskatalog</gui>"
 
 #. (itstool) path: item/p
 #: C/run-parameters-dialog.page:41
@@ -4579,7 +4757,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/run-parameters-dialog.page:45
 msgid "<gui>Environment Variables</gui>"
-msgstr ""
+msgstr "<gui>Miljövariabler</gui>"
 
 #. (itstool) path: item/p
 #: C/run-parameters-dialog.page:46
@@ -4619,7 +4797,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: C/run-parameters-dialog.page:60
 msgid "<gui>Run in Terminal</gui>"
-msgstr ""
+msgstr "<gui>Kör i terminal</gui>"
 
 #. (itstool) path: item/p
 #: C/run-parameters-dialog.page:61
@@ -4632,12 +4810,13 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/run-run.page:11
 msgid "Start a program without the debugger."
-msgstr ""
+msgstr "Starta ett program utan felsökaren."
 
 #. (itstool) path: page/title
 #: C/run-run.page:24
+#, fuzzy
 msgid "Run a program"
-msgstr ""
+msgstr "Kör ett program"
 
 #. (itstool) path: page/p
 #: C/run-run.page:26
@@ -4645,6 +4824,8 @@ msgid ""
 "If <app>Anjuta</app> is used to start a program it checks that it is up to "
 "date and builds it if needed."
 msgstr ""
+"Om <app>Anjuta</app> används för att starta ett program så kontrollerar det "
+"att det är uppdaterat och bygger det om så krävs."
 
 #. (itstool) path: item/p
 #: C/run-run.page:31
@@ -4674,14 +4855,16 @@ msgid ""
 "one time before running it. See <link xref=\"autotools-build-install\"/> for "
 "more information."
 msgstr ""
+"Om ditt program behöver datafiler måste du antagligen installera det minst "
+"en gång innan du kör det. Se <link xref=\"autotools-build-install\"/> för "
+"mer information."
 
 #. (itstool) path: info/desc
 #: C/widget-index.page:8
 msgid "All windows and dialogs."
-msgstr ""
+msgstr "Alla fönster och dialoger."
 
 #. (itstool) path: page/title
 #: C/widget-index.page:16
 msgid "Windows and dialogs"
-msgstr ""
-
+msgstr "Fönster och dialoger"
