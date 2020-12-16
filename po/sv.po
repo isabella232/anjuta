@@ -9,10 +9,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=anjuta&keywords=I18N+L10N&component=core application\n"
-"POT-Creation-Date: 2017-10-01 16:19+0000\n"
-"PO-Revision-Date: 2017-10-02 20:14+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/anjuta/issues\n"
+"POT-Creation-Date: 2020-09-30 22:42+0000\n"
+"PO-Revision-Date: 2020-12-13 01:42+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -20,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: ../anjuta.appdata.xml.in.h:1 ../anjuta.desktop.in.in.h:1 ../src/main.c:34
 msgid "Anjuta"
@@ -1345,14 +1344,14 @@ msgstr "Bibliotek:"
 
 #: ../plugins/am-project/am-properties.c:1046
 msgid "Manual section:"
-msgstr "Manuell sektion:"
+msgstr "Manualavsnitt:"
 
 #: ../plugins/am-project/am-properties.c:1049
 msgid ""
 "Section where are installed the man pages. Valid section names are the "
 "digits ‘0’ through ‘9’, and the letters ‘l’ and ‘n’. "
 msgstr ""
-"Sektion där manualsidorna installeras. Giltiga sektionsnamn är siffrorna ”0” "
+"Avsnitt där manualsidorna installeras. Giltiga avsnittsnamn är siffrorna ”0” "
 "till ”9” samt bokstäverna ”l” och ”n”. "
 
 #: ../plugins/am-project/amp-source.c:97
@@ -2074,7 +2073,7 @@ msgstr "Licens:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:39
 msgid "Header File:"
-msgstr "Header-fil:"
+msgstr "Headerfil:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:40
 msgid "Source File:"
@@ -2654,7 +2653,7 @@ msgstr "_Ta bort alla"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:12
 msgid "Add Watch"
-msgstr "Lägg till bevakare"
+msgstr "Lägg till bevakning"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:13
 msgid "_Automatic update"
@@ -2666,7 +2665,7 @@ msgstr "_Namn:"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:15
 msgid "Change Watch"
-msgstr "Ändra bevakare"
+msgstr "Ändra bevakning"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:16
 msgid "_Value:"
@@ -2804,7 +2803,7 @@ msgstr "Port:"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:49
 msgid "Serial Line Connection"
-msgstr "Serielinjesanslutning"
+msgstr "Serielinjeanslutning"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:50
 msgid "Disable"
@@ -2969,7 +2968,7 @@ msgstr "Villkor"
 
 #: ../plugins/debug-manager/breakpoints.c:1954
 msgid "Pass count"
-msgstr "Körningar"
+msgstr "Överhopp"
 
 #: ../plugins/debug-manager/breakpoints.c:1954
 msgid "State"
@@ -3407,15 +3406,15 @@ msgstr "Inspektera eller evaluera ett uttryck eller en variabel"
 
 #: ../plugins/debug-manager/watch.c:414
 msgid "Add Watch…"
-msgstr "Lägg till bevakare…"
+msgstr "Lägg till bevakning…"
 
 #: ../plugins/debug-manager/watch.c:422
 msgid "Remove Watch"
-msgstr "Ta bort bevakare"
+msgstr "Ta bort bevakning"
 
 #: ../plugins/debug-manager/watch.c:430
 msgid "Update Watch"
-msgstr "Uppdatera bevakare"
+msgstr "Uppdatera bevakning"
 
 #: ../plugins/debug-manager/watch.c:438
 msgid "Change Value"
@@ -3560,37 +3559,39 @@ msgstr "Byt namn"
 msgid "Remove"
 msgstr "Ta bort"
 
-#: ../plugins/document-manager/anjuta-docman.c:164
+#. Translator: the space at the beginning is here because this
+#. * string is concatenated with the file name.
+#: ../plugins/document-manager/anjuta-docman.c:166
 msgid " [read-only]"
 msgstr " [skrivskyddad]"
 
-#: ../plugins/document-manager/anjuta-docman.c:533
+#: ../plugins/document-manager/anjuta-docman.c:535
 #: ../plugins/document-manager/plugin.c:156
 msgid "Close Others"
 msgstr "Stäng andra"
 
-#: ../plugins/document-manager/anjuta-docman.c:736
-#: ../plugins/document-manager/anjuta-docman.c:1156
+#: ../plugins/document-manager/anjuta-docman.c:738
+#: ../plugins/document-manager/anjuta-docman.c:1158
 msgid "Close file"
 msgstr "Stäng fil"
 
-#: ../plugins/document-manager/anjuta-docman.c:773
+#: ../plugins/document-manager/anjuta-docman.c:775
 #: ../plugins/language-support-python/anjuta-language-support-python.ui.h:9
 #: ../plugins/project-manager/dialogs.c:748
 msgid "Path:"
 msgstr "Sökväg:"
 
-#: ../plugins/document-manager/anjuta-docman.c:890
+#: ../plugins/document-manager/anjuta-docman.c:892
 #: ../plugins/file-loader/plugin.c:597 ../plugins/file-loader/plugin.c:887
 #: ../plugins/file-loader/plugin.c:897 ../plugins/file-loader/plugin.c:910
 msgid "Open file"
 msgstr "Öppna fil"
 
-#: ../plugins/document-manager/anjuta-docman.c:909
+#: ../plugins/document-manager/anjuta-docman.c:911
 msgid "Save file as"
 msgstr "Spara fil som"
 
-#: ../plugins/document-manager/anjuta-docman.c:990
+#: ../plugins/document-manager/anjuta-docman.c:992
 #, c-format
 msgid ""
 "The file '%s' already exists.\n"
@@ -3599,11 +3600,11 @@ msgstr ""
 "Filen ”%s” finns redan.\n"
 "Vill du ersätta den med den du sparar?"
 
-#: ../plugins/document-manager/anjuta-docman.c:999
+#: ../plugins/document-manager/anjuta-docman.c:1001
 msgid "_Replace"
 msgstr "_Ersätt"
 
-#: ../plugins/document-manager/anjuta-docman.c:1743
+#: ../plugins/document-manager/anjuta-docman.c:1745
 msgid "[read-only]"
 msgstr "[skrivskyddad]"
 
@@ -4312,7 +4313,7 @@ msgstr ""
 
 #: ../plugins/document-manager/search-box.c:920
 msgid "Use the context menu of the \"Find\" icon for more search options"
-msgstr "Använd sammanhangsmenyn för ”Sök”-ikonen för fler sökalternativ"
+msgstr "Använd snabbvalsmenyn för ”Sök”-ikonen för fler sökalternativ"
 
 #: ../plugins/document-manager/search-box.c:991
 msgid "Replace"
@@ -6204,8 +6205,8 @@ msgstr "Insticksmodul för Vala-stöd"
 msgid "Vala support plugin, adds code completion."
 msgstr "Insticksmodul med Vala-stöd, lägger till kodkomplettering."
 
-#: ../plugins/language-support-vala/plugin.vala:661
-#: ../plugins/language-support-vala/plugin.vala:669
+#: ../plugins/language-support-vala/plugin.vala:678
+#: ../plugins/language-support-vala/plugin.vala:686
 #: ../plugins/parser-cxx/plugin.c:267 ../plugins/parser-cxx/plugin.c:280
 msgid "Auto-complete"
 msgstr "Automatisk komplettering"
@@ -7045,7 +7046,7 @@ msgstr "Ange _var målet ska skapas:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:21
 msgid "More options:"
-msgstr "Fler flaggor:"
+msgstr "Fler inställningar:"
 
 #: ../plugins/project-manager/project-chooser.c:296
 msgid "<Select any project node>"
