@@ -28,7 +28,6 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#.
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
@@ -440,13 +439,11 @@ msgstr ""
 #: C/debug-breakpoint-dialog.page:14(credit/name)
 #: C/debug-breakpoint.page:13(credit/name) C/debug-cpu.page:13(credit/name)
 #: C/debug-custom.page:13(credit/name) C/debug-data.page:13(credit/name)
-#: C/debug-execute.page:13(credit/name)
-#: C/debug-expression.page:13(credit/name)
+#: C/debug-execute.page:13(credit/name) C/debug-expression.page:13(credit/name)
 #: C/debug-information.page:13(credit/name) C/debug-local.page:13(credit/name)
-#: C/debug-process-dialog.page:13(credit/name)
-#: C/debug-run.page:15(credit/name) C/debug-stack.page:13(credit/name)
-#: C/debug-step.page:13(credit/name) C/debug-tips.page:13(credit/name)
-#: C/debug-watch.page:13(credit/name)
+#: C/debug-process-dialog.page:13(credit/name) C/debug-run.page:15(credit/name)
+#: C/debug-stack.page:13(credit/name) C/debug-step.page:13(credit/name)
+#: C/debug-tips.page:13(credit/name) C/debug-watch.page:13(credit/name)
 #: C/directory-project-backend.page:12(credit/name)
 #: C/language-support-cpp-modelines-emacs.page:13(credit/name)
 #: C/language-support-cpp-modelines-vim.page:13(credit/name)
@@ -484,10 +481,9 @@ msgstr ""
 #: C/debug-breakpoint.page:17(credit/name) C/debug-cpu.page:17(credit/name)
 #: C/debug-custom.page:17(credit/name) C/debug-expression.page:17(credit/name)
 #: C/debug-information.page:17(credit/name) C/debug-local.page:17(credit/name)
-#: C/debug-process-dialog.page:17(credit/name)
-#: C/debug-run.page:19(credit/name) C/debug-stack.page:17(credit/name)
-#: C/debug-step.page:17(credit/name) C/debug-tips.page:17(credit/name)
-#: C/debug-watch.page:17(credit/name)
+#: C/debug-process-dialog.page:17(credit/name) C/debug-run.page:19(credit/name)
+#: C/debug-stack.page:17(credit/name) C/debug-step.page:17(credit/name)
+#: C/debug-tips.page:17(credit/name) C/debug-watch.page:17(credit/name)
 #: C/directory-project-backend.page:16(credit/name)
 #: C/full-index.page:11(credit/name)
 #: C/makefile-project-backend.page:16(credit/name)
@@ -1134,7 +1130,7 @@ msgid ""
 "gui></guiseq> to delete all files built in the same directory as the current "
 "edited file."
 msgstr ""
-"Per suprimir tots els fitxers construïts en el mateix directori del fitxer "
+"Per a suprimir tots els fitxers construïts en el mateix directori del fitxer "
 "actual, trieu <guiseq><gui>Munta</gui><gui>Neteja</gui></guiseq> en el "
 "<gui>menú principal</gui>."
 
@@ -1143,7 +1139,7 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Build</gui> <gui>Clean "
 "Project</gui></guiseq> to delete all project built files,"
 msgstr ""
-"Per suprimir tots els fitxers construïts del projecte, trieu "
+"Per a suprimir tots els fitxers construïts del projecte, trieu "
 "<guiseq><gui>Munta</gui><gui>Neteja el projecte</gui></guiseq> en el "
 "<gui>menú principal</gui>."
 
@@ -1403,7 +1399,7 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Build</gui> <gui>Build "
 "Tarball</gui></guiseq> to create a source distribution package."
 msgstr ""
-"Per crear un paquet de distribució de codi, trieu <guiseq><gui>Munta</gui> "
+"Per a crear un paquet de distribució de codi, trieu <guiseq><gui>Munta</gui> "
 "<gui>Munta un fitxer tar</gui></guiseq> en el <gui>menú principal</gui>."
 
 #: C/autotools-build-install.page:11(info/desc)
@@ -1704,7 +1700,7 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> "
 "<gui>Breakpoints</gui></guiseq> to open the <gui>Breakpoint</gui> window."
 msgstr ""
-"Per obrir la finestra de <gui>Punts de ruptura</gui>, trieu "
+"Per a obrir la finestra de <gui>Punts de ruptura</gui>, trieu "
 "<guiseq><gui>Visualitza</gui><gui>Punts de ruptura</gui></guiseq> en el "
 "<gui>menú principal</gui>."
 
@@ -1957,7 +1953,7 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> "
 "<gui>Registers</gui></guiseq> to open the <gui>Register</gui> window."
 msgstr ""
-"Per obrir la finestra <gui>Registre</gui>, trieu <guiseq><gui>Visualitza</"
+"Per a obrir la finestra <gui>Registre</gui>, trieu <guiseq><gui>Visualitza</"
 "gui> <gui>Registres</gui></guiseq> en el <gui>menú principal</gui>."
 
 #: C/debug-cpu.page:35(section/p)
@@ -1976,7 +1972,7 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> <gui>Memory</"
 "gui></guiseq> to open the <gui>Memory</gui> window."
 msgstr ""
-"Per obrir la finestra <gui>Memòria</gui>, trieu <guiseq><gui>Visualitza</"
+"Per a obrir la finestra <gui>Memòria</gui>, trieu <guiseq><gui>Visualitza</"
 "gui> <gui>Memòria</gui></guiseq> en el <gui>menú principal</gui>."
 
 #: C/debug-cpu.page:52(section/p)
@@ -2004,7 +2000,7 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> "
 "<gui>Disassembly</gui></guiseq> to open the <gui>Disassembly</gui> window."
 msgstr ""
-"Per obrir la finestra <gui>Desassemblador</gui>, trieu "
+"Per a obrir la finestra <gui>Desassemblador</gui>, trieu "
 "<guiseq><gui>Visualitza</gui> <gui>Desassemblador</gui></guiseq> en el "
 "<gui>menú principal</gui>."
 
@@ -2221,8 +2217,8 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> <gui>Locals</"
 "gui></guiseq> to open the <gui>Locals</gui> window."
 msgstr ""
-"Per obrir la finestra <gui>Locals</gui>, trieu <guiseq><gui>Visualitza</gui> "
-"<gui>Locals</gui></guiseq> en el <gui>menú principal</gui>."
+"Per a obrir la finestra <gui>Locals</gui>, trieu <guiseq><gui>Visualitza</"
+"gui> <gui>Locals</gui></guiseq> en el <gui>menú principal</gui>."
 
 #: C/debug-local.page:42(section/p)
 msgid ""
@@ -2330,8 +2326,8 @@ msgid ""
 "keyseq>"
 msgstr ""
 "Trieu <guiseq><gui>Executa</gui> <gui>Depura el programa</gui></guiseq> en "
-"el <gui>menú principal</gui> o premeu <keyseq><key>Maj</key><key>F12</"
-"key></keyseq>"
+"el <gui>menú principal</gui> o premeu <keyseq><key>Maj</key><key>F12</key></"
+"keyseq>"
 
 #: C/debug-run.page:41(note/p)
 msgid ""
@@ -2358,7 +2354,7 @@ msgid ""
 "Process...</gui></guiseq> to get a dialog listing all currently running "
 "processes."
 msgstr ""
-"Per obtenir un diàleg on es mostrin tots els processos que s'estan "
+"Per a obtenir un diàleg on es mostrin tots els processos que s'estan "
 "executant, trieu <guiseq><gui>Executa</gui> <gui>Depura el procés...</gui></"
 "guiseq> en el <gui>menú principal</gui>."
 
@@ -2459,7 +2455,7 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> <gui>Stack</"
 "gui></guiseq> to open the <gui>Stack</gui> window."
 msgstr ""
-"Per obrir la finestra <gui>Pila</gui>, trieu <guiseq><gui>Visualitza</gui> "
+"Per a obrir la finestra <gui>Pila</gui>, trieu <guiseq><gui>Visualitza</gui> "
 "<gui>Pila</gui></guiseq> en el <gui>menú principal</gui>."
 
 #: C/debug-stack.page:44(section/p)
@@ -2818,8 +2814,9 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>View</gui> <gui>Watches</"
 "gui></guiseq> to open the <gui>Watches</gui> window."
 msgstr ""
-"Per obrir la finestra <gui>Seguiments</gui>, trieu <guiseq><gui>Visualitza</"
-"gui> <gui>Seguiments</gui></guiseq> en el <gui>menú principal</gui>."
+"Per a obrir la finestra <gui>Seguiments</gui>, trieu "
+"<guiseq><gui>Visualitza</gui> <gui>Seguiments</gui></guiseq> en el <gui>menú "
+"principal</gui>."
 
 #: C/debug-watch.page:40(section/p)
 msgid ""
@@ -3353,8 +3350,8 @@ msgid ""
 "When you have chosen the parent and enter the name, click on the <gui>Add</"
 "gui> button to add the group to your project."
 msgstr ""
-"Per afegir el grup al projecte feu clic al botó <gui>Afegeix</gui>, després "
-"de seleccionar el pare i introduir-ne el nom."
+"Per a afegir el grup al projecte feu clic al botó <gui>Afegeix</gui>, "
+"després de seleccionar el pare i introduir-ne el nom."
 
 #: C/project-manager-folder.page:11(info/desc)
 msgid "Add, edit or remove folders from a project."
@@ -3412,7 +3409,7 @@ msgid ""
 "The issue is that your program will not compile on another computer if the "
 "header and the libraries are elsewhere."
 msgstr ""
-"Per poder utilitzar una biblioteca a C, el compilador ha de saber on es "
+"Per a poder utilitzar una biblioteca a C, el compilador ha de saber on es "
 "troben els fitxers de capçalera i l'enllaçador on es troben les biblioteques "
 "necessàries. El problema és que el programa no es compilarà en un altre "
 "ordinador si les capçaleres i les biblioteques són a un altre lloc."
@@ -3463,8 +3460,8 @@ msgid ""
 "You might have to expand the <gui>More options</gui> button to see this. "
 "Click on the <gui>Apply</gui> button when you are done."
 msgstr ""
-"Potser haureu de desplegar el botó <gui>Més opcions</gui> per veure-ho. Feu "
-"clic al botó <gui>Aplica</gui> quan acabeu."
+"Potser haureu de desplegar el botó <gui>Més opcions</gui> per a veure-ho. "
+"Feu clic al botó <gui>Aplica</gui> quan acabeu."
 
 #: C/project-manager-library-add.page:59(item/p)
 msgid ""
@@ -3488,8 +3485,8 @@ msgid ""
 msgstr ""
 "Heu de definir la propietat <gui>Indicadors de l'enllaçador</gui>; si el "
 "compilador és el <app>gcc</app>, afegiu <input>-l<var>library_name</var></"
-"input>. <var>library_name</var> és el nom del fitxer de biblioteca sense "
-"el prefix <file>lib</file> i sense l'extensió <file>.a</file> o <file>.so</"
+"input>. <var>library_name</var> és el nom del fitxer de biblioteca sense el "
+"prefix <file>lib</file> i sense l'extensió <file>.a</file> o <file>.so</"
 "file>."
 
 #: C/project-manager-library-add.page:77(item/p)
@@ -3499,8 +3496,8 @@ msgid ""
 "input>."
 msgstr ""
 "Si la biblioteca no és a un directori estàndard, el <app>gcc</app> pot "
-"cercar a més directoris si especifiqueu l'opció <input>-"
-"L<var>library_name</var></input>."
+"cercar a més directoris si especifiqueu l'opció <input>-L<var>library_name</"
+"var></input>."
 
 #: C/project-manager-library.page:13(info/desc)
 msgid "Add or remove libraries to project targets."
@@ -3536,7 +3533,7 @@ msgid ""
 msgstr ""
 "Suprimiu la biblioteca de les propietats <gui>Indicadors del preprocessador "
 "de C</gui> i <gui>Indicadors de l'enllaçador</gui>. Feu clic al botó "
-"<gui>Aplica</gui> per escriure els canvis als fitxers del projecte."
+"<gui>Aplica</gui> per a escriure els canvis als fitxers del projecte."
 
 #: C/project-manager-module-add.page:10(info/desc)
 msgid "Add a set of libraries to a target."
@@ -3615,7 +3612,7 @@ msgid ""
 "When you are done, click on the <gui>Add</gui> button to add the selected "
 "module to the target."
 msgstr ""
-"Quan hàgiu acabat, feu clic al botó <gui>Afegeix</gui> per afegir el mòdul."
+"Quan hàgiu acabat, feu clic al botó <gui>Afegeix</gui> per a afegir el mòdul."
 
 #: C/project-manager-module-new.page:12(info/desc)
 #, fuzzy
@@ -3714,7 +3711,7 @@ msgid ""
 msgstr ""
 "Després d'haver triat una biblioteca, es generarà automàticament un nom pel "
 "mòdul, però que el podeu canviar. Quan hàgiu acabat, feu clic al botó "
-"<gui>Afegeix</gui> per crear el mòdul nou amb les biblioteques triades."
+"<gui>Afegeix</gui> per a crear el mòdul nou amb les biblioteques triades."
 
 #: C/project-manager-module-new.page:72(item/p)
 msgid ""
@@ -3964,7 +3961,7 @@ msgid ""
 "<gui>Add</gui> button to create this new target."
 msgstr ""
 "Quan hàgiu triat el nom, el tipus i el pare de l'objectiu, feu clic al botó "
-"<gui>Afegeix</gui> per afegir-lo."
+"<gui>Afegeix</gui> per a afegir-lo."
 
 #: C/project-manager-target.page:12(info/desc)
 msgid "Add, edit or remove targets from a project."
@@ -4125,7 +4122,7 @@ msgid ""
 "bar</gui>, select <gui>Project</gui> to start the project wizard."
 msgstr ""
 "O a la llista desplegable del botó <gui>Nou</gui> de la <gui>barra d'eines "
-"superior</gui>, trieu <gui>Projecte</gui> per iniciar l'auxiliar de "
+"superior</gui>, trieu <gui>Projecte</gui> per a iniciar l'auxiliar de "
 "projectes."
 
 #: C/project-wizard-create.page:44(item/p)
@@ -4159,7 +4156,7 @@ msgid ""
 msgstr ""
 "Totes les dades s'agrupen en pàgines, normalment haureu d'emplenar dues o "
 "tres pàgines. Podeu tornar enrere en qualsevol moment utilitzant el botó "
-"<gui>Vés enrere</gui>."
+"<gui>Ves enrere</gui>."
 
 #: C/project-wizard-create.page:67(note/p)
 msgid ""
@@ -4179,7 +4176,7 @@ msgid ""
 msgstr ""
 "Després d'emplenar totes les pàgines de dades, obtindreu una pàgina de resum "
 "on es mostra la informació principal sobre el projecte. Encara no s'ha "
-"escrit res al disc. Feu clic a <gui>Aplica</gui> per desar el projecte i "
+"escrit res al disc. Feu clic a <gui>Aplica</gui> per a desar el projecte i "
 "obrir-lo a l'<app>Anjuta</app>."
 
 #: C/project-wizard-create.page:85(note/p)
@@ -4332,7 +4329,7 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Run</gui> <gui>Run</gui></"
 "guiseq> or press <key>F3</key> to execute the current program."
 msgstr ""
-"Per executar el programa actual, trieu <guiseq><gui>Executa</gui> "
+"Per a executar el programa actual, trieu <guiseq><gui>Executa</gui> "
 "<gui>Executa</gui></guiseq> en el <gui>menú principal</gui> o premeu "
 "<key>F3</key>."
 
@@ -4347,7 +4344,7 @@ msgid ""
 "From the <gui>main menu</gui>, select <guiseq><gui>Run</gui> <gui>Program "
 "Parameters...</gui></guiseq> to display the dialog."
 msgstr ""
-"Per mostrar el diàleg trieu <guiseq><gui>Executa</gui> <gui>Paràmetres del "
+"Per a mostrar el diàleg trieu <guiseq><gui>Executa</gui> <gui>Paràmetres del "
 "programa...</gui></guiseq> en el <gui>menú principal</gui>."
 
 #: C/run-run.page:49(note/p)
@@ -4422,7 +4419,7 @@ msgstr "Finestres i diàlegs"
 #~ "Marqueu les biblioteques que desitgeu a la llista de totes les "
 #~ "biblioteques empaquetades. Comproveu que al quadre de text inferior s'ha "
 #~ "seleccionat el nom del mòdul esperat. Feu clic en el botó <gui>Afegeix</"
-#~ "gui> per actualitzar el mòdul."
+#~ "gui> per a actualitzar el mòdul."
 
 #~ msgid ""
 #~ "Read the <link xref=\"project-manager-module-add\">next page</link> to "
