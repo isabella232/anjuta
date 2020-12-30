@@ -298,7 +298,7 @@ msgstr "Text d'ajuda"
 
 #: ../libanjuta/anjuta-entry.c:248
 msgid "Text to show the user what to enter into the entry"
-msgstr "Text per mostrar a l'usuari què ha d'introduir a l'entrada"
+msgstr "Text per a mostrar a l'usuari què ha d'introduir a l'entrada"
 
 #. Create all needed widgets
 #: ../libanjuta/anjuta-environment-editor.c:543
@@ -353,13 +353,12 @@ msgstr "Mostra el botó d'afegir"
 msgid "Display an Add button"
 msgstr "Mostra el botó d'afegir"
 
-#.
 #. * Translators: This regex should match the password prompts of
 #. * at least the "su" and the "sudo" command line utility in your
 #. * language and possible other things like "ssh".
 #. * More information on the regular expression syntax can be
-#. * found at http://library.gnome.org/devel/glib/unstable/glib-regex-syntax.html
-#.
+#. * found at http://library.gnome.org/devel/glib/unstable/glib-regex-
+#. syntax.html
 #: ../libanjuta/anjuta-launcher.c:675
 msgid "[Pp]assword.*:"
 msgstr "[Cc]ontrasenya.*:"
@@ -1305,7 +1304,7 @@ msgstr "Inclou aquest objectiu en el paquet de distribució."
 #: ../plugins/am-project/am-properties.c:1100
 #: ../plugins/am-project/am-properties.c:1174
 msgid "Build for check only:"
-msgstr "Munta només per comprovar:"
+msgstr "Munta només per a comprovar:"
 
 #: ../plugins/am-project/am-properties.c:466
 #: ../plugins/am-project/am-properties.c:641
@@ -1337,7 +1336,7 @@ msgid ""
 "Do not rename the target with an optional prefix, used to avoid overwriting "
 "system program. "
 msgstr ""
-"No canviïs el nom de l'objectiu amb un prefix opcional. S'utilitza per "
+"No canviïs el nom de l'objectiu amb un prefix opcional. S'utilitza per a "
 "evitar sobreescriure programes del sistema."
 
 #: ../plugins/am-project/am-properties.c:483
@@ -1593,7 +1592,7 @@ msgstr "Cert si es necessita una ordre especial per instal·lar fitxers"
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:2
 msgid "Command used to be allowed to install files"
-msgstr "Ordre utilitzada per permetre instal·lar fitxers"
+msgstr "Ordre utilitzada per a permetre instal·lar fitxers"
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:4
 #, no-c-format
@@ -1607,7 +1606,7 @@ msgstr ""
 "L'ordre ha de contenir «%s» o «%q». Aquests seran reemplaçats per l'ordre "
 "utilitzada per instal·lar els fitxers, per exemple «make install». %s és "
 "reemplaçat per l'ordre sense cap canvi mentre que %q és reemplaçat per "
-"l'ordre entre cometes. Podeu utilitzar %% per obtenir el caràcter «%». Un "
+"l'ordre entre cometes. Podeu utilitzar %% per a obtenir el caràcter «%». Un "
 "valor típic és «sudo %s» o «su -c %q»."
 
 #. The translations should match that of 'make' program. Both strings uses
@@ -1911,13 +1910,13 @@ msgstr "Co_mpila"
 
 #: ../plugins/build-basic-autotools/plugin.c:2493
 msgid "Build commands"
-msgstr "Ordres per muntar"
+msgstr "Ordres per a muntar"
 
 #. Translators: This is a group of build
 #. * commands which appears in pop up menus
 #: ../plugins/build-basic-autotools/plugin.c:2502
 msgid "Build popup commands"
-msgstr "Ordres emergents per muntar"
+msgstr "Ordres emergents per a muntar"
 
 #: ../plugins/build-basic-autotools/plugin.c:2946
 #: ../plugins/build-basic-autotools/plugin.c:2954
@@ -2717,7 +2716,9 @@ msgstr "Propietats dels punts de ruptura"
 msgid "Location"
 msgstr "Ubicació"
 
-#. This is the number of time that the program executes the line where a breakpoint is located. It is used as a list header, so I have tried to find a quite short name.
+#. This is the number of time that the program executes the line where a
+#. breakpoint is located. It is used as a list header, so I have tried to find
+#. a quite short name.
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:21
 msgid "_Pass count:"
 msgstr "_Número de passades:"
@@ -3014,7 +3015,7 @@ msgstr "Operacions dels punts de ruptura"
 #: ../plugins/debug-manager/data_view.c:407
 #: ../plugins/debug-manager/sparse_view.c:501
 msgid "_Go to address"
-msgstr "_Vés a l'adreça"
+msgstr "_Ves a l'adreça"
 
 #: ../plugins/debug-manager/debug_tree.c:128 ../plugins/tools/editor.c:470
 msgid "Variable"
@@ -3490,7 +3491,7 @@ msgstr "Cerca ajuda:"
 #: ../plugins/devhelp/plugin.c:220 ../plugins/document-manager/plugin.c:234
 #: ../plugins/message-view/plugin.c:77 ../plugins/symbol-db/plugin.c:327
 msgid "_Go to"
-msgstr "_Vés a"
+msgstr "_Ves a"
 
 #: ../plugins/devhelp/plugin.c:229
 msgid "_API Reference"
@@ -3671,11 +3672,11 @@ msgstr "Habilita el desat automàtic"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:6
 msgid "Save files interval in minutes"
-msgstr "Interval en minuts per desar fitxers"
+msgstr "Interval en minuts per a desar fitxers"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:7
 msgid "Save session interval in minutes"
-msgstr "Interval en minuts per desar la sessió"
+msgstr "Interval en minuts per a desar la sessió"
 
 #: ../plugins/document-manager/anjuta-document-manager.ui.h:8
 msgid "Autosave"
@@ -3915,7 +3916,7 @@ msgstr "Número de _línia…"
 
 #: ../plugins/document-manager/plugin.c:236
 msgid "Go to a particular line in the editor"
-msgstr "Vés a una línia en concret en l'editor"
+msgstr "Ves a una línia en concret en l'editor"
 
 #: ../plugins/document-manager/plugin.c:238
 msgid "Matching _Brace"
@@ -3923,7 +3924,7 @@ msgstr "Clau o _parèntesi concordant"
 
 #: ../plugins/document-manager/plugin.c:239
 msgid "Go to the matching brace in the editor"
-msgstr "Vés a la clau o parèntesi concordant en l'editor"
+msgstr "Ves a la clau o parèntesi concordant en l'editor"
 
 #: ../plugins/document-manager/plugin.c:241
 msgid "_Start of Block"
@@ -3931,7 +3932,7 @@ msgstr "_Inici del bloc"
 
 #: ../plugins/document-manager/plugin.c:242
 msgid "Go to the start of the current block"
-msgstr "Vés a l'inici del bloc actual"
+msgstr "Ves a l'inici del bloc actual"
 
 #: ../plugins/document-manager/plugin.c:244
 msgid "_End of Block"
@@ -3939,7 +3940,7 @@ msgstr "_Fi del bloc"
 
 #: ../plugins/document-manager/plugin.c:245
 msgid "Go to the end of the current block"
-msgstr "Vés a la fi del bloc actual"
+msgstr "Ves a la fi del bloc actual"
 
 #: ../plugins/document-manager/plugin.c:247
 msgid "Previous _History"
@@ -3947,7 +3948,7 @@ msgstr "_Historial anterior"
 
 #: ../plugins/document-manager/plugin.c:248
 msgid "Go to previous history"
-msgstr "Vés a l'historial anterior"
+msgstr "Ves a l'historial anterior"
 
 #: ../plugins/document-manager/plugin.c:250
 msgid "Next Histor_y"
@@ -3955,7 +3956,7 @@ msgstr "Historial _següent"
 
 #: ../plugins/document-manager/plugin.c:251
 msgid "Go to next history"
-msgstr "Vés a l'historial següent"
+msgstr "Ves a l'historial següent"
 
 #: ../plugins/document-manager/plugin.c:256
 msgid "_Search"
@@ -4202,7 +4203,7 @@ msgstr "Adreça d'interès _anterior"
 
 #: ../plugins/document-manager/plugin.c:381
 msgid "Jump to the previous bookmark in the file"
-msgstr "Vés a l'adreça d'interès anterior del fitxer"
+msgstr "Ves a l'adreça d'interès anterior del fitxer"
 
 #: ../plugins/document-manager/plugin.c:383
 msgid "_Next Bookmark"
@@ -4210,7 +4211,7 @@ msgstr "Adreça d'interès _següent"
 
 #: ../plugins/document-manager/plugin.c:384
 msgid "Jump to the next bookmark in the file"
-msgstr "Vés a l'adreça d'interès següent del fitxer"
+msgstr "Ves a l'adreça d'interès següent del fitxer"
 
 #: ../plugins/document-manager/plugin.c:386
 msgid "_Clear All Bookmarks"
@@ -4236,7 +4237,8 @@ msgstr "Transformació del text de l'editor"
 msgid "Editor text selection"
 msgstr "Selecció de text de l'editor"
 
-#. { actions_insert, G_N_ELEMENTS (actions_insert), "ActionGroupEditorInsert", N_("Editor text insertions") },
+#. { actions_insert, G_N_ELEMENTS (actions_insert), "ActionGroupEditorInsert",
+#. N_("Editor text insertions") },
 #: ../plugins/document-manager/plugin.c:411
 msgid "Editor code commenting"
 msgstr "Comentaris del codi de l'editor"
@@ -4283,7 +4285,7 @@ msgstr "Torna a carregar"
 
 #: ../plugins/document-manager/plugin.c:593
 msgid "Go to"
-msgstr "Vés a"
+msgstr "Ves a"
 
 #: ../plugins/document-manager/plugin.c:917
 msgid "OVR"
@@ -4377,7 +4379,7 @@ msgstr "Carregador de fitxer"
 
 #: ../plugins/file-loader/anjuta-loader.plugin.in.h:2
 msgid "File loader to load different files"
-msgstr "Carregador de fitxers per carregar diferents fitxers"
+msgstr "Carregador de fitxers per a carregar diferents fitxers"
 
 #. we create a placeholder menuitem, to be used in case
 #. * the menu is empty. this placeholder will stay around
@@ -4388,7 +4390,6 @@ msgstr "Carregador de fitxers per carregar diferents fitxers"
 #. * right place when idly populating the menu in case the
 #. * user appended or prepended custom menu items to the
 #. * recent chooser menu widget.
-#.
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:521
 msgid "No items found"
 msgstr "No s'ha trobat cap element"
@@ -4418,7 +4419,6 @@ msgstr "Element desconegut"
 #. * in a recent files menu. The %d is the number of the item,
 #. * the %s is the name of the item. Please keep the _ in front
 #. * of the number to give these menu items a mnemonic.
-#.
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:977
 #, c-format
 msgctxt "recent menu label"
@@ -4427,7 +4427,6 @@ msgstr "_%d. %s"
 
 #. This is the format that is used for items in a recent files menu.
 #. * The %d is the number of the item, the %s is the name of the item.
-#.
 #: ../plugins/file-loader/anjuta-recent-chooser-menu.c:982
 #, c-format
 msgctxt "recent menu label"
@@ -4460,7 +4459,7 @@ msgid ""
 msgstr ""
 "<b>No es pot obrir «%s»</b>.\n"
 "\n"
-"No hi ha cap connector, acció per defecte o aplicació configurada per "
+"No hi ha cap connector, acció per defecte o aplicació configurada per a "
 "gestionar aquest tipus de fitxer.\n"
 "\n"
 "Tipus MIME: %s.\n"
@@ -4594,7 +4593,7 @@ msgstr "No s'ha trobat el fitxer"
 #: ../plugins/file-loader/plugin.c:1424
 #, c-format
 msgid "Please select a plugin to open <b>%s</b>."
-msgstr "Seleccioneu un connector per obrir <b>%s</b>."
+msgstr "Seleccioneu un connector per a obrir <b>%s</b>."
 
 #: ../plugins/file-loader/plugin.c:1428 ../plugins/project-import/plugin.c:290
 #: ../plugins/project-manager/dialogs.c:647
@@ -4842,7 +4841,8 @@ msgstr "No s'ha especificat cap executable.\n"
 
 #: ../plugins/gdb/debugger.c:1149
 msgid "Open an executable or attach to a process to start debugging.\n"
-msgstr "Obre un executable o adjunta a un procés per començar la depuració.\n"
+msgstr ""
+"Obre un executable o adjunta a un procés per a començar la depuració.\n"
 
 #: ../plugins/gdb/debugger.c:1158
 msgid "There was an error whilst launching the debugger.\n"
@@ -4971,9 +4971,10 @@ msgstr ""
 
 #: ../plugins/gdb/plugin.c:204
 msgid "Cannot start terminal for debugging."
-msgstr "No es pot iniciar el terminal per depurar."
+msgstr "No es pot iniciar el terminal per a depurar."
 
-#. Translators: pretty printer file is a script containing functions allowing gdb
+#. Translators: pretty printer file is a script containing functions allowing
+#. gdb
 #. * to display variable content in a simpler way, typically removing
 #. * implementation details.
 #. * The register function is an additional function in the script. It defines
@@ -5139,7 +5140,7 @@ msgstr "Tasques"
 #: ../plugins/git/anjuta-git.ui.h:35
 msgid "Whole project; Drop a file here to view a file or folder log"
 msgstr ""
-"Tot el projecte. Arrossega un fitxer aquí per visualitzar un fitxer o "
+"Tot el projecte. Arrossega un fitxer aquí per a visualitzar un fitxer o "
 "registre d'una carpeta"
 
 #: ../plugins/git/anjuta-git.ui.h:36
@@ -5215,7 +5216,9 @@ msgstr "Ajusta a la base"
 msgid "Append fetch data"
 msgstr "Afegeix les dades de recollida"
 
-# FIXME: s'hauria de trobar una traducció per a fast-forward (dpm) - combinacions d'avançament ràpid (tot i que no acaba d'abarcar el sentit de l'operació)?
+# FIXME: s'hauria de trobar una traducció per a fast-forward (dpm) -
+# combinacions d'avançament ràpid (tot i que no acaba d'abarcar el sentit de
+# l'operació)?
 #: ../plugins/git/anjuta-git.ui.h:53
 msgid "Commit on fast-forward merges"
 msgstr "Publica en fer combinacions fast-forward"
@@ -5374,7 +5377,8 @@ msgstr "No s'ha seleccionat cap ubicació remota."
 msgid "No tags selected."
 msgstr "No s'ha seleccionat cap etiqueta."
 
-#. Translators: file name for an existing commits diff, %s is an SHASUM of a commit
+#. Translators: file name for an existing commits diff, %s is an SHASUM of a
+#. commit
 #: ../plugins/git/git-diff-pane.c:40
 #, c-format
 msgid "Commit %s.diff"
@@ -6055,7 +6059,7 @@ msgstr "Gestor de llenguatges"
 #: ../plugins/language-manager/language-manager.plugin.in.h:2
 msgid "Plugin to keep track of multiple programming languages"
 msgstr ""
-"Connector per mantenir el seguiment de diversos llenguatges de programació"
+"Connector per a mantenir el seguiment de diversos llenguatges de programació"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.plugin.in.h:1
 msgid "C++ and Java support Plugin"
@@ -6064,8 +6068,8 @@ msgstr "Connector per admetre el C++ i el Java"
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.plugin.in.h:2
 msgid "C++ and Java support plugin for code completion, auto-indentation, etc."
 msgstr ""
-"Connector per permetre la compleció de codi C++ i Java, el sagnat automàtic, "
-"etc."
+"Connector per a permetre la compleció de codi C++ i Java, el sagnat "
+"automàtic, etc."
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:1
 msgid "Automatically load required libraries of the project"
@@ -6525,7 +6529,7 @@ msgstr "Aplica un pedaç a fitxers/directoris"
 
 #: ../plugins/project-import/anjuta-project-import.plugin.in.h:1
 msgid "Project Import Assistant"
-msgstr "Auxiliar per importar un projecte"
+msgstr "Auxiliar per a importar un projecte"
 
 #: ../plugins/project-import/anjuta-project-import.plugin.in.h:2
 msgid "Import an existing autotools project to Anjuta"
@@ -6546,13 +6550,13 @@ msgid ""
 "A file named \"%s\" cannot be written: %s. Check if you have write access to "
 "the project directory."
 msgstr ""
-"No es pot escriure el fitxer «%s»: %s. Comproveu que teniu accés per "
+"No es pot escriure el fitxer «%s»: %s. Comproveu que teniu accés per a "
 "escriure al directori del projecte."
 
 #: ../plugins/project-import/plugin.c:285
 #, c-format
 msgid "Please select a project backend to open %s."
-msgstr "Seleccioneu un rerefons de projecte per obrir %s."
+msgstr "Seleccioneu un rerefons de projecte per a obrir %s."
 
 #: ../plugins/project-import/plugin.c:305
 #, c-format
@@ -7250,7 +7254,7 @@ msgid ""
 "generating the project.\n"
 msgstr ""
 "Falten alguns programes o paquets de desenvolupament importants que es "
-"necessiten per muntar aquest projecte. Assegureu-vos que estan instal·lats "
+"necessiten per a muntar aquest projecte. Assegureu-vos que estan instal·lats "
 "adequadament abans de generar el projecte.\n"
 
 #: ../plugins/project-wizard/druid.c:995
@@ -7272,7 +7276,7 @@ msgstr ""
 "Generalment els programes que falten són part d'alguna distribució de "
 "paquets i els podeu cercar en el Gestor d'aplicacions. De la mateixa manera, "
 "els paquets de desenvolupament estan continguts en paquets especials que "
-"proporciona la distribució per permetre el desenvolupament de projectes "
+"proporciona la distribució per a permetre el desenvolupament de projectes "
 "basats en aquests. Normalment aquests finalitzen amb el sufix «-dev» o «-"
 "devel» en el nom del paquet i es poden trobar en cercar en el Gestor "
 "d'aplicacions."
@@ -7644,7 +7648,7 @@ msgstr "Configura els paquets externs:"
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:20
 msgid "Use pkg-config to add library support from other packages"
 msgstr ""
-"Utilitzeu el pkg-config per afegir compatibilitat per a biblioteques des "
+"Utilitzeu el pkg-config per a afegir compatibilitat per a biblioteques des "
 "d'altres paquets"
 
 #: ../plugins/project-wizard/templates/anjuta-plugin.wiz.in.h:29
@@ -7814,7 +7818,7 @@ msgstr "Afegeix compatibilitat per a les biblioteques compartides:"
 #: ../plugins/project-wizard/templates/xlib.wiz.in.h:18
 msgid "Adds support for building shared libraries in your project"
 msgstr ""
-"Afegeix compatibilitat per muntar biblioteques compartides en el projecte"
+"Afegeix compatibilitat per a muntar biblioteques compartides en el projecte"
 
 #: ../plugins/project-wizard/templates/cpp.wiz.in.h:15
 #: ../plugins/project-wizard/templates/gcj.wiz.in.h:17
@@ -7872,7 +7876,7 @@ msgstr "Afegeix compatibilitat amb el Windows:"
 #: ../plugins/project-wizard/templates/terminal.wiz.in.h:20
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:20
 msgid "Adds support for building on Windows platforms"
-msgstr "Afegeix compatibilitat per muntar en plataformes Windows"
+msgstr "Afegeix compatibilitat per a muntar en plataformes Windows"
 
 #: ../plugins/project-wizard/templates/django.wiz.in.h:1
 msgid "Django Project"
@@ -8004,8 +8008,8 @@ msgid ""
 "Use GtkBuilder to create the user-interface in a graphical way and load it "
 "from xml files at runtime"
 msgstr ""
-"Utilitza el GtkBuilder per crear la interfície d'usuari de manera gràfica i "
-"carregar-la des de fitxers XML en temps d'execució"
+"Utilitza el GtkBuilder per a crear la interfície d'usuari de manera gràfica "
+"i carregar-la des de fitxers XML en temps d'execució"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:28
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:28
@@ -8356,9 +8360,12 @@ msgstr "Permet la inserció de fragments a l'editor."
 msgid "Snippets"
 msgstr "Fragments"
 
-#. Translator: Appears in Edit->Snippets menu. It is used mainly for providing a
-#. shortcut for the trigger-key based insertion of snippets. It's called like this
-#. because you type the trigger-key in the editor, followed by Trigger Insert and
+#. Translator: Appears in Edit->Snippets menu. It is used mainly for providing
+#. a
+#. shortcut for the trigger-key based insertion of snippets. It's called like
+#. this
+#. because you type the trigger-key in the editor, followed by Trigger Insert
+#. and
 #. the snippet gets inserted.
 #: ../plugins/snippets-manager/plugin.c:73
 msgid "_Trigger insert"
@@ -8368,11 +8375,14 @@ msgstr "Insereix amb un ac_tivador"
 msgid "Insert a snippet using the trigger-key"
 msgstr "Insereix un fragment utilitzant una tecla activadora"
 
-#. Translator: In a similar matter, it also appears in Edit->Snippets. It's another method
+#. Translator: In a similar matter, it also appears in Edit->Snippets. It's
+#. another method
 #. for inserting snippets. In this case, you call Auto complete insert, start
-#. typing in the editor a string, the database is searched for that string and the
+#. typing in the editor a string, the database is searched for that string and
+#. the
 #. most relevant snippets are returned in a pop-up like the auto-complete one
-#. (they are showed by their names). After selecting one of them, the snippet gets
+#. (they are showed by their names). After selecting one of them, the snippet
+#. gets
 #. inserted.
 #: ../plugins/snippets-manager/plugin.c:86
 msgid "_Auto complete insert"
@@ -8513,7 +8523,7 @@ msgid ""
 msgstr ""
 "La tecla activadora s'utilitza per a la inserció ràpida d'un fragment. "
 "Teclegeu la tecla activadora a l'editor seguida per la drecera de teclat "
-"«Inserció ràpida» per inserir un fragment.\n"
+"«Inserció ràpida» per a inserir un fragment.\n"
 "<b>Avís: ha de ser únic per llenguatge.</b>"
 
 #: ../plugins/snippets-manager/snippets-editor.ui.h:11
@@ -8533,7 +8543,7 @@ msgid ""
 "Keywords are used for better searching of the snippets. They should be "
 "relevant to the snippet content. Type them separated by a single space."
 msgstr ""
-"Les paraules clau s'utilitzen per cercar millor els fragments. Haurien de "
+"Les paraules clau s'utilitzen per a cercar millor els fragments. Haurien de "
 "tenir relació amb el contingut del fragment. Escriviu-les separades per un "
 "espai."
 
@@ -8765,7 +8775,7 @@ msgstr "L'editor per defecte basat en el GtkSourceView"
 
 #: ../plugins/sourceview/sourceview-print.c:47
 msgid "Preparing pages for printing"
-msgstr "S'estan preparant les pàgines per imprimir"
+msgstr "S'estan preparant les pàgines per a imprimir"
 
 #: ../plugins/sourceview/sourceview-print.c:111
 msgid "Wrap lines"
@@ -9412,7 +9422,7 @@ msgstr "De_claració d'etiqueta"
 
 #: ../plugins/symbol-db/plugin.c:333
 msgid "Go to symbol declaration"
-msgstr "Vés a la declaració del símbol"
+msgstr "Ves a la declaració del símbol"
 
 #. Translators: Go to the line where the tag is implemented
 #: ../plugins/symbol-db/plugin.c:340
@@ -9421,7 +9431,7 @@ msgstr "_Implementació d'etiqueta"
 
 #: ../plugins/symbol-db/plugin.c:342
 msgid "Go to symbol definition"
-msgstr "Vés a la definició del símbol"
+msgstr "Ves a la definició del símbol"
 
 #: ../plugins/symbol-db/plugin.c:349
 msgid "_Find Symbol…"
@@ -9574,7 +9584,8 @@ msgstr "Ordre:"
 msgid "Short cut:"
 msgstr "Drecera:"
 
-#. This is the standard Unix stdout, see http://en.wikipedia.org/wiki/Standard_streams
+#. This is the standard Unix stdout, see
+#. http://en.wikipedia.org/wiki/Standard_streams
 #: ../plugins/tools/anjuta-tools.ui.h:15
 msgid "Standard output:"
 msgstr "Sortida estàndard:"
@@ -9662,7 +9673,6 @@ msgstr "S'està obrint %s"
 #. This is append to the tool name to give something
 #. * like "My tools (output)". It's used to name the message
 #. * pane where the output of the tool is send to
-#.
 #: ../plugins/tools/execute.c:409
 msgid "(output)"
 msgstr "(sortida)"
@@ -9670,7 +9680,6 @@ msgstr "(sortida)"
 #. This is append to the tool name to give something
 #. * like "My tools (error)". It's used to name the message
 #. * pane where the errors of the tool is send to
-#.
 #: ../plugins/tools/execute.c:417
 msgid "(error)"
 msgstr "(error)"
@@ -9715,7 +9724,7 @@ msgstr "S'ha produït un error en carregar les eines externes"
 #: ../plugins/tools/fileop.c:703
 #, c-format
 msgid "Unable to open %s for writing"
-msgstr "No es pot obrir %s per escriure"
+msgstr "No es pot obrir %s per a escriure"
 
 #: ../plugins/tools/plugin.c:187
 msgid "Tool operations"
@@ -9753,7 +9762,8 @@ msgstr "Afegeix a la memòria intermèdia"
 msgid "Replace selection"
 msgstr "Reemplaça la selecció"
 
-#. Translators: Checkbox if a dialog should be shown after some operation finishes, so translate as "to pop up a dialog"
+#. Translators: Checkbox if a dialog should be shown after some operation
+#. finishes, so translate as "to pop up a dialog"
 #: ../plugins/tools/tool.c:90
 msgid "Popup dialog"
 msgstr "Diàleg emergent"
@@ -9875,7 +9885,7 @@ msgstr "Línia actual en l'editor"
 
 #: ../plugins/tools/variable.c:109
 msgid "Ask the user to get additional parameters"
-msgstr "Demana a l'usuari per obtenir paràmetres addicionals"
+msgstr "Demana a l'usuari per a obtenir paràmetres addicionals"
 
 #: ../plugins/tools/variable.c:546
 msgid "Command line parameters"
@@ -10036,7 +10046,7 @@ msgstr "No s'obrirà l'últim projecte i fitxers en iniciar"
 #: ../src/anjuta-application.c:406
 msgid "Shut down Anjuta properly, releasing all resources (for debugging)"
 msgstr ""
-"Surt de l'Anjuta i allibera'n adequadament tots els recursos (per depurar)"
+"Surt de l'Anjuta i allibera'n adequadament tots els recursos (per a depurar)"
 
 #: ../src/anjuta-application.c:412
 msgid "Display program version"
