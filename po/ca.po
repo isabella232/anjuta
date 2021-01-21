@@ -438,7 +438,7 @@ msgstr "Seleccioneu un connector"
 #: ../libanjuta/anjuta-plugin-manager.c:1358
 #: ../plugins/debug-manager/queue.c:528
 msgid "Please select a plugin to activate"
-msgstr "Seleccioneu un connector per activar"
+msgstr "Seleccioneu un connector per a activar"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1372
 #, c-format
@@ -447,7 +447,7 @@ msgstr "No existeix cap connector capaç de carregar altres connectors a %s"
 
 #: ../libanjuta/anjuta-plugin-manager.c:1518
 msgid "<b>Please select a plugin to activate</b>"
-msgstr "<b>Seleccioneu un connector per activar</b>"
+msgstr "<b>Seleccioneu un connector per a activar</b>"
 
 #: ../libanjuta/anjuta-plugin-manager.c:2044
 msgid "Remember this selection"
@@ -515,7 +515,7 @@ msgstr "Gestor de connectors"
 
 #: ../libanjuta/anjuta-profile.c:271
 msgid "The plugin manager to use for resolving plugins"
-msgstr "El gestor de connectors a utilitzar per resoldre els connectors"
+msgstr "El gestor de connectors a utilitzar per a resoldre els connectors"
 
 #: ../libanjuta/anjuta-profile.c:279
 msgid "Profile Name"
@@ -943,7 +943,7 @@ msgstr "Compatibilitat amb la Libtool:"
 #: ../plugins/am-project/am-properties.c:98
 msgid "Add support to compile shared and static libraries with Libtool."
 msgstr ""
-"Afegeix compatibilitat per compilar biblioteques compartides i estàtiques "
+"Afegeix compatibilitat per a compilar biblioteques compartides i estàtiques "
 "amb la Libtool."
 
 #: ../plugins/am-project/am-properties.c:104
@@ -1359,7 +1359,7 @@ msgid ""
 "program subdir/app installed in bin directory it will be installed in bin/"
 "subdir/app not in bin/app."
 msgstr ""
-"Mantén el camí relatiu de l'objectiu per instal·lar-lo. Per exemple, si "
+"Mantén el camí relatiu de l'objectiu per a instal·lar-lo. Per exemple, si "
 "teniu un programa «subdir/app» instal·lat en el directori «bin» "
 "s'instal·larà a «bin/subdir/app» no a «bin/app»."
 
@@ -1588,7 +1588,7 @@ msgstr "L'executable «%s» no està actualitzat."
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:1
 msgid "True if we need a special command to install files"
-msgstr "Cert si es necessita una ordre especial per instal·lar fitxers"
+msgstr "Cert si es necessita una ordre especial per a instal·lar fitxers"
 
 #: ../plugins/build-basic-autotools/org.gnome.anjuta.plugins.build.gschema.xml.in.h:2
 msgid "Command used to be allowed to install files"
@@ -1604,7 +1604,7 @@ msgid ""
 "\"sudo %s\" or \"su -c %q\"."
 msgstr ""
 "L'ordre ha de contenir «%s» o «%q». Aquests seran reemplaçats per l'ordre "
-"utilitzada per instal·lar els fitxers, per exemple «make install». %s és "
+"utilitzada per a instal·lar els fitxers, per exemple «make install». %s és "
 "reemplaçat per l'ordre sense cap canvi mentre que %q és reemplaçat per "
 "l'ordre entre cometes. Podeu utilitzar %% per a obtenir el caràcter «%». Un "
 "valor típic és «sudo %s» o «su -c %q»."
@@ -5462,7 +5462,7 @@ msgid ""
 msgstr ""
 "No s'ha seleccionat cap ubicació remota. S'està utilitzant l'origen per "
 "defecte.\n"
-"Per empènyer a una ubicació remota diferent, seleccioneu-ne una a la llista "
+"Per a empènyer a una ubicació remota diferent, seleccioneu-ne una a la llista "
 "d'ubicacions remotes de sobre."
 
 #: ../plugins/git/git-reset-pane.c:176
@@ -6063,7 +6063,7 @@ msgstr ""
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.plugin.in.h:1
 msgid "C++ and Java support Plugin"
-msgstr "Connector per admetre el C++ i el Java"
+msgstr "Connector per a admetre el C++ i el Java"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.plugin.in.h:2
 msgid "C++ and Java support plugin for code completion, auto-indentation, etc."
@@ -6197,11 +6197,11 @@ msgstr "Entorn"
 
 #: ../plugins/language-support-js/js-support-plugin.plugin.in.h:1
 msgid "JS Support Plugin"
-msgstr "Connector per admetre el JS"
+msgstr "Connector per a admetre el JS"
 
 #: ../plugins/language-support-js/js-support-plugin.plugin.in.h:2
 msgid "JavaScript Support Plugin"
-msgstr "Connector per admetre el JavaScript"
+msgstr "Connector per a admetre el JavaScript"
 
 #: ../plugins/language-support-js/plugin.c:364
 #: ../plugins/language-support-js/plugin.c:377
@@ -6244,11 +6244,11 @@ msgstr "Python"
 
 #: ../plugins/language-support-vala/anjuta-vala.plugin.in.h:1
 msgid "Vala support Plugin"
-msgstr "Connector per admetre el Vala"
+msgstr "Connector per a admetre el Vala"
 
 #: ../plugins/language-support-vala/anjuta-vala.plugin.in.h:2
 msgid "Vala support plugin, adds code completion."
-msgstr "Connector per admetre el Vala, afegeix la compleció de codi."
+msgstr "Connector per a admetre el Vala, afegeix la compleció de codi."
 
 #: ../plugins/language-support-vala/plugin.vala:657
 #: ../plugins/language-support-vala/plugin.vala:665
@@ -7988,7 +7988,7 @@ msgstr "Afegeix el sistema gtk-doc:"
 #: ../plugins/project-wizard/templates/python.wiz.in.h:16
 msgid "gtk-doc is used to compile API documentations for GObject based classes"
 msgstr ""
-"El gtk-doc s'utilitza per compilar la documentació de l'API per a les "
+"El gtk-doc s'utilitza per a compilar la documentació de l'API per a les "
 "classes basades en el GObject"
 
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:23
@@ -8595,7 +8595,7 @@ msgstr "Variables de l'Anjuta"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:1
 msgid "Use tabs for indentation"
-msgstr "Utilitza el tabulador per sagnar"
+msgstr "Utilitza el tabulador per a sagnar"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:2
 msgid "Tab size in spaces:"
