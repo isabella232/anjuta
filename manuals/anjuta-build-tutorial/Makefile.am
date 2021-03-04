@@ -18,6 +18,6 @@ HELP_MEDIA = figures/autotools-process.png \
 	figures/new-project-basic.png \
 	figures/new-project-summary.png
 
-HELP_LINGUAS = cs de es
+HELP_LINGUAS = cs de es sv
 
 -include $(top_srcdir)/git.mk
