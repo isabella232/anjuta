@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: anjuta master\n"
-"POT-Creation-Date: 2019-11-29 15:43+0000\n"
-"PO-Revision-Date: 2021-03-04 18:11+0100\n"
+"POT-Creation-Date: 2021-03-04 17:36+0000\n"
+"PO-Revision-Date: 2021-03-04 20:35+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -230,7 +230,7 @@ msgstr "Varning alla: matar ut alla varningar. Denna flagga används endast av C
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:140
 msgid "<parameter>-Idir <replaceable>dir</replaceable></parameter>"
-msgstr "<parameter>-Idir <replaceable>kat</replaceable></parameter>"
+msgstr "<parameter>-I <replaceable>kat</replaceable></parameter>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:142
@@ -238,19 +238,19 @@ msgid ""
 "Look for included header files (like in #include &lt;myheader.h&gt;) in directory <replaceable>dir</replaceable>. "
 "This switch is used by the C preprocessor only."
 msgstr ""
-"Leta efter rubrikfiler att inkludera (som i #include &lt;myheader.h&gt;) i katalogen <replaceable>kat</"
+"Leta efter headerfiler att inkludera (som i #include &lt;myheader.h&gt;) i katalogen <replaceable>kat</"
 "replaceable>. Denna flagga används endast av C-preprocessorn."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:148
 msgid "<parameter>-llib <replaceable>lib</replaceable></parameter>"
-msgstr "<parameter>-llib <replaceable>lib</replaceable></parameter>"
+msgstr "<parameter>-l <replaceable>lib</replaceable></parameter>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:150
 msgid "Link to library <replaceable>lib</replaceable>; here <application>libxml2</application>, used by the linker."
 msgstr ""
-"Länk till biblioteket <replaceable>lib</replaceable>; här <application>libxml2</application>, som används av "
+"Länk till biblioteket <replaceable>lib</replaceable>; här <application>libxml2</application> som används av "
 "länkaren."
 
 #. (itstool) path: sect1/para
@@ -262,7 +262,7 @@ msgid ""
 msgstr ""
 "Faktum är att <application>GCC</application> inte gör själva kompileringen. Det utvärderar användarens alla "
 "argument och anropar andra program och överför till dem de nödvändiga argumenten tillsammans med olika "
-"förinställningar för att slutföra de fyra stegen i kompileringen."
+"standardargument för att slutföra de fyra stegen i kompileringen."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:162
@@ -347,11 +347,11 @@ msgstr ""
 "ytterligare information för felsökning eller länkning av programmet. Objektfilen har ett binärt format som kallas "
 "ELF på datorer med nyare versioner av Linux, för att granska en sådan fil krävs ett speciellt program som "
 "<application>objdump</application>. Det är möjligt att skriva assemblerkoden direkt och assemblera den med hjälp "
-"av assemblern, <application>as</application>, eller <application>GCC</application> om källfilen har filändelsen "
-"<filename>.s</filename>. Dessa objektfiler skrivs vanligtvis till din hårddisk eftersom de endast är beroende av "
-"deras motsvarande C-källfil (med alla filer inkluderade). Om du endast ändrar en källfil behöver du bara "
-"regenerera motsvarande objektfil. Du kan avsluta på detta steg utan länkning genom att använda flaggan <userinput>-"
-"c</userinput> med <application>GCC</application>."
+"av assemblern, <application>as</application>, eller <application>GCC</application> om källfilen har filändelsen ."
+"s. Dessa objektfiler skrivs vanligtvis till din hårddisk eftersom de endast är beroende av deras motsvarande C-"
+"källfil (med alla filer inkluderade). Om du endast ändrar en källfil behöver du bara regenerera motsvarande "
+"objektfil. Du kan avsluta på detta steg utan länkning genom att använda flaggan <userinput>-c</userinput> med "
+"<application>GCC</application>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:221
@@ -381,9 +381,9 @@ msgid ""
 "program could be :"
 msgstr ""
 "När ett program består av massor av källfiler är det mycket snabbare att behålla objektfilerna och endast "
-"kompilera om varje källfil bara när det behövs. Detta kan automatiseras med <application>make</application>. Den "
-"kör ett program skrivet i en makefil som vanligen heter <filename>Makefile</filename>. Ett exempel på makefil för "
-"det föregående handledningsprogrammet kan vara:"
+"kompilera om varje källfil när det behövs. Detta kan automatiseras med <application>make</application>. Det kör "
+"ett program skrivet i en makefil som vanligen heter <filename>Makefile</filename>. Ett exempel på makefil för det "
+"föregående handledningsprogrammet kan vara:"
 
 #. (itstool) path: example/title
 #: C/index.docbook:240
@@ -428,7 +428,7 @@ msgid ""
 "Makefiles are a kind of program but instead of writing what should be done sequentially to get the result, you "
 "define some rules and <application>make</application> uses these rules in whatever order to achieve the result."
 msgstr ""
-"Make-filer är ett slags skriptprogram, men istället för en skriftlig sekvens av vad som ska göras för att få "
+"Makefiler är ett slags skriptprogram, men istället för en skriftlig sekvens av vad som ska göras för att få "
 "resultatet, definierar du vissa regler. Därefter använder <application>make</application> dessa regler i någon "
 "ordning för att uppnå önskat resultat."
 
@@ -860,8 +860,8 @@ msgid ""
 "<filename>libxml2-devel</filename> necessary to build a program using it. If you don't have it "
 "<application>configure</application> will display an error message."
 msgstr ""
-"<filename>libxml2</filename> som är nödvändigt för att bygga ett program som använder det. Om du inte har det "
-"kommer <application>configure</application> visa ett felmeddelande."
+"<filename>libxml2-devel</filename> som är nödvändigt för att bygga ett program som använder det. Om du inte har "
+"det kommer <application>configure</application> visa ett felmeddelande."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:485
@@ -1943,7 +1943,7 @@ msgid ""
 "Change <guilabel>Project Name</guilabel> to <userinput>tutprog</userinput>, the project name should contains only "
 "alpha numeric characters or underscore. Fill the remaining field."
 msgstr ""
-"Ändra <guilabel>Projektnamn</guilabel> till <userinput>tutprog</userinput>, porojektnamnet ska bara innehålla "
+"Ändra <guilabel>Projektnamn</guilabel> till <userinput>tutprog</userinput>, projektnamnet ska bara innehålla "
 "alfanumeriska tecken eller understreck. Fyll i det kvarvarande fältet."
 
 #. (itstool) path: listitem/para
@@ -2976,7 +2976,7 @@ msgid ""
 "sourceforge.net/tutorial.html\"> here</ulink> are <application>Autoconf</application> and <application>Automake</"
 "application>."
 msgstr ""
-"Bland de olika GNU-utvecklingsverktygen du får höra om så finns <application>Autoconf</application> och "
+"Bland de olika GNU-utvecklingsverktygen du fått höra om så finns <application>Autoconf</application> och "
 "<application>Automake</application> <ulink type=\"http\" url=\"http://autotoolset.sourceforge.net/tutorial.html\"> "
 "här</ulink>."
 
